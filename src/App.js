@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import axios from 'axios';
 import './App.css';
-import topdatas from './utils/topdatas';
-import data from './utils/data';
 
 import HeaderHome from './components/HeaderHome';
 import TopCards from './components/TopCards';
@@ -14,15 +12,24 @@ class App extends Component {
   }
 
   async getData() {
-    axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/index.js')
+    const {data} = await axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/index.json');
+    this.setState({data}, () => {
+      console.log(this.state.data);
+    })
+  }
+
+  async topData() {
+    const {data: tops} = await axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/index.json');
+    this.setState({tops})
   }
 
   componentDidMount() {
-    const data
+    this.getData();
+    this.topData();
   }
 
   searchAItem = (term) => {
-    let tops = topdatas;
+    let tops = this.state.tops;
     tops = !tops ? tops : tops.filter(top => top.title.toLowerCase().includes(term.toLowerCase()));
     this.setState({tops});
   }
