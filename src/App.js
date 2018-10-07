@@ -13,8 +13,12 @@ class App extends Component {
     data: ''
   }
 
+  async getData() {
+    axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/index.js')
+  }
+
   componentDidMount() {
-    this.setState({tops: topdatas, data})
+    const data
   }
 
   searchAItem = (term) => {
