@@ -1,7 +1,12 @@
 export default data => {
-  const sorted = [];
-  Object.keys(data).sort().forEach(oneData => {
-    sorted.push({[oneData]: data[oneData]});
+  
+  const sorted = data.sort((a, b) => {
+    if(a.title > b.title) {
+      return 1;
+    } else if(a.title < b.title) {
+      return -1;
+    }
   })
+
   return sorted;
 }

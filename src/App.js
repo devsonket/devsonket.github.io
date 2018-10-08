@@ -15,13 +15,11 @@ class App extends Component {
 
   async getData() {
     const {data} = await axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/index.json');
-    this.setState({data}, () => {
-      console.log(this.state.data);
-    })
+    this.setState({data})
   }
 
   async topData() {
-    const {data: tops} = await axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/index.json');
+    const {data: tops} = await axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/top.json');
     this.setState({tops})
   }
 
@@ -38,7 +36,7 @@ class App extends Component {
 
   render() {
     const { searchAItem } = this;
-    const { tops } = this.state;
+    const { tops, data } = this.state;
 
     return (
       <div className="App">
@@ -46,7 +44,7 @@ class App extends Component {
         <Container>
           <TopCards tops={tops} />
         </Container>
-        <Contents />
+        <Contents data={data} />
       </div>
     );
   }
