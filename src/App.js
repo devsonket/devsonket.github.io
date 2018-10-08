@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
 
+import Container from './components/Container';
 import HeaderHome from './components/HeaderHome';
 import TopCards from './components/TopCards';
+import Contents from './components/Contents';
 
 class App extends Component {
   state = {
@@ -41,10 +43,10 @@ class App extends Component {
     return (
       <div className="App">
         <HeaderHome searchAItem={searchAItem} />
-        <TopCards tops={tops} />
-        <section className="contents">
-          poda
-        </section>
+        <Container>
+          <TopCards tops={tops} />
+        </Container>
+        <Contents />
       </div>
     );
   }

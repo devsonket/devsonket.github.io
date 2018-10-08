@@ -65,9 +65,6 @@
 .top {
   display: flex;
   flex-wrap: wrap;
-  width: 940px;
-  margin: 0 auto;
-  padding: 50px 0;
 }
 
 .top>div {
@@ -76,6 +73,12 @@
   margin: 5px;
   border-radius: 4px;
   box-shadow: 0 5px 20px -4px rgba(0, 0, 0, 0.1)
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 .card {
