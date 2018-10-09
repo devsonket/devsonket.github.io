@@ -7,8 +7,7 @@ export default({searchAItem}) => (
     <div className="header">
       <NavBar />
       <div className="intro">
-        <h1>ডেভেলপার চিটশিট</h1>
-        <input onChange={(e) => searchAItem(e.target.value)} placeholder="কিসের উপর চিটশিট চাচ্ছেন?" />
+        <h1>Single Item</h1>
         <p>বাংলা চিটশিটের ভান্ডার। নিজের মাতৃভাষায় চিটশিটের ভান্ডার সমৃদ্ধ করতে আপনিও যোগ দিন</p>
       </div>
     </div>

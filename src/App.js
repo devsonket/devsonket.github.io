@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+
 import './App.css';
 
 import Container from './components/Container';
 import HeaderHome from './components/HeaderHome';
 import TopCards from './components/TopCards';
-import Contents from './components/Contents';
+import Home from './components/Home';
+import Content from './components/Content';
 
 class App extends Component {
   state = {
     tops: '',
-    data: ''
+    data: '',
+    searchResult: '',
+    singleData: ''
   }
 
   async getData() {
@@ -23,29 +28,38 @@ class App extends Component {
     this.setState({tops})
   }
 
+  async getSingleData(id) {
+    const {data: singleData} = await axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/react.json');
+    this.setState({singleData})
+  }
+
   componentDidMount() {
     this.getData();
     this.topData();
   }
 
   searchAItem = (term) => {
-    let tops = this.state.tops;
-    tops = tops && tops.filter(top => top.title.toLowerCase().includes(term.toLowerCase()));
-    this.setState({tops});
+    const data = this.state.data;
+    let searchResult = data && data.filter(oneData => oneData.title.toLowerCase().includes(term.toLowerCase()));
+    searchResult = term ? searchResult : '';
+    this.setState({searchResult});
   }
 
   render() {
     const { searchAItem } = this;
-    const { tops, data } = this.state;
+    const { tops, searchResult, data } = this.state;
 
     return (
-      <div className="App">
-        <HeaderHome searchAItem={searchAItem} />
-        <Container>
-          <TopCards tops={tops} />
-        </Container>
-        <Contents data={data} />
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Route exact path="/" render={props => (
+            <Home searchAItem={searchAItem} tops={tops} searchResult={searchResult} data={data} />
+          )}/>
+          <Route exact path="/:id" render={props => (
+            <Content {...props} data={data} />
+          )}/>
+        </div>
+      </BrowserRouter>
     );
   }
 }

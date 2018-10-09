@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default({id, title, style = {}}) => (
   <div key={id} className="card c-card" style={style}>
-    <a href="/">
+    <Link to={`/${id}`}>
       <h4>{title}</h4>
-    </a>
+    </Link>
   </div>
 )
