@@ -6,14 +6,18 @@ import organizedData from '../utils/organizedData';
 
 export default ({data}) => (
   <Container>
-    <section className="contents">
+    <section className="contents mt-0">
       <h2>সবগুলো</h2>
       {data ? Object.keys(organizedData(data)).map((char, index) => (
-        <React.Fragment>
-          <h3 keys={index}>{char}</h3>
-          {organizedData(data)[char].map(({id, title}) => (
-            <Card keys={id} title={title} />
-          ))}
+        <React.Fragment key={index}>
+          <div className="content">
+            <h3>{char}</h3>
+            <div className="items">
+            {organizedData(data)[char].map(({id, title}) => (
+              <Card key={id} title={title} />
+            ))}
+            </div>
+          </div>
         </React.Fragment>
       )) : 'Loading'}
     </section>
