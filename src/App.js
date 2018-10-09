@@ -30,7 +30,7 @@ class App extends Component {
 
   searchAItem = (term) => {
     let tops = this.state.tops;
-    tops = !tops ? tops : tops.filter(top => top.title.toLowerCase().includes(term.toLowerCase()));
+    tops = tops && tops.filter(top => top.title.toLowerCase().includes(term.toLowerCase()));
     this.setState({tops});
   }
 
