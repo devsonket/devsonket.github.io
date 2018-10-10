@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import './App.css';
 
-import Container from './components/Container';
-import HeaderHome from './components/HeaderHome';
-import TopCards from './components/TopCards';
 import Home from './components/Home';
 import Content from './components/Content';
+import Footer from './components/Footer';
 
 class App extends Component {
   state = {
@@ -58,6 +56,7 @@ class App extends Component {
           <Route exact path="/:id" render={props => (
             <Content {...props} data={data} />
           )}/>
+          <Footer />
         </div>
       </BrowserRouter>
     );

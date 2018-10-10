@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
-import axios from 'axios';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
-
+import React from 'react';
 import Container from './Container';
 import HeaderHome from './HeaderHome';
 import TopCards from './TopCards';
 import Contents from './Contents';
-import Content from './Content';
 
 export default ({searchAItem, searchResult, tops, data}) => {
   return (

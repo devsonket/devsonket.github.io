@@ -136,3 +136,55 @@
 .c-card p {
   margin-bottom: 0;
 }
+
+.single-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-content>div {
+  width: calc(50% - 30px);
+  margin: 15px;
+}
+
+.single-items h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.single-item {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: 0 6px 8px rgba(102,119,136,.03), 0 1px 2px rgba(102,119,136,.3);
+}
+
+.single-item .item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.single-item .item:last-child {
+  margin-bottom: 0;
+}
+
+.single-item .item>* {
+  flex: 1 1 50%;
+}
+
+.single-item .code,
+.single-item p {
+  margin-bottom: 0;
+}
+
+.single-item pre {
+  padding: 5px;
+  background-color: transparent;
+  color: #1565C0;
+}
+
+.footer-area {
+  background-color: #eee;
+}

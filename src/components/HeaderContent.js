@@ -2,13 +2,13 @@ import React from 'react';
 
 import NavBar from './NavBar';
 
-export default({searchAItem}) => (
+export default({title, description}) => (
   <header className="header-area">
     <div className="header">
       <NavBar />
       <div className="intro">
-        <h1>Single Item</h1>
-        <p>বাংলা চিটশিটের ভান্ডার। নিজের মাতৃভাষায় চিটশিটের ভান্ডার সমৃদ্ধ করতে আপনিও যোগ দিন</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
       </div>
     </div>
   </header>

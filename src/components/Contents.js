@@ -6,7 +6,7 @@ import organizedData from '../utils/organizedData';
 
 export default ({data}) => (
   <Container>
-    <section className="contents mt-0">
+    <div className="contents mt-0">
       <h2>সবগুলো</h2>
       {data ? Object.keys(organizedData(data)).map((char, index) => (
         <React.Fragment key={index}>
@@ -20,6 +20,6 @@ export default ({data}) => (
           </div>
         </React.Fragment>
       )) : 'Loading'}
-    </section>
+    </div>
   </Container>
 )
