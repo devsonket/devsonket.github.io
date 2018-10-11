@@ -1,0 +1,94 @@
+{
+  "id": "js",
+  "title": "জাভাস্ক্রিপ্ট চিটিশিট",
+  "slug": "js",
+  "description": "জাভাস্ক্রিপ্ট এর ব্যাসিক চিটশিট",
+  "colorPref": "#000",
+  "contents": [
+    {
+      "title": "রেগুলার এক্সপ্রেশন সিনট্যাক্স",
+      "items": [
+        {
+          "defination": "স্ট্রিং এর শুরু",
+          "code": "^"
+        }, {
+          "defination": "স্ট্রিং এর শেষ",
+          "code": "something"
+        }, {
+          "defination": "যেকোনো একটা ক্যারেক্টার",
+          "code": "something"
+        }, {
+          "defination": " অথবা ",
+          "code": "something"
+        }, {
+          "defination": "গ্রুপ সেকশন",
+          "code": "something"
+        }, {
+          "defination": "রেঞ্জ( , অথবা )",
+          "code": "something"
+        }, {
+          "defination": "রেঞ্জের বাইরে( , অথবা ছাড়া)",
+          "code": "something"
+        }
+      ]
+    }, {
+      "title": "প্যাটার্ণ মডিফায়ার",
+      "items": [
+        {
+          "defination": "গ্লোবাল ম্যাচ",
+          "code": "something"
+        }, {
+          "defination": "কেস-ইনসেন্সিটিভ",
+          "code": "something"
+        }, {
+          "defination": "একাধিক লাইন",
+          "code": "something"
+        }
+      ]
+    }, {
+      "title": "রেগুলার এক্সপ্রেশন অবজেক্ট",
+      "items": [
+        {
+          "code": "exec()"
+        }, {
+          "code": "test()"
+        }, {
+          "code": "input"
+        }
+      ]
+    }, {
+      "title": "ইভেন্ট হ্যান্ডেলার",
+      "items": [
+        {
+          "code": "onabort"
+        }, {
+          "code": "onblur"
+        }, {
+          "code": "onchange"
+        }, {
+          "code": "onclick"
+        }, {
+          "code": "ondblclick"
+        }
+      ]
+    }, {
+      "title": "অ্যারে",
+      "items": [
+        {
+          "code": "concat()"
+        }, {
+          "code": "join()"
+        }, {
+          "code": "length"
+        }, {
+          "code": "pop()"
+        }, {
+          "code": "push()"
+        }
+      ]
+    }, {
+      "title": "খালি কোড",
+      "code": "console.log('Hello World!')"
+    }
+  ]
+}
