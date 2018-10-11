@@ -24,7 +24,7 @@ class Content extends Component {
   render() {
     const { data } = this.state;
 
-    if(!data || data) {
+    if(!data) {
       return <div className="loader">
         <BeatLoader color={'#eee'} />
       </div>;
