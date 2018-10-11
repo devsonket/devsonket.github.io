@@ -1,3 +1,15 @@
+.loader {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.loader>div {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
 .header-area {
   background-color: #eee;
 }
@@ -8,58 +20,58 @@
 }
 
 .brand a {
-    text-decoration: none;
-    font-size: 26px;
-    color: #333;
+  text-decoration: none;
+  font-size: 26px;
+  color: #333;
 }
 
 .brand span {
-    background-color: #333;
-    color: #fff;
-    padding: 0 8px;
-    border-radius: 4px;
-    margin-right: 5px;
+  background-color: #333;
+  color: #fff;
+  padding: 0 8px;
+  border-radius: 4px;
+  margin-right: 5px;
 }
 
 .btn-add a {
-    background-color: #4CAF50;
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 4px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 45px 0;
+  list-style: none;
+  margin: 0;
+  padding: 45px 0;
 }
 
 .navbar ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .navbar ul li.btn-add {
-    float: right;
+  float: right;
 }
 
 .header .intro {
-    padding: 0 50px;
-    text-align: center;
-    padding-bottom: 100px;
+  padding: 0 50px;
+  text-align: center;
+  padding-bottom: 100px;
 }
 
 .header .intro input {
-    width: 100%;
-    border: none;
-    padding: 15px;
-    border-radius: 4px;
-    box-shadow: 0 6px 8px rgba(102,119,136,.03), 0 1px 2px rgba(102,119,136,.3);
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 6px 8px rgba(102,119,136,.03), 0 1px 2px rgba(102,119,136,.3);
 }
 
 .header .intro p {
-    margin-top: 25px;
-    color: rgba(0, 0, 0, 0.6);
+  margin-top: 25px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .top {
@@ -137,14 +149,16 @@
   margin-bottom: 0;
 }
 
-.single-content {
-  display: flex;
-  flex-wrap: wrap;
+.single-content::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .single-content>div {
   width: calc(50% - 30px);
   margin: 15px;
+  float: left;
 }
 
 .single-items h3 {

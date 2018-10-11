@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from './Container';
 import Card from './Card';
+import { BeatLoader } from 'react-spinners';
 
 import organizedData from '../utils/organizedData';
 
@@ -19,7 +20,7 @@ export default ({data}) => (
             </div>
           </div>
         </React.Fragment>
-      )) : 'Loading'}
+      )) : <BeatLoader color={'#eee'} />}
     </div>
   </Container>
 )
