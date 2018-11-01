@@ -29,23 +29,23 @@
         }
       ]
     }, {
-      "title": "Basic",
+      "title": "Lifecycle(Updating)",
       "items": [
         {
-          "defination": "Something",
-          "code": "something"
+          "defination": "Use setState() here",
+          "code": "componentWillReceiveProps (newProps)"
         }, {
-          "defination": "Something",
-          "code": "something"
+          "defination": "Skips render() if returns false",
+          "code": "shouldComponentUpdate (newProps, newState)"
         }, {
-          "defination": "Something",
-          "code": "something"
+          "defination": "Can’t use setState() here",
+          "code": "componentWillUpdate (newProps, newState)"
         }, {
-          "defination": "Something",
-          "code": "something"
+          "defination": "Render",
+          "code": "render()"
         }, {
-          "defination": "Something",
-          "code": "something"
+          "defination": "Operate on the DOM here",
+          "code": "componentDidUpdate (prevProps, prevState)"
         }
       ]
     }, {
