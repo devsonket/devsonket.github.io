@@ -6,23 +6,26 @@
   "colorPref": "#000",
   "contents": [
     {
-      "title": "Basic",
+      "title": "Lifecycle(Mounting)",
       "items": [
         {
-          "defination": "Something",
-          "code": "something"
+          "defination": "Before rendering",
+          "code": "constructor (props)"
         }, {
-          "defination": "Something",
-          "code": "something"
+          "defination": "Don’t use this",
+          "code": "componentWillMount()"
         }, {
-          "defination": "Something",
-          "code": "something"
+          "defination": "Render",
+          "code": "render()"
         }, {
-          "defination": "Something",
-          "code": "something"
+          "defination": "After rendering (DOM available)",
+          "code": "componentDidMount()"
         }, {
-          "defination": "Something",
-          "code": "something"
+          "defination": "Before DOM removal",
+          "code": "componentWillUnmount()"
+        }, {
+          "defination": "Catch errors (16+) ",
+          "code": "componentDidCatch()"
         }
       ]
     }, {
