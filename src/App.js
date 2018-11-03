@@ -24,12 +24,7 @@ class App extends Component {
     const {data: tops} = await axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/top.json');
     this.setState({tops})
   }
-
-  async getSingleData(id) {
-    const {data: singleData} = await axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/react.json');
-    this.setState({singleData})
-  }
-
+  
   componentDidMount() {
     this.getData();
     this.topData();

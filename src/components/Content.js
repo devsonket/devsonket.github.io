@@ -16,9 +16,15 @@ class Content extends Component {
     this.getData(id);
   }
 
+  setTitle = () => {
+    const { data: { title } } = this.state;
+    document.title = `${title} - ডেভেলপার চিটশীট`;
+  }
+
   getData = async(id) => {
     const { data } = await axios(`https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/${id}.json`);
     this.setState({data});
+    this.setTitle();
   }
 
   render() {

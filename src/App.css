@@ -199,6 +199,17 @@
   color: #1565C0;
 }
 
+footer ul {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
 .footer-area {
   background-color: #eee;
+  text-align: center;
 }
