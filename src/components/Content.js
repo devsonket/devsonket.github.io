@@ -26,7 +26,7 @@ class Content extends Component {
 
     if(!data) {
       return <div className="loader">
-        <BeatLoader color={'#eee'} />
+        <BeatLoader color={'#333'} />
       </div>;
     }
 
