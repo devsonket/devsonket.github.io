@@ -5,9 +5,9 @@ export default({searchAItem}) => (
   <footer className="footer-area">
     <Container>
       <ul>
-        <li><a class="github-button" href="https://github.com/devsonket/devsonket.github.io" data-icon="octicon-star" aria-label="Star ntkme/github-buttons on GitHub">Star</a></li>
-        <li><a class="github-button" href="https://github.com/devsonket/devsonket.github.io/subscription" data-icon="octicon-eye" aria-label="Watch ntkme/github-buttons on GitHub">Watch</a></li>
-        <li><a class="github-button" href="https://github.com/devsonket/devsonket.github.io/issues/new?title=%E0%A6%B8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%BE&body=%E0%A6%B8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%BE%20%E0%A6%AC%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%A4&labels=%E0%A6%B8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%BE" data-icon="octicon-issue-opened" aria-label="Issue ntkme/github-buttons on GitHub">Issue</a></li>
+        <li><a className="github-button" href="https://github.com/devsonket/devsonket.github.io">Star</a></li>
+        <li><a className="github-button" href="https://github.com/devsonket/devsonket.github.io/subscription">Watch</a></li>
+        <li><a className="github-button" href="https://github.com/devsonket/devsonket.github.io/issues/new?title=%E0%A6%B8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%BE&body=%E0%A6%B8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%BE%20%E0%A6%AC%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%A4&labels=%E0%A6%B8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%BE">Issue</a></li>
       </ul>
       <p>এটি সম্পূর্ণ ওপেন সোর্স একটি প্রোজেক্ট</p>
     </Container>
