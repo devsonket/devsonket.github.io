@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Redirect } from 'react-router-dom';
 import { BeatLoader } from 'react-spinners';
 
 import Container from './Container';
 import HeaderContent from './HeaderContent';
+import Page404 from './404';
 import Footer from './Footer';
 
 class Content extends Component {
   state = {
-    data: ''
+    data: '',
+    redirect: false
   }
 
   componentDidMount() {
@@ -22,13 +25,26 @@ class Content extends Component {
   }
 
   getData = async(id) => {
-    const { data } = await axios(`https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/${id}.json`);
-    this.setState({data});
-    this.setTitle();
+    try {
+      const { data } = await axios(`https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/${id}.json`);
+      this.setState({data});
+      this.setTitle();
+    } catch(e) {
+      this.setState({redirect: true})
+    }
   }
 
   render() {
-    const { data } = this.state;
+    const { data, redirect } = this.state;
+    const { match: { url } } = this.props;
+
+    if(redirect && url !== '/404') {
+      return <Redirect push to="/404" />
+    }
+
+    if(url === '/404') {
+      return <Page404 />
+    }
 
     if(!data) {
       return <div className="loader">

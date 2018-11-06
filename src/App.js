@@ -24,7 +24,7 @@ class App extends Component {
     const {data: tops} = await axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/top.json');
     this.setState({tops})
   }
-  
+
   componentDidMount() {
     this.getData();
     this.topData();

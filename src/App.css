@@ -126,6 +126,7 @@
 
 .items {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
@@ -199,6 +200,45 @@
   color: #1565C0;
 }
 
+.btn {
+  margin: 0 5px;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: 900;
+}
+
+.btn-home {
+  background-color: #607D8B;
+}
+
+.btn-new {
+  background-color: #4CAF50;
+}
+
+.btn-bug {
+  background-color: #F44336;
+}
+
+.error {
+  width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.error img {
+  width: 240px;
+}
+
+.error h2 {
+  font-size: 42px;
+}
+
+.error p {
+  font-size: 18px;
+}
+
 footer ul {
   list-style: none;
   margin-bottom: 10px;
@@ -223,4 +263,64 @@ footer ul li a {
 .footer-area {
   background-color: #eee;
   text-align: center;
+}
+
+@media only screen and (max-width: 940px) {
+  .navbar ul {
+    padding: 40px 25px;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .top>div,
+  .items>div {
+    width: calc(50% - 20px);
+  }
+
+  .single-content>div {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    margin-bottom: 15px;
+  }
+
+  .error {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  li.brand {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul li.btn-add {
+    display: none;
+  }
+
+  .container {
+    padding: 25px 0;
+  }
+
+  .header .intro {
+    padding: 0 15px;
+    padding-bottom: 15px;
+  }
+
+  .top>div, .items>div {
+    width: 100%;
+  }
+
+  .mt-0 {
+    margin-top: -25px;
+  }
 }
