@@ -1,0 +1,39 @@
+{
+  "id": "shrotcut-chrome-win",
+  "title": "শর্টকাট কী - গুগুল ক্রোম(উইন্ডোজ)",
+  "slug": "shrotcut-chrome-win",
+  "description": "গুগুল ক্রোমের প্রয়োজনী উইন্ডোজ শর্টকাট কী",
+  "colorPref": "#f2dd2d",
+  "contents": [
+    {
+      "title": "উইন্ডো এবং ট্যাব ম্যানেজ",
+      "items": [
+        {
+          "defination": "মাত্র ক্লোজ করা ট্যাব একে একে ফিরিয়ে আনা",
+          "code": "ctrl+shift+t"
+        }, {
+          "defination": "একটা নির্দিষ্ট ট্যাবে যাওয়া",
+          "code": "ctrl চেপে 1 থেকে 9 পর্যন্ত"
+        }, {
+          "defination": "আগের ট্যাবে যাওয়া",
+          "code": "ctrl+shift+tab"
+        }, {
+          "defination": "পরের ট্যাবে যাওয়া",
+          "code": "ctrl+tab"
+        }, {
+          "defination": "বর্তমান ট্যাব ক্লোজ করা",
+          "code": "ctrl+w"
+        }, {
+          "defination": "লিঙ্ক নতুন ট্যাবে ওপেন করা",
+          "code": "ctrl হোল্ড করে লিঙ্কে ক্লিক করুন"
+        }, {
+          "defination": "লিঙ্ক নতুন উইন্ডোতে ওপেন করা",
+          "code": "shift হোল্ড করে লিঙ্কে ক্লিক করুন"
+        }, {
+          "defination": "প্রাইভেট ব্রাউজিং শুরু করা",
+          "code": "ctrl+shift+n"
+        }
+      ]
+    }
+  ]
+}
