@@ -1,8 +1,8 @@
 {
-  "id": "js",
-  "title": "জাভাস্ক্রিপ্ট চিটিশিট",
-  "slug": "js",
-  "description": "জাভাস্ক্রিপ্ট এর ব্যাসিক চিটশিট",
+  "id": "demo1",
+  "title": "ডিমো চিটশিট এক",
+  "slug": "demo1",
+  "description": "ডিমো চিটশিট",
   "colorPref": "#000",
   "contents": [
     {
