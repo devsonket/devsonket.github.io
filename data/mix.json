@@ -1,94 +1,106 @@
 {
-  "id": "codendesc",
-  "title": "ডিমো চিটশিট-কোড এবং বর্ণনা",
-  "slug": "codendesc",
-  "description": "কোড এবং বর্ণনা সমৃদ্ধ চিটশিট এর ডিমো",
+  "id": "mix",
+  "title": "ডিমো চিটশিট-সব ফরম্যাট একসাথে মিক্স",
+  "slug": "mix",
+  "description": "সব ফরম্যাট একসাথে মিক্স করেও দিতে পারবেন",
   "colorPref": "#000",
   "contents": [
     {
-      "title": "রেগুলার এক্সপ্রেশন সিনট্যাক্স",
+      "title": "এখানে টাইটেল যাবে",
       "items": [
         {
-          "defination": "স্ট্রিং এর শুরু",
-          "code": "^"
+          "defination": "বর্ণনা",
+          "code": "কোড"
         }, {
-          "defination": "স্ট্রিং এর শেষ",
-          "code": "something"
+          "defination": "বর্ণনা",
+          "code": "কোড"
         }, {
-          "defination": "যেকোনো একটা ক্যারেক্টার",
-          "code": "something"
+          "defination": "বর্ণনা",
+          "code": "কোড"
         }, {
-          "defination": " অথবা ",
-          "code": "something"
+          "defination": "বর্ণনা",
+          "code": "কোড"
         }, {
-          "defination": "গ্রুপ সেকশন",
-          "code": "something"
+          "defination": "বর্ণনা",
+          "code": "কোড"
         }, {
-          "defination": "রেঞ্জ( , অথবা )",
-          "code": "something"
+          "defination": "বর্ণনা",
+          "code": "কোড"
         }, {
-          "defination": "রেঞ্জের বাইরে( , অথবা ছাড়া)",
-          "code": "something"
+          "defination": "বর্ণনা",
+          "code": "কোড"
         }
       ]
     }, {
-      "title": "প্যাটার্ণ মডিফায়ার",
+      "title": "টাইটেল",
       "items": [
         {
-          "defination": "গ্লোবাল ম্যাচ",
-          "code": "something"
+          "code": "কোড"
         }, {
-          "defination": "কেস-ইনসেন্সিটিভ",
-          "code": "something"
+          "code": "কোড"
         }, {
-          "defination": "একাধিক লাইন",
-          "code": "something"
+          "code": "কোড"
+        }, {
+          "code": "কোড"
+        }, {
+          "code": "কোড"
         }
       ]
     }, {
-      "title": "রেগুলার এক্সপ্রেশন অবজেক্ট",
+      "title": "টাইটেল",
       "items": [
         {
-          "code": "exec()"
+          "defination": "কাজের বিবরণ",
+          "code": "কোড"
         }, {
-          "code": "test()"
+          "defination": "কাজের বিবরণ",
+          "code": "কোড"
         }, {
-          "code": "input"
+          "defination": "কাজের বিবরণ",
+          "code": "কোড"
+        }, {
+          "defination": "কাজের বিবরণ",
+          "code": "কোড"
+        }, {
+          "defination": "কাজের বিবরণ",
+          "code": "কোড"
         }
       ]
     }, {
-      "title": "ইভেন্ট হ্যান্ডেলার",
+      "title": "টাইটেল",
       "items": [
         {
-          "code": "onabort"
+          "code": "কোড"
         }, {
-          "code": "onblur"
+          "code": "কোড"
         }, {
-          "code": "onchange"
+          "code": "কোড"
         }, {
-          "code": "onclick"
+          "code": "কোড"
         }, {
-          "code": "ondblclick"
+          "code": "কোড"
         }
       ]
     }, {
-      "title": "অ্যারে",
+      "title": "টাইটেল",
       "items": [
         {
-          "code": "concat()"
+          "defination": "কাজের বিবরণ",
+          "code": "কোড"
         }, {
-          "code": "join()"
+          "defination": "কাজের বিবরণ",
+          "code": "কোড"
         }, {
-          "code": "length"
+          "defination": "কাজের বিবরণ",
+          "code": "কোড"
         }, {
-          "code": "pop()"
+          "defination": "কাজের বিবরণ",
+          "code": "কোড"
         }, {
-          "code": "push()"
+          "defination": "কাজের বিবরণ",
+          "code": "কোড"
         }
       ]
-    }, {
-      "title": "খালি কোড",
-      "code": "console.log('Hello World!')"
     }
   ]
 }
