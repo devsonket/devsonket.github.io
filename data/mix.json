@@ -1,8 +1,8 @@
 {
-  "id": "demo1",
-  "title": "ডিমো চিটশিট এক",
-  "slug": "demo1",
-  "description": "ডিমো চিটশিট",
+  "id": "codendesc",
+  "title": "ডিমো চিটশিট-কোড এবং বর্ণনা",
+  "slug": "codendesc",
+  "description": "কোড এবং বর্ণনা সমৃদ্ধ চিটশিট এর ডিমো",
   "colorPref": "#000",
   "contents": [
     {
