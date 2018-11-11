@@ -1,0 +1,80 @@
+{
+  "id": "linux-command-line",
+  "title": "লিনাক্স কমান্ড লাইন",
+  "slug": "linux-command-line",
+  "description": "লিনাক্স কমান্ড লাইনের যাবতীয় সবকিছু",
+  "colorPref": "#000",
+  "contents": [
+    {
+      "title": "ব্যাশ কমান্ড",
+      "items": [
+        {
+          "defination": "সিস্টেম এবং কার্নেল দেখা",
+          "code": "uname -a"
+        }, {
+          "defination": "ডিস্ট্রিবিউশন দেখা",
+          "code": "head -n1 /etc/issue"
+        }, {
+          "defination": "মাউন্টেড ফাইল সিস্টেম দেখা",
+          "code": "mount"
+        }, {
+          "defination": "সিস্টেম ডেট দেখা",
+          "code": "date"
+        }, {
+          "defination": "আপটাইম দেখা",
+          "code": "uptime"
+        }, {
+          "defination": "ইউজারনেইম দেখা",
+          "code": "whoami"
+        }, {
+          "defination": "কমান্ডের ম্যানুয়াল দেখা",
+          "code": "man কমান্ড"
+        }
+      ]
+    }, {
+      "title": "ব্যাশ শর্টকাট",
+      "items": [
+        {
+          "defination": "বর্তমান কমান্ড স্টপ করা",
+          "code": "Ctrl-c"
+        }, {
+          "defination": "প্রোগ্রামকে ঘুম পাড়ানো",
+          "code": "Ctrl-z"
+        }, {
+          "defination": "লাইনের শুরুতে যাওয়া",
+          "code": "Ctrl-a"
+        }, {
+          "defination": "লাইনের শেষে যাওয়া",
+          "code": "Ctrl-e"
+        }, {
+          "defination": "লাইনের শুরু থেকে কাট করা",
+          "code": "Ctrl-u"
+        }, {
+          "defination": "লাইনের শেষ পর্যন্ত কাট করা",
+          "code": "Ctrl-k"
+        }, {
+          "defination": "হিস্টোরি খোঁজা",
+          "code": "Ctrl-r"
+        }, {
+          "defination": "শেষ কমান্ড পুনরাবৃত্তি করা",
+          "code": "!!"
+        }, {
+          "defination": "অমুক(abc) দিয়ে শুরু শেষ কমান্ড পুনরাবৃত্তি করা",
+          "code": "!abc"
+        }, {
+          "defination": "অমুক(abc) দিয়ে শুরু শেষ কমান্ড প্রিন্ট করা",
+          "code": "!abc:p"
+        }, {
+          "defination": "আগের কমান্ডের শেষ আর্গুমেন্ট",
+          "code": "!$"
+        }, {
+          "defination": "আগের কমান্ডের সব আর্গুমেন্ট",
+          "code": "!*"
+        }, {
+          "defination": "আগের অমুক(abc) কমান্ড খোঁজ করে তমুক() দিয়ে রিপ্লেস করে রান",
+          "code": "^abc^123"
+        }
+      ]
+    }
+  ]
+}
