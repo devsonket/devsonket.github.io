@@ -1,0 +1,34 @@
+{
+    "id": "cpp-programming",
+    "title": "সি++ প্রোগ্রামিং",
+    "slug": "cpp-programming",
+    "description": "সি প্লাস প্লাস প্রোগ্রামিং এর চিটশিট",
+    "colorPref": "#000",
+    "contents": [
+        {
+            "title": "ইনপুট/আউটপুট ফান্ডামেন্টালস",
+            "items": [
+                {
+                    "defination": "ইনপুট/আউটপুট স্ট্যান্ডার্ড লাইভ্রেরি ব্যবহার করার জন্য হেডার ফাইল",
+                    "code": "#include <iostream>"
+                },
+                {
+                    "defination": "কনসোলে আউটপুট দেখার জন্য",
+                    "code": "cout >>"
+                },
+                {
+                    "defination": "কনসোলে এরোর দেখার জন্য",
+                    "code": "cerr >>"
+                },
+                {
+                    "defination": "কনসোলে লগ দেখার জন্য",
+                    "code": "clog >>"
+                },
+                {
+                    "defination": "কনসোল থেকে ইনপুট নেয়ার জন্য",
+                    "code": "cin <<"
+                }
+            ]
+        }
+    ]
+}
