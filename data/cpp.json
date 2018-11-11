@@ -29,6 +29,63 @@
                     "code": "cin <<"
                 }
             ]
+        },
+        {
+            "title": "ফাইল স্ট্রিমস",
+            "items": [
+                {
+                    "defination": "ইনপুট/আউটপুট ফাইল স্ট্রিমস এর হেডার কোড",
+                    "code": "#include <fstream>"
+                },
+                {
+                    "defination": "ফাইলে লিখার জন্য",
+                    "code": "ofstream myFile"
+                },
+                {
+                    "defination": "ফাইল থেকে পড়ার জন্য",
+                    "code": "ifstream myFile"
+                },
+                {
+                    "defination": "ফাইল ওপেন করা",
+                    "code": "myFile.open (filename.txt(file format))"
+                },
+                {
+                    "defination": "স্ট্রিম অবজেক্ট ব্যবহার করে ফাইল ওপেন করা ",
+                    "code": "open (filename, mode)"
+                },
+                {
+                    "defination": "ইনপুট অপারেশন হিসেবে ফাইল ওপেন করা",
+                    "code": "ios::in"
+                },
+                {
+                    "defination": "আউটপুট অপারেশন হিসেবে ফাইল ওপেন করা",
+                    "code": "ios::out"
+                },
+                {
+                    "defination": "বাইনারি মুডে ফাইল ওপেন করা",
+                    "code": "ios::binary"
+                },
+                {
+                    "defination": "ইনিশিয়াল পসিশন ফাইলের শেষভাগে সেট করা",
+                    "code": "ios::ate"
+                },
+                {
+                    "defination": "ফাইলের শেষভাগে সকল অপারেশন পারফর্ম করার জন্য",
+                    "code": "ios::app"
+                },
+                {
+                    "defination": "ফাইলের আগের কনটেন্ট ডিলিট করে নতুন কনটেন্ট দিয়ে রিপ্লেস করার জন্য",
+                    "code": "ios::trunc"
+                },
+                {
+                    "defination": "ফাইল ক্লোস করার জন্য",
+                    "code": "myFile.close()"
+                },
+                {
+                    "defination": "ফাইল ওপেন আছে কিনা তা চেক করার জন্য",
+                    "code": "myFile.is_open()"
+                }
+            ]
         }
     ]
 }
