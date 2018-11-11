@@ -13,19 +13,19 @@
                     "code": "#include <iostream>"
                 },
                 {
-                    "defination": "কনসোলে আউটপুট দেখার জন্য",
+                    "defination": "কনসোলে আউটপুট দেখানো",
                     "code": "cout >>"
                 },
                 {
-                    "defination": "কনসোলে এরোর দেখার জন্য",
+                    "defination": "কনসোলে এরোর দেখানো",
                     "code": "cerr >>"
                 },
                 {
-                    "defination": "কনসোলে লগ দেখার জন্য",
+                    "defination": "কনসোলে লগ দেখানো",
                     "code": "clog >>"
                 },
                 {
-                    "defination": "কনসোল থেকে ইনপুট নেয়ার জন্য",
+                    "defination": "কনসোল থেকে ইনপুট নেয়া",
                     "code": "cin <<"
                 }
             ]
