@@ -10,28 +10,80 @@
       "items": [
         {
           "defination": "মাত্র ক্লোজ করা ট্যাব একে একে ফিরিয়ে আনা",
-          "code": "ctrl+shift+t"
+          "code": "Ctrl + Shift + T"
         }, {
           "defination": "একটা নির্দিষ্ট ট্যাবে যাওয়া",
-          "code": "ctrl চেপে 1 থেকে 9 পর্যন্ত"
+          "code": "Ctrl চেপে 1 থেকে 9 পর্যন্ত"
         }, {
           "defination": "আগের ট্যাবে যাওয়া",
-          "code": "ctrl+shift+tab"
+          "code": "Ctrl + Shift + tab"
         }, {
           "defination": "পরের ট্যাবে যাওয়া",
-          "code": "ctrl+tab"
+          "code": "Ctrl + Tab"
         }, {
           "defination": "বর্তমান ট্যাব ক্লোজ করা",
-          "code": "ctrl+w"
+          "code": "Ctrl + W"
         }, {
           "defination": "লিঙ্ক নতুন ট্যাবে ওপেন করা",
-          "code": "ctrl হোল্ড করে লিঙ্কে ক্লিক করুন"
+          "code": "Ctrl হোল্ড করে লিঙ্কে ক্লিক করুন"
         }, {
           "defination": "লিঙ্ক নতুন উইন্ডোতে ওপেন করা",
-          "code": "shift হোল্ড করে লিঙ্কে ক্লিক করুন"
+          "code": "Shift হোল্ড করে লিঙ্কে ক্লিক করুন"
         }, {
           "defination": "প্রাইভেট ব্রাউজিং শুরু করা",
-          "code": "ctrl+shift+n"
+          "code": "Ctrl + Shift + N"
+        }
+      ]
+    }, {
+      "title": "পেজ কন্ট্রোল",
+      "items": [
+        {
+          "defination": "কোনো পেজের একদম উপরে যাওয়া",
+          "code": "Home"
+        }, {
+          "defination": "কোনো পেজের একদম নিচে যাওয়া",
+          "code": "End"
+        }, {
+          "defination": "কোনো পেজে স্ক্রল ডাউন করা",
+          "code": "Space"
+        }, {
+          "defination": "কোনো পেজে স্ক্রল আপ করা",
+          "code": "Shift + Space"
+        }, {
+          "defination": "পেজ লোড স্টপ করা",
+          "code": "Escape"
+        }, {
+          "defination": "পেজ রিলোড করা",
+          "code": "Ctrl + R"
+        }, {
+          "defination": "ইউআরএল বার অ্যাক্সেস করা",
+          "code": "Ctrl + L"
+        }, {
+          "defination": "জুম পজিশন থেকে বাই ডিফল্ট পজিশনে আসা",
+          "code": "Ctrl + 0"
+        }, {
+          "defination": "বর্তমান পেজ বুকমার্ক করা",
+          "code": "Ctrl + D"
+        }
+      ]
+    }, {
+      "title": "অন্যান্য",
+      "items": [
+        {
+          "defination": "একটা পেজে কোন টেক্সট খুঁজতে চাচ্ছেন?",
+          "code": "Ctrl + F"
+        }, {
+          "defination": "ডাউনলোড লিস্ট অ্যাক্সেস করতে",
+          "code": "Ctrl + J"
+        }, {
+          "defination": "ডেভেলপার কন্সোল অ্যাক্সেস করতে",
+          "code": "Ctrl + Shift + J"
+        }, {
+          "defination": "পেজ সোর্স দেখতে",
+          "code": "Ctrl + U"
+        }, {
+          "defination": "ইন্সপেক্ট করতে",
+          "code": "Ctrl + Shift + I"
         }
       ]
     }
