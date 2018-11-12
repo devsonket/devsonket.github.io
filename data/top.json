@@ -1,14 +1,15 @@
 [
   {
-    "id": "codendesc",
-    "title": "কোড এবং বর্ণনা"
-  },
-  {
-    "id": "onlycode",
-    "title": "শুধুমাত্র কোড"
-  },
-  {
-    "id": "mix",
-    "title": "মিক্স"
+    "id": "shortcut-chrome-win",
+    "title": "গুগুল ক্রোম(উইন্ডোজ)"
+  }, {
+    "id": "cpp",
+    "title": "সি++"
+  }, {
+    "id": "c-cheat-sheet",
+    "title": "সি"
+  }, {
+    "id": "node-js-global",
+    "title": "নোড জেএস"
   }
 ]
