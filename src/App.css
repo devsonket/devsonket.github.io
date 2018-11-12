@@ -150,16 +150,14 @@
   margin-bottom: 0;
 }
 
-.single-content::after {
-  content: "";
-  display: block;
-  clear: both;
+.single-content {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .single-content>div {
-  width: calc(50% - 30px);
   margin: 15px;
-  float: left;
+  flex: 1 1 calc(50% - 30px);
 }
 
 .single-items h3 {
@@ -185,8 +183,9 @@
   margin-bottom: 0;
 }
 
-.single-item .item>* {
-  flex: 1 1 50%;
+.single-item .def {
+  flex: 1;
+  padding: 5px;
 }
 
 .single-item .code,
@@ -286,7 +285,7 @@ footer ul li a {
   }
 
   .single-content>div {
-    width: calc(100% - 20px);
+    flex-basis: calc(100% - 20px);
     margin: 0 10px;
     margin-bottom: 15px;
   }
