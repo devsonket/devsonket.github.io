@@ -1,20 +1,5 @@
 [
   {
-    "id": "codendesc",
-    "title": "কোড এবং বর্ণনা"
-  },
-  {
-    "id": "onlycode",
-    "title": "শুধুমাত্র কোড"
-  },
-  {
-    "id": "mix",
-    "title": "মিক্স"
-  },
-  {
-    "id": "not-found",
-    "title": "এরর পেজ"
-  }, {
     "id": "shortcut-chrome-win",
     "title": "গুগুল ক্রোম(উইন্ডোজ)"
   }, {
@@ -35,5 +20,8 @@
   }, {
     "id": "node-js-global",
     "title": "নোড জেএস"
+  }, {
+    "id": "web-programming",
+    "title": "ওয়েব প্রোগ্রামিং"
   }
 ]
