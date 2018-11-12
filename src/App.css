@@ -323,3 +323,51 @@ footer ul li a {
     margin-top: -25px;
   }
 }
+
+@media print{
+  .navbar ul {
+    margin: 0 auto!important;
+    padding: 0!important;
+    text-align: center!important;
+  }
+
+  .brand a {
+    color: #fff!important;
+    filter: invert(100%)!important;
+    position: fixed!important;
+    bottom: 0!important;
+    left: 0!important;
+  }
+
+  .brand span {
+    background-color: #fff!important;
+    color: #000!important;
+    padding: 0 8px!important;
+    font-weight: 900!important;
+  }
+
+  .header .intro {
+    padding-bottom: 0px!important;
+  }
+
+ .navbar ul li.btn-add {
+   display: none!important
+ }
+
+ .single-content {
+   margin: 0 50px!important;
+ }
+
+ .single-item {
+   padding: 0!important;
+   box-shadow: none!important;
+ }
+
+ .single-items h3 {
+   color: #000!important;
+ }
+
+ .footer-area {
+   visibility: hidden!important;
+ }
+}
