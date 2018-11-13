@@ -133,10 +133,10 @@
           "items": [
             {
               "defination": "নতুন লাইন প্রর্দশন",
-              "code": "\n"
+              "code": "/\n/"
             }, {
               "defination": "ট্যাব প্রর্দশন",
-              "code": "\t"
+              "code": "/\t/"
             }, {
               "defination": "পূর্ণসংখ্যা প্রর্দশন",
               "code": "%d"
