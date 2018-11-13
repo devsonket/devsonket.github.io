@@ -9,38 +9,38 @@
             "title": "গ্লোবাল অবজেক্ট",
             "items": [
                 {
-                    "defination": "বর্তমান module এর ডিরেক্টরির নাম দেখা",
+                    "definition": "বর্তমান module এর ডিরেক্টরির নাম দেখা",
                     "code": "__dirname অথবা path.dirname()"
                 },
                 {
-                    "defination": "বর্তমান module এর নাম দেখা",
+                    "definition": "বর্তমান module এর নাম দেখা",
                     "code": "__filename"
                 },
                 {
-                    "defination": "module ইমপোর্ট করা",
+                    "definition": "module ইমপোর্ট করা",
                     "code": "require()"
                 },
                 {
-                    "defination": "module থেকে এক্সপোর্ট করা",
+                    "definition": "module থেকে এক্সপোর্ট করা",
                     "code": "exports"
                 },
                 {
-                    "defination": "কনসোলে লগ প্রিন্ট করা",
+                    "definition": "কনসোলে লগ প্রিন্ট করা",
                     "code": "console.log()"
                 },
                 {
-                    "defination": "এরোর প্রিন্ট করা",
+                    "definition": "এরোর প্রিন্ট করা",
                     "code": "console.error()"
                 },
                 {
-                    "defination": "ওয়ার্নিং দেখানো",
+                    "definition": "ওয়ার্নিং দেখানো",
                     "code": "console.warn()"
                 },
                 {
-                    "defination": "নতুন URL ডিফাইন করা",
+                    "definition": "নতুন URL ডিফাইন করা",
                     "code": "const myURL = new URL"
                 }
             ]
         }
-    ] 
+    ]
 }

@@ -9,25 +9,25 @@
       "title": "এখানে টাইটেল যাবে",
       "items": [
         {
-          "defination": "বর্ণনা",
+          "definition": "বর্ণনা",
           "code": "কোড"
         }, {
-          "defination": "বর্ণনা",
+          "definition": "বর্ণনা",
           "code": "কোড"
         }, {
-          "defination": "বর্ণনা",
+          "definition": "বর্ণনা",
           "code": "কোড"
         }, {
-          "defination": "বর্ণনা",
+          "definition": "বর্ণনা",
           "code": "কোড"
         }, {
-          "defination": "বর্ণনা",
+          "definition": "বর্ণনা",
           "code": "কোড"
         }, {
-          "defination": "বর্ণনা",
+          "definition": "বর্ণনা",
           "code": "কোড"
         }, {
-          "defination": "বর্ণনা",
+          "definition": "বর্ণনা",
           "code": "কোড"
         }
       ]
@@ -35,19 +35,19 @@
       "title": "টাইটেল",
       "items": [
         {
-          "defination": "কাজের বিবরণ",
+          "definition": "কাজের বিবরণ",
           "code": "কোড"
         }, {
-          "defination": "কাজের বিবরণ",
+          "definition": "কাজের বিবরণ",
           "code": "কোড"
         }, {
-          "defination": "কাজের বিবরণ",
+          "definition": "কাজের বিবরণ",
           "code": "কোড"
         }, {
-          "defination": "কাজের বিবরণ",
+          "definition": "কাজের বিবরণ",
           "code": "কোড"
         }, {
-          "defination": "কাজের বিবরণ",
+          "definition": "কাজের বিবরণ",
           "code": "কোড"
         }
       ]
@@ -55,22 +55,22 @@
       "title": "লাইফসাইকেল",
       "items": [
         {
-          "defination": "রেন্ডারিং এর আগে",
+          "definition": "রেন্ডারিং এর আগে",
           "code": "constructor (props)"
         }, {
-          "defination": "কম্পোনেন্ট মাউন্ট হওয়ার আগে",
+          "definition": "কম্পোনেন্ট মাউন্ট হওয়ার আগে",
           "code": "componentWillMount()"
         }, {
-          "defination": "রেন্ডার",
+          "definition": "রেন্ডার",
           "code": "render()"
         }, {
-          "defination": "রেন্ডার হওয়ার পর",
+          "definition": "রেন্ডার হওয়ার পর",
           "code": "componentDidMount()"
         }, {
-          "defination": "ডম রিমুভ করার আগে",
+          "definition": "ডম রিমুভ করার আগে",
           "code": "componentWillUnmount()"
         }, {
-          "defination": "এরর ক্যাচ করার জন্যে",
+          "definition": "এরর ক্যাচ করার জন্যে",
           "code": "componentDidCatch()"
         }
       ]

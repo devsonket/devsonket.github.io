@@ -9,13 +9,13 @@
       "title": "সাধারণ",
       "items": [
         {
-          "defination": "কমান্ড প্যালেট দেখানো/হাইড করা",
+          "definition": "কমান্ড প্যালেট দেখানো/হাইড করা",
           "code": "Ctrl + Shift + P"
         }, {
-          "defination": "সিলেক্ট করা লাইনকে কমেন্ট করে ফেলা",
+          "definition": "সিলেক্ট করা লাইনকে কমেন্ট করে ফেলা",
           "code": "Ctrl + `"
         }, {
-          "defination": "কি কি অটোকমপ্লিট হতে পারে দেখা",
+          "definition": "কি কি অটোকমপ্লিট হতে পারে দেখা",
           "code": "Ctrl + K, B"
         }
       ]
@@ -23,16 +23,16 @@
       "title": "খোঁজাখুঁজি",
       "items": [
         {
-          "defination": "ফাইলের ভিতরে খোঁজা",
+          "definition": "ফাইলের ভিতরে খোঁজা",
           "code": "F11"
         }, {
-          "defination": "পরে থেকে কিছু খোঁজা",
+          "definition": "পরে থেকে কিছু খোঁজা",
           "code": "Shift + F11"
         }, {
-          "defination": "প্রোজেক্ট থেকে খোঁজা",
+          "definition": "প্রোজেক্ট থেকে খোঁজা",
           "code": "Ctrl + Shift + N"
         }, {
-          "defination": "সিলেক্ট করা টেক্সট দিয়ে খোঁজা",
+          "definition": "সিলেক্ট করা টেক্সট দিয়ে খোঁজা",
           "code": "Ctrl + N"
         }
       ]
@@ -40,16 +40,16 @@
       "title": "উইন্ডো ম্যানিপুলেশন",
       "items": [
         {
-          "defination": "",
+          "definition": "",
           "code": ""
         }, {
-          "defination": "",
+          "definition": "",
           "code": ""
         }, {
-          "defination": "",
+          "definition": "",
           "code": ""
         }, {
-          "defination": "",
+          "definition": "",
           "code": ""
         }
       ]
