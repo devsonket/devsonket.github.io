@@ -64,6 +64,7 @@ class Content extends Component {
                   {items ? items.map(({defination, code}, index) => (
                     <li key={index} className="item">
                       {defination && <p className="def">{defination}</p>}
+                      {definition && <p className="def">{definition}</p>}
                       <pre className="code">
                         <code>{code}</code>
                       </pre>
