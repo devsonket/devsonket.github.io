@@ -1,20 +1,5 @@
 [
   {
-    "id": "codendesc",
-    "title": "কোড এবং বর্ণনা"
-  },
-  {
-    "id": "onlycode",
-    "title": "শুধুমাত্র কোড"
-  },
-  {
-    "id": "mix",
-    "title": "মিক্স"
-  },
-  {
-    "id": "not-found",
-    "title": "এরর পেজ"
-  }, {
     "id": "shortcut-chrome-win",
     "title": "গুগুল ক্রোম(উইন্ডোজ)"
   }, {
@@ -23,5 +8,27 @@
   }, {
     "id": "linux-command-line",
     "title": "লিনাক্স কমান্ড লাইন"
+  }, {
+    "id": "js-object-method",
+    "title": "জাভাস্ক্রিপ্ট অবজেক্ট মেথড"
+  }, {
+    "id": "cpp",
+    "title": "সি++"
+  }, {
+    "id": "c-cheat-sheet",
+    "title": "সি"
+  }, {
+    "id": "node-js-global",
+    "title": "নোড জেএস"
+  }, {
+    "id": "web-programming",
+    "title": "ওয়েব প্রোগ্রামিং"
+  }, {
+    "id": "shortcut-atom-win",
+    "title": "অ্যাটম কোড এডিটর(উইন্ডোজ)"
+  },
+  {
+    "id": "shortcut-vscode-win",
+    "title": "ভিস্যুয়াল স্টুডিও কোড এডিটর(উইন্ডোজ)"
   }
 ]

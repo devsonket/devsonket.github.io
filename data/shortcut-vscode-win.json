@@ -1,0 +1,101 @@
+{
+    "id": "shortcut-vscode-win",
+    "title": "শর্টকাট কী - ভিস্যুয়াল স্টুডিও কোড এডিটর(উইন্ডোজ)",
+    "slug": "shortcut-vscode-win",
+    "description": "ভিস্যুয়াল স্টুডিও কোড এডিটর এর প্রয়োজনী উইন্ডোজ শর্টকাট কী",
+    "colorPref": "#333",
+    "contents": [
+        {
+            "title": "সাধারণ",
+            "items": [
+                {
+                    "defination": "কমান্ড প্যালেট দেখানো/হাইড করা",
+                    "code": "Ctrl + Shift + P, F1"
+                },
+                {
+                    "defination": "কুইক ওপেন",
+                    "code": "Ctrl + P"
+                },
+                {
+                    "defination": "নতুন উইন্ডো ওপেন করা",
+                    "code": "Ctrl + Shift + N"
+                },
+                {
+                    "defination": "উইন্ডো ক্লোস করা",
+                    "code": "Ctrl + Shift + W"
+                },
+                {
+                    "defination": "ইউজার সেটিংসে যাওয়া",
+                    "code": "Ctrl +"
+                },
+                {
+                    "defination": "কীবোর্ড শর্টকার্ট দেখা",
+                    "code": "Ctrl + K Ctrl + S"
+                }
+            ]
+        },
+        {
+            "title": "ফাইল ম্যানেজমেন্ট",
+            "items": [
+                {
+                    "defination": "নতুন ফাইল",
+                    "code": "Ctrl + N"
+                },
+                
+                {
+                    "defination": "ওপেন ফাইল",
+                    "code": "Ctrl + O"
+                },
+                {
+                    "defination": "সেভ করা",
+                    "code": "Ctrl + S, Ctrl + Shift + S"
+                },
+                {
+                    "defination": "সকল কিছু সেভ করা",
+                    "code": "Ctrl + K S"
+                },
+                {
+                    "defination": "ক্লোস করা",
+                    "code": "Ctrl + F4"
+                },
+                {
+                    "defination": "সকল কিছু ক্লোস করা",
+                    "code": "Ctrl + K Ctrl + W"
+                },
+                {
+                    "defination": "ক্লোস করা এডিটর ওপেন করা",
+                    "code": "Ctrl + Shift + T"
+                },
+                {
+                    "defination": "প্রিভিও মুড এডিটর ওপেন রাখা",
+                    "code": "Ctrl + K Enter"
+                },
+                {
+                    "defination": "এক্টিভ ফাইলের পাথ কপি করা",
+                    "code": "Ctrl + K P"
+                },
+                {
+                    "defination": "এক্সপ্লোরারে এক্টিভ ফাইল দেখানো",
+                    "code": "Ctrl + K R"
+                },
+                {
+                    "defination": "নতুন ওয়ার্কপ্লেস ওপেন করা",
+                    "code": "Ctrl + K O"
+                }
+            ]
+        },
+        {
+            "title": "খোঁজাখুঁজি এবং প্রতিস্থাপন",
+            "items": [
+                {
+                    "defination": "ফাইলের ভিতরে খোঁজা",
+                    "code": "Ctrl + F"
+                },
+                {
+                    "defination": "প্রতিস্থাপন করা",
+                    "code": "Ctrl + H"
+                }
+            ]
+        }
+    ]
+}
