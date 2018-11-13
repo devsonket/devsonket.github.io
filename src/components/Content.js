@@ -61,9 +61,8 @@ class Content extends Component {
               <div key={index} className="single-items">
                 <h3>{title}</h3>
                   <ul className="single-item">
-                  {items ? items.map(({defination, code}, index) => (
+                  {items ? items.map(({definition, code}, index) => (
                     <li key={index} className="item">
-                      {defination && <p className="def">{defination}</p>}
                       {definition && <p className="def">{definition}</p>}
                       <pre className="code">
                         <code>{code}</code>
