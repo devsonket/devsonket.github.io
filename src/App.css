@@ -200,6 +200,7 @@
 }
 
 .btn {
+  border: none;
   margin: 0 5px;
   color: #fff;
   text-decoration: none;
@@ -218,6 +219,31 @@
 
 .btn-bug {
   background-color: #F44336;
+}
+
+.print {
+  text-align: center;
+}
+
+.btn-print {
+  background-color: #333;
+}
+
+ul.social {
+  list-style: none;
+  text-align: center;
+  padding: 15px 0;
+}
+
+ul.social h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+ul.social li {
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
 .error {
@@ -325,6 +351,14 @@ footer ul li a {
 }
 
 @media print{
+  @page {
+    margin: 0.5cm;
+  }
+
+  .no-print {
+    display: none!important;
+  }
+
   .single-content>div {
     display: table!important;
     flex-basis: 100%;
@@ -336,7 +370,7 @@ footer ul li a {
   }
 
   .single-item .item {
-    flex: 1 1 50%!important;
+    flex: 2 2 50%!important;
     padding: 0 15px!important;
   }
 
@@ -349,9 +383,6 @@ footer ul li a {
   .brand a {
     color: #fff!important;
     filter: invert(100%)!important;
-    /*position: fixed!important;*/
-    /*bottom: 0!important;*/
-    /*left: 0!important;*/
   }
 
   .brand span {
