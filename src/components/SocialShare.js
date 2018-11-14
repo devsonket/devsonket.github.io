@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { FacebookShareButton, LinkedinShareButton, TwitterShareButton, PinterestShareButton, WhatsappShareButton, RedditShareButton, EmailShareButton, TumblrShareButton,
-  FacebookIcon, LinkedinIcon, TwitterIcon, PinterestIcon, WhatsappIcon, RedditIcon, EmailIcon, TumblrIcon } from 'react-share';
+import { FacebookShareButton, LinkedinShareButton, TwitterShareButton, WhatsappShareButton, RedditShareButton, EmailShareButton, TumblrShareButton,
+  FacebookIcon, LinkedinIcon, TwitterIcon, WhatsappIcon, RedditIcon, EmailIcon, TumblrIcon } from 'react-share';
 
 export default({title, description}) => {
   const url = window.location.href;
@@ -37,16 +37,6 @@ export default({title, description}) => {
           <TwitterIcon
             size={size} round />
         </TwitterShareButton>
-      </li>
-      <li>
-        <PinterestShareButton
-          media={''}
-          url={url}
-          title={title}
-          className="btn-share">
-          <PinterestIcon
-            size={size} round />
-        </PinterestShareButton>
       </li>
       <li>
         <WhatsappShareButton

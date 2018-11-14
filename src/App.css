@@ -360,7 +360,6 @@ footer ul li a {
   }
 
   .single-content>div {
-    display: table!important;
     flex-basis: 100%;
   }
 
