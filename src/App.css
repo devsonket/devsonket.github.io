@@ -325,18 +325,33 @@ footer ul li a {
 }
 
 @media print{
+  .single-content>div {
+    display: table!important;
+    flex-basis: 100%;
+  }
+
+  .single-item {
+    display: flex!important;
+    flex-wrap: wrap!important;
+  }
+
+  .single-item .item {
+    flex: 1 1 50%!important;
+    padding: 0 15px!important;
+  }
+
   .navbar ul {
     margin: 0 auto!important;
-    padding: 0!important;
+    padding: 25px!important;
     text-align: center!important;
   }
 
   .brand a {
     color: #fff!important;
     filter: invert(100%)!important;
-    position: fixed!important;
-    bottom: 0!important;
-    left: 0!important;
+    /*position: fixed!important;*/
+    /*bottom: 0!important;*/
+    /*left: 0!important;*/
   }
 
   .brand span {
