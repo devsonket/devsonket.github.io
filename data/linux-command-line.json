@@ -132,6 +132,29 @@
           "code": "^abc^123"
         }
       ]
+    }, {
+      "title": "হার্ডওয়্যার তথ্য",
+      "items": [
+        {
+          "definition": "কার্নেল রিং বাফারে ম্যাসেজ দেখা",
+          "code": "dmesg"
+        }, {
+          "definition": "সিপিও তথ্য দেখা",
+          "code": "cat /proc/cpuinfo"
+        }, {
+          "definition": "মেমোরি তথ্য দেখা",
+          "code": "cat /proc/meminfo"
+        }, {
+          "definition": "খালি এবং ব্যবহৃত মেমোরি দেখা",
+          "code": "free -h, free -m, free -g"
+        }, {
+          "definition": "PCI ডিভাইস দেখা",
+          "code": "lspci -tv"
+        }, {
+          "definition": "USB ডিভাইস দেখা",
+          "code": "lsusb -tv"
+        }
+      ]
     }
   ]
 }
