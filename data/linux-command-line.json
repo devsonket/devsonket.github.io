@@ -50,6 +50,12 @@
         }, {
           "definition": "vim এডিটর দিয়ে ফাইল এডিট করা",
           "code": "vi YourFileName"
+        }, {
+          "definition": "টারমিনাল ক্লোজ করা",
+          "code": "exit"
+        }, {
+          "definition": "টারমিনালের সকল কমান্ড মুছে ফেলা",
+          "code": "clear"
         }
       ]
     }, {
