@@ -433,6 +433,55 @@
         }
       ]
     }, {
+      "title": "ইভেন্ট হ্যান্ডেলার",
+      "items": [
+        {
+          "code": "onAbort"
+        }, {
+          "code": "onBlur"
+        }, {
+          "code": "onChange"
+        }, {
+          "code": "onClick"
+        }, {
+          "code": "onDblClick"
+        }, {
+          "code": "onError"
+        }, {
+          "code": "onFocus"
+        }, {
+          "code": "onKeyDown"
+        }, {
+          "code": "onKeyPress"
+        }, {
+          "code": "onKeyUp"
+        }, {
+          "code": "onLoad"
+        }, {
+          "code": "onMouseDown"
+        }, {
+          "code": "onMouseMove"
+        }, {
+          "code": "onMouseOut"
+        }, {
+          "code": "onMouseOver"
+        }, {
+          "code": "onMouseUp"
+        }, {
+          "code": "onMove"
+        }, {
+          "code": "onReset"
+        }, {
+          "code": "onResize"
+        }, {
+          "code": "onSelect"
+        }, {
+          "code": "onSubmit"
+        }, {
+          "code": "onUnload"
+        }
+      ]
+    }, {
       "title": "XMLHttpRequest(ফরম্যাট)",
       "items": [
         {
