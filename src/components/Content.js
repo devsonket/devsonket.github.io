@@ -8,6 +8,8 @@ import HeaderContent from './HeaderContent';
 import Page404 from './404';
 import Footer from './Footer';
 
+import ogTag from '../utils/ogTag';
+
 class Content extends Component {
   state = {
     data: '',
@@ -24,11 +26,16 @@ class Content extends Component {
     document.title = `${title} - ডেভেলপার চিটশীট`;
   }
 
+  setOGMeta = ({title, description}) => {
+    ogTag(title, description);
+  }
+
   getData = async(id) => {
     try {
       const { data } = await axios(`https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/${id}.json`);
       this.setState({data});
       this.setTitle();
+      this.setOGMeta(this.state.data);
     } catch(e) {
       this.setState({redirect: true})
     }
