@@ -1,0 +1,34 @@
+{
+    "id": "python3-cheat-sheet",
+    "title": "পাইথন ৩ চিটশিট",
+    "slug": "python3-cheat-sheet",
+    "description": "পাইথন ৩ প্রোগ্রামিং এর চিটশিট",
+    "colorPref": "#ffff00",
+    "contents": [
+        {
+            "title": "বেইস টাইপস",
+            "items": [
+                {
+                    "definition": "পূর্ণ সংখ্যা",
+                    "code": "int উদাহরন: 234, 0, -193, 0b010, 0xF3"
+                },
+                {
+                    "definition": "ফ্লোটিং পয়েন্ট সংখ্যা",
+                    "code": "float উদাহরন: 9.23, 0.0, -1.7e-6"
+                },
+                {
+                    "definition": "বুলিয়ান",
+                    "code": "bool উদাহরন: True, False"
+                },
+                {
+                    "definition": "স্ট্রিং অথবা অক্ষর",
+                    "code": "str উদাহরন: 'hello', \"world\""
+                },
+                {
+                    "definition": "বাইটস",
+                    "code": "bytes উদাহরন: b'toto\\xfe\\775'"
+                }
+            ]
+        }
+    ]
+}
