@@ -6,7 +6,7 @@
     "colorPref": "#ffff00",
     "contents": [
         {
-            "title": "বেইস টাইপস",
+            "title": "বেইস টাইপস (Base Types)",
             "items": [
                 {
                     "definition": "পূর্ণ সংখ্যা",
@@ -27,6 +27,27 @@
                 {
                     "definition": "বাইটস",
                     "code": "bytes উদাহরন: b'toto\\xfe\\775'"
+                }
+            ]
+        },
+        {
+            "title": "কনটেইনার টাইপস (Container Types)",
+            "items": [
+                {
+                    "definition": "লিস্ট",
+                    "code": "list উদাহরন: [1, 2, 3], ['x', 22, -3, 2]"
+                },
+                {
+                    "definition": "ডিকশনারি",
+                    "code": "dict উদাহরন: {'one': 1, 'two': 2}"
+                },
+                {
+                    "definition": "টুপল (ইমিউটেবল বা অপরিবর্তনযোগ্য ডেটা টাইপ)",
+                    "code": "tuple উদাহরন: (1, 2, 'x',)"
+                },
+                {
+                    "definition": "সেট",
+                    "code": "set উদাহরন: {1, 2, 'y'}"
                 }
             ]
         }
