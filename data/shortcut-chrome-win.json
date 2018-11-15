@@ -32,6 +32,9 @@
         }, {
           "definition": "প্রাইভেট ব্রাউজিং শুরু করা",
           "code": "Ctrl + Shift + N"
+        }, {
+          "definition": "নতুন ট্যাব খোলা",
+          "code": "Ctrl + T"
         }
       ]
     }, {
