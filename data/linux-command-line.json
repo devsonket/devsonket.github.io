@@ -12,6 +12,9 @@
           "definition": "সিস্টেম এবং কার্নেল দেখা",
           "code": "uname -a"
         }, {
+          "definition": "শুধু কার্নেল দেখা",
+          "code": "uname -r"
+        }, {
           "definition": "ডিস্ট্রিবিউশন দেখা",
           "code": "head -n1 /etc/issue"
         }, {
@@ -21,14 +24,29 @@
           "definition": "সিস্টেম ডেট দেখা",
           "code": "date"
         }, {
+          "definition": "চলমান মাসের ক্যালেন্ডার দেখা",
+          "code": "cal"
+        }, {
           "definition": "আপটাইম দেখা",
           "code": "uptime"
+        }, {
+          "definition": "হোস্টনেইম দেখা",
+          "code": "hostname"
         }, {
           "definition": "ইউজারনেইম দেখা",
           "code": "whoami"
         }, {
+          "definition": "অনলাইনে কে আছে দেখা",
+          "code": "w"
+        }, {
           "definition": "কমান্ডের ম্যানুয়াল দেখা",
           "code": "man কমান্ড"
+        }, {
+          "definition": "আইপি এড্রেস দেখা",
+          "code": "hostname -i"
+        }, {
+          "definition": "রিবুট হিস্টরি দেখা",
+          "code": "last reboot"
         }, {
           "definition": "নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা",
           "code": "mkdir NewDirectoryName"
