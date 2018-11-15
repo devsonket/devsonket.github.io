@@ -36,6 +36,15 @@
           "definition": "নতুন ফাইল তৈরি করা",
           "code": "touch YourFileName"
         }, {
+          "definition": "ফাইল মুছে ফেলা",
+          "code": "rm YourFileName" 
+        }, {
+          "definition": "পুরো একটি ডিরেক্টরি মুছে ফেলা",
+          "code": "rm -rf YourDirectoryName"
+        }, {
+          "definition": "ফাইল এক জায়গা থেকে অন্য জায়গায় মুভ করা",
+          "code": "mv PathToSourceFile PathToWhereYouWantToMove"
+        }, {
           "definition": "রুট ইউজারে প্রবেশ করা",
           "code": "sudo su"
         }, {
@@ -45,6 +54,9 @@
           "definition": "ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনাসহ)",
           "code": "ls -l"
         }, {
+          "definition": "ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনা এবং লুকানো ফাইল/ডিরেক্টরিসহ)",
+          "code": "ls -al"
+        }, {
           "definition": "কোন ফোল্ডার অথবা ডিরেক্টরিতে প্রবেশ করা",
           "code": "cd YourFileName"
         }, {
@@ -52,7 +64,7 @@
           "code": "vi YourFileName"
         }, {
           "definition": "টারমিনাল ক্লোজ করা",
-          "code": "exit"
+          "code": "exit অথবা Ctrl+D"
         }, {
           "definition": "টারমিনালের সকল কমান্ড মুছে ফেলা",
           "code": "clear"
