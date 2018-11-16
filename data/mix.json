@@ -4,103 +4,91 @@
   "slug": "mix",
   "description": "সব ফরম্যাট একসাথে মিক্স করেও দিতে পারবেন",
   "colorPref": "#000",
-  "contents": [
-    {
-      "title": "এখানে টাইটেল যাবে",
-      "items": [
-        {
-          "definition": "বর্ণনা",
-          "code": "কোড"
-        }, {
-          "definition": "বর্ণনা",
-          "code": "কোড"
-        }, {
-          "definition": "বর্ণনা",
-          "code": "কোড"
-        }, {
-          "definition": "বর্ণনা",
-          "code": "কোড"
-        }, {
-          "definition": "বর্ণনা",
-          "code": "কোড"
-        }, {
-          "definition": "বর্ণনা",
-          "code": "কোড"
-        }, {
-          "definition": "বর্ণনা",
-          "code": "কোড"
-        }
-      ]
+  "contents": [{
+    "title": "এখানে টাইটেল যাবে",
+    "items": [{
+      "definition": "বর্ণনা",
+      "code": "কোড"
     }, {
-      "title": "টাইটেল",
-      "items": [
-        {
-          "code": "কোড"
-        }, {
-          "code": "কোড"
-        }, {
-          "code": "কোড"
-        }, {
-          "code": "কোড"
-        }, {
-          "code": "কোড"
-        }
-      ]
+      "definition": "বর্ণনা",
+      "code": "কোড"
     }, {
-      "title": "টাইটেল",
-      "items": [
-        {
-          "definition": "কাজের বিবরণ",
-          "code": "কোড"
-        }, {
-          "definition": "কাজের বিবরণ",
-          "code": "কোড"
-        }, {
-          "definition": "কাজের বিবরণ",
-          "code": "কোড"
-        }, {
-          "definition": "কাজের বিবরণ",
-          "code": "কোড"
-        }, {
-          "definition": "কাজের বিবরণ",
-          "code": "কোড"
-        }
-      ]
+      "definition": "বর্ণনা",
+      "code": "কোড"
     }, {
-      "title": "টাইটেল",
-      "items": [
-        {
-          "code": "কোড"
-        }, {
-          "code": "কোড"
-        }, {
-          "code": "কোড"
-        }, {
-          "code": "কোড"
-        }, {
-          "code": "কোড"
-        }
-      ]
+      "definition": "বর্ণনা",
+      "code": "কোড"
     }, {
-      "title": "টাইটেল",
-      "items": [
-        {
-          "definition": "কাজের বিবরণ",
-          "code": "কোড"
-        }, {
-          "definition": "কাজের বিবরণ",
-          "code": "কোড"
-        }, {
-          "definition": "কাজের বিবরণ",
-          "code": "কোড"
-        }, {
-          "definition": "কাজের বিবরণ",
-          "code": "কোড"
-        }, {
-          "definition": "কাজের বিবরণ",
-          "code": "কোড"
-        }
-      ]
-    }
-  ]
+      "definition": "বর্ণনা",
+      "code": "কোড"
+    }, {
+      "definition": "বর্ণনা",
+      "code": "কোড"
+    }, {
+      "definition": "বর্ণনা",
+      "code": "কোড"
+    }]
+  }, {
+    "title": "টাইটেল",
+    "items": [{
+      "code": "কোড"
+    }, {
+      "code": "কোড"
+    }, {
+      "code": "কোড"
+    }, {
+      "code": "কোড"
+    }, {
+      "code": "কোড"
+    }]
+  }, {
+    "title": "টাইটেল",
+    "items": [{
+      "definition": "কাজের বিবরণ",
+      "code": "কোড"
+    }, {
+      "definition": "কাজের বিবরণ",
+      "code": "কোড"
+    }, {
+      "definition": "কাজের বিবরণ",
+      "code": "কোড"
+    }, {
+      "definition": "কাজের বিবরণ",
+      "code": "কোড"
+    }, {
+      "definition": "কাজের বিবরণ",
+      "code": "কোড"
+    }]
+  }, {
+    "title": "টাইটেল",
+    "items": [{
+      "code": "কোড"
+    }, {
+      "code": "কোড"
+    }, {
+      "code": "কোড"
+    }, {
+      "code": "কোড"
+    }, {
+      "code": "কোড"
+    }]
+  }, {
+    "title": "টাইটেল",
+    "items": [{
+      "definition": "কাজের বিবরণ",
+      "code": "কোড"
+    }, {
+      "definition": "কাজের বিবরণ",
+      "code": "কোড"
+    }, {
+      "definition": "কাজের বিবরণ",
+      "code": "কোড"
+    }, {
+      "definition": "কাজের বিবরণ",
+      "code": "কোড"
+    }, {
+      "definition": "কাজের বিবরণ",
+      "code": "কোড"
+    }]
+  }]
 }

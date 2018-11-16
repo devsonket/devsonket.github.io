@@ -1,76 +1,72 @@
 {
-    "id": "python3-cheat-sheet",
-    "title": "পাইথন ৩ চিটশিট",
-    "slug": "python3-cheat-sheet",
-    "description": "পাইথন ৩ প্রোগ্রামিং এর চিটশিট",
-    "colorPref": "#ffff00",
-    "contents": [
-        {
-            "title": "বেইস টাইপস (Base Types)",
-            "items": [
-                {
-                    "definition": "পূর্ণ সংখ্যা",
-                    "code": "int উদাহরন: 234, 0, -193, 0b010, 0xF3"
-                },
-                {
-                    "definition": "ফ্লোটিং পয়েন্ট সংখ্যা",
-                    "code": "float উদাহরন: 9.23, 0.0, -1.7e-6"
-                },
-                {
-                    "definition": "বুলিয়ান",
-                    "code": "bool উদাহরন: True, False"
-                },
-                {
-                    "definition": "স্ট্রিং অথবা অক্ষর",
-                    "code": "str উদাহরন: 'hello', \"world\""
-                },
-                {
-                    "definition": "বাইটস",
-                    "code": "bytes উদাহরন: b'toto\\xfe\\775'"
-                }
-            ]
+  "id": "python3-cheat-sheet",
+  "title": "পাইথন ৩ চিটশিট",
+  "slug": "python3-cheat-sheet",
+  "description": "পাইথন ৩ প্রোগ্রামিং এর চিটশিট",
+  "colorPref": "#ffff00",
+  "contents": [{
+      "title": "বেইস টাইপস (Base Types)",
+      "items": [{
+          "definition": "পূর্ণ সংখ্যা",
+          "code": "int উদাহরন: 234, 0, -193, 0b010, 0xF3"
         },
         {
-            "title": "কনটেইনার টাইপস (Container Types)",
-            "items": [
-                {
-                    "definition": "লিস্ট",
-                    "code": "list উদাহরন: [1, 2, 3], ['x', 22, -3, 2]"
-                },
-                {
-                    "definition": "ডিকশনারি",
-                    "code": "dict উদাহরন: {'one': 1, 'two': 2}"
-                },
-                {
-                    "definition": "টুপল (ইমিউটেবল বা অপরিবর্তনযোগ্য ডেটা টাইপ)",
-                    "code": "tuple উদাহরন: (1, 2, 'x',)"
-                },
-                {
-                    "definition": "সেট",
-                    "code": "set উদাহরন: {1, 2, 'y'}"
-                }
-            ]
+          "definition": "ফ্লোটিং পয়েন্ট সংখ্যা",
+          "code": "float উদাহরন: 9.23, 0.0, -1.7e-6"
         },
         {
-            "title": "ভ্যারিয়েবল এসাইনমেন্ট (Variable Assginment)",
-            "items": [
-                {
-                    "code": "x = 1.2 + 8 + sin(0)",
-                    "definition": "এখানে x হলো ভ্যারিয়েবল এবং সমান চিহ্নের ডান পাশে রয়েছে কম্পিউটেড এক্সপ্রেশন অথবা ভ্যালু"
-                },
-                {
-                    "code": "y, z, r = 9.2, -7.6, 'bad'" ,
-                    "definition": "একাধিক ভ্যারিয়েবল এসাইনমেন্টঃ ডানপাশে ভ্যারিয়েবন সমূহ এবং বাম পাশে কমা দ্বারা বিভক্ত এদের ভ্যালু সমহু ক্রমান্বয়ে সজ্জিত"
-                },
-                {
-                    "code": "x += 3 (or x = x + 3)",
-                    "definition": "Increment: ইনক্রিমেন্ট"
-                },
-                {
-                    "code": "x -= 3 (or x = x + 3)",
-                    "definition": "Decrement: ডিক্রিমেন্ট"
-                }
-            ]
+          "definition": "বুলিয়ান",
+          "code": "bool উদাহরন: True, False"
+        },
+        {
+          "definition": "স্ট্রিং অথবা অক্ষর",
+          "code": "str উদাহরন: 'hello', \"world\""
+        },
+        {
+          "definition": "বাইটস",
+          "code": "bytes উদাহরন: b'toto\\xfe\\775'"
         }
-    ]
+      ]
+    },
+    {
+      "title": "কনটেইনার টাইপস (Container Types)",
+      "items": [{
+          "definition": "লিস্ট",
+          "code": "list উদাহরন: [1, 2, 3], ['x', 22, -3, 2]"
+        },
+        {
+          "definition": "ডিকশনারি",
+          "code": "dict উদাহরন: {'one': 1, 'two': 2}"
+        },
+        {
+          "definition": "টুপল (ইমিউটেবল বা অপরিবর্তনযোগ্য ডেটা টাইপ)",
+          "code": "tuple উদাহরন: (1, 2, 'x',)"
+        },
+        {
+          "definition": "সেট",
+          "code": "set উদাহরন: {1, 2, 'y'}"
+        }
+      ]
+    },
+    {
+      "title": "ভ্যারিয়েবল এসাইনমেন্ট (Variable Assginment)",
+      "items": [{
+          "code": "x = 1.2 + 8 + sin(0)",
+          "definition": "এখানে x হলো ভ্যারিয়েবল এবং সমান চিহ্নের ডান পাশে রয়েছে কম্পিউটেড এক্সপ্রেশন অথবা ভ্যালু"
+        },
+        {
+          "code": "y, z, r = 9.2, -7.6, 'bad'",
+          "definition": "একাধিক ভ্যারিয়েবল এসাইনমেন্টঃ ডানপাশে ভ্যারিয়েবন সমূহ এবং বাম পাশে কমা দ্বারা বিভক্ত এদের ভ্যালু সমহু ক্রমান্বয়ে সজ্জিত"
+        },
+        {
+          "code": "x += 3 (or x = x + 3)",
+          "definition": "Increment: ইনক্রিমেন্ট"
+        },
+        {
+          "code": "x -= 3 (or x = x + 3)",
+          "definition": "Decrement: ডিক্রিমেন্ট"
+        }
+      ]
+    }
+  ]
 }

@@ -1,91 +1,88 @@
 {
-    "id": "cpp-programming",
-    "title": "সি++",
-    "slug": "cpp-programming",
-    "description": "সি প্লাস প্লাস প্রোগ্রামিং এর চিটশিট",
-    "colorPref": "#000",
-    "contents": [
-        {
-            "title": "ইনপুট/আউটপুট ফান্ডামেন্টালস",
-            "items": [
-                {
-                    "definition": "ইনপুট/আউটপুট স্ট্যান্ডার্ড লাইভ্রেরি ব্যবহার করার জন্য হেডার ফাইল",
-                    "code": "#include <iostream>"
-                },
-                {
-                    "definition": "কনসোলে আউটপুট দেখানো",
-                    "code": "cout >>"
-                },
-                {
-                    "definition": "কনসোলে এরোর দেখানো",
-                    "code": "cerr >>"
-                },
-                {
-                    "definition": "কনসোলে লগ দেখানো",
-                    "code": "clog >>"
-                },
-                {
-                    "definition": "কনসোল থেকে ইনপুট নেয়া",
-                    "code": "cin <<"
-                }
-            ]
+  "id": "cpp-programming",
+  "title": "সি++",
+  "slug": "cpp-programming",
+  "description": "সি প্লাস প্লাস প্রোগ্রামিং এর চিটশিট",
+  "colorPref": "#000",
+  "contents": [{
+      "title": "ইনপুট/আউটপুট ফান্ডামেন্টালস",
+      "items": [{
+          "definition": "ইনপুট/আউটপুট স্ট্যান্ডার্ড লাইভ্রেরি ব্যবহার করার জন্য হেডার ফাইল",
+          "code": "#include <iostream>"
         },
         {
-            "title": "ফাইল স্ট্রিমস",
-            "items": [
-                {
-                    "definition": "ইনপুট/আউটপুট ফাইল স্ট্রিমস এর হেডার কোড",
-                    "code": "#include <fstream>"
-                },
-                {
-                    "definition": "ফাইলে লিখার জন্য",
-                    "code": "ofstream myFile"
-                },
-                {
-                    "definition": "ফাইল থেকে পড়ার জন্য",
-                    "code": "ifstream myFile"
-                },
-                {
-                    "definition": "ফাইল ওপেন করা",
-                    "code": "myFile.open (filename.txt(file format))"
-                },
-                {
-                    "definition": "স্ট্রিম অবজেক্ট ব্যবহার করে ফাইল ওপেন করা ",
-                    "code": "open (filename, mode)"
-                },
-                {
-                    "definition": "ইনপুট অপারেশন হিসেবে ফাইল ওপেন করা",
-                    "code": "ios::in"
-                },
-                {
-                    "definition": "আউটপুট অপারেশন হিসেবে ফাইল ওপেন করা",
-                    "code": "ios::out"
-                },
-                {
-                    "definition": "বাইনারি মুডে ফাইল ওপেন করা",
-                    "code": "ios::binary"
-                },
-                {
-                    "definition": "ইনিশিয়াল পসিশন ফাইলের শেষভাগে সেট করা",
-                    "code": "ios::ate"
-                },
-                {
-                    "definition": "ফাইলের শেষভাগে সকল অপারেশন পারফর্ম করার জন্য",
-                    "code": "ios::app"
-                },
-                {
-                    "definition": "ফাইলের আগের কনটেন্ট ডিলিট করে নতুন কনটেন্ট দিয়ে রিপ্লেস করার জন্য",
-                    "code": "ios::trunc"
-                },
-                {
-                    "definition": "ফাইল ক্লোস করার জন্য",
-                    "code": "myFile.close()"
-                },
-                {
-                    "definition": "ফাইল ওপেন আছে কিনা তা চেক করার জন্য",
-                    "code": "myFile.is_open()"
-                }
-            ]
+          "definition": "কনসোলে আউটপুট দেখানো",
+          "code": "cout >>"
+        },
+        {
+          "definition": "কনসোলে এরোর দেখানো",
+          "code": "cerr >>"
+        },
+        {
+          "definition": "কনসোলে লগ দেখানো",
+          "code": "clog >>"
+        },
+        {
+          "definition": "কনসোল থেকে ইনপুট নেয়া",
+          "code": "cin <<"
         }
-    ]
+      ]
+    },
+    {
+      "title": "ফাইল স্ট্রিমস",
+      "items": [{
+          "definition": "ইনপুট/আউটপুট ফাইল স্ট্রিমস এর হেডার কোড",
+          "code": "#include <fstream>"
+        },
+        {
+          "definition": "ফাইলে লিখার জন্য",
+          "code": "ofstream myFile"
+        },
+        {
+          "definition": "ফাইল থেকে পড়ার জন্য",
+          "code": "ifstream myFile"
+        },
+        {
+          "definition": "ফাইল ওপেন করা",
+          "code": "myFile.open (filename.txt(file format))"
+        },
+        {
+          "definition": "স্ট্রিম অবজেক্ট ব্যবহার করে ফাইল ওপেন করা ",
+          "code": "open (filename, mode)"
+        },
+        {
+          "definition": "ইনপুট অপারেশন হিসেবে ফাইল ওপেন করা",
+          "code": "ios::in"
+        },
+        {
+          "definition": "আউটপুট অপারেশন হিসেবে ফাইল ওপেন করা",
+          "code": "ios::out"
+        },
+        {
+          "definition": "বাইনারি মুডে ফাইল ওপেন করা",
+          "code": "ios::binary"
+        },
+        {
+          "definition": "ইনিশিয়াল পসিশন ফাইলের শেষভাগে সেট করা",
+          "code": "ios::ate"
+        },
+        {
+          "definition": "ফাইলের শেষভাগে সকল অপারেশন পারফর্ম করার জন্য",
+          "code": "ios::app"
+        },
+        {
+          "definition": "ফাইলের আগের কনটেন্ট ডিলিট করে নতুন কনটেন্ট দিয়ে রিপ্লেস করার জন্য",
+          "code": "ios::trunc"
+        },
+        {
+          "definition": "ফাইল ক্লোস করার জন্য",
+          "code": "myFile.close()"
+        },
+        {
+          "definition": "ফাইল ওপেন আছে কিনা তা চেক করার জন্য",
+          "code": "myFile.is_open()"
+        }
+      ]
+    }
+  ]
 }
