@@ -153,6 +153,9 @@
         }, {
           "definition": "USB ডিভাইস দেখা",
           "code": "lsusb -tv"
+        }, {
+          "definition": "Hard Drive ডিভাইস দেখা",
+          "code": "lsblk"
         }
       ]
     }
