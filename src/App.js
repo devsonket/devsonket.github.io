@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { BrowserRouter, Route } from 'react-router-dom';
+import { BeatLoader } from 'react-spinners';
 
 import './App.css';
 
@@ -12,7 +13,7 @@ class App extends Component {
     tops: '',
     data: '',
     searchResult: '',
-    singleData: ''
+    loading: true
   }
 
   getData() {
@@ -29,7 +30,7 @@ class App extends Component {
     const data = this.getData();
     const tops = this.topData();
     const getAllData = await Promise.all([data, tops]);
-    this.setState({data: getAllData[0].data, tops: getAllData[1].data});
+    this.setState({data: getAllData[0].data, tops: getAllData[1].data, loading: false});
   }
 
   componentDidMount() {
@@ -45,8 +46,14 @@ class App extends Component {
 
   render() {
     const { searchAItem } = this;
-    const { tops, searchResult, data } = this.state;
-    
+    const { tops, searchResult, data, loading } = this.state;
+
+    if(loading) {
+      return <div className="loader">
+        <BeatLoader color={'#333'} />
+      </div>;
+    }
+
     return (
       <BrowserRouter>
         <div className="App">
