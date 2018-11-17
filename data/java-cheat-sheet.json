@@ -2,7 +2,7 @@
     "id": "java-cheat-sheet",
     "title": "জাভা প্রোগ্রামিং",
     "slug": "java-cheat-sheet",
-    "description": "প্রোগ্রামিং ল্যাঙ্গুয়েজ জাভা এর আপাদমস্তক",
+    "description": "প্রোগ্রামিং ল্যাঙ্গুয়েজ জাভা",
     "colorPref": "#3A241F",
     "contents": [
       {
@@ -35,10 +35,10 @@
             "definition": "সাধারন গাণিতিক অপারেশন",
             "code": " +, -, *, /, %"
           }, {
-            "definition": "i -এ ১ যোগ করবে অথবা i থেকে ১ বিয়োগ করবে এবং ফলাফল i এর মধ্যে রাখবে [আগে সাজ, পরে কাজ]",
+            "definition": "i এ ১ যোগ করবে অথবা ১ বিয়োগ করে i এর মধ্যে রাখবে, পরে i এর ভ্যালু রিটার্ন করবে",
             "code": "++i,--i"
           }, {
-            "definition": "i এর ভ্যালু মনে রাখবে, i এর ভ্যালু ১ বাড়াবে অথবা কমাবে এবং i এর আগের ভ্যালু রির্টান করবে [আগে কাজ, পরে সাজ]",
+            "definition": "i এর আগের ভ্যালু রির্টান করবে,পরে i এর ভ্যালু ১ বাড়াবে অথবা কমাবে",
             "code": "i++,i--"
           }, {
             "definition": "বেসিক লজিক্যাল অপারেটর",
@@ -48,43 +48,43 @@
             "code": "&, |, ^, ~!, <<, >>"
           }, {
             "definition": "তুলনামূলক অপারেটর",
-            "code": " == != < > <= >="
+            "code": " ==, !=, <, >, <=, >="
           }, {
             "definition": "নির্ধারিত করন অপারেটর",
             "code": "="
           }
         ]
       }, {
-        "title": "স্ক্যানের দিয়ে ইনপুট নেয়া",
+        "title": "স্ক্যানার দিয়ে ইনপুট নেয়া",
         "items": [
           {
             "definition": "স্ক্যানার অব্জেক্ট তৈরি",
             "code": "Scanner key = new Scanner(System.in)"
           },{
             "definition": "ইন্টিজার ইনপুট নেয়া",
-            "code": "int number = key.nextInt()"
+            "code": "key.nextInt()"
           },{
             "definition": "ডবল ইনপুট নেয়া",
-            "code": "Double number = key.nextDouble()"
+            "code": "key.nextDouble()"
           },{
             "definition": "লং ইনপুট নেয়া",
-            "code": "long number = key.nextLong()"
+            "code": "key.nextLong()"
           },{
             "definition": "স্পেসসহ স্ট্রিং ইনপুট নেয়া",
-            "code": "String name = key.nextLine()"
+            "code": "key.nextLine()"
           },{
             "definition": "স্পেস ছাড়া স্ট্রিং ইনপুট নেয়া",
-            "code": "String word = key.next()"
+            "code": "key.next()"
           },{
             "definition": "ক্যারেক্টার ইনপুট নেয়া",
-            "code": "char letter = key.next().charAt(0)"
+            "code": "key.next().charAt(0)"
           }
         ]
       },{
-          "title": "গাণিতিক বিল্ট-ইন ফাংশন",
+          "title": "গাণিতিক ফাংশন",
           "items": [
             {
-              "definition": "রুট করার জন্য",
+              "definition": "বর্গমূল করার জন্য",
               "code": "Math.sqrt()"
             }, {
               "definition": "সাধারন লগারিদম পাওয়ার জন্য",
@@ -96,11 +96,11 @@
               "definition": "y এর পাওয়ার হিসেবে x কে নেয়ার জন্য",
               "code": "Math.pow(x,y)"
             }, {
-              "definition": "অনেক গুলো নাম্বার থেকে সিলিং অথবা বড় মানের পূর্ণসংখ্যার জন্য",
-              "code": "Math.ceil()"
+              "definition": "x এর নিকটস্থ, x এর তুলনায় বড়মানের পূর্ণসংখ্যার জন্য",
+              "code": "Math.ceil(x)"
             }, {
-              "definition": "অনেক গুলো নাম্বার থেকে ফ্লোর অথবা ছোট মানের পূর্ণসংখ্যার জন্য",
-              "code": "Math.floor()"
+              "definition": "x এর নিকটস্থ, x এর তুলনায় ছোটমানের পূর্ণসংখ্যার জন্য",
+              "code": "Math.floor(x)"
             }, {
               "definition": "x এর এবসোলিউট ভ্যালু এর জন্য ",
               "code": "Math.abs(x)"
@@ -135,15 +135,7 @@
               "code": "%c"
             }
           ]
-          },{
-            "title": "বিগ ইন্টিজার",
-            "items": [
-              {
-                "definition": "নতুন লাইন প্রর্দশন",
-                "code": "/\n/"
-              }
-            ]
-          },{
+          }, {
             "title": "স্ট্রিং ক্লাসের মেথড",
             "items": [
               {
@@ -155,6 +147,12 @@
               },{
                 "definition": "স্ট্রিং এর i ইন্ডেক্সের ক্যারেক্টার",
                 "code": "string_name.charAt(i)"
+              },{
+                "definition": "স্ট্রিং এর i ইন্ডেক্সের ক্যারেক্টারের ASCII মান",
+                "code": "string_name.codePointAt(i)"
+              },{
+                "definition": "স্ট্রিং-কে ক্যারেক্টার এরেতে রূপান্তর",
+                "code": "string_name.toCharArray()"
               },{
                 "definition": "দুটি স্ট্রিং এর তুলনা",
                 "code": "string_one.compareTo(string_two)"
@@ -169,7 +167,7 @@
                 "code": "string_one.equalsIgnoreCase(string_two)"
               },{
                 "definition": "স্ট্রিং-কে রেজেক্স দিয়ে ভাগ করা",
-                "code": "String stringArray[] = string_name.split(" ");"
+                "code": "string_name.split(" ");"
               },{
                 "definition": "স্ট্রিং এর সব ক্যারেক্টারকে ছোট হাতের করে দেয়া",
                 "code": "string_name.toLowerCase()"
@@ -178,7 +176,7 @@
                 "code": "string_name.toUpperCase()"
               },{
                 "definition": "স্ট্রিং যুক্ত করা",
-                "code": "string_name.concat(\"add this also.\") or string_name = string_name+\"add this also.\""
+                "code": "string_name.concat(\"add this also.\") or string_name = string_name+\"add this also.\" "
               },{
                 "definition": "স্ট্রিং এর প্রথম ও শেষের স্পেস বাদ দেয়া",
                 "code": "string_name.trim()"
