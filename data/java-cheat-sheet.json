@@ -143,7 +143,7 @@
                 "code": "strine_name.length()"
               },{
                 "definition": "স্ট্রিং ফর্ম্যাট",
-                "code": "String ageString = String.format(\"I am %d years old.\",myAge);"
+                "code": "String.format(\"I am %d years old.\",myAge);"
               },{
                 "definition": "স্ট্রিং এর i ইন্ডেক্সের ক্যারেক্টার",
                 "code": "string_name.charAt(i)"
