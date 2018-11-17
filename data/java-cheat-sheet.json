@@ -3,7 +3,7 @@
     "title": "জাভা প্রোগ্রামিং",
     "slug": "java-cheat-sheet",
     "description": "প্রোগ্রামিং ল্যাঙ্গুয়েজ জাভা এর আপাদমস্তক",
-    "colorPref": "#0000",
+    "colorPref": "#3A241F",
     "contents": [
       {
         "title": "ডাটা টাইপ",
@@ -12,16 +12,16 @@
             "definition": "অক্ষর",
             "code": "char"
           }, {
-            "definition": "পূর্ণসংখ্যা [পরিসর -২^৩১ to (২^৩১ - ১)]",
+            "definition": "পূর্ণসংখ্যা [রেঞ্জ -২^৩১ থেকে (২^৩১ - ১)]",
             "code": "int"
           }, {
-            "definition": "ছোট পূর্ণসংখ্যা [পরিসর -২^১৫ to (২^১৫ - ১)]",
+            "definition": "ছোট পূর্ণসংখ্যা [রেঞ্জ -২^১৫ থেকে (২^১৫ - ১)]",
             "code": "short"
           }, {
-            "definition": "বড় পূর্ণসংখ্যা [পরিসর -২^৬৩ to (২^৬৩ - ১)]",
+            "definition": "বড় পূর্ণসংখ্যা [রেঞ্জ -২^৬৩ থেকে (২^৬৩ - ১)]",
             "code": "long"
           }, {
-            "definition": "ফ্লোটিং পয়েন্ট সংখ্যা [একক-প্রেসিশন]",
+            "definition": "ফ্লোটিং পয়েন্ট সংখ্যা [সিঙ্গেল-প্রেসিশন]",
             "code": "float"
           }, {
             "definition": "ডাবল পয়েন্ট সংখ্যা [ডবল-প্রেসিশন]",
@@ -55,41 +55,29 @@
           }
         ]
       }, {
-        "title": "বিল্ট-ইন ফাংশন",
+        "title": "স্ক্যানের দিয়ে ইনপুট নেয়া",
         "items": [
           {
-            "definition": "ফাইল খোলার জন্য",
-            "code": "fopen()"
-          }, {
-            "definition": "ফাইল বন্ধ করার জন্য",
-            "code": "fclose()"
-          }, {
-            "definition": "১টা অক্ষর পড়ার জন্য",
-            "code": "getchar()"
-          }, {
-            "definition": "১টা অক্ষর লিখার জন্য",
-            "code": "putchar()"
-          }, {
-            "definition": "ফাইল থেকে অক্ষর পড়ার জন্য",
-            "code": "fgetc()"
-          }, {
-            "definition": "ফাইল এ অক্ষর লিখার জন্য",
-            "code": "fputc()"
-          }, {
-            "definition": "আর্গুমেন্টস আকারে কিছু পড়ার জন্য",
-            "code": "scanf()"
-          }, {
-            "definition": "আর্গুমেন্টস আকারে কিছু ফাইল থেকে পড়ার জন্য",
-            "code": "fscanf()"
-          }, {
-            "definition": "আর্গুমেন্টস আকারে কিছু লিখার জন্য",
-            "code": "System.out.printf() or System.out.println() or System.out.print()"
-          }, {
-            "definition": "আর্গুমেন্টস আকারে কিছু ফাইল এ লিখার জন্য",
-            "code": "fprintf()"
-          }, {
-            "definition": "ফাইল অপারশন শেষে সত্য রির্টান করার জন্য",
-            "code": "feof()"
+            "definition": "স্ক্যানার অব্জেক্ট তৈরি",
+            "code": "Scanner key = new Scanner(System.in)"
+          },{
+            "definition": "ইন্টিজার ইনপুট নেয়া",
+            "code": "int number = key.nextInt()"
+          },{
+            "definition": "ডবল ইনপুট নেয়া",
+            "code": "Double number = key.nextDouble()"
+          },{
+            "definition": "লং ইনপুট নেয়া",
+            "code": "long number = key.nextLong()"
+          },{
+            "definition": "স্পেসসহ স্ট্রিং ইনপুট নেয়া",
+            "code": "String name = key.nextLine()"
+          },{
+            "definition": "স্পেস ছাড়া স্ট্রিং ইনপুট নেয়া",
+            "code": "String word = key.next()"
+          },{
+            "definition": "ক্যারেক্টার ইনপুট নেয়া",
+            "code": "char letter = key.next().charAt(0)"
           }
         ]
       },{
@@ -117,8 +105,8 @@
               "definition": "x এর এবসোলিউট ভ্যালু এর জন্য ",
               "code": "Math.abs(x)"
             }, {
-              "definition": "রান্ডম নাম্বার জেনারেট করার জন্য",
-              "code": "random()"
+              "definition": "দৈবচয়নে(রান্ডম) নাম্বার জেনারেট করার জন্য",
+              "code": "Math.random()"
             }
           ]
         },{
@@ -147,6 +135,22 @@
               "code": "%c"
             }
           ]
+          },{
+            "title": "বিগ ইন্টিজার",
+            "items": [
+              {
+                "definition": "নতুন লাইন প্রর্দশন",
+                "code": "/\n/"
+              }
+            ]
+          },{
+            "title": "স্ট্রিং ক্লাস",
+            "items": [
+              {
+                "definition": "নতুন লাইন প্রর্দশন",
+                "code": "/\n/"
+              }
+            ]
       }
     ]
   }
