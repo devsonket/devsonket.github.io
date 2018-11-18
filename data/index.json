@@ -51,5 +51,9 @@
     "id": "php-cheat-sheet",
     "title": "পিএইচপি প্রোগ্রামিং",
     "title_en": "PHP Programming"
+  }, {
+    "id": "solidity-cheat-sheet",
+    "title": "ইথেরিয়াম সলিডিটি",
+    "title_en": "ETH Solidity Programming"
   }
 ]
