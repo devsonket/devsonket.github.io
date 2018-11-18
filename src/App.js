@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { BrowserRouter, Route } from 'react-router-dom';
+import { BeatLoader } from 'react-spinners';
 
 import './App.css';
 
@@ -12,22 +13,28 @@ class App extends Component {
     tops: '',
     data: '',
     searchResult: '',
-    singleData: ''
+    loading: true
   }
 
-  async getData() {
-    const {data} = await axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/index.json');
-    this.setState({data})
+  getData() {
+    const data = axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/index.json');
+    return data;
   }
 
-  async topData() {
-    const {data: tops} = await axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/top.json');
-    this.setState({tops})
+  topData() {
+    const tops = axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/top.json');
+    return tops;
+  }
+
+  async getAllData() {
+    const data = this.getData();
+    const tops = this.topData();
+    const getAllData = await Promise.all([data, tops]);
+    this.setState({data: getAllData[0].data, tops: getAllData[1].data, loading: false});
   }
 
   componentDidMount() {
-    this.getData();
-    this.topData();
+    this.getAllData();
   }
 
   searchAItem = (term) => {
@@ -39,7 +46,13 @@ class App extends Component {
 
   render() {
     const { searchAItem } = this;
-    const { tops, searchResult, data } = this.state;
+    const { tops, searchResult, data, loading } = this.state;
+
+    if(loading) {
+      return <div className="loader">
+        <BeatLoader color={'#333'} />
+      </div>;
+    }
 
     return (
       <BrowserRouter>
