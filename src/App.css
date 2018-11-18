@@ -70,8 +70,9 @@
 }
 
 .header .intro p {
-  margin-top: 25px;
-  color: rgba(0, 0, 0, 0.6);
+  margin-top: 0px;
+  color: #485663;
+  font-size: 15px;
 }
 
 .top {
