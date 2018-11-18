@@ -140,49 +140,49 @@
             "items": [
               {
                 "definition": "স্ট্রিং এর দৈর্ঘ্য",
-                "code": "strine_name.length()"
+                "code": "stringName.length()"
               },{
                 "definition": "স্ট্রিং ফর্ম্যাট",
                 "code": "String.format(\"I am %d years old.\",myAge);"
               },{
                 "definition": "স্ট্রিং এর i ইন্ডেক্সের ক্যারেক্টার",
-                "code": "string_name.charAt(i)"
+                "code": "stringName.charAt(i)"
               },{
                 "definition": "স্ট্রিং এর i ইন্ডেক্সের ক্যারেক্টারের ASCII মান",
-                "code": "string_name.codePointAt(i)"
+                "code": "stringName.codePointAt(i)"
               },{
                 "definition": "স্ট্রিং-কে ক্যারেক্টার এরেতে রূপান্তর",
-                "code": "string_name.toCharArray()"
+                "code": "stringName.toCharArray()"
               },{
                 "definition": "দুটি স্ট্রিং এর তুলনা",
-                "code": "string_one.compareTo(string_two)"
+                "code": "stringOne.compareTo(stringTwo)"
               },{
-                "definition": "দুটি স্ট্রিং এর তুলনা, ছোট/বড় হাতের অক্ষর বাদ দিয়ে",
-                "code": "string_one.compareToIgnoreCase(string_two)"
+                "definition": "দুটি স্ট্রিং এর তুলনা, ছোট/বড় হাতের অক্ষর ব্যবধান না করে",
+                "code": "stringOne.compareToIgnoreCase(stringTwo)"
               },{
                 "definition": "দুটি স্ট্রিং একই কি-না",
-                "code": "string_one.equals(string_two)"
+                "code": "stringOne.equals(stringTwo)"
               },{
-                "definition": "দুটি স্ট্রিং একই কি-না, ছোট/বড় হাতের অক্ষর বাদ দিয়",
-                "code": "string_one.equalsIgnoreCase(string_two)"
+                "definition": "দুটি স্ট্রিং একই কি-না, ছোট/বড় হাতের অক্ষর ব্যবধান না করে",
+                "code": "stringOne.equalsIgnoreCase(stringTwo)"
               },{
                 "definition": "স্ট্রিং-কে রেজেক্স দিয়ে ভাগ করা",
-                "code": "string_name.split(" ");"
+                "code": "stringName.split(" ");"
               },{
                 "definition": "স্ট্রিং এর সব ক্যারেক্টারকে ছোট হাতের করে দেয়া",
-                "code": "string_name.toLowerCase()"
+                "code": "stringName.toLowerCase()"
               },{
                 "definition": "স্ট্রিং এর সব ক্যারেক্টারকে বড় হাতের করে দেয়া",
-                "code": "string_name.toUpperCase()"
+                "code": "stringName.toUpperCase()"
               },{
                 "definition": "স্ট্রিং যুক্ত করা",
-                "code": "string_name.concat(\"add this also.\") or string_name = string_name+\"add this also.\" "
+                "code": "stringName.concat(\"add this also.\") or stringName = stringName+\"add this also.\" "
               },{
                 "definition": "স্ট্রিং এর প্রথম ও শেষের স্পেস বাদ দেয়া",
-                "code": "string_name.trim()"
+                "code": "stringName.trim()"
               },{
                 "definition": "স্ট্রিং এ ch ক্যারেক্টারের প্রথম ইন্ডেক্স",
-                "code": "string_name.indexOf(ch)"
+                "code": "stringName.indexOf(ch)"
               }
             ]
           }
