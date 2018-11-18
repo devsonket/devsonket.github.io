@@ -167,7 +167,7 @@
                 "code": "stringOne.equalsIgnoreCase(stringTwo)"
               },{
                 "definition": "স্ট্রিং-কে রেজেক্স দিয়ে ভাগ করা",
-                "code": "stringName.split(" ");"
+                "code": "stringName.split(\" \");"
               },{
                 "definition": "স্ট্রিং এর সব ক্যারেক্টারকে ছোট হাতের করে দেয়া",
                 "code": "stringName.toLowerCase()"
