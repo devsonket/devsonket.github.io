@@ -21,7 +21,7 @@
                     "code": "import \"filename\";"
                 }, {
                     "definition": "সিম্বল নেইম হিসেবে ফাইল ইম্পোর্ট করা",
-                    "code": "import * as symbolName from \"filename\"; or import \"filename\" as symbolName;"
+                    "code": "import * as symbolName from \"filename\"; \n অথবা import \"filename\" as symbolName;"
                 }, {
                     "definition": "এলাইস হিসেবে ফাইল ইম্পোর্ট করা",
                     "code": "import {symbol1 as alias, symbol2} from \"filename\";"
@@ -35,10 +35,10 @@
                     "code": "bool : true OR false"
                 }, {
                     "definition": "ইন্টেজার - আনসাইন",
-                    "code": "uint8 | uint16 | uint32 | uint64 | uint128 | uint256(uint)"
+                    "code": "uint8 থেকে uint256(uint)"
                 }, {
                     "definition": "ইন্টেজার - সাইন",
-                    "code": "int8 | int16 | int32 | int64 | int128 | int256(uint)"
+                    "code": "int8 থেকে int256(uint)"
                 }, {
                     "definition": "এড্রেস - ইথারিয়াম এড্রেস হোল্ড করা",
                     "code": "address"
@@ -58,16 +58,16 @@
             "items": [
                 {
                     "definition": "বুলিয়ান - লজিক্যাল অপারেটরস",
-                    "code": "! (Logical Negation), && (AND), || (OR)"
+                    "code": "!, &&, ||"
                 }, {
                     "definition": "কম্পায়ার করা",
                     "code": "<=, <, ==, !=, >=, >"
                 }, {
                     "definition": "ইন্টেজার - বিট অপারেটর",
-                    "code": "&, |, ^ (bitwise exclusive) and ~ (bitwise negation)"
+                    "code": "&, |, ^ and ~"
                 }, {
                     "definition": "ইন্টেজার - অ্যারিতম্যাটিক অপারেটর",
-                    "code": "+, -, unary -, unary +, *, /, %, **(exponentiation), <<(left shift), >>(right shift)"
+                    "code": "+, -, unary -, unary +, *, /, %, **, <<, >>"
                 }
             ]
         }, {
