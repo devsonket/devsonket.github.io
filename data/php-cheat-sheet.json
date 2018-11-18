@@ -83,7 +83,7 @@
               },{
                 "definition": "ছোট হাতের অক্ষরে রুপান্তর",
                 "code": "strtolower(something)"
-              },,{
+              },{
                 "definition": "বড় হাতের অক্ষরে রুপান্তর",
                 "code": "strtoupper(something)"
               },{
