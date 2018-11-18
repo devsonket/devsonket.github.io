@@ -1,0 +1,190 @@
+{
+    "id": "java-cheat-sheet",
+    "title": "জাভা প্রোগ্রামিং",
+    "slug": "java-cheat-sheet",
+    "description": "প্রোগ্রামিং ল্যাঙ্গুয়েজ জাভা",
+    "colorPref": "#3A241F",
+    "contents": [
+      {
+        "title": "ডাটা টাইপ",
+        "items": [
+          {
+            "definition": "অক্ষর",
+            "code": "char"
+          }, {
+            "definition": "পূর্ণসংখ্যা [রেঞ্জ -২^৩১ থেকে (২^৩১ - ১)]",
+            "code": "int"
+          }, {
+            "definition": "ছোট পূর্ণসংখ্যা [রেঞ্জ -২^১৫ থেকে (২^১৫ - ১)]",
+            "code": "short"
+          }, {
+            "definition": "বড় পূর্ণসংখ্যা [রেঞ্জ -২^৬৩ থেকে (২^৬৩ - ১)]",
+            "code": "long"
+          }, {
+            "definition": "ফ্লোটিং পয়েন্ট সংখ্যা [সিঙ্গেল-প্রেসিশন]",
+            "code": "float"
+          }, {
+            "definition": "ডাবল পয়েন্ট সংখ্যা [ডবল-প্রেসিশন]",
+            "code": "double"
+          }
+        ]
+      }, {
+        "title": "গাণিতিক অপারেশন",
+        "items": [
+          {
+            "definition": "সাধারন গাণিতিক অপারেশন",
+            "code": " +, -, *, /, %"
+          }, {
+            "definition": "i এ ১ যোগ করবে অথবা ১ বিয়োগ করে i এর মধ্যে রাখবে, পরে i এর ভ্যালু রিটার্ন করবে",
+            "code": "++i,--i"
+          }, {
+            "definition": "i এর আগের ভ্যালু রির্টান করবে,পরে i এর ভ্যালু ১ বাড়াবে অথবা কমাবে",
+            "code": "i++,i--"
+          }, {
+            "definition": "বেসিক লজিক্যাল অপারেটর",
+            "code": "&&,||,!"
+          }, {
+            "definition": "বিট লজিক্যাল অপারেটর অথবা বিটওয়াইজ অপারেটর",
+            "code": "&, |, ^, ~!, <<, >>"
+          }, {
+            "definition": "তুলনামূলক অপারেটর",
+            "code": " ==, !=, <, >, <=, >="
+          }, {
+            "definition": "নির্ধারিত করন অপারেটর",
+            "code": "="
+          }
+        ]
+      }, {
+        "title": "স্ক্যানার দিয়ে ইনপুট নেয়া",
+        "items": [
+          {
+            "definition": "স্ক্যানার অব্জেক্ট তৈরি",
+            "code": "Scanner key = new Scanner(System.in)"
+          },{
+            "definition": "ইন্টিজার ইনপুট নেয়া",
+            "code": "key.nextInt()"
+          },{
+            "definition": "ডবল ইনপুট নেয়া",
+            "code": "key.nextDouble()"
+          },{
+            "definition": "লং ইনপুট নেয়া",
+            "code": "key.nextLong()"
+          },{
+            "definition": "স্পেসসহ স্ট্রিং ইনপুট নেয়া",
+            "code": "key.nextLine()"
+          },{
+            "definition": "স্পেস ছাড়া স্ট্রিং ইনপুট নেয়া",
+            "code": "key.next()"
+          },{
+            "definition": "ক্যারেক্টার ইনপুট নেয়া",
+            "code": "key.next().charAt(0)"
+          }
+        ]
+      },{
+          "title": "গাণিতিক ফাংশন",
+          "items": [
+            {
+              "definition": "বর্গমূল করার জন্য",
+              "code": "Math.sqrt()"
+            }, {
+              "definition": "সাধারন লগারিদম পাওয়ার জন্য",
+              "code": "Math.log()"
+            }, {
+              "definition": "এক্সপোনেনশিয়াল নাম্বার এর জন্য",
+              "code": "Math.exp()"
+            }, {
+              "definition": "y এর পাওয়ার হিসেবে x কে নেয়ার জন্য",
+              "code": "Math.pow(x,y)"
+            }, {
+              "definition": "x এর নিকটস্থ, x এর তুলনায় বড়মানের পূর্ণসংখ্যার জন্য",
+              "code": "Math.ceil(x)"
+            }, {
+              "definition": "x এর নিকটস্থ, x এর তুলনায় ছোটমানের পূর্ণসংখ্যার জন্য",
+              "code": "Math.floor(x)"
+            }, {
+              "definition": "x এর এবসোলিউট ভ্যালু এর জন্য ",
+              "code": "Math.abs(x)"
+            }, {
+              "definition": "দৈবচয়নে(রান্ডম) নাম্বার জেনারেট করার জন্য",
+              "code": "Math.random()"
+            }
+          ]
+        },{
+          "title": "প্রচলিত বিশেষ ক্যারেক্টার",
+          "items": [
+            {
+              "definition": "নতুন লাইন প্রর্দশন",
+              "code": "\\n"
+            }, {
+              "definition": "ট্যাব প্রর্দশন",
+              "code": "\\t"
+            }, {
+              "definition": "পূর্ণসংখ্যা প্রর্দশন",
+              "code": "%d"
+            }, {
+              "definition": "ফ্লোটিং পয়েন্ট সংখ্যা প্রর্দশন",
+              "code": "%f"
+            }, {
+              "definition": "ডাবল পয়েন্ট সংখ্যা প্রর্দশন",
+              "code": "%lf"
+            }, {
+              "definition": "স্ট্রিং প্রর্দশন",
+              "code": "%s"
+            }, {
+              "definition": "ক্যারেক্টার প্রর্দশন",
+              "code": "%c"
+            }
+          ]
+          }, {
+            "title": "স্ট্রিং ক্লাসের মেথড",
+            "items": [
+              {
+                "definition": "স্ট্রিং এর দৈর্ঘ্য",
+                "code": "stringName.length()"
+              },{
+                "definition": "স্ট্রিং ফর্ম্যাট",
+                "code": "String.format(\"I am %d years old.\",myAge);"
+              },{
+                "definition": "স্ট্রিং এর i ইন্ডেক্সের ক্যারেক্টার",
+                "code": "stringName.charAt(i)"
+              },{
+                "definition": "স্ট্রিং এর i ইন্ডেক্সের ক্যারেক্টারের ASCII মান",
+                "code": "stringName.codePointAt(i)"
+              },{
+                "definition": "স্ট্রিং-কে ক্যারেক্টার এরেতে রূপান্তর",
+                "code": "stringName.toCharArray()"
+              },{
+                "definition": "দুটি স্ট্রিং এর তুলনা",
+                "code": "stringOne.compareTo(stringTwo)"
+              },{
+                "definition": "দুটি স্ট্রিং এর তুলনা, ছোট/বড় হাতের অক্ষর ব্যবধান না করে",
+                "code": "stringOne.compareToIgnoreCase(stringTwo)"
+              },{
+                "definition": "দুটি স্ট্রিং একই কি-না",
+                "code": "stringOne.equals(stringTwo)"
+              },{
+                "definition": "দুটি স্ট্রিং একই কি-না, ছোট/বড় হাতের অক্ষর ব্যবধান না করে",
+                "code": "stringOne.equalsIgnoreCase(stringTwo)"
+              },{
+                "definition": "স্ট্রিং-কে রেজেক্স দিয়ে ভাগ করা",
+                "code": "stringName.split(\" \");"
+              },{
+                "definition": "স্ট্রিং এর সব ক্যারেক্টারকে ছোট হাতের করে দেয়া",
+                "code": "stringName.toLowerCase()"
+              },{
+                "definition": "স্ট্রিং এর সব ক্যারেক্টারকে বড় হাতের করে দেয়া",
+                "code": "stringName.toUpperCase()"
+              },{
+                "definition": "স্ট্রিং যুক্ত করা",
+                "code": "stringName.concat(\"add this also.\") or stringName = stringName+\"add this also.\" "
+              },{
+                "definition": "স্ট্রিং এর প্রথম ও শেষের স্পেস বাদ দেয়া",
+                "code": "stringName.trim()"
+              },{
+                "definition": "স্ট্রিং এ ch ক্যারেক্টারের প্রথম ইন্ডেক্স",
+                "code": "stringName.indexOf(ch)"
+              }
+            ]
+          }
+    ]
+  }
