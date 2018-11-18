@@ -42,7 +42,7 @@ class App extends Component {
     const data = this.state.data;
     let searchResult;
     if(charCode <= 128 && !Number.isNaN(charCode)) {
-      searchResult = data && data.filter(oneData => oneData.title_en.includes(term.trim().toLowerCase()));
+      searchResult = data && data.filter(oneData => oneData.title_en.toLowerCase().includes(term.trim().toLowerCase()));
     } else {
       searchResult = data && data.filter(oneData => oneData.title.toLowerCase().includes(term.trim().toLowerCase()));
     }
