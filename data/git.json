@@ -37,20 +37,32 @@
                     "code": "git init"
                 },
                 {
-                    "definition": "নতুন অথবা পুরানো, কি কি ফাইল কমিট করতে হবে",
+                    "definition": "নতুন অথবা পুরোনো, কি কি ফাইল কমিট করতে হবে",
                     "code": "git status"
                 },
                 {
                     "definition": "কমিট এর জন্যে ফাইল এড ",
                     "code": "git add [file]"
                 },
+				{
+                    "definition": "কমিট এর জন্যে সব পরিবর্তিত ফাইল এড ",
+                    "code": "git add ."
+                },
                 {
                     "definition": "Repository এর কমিট ",
                     "code": "git commit -m \"initial commit\""
                 },
                 {
-                    "definition": "সব ব্রাঞ্চ এর নাম লিস্ট  ",
+                    "definition": "সব লোকাল ব্রাঞ্চ এর নাম লিস্ট  ",
                     "code": "git branch"
+                },
+				{
+                    "definition": "সব রিমোট ব্রাঞ্চ এর নাম লিস্ট  ",
+                    "code": "git branch -r"
+                },
+				{
+                    "definition": "সব লোকাল এবং রিমোট ব্রাঞ্চ এর নাম লিস্ট  ",
+                    "code": "git branch -a"
                 },
                 {
                     "definition": "নতুন  ব্রাঞ্চ তৈরী ",
@@ -63,7 +75,31 @@
                 {
                     "definition": "ব্রাঞ্চ রিমুভ করতে ",
                     "code": "git branch -d [branch-name]"
-                } 
+                },
+				{
+                    "definition": " রিমোট ব্রাঞ্চ রিমুভ করতে ",
+                    "code": "git push --delete origin [branch-name]"
+                },
+				{
+                    "definition": " ট্যাগ লিস্ট দেখতে ",
+                    "code": "git tag"
+                },
+				{
+                    "definition": " ট্যাগ তৈরি করতে ",
+                    "code": "git tag [tag-name]"
+                },
+				{
+                    "definition": " কমিট লগ বিস্তারিত দেখতে ",
+                    "code": "git log"
+                },
+				{
+                    "definition": " কমিট লগ সামারি আকারে দেখতে((৫টি)",
+                    "code": "git log --oneline -5"
+                },
+				{
+                    "definition": " কমিট লগ  ইউজার অনুযায়ী দেখতে",
+                    "code": "git shortlog"
+                }
             ]
         }
     ]
