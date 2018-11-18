@@ -1,0 +1,73 @@
+{
+    "id": "git-cheat-sheet",
+    "title": "গিট",
+    "slug": "git-cheat-sheet",
+    "description": "গিট এর চিটশিট",
+    "colorPref": "#000",
+    "contents": [
+        {
+            "title": "কনফিগার প্রাথমিক",
+            "items": [
+                {
+                    "definition": "গিট ভার্সন চেক ",
+                    "code": "git --version"
+                },
+                {
+                    "definition": "গিট ইউজার নেম সেট করা ",
+                    "code": "git config --global user.name "username" "
+                },
+                {
+                    "definition": "গিট ইউজার ইমেল  সেট করা",
+                    "code": "git config --global user.email "user@name.com" "
+                },
+                {
+                    "definition": "গিট ইউজার নেম বাতিল করা",
+                    "code": "git config --global --unset-all user.name"
+                },
+                {
+                    "definition": "গিট ইউজার ইমেইল  বাতিল করা",
+                    "code": "git config --global --unset-all user.email"
+                }
+            ]
+        },
+        {
+            "title": "Repository কমান্ডস ",
+            "items": [
+                {
+                    "definition": "নতুন Repository তৈরী করা",
+                    "code": "git init"
+                },
+                {
+                    "definition": "নতুন অথবা পুরানো, কি কি ফাইল কমিট করতে হবে",
+                    "code": "git status"
+                },
+                {
+                    "definition": "কমিট এর জন্যে ফাইল এড ",
+                    "code": "git add [file]"
+                },
+                {
+                    "definition": "Repository এর কমিট ",
+                    "code": "git commit -m "initial commit""
+                },
+                {
+                    "definition": "সব ব্রাঞ্চ এর নাম লিস্ট  ",
+                    "code": "git branch"
+                },
+                {
+                    "definition": "নতুন  ব্রাঞ্চ তৈরী ",
+                    "code": "git branch [branch_name]"
+                },
+                {
+                    "definition": "ব্রাঞ্চ চেঞ্জ করতে ",
+                    "code": "git checkout [branch-name]"
+                },
+                {
+                    "definition": "ব্রাঞ্চ রিমুভ করতে ",
+                    "code": "git branch -d [branch-name]"
+                }
+                
+               
+            ]
+        }
+    ]
+}
