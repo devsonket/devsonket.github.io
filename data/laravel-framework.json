@@ -1,0 +1,69 @@
+{
+    "id": "laravel-framework",
+    "title": "লারাভেল পিএইচপি ফ্রেমওয়ার্কিং",
+    "slug": "laravel-framework",
+    "description": "লারাভেল একটি ওপেন সোর্স পিএইচপি ফ্রেমওয়ার্ক",
+    "colorPref": "#3A241D",
+    "contents": [
+      {
+        "title": "আরটিসান কমান্ড",
+        "items": [
+          {
+            "definition": "প্রোজেক্ট স্টার্ট করার জন্য",
+            "code": "php artisan serve"
+          }, {
+            "definition": "রাউট কে ক্যাশে নেয়া",
+            "code": "php artisan route:cache"
+          }, {
+            "definition": "ক্যাশ থেকে রাউট মুছে ফেলা",
+            "code": "php artisan route:clear"
+          }, {
+            "definition": "লারাভেলের সকল আরটিসান কমান্ড লিস্ট",
+            "code": "php artisan list"
+          }, {
+            "definition": "কনফিগারেশন ক্যাশে নেয়া",
+            "code": "php artisan config:cache"
+          }, {
+            "definition": "ক্যাশ থেকে কনফিগারেশন মুছে ফেলা",
+            "code": "php artisan config:clear"
+          }, {
+            "definition": "প্রোজেক্ট টি মেইনটেইনেন্স মোডে নেয়ার জন্য",
+            "code": "php artisan down"
+          }, {
+            "definition": "প্রোজেক্ট টি লাইভে নিয়ে আসা",
+            "code": "php artisan up"
+          }, {
+            "definition": "মিডেল ওয়ার ক্রিয়েট করা",
+            "code": "php artisan make:middleware <middleware-name>"
+          }, {
+            "definition": "কনট্রোলার ক্রিয়েট করা",
+            "code": "php artisan make:controller <controller-name>"
+          }, {
+            "definition": "একটি নির্ধারিত নেমস্পেস ক্রিয়েট করা",
+            "code": "php artisan app:name devsonket"
+          }, {
+            "definition": "লারাভেলে এইচটিএমএল প্যাকেজ যুক্ত করা",
+            "code": "php artisan composer require illuminate/html"
+          }, {
+            "definition": "লারাভেলে ইভেন্ট জেনারেট করা",
+            "code": "php artisan event:generate"
+          }, {
+            "definition": "সার্ভিস প্রভাইডার ক্রিয়েট করা",
+            "code": "php artisan make:provider <provider-name"
+          }, {
+            "definition": "লারাভেলর ডিফল্ট অথ ব্যবহার করা",
+            "code": "php artisan make:auth"
+          }, {
+            "definition": "নিজস্ব কমান্ড লাইন তৈরি করা",
+            "code": "php artisan make:console <name-of-command>"
+          }, {
+            "definition": "কি জেনারেট",
+            "code": "php artisan key:generate"
+          }, {
+            "definition": "ক্যাশের সকল ডাটা মুছে ফেলা",
+            "code": "php artisan cache:clear"
+          }
+        ]
+      }
+    ]
+  }
