@@ -38,8 +38,14 @@ class App extends Component {
   }
 
   searchAItem = (term) => {
+    const charCode = term.charCodeAt();
     const data = this.state.data;
-    let searchResult = data && data.filter(oneData => oneData.title.toLowerCase().includes(term.toLowerCase()));
+    let searchResult;
+    if(charCode <= 128 && !Number.isNaN(charCode)) {
+      searchResult = data && data.filter(oneData => oneData.title_en.includes(term.trim().toLowerCase()));
+    } else {
+      searchResult = data && data.filter(oneData => oneData.title.toLowerCase().includes(term.trim().toLowerCase()));
+    }
     searchResult = term ? searchResult : '';
     this.setState({searchResult});
   }
