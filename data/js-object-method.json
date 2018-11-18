@@ -109,6 +109,9 @@
           "definition": "তারিখ(০-৩১) রিটার্ণ করা",
           "code": "getDate(x)"
         }, {
+          "definition": "সাপ্তাহিক(০-৬) দিন পাওয়া",
+          "code": "getDay()"
+        }, {
           "definition": "ঘন্টা(০-২৩) রিটার্ণ করা",
           "code": "getHours(x)"
         }, {
