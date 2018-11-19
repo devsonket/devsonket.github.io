@@ -59,5 +59,9 @@
     "id": "laravel-framework",
     "title": "লারাভেল পিএইচপি ফ্রেমওয়ার্কিং",
     "title_en": "Laravel PHP Framework"
+  }, {
+    "id": "wordpress-theme-development",
+    "title": "ওয়ার্ডপ্রেস থিম ডেভেলপমেন্ট",
+    "title_en": "Wordpress Theme Development"
   }
 ]
