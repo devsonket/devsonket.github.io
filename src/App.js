@@ -4,9 +4,11 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { BeatLoader } from 'react-spinners';
 
 import './App.css';
+import ReactGA from 'react-ga';
 
 import Home from './components/Home';
 import Content from './components/Content';
+import AppContainer from './components/AppContainer';
 
 class App extends Component {
   state = {
@@ -14,6 +16,11 @@ class App extends Component {
     data: '',
     searchResult: '',
     loading: true
+  }
+
+  componentWillMount() {
+    ReactGA.initialize('UA-129387050-1');
+    ReactGA.pageview(window.location.href);
   }
 
   getData() {
@@ -56,14 +63,14 @@ class App extends Component {
 
     return (
       <BrowserRouter>
-        <div className="App">
+        <AppContainer>
           <Route exact path="/" render={props => (
             <Home searchAItem={searchAItem} tops={tops} searchResult={searchResult} data={data} />
           )}/>
           <Route exact path="/:id" render={props => (
             <Content {...props} data={data} />
           )}/>
-        </div>
+        </AppContainer>
       </BrowserRouter>
     );
   }
