@@ -55,5 +55,9 @@
     "id": "solidity-cheat-sheet",
     "title": "ইথেরিয়াম সলিডিটি",
     "title_en": "ETH Solidity Programming"
+  }, {
+    "id": "laravel-framework",
+    "title": "লারাভেল পিএইচপি ফ্রেমওয়ার্কিং",
+    "title_en": "Laravel PHP Framework"
   }
 ]
