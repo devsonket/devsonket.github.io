@@ -6,10 +6,10 @@
     "colorPref": "#000",
     "contents": [
         {
-            "title": "কনফিগার প্রাথমিক",
+            "title": "প্রাথমিক কনফিগারেশন",
             "items": [
                 {
-                    "definition": "গিট ভার্সন চেক ",
+                    "definition": "গিট ভার্সন চেক",
                     "code": "git --version"
                 },
                 {
@@ -17,7 +17,7 @@
                     "code": "git config --global user.name \"username\" "
                 },
                 {
-                    "definition": "গিট ইউজার ইমেল  সেট করা",
+                    "definition": "গিট ইউজার ইমেল সেট করা",
                     "code": "git config --global user.email \"user@name.com\" "
                 },
                 {
@@ -25,71 +25,71 @@
                     "code": "git config --global --unset-all user.name"
                 },
                 {
-                    "definition": "গিট ইউজার ইমেইল  বাতিল করা",
+                    "definition": "গিট ইউজার ইমেইল বাতিল করা",
                     "code": "git config --global --unset-all user.email"
                 }
             ]
         }, {
-            "title": "Repository কমান্ডস ",
+            "title": "Repository কমান্ডসমূহ ",
             "items": [
                 {
                     "definition": "নতুন Repository তৈরী করা",
                     "code": "git init"
                 },
                 {
-                    "definition": "নতুন অথবা পুরোনো, কি কি ফাইল কমিট করতে হবে",
+                    "definition": "Repository এর বর্তমান অবস্থা/পরিবর্তনগুলো দেখা (নতুন অথবা পুরোনো, কি কি ফাইল কমিট করতে হবে, ওয়ার্কিং ব্রাঞ্চ ইত্যাদি)",
                     "code": "git status"
                 },
                 {
-                    "definition": "কমিট এর জন্যে ফাইল এড ",
+                    "definition": "কমিট এর জন্যে ফাইল এড করা",
                     "code": "git add [file]"
                 },
 				{
-                    "definition": "কমিট এর জন্যে সব পরিবর্তিত ফাইল এড ",
+                    "definition": "কমিট এর জন্যে সব পরিবর্তিত ফাইল এড করা",
                     "code": "git add ."
                 },
                 {
-                    "definition": "Repository এর কমিট ",
-                    "code": "git commit -m \"initial commit\""
+                    "definition": "Repository তে কিছু কমিট করা (কমিট মেসেজসহ)",
+                    "code": "git commit -m \"YourCommitMessage\""
                 },
                 {
-                    "definition": "সব লোকাল ব্রাঞ্চ এর নাম লিস্ট  ",
+                    "definition": "সব লোকাল ব্রাঞ্চ এর নাম লিস্ট করা",
                     "code": "git branch"
                 },
 				{
-                    "definition": "সব রিমোট ব্রাঞ্চ এর নাম লিস্ট  ",
+                    "definition": "সব রিমোট ব্রাঞ্চ এর নাম লিস্ট করা",
                     "code": "git branch -r"
                 },
 				{
-                    "definition": "সব লোকাল এবং রিমোট ব্রাঞ্চ এর নাম লিস্ট  ",
+                    "definition": "সব লোকাল এবং রিমোট ব্রাঞ্চ এর নাম লিস্ট করা",
                     "code": "git branch -a"
                 },
                 {
-                    "definition": "নতুন  ব্রাঞ্চ তৈরী ",
+                    "definition": "নতুন  ব্রাঞ্চ তৈরী",
                     "code": "git branch [branch_name]"
                 },
                 {
-                    "definition": "ব্রাঞ্চ চেঞ্জ করতে ",
+                    "definition": "ব্রাঞ্চ চেঞ্জ করতে",
                     "code": "git checkout [branch-name]"
                 },
                 {
-                    "definition": "ব্রাঞ্চ রিমুভ করতে ",
+                    "definition": "ব্রাঞ্চ রিমুভ করতে",
                     "code": "git branch -d [branch-name]"
                 },
 				{
-                    "definition": " রিমোট ব্রাঞ্চ রিমুভ করতে ",
+                    "definition": "রিমোট ব্রাঞ্চ রিমুভ করতে",
                     "code": "git push --delete origin [branch-name]"
                 },
 				{
-                    "definition": " ট্যাগ লিস্ট দেখতে ",
+                    "definition": "ট্যাগ লিস্ট দেখতে",
                     "code": "git tag"
                 },
 				{
-                    "definition": " ট্যাগ তৈরি করতে ",
+                    "definition": "ট্যাগ তৈরি করতে",
                     "code": "git tag [tag-name]"
                 },
 				{
-                    "definition": " কমিট লগ বিস্তারিত দেখতে ",
+                    "definition": "কমিট লগ বিস্তারিত দেখতে",
                     "code": "git log"
                 },
 				{
@@ -97,8 +97,20 @@
                     "code": "git log --oneline -5"
                 },
 				{
-                    "definition": " কমিট লগ  ইউজার অনুযায়ী দেখতে",
+                    "definition": " কমিট লগ ইউজার অনুযায়ী দেখতে",
                     "code": "git shortlog"
+                },
+                {
+                    "definition": "রিমোট এড করা",
+                    "code": "git remote add RemoteName RemoteURL"
+                },
+                {
+                    "definition": "সবগুলো রিমোটের লিস্ট নাম এবং URL সহ দেখা",
+                    "code": "git remote -v"
+                },
+                {
+                    "definition": "অন্য Repository থেকে ব্রাঞ্চ/রেফ/অবজেক্ট fetch করা",
+                    "code": "git fetch RepositoryName"
                 }
             ]
         }
