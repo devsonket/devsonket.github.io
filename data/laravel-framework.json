@@ -49,7 +49,7 @@
             "code": "php artisan event:generate"
           }, {
             "definition": "সার্ভিস প্রভাইডার ক্রিয়েট করা",
-            "code": "php artisan make:provider <provider-name"
+            "code": "php artisan make:provider <provider-name>"
           }, {
             "definition": "লারাভেলর ডিফল্ট অথ ব্যবহার করা",
             "code": "php artisan make:auth"
@@ -62,8 +62,24 @@
           }, {
             "definition": "ক্যাশের সকল ডাটা মুছে ফেলা",
             "code": "php artisan cache:clear"
+          }, {
+            "definition": "মাইগ্রেশন ক্রিয়েট করা",
+            "code": "php artisan make:migration create_devsonket_table --create=devsonket"
+          }, {
+            "definition": "ডাটাবেসে টেবিল মাইগ্রেট করা",
+            "code": "php artisan migrate"
+          }, {
+            "definition": "ডাটাবেসের পূর্বের অবস্থানে ফিরে যাওয়া অথবা রোল ব্যাক করা",
+            "code": "php artisan migrate:rollback"
+          }, {
+            "definition": "মাইগ্রেশন ব্যবহার করে সকল টেবিল মুছে ফেলা",
+            "code": "php artisan migrate:reset"
+          }, {
+            "definition": "টেবিল গুলো মুছে ফেলে নতুন করে টেবিল তৈরি করতে চাইলে",
+            "code": "php artisan migrate:reset"
           }
         ]
       }
     ]
   }
+ 
