@@ -13,16 +13,16 @@
                     "code": "#include <iostream>"
                 }, {
                     "definition": "কনসোলে আউটপুট দেখানো",
-                    "code": "cout >>"
+                    "code": "cout <<"
                 }, {
                     "definition": "কনসোলে এরোর দেখানো",
-                    "code": "cerr >>"
+                    "code": "cerr <<"
                 }, {
                     "definition": "কনসোলে লগ দেখানো",
-                    "code": "clog >>"
+                    "code": "clog <<"
                 }, {
                     "definition": "কনসোল থেকে ইনপুট নেয়া",
-                    "code": "cin <<"
+                    "code": "cin >>"
                 }
             ]
         }, {
