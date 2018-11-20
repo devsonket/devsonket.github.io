@@ -185,6 +185,42 @@
                 "code": "stringName.indexOf(ch)"
               }
             ]
+          },{
+            "title": "স্ট্রিং বিল্ডার ক্লাসের মেথড",
+            "items": [{
+              "definition": "স্ট্রিং বিল্ডার এর দৈর্ঘ্য",
+              "code": "SBName.length();"
+            }, {
+              "definition": "স্ট্রিং বিল্ডার এর i ইন্ডেক্সের ক্যারেক্টার",
+              "code": "SBName.charAt(i);"
+            }, {
+              "definition": "স্ট্রিং বিল্ডার এর al ক্যারেক্টারের ইন্ডেক্স রিটার্ন করে",
+              "code": "SBName.indexOf(\"al\");"
+            }, {
+              "definition": "স্ট্রিং বিল্ডার এর append মেথড প্যারামিটার ভ্যালূ বর্তমান স্ট্রিং বিল্ডার অবজেক্টের সাথে যুক্ত করে ",
+              "code": "SBName.append('c');"
+            }, {
+              "definition": "স্ট্রিং বিল্ডার এর i ইন্ডেক্সে নতুন ক্যারেক্টার ইনসার্ট করা",
+              "code": "SBName.insert(i, \"-\");"
+            }, {
+              "definition": "স্ট্রিং বিল্ডার এর 1 থেকে n তম ইনডেক্স ডিলিট করা",
+              "code": "SBName.delete(1, n);"
+            }, {
+              "definition": "স্ট্রিং বিল্ডার এর i তম ইনডেক্স এর ডাটা ডিলিট করা",
+              "code": "SBName.deleteCharAt(i);"
+            }, {
+              "definition": "স্ট্রিং বিল্ডার এর ক্যারেক্টার সিকুয়েন্সকে রিভার্স করে",
+              "code": "SBName.reverse()"
+            }, {
+              "definition": "স্ট্রিং বিল্ডার অবজেক্টকে স্ট্রিং এ কনভার্ট করে",
+              "code": "SBName.toString();"
+            }, {
+              "definition": "স্ট্রিং বিল্ডারের কিছু ক্যারেক্টার রিপ্লেস করা",
+              "code": "SBName.replace(int start, int end, String str);"
+            }, {
+              "definition": "স্ট্রিং বিল্ডারের i ইনডেক্সে ক্যারেক্টার সেট করা",
+              "code": "SBName.setCharAt(int index, char ch)"
+            }]
           }
     ]
   }
