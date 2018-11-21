@@ -2,7 +2,7 @@
     "id": "laravel-framework",
     "title": "লারাভেল পিএইচপি ফ্রেমওয়ার্কিং",
     "slug": "laravel-framework",
-    "description": "লারাভেল একটি ওপেন সোর্স পিএইচপি ফ্রেমওয়ার্ক",
+    "description": "লারাভেল একটি ওপেন সোর্স পিএইচপি ফ্রেমওয়ার্ক। ২০১১ সালে টেইলর অটওয়েল প্রথম লারাভেল ডেভেলপ করেন। সাধারণ ব্লগ, কনটেন্ট ম্যানেজমেন্ট সিস্টেম, ইকমার্স সাইট, বড় ধরনের ওয়েব এপ্লিকেশন, কিংবা মোবাইল এপ্লিকেশনের জন্য JSON নির্ভর এপ্লিকেশন সহ সব কিছুই এখন লারাভেল ব্যবহার করে ডেভেলপ করা সম্ভব।",
     "colorPref": "#3A241D",
     "contents": [
       {
@@ -76,10 +76,40 @@
             "code": "php artisan migrate:reset"
           }, {
             "definition": "টেবিল গুলো মুছে ফেলে নতুন করে টেবিল তৈরি করতে চাইলে",
-            "code": "php artisan migrate:reset"
+            "code": "php artisan migrate:refresh"
           }
         ]
-      }
+      },
+        {
+          "title": "ডাটাবেস কলাম মেথড",
+          "items": [
+            {
+              "definition": "অটো ইনক্রিমেন্টের জন্য",
+              "code": "$table->increments('id');"
+            }, {
+              "definition": "বড় ইনক্রিমেন্টের জন্য",
+              "code": "$table->bigIncrements('id');"
+            }, {
+              "definition": "বড় ইনটেজার টাইপের ডাটার জন্য",
+              "code": "$table->bigInteger('votes');"
+            }, {
+              "definition": "বুলিয়ান টাইপের ডাটার জন্য",
+              "code": "$table->boolean('confirmed');"
+            }, {
+              "definition": "ক্যারেক্টার টাইপের ডাটা এবং সাথে অপসোনাল দৈর্ঘ্য",
+              "code": "$table->char('name', 100);"
+            }, {
+              "definition": "তারিখ এর জন্য",
+              "code": "$table->date('created_at');"
+            }, {
+              "definition": "তারিখ এবং টাইমের জন্য",
+              "code": "$table->dateTime('created_at');"
+            }, {
+              "definition": "তারিখ,টাইম এবং সাথে টাইম জোনের জন্য",
+              "code": "$table->dateTimeTz('created_at');"
+            }
+          ]
+        }
     ]
   }
  
