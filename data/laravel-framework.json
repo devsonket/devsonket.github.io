@@ -75,8 +75,11 @@
             "definition": "মাইগ্রেশন ব্যবহার করে সকল টেবিল মুছে ফেলা",
             "code": "php artisan migrate:reset"
           }, {
-            "definition": "একবারে সকল টেবিল মুছে ফেলার পরে, নতুন করে টেবিল তৈরি করতে চাইলে",
+            "definition": "ডাটাবেসের পূর্বের অবস্থানে ফিরে যাওয়া এবং মাইগ্রেট করা",
             "code": "php artisan migrate:refresh"
+          }, {
+            "definition": "একবারে সকল টেবিল মুছে ফেলার পরে, নতুন করে টেবিল তৈরি করতে চাইলে",
+            "code": "php artisan migrate:fresh"
           }
         ]
       },
