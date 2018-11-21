@@ -75,7 +75,7 @@
             "definition": "মাইগ্রেশন ব্যবহার করে সকল টেবিল মুছে ফেলা",
             "code": "php artisan migrate:reset"
           }, {
-            "definition": "টেবিল গুলো মুছে ফেলে নতুন করে টেবিল তৈরি করতে চাইলে",
+            "definition": "একবারে সকল টেবিল মুছে ফেলার পরে, নতুন করে টেবিল তৈরি করতে চাইলে",
             "code": "php artisan migrate:refresh"
           }
         ]
