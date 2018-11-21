@@ -76,10 +76,10 @@
             "code": "php artisan migrate:reset"
           }, {
             "definition": "টেবিল গুলো মুছে ফেলে নতুন করে টেবিল তৈরি করতে চাইলে",
-            "code": "php artisan migrate:reset"
+            "code": "php artisan migrate:fresh"
           }
         ]
       }
     ]
   }
- 
+
