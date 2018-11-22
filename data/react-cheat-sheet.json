@@ -2,161 +2,84 @@
     "id": "reactjs-cheat-sheet",
     "title": "রিয়েক্ট JS টুকিটাকি",
     "slug": "reactjs-cheat-sheet",
-    "description": "প্রোগ্রামিং ল্যাঙ্গুয়েজ সি এর আদ্যোপান্ত",
-    "colorPref": "#1290FD",
+    "description": "রিয়েক্ট JS এর আদ্যোপান্ত",
+    "colorPref": "#0288d1",
     "contents": [
       {
-        "title": "ডাটা টাইপ",
+        "title": "রিয়েক্ট JS এ 'Hello world' প্রিন্ট করা",
         "items": [
           {
-            "defination": "অক্ষর",
-            "code": "char"
+            "defination": "react কে ইম্পোর্ট(ES6 কনসেপ্ট) করে নেয়া",
+            "code": "import React from 'react'"
           }, {
-            "defination": "পূর্ণসংখ্যা",
-            "code": "int"
+            "defination": "ReactDOM কে ইম্পোর্ট করে নেয়া",
+            "code": "import ReactDOM from 'react-dom'"
           }, {
-            "defination": "ছোট পূর্ণসংখ্যা",
-            "code": "short int"
-          }, {
-            "defination": "বড় পূর্ণসংখ্যা",
-            "code": "long"
-          }, {
-            "defination": "ফ্লোটিং পয়েন্ট সংখ্যা",
-            "code": "float"
-          }, {
-            "defination": "ডাবল পয়েন্ট সংখ্যা",
-            "code": "double"
-          },{
-            "defination": "পয়েন্টার টাইপ",
-            "code": "*p"
-          },
+            "defination": "ReactDOM.render এই মেথডটি ২টি আরগুমেন্ট নেয় রেন্ডার ইলিমেন্ট এবং রেন্ডার স্কোপ",
+            "code": "ReactDOM.render(<h1>Hello, world!</h1>,document.getElementById('root'))"
+          }
+        ]
+      },
+      {
+        "title": "ES6 class নিয়ে কিছু কথা",
+        "items": [
           {
-            "defination": "ডাবল পয়েন্টার টাইপ",
-            "code": "**p"
+            "defination": "class",
+            "code": "লোকাল স্টেট এবং লাইফ-সাইকেল হুক কন্টেইন করে এমন একটি টেমপ্লেট"
+          }, {
+            "defination": "constructor(props)",
+            "code": "লোকাল স্টেটটা ডিফাইন করে এবং কম্পোনেন্ট মাউন্ট হওয়ার আগে ফায়ার করবে"
+          }, {
+            "defination": "super(props)",
+            "code": "প্যারেন্ট constructor কে রেফারেন্স করে"
+          }, {
+            "defination": "this.state = {date: new Date()}",
+            "code": "লোকাল স্টেট তৈরি করার উদাহরন"
+          }, {
+            "defination": "render() {return (<h1>Hello world</h1>)}",
+            "code": "ডোমে রেন্ডার করার একটি ফংশন যা রির্টান করবে ডোম ইলিমেন্ট"
           }
         ]
       }, {
-        "title": "গাণিতিক অপারেশন",
+        "title": "স্টেটলেস-কম্পোনেন্ট ধারনা",
         "items": [
           {
-            "defination": "সাধারন গাণিতিক অপারেশন",
-            "code": " +, -, *, /, %"
+            "defination": "স্টেটলেস-কম্পোনেন্টের স্ট্রাকচার",
+            "code": "const Human = ()=>{return()}"
           }, {
-            "defination": "i থেকে ১ যোগ অথবা বিয়োগ করবে এবং ফলাফল i এর মধ্যে রাখবে",
-            "code": "++i,--i"
-          }, {
-            "defination": "i এর ভ্যালু মনে রাখবে, i এর ভ্যালু ১ বাড়াবে অথবা কমাবে এবং i এর আগের ভ্যালু রির্টান করবে",
-            "code": "i++,i--"
-          }, {
-            "defination": "বেসিক লজিক্যাল অপারেটর",
-            "code": "&&,||,!"
-          }, {
-            "defination": "বিট লজিক্যাল অপারেটর অথবা বিটওয়াইজ অপারেটর",
-            "code": "&,|,^,~!"
-          }, {
-            "defination": "তুলনামূলক অপারেটর",
-            "code": " == != < > <= >="
-          }, {
-            "defination": "নির্ধারিত করন অপারেটর",
-            "code": "="
+            "defination": "props যুক্ত স্টেটলেস-কম্পোনেন্ট",
+            "code": "const Human = (props) =>{return(<h2>{props.name}</h2>)}"
           }
         ]
       }, {
-        "title": "বিল্ট-ইন ফাংশন",
+        "title": "রিয়েক্ট JS লাইফ সাইকেল হুক",
         "items": [
           {
-            "defination": "ফাইল খোলার জন্য",
-            "code": "fopen()"
+            "defination": "রেন্ডারিং এর আগে ইনভোক হয়",
+            "code": "constructor (props)"
           }, {
-            "defination": "ফাইল বন্ধ করার জন্য",
-            "code": "fclose()"
+            "defination": "রেন্ডার করে",
+            "code": "render()"
           }, {
-            "defination": "১টা অক্ষর পড়ার জন্য",
-            "code": "getchar()"
+            "defination": "রেন্ডারিং এর পর ইনভোক হয়(যখন ডোম এভেইলএবল)",
+            "code": "componentDidMount()"
           }, {
-            "defination": "১টা অক্ষর লিখার জন্য",
-            "code": "putchar()"
+            "defination": "ডোম রিমুভ হওয়ার আগে ইনভোক হয়",
+            "code": "componentWillUnmount()"
           }, {
-            "defination": "ফাইল থেকে অক্ষর পড়ার জন্য",
-            "code": "fgetc()"
+            "defination": "যখন কম্পোনেন্ট নতুন প্রপস রিসীভড করে",
+            "code": "componentWillReceiveProps()"
           }, {
-            "defination": "ফাইল এ অক্ষর লিখার জন্য",
-            "code": "fputc()"
+            "defination": "কম্পোনেন্ট নতুন প্রপস রিসীভড করার পর রেন্ডারিং এর আগে ইনভোক হয়",
+            "code": "shouldComponentUpdate() "
           }, {
-            "defination": "আর্গুমেন্টস আকারে কিছু পড়ার জন্য",
-            "code": "scanf()"
+            "defination": "immediately ইনভোক হয় নতুন প্রপস অথবা স্টেট পরিবর্তন হয়",
+            "code": "componentWillUpdate()"
           }, {
-            "defination": "আর্গুমেন্টস আকারে কিছু ফাইল থেকে পড়ার জন্য",
-            "code": "fscanf()"
-          }, {
-            "defination": "আর্গুমেন্টস আকারে কিছু লিখার জন্য",
-            "code": "printf()"
-          }, {
-            "defination": "আর্গুমেন্টস আকারে কিছু ফাইল এ লিখার জন্য",
-            "code": "fprintf()"
-          }, {
-            "defination": "ফাইল অপারশন শেষে সত্য রির্টান করার জন্য",
-            "code": "feof()"
+            "defination": "কম্পোনেন্ট নতুন প্রপস রিসীভড কর রেন্ডারিং এর পর ইনভোক হয়",
+            "code": "componentDidUpdate()"
           }
         ]
-      },{
-          "title": "গাণিতিক বিল্ট-ইন ফাংশন",
-          "items": [
-            {
-              "defination": "রুট করার জন্য",
-              "code": "sqrt()"
-            }, {
-              "defination": "সাধারন লগারিদম পাওয়ার জন্য",
-              "code": "log()"
-            }, {
-              "defination": "এক্সপোনেনশিয়াল নাম্বার এর জন্য",
-              "code": "exp()"
-            }, {
-              "defination": "y এর পাওয়ার হিসেবে x কে নেয়ার জন্য",
-              "code": "pow(x,y)"
-            }, {
-              "defination": "অনেক গুলো নাম্বার থেকে সিলিং অথবা বড় মানের পূর্ণসংখ্যার জন্য",
-              "code": "ceil()"
-            }, {
-              "defination": "অনেক গুলো নাম্বার থেকে ফ্লোর অথবা ছোট মানের পূর্ণসংখ্যার জন্য",
-              "code": "floor()"
-            }, {
-              "defination": "x এর এবসোলিউট ভ্যালু এর জন্য ",
-              "code": "abs(x)"
-            }, {
-              "defination": "রান্ডম নাম্বার জেনারেট করার জন্য",
-              "code": "random()"
-            }
-          ]
-        },{
-          "title": "প্রচলিত বিশেষ ক্যারেক্টার",
-          "items": [
-            {
-              "defination": "নতুন লাইন প্রর্দশন",
-              "code": "/\n/"
-            }, {
-              "defination": "ট্যাব প্রর্দশন",
-              "code": "/\t/"
-            }, {
-              "defination": "পূর্ণসংখ্যা প্রর্দশন",
-              "code": "%d"
-            }, {
-              "defination": "ফ্লোটিং পয়েন্ট সংখ্যা প্রর্দশন",
-              "code": "%f"
-            }, {
-              "defination": "ডাবল পয়েন্ট সংখ্যা প্রর্দশন",
-              "code": "%lf"
-            }, {
-              "defination": "মেমোরি লোকেশন প্রর্দশন",
-              "code": "%p"
-            }, {
-              "defination": "স্ট্রিং প্রর্দশন",
-              "code": "%s"
-            }, {
-              "defination": "ক্যারেক্টার প্রর্দশন",
-              "code": "%c"
-            }
-          ]
       }
     ]
   }
