@@ -83,6 +83,9 @@
           "definition": "vim এডিটর দিয়ে ফাইল এডিট করা",
           "code": "vi YourFileName"
         }, {
+          "definition": "nano এডিটর দিয়ে ফাইল এডিট করা",
+          "code": "nano YourFileName"
+        }, {
           "definition": "বর্তমান ওয়ার্কিং ডিরেক্টরি প্রিন্ট করা",
           "code": "pwd"
         }, {
