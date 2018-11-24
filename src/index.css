@@ -609,7 +609,7 @@ td:last-child {
 }
 tt,
 code {
-  background-color: hsla(34, 78%, 91%, 1);
+  background-color: #eee;
   border-radius: 4px;
   font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
