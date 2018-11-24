@@ -221,6 +221,75 @@
               "definition": "স্ট্রিং বিল্ডারের i ইনডেক্সে ক্যারেক্টার সেট করা",
               "code": "SBName.setCharAt(int index, char ch)"
             }]
+          },{
+            "title": "আই ও (I/O)",
+            "items": [{
+              "definition": "নতুন ফাইল তৈরি করা",
+              "code": "File inp = new File(\"input.txt\"); , File outp = new File(\"output.txt\");"
+            }, {
+              "definition": "ফাইল রিডার ক্লাস ব্যাবহার করা হয় কোন ফাইল ওপেন করে ক্যারেক্টার রিড করার জন্য",
+              "code": "FileReader inFile = new FileReader(inp);"
+            }, {
+              "definition": "read() মেথড ফাইল থেকে ASCII ক্যারেক্টার রিড করে, এবং -1 রিটার্ন করে ফাইল রিড করা শেষে",
+              "code": "inFile.read())!=-1"
+            }, {
+              "definition": "ফাইল রাইটার ক্লাস ব্যাবহার করা হয় কোন ফাইলে ক্যারেক্টার রাইট করার জন্য",
+              "code": "FileWriter outFile = new FileWriter(outp);"
+            }, {
+              "definition": "write(ch) মেথড ফাইলে ASCII ক্যারেক্টার রাইট করে,",
+              "code": "outFile.write(ch);"
+            }, {
+              "definition": "ফাইল ডাটা বাইট হিসেবে রিড করে",
+              "code": "FileInputStream inFile = new FileInputStream(\"input.txt\");"
+            }, {
+              "definition": "read() মেথড ফাইল থেকে বাইট রিড করে, এবং -1 রিটার্ন করে ফাইল রিড করা শেষে",
+              "code": "byteRead = (byte)inFile.read(); , byteRead != -1"
+            }, {
+              "definition": "ফাইলে ডাটা বাইট হিসেবে রাইট করে",
+              "code": "FileOutputStream outFile = new FileOutputStream(\"out.txt\"); "
+            }, {
+              "definition": "write(byteRead) মেথড ফাইলে ডাটা বাইট হিসেবে রাইট করার জন্য ব্যাবহার করা হয়",
+              "code": "outFile.write(byteRead);"
+            }, {
+              "definition": "ইনপুট স্ট্রিম থেকে প্রিমিটিভ ডাটা রিড করে",
+              "code": "DataInputStream dis = new DataInputStream(inFile);"
+            }, {
+              "definition": "আউটপুট স্ট্রিমে পোর্টেবল ওয়েতে প্রিমিটিভ ডাটা রাইট করে",
+              "code": "DataOutputStream dos = new DataOutputStream(outFile);"
+            }, {
+              "definition": "একাধিক ইনপুট স্ট্রিমকে কনক্যাটেনেট করে",
+              "code": "SequenceInputStream file3 = new SequenceInputStream(file1,file2);"
+            },{
+              "definition": "বর্তমান ইনপুট স্ট্রিম থেকে ক্যারেক্টার রিড করে",
+              "code": "InputStreamReader ir = new InputStreamReader(System.in)"
+            },{
+              "definition": "বর্তমান আউটপুট স্ট্রিমে ক্যারেক্টার এনকোড করে UTF-8 অথবা UTF-16 রাইট করে",
+              "code": "OutputStream os = new FileOutputStream(\"output.txt\");, Writer osw = new OutputStreamWriter(os);"
+            },{
+              "definition": "বর্তমান ইনপুট স্ট্রিম থেকে ক্যারেক্টার রিড করে বাফারড পদ্ধতিতে, যেটি পারফরমেন্স বৃদ্ধি করে",
+              "code": "BufferedReader br =new BufferedReader(new InputStreamReader(System.in));"
+            },{
+              "definition": "read() মেথড ফাইল থেকে ক্যারেক্টার রিড করে বাফারড পদ্ধতিতে",
+              "code": "String str = br.readLine();"
+            },{
+              "definition": "বর্তমান ফাইলে ক্যারেক্টার এনকোড করে UTF-8 অথবা UTF-16 রাইট করে বাফারড পদ্ধতিতে",
+              "code": "BufferedWriter writer = new BufferedWriter(new FileWriter(destination))"
+            },{
+              "definition": "বর্তমান ইনপুট স্ট্রিম থেকে বাইট রিড করে বাফারড পদ্ধতিতে, যেটি পারফরমেন্স বৃদ্ধি করে",
+              "code": "BufferedInputStream inBuffer = new BufferedInputStream(new FileInputStream(\"text2.dat\"));"
+            },{
+              "definition": "read() মেথড ফাইল থেকে বাইট রিড করে, এবং -1 রিটার্ন করে ফাইল রিড করা শেষে",
+              "code": "(ch= inBuffer.read()) != -1"
+            },{
+              "definition": "বর্তমান আউটপুট স্ট্রিমে বাইট রাইট করে বাফারড পদ্ধতিতে",
+              "code": "BufferedOutputStream outBuffer = new BufferedOutputStream(System.out);"
+            },{
+              "definition": "write(ch) মেথড আউটপুট স্ট্রিমে ডাটা বাইট হিসেবে রাইট করার জন্য ব্যাবহার করা হয়",
+              "code": "outBuffer.write(ch);"
+            },{
+              "definition": "কোন ফাইল থেকে রিড করা",
+              "code": "Scanner reader = new Scanner(new File(\"input2.txt\"));"
+            }]
           }
     ]
   }
