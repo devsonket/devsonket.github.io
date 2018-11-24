@@ -32,6 +32,10 @@
         }, {
             "title": "Repository কমান্ডসমূহ ",
             "items": [
+		{
+                    "definition": "কোনো Repository ক্লোন করা(লোকাল মেশিনে ডাউনলোড করা)",
+                    "code": "git clone [url]"
+                },    
                 {
                     "definition": "নতুন Repository তৈরী করা",
                     "code": "git init"
@@ -44,7 +48,7 @@
                     "definition": "কমিট এর জন্যে ফাইল এড করা",
                     "code": "git add [file]"
                 },
-				{
+		{
                     "definition": "কমিট এর জন্যে সব পরিবর্তিত ফাইল এড করা",
                     "code": "git add ."
                 },
@@ -52,15 +56,20 @@
                     "definition": "Repository তে কিছু কমিট করা (কমিট মেসেজসহ)",
                     "code": "git commit -m \"YourCommitMessage\""
                 },
+		
+                {
+                    "definition": "Repository তে লোকাল ব্রাঞ্চ থেকে আপলোড করা",
+                    "code": "git push -u origin [branchName]"
+                },
                 {
                     "definition": "সব লোকাল ব্রাঞ্চ এর নাম লিস্ট করা",
                     "code": "git branch"
                 },
-				{
+		{
                     "definition": "সব রিমোট ব্রাঞ্চ এর নাম লিস্ট করা",
                     "code": "git branch -r"
                 },
-				{
+		{
                     "definition": "সব লোকাল এবং রিমোট ব্রাঞ্চ এর নাম লিস্ট করা",
                     "code": "git branch -a"
                 },
@@ -76,23 +85,24 @@
                     "definition": "ব্রাঞ্চ রিমুভ করতে",
                     "code": "git branch -d [branch-name]"
                 },
-				{
+		{
                     "definition": "রিমোট ব্রাঞ্চ রিমুভ করতে",
                     "code": "git push --delete origin [branch-name]"
                 },
-				{
+		
+		{
                     "definition": "ট্যাগ লিস্ট দেখতে",
                     "code": "git tag"
                 },
-				{
+		{
                     "definition": "ট্যাগ তৈরি করতে",
                     "code": "git tag [tag-name]"
                 },
-				{
+		{
                     "definition": "কমিট লগ বিস্তারিত দেখতে",
                     "code": "git log"
                 },
-				{
+		{
                     "definition": " কমিট লগ সামারি আকারে দেখতে((৫টি)",
                     "code": "git log --oneline -5"
                 },
@@ -111,6 +121,10 @@
                 {
                     "definition": "অন্য Repository থেকে ব্রাঞ্চ/রেফ/অবজেক্ট fetch করা",
                     "code": "git fetch RepositoryName"
+                },
+		{
+                    "definition": "Repository থেকে নতুন চেঞ্জ গুলো pull করা",
+                    "code": "git pull"
                 }
             ]
         }

@@ -158,6 +158,10 @@
   margin-bottom: 0;
 }
 
+pre.code {
+  overflow-y: hidden;
+}
+
 .single-content {
   display: flex;
   flex-wrap: wrap;
