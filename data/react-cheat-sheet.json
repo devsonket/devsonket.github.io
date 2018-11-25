@@ -9,13 +9,13 @@
         "title": "রিয়েক্ট JS এ 'Hello world' প্রিন্ট করা",
         "items": [
           {
-            "defination": "react কে ইম্পোর্ট(ES6 কনসেপ্ট) করে নেয়া",
+            "definition": "react কে ইম্পোর্ট(ES6 কনসেপ্ট) করে নেয়া",
             "code": "import React from 'react'"
           }, {
-            "defination": "ReactDOM কে ইম্পোর্ট করে নেয়া",
+            "definition": "ReactDOM কে ইম্পোর্ট করে নেয়া",
             "code": "import ReactDOM from 'react-dom'"
           }, {
-            "defination": "ReactDOM.render এই মেথডটি ২টি আরগুমেন্ট নেয় রেন্ডার ইলিমেন্ট এবং রেন্ডার স্কোপ",
+            "definition": "ReactDOM.render এই মেথডটি ২টি আরগুমেন্ট নেয় রেন্ডার ইলিমেন্ট এবং রেন্ডার স্কোপ",
             "code": "ReactDOM.render(<h1>Hello, world!</h1>,document.getElementById('root'))"
           }
         ]
@@ -24,19 +24,19 @@
         "title": "ES6 class নিয়ে কিছু কথা",
         "items": [
           {
-            "defination": "class",
+            "definition": "class",
             "code": "লোকাল স্টেট এবং লাইফ-সাইকেল হুক কন্টেইন করে এমন একটি টেমপ্লেট"
           }, {
-            "defination": "constructor(props)",
+            "definition": "constructor(props)",
             "code": "লোকাল স্টেটটা ডিফাইন করে এবং কম্পোনেন্ট মাউন্ট হওয়ার আগে ফায়ার করবে"
           }, {
-            "defination": "super(props)",
+            "definition": "super(props)",
             "code": "প্যারেন্ট constructor কে রেফারেন্স করে"
           }, {
-            "defination": "this.state = {date: new Date()}",
+            "definition": "this.state = {date: new Date()}",
             "code": "লোকাল স্টেট তৈরি করার উদাহরন"
           }, {
-            "defination": "render() {return (<h1>Hello world</h1>)}",
+            "definition": "render() {return (<h1>Hello world</h1>)}",
             "code": "ডোমে রেন্ডার করার একটি ফংশন যা রির্টান করবে ডোম ইলিমেন্ট"
           }
         ]
@@ -44,10 +44,10 @@
         "title": "স্টেটলেস-কম্পোনেন্ট ধারনা",
         "items": [
           {
-            "defination": "স্টেটলেস-কম্পোনেন্টের স্ট্রাকচার",
+            "definition": "স্টেটলেস-কম্পোনেন্টের স্ট্রাকচার",
             "code": "const Human = ()=>{return()}"
           }, {
-            "defination": "props যুক্ত স্টেটলেস-কম্পোনেন্ট",
+            "definition": "props যুক্ত স্টেটলেস-কম্পোনেন্ট",
             "code": "const Human = (props) =>{return(<h2>{props.name}</h2>)}"
           }
         ]
@@ -55,28 +55,28 @@
         "title": "রিয়েক্ট JS লাইফ সাইকেল হুক",
         "items": [
           {
-            "defination": "রেন্ডারিং এর আগে ইনভোক হয়",
+            "definition": "রেন্ডারিং এর আগে ইনভোক হয়",
             "code": "constructor (props)"
           }, {
-            "defination": "রেন্ডার করে",
+            "definition": "রেন্ডার করে",
             "code": "render()"
           }, {
-            "defination": "রেন্ডারিং এর পর ইনভোক হয়(যখন ডোম এভেইলএবল)",
+            "definition": "রেন্ডারিং এর পর ইনভোক হয়(যখন ডোম এভেইলএবল)",
             "code": "componentDidMount()"
           }, {
-            "defination": "ডোম রিমুভ হওয়ার আগে ইনভোক হয়",
+            "definition": "ডোম রিমুভ হওয়ার আগে ইনভোক হয়",
             "code": "componentWillUnmount()"
           }, {
-            "defination": "যখন কম্পোনেন্ট নতুন প্রপস রিসীভড করে",
+            "definition": "যখন কম্পোনেন্ট নতুন প্রপস রিসীভড করে",
             "code": "componentWillReceiveProps()"
           }, {
-            "defination": "কম্পোনেন্ট নতুন প্রপস রিসীভড করার পর রেন্ডারিং এর আগে ইনভোক হয়",
+            "definition": "কম্পোনেন্ট নতুন প্রপস রিসীভড করার পর রেন্ডারিং এর আগে ইনভোক হয়",
             "code": "shouldComponentUpdate() "
           }, {
-            "defination": "immediately ইনভোক হয় নতুন প্রপস অথবা স্টেট পরিবর্তন হয়",
+            "definition": "immediately ইনভোক হয় নতুন প্রপস অথবা স্টেট পরিবর্তন হয়",
             "code": "componentWillUpdate()"
           }, {
-            "defination": "কম্পোনেন্ট নতুন প্রপস রিসীভড কর রেন্ডারিং এর পর ইনভোক হয়",
+            "definition": "কম্পোনেন্ট নতুন প্রপস রিসীভড কর রেন্ডারিং এর পর ইনভোক হয়",
             "code": "componentDidUpdate()"
           }
         ]
