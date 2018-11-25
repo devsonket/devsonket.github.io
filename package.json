@@ -14,10 +14,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp ./build/index.html ./build/404.html",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "postbuild": "node postbuild.js"
+    "eject": "react-scripts eject"
   },
   "browserslist": [
     ">0.2%",
