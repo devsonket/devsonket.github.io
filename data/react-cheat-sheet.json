@@ -1,12 +1,12 @@
 {
     "id": "reactjs-cheat-sheet",
-    "title": "রিয়েক্ট JS টুকিটাকি",
+    "title": "রিঅ্যাক্টট JS টুকিটাকি",
     "slug": "reactjs-cheat-sheet",
-    "description": "রিয়েক্ট JS এর আদ্যোপান্ত",
+    "description": "রিঅ্যাক্ট JS এর আদ্যোপান্ত",
     "colorPref": "#0288d1",
     "contents": [
       {
-        "title": "রিয়েক্ট JS এ 'Hello world' প্রিন্ট করা",
+        "title": "রিঅ্যাক্ট JS এ 'Hello world' প্রিন্ট করা",
         "items": [
           {
             "definition": "react কে ইম্পোর্ট(ES6 কনসেপ্ট) করে নেয়া",
@@ -52,7 +52,7 @@
           }
         ]
       }, {
-        "title": "রিয়েক্ট JS লাইফ সাইকেল হুক",
+        "title": "রিঅ্যাক্ট JS লাইফ সাইকেল হুক",
         "items": [
           {
             "definition": "রেন্ডারিং এর আগে ইনভোক হয়",
