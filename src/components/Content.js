@@ -26,7 +26,7 @@ class Content extends Component {
 
   getData = async(id) => {
     try {
-      const { data } = await axios(`https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/${id}.json`);
+      const { data } = await axios(`https://raw.githubusercontent.com/devsonket/devsonket.github.io/develop/data/${id}.json`);
       this.setState({data});
       this.setTitle();
     } catch(e) {

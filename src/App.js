@@ -24,12 +24,12 @@ class App extends Component {
   }
 
   getData() {
-    const data = axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/index.json');
+    const data = axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/develop/data/index.json');
     return data;
   }
 
   topData() {
-    const tops = axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/master/data/top.json');
+    const tops = axios('https://raw.githubusercontent.com/devsonket/devsonket.github.io/develop/data/top.json');
     return tops;
   }
 
