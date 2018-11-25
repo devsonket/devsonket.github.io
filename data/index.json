@@ -1,0 +1,67 @@
+[
+  {
+    "id": "shortcut-chrome-win",
+    "title": "গুগুল ক্রোম(উইন্ডোজ)",
+    "title_en": "Google Chrome(Windows)"
+  }, {
+    "id": "shortcut-sblm3-win",
+    "title": "সাবলাইম টেক্সট ৩(উইন্ডোজ)",
+    "title_en": "Sublime Text 3(Windows)"
+  }, {
+    "id": "linux-command-line",
+    "title": "লিনাক্স কমান্ড লাইন",
+    "title_en": "Linux Command Line"
+  }, {
+    "id": "js-object-method",
+    "title": "জাভাস্ক্রিপ্ট অবজেক্ট মেথড",
+    "title_en": "JavaScript Object Method"
+  }, {
+    "id": "cpp",
+    "title": "সি++",
+    "title_en": "C++"
+  }, {
+    "id": "c-cheat-sheet",
+    "title": "সি",
+    "title_en": "C"
+  }, {
+    "id": "node-js-global",
+    "title": "নোড জেএস",
+    "title_en": "Node JS"
+  }, {
+    "id": "shortcut-vscode-win",
+    "title": "ভিস্যুয়াল স্টুডিও(উইন্ডোজ)",
+    "title_en": "Visual Studio(Windows)"
+  }, {
+    "id": "js-one-glance",
+    "title": "জাভাস্ক্রিপ্ট একপলকে",
+    "title_en": "JavaScript At a Glane"
+  }, {
+    "id": "python3-cheat-sheet",
+    "title": "পাইথন ৩",
+    "title_en": "Python 3"
+  }, {
+    "id": "java-cheat-sheet",
+    "title": "জাভা প্রোগ্রামিং",
+    "title_en": "Java Programming"
+  }, {
+    "id": "git",
+    "title": "গিট",
+    "title_en": "Git"
+  }, {
+    "id": "php-cheat-sheet",
+    "title": "পিএইচপি প্রোগ্রামিং",
+    "title_en": "PHP Programming"
+  }, {
+    "id": "solidity-cheat-sheet",
+    "title": "ইথেরিয়াম সলিডিটি",
+    "title_en": "ETH Solidity Programming"
+  }, {
+    "id": "laravel-framework",
+    "title": "লারাভেল পিএইচপি ফ্রেমওয়ার্কিং",
+    "title_en": "Laravel PHP Framework"
+  }, {
+    "id": "wordpress-theme-development",
+    "title": "ওয়ার্ডপ্রেস থিম ডেভেলপমেন্ট",
+    "title_en": "Wordpress Theme Development"
+  }
+]

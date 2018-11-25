@@ -1,0 +1,79 @@
+{
+  "id": "codendesc",
+  "title": "ডিমো চিটশিট-কোড এবং বর্ণনা",
+  "slug": "codendesc",
+  "description": "কোড এবং বর্ণনা সমৃদ্ধ চিটশিট এর ডিমো",
+  "colorPref": "#000",
+  "contents": [
+    {
+      "title": "এখানে টাইটেল যাবে",
+      "items": [
+        {
+          "definition": "বর্ণনা",
+          "code": "কোড"
+        }, {
+          "definition": "বর্ণনা",
+          "code": "কোড"
+        }, {
+          "definition": "বর্ণনা",
+          "code": "কোড"
+        }, {
+          "definition": "বর্ণনা",
+          "code": "কোড"
+        }, {
+          "definition": "বর্ণনা",
+          "code": "কোড"
+        }, {
+          "definition": "বর্ণনা",
+          "code": "কোড"
+        }, {
+          "definition": "বর্ণনা",
+          "code": "কোড"
+        }
+      ]
+    }, {
+      "title": "টাইটেল",
+      "items": [
+        {
+          "definition": "কাজের বিবরণ",
+          "code": "কোড"
+        }, {
+          "definition": "কাজের বিবরণ",
+          "code": "কোড"
+        }, {
+          "definition": "কাজের বিবরণ",
+          "code": "কোড"
+        }, {
+          "definition": "কাজের বিবরণ",
+          "code": "কোড"
+        }, {
+          "definition": "কাজের বিবরণ",
+          "code": "কোড"
+        }
+      ]
+    }, {
+      "title": "লাইফসাইকেল",
+      "items": [
+        {
+          "definition": "রেন্ডারিং এর আগে",
+          "code": "constructor (props)"
+        }, {
+          "definition": "কম্পোনেন্ট মাউন্ট হওয়ার আগে",
+          "code": "componentWillMount()"
+        }, {
+          "definition": "রেন্ডার",
+          "code": "render()"
+        }, {
+          "definition": "রেন্ডার হওয়ার পর",
+          "code": "componentDidMount()"
+        }, {
+          "definition": "ডম রিমুভ করার আগে",
+          "code": "componentWillUnmount()"
+        }, {
+          "definition": "এরর ক্যাচ করার জন্যে",
+          "code": "componentDidCatch()"
+        }
+      ]
+    }
+  ]
+}
