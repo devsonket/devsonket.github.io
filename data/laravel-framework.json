@@ -1,0 +1,118 @@
+{
+    "id": "laravel-framework",
+    "title": "লারাভেল পিএইচপি ফ্রেমওয়ার্কিং",
+    "slug": "laravel-framework",
+    "description": "লারাভেল একটি ওপেন সোর্স পিএইচপি ফ্রেমওয়ার্ক। ২০১১ সালে টেইলর অটওয়েল প্রথম লারাভেল ডেভেলপ করেন। সাধারণ ব্লগ, কনটেন্ট ম্যানেজমেন্ট সিস্টেম, ইকমার্স সাইট, বড় ধরনের ওয়েব এপ্লিকেশন, কিংবা মোবাইল এপ্লিকেশনের জন্য JSON নির্ভর এপ্লিকেশন সহ সব কিছুই এখন লারাভেল ব্যবহার করে ডেভেলপ করা সম্ভব।",
+    "colorPref": "#3A241D",
+    "contents": [
+      {
+        "title": "আরটিসান কমান্ড",
+        "items": [
+          {
+            "definition": "প্রোজেক্ট স্টার্ট করার জন্য",
+            "code": "php artisan serve"
+          }, {
+            "definition": "রাউট কে ক্যাশে নেয়া",
+            "code": "php artisan route:cache"
+          }, {
+            "definition": "ক্যাশ থেকে রাউট মুছে ফেলা",
+            "code": "php artisan route:clear"
+          }, {
+            "definition": "লারাভেলের সকল আরটিসান কমান্ড লিস্ট",
+            "code": "php artisan list"
+          }, {
+            "definition": "কনফিগারেশন ক্যাশে নেয়া",
+            "code": "php artisan config:cache"
+          }, {
+            "definition": "ক্যাশ থেকে কনফিগারেশন মুছে ফেলা",
+            "code": "php artisan config:clear"
+          }, {
+            "definition": "প্রোজেক্ট টি মেইনটেইনেন্স মোডে নেয়ার জন্য",
+            "code": "php artisan down"
+          }, {
+            "definition": "প্রোজেক্ট টি লাইভে নিয়ে আসা",
+            "code": "php artisan up"
+          }, {
+            "definition": "মিডেল ওয়ার ক্রিয়েট করা",
+            "code": "php artisan make:middleware <middleware-name>"
+          }, {
+            "definition": "কনট্রোলার ক্রিয়েট করা",
+            "code": "php artisan make:controller <controller-name>"
+          }, {
+            "definition": "একটি নির্ধারিত নেমস্পেস ক্রিয়েট করা",
+            "code": "php artisan app:name devsonket"
+          }, {
+            "definition": "লারাভেলে এইচটিএমএল প্যাকেজ যুক্ত করা",
+            "code": "php artisan composer require illuminate/html"
+          }, {
+            "definition": "লারাভেলে ইভেন্ট জেনারেট করা",
+            "code": "php artisan event:generate"
+          }, {
+            "definition": "সার্ভিস প্রভাইডার ক্রিয়েট করা",
+            "code": "php artisan make:provider <provider-name>"
+          }, {
+            "definition": "লারাভেলর ডিফল্ট অথ ব্যবহার করা",
+            "code": "php artisan make:auth"
+          }, {
+            "definition": "নিজস্ব কমান্ড লাইন তৈরি করা",
+            "code": "php artisan make:console <name-of-command>"
+          }, {
+            "definition": "কি জেনারেট",
+            "code": "php artisan key:generate"
+          }, {
+            "definition": "ক্যাশের সকল ডাটা মুছে ফেলা",
+            "code": "php artisan cache:clear"
+          }, {
+            "definition": "মাইগ্রেশন ক্রিয়েট করা",
+            "code": "php artisan make:migration create_devsonket_table --create=devsonket"
+          }, {
+            "definition": "ডাটাবেসে টেবিল মাইগ্রেট করা",
+            "code": "php artisan migrate"
+          }, {
+            "definition": "ডাটাবেসের পূর্বের অবস্থানে ফিরে যাওয়া অথবা রোল ব্যাক করা",
+            "code": "php artisan migrate:rollback"
+          }, {
+            "definition": "মাইগ্রেশন ব্যবহার করে সকল টেবিল মুছে ফেলা",
+            "code": "php artisan migrate:reset"
+          }, {
+            "definition": "ডাটাবেসের পূর্বের অবস্থানে ফিরে যাওয়া এবং মাইগ্রেট করা",
+            "code": "php artisan migrate:refresh"
+          }, {
+            "definition": "একবারে সকল টেবিল মুছে ফেলার পরে, নতুন করে টেবিল তৈরি করতে চাইলে",
+            "code": "php artisan migrate:fresh"
+          }
+        ]
+      },
+        {
+          "title": "ডাটাবেস কলাম মেথড",
+          "items": [
+            {
+              "definition": "অটো ইনক্রিমেন্টের জন্য",
+              "code": "$table->increments('id');"
+            }, {
+              "definition": "বড় ইনক্রিমেন্টের জন্য",
+              "code": "$table->bigIncrements('id');"
+            }, {
+              "definition": "বড় ইনটেজার টাইপের ডাটার জন্য",
+              "code": "$table->bigInteger('votes');"
+            }, {
+              "definition": "বুলিয়ান টাইপের ডাটার জন্য",
+              "code": "$table->boolean('confirmed');"
+            }, {
+              "definition": "ক্যারেক্টার টাইপের ডাটা এবং সাথে অপসোনাল দৈর্ঘ্য",
+              "code": "$table->char('name', 100);"
+            }, {
+              "definition": "তারিখ এর জন্য",
+              "code": "$table->date('created_at');"
+            }, {
+              "definition": "তারিখ এবং টাইমের জন্য",
+              "code": "$table->dateTime('created_at');"
+            }, {
+              "definition": "তারিখ,টাইম এবং সাথে টাইম জোনের জন্য",
+              "code": "$table->dateTimeTz('created_at');"
+            }
+          ]
+        }
+    ]
+  }
+

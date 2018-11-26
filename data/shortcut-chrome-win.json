@@ -147,6 +147,35 @@
         }
 
       ]
+    }, {
+      "title": "ক্রোম এক্সটেনশন",
+      "items": [
+        {
+          "definition": "ইংলিশ ওয়ার্ডের ভুল সংশোধনের জন্য",
+          "code": "Grammarly for Chrome"
+        }, {
+          "definition": "কোন পেজ থেকে সরাসরি লেখা ট্রান্সেলেট করতে চাইলে",
+          "code": "Google Translate"
+        }, {
+          "definition": "কোন ওয়েব এপ্লিকেশনে কি কি টুল ব্যাবহার করছে সেটা জানার জন্যে",
+          "code": "wappalyzer"
+        }, {
+          "definition": "এপিআই টেস্ট করার জন্য",
+          "code": "Postman"
+        }, {
+          "definition": "ইমেল চেক করার জন্য",
+          "code": "Google Mail Checker"
+        } , {
+          "definition": "কোন ওয়ার্ড সম্পর্কে বিস্তারিত জানতে চাইলে",
+          "code": "google dictionary"
+        } , {
+          "definition": "টুডু লিস্ট করতে চাইলে",
+          "code": "google keep"
+        } , {
+          "definition": "কোন পেজের ফুল পেজ স্কিন সর্ট নিতে চাইলেে",
+          "code": "Full Page Screen Capture"
+        } 
+      ]
     }
   ]
 }

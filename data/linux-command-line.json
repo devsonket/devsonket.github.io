@@ -6,26 +6,20 @@
   "colorPref": "#000",
   "contents": [
     {
-      "title": "ব্যাশ কমান্ড",
+      "title": "সিস্টেম সম্পর্কিত সাধারণ কিছু কমান্ড",
       "items": [
         {
+          "definition": "রুট ইউজারে প্রবেশ করা",
+          "code": "sudo su"
+        }, {
+          "definition": "ডিস্ট্রিবিউশন দেখা",
+          "code": "head -n1 /etc/issue"
+        }, {
           "definition": "সিস্টেম এবং কার্নেল দেখা",
           "code": "uname -a"
         }, {
           "definition": "শুধু কার্নেল দেখা",
           "code": "uname -r"
-        }, {
-          "definition": "ডিস্ট্রিবিউশন দেখা",
-          "code": "head -n1 /etc/issue"
-        }, {
-          "definition": "মাউন্টেড ফাইল সিস্টেম দেখা",
-          "code": "mount"
-        }, {
-          "definition": "সিস্টেম ডেট দেখা",
-          "code": "date"
-        }, {
-          "definition": "চলমান মাসের ক্যালেন্ডার দেখা",
-          "code": "cal"
         }, {
           "definition": "আপটাইম দেখা",
           "code": "uptime"
@@ -39,6 +33,9 @@
           "definition": "অনলাইনে কে আছে দেখা",
           "code": "w"
         }, {
+          "definition": "চলমান মাসের ক্যালেন্ডার দেখা",
+          "code": "cal"
+        }, {
           "definition": "কমান্ডের ম্যানুয়াল দেখা",
           "code": "man কমান্ড"
         }, {
@@ -48,6 +45,14 @@
           "definition": "রিবুট হিস্টরি দেখা",
           "code": "last reboot"
         }, {
+          "definition": "সিস্টেম ডেট দেখা",
+          "code": "date"
+        }
+      ]
+    }, {
+      "title": "ফাইল এবং ডিরেক্টরি সম্পর্কিত কমান্ডসমূহ",
+      "items": [
+        {
           "definition": "নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা",
           "code": "mkdir NewDirectoryName"
         }, {
@@ -62,9 +67,6 @@
         }, {
           "definition": "ফাইল এক জায়গা থেকে অন্য জায়গায় মুভ করা",
           "code": "mv PathToSourceFile PathToWhereYouWantToMove"
-        }, {
-          "definition": "রুট ইউজারে প্রবেশ করা",
-          "code": "sudo su"
         }, {
           "definition": "ডিরেক্টরি অথবা ফাইল দেখা",
           "code": "ls"
@@ -81,17 +83,129 @@
           "definition": "vim এডিটর দিয়ে ফাইল এডিট করা",
           "code": "vi YourFileName"
         }, {
-          "definition": "টারমিনাল ক্লোজ করা",
-          "code": "exit অথবা Ctrl+D"
+          "definition": "nano এডিটর দিয়ে ফাইল এডিট করা",
+          "code": "nano YourFileName"
         }, {
-          "definition": "টারমিনালের সকল কমান্ড মুছে ফেলা",
-          "code": "clear"
+          "definition": "বর্তমান ওয়ার্কিং ডিরেক্টরি প্রিন্ট করা",
+          "code": "pwd"
+        }, {
+          "definition": "ফাইল কপি করা",
+          "code": "cp PathToSourceFile PathToWhereYouWantToMove"
+        }, {
+          "definition": "ফাইলের কনটেন্ট দেখা",
+          "code": "cat YourFileName"
+        }, {
+          "definition": "সিস্টেমে ওপেন থাকা ফাইলসমূহের লিস্ট দেখা",
+          "code": "lsof"
+        }, {
+          "definition": "ইউজার দ্বারা ওপেন সমস্ত ফাইলসমূহের লিস্ট দেখা",
+          "code": "lsof -u YourUserName"
+        }, {
+          "definition": "ফাইল ব্রাউজ করা",
+          "code": "less YourFileName"
+        }, {
+          "definition": "ফাইলের প্রথম ১০ লাইন দেখা", 
+          "code": "head YourFileName"
+        }, {
+          "definition": "ফাইলের শেষ ১০ লাইন দেখা",
+          "code": "tail -f YourFileName"
+        }, {
+          "definition": "ফাইল অথবা ডিরেক্টরির সাইজ দেখা",
+          "code": "du YourFileOrDirectory"
+        }, {
+          "definition": "ফাইলের পারমিশন সবার জন্য রিড, রাইত, এক্সিকিউট (read, write, execute) করা",
+          "code": "chmod 777 YourFileName"
+        }
+      ]
+    }, {
+      "title": "হার্ডওয়্যার তথ্য",
+      "items": [
+        {
+          "definition": "সকল হার্ডওয়্যারের লিস্ট দেখা",
+          "code": "lshw"
+        }, {
+          "definition": "কার্নেল রিং বাফারে ম্যাসেজ দেখা",
+          "code": "dmesg"
+        }, {
+          "definition": "সিপিও তথ্য দেখা",
+          "code": "cat /proc/cpuinfo"
+        }, {
+          "definition": "মেমোরি তথ্য দেখা",
+          "code": "cat /proc/meminfo"
+        }, {
+          "definition": "খালি এবং ব্যবহৃত মেমোরি দেখা",
+          "code": "free -h, free -m, free -g"
+        }, {
+          "definition": "PCI ডিভাইস দেখা",
+          "code": "lspci -tv"
+        }, {
+          "definition": "USB ডিভাইস দেখা",
+          "code": "lsusb -tv"
+        }, {
+          "definition": "Hard Drive ডিভাইস দেখা",
+          "code": "lsblk"
+        }, {
+          "definition": "BIOS থেকে DMI/SMBIOS সম্পর্কিত তথ্য দেখা",
+          "code": "dmidecode"
+        }, {
+          "definition": "হার্ডড্রাইভ সম্পর্কিত তথ্য দেখা",
+          "code": "hdparm -i  /dev/YourDriveName"
+        }, {
+          "definition": "সোয়াপ সম্পর্কিত তথ্য দেখা",
+          "code": "swapon -s"
+        }, {
+          "definition": "মাউন্টেড ফাইল সিস্টেম দেখা",
+          "code": "mount"
+        }, {
+          "definition": "পার্টিশন সম্পর্কিত তথ্য দেখা ",
+          "code": "fdisk -l"
+        }
+      ]
+    }, {
+      "title": "সিস্টেম পারফর্মেন্স অ্যান্ড মনিটরিং",
+      "items": [
+        {
+          "definition": "টপ প্রসেসগুলো দেখা এবং ম্যানেজ করা",
+          "code": "top"
+        }, {
+          "definition": "ভার্চুয়াল মেমোরি সম্পর্কিত তথ্য দেখা",
+          "code": "vmstat"
+        }, {
+          "definition": "বর্তমান অ্যাক্টিভ প্রসেসগুলো দেখা",
+          "code": "ps"
+        }, {
+          "definition": "নির্দিষ্ট প্রসেস আইডির (PID) কোন প্রসেস কিল করা",
+          "code": "kill PID"
+        }, {
+          "definition":  "নির্দিষ্ট নামের কোন প্রসেস কিল করা", 
+          "code": "killall ProcessName"
+        }, {
+          "definition": "রানিং প্রসেসগুলো ট্রি ফরম্যাটে দেখা",
+          "code": "pstree"
+        }, {
+          "definition": "কোন প্রসেস এর প্রসেস আইডি (PID) দেখা",
+          "code": "pgrep ProcessName"
+        }, {
+          "definition": "গ্র্যাফিকাল কোন প্রোগ্রাম সিলেক্ট করার মাধ্যমে কিল করা",
+          "code": "xkill"
+        }, {
+          "definition": "সিস্টেমের এক্সিকিউটেবল পাথ দেখা",
+          "code": "echo $PATH"
+        }, {
+          "definition": "কোন এক্সিকিউটেবল ফাইলের (এপ্লিকেশনের) ফুল পাথ বের করা",
+          "code": "which ExecutableFileName"
         }
       ]
     }, {
       "title": "ব্যাশ শর্টকাট",
       "items": [
         {
+          "definition": "টারমিনালের সকল কমান্ড মুছে ফেলা",
+          "code": "clear"
+        }, {
+          "definition": "টারমিনাল ক্লোজ করা",
+          "code": "exit অথবা Ctrl+D"
+        }, {
           "definition": "বর্তমান কমান্ড স্টপ করা",
           "code": "Ctrl-c"
         }, {
@@ -132,32 +246,12 @@
           "code": "^abc^123"
         }
       ]
-    }, {
-      "title": "হার্ডওয়্যার তথ্য",
-      "items": [
-        {
-          "definition": "কার্নেল রিং বাফারে ম্যাসেজ দেখা",
-          "code": "dmesg"
-        }, {
-          "definition": "সিপিও তথ্য দেখা",
-          "code": "cat /proc/cpuinfo"
-        }, {
-          "definition": "মেমোরি তথ্য দেখা",
-          "code": "cat /proc/meminfo"
-        }, {
-          "definition": "খালি এবং ব্যবহৃত মেমোরি দেখা",
-          "code": "free -h, free -m, free -g"
-        }, {
-          "definition": "PCI ডিভাইস দেখা",
-          "code": "lspci -tv"
-        }, {
-          "definition": "USB ডিভাইস দেখা",
-          "code": "lsusb -tv"
-        }, {
-          "definition": "Hard Drive ডিভাইস দেখা",
-          "code": "lsblk"
-        }
-      ]
     }
   ]
 }
+
+
+
+
+
+

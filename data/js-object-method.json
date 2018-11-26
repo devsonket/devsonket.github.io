@@ -109,6 +109,9 @@
           "definition": "তারিখ(০-৩১) রিটার্ণ করা",
           "code": "getDate(x)"
         }, {
+          "definition": "সাপ্তাহিক(০-৬) দিন পাওয়া",
+          "code": "getDay()"
+        }, {
           "definition": "ঘন্টা(০-২৩) রিটার্ণ করা",
           "code": "getHours(x)"
         }, {
@@ -175,6 +178,59 @@
         }, {
           "definition": "একটা নাম্বারের প্রিমিটিভ ভ্যালু রিটার্ণ করা",
           "code": "valueOf()"
+        }
+      ]
+    }, {
+      "title": "জাভাস্ক্রিপ্ট console অবজেক্ট এর ব্যবহার সমূহ",
+      "items": [
+        {
+          "definition": "কোন কিছুর আউটপুট ব্রাউজার কনসোলে দেখতে চাইলে",
+          "code": "console.log()"
+        }, {
+          "definition": "কোন মান টেস্ট করার জন্য",
+          "code": "console.assert()"
+        }, {
+          "definition": "ব্রাউজার কনসোল ক্লিয়ার করতে",
+          "code": "console.clear()"
+        }, {
+          "definition": "কনসোল আউটপুট count করতে",
+          "code": "console.count()"
+        }, {
+          "definition": "কনসোল আউটপুট count কে reset করতে",
+          "code": "console.countReset()"
+        }, {
+          "definition": "অবজেক্ট এর প্রোপার্টি গুলো দেখতে",
+          "code": "console.dir(object)"
+        }, {
+          "definition": "কনসোল কোন element এর XML/HTML/Object ভিউ পেতে",
+          "code": "console.dirxml()"
+        }, {
+          "definition": "কাস্টম error দেখানোর জন্য",
+          "code": "console.error()"
+        }, {
+          "definition": "Group of element একসাথে দেখতে",
+          "code": "console.group()"
+        }, {
+          "definition": "কনসোল ইনফো জানতে",
+          "code": "console.info()"
+        }, {
+          "definition": "কনসোল আউটপুট table আকারে দেখতে",
+          "code": "console.table()"
+        }, {
+          "definition": "কোন অপারেশন কি পরিমান সময় নিচ্ছে তা দেখতে",
+          "code": "console.time()"
+        }, {
+          "definition": "কোন অপারেশনের এক্স্যাক্ট সময় জানতে",
+          "code": "console.timeEnd()"
+        }, {
+          "definition": "console.time() ও console.timeEnd এর পুরো লগ দেখতে",
+          "code": "console.timeLog()"
+        }, {
+          "definition": "কোন ফাংশন কার্যক্রম trace করার জন্য",
+          "code": "console.trace()"
+        }, {
+          "definition": "ওয়ার্নিং মেসেজ দেয়ার জন্য",
+          "code": "console.warn()"
         }
       ]
     }
