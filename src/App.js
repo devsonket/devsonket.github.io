@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import ReactGA from 'react-ga';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { BeatLoader } from 'react-spinners';
-import ReactGA from 'react-ga'
+
 import './App.css';
 
 import Home from './components/Home';
