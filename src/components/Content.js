@@ -8,9 +8,12 @@ import HeaderContent from './HeaderContent';
 import Page404 from './404';
 import Footer from './Footer';
 
+import contributorMap from '../utils/contributorMap';
+
 class Content extends Component {
   state = {
     data: '',
+    contributor: '',
     redirect: false
   }
 
@@ -27,7 +30,9 @@ class Content extends Component {
   getData = async(id) => {
     try {
       const { data } = await axios(`https://raw.githubusercontent.com/devsonket/devsonket.github.io/develop/data/${id}.json`);
-      this.setState({data});
+      let { data: contributor } = await axios(`https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${id}.json`);
+      contributor = contributorMap(contributor);
+      this.setState({data, contributor});
       this.setTitle();
     } catch(e) {
       this.setState({redirect: true})
@@ -35,7 +40,7 @@ class Content extends Component {
   }
 
   render() {
-    const { data, redirect } = this.state;
+    const { data, contributor, redirect } = this.state;
     const { match: { url } } = this.props;
 
     if(redirect && url !== '/404') {
@@ -54,7 +59,7 @@ class Content extends Component {
 
     return (
       <React.Fragment>
-        <HeaderContent title={data.title} description={data.description} />
+        <HeaderContent title={data.title} description={data.description} contributor={contributor} />
         <Container>
           <div className="single-content">
             {data.contents.map(({title, items, code: onlyCode}, index) => (
