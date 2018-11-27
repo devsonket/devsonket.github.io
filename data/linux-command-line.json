@@ -201,7 +201,7 @@
       "items": [
         {
           "definition": "টারমিনালের সকল কমান্ড মুছে ফেলা",
-          "code": "clear"
+          "code": "clear অথবা Ctrl+l"
         }, {
           "definition": "টারমিনাল ক্লোজ করা",
           "code": "exit অথবা Ctrl+D"
@@ -217,6 +217,15 @@
         }, {
           "definition": "লাইনের শেষে যাওয়া",
           "code": "Ctrl-e"
+        }, {
+          "definition": "কার্সর এর আগের শব্দগুলো মুছে ফেলা",
+          "code": "Ctrl+w"
+        }, {
+          "definition": "ফাইল/ফোল্ডার এর নাম অটোকমপ্লিট করা",
+          "code": "Tab"
+        }, {
+          "definition": "ব্যাকস্পেস এর শর্টকাট",
+          "code": "Ctrl+h"
         }, {
           "definition": "লাইনের শুরু থেকে কাট করা",
           "code": "Ctrl-u"
