@@ -14,7 +14,7 @@ export default class HeaderContent extends PureComponent {
           <div className="intro">
             <h1>{title}</h1>
             <p>{description}</p>
-            <ul className="contributor">
+            <ul className="contributor no-print">
               <p>কন্ট্রিবিউটর</p>
               {Object.keys(contributor).map(oneContributor => (
                 <li key={oneContributor}>
