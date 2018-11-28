@@ -160,6 +160,9 @@
 
 pre.code {
   overflow-y: hidden;
+  white-space: pre-wrap;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .contributor {
@@ -218,21 +221,24 @@ pre.code {
   background-color: #fff;
   padding: 25px;
   border-radius: 4px;
-  box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .single-item .item {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 15px;
 }
 
 .single-item .item:last-child {
   margin-bottom: 0;
+  border-bottom: none;
 }
 
 .single-item .def {
-  flex: 1;
+  flex: 1 1 50%;
   padding: 5px;
 }
 
