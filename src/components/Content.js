@@ -30,13 +30,12 @@ class Content extends Component {
   getData = async(id) => {
     try {
       const { data } = await axios(`https://raw.githubusercontent.com/devsonket/devsonket.github.io/develop/data/${id}.json`);
-      let contributorRaw = await axios(`https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${id}.json`);
-      console.log(contributorRaw); // kept this to check the behaviour as I can't recreate the scenario
-      let { data: contributor } = contributorRaw;
-      if(contributorRaw.status !== 200) {
+      let contributor;
+      try {
+        let { data } = await axios(`https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${id}.json`);
+        contributor = contributorMap(data);
+      } catch(e) {
         contributor = null;
-      } else {
-        contributor = contributorMap(contributor);
       }
       this.setState({data, contributor});
       this.setTitle();
