@@ -160,6 +160,9 @@
 
 pre.code {
   overflow-y: hidden;
+  white-space: pre-wrap;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .contributor {
@@ -232,7 +235,7 @@ pre.code {
 }
 
 .single-item .def {
-  flex: 1;
+  flex: 1 1 50%;
   padding: 5px;
 }
 
