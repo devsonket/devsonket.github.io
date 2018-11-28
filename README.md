@@ -29,7 +29,7 @@
 ## কমিউনিটির আলোচনা
 আমাদের স্ল্যাক এ একটা ওয়ার্কস্পেস আছে। [এই লিঙ্কে](https://join.slack.com/t/devsonket/shared_invite/enQtNDgxNDIwNTkyNjQyLWYwN2ZkZGMyOTNhMTM3ZDU4NzE5NDFjY2ExMTM3YWMzNWFhODU4NjJhMDJlNjBlMTBhY2VkZDRjY2E1ZWI3MTc) ক্লিক করে সেখানে জয়েন করতে পারবেন। আপনার কোনো ব্যাপারে সহায়তা লাগলে, কোনো রকম সাজেশন থাকলে অথবা যেকোনো ব্যাপারে খোলামেলাভাবে সেখানে আমাদের সবার সাথে আলোচনা করতে পারবেন। 
 
-## স্পন্সর
-- [Nazir Ahmed Sabbir](https://github.com/NaSabbir)
+## স্পন্সর(বিশেষভাবে ধন্যবাদ)
+- [Nazir Ahmed Sabbir](https://github.com/NaSabbir) 
 
 আপনিও যদি **ডেভ সংকেত**কে কোনোভাবে স্পন্সর করতে চান, অথবা **ডেভ সংকেত** এর হয়ে কোনো ইভেন্টের আয়োজন করতে চান তাহলে অবশ্যই আমাদের জানাবেন। 
