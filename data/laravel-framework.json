@@ -38,7 +38,10 @@
           }, {
             "definition": "কনট্রোলার ক্রিয়েট করা",
             "code": "php artisan make:controller <controller-name>"
-          }, {
+          },{
+            "definition": "রিকোয়েস্ট ফরম ক্রিয়েট করা",
+            "code": "php artisan make:request <request-name>"
+          },{
             "definition": "একটি নির্ধারিত নেমস্পেস ক্রিয়েট করা",
             "code": "php artisan app:name devsonket"
           }, {
