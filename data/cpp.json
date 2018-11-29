@@ -90,7 +90,7 @@
             "title": "স্ট্যাক",
             "items": [
               {
-                  "definition": "স্ট্যাক ইনিশিয়ালাইজ করা",
+                  "definition": "স্ট্যাক ভেরিয়েবল ডিক্লেয়ার করা",
                   "code": "stack<int> stk"
               },
               {
@@ -98,7 +98,7 @@
                   "code": "stk.push(value)"
               },
               {
-                  "definition": "স্ট্যাক থেকে ভ্যালু বের করা",
+                  "definition": "স্ট্যাক-এর উপরের ভ্যালু বের করা",
                   "code": "stk.pop()"
               },
               {
@@ -112,6 +112,34 @@
               {
                   "definition": "স্ট্যাক-এ মোট কতগুলো ভ্যালু আছে",
                   "code": "stk.size()"
+              }
+            ]
+        },{
+            "title": "কিউ",
+            "items": [
+              {
+                  "definition": "কিউ ভেরিয়েবল ডিক্লেয়ার করা",
+                  "code": "queue<int> q"
+              },
+              {
+                  "definition": "কিউ-এ ভ্যালু রাখা",
+                  "code": "q.push(value)"
+              },
+              {
+                  "definition": "কিউ-এর সামনে থেকে ভ্যালু বের করা",
+                  "code": "q.pop()"
+              },
+              {
+                  "definition": "কিউ-এর সামনের ভ্যালু দেখা",
+                  "code": "q.front()"
+              },
+              {
+                  "definition": "স্ট্যাক খালি কি-না তা জানতে চাওয়া",
+                  "code": "q.empty()"
+              },
+              {
+                  "definition": "স্ট্যাক-এ মোট কতগুলো ভ্যালু আছে",
+                  "code": "q.size()"
               }
             ]
         }
