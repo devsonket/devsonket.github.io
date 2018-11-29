@@ -11,77 +11,60 @@
                 {
                     "definition": "ইনপুট/আউটপুট স্ট্যান্ডার্ড লাইব্রেরি ব্যবহার করার জন্য হেডার ফাইল",
                     "code": "#include <iostream>"
-                },
-                {
+                }, {
                     "definition": "কনসোলে আউটপুট দেখানো",
-                    "code": "cout >>"
-                },
-                {
+                    "code": "cout <<"
+                }, {
                     "definition": "কনসোলে এরোর দেখানো",
-                    "code": "cerr >>"
-                },
-                {
+                    "code": "cerr <<"
+                }, {
                     "definition": "কনসোলে লগ দেখানো",
-                    "code": "clog >>"
-                },
-                {
+                    "code": "clog <<"
+                }, {
                     "definition": "কনসোল থেকে ইনপুট নেয়া",
-                    "code": "cin <<"
+                    "code": "cin >>"
                 }
             ]
-        },
-        {
+        }, {
             "title": "ফাইল স্ট্রিমস",
             "items": [
                 {
                     "definition": "ইনপুট/আউটপুট ফাইল স্ট্রিমস এর হেডার কোড",
                     "code": "#include <fstream>"
-                },
-                {
+                }, {
                     "definition": "ফাইলে লিখার জন্য",
                     "code": "ofstream myFile"
-                },
-                {
+                }, {
                     "definition": "ফাইল থেকে পড়ার জন্য",
                     "code": "ifstream myFile"
-                },
-                {
+                }, {
                     "definition": "ফাইল ওপেন করা",
                     "code": "myFile.open (filename.txt(file format))"
-                },
-                {
+                }, {
                     "definition": "স্ট্রিম অবজেক্ট ব্যবহার করে ফাইল ওপেন করা ",
                     "code": "open (filename, mode)"
-                },
-                {
+                }, {
                     "definition": "ইনপুট অপারেশন হিসেবে ফাইল ওপেন করা",
                     "code": "ios::in"
-                },
-                {
+                }, {
                     "definition": "আউটপুট অপারেশন হিসেবে ফাইল ওপেন করা",
                     "code": "ios::out"
-                },
-                {
+                }, {
                     "definition": "বাইনারি মুডে ফাইল ওপেন করা",
                     "code": "ios::binary"
-                },
-                {
+                }, {
                     "definition": "ইনিশিয়াল পসিশন ফাইলের শেষভাগে সেট করা",
                     "code": "ios::ate"
-                },
-                {
+                }, {
                     "definition": "ফাইলের শেষভাগে সকল অপারেশন পারফর্ম করার জন্য",
                     "code": "ios::app"
-                },
-                {
+                }, {
                     "definition": "ফাইলের আগের কনটেন্ট ডিলিট করে নতুন কনটেন্ট দিয়ে রিপ্লেস করার জন্য",
                     "code": "ios::trunc"
-                },
-                {
+                }, {
                     "definition": "ফাইল ক্লোস করার জন্য",
                     "code": "myFile.close()"
-                },
-                {
+                }, {
                     "definition": "ফাইল ওপেন আছে কিনা তা চেক করার জন্য",
                     "code": "myFile.is_open()"
                 }
@@ -145,6 +128,20 @@
                   "definition": "কিউ-এ মোট কতগুলো ভ্যালু আছে",
                   "code": "q.size()"
               }
+            ]
+        }, {
+            "title": "ইটেরেটরস",
+            "items": [
+                {
+                    "definition": "ইটেরটর ইনপুট/আউটপুট স্ট্রিম ডিক্লেয়ার করা",
+                    "code": "#include <iterator>"
+                }, {
+                    "definition": "ইনপুট স্ট্রিম থেকে ভ্যালু নিয়ে ইনপুট ইটেরেটর ডিফাইন করা",
+                    "code": "istream_iterator<T> in(is);"
+                }, {
+                    "definition": "আউটপুট ইটেরেটর ডিফাইন করা",
+                    "code": "ostream_iterator<T> out(os);"
+                }
             ]
         }
     ]
