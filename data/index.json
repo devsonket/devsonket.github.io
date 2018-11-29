@@ -75,5 +75,9 @@
     "id": "ridmik-keymap",
     "title": "রিদ্মিক বাংলা কীবোর্ড",
     "title_en": "Ridmik Bangla Keyboard Keymap"
+  }, {
+    "id": "avro-keymap",
+    "title": "অভ্র বাংলা কীবোর্ড",
+    "title_en": "Avro Bangla Keyboard Keymap"
   }
 ]
