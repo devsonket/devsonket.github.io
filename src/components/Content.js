@@ -28,12 +28,26 @@ class Content extends Component {
   }
 
   getData = async(id) => {
+    if(!localStorage.getItem('devCon')) {
+      localStorage.setItem('devCon', '{}');
+    }
     try {
       const { data } = await axios(`https://raw.githubusercontent.com/devsonket/devsonket.github.io/develop/data/${id}.json`);
       let contributor;
       try {
-        let { data } = await axios(`https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${id}.json`);
-        contributor = contributorMap(data);
+        const getLocalContributor = JSON.parse(localStorage.getItem('devCon'));
+        const getCurrentId = getLocalContributor[id];
+        const getCurrentTime = Date.now();
+        let compareTime = 1000 * 60 * 60;
+        if(getCurrentId && (getCurrentId[1] + compareTime >= getCurrentTime)) {
+          contributor = getCurrentId[0];
+        } else {
+          contributor = await axios(`https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${id}.json`);
+          contributor = contributorMap(contributor.data);
+          let dataForLocalStorage = [contributor, Date.now()];
+          getLocalContributor[id] = dataForLocalStorage;
+          localStorage.setItem('devCon', JSON.stringify(getLocalContributor));
+        }
       } catch(e) {
         contributor = null;
       }
