@@ -14,7 +14,7 @@
         },
         {
           "definition": "অটো ইন্ডেন্ট লাইন",
-          "code": "Ctrl + Alt + I`"
+          "code": "Ctrl + Alt + I"
         },
         {
           "definition": "অটোকমপ্লিট সাজেশন সিলেক্ট করতে",
@@ -47,7 +47,7 @@
         },
         {
           "definition": "ফাইল কপি",
-          "code": "F5`"
+          "code": "F5"
         },
         {
           "definition": "ফাইল মুভ",
@@ -58,18 +58,6 @@
     {
       "title": "ন্যাভিগেশন",
       "items": [
-        {
-          "definition": "ফাইলের নাম পরিবর্তন",
-          "code": "Shift + F6"
-        },
-        {
-          "definition": "ফাইল কপি",
-          "code": "F5`"
-        },
-        {
-          "definition": "ফাইল মুভ",
-          "code": "F6"
-        },
         {
           "definition": "ফাইল খুজে ওপেন করা",
           "code": "Ctrl + Shift + N"
