@@ -79,5 +79,9 @@
     "id": "avro-keymap",
     "title": "অভ্র বাংলা কীবোর্ড",
     "title_en": "Avro Bangla Keyboard Keymap"
+  }, {
+    "id": "shortcut-webstorm-win",
+    "title": "শর্টকাট কী - ওয়েবস্টোর্ম",
+    "title_en": "Webstorm Windows Shortcut Key"
   }
 ]
