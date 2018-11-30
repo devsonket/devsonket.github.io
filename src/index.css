@@ -610,10 +610,11 @@ td:last-child {
 tt,
 code {
   background-color: #eee;
+  display: inline-block;
   border-radius: 4px;
   font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
-  padding: 0.5rem;
+  padding: 5px 10px;
 }
 pre code {
   line-height: 1.42;
