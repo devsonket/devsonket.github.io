@@ -125,7 +125,15 @@
 		{
                     "definition": "Repository থেকে নতুন চেঞ্জ গুলো pull করা",
                     "code": "git pull"
-                }
+                },
+              {
+                "definition": "Fork Repository ক্ষেত্রে upstream রিমোট কনফিগার করা",
+                "code": "git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git"
+              },
+              {
+                "definition": "Fork Repository কে upstream এর সাথে up-to-date রাখা",
+                "code": "git fetch upstream"
+              }
             ]
         }
     ]
