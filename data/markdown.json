@@ -1,0 +1,90 @@
+{
+  "id": "markdown-cheat-sheet",
+  "title": "মার্কডাউন",
+  "slug": "markdown-cheat-sheet",
+  "description": "মার্কডাউন এর চিটশিট",
+  "colorPref": "#333",
+  "contents": [
+    {
+      "title": "হেডার",
+      "items": [
+        {
+          "definition": "হেডিং ওয়ান (h1)",
+          "code": "# Heading 1"
+        },
+        {
+          "definition": "হেডিং টু (h2)",
+          "code": "## Heading 2"
+        },
+        {
+          "definition": "হেডিং থ্রী (h3)",
+          "code": "### Heading 3"
+        },
+        {
+          "definition": "হেডিং ফোর (h4)",
+          "code": "#### Heading 4"
+        },
+        {
+          "definition": "হেডিং ফাইভ (h5)",
+          "code": "##### Heading 5"
+        },
+        {
+          "definition": "হেডিং সিক্স (h6)",
+          "code": "###### Heading 6"
+        }
+      ]
+    }, {
+      "title": "লিস্ট",
+      "items": [
+        {
+          "definition": "প্রথম অর্ডার লিস্ট",
+          "code": "1. Item 1"
+        },
+        {
+          "definition": "দ্বিতীয় অর্ডার লিস্ট",
+          "code": "2. Item 2"
+        },
+        {
+          "definition": "অর্ডার লিস্ট এ সাব লিস্ট",
+          "code": "3. Item [return key] * Item 3a"
+        }
+      ]
+    },
+    {
+      "title": "লিঙ্ক",
+      "items": [
+        {
+          "definition": "লিঙ্ক দেখানোর জন্য",
+          "code": "[Github](https://github.com)"
+        }
+      ]
+    },
+    {
+      "title": "ব্লককোট",
+      "items": [
+        {
+          "definition": "ব্লককোট দেখানোর জন্য",
+          "code": "> Act first, explain later."
+        }
+      ]
+    },
+    {
+      "title": "ছবি বা ইমেজ",
+      "items": [
+        {
+          "definition": "ছবি বা ইমেজ দেখানোর জন্য",
+          "code": "![Github Logo](/img/logo.png)"
+        }
+      ]
+    },
+    {
+      "title": "বাক্সপ্ল্যাশ এসকেপ",
+      "items": [
+        {
+          "definition": "বাক্সপ্ল্যাশ এসকেপ এর জন্য",
+          "code": "\\*literal asterisks\\*"
+        }
+      ]
+    }
+  ]
+}
