@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import NavBar from "./NavBar";
 
 import { HeaderEl, HeaderArea } from "./HeaderContent";
