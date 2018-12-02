@@ -28,10 +28,29 @@ class Content extends Component {
   }
 
   getData = async(id) => {
+    if(!localStorage.getItem('devCon')) {
+      localStorage.setItem('devCon', '{}');
+    }
     try {
       const { data } = await axios(`https://raw.githubusercontent.com/devsonket/devsonket.github.io/develop/data/${id}.json`);
-      let { data: contributor } = await axios(`https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${id}.json`);
-      contributor = contributorMap(contributor);
+      let contributor;
+      try {
+        const getLocalContributor = JSON.parse(localStorage.getItem('devCon'));
+        const getCurrentId = getLocalContributor[id];
+        const getCurrentTime = Date.now();
+        let compareTime = 1000 * 60 * 60;
+        if(getCurrentId && (getCurrentId[1] + compareTime >= getCurrentTime)) {
+          contributor = getCurrentId[0];
+        } else {
+          contributor = await axios(`https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${id}.json`);
+          contributor = contributorMap(contributor.data);
+          let dataForLocalStorage = [contributor, Date.now()];
+          getLocalContributor[id] = dataForLocalStorage;
+          localStorage.setItem('devCon', JSON.stringify(getLocalContributor));
+        }
+      } catch(e) {
+        contributor = null;
+      }
       this.setState({data, contributor});
       this.setTitle();
     } catch(e) {
@@ -68,10 +87,10 @@ class Content extends Component {
                   <ul className="single-item">
                   {items ? items.map(({definition, code}, index) => (
                     <li key={index} className="item">
-                      {definition && <p className="def">{definition}</p>}
-                      <pre className="code">
+                      {definition && <p className="def" dangerouslySetInnerHTML={{__html: definition}} />}
+                      {code && <pre className="code">
                         <code>{code}</code>
-                      </pre>
+                      </pre>}
                     </li>
                   )) : <pre className="code">
                           <code>{onlyCode}</code>

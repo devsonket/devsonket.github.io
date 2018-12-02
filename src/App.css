@@ -152,13 +152,6 @@
   margin-bottom: 0;
 }
 
-pre.code {
-  overflow-y: hidden;
-  white-space: pre-wrap;
-  overflow: hidden;
-  word-wrap: break-word;
-}
-
 .contributor {
   list-style: none;
   margin-bottom: 15px;
@@ -221,6 +214,7 @@ pre.code {
 .single-item .item {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 15px;
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 15px;
@@ -234,6 +228,10 @@ pre.code {
 .single-item .def {
   flex: 1 1 50%;
   padding: 5px;
+}
+
+.single-item .def a {
+  color: #000;
 }
 
 .single-item .code,

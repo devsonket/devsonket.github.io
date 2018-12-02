@@ -71,5 +71,21 @@
     "id": "tricks-google-search",
     "title": "ট্রিক্স - গুগুল সার্চ",
     "title_en": "Tricks - Google Search"
+  }, {
+    "id": "ridmik-keymap",
+    "title": "রিদ্মিক বাংলা কীবোর্ড",
+    "title_en": "Ridmik Bangla Keyboard Keymap"
+  }, {
+    "id": "avro-keymap",
+    "title": "অভ্র বাংলা কীবোর্ড",
+    "title_en": "Avro Bangla Keyboard Keymap"
+  }, {
+    "id": "shortcut-webstorm",
+    "title": "ওয়েবস্টোর্ম শর্টকাট কী",
+    "title_en": "Webstorm Windows Shortcut Key"
+  }, {
+    "id": "mongodb",
+    "title": "মঙ্গোডিবি চিটশিট",
+    "title_en": "MongoDB CheatSheet"
   }
 ]
