@@ -1,7 +1,8 @@
 import React, { PureComponent } from "react";
 import NavBar from "./NavBar";
 
-import { HeaderEl, HeaderIntro } from "./HeaderContent";
+import { HeaderEl } from "./HeaderContent";
+import { HeaderIntro } from "./HeaderIntro";
 
 const HeaderHome = props => {
   const { searchAItem } = props;
