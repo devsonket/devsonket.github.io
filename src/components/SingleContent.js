@@ -35,8 +35,10 @@ const SingleItems = styled.div`
     padding-bottom: 15px;
 
     @media print {
-      flex: 2 2 50%;
-      padding: 0 15px;
+      margin: 0 5px;
+      padding-bottom: 0px;
+      flex: 2 2 calc(50% - 10px);
+      border: none;
     }
   }
 
