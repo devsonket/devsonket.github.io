@@ -21,7 +21,7 @@ const SingleContent = styled.div`
     flex: 1 1 calc(50% - 30px);
 
     @media print {
-      margin: 0 50px;
+      margin: 15px 50px;
     }
 
     @media only screen and (max-width: 668px) {
