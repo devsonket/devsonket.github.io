@@ -1,0 +1,60 @@
+{
+    "id": "mongodb",
+    "title": "মঙ্গোডিবি চিটশিট",
+    "slug": "mongodb",
+    "description": "মঙ্গোডিবির প্রয়োজনীয় সব অপারেশন নিয়ে চিটশিট",
+    "colorPref": "#13aa52",
+    "contents": [
+      {
+        "title": "ডকুমেন্ট ইনসার্ট করা",
+        "items": [
+          {
+            "code": "db.coll.insert({name: 'নাম', type: 'টাইপ', model: 'মডেল', series: 'সিরিজ'})"
+          }, {
+            "code": "db.coll.insert({name: 'শাওমি', type: 'স্মার্টফোন', model: 'নোট ৫', series: 'নোট'})"
+          }, {
+            "code": "db.coll.insert({name: 'শাওমি', type: 'স্মার্টফোন', model: 'নোট ৫ প্রো', series: 'নোট'})"
+          }, {
+            "code": "db.coll.insert({name: 'সামসাং', type: 'ফিচার', model: 'গ্যালাক্সি ৯', series: 'গ্যালাক্সি'})"
+          }
+        ]
+      }, {
+        "title": "সাধারণ",
+        "items": [
+          {
+            "definition": "কোনো কালেকশন(যেমন এখানেঃ coll) এর উপর কমান্ড",
+            "code": "db.coll.<কমান্ড>"
+          }, {
+            "definition": "অন্য কোনো ডাটাবেসে সুইচ করা",
+            "code": "use <ডাটাবেস>"
+          }, {
+            "definition": "সব কালেকশন দেখানো",
+            "code": "show collections"
+          }, {
+            "definition": "কোনো কমান্ডের হেল্প প্রিন্ট করা",
+            "code": "help"
+          }
+        ]
+      }, {
+        "title": "ডকুমেন্ট খোঁজা",
+        "items": [
+          {
+            "definition": "যেকোনো একটা ডকুমেন্ট খোঁজা",
+            "code": "db.coll.findOne()"
+          }, {
+            "definition": "সব ডকুমেন্ট খোঁজা",
+            "code": "db.coll.find()"
+          }, {
+            "definition": "সব ডকুমেন্ট খোঁজা এবং সুন্দরভাবে ফরম্যাটে দেখানো",
+            "code": "db.coll.findOne().prettyPrint()"
+          }, {
+            "definition": "শুধুমাত্র একটা অ্যাট্রিবিউট দেখানো(যেমনঃ শুধুমাত্র name দেখানো)",
+            "code": "db.coll.find({}, {name:true, _id:false})"
+          }, {
+            "definition": "কোনো অ্যাট্রিবিউট ম্যাচ করে একটা ডকুমেন্ট খোঁজা",
+            "code": "db.coll.findOne({'name':'শাওমি'})"
+          }
+        ]
+      }
+    ]
+  }
