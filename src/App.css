@@ -1,15 +1,3 @@
-.loader {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.loader > div {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
 .header-area {
   background-color: #eee;
 }

@@ -1,8 +1,8 @@
+import { Loader } from "./components/Loader";
 import React, { Component } from "react";
 import axios from "axios";
 import ReactGA from "react-ga";
 import { BrowserRouter, Route } from "react-router-dom";
-import { BeatLoader } from "react-spinners";
 
 import "./App.css";
 
@@ -80,11 +80,7 @@ class App extends Component {
     const { tops, searchResult, data, loading } = this.state;
 
     if (loading) {
-      return (
-        <div className="loader">
-          <BeatLoader color={"#333"} />
-        </div>
-      );
+      return <Loader />;
     }
 
     return (
