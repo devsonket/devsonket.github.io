@@ -130,6 +130,38 @@
           }
         ]
       }, {
+        "title": "এসকিউএল এবং মঙ্গোডিবি",
+        "items": [
+          {
+            "definition": "WHERE",
+            "code": "$match"
+          }, {
+            "definition": "GROUP BY",
+            "code": "$group"
+          }, {
+            "definition": "HAVING",
+            "code": "$match"
+          }, {
+            "definition": "SELECT",
+            "code": "$project"
+          }, {
+            "definition": "ORDER BY",
+            "code": "$sort"
+          }, {
+            "definition": "LIMIT",
+            "code": "$limit"
+          }, {
+            "definition": "SUM",
+            "code": "$sum"
+          }, {
+            "definition": "COUNT",
+            "code": "$sum"
+          }, {
+            "definition": "JOIN",
+            "code": "$unwind"
+          }
+        ]
+      }, {
         "title": "মিলিতকরন এক্সপ্রেশন",
         "items": [
           {
