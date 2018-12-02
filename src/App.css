@@ -200,6 +200,10 @@ pre.code {
   padding: 5px;
 }
 
+.single-item .def a {
+  color: #000;
+}
+
 .single-item .code,
 .single-item p {
   margin-bottom: 0;
