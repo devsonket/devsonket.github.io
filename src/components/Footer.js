@@ -9,6 +9,27 @@ const FooterArea = styled.footer`
   @media print {
     visibility: hidden;
   }
+
+  ul {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+
+  ul li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  ul li a {
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-size: 13px;
+  }
 `;
 
 export default ({ searchAItem }) => (
