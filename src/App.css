@@ -1,4 +1,4 @@
-/* global styles */
+/* utility styles */
 .mt-0 {
   margin-top: -50px;
 }
@@ -52,12 +52,6 @@ footer ul li a {
   text-transform: uppercase;
   border-radius: 4px;
   font-size: 13px;
-}
-
-@media only screen and (max-width: 668px) {
-  .error {
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 460px) {

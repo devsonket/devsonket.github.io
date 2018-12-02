@@ -17,6 +17,7 @@ const Error = styled.div`
 
   h2 {
     font-size: 42px;
+    line-height: 1.3;
   }
 
   p {
