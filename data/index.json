@@ -83,5 +83,9 @@
     "id": "shortcut-webstorm",
     "title": "ওয়েবস্টোর্ম শর্টকাট কী",
     "title_en": "Webstorm Windows Shortcut Key"
+  }, {
+    "id": "mongodb",
+    "title": "মঙ্গোডিবি চিটশিট",
+    "title_en": "MongoDB CheatSheet"
   }
 ]
