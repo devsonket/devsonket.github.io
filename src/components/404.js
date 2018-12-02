@@ -6,7 +6,7 @@ import Container from "./Container";
 
 import logo from "../lost.svg";
 
-export const Error = styled.div`
+const Error = styled.div`
   width: 640px;
   margin: 0 auto;
   text-align: center;
