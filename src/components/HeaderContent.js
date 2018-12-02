@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import styled from "@emotion/styled";
 
 import NavBar from "./NavBar";
