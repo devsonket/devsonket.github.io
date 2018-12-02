@@ -92,7 +92,7 @@ class Content extends Component {
                         <code>{code}</code>
                       </pre>}
                     </li>
-                  )) : <pre className="code">
+                  )) : <pre className="code only-code">
                           <code>{onlyCode}</code>
                        </pre>}
                   </ul>

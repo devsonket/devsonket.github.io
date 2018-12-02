@@ -158,13 +158,6 @@
   margin-bottom: 0;
 }
 
-pre.code {
-  overflow-y: hidden;
-  white-space: pre-wrap;
-  overflow: hidden;
-  word-wrap: break-word;
-}
-
 .contributor {
   list-style: none;
   margin-bottom: 15px;
@@ -360,6 +353,13 @@ footer ul li a {
 
   .container {
     width: 100%;
+  }
+
+  pre.code {
+    overflow-y: hidden;
+    white-space: pre-wrap;
+    overflow: hidden;
+    word-wrap: break-word;
   }
 }
 
