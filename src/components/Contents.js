@@ -15,7 +15,7 @@ export default ({data}) => (
             <h3>{char}</h3>
             <div className="items">
             {organizedData(data)[char].map(({id, title}) => (
-              <Card key={id} id={id} title={title} />
+              <Card contentCard key={id} id={id} title={title} />
             ))}
             </div>
           </div>
