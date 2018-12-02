@@ -1,14 +1,40 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Redirect } from "react-router-dom";
-import { Loader } from "./Loader";
+import styled from "@emotion/styled";
 
 import Container from "./Container";
 import HeaderContent from "./HeaderContent";
 import Page404 from "./404";
 import Footer from "./Footer";
+import { Loader } from "./Loader";
 
 import contributorMap from "../utils/contributorMap";
+import { SingleItem } from "./SingleContent";
+
+const SingleContent = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+
+  & > div {
+    margin: 15px;
+    flex: 1 1 calc(50% - 30px);
+
+    @media print {
+      margin: 0 50px;
+    }
+
+    @media only screen and (max-width: 668px) {
+      flex-basis: calc(100% - 20px);
+      margin: 0 10px;
+      margin-bottom: 15px;
+    }
+
+    @media print {
+      flex-basis: 100%;
+    }
+  }
+`;
 
 class Content extends Component {
   state = {
@@ -90,36 +116,11 @@ class Content extends Component {
           contributor={contributor}
         />
         <Container>
-          <div className="single-content">
-            {data.contents.map(({ title, items, code: onlyCode }, index) => (
-              <div key={index} className="single-items">
-                <h3>{title}</h3>
-                <ul className="single-item">
-                  {items ? (
-                    items.map(({ definition, code }, index) => (
-                      <li key={index} className="item">
-                        {definition && (
-                          <p
-                            className="def"
-                            dangerouslySetInnerHTML={{ __html: definition }}
-                          />
-                        )}
-                        {code && (
-                          <pre className="code">
-                            <code>{code}</code>
-                          </pre>
-                        )}
-                      </li>
-                    ))
-                  ) : (
-                    <pre className="code">
-                      <code>{onlyCode}</code>
-                    </pre>
-                  )}
-                </ul>
-              </div>
+          <SingleContent>
+            {data.contents.map((mapContent, index) => (
+              <SingleItem key={index} {...mapContent} />
             ))}
-          </div>
+          </SingleContent>
         </Container>
         <Footer />
       </React.Fragment>

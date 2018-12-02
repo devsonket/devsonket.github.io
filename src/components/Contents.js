@@ -28,6 +28,10 @@ const Contents = styled.div`
 
   .items > div {
     width: calc(33.3333% - 20px);
+
+    @media only screen and (max-width: 460px) {
+      width: 100%;
+    }
   }
 `;
 
