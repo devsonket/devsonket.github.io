@@ -29,6 +29,28 @@ const Navbar = styled.div`
       display: none;
     }
   }
+
+  .brand a {
+    text-decoration: none;
+    font-size: 26px;
+    color: #333;
+  }
+
+  .brand span {
+    background-color: #333;
+    color: #fff;
+    padding: 0 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+
+  .btn-add a {
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
 `;
 
 export default () => (
