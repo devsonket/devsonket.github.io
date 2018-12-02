@@ -1,13 +1,13 @@
 import React, { PureComponent } from "react";
 import NavBar from "./NavBar";
 
-import { HeaderEl } from "./HeaderContent";
+import { HeaderEl, HeaderArea } from "./HeaderContent";
 import { HeaderIntro } from "./HeaderIntro";
 
 const HeaderHome = props => {
   const { searchAItem } = props;
   return (
-    <header className="header-area">
+    <HeaderArea>
       <HeaderEl>
         <NavBar />
         <HeaderIntro>
@@ -22,7 +22,7 @@ const HeaderHome = props => {
           />
         </HeaderIntro>
       </HeaderEl>
-    </header>
+    </HeaderArea>
   );
 };
 

@@ -14,10 +14,14 @@ export const HeaderEl = styled.div`
   }
 `;
 
+export const HeaderArea = styled.header`
+  background-color: #eee;
+`;
+
 const HeaderContent = props => {
   const { title, description, contributor } = props;
   return (
-    <header className="header-area">
+    <HeaderArea>
       <HeaderEl>
         <NavBar />
         <HeaderIntro>
@@ -53,7 +57,7 @@ const HeaderContent = props => {
           <SocialShare title={title} description={description} />
         </HeaderIntro>
       </HeaderEl>
-    </header>
+    </HeaderArea>
   );
 };
 
