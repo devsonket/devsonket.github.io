@@ -36,19 +36,6 @@
   border-radius: 4px;
 }
 
-.top {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.top > div {
-  flex-grow: 1;
-  border-radius: 3px;
-  box-shadow: 0 1px 1px rgba(102, 119, 136, 0.55);
-  overflow: hidden;
-  text-shadow: 0 1px 1px rgba(51, 68, 85, 0.5);
-}
-
 .mt-0 {
   margin-top: -50px;
 }
@@ -183,7 +170,6 @@ pre.code {
   background-color: #333;
 }
 
-
 footer ul {
   list-style: none;
   margin-bottom: 10px;
@@ -224,7 +210,6 @@ footer ul li a {
     text-align: center;
   }
 
-  .top > div,
   .items > div {
     width: 100%;
   }
