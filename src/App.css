@@ -94,12 +94,6 @@
   text-shadow: 0 1px 1px rgba(51,68,85,.5);
 }
 
-.container {
-  width: 940px;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-
 .mt-0 {
   margin-top: -50px;
 }
@@ -352,10 +346,6 @@ footer ul li a {
   .header {
     width: 100%;
   }
-
-  .container {
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 668px) {
@@ -380,10 +370,6 @@ footer ul li a {
 
   .navbar ul li.btn-add {
     display: none;
-  }
-
-  .container {
-    padding: 25px 0;
   }
 
   .header .intro {
