@@ -14,10 +14,6 @@
   background-color: #eee;
 }
 
-.header {
-  width: 940px;
-  margin: 0 auto;
-}
 
 .brand a {
   text-decoration: none;
@@ -53,33 +49,6 @@
 
 .navbar ul li.btn-add {
   float: right;
-}
-
-.header .intro {
-  padding: 0 50px;
-  text-align: center;
-  padding-bottom: 100px;
-}
-
-.header .intro input {
-  width: 100%;
-  border: none;
-  padding: 15px;
-  border-radius: 4px;
-  box-shadow: 0 6px 8px rgba(102, 119, 136, 0.03),
-    0 1px 2px rgba(102, 119, 136, 0.3);
-  transition: 0.2s all ease;
-}
-
-.header .intro input:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px #d6dcdb;
-}
-
-.header .intro p {
-  margin-top: 0px;
-  color: #485663;
-  font-size: 15px;
 }
 
 .top {
@@ -264,10 +233,6 @@ footer ul li a {
   .navbar ul {
     padding: 40px 25px;
   }
-
-  .header {
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 668px) {
@@ -291,11 +256,6 @@ footer ul li a {
 
   .navbar ul li.btn-add {
     display: none;
-  }
-
-  .header .intro {
-    padding: 0 15px;
-    padding-bottom: 15px;
   }
 
   .top > div,
@@ -347,10 +307,6 @@ footer ul li a {
     color: #000 !important;
     padding: 0 8px !important;
     font-weight: 900 !important;
-  }
-
-  .header .intro {
-    padding-bottom: 0px !important;
   }
 
   .navbar ul li.btn-add {
