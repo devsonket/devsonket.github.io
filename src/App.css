@@ -14,7 +14,6 @@
   background-color: #eee;
 }
 
-
 .brand a {
   text-decoration: none;
   font-size: 26px;
@@ -159,6 +158,13 @@
   padding: 5px;
   background-color: transparent;
   color: #1565c0;
+}
+
+pre.code {
+  overflow-y: hidden;
+  white-space: pre-wrap;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .btn {
