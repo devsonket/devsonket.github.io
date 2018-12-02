@@ -65,11 +65,13 @@ const SingleItems = styled.div`
     color: #1565c0;
   }
 
-  pre.code {
-    overflow-y: hidden;
-    white-space: pre-wrap;
-    overflow: hidden;
-    word-wrap: break-word;
+  @media only screen and (max-width: 940px) {
+    pre.code {
+      overflow-y: hidden;
+      white-space: pre-wrap;
+      overflow: hidden;
+      word-wrap: break-word;
+    }
   }
 `;
 
