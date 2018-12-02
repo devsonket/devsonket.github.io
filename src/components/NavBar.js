@@ -22,6 +22,14 @@ const Navbar = styled.div`
     display: inline-block;
   }
 
+  @media only screen and (max-width: 460px) {
+    li.brand {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
   ul li.btn-add {
     float: right;
 
@@ -50,6 +58,20 @@ const Navbar = styled.div`
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 4px;
+  }
+
+  @media print {
+    .brand a {
+      color: #fff;
+      filter: invert(100%);
+    }
+
+    .brand span {
+      background-color: #fff;
+      color: #000;
+      padding: 0 8px;
+      font-weight: 900;
+    }
   }
 `;
 

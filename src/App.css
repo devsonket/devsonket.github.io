@@ -3,7 +3,6 @@
   margin-top: -50px;
 }
 
-
 .btn {
   border: none;
   margin: 0 5px;
@@ -62,12 +61,6 @@ footer ul li a {
 }
 
 @media only screen and (max-width: 460px) {
-  li.brand {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
   .mt-0 {
     margin-top: -25px;
   }
@@ -80,17 +73,5 @@ footer ul li a {
 
   .no-print {
     display: none !important;
-  }
-
-  .brand a {
-    color: #fff !important;
-    filter: invert(100%) !important;
-  }
-
-  .brand span {
-    background-color: #fff !important;
-    color: #000 !important;
-    padding: 0 8px !important;
-    font-weight: 900 !important;
   }
 }
