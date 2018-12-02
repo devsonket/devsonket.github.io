@@ -36,20 +36,6 @@
   border-radius: 4px;
 }
 
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 45px 0;
-}
-
-.navbar ul li {
-  display: inline-block;
-}
-
-.navbar ul li.btn-add {
-  float: right;
-}
-
 .top {
   display: flex;
   flex-wrap: wrap;
@@ -235,12 +221,6 @@ footer ul li a {
   font-size: 13px;
 }
 
-@media only screen and (max-width: 940px) {
-  .navbar ul {
-    padding: 40px 25px;
-  }
-}
-
 @media only screen and (max-width: 668px) {
   .single-content > div {
     flex-basis: calc(100% - 20px);
@@ -258,10 +238,6 @@ footer ul li a {
     display: block;
     width: 100%;
     text-align: center;
-  }
-
-  .navbar ul li.btn-add {
-    display: none;
   }
 
   .top > div,
@@ -297,12 +273,6 @@ footer ul li a {
     padding: 0 15px !important;
   }
 
-  .navbar ul {
-    margin: 0 auto !important;
-    padding: 25px !important;
-    text-align: center !important;
-  }
-
   .brand a {
     color: #fff !important;
     filter: invert(100%) !important;
@@ -313,10 +283,6 @@ footer ul li a {
     color: #000 !important;
     padding: 0 8px !important;
     font-weight: 900 !important;
-  }
-
-  .navbar ul li.btn-add {
-    display: none !important;
   }
 
   .single-content {
