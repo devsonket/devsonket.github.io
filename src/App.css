@@ -98,29 +98,6 @@
   margin-top: -50px;
 }
 
-.contents h2 {
-  text-align: center;
-  font-size: 22px;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.items {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-
-.content h3 {
-  font-size: 18px;
-  padding-left: 15px;
-  margin-bottom: 15px;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.items>div {
-  width: calc(33.3333% - 20px)
-}
-
 .contributor {
   list-style: none;
   margin-bottom: 15px;
