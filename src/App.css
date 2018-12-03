@@ -1,0 +1,50 @@
+/* utility styles */
+.mt-0 {
+  margin-top: -50px;
+}
+
+.btn {
+  border: none;
+  margin: 0 5px;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: 900;
+}
+
+.btn-home {
+  background-color: #607d8b;
+}
+
+.btn-new {
+  background-color: #4caf50;
+}
+
+.btn-bug {
+  background-color: #f44336;
+}
+
+.print {
+  text-align: center;
+}
+
+.btn-print {
+  background-color: #333;
+}
+
+@media only screen and (max-width: 460px) {
+  .mt-0 {
+    margin-top: -25px;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0.5cm;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
