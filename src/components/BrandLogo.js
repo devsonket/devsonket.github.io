@@ -8,7 +8,6 @@ const Logo = styled.a`
 
   @media only screen and (max-width: 460px) {
     display: block;
-    width: 100%;
     text-align: center;
   }
 
