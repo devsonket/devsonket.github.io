@@ -45,16 +45,20 @@ const Navbar = styled.nav`
 const NewButton = styled.a`
   text-decoration: none;
   display: inline-block;
-  padding: 8px 20px;
+  padding: 8px 18px;
   border-radius: 4px;
-  color: rgba(0, 0, 0, 0.7);
   font-weight: 600;
   line-height: 1;
-  border: 1px solid #dadce0;
   transition: 0.2s all ease;
 
+  background: #02b3e4;
+  box-shadow: 8px 10px 20px 0 rgba(46, 61, 73, 0.15);
+  color: white;
+  text-shadow: 0 1px 3px #86888e;
+
   &:hover {
-    background: #f8f9fa;
+    box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
+    background-color: #02b7e9;
   }
 `;
 
