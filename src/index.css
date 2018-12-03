@@ -7,6 +7,7 @@ body {
   margin: 0;
   background-color: #fafafa;
   overflow: hidden;
+  max-width: 100%;
   font-family: 'Kalpurush', Arial, sans-serif;
 }
 
