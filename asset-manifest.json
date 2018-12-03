@@ -1,11 +1,15 @@
 {
-  "main.css": "static/css/main.de73cb66.css",
-  "main.css.map": "static/css/main.de73cb66.css.map",
-  "main.js": "static/js/main.beec7370.js",
-  "main.js.map": "static/js/main.beec7370.js.map",
-  "static\\media\\Kalpurush.eot": "static/media/Kalpurush.1fa8c68d.eot",
-  "static\\media\\Kalpurush.svg": "static/media/Kalpurush.ac52b429.svg",
-  "static\\media\\Kalpurush.ttf": "static/media/Kalpurush.797849bb.ttf",
-  "static\\media\\Kalpurush.woff": "static/media/Kalpurush.7268d6d3.woff",
-  "static\\media\\lost.svg": "static/media/lost.13166c30.svg"
+  "main.css": "/static/css/main.5fd376f8.chunk.css",
+  "main.js": "/static/js/main.c204c98a.chunk.js",
+  "main.js.map": "/static/js/main.c204c98a.chunk.js.map",
+  "static/js/1.2f632db6.chunk.js": "/static/js/1.2f632db6.chunk.js",
+  "static/js/1.2f632db6.chunk.js.map": "/static/js/1.2f632db6.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/media/lost.svg": "/static/media/lost.87d2e160.svg",
+  "static/media/index.css": "/static/media/Kalpurush.ffe190e4.svg",
+  "static/css/main.5fd376f8.chunk.css.map": "/static/css/main.5fd376f8.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.fb644af807499e31c75abda00aa3728c.js": "/precache-manifest.fb644af807499e31c75abda00aa3728c.js",
+  "service-worker.js": "/service-worker.js"
 }
