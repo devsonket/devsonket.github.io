@@ -6,6 +6,7 @@ html {
 body {
   margin: 0;
   background-color: #fafafa;
+  overflow: hidden;
   font-family: 'Kalpurush', Arial, sans-serif;
 }
 
