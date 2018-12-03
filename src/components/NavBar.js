@@ -6,11 +6,14 @@ import { BrandLogo } from "./BrandLogo";
 const Navbar = styled.nav`
   list-style: none;
   margin: 0;
-  padding: 45px 0;
-
-  @media only screen and (max-width: 940px) {
-    padding: 40px 25px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  background: white;
+  height: 60px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 2px 6px 2px rgba(60, 64, 67, 0.15);
 
   @media print {
     margin: 0 auto;
@@ -40,7 +43,19 @@ const Navbar = styled.nav`
 `;
 
 const NewButton = styled.a`
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  line-height: 1;
+  border: 1px solid #dadce0;
+  transition: 0.2s all ease;
 
+  &:hover {
+    background: #f8f9fa;
+  }
 `;
 
 export default () => (
