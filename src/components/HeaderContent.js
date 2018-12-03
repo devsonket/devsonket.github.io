@@ -58,8 +58,8 @@ const HeaderContent = props => {
   const { title, description, contributor } = props;
   return (
     <HeaderArea>
+      <NavBar />
       <HeaderEl>
-        <NavBar />
         <HeaderIntro>
           <h1>{title}</h1>
           <p>{description}</p>
