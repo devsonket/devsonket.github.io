@@ -8,8 +8,8 @@ const HeaderHome = props => {
   const { searchAItem } = props;
   return (
     <HeaderArea>
+      <NavBar />
       <HeaderEl>
-        <NavBar />
         <HeaderIntro>
           <h1>ডেভেলপার চিটশিট</h1>
           <p>

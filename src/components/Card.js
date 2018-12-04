@@ -28,10 +28,14 @@ const Card = styled.div`
       props.contentCard &&
       `
         color: rgba(0, 0, 0, 0.75);
-        border-radius: 4px;
-        box-shadow: 0 6px 8px rgba(102, 119, 136, 0.03),
-          0 1px 2px rgba(102, 119, 136, 0.3);
-          `}
+        border: 1px solid #dfe1e5;
+        transition: 0.1s all ease;
+        border-radius: 24px;
+
+        &:hover {
+          background: #f7f7f7;
+        }
+      `}
   }
 `;
 
