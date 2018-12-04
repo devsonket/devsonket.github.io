@@ -290,6 +290,36 @@
               "definition": "কোন ফাইল থেকে রিড করা",
               "code": "Scanner reader = new Scanner(new File(\"input2.txt\"));"
             }]
+          },{
+            "title": "কালেকশন এ পি আই (collection API)",
+            "items": [{
+              "definition": "ArrayList একধরনের ডাইনামিক এরে সাপোর্ট করে",
+              "code": "ArrayList<Integer> numbers = new ArrayList<>();"
+            }, {
+              "definition": "add() মেথড ArrayList এ নতুন অবজেক্ট অ্যাড করে",
+              "code": "numbers.add(200);"
+            }, {
+              "definition": "get() মেথড n তম ইনডেক্স রিটার্ন করে",
+              "code": "numbers.get(n);"
+            }, {
+              "definition": "size() মেথড ArrayList সাইজ রিটার্ন করে",
+              "code": "numbers.size();"
+            }, {
+              "definition": "clear() ArrayList কে খালি করে",
+              "code": "numbers.clear();"
+            },{
+              "definition": "বুলিয়ান ভ্যালু true রিটার্ন করে যদি লিস্ট এ কোন ভ্যালু না থাকে",
+              "code": "numbers.isEmpty()"
+            },{
+              "definition": "বুলিয়ান ভ্যালু true রিটার্ন করে যদি লিস্ট এ মেথড প্যারামিটার ভ্যালু থাকে",
+              "code": "numbers.contains(Object o)"
+            },{
+              "definition": "ArrayList থেকে ভ্যালু  রিমুভ করে",
+              "code": "numbers.remove(Object o)"
+            },{
+              "definition": "toArray() মেথড ArrayList কে array তে কনভার্ট করে",
+              "code": "String[] y = x.toArray(new String[0]);"
+            }]
           }
     ]
   }

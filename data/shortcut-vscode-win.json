@@ -13,6 +13,10 @@
                     "code": "Ctrl + Shift + P, F1"
                 },
                 {
+                    "definition": "টার্মিনাল দেখানো/হাইড করা",
+                    "code": "Ctrl + `"
+                },
+                {
                     "definition": "কুইক ওপেন",
                     "code": "Ctrl + P"
                 },

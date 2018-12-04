@@ -38,7 +38,10 @@
           }, {
             "definition": "কনট্রোলার ক্রিয়েট করা",
             "code": "php artisan make:controller <controller-name>"
-          }, {
+          },{
+            "definition": "রিকোয়েস্ট ফরম ক্রিয়েট করা",
+            "code": "php artisan make:request <request-name>"
+          },{
             "definition": "একটি নির্ধারিত নেমস্পেস ক্রিয়েট করা",
             "code": "php artisan app:name devsonket"
           }, {
@@ -110,6 +113,33 @@
             }, {
               "definition": "তারিখ,টাইম এবং সাথে টাইম জোনের জন্য",
               "code": "$table->dateTimeTz('created_at');"
+            }, {
+              "definition": "ডেসিমেল সংখ্যার জন্য, সাথে টোটাল সংখ্যা,স্কেল ও ডেসিমেল ডিজিট",
+              "code": "$table->decimal('amount', 8, 2);"
+            }, {
+              "definition": "ডাবোল টাইপের ডাটার জন্য, সাথে টোটাল সংখ্যা,স্কেল ও ডেসিমেল ডিজিট",
+              "code": "$table->double('amount', 8, 2);"
+            }, {
+              "definition": "জ্যামিতির জন্য",
+              "code": "$table->geometry('positions');"
+            }, {
+              "definition": "ইনটেজার টাইপের ডাটার জন্য",
+              "code": "$table->integer('votes');"
+            }, {
+              "definition": "আইপি এড্রেস এর জন্য",
+              "code": "$table->ipAddress('visitor');"
+            }, {
+              "definition": "ম্যাক এড্রেস এর জন্য",
+              "code": "$table->macAddress('device');"
+            }, {
+              "definition": "জেসন ডাটা ফরমেটের জন্য",
+              "code": "$table->json('options');"
+            }, {
+              "definition": "লম্বা অথবা বড় কোন লেখার জন্য",
+              "code": "$table->longText('description');"
+            }, {
+              "definition": "মাঝারি পূর্ণ সংখ্যার জন্য",
+              "code": "$table->mediumInteger('votes');"
             }
           ]
         }
