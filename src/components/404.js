@@ -23,6 +23,10 @@ const Error = styled.div`
   p {
     font-size: 18px;
   }
+
+  .btn{
+    margin-right: 15px;
+  }
 `;
 
 export default () => (
