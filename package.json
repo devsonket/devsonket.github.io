@@ -6,7 +6,6 @@
     "@emotion/core": "^10.0.0",
     "@emotion/styled": "^10.0.0",
     "axios": "^0.18.0",
-    "contentful": "^7.0.5",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-ga": "^2.5.3",
@@ -16,9 +15,8 @@
     "react-spinners": "^0.4.5"
   },
   "scripts": {
-    "postbuild": "react-snap",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
@@ -32,7 +30,6 @@
     "chalk": "^2.4.1",
     "colors-cli": "^1.0.20",
     "mv": "^2.1.1",
-    "promise-fs": "^2.0.1",
-    "react-snap": "^1.21.0"
+    "promise-fs": "^2.0.1"
   }
 }
