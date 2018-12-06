@@ -7,7 +7,7 @@ import { HeaderIntro } from "./HeaderIntro";
 
 export const HeaderEl = styled.div`
   width: 940px;
-  margin: 0 auto;
+  margin: 80px auto 0 auto;
 
   @media only screen and (max-width: 940px) {
     width: 100%;
@@ -15,7 +15,7 @@ export const HeaderEl = styled.div`
 `;
 
 export const HeaderArea = styled.header`
-  background-color: #eee;
+  background-color: #f8f9fa;
 
   .contributor {
     list-style: none;
@@ -58,8 +58,8 @@ const HeaderContent = props => {
   const { title, description, contributor } = props;
   return (
     <HeaderArea>
+      <NavBar />
       <HeaderEl>
-        <NavBar />
         <HeaderIntro>
           <h1>{title}</h1>
           <p>{description}</p>
