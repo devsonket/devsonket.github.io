@@ -20,9 +20,9 @@ const Navbar = styled.nav`
   }
 
   @media print {
-    margin: 0 auto;
-    padding: 25px;
-    text-align: center;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
   }
 
   ul li {
@@ -60,10 +60,15 @@ const NewButton = styled.a`
   color: white;
   text-shadow: 0 1px 3px #86888e;
 
+  @media print{
+    display: none;
+  }
+
   &:hover {
     box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
     background-color: #02b7e9;
   }
+
 `;
 
 export default () => (
