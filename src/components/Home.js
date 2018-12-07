@@ -1,19 +1,23 @@
-import React from 'react';
-import Container from './Container';
-import HeaderHome from './HeaderHome';
-import TopCards from './TopCards';
-import Contents from './Contents';
-import Footer from './Footer';
+import React from "react";
+import Container from "./Container";
+// import HeaderHome from "./HeaderHome";
+import TopCards from "./TopCards";
+import Contents from "./Contents";
+import Footer from "./Footer";
+import MastHead from "./mastHead";
+import NavBar from "./NavBar";
 
-export default ({searchAItem, searchResult, tops, data}) => {
+export default ({ searchAItem, searchResult, tops, data }) => {
   return (
     <React.Fragment>
-      <HeaderHome searchAItem={searchAItem} />
+      {/* <HeaderHome searchAItem={searchAItem} /> */}
+      <NavBar />
+      <MastHead />
       <Container>
         <TopCards tops={searchResult ? searchResult : tops} />
       </Container>
       <Contents data={data} />
       <Footer />
     </React.Fragment>
-  )
-}
+  );
+};

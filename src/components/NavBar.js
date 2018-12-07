@@ -15,6 +15,9 @@ const Navbar = styled.nav`
   box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
     0 2px 6px 2px rgba(60, 64, 67, 0.15);
 
+  position: relative;
+  z-index: 999;
+
   @media (max-width: 459px) {
     padding: 0px 10px;
   }
@@ -60,7 +63,7 @@ const NewButton = styled.a`
   color: white;
   text-shadow: 0 1px 3px #86888e;
 
-  @media print{
+  @media print {
     display: none;
   }
 
@@ -68,7 +71,6 @@ const NewButton = styled.a`
     box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
     background-color: #02b7e9;
   }
-
 `;
 
 export default () => (
