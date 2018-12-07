@@ -72,13 +72,15 @@ class Content extends Component {
         if (getCurrentId && getCurrentId[1] + compareTime >= getCurrentTime) {
           contributor = getCurrentId[0];
         } else {
-          contributor = await axios(
-            `https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${id}.json`
-          );
-          contributor = contributorMap(contributor.data);
-          let dataForLocalStorage = [contributor, Date.now()];
-          getLocalContributor[id] = dataForLocalStorage;
-          localStorage.setItem("devCon", JSON.stringify(getLocalContributor));
+          if(navigator.userAgent !== 'ReactSnap') {
+            contributor = await axios(
+              `https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${id}.json`
+            );
+            contributor = contributorMap(contributor.data);
+            let dataForLocalStorage = [contributor, Date.now()];
+            getLocalContributor[id] = dataForLocalStorage;
+            localStorage.setItem("devCon", JSON.stringify(getLocalContributor));
+          }
         }
       } catch (e) {
         contributor = null;
