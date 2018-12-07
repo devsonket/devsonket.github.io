@@ -320,6 +320,99 @@
               "definition": "toArray() মেথড ArrayList কে array তে কনভার্ট করে",
               "code": "String[] y = x.toArray(new String[0]);"
             }]
+          },{
+            "title": "কালেকশন এ পি আই (collection API)-LinkedList",
+            "items": [{
+              "definition": "জাভাতে LinkedList ক্লাস linked-list ডেটা স্ট্রাকচার provide করে",
+              "code": "LinkedList<Integer> myLinkedList = new LinkedList<>();"
+            }, {
+              "definition": "add(E e) মেথড LinkedList এ নতুন অবজেক্ট অ্যাড করে",
+              "code": " myLinkedList.add(1);"
+            }, {
+              "definition": "কোন স্পেসিফিক ইন্ডেক্স এ add করা",
+              "code": "myLinkedList.add(index, element);"
+            },{
+              "definition": "offer(E e) মেথড LinkedList এ নতুন অবজেক্ট অ্যাড করে, return টাইপ boolean",
+              "code": "myLinkedList.offer(E e);"
+            }, {
+              "definition": "addFirst(E e) LinkedList এর প্রথমে add করে, return টাইপ void",
+              "code": " myLinkedList.addFirst(E e);"
+            }, {
+              "definition": "offerFirst(E e) LinkedList এর প্রথমে add করে, return টাইপ boolean",
+              "code": "myLinkedList.offerFirst(E e);"
+            },{
+              "definition": "addLast(E e) LinkedList এর শেষে add করে, return টাইপ void",
+              "code": "myLinkedList.addLast(E e);"
+            },{
+              "definition": "offerLast(E e) LinkedList এর শেষে add করে, return টাইপ boolean",
+              "code": "myLinkedList.offerLast(E e);"
+            },{
+              "definition": "contains(Object o) বুলিয়ান ভ্যালু true রিটার্ন করে যদি লিস্ট এ মেথড প্যারামিটার ভ্যালু থাকে",
+              "code": "myLinkedList.contains(Object o);"
+            },{
+              "definition": "getFirst() LinkedList এর প্রথম element return করে",
+              "code": "myLinkedList.getFirst();"
+            },{
+              "definition": "getLast() LinkedList এর শেষ element return করে",
+              "code": "myLinkedList.getLast();"
+            },{
+              "definition": "indexOf(Object o) LinkedList এ মেথড প্যারামিটার ভ্যালুর first occurrence এর ইন্ডেক্স return করে। মেথড প্যারামিটার ভ্যালুটি লিঙ্কড লিস্টে না পাওয়া গেলে - 1 রিটার্ন করে",
+              "code": "myLinkedList.indexOf(Object o);"
+            },{
+              "definition": "lastIndexOf(Object o) LinkedList এ মেথড প্যারামিটার ভ্যালুর last occurrence এর ইন্ডেক্স return করে। মেথড প্যারামিটার ভ্যালুটি লিঙ্কড লিস্টে না পাওয়া গেলে - 1 রিটার্ন করে",
+              "code": "myLinkedList.lastIndexOf(Object o);"
+            },{
+              "definition": "peek() LinkedList এর head (প্রথম element) return করে কিন্ত remove করে না।",
+              "code": "myLinkedList.peek();"
+            },{
+              "definition": "poll() LinkedList এর head (প্রথম element) return করে এবং remove করে।",
+              "code": "myLinkedList.poll();"
+            },{
+              "definition": "peekFirst() LinkedList এর প্রথম element return করে কিন্ত remove করে না।",
+              "code": "myLinkedList.peekFirst();"
+            },{
+              "definition": "pollFirst() LinkedList এর প্রথম element return করে এবং remove করে।",
+              "code": "myLinkedList.pollFirst();"
+            },{
+              "definition": "peekLast() LinkedList এর শেষ element return করে এবং remove করে না।",
+              "code": "myLinkedList.peekLast();"
+            },{
+              "definition": "pollLast() LinkedList এর শেষ element return করে এবং remove করে।",
+              "code": "myLinkedList.pollLast();"
+            },{
+              "definition": "set(int index, E element) LinkedList এর নির্দিষ্ট index এ element আপডেট করে",
+              "code": "myLinkedList.set(int index, E element);"
+            },{
+              "definition": "remove() LinkedList এর  প্রথম ইলিমেন্টকে (head) remove এবং return করে",
+              "code": "myLinkedList.remove();"
+            },{
+              "definition": "remove(int index) LinkedList থেকে index তম ইলিমেন্টকে remove এবং return করে",
+              "code": "myLinkedList.remove(int index);"
+            },{
+              "definition": "remove(Object o) LinkedList থেকে মেথড প্যারামিটার ভ্যালুর first occurrence কে remove এবং return করে",
+              "code": "myLinkedList.remove(Object o);"
+            },{
+              "definition": "removeFirst() LinkedList থেকে প্রথম ইলিমেন্টকে remove এবং return করে ",
+              "code": "myLinkedList.removeFirst();"
+            },{
+              "definition": "removeLast() LinkedList থেকে শেষ ইলিমেন্টকে remove এবং return করে ",
+              "code": "myLinkedList.removeLast();"
+            },{
+              "definition": "size() LinkedList এর সাইজ return করে",
+              "code": "myLinkedList.size();"
+            },{
+              "definition": "toArray() LinkedList কে Array তে কনভার্ট করে",
+              "code": "myLinkedList.toArray();"
+            },{
+              "definition": "addAll(Collection<? extends E> c) LinkedList এ কোন স্পেসিফিক collection add করে",
+              "code": "myLinkedList.addAll(new ArrayList<>(Arrays.asList(4,5,6)));"
+            },{
+              "definition": "descendingIterator() LinkedList এর ইলিমেন্ট গুলোর একটি Descending Iterator return করে ",
+              "code": "myLinkedList.descendingIterator();"
+            },{
+              "definition": "listIterator(int index) LinkedList এর মেথড প্যারামিটার ভ্যালু তম ইন্ডেক্স থেকে শেষ পর্যন্ত ইলিমেন্ট গুলোর একটি list-iterator return করে ",
+              "code": "myLinkedList.listIterator(int index);"
+            }]
           }
     ]
   }
