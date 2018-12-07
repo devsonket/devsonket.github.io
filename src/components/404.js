@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 
 import Container from "./Container";
 
-import logo from "../lost.svg";
+import logo from "../img/lost.svg";
 
 const Error = styled.div`
   width: 640px;
