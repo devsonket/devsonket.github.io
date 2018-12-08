@@ -66,10 +66,10 @@
                     "definition": "color পাওয়ার জন্যে",
                     "code": "defineObject[3]"
                 }, {
-                    "definition": "কিছু না থাকলে <code>undefined<code> আসবে",
+                    "definition": "কিছু না থাকলে <code>undefined</code> আসবে",
                     "code": "defineObject.notExist"
                 }, {
-                    "definition": "কিছু না থাকলে <code>undefined<code> আসবে",
+                    "definition": "কিছু না থাকলে <code>undefined</code> আসবে",
                     "code": "defineObject[100]"
                 }
             ]
