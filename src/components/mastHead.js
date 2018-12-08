@@ -75,9 +75,6 @@ export default () => {
           আপনিও যোগ দিন
         </p>
       </div>
-      {/* <div className="masthead-img"> */}
-      {/* <img width="100%" src={require("../img/creation-man-board.svg")} /> */}
-      {/* </div> */}
     </MastHead>
   );
 };
