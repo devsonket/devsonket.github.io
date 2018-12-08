@@ -10,7 +10,8 @@ import contributorMap from "../utils/contributorMap";
 
 export const HeaderEl = styled.div`
   width: 940px;
-  margin: 80px auto 0 auto;
+  margin: 0 auto;
+  padding-top: 100px;
 
   @media only screen and (max-width: 940px) {
     width: 100%;

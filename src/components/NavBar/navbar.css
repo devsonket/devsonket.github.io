@@ -1,0 +1,4 @@
+/* nav animations */
+.is-hidden {
+  transform: translateY(-100%);
+}
