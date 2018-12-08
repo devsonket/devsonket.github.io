@@ -1,8 +1,8 @@
 {
-    "id": "algorithm-bigo",
-    "title": "অ্যালগরিদম(Big-O)",
-    "slug": "algorithm-bigo",
-    "description": "বেশী ব্যবহৃত অ্যালগরিদম আর ডাটা স্ট্রাকচার ও তাদের মধ্যকার অপারেশনের বিগ-ও কমপ্লেক্সিটি সবগুলো একসাথে",
+    "id": "algorithm-complexity",
+    "title": "অ্যালগরিদম কমপ্লেক্সিটি",
+    "slug": "algorithm-complexity",
+    "description": "বেশী ব্যবহৃত অ্যালগরিদম আর ডাটা স্ট্রাকচার ও তাদের মধ্যকার অপারেশনের বিগ-ও(Big-O) কমপ্লেক্সিটি সবগুলো একসাথে",
     "colorPref": "#333",
     "contents": [
         {
