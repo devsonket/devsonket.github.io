@@ -24,20 +24,20 @@
         "title": "ES6 class নিয়ে কিছু কথা",
         "items": [
           {
-            "definition": "class",
-            "code": "লোকাল স্টেট এবং লাইফ-সাইকেল হুক কন্টেইন করে এমন একটি টেমপ্লেট"
+            "definition": "লোকাল স্টেট এবং লাইফ-সাইকেল হুক কন্টেইন করে এমন একটি টেমপ্লেট",
+            "code": "class"
           }, {
-            "definition": "constructor(props)",
-            "code": "লোকাল স্টেটটা ডিফাইন করে এবং কম্পোনেন্ট মাউন্ট হওয়ার আগে ফায়ার করবে"
+            "definition": "লোকাল স্টেটটা ডিফাইন করে এবং কম্পোনেন্ট মাউন্ট হওয়ার আগে ফায়ার করবে",
+            "code": "constructor(props)"
           }, {
-            "definition": "super(props)",
-            "code": "প্যারেন্ট constructor কে রেফারেন্স করে"
+            "definition": "প্যারেন্ট constructor কে রেফারেন্স করে",
+            "code": "super(props)"
           }, {
-            "definition": "this.state = {date: new Date()}",
-            "code": "লোকাল স্টেট তৈরি করার উদাহরন"
+            "definition": "লোকাল স্টেট তৈরি করার উদাহরন",
+            "code": "this.state = {date: new Date()}"
           }, {
-            "definition": "render() {return (<h1>Hello world</h1>)}",
-            "code": "ডোমে রেন্ডার করার একটি ফংশন যা রির্টান করবে ডোম ইলিমেন্ট"
+            "definition": "ডোমে রেন্ডার করার একটি ফংশন যা রির্টান করবে ডোম ইলিমেন্ট",
+            "code": "render() {return (<h1>Hello world</h1>)}"
           }
         ]
       }, {
@@ -83,4 +83,3 @@
       }
     ]
   }
-  
