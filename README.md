@@ -7,9 +7,9 @@
 
 ## কিভাবে কাজ করে
 এই প্রোজেক্ট পুরোপুরি গিটহাব বেইসড। এখানেই [**data**](https://github.com/devsonket/devsonket.github.io/tree/develop/data) নামক ডিরেক্টরির ভিতরে আমাদের সবগুলো চিটশীট **json** ফাইল আকারে আছে। আমাদের মেইন অ্যাপ্লিকেশন এখান থেকেই ডাটাগুলো নিয়ে শো করাবে। আমাদের বর্তমানে দুই ফরম্যাটের চিটশীট সাপোর্ট করছে।
-- কোড এবং বর্ণনা সহ ফরম্যাট([এখানে ডিমো দেখুন](https://github.com/devsonket/devsonket.github.io/blob/develop/data/codendesc.json))
-- শুধুমাত্র কোড([এখানে ডিমো দেখুন](https://github.com/devsonket/devsonket.github.io/blob/develop/data/onlycode.json))
-- মিক্স ([এখানে ডিমো দেখুন](https://github.com/devsonket/devsonket.github.io/blob/develop/data/mix.json))
+- কোড এবং বর্ণনা সহ ফরম্যাট([এখানে ডেমো দেখুন](https://github.com/devsonket/devsonket.github.io/blob/develop/data/codendesc.json))
+- শুধুমাত্র কোড([এখানে ডেমো দেখুন](https://github.com/devsonket/devsonket.github.io/blob/develop/data/onlycode.json))
+- মিক্স ([এখানে ডেমো দেখুন](https://github.com/devsonket/devsonket.github.io/blob/develop/data/mix.json))
 
 *ভবিষ্যতে নতুন কোনো ফরম্যাটের প্রয়োজন হলে অবশ্যই অ্যাড করা হবে। আপনি চাইলে [এখান থেকে](https://github.com/devsonket/devsonket.github.io/issues/new?title=%E0%A6%95%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%B0%20%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A7%87%20%E0%A6%AB%E0%A6%B0%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F&body=%E0%A6%AC%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%A4%20%E0%A6%AC%E0%A6%B2%E0%A7%81%E0%A6%A8&labels=%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8%20%E0%A6%AB%E0%A6%B0%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F) একটা ইস্যু তৈরী করতে পারবেন নতুন ফরম্যাট তৈরী করার জন্যে*
 
