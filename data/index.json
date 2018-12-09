@@ -107,5 +107,9 @@
     "id": "algorithm-complexity",
     "title": "অ্যালগরিদম কমপ্লেক্সিটি",
     "title_en": "Algorithm Complexity Big-O"
+  }, {
+    "id": "mysql",
+    "title": "মাইএসকিউএল",
+    "title_en": "MySQL Database Management System"
   }
 ]
