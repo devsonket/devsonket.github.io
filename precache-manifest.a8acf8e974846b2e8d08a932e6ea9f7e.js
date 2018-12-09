@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "851730c3dc7818a92710",
+    "revision": "d8c226d58b2ef0d83373",
     "url": "/static/css/main.8c515dfb.chunk.css"
   },
   {
-    "revision": "851730c3dc7818a92710",
-    "url": "/static/js/main.851730c3.chunk.js"
+    "revision": "d8c226d58b2ef0d83373",
+    "url": "/static/js/main.d8c226d5.chunk.js"
   },
   {
     "revision": "6b933ef8be572e3f9516",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/static/media/Kalpurush.ffe190e4.svg"
   },
   {
-    "revision": "d291ca5b5f3cdbbfc128e79702285caa",
+    "revision": "9e4c065f46bc11631ed4ea84f5a6f486",
     "url": "/index.html"
   }
 ];
