@@ -16,6 +16,13 @@ const MastHead = styled.div`
     background: rgba(240, 240, 240, 0.97);
   }
 
+  .masthead-wrapper{
+    max-width: 940px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+
   .masthead-content {
     position: absolute;
     right: 0;
@@ -29,10 +36,6 @@ const MastHead = styled.div`
       margin: 0 auto;
       top: 20vh;
       text-align: center;
-    }
-
-    @media only screen and (min-width: 900px) {
-      right: 10vw;
     }
 
     &__title {
@@ -69,12 +72,14 @@ const MastHead = styled.div`
 export default () => {
   return (
     <MastHead>
-      <div className="masthead-content">
-        <h1 className="masthead-content__title">ডেভেলপার চিটশিট</h1>
-        <p className="masthead-content__description">
-          বাংলা চিটশিটের ভান্ডার। নিজের মাতৃভাষায় চিটশিটের ভান্ডার সমৃদ্ধ করতে
-          আপনিও যোগ দিন
-        </p>
+      <div className="masthead-wrapper">
+        <div className="masthead-content">
+          <h1 className="masthead-content__title">ডেভেলপার চিটশিট</h1>
+          <p className="masthead-content__description">
+            বাংলা চিটশিটের ভান্ডার। নিজের মাতৃভাষায় চিটশিটের ভান্ডার সমৃদ্ধ করতে
+            আপনিও যোগ দিন
+          </p>
+        </div>
       </div>
     </MastHead>
   );
