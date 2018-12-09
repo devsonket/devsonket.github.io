@@ -1,11 +1,15 @@
 import React, { PureComponent } from "react";
 import styled from "@emotion/styled";
-import "./navbar.css";
+import { Route } from "react-router-dom";
+import "../../utils/closest";
 
+import "./navbar.css";
 import { BrandLogo } from "../BrandLogo";
 import { Button } from "../Button";
+import { intiateAnimation } from "./utility";
+import { SearchBar } from "../SearchBar";
 
-const Navbar = styled.nav`
+const NavbarEl = styled.nav`
   list-style: none;
   margin: 0;
   display: flex;
@@ -60,69 +64,71 @@ const Navbar = styled.nav`
   }
 `;
 
-export default class extends PureComponent {
-  intiateAnimation = () => {
-    let lastScrollTop = 0,
-      latestKnownScrollTop = 0,
-      ticking = false;
-
-    const update = () => {
-      // reset the tick
-      ticking = false;
-
-      let currScrollTop = latestKnownScrollTop;
-      let isScrollingDown = currScrollTop > lastScrollTop;
-      let isHeaderVisible = currScrollTop < 58;
-
-      if (isScrollingDown && !isHeaderVisible) {
-        this.setState({ show: false }, () => (lastScrollTop = currScrollTop));
-      } else if (!isScrollingDown || !currScrollTop) {
-        this.setState({ show: true }, () => (lastScrollTop = currScrollTop));
-      }
-
-      if (currScrollTop > 60) {
-        // `is-hidden`  styles are in app.css
-        this.nav.classList.add("is-hidden");
-        setTimeout(() => this.setState({ changeNav: true }), 0);
-      } else if (!currScrollTop) {
-        this.setState({ changeNav: false });
-      }
-    };
-
-    const onScroll = () => {
-      latestKnownScrollTop = window.scrollY;
-      requestTick();
-    };
-
-    function requestTick() {
-      if (!ticking) {
-        window.requestAnimationFrame(update);
-      }
-      ticking = true;
+class Navbar extends PureComponent {
+  closeSearchBar = e => {
+    if (!e.target.closest(".js-search-bar")) {
+      this.setState({ searchBarHide: true });
+      this.stopListening();
     }
-
-    window.addEventListener("scroll", onScroll);
   };
 
-  componentDidMount() {
-    this.nav = document.querySelector(".js-main-navbar");
-    this.intiateAnimation();
-  }
+  stopListening = () =>
+    document.removeEventListener("click", this.closeSearchBar, false);
+
+  openSearch = () => {
+    document.addEventListener("click", this.closeSearchBar, false);
+    this.setState({ searchBarHide: false });
+    this.searchBar.focus();
+  };
 
   state = {
     show: false,
-    changeNav: false
+    changeNav: false,
+    searchBarHide: true
   };
 
   render() {
-    const { changeNav, show } = this.state;
+    const { changeNav, show, searchBarHide } = this.state;
+
     return (
-      <Navbar className="js-main-navbar" changeNav={changeNav} show={show}>
-        <BrandLogo />
-        <Button href="https://github.com/devsonket/devsonket.github.io/issues/new?title=%E0%A6%95%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%B0%20%E0%A6%9A%E0%A6%BF%E0%A6%9F%E0%A6%B6%E0%A7%80%E0%A6%9F%20%E0%A6%9A%E0%A6%BE%E0%A6%A8?&body=%E0%A6%95%E0%A6%BF%20%E0%A6%95%E0%A6%BF%20%E0%A6%9A%E0%A6%BE%E0%A6%A8%20%E0%A6%AC%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%A4%20%E0%A6%B2%E0%A6%BF%E0%A6%96%E0%A7%81%E0%A6%A8&labels=%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8%20%E0%A6%86%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A6%9F%E0%A6%BE">
-          + নতুন আরেকটা
-        </Button>
-      </Navbar>
+      <React.Fragment>
+        <SearchBar
+          ref={e => (this.searchBar = e)}
+          className="js-search-bar"
+          hide={searchBarHide}
+          onChange={e => this.props.searchAItem(e.target.value)}
+          placeholder="কিসের উপর চিটশিট চাচ্ছেন?"
+        />
+
+        <NavbarEl className="js-main-navbar" changeNav={changeNav} show={show}>
+          <BrandLogo />
+          <div className="main-navbar__buttons">
+            <Route
+              exact
+              path="/"
+              render={() => (
+                <Button onClick={this.openSearch} style={{ marginRight: 10 }}>
+                  সার্চ
+                </Button>
+              )}
+            />
+            <Button href="https://github.com/devsonket/devsonket.github.io/issues/new?title=%E0%A6%95%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%B0%20%E0%A6%9A%E0%A6%BF%E0%A6%9F%E0%A6%B6%E0%A7%80%E0%A6%9F%20%E0%A6%9A%E0%A6%BE%E0%A6%A8?&body=%E0%A6%95%E0%A6%BF%20%E0%A6%95%E0%A6%BF%20%E0%A6%9A%E0%A6%BE%E0%A6%A8%20%E0%A6%AC%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%A4%20%E0%A6%B2%E0%A6%BF%E0%A6%96%E0%A7%81%E0%A6%A8&labels=%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8%20%E0%A6%86%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A6%9F%E0%A6%BE">
+              + নতুন আরেকটা
+            </Button>
+          </div>
+        </NavbarEl>
+      </React.Fragment>
     );
   }
+
+  componentDidMount() {
+    const nav = document.querySelector(".js-main-navbar");
+    intiateAnimation.call(this, nav);
+  }
+
+  componentWillUnmount() {
+    this.stopListening();
+  }
 }
+
+export default Navbar;

@@ -11,7 +11,7 @@ export default ({ searchAItem, searchResult, tops, data }) => {
   return (
     <React.Fragment>
       {/* <HeaderHome searchAItem={searchAItem} /> */}
-      <Navbar />
+      <Navbar searchAItem={searchAItem} />
       <MastHead />
       <Container>
         <TopCards tops={searchResult ? searchResult : tops} />
