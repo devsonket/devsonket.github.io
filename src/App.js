@@ -22,7 +22,7 @@ class App extends Component {
     super(props);
 
     ReactGA.initialize("UA-129387050-1", { testMode: props.isTestMode });
-    ReactGA.pageview(window.location.href);
+    (process.env.NODE_ENV && (process.env.NODE_ENV !== 'development' && navigator.userAgent !== 'ReactSnap')) && ReactGA.pageview(window.location.href);
   }
 
   getData() {
