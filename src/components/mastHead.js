@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 
 const MastHead = styled.div`
   width: 100%;
+  min-height: 300px;
   height: 55vh;
   background: linear-gradient( to right, transparent, rgba(240, 240, 240, 0.97) 47%),
     url("${require("../img/creation-man-board.svg")}");
