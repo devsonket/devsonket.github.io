@@ -111,5 +111,9 @@
     "id": "mysql",
     "title": "মাইএসকিউএল",
     "title_en": "MySQL Database Management System"
+  }, {
+    "id": "html",
+    "title": "এইচটিএমএল",
+    "title_en": "HTML"
   }
 ]
