@@ -99,5 +99,9 @@
     "id": "js-regex",
     "title": "জাভাস্ক্রিপ্ট রেগুলার এক্সপ্রেশন",
     "title_en": "JavaScript(JS) Regular Expression(regex, regexp)"
+  }, {
+    "id": "html",
+    "title": "এইচটিএমএল",
+    "title_en": "HTML"
   }
 ]
