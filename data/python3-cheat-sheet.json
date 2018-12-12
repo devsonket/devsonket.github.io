@@ -124,6 +124,19 @@
                     "code": "set(['one',  'two']) → {'one', 'two'}"
                 }
             ]
+        },
+        {
+            "title": "মড্যুল এবং নেইম ইমপোর্ট (Module and Name import)",
+            "items": [
+                {
+                    "definition": "as এর ব্যবহার করে সরাসরি names এর এক্সেস",
+                    "code": "from monmod import nom1, nom2 as fct"
+                },
+                {
+                    "definition": "মড্যুল এক্সেস এর অন্য উপায় হতে পারে monmod.nom1",
+                    "code": "import monmod"
+                }
+            ]
         }
     ]
 }
