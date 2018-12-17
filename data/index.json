@@ -115,5 +115,9 @@
     "id": "html",
     "title": "এইচটিএমএল",
     "title_en": "HTML"
+  }, {
+     "id": "heroku-cli",
+     "title": "হিরোকো কমান্ড লাইন",
+     "title_en": "Heroku Command Line CLI"
   }
 ]
