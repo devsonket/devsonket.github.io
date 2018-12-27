@@ -123,5 +123,9 @@
      "id": "codeigniter-framework",
      "title": "কোডইগনিটর ফ্রেমওয়ার্ক",
      "title_en": "Codeigniter PHP Framework"
+  }, {
+     "id": "vuejs-cheat-sheet",
+     "title": "ভিউ জেএস",
+     "title_en": "Vue JS"
   }
 ]
