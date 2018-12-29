@@ -10,27 +10,27 @@
       "items": [
         {
           "definition": "হোম",
-          "code": "Ctrl + Shift + T"
+          "code": "http:\/\/www.mozilla.com\/firefox\/"
         }, {
           "definition": "থিম এবং এক্সটেনশন",
-          "code": "Ctrl চেপে 1 থেকে 9 পর্যন্ত"
+          "code": "https:\/\/addons.mozilla.org\/"
         }, {
           "definition": "সাপোর্ট ফোরাম",
-          "code": "Ctrl + Shift + tab"
+          "code": "http:\/\/forums.mozillazine.org\/"
         }
       ]
     }, {
       "title": "খোঁজাখুঁজির শর্টকাট",
       "items": [
         {
-          "definition": "হোম",
-          "code": "Ctrl + Shift + T"
+          "definition": "পুনরায় খোঁজা",
+          "code": "F3"
         }, {
-          "definition": "থিম এবং এক্সটেনশন",
-          "code": "Ctrl চেপে 1 থেকে 9 পর্যন্ত"
+          "definition": "বর্তমান পেজে খোঁজা",
+          "code": "Ctrl + F3"
         }, {
-          "definition": "সাপোর্ট ফোরাম",
-          "code": "Ctrl + Shift + tab"
+          "definition": "আগের অংশ থেকে খোঁজা",
+          "code": "Shift + F3"
         }
       ]
     }, {
