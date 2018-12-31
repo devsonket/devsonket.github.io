@@ -59,15 +59,15 @@
                     "code": "Ctrl + K S"
                 },
                 {
-                    "definition": "ক্লোস করা",
+                    "definition": "বন্ধ করা",
                     "code": "Ctrl + F4"
                 },
                 {
-                    "definition": "সকল কিছু ক্লোস করা",
+                    "definition": "সকল কিছু বন্ধ করা",
                     "code": "Ctrl + K Ctrl + W"
                 },
                 {
-                    "definition": "ক্লোস করা এডিটর ওপেন করা",
+                    "definition": "বন্ধ করা এডিটর ওপেন করা",
                     "code": "Ctrl + Shift + T"
                 },
                 {
@@ -85,6 +85,14 @@
                 {
                     "definition": "নতুন ওয়ার্কপ্লেস ওপেন করা",
                     "code": "Ctrl + K O"
+                },
+                {
+                    "definition": "ডিবাগ করা",
+                    "code": "Ctrl + Shift + D"
+                },
+                {
+                    "definition": "নতুন এক্সশন এড করা এবং খুজা",
+                    "code": "Ctrl + Shift + X"
                 }
             ]
         },
