@@ -157,6 +157,24 @@
             "code": "system_url()"
           }
         ]
+      },
+      {
+        "title": "কুকি হেলপার",
+        "items": [
+          {
+            "definition": "কুকি হেলপার লোড করা",
+            "code": "$this->load->helper('cookie');"
+          }, {
+            "definition": "কুকি ডিলেট করা",
+            "code": "delete_cookie($name[, $domain = ''[, $path = '/'[, $prefix = '']]])"
+          }, {
+            "definition": "কুকি আনা",
+            "code": "get_cookie($index[, $xss_clean = NULL])"
+          }, {
+            "definition": "কুকি সেট করা",
+            "code": "set_cookie($name[, $value = ''[, $expire = ''[, $domain = ''[, $path = '/'[, $prefix = ''[, $secure = NULL[, $httponly = NULL]]]]]]])"
+          }
+        ]
       }
         
     ]
