@@ -175,6 +175,45 @@
             "code": "set_cookie($name[, $value = ''[, $expire = ''[, $domain = ''[, $path = '/'[, $prefix = ''[, $secure = NULL[, $httponly = NULL]]]]]]])"
           }
         ]
+      },
+      {
+        "title": "ডাটাবেজ",
+        "items": [
+          {
+            "definition": "ক্লাস এড করা",
+            "code": "class CI_DB_driver"
+          }, {
+            "definition": "এফেক্টেড নাম্বার অফ রো",
+            "code": "affected_rows()"
+          }, {
+            "definition": "ক্যাশে মুছা",
+            "code": "cache_delete([$segment_one = ''[, $segment_two = '']])"
+          }, {
+            "definition": "সকল ক্যাশে মুছা",
+            "code": "cache_delete_all()"
+          }, {
+            "definition": "ক্যাশে বন্ধ করা",
+            "code": "cache_off()"
+          }, {
+            "definition": "ক্যাশে অন করা",
+            "code": "cache_on()"
+          }, {
+            "definition": "ক্যাশে সেট করা",
+            "code": "cache_set_path([$path = ''])"
+          }, {
+            "definition": "ফাংশন কল করা",
+            "code": "call_function($function)"
+          }, {
+            "definition": "ডাটাবেজ কানেকশন বন্ধ করা",
+            "code": "close()"
+          }, {
+            "definition": "কম্পাইল বাইন্ড",
+            "code": "compile_binds($sql, $binds)"
+          }, {
+            "definition": "নির্দিষ্ট টেবিল কাউন্ট",
+            "code": "count_all([$table = ''])"
+          }
+        ]
       }
         
     ]
