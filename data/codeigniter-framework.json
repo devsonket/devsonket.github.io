@@ -212,6 +212,60 @@
           }, {
             "definition": "নির্দিষ্ট টেবিল কাউন্ট",
             "code": "count_all([$table = ''])"
+          }, {
+            "definition": "ডাটাবেজ কানেকশন",
+            "code": "db_connect($persistent = TRUE)"
+          }, {
+            "definition": "ডাটাবেজ পার্সিস্টেন্স কানেকশন",
+            "code": "db_pconnect()"
+          }, {
+            "definition": "সিলেক্ট ডাটাবেজ",
+            "code": "db_select([$database = ''])"
+          }, {
+            "definition": "সেট চার্জসেট",
+            "code": "db_set_charset($charset)"
+          }, {
+            "definition": "এরর ডিসপ্লে",
+            "code": "display_error([$error = ''[, $swap = ''[, $native = FALSE]]])"
+          }, {
+            "definition": "ইলাপ্সড টাইম",
+            "code": "elapsed_time([$decimals = 6])"
+          }, {
+            "definition": "এস্কেপ ভ্যালু",
+            "code": "escape($str)"
+          }, {
+            "definition": "এস্কেপ আইডেন্টিফায়ারস",
+            "code": "escape_identifiers($item)"
+          }, {
+            "definition": "এস্কেপ স্ট্রিং ভ্যালু",
+            "code": "escape_like_str($str)"
+          }, {
+            "definition": "এস্কেপ স্ট্রিং ভ্যালু ইউজিং লাইক",
+            "code": "escape_str($str[, $like = FALSE])"
+          }, {
+            "definition": "ফিল্ড ডাটা",
+            "code": "field_data($table)"
+          }, {
+            "definition": "ফিল্ড এক্সিটস",
+            "code": "field_exists($field_name, $table_name)"
+          }, {
+            "definition": "ইনিশিয়ালাইজ ডাটা",
+            "code": "initialize()"
+          }, {
+            "definition": "স্ট্রিং ইনসার্ট",
+            "code": "insert_string($table, $data)"
+          }, {
+            "definition": "রাইট টাইপ",
+            "code": "is_write_type($sql)"
+          }, {
+            "definition": "লাস্ট কুয়েরী",
+            "code": "last_query()"
+          }, {
+            "definition": "লাস্ট ফিল্ড",
+            "code": "list_fields($table)"
+          }, {
+            "definition": "টেবিল লিস্ট",
+            "code": "list_tables([$constrain_by_prefix = FALSE])"
           }
         ]
       }
