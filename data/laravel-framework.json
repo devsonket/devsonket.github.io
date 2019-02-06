@@ -183,57 +183,60 @@
       "title": "রাউটিং",
       "items": [
         {
-          "definition": "বেসিক রাউটিং",
-          "code": "Route::get('foo', function(){});",
-          "code": "Route::get('foo', 'ControllerName@function');",
+          "definition": "বেসিক রাউটিং-১",
+          "code": "Route::get('foo', function(){});"
+        }, {
+          "definition": "বেসিক রাউটিং-২",
+          "code": "Route::get('foo', 'ControllerName@function');"
+        }, {
+          "definition": "বেসিক রাউটিং-৩",
           "code": "Route::controller('foo', 'FooController');"
-        }, 
-        {
-          "definition": "রেস্টফুল কন্ট্রোলার",
-          "code": "Route::resource('posts','PostsController');",
-          "code": "Route::resource('photo', 'PhotoController',['only' => ['index', 'show']]);",
+        }, {
+          "definition": "রেস্টফুল কন্ট্রোলার-১",
+          "code": "Route::resource('posts','PostsController');"
+        },  {
+          "definition": "রেস্টফুল কন্ট্রোলার-২",
+          "code": "Route::resource('photo', 'PhotoController',['only' => ['index', 'show']]);"
+        }, {
+          "definition": "রেস্টফুল কন্ট্রোলার-৩",
           "code": "Route::resource('photo', 'PhotoController',['except' => ['update', 'destroy']]);"
-        }, 
-        {
-          "definition": "ট্রিগারিং এররস",
-          "code": "App::abort(404);",
-          "code": "App::missing(function($exception){});",
+        },{
+          "definition": "ট্রিগারিং এররস-১",
+          "code": "App::abort(404);"
+        },{
+          "definition": "ট্রিগারিং এররস-২",
+          "code": "App::missing(function($exception){});"
+        },{
+          "definition": "ট্রিগারিং এররস-৩",
           "code": "throw new NotFoundHttpException;"
-        },
-         {
-          "definition": "রাউট প্যারামিটার",
-          "code": "Route::get('foo/{bar}', function($bar){});",
+        },{
+          "definition": "রাউট প্যারামিটার-১",
+          "code": "Route::get('foo/{bar}', function($bar){});"
+        }, {
+          "definition": "রাউট প্যারামিটার-২",
           "code": "Route::get('foo/{bar?}', function($bar = 'bar'){})"
-        }, 
-        {
+        },{
           "definition": "http verbs:any",
           "code": "Route::any('foo', function(){});"
-        }, 
-        {
+        }, {
           "definition": "http verbs:post",
           "code": "Route::post('foo', function(){});"
-        },
-         {
+        },{
           "definition": "http verbs:put",
           "code": "Route::put('foo', function(){});"
-        },
-        {
+        },{
           "definition": "http verbs:patch",
           "code": "Route::patch('foo', function(){});"
-        },
-        {
+        },{
           "definition": "http verbs:delete",
           "code": "Route::delete('foo', function(){});"
-        },
-        {
+        },{
           "definition": "রেস্টফুল একশন্স",
           "code": "Route::resource('foo', 'FooController');"
-        }, 
-        {
+        }, {
           "definition": "সিকিউর রাউট",
           "code": "Route::get('foo', array('https', function(){}));"
-        }, 
-        {
+        }, {
           "definition": "রাউট কন্সট্রেইন্টস",
           "code": "Route::get('foo/{bar}', function($bar){})"
         }
