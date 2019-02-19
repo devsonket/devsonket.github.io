@@ -68,14 +68,23 @@
           "definition": "ফাইল এক জায়গা থেকে অন্য জায়গায় মুভ করা",
           "code": "mv PathToSourceFile PathToWhereYouWantToMove"
         }, {
+	  "definition": "কোনো ডিরেক্টরির অধীনস্থ নির্দিষ্ট ফরমেটের সব ফাইলকে অন্য ডিরেক্টরিতে মুভ করা",
+          "code": "mv *.FileExtension PathToWhereYouWantToMove/"
+	}, {
+	  "definition": "একাধিক ডিরেক্টরিকে একসাথে একটা নির্দিষ্ট ডিরেক্টরিতে মুভ করা",
+	  "code": "mv DirectoryOne/ DirectoryTwo/ PathToWhereYouWantToMove/"
+	}, {
           "definition": "ডিরেক্টরি অথবা ফাইল দেখা",
           "code": "ls"
         }, {
-          "definition": "ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনাসহ)",
+	  "definition": "ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনাসহ)",
           "code": "ls -l"
         }, {
           "definition": "ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনা এবং লুকানো ফাইল/ডিরেক্টরিসহ)",
-          "code": "ls -al"
+          "code": "ls -al"          
+        }, {
+          "definition": "ডিরেক্টরি এবং ফাইলের মধ্যে থেকে শুধুমাত্র ডিরেক্টরিগুলো লিস্ট অাকারে দেখা",
+	  "code": "sudo ls -d */"
         }, {
           "definition": "কোন ফোল্ডার অথবা ডিরেক্টরিতে প্রবেশ করা",
           "code": "cd YourFileName"
