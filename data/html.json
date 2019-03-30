@@ -113,10 +113,10 @@
                     "definition": "অ্যাড্রেস লেখার সেকশন",
                     "code": "<address>...</address>"
                 }, {
-                    "definition": "em",
+                    "definition": "এমফেসাইজ লেখা",
                     "code": "<em>...</em>"
                 }, {
-                    "definition": "strong",
+                    "definition": "স্ট্রং লেখা",
                     "code": "<strong>...</strong>"
                 }, {
                     "definition": "ফন্ট সাইজ সেট(1-7)",
