@@ -135,5 +135,13 @@
      "id": "bootstrap-4",
      "title": "বুটস্ট্রাপ ৪",
      "title_en": "Bootstrap 4"
+  }, {
+     "id": "docker",
+     "title": "ডকার",
+     "title_en": "Docker Cheat Sheet"
+  }, {
+     "id": "vagrant",
+     "title": "ভেইগ্র্যান্ট",
+     "title_en": "Vagrant"
   }
 ]
