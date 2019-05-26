@@ -146,6 +146,10 @@
   }, {
      "id": "adb",
      "title": "অ্যান্ড্রয়েড ডিবাগ ব্রীজ",
-     "title_en": "adb"
+     "title_en": "Android Debug Bridge"
+  }, {
+     "id": "gatsbyjs",
+     "title": "গেটসবি জেএস",
+     "title_en": "Gatsby JS"
   }
 ]
