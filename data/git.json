@@ -8,6 +8,22 @@
         {
             "title": "প্রাথমিক কনফিগারেশন",
             "items": [
+		{
+                    "definition": "গিট ইনস্টল ম্যাক",
+                    "code": "brew install git"
+                },
+		{
+                    "definition": "গিট আনইনস্টল ম্যাক",
+                    "code": "brew remove git"
+                },
+		{
+                    "definition": "গিট আনইনস্টল উবুন্টু",
+                    "code": "sudo apt-get remove git"
+                },
+		{
+                    "definition": "গিট ইনস্টল উবুন্টু",
+                    "code": "sudo apt-get install git"
+                },
                 {
                     "definition": "গিট ভার্সন চেক",
                     "code": "git --version"
@@ -16,9 +32,17 @@
                     "definition": "গিট ইউজার নেম সেট করা ",
                     "code": "git config --global user.name \"username\" "
                 },
+		{
+                    "definition": "গিট ইউজার নেম চেক করা ",
+                    "code": "git config user.name"
+                },
                 {
                     "definition": "গিট ইউজার ইমেল সেট করা",
                     "code": "git config --global user.email \"user@name.com\" "
+                },
+		{
+                    "definition": "গিট ইউজার ইমেল চেক করা",
+                    "code": "git config user.email"
                 },
                 {
                     "definition": "গিট ইউজার নেম বাতিল করা",
@@ -56,8 +80,7 @@
                     "definition": "Repository তে কিছু কমিট করা (কমিট মেসেজসহ)",
                     "code": "git commit -m \"YourCommitMessage\""
                 },
-		
-                {
+		{
                     "definition": "Repository তে লোকাল ব্রাঞ্চ থেকে আপলোড করা",
                     "code": "git push -u origin [branchName]"
                 },
@@ -89,7 +112,6 @@
                     "definition": "রিমোট ব্রাঞ্চ রিমুভ করতে",
                     "code": "git push --delete origin [branch-name]"
                 },
-		
 		{
                     "definition": "ট্যাগ লিস্ট দেখতে",
                     "code": "git tag"
@@ -106,7 +128,7 @@
                     "definition": " কমিট লগ সামারি আকারে দেখতে((৫টি)",
                     "code": "git log --oneline -5"
                 },
-				{
+		{
                     "definition": " কমিট লগ ইউজার অনুযায়ী দেখতে",
                     "code": "git shortlog"
                 },
@@ -126,14 +148,22 @@
                     "definition": "Repository থেকে নতুন চেঞ্জ গুলো pull করা",
                     "code": "git pull"
                 },
-              {
-                "definition": "Fork Repository ক্ষেত্রে upstream রিমোট কনফিগার করা",
-                "code": "git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git"
-              },
-              {
-                "definition": "Fork Repository কে upstream এর সাথে up-to-date রাখা",
-                "code": "git fetch upstream"
-              }
+                {
+                    "definition": "Fork Repository ক্ষেত্রে upstream রিমোট কনফিগার করা",
+                    "code": "git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git"
+                },
+                {
+                    "definition": "Fork Repository কে upstream এর সাথে up-to-date রাখা",
+                    "code": "git fetch upstream"
+                },
+	        {
+                    "definition": "কন্ট্রিবিউটরদের নামের লিস্ট দেখা",
+	            "code": "git shortlog -sn"
+                },
+		{
+		    "definition": "কন্ট্রিবিউটরদের নাম এবং তাঁদের সকল কমিট লিস্ট অাকারে দেখা",
+		    "code": "git shortlog"
+		}
             ]
         }
     ]

@@ -119,5 +119,37 @@
      "id": "heroku-cli",
      "title": "হিরোকো কমান্ড লাইন",
      "title_en": "Heroku Command Line CLI"
+  }, {
+     "id": "codeigniter-framework",
+     "title": "কোডইগনিটর ফ্রেমওয়ার্ক",
+     "title_en": "Codeigniter PHP Framework"
+  }, {
+     "id": "vuejs-cheat-sheet",
+     "title": "ভিউ জেএস",
+     "title_en": "Vue JS"
+  }, {
+     "id": "firefox-win",
+     "title": "মজিলা ফায়ারফক্স(উইন্ডোজ)",
+     "title_en": "Mozilla Firefox Windows"
+  }, {
+     "id": "bootstrap-4",
+     "title": "বুটস্ট্রাপ ৪",
+     "title_en": "Bootstrap 4"
+  }, {
+     "id": "docker",
+     "title": "ডকার",
+     "title_en": "Docker Cheat Sheet"
+  }, {
+     "id": "vagrant",
+     "title": "ভেইগ্র্যান্ট",
+     "title_en": "Vagrant"
+  }, {
+     "id": "adb",
+     "title": "অ্যান্ড্রয়েড ডিবাগ ব্রীজ",
+     "title_en": "Android Debug Bridge"
+  }, {
+     "id": "gatsbyjs",
+     "title": "গেটসবি জেএস",
+     "title_en": "Gatsby JS"
   }
 ]
