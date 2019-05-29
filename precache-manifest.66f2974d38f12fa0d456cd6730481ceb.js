@@ -20,10 +20,6 @@ self.__precacheManifest = [
     "url": "/static/media/lost.87d2e160.svg"
   },
   {
-    "revision": "7268d6d360d4ec731abaea2f93deb19d",
-    "url": "/static/media/Kalpurush.7268d6d3.woff"
-  },
-  {
     "revision": "1fa8c68dbc2271be80107d46e7567971",
     "url": "/static/media/Kalpurush.1fa8c68d.eot"
   },
@@ -34,6 +30,10 @@ self.__precacheManifest = [
   {
     "revision": "ffe190e439853382157b6553806dd1f5",
     "url": "/static/media/Kalpurush.ffe190e4.svg"
+  },
+  {
+    "revision": "7268d6d360d4ec731abaea2f93deb19d",
+    "url": "/static/media/Kalpurush.7268d6d3.woff"
   },
   {
     "revision": "3beaf5b156cb028d081c272667978a32",
