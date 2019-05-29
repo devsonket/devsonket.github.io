@@ -20,7 +20,6 @@
           }, {
             "definition": "ইনপুট মান পরিবর্তন",
             "code": "ng-change='expression'"
-            
           }, {
             "definition": "সেট চেক attributes",
             "code": "ng-checked='boolean'"
