@@ -41,6 +41,27 @@
           }, {
             "definition": "ফর্ম এড করা",
             "code": "ng-form='plaintext'"
+          }, {
+            "definition": "মডেল বাইন্ড করা",
+            "code": "ng-model='expression'"
+          }, {
+            "definition": "মাউজ ডাউন ইভেন্ট",
+            "code": "ng-mousedown='expression'"
+          }, {
+            "definition": "মাউজ এন্টার ইভেন্ট",
+            "code": "ng-mouseenter='expression'"
+          }, {
+            "definition": "মাউজ লীভ ইভেন্ট",
+            "code": "ng-mouseleave='expression'"
+          }, {
+            "definition": "মাউজ মুভ ইভেন্ট",
+            "code": "ng-mousemove='expression'"
+          }, {
+            "definition": "মাউজ অভার ইভেন্ট",
+            "code": "ng-mouseover='expression'"
+          }, {
+            "definition": "মাউজ আপ ইভেন্ট",
+            "code": "ng-mouseup='expression'"
           }
         ]
       },
