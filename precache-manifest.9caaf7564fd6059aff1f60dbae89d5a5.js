@@ -24,16 +24,16 @@ self.__precacheManifest = [
     "url": "/static/media/Kalpurush.1fa8c68d.eot"
   },
   {
+    "revision": "7268d6d360d4ec731abaea2f93deb19d",
+    "url": "/static/media/Kalpurush.7268d6d3.woff"
+  },
+  {
     "revision": "797849bb979d05a914f3b88666c78c22",
     "url": "/static/media/Kalpurush.797849bb.ttf"
   },
   {
     "revision": "ffe190e439853382157b6553806dd1f5",
     "url": "/static/media/Kalpurush.ffe190e4.svg"
-  },
-  {
-    "revision": "7268d6d360d4ec731abaea2f93deb19d",
-    "url": "/static/media/Kalpurush.7268d6d3.woff"
   },
   {
     "revision": "3beaf5b156cb028d081c272667978a32",
