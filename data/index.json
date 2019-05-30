@@ -151,5 +151,9 @@
      "id": "gatsbyjs",
      "title": "গেটসবি জেএস",
      "title_en": "Gatsby JS"
+  }, {
+     "id": "angularjs",
+     "title": "এঙ্গুলার জেএস",
+     "title_en": "Angular JS"
   }
 ]
