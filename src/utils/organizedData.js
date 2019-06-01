@@ -1,14 +1,18 @@
-import sort from './sort';
+import { sort } from './sort';
 
-export default data => {
-  const sortedData = sort(data);
-  const organizedData = {};
+export const organizedData = data => {
+  const rawData = data.map(edge => {
+    const raw = require(`../../data/${edge.node.name}.json`);
+    return raw;
+  })
+  const sortedData = sort(rawData);
+  const oData = {};
   sortedData.forEach(oneData => {
-    if(organizedData[oneData.title[0]]) {
-      organizedData[oneData.title[0]].push(oneData);
+    if(oData[oneData.title[0]]) {
+      oData[oneData.title[0]].push(oneData);
     } else {
-      organizedData[oneData.title[0]] = [oneData];
+      oData[oneData.title[0]] = [oneData];
     }
   });
-  return organizedData;
+  return oData;
 }

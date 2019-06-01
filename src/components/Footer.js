@@ -1,25 +1,22 @@
-import React from "react";
-import Container from "./Container";
-import styled from "@emotion/styled";
+import React from "react"
+import styled from "@emotion/styled"
 
-const FooterArea = styled.footer`
+import { Container } from "./common"
+
+const FooterContainer = styled.footer`
   background-color: #eee;
   text-align: center;
-
   @media print {
     visibility: hidden;
   }
-
   ul {
     list-style: none;
     margin-bottom: 10px;
   }
-
   ul li {
     display: inline-block;
     margin: 0 5px;
   }
-
   ul li a {
     background: #333;
     color: #fff;
@@ -32,8 +29,8 @@ const FooterArea = styled.footer`
   }
 `;
 
-export default ({ searchAItem }) => (
-  <FooterArea>
+export default () => (
+  <FooterContainer>
     <Container>
       <ul>
         <li>
@@ -69,5 +66,5 @@ export default ({ searchAItem }) => (
       </ul>
       <p>এটি সম্পূর্ণ ওপেন সোর্স একটি প্রোজেক্ট</p>
     </Container>
-  </FooterArea>
-);
+  </FooterContainer>
+)
