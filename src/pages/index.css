@@ -1,3 +1,5 @@
+/* Defaults */
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -22,11 +24,11 @@ body {
 
 @font-face {
   font-family: 'Kalpurush';
-  src: local('Kalpurush.eot'), url(./fonts/Kalpurush.eot);
-  src: local('Kalpurush.woff'), url(./fonts/Kalpurush.woff) format('woff'),
-       local('Kalpurush.ttf'), url(./fonts/Kalpurush.ttf) format('truetype'),
-       local('Kalpurush.svg'), url(./fonts/Kalpurush.svg#Kalpurush) format('svg'),
-       local('Kalpurush.eot'), url(./fonts/Kalpurush.eot?#iefix) format('embedded-opentype');
+  src: local('Kalpurush.eot'), url(../fonts/Kalpurush.eot);
+  src: local('Kalpurush.woff'), url(../fonts/Kalpurush.woff) format('woff'),
+       local('Kalpurush.ttf'), url(../fonts/Kalpurush.ttf) format('truetype'),
+       local('Kalpurush.svg'), url(../fonts/Kalpurush.svg#Kalpurush) format('svg'),
+       local('Kalpurush.eot'), url(../fonts/Kalpurush.eot?#iefix) format('embedded-opentype');
   font-style: normal;
   font-weight: normal;
 }
@@ -637,4 +639,10 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+
+/* Common */
+.mt-0 {
+  margin-top: -50px;
 }

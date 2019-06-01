@@ -1,4 +1,4 @@
-export default data => {
+export const contributorMap = data => {
   const charMap = {};
   data.forEach(oneData => {
     const { login } = oneData.author;

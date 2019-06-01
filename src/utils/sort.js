@@ -1,4 +1,4 @@
-export default data => {
+export const sort = data => {
 
   const sorted = data.sort((a, b) => {
     if(a.title > b.title) {
