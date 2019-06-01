@@ -1,8 +1,8 @@
 {
 	"id": "vagrant",
-	"title": "Vagrant - ভার্চুয়াল মেসিন তৈরি ও ব্যবহার করার অন্যতম সমাধান",
+	"title": "ভেইগ্র্যান্ট চিটশিট",
 	"slug": "vagrant-vm-cheat-sheet",
-	"description": "vagrant এর কমান্ড সমূহ",
+	"description": "ভেইগ্র্যান্ট - ভার্চুয়াল মেশিন তৈরি ও ব্যবহার করার অন্যতম সমাধান",
 	"colorPref": "#1563FF",
 	"contents": [
 		{
