@@ -60,6 +60,9 @@
             "definition": "মাউজ অভার ইভেন্ট",
             "code": "ng-mouseover='expression'"
           }, {
+            "definition": "মাউজ আপ ইভেন্ট",
+            "code": "ng-mouseup='expression'"
+          }, {
             "definition": "কপ্লাইল করবেনা",
             "code": "ng-non-bindable"
           }, {
