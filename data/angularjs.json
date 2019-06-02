@@ -62,6 +62,42 @@
           }, {
             "definition": "মাউজ আপ ইভেন্ট",
             "code": "ng-mouseup='expression'"
+          }, {
+            "definition": "কপ্লাইল করবেনা",
+            "code": "ng-non-bindable"
+          }, {
+            "definition": "ডায়নামিক্যালি অপশন তৈরী করবে",
+            "code": "ng-options='comprehension_expression'"
+          }, {
+            "definition": "ইনপুট ইলেমেন্ট রিডঅনলি",
+            "code": "ng-readonly='expression'"
+          }, {
+            "definition": "রিপিট ইলেমেন্ট",
+            "code": "ng-repeat='(key, value) in myObj'"
+          }, {
+            "definition": "সিলেক্ট ইলেমেন্ট",
+            "code": "ng-selected='expression'"
+          }, {
+            "definition": "সোর্স ইলেমেন্ট",
+            "code": "ng-src='template'"
+          }, {
+            "definition": "স্টাইল ইলেমেন্ট",
+            "code": "ng-style='expression'"
+          }, {
+            "definition": "সা্বমিট ইলেমেন্ট",
+            "code": "ng-submit='expression'"
+          }, {
+            "definition": "সুইচ ইলেমেন্ট",
+            "code": "ng-switch='expression'"
+          }, {
+            "definition": "সুইচ when ইলেমেন্ট",
+            "code": "ng-switch-when='plaintext'"
+          }, {
+            "definition": "ট্রান্সক্লুড ইলেমেন্ট",
+            "code": "ng-transclude"
+          }, {
+            "definition": "বাইন্ড html ইলেমেন্ট",
+            "code": "ng-bind-html"
           }
         ]
       },
