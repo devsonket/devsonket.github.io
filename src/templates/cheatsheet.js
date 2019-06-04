@@ -11,7 +11,7 @@ const CheatSheet = ({ pageContext: { data }}) => {
   return (
     <SinglePage>
       <App data={data}>
-        <SEO title={data.title} lang="bn" />
+        <SEO title={data.title} description={data.description} lang="bn" />
         <Desc data={data} />
         <Container>
           <Content data={data} />

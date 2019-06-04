@@ -17,7 +17,11 @@ export default () => {
 
   return (
     <App>
-      <SEO title="ডেভেলপার চিটশিট" lang="bn" />
+      <SEO
+        title="ডেভেলপার চিটশিট"
+        description="বাংলা চিটশিটের ভান্ডার। নিজের মাতৃভাষায় চিটশিটের ভান্ডার সমৃদ্ধ করতে আপনিও যোগ দিন"
+        lang="bn"
+      />
       <Intro input={searchInput} handleInputChange={handleInputChange} />
       <View input={searchInput} />
       <Library />
