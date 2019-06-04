@@ -30,12 +30,13 @@ export default ({ input }) => (
     render={({ allFile: { edges } }) => {
       const isEng = String(input[0]).charCodeAt() < 128;
       let matchNums;
+      const uniInput = String(input).trim().toLowerCase();
       if(isEng) {
-        matchNums = Object.keys(edges).filter(edge => String(edges[edge].node.name).includes(input));
+        matchNums = Object.keys(edges).filter(edge => String(edges[edge].node.name).toLowerCase().includes(uniInput));
       } else {
         matchNums = Object.keys(edges).filter(edge => {
           const data = require(`../../data/${edges[edge].node.name}`);
-          if(String(data.title).includes(input)) {
+          if(String(data.title).toLowerCase().includes(uniInput)) {
             return edge;
           }
         });
