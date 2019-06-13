@@ -10,6 +10,9 @@ const SheetContainer = styled.div`
       color: #000;
     }
   }
+  :hover a {
+    opacity: 1;
+  }
   .single-item {
     background-color: #fff;
     padding: 25px;
@@ -66,8 +69,8 @@ const SheetContainer = styled.div`
   }
 `
 
-export const Sheet = ({ children }) => (
-  <SheetContainer>
+export const Sheet = ({ children, id }) => (
+  <SheetContainer id={id}>
     {children}
   </SheetContainer>
 )
