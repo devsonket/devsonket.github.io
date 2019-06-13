@@ -13,7 +13,7 @@ export const HeaderEl = styled.div`
   @media only screen and (max-width: 940px) {
     width: 100%;
   }
-`;
+`
 
 const HeaderIntro = styled.div`
   padding: 0 50px;
@@ -46,26 +46,26 @@ const HeaderIntro = styled.div`
   }
 `
 
-export default({ data: { id, title, description } }) => {
-  const [contributor, setContributor] = useState(null);
+export default ({ data: { id, title, description } }) => {
+  const [contributor, setContributor] = useState(null)
 
-  const getContributor = async() => {
+  const getContributor = async () => {
     try {
       let { data } = await axios(
         `https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${id}.json`
-      );
-      data = contributorMap(data);
-      setContributor(data);
+      )
+      data = contributorMap(data)
+      setContributor(data)
     } catch (e) {
-      setContributor(null);
+      setContributor(null)
     }
   }
 
   useEffect(() => {
-    if(!contributor) {
-      getContributor();
+    if (!contributor) {
+      getContributor()
     }
-  });
+  })
 
   return (
     <Header>
@@ -73,7 +73,7 @@ export default({ data: { id, title, description } }) => {
         <HeaderIntro>
           <h1>{title}</h1>
           <p>{description}</p>
-            {contributor && (
+          {contributor && (
             <ul className="contributor no-print">
               <p>কন্ট্রিবিউটর</p>
               {Object.keys(contributor).map(oneContributor => (
@@ -96,7 +96,11 @@ export default({ data: { id, title, description } }) => {
             </ul>
           )}
           <div className="print no-print">
-            <Button onClick={() => window.print()} text="প্রিন্ট করুন" bgColor="#02b3e4" />
+            <Button
+              onClick={() => window.print()}
+              text="প্রিন্ট করুন"
+              bgColor="#02b3e4"
+            />
           </div>
         </HeaderIntro>
       </HeaderEl>

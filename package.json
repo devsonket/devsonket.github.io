@@ -22,7 +22,9 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.17.1"
+    "husky": "^2.4.1",
+    "prettier": "^1.17.1",
+    "pretty-quick": "^1.11.0"
   },
   "keywords": [
     "cheatsheet",
@@ -39,6 +41,11 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "repository": {
     "type": "git",

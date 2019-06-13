@@ -70,7 +70,5 @@ const SheetContainer = styled.div`
 `
 
 export const Sheet = ({ children, id }) => (
-  <SheetContainer id={id}>
-    {children}
-  </SheetContainer>
+  <SheetContainer id={id}>{children}</SheetContainer>
 )

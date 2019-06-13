@@ -21,10 +21,7 @@ const ViewContainer = styled.div`
 export default ({ input }) => (
   <Container>
     <ViewContainer className="top">
-      { input ?
-        <SearchResult input={input} /> :
-        <Top />
-      }
+      {input ? <SearchResult input={input} /> : <Top />}
     </ViewContainer>
   </Container>
 )

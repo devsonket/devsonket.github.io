@@ -7,7 +7,7 @@ import Content from "../components/content"
 import { Container } from "../components/common"
 import SinglePage from "../pages/singlepage"
 
-const CheatSheet = ({ pageContext: { data }}) => {
+const CheatSheet = ({ pageContext: { data } }) => {
   return (
     <SinglePage>
       <App data={data}>

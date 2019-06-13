@@ -9,10 +9,10 @@ import Library from "../components/library"
 import "./index.css"
 
 export default () => {
-  const [searchInput, setsearchInput] = useState('');
+  const [searchInput, setsearchInput] = useState("")
 
   const handleInputChange = e => {
-    setsearchInput(e.target.value);
+    setsearchInput(e.target.value)
   }
 
   return (

@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "@emotion/styled";
+import React from "react"
+import styled from "@emotion/styled"
 
 const ContainerStyle = styled.section`
   max-width: 940px;
@@ -11,10 +11,8 @@ const ContainerStyle = styled.section`
   @media only screen and (max-width: 460px) {
     padding: 25px 0;
   }
-`;
+`
 
 export const Container = ({ children }) => (
-  <ContainerStyle>
-    {children}
-  </ContainerStyle>
+  <ContainerStyle>{children}</ContainerStyle>
 )
