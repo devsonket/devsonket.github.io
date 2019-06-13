@@ -31,7 +31,7 @@ const CardContainer = styled.div`
         }
       `}
   }
-`;
+`
 
 export const Card = ({ id, title, style = {}, contentCard = false }) => (
   <CardContainer contentCard={contentCard} key={id} bg={style}>
@@ -39,4 +39,4 @@ export const Card = ({ id, title, style = {}, contentCard = false }) => (
       <h4>{title}</h4>
     </Link>
   </CardContainer>
-);
+)

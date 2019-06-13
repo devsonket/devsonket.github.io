@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 
-import { Logo, Button } from './common'
+import { Logo, Button } from "./common"
 
 const Navbar = styled.nav`
   list-style: none;
@@ -38,7 +38,7 @@ const Navbar = styled.nav`
     padding: 5px 10px;
     border-radius: 4px;
   } */
-`;
+`
 
 export default () => (
   <Navbar>

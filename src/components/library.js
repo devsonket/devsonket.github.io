@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
-import { Container, Card } from './common'
+import { Container, Card } from "./common"
 
 import { organizedData } from "../utils"
 
@@ -38,7 +38,13 @@ export default () => (
       <StaticQuery
         query={graphql`
           query {
-            allFile(filter: {extension: {eq: "json"}, relativeDirectory: {nin: "demo", ne: "draft"}}, limit: 1000) {
+            allFile(
+              filter: {
+                extension: { eq: "json" }
+                relativeDirectory: { nin: "demo", ne: "draft" }
+              }
+              limit: 1000
+            ) {
               edges {
                 node {
                   id
@@ -48,7 +54,7 @@ export default () => (
             }
           }
         `}
-        render={({ allFile: { edges } }) => (
+        render={({ allFile: { edges } }) =>
           Object.keys(organizedData(edges)).map((char, index) => (
             <React.Fragment key={index}>
               <div className="content">
@@ -61,7 +67,7 @@ export default () => (
               </div>
             </React.Fragment>
           ))
-        )}
+        }
       />
     </Container>
   </LibraryContainer>

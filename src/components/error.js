@@ -17,7 +17,7 @@ const ErrorContainer = styled.div`
   p {
     font-size: 18px;
   }
-  .action-btn>*{
+  .action-btn > * {
     margin-right: 15px;
   }
 `
@@ -25,9 +25,7 @@ const ErrorContainer = styled.div`
 export default ({ children }) => (
   <div className="error-area not-found">
     <Container>
-      <ErrorContainer>
-        {children}
-      </ErrorContainer>
+      <ErrorContainer>{children}</ErrorContainer>
     </Container>
   </div>
 )

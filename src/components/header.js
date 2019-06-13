@@ -49,8 +49,6 @@ const HeaderEl = styled.div`
 export default ({ children }) => (
   <HeaderArea>
     <NavBar />
-    <HeaderEl>
-      {children}
-    </HeaderEl>
+    <HeaderEl>{children}</HeaderEl>
   </HeaderArea>
 )

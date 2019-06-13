@@ -17,7 +17,13 @@ export default ({ input }) => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: {extension: {eq: "json"}, relativeDirectory: {nin: "demo", ne: "draft"}}, limit: 1000) {
+        allFile(
+          filter: {
+            extension: { eq: "json" }
+            relativeDirectory: { nin: "demo", ne: "draft" }
+          }
+          limit: 1000
+        ) {
           edges {
             node {
               id
@@ -28,21 +34,31 @@ export default ({ input }) => (
       }
     `}
     render={({ allFile: { edges } }) => {
-      const isEng = String(input[0]).charCodeAt() < 128;
-      let matchNums;
-      const uniInput = String(input).trim().toLowerCase();
-      if(isEng) {
-        matchNums = Object.keys(edges).filter(edge => String(edges[edge].node.name).toLowerCase().includes(uniInput));
+      const isEng = String(input[0]).charCodeAt() < 128
+      let matchNums
+      const uniInput = String(input)
+        .trim()
+        .toLowerCase()
+      if (isEng) {
+        matchNums = Object.keys(edges).filter(edge =>
+          String(edges[edge].node.name)
+            .toLowerCase()
+            .includes(uniInput)
+        )
       } else {
         matchNums = Object.keys(edges).filter(edge => {
-          const data = require(`../../data/${edges[edge].node.name}`);
-          if(String(data.title).toLowerCase().includes(uniInput)) {
-            return edge;
+          const data = require(`../../data/${edges[edge].node.name}`)
+          if (
+            String(data.title)
+              .toLowerCase()
+              .includes(uniInput)
+          ) {
+            return edge
           }
-        });
+        })
       }
-      const data = matchNums.map(one => edges[one]);
-      if(!data.length) {
+      const data = matchNums.map(one => edges[one])
+      if (!data.length) {
         return (
           <ButtonContainer>
             <Button
@@ -54,7 +70,9 @@ export default ({ input }) => (
         )
       }
       return data.map(edge => {
-        const { id, title, description } = require(`../../data/${edge.node.name}.json`);
+        const { id, title, description } = require(`../../data/${
+          edge.node.name
+        }.json`)
         return (
           <Card
             id={id}
@@ -62,7 +80,8 @@ export default ({ input }) => (
             title={title}
             description={description}
             style={{
-              backgroundColor: colors[Math.floor(Math.random() * colors.length)]
+              backgroundColor:
+                colors[Math.floor(Math.random() * colors.length)],
             }}
           />
         )

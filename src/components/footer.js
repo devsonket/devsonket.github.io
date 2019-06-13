@@ -27,7 +27,7 @@ const FooterContainer = styled.footer`
     border-radius: 4px;
     font-size: 13px;
   }
-`;
+`
 
 export default () => (
   <FooterContainer>

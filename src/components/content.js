@@ -51,27 +51,29 @@ export default ({ data }) => (
           <a href={`/${data.slug}/#${index + 1}`}>Link</a>
         </SheetTitle>
         <ul className="single-item">
-          {items ? (items.map(({ definition, code }, index) => (
-          <li key={index} className="item">
-            {definition && (
-              <p
-                className="def"
-                dangerouslySetInnerHTML={{ __html: definition }}
-              />
-            )}
-            {code && (
-              <pre className="code">
-                <code>{code}</code>
-              </pre>
-            )}
-          </li>
-          ))) : (
+          {items ? (
+            items.map(({ definition, code }, index) => (
+              <li key={index} className="item">
+                {definition && (
+                  <p
+                    className="def"
+                    dangerouslySetInnerHTML={{ __html: definition }}
+                  />
+                )}
+                {code && (
+                  <pre className="code">
+                    <code>{code}</code>
+                  </pre>
+                )}
+              </li>
+            ))
+          ) : (
             <pre className="code">
               <code>{onlyCode}</code>
             </pre>
           )}
         </ul>
       </Sheet>
-    )) }
+    ))}
   </SingleContent>
 )

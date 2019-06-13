@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 
-import Header from './header'
+import Header from "./header"
 
 const HeaderIntro = styled.div`
   padding: 0 50px;
@@ -34,7 +34,7 @@ const HeaderIntro = styled.div`
   }
 `
 
-export default({ input, handleInputChange }) => (
+export default ({ input, handleInputChange }) => (
   <Header>
     <HeaderIntro>
       <h1>ডেভেলপার চিটশিট</h1>

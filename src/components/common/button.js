@@ -2,9 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 
-const ButtonContainer = styled.span`
-
-`
+const ButtonContainer = styled.span``
 
 const ButtonAnchor = styled.a`
   text-decoration: none;
@@ -19,7 +17,7 @@ const ButtonAnchor = styled.a`
   box-shadow: 8px 10px 20px 0 rgba(46, 61, 73, 0.15);
   color: white;
   text-shadow: 0 1px 3px #86888e;
-  @media print{
+  @media print {
     display: none;
   }
   &:hover {
@@ -30,7 +28,13 @@ const ButtonAnchor = styled.a`
 
 export const Button = ({ text, bgColor, href, onClick, target, rel }) => (
   <ButtonContainer>
-    <ButtonAnchor target={target ? '_blank':'self'} rel={rel ? rel : ''} onClick={onClick && onClick} style={{ backgroundColor: bgColor }} href={href}>
+    <ButtonAnchor
+      target={target ? "_blank" : "self"}
+      rel={rel ? rel : ""}
+      onClick={onClick && onClick}
+      style={{ backgroundColor: bgColor }}
+      href={href}
+    >
       {text}
     </ButtonAnchor>
   </ButtonContainer>
@@ -38,10 +42,10 @@ export const Button = ({ text, bgColor, href, onClick, target, rel }) => (
 
 Button.defaultProps = {
   text: `button`,
-  bgColor: '#333'
+  bgColor: "#333",
 }
 
 Button.propTypes = {
   text: PropTypes.string,
-  bgColor: PropTypes.string
+  bgColor: PropTypes.string,
 }
