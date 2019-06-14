@@ -7,7 +7,8 @@ cache:
 script:
   - npm test
   - npm run build
-env: GATSBY_GITHUB_TOKEN = $GATSBY_GITHUB_TOKEN
+env:
+  GATSBY_GITHUB_TOKEN: $GATSBY_GITHUB_TOKEN
 deploy:
   provider: pages
   skip_cleanup: true
