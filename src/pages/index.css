@@ -621,6 +621,7 @@ code {
 }
 pre code {
   line-height: 1.42;
+  white-space: pre-wrap;
 }
 code:before,
 code:after,

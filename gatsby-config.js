@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `ডেভ সংকেত`,
@@ -24,7 +28,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#333`,
         display: `minimal-ui`,
-        icon: `src/images/devsonket-icon.png`
+        icon: `src/images/devsonket-icon.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

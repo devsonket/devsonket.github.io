@@ -2,6 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 
 import { PrintSheet, Logo } from "./common"
+import { cheatsheetMap, contributorMap } from "../utils"
 
 import githubLogo from "../images/github.png"
 
@@ -125,158 +126,102 @@ const PrintCode = styled.tr`
       margin-bottom: 0;
       padding: 0;
       background: none;
+      @media print {
+        white-space: pre-wrap;
+      }
     }
   }
 `
 
-export default ({ data }) => (
-  <PrintSingleContent>
-    <PrintSheet>
-      <PrintSheetTitle>
-        <th className="title">
-          <h3>{data.title}</h3>
-          <Logo noColor />
-        </th>
-      </PrintSheetTitle>
-      <PrintSheetTitle>
-        <td>
-          <p>{data.description}</p>
-        </td>
-      </PrintSheetTitle>
-    </PrintSheet>
-    {data.contents.map(({ title, items, code: onlyCode }, index) => (
-      <PrintSheet id={index + 1} key={index}>
+export default ({ data: rawData, contributors: contributorData }) => {
+  const contributors = contributorMap(contributorData)
+  const data = cheatsheetMap(rawData)
+  return (
+    <PrintSingleContent>
+      <PrintSheet>
         <PrintSheetTitle>
-          <th>
-            <h3>{title}</h3>
+          <th className="title">
+            <h3>{data.title}</h3>
+            <Logo noColor />
           </th>
         </PrintSheetTitle>
-        {items ? (
-          items.map(({ definition, code }, index) => (
+        <PrintSheetTitle>
+          <td>
+            <p>{data.description}</p>
+          </td>
+        </PrintSheetTitle>
+      </PrintSheet>
+      {data.contents.map(({ title, items, code: onlyCode }, index) => (
+        <PrintSheet id={index + 1} key={index}>
+          <PrintSheetTitle>
+            <th>
+              <h3>{title}</h3>
+            </th>
+          </PrintSheetTitle>
+          {items ? (
+            items.map(({ definition, code }, index) => (
+              <PrintCode key={index}>
+                <td className="item">
+                  {definition && (
+                    <p
+                      className="def"
+                      dangerouslySetInnerHTML={{ __html: definition }}
+                    />
+                  )}
+                  {code && (
+                    <pre className="code">
+                      <code>{code}</code>
+                    </pre>
+                  )}
+                </td>
+              </PrintCode>
+            ))
+          ) : (
             <PrintCode>
-              <td key={index} className="item">
-                {definition && (
-                  <p
-                    className="def"
-                    dangerouslySetInnerHTML={{ __html: definition }}
-                  />
-                )}
-                {code && (
-                  <pre className="code">
-                    <code>{code}</code>
-                  </pre>
-                )}
+              <td>
+                <pre className="code">
+                  <code>{onlyCode}</code>
+                </pre>
               </td>
             </PrintCode>
-          ))
-        ) : (
-          <PrintCode>
-            <td>
-              <pre className="code">
-                <code>{onlyCode}</code>
-              </pre>
-            </td>
-          </PrintCode>
-        )}
-      </PrintSheet>
-    ))}
-    <PrintSheet>
-      <PrintSheetTitle>
-        <td>
-          <p>এই চিটশিটে কন্ট্রিবিউট করেছেনঃ</p>
-          <ul className="contributor">
-            <li>
-              <img
-                alt="username"
-                src="https://avatars3.githubusercontent.com/u/18544717?v=4"
-              />
-              <div className="profile">
-                <h4>Zonayed Ahmed</h4>
-                <p>
-                  <img alt="username" src={githubLogo} />/
-                  <span>zonayedpca</span>
-                </p>
+          )}
+        </PrintSheet>
+      ))}
+      <PrintSheet>
+        <PrintSheetTitle>
+          <td>
+            <p>এই চিটশিটে কন্ট্রিবিউট করেছেনঃ</p>
+            <ul className="contributor">
+              {Object.keys(contributors).map(contributor => (
+                <li key={contributor}>
+                  <img
+                    alt={contributors[contributor].login}
+                    src={contributors[contributor].avatar_url}
+                  />
+                  <div className="profile">
+                    <h4>{contributors[contributor].name}</h4>
+                    <p>
+                      <img alt="username" src={githubLogo} />/
+                      <span>{contributors[contributor].login}</span>
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </td>
+        </PrintSheetTitle>
+        <PrintSheetTitle>
+          <th className="foot">
+            <div className="website">
+              <Logo noColor />
+              <div className="slogan">
+                <p>বাংলা চিটশিটের ভান্ডার</p>
+                <p>devsonket.com</p>
               </div>
-            </li>
-            <li>
-              <img
-                alt="username"
-                src="https://avatars3.githubusercontent.com/u/18544717?v=4"
-              />
-              <div className="profile">
-                <h4>Zonayed Ahmed</h4>
-                <p>
-                  <img alt="username" src={githubLogo} />/
-                  <span>zonayedpca</span>
-                </p>
-              </div>
-            </li>
-            <li>
-              <img
-                alt="username"
-                src="https://avatars3.githubusercontent.com/u/18544717?v=4"
-              />
-              <div className="profile">
-                <h4>Zonayed Ahmed</h4>
-                <p>
-                  <img alt="username" src={githubLogo} />/
-                  <span>zonayedpca</span>
-                </p>
-              </div>
-            </li>
-            <li>
-              <img
-                alt="username"
-                src="https://avatars3.githubusercontent.com/u/18544717?v=4"
-              />
-              <div className="profile">
-                <h4>Zonayed Ahmed</h4>
-                <p>
-                  <img alt="username" src={githubLogo} />/
-                  <span>zonayedpca</span>
-                </p>
-              </div>
-            </li>
-            <li>
-              <img
-                alt="username"
-                src="https://avatars3.githubusercontent.com/u/18544717?v=4"
-              />
-              <div className="profile">
-                <h4>Zonayed Ahmed</h4>
-                <p>
-                  <img alt="username" src={githubLogo} />/
-                  <span>zonayedpca</span>
-                </p>
-              </div>
-            </li>
-            <li>
-              <img
-                alt="username"
-                src="https://avatars3.githubusercontent.com/u/18544717?v=4"
-              />
-              <div className="profile">
-                <h4>Zonayed Ahmed</h4>
-                <p>
-                  <img alt="username" src={githubLogo} />/
-                  <span>zonayedpca</span>
-                </p>
-              </div>
-            </li>
-          </ul>
-        </td>
-      </PrintSheetTitle>
-      <PrintSheetTitle>
-        <th className="foot">
-          <div className="website">
-            <Logo noColor />
-            <div className="slogan">
-              <p>বাংলা চিটশিটের ভান্ডার</p>
-              <p>devsonket.com</p>
             </div>
-          </div>
-        </th>
-      </PrintSheetTitle>
-    </PrintSheet>
-  </PrintSingleContent>
-)
+          </th>
+        </PrintSheetTitle>
+      </PrintSheet>
+    </PrintSingleContent>
+  )
+}
