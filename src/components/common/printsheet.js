@@ -3,6 +3,9 @@ import styled from "@emotion/styled"
 
 const PrintSheetContainer = styled.table`
   border: solid 3px #333;
+  @media print {
+    break-inside: avoid;
+  }
 `
 
 export const PrintSheet = ({ children, id }) => (

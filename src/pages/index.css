@@ -649,7 +649,7 @@ pre tt:after {
 /* Print */
 @page {
   size: A4;
-  margin: 0;
+  margin: 25px;
   padding: 0;
 }
 
