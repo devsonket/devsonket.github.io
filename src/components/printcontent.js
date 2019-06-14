@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 
-import { PrintSheet, Logo } from "./common"
+import { PrintSheet, Logo, Button } from "./common"
 import { cheatsheetMap, contributorMap } from "../utils"
 
 import githubLogo from "../images/github.png"
@@ -133,6 +133,27 @@ const PrintCode = styled.tr`
   }
 `
 
+const PrintButton = styled.div`
+  position: fixed;
+  bottom: 25px;
+  left: calc(50% - 45px);
+  z-index: 1;
+  ::after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.25;
+    z-index: -1;
+  }
+  @media print {
+    display: none;
+  }
+`
+
 export default ({ data: rawData, contributors: contributorData }) => {
   const contributors = contributorMap(contributorData)
   const data = cheatsheetMap(rawData)
@@ -222,6 +243,13 @@ export default ({ data: rawData, contributors: contributorData }) => {
           </th>
         </PrintSheetTitle>
       </PrintSheet>
+      <PrintButton>
+        <Button
+          onClick={() => window.print()}
+          text="প্রিন্ট করুন"
+          bgColor="#02b3e4"
+        />
+      </PrintButton>
     </PrintSingleContent>
   )
 }

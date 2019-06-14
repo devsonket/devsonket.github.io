@@ -654,6 +654,10 @@ pre tt:after {
   padding: 0;
 }
 
+@page :header {
+  color: #fff;
+}
+
 @media print {
   html,
   body {
