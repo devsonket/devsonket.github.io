@@ -2,9 +2,9 @@ import React from "react"
 
 import Footer from "./footer"
 
-export default ({ children }) => (
+export default ({ children, noFooter }) => (
   <div>
     {children}
-    <Footer />
+    {!noFooter && <Footer />}
   </div>
 )

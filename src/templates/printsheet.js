@@ -2,20 +2,15 @@ import React from "react"
 
 import SEO from "../components/seo"
 import App from "../components/app"
-import Desc from "../components/desc"
-import Content from "../components/content"
-import { Container } from "../components/common"
+import PrintContent from "../components/printcontent"
 import SinglePage from "../pages/singlepage"
 
 const PrintSheet = ({ pageContext: { data } }) => {
   return (
     <SinglePage>
-      <App data={data}>
+      <App data={data} noFooter>
         <SEO title={data.title} description={data.description} lang="bn" />
-        <Desc data={data} />
-        <Container>
-          <Content data={data} />
-        </Container>
+        <PrintContent data={data} />
       </App>
     </SinglePage>
   )
