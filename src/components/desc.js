@@ -97,7 +97,9 @@ export default ({ data: { id, title, description } }) => {
           )}
           <div className="print no-print">
             <Button
-              onClick={() => window.print()}
+              href={`/print/${id}`}
+              target
+              rel="noreferrer noopener"
               text="প্রিন্ট করুন"
               bgColor="#02b3e4"
             />

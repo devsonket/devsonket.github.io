@@ -10,6 +10,7 @@ body {
   max-width: 100%;
   background-color: #ffffff;
   font-family: "Kalpurush", Arial, sans-serif;
+  -webkit-print-color-adjust: exact;
 }
 
 * {
@@ -620,6 +621,7 @@ code {
 }
 pre code {
   line-height: 1.42;
+  white-space: pre-wrap;
 }
 code:before,
 code:after,
@@ -643,4 +645,23 @@ pre tt:after {
 /* Common */
 .mt-0 {
   margin-top: -50px;
+}
+
+/* Print */
+@page {
+  size: A4;
+  margin: 25px;
+  padding: 0;
+}
+
+@page :header {
+  color: #fff;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+  }
 }

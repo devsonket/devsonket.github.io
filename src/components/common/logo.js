@@ -16,20 +16,13 @@ const LogoContainer = styled.a`
     border-radius: 4px;
     margin-right: 5px;
   }
-  @media print {
-    color: #fff;
-    filter: invert(100%);
-    span {
-      background-color: #fff;
-      color: #000;
-      padding: 0 8px;
-      font-weight: 900;
-    }
-  }
 `
 
-export const Logo = () => (
-  <LogoContainer href="/">
-    <span>ডেভ</span>সংকেত
+export const Logo = ({ noColor }) => (
+  <LogoContainer style={noColor && { color: "#fff" }} href="/">
+    <span style={noColor && { backgroundColor: "#fff", color: "#333" }}>
+      ডেভ
+    </span>
+    সংকেত
   </LogoContainer>
 )
