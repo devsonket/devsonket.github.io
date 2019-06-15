@@ -35,6 +35,7 @@ exports.createPages = ({ actions, graphql }) => {
           context: {
             id: `${data.id}`,
             data,
+            filename,
           },
         })
         createPage({

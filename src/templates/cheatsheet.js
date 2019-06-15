@@ -12,7 +12,7 @@ const CheatSheet = ({ pageContext: { data, filename } }) => {
     <SinglePage>
       <App data={data}>
         <SEO title={data.title} description={data.description} lang="bn" />
-        <Desc data={data} />
+        <Desc filename={filename} data={data} />
         <Container>
           <Content data={data} />
         </Container>

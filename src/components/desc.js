@@ -46,13 +46,13 @@ const HeaderIntro = styled.div`
   }
 `
 
-export default ({ data: { id, title, description } }) => {
+export default ({ filename, data: { id, title, description } }) => {
   const [contributor, setContributor] = useState(null)
 
   const getContributor = async () => {
     try {
       let { data } = await axios(
-        `https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${id}.json`
+        `https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${filename}.json`
       )
       data = contributorMap(data)
       setContributor(data)
