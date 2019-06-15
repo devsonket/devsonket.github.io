@@ -10,6 +10,7 @@ body {
   max-width: 100%;
   background-color: #ffffff;
   font-family: "Kalpurush", Arial, sans-serif;
+  color-adjust: exact;
   -webkit-print-color-adjust: exact;
 }
 

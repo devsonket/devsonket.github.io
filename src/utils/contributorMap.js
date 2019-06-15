@@ -7,6 +7,7 @@ export const contributorMap = data => {
         charMap[login] = {
           count: 1,
           login: oneData.author.login,
+          name: oneData.commit.author.name,
           avatar_url: oneData.author.avatar_url,
           html_url: oneData.author.html_url,
         }

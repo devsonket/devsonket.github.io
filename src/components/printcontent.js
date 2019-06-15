@@ -33,6 +33,10 @@ const PrintSheetTitle = styled.tr`
       margin-bottom: 0;
       padding: 10px 15px;
       font-size: 18px;
+      @media print {
+        color: transparent;
+        text-shadow: 0 0 0 #fff;
+      }
     }
   }
 
@@ -43,6 +47,10 @@ const PrintSheetTitle = styled.tr`
       margin-bottom: 0;
       font-size: 16px;
       padding: 15px;
+      @media print {
+        color: transparent;
+        text-shadow: 0 0 0 #fff;
+      }
     }
   }
 
@@ -67,6 +75,10 @@ const PrintSheetTitle = styled.tr`
         margin-left: 10px;
         & h4 {
           margin-bottom: 0;
+          @media print {
+            color: transparent;
+            text-shadow: 0 0 0 #fff;
+          }
         }
         & p {
           display: flex;
@@ -81,6 +93,10 @@ const PrintSheetTitle = styled.tr`
             font-family: "SFMono-Regular", Consolas, "Roboto Mono",
               "Droid Sans Mono", "Liberation Mono", Menlo, Courier, monospace;
             font-size: 13px;
+            @media print {
+              color: transparent;
+              text-shadow: 0 0 0 #fff;
+            }
           }
         }
       }
@@ -106,6 +122,12 @@ const PrintSheetTitle = styled.tr`
         flex-direction: column;
         line-height: 1;
         text-align: right;
+        & p {
+          @media print {
+            color: transparent;
+            text-shadow: 0 0 0 #fff;
+          }
+        }
       }
     }
   }
