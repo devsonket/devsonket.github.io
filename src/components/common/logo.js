@@ -19,7 +19,10 @@ const LogoContainer = styled.a`
 `
 
 export const Logo = ({ noColor }) => (
-  <LogoContainer style={noColor && { color: "#fff" }} href="/">
+  <LogoContainer
+    style={noColor && { color: "transparent", textShadow: "0 0 0 #fff" }}
+    href="/"
+  >
     <span style={noColor && { backgroundColor: "#fff", color: "#333" }}>
       ডেভ
     </span>
