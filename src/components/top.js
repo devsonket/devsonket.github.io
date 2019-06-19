@@ -15,6 +15,7 @@ export default () => (
             relativeDirectory: { nin: "demo", ne: "draft" }
           }
           limit: 8
+          sort: { order: DESC, fields: birthtime }
         ) {
           edges {
             node {
