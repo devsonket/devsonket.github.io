@@ -75,10 +75,6 @@
         {
           "definition": "গিট এর লোকাল/একটি নির্দিষ্ট রিপোজিটরির ইউজার ইমেইল বাতিল করা",
           "code": "git config --unset user.email"
-        },
-        {
-          "definition": "",
-          "code": ""
         }
       ]
     },
