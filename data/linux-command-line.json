@@ -47,6 +47,9 @@
         }, {
           "definition": "সিস্টেম ডেট দেখা",
           "code": "date"
+        }, {
+          "definition": "ইউজার ইক্টিবিটি লগ দেখা",
+          "code": "sudo less /var/log/auth.log"
         }
       ]
     }, {
