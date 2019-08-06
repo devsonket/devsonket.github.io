@@ -182,6 +182,22 @@
           "code": "git checkout -b \"branch name\""
         },
         {
+            "definition": "নির্দিষ্ট কমিট পরিবর্তন না করা",
+            "code": "git checkout -- <filename>"
+        },
+        {
+            "definition": "সকল কমিট পরিবর্তন না করা",
+            "code": "git checkout -- ."
+        },
+        {
+            "definition": "কমিট প্রত্যাবর্তন করা",
+            "code": "git revert <commit hash>"
+        },
+        {
+            "definition": "নির্দিষ্ট কমিট প্রত্যাবর্তন করা",
+            "code": "git revert -n <commit hash>"
+        },
+        {
           "definition": "ব্রাঞ্চ রিমুভ করা",
           "code": "git branch -d [branch-name]"
         },
