@@ -1,0 +1,311 @@
+{
+  "id": "adobe-photoshop-shortcuts",
+  "title": "অ্যাডোবি ফটোশপ",
+  "slug": "adobe-photoshop-shortcuts",
+  "description": "অ্যাডোবি ফটোশপের এর প্রয়োজনী উইন্ডোজ শর্টকাট কী",
+  "colorPref": "#000",
+  "contents": [
+    {
+      "title": "ফাইল (File)",
+      "items": [
+        {
+          "definition": "নতুন ফাইল (New)",
+          "code": "Ctrl+N"
+        },
+        {
+          "definition": "ফাইল ওপেন করতে (Open)",
+          "code": "Ctrl+O"
+        },
+		    {
+          "definition": "ফাইল এডোবি ব্রিজে ব্রাউজ করতে (Browse in Bridge)",
+          "code": "Alt+Ctrl+O or Shift+Ctrl+O"
+        },
+		    {
+          "definition": "ফাইল ওপেন হিসাবে (Open As)",
+          "code": "Alt+Shift+Ctrl+O"
+        },
+        {
+          "definition": "ফাইল বন্ধ করা (Close)",
+          "code": "Ctrl+W"
+        },
+        {
+          "definition": "সকল ফাইল বন্ধ করতে (Close All)",
+          "code": "Alt+Ctrl+W"
+        },
+        {
+          "definition": "ফাইল বন্ধ করুন এবং এডোবি ব্রিজে যান (Close and Go to Bridge)",
+          "code": "Shift+Ctrl+W"
+        },
+        {
+          "definition": "ফাইল সেভ করতে (Save)",
+          "code": "Ctrl+S"
+        },
+        {
+          "definition": "ফাইল ফরম্যাট হিসেবে সেভ করতে (Save As)",
+          "code": "Shift+Ctrl+S or Alt+Ctrl+S"
+        },
+        {
+          "definition": "ওয়েব এর জন্য ফাইল সেভ করতে (Save for Web)",
+          "code": "Alt+Shift+Ctrl+S"
+        },
+        {
+          "definition": "ফাইল আগেকার অবস্থায় আনতে (Revert)",
+          "code": "F12"
+        },
+        {
+          "definition": "ফাইল সম্পর্কিত তথ্য (File Info)",
+          "code": "Alt+Shift+Ctrl+I"
+        },
+        {
+          "definition": "ফাইল প্রিন্ট করতে (Print)",
+          "code": "Ctrl+P"
+        },
+        {
+          "definition": "এক কপি ফাইল প্রিন্ট করতে (Print One Copy)",
+          "code": "Alt+Shift+Ctrl+P"
+        },
+        {
+          "definition": "ফাইল থেকে বের হতে (Exit)",
+          "code": "Ctrl+Q"
+        }
+      ]
+    },
+    {
+      "title": "এডিট (Edit)",
+      "items": [
+        {
+          "definition": "বাতিল করা/পুনরায় করা (Undo/Redo)",
+          "code": "Ctrl+Z"
+        },
+        {
+          "definition": "ফরোয়ার্ড (Step Forward)",
+          "code": "Shift+Ctrl+Z"
+        },
+        {
+          "definition": "ব্যাকওয়ার্ড (Step Backward)",
+          "code": "Alt+Ctrl+Z"
+        },
+        {
+          "definition": "বিবর্ণ (Fade)",
+          "code": "Shift+Ctrl+F"
+        },
+        {
+          "definition": "কাট করতে (Cut)",
+          "code": "Ctrl+X or F2"
+        },
+        {
+          "definition": "কপি করতে (Copy)",
+          "code": "Ctrl+C or F3"
+        },
+        {
+          "definition": "কপি এক করা (Copy Merged)",
+          "code": "Shift+Ctrl+C"
+        },
+        {
+          "definition": "পেস্ট (Paste)",
+          "code": "Ctrl+V F4"
+        },
+        {
+          "definition": "পূরণ করা (Fill)",
+          "code": "Shift+F5"
+        },
+        {
+          "definition": "Content-Aware স্কেল সিলেক্ট করতে (Content-Aware Scale)",
+          "code": "Alt+Shift+Ctrl+C"
+        },
+        {
+          "definition": "ফ্রি ট্রান্সফর্ম (Free Transform)",
+          "code": "Ctrl+T"
+        },
+        {
+          "definition": "কালার সেটিংস (Color Settings)",
+          "code": "Shift+Ctrl+K"
+        },
+        {
+          "definition": "কীবোর্ড শর্টকাটগুলি (Keyboard Shortcuts)",
+          "code": "Alt+Shift+Ctrl+K"
+        },
+        {
+          "definition": "মেনু (Menus)",
+          "code": "Alt+Shift+Ctrl+M"
+        },
+        {
+          "definition": "প্রেফারেন্সেস > জেনারেল (Preferences > General)",
+          "code": "Ctrl+K"
+        }
+      ]
+    },
+    {
+      "title": "ইমেজ (Image)",
+      "items": [
+        {
+          "definition": "ইমেজ অ্যাডজাস্টমেন্ট থেকে লেভেল সিলেক্ট কি (Adjustments > Levels)",
+          "code": "Ctrl+L"
+        },
+        {
+          "definition": "ইমেজ অ্যাডজাস্টমেন্ট থেকে কার্ভস সিলেক্ট কি (Adjustments > Curves)",
+          "code": "Ctrl+M"
+        },
+        {
+          "definition": "ইমেজ অ্যাডজাস্টমেন্ট থেকে হিউ/স্যাচুরেশন সিলেক্ট কি (Adjustments > Hue/Saturation)",
+          "code": "Ctrl+U"
+        },
+        {
+          "definition": "ইমেজ অ্যাডজাস্টমেন্ট থেকে কালার ব্যালান্স সিলেক্ট কি (Adjustments > Color Balance)",
+          "code": "Ctrl+B"
+        },
+        {
+          "definition": "ইমেজ অ্যাডজাস্টমেন্ট থেকে সাদা কালো সিলেক্ট কি (Adjustments > Black & White)",
+          "code": "Alt+Shift+Ctrl+B"
+        },
+        {
+          "definition": "ইমেজ অ্যাডজাস্টমেন্ট থেকে ইনভার্ট সিলেক্ট কি (Adjustments > Invert)",
+          "code": "Ctrl+I"
+        },
+        {
+          "definition": "ইমেজ এর কালার কে গ্রেস্কালে কনভার্ট করতে (Desaturate)",
+          "code": "Shift+Ctrl+U"
+        },
+        {
+          "definition": "ইমেজ এর অটো টোন কি (Auto Tone)",
+          "code": "Shift+Ctrl+L"
+        },
+        {
+          "definition": "ইমেজ এর অটো কনট্রাস্ট কি (Auto Contrast)",
+          "code": "Alt+Shift+Ctrl+L"
+        },
+        {
+          "definition": "ইমেজ এর অটো কালার কি (Auto Color)",
+          "code": "Shift+Ctrl+B"
+        },
+        {
+          "definition": "ইমেজ সাইজ কি (Image Size)",
+          "code": "Alt+Ctrl+I"
+        },
+        {
+          "definition": "ইমেজ ক্যানভাস কি (Canvas Size)",
+          "code": "Alt+Ctrl+C"
+        }
+      ]
+    },
+    {
+      "title": "লেয়ার (Layer)",
+      "items": [
+        {
+          "definition": "নতুন লেয়ার (New > Layer)",
+          "code": "Shift+Ctrl+N"
+        },
+        {
+          "definition": "নতুন লেয়ার কপি করতে (New > Layer via Copy)",
+          "code": "Ctrl+J"
+        },
+        {
+          "definition": "নতুন লেয়ার কাট করতে (New > Layer via Cut)",
+          "code": "Shift+Ctrl+J"
+        },
+        {
+          "definition": "ক্লিপিং মাস্ক বানানো/রিলিজ করতে (Create/Release Clipping Mask)",
+          "code": "Alt+Ctrl+G"
+        },
+        {
+          "definition": "লেয়ার গ্রুপ করতে (Group Layers)",
+          "code": "Ctrl+G"
+        },
+        {
+          "definition": "লেয়ার আন গ্রুপ করতে (Ungroup Layers)",
+          "code": "Shift+Ctrl+G"
+        },
+        {
+          "definition": "লেয়ার ফ্রন্ট এ আনতে (Arrange > Bring to Front)",
+          "code": "Shift+Ctrl+]"
+        },
+        {
+          "definition": "লেয়ার সামনে এ আনতে, এক্ষেত্রে লেয়ার এক ধাপ করে সামনে আসে (Arrange > Bring Forward)",
+          "code": "Ctrl+]"
+        },
+        {
+          "definition": "লেয়ার কে পিছনে নিতে, এক্ষেত্রে লেয়ার এক ধাপ করে পিছনে যায় (Arrange > Send Backward)",
+          "code": "Ctrl+["
+        },
+        {
+          "definition": "লেয়ার কে পিছনে নিতে (Arrange > Send to Back)",
+          "code": "Shift+Ctrl+["
+        },
+        {
+          "definition": "সিলেক্ট করা লেয়ার মার্জ করতে (Merge Layers)",
+          "code": "Ctrl+E"
+        },
+        {
+          "definition": "ভিসিবল লেয়ার মার্জ করতে (Merge Visible)",
+          "code": "Shift+Ctrl+E"
+        }
+      ]
+    },
+    {
+      "title": "সিলেক্ট (Select)",
+      "items": [
+        {
+          "definition": "সব সিলেক্ট করতে (All)",
+          "code": "Ctrl+A"
+        },
+        {
+          "definition": "ডিসিলেক্ট করতে (Deselect)",
+          "code": "Ctrl+D"
+        },
+        {
+          "definition": "পুনরায় সিলেক্ট করতে (Reselect)",
+          "code": "Shift+Ctrl+D"
+        },
+        {
+          "definition": "ইনভার্স (Inverse)",
+          "code": "Shift+Ctrl+I or Shift+F7"
+        },
+        {
+          "definition": "সব লেয়ার সিলেক্ট করতে (All Layers)",
+          "code": "Alt+Ctrl+A"
+        },
+        {
+          "definition": "লেয়ার খুঁজতে (Find Layers)",
+          "code": "Alt+Shift+Ctrl+F"
+        },
+        {
+          "definition": "রিফাইন এডজ সিলেক্ট কি (Refine Edge)",
+          "code": "Alt+Ctrl+R"
+        },
+        {
+          "definition": "মডিফাই থেকে ফেইথার সিলেক্ট কি  (Modify > Feather)",
+          "code": "Shift+F6"
+        }
+      ]
+    },
+    {
+      "title": "ফিল্টার (Filter)",
+      "items": [
+        {
+          "definition": "শেষ ফিল্টার ব্যবহার করতে (Last Filter)",
+          "code": "Alt+Ctrl+F"
+        },
+        {
+          "definition": "এডাপটিভ ওয়াইড অ্যাঙ্গেল ফিল্টার (Adaptive Wide Angle)",
+          "code": "Alt+Shift+Ctrl+A"
+        },
+        {
+          "definition": "ক্যামেরা রও ফিল্টার (Camera Raw Filter)",
+          "code": "Shift+Ctrl+A"
+        },
+        {
+          "definition": "লেন্স কারেকশন ফিল্টার (Lens Correction)",
+          "code": "Shift+Ctrl+R"
+        },
+        {
+          "definition": "লিকুইফাই ফিল্টার (Liquify)",
+          "code": "Shift+Ctrl+X"
+        },
+        {
+          "definition": "ভ্যানিশিং পয়েন্ট ফিল্টার (Vanishing Point)",
+          "code": "Alt+Ctrl+V"
+        }
+      ]
+    }
+  ]
+}
