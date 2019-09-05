@@ -306,6 +306,398 @@
           "code": "Alt+Ctrl+V"
         }
       ]
+    },
+    {
+      "title": "ভিউ (View)",
+      "items": [
+        {
+          "definition": "প্রুফ কালারস্ (Proof Colors)",
+          "code": "Ctrl+Y"
+        }, 
+        {
+          "definition": "গামুট ওয়ার্নিং (Gamut Warning)",
+          "code": "Shift+Ctrl+Y"
+        }, 
+        {
+          "definition": "ভিউ জুম ইন (Zoom In)",
+          "code": "Ctrl++ Ctrl+="
+        }, 
+        {
+          "definition": "ভিউ জুম আউট (Zoom Out)",
+          "code": "Ctrl+-"
+        }, 
+        {
+          "definition": "ভিউ স্ক্রিনে ফিট করতে (Fit on Screen)",
+          "code": "Ctrl+0"
+        },
+        {
+          "definition": "ভিউ ১০০% করতে (100%)",
+          "code": "Ctrl+1 or Alt+Ctrl+0"
+        },
+        {
+          "definition": "এক্সট্রা ভিউগুলো শো/হাইড করতে (Extras)",
+          "code": "Ctrl+H"
+        },
+        {
+          "definition": "টার্গেট পাথ শো করতে (Show > Target Path)",
+          "code": "Shift+Ctrl+H"
+        },
+        {
+          "definition": "গ্রিড শো/হাইড করতে (Show > Grid)",
+          "code": "Ctrl+’"
+        },
+        {
+          "definition": "গাইড শো/হাইড করতে (Show > Guides)",
+          "code": "Ctrl+;"
+        },
+        {
+          "definition": "রুলার শো/হাইড করতে (Rulers)",
+          "code": "Ctrl+R"
+        },
+        {
+          "definition": "স্ন্যাপ শো/হাইড (Snap)",
+          "code": "Shift+Ctrl+;"
+        },
+        {
+          "definition": "গাইড লক করতে (Lock Guides)",
+          "code": "কোড"
+        },
+        {
+          "definition": "কাজের বিবরণ",
+          "code": "Alt+Ctrl+;"
+        }
+      ]
+    },
+    {
+      "title": "উইন্ডো (Window)",
+      "items": [
+        {
+          "definition": "ফটোশপ সাহায্য এর জন্য (Photoshop Help)",
+          "code": "F1"
+        }, 
+        {
+          "definition": "অ্যাকশন (Actions)",
+          "code": "Alt+F9 or F9"
+        }, 
+        {
+          "definition": "ব্রাশ (Brush)",
+          "code": "F5"
+        }, 
+        {
+          "definition": "কালার (Color)",
+          "code": "F6"
+        }, 
+        {
+          "definition": "তথ্য (Info)",
+          "code": "F8"
+        }, 
+        {
+          "definition": "লেয়ার (Layers)",
+          "code": "F7"
+        }
+      ]
+    },
+    {
+      "title": "৩ডি (3D)",
+      "items": [
+        {
+          "definition": "সিলেক্টেড বহুভুজগুলো শো/হাইড করতে (Show/Hide Polygons > Within Selection)",
+          "code": "Alt+Ctrl+X"
+        }, 
+        {
+          "definition": "সব প্রকাশ করতে (Reveal All)",
+          "code": "Alt+Shift+Ctrl+X"
+        }, 
+        {
+          "definition": "৩ডি রেন্ডার করতে (Render)",
+          "code": "Alt+Shift+Ctrl+R"
+        }
+      ]
+    },
+    {
+      "title": "টুলস (Tools)",
+      "items": [
+        {
+          "definition": "মুভ টুল (Move Tool)",
+          "code": "V"
+        }, 
+        {
+          "definition": "রেক্ট্যাঙ্গুলার মারকিও টুল (Rectangular Marquee Tool)",
+          "code": "M"
+        }, 
+        {
+          "definition": "ইলিপ্টিকাল মারকিও টুল (Elliptical Marquee Tool)",
+          "code": "M"
+        }, 
+        {
+          "definition": "লাস্য টুল (Lasso Tool)",
+          "code": "L"
+        }, 
+        {
+          "definition": "পলিগোনাল লাস্য টুল (Polygonal Lasso Tool)",
+          "code": "L"
+        }, 
+        {
+          "definition": "ম্যাগনেটিক লাস্য টুল (Magnetic Lasso Tool)",
+          "code": "L"
+        }, 
+        {
+          "definition": "কুইক সিলেকশন টুল (Quick Selection Tool)",
+          "code": "W"
+        }, 
+        {
+          "definition": "ম্যাজিক ওয়ানড টুল (Magic Wand Tool)",
+          "code": "W"
+        }, 
+        {
+          "definition": "আইড্রপার টুল (Eyedropper Tool)",
+          "code": "I"
+        }, 
+        {
+          "definition": "৩ডি ম্যাটেরিয়াল আইড্রপার টুল (3D Material Eyedropper Tool)",
+          "code": "I"
+        }, 
+        {
+          "definition": "কালার স্যাম্পলের টুল (Color Sampler Tool)",
+          "code": "I"
+        }, 
+        {
+          "definition": "রুলার টুল (Ruler Tool)",
+          "code": "I"
+        }, 
+        {
+          "definition": "নোট টুল (Note Tool)",
+          "code": "I"
+        }, 
+        {
+          "definition": "কাউন্ট টুল (Count Tool)",
+          "code": "I"
+        }, 
+        {
+          "definition": "ক্রোপ টুল (Crop Tool)",
+          "code": "C"
+        }, 
+        {
+          "definition": "পার্সপেক্টিভ ক্রোপ টুল (Perspective Crop Tool)",
+          "code": "C"
+        }, 
+        {
+          "definition": "স্লাইস টুল (Slice Tool)",
+          "code": "C"
+        }, 
+        {
+          "definition": "স্লাইস সিলেক্ট টুল (Slice Select Tool)",
+          "code": "C"
+        }, 
+        {
+          "definition": "স্পট হিলিং ব্রাশ টুল (Spot Healing Brush Tool)",
+          "code": "J"
+        }, 
+        {
+          "definition": "হিলিং ব্রাশ টুল (Healing Brush Tool)",
+          "code": "J"
+        }, 
+        {
+          "definition": "প্যাচ টুল (Patch Tool)",
+          "code": "J"
+        }, 
+        {
+          "definition": "Content-Aware মুভ টুল (Content-Aware Move Tool)",
+          "code": "J"
+        }, 
+        {
+          "definition": "রেড আই টুল (Red Eye Tool)",
+          "code": "J"
+        }, 
+        {
+          "definition": "ব্রাশ টুল (Brush Tool)",
+          "code": "B"
+        }, 
+        {
+          "definition": "পেন্সিল টুল (Pencil Tool)",
+          "code": "B"
+        }, 
+        {
+          "definition": "কালার রিপ্লেসমেন্ট টুল (Color Replacement Tool)",
+          "code": "B"
+        }, 
+        {
+          "definition": "মিক্সার ব্রাশ টুল (Mixer Brush Tool)",
+          "code": "B"
+        }, 
+        {
+          "definition": "ক্লোন স্ট্যাম্প টুল (Clone Stamp Tool)",
+          "code": "S"
+        }, 
+        {
+          "definition": "প্যাটার্ন স্ট্যাম্প টুল Pattern (Stamp Tool)",
+          "code": "S"
+        }, 
+        {
+          "definition": "হিস্ট্রি ব্রাশ টুল (History Brush Tool)",
+          "code": "Y"
+        }, 
+        {
+          "definition": "আর্ট হিস্ট্রি ব্রাশ টুল (Art History Brush Tool)",
+          "code": "Y"
+        }, 
+        {
+          "definition": "ইরেজার টুল (Eraser Tool)",
+          "code": "E"
+        }, 
+        {
+          "definition": "ব্যাকগ্রাউন্ড ইরেজার টুল (Background Eraser Tool)",
+          "code": "E"
+        }, 
+        {
+          "definition": "ম্যাজিক ইরেজার টুল (Magic Eraser Tool)",
+          "code": "E"
+        }, 
+        {
+          "definition": "গ্রেডিয়েন্ট টুল (Gradient Tool)",
+          "code": "G"
+        }, 
+        {
+          "definition": "পেইন্ট বাকেট টুল (Paint Bucket Tool)",
+          "code": "G"
+        }, 
+        {
+          "definition": "৩ডি ম্যাটেরিয়াল ড্রপ টুল (3D Material Drop Tool)",
+          "code": "G"
+        }, 
+        {
+          "definition": "ডোজ টুল (Dodge Tool)",
+          "code": "O"
+        }, 
+        {
+          "definition": "বার্ন টুল (Burn Tool)",
+          "code": "O"
+        }, 
+        {
+          "definition": "স্পঞ্জ টুল (Sponge Tool)",
+          "code": "O"
+        }, 
+        {
+          "definition": "পেন টুল (Pen Tool)",
+          "code": "P"
+        }, 
+        {
+          "definition": "ফ্রীফর্ম পেন টুল (Freeform Pen Tool)",
+          "code": "P"
+        }, 
+        {
+          "definition": "হরিজোন্টাল টাইপ টুল (Horizontal Type Tool)",
+          "code": "T"
+        }, 
+        {
+          "definition": "ভার্টিক্যাল টাইপ টুল (Vertical Type Tool)",
+          "code": "T"
+        }, 
+        {
+          "definition": "হরিজোন্টাল টাইপ মাস্ক টুল (Horizontal Type Mask Tool)",
+          "code": "T"
+        }, 
+        {
+          "definition": "ভার্টিক্যাল টাইপ মাস্ক টুল (Vertical Type Mask Tool)",
+          "code": "T"
+        }, 
+        {
+          "definition": "পাথ সিলেকশন টুল (Path Selection Tool)",
+          "code": "A"
+        }, 
+        {
+          "definition": "ডিরেক্ট সিলেকশন টুল (Direct Selection Tool)",
+          "code": "A"
+        }, 
+        {
+          "definition": "রেকট্যাংগল টুল (Rectangle Tool)",
+          "code": "U"
+        }, 
+        {
+          "definition": "রাউন্ডেড রেকট্যাংগল টুল (Rounded Rectangle Tool)",
+          "code": "U"
+        }, 
+        {
+          "definition": "ইলিপস টুল (Ellipse Tool)",
+          "code": "U"
+        }, 
+        {
+          "definition": "পলিগন টুল (Polygon Tool)",
+          "code": "U"
+        }, 
+        {
+          "definition": "লাইন টুল (Line Tool)",
+          "code": "U"
+        }, 
+        {
+          "definition": "কাস্টম সেইপ টুল (Custom Shape Tool)",
+          "code": "U"
+        }, 
+        {
+          "definition": "হ্যান্ড টুল (Hand Tool)",
+          "code": "H"
+        }, 
+        {
+          "definition": "রোটেট ভিউ টুল (Rotate View Tool)",
+          "code": "R"
+        }, 
+        {
+          "definition": "জুম টুল (Zoom Tool)",
+          "code": "Z"
+        }, 
+        {
+          "definition": "ডিফল্ট ফোরগ্রাউন্ড/ব্যাকগ্রাউন্ড কালারস্ (Default Foreground/Background Colors)",
+          "code": "D"
+        }, 
+        {
+          "definition": "সুইচ ফোরগ্রাউন্ড/ব্যাকগ্রাউন্ড কালারস্ (Switch Foreground/Background Colors)",
+          "code": "X"
+        }, 
+        {
+          "definition": "টগল স্ট্যান্ডার্ড/কুইক মাস্ক মোড (Toggle Standard/Quick Mask Modes)",
+          "code": "Q"
+        }, 
+        {
+          "definition": "টগল স্ক্রিন মোড (Toggle Screen Modes)",
+          "code": "F"
+        }, 
+        {
+          "definition": "টগল প্রিজার্ভে ট্রান্সপারেন্সি (Toggle Preserve Transparency)",
+          "code": "/"
+        }, 
+        {
+          "definition": "ব্রাশের সাইজ কমাতে (Decrease Brush Size)",
+          "code": "["
+        }, 
+        {
+          "definition": "ব্রাশের সাইজ বাড়াতে (Increase Brush Size)",
+          "code": "]"
+        }, 
+        {
+          "definition": "ব্রাশ হার্ডনেস কমাতে (Decrease Brush Hardness)",
+          "code": "{"
+        }, 
+        {
+          "definition": "ব্রাশ হার্ডনেস বাড়াতে (Increase Brush Hardness)",
+          "code": "}"
+        }, 
+        {
+          "definition": "পূর্ববর্তী ব্রাশ (Previous Brush)",
+          "code": ","
+        }, 
+        {
+          "definition": "পরবর্তী ব্রাশ (Next Brush)",
+          "code": "."
+        }, 
+        {
+          "definition": "প্রথম ব্রাশ (First Brush)",
+          "code": "<"
+        }, 
+        {
+          "definition": "শেষ ব্রাশ (Last Brush)",
+          "code": ">"
+        }
+      ]
     }
   ]
 }
