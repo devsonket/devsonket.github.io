@@ -1,8 +1,8 @@
 {
-  "id": "pm2-cheat-sheet",
-  "title": "পিএম২ এর চিটশিট",
-  "slug": "pm2-cheat-sheet",
-  "description": "পিএম২(নোড জেএস প্রোডাকশন প্রসেস ম্যানেজার) এর চিটশিট",
+  "id": "pm2",
+  "title": "পিএম২",
+  "slug": "pm2",
+  "description": "পিএম২-নোড জেএস প্রোডাকশন প্রসেস ম্যানেজার",
   "colorPref": "#333",
   "contents": [
     {
