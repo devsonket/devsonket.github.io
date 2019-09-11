@@ -287,6 +287,207 @@
                     "code": "Alt + ← / →"
                 }
             ]
+        },
+        {
+            "title": "মাল্টি কার্সার এবং সিলেকশন",
+            "items": [
+                {
+                    "definition": "ইনসার্ট কার্সার",
+                    "code": "Alt + Click"
+                },
+                {
+                    "definition": "ইনসার্ট কার্সার উপরে / নীচে",
+                    "code": "Ctrl + Alt + ↑ / ↓"
+                },
+                {
+                    "definition": "শেষ কার্সার অপারেশনটি পূর্বাবস্থায় আনতে",
+                    "code": "Ctrl + U"
+                },
+                {
+                    "definition": "সিলেক্টেড প্রতিটি লাইনের শেষে কার্সার ইনসার্ট করতে",
+                    "code": "Shift + Alt + I"
+                },
+                {
+                    "definition": "কারেন্ট লাইন সিলেক্ট করতে",
+                    "code": "Ctrl + L"
+                },
+                {
+                    "definition": "কারেন্ট সিলেকশন এর সব ঘটনার নির্বাচন করতে",
+                    "code": "Ctrl + Shift + L"
+                },
+                {
+                    "definition": "কারেন্ট ওয়ার্ড এর সব ঘটনার নির্বাচন করতে",
+                    "code": "Ctrl + F2"
+                },
+                {
+                    "definition": "সিলেকশন এক্সপ্যান্ড করতে",
+                    "code": "Shift + Alt + →"
+                },
+                {
+                    "definition": "সিলেকশন স্রিঙ্ক করতে",
+                    "code": "Shift + Alt + ←"
+                },
+                {
+                    "definition": "কলাম (বক্স) সিলেকশন",
+                    "code": "Shift + Alt + (drag mouse)"
+                },
+                {
+                    "definition": "কলাম (বক্স) সিলেকশন",
+                    "code": "Ctrl + Shift + Alt + (arrow key)"
+                },
+                {
+                    "definition": "কলাম (বক্স) সিলেকশন পেইজ উপরে/নিচে করতে",
+                    "code": "Ctrl + Shift + Alt + PgUp / PgDn"
+                }
+            ]
+        },
+        {
+            "title": "রিচ ল্যাঙ্গুয়েজ এডিটিং",
+            "items": [
+                {
+                    "definition": "ট্রিগার সাজেশন",
+                    "code": "Ctrl + Space"
+                },
+                {
+                    "definition": "ট্রিগার প্যারামিটার হিন্টস",
+                    "code": "Ctrl + Shift + Space"
+                },
+                {
+                    "definition": "ফরমেট ডকুমেন্ট",
+                    "code": "Shift + Alt + F"
+                },
+                {
+                    "definition": "ফরমেট সিলেকশন",
+                    "code": "Ctrl + K Ctrl + F"
+                },
+                {
+                    "definition": "ডেফিনেশন এ যেতে",
+                    "code": "F12"
+                },
+                {
+                    "definition": "ডেফিনেশন পীক করতে",
+                    "code": "Alt + F12"
+                },
+                {
+                    "definition": "ডেফিনেশন সাইডে ওপেন করতে",
+                    "code": "Ctrl + K F12"
+                },
+                {
+                    "definition": "দ্রুত ঠিক করতে",
+                    "code": "Ctrl + ."
+                },
+                {
+                    "definition": "রেফারেন্সেস শো করতে",
+                    "code": "Shift + F12"
+                },
+                {
+                    "definition": "সিম্বল রিনেম করতে",
+                    "code": "F2"
+                },
+                {
+                    "definition": "হোয়াইট স্পেস রিমুভ করতে",
+                    "code": "Ctrl + K Ctrl + X"
+                },
+                {
+                    "definition": "ফাইলের ভাষা পরিবর্তন করতে",
+                    "code": "Ctrl + K M"
+                }
+            ]
+        },
+        {
+            "title": "এডিটর ম্যানেজমেন্ট",
+            "items": [
+                {
+                    "definition": "এডিটর ক্লোজ করতে",
+                    "code": "Ctrl + F4, Ctrl + W"
+                },
+                {
+                    "definition": "ফোল্ডার ক্লোজ করতে",
+                    "code": "Ctrl + K F"
+                },
+                {
+                    "definition": "এডিটর স্প্লিট করতে",
+                    "code": "Ctrl + \\"
+                },
+                {
+                    "definition": "প্রথম, দ্বিতীয় বা তৃতীয় এডিটর গ্রপ এ ফোকাস করতে",
+                    "code": "Ctrl + 1 / 2 / 3"
+                },
+                {
+                    "definition": "পূর্ববর্তী/পরবর্তী এডিটর গ্রপ এ ফোকাস করতে",
+                    "code": "Ctrl + K Ctrl + ← / →"
+                },
+                {
+                    "definition": "এডিটরটি বাম/ডানদিকে মুভ করতে",
+                    "code": "Ctrl + Shift + PgUp / PgDn"
+                },
+                {
+                    "definition": "একটিভ সক্রিয় এডিটর গ্রপ মুভ করতে",
+                    "code": "Ctrl + K ← / →"
+                }
+            ]
+        },
+        {
+            "title": "ডিবাগ",
+            "items": [
+                {
+                    "definition": "ব্রেকপয়েন্টে টগল করতে",
+                    "code": "F9"
+                },
+                {
+                    "definition": "ডিবাগ স্টার্ট করতে",
+                    "code": "F5"
+                },
+                {
+                    "definition": "ডিবাগ বন্ধ করতে",
+                    "code": "Shift + F5"
+                },
+                {
+                    "definition": "স্টেপ ইনটু/আউট",
+                    "code": "F11 / Shift + F11"
+                },
+                {
+                    "definition": "স্টেপ ওভার",
+                    "code": "F10"
+                },
+                {
+                    "definition": "শো হোভার",
+                    "code": "Ctrl + K Ctrl + I"
+                }
+            ]
+        },
+        {
+            "title": "ইন্টিগ্রেটেড টার্মিনাল",
+            "items": [
+                {
+                    "definition": "ইন্টিগ্রেটেড টার্মিনাল শো করতে",
+                    "code": "Ctrl + `"
+                },
+                {
+                    "definition": "নতুন টার্মিনাল বানাতে",
+                    "code": "Ctrl + Shift + `"
+                },
+                {
+                    "definition": "কপি সিলেকশন",
+                    "code": "Ctrl + C"
+                },
+                {
+                    "definition": "একটিভ টার্মিনাল এ পেস্ট করতে",
+                    "code": "Ctrl + V"
+                },
+                {
+                    "definition": "উপরে/নিচে স্ক্রল করতে",
+                    "code": "Ctrl + ↑ / ↓"
+                },
+                {
+                    "definition": "পেইজ উপরে/নিচে স্ক্রল করতে",
+                    "code": "Shift + PgUp / PgDn"
+                },
+                {
+                    "definition": "টপ/বটম স্ক্রল করতে",
+                    "code": "Ctrl + Home / End"
+                }
+            ]
         }
     ]
 }
