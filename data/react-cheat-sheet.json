@@ -118,7 +118,7 @@
         },
         {
           "definition": "যে হুক দ্বারা কোন ফাংশন/ফাংশনাল কম্পোনেন্টকে মেমোরাইজ করা হয়",
-          "code": "useMemo(() => <Child></Child>, [name])"
+          "code": "useMemo(() => <Child></Child>, [dependencies])"
         },
         {
           "definition": "যে হুক দ্বারা JSX(HTML) এর কোন এলিম্যান্টের রেফারেন্স রাখা হয়",
