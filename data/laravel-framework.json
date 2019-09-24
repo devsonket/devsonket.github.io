@@ -244,7 +244,7 @@
    },
     {
       "title": "বেসিক ডাটাবেস ব্যবহার - কুয়েরি বিল্ডার",
-      "item": [
+      "items": [
         {
           "definition": "সিলেক্ট কুয়েরি(Query)",
           "code": "$results = DB::select('select * from users where id = ?', [1]);"
@@ -313,7 +313,7 @@
     },
     {
       "title": "সেশন এর ব্যবহার",
-      "item": [
+      "items": [
         {
           "definition": "সেশন থেকে একটি আইটেম আনার জন্য",
           "code": "Session::get('key', 'default');"
