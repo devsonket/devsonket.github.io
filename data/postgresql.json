@@ -31,10 +31,10 @@
                     "code": "sudo -u postgres createuser <username>"
                 }, {
                     "definition": "নতুন ইউজারের পাসওয়ার্ড সেট করা",
-                    "code": "alter user <username> with encrypted password '<password>';"
+                    "code": "alter user <username> with encrypted password '<password>'"
                 }, {
                     "definition": "নতুন ইউজারকে নির্দিষ্ট ডেটাবেজে এক্সেস পারমিশন দেয়া",
-                    "code": "grant all privileges on database <dbname> to <username>;"
+                    "code": "grant all privileges on database <dbname> to <username>"
                 }, {
                     "definition": "নির্দিষ্ট ইউজারকে ডিলিট করা",
                     "code": "su - postgres -c 'dropuser www-dtata'"
@@ -106,13 +106,16 @@
                     "code": "\\x"
                 }, {
                     "definition": "টেবিল নতুন কলাম এড করা",
-                    "code": "ALTER TABLE table_name ADD COLUMN new_column_name TYPE;"
+                    "code": "ALTER TABLE table_name ADD COLUMN new_column_name TYPE"
                 }, {
                     "definition": "টেবিলের স্পেসিফিক রো ডিলিট করে দেয়া",
-                    "code": "DELETE FROM table_name WHERE condition;"
+                    "code": "DELETE FROM table_name WHERE condition"
+                }, {
+                    "definition": "টেবিলের ইউনিক রো এর ডেটা দেখা",
+                    "code": "SELECT DISTINCT (column) FROM table"
                 }, {
                     "definition": "টেবিলের সব রো ডিলিট করে দেয়া",
-                    "code": "DELETE FROM table_name;"
+                    "code": "DELETE FROM table_name"
                 }
             ]
         },
@@ -125,9 +128,6 @@
                 }, {
                     "definition": "ব্যাকআপ নেয়া ডেটা নতুন ডেটাবেজে লোড করা",
                     "code": "psql -h localhost -U postgres mynewcreateddb -f newgenerateddb.sql"
-                }, {
-                    "definition": "টেবিলের ইউনিক রো এর ডেটা দেখা",
-                    "code": "SELECT DISTINCT (column) FROM table"
                 }
             ]
         }
