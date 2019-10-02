@@ -25,22 +25,22 @@
                     "code": "psql"
                 }, {
                     "definition": "লগইন ডিটেইলস জানা",
-                    "code": "\"conninfo"
+                    "code": "\\conninfo"
                 }, {
                     "definition": "নতুন ইউজার ক্রিয়েট করা",
                     "code": "sudo -u postgres createuser <username>"
                 }, {
                     "definition": "নতুন ইউজারের পাসওয়ার্ড সেট করা",
-                    "code": "alter user <username> with encrypted password '<password>';"
+                    "code": "alter user <username> with encrypted password '<password>'"
                 }, {
                     "definition": "নতুন ইউজারকে নির্দিষ্ট ডেটাবেজে এক্সেস পারমিশন দেয়া",
-                    "code": "grant all privileges on database <dbname> to <username>;"
+                    "code": "grant all privileges on database <dbname> to <username>"
                 }, {
                     "definition": "নির্দিষ্ট ইউজারকে ডিলিট করা",
                     "code": "su - postgres -c 'dropuser www-dtata'"
                 }, {
                     "definition": "সার্ভার থেকে ডিসকানেক্ট/লগআউট হয়ে যাওয়া",
-                    "code": "\"q"
+                    "code": "\\q"
                 }
             ]
         },
@@ -52,22 +52,22 @@
                     "code": "CREATE DATABASE yourdbname"
                 }, {
                     "definition": "স্পেসিফিক ডেটাবেজের সাথে কানেক্ট হওয়া",
-                    "code": "\"c database_name"
+                    "code": "\\c database_name"
                 }, {
                     "definition": "সার্ভারে এভাইলেবল ডাটাবেজের লিস্ট দেখা",
-                    "code": "\"l"
+                    "code": "\\l"
                 }, {
                     "definition": "সার্ভারে এভাইলেবল ডাটাবেজের স্কিমা দেখা",
-                    "code": "\"dn"
+                    "code": "\\dn"
                 }, {
                     "definition": "কারেন্ট ডাটাবেজের সব টেবিল দেখা",
-                    "code": "\"dt"
+                    "code": "\\dt"
                 }, {
                     "definition": "স্পেসিফিক টেবিলের সব ইনফরমেশন দেখা",
-                    "code": "\"d+ table_name"
+                    "code": "\\d+ table_name"
                 }, {
                     "definition": "সকল ইউজারের লিস্ট দেখা",
-                    "code": "\"du"
+                    "code": "\\du"
                 }, {
                     "definition": "নতুন রোল ক্রিয়েট করা",
                     "code": "CREATE ROLE role_name"
@@ -103,16 +103,19 @@
                     "code": "SELECT * FROM table_name WHERE column LIKE '%value%'"
                 }, {
                     "definition": "কুয়েরি আউটপুট pretty-format এ দেখা",
-                    "code": "\"x"
+                    "code": "\\x"
                 }, {
                     "definition": "টেবিল নতুন কলাম এড করা",
-                    "code": "ALTER TABLE table_name ADD COLUMN new_column_name TYPE;"
+                    "code": "ALTER TABLE table_name ADD COLUMN new_column_name TYPE"
                 }, {
                     "definition": "টেবিলের স্পেসিফিক রো ডিলিট করে দেয়া",
-                    "code": "DELETE FROM table_name WHERE condition;"
+                    "code": "DELETE FROM table_name WHERE condition"
+                }, {
+                    "definition": "টেবিলের ইউনিক রো এর ডেটা দেখা",
+                    "code": "SELECT DISTINCT (column) FROM table"
                 }, {
                     "definition": "টেবিলের সব রো ডিলিট করে দেয়া",
-                    "code": "DELETE FROM table_name;"
+                    "code": "DELETE FROM table_name"
                 }
             ]
         },
@@ -125,9 +128,6 @@
                 }, {
                     "definition": "ব্যাকআপ নেয়া ডেটা নতুন ডেটাবেজে লোড করা",
                     "code": "psql -h localhost -U postgres mynewcreateddb -f newgenerateddb.sql"
-                }, {
-                    "definition": "টেবিলের ইউনিক রো এর ডেটা দেখা",
-                    "code": "SELECT DISTINCT (column) FROM table"
                 }
             ]
         }
