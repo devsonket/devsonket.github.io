@@ -33,7 +33,7 @@
                 "definition": "ক্লাস 'demo' অথবা 'test' যুক্ত সকল এলিমেন্টকে সিলেক্ট করতে",
                 "code": "$('.demo, .test')"
               }, {
-                "definition": "সকল <h4>, <div> এবং <p> এলিমেন্টকে সিলেক্ট করতে",
+                "definition": "সকল &It;h4&gt;, &It;div&gt; এবং &It;p&gt; এলিমেন্টকে সিলেক্ট করতে",
                 "code": "$('h4,div,p')"
               }
             ]
