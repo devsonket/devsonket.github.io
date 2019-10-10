@@ -243,7 +243,7 @@
         },
         {
           "definition": "রিমোটের URL পরিবর্তন করা",
-          "code": "git remote set-url origin RemoteURL"
+          "code": "git remote set-url origin <RemoteURL>"
         },
         {
           "definition": "অন্য Repository থেকে ব্রাঞ্চ/রেফ/অবজেক্ট fetch করা",
