@@ -23,6 +23,27 @@
       ]
     },
     {
+      "title": "অ্যাকশন হুক এবং ফিল্টার",
+      "items": [
+        {
+          "definition": "কোনো অ্যাকশনকে ধরার জন্য ",
+          "code": "add_action( string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1 )"
+        },
+        {
+          "definition": "নতুন অ্যাকশন তৈরির জন্য",
+          "code": "do_action( string $tag,  $arg = '' );"
+        },
+        {
+          "definition": "ফিল্টার অ্যাড করার জন্য",
+          "code": "add_filter( string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1 );"
+        },
+        {
+          "definition": "ফিল্টার করার জন্য",
+          "code": "apply_filters( string $tag, mixed $value );"
+        }
+      ]
+    },
+    {
       "title": "এন্ট্রি ফাইল হেডার ফিল্ডগুলো",
       "items": [
         {
@@ -76,27 +97,6 @@
         {
           "definition": "নেটওয়ার্ক এক্টিভেশন",
           "code": "Network:"
-        }
-      ]
-    },
-    {
-      "title": "অ্যাকশন হুক এবং ফিল্টার",
-      "items": [
-        {
-          "definition": "কোনো অ্যাকশনকে ধরার জন্য ",
-          "code": "add_action( string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1 )"
-        },
-        {
-          "definition": "নতুন অ্যাকশন তৈরির জন্য",
-          "code": "do_action( string $tag,  $arg = '' );"
-        },
-        {
-          "definition": "ফিল্টার অ্যাড করার জন্য",
-          "code": "add_filter( string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1 );"
-        },
-        {
-          "definition": "ফিল্টার করার জন্য",
-          "code": "apply_filters( string $tag, mixed $value );"
         }
       ]
     },
