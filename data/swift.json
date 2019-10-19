@@ -186,6 +186,40 @@
       ]
     },
     {
+      "title": "SwiftUI - Image",
+      "items": [
+        {
+          "definition": "ইমেজ নেম থেকে লোড করা",
+          "code": "Image(\"hello_world \")"
+        },
+        {
+          "definition": "ইমেজে সিস্টেম আইকন ইউস করা",
+          "code": "Image(systemName: \"cloud.heavyrain.fill\")"
+        },
+        {
+          "definition": "ইমেজে স্টাইল যোগ করা",
+          "code": "Image(\"hello_world\").resizable().aspectRatio(contentMode: .fill).padding(.bottom)"
+        }
+      ]
+    },
+    {
+      "title": "SwiftUI - লে আউট",
+      "items": [
+        {
+          "definition": "VStack - ভার্টিকালি সাজানো",
+          "code": "VStack {Text(\"Hello\"); Text(\"World\")}"
+        },
+        {
+          "definition": "HStack - হরাইজন্টালি সাজানো",
+          "code": "HStack {Text(\"Hello\"); Text(\"World\")}"
+        },
+        {
+          "definition": "ZStack - ওভারল্যাপ ",
+          "code": "ZStack {Image(\"hello\"); Text(\"World\")}"
+        }
+      ]
+    },
+    {
       "title": "SwiftUI - State, ObservedObject এবং EnvrioonmentObject",
       "items": [
         {
