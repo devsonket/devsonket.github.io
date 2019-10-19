@@ -37,11 +37,7 @@
                 {
                     "definition": "List of all ডকার কন্টেইনার",
                     "code": "docker ps -a"
-                },
-		        {
-                    "definition": "List of all ডকার কন্টেইনার",
-                    "code": "docker ps -a"
-                },    
+                },   
                 {
                     "definition": "List of running ডকার কন্টেইনার",
                     "code": "docker ps"
