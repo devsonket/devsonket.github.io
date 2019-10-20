@@ -50,7 +50,6 @@
 
 				{
 					"definition": "ডেভলপমেন্ট সার্ভার চালু করা",
-					"code": "cd <project_name>",
 					"code": "python	manage.py runserver"
 				}
 			]
