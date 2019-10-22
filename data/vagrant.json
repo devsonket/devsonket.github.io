@@ -9,6 +9,10 @@
 			"title": "প্রাথমিক কমান্ড সমূহঃ",
 			"items": [
 				{
+					"definition": "Vagrant install",
+					"code": "sudo apt install vagrant"
+				},
+				{
 					"definition": "Vagrant এর ভার্শন চেক করা",
 					"code": "vagrant -v, --version"
 				},
@@ -43,6 +47,14 @@
 				{
 					"definition": "Vagrant মেশিন বন্ধ করার জন্য",
 					"code": "vagrant destroy [name|id]"
+				},
+				{
+					"definition": "সকল Vagrant মেশিনের স্ট্যাটাস দেখা",
+					"code": "vagrant global-status"
+				},
+				{
+					"definition": "Vagrant deploy কনফিগার",
+					"code": "vagrant push"
 				}
 			]
 		},
