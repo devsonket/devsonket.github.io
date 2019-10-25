@@ -3,6 +3,7 @@ module.exports = {
     title: `ডেভ সংকেত`,
     description: `বাংলা চিটশিটের ভান্ডার`,
     author: `devsonket`,
+    siteUrl: `https://www.devsonket.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +25,14 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#333`,
         display: `minimal-ui`,
-        icon: `src/images/devsonket-icon.png`
+        icon: `src/images/devsonket-icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        exclude: ["/print/*", "/singlepage"],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
