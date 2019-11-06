@@ -1,0 +1,48 @@
+User-agent: *
+Allow: *.css
+Allow: *.js
+Disallow: /print/
+
+Sitemap: https://devsonket.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /static/
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Msnbot
+Allow: /
+
+User-agent: msnbot-media
+Allow: /static/
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: YandexImages
+Allow: /static/
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Qwantify
+Allow: /

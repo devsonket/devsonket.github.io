@@ -186,6 +186,40 @@
       ]
     },
     {
+      "title": "SwiftUI - Image",
+      "items": [
+        {
+          "definition": "ইমেজ নেম থেকে লোড করা",
+          "code": "Image(\"hello_world \")"
+        },
+        {
+          "definition": "ইমেজে সিস্টেম আইকন ইউস করা",
+          "code": "Image(systemName: \"cloud.heavyrain.fill\")"
+        },
+        {
+          "definition": "ইমেজে স্টাইল যোগ করা",
+          "code": "Image(\"hello_world\").resizable().aspectRatio(contentMode: .fill).padding(.bottom)"
+        }
+      ]
+    },
+    {
+      "title": "SwiftUI - লে আউট",
+      "items": [
+        {
+          "definition": "VStack - ভার্টিকালি সাজানো",
+          "code": "VStack {Text(\"Hello\"); Text(\"World\")}"
+        },
+        {
+          "definition": "HStack - হরাইজন্টালি সাজানো",
+          "code": "HStack {Text(\"Hello\"); Text(\"World\")}"
+        },
+        {
+          "definition": "ZStack - ওভারল্যাপ ",
+          "code": "ZStack {Image(\"hello\"); Text(\"World\")}"
+        }
+      ]
+    },
+    {
       "title": "SwiftUI - State, ObservedObject এবং EnvrioonmentObject",
       "items": [
         {
@@ -208,6 +242,49 @@
         {
           "definition": "ভিউ যখন ডিসকার্ড হয়",
           "code": "onDisappear()"
+        }
+      ]
+    },
+    {
+      "title": "থার্ড পার্টি লাইরেরি ইন্টিগ্রেশন - Cocoapods",
+      "items": [
+        {
+          "definition": "প্রোজেক্টে কোকোয়াপড ইনিশিয়ালাইজ করা",
+          "code": "pod init"
+        },
+        {
+          "definition": "সব Pod ইন্সটল করা",
+          "code": "pod install"
+        }
+      ]
+    },
+    {
+      "title": "থার্ড পার্টি লাইরেরি ইন্টিগ্রেশন - Swift Package Manager",
+      "items": [
+        {
+          "definition": "প্যাকেজ অ্যাড করা",
+          "code": "এক্সকোড ১১ থেকে সরাসরি সুইফট প্যাকেজ প্রোজেক্টে অ্যাড করা যাত। প্যাকেজের গিটহাব বা গিটল্যাব লিংক দিয়ে সার্চ করলেই এক্সকোড অ্যাড করে নিবে।"
+        },
+        {
+          "definition": "মেনুতে",
+          "code": "File > Swift Package > Add Package Dependency"
+        }
+      ]
+    },
+    {
+      "title": "সুইফট ৫ এ র স্ট্রিং",
+      "items": [
+        {
+          "definition": "র স্ট্রিং সিনট্যাক্স",
+          "code": "let rawString = #\"\\Hello \\World\"#"
+        },
+        {
+          "definition": "ইন্টারপোলেশন",
+          "code": "let name = \"devsonket\"; let greeting = #\"Hello, \\#(name)\"#"
+        },
+        {
+          "definition": "রেগুলার এক্সপ্রেশন কন্সট্রাকশন",
+          "code": "let regex = try NSRegularExpression(pattern: #\"\\\\([^)]+\\)\"#)"
         }
       ]
     }
