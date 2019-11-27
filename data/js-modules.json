@@ -1,7 +1,7 @@
 {
 	"id": "js-modules",
-	"title": "জাভাস্ক্রিপ্ট মোডিউল চিটশিট",
-	"slug": "js-modules-cheat-sheet",
+	"title": "জাভাস্ক্রিপ্ট মোডিউল",
+	"slug": "js-modules",
 	"description": "এক পলকে জাভাস্ক্রিপ্ট এক্সপোর্ট - ইমপোর্ট মডিউলস",
 	"colorPref": "#FFFF00",
 	"contents": [
