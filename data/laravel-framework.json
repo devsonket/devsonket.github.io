@@ -83,6 +83,18 @@
         }, {
           "definition": "একবারে সকল টেবিল মুছে ফেলার পরে, নতুন করে টেবিল তৈরি করতে চাইলে",
           "code": "php artisan migrate:fresh"
+        }, {
+          "definition": "ছিড ক্রিয়েট করা",
+          "code": "php artisan make:seeder create_devsonket_seed"
+        }, {
+          "definition": "সব ছিড ফাইল একেবারে জেনারেট  করা",
+          "code": "php artisan db:seed"
+        }, {
+          "definition": "নির্দিষ্ট একটা ছিড ফাইল জেনারেট  করা",
+          "code": "php artisan db:seed --class=create_devsonket_seed"
+        }, {
+          "definition": "নুতন ডাটাবেস মাইগ্রেট এর সাথে সিড ফাইল গুলা ও জেনারেট  করা",
+          "code": "php artisan migrate:fresh --seed"
         }
       ]
     },
