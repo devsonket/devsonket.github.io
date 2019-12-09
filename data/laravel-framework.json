@@ -83,6 +83,18 @@
         }, {
           "definition": "একবারে সকল টেবিল মুছে ফেলার পরে, নতুন করে টেবিল তৈরি করতে চাইলে",
           "code": "php artisan migrate:fresh"
+        }, {
+          "definition": "ছিড ক্রিয়েট করা",
+          "code": "php artisan make:seeder create_devsonket_seed"
+        }, {
+          "definition": "সব ছিড ফাইল একেবারে জেনারেট করা",
+          "code": "php artisan db:seed"
+        }, {
+          "definition": "নির্দিষ্ট একটা ছিড ফাইল জেনারেট করা",
+          "code": "php artisan db:seed --class=create_devsonket_seed"
+        }, {
+          "definition": "নুতন ডাটাবেস মাইগ্রেট এর সাথে সিড ফাইল গুলা ও জেনারেট  করা",
+          "code": "php artisan migrate:fresh --seed"
         }
       ]
     },
@@ -178,6 +190,15 @@
             "code": "{{URL::to('/your_page_link')}}"
           }
         ] 
+     },
+      {
+     "title": "ব্লেড টেমপ্লেট এ জাভাস্ক্রিপ্ট ",
+      "items": [
+          {
+            "definition": "জাভাস্ক্রিপ্ট এ কন্ট্রোলার এর প্যারামিটার রিছিভ করা",
+            "code": "var data = {!! json_encode($key) !!};"
+          }
+        ]
      },
      {
       "title": "রাউটিং",
