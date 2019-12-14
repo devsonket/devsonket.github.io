@@ -9,7 +9,7 @@ body {
   margin: 0;
   max-width: 100%;
   background-color: #ffffff;
-  font-family: "Kalpurush", Arial, sans-serif;
+  font-family: "Hind Siliguri", Arial, sans-serif;
   color-adjust: exact;
   -webkit-print-color-adjust: exact;
 }
@@ -25,15 +25,27 @@ body {
 }
 
 @font-face {
-  font-family: "Kalpurush";
-  src: local("Kalpurush.eot"), url(../fonts/Kalpurush.eot);
-  src: local("Kalpurush.woff"), url(../fonts/Kalpurush.woff) format("woff"),
-    local("Kalpurush.ttf"), url(../fonts/Kalpurush.ttf) format("truetype"),
-    local("Kalpurush.svg"), url(../fonts/Kalpurush.svg#Kalpurush) format("svg"),
-    local("Kalpurush.eot"),
-    url(../fonts/Kalpurush.eot?#iefix) format("embedded-opentype");
+  font-family: "Hind Siliguri";
+  src: url("../fonts/HindSiliguri-Light.woff2") format("woff2"),
+    url("../fonts/HindSiliguri-Light.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
-  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Hind Siliguri";
+  src: url("../fonts/HindSiliguri-Regular.woff2") format("woff2"),
+    url("../fonts/HindSiliguri-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hind Siliguri";
+  src: url("../fonts/HindSiliguri-Bold.woff2") format("woff2"),
+    url("../fonts/HindSiliguri-Bold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
 }
 
 article,
