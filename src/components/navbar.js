@@ -10,10 +10,7 @@ const Navbar = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 0px 30px;
-  background: white;
   height: 60px;
-  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
-    0 2px 6px 2px rgba(60, 64, 67, 0.15);
   @media (max-width: 459px) {
     padding: 0px 10px;
   }

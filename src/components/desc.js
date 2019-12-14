@@ -19,6 +19,9 @@ const HeaderIntro = styled.div`
   padding: 0 50px;
   text-align: center;
   padding-bottom: 100px;
+  h1 {
+    color: var(--headline);
+  }
   @media only screen and (max-width: 460px) {
     padding: 0 15px;
     padding-bottom: 15px;

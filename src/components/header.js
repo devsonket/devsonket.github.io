@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 import NavBar from "./navbar"
 
 const HeaderArea = styled.header`
-  background-color: #f8f9fa;
+  background-color: var(--background);
   .contributor {
     list-style: none;
     margin-bottom: 15px;

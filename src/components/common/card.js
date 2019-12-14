@@ -17,15 +17,15 @@ const CardContainer = styled.div`
   a {
     text-decoration: none;
     display: block;
-    padding: 12px 20px;
-    color: #fff;
+    padding: 15px 20px;
+    color: var(--sub-headline);
     ${props =>
       props.contentCard &&
       `
-        color: rgba(0, 0, 0, 0.75);
-        border: 1px solid #dfe1e5;
+        color: var(--sub-headline);
+        border: 3px solid var(--icon-stroke);
         transition: 0.1s all ease;
-        border-radius: 24px;
+        border-radius: 3px;
         &:hover {
           background: #f7f7f7;
         }

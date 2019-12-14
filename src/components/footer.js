@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 import { Container } from "./common"
 
 const FooterContainer = styled.footer`
-  background-color: #eee;
+  background-color: var(--background);
   text-align: center;
   @media print {
     visibility: hidden;

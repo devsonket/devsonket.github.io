@@ -4,13 +4,14 @@ import styled from "@emotion/styled"
 const LogoContainer = styled.a`
   text-decoration: none;
   font-size: 26px;
-  color: #333;
+  color: #272343;
+  font-weight: 800;
   @media only screen and (max-width: 460px) {
     display: block;
     text-align: center;
   }
   span {
-    background-color: #333;
+    background-color: #272343;
     color: #fff;
     padding: 0 8px;
     border-radius: 4px;

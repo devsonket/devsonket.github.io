@@ -1,5 +1,19 @@
 /* Defaults */
 
+:root {
+  --background: #e3f6f5;
+  --headline: #272343;
+  --sub-headline: #2d334a;
+  --card-background: #fffffe;
+  --card-heading: #272343;
+  --card-paragraph: #2d334a;
+  --icon-stroke: #272343;
+  --icon-main: #fffffe;
+  --icon-highlight: #ffd803;
+  --icon-secondary: #e3f6f5;
+  --icon-tertiary: #bae8e8;
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -116,8 +130,8 @@ h1 {
 }
 
 mark {
-  background-color: #ff0;
-  color: #000;
+  background-color: var(--icon-highlight);
+  color: var(--sub-headline);
 }
 
 small {
@@ -212,7 +226,7 @@ button:-moz-focusring {
 }
 
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid var(--icon-stroke);
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -441,7 +455,7 @@ pre {
   margin-bottom: 1.45rem;
   font-size: 0.85rem;
   line-height: 1.42;
-  background: hsla(0, 0%, 0%, 0.04);
+  background: var(--card-paragraph);
   border-radius: 3px;
   overflow: auto;
   word-wrap: normal;
@@ -520,7 +534,7 @@ hr {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: calc(1.45rem - 1px);
-  background: hsla(0, 0%, 0%, 0.2);
+  background: var(--icon-stroke);
   border: none;
   height: 1px;
 }
@@ -625,7 +639,7 @@ td:last-child {
 }
 tt,
 code {
-  background-color: #eee;
+  background-color: var(--icon-tertiary);
   display: inline-block;
   border-radius: 4px;
   font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
