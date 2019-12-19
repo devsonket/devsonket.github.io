@@ -1,18 +1,14 @@
 import React from "react"
 import styled from "@emotion/styled"
 
-const ContainerStyle = styled.section`
-  max-width: 940px;
+const ContainerContainer = styled.div`
   margin: 0 auto;
-  padding: 50px 0;
-  @media only screen and (max-width: 940px) {
-    width: 100%;
-  }
-  @media only screen and (max-width: 460px) {
-    padding: 25px 0;
-  }
+  padding: 0 25px;
+  max-width: 1260px;
 `
 
-export const Container = ({ children }) => (
-  <ContainerStyle>{children}</ContainerStyle>
-)
+const Container = ({ children }) => {
+  return <ContainerContainer>{children}</ContainerContainer>
+}
+
+export { Container }

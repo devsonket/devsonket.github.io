@@ -9,6 +9,7 @@ import { Container } from "./common"
 const ViewContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  background: #333;
   & > div {
     flex-grow: 1;
     border-radius: 3px;

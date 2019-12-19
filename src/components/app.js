@@ -1,10 +1,7 @@
 import React from "react"
 
-import Footer from "./footer"
+import "./app.css"
 
-export default ({ children, noFooter }) => (
-  <div>
-    {children}
-    {!noFooter && <Footer />}
-  </div>
-)
+const App = ({ children }) => <div>{children}</div>
+
+export default App

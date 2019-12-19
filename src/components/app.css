@@ -1,17 +1,11 @@
 /* Defaults */
 
 :root {
-  --background: #e3f6f5;
-  --headline: #272343;
-  --sub-headline: #2d334a;
-  --card-background: #fffffe;
-  --card-heading: #272343;
-  --card-paragraph: #2d334a;
-  --icon-stroke: #272343;
-  --icon-main: #fffffe;
-  --icon-highlight: #ffd803;
-  --icon-secondary: #e3f6f5;
-  --icon-tertiary: #bae8e8;
+  --accentdark: #201f22;
+  --accentlight: #f8f6f8;
+  --accentwhite: #fffeff;
+  --accentaction: #e2e1e5;
+  --accentactionactive: #6137f6;
 }
 
 html {
@@ -22,7 +16,8 @@ html {
 body {
   margin: 0;
   max-width: 100%;
-  background-color: #ffffff;
+  background-color: var(--accentwhite);
+  color: var(--accentdark);
   font-family: "Hind Siliguri", Arial, sans-serif;
   color-adjust: exact;
   -webkit-print-color-adjust: exact;

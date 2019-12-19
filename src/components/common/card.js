@@ -18,16 +18,19 @@ const CardContainer = styled.div`
     text-decoration: none;
     display: block;
     padding: 15px 20px;
+    background: #fff;
     color: var(--sub-headline);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
     ${props =>
       props.contentCard &&
       `
-        color: var(--sub-headline);
-        border: 3px solid var(--icon-stroke);
-        transition: 0.1s all ease;
-        border-radius: 3px;
+      color: var(--sub-headline);
+      transition: 0.1s all ease;
+      border-radius: 8px;
+      transition: 0.2s all;
         &:hover {
-          background: #f7f7f7;
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
       `}
   }
