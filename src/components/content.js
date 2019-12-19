@@ -83,7 +83,10 @@
 import React from "react"
 import styled from "@emotion/styled"
 
-import { Container, Curve, Section } from "./common"
+import AllItems from "./allitems"
+
+import { Container, Curve, Section, ThinContainer } from "./common"
+import PopularItems from "./popularitems"
 
 const ContentContainer = styled.div`
   background: ${props => props.colorPref};
@@ -93,7 +96,18 @@ const Content = ({ colorPref }) => (
   <ContentContainer colorPref={colorPref}>
     <Curve color="var(--accentlight)">
       <Container>
-        <Section>Content</Section>
+        <Section>
+          <ThinContainer>
+            {true ? (
+              <>
+                <PopularItems />
+                <AllItems />
+              </>
+            ) : (
+              <p>Item</p>
+            )}
+          </ThinContainer>
+        </Section>
       </Container>
     </Curve>
   </ContentContainer>
