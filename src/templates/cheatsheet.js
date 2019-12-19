@@ -29,11 +29,21 @@ import App from "../components/app"
 import Intro from "../components/intro"
 import Content from "../components/content"
 import Footer from "../components/footer"
+import { isItDark } from "../utils"
 
-export default ({ pageContext: { data, filename } }) => (
-  <App>
-    <Intro filename={filename} data={data} />
-    <Content />
-    <Footer />
-  </App>
-)
+export default ({ pageContext: { data, filename } }) => {
+  const { colorPref } = data
+  const isLightColor = isItDark(colorPref)
+  return (
+    <App>
+      <Intro
+        isLightColor={isLightColor}
+        colorPref={colorPref}
+        filename={filename}
+        data={data}
+      />
+      <Content colorPref={colorPref} />
+      <Footer />
+    </App>
+  )
+}

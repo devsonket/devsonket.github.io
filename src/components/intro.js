@@ -69,22 +69,32 @@ import IntroHome from "./introhome"
 import IntroItem from "./introitem"
 
 import { Container, Logo, ThinContainer } from "./common"
+import { isItDark } from "../utils"
 
 const IntroContainer = styled.div`
-  background: var(--accentwhite);
+  background: ${props => props.colorPref};
 `
 
-const Intro = ({ data }) => {
+const Intro = ({ data, isLightColor, colorPref }) => {
   return (
-    <IntroContainer>
+    <IntroContainer colorPref={colorPref}>
       <Container>
-        <Header />
+        <Header colorPref={colorPref} isLightColor={isLightColor} />
         <ThinContainer>
-          {!data ? <IntroHome /> : <IntroItem data={data} />}
+          {!data ? (
+            <IntroHome />
+          ) : (
+            <IntroItem isLightColor={isLightColor} data={data} />
+          )}
         </ThinContainer>
       </Container>
     </IntroContainer>
   )
+}
+
+Intro.defaultProps = {
+  colorPref: "var(--accentwhite)",
+  isLightText: true,
 }
 
 export default Intro

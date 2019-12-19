@@ -86,11 +86,11 @@ import styled from "@emotion/styled"
 import { Container, Curve, Section } from "./common"
 
 const ContentContainer = styled.div`
-  background: var(--accentwhite);
+  background: ${props => props.colorPref};
 `
 
-const Content = () => (
-  <ContentContainer>
+const Content = ({ colorPref }) => (
+  <ContentContainer colorPref={colorPref}>
     <Curve color="var(--accentlight)">
       <Container>
         <Section>Content</Section>
@@ -98,5 +98,9 @@ const Content = () => (
     </Curve>
   </ContentContainer>
 )
+
+Content.defaultProps = {
+  colorPref: "var(--accentwhite)",
+}
 
 export default Content

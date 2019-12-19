@@ -5,23 +5,27 @@ import styled from "@emotion/styled"
 const LogoContainer = styled(Link)`
   text-decoration: none;
   font-size: 26px;
-  color: var(--accentdark);
+  color: ${props =>
+    props.isLightColor ? "var(--accentwhite)" : "var(--accentdark)"};
   font-weight: 800;
   @media only screen and (max-width: 460px) {
     display: block;
     text-align: center;
   }
   span {
-    background-color: var(--accentdark);
-    color: var(--accentwhite);
+    background-color: ${props =>
+      props.isLightColor ? "var(--accentwhite)" : "var(--accentdark)"};
+    color: ${props => props.colorPref};
     padding: 0 8px;
     border-radius: 4px;
     margin-right: 5px;
   }
 `
 
-const Logo = ({ noColor }) => (
+const Logo = ({ colorPref, noColor, isLightColor }) => (
   <LogoContainer
+    isLightColor={isLightColor}
+    colorPref={colorPref}
     style={noColor && { color: "transparent", textShadow: "0 0 0 #fff" }}
     to="/"
   >
@@ -31,5 +35,9 @@ const Logo = ({ noColor }) => (
     সংকেত
   </LogoContainer>
 )
+
+Logo.defaultProps = {
+  colorPref: "var(--accentwhite)",
+}
 
 export { Logo }

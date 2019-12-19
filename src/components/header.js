@@ -54,10 +54,10 @@ const HeaderContainer = styled.div`
   padding: 25px 0;
 `
 
-const Header = ({ children }) => (
+const Header = ({ children, colorPref, isLightColor }) => (
   <HeaderContainer>
     <div>
-      <Logo />
+      <Logo colorPref={colorPref} isLightColor={isLightColor} />
     </div>
     <ul>
       <li>Add New</li>
