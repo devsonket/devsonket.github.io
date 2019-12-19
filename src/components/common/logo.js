@@ -1,7 +1,8 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "@emotion/styled"
 
-const LogoContainer = styled.a`
+const LogoContainer = styled(Link)`
   text-decoration: none;
   font-size: 26px;
   color: var(--accentdark);
@@ -22,7 +23,7 @@ const LogoContainer = styled.a`
 const Logo = ({ noColor }) => (
   <LogoContainer
     style={noColor && { color: "transparent", textShadow: "0 0 0 #fff" }}
-    href="/"
+    to="/"
   >
     <span style={noColor && { backgroundColor: "#fff", color: "#333" }}>
       ডেভ
