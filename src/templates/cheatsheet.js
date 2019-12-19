@@ -30,9 +30,9 @@ import Intro from "../components/intro"
 import Content from "../components/content"
 import Footer from "../components/footer"
 
-export default ({ children }) => (
+export default ({ pageContext: { data, filename } }) => (
   <App>
-    <Intro />
+    <Intro filename={filename} data={data} />
     <Content />
     <Footer />
   </App>

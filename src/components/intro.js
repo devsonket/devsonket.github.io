@@ -63,20 +63,25 @@
 
 import React from "react"
 import styled from "@emotion/styled"
-import { Container, Logo, ThinContainer } from "./common"
+
 import Header from "./header"
 import IntroHome from "./introhome"
+import IntroItem from "./introitem"
+
+import { Container, Logo, ThinContainer } from "./common"
 
 const IntroContainer = styled.div`
   background: var(--accentwhite);
 `
 
-const Intro = () => {
+const Intro = ({ data }) => {
   return (
     <IntroContainer>
       <Container>
         <Header />
-        <ThinContainer>{true ? <IntroHome /> : <IntroHome />}</ThinContainer>
+        <ThinContainer>
+          {!data ? <IntroHome /> : <IntroItem data={data} />}
+        </ThinContainer>
       </Container>
     </IntroContainer>
   )
