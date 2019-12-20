@@ -6,7 +6,7 @@ const LogoContainer = styled(Link)`
   text-decoration: none;
   font-size: 26px;
   color: ${props =>
-    props.islightcolor ? "var(--accentwhite)" : "var(--accentdark)"};
+    props.islightcolor === "true" ? "var(--accentwhite)" : "var(--accentdark)"};
   font-weight: 800;
   @media only screen and (max-width: 460px) {
     display: block;
@@ -14,7 +14,9 @@ const LogoContainer = styled(Link)`
   }
   span {
     background-color: ${props =>
-      props.islightcolor ? "var(--accentwhite)" : "var(--accentdark)"};
+      props.islightcolor === "true"
+        ? "var(--accentwhite)"
+        : "var(--accentdark)"};
     color: ${props => props.colorpref};
     padding: 0 8px;
     border-radius: 4px;

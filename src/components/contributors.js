@@ -3,10 +3,15 @@ import styled from "@emotion/styled"
 
 const ContributorsContainer = styled.div`
   margin-top: 25px;
-  p {
+  text-align: center;
+  h4 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: ${props =>
+      props.islightcolor === "true"
+        ? "var(--accentlight)"
+        : "var(--accentdark)"};
   }
   ul {
     display: flex;
@@ -26,10 +31,10 @@ const ContributorsContainer = styled.div`
   }
 `
 
-const Contributors = ({ contributors }) => {
+const Contributors = ({ contributors, islightcolor }) => {
   return (
-    <ContributorsContainer className="no-print">
-      <p>কন্ট্রিবিউটর</p>
+    <ContributorsContainer islightcolor={islightcolor} className="no-print">
+      <h4>কন্ট্রিবিউটর</h4>
       <ul>
         {Object.keys(contributors).map(contributor => (
           <li key={contributor}>

@@ -2,6 +2,8 @@ import React from "react"
 import styled from "@emotion/styled"
 import SearchResult from "./searchresult"
 import { ThinContainer, Description } from "./common"
+import SocialShare from "./socialshare"
+import Contributors from "./contributors"
 
 const IntroItemContainer = styled.div`
   display: flex;
@@ -24,8 +26,10 @@ const IntroItem = ({
           title={title}
           description={description}
           islightcolor={islightcolor}
-          contributors={contributors}
         />
+        <Contributors islightcolor={islightcolor} contributors={contributors} />
+        <SocialShare islightcolor={islightcolor} />
+        <p>প্রিন্ট করুন</p>
       </IntroItemContainer>
     </ThinContainer>
   )

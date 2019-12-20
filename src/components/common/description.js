@@ -8,22 +8,24 @@ const DescriptionContainer = styled.div`
     margin: 0;
     font-size: 72px;
     color: ${props =>
-      props.islightcolor ? `var(--accentwhite)` : `var(--accentdark)`};
+      props.islightcolor === "true"
+        ? `var(--accentwhite)`
+        : `var(--accentdark)`};
   }
   p {
     font-size: 22px;
     color: ${props =>
-      props.islightcolor ? `var(--accentwhite)` : `var(--accentdark)`};
+      props.islightcolor === "true"
+        ? `var(--accentwhite)`
+        : `var(--accentdark)`};
   }
 `
 
-const Description = ({ title, description, islightcolor, contributors }) => {
-  console.log(contributors)
+const Description = ({ title, description, islightcolor }) => {
   return (
     <DescriptionContainer islightcolor={islightcolor}>
       <h1>{title}</h1>
       <p>{description}</p>
-      {contributors && <Contributors contributors={contributors} />}
     </DescriptionContainer>
   )
 }
