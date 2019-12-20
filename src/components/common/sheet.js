@@ -3,19 +3,18 @@ import styled from "@emotion/styled"
 
 const SheetContainer = styled.div`
   & h3 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
-    color: rgba(0, 0, 0, 0.5);
     @media print {
       color: #000;
     }
   }
   :hover a {
-    opacity: 1;
+    opacity: 0.85;
   }
   .single-item {
     background-color: #fff;
-    padding: 25px;
+    margin-bottom: 25px;
     border-radius: 4px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.3);
     @media print {
@@ -29,9 +28,11 @@ const SheetContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 15px;
+    padding: 15px 20px;
+    border-bottom: solid 1px var(--accentaction);
+    :nth-child(even) {
+      background: var(--accentlight);
+    }
     @media print {
       margin: 0 5px;
       padding-bottom: 0px;
@@ -76,8 +77,7 @@ const SheetTitle = styled.div`
   justify-content: space-between;
   & a {
     text-decoration: none;
-    background: #00000080;
-    color: #fff;
+    color: var(--accentdark);
     font-weight: 900;
     text-transform: uppercase;
     font-size: 13px;

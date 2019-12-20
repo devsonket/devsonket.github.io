@@ -41,7 +41,12 @@ export const Card = ({ id, title, description, colorPref }) => (
       <h4>{title}</h4>
       {description && (
         <>
-          <p>{String(description).substr(0, 33)}...</p>
+          <p>
+            {String(description)
+              .substr(0, 33)
+              .trim()}
+            ...
+          </p>
           <span style={{ backgroundColor: colorPref }} />
         </>
       )}
