@@ -42,7 +42,7 @@ export default ({ pageContext: { data, filename } }) => {
         filename={filename}
         data={data}
       />
-      <Content colorPref={colorPref} />
+      <Content data={data} colorPref={colorPref} />
       <Footer />
     </App>
   )

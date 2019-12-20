@@ -16,6 +16,7 @@ const PopularItems = () => (
               extension: { eq: "json" }
               relativeDirectory: { nin: "demo", ne: "draft" }
             }
+            skip: 10
             limit: 9
           ) {
             edges {
@@ -30,8 +31,14 @@ const PopularItems = () => (
       render={({ allFile: { edges } }) => (
         <div className="content">
           <div className="items">
-            {getData(edges).map(({ id, title, description }) => (
-              <Card key={id} id={id} title={title} description={description} />
+            {getData(edges).map(({ id, title, colorPref, description }) => (
+              <Card
+                key={id}
+                id={id}
+                title={title}
+                description={description}
+                colorPref={colorPref}
+              />
             ))}
           </div>
         </div>

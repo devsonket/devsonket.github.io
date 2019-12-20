@@ -4,6 +4,7 @@ import styled from "@emotion/styled"
 import { Container } from "./common"
 
 const ItemsContainer = styled.div`
+  margin-bottom: 45px;
   h2 {
     text-align: center;
     font-size: 22px;
@@ -16,8 +17,14 @@ const ItemsContainer = styled.div`
     color: rgba(0, 0, 0, 0.5);
   }
   .items {
-  }
-  .items > div {
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+      flex-basis: calc(100% / 3 - 10px);
+      :nth-of-type(3n - 2) {
+        margin: 0;
+      }
+    }
   }
 `
 

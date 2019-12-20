@@ -3,14 +3,25 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 
 const CardContainer = styled.div`
-  margin: 8px;
+  position: relative;
+  margin-bottom: 15px;
+  margin-left: 15px;
   h4 {
     font-size: 20px;
     margin-bottom: 0;
+    line-height: 24px;
   }
   p {
     margin-bottom: 0;
     opacity: 0.85;
+  }
+  span {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
   }
   a {
     text-decoration: none;
@@ -19,15 +30,21 @@ const CardContainer = styled.div`
     line-height: 24px;
     background: #fff;
     color: var(--sub-headline);
+    border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.03) 0px 6px 8px, rgba(0, 0, 0, 0.3) 0px 1px 2px;
   }
 `
 
-export const Card = ({ id, title, description }) => (
+export const Card = ({ id, title, description, colorPref }) => (
   <CardContainer key={id}>
     <Link to={`/${id}`}>
       <h4>{title}</h4>
-      {description && <p>{description}</p>}
+      {description && (
+        <>
+          <p>{String(description).substr(0, 33)}...</p>
+          <span style={{ backgroundColor: colorPref }} />
+        </>
+      )}
     </Link>
   </CardContainer>
 )

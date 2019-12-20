@@ -1,11 +1,16 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import styled from "@emotion/styled"
 
 import Items from "./items"
 
 import { Card } from "./common"
 
 import { organizedData } from "../utils"
+
+const ContentContainer = styled.div`
+  margin-bottom: 25px;
+`
 
 const AllItems = () => (
   <Items title="সবগুলো">
@@ -30,16 +35,14 @@ const AllItems = () => (
       `}
       render={({ allFile: { edges } }) =>
         Object.keys(organizedData(edges)).map((char, index) => (
-          <React.Fragment key={index}>
-            <div className="content">
-              <h3>{char}</h3>
-              <div className="items">
-                {organizedData(edges)[char].map(({ id, title }) => (
-                  <Card key={id} id={id} title={title} />
-                ))}
-              </div>
+          <ContentContainer key={index}>
+            <h3>{char}</h3>
+            <div className="items">
+              {organizedData(edges)[char].map(({ id, title }) => (
+                <Card key={id} id={id} title={title} />
+              ))}
             </div>
-          </React.Fragment>
+          </ContentContainer>
         ))
       }
     />

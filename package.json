@@ -21,7 +21,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-ga": "^2.7.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-masonry-css": "^1.0.14"
   },
   "devDependencies": {
     "husky": "^2.4.1",

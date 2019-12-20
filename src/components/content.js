@@ -87,24 +87,25 @@ import AllItems from "./allitems"
 
 import { Container, Curve, Section, ThinContainer } from "./common"
 import PopularItems from "./popularitems"
+import Item from "./item"
 
 const ContentContainer = styled.div`
   background: ${props => props.colorPref};
 `
 
-const Content = ({ colorPref }) => (
+const Content = ({ data, colorPref }) => (
   <ContentContainer colorPref={colorPref}>
     <Curve color="var(--accentlight)">
       <Container>
         <Section>
           <ThinContainer>
-            {true ? (
+            {!data ? (
               <>
                 <PopularItems />
                 <AllItems />
               </>
             ) : (
-              <p>Item</p>
+              <Item data={data} />
             )}
           </ThinContainer>
         </Section>

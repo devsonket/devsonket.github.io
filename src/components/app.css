@@ -669,6 +669,11 @@ pre tt:after {
   margin-top: -50px;
 }
 
+.my-masonry-grid {
+  display: flex;
+  width: auto;
+}
+
 /* Print */
 @page {
   size: A4;
