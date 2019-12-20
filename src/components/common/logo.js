@@ -6,7 +6,7 @@ const LogoContainer = styled(Link)`
   text-decoration: none;
   font-size: 26px;
   color: ${props =>
-    props.isLightColor ? "var(--accentwhite)" : "var(--accentdark)"};
+    props.islightcolor ? "var(--accentwhite)" : "var(--accentdark)"};
   font-weight: 800;
   @media only screen and (max-width: 460px) {
     display: block;
@@ -14,18 +14,18 @@ const LogoContainer = styled(Link)`
   }
   span {
     background-color: ${props =>
-      props.isLightColor ? "var(--accentwhite)" : "var(--accentdark)"};
-    color: ${props => props.colorPref};
+      props.islightcolor ? "var(--accentwhite)" : "var(--accentdark)"};
+    color: ${props => props.colorpref};
     padding: 0 8px;
     border-radius: 4px;
     margin-right: 5px;
   }
 `
 
-const Logo = ({ colorPref, noColor, isLightColor }) => (
+const Logo = ({ colorpref, noColor, islightcolor }) => (
   <LogoContainer
-    isLightColor={isLightColor}
-    colorPref={colorPref}
+    islightcolor={islightcolor}
+    colorpref={colorpref}
     style={noColor && { color: "transparent", textShadow: "0 0 0 #fff" }}
     to="/"
   >
@@ -37,7 +37,7 @@ const Logo = ({ colorPref, noColor, isLightColor }) => (
 )
 
 Logo.defaultProps = {
-  colorPref: "var(--accentwhite)",
+  colorpref: "var(--accentwhite)",
 }
 
 export { Logo }

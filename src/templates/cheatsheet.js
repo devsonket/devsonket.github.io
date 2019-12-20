@@ -33,12 +33,12 @@ import { isItDark } from "../utils"
 
 export default ({ pageContext: { data, filename } }) => {
   const { colorPref } = data
-  const isLightColor = isItDark(colorPref)
+  const islightcolor = isItDark(colorPref)
   return (
     <App>
       <Intro
-        isLightColor={isLightColor}
-        colorPref={colorPref}
+        islightcolor={islightcolor.toString()}
+        colorpref={colorPref}
         filename={filename}
         data={data}
       />

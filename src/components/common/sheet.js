@@ -88,11 +88,11 @@ const SheetTitle = styled.div`
   }
 `
 
-export const Sheet = ({ index, title, slug, items, onlyCode }) => (
-  <SheetContainer>
+export const Sheet = ({ title, slug, items, onlyCode }) => (
+  <SheetContainer id={title}>
     <SheetTitle className="sheet-title">
       <h3>{title}</h3>
-      <a href={`/${slug}/#${index + 1}`}>লিঙ্ক</a>
+      <a href={`/${slug}/#${title}`}>লিঙ্ক</a>
     </SheetTitle>
     <ul className="single-item">
       {items ? (

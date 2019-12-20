@@ -72,19 +72,19 @@ import { Container, Logo, ThinContainer } from "./common"
 import { isItDark } from "../utils"
 
 const IntroContainer = styled.div`
-  background: ${props => props.colorPref};
+  background: ${props => props.colorpref};
 `
 
-const Intro = ({ data, isLightColor, colorPref }) => {
+const Intro = ({ data, islightcolor, colorpref }) => {
   return (
-    <IntroContainer colorPref={colorPref}>
+    <IntroContainer colorpref={colorpref}>
       <Container>
-        <Header colorPref={colorPref} isLightColor={isLightColor} />
+        <Header colorpref={colorpref} islightcolor={islightcolor} />
         <ThinContainer>
           {!data ? (
             <IntroHome />
           ) : (
-            <IntroItem isLightColor={isLightColor} data={data} />
+            <IntroItem islightcolor={islightcolor} data={data} />
           )}
         </ThinContainer>
       </Container>
@@ -93,7 +93,7 @@ const Intro = ({ data, isLightColor, colorPref }) => {
 }
 
 Intro.defaultProps = {
-  colorPref: "var(--accentwhite)",
+  colorpref: "var(--accentwhite)",
   isLightText: true,
 }
 

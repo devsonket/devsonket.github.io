@@ -12,14 +12,14 @@ const IntroItemContainer = styled.div`
   padding-bottom: 240px;
 `
 
-const IntroItem = ({ data: { title, description }, isLightColor }) => {
+const IntroItem = ({ data: { title, description }, islightcolor }) => {
   return (
     <ThinContainer>
       <IntroItemContainer>
         <Description
           title={title}
           description={description}
-          isLightColor={isLightColor}
+          islightcolor={islightcolor}
         />
       </IntroItemContainer>
     </ThinContainer>

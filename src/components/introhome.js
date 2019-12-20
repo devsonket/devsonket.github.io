@@ -18,7 +18,7 @@ const IntroHome = () => {
       <IntroHomeContainer>
         <Description
           title="বাংলা ডেভেলপার চিটশিট"
-          description="ডেভেলপারদের জন্য, ডেভেলপার দ্বারা, নিজের মাতৃভাষা বাংলায় সবচেয়ে বড়
+          description="ডেভেলপারদের জন্য, ডেভেলপারদের দ্বারা, মাতৃভাষা বাংলায় সবচেয়ে বড়
             চিটশিট ভান্ডার"
         />
         <SearchResult />
