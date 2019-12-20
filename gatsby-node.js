@@ -1,4 +1,9 @@
 const path = require("path")
+const axios = require("axios")
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -26,27 +31,40 @@ exports.createPages = ({ actions, graphql }) => {
       if (res.errors) {
         return Promise.reject(res.errors)
       }
-      res.data.allFile.edges.map(({ node }) => {
+      res.data.allFile.edges.map(async ({ node }, index) => {
         const filename = node.name
         const data = require(`${__dirname}/data/${filename}`)
-        createPage({
-          path: `/${data.id}/`,
-          component: postTemplate,
-          context: {
-            id: `${data.id}`,
-            data,
-            filename,
-          },
-        })
-        createPage({
-          path: `/print/${data.id}/`,
-          component: printTemplate,
-          context: {
-            id: `${data.id}`,
-            data,
-            filename,
-          },
-        })
+        try {
+          const { data: contributorsRaw } = await axios.get(
+            `https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${filename}.json`,
+            {
+              headers: {
+                Authorization: `Bearer ${process.env.GATSBY_GITHUB_TOKEN}`,
+              },
+            }
+          )
+          console.log(index + 1, contributorsRaw)
+          createPage({
+            path: `/${data.id}/`,
+            component: postTemplate,
+            context: {
+              id: `${data.id}`,
+              data,
+              filename,
+            },
+          })
+          createPage({
+            path: `/print/${data.id}/`,
+            component: printTemplate,
+            context: {
+              id: `${data.id}`,
+              data,
+              filename,
+            },
+          })
+        } catch (err) {
+          console.log(err)
+        }
         resolve()
       })
     })
