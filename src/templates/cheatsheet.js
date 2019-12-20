@@ -31,7 +31,7 @@ import Content from "../components/content"
 import Footer from "../components/footer"
 import { isItDark } from "../utils"
 
-export default ({ pageContext: { data, filename } }) => {
+export default ({ pageContext: { data, filename, contributors } }) => {
   const { colorPref } = data
   const islightcolor = isItDark(colorPref)
   return (
@@ -41,6 +41,7 @@ export default ({ pageContext: { data, filename } }) => {
         colorpref={colorPref}
         filename={filename}
         data={data}
+        contributors={contributors}
       />
       <Content data={data} colorPref={colorPref} />
       <Footer />

@@ -75,7 +75,7 @@ const IntroContainer = styled.div`
   background: ${props => props.colorpref};
 `
 
-const Intro = ({ data, islightcolor, colorpref }) => {
+const Intro = ({ data, islightcolor, colorpref, contributors }) => {
   return (
     <IntroContainer colorpref={colorpref}>
       <Container>
@@ -84,7 +84,11 @@ const Intro = ({ data, islightcolor, colorpref }) => {
           {!data ? (
             <IntroHome />
           ) : (
-            <IntroItem islightcolor={islightcolor} data={data} />
+            <IntroItem
+              islightcolor={islightcolor}
+              data={data}
+              contributors={contributors}
+            />
           )}
         </ThinContainer>
       </Container>

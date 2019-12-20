@@ -12,7 +12,11 @@ const IntroItemContainer = styled.div`
   padding-bottom: 240px;
 `
 
-const IntroItem = ({ data: { title, description }, islightcolor }) => {
+const IntroItem = ({
+  data: { title, description },
+  islightcolor,
+  contributors,
+}) => {
   return (
     <ThinContainer>
       <IntroItemContainer>
@@ -20,6 +24,7 @@ const IntroItem = ({ data: { title, description }, islightcolor }) => {
           title={title}
           description={description}
           islightcolor={islightcolor}
+          contributors={contributors}
         />
       </IntroItemContainer>
     </ThinContainer>

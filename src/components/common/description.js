@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
+import Contributors from "../contributors"
 
 const DescriptionContainer = styled.div`
   text-align: center;
@@ -16,11 +17,13 @@ const DescriptionContainer = styled.div`
   }
 `
 
-const Description = ({ title, description, islightcolor }) => {
+const Description = ({ title, description, islightcolor, contributors }) => {
+  console.log(contributors)
   return (
     <DescriptionContainer islightcolor={islightcolor}>
       <h1>{title}</h1>
       <p>{description}</p>
+      {contributors && <Contributors contributors={contributors} />}
     </DescriptionContainer>
   )
 }
