@@ -1,0 +1,70 @@
+{
+    "id": "c-sharp-cheat-sheet",
+    "title": "সি-শার্প প্রোগ্রামিং",
+    "slug": "c-sharp-cheat-sheet",
+    "description": "সি-শার্প প্রোগ্রামিং",
+    "colorPref": "#1290FD",
+    "contents": [
+      {
+        "title": "ডাটা টাইপ(ভ্যালু টাইপ) [সর্বাধিক ব্যবহৃত]",
+        "items": [
+          {
+            "definition": "বুলিয়ান ভ্যালু",
+            "code": "bool"
+          },{
+            "definition": "৮-বিট আনসাইন্ড ইন্টিজার",
+            "code": "byte"
+          },{
+            "definition": "১৬-বিট ইউনিকোড ক্যারেক্টার",
+            "code": "char"
+          },{
+            "definition": "৬৪-বিট ডাবল প্রেসিশন ফ্লোটিং টাইপ",
+            "code": "double"
+          },{
+            "definition": "৩২-বিট সিঙ্গেল প্রেসিশন ফ্লোটিং টাইপ",
+            "code": "float"
+          },{
+            "definition": "৩২-বিট সাইন্ড ইন্টিজার টাইপ",
+            "code": "int"
+          },{
+            "definition": "৬৪-বিট সাইন্ড ইন্টিজার টাইপ",
+            "code": "long"
+          }
+        ]
+      }, {
+        "title": "অপারেটরস",
+        "items": [
+          {
+            "definition": "সাধারন গাণিতিক অপারেশন",
+            "code": " +, -, *, /, %, ++, --"
+          },{
+            "definition": "তুলনামূলক অপারেটরস",
+            "code": " ==, !=, >, <, >=, <="
+          },{
+            "definition": "লজিকাল অপারেটরস",
+            "code": " &&, ||, !"
+          },{
+            "definition": "বিটওয়াইজ অপারেটরস",
+            "code": " &, |, ^, ~, <<, >>"
+          }
+        ]
+      },{
+          "title": "গাণিতিক বিল্ট-ইন ফাংশন",
+          "items": [
+            {
+              "definition": "বর্গমূল করার জন্য",
+              "code": "Math.Sqrt(x)"
+            },{
+              "definition": "x এর পরম মান বের করার জন্য",
+              "code": "Math.Abs(x)"
+            },{
+              "definition": "রাউন্ড করার জন্য",
+              "code": "Math.Round(x)"
+            },{
+              "definition": "x টু দা পাওয়ার y এর জন্য",
+              "code": "Math.Pow(x, y)"
+            }            
+          ]
+        }
+    ]
+  }
