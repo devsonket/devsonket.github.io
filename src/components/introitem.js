@@ -15,7 +15,7 @@ const IntroItemContainer = styled.div`
 `
 
 const IntroItem = ({
-  data: { title, description },
+  data: { id, title, description },
   islightcolor,
   contributors,
 }) => {
@@ -28,7 +28,11 @@ const IntroItem = ({
           islightcolor={islightcolor}
         />
         <Contributors islightcolor={islightcolor} contributors={contributors} />
-        <SocialShare islightcolor={islightcolor} />
+        <SocialShare
+          id={id}
+          description={description}
+          islightcolor={islightcolor}
+        />
         <p>প্রিন্ট করুন</p>
       </IntroItemContainer>
     </ThinContainer>

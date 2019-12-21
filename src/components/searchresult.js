@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import styled from "@emotion/styled"
 
@@ -70,12 +70,21 @@ const InputContainer = styled.div`
 const SearchResult = () => {
   const [active, setActive] = useState(false)
   const [input, setInput] = useState("")
+  let blurTimeout
+  useEffect(() => {
+    return () => {
+      clearTimeout(blurTimeout)
+    }
+  })
+  const handleOnBlur = () => {
+    blurTimeout = setTimeout(() => setActive(false), 300)
+  }
   return (
     <InputContainer>
       <input
         onChange={e => setInput(e.target.value)}
         onFocus={() => setActive(true)}
-        onBlur={() => setTimeout(() => setActive(false), 300)}
+        onBlur={handleOnBlur}
         value={input}
         placeholder="কিসের উপর চিটশিট চাচ্ছেন?"
       />
