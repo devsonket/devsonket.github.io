@@ -30,12 +30,18 @@ import Intro from "../components/intro"
 import Content from "../components/content"
 import Footer from "../components/footer"
 import { isItDark } from "../utils"
+import { SEO } from "../components/common"
 
 export default ({ pageContext: { data, filename, contributors } }) => {
   const { colorPref } = data
   const islightcolor = isItDark(colorPref)
   return (
     <App>
+      <SEO
+        title={data.title}
+        description={data.description}
+        image={`${data.slug}.jpg`}
+      />
       <Intro
         islightcolor={islightcolor.toString()}
         colorpref={colorPref}

@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -53,11 +54,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: "og:image",
-          content: require("../images/thumbnail.png"),
+          content: `${site.siteMetadata.siteUrl}/static/thumbnail/${image}`,
         },
         {
           property: "og:image:secure_url",
-          content: require("../images/thumbnail.png"),
+          content: `${site.siteMetadata.siteUrl}/static/thumbnail/${image}`,
         },
         {
           property: "og:image:width",
@@ -66,11 +67,15 @@ function SEO({ description, lang, meta, title }) {
 
         {
           property: "og:image:height",
-          content: "675",
+          content: "630",
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `twitter:site`,
+          content: `@devsonket`,
         },
         {
           name: `twitter:creator`,
@@ -84,6 +89,10 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `twitter:image`,
+          content: `${site.siteMetadata.siteUrl}/static/thumbnail/${image}`,
+        },
       ].concat(meta)}
     />
   )
@@ -93,6 +102,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  image: "thumbnail.jpg",
 }
 
 SEO.propTypes = {
@@ -102,4 +112,4 @@ SEO.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
-export default SEO
+export { SEO }
