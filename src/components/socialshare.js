@@ -40,6 +40,15 @@ const SocialShare = ({ id, description, islightcolor }) => {
 
   const url = `${site.siteMetadata.siteUrl}/${id}`
   const urlLength = String(url).length
+
+  const handleCopy = () => {
+    if (typeof navigator !== "undefined") {
+      navigator.clipboard.writeText(url).then(() => {
+        console.log("Copied!", url)
+      })
+    }
+  }
+
   return (
     <SocialShareContainer islightcolor={islightcolor}>
       <h4>শেয়ার করুন</h4>
@@ -67,15 +76,7 @@ const SocialShare = ({ id, description, islightcolor }) => {
           </a>
         </li>
         <li>
-          <a
-            onClick={() =>
-              console.log(
-                `Copy ${site.siteMetadata.siteUrl}/${id} to the clipboard`
-              )
-            }
-          >
-            Link
-          </a>
+          <a onClick={handleCopy}>Link</a>
         </li>
       </ul>
     </SocialShareContainer>
