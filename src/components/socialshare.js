@@ -37,24 +37,31 @@ const SocialShare = ({ id, description, islightcolor }) => {
       }
     `
   )
+
+  const url = `${site.siteMetadata.siteUrl}/${id}`
+  const urlLength = String(url).length
   return (
     <SocialShareContainer islightcolor={islightcolor}>
       <h4>শেয়ার করুন</h4>
       <ul>
         <li>
           <a
-            href={`https://www.facebook.com/sharer/sharer.php?u=${
-              site.siteMetadata.siteUrl
-            }/${id}`}
+            target="__blank"
+            rel="noopener noreferrer"
+            href={`https://www.facebook.com/sharer/sharer.php?u=${url}`}
           >
             Fa
           </a>
         </li>
         <li>
           <a
-            href={`https://twitter.com/intent/tweet?url=${
-              site.siteMetadata.siteUrl
-            }/${id}&text=${description}`}
+            target="__blank"
+            rel="noopener noreferrer"
+            href={`https://twitter.com/intent/tweet?url=${url}&text=${String(
+              description
+            ).substr(0, 280 - urlLength)}${
+              String(description).length > 280 - urlLength ? "..." : ""
+            }`}
           >
             Tw
           </a>

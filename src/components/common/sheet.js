@@ -30,7 +30,7 @@ const SheetContainer = styled.div`
     align-items: center;
     padding: 15px 20px;
     border-bottom: solid 1px var(--accentaction);
-    :nth-child(even) {
+    :nth-of-type(even) {
       background: var(--accentlight);
     }
     @media print {

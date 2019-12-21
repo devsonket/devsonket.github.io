@@ -40,7 +40,7 @@ export default ({ pageContext: { data, filename, contributors } }) => {
       <SEO
         title={data.title}
         description={data.description}
-        image={`${data.slug}.jpg`}
+        image={`${data.id}.jpg`}
       />
       <Intro
         islightcolor={islightcolor.toString()}
