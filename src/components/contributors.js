@@ -17,6 +17,7 @@ const ContributorsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
     li {
       height: 40px;
