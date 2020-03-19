@@ -39,8 +39,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "thumbnail": "node scripts/thumbnail.js",
+    "build": "npm run thumbnail && gatsby build",
+    "thumbnail": "cd scripts && node thumbnail.js",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
