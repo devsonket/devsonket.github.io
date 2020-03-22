@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { FiPlus, FiStar } from "react-icons/fi"
+import { FiPlus, FiEdit, FiStar } from "react-icons/fi"
 
 import { Logo } from "./common"
 
@@ -46,7 +46,7 @@ const Header = ({ children, colorpref, filename, islightcolor }) => (
             rel="noopener noreferrer"
             href={`https://github.com/devsonket/devsonket.github.io/blob/develop/data/${filename}.json`}
           >
-            <FiPlus /> এডিট করুন
+            <FiEdit /> এডিট করুন
           </a>
         ) : (
           <a
