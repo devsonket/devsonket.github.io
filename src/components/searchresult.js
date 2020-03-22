@@ -74,14 +74,28 @@ const NotFoundColumn = styled.div`
   justify-content: space-between;
   padding: 15px 25px;
   cursor: default;
+  @media (max-width: 480px) {
+    flex-wrap: wrap;
+    > * {
+      width: 100%;
+    }
+  }
   .action {
     display: flex;
     align-items: center;
+    @media (max-width: 480px) {
+      margin-top: 5px;
+    }
     a {
       display: flex;
       align-items: center;
       padding: 0;
       margin-left: 15px;
+      @media (max-width: 480px) {
+        margin-left: 0px;
+        margin-right: 15px;
+        width: auto;
+      }
       svg {
         margin-right: 5px;
       }

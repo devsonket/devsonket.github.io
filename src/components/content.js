@@ -96,20 +96,18 @@ const ContentContainer = styled.div`
 const Content = ({ data, colorPref }) => (
   <ContentContainer colorPref={colorPref}>
     <Curve color="var(--accentlight)">
-      <Container>
-        <Section>
-          <ThinContainer>
-            {!data ? (
-              <>
-                <PopularItems />
-                <AllItems />
-              </>
-            ) : (
-              <Item data={data} />
-            )}
-          </ThinContainer>
-        </Section>
-      </Container>
+      <Section>
+        <ThinContainer>
+          {!data ? (
+            <>
+              <PopularItems />
+              <AllItems />
+            </>
+          ) : (
+            <Item data={data} />
+          )}
+        </ThinContainer>
+      </Section>
     </Curve>
   </ContentContainer>
 )

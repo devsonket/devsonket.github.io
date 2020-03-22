@@ -14,6 +14,12 @@ const Content = styled.div`
     justify-content: space-between;
     > * {
       width: calc(100% / 3 - 10px);
+      @media (max-width: 768px) {
+        width: calc(100% / 2 - 10px);
+      }
+      @media (max-width: 480px) {
+        width: calc(100%);
+      }
     }
   }
 `

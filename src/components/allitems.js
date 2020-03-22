@@ -17,7 +17,19 @@ const ContentContainer = styled.div`
     > * {
       width: calc(100% / 3 - 10px);
       margin-right: 15px;
-      :nth-child(3n + 3) {
+      @media (min-width: 769px) {
+        :nth-child(3n + 3) {
+          margin-right: 0;
+        }
+      }
+      @media (max-width: 768px) {
+        width: calc(100% / 2 - 10px);
+        :nth-child(2n + 2) {
+          margin-right: 0;
+        }
+      }
+      @media (max-width: 480px) {
+        width: calc(100%);
         margin-right: 0;
       }
     }

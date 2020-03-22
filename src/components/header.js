@@ -22,6 +22,11 @@ const MenuList = styled.ul`
       svg {
         margin-right: 5px;
       }
+      @media (max-width: 480px) {
+        span {
+          display: none;
+        }
+      }
     }
   }
 `
@@ -46,7 +51,7 @@ const Header = ({ children, colorpref, filename, islightcolor }) => (
             rel="noopener noreferrer"
             href={`https://github.com/devsonket/devsonket.github.io/blob/develop/data/${filename}.json`}
           >
-            <FiEdit /> এডিট করুন
+            <FiEdit /> <span>এডিট করুন</span>
           </a>
         ) : (
           <a
@@ -54,7 +59,7 @@ const Header = ({ children, colorpref, filename, islightcolor }) => (
             rel="noopener noreferrer"
             href="https://github.com/devsonket/devsonket.github.io#%E0%A6%95%E0%A6%BF%E0%A6%AD%E0%A6%BE%E0%A6%AC%E0%A7%87-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%AC%E0%A6%BF%E0%A6%89%E0%A6%9F-%E0%A6%95%E0%A6%B0%E0%A6%AC%E0%A7%87%E0%A6%A8"
           >
-            <FiPlus /> কন্ট্রিবিউট করুন
+            <FiPlus /> <span>কন্ট্রিবিউট করুন</span>
           </a>
         )}
       </li>
@@ -64,7 +69,7 @@ const Header = ({ children, colorpref, filename, islightcolor }) => (
           rel="noopener noreferrer"
           href="https://github.com/devsonket/devsonket.github.io"
         >
-          <FiStar /> স্টার দিন
+          <FiStar /> <span>স্টার দিন</span>
         </a>
       </li>
     </MenuList>
