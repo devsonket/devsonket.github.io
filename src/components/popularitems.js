@@ -1,10 +1,22 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import styled from "@emotion/styled"
 
 import Items from "./items"
 
 import { Card } from "./common"
 import { getData } from "../utils"
+
+const Content = styled.div`
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    > * {
+      width: calc(100% / 3 - 10px);
+    }
+  }
+`
 
 const PopularItems = () => (
   <Items title="জনপ্রিয়">
@@ -29,7 +41,7 @@ const PopularItems = () => (
         }
       `}
       render={({ allFile: { edges } }) => (
-        <div className="content">
+        <Content>
           <div className="items">
             {getData(edges).map(({ id, title, colorPref, description }) => (
               <Card
@@ -41,7 +53,7 @@ const PopularItems = () => (
               />
             ))}
           </div>
-        </div>
+        </Content>
       )}
     />
   </Items>

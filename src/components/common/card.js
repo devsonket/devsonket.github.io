@@ -5,7 +5,6 @@ import styled from "@emotion/styled"
 const CardContainer = styled.div`
   position: relative;
   margin-bottom: 15px;
-  margin-left: 15px;
   h4 {
     font-size: 20px;
     margin-bottom: 0;
