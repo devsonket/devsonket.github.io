@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import { FiPrinter } from "react-icons/fi"
 import SearchResult from "./searchresult"
@@ -58,9 +57,9 @@ const IntroItem = ({
           islightcolor={islightcolor}
         />
         <p className="print-btn">
-          <Link to="/">
+          <a target="__blank" rel="noopener noreferrer" href={`/print/${id}`}>
             <FiPrinter /> প্রিন্ট করুন
-          </Link>
+          </a>
         </p>
       </IntroItemContainer>
     </ThinContainer>

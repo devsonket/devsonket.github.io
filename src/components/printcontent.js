@@ -178,37 +178,9 @@ const PrintButton = styled.div`
   }
 `
 
-export default ({ data: rawData, filename }) => {
+const PrintContent = ({ data: rawData, filename, contributors }) => {
   const data = cheatsheetMap(rawData)
-  const [contributors, setContributors] = useState(null)
 
-  const getContributors = async () => {
-    try {
-      const { data } = await axios(
-        `https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${filename}.json`
-      )
-      if (data.length) {
-        setContributors(contributorMap(data))
-      } else {
-        setContributors(null)
-      }
-    } catch (e) {
-      setContributors(null)
-    }
-    setTimeout(() => {
-      window.print()
-    }, 3000)
-  }
-
-  useEffect(() => {
-    if (!contributors) {
-      getContributors()
-    }
-
-    return () => {
-      clearTimeout()
-    }
-  })
   return (
     <PrintSingleContent>
       <PrintSheet>
@@ -307,3 +279,5 @@ export default ({ data: rawData, filename }) => {
     </PrintSingleContent>
   )
 }
+
+export default PrintContent

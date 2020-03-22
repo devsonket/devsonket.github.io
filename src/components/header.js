@@ -15,58 +15,16 @@ const MenuList = styled.ul`
       display: flex;
       align-items: center;
       text-decoration: none;
-      color: var(--accentdark);
+      color: ${props =>
+        props.islightcolor === "true"
+          ? "var(--accentlight)"
+          : "var(--accentdark)"};
       svg {
         margin-right: 5px;
       }
     }
   }
 `
-
-// import NavBar from "./navbar"
-
-// const HeaderArea = styled.header`
-//   background-color: #fff;
-//   .contributor {
-//     list-style: none;
-//     margin-bottom: 15px;
-//   }
-//   .contributor p {
-//     margin-bottom: 10px;
-//     font-weight: 900;
-//   }
-//   .contributor li {
-//     display: inline-block;
-//     position: relative;
-//     margin: 0 5px;
-//   }
-//   .contributor-profile span {
-//     position: absolute;
-//     bottom: 5px;
-//     right: -2px;
-//     font-weight: bold;
-//     background-color: #4caf50;
-//     color: #fff;
-//     font-size: 11px;
-//     width: 15px;
-//     height: 15px;
-//     line-height: 15px;
-//     border-radius: 40px;
-//   }
-//   .contributor-profile img {
-//     width: 40px;
-//     border-radius: 40px;
-//     border: 3px solid #ffc107;
-//   }
-// `
-
-// const HeaderEl = styled.div`
-//   width: 940px;
-//   margin: 80px auto 0 auto;
-//   @media only screen and (max-width: 940px) {
-//     width: 100%;
-//   }
-// `
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -75,19 +33,37 @@ const HeaderContainer = styled.div`
   padding: 25px 0;
 `
 
-const Header = ({ children, colorpref, islightcolor }) => (
+const Header = ({ children, colorpref, filename, islightcolor }) => (
   <HeaderContainer>
     <div>
       <Logo colorpref={colorpref} islightcolor={islightcolor} />
     </div>
-    <MenuList>
+    <MenuList islightcolor={islightcolor}>
       <li>
-        <a href="#">
-          <FiPlus /> কন্ট্রিবিউট করুন
-        </a>
+        {filename ? (
+          <a
+            target="__blank"
+            rel="noopener noreferrer"
+            href={`https://github.com/devsonket/devsonket.github.io/blob/develop/data/${filename}.json`}
+          >
+            <FiPlus /> এডিট করুন
+          </a>
+        ) : (
+          <a
+            target="__blank"
+            rel="noopener noreferrer"
+            href="https://github.com/devsonket/devsonket.github.io#%E0%A6%95%E0%A6%BF%E0%A6%AD%E0%A6%BE%E0%A6%AC%E0%A7%87-%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%AC%E0%A6%BF%E0%A6%89%E0%A6%9F-%E0%A6%95%E0%A6%B0%E0%A6%AC%E0%A7%87%E0%A6%A8"
+          >
+            <FiPlus /> কন্ট্রিবিউট করুন
+          </a>
+        )}
       </li>
       <li>
-        <a href="#">
+        <a
+          target="__blank"
+          rel="noopener noreferrer"
+          href="https://github.com/devsonket/devsonket.github.io"
+        >
           <FiStar /> স্টার দিন
         </a>
       </li>
