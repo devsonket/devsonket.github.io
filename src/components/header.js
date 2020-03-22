@@ -1,6 +1,27 @@
 import React from "react"
 import styled from "@emotion/styled"
+import { FiPlus, FiStar } from "react-icons/fi"
+
 import { Logo } from "./common"
+
+const MenuList = styled.ul`
+  display: flex;
+  align-items: center;
+  list-style: none;
+  li {
+    margin-left: 15px;
+    font-weight: bolder;
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--accentdark);
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+`
 
 // import NavBar from "./navbar"
 
@@ -59,9 +80,18 @@ const Header = ({ children, colorpref, islightcolor }) => (
     <div>
       <Logo colorpref={colorpref} islightcolor={islightcolor} />
     </div>
-    <ul>
-      <li>Add New</li>
-    </ul>
+    <MenuList>
+      <li>
+        <a href="#">
+          <FiPlus /> কন্ট্রিবিউট করুন
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <FiStar /> স্টার দিন
+        </a>
+      </li>
+    </MenuList>
   </HeaderContainer>
 )
 
