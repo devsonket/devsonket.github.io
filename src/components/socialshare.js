@@ -1,9 +1,10 @@
 import React from "react"
 import { useStaticQuery } from "gatsby"
 import styled from "@emotion/styled"
+import { FiFacebook, FiTwitter, FiLink } from "react-icons/fi"
 
 const SocialShareContainer = styled.div`
-  margin-top: 25px;
+  margin: 25px 0;
   text-align: center;
   h4 {
     font-size: 18px;
@@ -15,9 +16,27 @@ const SocialShareContainer = styled.div`
   }
   ul {
     display: flex;
+    align-items: center;
     list-style: none;
     li {
-      margin: 0 15px;
+      margin: 0 5px;
+      a {
+        cursor: pointer;
+        display: inline-block;
+        background: ${props =>
+          props.islightcolor === "true"
+            ? "var(--accentlight)"
+            : "var(--accentdark)"};
+        color: ${props =>
+          props.islightcolor === "true"
+            ? "var(--accentdark)"
+            : "var(--accentlight)"};
+        line-height: 36px;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        text-decoration: none;
+      }
     }
   }
 `
@@ -59,7 +78,7 @@ const SocialShare = ({ id, description, islightcolor }) => {
             rel="noopener noreferrer"
             href={`https://www.facebook.com/sharer/sharer.php?u=${url}`}
           >
-            Fa
+            <FiFacebook />
           </a>
         </li>
         <li>
@@ -72,11 +91,13 @@ const SocialShare = ({ id, description, islightcolor }) => {
               String(description).length > 280 - urlLength ? "..." : ""
             }`}
           >
-            Tw
+            <FiTwitter />
           </a>
         </li>
         <li>
-          <a onClick={handleCopy}>Link</a>
+          <a onClick={handleCopy}>
+            <FiLink />
+          </a>
         </li>
       </ul>
     </SocialShareContainer>
