@@ -10,6 +10,17 @@ import { organizedData } from "../utils"
 
 const ContentContainer = styled.div`
   margin-bottom: 25px;
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    > * {
+      width: calc(100% / 3 - 10px);
+      margin-right: 15px;
+      :nth-child(3n + 3) {
+        margin-right: 0;
+      }
+    }
 `
 
 const AllItems = () => (
