@@ -4,6 +4,11 @@ import styled from "@emotion/styled"
 
 import { Sheet } from "./common"
 
+var breakpointColumns = {
+  default: 2,
+  768: 1,
+}
+
 const MasonryContiner = styled(Masonry)`
   .my-masonry-grid_column {
     :first-of-type {
@@ -18,7 +23,7 @@ const MasonryContiner = styled(Masonry)`
 const Item = ({ data }) => {
   return (
     <MasonryContiner
-      breakpointCols={2}
+      breakpointCols={breakpointColumns}
       className="my-masonry-grid"
       columnClassName="my-masonry-grid_column"
     >
