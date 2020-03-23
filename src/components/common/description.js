@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "@emotion/styled"
-import Contributors from "../contributors"
 
 const DescriptionContainer = styled.div`
   text-align: center;

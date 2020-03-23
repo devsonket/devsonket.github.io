@@ -20,7 +20,8 @@ const SocialShareContainer = styled.div`
     list-style: none;
     li {
       margin: 0 5px;
-      a {
+      a,
+      span {
         cursor: pointer;
         display: inline-block;
         background: ${props =>
@@ -95,9 +96,9 @@ const SocialShare = ({ id, description, islightcolor }) => {
           </a>
         </li>
         <li>
-          <a onClick={handleCopy}>
+          <span onClick={handleCopy}>
             <FiLink />
-          </a>
+          </span>
         </li>
       </ul>
     </SocialShareContainer>

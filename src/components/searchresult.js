@@ -167,6 +167,7 @@ const SearchResult = () => {
                   ) {
                     return edge
                   }
+                  return false
                 })
               }
               const data = matchNums.map(one => edges[one])

@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { FiPrinter } from "react-icons/fi"
-import SearchResult from "./searchresult"
 import { ThinContainer, Description } from "./common"
 import SocialShare from "./socialshare"
 import Contributors from "./contributors"

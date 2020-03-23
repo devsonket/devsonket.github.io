@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import styled from "@emotion/styled"
-import axios from "axios"
 
 import { PrintSheet, Logo, Button } from "./common"
-import { cheatsheetMap, contributorMap } from "../utils"
+import { cheatsheetMap } from "../utils"
 
 import githubLogo from "../images/github.png"
 

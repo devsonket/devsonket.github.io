@@ -22,19 +22,6 @@ const Navbar = styled.nav`
   ul li {
     display: inline-block;
   }
-  /* li.btn-add {
-    float: right;
-    @media only screen and (max-width: 460px) {
-      display: none;
-    }
-  } */
-  /* .btn-add a {
-    background-color: #4caf50;
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-  } */
 `
 
 export default () => (

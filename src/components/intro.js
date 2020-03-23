@@ -5,7 +5,7 @@ import Header from "./header"
 import IntroHome from "./introhome"
 import IntroItem from "./introitem"
 
-import { Container, Logo, ThinContainer } from "./common"
+import { Container, ThinContainer } from "./common"
 
 const IntroContainer = styled.div`
   background: ${props => props.colorpref};
