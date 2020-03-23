@@ -16,11 +16,33 @@ const FooterArea = styled.div`
   justify-content: space-between;
   color: #fff;
   text-align: left;
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+  }
   > div {
     flex: 1;
+    @media (max-width: 480px) {
+      flex: 1 1 100%;
+      margin: 0;
+      margin-bottom: 15px;
+      text-align: center;
+      ul {
+        list-style: none;
+        margin-left: 0 !important;
+      }
+    }
     margin: 0 15px;
+    :nth-of-type(2n + 2) {
+      @media (max-width: 991px) {
+        margin-left: 0;
+      }
+    }
     :first-of-type {
       margin-left: 0;
+      @media (max-width: 991px) {
+        flex: 1 1 100%;
+        margin-bottom: 15px;
+      }
     }
     :last-of-type {
       margin-right: 0;
