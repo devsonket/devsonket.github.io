@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 import { PrintSheet, Logo, Button } from "./common"
 import { cheatsheetMap } from "../utils"
 
-import githubLogo from "../images/github.png"
+import githubLogo from "../assets/images/github.png"
 
 const PrintSingleContent = styled.div`
   color: #fff;

@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import { FiFacebook, FiTwitter, FiLink } from "react-icons/fi"
 

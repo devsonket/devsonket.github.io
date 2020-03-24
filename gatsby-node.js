@@ -39,7 +39,6 @@ exports.createPages = ({ actions, graphql }) => {
       const edges = res.data.allFile.edges
       for (let i = 0; i < edges.length; i++) {
         const filename = edges[i].node.name
-        console.log(filename)
         const { data: contributorsRaw } = await axios.get(
           `https://api.github.com/repos/devsonket/devsonket.github.io/commits?path=data/${filename}.json`,
           {

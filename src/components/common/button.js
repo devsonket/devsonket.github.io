@@ -1,44 +1,65 @@
 import React from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 
 const ButtonContainer = styled.span``
 
-const ButtonAnchor = styled.a`
-  text-decoration: none;
+const btnStyle = `
+text-decoration: none;
   display: inline-block;
-  padding: 8px 18px;
+  padding: 12px 15px;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
   line-height: 1;
   transition: 0.2s all ease;
   background: #02b3e4;
-  box-shadow: 8px 10px 20px 0 rgba(46, 61, 73, 0.15);
   color: white;
   text-shadow: 0 1px 3px #86888e;
   @media print {
     display: none;
   }
   &:hover {
-    box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
     background-color: #02b7e9;
   }
 `
 
-export const Button = ({ text, bgColor, href, onClick, target, rel }) => (
-  <ButtonContainer>
-    <ButtonAnchor
-      target={target ? "_blank" : "self"}
-      rel={rel ? rel : ""}
-      onClick={onClick && onClick}
-      style={{ backgroundColor: bgColor }}
-      href={href}
-    >
-      {text}
-    </ButtonAnchor>
-  </ButtonContainer>
-)
+const ButtonAnchor = styled.a`
+  ${btnStyle}
+`
+
+const ButtonLinkAnchor = styled(Link)`
+  ${btnStyle}
+`
+
+export const Button = ({
+  children,
+  bgColor,
+  href,
+  to,
+  onClick,
+  target,
+  rel,
+}) => {
+  return (
+    <ButtonContainer>
+      {!to ? (
+        <ButtonAnchor
+          target={target ? "_blank" : "self"}
+          rel={rel ? rel : ""}
+          onClick={onClick && onClick}
+          style={{ backgroundColor: bgColor }}
+          href={href}
+        >
+          {children}
+        </ButtonAnchor>
+      ) : (
+        <ButtonLinkAnchor to={to}>{children}</ButtonLinkAnchor>
+      )}
+    </ButtonContainer>
+  )
+}
 
 Button.defaultProps = {
   text: `button`,

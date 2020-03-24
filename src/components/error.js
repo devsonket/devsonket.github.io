@@ -4,7 +4,15 @@ import styled from "@emotion/styled"
 import { Container } from "./common"
 
 const ErrorContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 640px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  height: 100vh;
   margin: 0 auto;
   text-align: center;
   img {
