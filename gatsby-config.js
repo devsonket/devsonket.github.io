@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#333`,
         display: `minimal-ui`,
-        icon: `src/images/devsonket-icon.png`,
+        icon: `src/assets/images/devsonket-icon.png`,
       },
     },
     {

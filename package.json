@@ -18,10 +18,13 @@
     "gatsby-source-filesystem": "^2.0.37",
     "gatsby-transformer-sharp": "^2.1.20",
     "prop-types": "^15.7.2",
+    "puppeteer": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-ga": "^2.7.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.9.0",
+    "react-masonry-css": "^1.0.14"
   },
   "devDependencies": {
     "husky": "^2.4.1",
@@ -37,7 +40,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "npm run thumbnail && gatsby build",
+    "thumbnail": "cd scripts && node thumbnail.js",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
