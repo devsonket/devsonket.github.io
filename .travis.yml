@@ -4,8 +4,9 @@ node_js:
 addons:
   apt:
     packages:
-      - language-pack-bn
-      - language-pack-bn*
+      - fonts-beng
+      - fonts-beng-extra 
+      - fonts-lohit-beng-bengali
 cache:
   directories:
     - node_modules
