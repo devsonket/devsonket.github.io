@@ -1,11 +1,14 @@
 language: node_js
 node_js:
   - "10"
+addons:
+  apt:
+    packages:
+      - language-pack-bn
+      - language-pack-bn*
 cache:
   directories:
     - node_modules
-before_script:
-  - sudo apt-get install language-pack-bn
 script:
   - npm test
   - npm run build
@@ -14,7 +17,7 @@ deploy:
   skip_cleanup: true
   github_token: $github_token
   local_dir: public
-  target-branch: master
-  keep-history: true
+  target_branch: master
+  keep_history: true
   on:
     branch: develop
