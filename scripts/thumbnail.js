@@ -103,6 +103,10 @@ const main = async () => {
         </body>
       </html>
     `
+    page.setExtraHTTPHeaders({
+      "Accept-Charset": "utf-8",
+      "Content-Type": "text/html; charset=utf-8",
+    })
     await page.setContent(imgHTML)
     await page.screenshot({
       type: "jpeg",
