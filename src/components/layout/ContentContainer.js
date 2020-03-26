@@ -1,18 +1,18 @@
 import React from "react"
 import styled from "@emotion/styled"
 
-import AllItems from "./allitems"
+import AllItems from "../Home/AllItems"
+import PopularItems from "../Home/PopularItems"
+import Item from "../Item/Item"
 
-import { Curve, Section, ThinContainer } from "./common"
-import PopularItems from "./popularitems"
-import Item from "./item"
+import { Curve, Section, ThinContainer } from "../common"
 
-const ContentContainer = styled.div`
+const Content = styled.div`
   background: ${props => props.colorPref};
 `
 
-const Content = ({ data, colorPref }) => (
-  <ContentContainer colorPref={colorPref}>
+const ContentContainer = ({ data, colorPref }) => (
+  <Content colorPref={colorPref}>
     <Curve color="var(--accentlight)">
       <Section>
         <ThinContainer>
@@ -27,11 +27,11 @@ const Content = ({ data, colorPref }) => (
         </ThinContainer>
       </Section>
     </Curve>
-  </ContentContainer>
+  </Content>
 )
 
-Content.defaultProps = {
+ContentContainer.defaultProps = {
   colorPref: "var(--accentwhite)",
 }
 
-export default Content
+export default ContentContainer

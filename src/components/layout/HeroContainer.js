@@ -1,19 +1,25 @@
 import React from "react"
 import styled from "@emotion/styled"
 
-import Header from "./header"
-import IntroHome from "./introhome"
-import IntroItem from "./introitem"
+import Header from "../Header"
+import HeroHome from "../Home/HeroHome"
+import HeroItem from "../Item/HeroItem"
 
-import { Container, ThinContainer } from "./common"
+import { Container, ThinContainer } from "../common"
 
-const IntroContainer = styled.div`
+const Hero = styled.div`
   background: ${props => props.colorpref};
 `
 
-const Intro = ({ data, filename, islightcolor, colorpref, contributors }) => {
+const HeroContainer = ({
+  data,
+  filename,
+  islightcolor,
+  colorpref,
+  contributors,
+}) => {
   return (
-    <IntroContainer colorpref={colorpref}>
+    <Hero colorpref={colorpref}>
       <Container>
         <Header
           filename={filename}
@@ -22,9 +28,9 @@ const Intro = ({ data, filename, islightcolor, colorpref, contributors }) => {
         />
         <ThinContainer>
           {!data ? (
-            <IntroHome />
+            <HeroHome />
           ) : (
-            <IntroItem
+            <HeroItem
               islightcolor={islightcolor}
               data={data}
               contributors={contributors}
@@ -32,13 +38,13 @@ const Intro = ({ data, filename, islightcolor, colorpref, contributors }) => {
           )}
         </ThinContainer>
       </Container>
-    </IntroContainer>
+    </Hero>
   )
 }
 
-Intro.defaultProps = {
+HeroContainer.defaultProps = {
   colorpref: "var(--accentwhite)",
   isLightText: true,
 }
 
-export default Intro
+export default HeroContainer

@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "@emotion/styled"
 
-import { Container } from "./common"
+import { Container } from "../common"
 
-const ErrorContainer = styled.div`
+const Error = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,10 +30,12 @@ const ErrorContainer = styled.div`
   }
 `
 
-export default ({ children }) => (
+const ErrorContainer = ({ children }) => (
   <div className="error-area not-found">
     <Container>
-      <ErrorContainer>{children}</ErrorContainer>
+      <Error>{children}</Error>
     </Container>
   </div>
 )
+
+export default ErrorContainer

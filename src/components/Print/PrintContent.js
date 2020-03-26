@@ -1,10 +1,11 @@
 import React from "react"
 import styled from "@emotion/styled"
 
-import { PrintSheet, Logo, Button } from "./common"
-import { cheatsheetMap } from "../utils"
+import { PrintSheet, Logo, Button } from "../common"
 
-import githubLogo from "../assets/images/github.png"
+import { cheatsheetMap } from "../../utils"
+
+import githubLogo from "../../assets/images/github.png"
 
 const PrintSingleContent = styled.div`
   color: #fff;

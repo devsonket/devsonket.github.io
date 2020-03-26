@@ -1,13 +1,13 @@
 import React from "react"
 
-import Error from "../components/error"
+import ErrorContainer from "../components/layout/ErrorContainer"
 
 import { Button } from "../components/common"
 
 import errorBanner from "../assets/images/lost.svg"
 
 export default () => (
-  <Error>
+  <ErrorContainer>
     <img src={errorBanner} alt="error" />
     <h2>এখানে কিছু পাওয়া যায় নি!</h2>
     <p>
@@ -36,5 +36,5 @@ export default () => (
         বাগ
       </Button>
     </div>
-  </Error>
+  </ErrorContainer>
 )

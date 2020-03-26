@@ -2,11 +2,11 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
-import Items from "./items"
+import Items from "./Items"
 
-import { Card } from "./common"
+import { Card } from "../common"
 
-import { organizedData } from "../utils"
+import { organizedData } from "../../utils"
 
 const ContentContainer = styled.div`
   margin-bottom: 25px;

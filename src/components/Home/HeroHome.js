@@ -1,9 +1,11 @@
 import React from "react"
 import styled from "@emotion/styled"
-import SearchResult from "./searchresult"
-import { ThinContainer, Description } from "./common"
 
-const IntroHomeContainer = styled.div`
+import SearchResult from "./SearchResult"
+
+import { ThinContainer, Description } from "../common"
+
+const HeroHomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,19 +14,19 @@ const IntroHomeContainer = styled.div`
   padding-bottom: 240px;
 `
 
-const IntroHome = () => {
+const HeroHome = () => {
   return (
     <ThinContainer>
-      <IntroHomeContainer>
+      <HeroHomeContainer>
         <Description
           title="বাংলা ডেভেলপার চিটশিট"
           description="ডেভেলপারদের জন্য, ডেভেলপারদের দ্বারা, মাতৃভাষা বাংলায় সবচেয়ে বড়
             চিটশিট ভান্ডার"
         />
         <SearchResult />
-      </IntroHomeContainer>
+      </HeroHomeContainer>
     </ThinContainer>
   )
 }
 
-export default IntroHome
+export default HeroHome

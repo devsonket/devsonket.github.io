@@ -2,10 +2,11 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
-import Items from "./items"
+import Items from "./Items"
 
-import { Card } from "./common"
-import { getData } from "../utils"
+import { Card } from "../common"
+
+import { getData } from "../../utils"
 
 const Content = styled.div`
   .items {

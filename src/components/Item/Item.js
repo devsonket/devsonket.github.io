@@ -2,7 +2,7 @@ import React from "react"
 import Masonry from "react-masonry-css"
 import styled from "@emotion/styled"
 
-import { Sheet } from "./common"
+import { Sheet } from "../common"
 
 var breakpointColumns = {
   default: 2,

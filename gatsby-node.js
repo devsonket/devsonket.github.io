@@ -9,8 +9,8 @@ require("dotenv").config({
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
-  const postTemplate = path.resolve("src/templates/cheatsheet.js")
-  const printTemplate = path.resolve("src/templates/printsheet.js")
+  const postTemplate = path.resolve("src/templates/CheatSheet.js")
+  const printTemplate = path.resolve("src/templates/PrintSheet.js")
 
   let contributors = {}
 

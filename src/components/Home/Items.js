@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 
-import { Container } from "./common"
+import { Container } from "../common"
 
 const ItemsContainer = styled.div`
   margin-bottom: 45px;

@@ -1,11 +1,13 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { FiPrinter } from "react-icons/fi"
-import { ThinContainer, Description } from "./common"
-import SocialShare from "./socialshare"
-import Contributors from "./contributors"
+import { ThinContainer, Description } from "../common"
 
-const IntroItemContainer = styled.div`
+import SocialShare from "./SocialShare"
+import Contributors from "./Contributors"
+
+import { FiPrinter } from "react-icons/fi"
+
+const HeroItemContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,14 +38,14 @@ const IntroItemContainer = styled.div`
   }
 `
 
-const IntroItem = ({
+const HeroItem = ({
   data: { id, title, description },
   islightcolor,
   contributors,
 }) => {
   return (
     <ThinContainer>
-      <IntroItemContainer islightcolor={islightcolor}>
+      <HeroItemContainer islightcolor={islightcolor}>
         <Description
           title={title}
           description={description}
@@ -60,9 +62,9 @@ const IntroItem = ({
             <FiPrinter /> প্রিন্ট করুন
           </a>
         </p>
-      </IntroItemContainer>
+      </HeroItemContainer>
     </ThinContainer>
   )
 }
 
-export default IntroItem
+export default HeroItem

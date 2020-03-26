@@ -159,7 +159,7 @@ const SearchResult = () => {
                 )
               } else {
                 matchNums = Object.keys(edges).filter(edge => {
-                  const data = require(`../../data/${edges[edge].node.name}`)
+                  const data = require(`../../../data/${edges[edge].node.name}`)
                   if (
                     String(data.title)
                       .toLowerCase()
@@ -206,7 +206,7 @@ const SearchResult = () => {
               }
               return input.length
                 ? data.map(edge => {
-                    const { id, title, description } = require(`../../data/${
+                    const { id, title, description } = require(`../../../data/${
                       edge.node.name
                     }.json`)
                     return (
