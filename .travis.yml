@@ -1,11 +1,10 @@
 language: node_js
 node_js:
   - "10"
+os: osx
 cache:
   directories:
     - node_modules
-before_script:
-  - sudo apt-get install language-pack-bn
 script:
   - npm test
   - npm run build
