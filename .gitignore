@@ -68,3 +68,7 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# Thumbnails
+static/static/thumbnail/*.jpg
+!static/static/thumbnail/thumbnail.jpg
