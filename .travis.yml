@@ -1,7 +1,11 @@
 language: node_js
 node_js:
   - "10"
-os: osx
+addons:
+  apt:
+    packages:
+      - language-pack-bn
+      - language-pack-bn*
 cache:
   directories:
     - node_modules
