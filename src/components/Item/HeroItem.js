@@ -1,9 +1,10 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { ThinContainer, Description } from "../common"
 
 import SocialShare from "./SocialShare"
 import Contributors from "./Contributors"
+
+import { ThinContainer, Description } from "../common"
 
 import { FiPrinter } from "react-icons/fi"
 

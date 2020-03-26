@@ -270,11 +270,9 @@ const PrintContent = ({ data: rawData, filename, contributors }) => {
         </PrintSheetTitle>
       </PrintSheet>
       <PrintButton>
-        <Button
-          onClick={() => window.print()}
-          text="প্রিন্ট করুন"
-          bgColor="#02b3e4"
-        />
+        <Button onClick={() => window.print()} bgColor="#02b3e4">
+          প্রিন্ট করুন
+        </Button>
       </PrintButton>
     </PrintSingleContent>
   )
