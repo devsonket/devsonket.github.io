@@ -8,7 +8,7 @@ addons:
       - fonts-beng-extra 
       - fonts-lohit-beng-bengali
 before_install:
-  - ./scripts/install-google-fonts.sh
+  - bash scripts/install-google-fonts.sh
 cache:
   directories:
     - node_modules
