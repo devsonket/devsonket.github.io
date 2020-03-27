@@ -15,7 +15,7 @@ files.forEach(file => {
 })
 
 const main = async () => {
-  const browser = await puppeteer.launch({ headless: false })
+  const browser = await puppeteer.launch()
 
   browser.on("disconnected", () => {
     return 0
