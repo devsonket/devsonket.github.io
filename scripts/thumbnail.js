@@ -85,6 +85,9 @@ const main = async () => {
       "Content-Type": "text/html; charset=utf-8",
     })
     await page.setContent(imgHTML)
+    if (i === 0) {
+      await page.waitFor(5000)
+    }
     await page.screenshot({
       type: "jpeg",
       path: `../static/static/thumbnail/${filesRaw[i].id}.jpg`,
