@@ -6,6 +6,9 @@ const DescriptionContainer = styled.div`
   h1 {
     margin: 0;
     font-size: 72px;
+    @media (max-width: 768px) {
+      font-size: 42px;
+    }
     color: ${props =>
       props.islightcolor === "true"
         ? `var(--accentwhite)`
@@ -13,6 +16,9 @@ const DescriptionContainer = styled.div`
   }
   p {
     font-size: 22px;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
     color: ${props =>
       props.islightcolor === "true"
         ? `var(--accentwhite)`
