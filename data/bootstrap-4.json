@@ -3,7 +3,7 @@
     "title": "বুটস্ট্রাপ ৪",
     "slug": "bootstrap4",
     "description": "টুইটার বুটস্ট্রাপ হলো একটা এইচ টি এম এল,সি এস এস,জাভাস্ক্রিপ্ট ফ্রেমওয়ার্ক যার সর্বশেষ সংস্করণ হলো বুটস্ট্রাপ ৪ , মূলত দ্রুত ওয়েব পেজ ও ওয়েব অ্যাপ্লিকেশন তৈরী করার জন্যে এটা ব্যাপকভাবে ব্যাবহৃত ।",
-    "colorPref": "#2535e4",
+    "colorPref": "#563D7C",
     "contents": [{
             "title": "কন্টেনার ক্লাস",
             "items": [{
@@ -52,8 +52,7 @@
             }, {
                 "definition": "একটি কলাম নিছে দেখানো",
                 "code": "<div class='row'><div class='col align-self-end'>...</div></div>"
-            }
-        ]
+            }]
         }, {
             "title": "হরিজেন্টাল আলাইনমেন্ট",
             "items": [{
@@ -68,12 +67,10 @@
             }, {
                 "definition": "সব কলাম ডানে বামে সমান গ্যাপে দেখানো",
                 "code": "<div class='row'><div class='col justify-content-around'>...</div></div>"
-            }
-        ]
+            }]
         }, {
             "title": "টাইপোগ্রাফি ক্লাস",
-            "items": [
-            {
+            "items": [{
                 "definition": "বোল্ড টেক্সট",
                 "code": "<p class='font-weight-bold'>...</p>"
             }, {
@@ -97,8 +94,7 @@
             }, {
                 "definition": "ক্যাপিটালাইস টেক্সট",
                 "code": "<p class='text-capitalize'>...</p>"
-            }
-        ]
+            }]
         }, {
             "title": "টেবিল ক্লাস",
             "items": [{
@@ -140,6 +136,13 @@
             }, {
                 "definition": "রিস্পন্সিভ ইমেজ",
                 "code": "<img class='img-fluid'>"
+            }]
+        },
+        {
+            "title": "ক্লিয়ারফিক্স",
+            "items": [{
+                "definition": "ক্লিয়ার ফ্লোটস",
+                "code": "<div class='clearfix'>...</div>"
             }]
         }
     ]
