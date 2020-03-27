@@ -93,7 +93,11 @@ export const Sheet = ({ index, title, slug, items, onlyCode }) => (
   <SheetContainer id={title}>
     <SheetTitle className="sheet-title">
       <h3>{title}</h3>
-      <a href={`${window.location.host}/${slug}#${title}`}>
+      <a
+        href={`${
+          typeof window !== "undefined" ? window.location.host : ""
+        }/${slug}#${title}`}
+      >
         <FiLink />
       </a>
     </SheetTitle>
