@@ -27,8 +27,9 @@ const Item = ({ data }) => {
       className="my-masonry-grid"
       columnClassName="my-masonry-grid_column"
     >
-      {data.contents.map(({ title, items, code: onlyCode }) => (
+      {data.contents.map(({ title, items, code: onlyCode }, index) => (
         <Sheet
+          index={index}
           key={title}
           slug={data.slug}
           title={title}
