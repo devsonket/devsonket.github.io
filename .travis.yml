@@ -1,7 +1,12 @@
 language: node_js
 node_js:
   - "10"
-os: windows
+addons:
+  apt:
+    packages:
+      - fonts-beng
+      - fonts-beng-extra
+      - fonts-lohit-beng-bengali
 cache:
   directories:
     - node_modules
