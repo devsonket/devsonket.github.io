@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
+import { FiLink } from "react-icons/fi"
 
 const SheetContainer = styled.div`
   & h3 {
@@ -92,7 +93,13 @@ export const Sheet = ({ title, slug, items, onlyCode }) => (
   <SheetContainer id={title}>
     <SheetTitle className="sheet-title">
       <h3>{title}</h3>
-      <a href={`/${slug}/#${title}`}>লিঙ্ক</a>
+      <a
+        href={`${
+          typeof window !== "undefined" ? window.location.host : ""
+        }/${slug}#${title}`}
+      >
+        লিঙ্ক
+      </a>
     </SheetTitle>
     <ul className="single-item">
       {items ? (
