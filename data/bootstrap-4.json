@@ -189,6 +189,39 @@
           ]
        },
        {
+          "title":"ফ্লোট ( ভাসানো )",
+          "items":[
+             {
+                "definition":"বামে ভাসানো",
+                "code":"<div class='float-left'>...</div>"
+             },
+             {
+                "definition":"ডানে ভাসানো",
+                "code":"<div class='float-right'>...</div>"
+             },
+             {
+                "definition":"না ভাসানো",
+                "code":"<div class='float-left'>...</div>"
+             },
+             {
+                "definition":"স্ক্রীন প্রস্থ যখন ৫৭৬ পিক্সেল এর সমান বা বড়",
+                "code":"<div class='float-sm-left'>...</div>, <div class='float-sm-right'>...</div>"
+             },
+             {
+                "definition":"স্ক্রীন প্রস্থ যখন ৭৬৮ পিক্সেল এর সমান বা বড়",
+                "code":"<div class='float-md-left'>...</div>, <div class='float-md-right'>...</div>"
+             },
+             {
+                "definition":"স্ক্রীন প্রস্থ যখন ৯৯২ পিক্সেল এর সমান বা বড়",
+                "code":"<div class='float-lg-left'>...</div>, <div class='float-lg-right'>...</div>"
+             },
+             {
+                "definition":"স্ক্রীন প্রস্থ যখন ১২০০ পিক্সেল এর সমান বা বড়",
+                "code":"<div class='float-xl-left'>...</div>, <div class='float-xl-right'>...</div>"
+             }
+          ]
+       },
+       {
           "title":"ক্লিয়ারফিক্স",
           "items":[
              {
