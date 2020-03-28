@@ -68,6 +68,23 @@
           "code": "python manage.py createsuperuser"
         }
       ]
+    },
+    {
+      "title": "স্ট্যাটিক ফাইল",
+      "items": [
+        {
+          "definition": "'স্ট্যাটিক রুট' ফোল্ডারে সকল স্ট্যাটিক ফাইল সংগ্রহ করা",
+          "code": "python manage.py collectstatic"
+        },
+        {
+          "definition": "ইউজার ইনপুট ছাড়াই 'স্ট্যাটিক রুট' ফোল্ডারে সকল স্ট্যাটিক ফাইল সংগ্রহ করা",
+          "code": "python manage.py collectstatic --no-input"
+        },
+        {
+          "definition": "স্ট্যাটিক ফাইল খুঁজে বের করা",
+          "code": "python manage.py findstatic staticfile [staticfile ...]"
+        }
+      ]
     }
   ]
 }
