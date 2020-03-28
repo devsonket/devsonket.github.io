@@ -35,6 +35,14 @@
                 {
                     "definition": "কীবোর্ড শর্টকার্ট দেখা",
                     "code": "Ctrl + K Ctrl + S"
+                },
+                {
+                    "definition": "সিঙ্গেল লাইন কমেন্ট / এইচটিএমএল কমেন্ট",
+                    "code": "Ctrl + /"
+                },
+                {
+                    "definition": "মাল্টি লাইন কমেন্ট",
+                    "code": "Shift + Alt + A"
                 }
             ]
         },
