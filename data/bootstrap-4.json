@@ -131,6 +131,27 @@
           ]
        },
        {
+          "title": "ডিসপ্লে হেডিংস",
+          "items":[
+             {
+               "definition": "ডিসপ্লে ওয়ান",
+               "code": "<h1 class='display-1'>Display 1</h1>"
+             },
+             {
+               "definition": "ডিসপ্লে টু",
+               "code": "<h1 class='display-2'>Display 2</h1>"
+             },
+             {
+               "definition": "ডিসপ্লে থ্রি",
+               "code": "<h1 class='display-3'>Display 3</h1>"
+             },
+             {
+               "definition": "ডিসপ্লে ফোর",
+               "code": "<h1 class='display-4'>Display 4</h1>"
+             }
+         ]
+       },
+       {
           "title":"টেবিল ক্লাস",
           "items":[
              {
