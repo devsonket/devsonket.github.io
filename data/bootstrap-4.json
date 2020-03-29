@@ -201,7 +201,7 @@
              },
              {
                 "definition":"না ভাসানো",
-                "code":"<div class='float-left'>...</div>"
+                "code":"<div class='float-none'>...</div>"
              },
              {
                 "definition":"স্ক্রীন প্রস্থ যখন ৫৭৬ পিক্সেল এর সমান বা বড়",
