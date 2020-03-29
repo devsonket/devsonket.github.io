@@ -250,6 +250,47 @@
                 "code":"<div class='clearfix'>...</div>"
              }
           ]
+       },
+       {
+          "title":"ডিসপ্লে প্রোপার্টি",
+          "items":[
+             {
+                "definition":"প্রদর্শন না করা",
+                "code": "<div class='d-none'> Display None </div>"
+             },
+             {
+                "definition":"ইনলাইন",
+                "code": "<div class='d-inline'> Display Inline </div>"
+             },
+             {
+                "definition":"ইনলাইন ব্লক",
+                "code": "<div class='d-inline-block'> Display Inline Block </div>"
+             },
+             {
+                "definition":"ব্লক",
+                "code": "<div class='d-block'> Display Block </div>"
+             },
+             {
+                "definition":"টেবিল",
+                "code": "<div class='d-table'> Display Table </div>"
+             },
+             {
+                "definition":"টেবিল সেল",
+                "code": "<div class='d-table-cell'> Display Table Cell </div>"
+             },
+             {
+                "definition":"টেবিল রো",
+                "code": "<div class='d-table-row'> Display Table Row </div>"
+             },
+             {
+                "definition":"ফ্লেক্স",
+                "code": "<div class='d-flex'> Display Flex </div>"
+             },
+             {
+                "definition":"ইনলাইন ফ্লেক্স",
+                "code": "<div class='d-inline-flex'> Display Inline Flex </div>"
+             }
+          ]
        }
     ]
  }
