@@ -15,7 +15,39 @@
         }, {
           "code": "<head>"
         }, {
+          "code": "<title>"
+        }, {
           "code": "<body>"
+        }, {
+          "code": "<h1> to <h6>"
+        }, {
+          "code": "<div>"
+        }, {
+          "code": "<p>"
+        }, {
+          "code": "<br>"
+        }, {
+          "code": "<hr>"
+        }, {
+          "code": "<form>"
+        }, {
+          "code": "<label>"
+        }, {
+          "code": "<input>"
+        }, {
+          "code": "<button>"
+        }, {
+          "code": "<img>"
+        }, {
+          "code": "<a>"
+        }, {
+          "code": "<link>"
+        }, {
+          "code": "<table>"
+        }, {
+          "code": "<span>"
+        }, {
+          "code": "<script>"
         }, {
           "code": "<!-- comment -->"
         }
@@ -43,6 +75,8 @@
         }, {
           "code": "onBlur"
         }, {
+          "code": "onClick"
+        }, {
           "code": "onChange"
         }, {
           "code": "onFocus"
@@ -61,6 +95,10 @@
           "code": "div span"
         }, {
           "code": "siv, span"
+        }, {
+          "code": ".class1 .class2"
+        }, {
+          "code": "#id"
         }
       ]
     }, {
@@ -89,6 +127,8 @@
           "code": "text-decoration"
         }, {
           "code": "text-shadow"
+        }, {
+          "code": "text-transform"
         }, {
           "code": "letter-spacing"
         }
