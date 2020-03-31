@@ -85,6 +85,15 @@
                 }, {
                     "definition": "রান এপ্লিকেশন ওপেন করা",
                     "code": "WIN + R"
+                }, {
+                    "definition": "নতুন উইন্ডো তৈরি করুন",
+                    "code": "Ctrl + WIN + D"
+                }, {
+                    "definition": "ডান পাশের উইন্ডোটি দেখুন",
+                    "code": "Ctrl + WIN + Right Arrow"
+                }, {
+                    "definition": বাম পাশের উইন্ডোটি দেখুন",
+                    "code": "Ctrl + WIN + Left Arrow"
                 }
             ]
         }, {
