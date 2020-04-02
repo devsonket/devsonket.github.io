@@ -29,6 +29,10 @@
           "code": "pipenv install django"
         },
         {
+          "definition": "django ভার্সন দেখা",
+          "code": "python -m django --version"
+        },
+        {
           "definition": "যেকোনো প্যাকেজ ডিপেন্ডেন্সী ইন্সটল করা",
           "code": "pipenv install <package_name>"
         }
