@@ -1,0 +1,62 @@
+{
+    "id": "jsdoc",
+    "title": "জেএস ডক",
+    "slug": "jsdoc",
+    "description": "জেএস ডক হচ্ছে জাভাস্ক্রিপ্ট এর জন্য একটা অ্যাপিআইর ডকুমেন্টেশন জেনারেটর, অনেকটা জাভাডক অথবা পিএইচপি ডকুমেন্টরের মতো। আপনি ডকুমেন্টেশনের জন্য সোর্স কোডে সরাসরি কমেন্ট যুক্ত করবেন, একদম কোডের সাথেই। জেএস ডক আপনার সোর্স কোড স্ক্যান করবে এবং একটা এইচটিএমএল ডকুমেন্টেশন ওয়েবসাইট ক্রিয়েট করে ফেলবে।",
+    "colorPref": "#EBEBEB",
+    "contents": [
+      {
+        "title": "টাইপ ডেফিনেশন",
+        "items": [
+          {
+            "definition": "বুলিয়ান",
+            "code": "{boolean} name"
+          }, 
+          {
+            "definition": "ইন্টিজার",
+            "code": "{number} name"
+          }, 
+          {
+            "definition": "ফ্লোট",
+            "code": "{number} name"
+          }, 
+          {
+            "definition": "অবজেক্ট",
+            "code": "{Object} name"
+          }, 
+          {
+            "definition": "স্পেসিফাইড অবজেক্ট",
+            "code": "{Custo­mName} name"
+          }, 
+          {
+            "definition": "অ্যারে",
+            "code": "{Array} name"
+          }, 
+          {
+            "definition": "টাইপের অ্যারে",
+            "code": "{Type[]} name"
+          }, {
+            "definition": "স্ট্রিং",
+            "code": "{string} name"
+          }, 
+          {
+            "definition": "অপশনাল স্ট্রিং",
+            "code": "{string} [name]"
+          }, 
+          {
+            "definition": "অপশনাল স্ট্রিং ডিফল্ট ভ্যালু",
+            "code": "{string} [name=­test]"
+          }
+        ]
+      },
+      {
+        "title": "প্যারামিটার এর উদাহরণ",
+        "items": [
+          {
+            "code": "/**\n* @param {string} x\n* @param {number} y\n*/\nfunction sum( x, y ) {}"
+          }
+        ]
+      }
+    ]
+  }
+  
