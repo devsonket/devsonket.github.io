@@ -125,8 +125,11 @@
           "definition": "ফাইল অথবা ডিরেক্টরির সাইজ দেখা",
           "code": "du YourFileOrDirectory"
         }, {
-          "definition": "ফাইলের পারমিশন সবার জন্য রিড, রাইত, এক্সিকিউট (read, write, execute) করা",
+          "definition": "ফাইলের পারমিশন সবার জন্য রিড, রাইট, এক্সিকিউট (read, write, execute) করা",
           "code": "chmod 777 YourFileName"
+        }, {
+          "definition": "রিমোট ফাইল ডাউনলোড করা (wget ইন্সটল থাকতে হবে)",
+          "code": "wget https://example.com/remote.pdf"
         }
       ]
     }, {
