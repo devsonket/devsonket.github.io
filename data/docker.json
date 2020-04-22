@@ -23,6 +23,14 @@
                 {
                     "definition": "ডকার সিএলআই কমান্ড",
                     "code": "docker container --help"
+                },
+                {
+                    "definition": "List of running ডকার কন্টেইনার",
+                    "code": "docker ps"
+                },
+                {
+                    "definition": "List of all ডকার কন্টেইনার even not running",
+                    "code": "docker ps -a"
                 }
 
             ]
@@ -32,16 +40,26 @@
             "items": [
                 {
                     "definition": "List of all ডকার কন্টেইনার, even not running",
-                    "code": "docker ls -a"
+                    "code": "docker container ls -a"
                 },
                 {
                     "definition": "List of all ডকার কন্টেইনার",
-                    "code": "docker ps -a"
-                },   
-                {
-                    "definition": "List of running ডকার কন্টেইনার",
-                    "code": "docker ps"
+                    "code": "docker container ps -a"
                 },
+                {
+                    "definition": "List of all ডকার কন্টেইনার",
+                    "code": "docker container list -a"
+                },
+                {
+                    "definition": "সর্বশেষ তৈরি করা ডকার কন্টেইনার দেখার জন্য",
+                    "code": "docker container ls -l"
+                },
+                {
+                    "definition": "সর্বশেষ তৈরি করা N সংখ্যক ডকার কন্টেইনার দেখার জন্য",
+                    "code": "docker container ls -n 5"
+                },
+                   
+            
                 {
                     "definition": "List of stopped ডকার কন্টেইনার",
                     "code": "docker container ls -f 'status=exited'"
