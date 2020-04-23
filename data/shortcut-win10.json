@@ -134,6 +134,9 @@
               }, {
                   "definition": "অ্যাপ/ডেস্কটপের উইন্ডো ডান/বাম দিকে সরানো",
                   "code": "Win + Shift + Left/Right arrow"
+              }, {
+                  "definition": "উইন্ডো ক্লোজ করা",
+                  "code": "Ctrl + W"
               }
             ]
         }, {
