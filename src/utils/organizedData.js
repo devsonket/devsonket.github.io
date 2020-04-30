@@ -1,14 +1,14 @@
-import sort from './sort';
+import { getData } from "./getData"
 
-export default data => {
-  const sortedData = sort(data);
-  const organizedData = {};
+export const organizedData = data => {
+  const sortedData = getData(data)
+  const oData = {}
   sortedData.forEach(oneData => {
-    if(organizedData[oneData.title[0]]) {
-      organizedData[oneData.title[0]].push(oneData);
+    if (oData[oneData.title[0]]) {
+      oData[oneData.title[0]].push(oneData)
     } else {
-      organizedData[oneData.title[0]] = [oneData];
+      oData[oneData.title[0]] = [oneData]
     }
-  });
-  return organizedData;
+  })
+  return oData
 }

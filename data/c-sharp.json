@@ -1,0 +1,143 @@
+{
+    "id": "c-sharp",
+    "title": "সি-শার্প প্রোগ্রামিং",
+    "slug": "c-sharp",
+    "description": "সি-শার্প প্রোগ্রামিং",
+    "colorPref": "#1290FD",
+    "contents": [
+      {
+        "title": "ডাটা টাইপ(ভ্যালু টাইপ) [সর্বাধিক ব্যবহৃত]",
+        "items": [
+          {
+            "definition": "বুলিয়ান ভ্যালু",
+            "code": "bool"
+          },{
+            "definition": "৮-বিট আনসাইন্ড ইন্টিজার",
+            "code": "byte"
+          },{
+            "definition": "১৬-বিট ইউনিকোড ক্যারেক্টার",
+            "code": "char"
+          },{
+            "definition": "৬৪-বিট ডাবল প্রেসিশন ফ্লোটিং টাইপ",
+            "code": "double"
+          },{
+            "definition": "৩২-বিট সিঙ্গেল প্রেসিশন ফ্লোটিং টাইপ",
+            "code": "float"
+          },{
+            "definition": "৩২-বিট সাইন্ড ইন্টিজার টাইপ",
+            "code": "int"
+          },{
+            "definition": "৬৪-বিট সাইন্ড ইন্টিজার টাইপ",
+            "code": "long"
+          },{
+            "definition": "এ সিকুয়েন্স অফ ইউনিকোড ক্যারেক্টারস",
+            "code": "string"
+          }, {
+            "definition": "তারিখ এবং সময় রিপ্রেজেন্ট করে",
+            "code": "DateTime"
+          }
+        ]
+      }, {
+        "title": "অপারেটরস",
+        "items": [
+          {
+            "definition": "সাধারন গাণিতিক অপারেশন",
+            "code": " +, -, *, /, %, ++, --"
+          },{
+            "definition": "তুলনামূলক অপারেটরস",
+            "code": " ==, !=, >, <, >=, <="
+          },{
+            "definition": "লজিকাল অপারেটরস",
+            "code": " &&, ||, !"
+          },{
+            "definition": "বিটওয়াইজ অপারেটরস",
+            "code": " &, |, ^, ~, <<, >>"
+          },{
+            "definition": "কমপাউন্ড এসাইনমেন্ট অপারেটরস",
+            "code": " +=, -=, *=, /=, %=, &=, |=, ^=, <<=, >>=, =>"
+          }
+        ]
+      },{
+          "title": "গাণিতিক বিল্ট-ইন ফাংশন",
+          "items": [
+            {
+              "definition": "বর্গমূল করার জন্য",
+              "code": "Math.Sqrt(x)"
+            },{
+              "definition": "x এর পরম মান বের করার জন্য",
+              "code": "Math.Abs(x)"
+            },{
+              "definition": "রাউন্ড করার জন্য",
+              "code": "Math.Round(x)"
+            },{
+              "definition": "x টু দা পাওয়ার y এর জন্য",
+              "code": "Math.Pow(x, y)"
+            },{
+              "definition": "দুটির মধ্যে বড় সংখ্যা বের করার জন্য",
+              "code": "Math.Max(x, y);"
+            },{
+              "definition": "দুটির মধ্যে ছোট সংখ্যা বের করার জন্য",
+              "code": "Math.Min(x, y);"
+            }           
+          ]
+        },{
+          "title": "লিস্ট ক্লাস",
+          "items": [
+            {
+              "definition": "ইন্টিজার টাইপের লিস্ট তৈরি করা",
+              "code": "List<int> list = new List<int>();"
+            },{
+              "definition": "লিস্ট-এর উপাদান সংখ্যা",
+              "code": "list.Count"
+            },{
+              "definition": "বর্তমান লিস্টের ধারণক্ষমতা",
+              "code": "list.Capacity"
+            },{
+              "definition": "লিস্টে উপাদান যোগ করা",
+              "code": "list.Add()"
+            },{
+              "definition": "লিস্টে idx ইন্ডেক্সে value উপাদান যোগ করা",
+              "code": "list.Insert(idx, value)"
+            },{
+              "definition": "লিস্ট থেকে value উপাদান মুছে ফেলা",
+              "code": "list.Remove(value)"
+            },{
+              "definition": "লিস্টে idx ইন্ডেক্সের উপাদান মুছে ফেলা",
+              "code": "list.RemoveAt(idx)"
+            },{
+              "definition": "লিস্টে থেকে নির্দিষ্ট উপাদানের ইন্ডেক্স বের করা",
+              "code": "list.FindIndex(value)"
+            },{
+              "definition": "লিস্ট এর উপাদানগুলিকে সাজানোর জন্য",
+              "code": "list.Sort()"
+            },{
+              "definition": "লিস্ট এর উপাদানগুলিকে বিপরীত ভাবে সাজানোর জন্য",
+              "code": "list.Reverse()"
+            },{
+              "definition": "লিস্ট এর সকল উপাদানগুলি মুছে ফেলা",
+              "code": "list.Clear()"
+            }
+          ]
+        },{
+          "title": "ডিকশনারি ক্লাস",
+          "items": [
+            {
+              "definition": "ডিকশনারি তৈরি করা",
+              "code": "Dictionary<TKey,TValue> dict = new Dictionary<TKey,TValue>();"
+            },{
+              "definition": "ডিকশনারি-এর উপাদান সংখ্যা",
+              "code": "dict.Count"
+            },{
+              "definition": "ডিকশনারিতে key এর উপস্থিতি যাচাই করা",
+              "code": "dict.ContainsKey(key)"
+            },{
+              "definition": "ডিকশনারিতে key, value যুগলের উপস্থিতি যাচাই করা",
+              "code": "dict.ContainsKey(ew KeyValuePair<int,string>(key, value))"
+            },{
+              "definition": "key এর ভিত্তিতে ডিকশনারি থেকে উপাদান মুছে ফেলা",
+              "code": "dict.Remove(key)"
+            }
+          ]
+        }
+    ]
+  }
