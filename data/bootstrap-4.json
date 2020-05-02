@@ -1,146 +1,296 @@
 {
-    "id": "bootstrap4",
-    "title": "বুটস্ট্রাপ ৪",
-    "slug": "bootstrap4",
-    "description": "টুইটার বুটস্ট্রাপ হলো একটা এইচ টি এম এল,সি এস এস,জাভাস্ক্রিপ্ট ফ্রেমওয়ার্ক যার সর্বশেষ সংস্করণ হলো বুটস্ট্রাপ ৪ , মূলত দ্রুত ওয়েব পেজ ও ওয়েব অ্যাপ্লিকেশন তৈরী করার জন্যে এটা ব্যাপকভাবে ব্যাবহৃত ।",
-    "colorPref": "#2535e4",
-    "contents": [{
-            "title": "কন্টেনার ক্লাস",
-            "items": [{
-                "definition": "রেস্পন্সিভ ফিক্স উইড",
-                "code": "<div class='container'>...</div>"
-            }, {
-                "definition": "ফুল উইড",
-                "code": "<div class='container-fluid'>...</div>"
-            }]
-        },
-        {
-            "title": "গ্রিড ক্লাস",
-            "items": [{
-                "definition": "স্ক্রীন প্রস্থ যখন ৫৭৬পিক্সেল এর ছোট",
-                "code": "<div class='col-'>...</div>"
-            }, {
-                "definition": "স্ক্রীন প্রস্থ যখন ৫৭৬পিক্সেল এর সমান বা বড়",
-                "code": "<div class='col-sm'>...</div>"
-            }, {
-                "definition": "স্ক্রীন প্রস্থ যখন ৭৬৮পিক্সেল এর সমান বা বড়",
-                "code": "<div class='col-md'>...</div>"
-            }, {
-                "definition": "স্ক্রীন প্রস্থ যখন ৯৯২পিক্সেল এর সমান বা বড়",
-                "code": "<div class='col-lg'>...</div>"
-            }, {
-                "definition": "স্ক্রীন প্রস্থ যখন ১২০০পিক্সেল এর সমান বা বড়",
-                "code": "<div class='col-xl'>...</div>"
-            }]
-        }, {
-            "title": "ভার্টিকাল আলাইনমেন্ট",
-            "items": [{
-                "definition": "সব কলাম উপরে দেখানো",
-                "code": "<div class='row align-items-start'><div class='col'>...</div><div class='col'>...</div></div>"
-            }, {
-                "definition": "সব কলাম মাঝে দেখানো",
-                "code": "<div class='row align-items-center'><div class='col'>...</div><div class='col'>...</div></div>"
-            }, {
-                "definition": "সব কলাম নিচে দেখানো",
-                "code": "<div class='row align-items-end'><div class='col'>...</div><div class='col'>...</div></div>"
-            }, {
-                "definition": "একটি কলাম উপরে দেখানো",
-                "code": "<div class='row'><div class='col align-self-start'>...</div></div>"
-            }, {
-                "definition": "একটি কলাম মাঝে দেখানো",
-                "code": "<div class='row'><div class='col align-self-center'>...</div></div>"
-            }, {
-                "definition": "একটি কলাম নিছে দেখানো",
-                "code": "<div class='row'><div class='col align-self-end'>...</div></div>"
-            }
-        ]
-        }, {
-            "title": "হরিজেন্টাল আলাইনমেন্ট",
-            "items": [{
-                "definition": "সব কলাম বামে দেখানো",
-                "code": "<div class='row justify-content-start'><div class='col'>...</div><div class='col'>...</div></div>"
-            }, {
-                "definition": "সব কলাম ডানে দেখানো",
-                "code": "<div class='row justify-content-end'><div class='col'>...</div><div class='col'>...</div></div>"
-            }, {
-                "definition": "সব কলাম মাঝে দেখানো",
-                "code": "<div class='row justify-content-center'><div class='col'>...</div><div class='col'>...</div></div>"
-            }, {
-                "definition": "সব কলাম ডানে বামে সমান গ্যাপে দেখানো",
-                "code": "<div class='row'><div class='col justify-content-around'>...</div></div>"
-            }
-        ]
-        }, {
-            "title": "টাইপোগ্রাফি ক্লাস",
-            "items": [
-            {
-                "definition": "বোল্ড টেক্সট",
-                "code": "<p class='font-weight-bold'>...</p>"
-            }, {
-                "definition": "ইটালিক টেক্সট",
-                "code": "<p class='font-italic'>...</p>"
-            }, {
-                "definition": "লাইট উইড টেক্সট",
-                "code": "<p class='font-weight-light'>...</p>"
-            }, {
-                "definition": "লেফট অ্যালাইন",
-                "code": "<p class='text-left'>...</p>"
-            }, {
-                "definition": "রাইট অ্যালাইন",
-                "code": "<p class='text-right'>...</p>"
-            }, {
-                "definition": "জাস্টিফাই টেক্সট",
-                "code": "<p class='text-justify'>...</p>"
-            }, {
-                "definition": "আপারকেস টেক্সট",
-                "code": "<p class='text-uppercase'>...</p>"
-            }, {
-                "definition": "ক্যাপিটালাইস টেক্সট",
-                "code": "<p class='text-capitalize'>...</p>"
-            }
-        ]
-        }, {
-            "title": "টেবিল ক্লাস",
-            "items": [{
-                "definition": "স্ট্রাইপ টেবিল",
-                "code": "<table class='table-striped'>...</table>"
-            }, {
-                "definition": "বর্ডার টেবিল",
-                "code": "<table class='table-bordered'>...</table>"
-            }, {
-                "definition": "বর্ডার ছাড়া টেবিল",
-                "code": "<table class='table-borderedless'>...</table>"
-            }, {
-                "definition": "মাউস হোভারে বিজি কালার পরিবর্তন টেবিল",
-                "code": "<table class='table-hover'>...</table>"
-            }, {
-                "definition": "ডার্ক কালার টেবিল",
-                "code": "<table class='table-dark'>...</table>"
-            }, {
-                "definition": "রেস্পন্সিভ টেবিল",
-                "code": "<div class='table-responsive'><table>...</table></div>"
-            }]
-        }, {
-            "title": "ইমেজ ক্লাস",
-            "items": [{
-                "definition": "রাউন্ড কর্নার",
-                "code": "<img class='rounded'>"
-            }, {
-                "definition": "বৃত্ত আকার",
-                "code": "<img class='rounded-circle'>"
-            }, {
-                "definition": "লেফট অ্যালাইন",
-                "code": "<img class='float-left'>"
-            }, {
-                "definition": "রাইট অ্যালাইন",
-                "code": "<img class='float-right'>"
-            }, {
-                "definition": "সেন্টার অ্যালাইন",
-                "code": "<img class='d-block mx-auto'>"
-            }, {
-                "definition": "রিস্পন্সিভ ইমেজ",
-                "code": "<img class='img-fluid'>"
-            }]
-        }
+    "id":"bootstrap4",
+    "title":"বুটস্ট্রাপ ৪",
+    "slug":"bootstrap4",
+    "description":"টুইটার বুটস্ট্রাপ হলো একটা এইচ টি এম এল,সি এস এস,জাভাস্ক্রিপ্ট ফ্রেমওয়ার্ক যার সর্বশেষ সংস্করণ হলো বুটস্ট্রাপ ৪ , মূলত দ্রুত ওয়েব পেজ ও ওয়েব অ্যাপ্লিকেশন তৈরী করার জন্যে এটা ব্যাপকভাবে ব্যাবহৃত ।",
+    "colorPref":"#563D7C",
+    "contents":[
+       {
+          "title":"কন্টেনার ক্লাস",
+          "items":[
+             {
+                "definition":"রেস্পন্সিভ ফিক্স উইড",
+                "code":"<div class='container'>...</div>"
+             },
+             {
+                "definition":"ফুল উইড",
+                "code":"<div class='container-fluid'>...</div>"
+             }
+          ]
+       },
+       {
+          "title":"গ্রিড ক্লাস",
+          "items":[
+             {
+                "definition":"স্ক্রীন প্রস্থ যখন ৫৭৬পিক্সেল এর ছোট",
+                "code":"<div class='col-'>...</div>"
+             },
+             {
+                "definition":"স্ক্রীন প্রস্থ যখন ৫৭৬পিক্সেল এর সমান বা বড়",
+                "code":"<div class='col-sm'>...</div>"
+             },
+             {
+                "definition":"স্ক্রীন প্রস্থ যখন ৭৬৮পিক্সেল এর সমান বা বড়",
+                "code":"<div class='col-md'>...</div>"
+             },
+             {
+                "definition":"স্ক্রীন প্রস্থ যখন ৯৯২পিক্সেল এর সমান বা বড়",
+                "code":"<div class='col-lg'>...</div>"
+             },
+             {
+                "definition":"স্ক্রীন প্রস্থ যখন ১২০০পিক্সেল এর সমান বা বড়",
+                "code":"<div class='col-xl'>...</div>"
+             }
+          ]
+       },
+       {
+          "title":"ভার্টিকাল আলাইনমেন্ট",
+          "items":[
+             {
+                "definition":"সব কলাম উপরে দেখানো",
+                "code":"<div class='row align-items-start'><div class='col'>...</div><div class='col'>...</div></div>"
+             },
+             {
+                "definition":"সব কলাম মাঝে দেখানো",
+                "code":"<div class='row align-items-center'><div class='col'>...</div><div class='col'>...</div></div>"
+             },
+             {
+                "definition":"সব কলাম নিচে দেখানো",
+                "code":"<div class='row align-items-end'><div class='col'>...</div><div class='col'>...</div></div>"
+             },
+             {
+                "definition":"একটি কলাম উপরে দেখানো",
+                "code":"<div class='row'><div class='col align-self-start'>...</div></div>"
+             },
+             {
+                "definition":"একটি কলাম মাঝে দেখানো",
+                "code":"<div class='row'><div class='col align-self-center'>...</div></div>"
+             },
+             {
+                "definition":"একটি কলাম নিছে দেখানো",
+                "code":"<div class='row'><div class='col align-self-end'>...</div></div>"
+             }
+          ]
+       },
+       {
+          "title":"হরিজেন্টাল আলাইনমেন্ট",
+          "items":[
+             {
+                "definition":"সব কলাম বামে দেখানো",
+                "code":"<div class='row justify-content-start'><div class='col'>...</div><div class='col'>...</div></div>"
+             },
+             {
+                "definition":"সব কলাম ডানে দেখানো",
+                "code":"<div class='row justify-content-end'><div class='col'>...</div><div class='col'>...</div></div>"
+             },
+             {
+                "definition":"সব কলাম মাঝে দেখানো",
+                "code":"<div class='row justify-content-center'><div class='col'>...</div><div class='col'>...</div></div>"
+             },
+             {
+                "definition":"সব কলাম ডানে বামে সমান গ্যাপে দেখানো",
+                "code":"<div class='row'><div class='col justify-content-around'>...</div></div>"
+             }
+          ]
+       },
+       {
+          "title":"টাইপোগ্রাফি ক্লাস",
+          "items":[
+             {
+                "definition":"বোল্ড টেক্সট",
+                "code":"<p class='font-weight-bold'>...</p>"
+             },
+             {
+                "definition":"ইটালিক টেক্সট",
+                "code":"<p class='font-italic'>...</p>"
+             },
+             {
+                "definition":"লাইট উইড টেক্সট",
+                "code":"<p class='font-weight-light'>...</p>"
+             },
+             {
+                "definition":"লেফট অ্যালাইন",
+                "code":"<p class='text-left'>...</p>"
+             },
+             {
+                "definition":"রাইট অ্যালাইন",
+                "code":"<p class='text-right'>...</p>"
+             },
+             {
+                "definition":"জাস্টিফাই টেক্সট",
+                "code":"<p class='text-justify'>...</p>"
+             },
+             {
+                "definition":"আপারকেস টেক্সট",
+                "code":"<p class='text-uppercase'>...</p>"
+             },
+             {
+                "definition":"ক্যাপিটালাইস টেক্সট",
+                "code":"<p class='text-capitalize'>...</p>"
+             }
+          ]
+       },
+       {
+          "title": "ডিসপ্লে হেডিংস",
+          "items":[
+             {
+               "definition": "ডিসপ্লে ওয়ান",
+               "code": "<h1 class='display-1'>Display 1</h1>"
+             },
+             {
+               "definition": "ডিসপ্লে টু",
+               "code": "<h1 class='display-2'>Display 2</h1>"
+             },
+             {
+               "definition": "ডিসপ্লে থ্রি",
+               "code": "<h1 class='display-3'>Display 3</h1>"
+             },
+             {
+               "definition": "ডিসপ্লে ফোর",
+               "code": "<h1 class='display-4'>Display 4</h1>"
+             }
+         ]
+       },
+       {
+          "title":"টেবিল ক্লাস",
+          "items":[
+             {
+                "definition":"স্ট্রাইপ টেবিল",
+                "code":"<table class='table-striped'>...</table>"
+             },
+             {
+                "definition":"বর্ডার টেবিল",
+                "code":"<table class='table-bordered'>...</table>"
+             },
+             {
+                "definition":"বর্ডার ছাড়া টেবিল",
+                "code":"<table class='table-borderedless'>...</table>"
+             },
+             {
+                "definition":"মাউস হোভারে বিজি কালার পরিবর্তন টেবিল",
+                "code":"<table class='table-hover'>...</table>"
+             },
+             {
+                "definition":"ডার্ক কালার টেবিল",
+                "code":"<table class='table-dark'>...</table>"
+             },
+             {
+                "definition":"রেস্পন্সিভ টেবিল",
+                "code":"<div class='table-responsive'><table>...</table></div>"
+             }
+          ]
+       },
+       {
+          "title":"ইমেজ ক্লাস",
+          "items":[
+             {
+                "definition":"রাউন্ড কর্নার",
+                "code":"<img class='rounded'>"
+             },
+             {
+                "definition":"বৃত্ত আকার",
+                "code":"<img class='rounded-circle'>"
+             },
+             {
+                "definition":"লেফট অ্যালাইন",
+                "code":"<img class='float-left'>"
+             },
+             {
+                "definition":"রাইট অ্যালাইন",
+                "code":"<img class='float-right'>"
+             },
+             {
+                "definition":"সেন্টার অ্যালাইন",
+                "code":"<img class='d-block mx-auto'>"
+             },
+             {
+                "definition":"রিস্পন্সিভ ইমেজ",
+                "code":"<img class='img-fluid'>"
+             }
+          ]
+       },
+       {
+          "title":"ফ্লোট ( ভাসানো )",
+          "items":[
+             {
+                "definition":"বামে ভাসানো",
+                "code":"<div class='float-left'>...</div>"
+             },
+             {
+                "definition":"ডানে ভাসানো",
+                "code":"<div class='float-right'>...</div>"
+             },
+             {
+                "definition":"না ভাসানো",
+                "code":"<div class='float-none'>...</div>"
+             },
+             {
+                "definition":"স্ক্রীন প্রস্থ যখন ৫৭৬ পিক্সেল এর সমান বা বড়",
+                "code":"<div class='float-sm-left'>...</div>, <div class='float-sm-right'>...</div>"
+             },
+             {
+                "definition":"স্ক্রীন প্রস্থ যখন ৭৬৮ পিক্সেল এর সমান বা বড়",
+                "code":"<div class='float-md-left'>...</div>, <div class='float-md-right'>...</div>"
+             },
+             {
+                "definition":"স্ক্রীন প্রস্থ যখন ৯৯২ পিক্সেল এর সমান বা বড়",
+                "code":"<div class='float-lg-left'>...</div>, <div class='float-lg-right'>...</div>"
+             },
+             {
+                "definition":"স্ক্রীন প্রস্থ যখন ১২০০ পিক্সেল এর সমান বা বড়",
+                "code":"<div class='float-xl-left'>...</div>, <div class='float-xl-right'>...</div>"
+             }
+          ]
+       },
+       {
+          "title":"ক্লিয়ারফিক্স",
+          "items":[
+             {
+                "definition":"ক্লিয়ার ফ্লোটস",
+                "code":"<div class='clearfix'>...</div>"
+             }
+          ]
+       },
+       {
+          "title":"ডিসপ্লে প্রোপার্টি",
+          "items":[
+             {
+                "definition":"প্রদর্শন না করা",
+                "code": "<div class='d-none'> Display None </div>"
+             },
+             {
+                "definition":"ইনলাইন",
+                "code": "<div class='d-inline'> Display Inline </div>"
+             },
+             {
+                "definition":"ইনলাইন ব্লক",
+                "code": "<div class='d-inline-block'> Display Inline Block </div>"
+             },
+             {
+                "definition":"ব্লক",
+                "code": "<div class='d-block'> Display Block </div>"
+             },
+             {
+                "definition":"টেবিল",
+                "code": "<div class='d-table'> Display Table </div>"
+             },
+             {
+                "definition":"টেবিল সেল",
+                "code": "<div class='d-table-cell'> Display Table Cell </div>"
+             },
+             {
+                "definition":"টেবিল রো",
+                "code": "<div class='d-table-row'> Display Table Row </div>"
+             },
+             {
+                "definition":"ফ্লেক্স",
+                "code": "<div class='d-flex'> Display Flex </div>"
+             },
+             {
+                "definition":"ইনলাইন ফ্লেক্স",
+                "code": "<div class='d-inline-flex'> Display Inline Flex </div>"
+             }
+          ]
+       }
     ]
-}
+ }

@@ -1,7 +1,10 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+const ReactGA = require("react-ga")
 
-// You can delete this file if you're not using it
+exports.onClientEntry = () => {
+  ReactGA.initialize("UA-129387050-1")
+  ReactGA.pageview(window.location.pathname + window.location.search)
+}
+
+exports.onRouteUpdate = ({ location }) => {
+  ReactGA.pageview(location.pathname)
+}

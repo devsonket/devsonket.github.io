@@ -1,493 +1,500 @@
 {
-    "id": "shortcut-vscode-win",
-    "title": "ভিস্যুয়াল স্টুডিও কোড এডিটর(উইন্ডোজ)",
-    "slug": "shortcut-vscode-win",
-    "description": "ভিস্যুয়াল স্টুডিও কোড এডিটর এর প্রয়োজনী উইন্ডোজ শর্টকাট কী",
-    "colorPref": "#333",
-    "contents": [
-        {
-            "title": "সাধারণ",
-            "items": [
-                {
-                    "definition": "কমান্ড প্যালেট দেখানো/হাইড করা",
-                    "code": "Ctrl + Shift + P, F1"
-                },
-                {
-                    "definition": "টার্মিনাল দেখানো/হাইড করা",
-                    "code": "Ctrl + `"
-                },
-                {
-                    "definition": "কুইক ওপেন",
-                    "code": "Ctrl + P"
-                },
-                {
-                    "definition": "নতুন উইন্ডো ওপেন করা",
-                    "code": "Ctrl + Shift + N"
-                },
-                {
-                    "definition": "উইন্ডো ক্লোস করা",
-                    "code": "Ctrl + Shift + W"
-                },
-                {
-                    "definition": "ইউজার সেটিংসে যাওয়া",
-                    "code": "Ctrl + ,"
-                },
-                {
-                    "definition": "কীবোর্ড শর্টকার্ট দেখা",
-                    "code": "Ctrl + K Ctrl + S"
-                }
-            ]
-        },
-        {
-            "title": "খোঁজাখুঁজি এবং প্রতিস্থাপন",
-            "items": [
-                {
-                    "definition": "ফাইলের ভিতরে খোঁজা",
-                    "code": "Ctrl + F"
-                },
-                {
-                    "definition": "প্রতিস্থাপন করা",
-                    "code": "Ctrl + H"
-                },
-                {
-                    "definition": "পরবর্তী/পূর্ববর্তী খুঁজতে",
-                    "code": "F3 / Shift + F3"
-                },
-                {
-                    "definition": "সন্ধান করা ম্যাচের সব ঘটনার নির্বাচন করতে",
-                    "code": "Alt + Enter"
-                },
-                {
-                    "definition": "টগল কেস-সেনসিটিভ/রেজেক্স/সম্পূর্ণ শব্দ",
-                    "code": "Alt + C / R / W"
-                }
-            ]
-        },
-        {
-            "title": "ফাইল ম্যানেজমেন্ট",
-            "items": [
-                {
-                    "definition": "নতুন ফাইল",
-                    "code": "Ctrl + N"
-                },
-
-                {
-                    "definition": "ওপেন ফাইল",
-                    "code": "Ctrl + O"
-                },
-                {
-                    "definition": "সেভ করা",
-                    "code": "Ctrl + S, Ctrl + Shift + S"
-                },
-                {
-                    "definition": "সকল কিছু সেভ করা",
-                    "code": "Ctrl + K S"
-                },
-                {
-                    "definition": "বন্ধ করা",
-                    "code": "Ctrl + F4"
-                },
-                {
-                    "definition": "সকল কিছু বন্ধ করা",
-                    "code": "Ctrl + K Ctrl + W"
-                },
-                {
-                    "definition": "বন্ধ করা এডিটর ওপেন করা",
-                    "code": "Ctrl + Shift + T"
-                },
-                {
-                    "definition": "প্রিভিও মুড এডিটর ওপেন রাখা",
-                    "code": "Ctrl + K Enter"
-                },
-                {
-                    "definition": "এক্টিভ ফাইলের পাথ কপি করা",
-                    "code": "Ctrl + K P"
-                },
-                {
-                    "definition": "এক্সপ্লোরারে এক্টিভ ফাইল দেখানো",
-                    "code": "Ctrl + K R"
-                },
-                {
-                    "definition": "নতুন ওয়ার্কপ্লেস ওপেন করা",
-                    "code": "Ctrl + K O"
-                },
-                {
-                    "definition": "ডিবাগ করা",
-                    "code": "Ctrl + Shift + D"
-                },
-                {
-                    "definition": "নতুন এক্সশন এড করা এবং খুজা",
-                    "code": "Ctrl + Shift + X"
-                }
-            ]
-        },
-        {
-            "title": "বেসিক এডিটিং",
-            "items": [
-                {
-                    "definition": "লাইন কাট করতে",
-                    "code": "Ctrl + X"
-                },
-                {
-                    "definition": "লাইন কপি করতে",
-                    "code": "Ctrl + C"
-                },
-                {
-                    "definition": "লাইন আপ/ডাউন মুভ করতে",
-                    "code": "Alt + ↑ / ↓"
-                },
-                {
-                    "definition": "লাইন আপ/ডাউন কপি করতে",
-                    "code": "Shift + Alt + ↓ / ↑"
-                },
-                {
-                    "definition": "লাইন ডিলিট করতে",
-                    "code": "Ctrl + Shift + K"
-                },
-                {
-                    "definition": "লাইনের নিচে ইনসার্ট করতে",
-                    "code": "Ctrl + Enter"
-                },
-                {
-                    "definition": "লাইনের উপরে ইনসার্ট করতে",
-                    "code": "Ctrl + Shift + Enter"
-                },
-                {
-                    "definition": "ম্যাচিং ব্রাকেট এ জাম্প করতে",
-                    "code": "Ctrl + Shift + \\"
-                },
-                {
-                    "definition": "লাইন ইন্ডেন্ট/আউটডেন্ট করতে",
-                    "code": "Ctrl + ] / ["
-                },
-                {
-                    "definition": "লাইন এর শুরু/শেষে যেতে",
-                    "code": "Home / End"
-                },
-                {
-                    "definition": "ফাইল এর শুরুতে যেতে",
-                    "code": "Ctrl + Home"
-                },
-                {
-                    "definition": "ফাইল এর শেষে এ যেতে",
-                    "code": "Ctrl + End"
-                },
-                {
-                    "definition": "লাইন উপরে/নীচে স্ক্রোল করতে",
-                    "code": "Ctrl + ↑ / ↓"
-                },
-                {
-                    "definition": "পেইজ উপরে/নীচে স্ক্রোল করতে",
-                    "code": "Alt + PgUp / PgDn"
-                },
-                {
-                    "definition": "টগল ওয়ার্ড রাপ",
-                    "code": "Alt + Z"
-                }
-            ]
-        },
-        {
-            "title": "ডিসপ্লে",
-            "items": [
-                {
-                    "definition": "ফুল স্ক্রিন করতে",
-                    "code": "F11"
-                },
-                {
-                    "definition": "টগল এডিটর লেআায়উ (হরিজোনটাল/ভার্টিকাল)",
-                    "code": "Shift + Alt + 0"
-                },
-                {
-                    "definition": "জুম ইন/আউট করতে",
-                    "code": "Ctrl + = / -"
-                },
-                {
-                    "definition": "সাইডবার শো করতে",
-                    "code": "Ctrl + B"
-                },
-                {
-                    "definition": "এক্সপ্লোরার শো করতে",
-                    "code": "Ctrl + Shift + E"
-                },
-                {
-                    "definition": "শো সার্চ",
-                    "code": "Ctrl + Shift + F"
-                },
-                {
-                    "definition": "সোর্স কন্ট্রোল শো করতে",
-                    "code": "Ctrl + Shift + G"
-                },
-                {
-                    "definition": "ডিবাগ শো করতে",
-                    "code": "Ctrl + Shift + D"
-                },
-                {
-                    "definition": "এক্সটেনশনগুলি দেখাতে",
-                    "code": "Ctrl + Shift + X"
-                },
-                {
-                    "definition": "ফাইলের মধ্যে রিপ্লেস করতে",
-                    "code": "Ctrl + Shift + H"
-                },
-                {
-                    "definition": "সার্চ ডিটেলস দেখাতে",
-                    "code": "Ctrl + Shift + J"
-                },
-                {
-                    "definition": "আউটপুট প্যানেল দেখাতে",
-                    "code": "Ctrl + Shift + U"
-                },
-                {
-                    "definition": "মার্কডাউন প্রিভিউ ওপেন করতে",
-                    "code": "Ctrl + Shift + V"
-                },
-                {
-                    "definition": "মার্কডাউন প্রিভিউ সাইডে ওপেন করতে",
-                    "code": "Ctrl + K V"
-                }
-            ]
-        },
-        {
-            "title": "ন্যাভিগেশন",
-            "items": [
-                {
-                    "definition": "সব সিম্বলস শো করতে",
-                    "code": "Ctrl + T"
-                },
-                {
-                    "definition": "নির্দিষ্ট লাইন এ যেতে",
-                    "code": "Ctrl + G"
-                },
-                {
-                    "definition": "নির্দিষ্ট ফাইল এ যেতে",
-                    "code": "Ctrl + P"
-                },
-                {
-                    "definition": "নির্দিষ্ট সিম্বল এ যেতে",
-                    "code": "Ctrl + Shift + O"
-                },
-                {
-                    "definition": "প্রবলেম প্যানেল শো করতে",
-                    "code": "Ctrl + Shift + M"
-                },
-                {
-                    "definition": "নির্দিষ্ট পরবর্তী এরর অথবা ওয়ার্নিং এ যেতে",
-                    "code": "F8"
-                },
-                {
-                    "definition": "নির্দিষ্ট পূর্ববর্তী এরর অথবা ওয়ার্নিং এ যেতে",
-                    "code": "Shift + F8"
-                },
-                {
-                    "definition": "এডিটর গ্রুপ ইতিহাস নেভিগেট করতে",
-                    "code": "Ctrl + Shift + Tab"
-                },
-                {
-                    "definition": "ব্যাক/ফরওয়ার্ড যেতে",
-                    "code": "Alt + ← / →"
-                }
-            ]
-        },
-        {
-            "title": "মাল্টি কার্সার এবং সিলেকশন",
-            "items": [
-                {
-                    "definition": "ইনসার্ট কার্সার",
-                    "code": "Alt + Click"
-                },
-                {
-                    "definition": "ইনসার্ট কার্সার উপরে / নীচে",
-                    "code": "Ctrl + Alt + ↑ / ↓"
-                },
-                {
-                    "definition": "শেষ কার্সার অপারেশনটি পূর্বাবস্থায় আনতে",
-                    "code": "Ctrl + U"
-                },
-                {
-                    "definition": "সিলেক্টেড প্রতিটি লাইনের শেষে কার্সার ইনসার্ট করতে",
-                    "code": "Shift + Alt + I"
-                },
-                {
-                    "definition": "কারেন্ট লাইন সিলেক্ট করতে",
-                    "code": "Ctrl + L"
-                },
-                {
-                    "definition": "কারেন্ট সিলেকশন এর সব ঘটনার নির্বাচন করতে",
-                    "code": "Ctrl + Shift + L"
-                },
-                {
-                    "definition": "কারেন্ট ওয়ার্ড এর সব ঘটনার নির্বাচন করতে",
-                    "code": "Ctrl + F2"
-                },
-                {
-                    "definition": "সিলেকশন এক্সপ্যান্ড করতে",
-                    "code": "Shift + Alt + →"
-                },
-                {
-                    "definition": "সিলেকশন স্রিঙ্ক করতে",
-                    "code": "Shift + Alt + ←"
-                },
-                {
-                    "definition": "কলাম (বক্স) সিলেকশন",
-                    "code": "Shift + Alt + (drag mouse)"
-                },
-                {
-                    "definition": "কলাম (বক্স) সিলেকশন",
-                    "code": "Ctrl + Shift + Alt + (arrow key)"
-                },
-                {
-                    "definition": "কলাম (বক্স) সিলেকশন পেইজ উপরে/নিচে করতে",
-                    "code": "Ctrl + Shift + Alt + PgUp / PgDn"
-                }
-            ]
-        },
-        {
-            "title": "রিচ ল্যাঙ্গুয়েজ এডিটিং",
-            "items": [
-                {
-                    "definition": "ট্রিগার সাজেশন",
-                    "code": "Ctrl + Space"
-                },
-                {
-                    "definition": "ট্রিগার প্যারামিটার হিন্টস",
-                    "code": "Ctrl + Shift + Space"
-                },
-                {
-                    "definition": "ফরমেট ডকুমেন্ট",
-                    "code": "Shift + Alt + F"
-                },
-                {
-                    "definition": "ফরমেট সিলেকশন",
-                    "code": "Ctrl + K Ctrl + F"
-                },
-                {
-                    "definition": "ডেফিনেশন এ যেতে",
-                    "code": "F12"
-                },
-                {
-                    "definition": "ডেফিনেশন পীক করতে",
-                    "code": "Alt + F12"
-                },
-                {
-                    "definition": "ডেফিনেশন সাইডে ওপেন করতে",
-                    "code": "Ctrl + K F12"
-                },
-                {
-                    "definition": "দ্রুত ঠিক করতে",
-                    "code": "Ctrl + ."
-                },
-                {
-                    "definition": "রেফারেন্সেস শো করতে",
-                    "code": "Shift + F12"
-                },
-                {
-                    "definition": "সিম্বল রিনেম করতে",
-                    "code": "F2"
-                },
-                {
-                    "definition": "হোয়াইট স্পেস রিমুভ করতে",
-                    "code": "Ctrl + K Ctrl + X"
-                },
-                {
-                    "definition": "ফাইলের ভাষা পরিবর্তন করতে",
-                    "code": "Ctrl + K M"
-                }
-            ]
-        },
-        {
-            "title": "এডিটর ম্যানেজমেন্ট",
-            "items": [
-                {
-                    "definition": "এডিটর ক্লোজ করতে",
-                    "code": "Ctrl + F4, Ctrl + W"
-                },
-                {
-                    "definition": "ফোল্ডার ক্লোজ করতে",
-                    "code": "Ctrl + K F"
-                },
-                {
-                    "definition": "এডিটর স্প্লিট করতে",
-                    "code": "Ctrl + \\"
-                },
-                {
-                    "definition": "প্রথম, দ্বিতীয় বা তৃতীয় এডিটর গ্রপ এ ফোকাস করতে",
-                    "code": "Ctrl + 1 / 2 / 3"
-                },
-                {
-                    "definition": "পূর্ববর্তী/পরবর্তী এডিটর গ্রপ এ ফোকাস করতে",
-                    "code": "Ctrl + K Ctrl + ← / →"
-                },
-                {
-                    "definition": "এডিটরটি বাম/ডানদিকে মুভ করতে",
-                    "code": "Ctrl + Shift + PgUp / PgDn"
-                },
-                {
-                    "definition": "একটিভ সক্রিয় এডিটর গ্রপ মুভ করতে",
-                    "code": "Ctrl + K ← / →"
-                }
-            ]
-        },
-        {
-            "title": "ডিবাগ",
-            "items": [
-                {
-                    "definition": "ব্রেকপয়েন্টে টগল করতে",
-                    "code": "F9"
-                },
-                {
-                    "definition": "ডিবাগ স্টার্ট করতে",
-                    "code": "F5"
-                },
-                {
-                    "definition": "ডিবাগ বন্ধ করতে",
-                    "code": "Shift + F5"
-                },
-                {
-                    "definition": "স্টেপ ইনটু/আউট",
-                    "code": "F11 / Shift + F11"
-                },
-                {
-                    "definition": "স্টেপ ওভার",
-                    "code": "F10"
-                },
-                {
-                    "definition": "শো হোভার",
-                    "code": "Ctrl + K Ctrl + I"
-                }
-            ]
-        },
-        {
-            "title": "ইন্টিগ্রেটেড টার্মিনাল",
-            "items": [
-                {
-                    "definition": "ইন্টিগ্রেটেড টার্মিনাল শো করতে",
-                    "code": "Ctrl + `"
-                },
-                {
-                    "definition": "নতুন টার্মিনাল বানাতে",
-                    "code": "Ctrl + Shift + `"
-                },
-                {
-                    "definition": "কপি সিলেকশন",
-                    "code": "Ctrl + C"
-                },
-                {
-                    "definition": "একটিভ টার্মিনাল এ পেস্ট করতে",
-                    "code": "Ctrl + V"
-                },
-                {
-                    "definition": "উপরে/নিচে স্ক্রল করতে",
-                    "code": "Ctrl + ↑ / ↓"
-                },
-                {
-                    "definition": "পেইজ উপরে/নিচে স্ক্রল করতে",
-                    "code": "Shift + PgUp / PgDn"
-                },
-                {
-                    "definition": "টপ/বটম স্ক্রল করতে",
-                    "code": "Ctrl + Home / End"
-                }
-            ]
-        }
+    "id":"shortcut-vscode-win",
+    "title":"ভিস্যুয়াল স্টুডিও কোড এডিটর (উইন্ডোজ)",
+    "slug":"shortcut-vscode-win",
+    "description":"ভিস্যুয়াল স্টুডিও কোড এডিটর এর প্রয়োজনী উইন্ডোজ শর্টকাট কী",
+    "colorPref":"#333",
+    "contents":[
+       {
+          "title":"সাধারণ",
+          "items":[
+             {
+                "definition":"কমান্ড প্যালেট দেখানো/হাইড করা",
+                "code":"Ctrl + Shift + P, F1"
+             },
+             {
+                "definition":"টার্মিনাল দেখানো/হাইড করা",
+                "code":"Ctrl + `"
+             },
+             {
+                "definition":"কুইক ওপেন",
+                "code":"Ctrl + P"
+             },
+             {
+                "definition":"নতুন উইন্ডো ওপেন করা",
+                "code":"Ctrl + Shift + N"
+             },
+             {
+                "definition":"উইন্ডো ক্লোস করা",
+                "code":"Ctrl + Shift + W"
+             },
+             {
+                "definition":"ইউজার সেটিংসে যাওয়া",
+                "code":"Ctrl + ,"
+             },
+             {
+                "definition":"কীবোর্ড শর্টকার্ট দেখা",
+                "code":"Ctrl + K Ctrl + S"
+             },
+             {
+                 "definition": "সিঙ্গেল লাইন কমেন্ট / এইচটিএমএল কমেন্ট",
+                 "code": "Ctrl + /"
+             },
+             {
+                 "definition": "মাল্টি লাইন কমেন্ট",
+                 "code": "Shift + Alt + A"
+             }
+          ]
+       },
+       {
+          "title":"খোঁজাখুঁজি এবং প্রতিস্থাপন",
+          "items":[
+             {
+                "definition":"ফাইলের ভিতরে খোঁজা",
+                "code":"Ctrl + F"
+             },
+             {
+                "definition":"প্রতিস্থাপন করা",
+                "code":"Ctrl + H"
+             },
+             {
+                "definition":"পরবর্তী/পূর্ববর্তী খুঁজতে",
+                "code":"F3 / Shift + F3"
+             },
+             {
+                "definition":"সন্ধান করা ম্যাচের সব ঘটনার নির্বাচন করতে",
+                "code":"Alt + Enter"
+             },
+             {
+                "definition":"টগল কেস-সেনসিটিভ/রেজেক্স/সম্পূর্ণ শব্দ",
+                "code":"Alt + C / R / W"
+             }
+          ]
+       },
+       {
+          "title":"ফাইল ম্যানেজমেন্ট",
+          "items":[
+             {
+                "definition":"নতুন ফাইল",
+                "code":"Ctrl + N"
+             },
+             {
+                "definition":"ওপেন ফাইল",
+                "code":"Ctrl + O"
+             },
+             {
+                "definition":"সেভ করা",
+                "code":"Ctrl + S, Ctrl + Shift + S"
+             },
+             {
+                "definition":"সকল কিছু সেভ করা",
+                "code":"Ctrl + K S"
+             },
+             {
+                "definition":"বন্ধ করা",
+                "code":"Ctrl + F4"
+             },
+             {
+                "definition":"সকল কিছু বন্ধ করা",
+                "code":"Ctrl + K Ctrl + W"
+             },
+             {
+                "definition":"বন্ধ করা এডিটর ওপেন করা",
+                "code":"Ctrl + Shift + T"
+             },
+             {
+                "definition":"প্রিভিও মুড এডিটর ওপেন রাখা",
+                "code":"Ctrl + K Enter"
+             },
+             {
+                "definition":"এক্টিভ ফাইলের পাথ কপি করা",
+                "code":"Ctrl + K P"
+             },
+             {
+                "definition":"এক্সপ্লোরারে এক্টিভ ফাইল দেখানো",
+                "code":"Ctrl + K R"
+             },
+             {
+                "definition":"নতুন ওয়ার্কপ্লেস ওপেন করা",
+                "code":"Ctrl + K O"
+             },
+             {
+                "definition":"ডিবাগ করা",
+                "code":"Ctrl + Shift + D"
+             },
+             {
+                "definition":"নতুন এক্সশন এড করা এবং খুজা",
+                "code":"Ctrl + Shift + X"
+             }
+          ]
+       },
+       {
+          "title":"বেসিক এডিটিং",
+          "items":[
+             {
+                "definition":"লাইন কাট করতে",
+                "code":"Ctrl + X"
+             },
+             {
+                "definition":"লাইন কপি করতে",
+                "code":"Ctrl + C"
+             },
+             {
+                "definition":"লাইন আপ/ডাউন মুভ করতে",
+                "code":"Alt + ↑ / ↓"
+             },
+             {
+                "definition":"লাইন আপ/ডাউন কপি করতে",
+                "code":"Shift + Alt + ↓ / ↑"
+             },
+             {
+                "definition":"লাইন ডিলিট করতে",
+                "code":"Ctrl + Shift + K"
+             },
+             {
+                "definition":"লাইনের নিচে ইনসার্ট করতে",
+                "code":"Ctrl + Enter"
+             },
+             {
+                "definition":"লাইনের উপরে ইনসার্ট করতে",
+                "code":"Ctrl + Shift + Enter"
+             },
+             {
+                "definition":"ম্যাচিং ব্রাকেট এ জাম্প করতে",
+                "code":"Ctrl + Shift + \\"
+             },
+             {
+                "definition":"লাইন ইন্ডেন্ট/আউটডেন্ট করতে",
+                "code":"Ctrl + ] / ["
+             },
+             {
+                "definition":"লাইন এর শুরু/শেষে যেতে",
+                "code":"Home / End"
+             },
+             {
+                "definition":"ফাইল এর শুরুতে যেতে",
+                "code":"Ctrl + Home"
+             },
+             {
+                "definition":"ফাইল এর শেষে এ যেতে",
+                "code":"Ctrl + End"
+             },
+             {
+                "definition":"লাইন উপরে/নীচে স্ক্রোল করতে",
+                "code":"Ctrl + ↑ / ↓"
+             },
+             {
+                "definition":"পেইজ উপরে/নীচে স্ক্রোল করতে",
+                "code":"Alt + PgUp / PgDn"
+             },
+             {
+                "definition":"টগল ওয়ার্ড রাপ",
+                "code":"Alt + Z"
+             }
+          ]
+       },
+       {
+          "title":"ডিসপ্লে",
+          "items":[
+             {
+                "definition":"ফুল স্ক্রিন করতে",
+                "code":"F11"
+             },
+             {
+                "definition":"টগল এডিটর লেআায়উ (হরিজোনটাল/ভার্টিকাল)",
+                "code":"Shift + Alt + 0"
+             },
+             {
+                "definition":"জুম ইন/আউট করতে",
+                "code":"Ctrl + = / -"
+             },
+             {
+                "definition":"সাইডবার শো করতে",
+                "code":"Ctrl + B"
+             },
+             {
+                "definition":"এক্সপ্লোরার শো করতে",
+                "code":"Ctrl + Shift + E"
+             },
+             {
+                "definition":"শো সার্চ",
+                "code":"Ctrl + Shift + F"
+             },
+             {
+                "definition":"সোর্স কন্ট্রোল শো করতে",
+                "code":"Ctrl + Shift + G"
+             },
+             {
+                "definition":"ডিবাগ শো করতে",
+                "code":"Ctrl + Shift + D"
+             },
+             {
+                "definition":"এক্সটেনশনগুলি দেখাতে",
+                "code":"Ctrl + Shift + X"
+             },
+             {
+                "definition":"ফাইলের মধ্যে রিপ্লেস করতে",
+                "code":"Ctrl + Shift + H"
+             },
+             {
+                "definition":"সার্চ ডিটেলস দেখাতে",
+                "code":"Ctrl + Shift + J"
+             },
+             {
+                "definition":"আউটপুট প্যানেল দেখাতে",
+                "code":"Ctrl + Shift + U"
+             },
+             {
+                "definition":"মার্কডাউন প্রিভিউ ওপেন করতে",
+                "code":"Ctrl + Shift + V"
+             },
+             {
+                "definition":"মার্কডাউন প্রিভিউ সাইডে ওপেন করতে",
+                "code":"Ctrl + K V"
+             }
+          ]
+       },
+       {
+          "title":"ন্যাভিগেশন",
+          "items":[
+             {
+                "definition":"সব সিম্বলস শো করতে",
+                "code":"Ctrl + T"
+             },
+             {
+                "definition":"নির্দিষ্ট লাইন এ যেতে",
+                "code":"Ctrl + G"
+             },
+             {
+                "definition":"নির্দিষ্ট ফাইল এ যেতে",
+                "code":"Ctrl + P"
+             },
+             {
+                "definition":"নির্দিষ্ট সিম্বল এ যেতে",
+                "code":"Ctrl + Shift + O"
+             },
+             {
+                "definition":"প্রবলেম প্যানেল শো করতে",
+                "code":"Ctrl + Shift + M"
+             },
+             {
+                "definition":"নির্দিষ্ট পরবর্তী এরর অথবা ওয়ার্নিং এ যেতে",
+                "code":"F8"
+             },
+             {
+                "definition":"নির্দিষ্ট পূর্ববর্তী এরর অথবা ওয়ার্নিং এ যেতে",
+                "code":"Shift + F8"
+             },
+             {
+                "definition":"এডিটর গ্রুপ ইতিহাস নেভিগেট করতে",
+                "code":"Ctrl + Shift + Tab"
+             },
+             {
+                "definition":"ব্যাক/ফরওয়ার্ড যেতে",
+                "code":"Alt + ← / →"
+             }
+          ]
+       },
+       {
+          "title":"মাল্টি কার্সার এবং সিলেকশন",
+          "items":[
+             {
+                "definition":"ইনসার্ট কার্সার",
+                "code":"Alt + Click"
+             },
+             {
+                "definition":"ইনসার্ট কার্সার উপরে / নীচে",
+                "code":"Ctrl + Alt + ↑ / ↓"
+             },
+             {
+                "definition":"শেষ কার্সার অপারেশনটি পূর্বাবস্থায় আনতে",
+                "code":"Ctrl + U"
+             },
+             {
+                "definition":"সিলেক্টেড প্রতিটি লাইনের শেষে কার্সার ইনসার্ট করতে",
+                "code":"Shift + Alt + I"
+             },
+             {
+                "definition":"কারেন্ট লাইন সিলেক্ট করতে",
+                "code":"Ctrl + L"
+             },
+             {
+                "definition":"কারেন্ট সিলেকশন এর সব ঘটনার নির্বাচন করতে",
+                "code":"Ctrl + Shift + L"
+             },
+             {
+                "definition":"কারেন্ট ওয়ার্ড এর সব ঘটনার নির্বাচন করতে",
+                "code":"Ctrl + F2"
+             },
+             {
+                "definition":"সিলেকশন এক্সপ্যান্ড করতে",
+                "code":"Shift + Alt + →"
+             },
+             {
+                "definition":"সিলেকশন স্রিঙ্ক করতে",
+                "code":"Shift + Alt + ←"
+             },
+             {
+                "definition":"কলাম (বক্স) সিলেকশন",
+                "code":"Shift + Alt + (drag mouse)"
+             },
+             {
+                "definition":"কলাম (বক্স) সিলেকশন",
+                "code":"Ctrl + Shift + Alt + (arrow key)"
+             },
+             {
+                "definition":"কলাম (বক্স) সিলেকশন পেইজ উপরে/নিচে করতে",
+                "code":"Ctrl + Shift + Alt + PgUp / PgDn"
+             }
+          ]
+       },
+       {
+          "title":"রিচ ল্যাঙ্গুয়েজ এডিটিং",
+          "items":[
+             {
+                "definition":"ট্রিগার সাজেশন",
+                "code":"Ctrl + Space"
+             },
+             {
+                "definition":"ট্রিগার প্যারামিটার হিন্টস",
+                "code":"Ctrl + Shift + Space"
+             },
+             {
+                "definition":"ফরমেট ডকুমেন্ট",
+                "code":"Shift + Alt + F"
+             },
+             {
+                "definition":"ফরমেট সিলেকশন",
+                "code":"Ctrl + K Ctrl + F"
+             },
+             {
+                "definition":"ডেফিনেশন এ যেতে",
+                "code":"F12"
+             },
+             {
+                "definition":"ডেফিনেশন পীক করতে",
+                "code":"Alt + F12"
+             },
+             {
+                "definition":"ডেফিনেশন সাইডে ওপেন করতে",
+                "code":"Ctrl + K F12"
+             },
+             {
+                "definition":"দ্রুত ঠিক করতে",
+                "code":"Ctrl + ."
+             },
+             {
+                "definition":"রেফারেন্সেস শো করতে",
+                "code":"Shift + F12"
+             },
+             {
+                "definition":"সিম্বল রিনেম করতে",
+                "code":"F2"
+             },
+             {
+                "definition":"হোয়াইট স্পেস রিমুভ করতে",
+                "code":"Ctrl + K Ctrl + X"
+             },
+             {
+                "definition":"ফাইলের ভাষা পরিবর্তন করতে",
+                "code":"Ctrl + K M"
+             }
+          ]
+       },
+       {
+          "title":"এডিটর ম্যানেজমেন্ট",
+          "items":[
+             {
+                "definition":"এডিটর ক্লোজ করতে",
+                "code":"Ctrl + F4, Ctrl + W"
+             },
+             {
+                "definition":"ফোল্ডার ক্লোজ করতে",
+                "code":"Ctrl + K F"
+             },
+             {
+                "definition":"এডিটর স্প্লিট করতে",
+                "code":"Ctrl + \\"
+             },
+             {
+                "definition":"প্রথম, দ্বিতীয় বা তৃতীয় এডিটর গ্রপ এ ফোকাস করতে",
+                "code":"Ctrl + 1 / 2 / 3"
+             },
+             {
+                "definition":"পূর্ববর্তী/পরবর্তী এডিটর গ্রপ এ ফোকাস করতে",
+                "code":"Ctrl + K Ctrl + ← / →"
+             },
+             {
+                "definition":"এডিটরটি বাম/ডানদিকে মুভ করতে",
+                "code":"Ctrl + Shift + PgUp / PgDn"
+             },
+             {
+                "definition":"একটিভ সক্রিয় এডিটর গ্রপ মুভ করতে",
+                "code":"Ctrl + K ← / →"
+             }
+          ]
+       },
+       {
+          "title":"ডিবাগ",
+          "items":[
+             {
+                "definition":"ব্রেকপয়েন্টে টগল করতে",
+                "code":"F9"
+             },
+             {
+                "definition":"ডিবাগ স্টার্ট করতে",
+                "code":"F5"
+             },
+             {
+                "definition":"ডিবাগ বন্ধ করতে",
+                "code":"Shift + F5"
+             },
+             {
+                "definition":"স্টেপ ইনটু/আউট",
+                "code":"F11 / Shift + F11"
+             },
+             {
+                "definition":"স্টেপ ওভার",
+                "code":"F10"
+             },
+             {
+                "definition":"শো হোভার",
+                "code":"Ctrl + K Ctrl + I"
+             }
+          ]
+       },
+       {
+          "title":"ইন্টিগ্রেটেড টার্মিনাল",
+          "items":[
+             {
+                "definition":"ইন্টিগ্রেটেড টার্মিনাল শো করতে",
+                "code":"Ctrl + `"
+             },
+             {
+                "definition":"নতুন টার্মিনাল বানাতে",
+                "code":"Ctrl + Shift + `"
+             },
+             {
+                "definition":"কপি সিলেকশন",
+                "code":"Ctrl + C"
+             },
+             {
+                "definition":"একটিভ টার্মিনাল এ পেস্ট করতে",
+                "code":"Ctrl + V"
+             },
+             {
+                "definition":"উপরে/নিচে স্ক্রল করতে",
+                "code":"Ctrl + ↑ / ↓"
+             },
+             {
+                "definition":"পেইজ উপরে/নিচে স্ক্রল করতে",
+                "code":"Shift + PgUp / PgDn"
+             },
+             {
+                "definition":"টপ/বটম স্ক্রল করতে",
+                "code":"Ctrl + Home / End"
+             }
+          ]
+       }
     ]
-}
+ }

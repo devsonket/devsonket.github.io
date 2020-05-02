@@ -1,11 +1,7 @@
-import { sort } from "./sort"
+import { getData } from "./getData"
 
 export const organizedData = data => {
-  const rawData = data.map(edge => {
-    const raw = require(`../../data/${edge.node.name}.json`)
-    return raw
-  })
-  const sortedData = sort(rawData)
+  const sortedData = getData(data)
   const oData = {}
   sortedData.forEach(oneData => {
     if (oData[oneData.title[0]]) {
