@@ -35,6 +35,24 @@
         }, {
           "definition": "ঠিক এরকম শব্দগুচ্ছ মিললেই ফলাফল দেখানো",
           "code": "ঠিক '[এই শব্দগুচ্ছ]' চাই, যেমনঃ How to 'tie a tie'"
+        }, {
+          "definition": "এডাল্ট বিষয় বাদ দিয়ে ফলাফল দেখানো",
+          "code": "safesearch:[কাঙ্খিত-শব্দ], যেমনঃ safesearch:sex education"
+        }, {
+          "definition": "ওয়েবপেজ এর তথ্য জানতে",
+          "code": "info:[কাঙ্খিত-শব্দ], যেমনঃ info:facebook"
+        }, {
+          "definition": "একটি ওয়েবপেজ এর সংশ্লিষ্ট আরো ওয়েবপেজ পাওয়া",
+          "code": "related:[কাঙ্খিত-শব্দ], যেমনঃ related:facebook.com"
+        }, {
+          "definition": "URL এ এই শব্দ থাকলে ফলাফল দেখানো",
+          "code": "inurl:[কাঙ্খিত-শব্দ], যেমনঃ inurl:job"
+        }, {
+          "definition": "URL এ এই শব্দগুচ্ছ থাকলে ফলাফল দেখানো",
+          "code": "allinurl: [কাঙ্খিত-শব্দ], যেমনঃ allinurl:admin job"
+        }, {
+          "definition": "কোন একটি ওয়েবপেজ কে গুগল ক্যাশে দেখার জন্য",
+          "code": "cache:[ওয়েবপেজ], যেমনঃ cache:facebook.com"
         }
       ]
     }, {
