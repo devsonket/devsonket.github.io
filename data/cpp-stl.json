@@ -9,6 +9,10 @@
         "title": "ভেক্টর",
         "items": [
             {
+                "definition": "ভেক্টর-এর স্ট্যান্ডার্ড লাইব্রেরি",
+                "code": "#include <vector>"
+            },
+            {
                 "definition": "ভেক্টর-এ ভেরিয়েবল ডিক্লেয়ার করা",
                 "code": "vector <int> myVector"
             },
@@ -61,6 +65,10 @@
         "title": "স্ট্যাক",
         "items": [
             {
+                "definition": "স্ট্যাক-এর স্ট্যান্ডার্ড লাইব্রেরি",
+                "code": "#include <stack>"
+            },
+            {
                 "definition": "স্ট্যাকের ভেরিয়েবল ডিক্লেয়ার করা",
                 "code": "stack<int> stk"
             },
@@ -88,6 +96,10 @@
     }, {
         "title": "কিউ",
         "items": [
+            {
+                "definition": "কিউ-এর স্ট্যান্ডার্ড লাইব্রেরি",
+                "code": "#include <queue>"
+            },
             {
                 "definition": "কিউ-এর ভেরিয়েবল ডিক্লেয়ার করা(সাধারণ কিউ)",
                 "code": "queue<int> q"
