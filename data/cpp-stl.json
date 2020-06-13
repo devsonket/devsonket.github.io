@@ -121,6 +121,10 @@
                 "code": "q.push(value)"
             },
             {
+                "definition": "কিউ ভ্যালু রাখা ও গঠন করা",
+                "code": "q.emplace(value)"
+            },
+            {
                 "definition": "কিউ-এর সামনে থেকে ভ্যালু বের করা",
                 "code": "q.pop()"
             },
@@ -129,12 +133,20 @@
                 "code": "q.front()"
             },
             {
+                "definition": "কিউ-এর পিছনের ভ্যালু দেখা",
+                "code": "q.back()"
+            },
+            {
                 "definition": "কিউ খালি কি-না তা জানতে চাওয়া",
                 "code": "q.empty()"
             },
             {
                 "definition": "কিউ-এ মোট কতগুলো ভ্যালু আছে",
                 "code": "q.size()"
+            },
+            {
+                "definition": "দুইটি কিউ-এর মধ্যে ভ্যালু বিনিময় করা",
+                "code": "q1.swap(q2)"
             }
         ]
     }, {
