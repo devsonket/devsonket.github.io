@@ -173,6 +173,54 @@
                 "code": "mySet.erase(position-1, position-2)"
             }
         ]
+    }, {
+        "title": "মেপ",
+        "items": [
+            {
+                "definition": "মেপ-এর স্ট্যান্ডার্ড লাইব্রেরি",
+                "code": "#include <map>"
+            },
+            {
+                "definition": "মেপ-এ ভেরিয়েবল ডিক্লেয়ার করা",
+                "code": "map <int, int> myMap"
+            },
+            {
+                "definition": "মেপ-এ ভ্যালু রাখার উপায়-১",
+                "code": "myMap.insert({ 1, 40 });"
+            },
+            {
+                "definition": "মেপ-এ ভ্যালু রাখার উপায়-২",
+                "code": "myMap.insert(pair<int, int>(1, 40));"
+            },
+            {
+                "definition": "মেপ-এর সব ভ্যালু মুছে ফেলা",
+                "code": "myMap.clear()"
+            },
+            {
+                "definition": "মেপ-এ মোট কতগুলো ভ্যালু আছে দেখা",
+                "code": "myMap.size()"
+            },
+            {
+                "definition": "মেপ-এর প্রথম অবস্থানের ইটেরেটর",
+                "code": "myMap.begin()"
+            },
+            {
+                "definition": "মেপ-এর শেষ অবস্থানের ইটেরেটর",
+                "code": "myMap.end()"
+            },
+            {
+                "definition": "মেপ-এর ভ্যালু আছে কিনা দেখা",
+                "code": "myMap.empty()"
+            },
+            {
+                "definition": "মেপ-এর কোন ভ্যালু খুজে দেখা",
+                "code": "myMap.find(40)"
+            },
+            {
+                "definition": "মেপ-এর প্রথম ভ্যালু মুছে ফেলা",
+                "code": "myMap.erase(1)"
+            }
+        ]
     }
   ]
 }
