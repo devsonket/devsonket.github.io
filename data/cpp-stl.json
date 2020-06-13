@@ -45,12 +45,20 @@
                 "code": "myVector.back()"
             },
             {
-                "definition": "ভেক্টর-এর প্রথম অবস্থানের ইটেরেটর",
+                "definition": "ভেক্টর-এর প্রথম অবস্থানের ইটেরেটর উপায়-১",
                 "code": "myVector.begin()"
             },
             {
-                "definition": "ভেক্টর-এর শেষ অবস্থানের ইটেরেটর",
+                "definition": "ভেক্টর-এর প্রথম অবস্থানের ইটেরেটর উপায়-২",
+                "code": "myVector.rend()"
+            },
+            {
+                "definition": "ভেক্টর-এর শেষ অবস্থানের ইটেরেটর উপায়-১",
                 "code": "myVector.end()"
+            },
+            {
+                "definition": "ভেক্টর-এর শেষ অবস্থানের ইটেরেটর উপায়-২",
+                "code": "myVector.rbegin()"
             },
             {
                 "definition": "ভেক্টর-এর প্রথম ভ্যালু অপসারণ করা",
