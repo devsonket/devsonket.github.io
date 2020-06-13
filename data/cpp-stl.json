@@ -77,6 +77,10 @@
                 "code": "stk.push(value)"
             },
             {
+                "definition": "স্ট্যাকে ভ্যালু রাখা ও গঠন করা",
+                "code": "stk.emplace(value)"
+            },
+            {
                 "definition": "স্ট্যাক-এর উপরের ভ্যালু বের করা",
                 "code": "stk.pop()"
             },
@@ -91,6 +95,10 @@
             {
                 "definition": "স্ট্যাক-এ মোট কতগুলো ভ্যালু আছে",
                 "code": "stk.size()"
+            },
+            {
+                "definition": "দুইটি স্ট্যাক-এর মধ্যে ভ্যালু বিনিময় করা",
+                "code": "stk1.swap(stk2)"
             }
         ]
     }, {
