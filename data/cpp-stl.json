@@ -45,12 +45,20 @@
                 "code": "myVector.back()"
             },
             {
-                "definition": "ভেক্টর-এর প্রথম অবস্থানের ইটেরেটর",
+                "definition": "ভেক্টর-এর প্রথম অবস্থানের ইটেরেটর উপায়-১",
                 "code": "myVector.begin()"
             },
             {
-                "definition": "ভেক্টর-এর শেষ অবস্থানের ইটেরেটর",
+                "definition": "ভেক্টর-এর প্রথম অবস্থানের ইটেরেটর উপায়-২",
+                "code": "myVector.rend()"
+            },
+            {
+                "definition": "ভেক্টর-এর শেষ অবস্থানের ইটেরেটর উপায়-১",
                 "code": "myVector.end()"
+            },
+            {
+                "definition": "ভেক্টর-এর শেষ অবস্থানের ইটেরেটর উপায়-২",
+                "code": "myVector.rbegin()"
             },
             {
                 "definition": "ভেক্টর-এর প্রথম ভ্যালু অপসারণ করা",
@@ -77,6 +85,10 @@
                 "code": "stk.push(value)"
             },
             {
+                "definition": "স্ট্যাকে ভ্যালু রাখা ও গঠন করা",
+                "code": "stk.emplace(value)"
+            },
+            {
                 "definition": "স্ট্যাক-এর উপরের ভ্যালু বের করা",
                 "code": "stk.pop()"
             },
@@ -91,6 +103,10 @@
             {
                 "definition": "স্ট্যাক-এ মোট কতগুলো ভ্যালু আছে",
                 "code": "stk.size()"
+            },
+            {
+                "definition": "দুইটি স্ট্যাক-এর মধ্যে ভ্যালু বিনিময় করা",
+                "code": "stk1.swap(stk2)"
             }
         ]
     }, {
@@ -113,6 +129,10 @@
                 "code": "q.push(value)"
             },
             {
+                "definition": "কিউ ভ্যালু রাখা ও গঠন করা",
+                "code": "q.emplace(value)"
+            },
+            {
                 "definition": "কিউ-এর সামনে থেকে ভ্যালু বের করা",
                 "code": "q.pop()"
             },
@@ -121,12 +141,20 @@
                 "code": "q.front()"
             },
             {
+                "definition": "কিউ-এর পিছনের ভ্যালু দেখা",
+                "code": "q.back()"
+            },
+            {
                 "definition": "কিউ খালি কি-না তা জানতে চাওয়া",
                 "code": "q.empty()"
             },
             {
                 "definition": "কিউ-এ মোট কতগুলো ভ্যালু আছে",
                 "code": "q.size()"
+            },
+            {
+                "definition": "দুইটি কিউ-এর মধ্যে ভ্যালু বিনিময় করা",
+                "code": "q1.swap(q2)"
             }
         ]
     }, {
@@ -171,6 +199,54 @@
             {
                 "definition": "সেট-এর কোন ভ্যালু মুছে ফেলা",
                 "code": "mySet.erase(position-1, position-2)"
+            }
+        ]
+    }, {
+        "title": "মেপ",
+        "items": [
+            {
+                "definition": "মেপ-এর স্ট্যান্ডার্ড লাইব্রেরি",
+                "code": "#include <map>"
+            },
+            {
+                "definition": "মেপ-এ ভেরিয়েবল ডিক্লেয়ার করা",
+                "code": "map <int, int> myMap"
+            },
+            {
+                "definition": "মেপ-এ ভ্যালু রাখার উপায়-১",
+                "code": "myMap.insert({ 1, 40 });"
+            },
+            {
+                "definition": "মেপ-এ ভ্যালু রাখার উপায়-২",
+                "code": "myMap.insert(pair<int, int>(1, 40));"
+            },
+            {
+                "definition": "মেপ-এর সব ভ্যালু মুছে ফেলা",
+                "code": "myMap.clear()"
+            },
+            {
+                "definition": "মেপ-এ মোট কতগুলো ভ্যালু আছে দেখা",
+                "code": "myMap.size()"
+            },
+            {
+                "definition": "মেপ-এর প্রথম অবস্থানের ইটেরেটর",
+                "code": "myMap.begin()"
+            },
+            {
+                "definition": "মেপ-এর শেষ অবস্থানের ইটেরেটর",
+                "code": "myMap.end()"
+            },
+            {
+                "definition": "মেপ-এর ভ্যালু আছে কিনা দেখা",
+                "code": "myMap.empty()"
+            },
+            {
+                "definition": "মেপ-এর কোন ভ্যালু খুজে দেখা",
+                "code": "myMap.find(40)"
+            },
+            {
+                "definition": "মেপ-এর প্রথম ভ্যালু মুছে ফেলা",
+                "code": "myMap.erase(1)"
             }
         ]
     }
