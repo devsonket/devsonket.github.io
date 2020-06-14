@@ -78,6 +78,52 @@
                     "code": "&, |, ^, <<, >>"
                 }
             ]
+        },
+        {
+            "title": "স্ট্রিং",
+            "items": [
+                {
+                    "definition": "সিঙ্গেল কোটেশন",
+                    "code": "'Dart is cool'"
+                },
+                {
+                    "definition": "ডবল কোটেশন",
+                    "code": "\"Dart is cool\""
+                },
+                {
+                    "definition": "স্ট্রিং ইন্টারপোলেশন",
+                    "code": "Person name = ${expression}"
+                },
+                {
+                    "definition": "কনক্যাট",
+                    "code": "\"Welcome, \" + \"back\""
+                }
+            ]
+        },
+        {
+            "title": "টাইপ কনভার্শন",
+            "items": [
+                {
+                    "definition": "স্ট্রিং থেকে ইন্টিজার",
+                    "code": "int.parse('1')"
+                },
+                {
+                    "definition": "স্ট্রিং থেকে ডবল",
+                    "code": "double.parse('3.1415')"
+                },
+                {
+                    "definition": "ইন্টিজার থেকে স্ট্রিং",
+                    "code": "1.toString()"
+                },
+                {
+                    "definition": "ডবল থেকে দশমিকের পর নির্দিষ্ট ঘর পর্যন্ত স্ট্রিং",
+                    "code": "3.1415.toStringAsFixed(2)"
+                },
+                {
+                    "definition": "স্প্লিট করে স্ট্রিং থেকে লিস্ট",
+                    "code": "'Welcome back'.split(' ')  // ['Welcome', 'back']"
+                }
+            ]
         }
     ]
 }
