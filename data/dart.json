@@ -101,6 +101,51 @@
             ]
         },
         {
+            "title": "স্ট্রিং মেথড ও প্রপার্টিজ",
+            "items": [
+                {
+                    "definition": "তুলনা করা",
+                    "code": "'abc'.compareTo('def')"
+                },
+                {
+                    "definition": "একটি স্ট্রিং এর মধ্যে একটি অক্ষর খোঁজা",
+                    "code": "'John Doe Jahangir'.contains('Doe')"
+                },
+                {
+                    "definition": "একটি স্ট্রিং একটি নির্দিষ্ট অক্ষর দিয়ে শেষ হয় কিনা",
+                    "code": "'yoDevs'.endsWith('evs')"
+                },
+                {
+                    "definition": "একটি স্ট্রিং একটি নির্দিষ্ট অক্ষর দিয়ে শুরু হয় কিনা",
+                    "code": "'yoDevs'.startsWith('yo')"
+                },
+                {
+                    "definition": "একটি স্ট্রিং এর মধ্যে কোনো একটি বর্ণ/অক্ষর এর সর্বশেষ অবস্থান খোঁজা",
+                    "code": "'yoDevs'.lastIndexOf('D')"
+                },
+                {
+                    "definition": "সাব-স্ট্রিং",
+                    "code": "'my_name_is_khan'.substring(11,15)"
+                },
+                {
+                    "definition": "শুরু ও শেষে সব ফাঁকা স্পেস সরিয়ে দেয়া",
+                    "code": "'  cats are cute  '.trim()"
+                },
+                {
+                    "definition": "একটি বর্ণ/যতিচিহ্ন/অক্ষরকে স্ট্রিং এর সকল জায়গায় অন্য একটি বর্ণ/যতিচিহ্ন/অক্ষর দিয়ে প্রতিস্থাপন করা",
+                    "code": "'cats arE cutE'.replaceAll('E','e')"
+                },
+                {
+                    "definition": "স্ট্রিং এর দৈর্ঘ্য",
+                    "code": "'cat'.length"
+                },
+                {
+                    "definition": "একটি স্ট্রিং খালি কিনা",
+                    "code": "''.isEmpty"
+                }
+            ]
+        },
+        {
             "title": "টাইপ কনভার্শন",
             "items": [
                 {
