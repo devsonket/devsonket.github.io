@@ -169,6 +169,97 @@
                     "code": "'Welcome back'.split(' ')  // ['Welcome', 'back']"
                 }
             ]
+        },
+        {
+            "title": "কালেকশনঃ লিস্ট",
+            "items": [
+                {
+                    "definition": "স্প্রেড অপারেটর",
+                    "code": "['apple', 'orange', ...otherList]"
+                },
+                {
+                    "definition": "নাল স্প্রেড অপারেটর",
+                    "code": "['apple', 'orange', ...?otherList]"
+                },
+                {
+                    "definition": "ম্যাপ করে ট্রান্সফর্মেশন",
+                    "code": "[79,84,99].map((marks) => marks + 1).toList()  // [80, 85, 100]"
+                },
+                {
+                    "definition": "এলিমেন্ট ফিল্টার করা",
+                    "code": "[79,84,99].where((marks) => marks>80)  // (84, 99)"
+                },
+                {
+                    "definition": "রিডিউস করা",
+                    "code": "[80,80,80].reduce((v, e) => v + e)  // 240"
+                },
+                {
+                    "definition": "কালেক্ট থ্রু কন্ডিশান",
+                    "code": "var grade = [if(isPublished) 'A+', 'B+']"
+                },
+                {
+                    "definition": "কালেক্ট থ্রু ইটারেশন",
+                    "code": "[ 79, for (var i in [80, 81]) i , 82]"
+                }
+            ]
+        },
+        {
+            "title": "কালেকশনঃ সেট",
+            "items": [
+                {
+                    "definition": "নির্দিষ্ট টাইপের ফাঁকা সেট",
+                    "code": "<int>{}"
+                },
+                {
+                    "definition": "এডিশন/রিমুভ করা",
+                    "code": "add(10), remove(10)"
+                },
+                {
+                    "definition": "লিস্ট থেকে সেটে এলিমেন্ট এডিশন",
+                    "code": "addAll([1, 2, 3, 4])"
+                },
+                {
+                    "definition": "দুটি সেটের মধ্যে প্রতিচ্ছেদ করা",
+                    "code": "{1, 2, 3}.intersection({3, 4, 5})"
+                },
+                {
+                    "definition": "দুটি সেটের সাধারণ উপাদানগুলো একত্রিত করা",
+                    "code": "{1, 2, 3}.union({3, 4, 5})"
+                }
+            ]
+        },
+        {
+            "title": "কালেকশনঃ ম্যাপ",
+            "items": [
+                {
+                    "definition": "স্ট্রিং টু স্ট্রিং",
+                    "code": "var doraemon = {'type':'Robot', 'cameFrom':'22nd century', 'friend':'Nobita'};"
+                },
+                {
+                    "definition": "ম্যাপকে এক্সেস করা",
+                    "code": "doraemon['type']"
+                },
+                {
+                    "definition": "ম্যাপে একটি কী-(Key) এর অস্তিত্ব আছে কিনা",
+                    "code": "doraemon.containsKey('cameFrom')"
+                },
+                {
+                    "definition": "ম্যাপে একটি ভ্যালুর এর অস্তিত্ব আছে কিনা",
+                    "code": "doraemon.containsValue('Nobita')"
+                },
+                {
+                    "definition": "ম্যাপের সকল কী প্রিন্ট করা",
+                    "code": "doraemon.keys.forEach(print)"
+                },
+                {
+                    "definition": "ম্যাপের সকল ভ্যালু প্রিন্ট করা",
+                    "code": "doraemon.values.forEach(print);"
+                },
+                {
+                    "definition": "ম্যাপের কী এবং ভ্যালুগুলোর ওপর ইটারেশন",
+                    "code": "doraemon.forEach((k, v) => print('Key : $k, Value : $v'));"
+                }
+            ]
         }
     ]
 }
