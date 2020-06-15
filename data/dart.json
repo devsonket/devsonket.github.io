@@ -260,6 +260,31 @@
                     "code": "doraemon.forEach((k, v) => print('Key : $k, Value : $v'));"
                 }
             ]
+        },
+        {
+            "title": "অ্যাসিনক্রোনাস প্রোগ্রামিং",
+            "items": [
+                {
+                    "definition": "অপারেশন রিপ্রেজেন্টেশানঃ ফিউচার",
+                    "code": "Future<void> asyncTask() => Future.delayed(Duration(seconds: 2), () => print('It takes 2 seconds'));"
+                },
+                {
+                    "definition": "অ্যাসিনক্রোনাস ফাংশান ও রিটার্ন টাইপ",
+                    "code": "Future<String> getMessage() async { ··· }"
+                },
+                {
+                    "definition": "অ্যাসিনক্রোনাস ফাংশান কে কল করা",
+                    "code": "await getMessage()"
+                },
+                {
+                    "definition": "অ্যাসিনক্রোনাস ফাংশানঃ এরোর হ্যান্ডলিং-১",
+                    "code": "Future<String> login() async { try{...} catch(error){...} }"
+                },
+                {
+                    "definition": "অ্যাসিনক্রোনাস ফাংশানঃ এরোর হ্যান্ডলিং-২",
+                    "code": "Future<void> asyncTask() => Future.delayed(Duration(seconds: 2), () => throw '404 not found'));"
+                }
+            ]
         }
     ]
 }
