@@ -314,6 +314,35 @@
                     "code": "void go(int Function(int) move) { ... }"
                 }
             ]
+        },
+        {
+            "title": "কন্ট্রোল ফ্লো",
+            "items": [
+                {
+                    "definition": "হোয়াইল লুপ",
+                    "code": "while(condition) { ... }"
+                },
+                {
+                    "definition": "ডু হোয়াইল লুপ",
+                    "code": "do { ... } while(condition);"
+                },
+                {
+                    "definition": "কন্ডিশন-একশান ফর লুপ",
+                    "code": "for(condition) { ... }"
+                },
+                {
+                    "definition": "লিস্ট এক্সেসের জন্য ফর লুপ",
+                    "code": "for(var elements in list) { ... }"
+                },
+                {
+                    "definition": "ফর-ইচ লুপের সাথে আর্গুমেন্ট হিসেবে ফাংশান",
+                    "code": "[1, 2, 3, 4].forEach(print);"
+                },
+                {
+                    "definition": "সেটকে ফর-ইচ দিয়ে এক্সেস করা",
+                    "code": "Set.from([1, 2, 3]).forEach((element) => print(element)); "
+                }
+            ]
         }
     ]
 }
