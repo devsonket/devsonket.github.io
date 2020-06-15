@@ -285,6 +285,35 @@
                     "code": "Future<void> asyncTask() => Future.delayed(Duration(seconds: 2), () => throw '404 not found'));"
                 }
             ]
+        },
+        {
+            "title": "ফাংশান",
+            "items": [
+                {
+                    "definition": "অ্যারো দিয়ে এক-লাইনে ফাংশান",
+                    "code": "int square(int n) => n*n;"
+                },
+                {
+                    "definition": "পজিশনাল প্যারামিটার",
+                    "code": "bool isEven(int n) => n%2==0;"
+                },
+                {
+                    "definition": "ঐচ্ছিক নেইমড প্যারামিটার",
+                    "code": "String chat(int positional, {int named}){ ... }"
+                },
+                {
+                    "definition": "ঐচ্ছিক পজিশনাল প্যারামিটার",
+                    "code": "String chat(int mandatory, [int optional]){ ... }"
+                },
+                {
+                    "definition": "ডিফল্ট ভ্যালু",
+                    "code": "String calculate({int a = 1}){ ... }"
+                },
+                {
+                    "definition": "প্যারামিটার হিসেবে ফাংশান",
+                    "code": "void go(int Function(int) move) { ... }"
+                }
+            ]
         }
     ]
 }
