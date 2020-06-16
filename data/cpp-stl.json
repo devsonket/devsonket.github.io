@@ -67,6 +67,30 @@
             {
                 "definition": "ভেক্টর-এর দুই অবস্থানের মধ্যে ভ্যালু বিনিময় করা",
                 "code": "myVector.swap(myVector[index1], myVector[index2])"
+            },
+            {
+                "definition": "ভেক্টর-এর মধ্যে সর্বোচ্চ কত ভ্যালু রাখা যাবে তা চেক করা",
+                "code": "myVector.max_size()"
+            },
+            {
+                "definition": "ভেক্টর-এর বর্তমানে বরাদ্দ করা স্টোরেজ স্পেসের আকার চেক করা",
+                "code": "myVector.capacity()"
+            },
+            {
+                "definition": "ভেক্টর-এ পুনরায় আকার দেওয়া",
+                "code": "myVector.resize(newSize)"
+            },
+            {
+                "definition": "ভেক্টর-এর আকার কমিয়ে আনা",
+                "code": "myVector.shrink_to_fit()"
+            },
+            {
+                "definition": "ভেক্টর-এর প্রথম উপাদানটির পয়েন্টার চেক করা",
+                "code": "int* pos = myVector.data();"
+            },
+            {
+                "definition": "ভেক্টর-এর পুরাতন ভ্যালু গুলো নতুন দ্বারা প্রতিস্থাপন করা",
+                "code": "myVector.assign(size, newnumber)"
             }
         ]
     }, {
