@@ -305,6 +305,47 @@
                 "code": "myMap.upper_bound(searchValue)"
             }
         ]
+    }, 
+    {
+        "title": "আনঅর্ডার-মেপ",
+        "items": [
+            {
+                "definition": "আনঅর্ডার-মেপ-এর স্ট্যান্ডার্ড লাইব্রেরি",
+                "code": "#include <unordered_map>"
+            },
+            {
+                "definition": "আনঅর্ডার-মেপ-এ ভেরিয়েবল ডিক্লেয়ার করা",
+                "code": "unordered_map <int, int> myUnOrderMap"
+            },
+            {
+                "definition": "আনঅর্ডার-মেপ-এ ভ্যালু রাখার উপায়-১",
+                "code": "myUnOrderMap.insert({ 1, 40 });"
+            },
+            {
+                "definition": "আনঅর্ডার-মেপ-এ ভ্যালু রাখার উপায়-২",
+                "code": "myUnOrderMap.insert(pair<int, int>(1, 40));"
+            },
+            {
+                "definition": "আনঅর্ডার-মেপ-এর সব ভ্যালু মুছে ফেলা",
+                "code": "myUnOrderMap.clear()"
+            },
+            {
+                "definition": "আনঅর্ডার-মেপ-এ মোট কতগুলো ভ্যালু আছে দেখা",
+                "code": "myUnOrderMap.size()"
+            },
+            {
+                "definition": "আনঅর্ডার-মেপ-এর প্রথম অবস্থানের ইটেরেটর",
+                "code": "myUnOrderMap.begin()"
+            },
+            {
+                "definition": "আনঅর্ডার-মেপ-এর শেষ অবস্থানের ইটেরেটর",
+                "code": "myUnOrderMap.end()"
+            },
+            {
+                "definition": "আনঅর্ডার-মেপ-এর ভ্যালু আছে কিনা দেখা",
+                "code": "myMap.empty()"
+            }
+        ]
     }
   ]
 }
