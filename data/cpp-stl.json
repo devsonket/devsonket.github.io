@@ -460,6 +460,47 @@
                 "code": "myMultiSet.upper_bound(searchValue)"
             }
         ]
+    },
+    {
+        "title": "মাল্টি-মেপ",
+        "items": [
+            {
+                "definition": "মাল্টি-মেপ-এর স্ট্যান্ডার্ড লাইব্রেরি",
+                "code": "#include <map>"
+            },
+            {
+                "definition": "মাল্টি-মেপ-এ ভেরিয়েবল ডিক্লেয়ার করা",
+                "code": "multimap <int, int> myMultiMap"
+            },
+            {
+                "definition": "মাল্টি-মেপ-এ ভ্যালু রাখার উপায়-১",
+                "code": "myMultiMap.insert({ 1, 40 });"
+            },
+            {
+                "definition": "মাল্টি-মেপ-এ ভ্যালু রাখার উপায়-২",
+                "code": "myMultiMap.insert(pair<int, int>(1, 40));"
+            },
+            {
+                "definition": "মাল্টি-মেপ-এর সব ভ্যালু মুছে ফেলা",
+                "code": "myMultiMap.clear()"
+            },
+            {
+                "definition": "মাল্টি-মেপ-এ মোট কতগুলো ভ্যালু আছে দেখা",
+                "code": "myMultiMap.size()"
+            },
+            {
+                "definition": "মাল্টি-মেপ-এর প্রথম অবস্থানের ইটেরেটর",
+                "code": "myMultiMap.begin()"
+            },
+            {
+                "definition": "মাল্টি-মেপ-এর শেষ অবস্থানের ইটেরেটর",
+                "code": "myMultiMap.end()"
+            },
+            {
+                "definition": "মাল্টি-মেপ-এর ভ্যালু আছে কিনা দেখা",
+                "code": "myMultiMap.empty()"
+            }
+        ]
     }
   ]
 }
