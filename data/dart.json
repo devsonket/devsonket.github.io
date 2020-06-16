@@ -3,7 +3,7 @@
     "title": "ডার্ট প্রোগ্রামিং",
     "slug": "dart",
     "description": "ডার্ট হলো টেক-জায়ান্ট গুগলের তৈরি একটি ক্লায়েন্ট অপটিমাইজড প্রোগ্রামিং ল্যাংগুয়েজ। বর্তমানে বহুল জনপ্রিয় ওপেন সোর্স সফটওয়্যার ডেভেলপমেন্ট কিট 'ফ্লাটার' এর মূল ভিত্তি হলো ডার্ট প্রোগ্রামিং ল্যাংগুয়েজ। এই Cheat-Sheet এর মাধ্যমে ডার্ট এর দৈনন্দিন প্রয়োজনীয় টপিকগুলোকে হাইলাইট করা হয়েছে।",
-    "colorPref": "#294057",
+    "colorPref": "#0078D7",
     "contents": [
         {
             "title": "ভ্যারিয়েবল ও ডেটা টাইপ",
@@ -39,7 +39,7 @@
             ]
         },
         {
-            "title": "গাণিতিক অপারেশন",
+            "title": "অপারেটর",
             "items": [
                 {
                     "definition": "গতানুগতিক গাণিতিক অপারেটর",
@@ -96,7 +96,7 @@
                 },
                 {
                     "definition": "স্ট্রিং ইন্টারপোলেশন",
-                    "code": "Person name = ${expression}"
+                    "code": "print('Flutter docs: ${flutter_docs_url}');"
                 },
                 {
                     "definition": "কনক্যাট",
@@ -386,6 +386,43 @@
                 {
                     "definition": "সেটকে ফর-ইচ দিয়ে এক্সেস করা",
                     "code": "Set.from([1, 2, 3]).forEach((element) => print(element)); "
+                }
+            ]
+        },
+        {
+            "title": "তারিখ ও সময়",
+            "items": [
+                {
+                    "definition": "বর্তমান তারিখ ও সময়",
+                    "code": "DateTime.now()"
+                },
+                {
+                    "definition": "বর্তমান বছর, মাস, দিন",
+                    "code": "DateTime.now().year, DateTime.now().month, DateTime.now().day"
+                },
+                {
+                    "definition": "বর্তমান সময়ঃ ঘন্টা, মিনিট, সেকেন্ড",
+                    "code": "DateTime.now().hour, DateTime.now().minute, DateTime.now().second"
+                },
+                {
+                    "definition": "আজকের \"দিন ও সময়\" থেকে কয়েক \"দিন ও সময়\" পরে",
+                    "code": "DateTime.now().add(Duration(days: 3, hours: 9, minutes: 27))"
+                },
+                {
+                    "definition": "একটি তারিখ আরেকটি তারিখের পরে কিনা",
+                    "code": "DateTime.utc(2020, 12, 16).isAfter(DateTime.utc(2019, 03, 26))"
+                },
+                {
+                    "definition": "একটি তারিখের 'বার/দিন' চেক করা",
+                    "code": "DateTime.utc(2020, 03, 26).weekday == DateTime.sunday"
+                },
+                {
+                    "definition": "দিনের হিসেবে দুটি তারিখের পার্থক্য",
+                    "code": "DateTime.utc(2020, 12, 16).difference(DateTime.utc(2020, 03, 26)).inDays"
+                },
+                {
+                    "definition": "স্ট্রিং থেকে ডেট-টাইমে কনভার্ট করা",
+                    "code": "var parsedDate = DateTime.parse('1971-12-16 00:00:00.000');"
                 }
             ]
         }
