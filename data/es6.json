@@ -1,0 +1,78 @@
+{
+    "id": "es6",
+    "title": "ইএস৬ চিটশিট ",
+    "slug": "es6-cheat-sheet",
+    "description": "ইএস৬ হল ইকমা স্ক্রিপ্ট প্রোগ্রামিং ভাষার ৬ নম্বর সংস্করণ। ইএস৬ অথবা ইকমাস্ক্রিপ্ট হল স্ক্রিপ্টিং-ভাষা স্পেসিফিকেশন, ইকমা ইন্টারন্যাশনাল দ্বারা প্রমিত। এটি দিয়ে জাভাস্ক্রিপ্ট এর অনেক কাজ একসাথে অল্প কোড করে করা যায়।",
+    "colorPref": "#fcbc2c",
+    "contents": [
+      {
+        "title": "ভ্যারিয়েবল ডিক্লেয়ার করা",
+        "items": [
+          {
+            "definition": "let, এই ডিক্লেরেশন দিয়ে ব্লক স্কোপ তৈরি করা হয়",
+            "code": "let a = 5"
+          },
+          {
+            "definition": "const, কোন ভেরিয়েবলে ভ্যালু একবারই এসাইন করার জন্যে",
+            "code": "const pi = 3.1416"
+          }
+        ]
+      },
+      {
+        "title": "টেম্পলেট স্ট্রিং",
+        "items": [
+          {
+            "code": "const name = 'Devsonket';"
+          },
+          {
+            "code": "console.log(`Welcome to ${name}!`)"
+          },
+          {
+            "code": "// Welcome to Devsonket!"
+          }
+        ]
+      },
+      {
+        "title": "একের অধিক লাইন একসাথে প্রিন্ট করা স্পেশাল ক্যারেক্টার ব্যবহার না করে",
+        "items": [
+          {
+            "code": "console.log(`Hello Programmer."
+          },
+          {
+            "code": "Welcome to Devsonket.`);"
+          },
+          {
+            "code": "// Hello Programmer."
+          },
+          {
+            "code": "Welcome to Devsonket."
+          }
+        ]
+      },
+      {
+        "title": "ম্যাথড",
+        "items": [
+          {
+            "definition": "includes(), একটি স্ট্রিং এ নির্দিষ্ট কিছু অক্ষর আছে কিনা দেখে true অথবা false রিটার্ন করা",
+            "code": "'Apple'.includes('pl'), // true"
+          },
+          {
+            "definition": "startsWith(), কোন একটি স্ট্রিং নির্দিষ্ট কিছু অক্ষর দিয়ে শুরু হয়েছে কিনা দেখে true অথবা false রিটার্ন করা ",
+            "code": "'Apple'.startsWith('bl'), // false"
+          },
+          {
+            "definition": "repeat(), একটি স্ট্রিং কতবার পুনরাবৃত্তি হবে তা বলা ",
+            "code": "'Apple'.repeat(2) // 'AppleApple'"
+          },
+          {
+            "definition": "string.padStart(targetLength, padString), একটি স্ট্রিং এর শুরুতে নির্দিষ্ট আরেকটি স্ট্রিং বসানো যতক্ষণ না পর্যন্ত স্ট্রিং টির নির্দিষ্ট দৈর্ঘ্য শেষ হয়",
+            "code": "'hello'.padStart(8, '!') // '!!!hello'"
+          },
+          {
+            "definition": "string.padEnd(targetLength, padString), একটি স্ট্রিং এর শেষে নির্দিষ্ট আরেকটি স্ট্রিং বসানো যতক্ষণ না পর্যন্ত স্ট্রিং টির নির্দিষ্ট দৈর্ঘ্য শেষ হয়",
+            "code": "'hello'.padEnd(8, '!') // 'hello!!!'"
+          }
+        ]
+      }
+    ]
+  }
