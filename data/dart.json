@@ -425,6 +425,47 @@
                     "code": "var parsedDate = DateTime.parse('1971-12-16 00:00:00.000');"
                 }
             ]
+        },
+        {
+            "title": "অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং",
+            "items": [
+                {
+                    "definition": "ক্লাস",
+                    "code": "class BirthCertificate { ... }"
+                },
+                {
+                    "definition": "ক্লাস প্রপার্টিজ",
+                    "code": "class BirthCertificate { String name; int age; }"
+                },
+                {
+                    "definition": "শর্ট ফর্মের ডিফল্ট কন্স্ট্রাক্টর",
+                    "code": "BirthCertificate(this.name, this.age);"
+                },
+                {
+                    "definition": "নেইমড কন্স্ট্রাক্টর ও ডিফল্ট কন্স্ট্রাক্টরকে কল করা",
+                    "code": "BirthCertificate.newBornBaby(String onlyName) : this(onlyName, 0);"
+                },
+                {
+                    "definition": "গেটার",
+                    "code": "String get getInfo { ... }"
+                },
+                {
+                    "definition": "সেটার",
+                    "code": "set setInfo(String info) { ... }"
+                },
+                {
+                    "definition": "এবস্ট্রাক্ট ক্লাস",
+                    "code": "abstract class Person { ... }"
+                },
+                {
+                    "definition": "মিক্সিন ডেফিনিশান",
+                    "code": "mixin Engineer { ... }"
+                },
+                {
+                    "definition": "এবস্ট্রাক্ট ক্লাস ইনহেরিট করা ও মিক্সিনের ব্যাবহার",
+                    "code": "class Programmer extends Person with Engineer { ... }"
+                }
+            ]
         }
     ]
 }
