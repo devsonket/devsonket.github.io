@@ -50,7 +50,7 @@
         ]
       },
       {
-        "title": "ম্যাথড",
+        "title": "স্ট্রিং ম্যাথড",
         "items": [
           {
             "definition": "includes(), একটি স্ট্রিং এ নির্দিষ্ট কিছু অক্ষর আছে কিনা দেখে true অথবা false রিটার্ন করা",
@@ -81,10 +81,10 @@
             "code": "const sum = (a, b) => a + b"
           },
           {
-            "code": "console.log(sum(2, 6))"
+            "code": "console.log(sum(2, 8))"
           },
           {
-            "code": "// 8 প্রিন্ট করবে"
+            "code": "// 10 প্রিন্ট করবে"
           }
         ]
       },
@@ -239,7 +239,7 @@
             "code": "Number.MIN_SAFE_INTEGER"
           },
           {
-            "definition": "সবথেকে বড় নিরাপদ সংখ্যা  বের করা",
+            "definition": "সবথেকে বড় নিরাপদ সংখ্যা বের করা",
             "code": "Number.MAX_SAFE_INTEGER"
           },
           {
