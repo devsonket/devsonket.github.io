@@ -283,6 +283,26 @@
             {
                 "definition": "মেপ-এর প্রথম ভ্যালু মুছে ফেলা",
                 "code": "myMap.erase(1)"
+            },
+            {
+                "definition": "মেপ-এর মধ্যে সর্বোচ্চ কত ভ্যালু রাখা যাবে তা চেক করা",
+                "code": "myMap.max_size()"
+            },
+            {
+                "definition": "মেপ-এর প্রথম অবস্থানের ইটেরেটর উপায়-২",
+                "code": "myMap.rend()"
+            },
+            {
+                "definition": "মেপ-এর শেষ অবস্থানের ইটেরেটর উপায়-২",
+                "code": "myMap.rbegin()"
+            },
+            {
+                "definition": "মেপ-এর মধ্যে অনুসন্ধান করা ভ্যালুর সর্বোচ্চ নিম্নতম পয়েন্টার দেখা",
+                "code": "myMap.lower_bound(searchValue)"
+            },
+            {
+                "definition": "মেপ-এর মধ্যে অনুসন্ধান করা ভ্যালুর নিম্নতম সর্বোচ্চ পয়েন্টার দেখা",
+                "code": "myMap.upper_bound(searchValue)"
             }
         ]
     }
