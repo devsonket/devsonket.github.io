@@ -223,6 +223,18 @@
             {
                 "definition": "সেট-এর কোন ভ্যালু মুছে ফেলা",
                 "code": "mySet.erase(position-1, position-2)"
+            },
+            {
+                "definition": "সেট-এর মধ্যে সর্বোচ্চ কত ভ্যালু রাখা যাবে তা চেক করা",
+                "code": "mySet.max_size()"
+            },
+            {
+                "definition": "সেট-এর মধ্যে অনুসন্ধান করা ভ্যালুর সর্বোচ্চ নিম্নতম পয়েন্টার দেখা",
+                "code": "mySet.lower_bound(searchValue)"
+            },
+            {
+                "definition": "সেট-এর মধ্যে অনুসন্ধান করা ভ্যালুর নিম্নতম সর্বোচ্চ পয়েন্টার দেখা",
+                "code": "mySet.upper_bound(searchValue)"
             }
         ]
     }, {
