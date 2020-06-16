@@ -343,7 +343,64 @@
             },
             {
                 "definition": "আনঅর্ডার-মেপ-এর ভ্যালু আছে কিনা দেখা",
-                "code": "myMap.empty()"
+                "code": "myUnOrderMap.empty()"
+            }
+        ]
+    },
+    {
+        "title": "আনঅর্ডার-সেট",
+        "items": [
+            {
+                "definition": "আনঅর্ডার-সেট-এর স্ট্যান্ডার্ড লাইব্রেরি",
+                "code": "#include <set>"
+            },
+            {
+                "definition": "আনঅর্ডার-সেট-এ ভেরিয়েবল ডিক্লেয়ার করা",
+                "code": "unordered_set <int> myUnOrderSet"
+            },
+            {
+                "definition": "আনঅর্ডার-সেট-এ ভ্যালু রাখা",
+                "code": "myUnOrderSet.insert(40);"
+            },
+            {
+                "definition": "আনঅর্ডার-সেট-এর সব ভ্যালু মুছে ফেলা",
+                "code": "myUnOrderSet.clear()"
+            },
+            {
+                "definition": "আনঅর্ডার-সেট-এ মোট কতগুলো ভ্যালু আছে দেখা",
+                "code": "myUnOrderSet.size()"
+            },
+            {
+                "definition": "আনঅর্ডার-সেট-এর প্রথম অবস্থানের ইটেরেটর",
+                "code": "myUnOrderSet.begin()"
+            },
+            {
+                "definition": "আনঅর্ডার-সেট-এর শেষ অবস্থানের ইটেরেটর",
+                "code": "myUnOrderSet.end()"
+            },
+            {
+                "definition": "আনঅর্ডার-সেট-এর ভ্যালু আছে কিনা দেখা",
+                "code": "myUnOrderSet.empty()"
+            },
+            {
+                "definition": "আনঅর্ডার-সেট-এর কোন ভ্যালু খুজে দেখা",
+                "code": "myUnOrderSet.find(40)"
+            },
+            {
+                "definition": "আনঅর্ডার-সেট-এর কোন ভ্যালু মুছে ফেলা",
+                "code": "myUnOrderSet.erase(position-1, position-2)"
+            },
+            {
+                "definition": "আনঅর্ডার-সেট-এর মধ্যে সর্বোচ্চ কত ভ্যালু রাখা যাবে তা চেক করা",
+                "code": "myUnOrderSet.max_size()"
+            },
+            {
+                "definition": "আনঅর্ডার-সেট-এর মধ্যে অনুসন্ধান করা ভ্যালুর সর্বোচ্চ নিম্নতম পয়েন্টার দেখা",
+                "code": "myUnOrderSet.lower_bound(searchValue)"
+            },
+            {
+                "definition": "আনঅর্ডার-সেট-এর মধ্যে অনুসন্ধান করা ভ্যালুর নিম্নতম সর্বোচ্চ পয়েন্টার দেখা",
+                "code": "myUnOrderSet.upper_bound(searchValue)"
             }
         ]
     }
