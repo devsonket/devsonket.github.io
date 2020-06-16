@@ -403,6 +403,63 @@
                 "code": "myUnOrderSet.upper_bound(searchValue)"
             }
         ]
+    },
+    {
+        "title": "মাল্টি-সেট",
+        "items": [
+            {
+                "definition": "মাল্টি-সেট-এর স্ট্যান্ডার্ড লাইব্রেরি",
+                "code": "#include <set>"
+            },
+            {
+                "definition": "মাল্টি-সেট-এ ভেরিয়েবল ডিক্লেয়ার করা",
+                "code": "multiset <int> myMultiSet"
+            },
+            {
+                "definition": "মাল্টি-সেট-এ ভ্যালু রাখা",
+                "code": "myMultiSet.insert(40);"
+            },
+            {
+                "definition": "মাল্টি-সেট-এর সব ভ্যালু মুছে ফেলা",
+                "code": "myMultiSet.clear()"
+            },
+            {
+                "definition": "মাল্টি-সেট-এ মোট কতগুলো ভ্যালু আছে দেখা",
+                "code": "myMultiSet.size()"
+            },
+            {
+                "definition": "মাল্টি-সেট-এর প্রথম অবস্থানের ইটেরেটর",
+                "code": "myMultiSet.begin()"
+            },
+            {
+                "definition": "মাল্টি-সেট-এর শেষ অবস্থানের ইটেরেটর",
+                "code": "myMultiSet.end()"
+            },
+            {
+                "definition": "মাল্টি-সেট-এর ভ্যালু আছে কিনা দেখা",
+                "code": "myMultiSet.empty()"
+            },
+            {
+                "definition": "মাল্টি-সেট-এর কোন ভ্যালু খুজে দেখা",
+                "code": "myMultiSet.find(40)"
+            },
+            {
+                "definition": "মাল্টি-সেট-এর কোন ভ্যালু মুছে ফেলা",
+                "code": "myMultiSet.erase(position-1, position-2)"
+            },
+            {
+                "definition": "মাল্টি-সেট-এর মধ্যে সর্বোচ্চ কত ভ্যালু রাখা যাবে তা চেক করা",
+                "code": "myMultiSet.max_size()"
+            },
+            {
+                "definition": "মাল্টি-সেট-এর মধ্যে অনুসন্ধান করা ভ্যালুর সর্বোচ্চ নিম্নতম পয়েন্টার দেখা",
+                "code": "myMultiSet.lower_bound(searchValue)"
+            },
+            {
+                "definition": "মাল্টি-সেট-এর মধ্যে অনুসন্ধান করা ভ্যালুর নিম্নতম সর্বোচ্চ পয়েন্টার দেখা",
+                "code": "myMultiSet.upper_bound(searchValue)"
+            }
+        ]
     }
   ]
 }
