@@ -278,23 +278,77 @@
         "items": [
           {
             "definition": "আর্গুমেন্ট এর উপর নির্ভর করে একটি নতুন এরে তৈরি করা",
-            "code": "Array.of(), যেমন: Array.of(1,2,3) // [1,2,3]"
+            "code": "Array.of(); যেমন: Array.of(1,2,3) // [1,2,3]"
           },
           {
             "definition": "একটি এরের শুরু ইনডেক্স থেকে শেষ ইনডেক্স পর্যন্ত একটি স্থির ভ্যালু এসাইন করা",
-            "code": "Array.fill(), যেমন: [0,0,0,0].fill(5, 1, 3) //  [0, 5, 5, 0]"
+            "code": "Array.fill(); যেমন: [0,0,0,0].fill(5, 1, 3) //  [0, 5, 5, 0]"
           },
           {
-            "definition": "একটি এরের প্রথম উপাদানটির মান রিটার্ন করা  যেটা সরবরাহ করা ফাংশনটিকে সত্যায়িত করে ",
-            "code": "Array.find(), যেমন: [1, 2, 3].find(x => x == 3) // 3"
+            "definition": "একটি এরের প্রথম উপাদানটির মান রিটার্ন করা যেটা সরবরাহ করা ফাংশনটিকে সত্যায়িত করে",
+            "code": "Array.find(); যেমন: [1, 2, 3].find(x => x == 3) // 3"
           },
           {
-            "definition": "একটি এরের প্রথম উপাদানটির ইনডেক্স রিটার্ন করা  যেটা সরবরাহ করা ফাংশনটিকে সত্যায়িত করে",
-            "code": "Array.findIndex(), যেমন: [1, 2, 3].findIndex(x => x == 3) // 2"
+            "definition": "একটি এরের প্রথম উপাদানটির ইনডেক্স রিটার্ন করা যেটা সরবরাহ করা ফাংশনটিকে সত্যায়িত করে",
+            "code": "Array.findIndex(); যেমন: [1, 2, 3].findIndex(x => x == 3) // 2"
           },
           {
             "definition": "এরের কোনও অংশ কে একই এরের অন্য স্থানে অনুলিপি করে এরের দৈর্ঘ্য পরিবর্তন না করে রিটার্ন করা",
-            "code": "Array.copyWithin(), যেমন: [1, 2, 3, 4, 5].copyWithin(2, 0, 4) // [1, 2, 1, 2, 3]"
+            "code": "Array.copyWithin(); যেমন: [1, 2, 3, 4, 5].copyWithin(2, 0, 4) // [1, 2, 1, 2, 3]"
+          }
+        ]
+      },
+      {
+        "title": "ইএস৬ এক্সপোর্ট",
+        "items": [
+          {
+            "definition": "নামের মাধ্যমে এক্সপোর্ট করা",
+            "code": "export let name = 'Dev';"
+          },
+          {
+            "definition": "কয়েকটি অবজেক্ট কে একসাথে লিস্ট আকারে এক্সপোর্ট করা",
+            "code": "export { sumTwoNumber, multiplyTwoNumber };"
+          },
+          {
+            "definition": "একটি ফাংশন কে এক্সপোর্ট করা",
+            "code": "export function sumTwoNumber();"
+          },
+          {
+            "definition": "ডিফল্ট বাইন্ডিং এক্সপোর্ট করা",
+            "code": "export default api;"
+          }
+        ]
+      },
+      {
+        "title": "ইএস৬ ইম্পোর্ট",
+        "items": [
+          {
+            "definition": "একটি সম্পূর্ন ফাইল কে ইম্পোর্ট করা",
+            "code": "import 'devcode';"
+          },
+          {
+            "definition": "নাম ধরে ইম্পোর্ট করা",
+            "code": "import { sumTwoNumber, sumThreeNumber } from 'math/addition';"
+          },
+          {
+            "definition": "পুনঃনামকরণ করে কোন মডিউল ইম্পোর্ট করা",
+            "code": "import {sumTwoNumber as addTwo} from 'math/addition';"
+          },
+          {
+            "definition": "মডিউলের সবকিছু একসাথে ইম্পোর্ট করা",
+            "code": "import * as equation from 'math/addition';"
+          },
+          {
+            "definition": "কোন মডিউল থেকে ভ্যালুর লিস্ট ইম্পোর্ট করা",
+            "code": "import * as equation from 'math/addition'; const { sumTwoNumber, sumThreeNumber } = equation;"
+          },
+          {
+            "definition": "ডিফল্ট বাইন্ডিং ইম্পোর্ট করা",
+            "code": "import api from 'math/addition'"
+          },
+          {
+            "definition": "বর্ণনা",
+            "code": "কোড"
           }
         ]
       }
