@@ -2,7 +2,7 @@
     "id": "materializecss",
     "title": "ম্যাটেরিয়ালাইজ সিএসএস",
     "slug": "materializecss-cheat-sheet",
-    "description": "গুগলের ম্যাটেরিয়াল ডিজাইনের ভিত্তিতে ম্যাটেরিয়ালাইজ সিএসএস হল একটি প্রতিক্রিয়াশীল সিএসএস ফ্রেমওয়ার্ক। এটি মূলত ইউজার এক্সপেরিয়েন্স কে আরও প্রসারিত করে এবং একটি এলিমেন্ট দেখতে কেমন হবে এবং কিভাবে কাজ করবে সেটার উপর ফোকাস করে। দ্রুত এবং প্রতিক্রিয়াশীল ওয়েব পেজ তৈরি করার জন্য এটা ব্যবহার করা হয়ে থাকে",
+    "description": "টেক জায়ান্ট গুগলের ম্যাটেরিয়াল ডিজাইনের ভিত্তিতে ম্যাটেরিয়ালাইজ সিএসএস হল একটি রেস্পন্সিভ সিএসএস ফ্রেমওয়ার্ক। এটি মূলত ইউজার এক্সপেরিয়েন্স কে আরও প্রসারিত করে এবং একটি এলিমেন্ট দেখতে কেমন হবে এবং কিভাবে কাজ করবে সেটার উপর ফোকাস করে। দ্রুত এবং রেস্পন্সিভ ওয়েব পেজ তৈরি করার জন্য এটা ব্যবহার করা হয়ে থাকে",
     "colorPref": "#eb7077",
     "contents": [
       {
@@ -157,7 +157,7 @@
             "code": "<div class='video-container'><iframe></iframe></div>"
           },
           {
-            "definition": "রেস্পন্সিভ ভিডিও প্রদর্শন ",
+            "definition": "রেস্পন্সিভ ভিডিও প্রদর্শন",
             "code": "<div class='responsive-video'>...</div>"
           },
           {
@@ -171,6 +171,10 @@
           {
               "definition": "রূপান্তরিত কোন কিছু লুকানো",
               "code": "<a class='scale-transition scale-out'>...</a>"
+          },
+          {
+              "definition": "মাউস হোভারে কন্টেন্ট ভেসে ওঠা",
+              "code": "<div class='hoverable'>...</div>"
           }
         ]
       },
@@ -204,6 +208,68 @@
           {
             "definition": "ডিভাইসের স্ক্রিনের উপর নির্ভর করে প্যারাগ্রাফের লিখার সাইজ বড় ছোট করা",
             "code": "<p class='flow-text'>...</p>"
+          }
+        ]
+      },
+      {
+        "title": "টেবিল",
+        "items": [
+          {
+            "definition": "ডোরাকাটা টেবিল",
+            "code": "<table class='striped'>...</table>"
+          },
+          {
+            "definition": "মাউসের হোভারে টেবিল রো হাইলাইট করা",
+            "code": "<table class='highlight'>...</table>"
+          },
+          {
+            "definition": "টেবিল এর কন্টেন্ট মাঝে রাখা",
+            "code": "<table class='centered'>...</table>"
+          },
+          {
+            "definition": "মোবাইল ডিভাইস এর জন্য রেস্পন্সিভ টেবিল তৈরি",
+            "code": "<table class='responsive-table'>...</table>"
+          }
+        ]
+      },
+      {
+        "title": "বাটন",
+        "items": [
+          {
+            "definition": "সাধারণ বাটন",
+            "code": "<a class='btn'>Button</a>"
+          },
+          {
+            "definition": "ছোট বাটন",
+            "code": "<a class='btn-small'>Button</a>"
+          },
+          {
+            "definition": "বড় বাটন",
+            "code": "<a class='btn-large'>Button</a>"
+          },
+          {
+            "definition": "বাটনে ওয়েভ ইফেক্ট দেয়া",
+            "code": "<a class='waves-light btn'>Button</a>"
+          },
+          {
+            "definition": "বাটনে আইকন দেয়া",
+            "code": "<a class='waves-light btn'><i class='material-icons left'>cloud</i>Button</a>"
+          },
+          {
+            "definition": "ফ্ল্যাট বাটন",
+            "code": "<a class='btn-flat'>Button</a>"
+          },
+          {
+            "definition": "ভাসমান বাটন",
+            "code": "<a class='btn-floating'></a>"
+          },
+          {
+              "definition": "ভাসমান অ্যাকশন বাটন",
+              "code": "<div class='fixed-action-btn><a class='btn-floating'></a></div>"
+          },
+          {
+              "definition": "স্পন্দন বাটন",
+              "code": "<a class='btn-floating pulse'></a>"
           }
         ]
       }
