@@ -358,10 +358,6 @@
           {
             "definition": "ডিফল্ট বাইন্ডিং ইম্পোর্ট করা",
             "code": "import api from 'math/addition'"
-          },
-          {
-            "definition": "বর্ণনা",
-            "code": "কোড"
           }
         ]
       }
