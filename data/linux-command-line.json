@@ -113,6 +113,9 @@
           "definition": "কোন ফোল্ডার অথবা ডিরেক্টরিতে প্রবেশ করা",
           "code": "cd YourFileName"
         }, {
+          "definition": "কোন ফোল্ডার অথবা ডিরেক্টরি থেকে বের হওয়া",
+          "code": "cd .."
+        }, {
           "definition": "vim এডিটর দিয়ে ফাইল এডিট করা",
           "code": "vi YourFileName"
         }, {
