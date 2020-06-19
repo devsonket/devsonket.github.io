@@ -53,24 +53,37 @@
         "title": "স্ট্রিং ম্যাথড",
         "items": [
           {
-            "definition": "includes(), একটি স্ট্রিং এ নির্দিষ্ট কিছু অক্ষর আছে কিনা দেখে true অথবা false রিটার্ন করা",
-            "code": "'Apple'.includes('pl'), // true"
+            "definition": "একটি স্ট্রিং এ নির্দিষ্ট কিছু অক্ষর আছে কিনা দেখে true অথবা false রিটার্ন করা",
+            "code": "includes(), যেমন: 'Apple'.includes('pl'), // true"
           },
           {
-            "definition": "startsWith(), কোন একটি স্ট্রিং নির্দিষ্ট কিছু অক্ষর দিয়ে শুরু হয়েছে কিনা দেখে true অথবা false রিটার্ন করা ",
-            "code": "'Apple'.startsWith('bl'), // false"
+            "definition": "কোন একটি স্ট্রিং নির্দিষ্ট কিছু অক্ষর দিয়ে শুরু হয়েছে কিনা দেখে true অথবা false রিটার্ন করা ",
+            "code": "startsWith(), যেমন: 'Apple'.startsWith('bl'), // false"
           },
           {
             "definition": "repeat(), একটি স্ট্রিং কতবার পুনরাবৃত্তি হবে তা বলা",
-            "code": "'Apple'.repeat(2) // 'AppleApple'"
+            "code": "repeat(), যেমন: 'Apple'.repeat(2) // 'AppleApple'"
           },
           {
-            "definition": "string.padStart(targetLength, padString), একটি স্ট্রিং এর শুরুতে নির্দিষ্ট আরেকটি স্ট্রিং বসানো যতক্ষণ না পর্যন্ত স্ট্রিং টির নির্দিষ্ট দৈর্ঘ্য শেষ হয়",
-            "code": "'hello'.padStart(8, '!') // '!!!hello'"
+            "definition": "একটি স্ট্রিং এর শুরুতে নির্দিষ্ট আরেকটি স্ট্রিং বসানো যতক্ষণ না পর্যন্ত স্ট্রিং টির নির্দিষ্ট দৈর্ঘ্য শেষ হয়",
+            "code": "string.padStart(targetLength, padString), যেমন: 'hello'.padStart(8, '!') // '!!!hello'"
           },
           {
-            "definition": "string.padEnd(targetLength, padString), একটি স্ট্রিং এর শেষে নির্দিষ্ট আরেকটি স্ট্রিং বসানো যতক্ষণ না পর্যন্ত স্ট্রিং টির নির্দিষ্ট দৈর্ঘ্য শেষ হয়",
-            "code": "'hello'.padEnd(8, '!') // 'hello!!!'"
+            "definition": "একটি স্ট্রিং এর শেষে নির্দিষ্ট আরেকটি স্ট্রিং বসানো যতক্ষণ না পর্যন্ত স্ট্রিং টির নির্দিষ্ট দৈর্ঘ্য শেষ হয়",
+            "code": "string.padEnd(targetLength, padString), যেমন: 'hello'.padEnd(8, '!') // 'hello!!!'"
+          }
+        ]
+      },
+      {
+        "title": "লুপ",
+        "items": [
+          {
+            "definition": "ফর অব লুপ",
+            "code": "for(let i of list){ // লুপের মধ্যের কাজ }"
+          },
+          {
+            "definition": "ফর ইন লুপ",
+            "code": "for(let i in list){ // লুপের মধ্যের কাজ }"
           }
         ]
       },
@@ -211,6 +224,19 @@
         ]
       },
       {
+        "title": "প্যারামিটার্স",
+        "items": [
+          {
+            "definition": "রেস্ট প্যারামিটার্স",
+            "code": "function logArg(...args){ // ভ্যালু দিয়ে কিছু করা }"
+          },
+          {
+            "definition": "নামকরণ প্যারামিটার্স",
+            "code": "function initialize({a=10,b=20,c=50}){ // ভ্যালু দিয়ে কিছু করা }"
+          }
+        ]
+      },
+      {
         "title": "প্রমিজ",
         "items": [
           {
@@ -244,15 +270,94 @@
           },
           {
             "definition": "একটি সংখ্যা ইন্টিজার কিনা দেখে true অথবা false রিটার্ন করা",
-            "code": "Number.isInteger(ভ্যালু)"
+            "code": "isInteger(ভ্যালু)"
           },
           {
             "definition": "একটি সংখ্যা নিরাপদ ইন্টিজার কিনা দেখে true অথবা false রিটার্ন করা",
-            "code": "Number.isSafeInteger(ভ্যালু)"
+            "code": "isSafeInteger(ভ্যালু)"
           },
           {
             "definition": "একটি সংখ্যা অনন্ত ইন্টিজার সংখ্যা কিনা দেখে true অথবা false রিটার্ন করা",
             "code": "isFinite(ভ্যালু)"
+          },
+          {
+            "definition": "একটি মান NaN কিনা সেটি দেখা",
+            "code": "isNaN(ভ্যালু)"
+          }
+        ]
+      },
+      {
+        "title": "এরে প্রপার্টিস",
+        "items": [
+          {
+            "definition": "আর্গুমেন্ট এর উপর নির্ভর করে একটি নতুন এরে তৈরি করা",
+            "code": "Array.of(); যেমন: Array.of(1,2,3) // [1,2,3]"
+          },
+          {
+            "definition": "একটি এরের শুরু ইনডেক্স থেকে শেষ ইনডেক্স পর্যন্ত একটি স্থির ভ্যালু এসাইন করা",
+            "code": "Array.fill(); যেমন: [0,0,0,0].fill(5, 1, 3) //  [0, 5, 5, 0]"
+          },
+          {
+            "definition": "একটি এরের প্রথম উপাদানটির মান রিটার্ন করা যেটা সরবরাহ করা ফাংশনটিকে সত্যায়িত করে",
+            "code": "Array.find(); যেমন: [1, 2, 3].find(x => x == 3) // 3"
+          },
+          {
+            "definition": "একটি এরের প্রথম উপাদানটির ইনডেক্স রিটার্ন করা যেটা সরবরাহ করা ফাংশনটিকে সত্যায়িত করে",
+            "code": "Array.findIndex(); যেমন: [1, 2, 3].findIndex(x => x == 3) // 2"
+          },
+          {
+            "definition": "এরের কোনও অংশ কে একই এরের অন্য স্থানে অনুলিপি করে এরের দৈর্ঘ্য পরিবর্তন না করে রিটার্ন করা",
+            "code": "Array.copyWithin(); যেমন: [1, 2, 3, 4, 5].copyWithin(2, 0, 4) // [1, 2, 1, 2, 3]"
+          }
+        ]
+      },
+      {
+        "title": "ইএস৬ এক্সপোর্ট",
+        "items": [
+          {
+            "definition": "নামের মাধ্যমে এক্সপোর্ট করা",
+            "code": "export let name = 'Dev';"
+          },
+          {
+            "definition": "কয়েকটি অবজেক্ট কে একসাথে লিস্ট আকারে এক্সপোর্ট করা",
+            "code": "export { sumTwoNumber, multiplyTwoNumber };"
+          },
+          {
+            "definition": "একটি ফাংশন কে এক্সপোর্ট করা",
+            "code": "export function sumTwoNumber();"
+          },
+          {
+            "definition": "ডিফল্ট বাইন্ডিং এক্সপোর্ট করা",
+            "code": "export default api;"
+          }
+        ]
+      },
+      {
+        "title": "ইএস৬ ইম্পোর্ট",
+        "items": [
+          {
+            "definition": "একটি সম্পূর্ন ফাইল কে ইম্পোর্ট করা",
+            "code": "import 'devcode';"
+          },
+          {
+            "definition": "নাম ধরে ইম্পোর্ট করা",
+            "code": "import { sumTwoNumber, sumThreeNumber } from 'math/addition';"
+          },
+          {
+            "definition": "পুনঃনামকরণ করে কোন মডিউল ইম্পোর্ট করা",
+            "code": "import {sumTwoNumber as addTwo} from 'math/addition';"
+          },
+          {
+            "definition": "মডিউলের সবকিছু একসাথে ইম্পোর্ট করা",
+            "code": "import * as equation from 'math/addition';"
+          },
+          {
+            "definition": "কোন মডিউল থেকে ভ্যালুর লিস্ট ইম্পোর্ট করা",
+            "code": "import * as equation from 'math/addition'; const { sumTwoNumber, sumThreeNumber } = equation;"
+          },
+          {
+            "definition": "ডিফল্ট বাইন্ডিং ইম্পোর্ট করা",
+            "code": "import api from 'math/addition'"
           }
         ]
       }
