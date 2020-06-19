@@ -58,9 +58,15 @@
         {
           "definition": "নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা",
           "code": "mkdir NewDirectoryName"
-        }, {
-          "definition": "নতুন ফাইল তৈরি করা",
+        },{
+          "definition": "নতুন ফাইল তৈরি করা উপায় - ১",
           "code": "touch YourFileName"
+        }, {
+          "definition": "নতুন ফাইল তৈরি করা উপায় - ২",
+          "code": "> YourFileName"
+        }, {
+          "definition": "নতুন ফাইল তৈরি করা উপায় - ৩",
+          "code": "cat> YourFileName"
         }, {
           "definition": "ফাইল মুছে ফেলা",
           "code": "rm YourFileName" 
