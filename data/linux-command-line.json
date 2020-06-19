@@ -219,11 +219,20 @@
           "definition": "টপ প্রসেসগুলো দেখা এবং ম্যানেজ করা",
           "code": "top"
         }, {
+          "definition": "টপ প্রসেস দেখা",
+          "code": "top&"
+        }, {
+          "definition": "ফাইলের তথ্য দেখা",
+          "code": "locate YourFileName"
+        }, {
           "definition": "ভার্চুয়াল মেমোরি সম্পর্কিত তথ্য দেখা",
           "code": "vmstat"
         }, {
           "definition": "বর্তমান অ্যাক্টিভ প্রসেসগুলো দেখা",
           "code": "ps"
+        }, {
+          "definition": "বর্তমান অ্যাক্টিভ ও ঘুমন্ত প্রসেসগুলো দেখা",
+          "code": "ps -afx"
         }, {
           "definition": "নির্দিষ্ট প্রসেস আইডির (PID) কোন প্রসেস কিল করা",
           "code": "kill PID"
