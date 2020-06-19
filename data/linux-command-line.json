@@ -59,6 +59,9 @@
           "definition": "নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা",
           "code": "mkdir NewDirectoryName"
         },{
+          "definition": "নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা ও অনুমতি দেয়া",
+          "code": "mkdir -m777 NewDirectoryName"
+        }, {
           "definition": "নতুন ফাইল তৈরি করা উপায় - ১",
           "code": "touch YourFileName"
         }, {
@@ -70,6 +73,12 @@
         }, {
           "definition": "ফাইল মুছে ফেলা",
           "code": "rm YourFileName" 
+        },{
+          "definition": "ডিরেক্টরি মুছে ফেলা",
+          "code": "rmdir YourDirectoryName" 
+        },{
+          "definition": "ডিরেক্টরি মুছে ফেলা কমান্ডের সংস্করণ দেখা",
+          "code": "rmdir --version" 
         }, {
           "definition": "পুরো একটি ডিরেক্টরি মুছে ফেলা",
           "code": "rm -rf YourDirectoryName"
