@@ -128,8 +128,20 @@
           "definition": "ফাইল কপি করা",
           "code": "cp PathToSourceFile PathToWhereYouWantToMove"
         }, {
-          "definition": "ফাইলের কনটেন্ট দেখা",
+          "definition": "ফাইল স্থানান্তর করা",
+          "code": "mv PathToSourceFile PathToWhereYouWantToMove"
+        }, {
+          "definition": "ফাইলের নাম পরিবর্তন করা",
+          "code": "mv FileOldName FileNewName"
+        }, {
+          "definition": "ফাইলের কনটেন্ট দেখা উপায় - ১",
           "code": "cat YourFileName"
+        }, {
+          "definition": "ফাইলের কনটেন্ট দেখা উপায় - ২",
+          "code": "more YourFileName"
+        }, {
+          "definition": "ফাইলের কনটেন্ট দেখা উপায় - ৩",
+          "code": "less YourFileName"
         }, {
           "definition": "সিস্টেমে ওপেন থাকা ফাইলসমূহের লিস্ট দেখা",
           "code": "lsof"
