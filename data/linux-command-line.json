@@ -58,12 +58,27 @@
         {
           "definition": "নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা",
           "code": "mkdir NewDirectoryName"
+        },{
+          "definition": "নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা ও অনুমতি দেয়া",
+          "code": "mkdir -m777 NewDirectoryName"
         }, {
-          "definition": "নতুন ফাইল তৈরি করা",
+          "definition": "নতুন ফাইল তৈরি করা উপায় - ১",
           "code": "touch YourFileName"
+        }, {
+          "definition": "নতুন ফাইল তৈরি করা উপায় - ২",
+          "code": "> YourFileName"
+        }, {
+          "definition": "নতুন ফাইল তৈরি করা উপায় - ৩",
+          "code": "cat> YourFileName"
         }, {
           "definition": "ফাইল মুছে ফেলা",
           "code": "rm YourFileName" 
+        },{
+          "definition": "ডিরেক্টরি মুছে ফেলা",
+          "code": "rmdir YourDirectoryName" 
+        },{
+          "definition": "ডিরেক্টরি মুছে ফেলা কমান্ডের সংস্করণ দেখা",
+          "code": "rmdir --version" 
         }, {
           "definition": "পুরো একটি ডিরেক্টরি মুছে ফেলা",
           "code": "rm -rf YourDirectoryName"
@@ -83,6 +98,12 @@
 	  "definition": "ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনাসহ)",
           "code": "ls -l"
         }, {
+          "definition": "ডিরেক্টরি অথবা ফাইল দেখা উল্টো উপায়ে ",
+                "code": "ls -r"
+        }, {
+          "definition": "ডিরেক্টরি অথবা ফাইল দেখা বরাদ্দ কৃত জায়গাসহ",
+                "code": "ls -s"
+        }, {
           "definition": "ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনা এবং লুকানো ফাইল/ডিরেক্টরিসহ)",
           "code": "ls -al"          
         }, {
@@ -91,6 +112,9 @@
         }, {
           "definition": "কোন ফোল্ডার অথবা ডিরেক্টরিতে প্রবেশ করা",
           "code": "cd YourFileName"
+        }, {
+          "definition": "কোন ফোল্ডার অথবা ডিরেক্টরি থেকে বের হওয়া",
+          "code": "cd .."
         }, {
           "definition": "vim এডিটর দিয়ে ফাইল এডিট করা",
           "code": "vi YourFileName"
@@ -104,8 +128,20 @@
           "definition": "ফাইল কপি করা",
           "code": "cp PathToSourceFile PathToWhereYouWantToMove"
         }, {
-          "definition": "ফাইলের কনটেন্ট দেখা",
+          "definition": "ফাইল স্থানান্তর করা",
+          "code": "mv PathToSourceFile PathToWhereYouWantToMove"
+        }, {
+          "definition": "ফাইলের নাম পরিবর্তন করা",
+          "code": "mv FileOldName FileNewName"
+        }, {
+          "definition": "ফাইলের কনটেন্ট দেখা উপায় - ১",
           "code": "cat YourFileName"
+        }, {
+          "definition": "ফাইলের কনটেন্ট দেখা উপায় - ২",
+          "code": "more YourFileName"
+        }, {
+          "definition": "ফাইলের কনটেন্ট দেখা উপায় - ৩",
+          "code": "less YourFileName"
         }, {
           "definition": "সিস্টেমে ওপেন থাকা ফাইলসমূহের লিস্ট দেখা",
           "code": "lsof"
@@ -183,11 +219,20 @@
           "definition": "টপ প্রসেসগুলো দেখা এবং ম্যানেজ করা",
           "code": "top"
         }, {
+          "definition": "টপ প্রসেস দেখা",
+          "code": "top&"
+        }, {
+          "definition": "ফাইলের তথ্য দেখা",
+          "code": "locate YourFileName"
+        }, {
           "definition": "ভার্চুয়াল মেমোরি সম্পর্কিত তথ্য দেখা",
           "code": "vmstat"
         }, {
           "definition": "বর্তমান অ্যাক্টিভ প্রসেসগুলো দেখা",
           "code": "ps"
+        }, {
+          "definition": "বর্তমান অ্যাক্টিভ ও ঘুমন্ত প্রসেসগুলো দেখা",
+          "code": "ps -afx"
         }, {
           "definition": "নির্দিষ্ট প্রসেস আইডির (PID) কোন প্রসেস কিল করা",
           "code": "kill PID"
