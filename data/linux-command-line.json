@@ -73,18 +73,12 @@
         }, {
           "definition": "ফাইল মুছে ফেলা",
           "code": "rm YourFileName" 
-        },{
-          "definition": "ডিরেক্টরি মুছে ফেলা",
-          "code": "rmdir YourDirectoryName" 
-        },{
+        }, {
           "definition": "ডিরেক্টরি মুছে ফেলা কমান্ডের সংস্করণ দেখা",
           "code": "rmdir --version" 
         }, {
           "definition": "পুরো একটি ডিরেক্টরি মুছে ফেলা",
           "code": "rm -rf YourDirectoryName"
-        }, {
-          "definition": "ফাইল এক জায়গা থেকে অন্য জায়গায় মুভ করা",
-          "code": "mv PathToSourceFile PathToWhereYouWantToMove"
         }, {
 	  "definition": "কোনো ডিরেক্টরির অধীনস্থ নির্দিষ্ট ফরমেটের সব ফাইলকে অন্য ডিরেক্টরিতে মুভ করা",
           "code": "mv *.FileExtension PathToWhereYouWantToMove/"
@@ -127,10 +121,7 @@
         }, {
           "definition": "ফাইল কপি করা",
           "code": "cp PathToSourceFile PathToWhereYouWantToMove"
-        }, {
-          "definition": "ফাইল স্থানান্তর করা",
-          "code": "mv PathToSourceFile PathToWhereYouWantToMove"
-        }, {
+        },{
           "definition": "ফাইলের নাম পরিবর্তন করা",
           "code": "mv FileOldName FileNewName"
         }, {
@@ -139,9 +130,6 @@
         }, {
           "definition": "ফাইলের কনটেন্ট দেখা উপায় - ২",
           "code": "more YourFileName"
-        }, {
-          "definition": "ফাইলের কনটেন্ট দেখা উপায় - ৩",
-          "code": "less YourFileName"
         }, {
           "definition": "সিস্টেমে ওপেন থাকা ফাইলসমূহের লিস্ট দেখা",
           "code": "lsof"
