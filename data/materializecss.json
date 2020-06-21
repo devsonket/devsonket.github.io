@@ -270,6 +270,10 @@
           {
               "definition": "স্পন্দন বাটন",
               "code": "<a class='btn-floating pulse'></a>"
+          },
+          {
+            "definition": "ভাসমান অ্যাকশন বাটন",
+            "code": "<div class='fixed-action-btn'><a class='btn-floating'><i class='material-icons'>edit</i></a><ul><li></li><a class='btn-floating'><i class='material-icons'>people</i></a></ul></div>"
           }
         ]
       }
