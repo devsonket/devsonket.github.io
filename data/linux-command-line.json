@@ -50,6 +50,12 @@
         }, {
           "definition": "ইউজার ইক্টিবিটি লগ দেখা",
           "code": "sudo less /var/log/auth.log"
+        }, {
+          "definition": "পিসি বন্ধ করা",
+          "code": "sudo poweroff অথবা poweroff"
+        }, {
+          "definition": "কমান্ড লাইন থেকে পিসি বন্ধ করে আবার চালু করা",
+          "code": "sudo reboot অথবা reboot"
         }
       ]
     }, {
@@ -72,10 +78,10 @@
           "code": "cat> YourFileName"
         }, {
           "definition": "ফাইল মুছে ফেলা",
-          "code": "rm YourFileName" 
+          "code": "rm YourFileName"
         }, {
           "definition": "ডিরেক্টরি মুছে ফেলা কমান্ডের সংস্করণ দেখা",
-          "code": "rmdir --version" 
+          "code": "rmdir --version"
         }, {
           "definition": "পুরো একটি ডিরেক্টরি মুছে ফেলা",
           "code": "rm -rf YourDirectoryName"
@@ -99,7 +105,7 @@
                 "code": "ls -s"
         }, {
           "definition": "ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনা এবং লুকানো ফাইল/ডিরেক্টরিসহ)",
-          "code": "ls -al"          
+          "code": "ls -al"
         }, {
           "definition": "ডিরেক্টরি এবং ফাইলের মধ্যে থেকে শুধুমাত্র ডিরেক্টরিগুলো লিস্ট অাকারে দেখা",
 	  "code": "sudo ls -d */"
@@ -140,7 +146,7 @@
           "definition": "ফাইল ব্রাউজ করা",
           "code": "less YourFileName"
         }, {
-          "definition": "ফাইলের প্রথম ১০ লাইন দেখা", 
+          "definition": "ফাইলের প্রথম ১০ লাইন দেখা",
           "code": "head YourFileName"
         }, {
           "definition": "ফাইলের শেষ ১০ লাইন দেখা",
@@ -225,7 +231,7 @@
           "definition": "নির্দিষ্ট প্রসেস আইডির (PID) কোন প্রসেস কিল করা",
           "code": "kill PID"
         }, {
-          "definition":  "নির্দিষ্ট নামের কোন প্রসেস কিল করা", 
+          "definition":  "নির্দিষ্ট নামের কোন প্রসেস কিল করা",
           "code": "killall ProcessName"
         }, {
           "definition": "রানিং প্রসেসগুলো ট্রি ফরম্যাটে দেখা",
