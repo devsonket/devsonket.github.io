@@ -31,11 +31,23 @@
       ]
     },
     {
-      "title": "",
+      "title": "মঙ্গোস-এর মধ্যমে ডকুমেন্ট খোঁজা",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "definition": "যেকোনো একটা ডকুমেন্ট খোঁজা",
+          "code": "modelName.findOne()"
+        }, {
+          "definition": "সব ডকুমেন্ট খোঁজা",
+          "code": "modelName.find()"
+        }, {
+          "definition": "সব ডকুমেন্ট খোঁজা এবং সুন্দরভাবে ফরম্যাটে দেখানো",
+          "code": "modelName.findOne().prettyPrint()"
+        }, {
+          "definition": "শুধুমাত্র একটা অ্যাট্রিবিউট দেখানো(যেমনঃ শুধুমাত্র name দেখানো)",
+          "code": "modelName.find({}, {name:true, _id:false})"
+        }, {
+          "definition": "কোনো অ্যাট্রিবিউট ম্যাচ করে একটা ডকুমেন্ট খোঁজা",
+          "code": "modelName.findOne({'name':'Morol'})"
         }
       ]
     }
