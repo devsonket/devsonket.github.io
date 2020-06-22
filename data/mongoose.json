@@ -1,0 +1,26 @@
+{
+  "id": "mongoose",
+  "title": "মঙ্গোস চিটশিট",
+  "slug": "mongoose",
+  "description": "মঙ্গোস-এর প্রয়োজনীয় সব অপারেশন নিয়ে চিটশিট",
+  "colorPref": "#13aa52",
+  "contents": [
+    {
+      "title": "ইন্সটল ও কনফিগ",
+      "items": [
+        {
+          "definition": "মঙ্গোস-এর এনপিএম ইনস্টল করা",
+          "code": "npm install mongoose"
+        },
+        {
+          "definition": "মঙ্গোস অ্যাপ্লিকেশনে সংযুক্ত করা",
+          "code": "let mongoose = require('mongoose');"
+        },
+        {
+          "definition": "মঙ্গোস-এর মধ্যমে ডাটাবেসে সংযুক্ত করা",
+          "code": "mongoose.connect(connection-String, {useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false});"
+        }
+      ]
+    }
+  ]
+}
