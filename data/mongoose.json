@@ -19,6 +19,23 @@
         {
           "definition": "মঙ্গোস-এর মধ্যমে ডাটাবেসে সংযুক্ত করা",
           "code": "mongoose.connect(connection-String, {useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false});"
+        },
+        {
+          "definition": "মঙ্গোস-এর মধ্যমে স্কিমা তৈরী করা",
+          "code": "let schemaName = new mongoose.Schema({ name: String, age: Number});"
+        },
+        {
+          "definition": "মঙ্গোস-এর মধ্যমে কালেক্সন তৈরী করা",
+          "code": "mongoose.model(tableName, schemaName);"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
         }
       ]
     }
