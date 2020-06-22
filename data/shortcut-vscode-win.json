@@ -463,6 +463,51 @@
              }
           ]
        },
+        {
+          "title":"ভিস্যুয়াল স্টুডিও কোড এক্সটেনশন",
+          "items":[
+             {
+                "definition":"কোডের বানান শুদ্ধ করার জন্য",
+                "code":"Code Spell Checker"
+             },
+             {
+                "definition":"কোড রান করার জন্য",
+                "code":"Code Runner"
+             },
+             {
+                "definition":"যেকোনো ট্যাগ ক্লোজ করার জন্য",
+                "code":"Auto Close Tag"
+             },
+             {
+                "definition":"জাভাস্ক্রিপ্ট, জেএসএন, সিএসএস, স্যাস এবং এইচটিএমএল এর কোড সুন্দর করার জন্য",
+                "code":"Beautify"
+             },
+             {
+                "definition":"সহজেই প্রোজেক্ট ম্যানেজ করার জন্য",
+                "code":"Project Manager"
+             },
+             {
+                "definition":"প্রতিদিন কি পরিমান সময় ব্যয় করছেন কোডের পিছনে তা জানার জন্য",
+                "code":"Code Time"
+             },
+             {
+                "definition":"সহজে ডিবাগিং করার জন্য",
+                "code":"Debugger for Chrome"
+             },
+             {
+                "definition":"সহজে প্যাথ ম্যানেজ করার জন্য",
+                "code":"Path Intellisense"
+             },
+             {
+                "definition":"লাইভ সার্ভার ব্যবহারের জন্য",
+                "code":"Live Server"
+             },
+             {
+                "definition":"পূর্বে ভিস্যুয়াল স্টুডিও কোডের সকল সেটিংস সিঙ্ক হিসাবে রাখতে",
+                "code":"Settings Sync"
+             }
+          ]
+       },
        {
           "title":"ইন্টিগ্রেটেড টার্মিনাল",
           "items":[
