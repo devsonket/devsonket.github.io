@@ -129,6 +129,23 @@
           "code": "useLayoutEffect(() => {}, [dependencies])"
         }
       ]
+    },
+    {
+      "title": "রিঅ্যাক্ট রাউটার হুক্স",
+      "items": [
+        {
+          "definition": "ডাইন্যামিক্যালি নেভিগেশন বা রুট পরিবর্তন করতে চাইলে",
+          "code": "useHistory()"
+        },
+        {
+          "definition": "ডাইন্যামিক্যালি URL প্যারামিটার সেট করতে চাইলে",
+          "code": "useParams()"
+        },
+        {
+          "definition": "বর্তমান URL এর অবস্থান জানতে বা ব্যাবহার করতে হলে",
+          "code": "useParams()"
+        }
+      ]
     }
   ]
 }
