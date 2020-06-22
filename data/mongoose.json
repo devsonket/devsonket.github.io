@@ -50,6 +50,18 @@
           "code": "modelName.findOne({'name':'Morol'})"
         }
       ]
+    },
+    {
+      "title": "মঙ্গোস-এর মধ্যমে ডকুমেন্ট আপডেট করা",
+      "items": [
+        {
+          "definition": "পুরো ডকুমেন্ট রিপ্লেস করে ফেলা",
+          "code": "modelName.update({name : 'Morol'}, {name : 'Jinnatul'}) "
+        }, {
+          "definition": "ডকুমেন্ট এর কোনো অ্যাট্রিবিউট মডিফাই করা",
+          "code": "modelName.update({name : 'Morol'}, {$set : {age : 24}})"
+        }
+      ]
     }
   ]
 }
