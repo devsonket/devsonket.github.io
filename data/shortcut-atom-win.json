@@ -23,6 +23,43 @@
       ]
     },
     {
+      "title": "ফাইল ম্যানেজমেন্ট",
+      "items": [
+        {
+          "definition": "নতুন ফাইল চালু করতে",
+          "code": "Ctrl + N"
+        },
+        {
+          "definition": "ফাইল বন্ধ করতে",
+          "code": "Ctrl + W"
+        },
+        {
+          "definition": "নতুন উইন্ডো চালু করতে",
+          "code": "Ctrl + Shift + N"
+        },
+        {
+          "definition": "উইন্ডো বন্ধ করতে",
+          "code": "Ctrl + Shift + W"
+        },
+        {
+          "definition": "ফাইল সেইভ করতে",
+          "code": "Ctrl + S"
+        },
+        {
+          "definition": "ফাইল সেইভ এস করতে",
+          "code": "Ctrl + Shift + S"
+      },
+      {
+          "definition": "ফাইল চালু করতে",
+          "code": "Ctrl + O"
+        },
+        {
+          "definition": "ফোল্ডার চালু করতে",
+          "code": "Ctrl + Shift + O"
+        }
+      ]
+    },
+    {
       "title": "খোঁজাখুঁজি",
       "items": [
         {
