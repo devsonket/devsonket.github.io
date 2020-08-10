@@ -5,5 +5,6 @@ export const getData = data => {
     const raw = require(`../../data/${edge.node.name}.json`)
     return raw
   })
+
   return sort(rawData)
 }

@@ -10,5 +10,6 @@ export const organizedData = data => {
       oData[oneData.title[0]] = [oneData]
     }
   })
+
   return oData
 }
