@@ -88,6 +88,19 @@
         ]
       },
       {
+        "title": "এসভিজি / SVG",
+        "items": [
+          {
+            "definition": "ফিল",
+            "code": ".fill-current"
+          },
+          {
+            "definition": " স্ট্রোক ",
+            "code": ".stroke-current"
+          }
+        ]
+      },
+      {
         "title": "ফ্লেক্সবক্স",
         "items": [
           {
