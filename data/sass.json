@@ -110,14 +110,14 @@
       "title": "কন্ডিশনাল",
       "items": [
         {
-          "code": "$test: 3;"
+          "code": "$bg: pink;"
         },
         {
-          "code": "p { @if $test < 5 {color: blue;} }"
+          "code": "$bg-mobile: red;"
         },
         {
-          "code": "p { @if $test < 5 {color: blue; @if $test == 3 {text-color: white;}} }"
-        }
+          "code": "p { @if $bg == pink { color: blue; } @else if $bg-mobile == red { color: green; } @else { color: grey; }} } "
+        },
       ]
     },
     {
