@@ -260,23 +260,23 @@
         "items": [
           {
             "definition": "া (আ-কার)",
-            "code": ""
+            "code": "a"
           },
           {
             "definition": "ি (ই-কার)",
-            "code": ""
+            "code": "i"
           },
           {
             "definition": "ী (ঈ-কার)",
-            "code": ""
+            "code": "e"
           },
           {
             "definition": "ু (উ-কার) ",
-            "code": ""
+            "code": "u"
           },
           {
             "definition": "ূ (ঊ-কার)",
-            "code": ""
+            "code": "w"
           }
         ]
       },
@@ -285,23 +285,23 @@
         "items": [
           {
             "definition": "ৃ (ঋ-কার)",
-            "code": ""
+            "code": "<"
           },
           {
             "definition": "ে (এ-কার)",
-            "code": ""
+            "code": "["
           },
           {
             "definition": "ৈ (ঐ-কার) ",
-            "code": ""
+            "code": "{"
           },
           {
             "definition": "ো (ও-কার) ",
-            "code": ""
+            "code": "]"
           },
           {
             "definition": "ৌ (ঔ-কার) ",
-            "code": ""
+            "code": "}"
           }
         ]
       },
