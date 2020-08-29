@@ -1,367 +1,400 @@
 {
-  "id": "laravel-framework",
-  "title": "লারাভেল পিএইচপি ফ্রেমওয়ার্কিং",
-  "slug": "laravel-framework",
-  "description": "লারাভেল একটি ওপেন সোর্স পিএইচপি ফ্রেমওয়ার্ক। ২০১১ সালে টেইলর অটওয়েল প্রথম লারাভেল ডেভেলপ করেন। সাধারণ ব্লগ, কনটেন্ট ম্যানেজমেন্ট সিস্টেম, ইকমার্স সাইট, বড় ধরনের ওয়েব এপ্লিকেশন, কিংবা মোবাইল এপ্লিকেশনের জন্য JSON নির্ভর এপ্লিকেশন সহ সব কিছুই এখন লারাভেল ব্যবহার করে ডেভেলপ করা সম্ভব।",
-  "colorPref": "#3A241D",
-  "contents": [
-    {
-      "title": "আরটিসান কমান্ড",
-      "items": [
+    "id": "laravel-framework",
+    "title": "লারাভেল পিএইচপি ফ্রেমওয়ার্কিং",
+    "slug": "laravel-framework",
+    "description": "লারাভেল একটি ওপেন সোর্স পিএইচপি ফ্রেমওয়ার্ক। ২০১১ সালে টেইলর অটওয়েল প্রথম লারাভেল ডেভেলপ করেন। সাধারণ ব্লগ, কনটেন্ট ম্যানেজমেন্ট সিস্টেম, ইকমার্স সাইট, বড় ধরনের ওয়েব এপ্লিকেশন, কিংবা মোবাইল এপ্লিকেশনের জন্য JSON নির্ভর এপ্লিকেশন সহ সব কিছুই এখন লারাভেল ব্যবহার করে ডেভেলপ করা সম্ভব।",
+    "colorPref": "#3A241D",
+    "contents": [{
+            "title": "আরটিসান কমান্ড",
+            "items": [{
+                "definition": "প্রোজেক্ট স্টার্ট করার জন্য",
+                "code": "php artisan serve"
+            }, {
+                "definition": "রাউট কে ক্যাশে নেয়া",
+                "code": "php artisan route:cache"
+            }, {
+                "definition": "ক্যাশ থেকে রাউট মুছে ফেলা",
+                "code": "php artisan route:clear"
+            }, {
+                "definition": "লারাভেলের সকল আরটিসান কমান্ড লিস্ট",
+                "code": "php artisan list"
+            }, {
+                "definition": "কনফিগারেশন ক্যাশে নেয়া",
+                "code": "php artisan config:cache"
+            }, {
+                "definition": "ক্যাশ থেকে কনফিগারেশন মুছে ফেলা",
+                "code": "php artisan config:clear"
+            }, {
+                "definition": "প্রোজেক্ট টি মেইনটেইনেন্স মোডে নেয়ার জন্য",
+                "code": "php artisan down"
+            }, {
+                "definition": "প্রোজেক্ট টি লাইভে নিয়ে আসা",
+                "code": "php artisan up"
+            }, {
+                "definition": "মিডেল ওয়ার ক্রিয়েট করা",
+                "code": "php artisan make:middleware <middleware-name>"
+            }, {
+                "definition": "কনট্রোলার ক্রিয়েট করা",
+                "code": "php artisan make:controller <controller-name>"
+            }, {
+                "definition": "রিকোয়েস্ট ফরম ক্রিয়েট করা",
+                "code": "php artisan make:request <request-name>"
+            }, {
+                "definition": "একটি নির্ধারিত নেমস্পেস ক্রিয়েট করা",
+                "code": "php artisan app:name devsonket"
+            }, {
+                "definition": "লারাভেলে এইচটিএমএল প্যাকেজ যুক্ত করা",
+                "code": "php artisan composer require illuminate/html"
+            }, {
+                "definition": "লারাভেলে ইভেন্ট জেনারেট করা",
+                "code": "php artisan event:generate"
+            }, {
+                "definition": "সার্ভিস প্রভাইডার ক্রিয়েট করা",
+                "code": "php artisan make:provider <provider-name>"
+            }, {
+                "definition": "লারাভেলর ডিফল্ট অথ ব্যবহার করা",
+                "code": "php artisan make:auth"
+            }, {
+                "definition": "নিজস্ব কমান্ড লাইন তৈরি করা",
+                "code": "php artisan make:console <name-of-command>"
+            }, {
+                "definition": "কি জেনারেট",
+                "code": "php artisan key:generate"
+            }, {
+                "definition": "ক্যাশের সকল ডাটা মুছে ফেলা",
+                "code": "php artisan cache:clear"
+            }, {
+                "definition": "মাইগ্রেশন ক্রিয়েট করা",
+                "code": "php artisan make:migration create_devsonket_table --create=devsonket"
+            }, {
+                "definition": "ডাটাবেসে টেবিল মাইগ্রেট করা",
+                "code": "php artisan migrate"
+            }, {
+                "definition": "ডাটাবেসের পূর্বের অবস্থানে ফিরে যাওয়া অথবা রোল ব্যাক করা",
+                "code": "php artisan migrate:rollback"
+            }, {
+                "definition": "মাইগ্রেশন ব্যবহার করে সকল টেবিল মুছে ফেলা",
+                "code": "php artisan migrate:reset"
+            }, {
+                "definition": "ডাটাবেসের পূর্বের অবস্থানে ফিরে যাওয়া এবং মাইগ্রেট করা",
+                "code": "php artisan migrate:refresh"
+            }, {
+                "definition": "একবারে সকল টেবিল মুছে ফেলার পরে, নতুন করে টেবিল তৈরি করতে চাইলে",
+                "code": "php artisan migrate:fresh"
+            }, {
+                "definition": "ছিড ক্রিয়েট করা",
+                "code": "php artisan make:seeder create_devsonket_seed"
+            }, {
+                "definition": "সব ছিড ফাইল একেবারে জেনারেট করা",
+                "code": "php artisan db:seed"
+            }, {
+                "definition": "নির্দিষ্ট একটা ছিড ফাইল জেনারেট করা",
+                "code": "php artisan db:seed --class=create_devsonket_seed"
+            }, {
+                "definition": "নুতন ডাটাবেস মাইগ্রেট এর সাথে সিড ফাইল গুলা ও জেনারেট  করা",
+                "code": "php artisan migrate:fresh --seed"
+            }]
+        },
         {
-          "definition": "প্রোজেক্ট স্টার্ট করার জন্য",
-          "code": "php artisan serve"
-        }, {
-          "definition": "রাউট কে ক্যাশে নেয়া",
-          "code": "php artisan route:cache"
-        }, {
-          "definition": "ক্যাশ থেকে রাউট মুছে ফেলা",
-          "code": "php artisan route:clear"
-        }, {
-          "definition": "লারাভেলের সকল আরটিসান কমান্ড লিস্ট",
-          "code": "php artisan list"
-        }, {
-          "definition": "কনফিগারেশন ক্যাশে নেয়া",
-          "code": "php artisan config:cache"
-        }, {
-          "definition": "ক্যাশ থেকে কনফিগারেশন মুছে ফেলা",
-          "code": "php artisan config:clear"
-        }, {
-          "definition": "প্রোজেক্ট টি মেইনটেইনেন্স মোডে নেয়ার জন্য",
-          "code": "php artisan down"
-        }, {
-          "definition": "প্রোজেক্ট টি লাইভে নিয়ে আসা",
-          "code": "php artisan up"
-        }, {
-          "definition": "মিডেল ওয়ার ক্রিয়েট করা",
-          "code": "php artisan make:middleware <middleware-name>"
-        }, {
-          "definition": "কনট্রোলার ক্রিয়েট করা",
-          "code": "php artisan make:controller <controller-name>"
-        },{
-          "definition": "রিকোয়েস্ট ফরম ক্রিয়েট করা",
-          "code": "php artisan make:request <request-name>"
-        },{
-          "definition": "একটি নির্ধারিত নেমস্পেস ক্রিয়েট করা",
-          "code": "php artisan app:name devsonket"
-        }, {
-          "definition": "লারাভেলে এইচটিএমএল প্যাকেজ যুক্ত করা",
-          "code": "php artisan composer require illuminate/html"
-        }, {
-          "definition": "লারাভেলে ইভেন্ট জেনারেট করা",
-          "code": "php artisan event:generate"
-        }, {
-          "definition": "সার্ভিস প্রভাইডার ক্রিয়েট করা",
-          "code": "php artisan make:provider <provider-name>"
-        }, {
-          "definition": "লারাভেলর ডিফল্ট অথ ব্যবহার করা",
-          "code": "php artisan make:auth"
-        }, {
-          "definition": "নিজস্ব কমান্ড লাইন তৈরি করা",
-          "code": "php artisan make:console <name-of-command>"
-        }, {
-          "definition": "কি জেনারেট",
-          "code": "php artisan key:generate"
-        }, {
-          "definition": "ক্যাশের সকল ডাটা মুছে ফেলা",
-          "code": "php artisan cache:clear"
-        }, {
-          "definition": "মাইগ্রেশন ক্রিয়েট করা",
-          "code": "php artisan make:migration create_devsonket_table --create=devsonket"
-        }, {
-          "definition": "ডাটাবেসে টেবিল মাইগ্রেট করা",
-          "code": "php artisan migrate"
-        }, {
-          "definition": "ডাটাবেসের পূর্বের অবস্থানে ফিরে যাওয়া অথবা রোল ব্যাক করা",
-          "code": "php artisan migrate:rollback"
-        }, {
-          "definition": "মাইগ্রেশন ব্যবহার করে সকল টেবিল মুছে ফেলা",
-          "code": "php artisan migrate:reset"
-        }, {
-          "definition": "ডাটাবেসের পূর্বের অবস্থানে ফিরে যাওয়া এবং মাইগ্রেট করা",
-          "code": "php artisan migrate:refresh"
-        }, {
-          "definition": "একবারে সকল টেবিল মুছে ফেলার পরে, নতুন করে টেবিল তৈরি করতে চাইলে",
-          "code": "php artisan migrate:fresh"
-        }, {
-          "definition": "ছিড ক্রিয়েট করা",
-          "code": "php artisan make:seeder create_devsonket_seed"
-        }, {
-          "definition": "সব ছিড ফাইল একেবারে জেনারেট করা",
-          "code": "php artisan db:seed"
-        }, {
-          "definition": "নির্দিষ্ট একটা ছিড ফাইল জেনারেট করা",
-          "code": "php artisan db:seed --class=create_devsonket_seed"
-        }, {
-          "definition": "নুতন ডাটাবেস মাইগ্রেট এর সাথে সিড ফাইল গুলা ও জেনারেট  করা",
-          "code": "php artisan migrate:fresh --seed"
-        }
-      ]
-    },
-      {
-        "title": "ডাটাবেস কলাম মেথড",
-        "items": [
-          {
-            "definition": "অটো ইনক্রিমেন্টের জন্য",
-            "code": "$table->increments('id');"
-          }, {
-            "definition": "বড় ইনক্রিমেন্টের জন্য",
-            "code": "$table->bigIncrements('id');"
-          }, {
-            "definition": "বড় ইনটেজার টাইপের ডাটার জন্য",
-            "code": "$table->bigInteger('votes');"
-          }, {
-            "definition": "বুলিয়ান টাইপের ডাটার জন্য",
-            "code": "$table->boolean('confirmed');"
-          }, {
-            "definition": "ক্যারেক্টার টাইপের ডাটা এবং সাথে অপসোনাল দৈর্ঘ্য",
-            "code": "$table->char('name', 100);"
-          }, {
-            "definition": "তারিখ এর জন্য",
-            "code": "$table->date('created_at');"
-          }, {
-            "definition": "তারিখ এবং টাইমের জন্য",
-            "code": "$table->dateTime('created_at');"
-          }, {
-            "definition": "তারিখ,টাইম এবং সাথে টাইম জোনের জন্য",
-            "code": "$table->dateTimeTz('created_at');"
-          }, {
-            "definition": "ডেসিমেল সংখ্যার জন্য, সাথে টোটাল সংখ্যা,স্কেল ও ডেসিমেল ডিজিট",
-            "code": "$table->decimal('amount', 8, 2);"
-          }, {
-            "definition": "ডাবোল টাইপের ডাটার জন্য, সাথে টোটাল সংখ্যা,স্কেল ও ডেসিমেল ডিজিট",
-            "code": "$table->double('amount', 8, 2);"
-          }, {
-            "definition": "জ্যামিতির জন্য",
-            "code": "$table->geometry('positions');"
-          }, {
-            "definition": "ইনটেজার টাইপের ডাটার জন্য",
-            "code": "$table->integer('votes');"
-          }, {
-            "definition": "আইপি এড্রেস এর জন্য",
-            "code": "$table->ipAddress('visitor');"
-          }, {
-            "definition": "ম্যাক এড্রেস এর জন্য",
-            "code": "$table->macAddress('device');"
-          }, {
-            "definition": "জেসন ডাটা ফরমেটের জন্য",
-            "code": "$table->json('options');"
-          }, {
-            "definition": "লম্বা অথবা বড় কোন লেখার জন্য",
-            "code": "$table->longText('description');"
-          }, {
-            "definition": "মাঝারি পূর্ণ সংখ্যার জন্য",
-            "code": "$table->mediumInteger('votes');"
-          }
-        ]
-      },
-       {
-        "title": "ব্লেড টেমপ্লেট",
-        "items": [
-          {
-            "definition": "যেকোনো value প্রদর্শন করতে ব্যবহৃত হয়",
-            "code": "@yield"
-          }, {
-            "definition": "টেমপ্লেটের যেকোনো section define করতে ব্যবহৃত হয়",
-            "code": "@section"
-          }, {
-            "definition": "define করা section end করতে ব্যবহৃত হয়",
-            "code": "@endsection"
-          }, {
-            "definition": "এক view file কে অন্য view file এ include করার জন্য",
-            "code": "@include"
-          }, {
-            "definition": "Master Layout কে Child Layout এ extends বা inherit করার জন্য",
-            "code": "@extends"
-          }, {
-            "definition": "লারাভেল ব্লেড টেমপ্লেটে Comments করা",
-            "code": "{{-- devsonket --}}"
-          }, {
-            "definition": "ব্লেড টেমপ্লেটের মধ্যে পিএইচপি ব্লক লেখার জন্য",
-            "code": "@php"
-          }, {
-            "definition": "পিএইচপি ব্লক টি end করার জন্য",
-            "code": "@endphp"
-          }, {
-            "definition": "css file, js file এবং যেকোনো image link করার জন্য",
-            "code": "{{ asset('your_asset_file_path') }}"
-          }, {
-            "definition": "বিভিন্ন page এর সাথে লিংক করার জন্য",
-            "code": "{{URL::to('/your_page_link')}}"
-          }
-        ] 
-     },
-      {
-     "title": "ব্লেড টেমপ্লেট এ জাভাস্ক্রিপ্ট ",
-      "items": [
-          {
-            "definition": "জাভাস্ক্রিপ্ট এ কন্ট্রোলার এর প্যারামিটার রিছিভ করা",
-            "code": "var data = {!! json_encode($key) !!};"
-          }
-        ]
-     },
-     {
-      "title": "রাউটিং",
-      "items": [
+            "title": "ডাটাবেস কলাম মেথড",
+            "items": [{
+                "definition": "অটো ইনক্রিমেন্টের জন্য",
+                "code": "$table->increments('id');"
+            }, {
+                "definition": "বড় ইনক্রিমেন্টের জন্য",
+                "code": "$table->bigIncrements('id');"
+            }, {
+                "definition": "বড় ইনটেজার টাইপের ডাটার জন্য",
+                "code": "$table->bigInteger('votes');"
+            }, {
+                "definition": "বুলিয়ান টাইপের ডাটার জন্য",
+                "code": "$table->boolean('confirmed');"
+            }, {
+                "definition": "ক্যারেক্টার টাইপের ডাটা এবং সাথে অপসোনাল দৈর্ঘ্য",
+                "code": "$table->char('name', 100);"
+            }, {
+                "definition": "তারিখ এর জন্য",
+                "code": "$table->date('created_at');"
+            }, {
+                "definition": "তারিখ এবং টাইমের জন্য",
+                "code": "$table->dateTime('created_at');"
+            }, {
+                "definition": "তারিখ,টাইম এবং সাথে টাইম জোনের জন্য",
+                "code": "$table->dateTimeTz('created_at');"
+            }, {
+                "definition": "ডেসিমেল সংখ্যার জন্য, সাথে টোটাল সংখ্যা,স্কেল ও ডেসিমেল ডিজিট",
+                "code": "$table->decimal('amount', 8, 2);"
+            }, {
+                "definition": "ডাবোল টাইপের ডাটার জন্য, সাথে টোটাল সংখ্যা,স্কেল ও ডেসিমেল ডিজিট",
+                "code": "$table->double('amount', 8, 2);"
+            }, {
+                "definition": "জ্যামিতির জন্য",
+                "code": "$table->geometry('positions');"
+            }, {
+                "definition": "ইনটেজার টাইপের ডাটার জন্য",
+                "code": "$table->integer('votes');"
+            }, {
+                "definition": "আইপি এড্রেস এর জন্য",
+                "code": "$table->ipAddress('visitor');"
+            }, {
+                "definition": "ম্যাক এড্রেস এর জন্য",
+                "code": "$table->macAddress('device');"
+            }, {
+                "definition": "জেসন ডাটা ফরমেটের জন্য",
+                "code": "$table->json('options');"
+            }, {
+                "definition": "লম্বা অথবা বড় কোন লেখার জন্য",
+                "code": "$table->longText('description');"
+            }, {
+                "definition": "মাঝারি পূর্ণ সংখ্যার জন্য",
+                "code": "$table->mediumInteger('votes');"
+            }]
+        },
         {
-          "definition": "বেসিক রাউটিং-১",
-          "code": "Route::get('foo', function(){});"
-        }, {
-          "definition": "বেসিক রাউটিং-২",
-          "code": "Route::get('foo', 'ControllerName@function');"
-        }, {
-          "definition": "বেসিক রাউটিং-৩",
-          "code": "Route::controller('foo', 'FooController');"
-        }, {
-          "definition": "রেস্টফুল কন্ট্রোলার-১",
-          "code": "Route::resource('posts','PostsController');"
-        },  {
-          "definition": "রেস্টফুল কন্ট্রোলার-২",
-          "code": "Route::resource('photo', 'PhotoController',['only' => ['index', 'show']]);"
-        }, {
-          "definition": "রেস্টফুল কন্ট্রোলার-৩",
-          "code": "Route::resource('photo', 'PhotoController',['except' => ['update', 'destroy']]);"
-        },{
-          "definition": "ট্রিগারিং এররস-১",
-          "code": "App::abort(404);"
-        },{
-          "definition": "ট্রিগারিং এররস-২",
-          "code": "App::missing(function($exception){});"
-        },{
-          "definition": "ট্রিগারিং এররস-৩",
-          "code": "throw new NotFoundHttpException;"
-        },{
-          "definition": "রাউট প্যারামিটার-১",
-          "code": "Route::get('foo/{bar}', function($bar){});"
-        }, {
-          "definition": "রাউট প্যারামিটার-২",
-          "code": "Route::get('foo/{bar?}', function($bar = 'bar'){})"
-        },{
-          "definition": "http verbs:any",
-          "code": "Route::any('foo', function(){});"
-        }, {
-          "definition": "http verbs:post",
-          "code": "Route::post('foo', function(){});"
-        },{
-          "definition": "http verbs:put",
-          "code": "Route::put('foo', function(){});"
-        },{
-          "definition": "http verbs:patch",
-          "code": "Route::patch('foo', function(){});"
-        },{
-          "definition": "http verbs:delete",
-          "code": "Route::delete('foo', function(){});"
-        },{
-          "definition": "রেস্টফুল একশন্স",
-          "code": "Route::resource('foo', 'FooController');"
-        }, {
-          "definition": "সিকিউর রাউট",
-          "code": "Route::get('foo', array('https', function(){}));"
-        }, {
-          "definition": "রাউট কন্সট্রেইন্টস",
-          "code": "Route::get('foo/{bar}', function($bar){})"
-        }
-      ] 
-   },
-    {
-      "title": "বেসিক ডাটাবেস ব্যবহার - কুয়েরি বিল্ডার",
-      "items": [
+            "title": "ব্লেড টেমপ্লেট",
+            "items": [{
+                "definition": "যেকোনো value প্রদর্শন করতে ব্যবহৃত হয়",
+                "code": "@yield"
+            }, {
+                "definition": "টেমপ্লেটের যেকোনো section define করতে ব্যবহৃত হয়",
+                "code": "@section"
+            }, {
+                "definition": "define করা section end করতে ব্যবহৃত হয়",
+                "code": "@endsection"
+            }, {
+                "definition": "এক view file কে অন্য view file এ include করার জন্য",
+                "code": "@include"
+            }, {
+                "definition": "Master Layout কে Child Layout এ extends বা inherit করার জন্য",
+                "code": "@extends"
+            }, {
+                "definition": "লারাভেল ব্লেড টেমপ্লেটে Comments করা",
+                "code": "{{-- devsonket --}}"
+            }, {
+                "definition": "ব্লেড টেমপ্লেটের মধ্যে পিএইচপি ব্লক লেখার জন্য",
+                "code": "@php"
+            }, {
+                "definition": "পিএইচপি ব্লক টি end করার জন্য",
+                "code": "@endphp"
+            }, {
+                "definition": "css file, js file এবং যেকোনো image link করার জন্য",
+                "code": "{{ asset('your_asset_file_path') }}"
+            }, {
+                "definition": "বিভিন্ন page এর সাথে লিংক করার জন্য",
+                "code": "{{URL::to('/your_page_link')}}"
+            }]
+        },
         {
-          "definition": "সিলেক্ট কুয়েরি(Query)",
-          "code": "$results = DB::select('select * from users where id = ?', [1]);"
-        },{
-          "definition": "কোনো টেবিলের সকল ডাটা পাওয়ার জন্য",
-          "code": "DB::table('name')->get();"
-        },{
-          "definition": "কোনো টেবিলের একটি রো এর ডাটা পাওয়ার জন্য",
-          "code": "$user = DB::table('users')->where('name', 'Nayeem')->first();"
-        },{
-          "definition": "কোনো টেবিলের রো এর একটি  কলামের ডাটা পাওয়ার জন্য",
-          "code": "$name = DB::table('users')->where('name', 'Nayeem')->pluck('name');"
-        },{
-          "definition": "কোনো একটি  কলামের ডাটা লিস্ট আকারে পাওয়ার জন্য",
-          "code": "$roles = DB::table('roles')->lists('title', 'name');"
-        },{
-          "definition": "সিলেক্ট ক্লজ দিয়ে নির্দিষ্ট কলামের ডাটার জন্য",
-          "code": "$users = DB::table('users')->select('name', 'email')->get();"
-        },{
-          "definition": "WHERE অপারেটরের ব্যবহার",
-          "code": "$users = DB::table('users')->where('votes', '>', 100)->get();"
-        },{
-          "definition": "ডাইনামিক WHERE অপারেটরের ব্যবহার",
-          "code": "$admin = DB::table('users')->whereId(1)->first();"
-        },{
-          "definition": "orderBy অপারেটরের ব্যবহার",
-          "code": "DB::table('users')->orderBy('column')->get();"
-        },{
-          "definition": "orderBy অপারেটরের ব্যবহার",
-          "code": "DB::table('users')->groupBy('column')->get();"
-        },{
-          "definition": "having অপারেটরের ব্যবহার",
-          "code": "DB::table('users')->having('count', '>', 100)->get();"
-        },{
-          "definition": "বেসিক জয়েন কুয়েরি ",
-          "code": "DB::table('users')->join('contacts', 'users.id', '=', 'contacts.user_id')->select('users.id', 'contacts.phone')->get();"
-        },{
-          "definition": "লেফ্ট জয়েন কুয়েরি ",
-          "code": "DB::table('users')->leftJoin('posts', 'users.id', '=', 'posts.user_id')->get();"
-        },{
-          "definition": "রো কাউন্ট করার জন্য",
-          "code": "$users = DB::table('users')->count();"
-        },{
-          "definition": "গড় করার জন্য",
-          "code": "$average = DB::table('products')->avg('price');"
-        },{
-          "definition": "সমষ্টি বের করার জন্য",
-          "code": "$sum = DB::table('products')->sum('votes');"
-        },{
-          "definition": "সর্বনিম্ন মান বের করার জন্য",
-          "code": "$min = DB::table('products')->min('votes');"
-        },{
-          "definition": "সর্বাধিক মান বের করার জন্য",
-          "code": "$max = DB::table('products')->max('votes');"
-        },{
-          "definition": "ডাটা ইনসার্ট করার জন্য",
-          "code": "DB::table('users')->insert(['name' => 'nayeem' 'email' => 'nayeem9812@gmail.com', 'votes' => 0]);"
-        },{
-          "definition": "ডাটা আপডেট করার জন্য",
-          "code": "DB::table('users')->where('id', 1)->update(['votes' => 1])"
-        },{
-          "definition": "ডিলিট করার জন্য",
-          "code": "DB::table('users')->where('votes', '<', 100)->delete();"
-        }
-      ]
-    },
-    {
-      "title": "সেশন এর ব্যবহার",
-      "items": [
+            "title": "ব্লেড টেমপ্লেট এ জাভাস্ক্রিপ্ট ",
+            "items": [{
+                "definition": "জাভাস্ক্রিপ্ট এ কন্ট্রোলার এর প্যারামিটার রিছিভ করা",
+                "code": "var data = {!! json_encode($key) !!};"
+            }]
+        },
         {
-          "definition": "সেশন থেকে একটি আইটেম আনার জন্য",
-          "code": "Session::get('key', 'default');"
-        },{
-          "definition": "সেশন এর আইডি পাওয়ার জন্য",
-          "code": "Session::getId();"
-        },{
-          "definition": "সেশনে একটি কী , ভ্যালু রাখার জন্য ",
-          "code": "Session::put('key', 'value');"
-        },{
-          "definition": "সেশনে একটি অ্যারেতে একটি মান পুশ করার জন্য ",
-          "code": "Session::push('foo.bar','value');"
-        },{
-          "definition": "সেশন থেকে সকল আইটেম পাওয়ার জন্য",
-          "code": "Session::all();"
-        },{
-          "definition": "সেশন এ আইটেম আছে কি না চেক করার জন্য ",
-          "code": "Session::has('key');"
-        },{
-          "definition": "সেশন থেকে একটি আইটেম মুছে ফেলার জন্য",
-          "code": "Session::forget('key');"
-        },{
-          "definition": "সেশন থেকে সকল আইটেম মুছে ফেলার জন্য",
-          "code": "Session::flush();"
+            "title": "রাউটিং",
+            "items": [{
+                "definition": "বেসিক রাউটিং-১",
+                "code": "Route::get('foo', function(){});"
+            }, {
+                "definition": "বেসিক রাউটিং-২",
+                "code": "Route::get('foo', 'ControllerName@function');"
+            }, {
+                "definition": "বেসিক রাউটিং-৩",
+                "code": "Route::controller('foo', 'FooController');"
+            }, {
+                "definition": "রেস্টফুল কন্ট্রোলার-১",
+                "code": "Route::resource('posts','PostsController');"
+            }, {
+                "definition": "রেস্টফুল কন্ট্রোলার-২",
+                "code": "Route::resource('photo', 'PhotoController',['only' => ['index', 'show']]);"
+            }, {
+                "definition": "রেস্টফুল কন্ট্রোলার-৩",
+                "code": "Route::resource('photo', 'PhotoController',['except' => ['update', 'destroy']]);"
+            }, {
+                "definition": "ট্রিগারিং এররস-১",
+                "code": "App::abort(404);"
+            }, {
+                "definition": "ট্রিগারিং এররস-২",
+                "code": "App::missing(function($exception){});"
+            }, {
+                "definition": "ট্রিগারিং এররস-৩",
+                "code": "throw new NotFoundHttpException;"
+            }, {
+                "definition": "রাউট প্যারামিটার-১",
+                "code": "Route::get('foo/{bar}', function($bar){});"
+            }, {
+                "definition": "রাউট প্যারামিটার-২",
+                "code": "Route::get('foo/{bar?}', function($bar = 'bar'){})"
+            }, {
+                "definition": "http verbs:any",
+                "code": "Route::any('foo', function(){});"
+            }, {
+                "definition": "http verbs:post",
+                "code": "Route::post('foo', function(){});"
+            }, {
+                "definition": "http verbs:put",
+                "code": "Route::put('foo', function(){});"
+            }, {
+                "definition": "http verbs:patch",
+                "code": "Route::patch('foo', function(){});"
+            }, {
+                "definition": "http verbs:delete",
+                "code": "Route::delete('foo', function(){});"
+            }, {
+                "definition": "রেস্টফুল একশন্স",
+                "code": "Route::resource('foo', 'FooController');"
+            }, {
+                "definition": "সিকিউর রাউট",
+                "code": "Route::get('foo', array('https', function(){}));"
+            }, {
+                "definition": "রাউট কন্সট্রেইন্টস",
+                "code": "Route::get('foo/{bar}', function($bar){})"
+            }]
+        },
+        {
+            "title": "বেসিক ডাটাবেস ব্যবহার - কুয়েরি বিল্ডার",
+            "items": [{
+                "definition": "সিলেক্ট কুয়েরি(Query)",
+                "code": "$results = DB::select('select * from users where id = ?', [1]);"
+            }, {
+                "definition": "কোনো টেবিলের সকল ডাটা পাওয়ার জন্য",
+                "code": "DB::table('name')->get();"
+            }, {
+                "definition": "কোনো টেবিলের একটি রো এর ডাটা পাওয়ার জন্য",
+                "code": "$user = DB::table('users')->where('name', 'Nayeem')->first();"
+            }, {
+                "definition": "কোনো টেবিলের রো এর একটি  কলামের ডাটা পাওয়ার জন্য",
+                "code": "$name = DB::table('users')->where('name', 'Nayeem')->pluck('name');"
+            }, {
+                "definition": "কোনো একটি  কলামের ডাটা লিস্ট আকারে পাওয়ার জন্য",
+                "code": "$roles = DB::table('roles')->lists('title', 'name');"
+            }, {
+                "definition": "সিলেক্ট ক্লজ দিয়ে নির্দিষ্ট কলামের ডাটার জন্য",
+                "code": "$users = DB::table('users')->select('name', 'email')->get();"
+            }, {
+                "definition": "WHERE অপারেটরের ব্যবহার",
+                "code": "$users = DB::table('users')->where('votes', '>', 100)->get();"
+            }, {
+                "definition": "ডাইনামিক WHERE অপারেটরের ব্যবহার",
+                "code": "$admin = DB::table('users')->whereId(1)->first();"
+            }, {
+                "definition": "orderBy অপারেটরের ব্যবহার",
+                "code": "DB::table('users')->orderBy('column')->get();"
+            }, {
+                "definition": "orderBy অপারেটরের ব্যবহার",
+                "code": "DB::table('users')->groupBy('column')->get();"
+            }, {
+                "definition": "having অপারেটরের ব্যবহার",
+                "code": "DB::table('users')->having('count', '>', 100)->get();"
+            }, {
+                "definition": "বেসিক জয়েন কুয়েরি ",
+                "code": "DB::table('users')->join('contacts', 'users.id', '=', 'contacts.user_id')->select('users.id', 'contacts.phone')->get();"
+            }, {
+                "definition": "লেফ্ট জয়েন কুয়েরি ",
+                "code": "DB::table('users')->leftJoin('posts', 'users.id', '=', 'posts.user_id')->get();"
+            }, {
+                "definition": "রো কাউন্ট করার জন্য",
+                "code": "$users = DB::table('users')->count();"
+            }, {
+                "definition": "গড় করার জন্য",
+                "code": "$average = DB::table('products')->avg('price');"
+            }, {
+                "definition": "সমষ্টি বের করার জন্য",
+                "code": "$sum = DB::table('products')->sum('votes');"
+            }, {
+                "definition": "সর্বনিম্ন মান বের করার জন্য",
+                "code": "$min = DB::table('products')->min('votes');"
+            }, {
+                "definition": "সর্বাধিক মান বের করার জন্য",
+                "code": "$max = DB::table('products')->max('votes');"
+            }, {
+                "definition": "ডাটা ইনসার্ট করার জন্য",
+                "code": "DB::table('users')->insert(['name' => 'nayeem' 'email' => 'nayeem9812@gmail.com', 'votes' => 0]);"
+            }, {
+                "definition": "ডাটা আপডেট করার জন্য",
+                "code": "DB::table('users')->where('id', 1)->update(['votes' => 1])"
+            }, {
+                "definition": "ডিলিট করার জন্য",
+                "code": "DB::table('users')->where('votes', '<', 100)->delete();"
+            }]
+        },
+        {
+            "title": "সেশন এর ব্যবহার",
+            "items": [{
+                "definition": "সেশন থেকে একটি আইটেম আনার জন্য",
+                "code": "Session::get('key', 'default');"
+            }, {
+                "definition": "সেশন এর আইডি পাওয়ার জন্য",
+                "code": "Session::getId();"
+            }, {
+                "definition": "সেশনে একটি কী , ভ্যালু রাখার জন্য ",
+                "code": "Session::put('key', 'value');"
+            }, {
+                "definition": "সেশনে একটি অ্যারেতে একটি মান পুশ করার জন্য ",
+                "code": "Session::push('foo.bar','value');"
+            }, {
+                "definition": "সেশন থেকে সকল আইটেম পাওয়ার জন্য",
+                "code": "Session::all();"
+            }, {
+                "definition": "সেশন এ আইটেম আছে কি না চেক করার জন্য ",
+                "code": "Session::has('key');"
+            }, {
+                "definition": "সেশন থেকে একটি আইটেম মুছে ফেলার জন্য",
+                "code": "Session::forget('key');"
+            }, {
+                "definition": "সেশন থেকে সকল আইটেম মুছে ফেলার জন্য",
+                "code": "Session::flush();"
+            }]
+        },
+        {
+            "title": "কার্বন (তারিখ ও সময়) এর ব্যবহার",
+            "items": [{
+                "definition": "কারেন্ট সময় ও তারিখ জানার জন্য ",
+                "code": "Carbon::now();"
+            }, {
+                "definition": "আজকের দিন বা তারিখ জানার জন্য",
+                "code": "Carbon::today();"
+            }, {
+                "definition": "গতকাল এর দিন বা তারিখ জানার জন্য",
+                "code": "Carbon::yesterday();"
+            }, {
+                "definition": "আগামী কাল এর দিন বা তারিখ জানার জন্য",
+                "code": "Carbon::tomorrow();"
+            }, {
+                "definition": "ডাটাবেজ ফর্মেটে কনভার্ট করার জন্য",
+                "code": "Carbon::createFromFormat('y-m-d H:i:s','2020-08-10 12:34:35','Europe/London');"
+            }, {
+                "definition": "$now = Carbon::now() অবজেক্ট থেকে সেকেন্ড জানার জন্য",
+                "code": "$now->secound;"
+            }, {
+                "definition": "$now = Carbon::now() অবজেক্ট থেকে মিনিট জানার জন্য",
+                "code": "$now->minute;"
+            }, {
+                "definition": "$now = Carbon::now() অবজেক্ট থেকে ঘন্টা জানার জন্য",
+                "code": "$now->hour;"
+            }, {
+                "definition": "$now = Carbon::now() অবজেক্ট থেকে মাস জানার জন্য",
+                "code": "$now->monthName;"
+            }, {
+                "definition": "$now = Carbon::now() অবজেক্ট থেকে সপ্তাহের কত তম দিন জানার জন্য",
+                "code": "$now->dayOfWeek;"
+            }, {
+                "definition": "$now = Carbon::now() অবজেক্ট থেকে মাসের কত তম সপ্তাহ জানার জন্য",
+                "code": "$now->weekNumberInMonth;"
+            }, {
+                "definition": "$now = Carbon::now() অবজেক্ট থেকে বছরের কত তম সপ্তাহ জানার জন্য",
+                "code": "$now->weekOfYear;"
+            }, {
+                "definition": "$now = Carbon::now() অবজেক্ট থেকে মাসের শেষ তারিক ও সময় জানার জন্য",
+                "code": "$now->endOfMonth;"
+            }, {
+                "definition": "$now = Carbon::now() অবজেক্ট থেকে আগামি সপ্তাহ কবে জানার জন্য",
+                "code": "$now->nextWeekDay();"
+            }, {
+                "definition": " দিন বা তারিখ জানার জন্য",
+                "code": "Carbon::nextWeekDay();"
+            }]
         }
-      ]
-    }
-  ]
+    ]
 }
-
