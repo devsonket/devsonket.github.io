@@ -92,7 +92,7 @@
         },
         {
           "definition": "স্ট্রিং থেকে ASCII ভ্যালু",
-          "code": "chr(something)"
+          "code": "ord(something)"
         },
         {
           "definition": "স্ট্রিং-কে ক্যারেক্টার এরেতে রূপান্তর",
@@ -100,7 +100,7 @@
         },
         {
           "definition": "দুটি স্ট্রিং জয়েন",
-          "code": " . "
+          "code": " . (dot sign) "
         },
         {
           "definition": "ছোট হাতের অক্ষরে রুপান্তর",
