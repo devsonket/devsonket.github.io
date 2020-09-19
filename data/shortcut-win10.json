@@ -92,7 +92,7 @@
                     "definition": "ডান পাশের উইন্ডোটি দেখুন",
                     "code": "Ctrl + WIN + Right Arrow"
                 }, {
-                    "definition": বাম পাশের উইন্ডোটি দেখুন",
+                    "definition": "বাম পাশের উইন্ডোটি দেখুন",
                     "code": "Ctrl + WIN + Left Arrow"
                 }
             ]
