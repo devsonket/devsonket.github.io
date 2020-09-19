@@ -1,0 +1,151 @@
+{
+    "id": "tailwindcss",
+    "title": "টেলওয়াইন্ড সিএসএস",
+    "slug": "tailwindcss",
+    "description": "টেলওয়াইন্ড সিএসএস একটি অত্যন্ত কাস্টমাইজযোগ্য, নিম্ন-স্তরের সিএসএস ফ্রেমওয়ার্ক যা আপনাকে ওভাররাইড করার জন্য ডিজাইন তৈরি করতে সমস্ত বিল্ডিং ব্লক দেয়।",
+    "colorPref": "#3393B2",
+    "contents": [
+      {
+        "title": "ইন্সটলেশন",
+        "items": [
+          {
+            "definition": "প্যাকেজ জেসন",
+            "code": "npm init -y"
+          },
+          {
+            "definition": "ইন্সটল টেলওয়াইন্ড using npm",
+            "code": "npm install tailwindcss"
+          },
+          {
+            "definition": "ইন্সটল টেলওয়াইন্ড using yarn",
+            "code": "yarn add tailwindcss"
+          }
+        ]
+      },
+      {
+        "title": "লেআউট",
+        "items": [
+          {
+            "definition": "ব্রেকপয়েন্টস: sm",
+            "code": "@media (min-width: 640px) { ... }"
+          },
+          {
+            "definition": "ব্রেকপয়েন্টস: md",
+            "code": "@media (min-width: 768px) { ... }"
+          },
+          {
+            "definition": "ব্রেকপয়েন্টস: lg",
+            "code": "@media (min-width: 1024px) { ... }"
+          },
+          {
+            "definition": "ব্রেকপয়েন্টস: xl",
+            "code": "@media (min-width: 1280px) { ... }"
+          },
+          {
+            "definition": "কন্টেইনার ক্লাস",
+            "code": "container"
+          },
+          {
+            "definition": "বক্স সাইজিং বর্ডার",
+            "code": "box-border"
+          },
+          {
+            "definition": "বক্স সাইজিং বর্ডার: sm",
+            "code": "sm:box-border"
+          },
+          {
+            "definition": "বক্স সাইজিং বর্ডার: md",
+            "code": "md:box-border"
+          },
+          {
+            "definition": "বক্স সাইজিং বর্ডার: lg",
+            "code": "lg:box-border"
+          },
+          {
+            "definition": "বক্স সাইজিং বর্ডার: xl",
+            "code": "xl:box-border"
+          },
+          {
+            "definition": "বক্স সাইজিং কনটেন্ট",
+            "code": "box-content"
+          },
+          {
+            "definition": "বক্স সাইজিং কনটেন্ট: sm",
+            "code": "sm:box-content"
+          },
+          {
+            "definition": "বক্স সাইজিং কনটেন্ট: md",
+            "code": "md:box-content"
+          },
+          {
+            "definition": "বক্স সাইজিং কনটেন্ট: lg",
+            "code": "lg:box-content"
+          },
+          {
+            "definition": "বক্স সাইজিং কনটেন্ট: xl",
+            "code": "xl:box-content"
+          }
+        ]
+      },
+      {
+        "title": "এসভিজি / SVG",
+        "items": [
+          {
+            "definition": "ফিল",
+            "code": ".fill-current"
+          },
+          {
+            "definition": " স্ট্রোক ",
+            "code": ".stroke-current"
+          }
+        ]
+      },
+      {
+        "title": "ফ্লেক্সবক্স",
+        "items": [
+          {
+            "definition": "ফ্লেক্স",
+            "code": "flex"
+          },
+          {
+            "definition": "ইনলাইন ফ্লেক্স",
+            "code": "inline-flex"
+          },
+          {
+            "definition": "ফ্লেক্স: sm",
+            "code": "sm:flex"
+          },
+          {
+            "definition": "ফ্লেক্স: md",
+            "code": "md:flex"
+          },
+          {
+            "definition": "ফ্লেক্স: lg",
+            "code": "lg:flex"
+          },
+          {
+            "definition": "ফ্লেক্স: xl",
+            "code": "xl:flex"
+          },
+          {
+            "definition": "ইনলাইন ফ্লেক্স: sm",
+            "code": "sm:inline-flex"
+          },
+          {
+            "definition": "ইনলাইন ফ্লেক্স: md",
+            "code": "md:inline-flex"
+          },
+          {
+            "definition": "ইনলাইন ফ্লেক্স: lg",
+            "code": "lg:inline-flex"
+          },
+          {
+            "definition": "ইনলাইন ফ্লেক্স: xl",
+            "code": "xl:inline-flex"
+          }
+          
+        ]
+      }
+    ]
+  }
+  

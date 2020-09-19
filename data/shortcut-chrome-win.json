@@ -174,7 +174,25 @@
         } , {
           "definition": "কোন পেজের ফুল পেজ স্কিন সর্ট নিতে চাইলেে",
           "code": "Full Page Screen Capture"
-        } 
+        } , {
+          "definition": "ওয়েব পেইজে কোন ফন্ট ব্যবহার করা হয়েছে তা জানতে চাইলেে",
+          "code": "Font Finder"
+        } , {
+          "definition": "ওয়েব পেইজের কালার পিক করতে চাইলে",
+          "code": "ColorZilla"
+        } , {
+          "definition": "ওয়েবসাইটের র‌্যাঙ্কিং জানতে চাইলেে",
+          "code": "Alexa Traffic Rank"
+        } , {
+          "definition": "পাসওয়ার্ড সংরক্ষণ করতে চাইলে",
+          "code": "LastPass: Free Password Manager"
+        } , {
+          "definition": "ওয়েব ব্রাউজার লক করে রাখতে চাইলে",
+          "code": "LockPW"
+        } , {
+          "definition": "ডেস্কটপ থেকে সরাসরি মোবাইল ইনস্টাগ্রাম সাইট ব্রাউজ করতে",
+          "code": "Desktopify"
+        }
       ]
     }
   ]
