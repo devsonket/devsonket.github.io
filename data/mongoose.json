@@ -66,6 +66,18 @@
           "code": "modelName.update({name : 'Morol'}, {$set : {age : 24}})"
         }
       ]
+    },
+    {
+      "title": "মঙ্গুজ-এর মধ্যমে ডকুমেন্ট রিমুভ করা",
+      "items": [
+        {
+          "definition": "একটি ডকুমেন্ট সরাসরি রিমুভ করা",
+          "code": "modelName.deleteOne({name : 'Morol'})"
+        }, {
+          "definition": "অনেকগুলো ডকুমেন্ট সরাসরি রিমুভ করা",
+          "code": "modelName.deleteMany({name : 'Morol'})"
+        }
+      ]
     }
   ]
 }
