@@ -84,6 +84,30 @@
           "code": "modelName.deleteMany({name : 'Morol'})"
         }
       ]
+    },
+    {
+      "title": "মঙ্গুজ-এর কিছু বিশেষ কুয়েরি",
+      "items": [
+        {
+          "definition": "আইডি ব্যবহার করে ডকুমেন্ট খোঁজা ও ডিলিট করা",
+          "code": "modelName.findByIdAndDelete()"
+        }, {
+          "definition": "আইডি ব্যবহার করে ডকুমেন্ট খোঁজা ও রিমুভ করা",
+          "code": "modelName.findByIdAndRemove()"
+        }, {
+          "definition": "আইডি ব্যবহার করে ডকুমেন্ট খোঁজা ও অ্যাট্রিবিউট মডিফাই করা",
+          "code": "modelName.findByIdAndUpdate()"
+        }, {
+          "definition": "একটি ডকুমেন্ট খোঁজা ও ডিলিট করা",
+          "code": "modelName.findOneAndDelete()"
+        }, {
+          "definition": "একটি ডকুমেন্ট খোঁজা ও রিমুভ করা",
+          "code": "modelName.findOneAndRemove()"
+        }, {
+          "definition": "একটি ডকুমেন্ট খোঁজা ও অ্যাট্রিবিউট মডিফাই করা",
+          "code": "modelName.findOneAndUpdate()"
+        }
+      ]
     }
   ]
 }
