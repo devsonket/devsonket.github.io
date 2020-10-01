@@ -40,6 +40,9 @@
         {
           "definition": "যেকোনো একটা ডকুমেন্ট খোঁজা",
           "code": "modelName.findOne()"
+        },{
+          "definition": "যেকোনো একটা ডকুমেন্ট খোঁজা আইডি ব্যবহার করে",
+          "code": "modelName.findById()"
         }, {
           "definition": "সব ডকুমেন্ট খোঁজা",
           "code": "modelName.find()"
@@ -64,6 +67,9 @@
         }, {
           "definition": "ডকুমেন্ট এর কোনো অ্যাট্রিবিউট মডিফাই করা",
           "code": "modelName.update({name : 'Morol'}, {$set : {age : 24}})"
+        }, {
+          "definition": "অনেকগুলো ডকুমেন্ট এর কোনো অ্যাট্রিবিউট মডিফাই করা",
+          "code": "modelName.updateMany({name : 'Morol'}, {$set : {age : 24}})"
         }
       ]
     },
