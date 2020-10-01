@@ -13,8 +13,12 @@
           "code": "npm install mongoose"
         },
         {
-          "definition": "মঙ্গুজ অ্যাপ্লিকেশনে সংযুক্ত করা",
+          "definition": "মঙ্গুজ অ্যাপ্লিকেশনে সংযুক্ত করা (ইএস৫)",
           "code": "let mongoose = require('mongoose');"
+        },
+        {
+          "definition": "মঙ্গুজ অ্যাপ্লিকেশনে সংযুক্ত করা (ইএস৬)",
+          "code": "import mongoose from 'mongoose';"
         },
         {
           "definition": "মঙ্গুজ-এর মধ্যমে ডাটাবেসে সংযুক্ত করা",
