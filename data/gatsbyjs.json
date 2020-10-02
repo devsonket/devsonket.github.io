@@ -9,12 +9,16 @@
       "title": "প্রাথমিক কমান্ড সমূহঃ",
       "items": [
         {
-          "definition": "GatsbyJS গ্লোবালি ইন্সটল করার জন্য",
-          "code": "npm install -g gatsby-cli বা yarn add global gatsby-cli"
+          "definition": "GatsbyJS গ্লোবালি ইন্সটল করার জন্য (npm)",
+          "code": "npm install -g gatsby-cli"
+        },
+        {
+          "definition": "GatsbyJS গ্লোবালি ইন্সটল করার জন্য (yarn)",
+          "code": "yarn add global gatsby-cli"
         },
         {
           "definition": "GatsbyJS এর ভার্শন চেক করা",
-          "code": "gatsby -v, --version"
+          "code": "gatsby -v, gatsby --version"
         },
         {
           "definition": "GatsbyJS এর কমান্ড সম্পর্কিত হেল্প এর জন্য",
