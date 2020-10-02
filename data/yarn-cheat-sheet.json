@@ -15,8 +15,8 @@
           "code": "yarn help"
         },
         {
-          "definition": "Yarn এর ভার্শন দ‌েখা",
-          "code": "yarn -v"
+          "definition": "Yarn এর ভার্শন দেখা",
+          "code": "yarn -v বা  yarn --version"
         },
         {
           "definition": "yarn.com এ অ্যাকাউন্ট ক্রিয়েট",
