@@ -13,8 +13,12 @@
           "code": "npm install mongoose"
         },
         {
-          "definition": "মঙ্গুজ অ্যাপ্লিকেশনে সংযুক্ত করা",
+          "definition": "মঙ্গুজ অ্যাপ্লিকেশনে সংযুক্ত করা (ইএস৫)",
           "code": "let mongoose = require('mongoose');"
+        },
+        {
+          "definition": "মঙ্গুজ অ্যাপ্লিকেশনে সংযুক্ত করা (ইএস৬)",
+          "code": "import mongoose from 'mongoose';"
         },
         {
           "definition": "মঙ্গুজ-এর মধ্যমে ডাটাবেসে সংযুক্ত করা",
@@ -36,6 +40,9 @@
         {
           "definition": "যেকোনো একটা ডকুমেন্ট খোঁজা",
           "code": "modelName.findOne()"
+        },{
+          "definition": "যেকোনো একটা ডকুমেন্ট খোঁজা আইডি ব্যবহার করে",
+          "code": "modelName.findById()"
         }, {
           "definition": "সব ডকুমেন্ট খোঁজা",
           "code": "modelName.find()"
@@ -60,6 +67,45 @@
         }, {
           "definition": "ডকুমেন্ট এর কোনো অ্যাট্রিবিউট মডিফাই করা",
           "code": "modelName.update({name : 'Morol'}, {$set : {age : 24}})"
+        }, {
+          "definition": "অনেকগুলো ডকুমেন্ট এর কোনো অ্যাট্রিবিউট মডিফাই করা",
+          "code": "modelName.updateMany({name : 'Morol'}, {$set : {age : 24}})"
+        }
+      ]
+    },
+    {
+      "title": "মঙ্গুজ-এর মধ্যমে ডকুমেন্ট রিমুভ করা",
+      "items": [
+        {
+          "definition": "একটি ডকুমেন্ট সরাসরি রিমুভ করা",
+          "code": "modelName.deleteOne({name : 'Morol'})"
+        }, {
+          "definition": "অনেকগুলো ডকুমেন্ট সরাসরি রিমুভ করা",
+          "code": "modelName.deleteMany({name : 'Morol'})"
+        }
+      ]
+    },
+    {
+      "title": "মঙ্গুজ-এর কিছু বিশেষ কুয়েরি",
+      "items": [
+        {
+          "definition": "আইডি ব্যবহার করে ডকুমেন্ট খোঁজা ও ডিলিট করা",
+          "code": "modelName.findByIdAndDelete()"
+        }, {
+          "definition": "আইডি ব্যবহার করে ডকুমেন্ট খোঁজা ও রিমুভ করা",
+          "code": "modelName.findByIdAndRemove()"
+        }, {
+          "definition": "আইডি ব্যবহার করে ডকুমেন্ট খোঁজা ও অ্যাট্রিবিউট মডিফাই করা",
+          "code": "modelName.findByIdAndUpdate()"
+        }, {
+          "definition": "একটি ডকুমেন্ট খোঁজা ও ডিলিট করা",
+          "code": "modelName.findOneAndDelete()"
+        }, {
+          "definition": "একটি ডকুমেন্ট খোঁজা ও রিমুভ করা",
+          "code": "modelName.findOneAndRemove()"
+        }, {
+          "definition": "একটি ডকুমেন্ট খোঁজা ও অ্যাট্রিবিউট মডিফাই করা",
+          "code": "modelName.findOneAndUpdate()"
         }
       ]
     }
