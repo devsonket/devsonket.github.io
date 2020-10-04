@@ -188,7 +188,10 @@
         } , {
           "definition": "টুডু লিস্ট করতে চাইলে",
           "code": "google keep"
-        } , {
+        },  {
+          "definition": "কোন পেজের নির্দিষ্ট অংশের স্ক্রিনসট নিতে চাইলেে",
+          "code": "Lightshot (screenshot tool)"
+        },  {
           "definition": "কোন পেজের ফুল পেজ স্কিন সর্ট নিতে চাইলেে",
           "code": "Full Page Screen Capture"
         } , {
@@ -209,6 +212,12 @@
         } , {
           "definition": "ডেস্কটপ থেকে সরাসরি মোবাইল ইনস্টাগ্রাম সাইট ব্রাউজ করতে",
           "code": "Desktopify"
+        }, {
+          "definition": "ডেভলপার কন্সোলে জাভাস্ক্রিপ্ট (ইএস৬) কোড লেখা ও  কম্পাইল করতে",
+          "code": "Scratch JS"
+        }, {
+          "definition": "ডার্ক মুড ব্যবহার করতে চাইলে",
+          "code": "Dark Reader" 
         }
       ]
     }
