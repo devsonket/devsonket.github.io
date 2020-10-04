@@ -95,7 +95,7 @@
             "code": "Ctrl + Alt + \\"
           },
           {
-            "definition": "ইউ অপশন দেখানো অথবা সরানো",
+            "definition": "ইউ আই অপশন দেখানো অথবা সরানো",
             "code": "Ctrl + \\"
           },
           {
@@ -129,14 +129,6 @@
           {
             "definition": "কোড প্যানেল দেখানো",
             "code": "Alt + 0"
-          },
-          {
-            "definition": "কাজের বিবরণ",
-            "code": "কোড"
-          },
-          {
-            "definition": "কাজের বিবরণ",
-            "code": "কোড"
           }
         ]
       },
@@ -190,6 +182,10 @@
           {
             "definition": "পরবর্তি ফ্রেম এ যাওয়া",
             "code": "End"
+          },
+          {
+            "definition": "নির্দিষ্ট কোন যায়গা প্রসারিত করতে",
+            "code": "Z + Select area"
           }
         ]
       },
@@ -280,10 +276,6 @@
           {
             "definition": "আকৃতির রূপরেখা আনা",
             "code": "Ctrl + Shift + O"
-          },
-          {
-            "definition": "নির্বাচনগুলো একত্রীকরণ করা",
-            "code": "Ctrl + J"
           }
         ]
       },
@@ -307,7 +299,7 @@
             "code": "Ctrl + Shift + O"
           },
           {
-            "definition": "নির্বাচনগুলো একত্রীকরণ করা",
+            "definition": "নির্বাচিত কম্পোনেন্ট গুলো একত্রীকরণ করা",
             "code": "Ctrl + J"
           },
           {
@@ -452,14 +444,14 @@
         ]
       },
       {
-        "title": "সাজনো অপশন (Arrange option)",
+        "title": "সাজানো অপশন (Arrange option)",
         "items": [
           {
-            "definition": "এগিয়ে আনা",
+            "definition": "একধাপ এগিয়ে আনা",
             "code": "Ctrl + ]"
           },
           {
-            "definition": "পিছিয়ে নেয়া",
+            "definition": "একধাপ পিছিয়ে নেয়া",
             "code": "Ctrl + ["
           },
           {
