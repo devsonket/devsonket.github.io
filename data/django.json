@@ -92,6 +92,10 @@
           "code": "python manage.py startapp <app_name>"
         },
         {
+          "definition": "অ্যাপ মাইগ্রেশনের জন্য",
+          "code": "python manage.py makemigrations <app_name>"
+        },
+        {
           "definition": "মাইগ্রেশনের জন্য",
           "code": "python manage.py migrate"
         }
