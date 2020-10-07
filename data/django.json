@@ -39,6 +39,39 @@
       ]
     },
     {
+      "title": "pip কমান্ডস", 
+      "items": [
+        {
+          "definition": "pip ভার্সন দেখা",
+          "code": "pip --version"
+        },
+        {
+          "definition": "pip আপগ্রেড করা",
+          "code": "python -m pip install --upgrade pip"
+        },
+        {
+          "definition": "django ইন্সটল করা",
+          "code": "pip install django"
+        },
+        {
+          "definition": "যেকোনো প্যাকেজ ডিপেন্ডেন্সী ইন্সটল করা",
+          "code": "pip install <package_name>"
+        },
+        {
+          "definition": "যেকোনো প্যাকেজ ডিপেন্ডেন্সী আনইন্সটল করা",
+          "code": "pip uninstall <package_name>"
+        },
+        {
+          "definition": "প্যাকেজ ডিপেন্ডেন্সী লিস্ট করা",
+          "code": "pip list"
+        },
+        {
+          "definition": "প্যাকেজ ডিপেন্ডেন্সী সেভ করা",
+          "code": "pip freeze > requirements.txt"
+        }
+      ]
+    },
+    {
       "title": "প্রোজেক্ট",
       "items": [
         {
