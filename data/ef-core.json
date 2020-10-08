@@ -4,11 +4,9 @@
     "slug": "ef-core",
     "description": "এনটিটি ফ্রেমওয়ার্ক কোর হলো মাইক্রোসফটের তৈরি একটি ওপেন সোর্স ডেটা একসেস টেকনোলজি। ক্রস প্ল্যাটফর্ম সফটওয়্যার ডেভেলপমেন্ট ফ্রেমওয়ার্ক ডটনেট কোরে অবজেক্ট রিলেশনাল ম্যাপিং এর জন্য এটি বহুল জনপ্রিয়।",
     "colorPref": "#29a745",
-    "contents": [
-        {
+    "contents": [{
             "title": "ডেটাবেজ কানেকশান",
-            "items": [
-                {
+            "items": [{
                     "definition": "কনফিগারেশান থেকে ডেটাবেজ কানেকশান স্ট্রিং নেয়া",
                     "code": "var connectionString = Configuration.GetConnectionString(\"MusicAppDatabase\");"
                 },
@@ -28,8 +26,7 @@
         },
         {
             "title": "ডেটাবেজ কনটেক্সট নিয়ে কাজ করা",
-            "items": [
-                {
+            "items": [{
                     "definition": "ডেটাবেজ কনটেক্সটের ব্যবহার",
                     "code": "using (var context = new MusicAppContext()) { // usage }"
                 },
@@ -69,8 +66,7 @@
         },
         {
             "title": "অ্যানোটেশন ও মডেল তৈরি ",
-            "items": [
-                {
+            "items": [{
                     "definition": "এনটিটি সেটে ইউজার ডিফাইন্ড টাইপ প্রকাশের মাধ্যমে মডেলে এনটিটি অনর্ভুক্ত করা",
                     "code": "class MusicAppContext : DbContext \n{ \npublic DbSet<Music> Musics { get; set; } \n}"
                 },
@@ -118,8 +114,7 @@
         },
         {
             "title": "ফ্লুয়েন্ট এ.পি.আই ও মডেল তৈরি",
-            "items": [
-                {
+            "items": [{
                     "definition": "মডেলে এনটিটি অন্তর্ভুক্ত করা",
                     "code": "protected override void OnModelCreating(ModelBuilder modelBuilder) \n{\n\tmodelBuilder.Entity<Genre>();\n}"
                 },
@@ -159,8 +154,7 @@
         },
         {
             "title": "ফ্লুয়েন্ট এ.পি.আই ও এনটিটি রিলেশনশীপ",
-            "items": [
-                {
+            "items": [{
                     "definition": "ওয়ান-টু-ম্যানি (একটি কবিতা একজন কবি লিখেছেন, একজন কবি অনেকগুলো কবিতা লিখেছেন)",
                     "code": "modelBuilder.Entity<Poem>()\n\t\t.HasOne(p => p.Poet)\n\t\t.WithMany(p => p.Poems);"
                 },
@@ -183,6 +177,50 @@
                 {
                     "definition": "ম্যানি-টু-ম্যানি রিলেশনশীপ-২",
                     "code": "\nmodelBuilder.Entity<SingerSong>()\n\t\t.HasOne(ss => ss.Song)\n\t\t.WithMany(s => s.SingerSong)\n\t\t.HasForeignKey(ss => ss.SongId);"
+                }
+            ]
+        },
+        {
+            "title": "মাইগ্রেশন",
+            "items": [{
+                    "definition": "মডেলের পরিবর্তনগুলো মাইগ্রেশন করা",
+                    "code": "dotnet ef migrations add <AnyMigrationName>"
+                },
+                {
+                    "definition": "সর্বশেষ মাইগ্রেশন বাতিল করা",
+                    "code": "dotnet ef migrations remove"
+                },
+                {
+                    "definition": "সকল মাইগ্রেশনকে লিস্ট আকারে দেখা",
+                    "code": "dotnet ef migrations list"
+                },
+                {
+                    "definition": "সর্বশেষ মাইগ্রেশন অনুযায়ী ডেটাবেজে হালনাগাদ করা",
+                    "code": "dotnet ef database update"
+                },
+                {
+                    "definition": "একটি নির্দিষ্ট মাইগ্রেশন অনুযায়ী ডেটাবেজে হালনাগাদ করা",
+                    "code": "dotnet ef database update <AvailableMigrationName>"
+                }
+            ]
+        },
+        {
+            "title": "ডেটা ক্যুয়েরী করা",
+            "items": [{
+                    "definition": "ইগার লোডিং",
+                    "code": "var poets = context.Poets.Include(poet => poet.Poems).ToList();"
+                },
+                {
+                    "definition": "এক্সপ্লিসিট লোডিং",
+                    "code": "context.Entry(loadedObject).Collection(l => l.PropotiesOfLoadedObject).Load();"
+                },
+                {
+                    "definition": "স্ট্রাকচার্ড কুয়েরি ল্যাঙ্গুয়েজ",
+                    "code": "context.Poets.FromSqlRaw(\"SELECT * FROM dbo.Poets\").ToList();"
+                },
+                {
+                    "definition": "সাবকুয়েরি কম্পোজিশন",
+                    "code": "context.Poets.FromSqlInterpolated(\"...query...\")\n\t\t.Where(...)n\t\t.OrderByDescending(....)n\t\t.ToList()"
                 }
             ]
         }
