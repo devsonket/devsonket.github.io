@@ -67,7 +67,7 @@
                 "code":"<div class='row'><div class='col align-self-center'>...</div></div>"
              },
              {
-                "definition":"একটি কলাম নিছে দেখানো",
+                "definition":"একটি কলাম নিচে দেখানো",
                 "code":"<div class='row'><div class='col align-self-end'>...</div></div>"
              }
           ]
