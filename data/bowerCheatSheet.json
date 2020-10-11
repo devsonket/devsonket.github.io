@@ -1,0 +1,129 @@
+{
+  "id": "Bower",
+  "title": "বওয়ের",
+  "slug": "Bower",
+  "description": "ইজিলি ওয়েবের প্যাকেজ মেনেজ করার জন্য বওয়ের জনপ্রিয়. ওয়েবসাইট বানানোর জন্য ফ্রেমওয়ার্ক, ইউটিলিটিস, লাইব্রেরিস, এসেটস এসব কিছু প্রয়োজনীয়. বওয়ের আপনাকে এসবকিছু ইয়াসিলি ম্যানেজ করে দিবে.",
+  "colorPref": "#49a34c",
+  "contents": [
+    {
+      "title": "বওয়ের কমান্ডস",
+      "items": [
+        {
+          "definition": " বওয়ের গ্লোবাল ইনস্টল ",
+          "code": "npm install -g bower"
+        },
+        {
+          "definition": "বওয়ের ইনিশিয়ালাইজ",
+          "code": "bower init"
+        },
+        {
+          "definition": "বওয়ের প্যাকেজ ইন্সটল",
+          "code": "bower install <PackageName>"
+        },
+        {
+          "definition": "বওয়ের রেজিস্টার প্যাক",
+          "code": "bower register <name> <url>"
+        },
+        {
+          "definition": "বওয়ের আপডেট",
+          "code": "bower update"
+        },
+        {
+          "definition": "বওয়ের আপডেট প্যাকেজ নাম",
+          "code": "bower update <PackageName>"
+        },
+        {
+          "definition": "বওয়ের হেল্প",
+          "code": "bower help <command>"
+        },
+        {
+          "definition": "বওয়ের লগিন",
+          "code": "bower login"
+        },
+        {
+          "definition": "বওয়ের ভার্সন চেক",
+          "code": "bower version"
+        }
+      ]
+    },
+    {
+      "title": "ক্যাশ",
+      "items": [
+        {
+          "definition": "বওয়ের ক্যাশ কমান্ড",
+          "code": "bower cache <command>"
+        },
+        {
+          "definition": "বওয়ের ক্যাশ ক্লিন",
+          "code": "bower cache clean"
+        },
+        {
+          "definition": "বওয়ের ক্যাশ ক্লিন প্যাকেজ নাম সাথে ভার্সন",
+          "code": "bower cache clean <packageName> <version> ..."
+        },
+        {
+          "definition": "বওয়ের ক্যাশ লিস্ট",
+          "code": "bower cache list"
+        }
+      ]
+    },
+    {
+      "title": "আরও কিছু কমান্ডস",
+      "items": [
+        {
+          "definition": "বওয়ের হোম",
+          "code": "bower home"
+        },
+        {
+          "definition": "বওয়ের হোম প্যাকেজ নাম",
+          "code": "bower home <packageName>"
+        },
+        {
+          "definition": "বওয়ের ইনফো প্যাকেজ নাম সাথে ভার্সন",
+          "code": "bower info <packageName> <version>"
+        },
+        {
+          "definition": "বওয়ের লিঙ্ক প্যাকেজ নাম",
+          "code": "bower link <packageName>"
+        },
+        {
+          "definition": "বওয়ের লিস্ট লোকাল প্যাকেজ এবং পসিবল আপডেট",
+          "code": "bower list <options>"
+        },
+        {
+          "definition": "লুকাপ প্যাকেজ ইউয়ারেল বাই নেম",
+          "code": "bower lookup <packageName>"
+        },
+        {
+          "definition": "আনইন্সটল লোকাল বহিরাগত প্যাকেজ",
+          "code": "bower prune"
+        }
+      ]
+    },
+    {
+      "title": "বওয়ের প্যাকেজ",
+      "items": [
+        {
+          "definition": "প্যাকেজ রেজিইস্টার করতে",
+          "code": "bower register <packageName> <url>"
+        },
+        {
+          "definition": "ফাইন্ড স্পেচিফিক প্যাকেজ",
+          "code": "bower search <packageName>"
+        },
+        {
+          "definition": "ফাইন্ড অল প্যাকেজ",
+          "code": "bower search"
+        },
+        {
+          "definition": "প্যাকেজ আনইন্সটল করতে",
+          "code": "bower uninstall <packageName> ..."
+        },
+        {
+          "definition": "প্যাকেজ আনরেজিস্টার করতে",
+          "code": "bower unregister <packageName>"
+        }
+      ]
+    }
+  ]
+}
