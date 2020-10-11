@@ -107,7 +107,45 @@
           "code": "type Query { users(limit: Int = 10, sort: String = 'abc'): [User] }"
         }
       ]
+    },
+    {
+      "title": "ইন্টারফেস (Interfaces)",
+      "items": [
+        {
+          "definition": "সিঙ্গেল ইন্টারফেস ডিক্লেয়ার করা",
+          "code": "interface Foo { is_foo: Boolean }"
+        },
+        {
+          "definition": "ইন্টারফেস ইমপ্লিমেন্ট করা",
+          "code": "type Bar implements Foo { is_foo: Boolean }"
+        }
+      ]
+    },
+    {
+      "title": "ইউনিয়ন (Unions)",
+      "items": [
+        {
+          "definition": "সিঙ্গেল ইউনিয়ন ডিক্লেয়ার করা",
+          "code": "type Foo { name: String }"
+        },
+        {
+          "definition": "ইউনিয়ন ইমপ্লিমেন্ট করা",
+          "code": "union SingleUnion = Foo"
+        }
+      ]
+    },
+    {
+      "title": "ইনুমিরেশন (Enums)",
+      "items": [
+        {
+          "definition": "ইনুমিরেশন ডিক্লেয়ার করা",
+          "code": "enum userType { REST, GraphQL, Both }"
+        },
+        {
+          "definition": "ইনুমিরেশন ইমপ্লিমেন্ট করা",
+          "code": "type Root { checkType(userID: ID!): userType! }"
+        }
+      ]
     }
-    
   ]
 }
