@@ -43,9 +43,6 @@
                 "definition": "একটি নির্ধারিত নেমস্পেস ক্রিয়েট করা",
                 "code": "php artisan app:name devsonket"
             }, {
-                "definition": "লারাভেলে এইচটিএমএল প্যাকেজ যুক্ত করা",
-                "code": "php artisan composer require illuminate/html"
-            }, {
                 "definition": "লারাভেলে ইভেন্ট জেনারেট করা",
                 "code": "php artisan event:generate"
             }, {
