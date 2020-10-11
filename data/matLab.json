@@ -1,0 +1,430 @@
+{
+  "id": "matlab",
+  "title": "ম্যাটল্যাব",
+  "slug": "matlab",
+  "description": "ম্যাটল্যাব এর চিটশিট। ম্যাটল্যাব হল ম্যাথওয়ার্কস দ্বারা নির্মিত একটি স্বতন্ত্র মাল্টি-প্যারাডিয়াম প্রোগ্রামিং ভাষা এবং সংখ্যাগত কম্পিউটিং পরিবেশ। ম্যাটল্যাব ম্যাট্রিক্স ম্যানিপুলেশনস, ফাংশন এবং ডেটার প্লট করা, অ্যালগোরিদম বাস্তবায়ন, ইউজার ইন্টারফেস তৈরি এবং অন্যান্য ভাষায় লিখিত প্রোগ্রামগুলির সাথে ইন্টারফেসিংয়ের অনুমতি দেয়। ",
+  "colorPref": "#e535ab",
+  "contents": [
+    {
+      "title": " (File extensions)",
+      "items": [
+        {
+          "definition": "",
+          "code": ".m"
+        },
+        {
+          "definition": "",
+          "code": ".mat"
+        },
+        {
+          "definition": "",
+          "code": ".fig"
+        },
+        {
+          "definition": "",
+          "code": ".p"
+        },
+        {
+          "definition": "",
+          "code": ".mlx"
+        },
+        {
+          "definition": "",
+          "code": ".mex"
+        },
+        {
+          "definition": "",
+          "code": ".mlapp"
+        },
+        {
+          "definition": "",
+          "code": ".mdl .slx"
+        },
+        {
+          "definition": "",
+          "code": ".mdlp .slxp"
+        },
+        {
+          "definition": "",
+          "code": ".mltbx"
+        }
+      ]
+    },
+    {
+      "title": " (Common data types)",
+      "items": [
+        {
+          "definition": "",
+          "code": "single"
+        },
+        {
+          "definition": "",
+          "code": "double"
+        },
+        {
+          "definition": "",
+          "code": "char"
+        },
+        {
+          "definition": "",
+          "code": "string"
+        },
+        {
+          "definition": "",
+          "code": "logical"
+        },
+        {
+          "definition": "",
+          "code": "struct"
+        },
+        {
+          "definition": "",
+          "code": "cell"
+        }
+      ]
+    },
+    {
+      "title": "কীবোর্ড শর্টকাট (Keyboard shortcuts)",
+      "items": [
+        {
+          "definition": "",
+          "code": "Alt"
+        },
+        {
+          "definition": "",
+          "code": "F1"
+        },
+        {
+          "definition": "",
+          "code": "F5"
+        },
+        {
+          "definition": "",
+          "code": "F9"
+        },
+        {
+          "definition": "",
+          "code": "F10"
+        },
+        {
+          "definition": "",
+          "code": "F11"
+        },
+        {
+          "definition": "",
+          "code": "Shift+F5"
+        },
+        {
+          "definition": "",
+          "code": "F12"
+        },
+        {
+          "definition": "",
+          "code": "Ctrl+Page up/down"
+        },
+        {
+          "definition": "",
+          "code": "Ctrl+shift"
+        },
+        {
+          "definition": "",
+          "code": "Ctrl+C"
+        },
+        {
+          "definition": "",
+          "code": "Ctrl+D"
+        },
+        {
+          "definition": "",
+          "code": "Ctrl+R/T"
+        },
+        {
+          "definition": "",
+          "code": "Ctrl+N"
+        },
+        {
+          "definition": "",
+          "code": "Ctrl+W"
+        },
+        {
+          "definition": "",
+          "code": "Ctrl+shift+d"
+        },
+        {
+          "definition": "",
+          "code": "Ctrl+shift+u"
+        },
+        {
+          "definition": "",
+          "code": "Ctrl+shift+m"
+        }
+      ]
+    },
+    {
+      "title": " (Portions of matrices and vectors)",
+      "items": [
+        {
+          "definition": "",
+          "code": "x(:)"
+        },
+        {
+          "definition": "",
+          "code": "x(j:end)"
+        },
+        {
+          "definition": "",
+          "code": "x(2:5)"
+        },
+        {
+          "definition": "",
+          "code": "x(j,:)"
+        },
+        {
+          "definition": "",
+          "code": "x(:,j)"
+        },
+        {
+          "definition": "",
+          "code": "diag(x)"
+        },
+        {
+          "definition": "",
+          "code": "[A,B]"
+        },
+        {
+          "definition": "",
+          "code": "[A;B]"
+        }
+      ]
+    },
+    {
+      "title": " (Logical operators)",
+      "items": [
+        {
+          "definition": "",
+          "code": "&&"
+        },
+        {
+          "definition": "",
+          "code": "&"
+        },
+        {
+          "definition": "",
+          "code": "||"
+        },
+        {
+          "definition": "",
+          "code": "|"
+        },
+        {
+          "definition": "",
+          "code": "-"
+        },
+        {
+          "definition": "",
+          "code": "=="
+        },
+        {
+          "definition": "",
+          "code": "~="
+        }
+      ]
+    },
+    {
+      "title": " (Variable generation)",
+      "items": [
+        {
+          "definition": "",
+          "code": "j:k"
+        },
+        {
+          "definition": "",
+          "code": "j:i:k"
+        },
+        {
+          "definition": "",
+          "code": "NaN(a,b)"
+        },
+        {
+          "definition": "",
+          "code": "ones(a,b)"
+        },
+        {
+          "definition": "",
+          "code": "zeros(a,b)"
+        },
+        {
+          "definition": "",
+          "code": "meshgrid(x,y)"
+        },
+        {
+          "definition": "",
+          "code": "global x"
+        }
+      ]
+    },
+    {
+      "title": " (Basic math functions)",
+      "items": [
+        {
+          "definition": "",
+          "code": "abs(x)"
+        },
+        {
+          "definition": "",
+          "code": "sqrt(x)"
+        },
+        {
+          "definition": "",
+          "code": "sign(x)"
+        },
+        {
+          "definition": "",
+          "code": "round(x)"
+        },
+        {
+          "definition": "",
+          "code": "ceil(x)"
+        },
+        {
+          "definition": "",
+          "code": "fix(x)"
+        },
+        {
+          "definition": "",
+          "code": "floor(x)"
+        },
+        {
+          "definition": "",
+          "code": "complex(a,b)"
+        },
+        {
+          "definition": "",
+          "code": "real(x)"
+        },
+        {
+          "definition": "",
+          "code": "image(x)"
+        },
+        {
+          "definition": "",
+          "code": "conj(x)"
+        },
+        {
+          "definition": "",
+          "code": "log(x)"
+        },
+        {
+          "definition": "",
+          "code": "log10(x)"
+        },
+        {
+          "definition": "",
+          "code": "exp(x)"
+        },
+        {
+          "definition": "",
+          "code": "rem(a,b)"
+        },
+        {
+          "definition": "",
+          "code": "mod(a,b)"
+        },
+        {
+          "definition": "",
+          "code": "lcm(a,b)"
+        },
+        {
+          "definition": "",
+          "code": "gcd(a,b)"
+        },
+        {
+          "definition": "",
+          "code": "nthroot(a,n)"
+        }
+      ]
+    },
+    {
+      "title": " (Matrix and Vector operations)",
+      "items": [
+        {
+          "definition": "",
+          "code": "x=[1, 2, 3]"
+        },
+        {
+          "definition": "",
+          "code": "x=[1; 2; 3]"
+        },
+        {
+          "definition": "",
+          "code": "x=[1, 2; 3, 4]"
+        },
+        {
+          "definition": "",
+          "code": "x(2)=4"
+        },
+        {
+          "definition": "",
+          "code": "x.*y"
+        },
+        {
+          "definition": "",
+          "code": "x./y"
+        },
+        {
+          "definition": "",
+          "code": "x+y"
+        },
+        {
+          "definition": "",
+          "code": "x-y"
+        },
+        {
+          "definition": "",
+          "code": "A^n"
+        },
+        {
+          "definition": "",
+          "code": "A'"
+        },
+        {
+          "definition": "",
+          "code": "inv(A)"
+        },
+        {
+          "definition": "",
+          "code": "size(x)"
+        },
+        {
+          "definition": "",
+          "code": "eye(n)"
+        },
+        {
+          "definition": "",
+          "code": "sort(A)"
+        }
+      ]
+    },
+    {
+      "title": " (Statistical commands)",
+      "items": [
+        {
+          "definition": "",
+          "code": "hist(x)"
+        },
+        {
+          "definition": "",
+          "code": "distrnd"
+        },
+        {
+          "definition": "",
+          "code": "distpdf"
+        },
+        {
+          "definition": "",
+          "code": "distcdf"
+        }
+      ]
+    }
+  ]
+}
