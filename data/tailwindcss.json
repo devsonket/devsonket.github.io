@@ -1,0 +1,300 @@
+{
+    "id": "tailwindcss",
+    "title": "টেলওয়াইন্ড সিএসএস",
+    "slug": "tailwindcss",
+    "description": "টেলওয়াইন্ড সিএসএস একটি অত্যন্ত কাস্টমাইজযোগ্য, নিম্ন-স্তরের সিএসএস ফ্রেমওয়ার্ক যা আপনাকে ওভাররাইড করার জন্য ডিজাইন তৈরি করতে সমস্ত বিল্ডিং ব্লক দেয়।",
+    "colorPref": "#3393B2",
+    "contents": [
+      {
+        "title": "ইন্সটলেশন",
+        "items": [
+          {
+            "definition": "প্যাকেজ জেসন",
+            "code": "npm init -y"
+          },
+          {
+            "definition": "ইন্সটল টেলওয়াইন্ড using npm",
+            "code": "npm install tailwindcss"
+          },
+          {
+            "definition": "ইন্সটল টেলওয়াইন্ড using yarn",
+            "code": "yarn add tailwindcss"
+          }
+        ]
+      },
+      {
+        "title": "লেআউট",
+        "items": [
+          {
+            "definition": "ব্রেকপয়েন্টস: sm",
+            "code": "@media (min-width: 640px) { ... }"
+          },
+          {
+            "definition": "ব্রেকপয়েন্টস: md",
+            "code": "@media (min-width: 768px) { ... }"
+          },
+          {
+            "definition": "ব্রেকপয়েন্টস: lg",
+            "code": "@media (min-width: 1024px) { ... }"
+          },
+          {
+            "definition": "ব্রেকপয়েন্টস: xl",
+            "code": "@media (min-width: 1280px) { ... }"
+          },
+          {
+            "definition": "কন্টেইনার ক্লাস",
+            "code": "container"
+          },
+          {
+            "definition": "ডিভাইস min-width: 640px",
+            "code": "sm: "
+          },
+          {
+            "definition": "ডিভাইস min-width: 768px",
+            "code": "md: "
+          },
+          {
+            "definition": "ডিভাইস min-width: 1024px",
+            "code": "lg: "
+          },
+          {
+            "definition": "ডিভাইস min-width: 1280px",
+            "code": "xl: "
+          },
+          {
+            "definition": "বক্স সাইজিং বর্ডার",
+            "code": "box-border"
+          },
+          {
+            "definition": "বক্স সাইজিং কনটেন্ট",
+            "code": "box-content"
+          },
+          {
+            "definition": "ডিসপ্লে নান",
+            "code": "hidden"
+          },
+          {
+            "definition": "ডিসপ্লে ব্লক",
+            "code": "block"
+          },
+          {
+            "definition": "ডিসপ্লে ইনলাইন ব্লক",
+            "code": "inline-block"
+          },
+          {
+            "definition": "ডিসপ্লে ইনলাইন",
+            "code": "inline"
+          },
+          {
+            "definition": "ডিসপ্লে ফ্লেক্স",
+            "code": "flex"
+          },
+          {
+            "definition": "ডিসপ্লে ইনলাইন ফ্লেক্স",
+            "code": "inline-flex"
+          },
+          {
+            "definition": "ডিসপ্লে গ্রিড",
+            "code": "grid"
+          },
+          {
+            "definition": "ডিসপ্লে ইনলাইন গ্রিড",
+            "code": "inline-grid"
+          }
+        ]
+      },
+      {
+        "title": "এসভিজি / SVG",
+        "items": [
+          {
+            "definition": "ফিল",
+            "code": ".fill-current"
+          },
+          {
+            "definition": " স্ট্রোক ",
+            "code": ".stroke-current"
+          }
+        ]
+      },
+      {
+        "title": "ফ্লেক্সবক্স",
+        "items": [
+          {
+            "definition": "ফ্লেক্স",
+            "code": "flex"
+          },
+          {
+            "definition": "ইনলাইন ফ্লেক্স",
+            "code": "inline-flex"
+          },
+          {
+            "definition": "ফ্লেক্স ডিরেকশন রো",
+            "code": "flex-row"
+          },
+          {
+            "definition": "ফ্লেক্স ডিরেকশন রো রিভার্স",
+            "code": "flex-row-reverse"
+          },
+          {
+            "definition": "ফ্লেক্স ডিরেকশন কলাম",
+            "code": "flex-col"
+          },
+          {
+            "definition": "ফ্লেক্স ডিরেকশন কলাম রিভার্স",
+            "code": "flex-col-reverse"
+          }
+        ]
+      },
+      {
+        "title": "সাইজিং",
+        "items": [
+          {
+            "definition": "ফুল ওয়াইড: 100%",
+            "code": "w-full"
+          },
+          {
+            "definition": "স্ক্রিন ওয়াইড: 100vw",
+            "code": "w-screen"
+          },
+          {
+            "definition": "width: auto",
+            "code": "w-auto"
+          },
+          {
+            "definition": "width: 1px",
+            "code": "w-px"
+          },
+          {
+            "definition": "width: 0",
+            "code": "w-0"
+          },
+          {
+            "definition": "width: 0.25rem/ 4px",
+            "code": "w-1"
+          },
+          {
+            "definition": "width: 0.5rem/ 8px",
+            "code": "w-2"
+          },
+          {
+            "definition": "width: 0.75rem/ 12px",
+            "code": "w-3"
+          },
+          {
+            "definition": "width: 1rem/ 16px",
+            "code": "w-4"
+          },
+          {
+            "definition": "width: 50%",
+            "code": "w-1/2, w-2/4, w-3/6, w-6/12"
+          },
+          {
+            "definition": "width: 25%",
+            "code": "w-1/4, w-3/12, w-3/6, w-6/12"
+          },
+          {
+            "definition": "মিনিমাম ওয়াইড: 0",
+            "code": "min-w-0"
+          },
+          {
+            "definition": "মিনিমাম ওয়াইড: 100%",
+            "code": "min-w-full"
+          },
+          {
+            "definition": "ম্যাক্সিমাম ওয়াইড: নান",
+            "code": "max-w-none"
+          },
+          {
+            "definition": "ম্যাক্সিমাম ওয়াইড: 100%",
+            "code": "max-w-full"
+          },
+          {
+            "definition": "ম্যাক্সিমাম ওয়াইড: 640px",
+            "code": "max-w-screen-sm"
+          },
+          {
+            "definition": "ম্যাক্সিমাম ওয়াইড: 768px",
+            "code": "max-w-screen-md"
+          },
+          {
+            "definition": "ম্যাক্সিমাম ওয়াইড: 1024px",
+            "code": "max-w-screen-lg"
+          },
+          {
+            "definition": "ম্যাক্সিমাম ওয়াইড: 1280px",
+            "code": "max-w-screen-xl"
+          }
+        ]
+      },
+      {
+        "title": "টাইপোগ্রাফি",
+        "items": [
+          {
+            "definition": "টেক্সট কালার: ট্রান্সপারেন্ট",
+            "code": "text-transparent"
+          },
+          {
+            "definition": "টেক্সট কালার: ব্ল্যাক",
+            "code": "text-black"
+          },
+          {
+            "definition": "টেক্সট কালার: হুয়াইট",
+            "code": "text-white"
+          },
+          {
+            "definition": "টেক্সট কালার: গ্রে (ফন্ট ওয়েট সাইজের নাম্বার এইভাবে- 100,200,300....,900)",
+            "code": "text-gray-100"
+          },
+          {
+            "definition": "টেক্সট কালার: রেড (ফন্ট ওয়েট সাইজের নাম্বার এইভাবে- 100,200,300....,900)",
+            "code": "text-red-100"
+          },
+          {
+            "definition": "টেক্সট কালার: অরেঞ্জ (ফন্ট ওয়েট সাইজের নাম্বার এইভাবে- 100,200,300....,900)",
+            "code": "text-orange-100"
+          },
+          {
+            "definition": "টেক্সট কালার: ইয়েলো (ফন্ট ওয়েট সাইজের নাম্বার এইভাবে- 100,200,300....,900)",
+            "code": "text-yellow-100"
+          },
+          {
+            "definition": "টেক্সট কালার: গ্রিন (ফন্ট ওয়েট সাইজের নাম্বার এইভাবে- 100,200,300....,900)",
+            "code": "text-green-100"
+          },
+          {
+            "definition": "টেক্সট অপাচিটি: 0",
+            "code": "text-opacity-0"
+          },
+          {
+            "definition": "টেক্সট অপাচিটি: 0.25",
+            "code": "text-opacity-25"
+          },
+          {
+            "definition": "টেক্সট অপাচিটি: 0.5",
+            "code": "text-opacity-50"
+          },
+          {
+            "definition": "টেক্সট অপাচিটি: 0.75",
+            "code": "text-opacity-75"
+          },
+          {
+            "definition": "টেক্সট অপাচিটি: 1",
+            "code": "text-opacity-100"
+          },
+          {
+            "definition": "ফন্ট ফ্যামিলি sans: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji",
+            "code": "font-sans"
+          },
+          {
+            "definition": "ফন্ট ফ্যামিলি serif: Georgia, Cambria, Times New Roman, Times, serif",
+            "code": "font-serif"
+          },
+          {
+            "definition": "ফন্ট ফ্যামিলি mono: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
+            "code": "font-mono"
+          }
+        ]
+      }
+    ]
+  }
+  

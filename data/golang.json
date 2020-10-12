@@ -1,0 +1,372 @@
+{
+    "id": "go",
+    "title": "গো",
+    "slug": "go",
+    "description": "গো একটি স্ট্যাটিকালি টাইপ করা এবং সংকলিত প্রোগ্রামিং ল্যাঙ্গুয়েজ যেটি টেক জায়ান্ট গুগলের তিন জন প্রোগ্রামার  ডিজাইন করেছে। গো ল্যাঙ্গুয়েজ সিনট্যাক্টিক্যালি সি ল্যাঙ্গুয়েজ এর সমান কিন্তু এর ম্যামরি সেফটি, আবর্জনা সংগ্রহ, কাঠামোগত টাইপিং এর দিক দিয়ে এটি অনেক ভালো পারফর্ম করে।",
+    "colorPref": "#7fd5ea",
+    "contents": [
+      {
+        "title": "ফাইল ফরম্যাট",
+        "items": [
+          {
+            "definition": "ফাইল এক্সটেনশন",
+            "code": "FileName.go"
+          },
+          {
+            "definition": "ফাইল রান করা",
+            "code": "go run FileName.go"
+          },
+          {
+            "definition": "এক্সেকিউটেবল ফাইল তৈরি করা",
+            "code": "go build FileName.go"
+          },
+          {
+            "definition": "এক্সেকিউটেবল ফাইল রান করা",
+            "code": "./FileName"
+          },
+          {
+            "definition": "বিন ফোল্ডার এর মধ্যে ফাইল বিল্ড করা",
+            "code": "go install <package path>"
+          }
+        ]
+      },
+      {
+        "title": "ফাইল প্রিন্ট করা এবং ভ্যারিয়েবল ডিক্লেয়ার করা",
+        "items": [
+          {
+            "definition": "নিচের লাইন ফাঁকা রেখে কিছু প্রিন্ট করা",
+            "code": "fmt.Println(\"hello world\")"
+          },
+          {
+            "definition": "নিচের লাইন না ফাঁকা রেখে কিছু প্রিন্ট করা",
+            "code": "fmt.Print(\"hello world\")"
+          },
+          {
+            "definition": "ইউজার এর থেকে ইনপুট নেয়া",
+            "code": "var name string \n fmt.Scanln(&name)"
+          },
+          {
+            "definition": "স্ট্রিং ফরম্যাট করে প্রিন্ট করা",
+            "code": "var a = 10 fmt.Printf(\"%v\", a)"
+          },
+          {
+            "definition": "ভ্যালু না দিয়ে ভ্যারিয়েবল ডিক্লেয়ার করা",
+            "code": "var a int"
+          },
+          {
+            "definition": "ভ্যালু দিয়ে ভ্যারিয়েবল ডিক্লেয়ার করা",
+            "code": "var a int = 10 / var a = 10"
+          },
+          {
+            "definition": "কোন ধরনের ডেটা টাইপ সেটা কম্পাইল টাইমে বুঝে নেয়া",
+            "code": "a := 10 / msg := \"Hello there!!!\""
+          },
+          {
+            "definition": "ইন্টেজার ভ্যারিয়েবল ডিক্লেয়ার করা",
+            "code": "var a int = 20"
+          },
+          {
+            "definition": "ফ্ল্যোট ভ্যারিয়েবল ডিক্লেয়ার করা",
+            "code": "var b float32 = 23.30"
+          },
+          {
+            "definition": "স্ট্রিং ভ্যারিয়েবল ডিক্লেয়ার করা",
+            "code": "var b string = \"Hello Programmer\""
+          },
+          {
+            "definition": "বুলিয়ান ভ্যারিয়েবল ডিক্লেয়ার করা",
+            "code": "var b bool = true"
+          },
+          {
+            "definition": "কন্সট্যান্ট ভ্যারিয়েবল ডিক্লেয়ার করা",
+            "code": "const Phi = 1.618"
+          }
+        ]
+      },
+      {
+        "title": "ভার অথবা কন্সট্যান্ট ব্লক তৈরি করা",
+        "items": [
+          {
+            "code": "var ("
+          },
+          {
+            "code": "   count int = 0"
+          },
+          {
+            "code": "   msg string = \"Hello\""
+          },
+          {
+            "code": "   amount float32 = 45.6"
+          },
+          {
+            "code": ")"
+          },
+          {
+            "code": "const ("
+          },
+          {
+            "code": "   count int = 0"
+          },
+          {
+            "code": "   msg string = \"Hello\""
+          },
+          {
+            "code": "   amount float32 = 45.6"
+          },
+          {
+            "code": ")"
+          }
+        ]
+      },
+      {
+        "title": "টাইপ কনভার্শন",
+        "items": [
+          {
+            "definition": "ভ্যারিয়েবল এর টাইপ দেখা",
+            "code": "a := 45 \n fmt.Printf(\"%T\", a) \n // int"
+          },
+          {
+            "definition": "ইন্টিজারকে ফ্ল্যোট এ  রূপান্তর করাs",
+            "code": "var i int = 45 \n var j float 32 \n j = float32(i)"
+          },
+          {
+            "definition": "ফ্ল্যোট কে ইন্টিজার এ রূপান্তর করা",
+            "code": "var i float32 = 45.23 \n var j int \n j = int(i)"
+          },
+          {
+            "definition": "ইন্টিজারকে স্ট্রিং এ  রূপান্তর করা",
+            "code": "var i int = 45 \n var j float 32 \n j = strconv.Itoa(i)"
+          }
+        ]
+      },
+      {
+        "title": "এরে",
+        "items": [
+          {
+            "definition": "নতুন একটি এরে তৈরি করা",
+            "code": "numbers := [3]int{12, 32, 43}"
+          },
+          {
+            "definition": "এরে সাইজ ডিক্লেয়ার না করে এরে তৈরি করা",
+            "code": "grades := [...]int{23, 54, 33, 90]"
+          },
+          {
+            "definition": "ফাঁকা এরে তৈরি করা",
+            "code": "var students [3]string"
+          },
+          {
+            "definition": "এরের কোন ইনডেক্স এ ভ্যালু সেট করা",
+            "code": "students[0] = \"John\""
+          },
+          {
+            "definition": "এরের সাইজ বের করা",
+            "code": "len(students)"
+          },
+          {
+            "definition": "বিল্ট-ইন ফাংশান দিয়ে এরে তৈরি করা এবং সব ভ্যালু শূন্য সেট করা",
+            "code": "a := make([]int, 3) \n // [0 0 0]"
+          }
+        ]
+      },
+      {
+        "title": "ম্যাপ",
+        "items": [
+          {
+            "definition": "একটি ফাঁকা ম্যাপ তৈরি করা",
+            "code": "population := map[string]int{}"
+          },
+          {
+            "definition": "বিল্ট ইন ম্যাপ ফাংশান দিয়ে ম্যাপ তৈরি করা",
+            "code": "population := make(map[string]int)"
+          },
+          {
+            "definition": "একটি ভ্যালু সহ ম্যাপ তৈরি করা ",
+            "code": "population := map[string]int{\n\t \"dhaka\" : 3000323,\n\t \"chattagram\" : 2000353, \n\t \"sylhet\" : 1005423, \n\t \"khulna\" : 3000323, }"
+          },
+          {
+            "definition": "ম্যাপ এর কোন একটি ভ্যালু দেখা",
+            "code": "population[\"dhaka\"] \n // 3000323"
+          },
+          {
+            "definition": "ম্যাপ এ নতুন কোন ভ্যালু যোগ করা",
+            "code": "population[\"rajshahi\"] = 1203839"
+          },
+          {
+            "definition": "ম্যাপ থেকে কোন ভ্যালু মুছে ফেলা",
+            "code": "delete(population, \"dhaka\")"
+          },
+          {
+            "definition": "ম্যাপ এর লেন্থ বের করা",
+            "code": "len(population)"
+          }
+        ]
+      },
+      {
+        "title": "ইফ এলস স্টেট্ম্যান্ট",
+        "items": [
+          {
+            "definition": "ইফ এলস",
+            "code": "if condition {} else {}"
+          },
+          {
+            "definition": "ইফ এলস এর উদাহরণ",
+            "code": "if age < 18 {fmt.Println(\"You are underage.\"} else {\"You are matured.\"}"
+          },
+          {
+            "definition": "ইফ এলস এলস ইফ এর উদাহরণ",
+            "code": "if age < 18 {fmt.Println(\"You are underage.\"} else if age == 18 {\"You are good to go.\"} else {\"You are over aged.\"}"
+          },
+          {
+            "definition": "বুলিয়ান ইফ স্টেট্ম্যান্ট",
+            "code": "if true {fmt.Println(\"This is true\"} \n // This is true"
+          },
+          {
+            "definition": "বুলিয়ান ইফ স্টেট্ম্যান্ট (2)",
+            "code": "if false {fmt.Println(\"This is true\"} \n // কিছু দেখাবে না। কারণ মিথ্যা হলে পরের লাইন এক্সেকিউট হয় না"
+          }
+        ]
+      },
+      {
+        "title": "স্ট্রাক্ট",
+        "items": [
+          {
+            "code": "type Doctor struct {"
+          },
+          {
+            "code": "   number int"
+          },
+          {
+            "code": "actorName string"
+          },
+          {
+            "code": "}"
+          },
+          {
+            "code": "aDoctor := Doctor {"
+          },
+          {
+            "code": "   number: 3,"
+          },
+          {
+            "code": "actorName: \"Jon Pertwee\","
+          },
+          {
+            "code": "}"
+          },
+          {
+            "code": "fmt.Println(aDoctor)"
+          }
+        ]
+      },
+      {
+        "title": "সুইচ স্ট্যাট্ম্যান্ট",
+        "items": [
+          {
+            "code": "switch 2 {"
+          },
+          {
+            "code": "case 1: \n\t fmt.Println(\"One\"}"
+          },
+          {
+            "code": "case 2: \n\t fmt.Println(\"Two\"}"
+          },
+          {
+            "code": "default: \n\t fmt.Println(\"none\"}"
+          }
+        ]
+      },
+      {
+        "title": "লুপ",
+        "items": [
+          {
+            "definition": "ফর লুপ",
+            "code": "for i:= 0; i < 10; i++ {\n\t fmt.Println(i) \n }"
+          },
+          {
+            "definition": "লুপের বাইরে ভ্যারিয়েবল ইনিশিয়ালাইজ করে ফর লুপ তৈরি করা",
+            "code": "i := 0\n for ; i < 10; i++ { \n fmt.Print(i) \n}"
+          },
+          {
+            "definition": "এরের উপর ফর লুপ চালানো/ রেঞ্জ",
+            "code": "for k, v := range s {} \n// এখানে k হচ্ছে key, v হচ্ছে value এবং s হচ্ছে এরের নাম"
+          },
+          {
+            "definition": "হোয়াইল এর মত ফর লুপ ব্যবহার করা",
+            "code": "for condition {}"
+          }
+        ]
+      },
+      {
+        "title": "ফাংশান",
+        "items": [
+          {
+            "definition": "আর্গুমেন্ট ছাড়া  কোন একটি ফাংশান তৈরি করা",
+            "code": "func message(){}"
+          },
+          {
+            "definition": "আর্গুমেন্ট সহ ফাংশান তৈরি করা",
+            "code": "func greeting(msg string, nmbr int){}"
+          },
+          {
+            "definition": "বেনামি ফাংশান",
+            "code": "func () {}()"
+          }
+        ]
+      },
+      {
+        "title": "পয়েন্টার",
+        "items": [
+          {
+            "definition": "একটি পয়েন্টার তৈরি করা",
+            "code": "a := 5 \n b := &a // পয়েন্টার এড্রেস তৈরি করতে ভ্যারিয়েবল এর আগে & চিহ্ন দেয়া লাগে"
+          },
+          {
+            "definition": "পয়েন্টার এড্রেস থেকে ভ্যালু নেয়া",
+            "code": "c := *b //"
+          },
+          {
+            "definition": "পয়েন্টার দিয়ে ভ্যারিয়েবল এর ভ্যালু পরিবর্তন করা",
+            "code": "a := 5 \n b := &a\n *b = 10"
+          }
+        ]
+      },
+      {
+        "title": "ফরম্যাট স্ট্রিং",
+        "items": [
+          {
+            "definition": "ডিফল্ট ফরম্যাট এ ভ্যালু দেখা",
+            "code": "%v"
+          },
+          {
+            "definition": "ভ্যারিয়েবল এর টাইপ দেখা",
+            "code": "%T"
+          },
+          {
+            "definition": "বুলিয়ান true false প্রিন্ট করা",
+            "code": "%t"
+          },
+          {
+            "definition": "ক্যারেক্টার প্রিন্ট করা",
+            "code": "%c"
+          },
+          {
+            "definition": "বেইজ ১০ এ ভ্যারিয়েবল প্রিন্ট করা",
+            "code": "%d"
+          },
+          {
+            "definition": "বেইজ ৮ এ ভ্যারিয়েবল প্রিন্ট করা",
+            "code": "%o"
+          },
+          {
+            "definition": "বেইজ ১৬ তে ছোট অক্ষর (a-f) এর ভ্যারিয়েবল প্রিন্ট করা",
+            "code": "%x"
+          },
+          {
+            "definition": "বেইজ ১৬ তে বড় অক্ষর (A-F) এর ভ্যারিয়েবল প্রিন্ট করা",
+            "code": "%X"
+          }
+        ]
+      }
+    ]
+  }
+  
