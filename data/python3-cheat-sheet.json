@@ -138,12 +138,40 @@
                     "code": "txt.casefold()"
                 },
                 {
+                    "definition": "সেপারেটর দ্বারা স্ট্রিংকে সাব-স্ট্রিংয়ে বিভক্ত করা",
+                    "code": "string.split('separator')   উদহারণ: string = 'Hello, World!'   string.split(',') → ['Hello', ' World!']"
+                },
+                {
+                    "definition": "স্ট্রিং এর সাথে নাম্বার সংযুক্ত করা",
+                    "code": "string.format(number)  উদহারণ: string = 'I am {} years old'   string.format(21) → 'I am 21 years old'"
+                },
+                {
+                    "definition": "একটি স্ট্রিং, একটি নির্দিষ্ট সাব-স্ট্রিং দ্বারা শেষে হয়েছে কিনা বের করা",
+                    "code": "string.endswith(substring)  উদহারণ: string ='End with'   string.endswith('th') → True"
+                },
+                {
+                    "definition": "স্ট্রিংটি কেবল অক্ষর দ্বারা গঠিত কিনা দেখা",
+                    "code": "string.isalpha()  উদহারণ: string ='string'   string.isalpha() → True"
+                },
+                {
+                    "definition": "স্ট্রিংটি কেবল সংখ্যা দ্বারা গঠিত কিনা দেখা",
+                    "code": "string.isdigit()  উদহারণ: string ='123'   string.isdigit() → True"
+                },
+                {
+                    "definition": "স্ট্রিংটি আইডেন্টিফায়ার (কেবল অক্ষর, সংখা ও আন্ডারস্কোর('_') বহন করবে) কিনা",
+                    "code": "string.isidentifier()  উদহারণ: string ='It_123'   string.isidentifier() → True"
+                },
+                {
                     "definition": "একটি স্ট্রিংকে বড় হাতের অক্ষরে রূপান্তর করা",
                     "code": "txt.upper()"
                 },
                 {
                     "definition": "একটি স্ট্রিংকে ছোট হাতের অক্ষরে রূপান্তর করা",
                     "code": "txt.lower()"
+                },
+                {
+                    "definition": "একটি স্ট্রিংয়ের বড় হাতের অক্ষরকে ছোট হাতের অক্ষরে রূপান্তর করা এবং ছোট হাতের অক্ষরকে বড় হাতের অক্ষরে রূপান্তর করা",
+                    "code": "txt.swapcase()"
                 },
                 {
                     "definition": "একটি স্ট্রিং এর প্রথম ও শেষের স্পেস রিমুভ করা",
