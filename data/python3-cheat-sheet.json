@@ -139,27 +139,27 @@
                 },
                 {
                     "definition": "সেপারেটর দ্বারা স্ট্রিংকে সাব-স্ট্রিংয়ে বিভক্ত করা",
-                    "code": "string.split('separator')   উদহারণ: string = 'Hello, World!'   string.split(',') → ['Hello', ' World!']"
+                    "code": "string.split('separator')   \nউদহারণ: \nstring = 'Hello, World!'   \nstring.split(',') → ['Hello', ' World!']"
                 },
                 {
                     "definition": "স্ট্রিং এর সাথে নাম্বার সংযুক্ত করা",
-                    "code": "string.format(number)  উদহারণ: string = 'I am {} years old'   string.format(21) → 'I am 21 years old'"
+                    "code": "string.format(number)  \nউদহারণ: \nstring = 'I am {} years old'   \nstring.format(21) → 'I am 21 years old'"
                 },
                 {
                     "definition": "একটি স্ট্রিং, একটি নির্দিষ্ট সাব-স্ট্রিং দ্বারা শেষে হয়েছে কিনা বের করা",
-                    "code": "string.endswith(substring)  উদহারণ: string ='End with'   string.endswith('th') → True"
+                    "code": "string.endswith(substring)  \nউদহারণ: \nstring ='End with'   \nstring.endswith('th') → True"
                 },
                 {
                     "definition": "স্ট্রিংটি কেবল অক্ষর দ্বারা গঠিত কিনা দেখা",
-                    "code": "string.isalpha()  উদহারণ: string ='string'   string.isalpha() → True"
+                    "code": "string.isalpha()  \nউদহারণ: \nstring ='string'   \nstring.isalpha() → True"
                 },
                 {
                     "definition": "স্ট্রিংটি কেবল সংখ্যা দ্বারা গঠিত কিনা দেখা",
-                    "code": "string.isdigit()  উদহারণ: string ='123'   string.isdigit() → True"
+                    "code": "string.isdigit()  \nউদহারণ: \nstring ='123'   \nstring.isdigit() → True"
                 },
                 {
                     "definition": "স্ট্রিংটি আইডেন্টিফায়ার (কেবল অক্ষর, সংখা ও আন্ডারস্কোর('_') বহন করবে) কিনা",
-                    "code": "string.isidentifier()  উদহারণ: string ='It_123'   string.isidentifier() → True"
+                    "code": "string.isidentifier()  \nউদহারণ: \nstring ='It_123'   \nstring.isidentifier() → True"
                 },
                 {
                     "definition": "একটি স্ট্রিংকে বড় হাতের অক্ষরে রূপান্তর করা",
@@ -196,6 +196,54 @@
                 {
                     "definition": "একটি স্ট্রিং এ একটি অক্ষর কত বার আছে বের করা",
                     "code": "string.count(value)"
+                }
+            ]
+        },
+        {
+            "title": "পাইথন লিস্ট মেথড",
+            "items": [{
+                    "definition": "লিস্টের শেষে নতুন উপাদান সংযুক্ত করা",
+                    "code": "_oldList.append('item1')"
+                },
+                {
+                    "definition": "লিস্টের সকল উপাদান মুছে ফেলা",
+                    "code": "_oldList.clear()"
+                },
+                {
+                    "definition": "লিস্টের প্রতিলিপি করা",
+                    "code": "_newList = _oldList.copy()"
+                },
+                {
+                    "definition": "লিস্টে একটি উপাদান কতবার আছে গণনা করা",
+                    "code": "_oldList.count('item1')"
+                },
+                {
+                    "definition": "লিস্টের শেষে অন্য একটি লিস্টের উপাদান সংযুক্ত করা",
+                    "code": "_AList.extend(_BList)  \nউদাহরণ: \n_AList = ['itemA']   \n_BList = ['itemB']   \n_AList.extend(_BList)   \nprint(_AList) → ['itemA','itemB']"
+                },
+                {
+                    "definition": "লিস্টে একটি উপাদান অবস্থান বের করা এবং উপাদানটি একাধিক বার থাকলে প্রথম অবস্থান বের করা",
+                    "code": "_oldList.index('item1')"
+                },
+                {
+                    "definition": "লিস্টের নির্দিষ্ট স্থানে নতুন উপাদান সংযুক্ত করা",
+                    "code": "list.insert(position,'item')  \nউদাহরণ: \n_AList = ['itemA','itemC']   \n_AList.insert(1,'itemB')   \nprint(_AList) → ['itemA','itemB','itemC']"
+                },
+                {
+                    "definition": "লিস্টের নির্দিষ্ট স্থানের উপাদান মুছে ফেলা",
+                    "code": "list.pop(position)  \nউদাহরণ: \n_AList = ['itemA','itemC']   \n_AList.pop(1)   \nprint(_AList) → ['itemA']"
+                },
+                {
+                    "definition": "লিস্টের নির্দিষ্ট উপাদান মুছে ফেলা",
+                    "code": "list.remove(item)  \nউদাহরণ: \n_AList = ['itemA','itemC']   \n_AList.remove('itemA')   \nprint(_AList) → ['itemC']"
+                },
+                {
+                    "definition": "লিস্টের উপাদান উল্টো দিক থেকে সাজানো",
+                    "code": "list.reverse()  \nউদাহরণ: \n_AList = ['itemA','itemC']   \n_AList.reverse()   \nprint(_AList) → ['itemC','itemA']"
+                },
+                {
+                    "definition": "লিস্টের উপাদান ঊর্ধ্বক্রম এবং অধঃক্রম অনুসারে সাজানো",
+                    "code": "list.sort() \n উদাহরণ: \n_AList = ['A','C']   \n_AList.sort(reverse=False)   \nprint(_AList) → ['A','C']   \n_AList.sort(reverse=True)   \nprint(_AList) → ['C','A']"
                 }
             ]
         },
