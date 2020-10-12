@@ -200,7 +200,7 @@
             ]
         },
         {
-            "title": "পাইথন লিস্ট মেথড",
+            "title": "পাইথন লিস্ট মেথড (Python List Method)",
             "items": [{
                     "definition": "লিস্টের শেষে নতুন উপাদান সংযুক্ত করা",
                     "code": "_oldList.append('item1')"
@@ -243,7 +243,35 @@
                 },
                 {
                     "definition": "লিস্টের উপাদান ঊর্ধ্বক্রম এবং অধঃক্রম অনুসারে সাজানো",
-                    "code": "list.sort() \n উদাহরণ: \n_AList = ['A','C']   \n_AList.sort(reverse=False)   \nprint(_AList) → ['A','C']   \n_AList.sort(reverse=True)   \nprint(_AList) → ['C','A']"
+                    "code": "list.sort() \nউদাহরণ: \n_AList = ['A','C']   \n_AList.sort(reverse=False)   \nprint(_AList) → ['A','C']   \n_AList.sort(reverse=True)   \nprint(_AList) → ['C','A']"
+                }
+            ]
+        },
+        {
+            "title": "ফাইল পরিচালনা (File Handling)",
+            "items": [{
+                    "definition": "ফাইল খোলা",
+                    "code": "file = open(fileLocation, 'r') \nউদাহরণ: \nfile = open('D:\\myfiles\\myFile.txt', 'r')"
+                },
+                {
+                    "definition": "সম্পূর্ণ ফাইল পড়া",
+                    "code": "file.read()"
+                },
+                {
+                    "definition": "ফাইলের নির্দিষ্ট সংখ্যক লাইন পড়া",
+                    "code": "file.readline()"
+                },
+                {
+                    "definition": "ফাইল বন্ধ করা",
+                    "code": "file.close()"
+                },
+                {
+                    "definition": "নতুন ফাইল তৈরি করা",
+                    "code": "newFile=open(fileName,'x') \nউদাহরণ: \nfile = open('D:\\myfiles\\myNewFile.txt', 'x')"
+                },
+                {
+                    "definition": "ফাইল অপসারণ করা",
+                    "code": "os.remove(newFile) \nউদাহরণ: \nos.remove('D:\\myfiles\\myNewFile.txt')"
                 }
             ]
         },
