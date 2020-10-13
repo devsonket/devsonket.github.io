@@ -264,7 +264,7 @@
       ]
     },
     {
-      "title": " (Basic math functions)",
+      "title": "বেসিক ম্যাথ ফাংশন(Basic math functions)",
       "items": [
         {
           "definition": "অ্যাবসলিউট ভ্যালু অফ x",
@@ -341,62 +341,62 @@
       ]
     },
     {
-      "title": " (Matrix and Vector operations)",
+      "title": "ম্যাট্রিক্স এন্ড ভেক্টর অপারেশন্স (Matrix and Vector operations)",
       "items": [
         {
-          "definition": "",
+          "definition": "১ x ৩ (রও) ভেক্টর ডিফাইন্ড",
           "code": "x=[1, 2, 3]"
         },
         {
-          "definition": "",
+          "definition": "৩ x ১ (কলাম) ভেক্টর ডিফাইন্ড",
           "code": "x=[1; 2; 3]"
         },
         {
-          "definition": "",
+          "definition": "২ x ২ ম্যাট্রিক্স",
           "code": "x=[1, 2; 3, 4]"
         },
         {
-          "definition": "",
+          "definition": "চেঞ্জ ২য় ইনডেক্স ভ্যালু ",
           "code": "x(2)=4"
         },
         {
-          "definition": "",
+          "definition": "এলিমেন্ট বাই এলিমেন্ট মাল্টিপ্লিকেশন",
           "code": "x.*y"
         },
         {
-          "definition": "",
+          "definition": "এলিমেন্ট বাই এলিমেন্ট ডিভিশন",
           "code": "x./y"
         },
         {
-          "definition": "",
+          "definition": "এলিমেন্ট বাই এলিমেন্ট এড্ডিশন",
           "code": "x+y"
         },
         {
-          "definition": "",
+          "definition": "এলিমেন্ট বাই এলিমেন্ট সাবট্রাকশন",
           "code": "x-y"
         },
         {
-          "definition": "",
+          "definition": "ম্যাট্রিক্স পাওয়ার অফ a",
           "code": "A^n"
         },
         {
-          "definition": "",
+          "definition": "ট্রান্সপোস",
           "code": "A'"
         },
         {
-          "definition": "",
+          "definition": "ইনভার্স অফ ম্যাট্রিক্স",
           "code": "inv(A)"
         },
         {
-          "definition": "",
+          "definition": "রও এন্ড কলাম নম্বর",
           "code": "size(x)"
         },
         {
-          "definition": "",
+          "definition": "আইডেন্টিটি অফ ম্যাট্রিক্স",
           "code": "eye(n)"
         },
         {
-          "definition": "",
+          "definition": "শর্টস ভেক্টর ফ্রম স্মলেস্ট তো লার্জেস্ট",
           "code": "sort(A)"
         }
       ]
