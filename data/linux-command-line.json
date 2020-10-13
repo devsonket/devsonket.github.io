@@ -122,6 +122,9 @@
           "definition": "nano এডিটর দিয়ে ফাইল এডিট করা",
           "code": "nano YourFileName"
         }, {
+          "definition": "gedit এডিটর দিয়ে ফাইল এডিট করা",
+          "code": "gedit YourFileName"
+        }, {
           "definition": "বর্তমান ওয়ার্কিং ডিরেক্টরি প্রিন্ট করা",
           "code": "pwd"
         }, {
@@ -154,6 +157,12 @@
         }, {
           "definition": "ফাইল অথবা ডিরেক্টরির সাইজ দেখা",
           "code": "du YourFileOrDirectory"
+        }, {
+          "definition": "বর্তমান ওয়ার্কিং ডিরেক্টরির সাইজ দেখা",
+          "code": "du -sh"
+        }, {
+          "definition": "সকল ফাইল ও ডিরেক্টরীর ডিক্স ইউজ দেখতে",
+          "code": "du -ah"
         }, {
           "definition": "ফাইলের পারমিশন সবার জন্য রিড, রাইট, এক্সিকিউট (read, write, execute) করা",
           "code": "chmod 777 YourFileName"
@@ -201,6 +210,9 @@
         }, {
           "definition": "মাউন্টেড ফাইল সিস্টেম দেখা",
           "code": "mount"
+        }, {
+          "definition": "মাউন্টেড ফাইলের ব্যবহৃত ও অব্যবহৃত  স্পেস দেখা",
+          "code": "df -h"
         }, {
           "definition": "পার্টিশন সম্পর্কিত তথ্য দেখা ",
           "code": "fdisk -l"
@@ -259,6 +271,9 @@
         }, {
           "definition": "টারমিনাল ক্লোজ করা",
           "code": "exit অথবা Ctrl+D"
+        }, {
+          "definition": "টারমিনাল ক্লোজ না করে প্রাথমিক অবস্থায় ফিরে যেতে",
+          "code": "reset"
         }, {
           "definition": "বর্তমান কমান্ড স্টপ করা",
           "code": "Ctrl-c"
