@@ -267,79 +267,75 @@
       "title": " (Basic math functions)",
       "items": [
         {
-          "definition": "",
+          "definition": "অ্যাবসলিউট ভ্যালু অফ x",
           "code": "abs(x)"
         },
         {
-          "definition": "",
+          "definition": "স্কয়ার রুট অফ x",
           "code": "sqrt(x)"
         },
         {
-          "definition": "",
+          "definition": "সাইন অফ x",
           "code": "sign(x)"
         },
         {
-          "definition": "",
+          "definition": "রাউন্ড অফ x",
           "code": "round(x)"
         },
         {
-          "definition": "",
+          "definition": "রাউন্ড অফ x টোয়াড পজিটিভ ইনফিনিটি",
           "code": "ceil(x)"
         },
         {
-          "definition": "",
+          "definition": "রাউন্ড অফ x টোয়াড জিরো",
           "code": "fix(x)"
         },
         {
-          "definition": "",
+          "definition": "রাউন্ড অফ x টোয়াড নেগেটিভ ইনফিনিটি",
           "code": "floor(x)"
         },
         {
-          "definition": "",
-          "code": "complex(a,b)"
-        },
-        {
-          "definition": "",
+          "definition": "রিয়েল পার্ট অফ কমপ্লেক্স নম্বর",
           "code": "real(x)"
         },
         {
-          "definition": "",
+          "definition": "ইমাজিনারি পার্ট অফ কমপ্লেক্স নম্বর",
           "code": "image(x)"
         },
         {
-          "definition": "",
+          "definition": "কমপ্লেক্স কংজুগেট অফ x",
           "code": "conj(x)"
         },
         {
-          "definition": "",
+          "definition": "ন্যাচারাল লগারিদম অফ x",
           "code": "log(x)"
         },
         {
-          "definition": "",
+          "definition": "কমন লগারিদম অফ x",
           "code": "log10(x)"
         },
         {
-          "definition": "",
+          "definition": "এক্সপোনেনশিয়াল অফ x (e^x)",
           "code": "exp(x)"
         },
         {
-          "definition": "",
+          "definition": "রিমাইন্ডার আফটার ডিভিশন অফ a বাই b",
           "code": "rem(a,b)"
         },
         {
-          "definition": "",
+          "definition": "মডিউল অপারেশন",
           "code": "mod(a,b)"
         },
         {
-          "definition": "",
+          "definition": "লিস্ট কমন মাল্টিপ্লস অফ a এন্ড b",
           "code": "lcm(a,b)"
         },
         {
-          "definition": "",
+          "definition": "গ্রেটেস্ট কমন মাল্টিপ্লস অফ a এন্ড b",
           "code": "gcd(a,b)"
         },
         {
-          "definition": "",
+          "definition": "রিয়েল এন-তম রুট অফ a",
           "code": "nthroot(a,n)"
         }
       ]
