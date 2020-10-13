@@ -6,79 +6,79 @@
   "colorPref": "#e535ab",
   "contents": [
     {
-      "title": " (File extensions)",
+      "title": "ম্যাটল্যাব ফাইল এক্সটেনশনস (File extensions)",
       "items": [
         {
-          "definition": "",
+          "definition": "ম্যাটল্যাব এর ফাংশন, ক্লাস নিয়ে কাজ করতে ব্যবহার করা হয়",
           "code": ".m"
         },
         {
-          "definition": "",
+          "definition": "ম্যাটল্যাব এর ডাটা স্টোরেজ ওয়ার্কস্পেস নিয়ে কাজ করতে ব্যবহার করা হয়",
           "code": ".mat"
         },
         {
-          "definition": "",
+          "definition": "ম্যাটল্যাব এর ফিগার ওর গুই টেম্পলেট নিয়ে কাজ করতে ব্যবহার করা হয়",
           "code": ".fig"
         },
         {
-          "definition": "",
+          "definition": "ম্যাটল্যাব এর প্রোটেক্টেড ফাংশন ফাইল নিয়ে কাজ করতে ব্যবহার করা হয়",
           "code": ".p"
         },
         {
-          "definition": "",
+          "definition": "ম্যাটল্যাব এর লাইভ স্ক্রিপ্ট নিয়ে কাজ করতে ব্যবহার করা হয়",
           "code": ".mlx"
         },
         {
-          "definition": "",
+          "definition": "ম্যাটল্যাব এর এক্সেকিউটাবল নিয়ে কাজ করতে ব্যবহার করা হয়",
           "code": ".mex"
         },
         {
-          "definition": "",
+          "definition": "ম্যাটল্যাব এর অ্যাপ ডিজাইনার টেম্পলেট নিয়ে কাজ করতে ব্যবহার করা হয়",
           "code": ".mlapp"
         },
         {
-          "definition": "",
+          "definition": "ম্যাটল্যাব এর শিমুলিন্ক মডেল নিয়ে কাজ করতে ব্যবহার করা হয়",
           "code": ".mdl .slx"
         },
         {
-          "definition": "",
+          "definition": "ম্যাটল্যাব এর শিমুলিন্ক প্রোটেক্টেড মডেল নিয়ে কাজ করতে ব্যবহার করা হয়",
           "code": ".mdlp .slxp"
         },
         {
-          "definition": "",
+          "definition": "ম্যাটল্যাব এর টুলবাক্স ফাইল নিয়ে কাজ করতে ব্যবহার করা হয়",
           "code": ".mltbx"
         }
       ]
     },
     {
-      "title": " (Common data types)",
+      "title": "কমন ডাটা টাইপস (Common data types)",
       "items": [
         {
-          "definition": "",
+          "definition": "সিঙ্গেল প্রিসিশন নিউমেরিকাল ডাটা (৩২ বিটস)",
           "code": "single"
         },
         {
-          "definition": "",
+          "definition": "ডাবল প্রিসিশন নিউমেরিকাল ডাটা (৬৪ বিটস)",
           "code": "double"
         },
         {
-          "definition": "",
+          "definition": "ক্যারেক্টার অ্যারে",
           "code": "char"
         },
         {
-          "definition": "",
+          "definition": "স্ট্রিং অ্যারে",
           "code": "string"
         },
         {
-          "definition": "",
+          "definition": "বুলিয়ান (০/১)",
           "code": "logical"
         },
         {
-          "definition": "",
+          "definition": "স্ট্রাকচার অ্যারে",
           "code": "struct"
         },
         {
-          "definition": "",
+          "definition": "সেল অ্যারে",
           "code": "cell"
         }
       ]
@@ -87,75 +87,75 @@
       "title": "কীবোর্ড শর্টকাট (Keyboard shortcuts)",
       "items": [
         {
-          "definition": "",
+          "definition": "ডিসপ্লেসস হটকিজ",
           "code": "Alt"
         },
         {
-          "definition": "",
+          "definition": "হেল্প",
           "code": "F1"
         },
         {
-          "definition": "",
+          "definition": "রান কোড",
           "code": "F5"
         },
         {
-          "definition": "",
+          "definition": "রান হাইলাইটেড কোড",
           "code": "F9"
         },
         {
-          "definition": "",
+          "definition": "রান কোড লাইন",
           "code": "F10"
         },
         {
-          "definition": "",
+          "definition": "রান কোড লাইন, এন্টার ফাংশন",
           "code": "F11"
         },
         {
-          "definition": "",
+          "definition": "লিভ ডিবাগার",
           "code": "Shift+F5"
         },
         {
-          "definition": "",
+          "definition": "ইনসার্ট ব্রেক পয়েন্ট",
           "code": "F12"
         },
         {
-          "definition": "",
+          "definition": "মুভ বিটউইন টেব",
           "code": "Ctrl+Page up/down"
         },
         {
-          "definition": "",
+          "definition": "মুভ বিটউইন কম্পোনেন্টস",
           "code": "Ctrl+shift"
         },
         {
-          "definition": "",
+          "definition": "ইন্টারআপ কোড",
           "code": "Ctrl+C"
         },
         {
-          "definition": "",
+          "definition": "ওপেন হাইলাইটেড কোড ফাইল",
           "code": "Ctrl+D"
         },
         {
-          "definition": "",
+          "definition": "কমেন্ট / আনকমেন্ট লাইন",
           "code": "Ctrl+R/T"
         },
         {
-          "definition": "",
+          "definition": "নতুন স্ক্রিপ্ট",
           "code": "Ctrl+N"
         },
         {
-          "definition": "",
+          "definition": "ক্লোজ স্ক্রিপ্ট",
           "code": "Ctrl+W"
         },
         {
-          "definition": "",
+          "definition": "ডক্স উইন্ডো",
           "code": "Ctrl+shift+d"
         },
         {
-          "definition": "",
+          "definition": "আনডক্স উইন্ডো",
           "code": "Ctrl+shift+u"
         },
         {
-          "definition": "",
+          "definition": "ম্যাক্স উইন্ডো",
           "code": "Ctrl+shift+m"
         }
       ]
