@@ -161,104 +161,104 @@
       ]
     },
     {
-      "title": " (Portions of matrices and vectors)",
+      "title": "পরশন্স অফ ম্যাট্রিক এন্ড ভেক্টর (Portions of matrices and vectors)",
       "items": [
         {
-          "definition": "",
+          "definition": "অল এলিমেন্টস অফ x",
           "code": "x(:)"
         },
         {
-          "definition": "",
+          "definition": "j থেকে শেষ এলিমেন্টস অফ x",
           "code": "x(j:end)"
         },
         {
-          "definition": "",
+          "definition": "২য় থেকে ৫ম এলিমেন্টস অফ x",
           "code": "x(2:5)"
         },
         {
-          "definition": "",
+          "definition": "অল j সারি এলিমেন্টস",
           "code": "x(j,:)"
         },
         {
-          "definition": "",
+          "definition": "অল j কলাম এলিমেন্টস",
           "code": "x(:,j)"
         },
         {
-          "definition": "",
+          "definition": "ডায়াগোনাল এলিমেন্টস অফ x",
           "code": "diag(x)"
         },
         {
-          "definition": "",
+          "definition": "কনক্যাটেন্টেস অনুভূমিকভাবে",
           "code": "[A,B]"
         },
         {
-          "definition": "",
+          "definition": "কনক্যাটেন্টেস উল্লম্বভাবে",
           "code": "[A;B]"
         }
       ]
     },
     {
-      "title": " (Logical operators)",
+      "title": "লজিকাল অপারেটর (Logical operators)",
       "items": [
         {
-          "definition": "",
+          "definition": "শর্ট সার্কিট এন্ড",
           "code": "&&"
         },
         {
-          "definition": "",
+          "definition": "এন্ড",
           "code": "&"
         },
         {
-          "definition": "",
+          "definition": "শর্ট সার্কিট ওর",
           "code": "||"
         },
         {
-          "definition": "",
+          "definition": "ওর",
           "code": "|"
         },
         {
-          "definition": "",
+          "definition": "নট",
           "code": "-"
         },
         {
-          "definition": "",
+          "definition": "ইকুয়ালিটি কোম্পারিসন",
           "code": "=="
         },
         {
-          "definition": "",
+          "definition": "নট ইকুয়াল",
           "code": "~="
         }
       ]
     },
     {
-      "title": " (Variable generation)",
+      "title": "ভেরিয়েবল জেনারেশন (Variable generation)",
       "items": [
         {
-          "definition": "",
+          "definition": "রও ভেক্টর [j,j+1,..,k]",
           "code": "j:k"
         },
         {
-          "definition": "",
+          "definition": "রও ভেক্টর [j,j+i,..,k]",
           "code": "j:i:k"
         },
         {
-          "definition": "",
+          "definition": "a x b ম্যাট্রিক্স অফ নান ভ্যালু",
           "code": "NaN(a,b)"
         },
         {
-          "definition": "",
+          "definition": "a x b ম্যাট্রিক্স অফ ১ ভ্যালু",
           "code": "ones(a,b)"
         },
         {
-          "definition": "",
+          "definition": "a x b ম্যাট্রিক্স অফ ০ ভ্যালু",
           "code": "zeros(a,b)"
         },
         {
-          "definition": "",
+          "definition": "2d গ্রিড অফ x এন্ড y ভেক্টরস",
           "code": "meshgrid(x,y)"
         },
         {
-          "definition": "",
+          "definition": "গিভস x গ্লোবাল স্কোপ",
           "code": "global x"
         }
       ]
