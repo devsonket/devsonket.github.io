@@ -1,62 +1,236 @@
 {
-    "id": "jsdoc",
-    "title": "জেএস ডক",
-    "slug": "jsdoc",
-    "description": "জেএস ডক হচ্ছে জাভাস্ক্রিপ্ট এর জন্য একটা অ্যাপিআইর ডকুমেন্টেশন জেনারেটর, অনেকটা জাভাডক অথবা পিএইচপি ডকুমেন্টরের মতো। আপনি ডকুমেন্টেশনের জন্য সোর্স কোডে সরাসরি কমেন্ট যুক্ত করবেন, একদম কোডের সাথেই। জেএস ডক আপনার সোর্স কোড স্ক্যান করবে এবং একটা এইচটিএমএল ডকুমেন্টেশন ওয়েবসাইট ক্রিয়েট করে ফেলবে।",
-    "colorPref": "#EBEBEB",
-    "contents": [
+   "id":"jsdoc",
+   "title":"জেএস ডক",
+   "slug":"jsdoc",
+   "description":"জেএস ডক হচ্ছে জাভাস্ক্রিপ্ট এর জন্য একটা অ্যাপিআইর ডকুমেন্টেশন জেনারেটর, অনেকটা জাভাডক অথবা পিএইচপি ডকুমেন্টরের মতো। আপনি ডকুমেন্টেশনের জন্য সোর্স কোডে সরাসরি কমেন্ট যুক্ত করবেন, একদম কোডের সাথেই। জেএস ডক আপনার সোর্স কোড স্ক্যান করবে এবং একটা এইচটিএমএল ডকুমেন্টেশন ওয়েবসাইট ক্রিয়েট করে ফেলবে।",
+   "colorPref":"#EBEBEB",
+   "contents":[
       {
-        "title": "টাইপ ডেফিনেশন",
-        "items": [
-          {
-            "definition": "বুলিয়ান",
-            "code": "{boolean} name"
-          }, 
-          {
-            "definition": "ইন্টিজার",
-            "code": "{number} name"
-          }, 
-          {
-            "definition": "ফ্লোট",
-            "code": "{number} name"
-          }, 
-          {
-            "definition": "অবজেক্ট",
-            "code": "{Object} name"
-          }, 
-          {
-            "definition": "স্পেসিফাইড অবজেক্ট",
-            "code": "{Custo­mName} name"
-          }, 
-          {
-            "definition": "অ্যারে",
-            "code": "{Array} name"
-          }, 
-          {
-            "definition": "টাইপের অ্যারে",
-            "code": "{Type[]} name"
-          }, {
-            "definition": "স্ট্রিং",
-            "code": "{string} name"
-          }, 
-          {
-            "definition": "অপশনাল স্ট্রিং",
-            "code": "{string} [name]"
-          }, 
-          {
-            "definition": "অপশনাল স্ট্রিং ডিফল্ট ভ্যালু",
-            "code": "{string} [name=­test]"
-          }
-        ]
+         "title":"টাইপ ডেফিনেশন",
+         "items":[
+            {
+               "definition":"বুলিয়ান",
+               "code":"{boolean} name"
+            },
+            {
+               "definition":"ইন্টিজার",
+               "code":"{number} name"
+            },
+            {
+               "definition":"ফ্লোট",
+               "code":"{number} name"
+            },
+            {
+               "definition":"অবজেক্ট",
+               "code":"{Object} name"
+            },
+            {
+               "definition":"স্পেসিফাইড অবজেক্ট",
+               "code":"{Custo­mName} name"
+            },
+            {
+               "definition":"অ্যারে",
+               "code":"{Array} name"
+            },
+            {
+               "definition":"টাইপের অ্যারে",
+               "code":"{Type[]} name"
+            },
+            {
+               "definition":"স্ট্রিং",
+               "code":"{string} name"
+            },
+            {
+               "definition":"অপশনাল স্ট্রিং",
+               "code":"{string} [name]"
+            },
+            {
+               "definition":"অপশনাল স্ট্রিং ডিফল্ট ভ্যালু",
+               "code":"{string} [name=­test]"
+            }
+         ]
       },
       {
-        "title": "প্যারামিটার এর উদাহরণ",
-        "items": [
-          {
-            "code": "/**\n* @param {string} x\n* @param {number} y\n*/\nfunction sum( x, y ) {}"
-          }
-        ]
+         "title":"প্যারামিটার এর উদাহরণ",
+         "items":[
+            {
+               "code":"/**\n* @param {string} x\n* @param {number} y\n*/\nfunction sum( x, y ) {}"
+            },
+            {
+               "definition":"একাধিক টাইপ উল্লেখ করতে",
+               "code":"@param {(string\\|number)} n"
+            },
+            {
+               "definition":"নির্দিষ্ট কোন টাইপ উল্লেখ না করে যেকোন টাইপ উল্লেখ করতে",
+               "code":"@param {*} n"
+            },
+            {
+               "definition":"একই আর্গুমেন্ট একাধিকবার হলে",
+               "code":"@param {...string} n"
+            },
+            {
+               "definition":"একটি নির্দিষ্ট টাইপ কখনো Null ভ্যালু হতে পারবে না উল্লেখ করতে",
+               "code":"@param {!number} n"
+            },
+            {
+               "definition":"নির্দিষ্ট টাইপ না থাকলে ভ্যালু Null হতে পারবে উল্লেখ করতে",
+               "code":"@param {?number} n"
+            }
+         ]
+      },
+      {
+         "title":"সাধারন তথ্য",
+         "items":[
+            {
+               "definition":"অবজেক্টের টাইপ উল্লেখ করতে",
+               "code":"@type"
+            },
+            {
+               "definition":"কাস্টম টাইপ উল্লেখ করতে",
+               "code":"@typeof"
+            },
+            {
+               "definition":"অবজেক্টের প্রোপার্টি লিখতে",
+               "code":"@property"
+            },
+            {
+               "definition":"ফাইল সম্পর্কে সারমর্ম লিখতে",
+               "code":"@fileOverview"
+            },
+            {
+               "definition":"অথরের নাম লিখতে",
+               "code":"@author <author-name>"
+            },
+            {
+               "definition":"একাধিক অথরের নাম লিখতে",
+               "code":"@author <author-name-one>\n @author <author-name-two>"
+            },
+            {
+               "definition":"কোন মডিউলকে ইম্পোর্ট করতে",
+               "code":"@requires <someModuleName>"
+            },
+            {
+               "definition":"কোন ফাইল ইম্পোর্ট করতে",
+               "code":"@import"
+            },
+            {
+               "definition":"কোন ফাইলকে মডিউল আকারে উল্লেখ করতে",
+               "code":"@module"
+            },
+            {
+               "definition":"কপিরাইট সম্পর্কিত তথ্য লিখতে",
+               "code":"@copyright"
+            },
+            {
+               "definition":"কোন ফাইলের ডিফল্ট ভ্যালু লিখতে",
+               "code":"@default"
+            },
+            {
+               "definition":"উদাহরন লিখে বোঝাতে",
+               "code":"@example"
+            },
+            {
+               "definition":"নির্দিষ্ট কোন কিছু ডকুমেন্টেশনে উল্লেখ না করতে  চাইলে",
+               "code":"@‌ignore"
+            },
+            {
+               "definition":"এরর মেসেজ লিখতে",
+               "code":"@throws"
+            },
+            {
+               "definition":"কোন নোট লিখতে",
+               "code":"@todo"
+            },
+            {
+               "definition":"কোন টিউটোরিয়ালের লিঙ্ক যুক্ত করতে",
+               "code":"@tutorial"
+            },
+            {
+               "definition":"ভার্শন নাম্বার লিখতে করতে",
+               "code":"@version <version-number>"
+            },
+            {
+               "definition":"একই ডকুমেন্টেশনের অন্য ফাইলের লিঙ্ক উল্লেখ করতে",
+               "code":"{@link}"
+            },
+            {
+               "definition":"লাইসেন্স উল্লেখ করতে",
+               "code":"@license"
+            },
+            {
+               "definition":"অন্যকোন ডকুমেন্টেশন উল্লেখ করতে",
+               "code":"@see"
+            }
+         ]
+      },
+      {
+         "title":"ক্লাস ও ফাংশন সম্পর্কিত তথ্য",
+         "items":[
+            {
+               "definition":"ফাংশন লিখতে",
+               "code":"@function বা @func"
+            },
+            {
+               "definition":"কলব্যাক ফাংশন বোঝাতে",
+               "code":"@callback"
+            },
+            {
+               "definition":"আসিনক্রোনাস ফাংশন বোঝাতে",
+               "code":"@async"
+            },
+            {
+               "definition":"জেনারেটর ফাংশন বোঝাতে",
+               "code":"@generator"
+            },
+            {
+               "definition":"কোন ফাংশন থেকে কি রিটার্ন হবে তা উল্লেখ করতে ",
+               "code":"@returns"
+            },
+            {
+               "definition":"ক্লাস বোঝাতে",
+               "code":"@class"
+            },
+            {
+               "definition":"কনসট্রাক্টর ফাংশন বোঝাতে",
+               "code":"@constructor"
+            },
+            {
+               "definition":"একটা ক্লাসের বর্ননা লিখতে",
+               "code":"@classdesc"
+            },
+            {
+               "definition":"প্যারেন্ট ক্লাসের ডকুমেন্টেশন ইনহেরিট করতে",
+               "code":"@inheritdoc"
+            },
+            {
+               "definition":"পাবলিক ক্লাস বোঝাতে",
+               "code":"@public"
+            },
+            {
+               "definition":"প্রাইভেট ক্লাস উল্লেখ করতে",
+               "code":"@private"
+            },
+            {
+               "definition":"প্রোটেক্টেড ক্লাস উল্লেখ করতে",
+               "code":"@protected"
+            },
+            {
+               "definition":"স্ট্যাটিক ক্লাস উল্লেখ করতে",
+               "code":"@static"
+            },
+            {
+               "definition":"কনসট্রাক্টর কে না দেখাতে চাইলে",
+               "code":"@hideconstructor"
+            },
+            {
+               "definition":"ফাইলে `this` কিওয়ার্ড থাকলে তার টাইপ উল্লেখ করতে",
+               "code":"@this"
+            },
+            {
+               "definition":"ক্লাসের কোন মেথড লিখতে",
+               "code":"@method"
+            }
+         ]
       }
-    ]
-  }
-  
+   ]
+}
