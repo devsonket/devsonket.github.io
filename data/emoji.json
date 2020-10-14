@@ -63,6 +63,43 @@
          ]
       },
       {
+      "title":"তীর চিহ্ন",
+      "items":[
+        {
+            "definition":"⬆️",
+            "code":":arrow_up:"
+        },
+        {
+            "definition":"➡️",
+            "code":":arrow_right:"
+        },
+        {
+            "definition":"⬇️",
+            "code":":arrow_down:"
+        },
+        {
+            "definition":"⬅️",
+            "code":":arrow_left:"
+        },
+        {
+            "definition":"↕️",
+            "code":":arrow_up_down:"
+        },
+        {
+            "definition":"↩️",
+            "code":":leftwards_arrow_with_hook:"
+        },
+        {
+            "definition":"⤴️",
+            "code":":arrow_heading_up:"
+        },
+        {
+            "definition":"🔜",
+            "code":":soon:"
+        }
+         ]
+      },
+      {
          "title":"ভালোবাসার অনুভুতি",
          "items":[
             {
