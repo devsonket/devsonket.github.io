@@ -1657,6 +1657,75 @@
               "code": ":badger:"
             }
          ]
+      },
+      {
+         "title":"বিভিন্ন পাখির ছবি",
+         "items":[
+            {
+              "definition": "🦉",
+              "code": ":owl:"
+            },
+            {
+              "definition": "🦃",
+              "code": ":turkey:"
+            },    
+            {
+              "definition": "🐔",
+              "code": ":chicken:"
+            },   
+            {
+              "definition": "🐓",
+              "code": ":rooster:"
+            },   
+            {
+              "definition": "🐣",
+              "code": ":hatching_chick:"
+            },    
+            {
+              "definition": "🐤",
+              "code": ":baby_chick:"
+            },    
+            {
+              "definition": "🐥",
+              "code": ":hatched_chick:"
+            },   
+            {
+              "definition": "🐦",
+              "code": ":bird:"
+            },    
+            {
+              "definition": "🐧",
+              "code": ":penguin:"
+            },   
+            {
+              "definition": "🕊️",
+              "code": ":dove:"
+            },    
+            {
+              "definition": "🦅",
+              "code": ":eagle:"
+            },   
+            {
+              "definition": "🦆",
+              "code": ":duck:"
+            },    
+            {
+              "definition": "🦢",
+              "code": ":swan:"
+            },   
+            {
+              "definition": "🦩",
+              "code": ":flamingo:"
+            },    
+            {
+              "definition": "🦚",
+              "code": ":peacock:"
+            },   
+            {
+              "definition": "🦜",
+              "code": ":parrot:"
+            }
+         ]
       }
    ]
 }
