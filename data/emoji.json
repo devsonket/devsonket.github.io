@@ -1135,6 +1135,251 @@
               "code": ":woman_shrugging:"
             }
          ]
+      },
+      {
+         "title":"বিভিন্ন পেশাজিবী মানুষের ছবি",
+         "items":[
+            {
+              "definition": "🧑‍⚕️",
+              "code": ":health_worker:"
+            },
+            {
+              "definition": "👨‍⚕️",
+              "code": ":man_health_worker:"
+            },
+            {
+              "definition": "👩‍⚕️",
+              "code": ":woman_health_worker:"
+            },
+            {
+              "definition": "🧑‍🎓",
+              "code": ":student:"
+            },
+            {
+              "definition": "👨‍🎓",
+              "code": ":man_student:"
+            },
+            {
+              "definition": "👩‍🎓",
+              "code": ":woman_student:"
+            },
+            {
+              "definition": "🧑‍🏫",
+              "code": ":teacher:"
+            },
+            {
+              "definition": "👨‍🏫",
+              "code": ":man_teacher:"
+            },
+            {
+              "definition": "👩‍🏫",
+              "code": ":woman_teacher:"
+            },
+            {
+              "definition": "🧑‍⚖️",
+              "code": ":judge:"
+            },
+            {
+              "definition": "👨‍⚖️",
+              "code": ":man_judge:"
+            },
+            {
+              "definition": "👩‍⚖️",
+              "code": ":woman_judge:"
+            },
+            {
+              "definition": "🧑‍🌾",
+              "code": ":farmer:"
+            },
+            {
+              "definition": "👨‍🌾",
+              "code": ":man_farmer:"
+            },
+            {
+              "definition": "👩‍🌾",
+              "code": ":woman_farmer:"
+            },
+            {
+              "definition": "🧑‍🍳",
+              "code": ":cook:"
+            },
+            {
+              "definition": "👨‍🍳",
+              "code": ":man_cook:"
+            },
+            {
+              "definition": "👩‍🍳",
+              "code": ":woman_cook:"
+            },
+            {
+              "definition": "🧑‍🔧",
+              "code": ":mechanic:"
+            },
+            {
+              "definition": "👨‍🔧",
+              "code": ":man_mechanic:"
+            },
+            {
+              "definition": "👩‍🔧",
+              "code": ":woman_mechanic:"
+            },
+            {
+              "definition": "🧑‍🏭",
+              "code": ":factory_worker:"
+            },
+            {
+              "definition": "👨‍🏭",
+              "code": ":man_factory_worker:"
+            },
+            {
+              "definition": "👩‍🏭",
+              "code": ":woman_factory_worker:"
+            },
+            {
+              "definition": "🧑‍💼",
+              "code": ":office_worker:"
+            },
+            {
+              "definition": "👨‍💼",
+              "code": ":man_office_worker:"
+            },
+            {
+              "definition": "👩‍💼",
+              "code": ":woman_office_worker:"
+            },
+            {
+              "definition": "🧑‍🔬",
+              "code": ":scientist:"
+            },
+            {
+              "definition": "👨‍🔬",
+              "code": ":man_scientist:"
+            },
+            {
+              "definition": "👩‍🔬",
+              "code": ":woman_scientist:"
+            },
+            {
+              "definition": "🧑‍💻",
+              "code": ":technologist:"
+            },
+            {
+              "definition": "👨‍💻",
+              "code": ":man_technologist:"
+            },
+            {
+              "definition": "👩‍💻",
+              "code": ":woman_technologist:"
+            },
+            {
+              "definition": "🧑‍🎤",
+              "code": ":singer:"
+            },
+            {
+              "definition": "👨‍🎤",
+              "code": ":man_singer:"
+            },
+            {
+              "definition": "👩‍🎤",
+              "code": ":woman_singer:"
+            },
+            {
+              "definition": "🧑‍🎨",
+              "code": ":artist:"
+            },
+            {
+              "definition": "👨‍🎨",
+              "code": ":man_artist:"
+            },
+            {
+              "definition": "👩‍🎨",
+              "code": ":woman_artist:"
+            },
+            {
+              "definition": "🧑‍✈️",
+              "code": ":pilot:"
+            },
+            {
+              "definition": "👨‍✈️",
+              "code": ":man_pilot:"
+            },
+            {
+              "definition": "👩‍✈️",
+              "code": ":woman_pilot:"
+            },
+            {
+              "definition": "🧑‍🚀",
+              "code": ":astronaut:"
+            },
+            {
+              "definition": "👨‍🚀",
+              "code": ":man_astronaut:"
+            },
+            {
+              "definition": "👩‍🚀",
+              "code": ":woman_astronaut:"
+            },
+            {
+              "definition": "🧑‍🚒",
+              "code": ":firefighter:"
+            },
+            {
+              "definition": "👨‍🚒",
+              "code": ":man_firefighter:"
+            },
+            {
+              "definition": "👩‍🚒",
+              "code": ":woman_firefighter:"
+            },
+            {
+              "definition": "👮",
+              "code": ":cop: বা :police_officer"
+            },  
+            {
+              "definition": "👮‍♂️",
+              "code": ":policeman:"
+            },
+            {
+              "definition": "👮‍♀️",
+              "code": ":policewoman:"
+            },
+            {
+              "definition": "🕵️",
+              "code": ":detective:"
+            },
+            {
+              "definition": "🕵️‍♂️",
+              "code": ":male_detective:"
+            },
+            {
+              "definition": "🕵️‍♀️",
+              "code": ":female_detective:"
+            },
+            {
+              "definition": "💂",
+              "code": ":guard:"
+            },
+            {
+              "definition": "💂‍♂️",
+              "code": ":guardsman:"
+            },
+            {
+              "definition": "💂‍♀️",
+              "code": ":guardswoman:"
+            },
+            {
+              "definition": "👷",
+              "code": ":construction_worker:"
+            },
+            {
+              "definition": "👷‍♂️",
+              "code": ":construction_worker_man:"
+            },
+            {
+              "definition": "👷‍♀️",
+              "code": ":construction_worker_woman:"
+            } 
+         ]
       }
    ]
 }
