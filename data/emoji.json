@@ -716,6 +716,135 @@
                "code": ":zzz:"
             }
          ]
+      },
+      {
+         "title":"হাতের ছবি",
+         "items":[
+            {
+              "definition": "👋",
+              "code": ":wave:"
+            }, 
+            {
+              "definition": "🤚",
+              "code": ":raised_back_of_hand:"
+            },  
+            {
+              "definition": "🖐️",
+              "code": ":raised_hand_with_fingers_splayed:"
+            },   
+            {
+              "definition": "✋",
+              "code": ":hand:"
+            }, 
+            {
+              "definition": "🖖",
+              "code": ":vulcan_salute:"
+            },      
+            {
+              "definition": "👌",
+              "code": ":ok_hand:"
+            },  
+            {
+              "definition": "🤏",
+              "code": ":pinching_hand:"
+            },  
+            {
+              "definition": "✌️",
+              "code": ":v:"
+            },  
+            {
+              "definition": "🤞",
+              "code": ":crossed_fingers:"
+            },  
+            {
+              "definition": "🤟",
+              "code": ":love_you_gesture:"
+            },   
+            {
+              "definition": "🤘",
+              "code": ":metal:"
+            },  
+            {
+              "definition": "🤙",
+              "code": ":call_me_hand:"
+            },       
+            {
+              "definition": "👈",
+              "code": ":point_left:"
+            },   
+            {
+              "definition": "👉",
+              "code": ":point_right:"
+            },  
+            {
+              "definition": "👆",
+              "code": ":point_up_2:"
+            },
+            {
+              "definition": "🖕",
+              "code": ":fu: বা :middle_finger:"
+            },
+            {
+              "definition": "👇",
+              "code": ":point_down:"
+            },    
+            {
+              "definition": "☝️",
+              "code": ":point_up:"
+            },    
+            {
+              "definition": "👍",
+              "code": "+1: বা :thumbsup:"
+            }, 
+            {
+              "definition": "👎",
+              "code": "-1: বা :thumbsdown:"
+            },
+            {
+              "definition": "✊",
+              "code": ":fist: বা :fist_raised:"
+            },
+            {
+              "definition": "👊",
+              "code": ":facepunch: বা :punch: বা :fist_oncoming:"
+            }, 
+            {
+              "definition": "🤛",
+              "code": ":fist_left:"
+            },
+            {
+              "definition": "🤜",
+              "code": ":fist_right:"
+            },
+            {
+              "definition": "👏",
+              "code": ":clap:"
+            },
+            {
+              "definition": "🙌",
+              "code": ":raised_hands:"
+            },
+            {
+              "definition": "👐",
+              "code": ":open_hands:"
+            },
+            {
+              "definition": "🤲",
+              "code": ":palms_up_together:"
+            },
+            {
+              "definition": "🤝",
+              "code": ":handshake:"
+            },
+            {
+              "definition": "🙏",
+              "code": ":pray:"
+            },
+            {
+              "definition": "✍️",
+              "code": ":writing_hand:"
+            }
+         ]
       }
    ]
 }
