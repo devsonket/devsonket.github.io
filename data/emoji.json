@@ -1133,6 +1133,50 @@
             {
               "definition": "🤷‍♀️",
               "code": ":woman_shrugging:"
+            },
+            {
+              "definition": "🤴",
+              "code": ":prince:"
+            },
+            {
+              "definition": "👸",
+              "code": ":princess:"
+            },
+            {
+              "definition": "👳",
+              "code": ":person_with_turban:"
+            },
+            {
+              "definition": "👳‍♂️",
+              "code": ":man_with_turban:"
+            },
+            {
+              "definition": "👳‍♀️",
+              "code": ":woman_with_turban:"
+            },
+            {
+              "definition": "👲",
+              "code": ":man_with_gua_pi_mao:"
+            },
+            {
+              "definition": "🧕",
+              "code": ":woman_with_headscarf:"
+            },
+            {
+              "definition": "🤵",
+              "code": ":man_in_tuxedo:"
+            },
+            {
+              "definition": "👰",
+              "code": ":bride_with_veil:"
+            },
+            {
+              "definition": "🤰",
+              "code": ":pregnant_woman:"
+            },
+            {
+              "definition": "🤱",
+              "code": ":breast_feeding:"
             }
          ]
       },
