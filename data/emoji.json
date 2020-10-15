@@ -1013,6 +1013,126 @@
             {
               "definition": "👵",
               "code": ":older_woman:"
+            },
+            {
+              "definition": "🙍",
+              "code": ":frowning_person:"
+            },
+            {
+              "definition": "🙍‍♂️",
+              "code": ":frowning_man:"
+            },
+            {
+              "definition": "🙍‍♀️",
+              "code": ":frowning_woman:"
+            },
+            {
+              "definition": "🙎",
+              "code": ":pouting_face:"
+            },
+            {
+              "definition": "🙎‍♂️",
+              "code": ":pouting_man:"
+            },
+            {
+              "definition": "🙎‍♀️",
+              "code": ":pouting_woman:"
+            },
+            {
+              "definition": "🙅",
+              "code": ":no_good:"
+            },
+            {
+              "definition": "🙅‍♂️",
+              "code": ":ng_man: বা :no_good_man"
+            }, 
+            {
+              "definition": "🙅‍♀️",
+              "code": ":ng_woman: বা :no_good_woman"
+            }, 
+            {
+              "definition": "🙆",
+              "code": ":ok_person:"
+            },
+            {
+              "definition": "🙆‍♂️",
+              "code": ":ok_man:"
+            },
+            {
+              "definition": "🙆‍♀️",
+              "code": ":ok_woman:"
+            },
+            {
+              "definition": "💁",
+              "code": ":information_desk_person: বা :tipping_hand_person"
+            }, 
+            {
+              "definition": "💁‍♂️",
+              "code": ":sassy_man: বা :tipping_hand_man"
+            },  
+            {
+              "definition": "💁‍♀️",
+              "code": ":sassy_woman: বা :tipping_hand_woman"
+            },  
+            {
+              "definition": "🙋",
+              "code": ":raising_hand:"
+            },
+            {
+              "definition": "🙋‍♂️",
+              "code": ":raising_hand_man:"
+            },
+            {
+              "definition": "🙋‍♀️",
+              "code": ":raising_hand_woman:"
+            },
+            {
+              "definition": "🧏",
+              "code": ":deaf_person:"
+            },
+            {
+              "definition": "🧏‍♂️",
+              "code": ":deaf_man:"
+            },
+            {
+              "definition": "🧏‍♀️",
+              "code": ":deaf_woman:"
+            },
+            {
+              "definition": "🙇",
+              "code": ":bow:"
+            },
+            {
+              "definition": "🙇‍♂️",
+              "code": ":bowing_man:"
+            },
+            {
+              "definition": "🙇‍♀️",
+              "code": ":bowing_woman:"
+            },
+            {
+              "definition": "🤦",
+              "code": ":facepalm:"
+            },
+            {
+              "definition": "🤦‍♂️",
+              "code": ":man_facepalming:"
+            },
+            {
+              "definition": "🤦‍♀️",
+              "code": ":woman_facepalming:"
+            },
+            {
+              "definition": "🤷",
+              "code": ":shrug:"
+            },
+            {
+              "definition": "🤷‍♂️",
+              "code": ":man_shrugging:"
+            },
+            {
+              "definition": "🤷‍♀️",
+              "code": ":woman_shrugging:"
             }
          ]
       }
