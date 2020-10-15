@@ -845,6 +845,67 @@
               "code": ":writing_hand:"
             }
          ]
+      },
+      {
+         "title":"দেহের অন্যান্যজ অংশের ছবি",
+         "items":[
+            {
+              "definition": "💪",
+              "code": ":muscle:"
+            },
+            {
+              "definition": "🦾",
+              "code": ":mechanical_arm:"
+            },
+            {
+              "definition": "🦿",
+              "code": ":mechanical_leg:"
+            },
+            {
+              "definition": "🦵",
+              "code": ":leg:"
+            },
+            {
+              "definition": "🦶",
+              "code": ":foot:"
+            },
+            {
+              "definition": "👂",
+              "code": ":ear:"
+            },
+            {
+              "definition": "🦻",
+              "code": ":ear_with_hearing_aid:"
+            },
+            {
+              "definition": "👃",
+              "code": ":nose:"
+            },
+            {
+              "definition": "🧠",
+              "code": ":brain:"
+            },
+            {
+              "definition": "🦷",
+              "code": ":tooth:"
+            },
+            {
+              "definition": "🦴",
+              "code": ":bone:"
+            },
+            {
+              "definition": "👀",
+              "code": ":eyes: বা :eye:"
+            },
+            {
+              "definition": "👅",
+              "code": ":tongue:"
+            },
+            {
+              "definition": "👄",
+              "code": ":lips:"
+            }
+         ]
       }
    ]
 }
