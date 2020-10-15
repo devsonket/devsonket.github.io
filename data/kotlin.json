@@ -1,0 +1,97 @@
+{
+  "id": "kotlin",
+  "title": "কটলিন প্রোগ্রামিং",
+  "slug": "kotlin",
+  "description": "কটলিন একটি ক্রস-প্লাটফর্ম, স্টাটিকালি টাইপ প্রোগ্রামিং ল্যাংগুয়েজ। এটি পুরোপুরি জাভা ভার্চুয়ার মেশিন (JVM) এর উপর ভিত্তি করে ডিজাইন করা হয়েছে। ২০১৮ সালে Google I/O ইভেন্টে গুগল অফিশিয়ালি এন্ড্রয়েড ডেভেলপমেন্ট এর অফিসিয়াল ল্যাংগুয়েজ হিসেবে কটলিনকে ঘোষণা দেয়। এই Cheat-Sheet এর মাধ্যমে কটলিন এর দৈনন্দিন প্রয়োজনীয় টপিকগুলোকে হাইলাইট করা হয়েছে।",
+  "colorPref": "#F68305",
+  "contents": [
+    {
+      "title": "ভ্যারিয়েবল ও ডেটা টাইপ",
+      "items": [
+        {
+          "definition": "একবার মান সেট করলে আর পরিবর্তন করা যায়না",
+          "code": "val"
+        },
+        {
+          "definition": "মান পরিবর্তনযোগ্য",
+          "code": "var"
+        },
+        {
+          "definition": "৮-বিট",
+          "code": "Byte"
+        },
+        {
+          "definition": "১৬-বিট",
+          "code": "Short"
+        },
+        {
+          "definition": "৩২-বিট",
+          "code": "Int"
+        },
+        {
+          "definition": "৬৪-বিট",
+          "code": "Long"
+        },
+        {
+          "definition": "৩২-বিট",
+          "code": "Float"
+        },
+        {
+          "definition": "৬৪-বিট",
+          "code": "Double"
+        }
+      ]
+    },
+    {
+      "title": "স্ট্রিং ও ক্যারেকটার",
+      "items": [
+        {
+          "definition": "সিঙ্গেল লাইন স্ট্রিং",
+          "code": "val singleLine: String = “Hello World”"
+        },
+        {
+          "definition": "বহু লাইনের স্ট্রিং",
+          "code": "val multiLines: String = \"\"\"Multi Line\"\"\""
+        },
+        {
+          "definition": "ক্যারেকটার",
+          "code": "val c: Char = ‘s’"
+        }
+      ]
+    },
+    {
+      "title": "কন্ট্রোল ফ্লো",
+      "items": [
+        {
+          "definition": "সাধারন if-else",
+          "code": "if(condition) { ... } else { ... }"
+        },
+        {
+          "definition": "when যেটি গতানুগতিক switch এর বিকল্প হিসেবে ব্যাবহার করা হয়",
+          "code": "when (x) {\n    1 -> print(\"x == 1\")\n    2 -> print(\"x == 2\")\n    else -> {\n        print(\"x is neither 1 nor 2\")\n    }\n}"
+        },
+        {
+          "definition": "for loop গতানুগতিক foreach এর মত করে কাজ করে",
+          "code": "for (item in collection) print(item)"
+        },
+        {
+          "definition": "for loop গতানুগতিক foreach এর মত করে কাজ করে",
+          "code": "for (item in collection) print(item)"
+        }
+      ]
+    },
+    {
+      "title": "ফাংশন",
+      "items": [
+        {
+          "definition": "সাধারন ফাংশন",
+          "code": "fun simpleFunc() { println(“Hello World”) }"
+        },
+        {
+          "definition": "এক লাইনের ফাংশন",
+          "code": "fun singleLineFunc() = println(“Hello World”)  "
+        }
+      ]
+    }
+  ]
+}

@@ -29,8 +29,45 @@
           "code": "pipenv install django"
         },
         {
+          "definition": "django ভার্সন দেখা",
+          "code": "python -m django --version"
+        },
+        {
           "definition": "যেকোনো প্যাকেজ ডিপেন্ডেন্সী ইন্সটল করা",
           "code": "pipenv install <package_name>"
+        }
+      ]
+    },
+    {
+      "title": "pip কমান্ডস", 
+      "items": [
+        {
+          "definition": "pip ভার্সন দেখা",
+          "code": "pip --version"
+        },
+        {
+          "definition": "pip আপগ্রেড করা",
+          "code": "python -m pip install --upgrade pip"
+        },
+        {
+          "definition": "django ইন্সটল করা",
+          "code": "pip install django"
+        },
+        {
+          "definition": "যেকোনো প্যাকেজ ডিপেন্ডেন্সী ইন্সটল করা",
+          "code": "pip install <package_name>"
+        },
+        {
+          "definition": "যেকোনো প্যাকেজ ডিপেন্ডেন্সী আনইন্সটল করা",
+          "code": "pip uninstall <package_name>"
+        },
+        {
+          "definition": "প্যাকেজ ডিপেন্ডেন্সী লিস্ট করা",
+          "code": "pip list"
+        },
+        {
+          "definition": "প্যাকেজ ডিপেন্ডেন্সী সেভ করা",
+          "code": "pip freeze > requirements.txt"
         }
       ]
     },
@@ -55,6 +92,10 @@
           "code": "python manage.py startapp <app_name>"
         },
         {
+          "definition": "অ্যাপ মাইগ্রেশনের জন্য",
+          "code": "python manage.py makemigrations <app_name>"
+        },
+        {
           "definition": "মাইগ্রেশনের জন্য",
           "code": "python manage.py migrate"
         }
@@ -66,6 +107,23 @@
         {
           "definition": "সুপার ইউজার তৈরী করা",
           "code": "python manage.py createsuperuser"
+        }
+      ]
+    },
+    {
+      "title": "স্ট্যাটিক ফাইল",
+      "items": [
+        {
+          "definition": "'স্ট্যাটিক রুট' ফোল্ডারে সকল স্ট্যাটিক ফাইল সংগ্রহ করা",
+          "code": "python manage.py collectstatic"
+        },
+        {
+          "definition": "ইউজার ইনপুট ছাড়াই 'স্ট্যাটিক রুট' ফোল্ডারে সকল স্ট্যাটিক ফাইল সংগ্রহ করা",
+          "code": "python manage.py collectstatic --no-input"
+        },
+        {
+          "definition": "স্ট্যাটিক ফাইল খুঁজে বের করা",
+          "code": "python manage.py findstatic staticfile [staticfile ...]"
         }
       ]
     }

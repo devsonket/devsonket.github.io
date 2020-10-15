@@ -4,11 +4,9 @@
     "slug": "python3-cheat-sheet",
     "description": "পাইথন ৩ প্রোগ্রামিং এর চিটশিট",
     "colorPref": "#ffff00",
-    "contents": [
-        {
+    "contents": [{
             "title": "বেইস টাইপস (Base Types)",
-            "items": [
-                {
+            "items": [{
                     "definition": "পূর্ণ সংখ্যা",
                     "code": "int উদাহরণ: 234, 0, -193, 0b010, 0xF3"
                 },
@@ -31,9 +29,15 @@
             ]
         },
         {
+            "title": "টাইপ যাচাই (Type Verification)",
+            "items": [{
+                "definition": "যে কোনো ভ্যারিয়েবলের টাইপ যাচাই",
+                "code": "type(variable)"
+            }]
+        },
+        {
             "title": "কনটেইনার টাইপস (Container Types)",
-            "items": [
-                {
+            "items": [{
                     "definition": "লিস্ট",
                     "code": "list উদাহরণ: [1, 2, 3], ['x', 22, -3, 2]"
                 },
@@ -53,13 +57,12 @@
         },
         {
             "title": "ভ্যারিয়েবল এসাইনমেন্ট (Variable Assginment)",
-            "items": [
-                {
+            "items": [{
                     "code": "x = 1.2 + 8 + sin(0)",
                     "definition": "এখানে x হলো ভ্যারিয়েবল এবং সমান চিহ্নের ডান পাশে রয়েছে কম্পিউটেড এক্সপ্রেশন অথবা ভ্যালু"
                 },
                 {
-                    "code": "y, z, r = 9.2, -7.6, 'bad'" ,
+                    "code": "y, z, r = 9.2, -7.6, 'bad'",
                     "definition": "একাধিক ভ্যারিয়েবল এসাইনমেন্টঃ ডানপাশে ভ্যারিয়েবল সমূহ এবং বাম পাশে কমা দ্বারা বিভক্ত এদের ভ্যালু সমূহ ক্রমান্বয়ে সজ্জিত"
                 },
                 {
@@ -74,8 +77,7 @@
         },
         {
             "title": "টাইপ কনভারসন (Type Conversion)",
-            "items": [
-                {
+            "items": [{
                     "definition": "স্ট্রিং কে int নাম্বারে পরিবর্তন",
                     "code": "int('15') → 15"
                 },
@@ -126,9 +128,156 @@
             ]
         },
         {
-            "title": "মড্যুল এবং নেইম ইমপোর্ট (Module and Name import)",
-            "items": [
+            "title": "পাইথন স্টিং মেথড",
+            "items": [{
+                    "definition": "একটি স্ট্রিং এর প্রথম অক্ষরকে বড় হাতের অক্ষরে রূপান্তর করা",
+                    "code": "txt.capitalize()"
+                },
                 {
+                    "definition": "একটি স্ট্রিং এর প্রথম অক্ষরকে ছোট হাতের অক্ষরে রূপান্তর করা",
+                    "code": "txt.casefold()"
+                },
+                {
+                    "definition": "সেপারেটর দ্বারা স্ট্রিংকে সাব-স্ট্রিংয়ে বিভক্ত করা",
+                    "code": "string.split('separator')   \nউদহারণ: \nstring = 'Hello, World!'   \nstring.split(',') → ['Hello', ' World!']"
+                },
+                {
+                    "definition": "স্ট্রিং এর সাথে নাম্বার সংযুক্ত করা",
+                    "code": "string.format(number)  \nউদহারণ: \nstring = 'I am {} years old'   \nstring.format(21) → 'I am 21 years old'"
+                },
+                {
+                    "definition": "একটি স্ট্রিং, একটি নির্দিষ্ট সাব-স্ট্রিং দ্বারা শেষে হয়েছে কিনা বের করা",
+                    "code": "string.endswith(substring)  \nউদহারণ: \nstring ='End with'   \nstring.endswith('th') → True"
+                },
+                {
+                    "definition": "স্ট্রিংটি কেবল অক্ষর দ্বারা গঠিত কিনা দেখা",
+                    "code": "string.isalpha()  \nউদহারণ: \nstring ='string'   \nstring.isalpha() → True"
+                },
+                {
+                    "definition": "স্ট্রিংটি কেবল সংখ্যা দ্বারা গঠিত কিনা দেখা",
+                    "code": "string.isdigit()  \nউদহারণ: \nstring ='123'   \nstring.isdigit() → True"
+                },
+                {
+                    "definition": "স্ট্রিংটি আইডেন্টিফায়ার (কেবল অক্ষর, সংখা ও আন্ডারস্কোর('_') বহন করবে) কিনা",
+                    "code": "string.isidentifier()  \nউদহারণ: \nstring ='It_123'   \nstring.isidentifier() → True"
+                },
+                {
+                    "definition": "একটি স্ট্রিংকে বড় হাতের অক্ষরে রূপান্তর করা",
+                    "code": "txt.upper()"
+                },
+                {
+                    "definition": "একটি স্ট্রিংকে ছোট হাতের অক্ষরে রূপান্তর করা",
+                    "code": "txt.lower()"
+                },
+                {
+                    "definition": "একটি স্ট্রিংয়ের বড় হাতের অক্ষরকে ছোট হাতের অক্ষরে রূপান্তর করা এবং ছোট হাতের অক্ষরকে বড় হাতের অক্ষরে রূপান্তর করা",
+                    "code": "txt.swapcase()"
+                },
+                {
+                    "definition": "একটি স্ট্রিং এর প্রথম ও শেষের স্পেস রিমুভ করা",
+                    "code": "txt.strip()"
+                },
+                {
+                    "definition": "প্রতিটি শব্দের প্রথম অক্ষর কে বড় হাতের অক্ষরে রূপান্তর করা",
+                    "code": "txt.title()"
+                },
+                {
+                    "definition": "একটি স্ট্রিং থেকে কোন অক্ষর খুঁজা",
+                    "code": "string.find(value)"
+                },
+                {
+                    "definition": "একটি স্ট্রিং সাথে আর একটি স্ট্রিং যোগ করা",
+                    "code": "string.join(iterable)"
+                },
+                {
+                    "definition": "একটি স্ট্রিংকে আর একটি স্ট্রিং দিয়ে রিপ্লেস করা",
+                    "code": "string.replace(oldvalue, newvalue)"
+                },
+                {
+                    "definition": "একটি স্ট্রিং এ একটি অক্ষর কত বার আছে বের করা",
+                    "code": "string.count(value)"
+                }
+            ]
+        },
+        {
+            "title": "পাইথন লিস্ট মেথড (Python List Method)",
+            "items": [{
+                    "definition": "লিস্টের শেষে নতুন উপাদান সংযুক্ত করা",
+                    "code": "_oldList.append('item1')"
+                },
+                {
+                    "definition": "লিস্টের সকল উপাদান মুছে ফেলা",
+                    "code": "_oldList.clear()"
+                },
+                {
+                    "definition": "লিস্টের প্রতিলিপি করা",
+                    "code": "_newList = _oldList.copy()"
+                },
+                {
+                    "definition": "লিস্টে একটি উপাদান কতবার আছে গণনা করা",
+                    "code": "_oldList.count('item1')"
+                },
+                {
+                    "definition": "লিস্টের শেষে অন্য একটি লিস্টের উপাদান সংযুক্ত করা",
+                    "code": "_AList.extend(_BList)  \nউদাহরণ: \n_AList = ['itemA']   \n_BList = ['itemB']   \n_AList.extend(_BList)   \nprint(_AList) → ['itemA','itemB']"
+                },
+                {
+                    "definition": "লিস্টে একটি উপাদান অবস্থান বের করা এবং উপাদানটি একাধিক বার থাকলে প্রথম অবস্থান বের করা",
+                    "code": "_oldList.index('item1')"
+                },
+                {
+                    "definition": "লিস্টের নির্দিষ্ট স্থানে নতুন উপাদান সংযুক্ত করা",
+                    "code": "list.insert(position,'item')  \nউদাহরণ: \n_AList = ['itemA','itemC']   \n_AList.insert(1,'itemB')   \nprint(_AList) → ['itemA','itemB','itemC']"
+                },
+                {
+                    "definition": "লিস্টের নির্দিষ্ট স্থানের উপাদান মুছে ফেলা",
+                    "code": "list.pop(position)  \nউদাহরণ: \n_AList = ['itemA','itemC']   \n_AList.pop(1)   \nprint(_AList) → ['itemA']"
+                },
+                {
+                    "definition": "লিস্টের নির্দিষ্ট উপাদান মুছে ফেলা",
+                    "code": "list.remove(item)  \nউদাহরণ: \n_AList = ['itemA','itemC']   \n_AList.remove('itemA')   \nprint(_AList) → ['itemC']"
+                },
+                {
+                    "definition": "লিস্টের উপাদান উল্টো দিক থেকে সাজানো",
+                    "code": "list.reverse()  \nউদাহরণ: \n_AList = ['itemA','itemC']   \n_AList.reverse()   \nprint(_AList) → ['itemC','itemA']"
+                },
+                {
+                    "definition": "লিস্টের উপাদান ঊর্ধ্বক্রম এবং অধঃক্রম অনুসারে সাজানো",
+                    "code": "list.sort() \nউদাহরণ: \n_AList = ['A','C']   \n_AList.sort(reverse=False)   \nprint(_AList) → ['A','C']   \n_AList.sort(reverse=True)   \nprint(_AList) → ['C','A']"
+                }
+            ]
+        },
+        {
+            "title": "ফাইল পরিচালনা (File Handling)",
+            "items": [{
+                    "definition": "ফাইল খোলা",
+                    "code": "file = open(fileLocation, 'r') \nউদাহরণ: \nfile = open('D:\\myfiles\\myFile.txt', 'r')"
+                },
+                {
+                    "definition": "সম্পূর্ণ ফাইল পড়া",
+                    "code": "file.read()"
+                },
+                {
+                    "definition": "ফাইলের নির্দিষ্ট সংখ্যক লাইন পড়া",
+                    "code": "file.readline()"
+                },
+                {
+                    "definition": "ফাইল বন্ধ করা",
+                    "code": "file.close()"
+                },
+                {
+                    "definition": "নতুন ফাইল তৈরি করা",
+                    "code": "newFile=open(fileName,'x') \nউদাহরণ: \nfile = open('D:\\myfiles\\myNewFile.txt', 'x')"
+                },
+                {
+                    "definition": "ফাইল অপসারণ করা",
+                    "code": "os.remove(newFile) \nউদাহরণ: \nos.remove('D:\\myfiles\\myNewFile.txt')"
+                }
+            ]
+        },
+        {
+            "title": "মড্যুল এবং নেইম ইমপোর্ট (Module and Name import)",
+            "items": [{
                     "definition": "as এর ব্যবহার করে সরাসরি names এর এক্সেস",
                     "code": "from monmod import nom1, nom2 as fct"
                 },
@@ -140,8 +289,7 @@
         },
         {
             "title": "পান্ডাস ডাটাফ্রাম (Pandas Dataframe)",
-            "items": [
-                {
+            "items": [{
                     "definition": "পান্ডাস ইম্পোর্ট করা",
                     "code": "import pandas as pd"
                 },
@@ -160,7 +308,7 @@
                 {
                     "definition": "ডাটাফ্রেমের সব কলামের নাম",
                     "code": "df.columns"
-                },                                                
+                },
                 {
                     "definition": "ডাটাফ্রেমের প্রথম n রো",
                     "code": "df.head(n)"
@@ -172,7 +320,7 @@
                 {
                     "definition": "র‍্যান্ডমলি ডাটাফ্রেমের ৯ টি রো সিলেক্ট করে",
                     "code": "df.sample(n=9)"
-                }, 
+                },
                 {
                     "definition": "ডাটাফ্রেমের ইনফো",
                     "code": "df.info()"
@@ -220,7 +368,7 @@
                 {
                     "definition": "কলামের নাম পরিবর্তন করা।",
                     "code": "df.rename(columns = {'old_name': 'new_name'})"
-                }              
+                }
             ]
         }
     ]

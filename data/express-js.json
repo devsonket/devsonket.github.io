@@ -17,6 +17,9 @@
                 }, {
                     "definition": "কমান্ড লাইন জেনারেটর ইন্সটল করা",
                     "code": "npm install -g express-generator@4.0.0"
+                }, {
+                    "definition": "nodemon ইন্সটল করা (অটোমেটিক্যালি রিস্টারট এপ্লিকেশন হোয়েন ফাইল চেঞ্জেস)",
+                    "code": "npm i nodemon"
                 }
             ]
         },
@@ -63,6 +66,9 @@
                 }, {
                     "definition": "সার্ভার তৈরী করা",
                     "code": "http.createServer(app).listen(পোর্ট-নাম্বার, কলব্যাক)"
+                }, {
+                    "definition": "সার্ভার রান করা",
+                    "code": "node serverName.js / nodemon serverName.js"
                 }, {
                     "definition": "কী দিয়ে প্রপার্টি ভ্যালু সেট করা",
                     "code": "app.set(কী, ভ্যালু)"
@@ -182,6 +188,9 @@
                     "definition": "জেসন সেন্ড করা প্রপার হেডারসহ",
                     "code": "response.json(স্ট্যাটাস, ডাটা)"
                 }, {
+                    "definition": "সেন্ড রেসপন্স স্ট্যাটাস",
+                    "code": "response.sendStatus(স্ট্যাটাস)"
+                }, {
                     "definition": "ফাইল সেন্ড করা",
                     "code": "response.sendfile(পাথ, অপশন, কলব্যাক)"
                 }, {
@@ -207,6 +216,12 @@
             "title": "ভিউ ইঞ্জিন সেট করা",
             "items": [
                 {
+                    "definition": "টেম্পলেট ইঞ্জিন ইনস্টল করা",
+                    "code": "npm install templateName --save"
+                }, {
+                    "definition": "পাগ টেমপ্লেট সেট করা",
+                    "code": "app.set('view engine', 'pug')"
+                }, {
                     "definition": "ইজেএস টেমপ্লেট সেট করা",
                     "code": "app.set('view engine', 'ejs')"
                 }, {

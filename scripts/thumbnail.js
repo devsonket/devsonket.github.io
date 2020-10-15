@@ -37,32 +37,9 @@ const main = async () => {
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+          <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,700&display=swap" rel="stylesheet">
           <title>HTML to Generate Thumbnail</title>
           <style>
-            @font-face {
-              font-family: "Hind Siliguri";
-              src: url("./src/assets/fonts/HindSiliguri-Light.woff2") format("woff2"),
-                url("./src/assets/fonts/HindSiliguri-Light.woff") format("woff");
-              font-weight: 300;
-              font-style: normal;
-            }
-
-            @font-face {
-              font-family: "Hind Siliguri";
-              src: url("./src/assets/fonts/HindSiliguri-Regular.woff2") format("woff2"),
-                url("./src/assets/fonts/HindSiliguri-Regular.woff") format("woff");
-              font-weight: 400;
-              font-style: normal;
-            }
-
-            @font-face {
-              font-family: "Hind Siliguri";
-              src: url("./src/assets/fonts/HindSiliguri-Bold.woff2") format("woff2"),
-                url("./src/assets/fonts/HindSiliguri-Bold.woff") format("woff");
-              font-weight: 800;
-              font-style: normal;
-            }
-
             * {
               margin: 0;
               padding: 0;
@@ -108,6 +85,9 @@ const main = async () => {
       "Content-Type": "text/html; charset=utf-8",
     })
     await page.setContent(imgHTML)
+    if (i === 0) {
+      await page.waitFor(5000)
+    }
     await page.screenshot({
       type: "jpeg",
       path: `../static/static/thumbnail/${filesRaw[i].id}.jpg`,

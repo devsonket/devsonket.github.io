@@ -56,7 +56,13 @@
         }  , {
           "definition": "বর্তমান উইন্ডো ক্লোজ করা",
           "code": "Ctrl + Shift + w"
-        }  
+        }, {
+          "definition": "বর্তমান উইন্ডো মিনিমাইজ করা",
+          "code": "Alt + Space + N"
+        }, {
+          "definition": "বর্তমান উইন্ডো  ম্যাক্সিমাইজ বা বড় করা",
+          "code": "Alt + Space + N"
+        }     
       ]
     }, {
       "title": "পেজ কন্ট্রোল",
@@ -92,9 +98,18 @@
           "definition": "বর্তমান পেজ বুকমার্ক করা",
           "code": "Ctrl + D"
         }, {
+          "definition": "সবগুলো পেজ একসাথে বুকমার্ক করা",
+          "code": "Ctrl + Shift + D"
+        }, {
+          "definition": "বুকমার্ক বার টোগল করা",
+          "code": "Ctrl + Shift + B"
+        }, {
+          "definition": "বুকমার্ক  ম্যানেজার দেখা",
+          "code": "Ctrl + Shift + O"
+        }, {
           "definition": "ফুলস্ক্রিন এ ব্রাউস করতে",
           "code": "F11"
-        } , {
+        }, {
           "definition": "পেইজ জুম করতে",
           "code": "Ctrl এবং অথবা Ctrl + মাউস wheel নিচের দিকে ঘুরানো"
         }, {
@@ -144,8 +159,10 @@
         } , {
           "definition": "সার্চ ইঞ্জিন এর মাধ্যমে এড্রেস বার এ সার্চ করতে",
           "code": "Ctrl + e"
+        }, {
+          "definition": "ক্রোমের মেনু  দেখতে",
+          "code": "Alt + E"
         }
-
       ]
     }, {
       "title": "ক্রোম এক্সটেনশন",
@@ -171,10 +188,37 @@
         } , {
           "definition": "টুডু লিস্ট করতে চাইলে",
           "code": "google keep"
-        } , {
+        } ,  {
+          "definition": "কোন পেজের নির্দিষ্ট অংশের স্ক্রিনসট নিতে চাইলেে",
+          "code": "Lightshot (screenshot tool)"
+        } ,  {
           "definition": "কোন পেজের ফুল পেজ স্কিন সর্ট নিতে চাইলেে",
           "code": "Full Page Screen Capture"
-        } 
+        } , {
+          "definition": "ওয়েব পেইজে কোন ফন্ট ব্যবহার করা হয়েছে তা জানতে চাইলেে",
+          "code": "Font Finder"
+        } , {
+          "definition": "ওয়েব পেইজের কালার পিক করতে চাইলে",
+          "code": "ColorZilla"
+        } , {
+          "definition": "ওয়েবসাইটের র‌্যাঙ্কিং জানতে চাইলেে",
+          "code": "Alexa Traffic Rank"
+        } , {
+          "definition": "পাসওয়ার্ড সংরক্ষণ করতে চাইলে",
+          "code": "LastPass: Free Password Manager"
+        } , {
+          "definition": "ওয়েব ব্রাউজার লক করে রাখতে চাইলে",
+          "code": "LockPW"
+        } , {
+          "definition": "ডেস্কটপ থেকে সরাসরি মোবাইল ইনস্টাগ্রাম সাইট ব্রাউজ করতে",
+          "code": "Desktopify"
+        } , {
+          "definition": "ডেভলপার কন্সোলে জাভাস্ক্রিপ্ট (ইএস৬) কোড লেখা ও  কম্পাইল করতে",
+          "code": "Scratch JS"
+        } , {
+          "definition": "ডার্ক মুড ব্যবহার করতে চাইলে",
+          "code": "Dark Reader" 
+        }
       ]
     }
   ]

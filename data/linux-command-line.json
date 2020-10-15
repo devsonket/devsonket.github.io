@@ -50,6 +50,12 @@
         }, {
           "definition": "ইউজার ইক্টিবিটি লগ দেখা",
           "code": "sudo less /var/log/auth.log"
+        }, {
+          "definition": "পিসি বন্ধ করা",
+          "code": "sudo poweroff অথবা poweroff"
+        }, {
+          "definition": "কমান্ড লাইন থেকে পিসি বন্ধ করে আবার চালু করা",
+          "code": "sudo reboot অথবা reboot"
         }
       ]
     }, {
@@ -58,18 +64,27 @@
         {
           "definition": "নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা",
           "code": "mkdir NewDirectoryName"
+        },{
+          "definition": "নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা ও অনুমতি দেয়া",
+          "code": "mkdir -m777 NewDirectoryName"
         }, {
-          "definition": "নতুন ফাইল তৈরি করা",
+          "definition": "নতুন ফাইল তৈরি করা উপায় - ১",
           "code": "touch YourFileName"
         }, {
+          "definition": "নতুন ফাইল তৈরি করা উপায় - ২",
+          "code": "> YourFileName"
+        }, {
+          "definition": "নতুন ফাইল তৈরি করা উপায় - ৩",
+          "code": "cat> YourFileName"
+        }, {
           "definition": "ফাইল মুছে ফেলা",
-          "code": "rm YourFileName" 
+          "code": "rm YourFileName"
+        }, {
+          "definition": "ডিরেক্টরি মুছে ফেলা কমান্ডের সংস্করণ দেখা",
+          "code": "rmdir --version"
         }, {
           "definition": "পুরো একটি ডিরেক্টরি মুছে ফেলা",
           "code": "rm -rf YourDirectoryName"
-        }, {
-          "definition": "ফাইল এক জায়গা থেকে অন্য জায়গায় মুভ করা",
-          "code": "mv PathToSourceFile PathToWhereYouWantToMove"
         }, {
 	  "definition": "কোনো ডিরেক্টরির অধীনস্থ নির্দিষ্ট ফরমেটের সব ফাইলকে অন্য ডিরেক্টরিতে মুভ করা",
           "code": "mv *.FileExtension PathToWhereYouWantToMove/"
@@ -83,8 +98,14 @@
 	  "definition": "ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনাসহ)",
           "code": "ls -l"
         }, {
+          "definition": "ডিরেক্টরি অথবা ফাইল দেখা উল্টো উপায়ে ",
+                "code": "ls -r"
+        }, {
+          "definition": "ডিরেক্টরি অথবা ফাইল দেখা বরাদ্দ কৃত জায়গাসহ",
+                "code": "ls -s"
+        }, {
           "definition": "ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনা এবং লুকানো ফাইল/ডিরেক্টরিসহ)",
-          "code": "ls -al"          
+          "code": "ls -al"
         }, {
           "definition": "ডিরেক্টরি এবং ফাইলের মধ্যে থেকে শুধুমাত্র ডিরেক্টরিগুলো লিস্ট অাকারে দেখা",
 	  "code": "sudo ls -d */"
@@ -92,20 +113,32 @@
           "definition": "কোন ফোল্ডার অথবা ডিরেক্টরিতে প্রবেশ করা",
           "code": "cd YourFileName"
         }, {
+          "definition": "কোন ফোল্ডার অথবা ডিরেক্টরি থেকে বের হওয়া",
+          "code": "cd .."
+        }, {
           "definition": "vim এডিটর দিয়ে ফাইল এডিট করা",
           "code": "vi YourFileName"
         }, {
           "definition": "nano এডিটর দিয়ে ফাইল এডিট করা",
           "code": "nano YourFileName"
         }, {
+          "definition": "gedit এডিটর দিয়ে ফাইল এডিট করা",
+          "code": "gedit YourFileName"
+        }, {
           "definition": "বর্তমান ওয়ার্কিং ডিরেক্টরি প্রিন্ট করা",
           "code": "pwd"
         }, {
           "definition": "ফাইল কপি করা",
           "code": "cp PathToSourceFile PathToWhereYouWantToMove"
+        },{
+          "definition": "ফাইলের নাম পরিবর্তন করা",
+          "code": "mv FileOldName FileNewName"
         }, {
-          "definition": "ফাইলের কনটেন্ট দেখা",
+          "definition": "ফাইলের কনটেন্ট দেখা উপায় - ১",
           "code": "cat YourFileName"
+        }, {
+          "definition": "ফাইলের কনটেন্ট দেখা উপায় - ২",
+          "code": "more YourFileName"
         }, {
           "definition": "সিস্টেমে ওপেন থাকা ফাইলসমূহের লিস্ট দেখা",
           "code": "lsof"
@@ -116,7 +149,7 @@
           "definition": "ফাইল ব্রাউজ করা",
           "code": "less YourFileName"
         }, {
-          "definition": "ফাইলের প্রথম ১০ লাইন দেখা", 
+          "definition": "ফাইলের প্রথম ১০ লাইন দেখা",
           "code": "head YourFileName"
         }, {
           "definition": "ফাইলের শেষ ১০ লাইন দেখা",
@@ -125,8 +158,17 @@
           "definition": "ফাইল অথবা ডিরেক্টরির সাইজ দেখা",
           "code": "du YourFileOrDirectory"
         }, {
-          "definition": "ফাইলের পারমিশন সবার জন্য রিড, রাইত, এক্সিকিউট (read, write, execute) করা",
+          "definition": "বর্তমান ওয়ার্কিং ডিরেক্টরির সাইজ দেখা",
+          "code": "du -sh"
+        }, {
+          "definition": "সকল ফাইল ও ডিরেক্টরীর ডিক্স ইউজ দেখতে",
+          "code": "du -ah"
+        }, {
+          "definition": "ফাইলের পারমিশন সবার জন্য রিড, রাইট, এক্সিকিউট (read, write, execute) করা",
           "code": "chmod 777 YourFileName"
+        }, {
+          "definition": "রিমোট ফাইল ডাউনলোড করা (wget ইন্সটল থাকতে হবে)",
+          "code": "wget https://example.com/remote.pdf"
         }
       ]
     }, {
@@ -169,6 +211,9 @@
           "definition": "মাউন্টেড ফাইল সিস্টেম দেখা",
           "code": "mount"
         }, {
+          "definition": "মাউন্টেড ফাইলের ব্যবহৃত ও অব্যবহৃত  স্পেস দেখা",
+          "code": "df -h"
+        }, {
           "definition": "পার্টিশন সম্পর্কিত তথ্য দেখা ",
           "code": "fdisk -l"
         }
@@ -180,16 +225,25 @@
           "definition": "টপ প্রসেসগুলো দেখা এবং ম্যানেজ করা",
           "code": "top"
         }, {
+          "definition": "টপ প্রসেস দেখা",
+          "code": "top&"
+        }, {
+          "definition": "ফাইলের তথ্য দেখা",
+          "code": "locate YourFileName"
+        }, {
           "definition": "ভার্চুয়াল মেমোরি সম্পর্কিত তথ্য দেখা",
           "code": "vmstat"
         }, {
           "definition": "বর্তমান অ্যাক্টিভ প্রসেসগুলো দেখা",
           "code": "ps"
         }, {
+          "definition": "বর্তমান অ্যাক্টিভ ও ঘুমন্ত প্রসেসগুলো দেখা",
+          "code": "ps -afx"
+        }, {
           "definition": "নির্দিষ্ট প্রসেস আইডির (PID) কোন প্রসেস কিল করা",
           "code": "kill PID"
         }, {
-          "definition":  "নির্দিষ্ট নামের কোন প্রসেস কিল করা", 
+          "definition":  "নির্দিষ্ট নামের কোন প্রসেস কিল করা",
           "code": "killall ProcessName"
         }, {
           "definition": "রানিং প্রসেসগুলো ট্রি ফরম্যাটে দেখা",
@@ -217,6 +271,9 @@
         }, {
           "definition": "টারমিনাল ক্লোজ করা",
           "code": "exit অথবা Ctrl+D"
+        }, {
+          "definition": "টারমিনাল ক্লোজ না করে প্রাথমিক অবস্থায় ফিরে যেতে",
+          "code": "reset"
         }, {
           "definition": "বর্তমান কমান্ড স্টপ করা",
           "code": "Ctrl-c"
