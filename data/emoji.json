@@ -906,6 +906,115 @@
               "code": ":lips:"
             }
          ]
+      },
+      {
+         "title":"মানুষের ছবি",
+         "items":[
+            {
+              "definition": "👶",
+              "code": ":baby:"
+            },
+            {
+              "definition": "🧒",
+              "code": ":child:"
+            },
+            {
+              "definition": "👦",
+              "code": ":boy:"
+            },
+            {
+              "definition": "👧",
+              "code": ":girl:"
+            },
+            {
+              "definition": "🧑",
+              "code": ":adult:"
+            },
+            {
+              "definition": "👱",
+              "code": ":blond_haired_person:"
+            },
+            {
+              "definition": "👨",
+              "code": ":man:"
+            },
+            {
+              "definition": "🧔",
+              "code": ":bearded_person:"
+            },
+            {
+              "definition": "👨‍🦰",
+              "code": ":red_haired_man:"
+            },
+            {
+              "definition": "👨‍🦱",
+              "code": ":curly_haired_man:"
+            },
+            {
+              "definition": "👨‍🦳",
+              "code": ":white_haired_man:"
+            },
+            {
+              "definition": "👨‍🦲",
+              "code": ":bald_man:"
+            },
+            {
+              "definition": "👩",
+              "code": ":woman:"
+            },
+            {
+              "definition": "👩‍🦰",
+              "code": ":red_haired_woman:"
+            },
+            {
+              "definition": "🧑‍🦰",
+              "code": ":person_red_hair:"
+            },
+            {
+              "definition": "👩‍🦱",
+              "code": ":curly_haired_woman:"
+            },
+            {
+              "definition": "🧑‍🦱",
+              "code": ":person_curly_hair:"
+            },
+            {
+              "definition": "👩‍🦳",
+              "code": ":white_haired_woman:"
+            },
+            {
+              "definition": "🧑‍🦳",
+              "code": ":person_white_hair:"
+            },
+            {
+              "definition": "👩‍🦲",
+              "code": ":bald_woman:"
+            },
+            {
+              "definition": "🧑‍🦲",
+              "code": ":person_bald:"
+            },
+            {
+              "definition": "👱‍♀️",
+              "code": ":blond_haired_woman: বা :blonde_woman:"
+            },
+            {
+              "definition": "👱‍♂️",
+              "code": ":blond_haired_man:"
+            },
+            {
+              "definition": "🧓",
+              "code": ":older_adult:"
+            },
+            {
+              "definition": "👴",
+              "code": ":older_man:"
+            },
+            {
+              "definition": "👵",
+              "code": ":older_woman:"
+            }
+         ]
       }
    ]
 }
