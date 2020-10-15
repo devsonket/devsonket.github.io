@@ -6,6 +6,24 @@
   "colorPref": "#0288d1",
   "contents": [
     {
+      "title": "রিঅ্যাক্ট JS ইন্সটল করা",
+      "items": [
+        {
+          "definition": "npx এর সাহায্যে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
+          "code": "npx create-react-app <project-name>"
+        },
+        {
+          "definition": "npm এর সাহায্যে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
+          "code": "npm init react-app <project-name>"
+        },
+        {
+          "definition": "yarn এর সাহায্যে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
+          "code": "yarn create react-app <project-name>"
+        }
+        
+      ]
+    },
+    {
       "title": "রিঅ্যাক্ট JS এ 'Hello world' প্রিন্ট করা",
       "items": [
         {
