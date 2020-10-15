@@ -41,6 +41,10 @@
         {
           "definition": "ডাইনামিক ইউ-আর-এল বাইন্ডিং",
           "code": ":href='url'"
+        },
+        {
+          "definition": "ডাইনামিক ইউ-আর-এল বাইন্ডিং এবং ভেলু পাসিং",
+          "code": ":href='`url/${id}`'"
         }, {
           "definition": "isActive এর সত্য/মিথ্যার উপর নির্ভর করে active ক্লাস বাইন্ডিং",
           "code": ":class='{active: isActive}'"
