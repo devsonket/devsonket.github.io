@@ -1726,6 +1726,92 @@
               "code": ":parrot:"
             }
          ]
+      },
+      {
+         "title":"সরিসৃপ প্রাণীর ছবি",
+         "items":[
+            {
+              "definition": "🐊",
+              "code": ":crocodile:"
+            },   
+            {
+              "definition": "🐢",
+              "code": ":turtle:"
+            },    
+            {
+              "definition": "🦎",
+              "code": ":lizard:"
+            },    
+            {
+              "definition": "🐍",
+              "code": ":snake:"
+            },   
+            {
+              "definition": "🐲",
+              "code": ":dragon_face:"
+            },   
+            {
+              "definition": "🐉",
+              "code": ":dragon:"
+            },    
+            {
+              "definition": "🦕",
+              "code": ":sauropod:"
+            },    
+            {
+              "definition": "🦖",
+              "code": ":t-rex:"
+            }
+         ]
+      },
+      {
+         "title":"স্তন্যপায়ী প্রাণীর ছবি",
+         "items":[
+            {
+              "definition": "🐌",
+              "code": ":snail:"
+            },   
+            {
+              "definition": "🦋",
+              "code": ":butterfly:"
+            },   
+            {
+              "definition": "🐛",
+              "code": ":bug:"
+            },   
+            {
+              "definition": "🐜",
+              "code": ":ant:"
+            },   
+            {
+              "definition": "🐝",
+              "code": "bee::honeybee"
+            },  
+            {
+              "definition": "🐞",
+              "code": ":beetle:"
+            },    
+            {
+              "definition": "🦗",
+              "code": ":cricket:"
+            },   
+            {
+              "definition": "🕷️",
+              "code": ":spider:"
+            },     
+            {
+              "definition": "🕸️",
+              "code": ":spider_web:"
+            },     
+            {
+              "definition": "🦂",
+              "code": ":scorpion:"
+            },    
+            {
+              "definition": "🦟",
+              "code": ":mosquito:"
+            }
+         ]
       }
    ]
 }
