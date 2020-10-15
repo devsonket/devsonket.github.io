@@ -655,6 +655,67 @@
                "code":":speak_no_evil:"
             }
          ]
+      },
+      {
+         "title":"চিন্তাভাবনা প্রতিক্রিয়া",
+         "items":[
+            { 
+               "definition": "💯",
+               "code": ":100:"
+            },  
+            {
+               "definition": "💢",
+               "code": ":anger:"
+            },  
+            {
+               "definition": "💥",
+               "code": ":boom: বা :collision:"
+            },  
+            {
+               "definition": "💫",
+               "code": ":dizzy:"
+            },  
+            {
+               "definition": "💦",
+               "code": ":sweat_drops:"
+            },  
+            {
+               "definition": "💨",
+               "code": ":dash:"
+            },
+            {
+               "definition": "🕳️",
+               "code": ":hole:"
+            },   
+            {
+               "definition": "💣",
+               "code": ":bomb:"
+            },   
+            {
+               "definition": "💬",
+               "code": ":speech_balloon:"
+            },   
+            {
+               "definition": "👁️‍🗨️",
+               "code": ":eye_speech_bubble:"
+            },  
+            {
+               "definition": "🗨️",
+               "code": ":left_speech_bubble:"
+            },   
+            {
+               "definition": "🗯️",
+               "code": ":right_anger_bubble:"
+            },   
+            {
+               "definition": "💭",
+               "code": ":thought_balloon:"
+            },  
+            {
+               "definition": "💤",
+               "code": ":zzz:"
+            }
+         ]
       }
    ]
 }
