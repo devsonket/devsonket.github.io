@@ -2471,6 +2471,127 @@
               "code": ":ice_cube:"
             }
          ]
+      },
+      {
+         "title":"রুপকথার চরিত্র",
+         "items":[
+            {
+               "definition": "👼",
+               "code": ":angel:"
+            },  
+            {
+               "definition": "🎅",
+               "code": ":santa:"
+            },  
+            {
+               "definition": "🤶",
+               "code": ":mrs_claus:"
+            },  
+            {
+              "definition": "🦸",
+              "code": ":superhero:"
+            },  
+            {
+              "definition": "🦸‍♂️",
+              "code": ":superhero_man:"
+            },  
+            {
+              "definition": "🦸‍♀️",
+              "code": ":superhero_woman:"
+            },  
+            {
+              "definition": "🦹",
+              "code": ":supervillain:"
+            },   
+            {
+              "definition": "🦹‍♂️",
+              "code": ":supervillain_man:"
+            },   
+            {
+              "definition": "🦹‍♀️",
+              "code": ":supervillain_woman:"
+            },   
+            {
+              "definition": "🧙",
+              "code": ":mage:"
+            },   
+            {
+              "definition": "🧙‍♂️",
+              "code": ":mage_man:"
+            },   
+            {
+              "definition": "🧙‍♀️",
+              "code": ":mage_woman:"
+            },   
+            {
+              "definition": "🧚",
+              "code": ":fairy:"
+            },  
+            {
+              "definition": "🧚‍♂️",
+              "code": ":fairy_man:"
+            },  
+            {
+              "definition": "🧚‍♀️",
+              "code": ":fairy_woman:"
+            },  
+            {
+              "definition": "🧛",
+              "code": ":vampire:"
+            },  
+            {
+              "definition": "🧛‍♂️",
+              "code": ":vampire_man:"
+            },  
+            {
+              "definition": "🧛‍♀️",
+              "code": ":vampire_woman:"
+            },  
+            {
+              "definition": "🧜",
+              "code": ":merperson:"
+            },  
+            {
+              "definition": "🧜‍♂️",
+              "code": ":merman:"
+            },   
+            {
+              "definition": "🧜‍♀️",
+              "code": ":mermaid:"
+            },  
+            {
+              "definition": "🧝",
+              "code": ":elf:"
+            },  
+            {
+              "definition": "🧝‍♂️",
+              "code": ":elf_man:"
+            },  
+            {
+              "definition": "🧝‍♀️",
+              "code": ":elf_woman:"
+            },  
+            {
+              "definition": "🧞",
+              "code": ":genie:"
+            },  
+            {
+              "definition": "🧞‍♂️",
+              "code": ":genie_man:"
+            },  
+            {
+              "definition": "🧞‍♀️",
+              "code": ":genie_woman:"
+            },  
+            {
+              "definition": "🧟",
+              "code": ":zombie:"
+            },   
+            {
+              "definition": "🧟‍♂️",
+              "code": ":zombie_man:"
+            }
+         ]
       }
 
    ]
