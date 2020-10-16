@@ -1179,17 +1179,17 @@
                "code":":breast_feeding:"
             },
             {
-              "definition": "🗣️",
-              "code": ":speaking_head:"
-            }, 
+               "definition":"🗣️",
+               "code":":speaking_head:"
+            },
             {
-              "definition": "👤",
-              "code": ":bust_in_silhouette:"
-            },   
+               "definition":"👤",
+               "code":":bust_in_silhouette:"
+            },
             {
-              "definition": "👥",
-              "code": ":busts_in_silhoue:"
-            } 
+               "definition":"👥",
+               "code":":busts_in_silhoue:"
+            }
          ]
       },
       {
@@ -1829,36 +1829,36 @@
          "title":"বিভিন্ন মাছের ছবি",
          "items":[
             {
-              "definition": "🐳",
-              "code": ":whale:"
-            },   
+               "definition":"🐳",
+               "code":":whale:"
+            },
             {
-              "definition": "🐋",
-              "code": ":whale2:"
-            },    
+               "definition":"🐋",
+               "code":":whale2:"
+            },
             {
-              "definition": "🐬",
-              "code": "dolphin:"
-            }, 
+               "definition":"🐬",
+               "code":"dolphin:"
+            },
             {
-              "definition": "🐟",
-              "code": ":fish:"
-            },    
+               "definition":"🐟",
+               "code":":fish:"
+            },
             {
-              "definition": "🐠",
-              "code": ":tropical_fish:"
-            },   
+               "definition":"🐠",
+               "code":":tropical_fish:"
+            },
             {
-              "definition": "🐡",
-              "code": ":blowfish:"
-            },    
+               "definition":"🐡",
+               "code":":blowfish:"
+            },
             {
-              "definition": "🦈",
-              "code": ":shark:"
-            },   
+               "definition":"🦈",
+               "code":":shark:"
+            },
             {
-              "definition": "🐙",
-              "code": ":ocus:"
+               "definition":"🐙",
+               "code":":ocus:"
             }
          ]
       },
@@ -1866,156 +1866,156 @@
          "title":"পরিবারের ছবি",
          "items":[
             {
-              "definition": "🧑‍🤝‍🧑",
-              "code": ":people_holding_hands:"
-            },    
+               "definition":"🧑‍🤝‍🧑",
+               "code":":people_holding_hands:"
+            },
             {
-              "definition": "👭",
-              "code": ":two_women_holding_hands:"
-            },   
+               "definition":"👭",
+               "code":":two_women_holding_hands:"
+            },
             {
-              "definition": "👫",
-              "code": ":couple:"
-            },    
+               "definition":"👫",
+               "code":":couple:"
+            },
             {
-              "definition": "👬",
-              "code": ":two_men_holding_hands:"
-            },   
+               "definition":"👬",
+               "code":":two_men_holding_hands:"
+            },
             {
-              "definition": "💏",
-              "code": ":couplekiss:"
-            },    
+               "definition":"💏",
+               "code":":couplekiss:"
+            },
             {
-              "definition": "👩‍❤️‍💋‍👨",
-              "code": ":couplekiss_man_woman:"
-            },    
+               "definition":"👩‍❤️‍💋‍👨",
+               "code":":couplekiss_man_woman:"
+            },
             {
-              "definition": "👨‍❤️‍💋‍👨",
-              "code": ":couplekiss_man_man:"
-            },    
+               "definition":"👨‍❤️‍💋‍👨",
+               "code":":couplekiss_man_man:"
+            },
             {
-              "definition": "👩‍❤️‍💋‍👩",
-              "code": ":couplekiss_woman_woman:"
-            },    
+               "definition":"👩‍❤️‍💋‍👩",
+               "code":":couplekiss_woman_woman:"
+            },
             {
-              "definition": "💑",
-              "code": ":couple_with_heart:"
-            },   
+               "definition":"💑",
+               "code":":couple_with_heart:"
+            },
             {
-              "definition": "👩‍❤️‍👨",
-              "code": ":couple_with_heart_woman_man:"
-            },   
+               "definition":"👩‍❤️‍👨",
+               "code":":couple_with_heart_woman_man:"
+            },
             {
-              "definition": "👨‍❤️‍👨",
-              "code": ":couple_with_heart_man_man:"
-            },   
+               "definition":"👨‍❤️‍👨",
+               "code":":couple_with_heart_man_man:"
+            },
             {
-              "definition": "👩‍❤️‍👩",
-              "code": ":couple_with_heart_woman_woman:"
-            },   
+               "definition":"👩‍❤️‍👩",
+               "code":":couple_with_heart_woman_woman:"
+            },
             {
-              "definition": "👪",
-              "code": ":family:"
-            },    
+               "definition":"👪",
+               "code":":family:"
+            },
             {
-              "definition": "👨‍👩‍👦",
-              "code": ":family_man_woman_boy:"
-            },    
+               "definition":"👨‍👩‍👦",
+               "code":":family_man_woman_boy:"
+            },
             {
-              "definition": "👨‍👩‍👧",
-              "code": ":family_man_woman_girl:"
-            },   
+               "definition":"👨‍👩‍👧",
+               "code":":family_man_woman_girl:"
+            },
             {
-              "definition": "👨‍👩‍👧‍👦",
-              "code": ":family_man_woman_girl_boy:"
-            },   
+               "definition":"👨‍👩‍👧‍👦",
+               "code":":family_man_woman_girl_boy:"
+            },
             {
-              "definition": "👨‍👩‍👦‍👦",
-              "code": ":family_man_woman_boy_boy:"
-            },    
+               "definition":"👨‍👩‍👦‍👦",
+               "code":":family_man_woman_boy_boy:"
+            },
             {
-              "definition": "👨‍👩‍👧‍👧",
-              "code": ":family_man_woman_girl_girl:"
-            },    
+               "definition":"👨‍👩‍👧‍👧",
+               "code":":family_man_woman_girl_girl:"
+            },
             {
-              "definition": "👨‍👨‍👦",
-              "code": ":family_man_man_boy:"
-            },    
+               "definition":"👨‍👨‍👦",
+               "code":":family_man_man_boy:"
+            },
             {
-              "definition": "👨‍👨‍👧",
-              "code": ":family_man_man_girl:"
-            },   
+               "definition":"👨‍👨‍👧",
+               "code":":family_man_man_girl:"
+            },
             {
-              "definition": "👨‍👨‍👧‍👦",
-              "code": ":family_man_man_girl_boy:"
-            },   
+               "definition":"👨‍👨‍👧‍👦",
+               "code":":family_man_man_girl_boy:"
+            },
             {
-              "definition": "👨‍👨‍👦‍👦",
-              "code": ":family_man_man_boy_boy:"
-            },    
+               "definition":"👨‍👨‍👦‍👦",
+               "code":":family_man_man_boy_boy:"
+            },
             {
-              "definition": "👨‍👨‍👧‍👧",
-              "code": ":family_man_man_girl_girl:"
-            },    
+               "definition":"👨‍👨‍👧‍👧",
+               "code":":family_man_man_girl_girl:"
+            },
             {
-              "definition": "👩‍👩‍👦",
-              "code": ":family_woman_woman_boy:"
-            },    
+               "definition":"👩‍👩‍👦",
+               "code":":family_woman_woman_boy:"
+            },
             {
-              "definition": "👩‍👩‍👧",
-              "code": ":family_woman_woman_girl:"
-            },   
+               "definition":"👩‍👩‍👧",
+               "code":":family_woman_woman_girl:"
+            },
             {
-              "definition": "👩‍👩‍👧‍👦",
-              "code": ":family_woman_woman_girl_boy:"
-            },   
+               "definition":"👩‍👩‍👧‍👦",
+               "code":":family_woman_woman_girl_boy:"
+            },
             {
-              "definition": "👩‍👩‍👦‍👦",
-              "code": ":family_woman_woman_boy_boy:"
-            },    
+               "definition":"👩‍👩‍👦‍👦",
+               "code":":family_woman_woman_boy_boy:"
+            },
             {
-              "definition": "👩‍👩‍👧‍👧",
-              "code": ":family_woman_woman_girl_girl:"
-            },    
+               "definition":"👩‍👩‍👧‍👧",
+               "code":":family_woman_woman_girl_girl:"
+            },
             {
-              "definition": "👨‍👦",
-              "code": ":family_man_boy:"
-            },    
+               "definition":"👨‍👦",
+               "code":":family_man_boy:"
+            },
             {
-              "definition": "👨‍👦‍👦",
-              "code": ":family_man_boy_boy:"
-            },    
+               "definition":"👨‍👦‍👦",
+               "code":":family_man_boy_boy:"
+            },
             {
-              "definition": "👨‍👧",
-              "code": ":family_man_girl:"
-            },   
+               "definition":"👨‍👧",
+               "code":":family_man_girl:"
+            },
             {
-              "definition": "👨‍👧‍👦",
-              "code": ":family_man_girl_boy:"
-            },   
+               "definition":"👨‍👧‍👦",
+               "code":":family_man_girl_boy:"
+            },
             {
-              "definition": "👨‍👧‍👧",
-              "code": ":family_man_girl_girl:"
-            },    
+               "definition":"👨‍👧‍👧",
+               "code":":family_man_girl_girl:"
+            },
             {
-              "definition": "👩‍👦",
-              "code": ":family_woman_boy:"
-            },    
+               "definition":"👩‍👦",
+               "code":":family_woman_boy:"
+            },
             {
-              "definition": "👩‍👦‍👦",
-              "code": ":family_woman_boy_boy:"
-            },    
+               "definition":"👩‍👦‍👦",
+               "code":":family_woman_boy_boy:"
+            },
             {
-              "definition": "👩‍👧",
-              "code": ":family_woman_girl:"
-            },   
+               "definition":"👩‍👧",
+               "code":":family_woman_girl:"
+            },
             {
-              "definition": "👩‍👧‍👦",
-              "code": ":family_woman_girl_boy:"
-            },   
+               "definition":"👩‍👧‍👦",
+               "code":":family_woman_girl_boy:"
+            },
             {
-              "definition": "👩‍👧‍👧",
-              "code": ":family_woman_girl_girl:"
+               "definition":"👩‍👧‍👧",
+               "code":":family_woman_girl_girl:"
             }
          ]
       },
@@ -2023,76 +2023,76 @@
          "title":"বিভিন্ন ফলের ছবি",
          "items":[
             {
-              "definition": "🍇",
-              "code": ":grapes:"
-            },   
-            {
-               "definition": "🍈",
-               "code": ":melon:"
-            },  
-            {
-               "definition": "🍉",
-               "code": ":watermelon:"
-            },   
-            {
-               "definition": "🍊",
-               "code": ":tangerine: বা :mandarin: বা :orange:"
-            }, 
-            {        
-               "definition": "🍋",
-               "code": ":lemon:"
-            },  
-            {
-               "definition": "🍌",
-               "code": ":banana:"
-            },   
-            {
-               "definition": "🍍",
-               "code": ":pineapple:"
-            },  
-            {
-               "definition": "🥭",
-               "code": ":mango:"
-            },  
-            {
-               "definition": "🍎",
-               "code": ":apple:"
-            },  
-            {
-               "definition": "🍏",
-               "code": ":green_apple:"
-            },  
-            {
-               "definition": "🍐",
-               "code": ":pear:"
-            },   
-            {
-               "definition": "🍑",
-               "code": ":peach:"
-            },  
-            {
-               "definition": "🍒",
-               "code": ":cherries:"
-            },   
-            {
-               "definition": "🍓",
-               "code": ":strawberry:"
-            },   
-            {
-               "definition": "🥝",
-               "code": ":kiwi_fruit:"
-            },   
-            {
-               "definition": "🍅",
-               "code": ":tomato:"
-            },   
-            {
-               "definition": "🥥",
-               "code": ":coconut:"
+               "definition":"🍇",
+               "code":":grapes:"
             },
             {
-              "definition": "🥑",
-              "code": ":avocado:"
+               "definition":"🍈",
+               "code":":melon:"
+            },
+            {
+               "definition":"🍉",
+               "code":":watermelon:"
+            },
+            {
+               "definition":"🍊",
+               "code":":tangerine: বা :mandarin: বা :orange:"
+            },
+            {
+               "definition":"🍋",
+               "code":":lemon:"
+            },
+            {
+               "definition":"🍌",
+               "code":":banana:"
+            },
+            {
+               "definition":"🍍",
+               "code":":pineapple:"
+            },
+            {
+               "definition":"🥭",
+               "code":":mango:"
+            },
+            {
+               "definition":"🍎",
+               "code":":apple:"
+            },
+            {
+               "definition":"🍏",
+               "code":":green_apple:"
+            },
+            {
+               "definition":"🍐",
+               "code":":pear:"
+            },
+            {
+               "definition":"🍑",
+               "code":":peach:"
+            },
+            {
+               "definition":"🍒",
+               "code":":cherries:"
+            },
+            {
+               "definition":"🍓",
+               "code":":strawberry:"
+            },
+            {
+               "definition":"🥝",
+               "code":":kiwi_fruit:"
+            },
+            {
+               "definition":"🍅",
+               "code":":tomato:"
+            },
+            {
+               "definition":"🥥",
+               "code":":coconut:"
+            },
+            {
+               "definition":"🥑",
+               "code":":avocado:"
             }
          ]
       },
@@ -2100,56 +2100,56 @@
          "title":"বিভিন্ন শাক-সবজির ছবি",
          "items":[
             {
-               "definition": "🍆",
-               "code": ":eggplant:"
-            },   
+               "definition":"🍆",
+               "code":":eggplant:"
+            },
             {
-               "definition": "🥔",
-               "code": ":potato:"
-            },   
+               "definition":"🥔",
+               "code":":potato:"
+            },
             {
-               "definition": "🥕",
-               "code": ":carrot:"
-            },   
+               "definition":"🥕",
+               "code":":carrot:"
+            },
             {
-               "definition": "🌽",
-               "code": ":corn:"
-            },   
+               "definition":"🌽",
+               "code":":corn:"
+            },
             {
-               "definition": "🌶️",
-               "code": ":hot_pepper:"
-            },   
+               "definition":"🌶️",
+               "code":":hot_pepper:"
+            },
             {
-               "definition": "🥒",
-               "code": ":cucumber:"
-            },   
+               "definition":"🥒",
+               "code":":cucumber:"
+            },
             {
-               "definition": "🥬",
-               "code": ":leafy_green:"
-            },  
+               "definition":"🥬",
+               "code":":leafy_green:"
+            },
             {
-               "definition": "🥦",
-               "code": ":broccoli:"
-            },   
+               "definition":"🥦",
+               "code":":broccoli:"
+            },
             {
-               "definition": "🧄",
-               "code": ":garlic:"
-            },   
+               "definition":"🧄",
+               "code":":garlic:"
+            },
             {
-               "definition": "🧅",
-               "code": ":onion:"
-            },  
+               "definition":"🧅",
+               "code":":onion:"
+            },
             {
-               "definition": "🍄",
-               "code": ":mushroom:"
-            },   
+               "definition":"🍄",
+               "code":":mushroom:"
+            },
             {
-               "definition": "🥜",
-               "code": ":peanuts:"
-            },  
+               "definition":"🥜",
+               "code":":peanuts:"
+            },
             {
-               "definition": "🌰",
-               "code": ":chestnut:"
+               "definition":"🌰",
+               "code":":chestnut:"
             }
          ]
       },
@@ -2157,196 +2157,196 @@
          "title":"হাতে প্রস্তুতক্রৃত খাবারের ছবি",
          "items":[
             {
-              "definition": "🍞",
-              "code": ":bread:"
-            },  
-            {
-              "definition": "🥐",
-              "code": ":croissant:"
-            },  
-            {
-              "definition": "🥖",
-              "code": ":baguette_bread:"
-            },   
-            {
-              "definition": "🥨",
-              "code": ":pretzel:"
-            },  
-            {
-              "definition": "🥯",
-              "code": ":bagel:"
-            },  
-            {
-              "definition": "🥞",
-              "code": ":pancakes:"
-            },   
-            {
-              "definition": "🧇",
-              "code": ":waffle:"
-            },   
-            {
-              "definition": "🧀",
-              "code": ":cheese:"
-            },   
-            {
-              "definition": "🍖",
-              "code": ":meat_on_bone:"
-            },   
-            {
-              "definition": "🍗",
-              "code": ":poultry_leg:"
-            },  
-            {
-              "definition": "🥩",
-              "code": ":cut_of_meat:"
-            },  
-            {
-              "definition": "🥓",
-              "code": ":bacon:"
-            },  
-            {
-              "definition": "🍔",
-              "code": ":hamburger:"
-            },  
-            {
-              "definition": "🍟",
-              "code": ":fries:"
-            },  
-            {
-              "definition": "🍕",
-              "code": ":pizza:"
-            },  
-            {
-              "definition": "🌭",
-              "code": ":hotdog:"
-            },   
-            {
-              "definition": "🥪",
-              "code": ":sandwich:"
-            },   
-            {
-              "definition": "🌮",
-              "code": ":taco:"
-            },   
-            {
-              "definition": "🌯",
-              "code": ":burrito:"
-            },  
-            {
-              "definition": "🥙",
-              "code": ":stuffed_flatbread:"
-            },  
-            {
-              "definition": "🧆",
-              "code": ":falafel:"
-            },  
-            {
-              "definition": "🥚",
-              "code": ":egg:"
-            },  
-            {
-              "definition": "🍳",
-              "code": ":fried_egg:"
-            },  
-            {
-              "definition": "🥘",
-              "code": ":shallow_pan_of_food:"
-            },  
-            {
-              "definition": "🍲",
-              "code": ":stew:"
-            },   
-            {
-              "definition": "🥣",
-              "code": ":bowl_with_spoon:"
-            },  
-            {
-              "definition": "🥗",
-              "code": ":green_salad:"
-            },  
-            {
-              "definition": "🍿",
-              "code": ":popcorn:"
-            },  
-            {
-              "definition": "🧈",
-              "code": ":butter:"
-            },   
-            {
-              "definition": "🧂",
-              "code": ":salt:"
-            },   
-            {
-              "definition": "🥫",
-              "code": ":canned_food:"
+               "definition":"🍞",
+               "code":":bread:"
             },
             {
-              "definition": "🍱",
-              "code": ":bento:"
-            },  
+               "definition":"🥐",
+               "code":":croissant:"
+            },
             {
-              "definition": "🍘",
-              "code": ":rice_cracker:"
-            },   
+               "definition":"🥖",
+               "code":":baguette_bread:"
+            },
             {
-              "definition": "🍙",
-              "code": ":rice_ball:"
-            },  
+               "definition":"🥨",
+               "code":":pretzel:"
+            },
             {
-              "definition": "🍚",
-              "code": ":rice:"
-            },   
+               "definition":"🥯",
+               "code":":bagel:"
+            },
             {
-              "definition": "🍛",
-              "code": ":curry:"
-            },  
+               "definition":"🥞",
+               "code":":pancakes:"
+            },
             {
-              "definition": "🍜",
-              "code": ":ramen:"
-            },  
+               "definition":"🧇",
+               "code":":waffle:"
+            },
             {
-              "definition": "🍝",
-              "code": ":spaghetti:"
-            },  
+               "definition":"🧀",
+               "code":":cheese:"
+            },
             {
-              "definition": "🍠",
-              "code": ":sweet_potato:"
-            },   
+               "definition":"🍖",
+               "code":":meat_on_bone:"
+            },
             {
-              "definition": "🍢",
-              "code": ":oden:"
-            },   
+               "definition":"🍗",
+               "code":":poultry_leg:"
+            },
             {
-              "definition": "🍣",
-              "code": ":sushi:"
-            },  
+               "definition":"🥩",
+               "code":":cut_of_meat:"
+            },
             {
-              "definition": "🍤",
-              "code": ":fried_shrimp:"
-            },   
+               "definition":"🥓",
+               "code":":bacon:"
+            },
             {
-              "definition": "🍥",
-              "code": ":fish_cake:"
-            },  
+               "definition":"🍔",
+               "code":":hamburger:"
+            },
             {
-              "definition": "🥮",
-              "code": ":moon_cake:"
-            },  
+               "definition":"🍟",
+               "code":":fries:"
+            },
             {
-              "definition": "🍡",
-              "code": ":dango:"
-            },  
+               "definition":"🍕",
+               "code":":pizza:"
+            },
             {
-              "definition": "🥟",
-              "code": ":dumpling:"
-            },   
+               "definition":"🌭",
+               "code":":hotdog:"
+            },
             {
-              "definition": "🥠",
-              "code": ":fortune_cookie:"
-            },   
+               "definition":"🥪",
+               "code":":sandwich:"
+            },
             {
-              "definition": "🥡",
-              "code": ":takeout_box:"
+               "definition":"🌮",
+               "code":":taco:"
+            },
+            {
+               "definition":"🌯",
+               "code":":burrito:"
+            },
+            {
+               "definition":"🥙",
+               "code":":stuffed_flatbread:"
+            },
+            {
+               "definition":"🧆",
+               "code":":falafel:"
+            },
+            {
+               "definition":"🥚",
+               "code":":egg:"
+            },
+            {
+               "definition":"🍳",
+               "code":":fried_egg:"
+            },
+            {
+               "definition":"🥘",
+               "code":":shallow_pan_of_food:"
+            },
+            {
+               "definition":"🍲",
+               "code":":stew:"
+            },
+            {
+               "definition":"🥣",
+               "code":":bowl_with_spoon:"
+            },
+            {
+               "definition":"🥗",
+               "code":":green_salad:"
+            },
+            {
+               "definition":"🍿",
+               "code":":popcorn:"
+            },
+            {
+               "definition":"🧈",
+               "code":":butter:"
+            },
+            {
+               "definition":"🧂",
+               "code":":salt:"
+            },
+            {
+               "definition":"🥫",
+               "code":":canned_food:"
+            },
+            {
+               "definition":"🍱",
+               "code":":bento:"
+            },
+            {
+               "definition":"🍘",
+               "code":":rice_cracker:"
+            },
+            {
+               "definition":"🍙",
+               "code":":rice_ball:"
+            },
+            {
+               "definition":"🍚",
+               "code":":rice:"
+            },
+            {
+               "definition":"🍛",
+               "code":":curry:"
+            },
+            {
+               "definition":"🍜",
+               "code":":ramen:"
+            },
+            {
+               "definition":"🍝",
+               "code":":spaghetti:"
+            },
+            {
+               "definition":"🍠",
+               "code":":sweet_potato:"
+            },
+            {
+               "definition":"🍢",
+               "code":":oden:"
+            },
+            {
+               "definition":"🍣",
+               "code":":sushi:"
+            },
+            {
+               "definition":"🍤",
+               "code":":fried_shrimp:"
+            },
+            {
+               "definition":"🍥",
+               "code":":fish_cake:"
+            },
+            {
+               "definition":"🥮",
+               "code":":moon_cake:"
+            },
+            {
+               "definition":"🍡",
+               "code":":dango:"
+            },
+            {
+               "definition":"🥟",
+               "code":":dumpling:"
+            },
+            {
+               "definition":"🥠",
+               "code":":fortune_cookie:"
+            },
+            {
+               "definition":"🥡",
+               "code":":takeout_box:"
             }
          ]
       },
@@ -2354,60 +2354,60 @@
          "title":"মিষ্টিজাত খাদ্যের ছবি",
          "items":[
             {
-              "definition": "🍦",
-              "code": ":icecream:"
-            },   
+               "definition":"🍦",
+               "code":":icecream:"
+            },
             {
-              "definition": "🍧",
-              "code": ":shaved_ice:"
-            },   
+               "definition":"🍧",
+               "code":":shaved_ice:"
+            },
             {
-              "definition": "🍨",
-              "code": ":ice_cream:"
-            },  
+               "definition":"🍨",
+               "code":":ice_cream:"
+            },
             {
-              "definition": "🍩",
-              "code": ":doughnut:"
-            },   
+               "definition":"🍩",
+               "code":":doughnut:"
+            },
             {
-              "definition": "🍪",
-              "code": ":cookie:"
-            },   
+               "definition":"🍪",
+               "code":":cookie:"
+            },
             {
-              "definition": "🎂",
-              "code": ":birthday:"
-            },   
+               "definition":"🎂",
+               "code":":birthday:"
+            },
             {
-              "definition": "🍰",
-              "code": ":cake:"
-            },   
+               "definition":"🍰",
+               "code":":cake:"
+            },
             {
-              "definition": "🧁",
-              "code": ":cupcake:"
-            },  
+               "definition":"🧁",
+               "code":":cupcake:"
+            },
             {
-              "definition": "🥧",
-              "code": ":pie:"
-            },  
+               "definition":"🥧",
+               "code":":pie:"
+            },
             {
-              "definition": "🍫",
-              "code": ":chocolate_bar:"
-            },  
+               "definition":"🍫",
+               "code":":chocolate_bar:"
+            },
             {
-              "definition": "🍬",
-              "code": ":candy:"
-            },  
+               "definition":"🍬",
+               "code":":candy:"
+            },
             {
-              "definition": "🍭",
-              "code": ":lollipop:"
-            },   
+               "definition":"🍭",
+               "code":":lollipop:"
+            },
             {
-              "definition": "🍮",
-              "code": ":custard:"
-            },  
+               "definition":"🍮",
+               "code":":custard:"
+            },
             {
-              "definition": "🍯",
-              "code": ":honey_pot:"
+               "definition":"🍯",
+               "code":":honey_pot:"
             }
          ]
       },
@@ -2415,72 +2415,72 @@
          "title":"বিভিন্ন পানীয়'র ছবি",
          "items":[
             {
-              "definition": "🍼",
-              "code": ":baby_bottle:"
-            },  
+               "definition":"🍼",
+               "code":":baby_bottle:"
+            },
             {
-              "definition": "🥛",
-              "code": ":milk_glass:"
-            },   
+               "definition":"🥛",
+               "code":":milk_glass:"
+            },
             {
-              "definition": "☕",
-              "code": ":coffee:"
-            },   
+               "definition":"☕",
+               "code":":coffee:"
+            },
             {
-              "definition": "🍵",
-              "code": ":tea:"
-            },  
+               "definition":"🍵",
+               "code":":tea:"
+            },
             {
-              "definition": "🍶",
-              "code": ":sake:"
-            },   
+               "definition":"🍶",
+               "code":":sake:"
+            },
             {
-              "definition": "🍾",
-              "code": ":champagne:"
-            },  
+               "definition":"🍾",
+               "code":":champagne:"
+            },
             {
-              "definition": "🍷",
-              "code": ":wine_glass:"
-            },   
+               "definition":"🍷",
+               "code":":wine_glass:"
+            },
             {
-              "definition": "🍸",
-              "code": ":cocktail:"
-            },   
+               "definition":"🍸",
+               "code":":cocktail:"
+            },
             {
-              "definition": "🍹",
-              "code": ":tropical_drink:"
-            },   
+               "definition":"🍹",
+               "code":":tropical_drink:"
+            },
             {
-              "definition": "🍺",
-              "code": ":beer:"
-            },   
+               "definition":"🍺",
+               "code":":beer:"
+            },
             {
-              "definition": "🍻",
-              "code": ":beers:"
-            },  
+               "definition":"🍻",
+               "code":":beers:"
+            },
             {
-              "definition": "🥂",
-              "code": ":clinking_glasses:"
-            },   
+               "definition":"🥂",
+               "code":":clinking_glasses:"
+            },
             {
-              "definition": "🥃",
-              "code": ":tumbler_glass:"
-            },  
+               "definition":"🥃",
+               "code":":tumbler_glass:"
+            },
             {
-              "definition": "🥤",
-              "code": ":cup_with_straw:"
-            },   
+               "definition":"🥤",
+               "code":":cup_with_straw:"
+            },
             {
-              "definition": "🧃",
-              "code": ":beverage_box:"
-            },   
+               "definition":"🧃",
+               "code":":beverage_box:"
+            },
             {
-              "definition": "🧉",
-              "code": ":mate:"
-            },   
+               "definition":"🧉",
+               "code":":mate:"
+            },
             {
-              "definition": "🧊",
-              "code": ":ice_cube:"
+               "definition":"🧊",
+               "code":":ice_cube:"
             }
          ]
       },
@@ -2488,123 +2488,122 @@
          "title":"রুপকথার চরিত্র",
          "items":[
             {
-               "definition": "👼",
-               "code": ":angel:"
-            },  
+               "definition":"👼",
+               "code":":angel:"
+            },
             {
-               "definition": "🎅",
-               "code": ":santa:"
-            },  
+               "definition":"🎅",
+               "code":":santa:"
+            },
             {
-               "definition": "🤶",
-               "code": ":mrs_claus:"
-            },  
+               "definition":"🤶",
+               "code":":mrs_claus:"
+            },
             {
-              "definition": "🦸",
-              "code": ":superhero:"
-            },  
+               "definition":"🦸",
+               "code":":superhero:"
+            },
             {
-              "definition": "🦸‍♂️",
-              "code": ":superhero_man:"
-            },  
+               "definition":"🦸‍♂️",
+               "code":":superhero_man:"
+            },
             {
-              "definition": "🦸‍♀️",
-              "code": ":superhero_woman:"
-            },  
+               "definition":"🦸‍♀️",
+               "code":":superhero_woman:"
+            },
             {
-              "definition": "🦹",
-              "code": ":supervillain:"
-            },   
+               "definition":"🦹",
+               "code":":supervillain:"
+            },
             {
-              "definition": "🦹‍♂️",
-              "code": ":supervillain_man:"
-            },   
+               "definition":"🦹‍♂️",
+               "code":":supervillain_man:"
+            },
             {
-              "definition": "🦹‍♀️",
-              "code": ":supervillain_woman:"
-            },   
+               "definition":"🦹‍♀️",
+               "code":":supervillain_woman:"
+            },
             {
-              "definition": "🧙",
-              "code": ":mage:"
-            },   
+               "definition":"🧙",
+               "code":":mage:"
+            },
             {
-              "definition": "🧙‍♂️",
-              "code": ":mage_man:"
-            },   
+               "definition":"🧙‍♂️",
+               "code":":mage_man:"
+            },
             {
-              "definition": "🧙‍♀️",
-              "code": ":mage_woman:"
-            },   
+               "definition":"🧙‍♀️",
+               "code":":mage_woman:"
+            },
             {
-              "definition": "🧚",
-              "code": ":fairy:"
-            },  
+               "definition":"🧚",
+               "code":":fairy:"
+            },
             {
-              "definition": "🧚‍♂️",
-              "code": ":fairy_man:"
-            },  
+               "definition":"🧚‍♂️",
+               "code":":fairy_man:"
+            },
             {
-              "definition": "🧚‍♀️",
-              "code": ":fairy_woman:"
-            },  
+               "definition":"🧚‍♀️",
+               "code":":fairy_woman:"
+            },
             {
-              "definition": "🧛",
-              "code": ":vampire:"
-            },  
+               "definition":"🧛",
+               "code":":vampire:"
+            },
             {
-              "definition": "🧛‍♂️",
-              "code": ":vampire_man:"
-            },  
+               "definition":"🧛‍♂️",
+               "code":":vampire_man:"
+            },
             {
-              "definition": "🧛‍♀️",
-              "code": ":vampire_woman:"
-            },  
+               "definition":"🧛‍♀️",
+               "code":":vampire_woman:"
+            },
             {
-              "definition": "🧜",
-              "code": ":merperson:"
-            },  
+               "definition":"🧜",
+               "code":":merperson:"
+            },
             {
-              "definition": "🧜‍♂️",
-              "code": ":merman:"
-            },   
+               "definition":"🧜‍♂️",
+               "code":":merman:"
+            },
             {
-              "definition": "🧜‍♀️",
-              "code": ":mermaid:"
-            },  
+               "definition":"🧜‍♀️",
+               "code":":mermaid:"
+            },
             {
-              "definition": "🧝",
-              "code": ":elf:"
-            },  
+               "definition":"🧝",
+               "code":":elf:"
+            },
             {
-              "definition": "🧝‍♂️",
-              "code": ":elf_man:"
-            },  
+               "definition":"🧝‍♂️",
+               "code":":elf_man:"
+            },
             {
-              "definition": "🧝‍♀️",
-              "code": ":elf_woman:"
-            },  
+               "definition":"🧝‍♀️",
+               "code":":elf_woman:"
+            },
             {
-              "definition": "🧞",
-              "code": ":genie:"
-            },  
+               "definition":"🧞",
+               "code":":genie:"
+            },
             {
-              "definition": "🧞‍♂️",
-              "code": ":genie_man:"
-            },  
+               "definition":"🧞‍♂️",
+               "code":":genie_man:"
+            },
             {
-              "definition": "🧞‍♀️",
-              "code": ":genie_woman:"
-            },  
+               "definition":"🧞‍♀️",
+               "code":":genie_woman:"
+            },
             {
-              "definition": "🧟",
-              "code": ":zombie:"
-            },   
+               "definition":"🧟",
+               "code":":zombie:"
+            },
             {
-              "definition": "🧟‍♂️",
-              "code": ":zombie_man:"
+               "definition":"🧟‍♂️",
+               "code":":zombie_man:"
             }
          ]
       }
-
    ]
 }
