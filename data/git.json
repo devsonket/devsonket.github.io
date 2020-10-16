@@ -2,27 +2,27 @@
   "id": "git-cheat-sheet",
   "title": "গিট",
   "slug": "git-cheat-sheet",
-  "description": "গিট এর চিটশিট। গিট হচ্ছে ভার্সন কন্ট্রোল সিস্টেম।  ডেভেলপাররা সাধারণত প্রজেক্টের ভার্সন কন্ট্রোল এবং একই প্রজেক্টে একের অধিক ডেভেলপার কাজ করার জন্য গিট ব্যবহার করে। ",
+  "description": "গিট হচ্ছে ভার্সন কন্ট্রোল সিস্টেম।  ডেভেলপাররা সাধারণত প্রজেক্টের ভার্সন কন্ট্রোল এবং একই প্রজেক্টে একের অধিক ডেভেলপার কাজ করার জন্য গিট ব্যবহার করে। ",
   "colorPref": "#000",
   "contents": [
     {
       "title": "ইনস্টল (Setup)",
       "items": [
         {
-          "definition": "গিট ইনস্টল ম্যাক",
+          "definition": "গিট ইনস্টল ( ম্যাক )",
           "code": "brew install git"
         }, 
         {
-          "definition": "গিট আনইনস্টল ম্যাক",
+          "definition": "গিট আনইনস্টল (ম্যাক)",
           "code": "brew remove git"
-        }, 
+        },
         {
-          "definition": "গিট আনইনস্টল উবুন্টু",
-          "code": "sudo apt-get remove git"
-        }, 
-        {
-          "definition": "গিট ইনস্টল উবুন্টু",
+          "definition": "গিট ইনস্টল (উবুন্টু)",
           "code": "sudo apt-get install git"
+        },  
+        {
+          "definition": "গিট আনইনস্টল (উবুন্টু)",
+          "code": "sudo apt-get remove git"
         }, 
         {
           "definition": "গিট ভার্সন চেক",
@@ -528,7 +528,7 @@
           "code": "git fetch RepositoryName"
         }, 
         {
-          "definition": "Fetch/Fork রিপোসিটোরি কে আপস্ট্রিম এর সাথে up-to-date রাখা",
+          "definition": "Fetch/Fork রিপোসিটোরি কে আপস্ট্রিম(upstream) এর সাথে up-to-date রাখা",
           "code": "git fetch upstream"
         }, 
         {
@@ -609,19 +609,19 @@
       "title": "গিট্ ফ্লো (Git flow)",
       "items": [
         {
-          "definition": "গিট flow ইনস্টল ম্যাক(Homebrew)",
+          "definition": "Homebrew দিয়ে গিট flow ইনস্টল (ম্যাক)",
           "code": "brew install git-flow-avh"
         }, 
         {
-          "definition": "গিট flow ইনস্টল ম্যাক(Macports)",
+          "definition": "Macports দিয়ে গিট flow ইনস্টল (ম্যাক)",
           "code": "port install git-flow-avh"
         }, 
         {
-          "definition": "গিট flow ইনস্টল লিনাক্স",
+          "definition": "গিট flow ইনস্টল (লিনাক্স) ",
           "code": "apt-get install git-flow"
         }, 
         {
-          "definition": "গিট flow ইনস্টল উইন্ডোজ",
+          "definition": "গিট flow ইনস্টল (উইন্ডোজ)",
           "code": "wget -q -O - --no-check-certificate https://raw.github.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh install stable | bash"
         }, 
         {
