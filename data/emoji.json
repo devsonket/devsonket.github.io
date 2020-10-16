@@ -1849,6 +1849,147 @@
               "code": ":ocus:"
             }
          ]
+      },
+      {
+         "title":"পরিবারের ছবি",
+         "items":[
+            {
+              "definition": "🧑‍🤝‍🧑",
+              "code": ":people_holding_hands:"
+            },    
+            {
+              "definition": "👭",
+              "code": ":two_women_holding_hands:"
+            },   
+            {
+              "definition": "👫",
+              "code": ":couple:"
+            },    
+            {
+              "definition": "👬",
+              "code": ":two_men_holding_hands:"
+            },   
+            {
+              "definition": "💏",
+              "code": ":couplekiss:"
+            },    
+            {
+              "definition": "👩‍❤️‍💋‍👨",
+              "code": ":couplekiss_man_woman:"
+            },    
+            {
+              "definition": "👨‍❤️‍💋‍👨",
+              "code": ":couplekiss_man_man:"
+            },    
+            {
+              "definition": "👩‍❤️‍💋‍👩",
+              "code": ":couplekiss_woman_woman:"
+            },    
+            {
+              "definition": "💑",
+              "code": ":couple_with_heart:"
+            },   
+            {
+              "definition": "👩‍❤️‍👨",
+              "code": ":couple_with_heart_woman_man:"
+            },   
+            {
+              "definition": "👨‍❤️‍👨",
+              "code": ":couple_with_heart_man_man:"
+            },   
+            {
+              "definition": "👩‍❤️‍👩",
+              "code": ":couple_with_heart_woman_woman:"
+            },   
+            {
+              "definition": "👪",
+              "code": ":family:"
+            },    
+            {
+              "definition": "👨‍👩‍👦",
+              "code": ":family_man_woman_boy:"
+            },    
+            {
+              "definition": "👨‍👩‍👧",
+              "code": ":family_man_woman_girl:"
+            },   
+            {
+              "definition": "👨‍👩‍👧‍👦",
+              "code": ":family_man_woman_girl_boy:"
+            },   
+            {
+              "definition": "👨‍👩‍👦‍👦",
+              "code": ":family_man_woman_boy_boy:"
+            },    
+            {
+              "definition": "👨‍👩‍👧‍👧",
+              "code": ":family_man_woman_girl_girl:"
+            },    
+            {
+              "definition": "👨‍👨‍👦",
+              "code": ":family_man_man_boy:"
+            },    
+            {
+              "definition": "👨‍👨‍👧",
+              "code": ":family_man_man_girl:"
+            },   
+            {
+              "definition": "👨‍👨‍👧‍👦",
+              "code": ":family_man_man_girl_boy:"
+            },   
+            {
+              "definition": "👨‍👨‍👦‍👦",
+              "code": ":family_man_man_boy_boy:"
+            },    
+            {
+              "definition": "👨‍👨‍👧‍👧",
+              "code": ":family_man_man_girl_girl:"
+            },    
+            {
+              "definition": "👩‍👩‍👦",
+              "code": ":family_woman_woman_boy:"
+            },    
+            {
+              "definition": "👩‍👩‍👧",
+              "code": ":family_woman_woman_girl:"
+            },   
+            {
+              "definition": "👩‍👩‍👧‍👦",
+              "code": ":family_woman_woman_girl_boy:"
+            },   
+            {
+              "definition": "👩‍👩‍👦‍👦",
+              "code": ":family_woman_woman_boy_boy:"
+            },    
+            {
+              "definition": "👩‍👩‍👧‍👧",
+              "code": ":family_woman_woman_girl_girl:"
+            },    
+            {
+              "definition": "👨‍👦",
+              "code": ":family_man_boy:"
+            },    
+            {
+              "definition": "👨‍👦‍👦",
+              "code": ":family_man_boy_boy:"
+            },    
+            {
+              "definition": "👨‍👧",
+              "code": ":family_man_girl:"
+            },   
+            {
+              "definition": "👨‍👧‍👦",
+              "code": ":family_man_girl_boy:"
+            },   
+            {
+              "definition": "👨‍👧‍👧",
+              "code": ":family_man_girl_girl:"
+            },    
+            {
+              "definition": "👩‍👦",
+              "code": ":family_woman_boy:"
+            }
+         ]
       }
    ]
 }
