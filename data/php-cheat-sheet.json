@@ -1,4 +1,5 @@
 {
+
   "id": "php",
   "title": "পিএইচপি প্রোগ্রামিং",
   "slug": "php",
@@ -95,6 +96,7 @@
           "code": "ord(something)"
         },
         {
+
           "definition": "স্ট্রিং-কে ক্যারেক্টার এরেতে রূপান্তর",
           "code": "str_split(something)"
         },
@@ -125,44 +127,55 @@
         {
           "definition": "স্ট্রিংয়ের ওয়ার্ড গণনা",
           "code": "str_word_count(something)"
-        },
-        {
-          "definition": "স্ট্রিংকে উল্টো করে",
-          "code": "strrev(string)"
-        },
-        {
-          "definition": "স্ট্রিংকে ভেঙে অ্যারেতে রুপান্তর করে",
-          "code": "explode(separator, string, limit)"
-        },
-        {
-          "definition": "অ্যারেকে ভেঙে স্ট্রিং এ রুপান্তর করে",
-          "code": "implode(separator, array)"
-        },
-        {
-          "definition": "অ্যারেকে ভেঙে স্ট্রিং এ রুপান্তর করে (হুবুহু implode() ফাংশন এর মত)",
-          "code": "join(separator, array)"
-        },
-        {
-          "definition": "স্ট্রিং এর মধ্যে '\\n' কে <br> ট্যাগে রুপান্তর করে",
-          "code": "nl2br(string)"
-        },
-        {
-          "definition": "স্ট্রিং এর ক্যারেক্টারগুলোকে উলট পালট বা এলোমেলো করে",
-          "code": "str_shuffle(string)"
-        },
-        {
-          "definition": "স্ট্রিং এর প্রথম ক্যারেক্টারকে বড় হাতের করে",
-          "code": "ucfirst(string)"
         }
-        ,
+      ]
+    },
+    {
+      "title": "অ্যারে এর জন্য প্রয়োজনীয় ফাংশন",
+      "items": [
         {
-          "definition": "স্ট্রিং এর প্রথম ক্যারেক্টারকে ছোট হাতের করে",
-          "code": "lcfirst(string)"
-        }
-        ,
+          "definition": "অ্যারে তৈরী করা",
+          "code": "array()"
+        },
         {
-          "definition": "স্ট্রিং এর প্রত্যেকটা ওয়ার্ড এর প্রথম ক্যারেক্টারকে বড় হাতের করে",
-          "code": "ucwords(string)"
+          "definition": "অ্যারে এর সব Key কে ক্যপিটাল বা স্মল লেটার করা",
+          "code": "array_change_key_case()"
+        },
+        {
+          "definition": "অ্যারে চানক করা",
+          "code": "array_chunk()"
+        },
+        {
+          "definition": "এক কলাম এর অ্যারে তৈরী করতে",
+          "code": "array_column()"
+        },
+        {
+          "definition": "অ্যারে Key আছে নাকি চেক করতে",
+          "code": "array_key_exists()"
+        },
+        {
+          "definition": "অ্যারের সব Key দেখতে",
+          "code": "array_keys()"
+        },
+        {
+          "definition": "অ্যারে মার্জ করতে",
+          "code": "array_merge()"
+        },
+        {
+          "definition": " অ্যারেতে ভ্যালু পুশ করা",
+          "code": "array_push()"
+        },
+        {
+          "definition": "অ্যারে থেকে ডাবল থাকা ভ্যালু বাদ দিতে",
+          "code": "array_unique()"
+        },
+        {
+          "definition": "অ্যারে সর্ট করতে",
+          "code": "sort()"
+        },
+        {
+          "definition": "অ্যারের কি এর সিরিয়াল অদল বদল করতে",
+          "code": "shuffle()"
         }
       ]
     }
