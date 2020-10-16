@@ -1812,6 +1812,43 @@
                "code":":mosquito:"
             }
          ]
+      },
+      {
+         "title":"বিভিন্ন মাছের ছবি",
+         "items":[
+            {
+              "definition": "🐳",
+              "code": ":whale:"
+            },   
+            {
+              "definition": "🐋",
+              "code": ":whale2:"
+            },    
+            {
+              "definition": "🐬",
+              "code": "dolphin:"
+            }, 
+            {
+              "definition": "🐟",
+              "code": ":fish:"
+            },    
+            {
+              "definition": "🐠",
+              "code": ":tropical_fish:"
+            },   
+            {
+              "definition": "🐡",
+              "code": ":blowfish:"
+            },    
+            {
+              "definition": "🦈",
+              "code": ":shark:"
+            },   
+            {
+              "definition": "🐙",
+              "code": ":ocus:"
+            }
+         ]
       }
    ]
 }
