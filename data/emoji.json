@@ -2398,6 +2398,80 @@
               "code": ":honey_pot:"
             }
          ]
+      },
+      {
+         "title":"বিভিন্ন পানীয়'র ছবি",
+         "items":[
+            {
+              "definition": "🍼",
+              "code": ":baby_bottle:"
+            },  
+            {
+              "definition": "🥛",
+              "code": ":milk_glass:"
+            },   
+            {
+              "definition": "☕",
+              "code": ":coffee:"
+            },   
+            {
+              "definition": "🍵",
+              "code": ":tea:"
+            },  
+            {
+              "definition": "🍶",
+              "code": ":sake:"
+            },   
+            {
+              "definition": "🍾",
+              "code": ":champagne:"
+            },  
+            {
+              "definition": "🍷",
+              "code": ":wine_glass:"
+            },   
+            {
+              "definition": "🍸",
+              "code": ":cocktail:"
+            },   
+            {
+              "definition": "🍹",
+              "code": ":tropical_drink:"
+            },   
+            {
+              "definition": "🍺",
+              "code": ":beer:"
+            },   
+            {
+              "definition": "🍻",
+              "code": ":beers:"
+            },  
+            {
+              "definition": "🥂",
+              "code": ":clinking_glasses:"
+            },   
+            {
+              "definition": "🥃",
+              "code": ":tumbler_glass:"
+            },  
+            {
+              "definition": "🥤",
+              "code": ":cup_with_straw:"
+            },   
+            {
+              "definition": "🧃",
+              "code": ":beverage_box:"
+            },   
+            {
+              "definition": "🧉",
+              "code": ":mate:"
+            },   
+            {
+              "definition": "🧊",
+              "code": ":ice_cube:"
+            }
+         ]
       }
+
    ]
 }
