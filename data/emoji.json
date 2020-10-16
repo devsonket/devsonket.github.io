@@ -2006,6 +2006,79 @@
               "code": ":family_woman_girl_girl:"
             }
          ]
+      },
+      {
+         "title":"বিভিন্ন ফলের ছবি",
+         "items":[
+            {
+              "definition": "🍇",
+              "code": ":grapes:"
+            },   
+            {
+               "definition": "🍈",
+               "code": ":melon:"
+            },  
+            {
+               "definition": "🍉",
+               "code": ":watermelon:"
+            },   
+            {
+               "definition": "🍊",
+               "code": ":tangerine:"
+            }, 
+            {        
+               "definition": "🍋",
+               "code": ":lemon:"
+            },  
+            {
+               "definition": "🍌",
+               "code": ":banana:"
+            },   
+            {
+               "definition": "🍍",
+               "code": ":pineapple:"
+            },  
+            {
+               "definition": "🥭",
+               "code": ":mango:"
+            },  
+            {
+               "definition": "🍎",
+               "code": ":apple:"
+            },  
+            {
+               "definition": "🍏",
+               "code": ":green_apple:"
+            },  
+            {
+               "definition": "🍐",
+               "code": ":pear:"
+            },   
+            {
+               "definition": "🍑",
+               "code": ":peach:"
+            },  
+            {
+               "definition": "🍒",
+               "code": ":cherries:"
+            },   
+            {
+               "definition": "🍓",
+               "code": ":strawberry:"
+            },   
+            {
+               "definition": "🥝",
+               "code": ":kiwi_fruit:"
+            },   
+            {
+               "definition": "🍅",
+               "code": ":tomato:"
+            },   
+            {
+               "definition": "🥥",
+               "code": ":coconut:"
+            }
+         ]
       }
    ]
 }
