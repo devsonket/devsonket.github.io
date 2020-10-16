@@ -2267,6 +2267,74 @@
             {
               "definition": "🥫",
               "code": ":canned_food:"
+            },
+            {
+              "definition": "🍱",
+              "code": ":bento:"
+            },  
+            {
+              "definition": "🍘",
+              "code": ":rice_cracker:"
+            },   
+            {
+              "definition": "🍙",
+              "code": ":rice_ball:"
+            },  
+            {
+              "definition": "🍚",
+              "code": ":rice:"
+            },   
+            {
+              "definition": "🍛",
+              "code": ":curry:"
+            },  
+            {
+              "definition": "🍜",
+              "code": ":ramen:"
+            },  
+            {
+              "definition": "🍝",
+              "code": ":spaghetti:"
+            },  
+            {
+              "definition": "🍠",
+              "code": ":sweet_potato:"
+            },   
+            {
+              "definition": "🍢",
+              "code": ":oden:"
+            },   
+            {
+              "definition": "🍣",
+              "code": ":sushi:"
+            },  
+            {
+              "definition": "🍤",
+              "code": ":fried_shrimp:"
+            },   
+            {
+              "definition": "🍥",
+              "code": ":fish_cake:"
+            },  
+            {
+              "definition": "🥮",
+              "code": ":moon_cake:"
+            },  
+            {
+              "definition": "🍡",
+              "code": ":dango:"
+            },  
+            {
+              "definition": "🥟",
+              "code": ":dumpling:"
+            },   
+            {
+              "definition": "🥠",
+              "code": ":fortune_cookie:"
+            },   
+            {
+              "definition": "🥡",
+              "code": ":takeout_box:"
             }
          ]
       }
