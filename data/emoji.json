@@ -2337,6 +2337,67 @@
               "code": ":takeout_box:"
             }
          ]
+      },
+      {
+         "title":"মিষ্টির খাদ্যের ছবি",
+         "items":[
+            {
+              "definition": "🍦",
+              "code": ":icecream:"
+            },   
+            {
+              "definition": "🍧",
+              "code": ":shaved_ice:"
+            },   
+            {
+              "definition": "🍨",
+              "code": ":ice_cream:"
+            },  
+            {
+              "definition": "🍩",
+              "code": ":doughnut:"
+            },   
+            {
+              "definition": "🍪",
+              "code": ":cookie:"
+            },   
+            {
+              "definition": "🎂",
+              "code": ":birthday:"
+            },   
+            {
+              "definition": "🍰",
+              "code": ":cake:"
+            },   
+            {
+              "definition": "🧁",
+              "code": ":cupcake:"
+            },  
+            {
+              "definition": "🥧",
+              "code": ":pie:"
+            },  
+            {
+              "definition": "🍫",
+              "code": ":chocolate_bar:"
+            },  
+            {
+              "definition": "🍬",
+              "code": ":candy:"
+            },  
+            {
+              "definition": "🍭",
+              "code": ":lollipop:"
+            },   
+            {
+              "definition": "🍮",
+              "code": ":custard:"
+            },  
+            {
+              "definition": "🍯",
+              "code": ":honey_pot:"
+            }
+         ]
       }
    ]
 }
