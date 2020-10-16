@@ -1177,7 +1177,19 @@
             {
                "definition":"🤱",
                "code":":breast_feeding:"
-            }
+            },
+            {
+              "definition": "🗣️",
+              "code": ":speaking_head:"
+            }, 
+            {
+              "definition": "👤",
+              "code": ":bust_in_silhouette:"
+            },   
+            {
+              "definition": "👥",
+              "code": ":busts_in_silhoue:"
+            } 
          ]
       },
       {
