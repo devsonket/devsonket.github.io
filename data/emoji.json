@@ -2083,6 +2083,63 @@
               "code": ":avocado:"
             }
          ]
+      },
+      {
+         "title":"বিভিন্ন শাক-সবজির ছবি",
+         "items":[
+            {
+               "definition": "🍆",
+               "code": ":eggplant:"
+            },   
+            {
+               "definition": "🥔",
+               "code": ":potato:"
+            },   
+            {
+               "definition": "🥕",
+               "code": ":carrot:"
+            },   
+            {
+               "definition": "🌽",
+               "code": ":corn:"
+            },   
+            {
+               "definition": "🌶️",
+               "code": ":hot_pepper:"
+            },   
+            {
+               "definition": "🥒",
+               "code": ":cucumber:"
+            },   
+            {
+               "definition": "🥬",
+               "code": ":leafy_green:"
+            },  
+            {
+               "definition": "🥦",
+               "code": ":broccoli:"
+            },   
+            {
+               "definition": "🧄",
+               "code": ":garlic:"
+            },   
+            {
+               "definition": "🧅",
+               "code": ":onion:"
+            },  
+            {
+               "definition": "🍄",
+               "code": ":mushroom:"
+            },   
+            {
+               "definition": "🥜",
+               "code": ":peanuts:"
+            },  
+            {
+               "definition": "🌰",
+               "code": ":chestnut:"
+            }
+         ]
       }
    ]
 }
