@@ -1988,6 +1988,22 @@
             {
               "definition": "👩‍👦",
               "code": ":family_woman_boy:"
+            },    
+            {
+              "definition": "👩‍👦‍👦",
+              "code": ":family_woman_boy_boy:"
+            },    
+            {
+              "definition": "👩‍👧",
+              "code": ":family_woman_girl:"
+            },   
+            {
+              "definition": "👩‍👧‍👦",
+              "code": ":family_woman_girl_boy:"
+            },   
+            {
+              "definition": "👩‍👧‍👧",
+              "code": ":family_woman_girl_girl:"
             }
          ]
       }
