@@ -120,6 +120,12 @@
           }, {
             "definition": "লিঙ্ক",
             "code": "[ডেভসংকেত](http://devsonket.com)"
+          }, {
+            "definition": "ছবি এবং লিঙ্ক এর ফরম্যাট",
+            "code": "[![অল্টারনেটিভ টেক্সট](ইমেজ-ইউআরএল)](লিঙ্ক)"
+          }, {
+            "definition": "ছবিতে লিঙ্ক যুক্ত করতে",
+            "code": "[![ডেভসংকেত লোগো](/images/logo.png)](http://devsonket.com)"
           }
         ]
       }, {
