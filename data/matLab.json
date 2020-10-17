@@ -421,6 +421,27 @@
           "code": "distcdf"
         }
       ]
+    },
+    {
+      "title": "ফাংশন (is functions)",
+      "items": [
+        {
+          "definition": "X ও B সমান",
+          "code": "isequal(X,B)"
+        },
+        {
+          "definition": "X ও B সমান (নান ভ্যালু সহ)",
+          "code": "isequaln(X,B)"
+        },
+        {
+          "definition": "X এলিমেন্টস আর ইন এসেন্ডিং অর্ডার.",
+          "code": "issorted(X)"
+        },
+        {
+          "definition": "X হলো ভ্যালিড ম্যাটল্যাব ভ্যারিয়েবলের নাম",
+          "code": "isvarname(X)"
+        }
+      ]
     }
   ]
 }
