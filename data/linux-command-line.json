@@ -31,7 +31,7 @@
           "code": "whoami"
         }, {
           "definition": "অনলাইনে কে আছে দেখা",
-          "code": "w"
+          "code": "w বা who"
         }, {
           "definition": "চলমান মাসের ক্যালেন্ডার দেখা",
           "code": "cal"
@@ -281,7 +281,10 @@
         }, {
           "definition": "কোন এক্সিকিউটেবল ফাইলের (এপ্লিকেশনের) ফুল পাথ বের করা",
           "code": "which ExecutableFileName"
-        }
+        }, {
+          "definition": "কোন এপ্লিকেশনের ফাইলের সম্ভাব্য সকল ফুল পাথ বের করা",
+          "code": "whereis <application-name>"
+        },
       ]
     }, {
       "title": "ব্যাশ শর্টকাট",
