@@ -185,7 +185,7 @@
           "definition": "কোন .tar ফাইলকে এক্সট্রাক্ট করতে",
           "code": "tar xf file.tar"
         }, {
-          "definition": "Gzip ফাইক (.gz) তৈরী করতে",
+          "definition": "Gzip ফাইল (.gz) তৈরী করতে",
           "code": "tar czf file.tar.gz files"
         }, {
           "definition": ".gz ফাইলকে এক্সট্রাক্ট করতে",
