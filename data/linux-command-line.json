@@ -108,13 +108,22 @@
           "code": "ls -al"
         }, {
           "definition": "ডিরেক্টরি এবং ফাইলের মধ্যে থেকে শুধুমাত্র ডিরেক্টরিগুলো লিস্ট অাকারে দেখা",
-	  "code": "sudo ls -d */"
+	  	  "code": "sudo ls -d */"
+        }, {
+          "definition": "কোন ডিরেক্টরির ভিতেরর না প্রবেশ করে তার সকল সাব-ডিরেক্টরী এবং ফাইল দেখতে  ",
+          "code": "ls <directory-name>"
+        }, {
+          "definition": "কোন ডিরেক্টরির নির্দিষ্ট ফরম্যাটের ফাইল খোঁজার জন্য",
+          "code": "ls *.<file_format>"
         }, {
           "definition": "কোন ফোল্ডার অথবা ডিরেক্টরিতে প্রবেশ করা",
           "code": "cd YourFileName"
         }, {
           "definition": "কোন ফোল্ডার অথবা ডিরেক্টরি থেকে বের হওয়া",
           "code": "cd .."
+        }, {
+          "definition": "কোন ফাইলে কতটি লাইন আছে তা জানতে",
+          "code": "wc - l <file-name>"
         }, {
           "definition": "vim এডিটর দিয়ে ফাইল এডিট করা",
           "code": "vi YourFileName"
