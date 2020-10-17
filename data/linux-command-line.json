@@ -178,6 +178,12 @@
         }, {
           "definition": "রিমোট ফাইল ডাউনলোড করা (wget ইন্সটল থাকতে হবে)",
           "code": "wget https://example.com/remote.pdf"
+        }, {
+          "definition": "নতুন .tar ফাইল তৈরী করতে",
+          "code": "tar cf file_name.tar files"
+        }, {
+          "definition": "কোন .tar ফাইলকে এক্সট্রাক্ট করতে",
+          "code": "tar xf file.tar"
         }
       ]
     }, {
