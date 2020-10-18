@@ -64,6 +64,12 @@
                 "definition": "মাইগ্রেশন ক্রিয়েট করা",
                 "code": "php artisan make:migration create_devsonket_table --create=devsonket"
             }, {
+                "definition": "মডেল ক্রিয়েট করা",
+                "code": "php artisan make:model ModelName"
+            }, {
+                "definition": "মডেল এবং মাইগ্রেশন এক সাথে ক্রিয়েট করা",
+                "code": "php artisan make:model ModelName -m"
+            }, {
                 "definition": "ডাটাবেসে টেবিল মাইগ্রেট করা",
                 "code": "php artisan migrate"
             }, {

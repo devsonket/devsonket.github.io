@@ -2604,6 +2604,63 @@
                "code":":zombie_man:"
             }
          ]
+      },
+      {
+         "title":"আকাশ এবং আবহাওয়া",
+         "items":[
+            {
+               "definition":"☀️",
+               "code":":sunny:"
+            },
+            {
+               "definition":"🌞",
+               "code":":sun_with_face:"
+            },
+            {
+               "definition":"⭐",
+               "code":":star:"
+            },
+            {
+               "definition":"🌠",
+               "code":":stars:"
+            },
+            {
+               "definition":"☁️",
+               "code":":cloud:"
+            },
+            {
+               "definition":"⛈️",
+               "code":":cloud_with_lightning_and_rain:"
+            },
+            {
+               "definition":"🌩️",
+               "code":":cloud_with_lightning:"
+            },
+            {
+               "definition":"🌧️",
+               "code":":cloud_with_rain:"
+            },
+            {
+               "definition":"🌨️",
+               "code":":cloud_with_snow:"
+            },
+            {
+               "definition":"🌪️",
+               "code":":tornado:"
+            },
+            {
+               "definition":"🌀",
+               "code":":cyclone:"
+            },
+            {
+               "definition":"🌫️",
+               "code":":fog:"
+            },
+            {
+               "definition":"🌈",
+               "code":":rainbow:"
+            }
+         ]
       }
    ]
 }
