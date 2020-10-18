@@ -200,6 +200,9 @@
                 "definition": "বেসিক রাউটিং-১",
                 "code": "Route::get('foo', function(){});"
             }, {
+                "definition": "লারাভেল ৮ রাউটিং",
+                "code": "Route::get('/user', [UserController::class, 'index']);"
+            }, {
                 "definition": "বেসিক রাউটিং-২",
                 "code": "Route::get('foo', 'ControllerName@function');"
             }, {
