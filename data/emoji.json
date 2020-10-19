@@ -4299,6 +4299,39 @@
               "code": ":six_pointed_star:"
             }
          ]
-      }  
+      },
+      {
+         "title":"পতাকা",
+         "items":[
+            {
+              "definition": "🏁",
+              "code": ":checkered_flag:"
+            },   
+            {
+              "definition": "🚩",
+              "code": ":triangular_flag_on_post:"
+            }, 
+            {
+              "definition": "🎌",
+              "code": ":crossed_flags: "
+            }, 
+            {
+              "definition": "🏴",
+              "code": ":black_flag: "
+            }, 
+            {
+              "definition": "🏳️",
+              "code": ":white_flag:  "
+            },  
+            {
+              "definition": "🏳️‍🌈",
+              "code": ":rainbow_flag: "
+            },  
+            {
+              "definition": "🏴‍☠️",
+              "code": ":pirate_flag:  "
+            }
+         ]
+      }
    ]
 }
