@@ -3855,6 +3855,103 @@
               "code": ":memo:"
             }
          ]
+      },
+      {
+         "title":"অফিশিয়াল ফাইলপত্র",
+         "items":[
+             {
+              "definition": "💼",
+              "code": ":briefcase:"
+            },   
+            {
+              "definition": "📁",
+              "code": ":file_folder:"
+            },  
+            {
+              "definition": "📂",
+              "code": ":open_file_folder:"
+            },    
+            {
+              "definition": "🗂️",
+              "code": ":card_index_dividers:"
+            },  
+            {
+              "definition": "📅",
+              "code": ":date:"
+            },    
+            {
+              "definition": "📆",
+              "code": ":calendar:"
+            },   
+            {
+              "definition": "🗒️",
+              "code": ":spiral_notepad:"
+            },    
+            {
+              "definition": "🗓️",
+              "code": ":spiral_calendar:"
+            },  
+            {
+              "definition": "📇",
+              "code": ":card_index:"
+            },    
+            {
+              "definition": "📈",
+              "code": ":chart_with_upwards_trend:"
+            },   
+            {
+              "definition": "📉",
+              "code": ":chart_with_downwards_trend:"
+            },    
+            {
+              "definition": "📊",
+              "code": ":bar_chart:"
+            },  
+            {
+              "definition": "📋",
+              "code": ":clipboard:"
+            },   
+            {
+              "definition": "📌",
+              "code": ":pushpin:"
+            },  
+            {
+              "definition": "📍",
+              "code": ":round_pushpin:"
+            },   
+            {
+              "definition": "📎",
+              "code": ":paperclip:"
+            },  
+            {
+              "definition": "🖇️",
+              "code": ":paperclips:"
+            },    
+            {
+              "definition": "📏",
+              "code": ":straight_ruler:"
+            },   
+            {
+              "definition": "📐",
+              "code": ":triangular_ruler:"
+            },    
+            {
+              "definition": "✂️",
+              "code": ":scissors:"
+            },   
+            {
+              "definition": "🗃️",
+              "code": ":card_file_box:"
+            },   
+            {
+              "definition": "🗄️",
+              "code": ":file_cabinet:"
+            },   
+            {
+              "definition": "🗑️",
+              "code": ":wastebasket:"
+            }
+         ]
       }  
    ]
 }
