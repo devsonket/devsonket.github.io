@@ -4250,6 +4250,55 @@
               "code": ":radioactive:"
             }
          ]
+      },
+      {
+         "title":"বিভিন্ন টুলস",
+         "items":[
+            {
+              "definition": "🛐",
+              "code": ":place_of_worship:"
+            },    
+            {
+              "definition": "⚛️",
+              "code": ":atom_symbol:"
+            },  
+            {
+              "definition": "🕉️",
+              "code": ":om:"
+            },    
+            {
+              "definition": "✡️",
+              "code": ":star_of_david:"
+            },  
+            {
+              "definition": "☸️",
+              "code": ":wheel_of_dharma:"
+            },   
+            {
+              "definition": "☯️",
+              "code": ":yin_yang:"
+            },   
+            {
+              "definition": "✝️",
+              "code": ":latin_cross:"
+            },   
+            {
+              "definition": "☦️",
+              "code": ":orthodox_cross:"
+            },   
+            {
+              "definition": "☮️",
+              "code": ":peace_symbol:"
+            },   
+            {
+              "definition": "🕎",
+              "code": ":menorah:"
+            },  
+            {
+              "definition": "🔯",
+              "code": ":six_pointed_star:"
+            }
+         ]
       }  
    ]
 }
