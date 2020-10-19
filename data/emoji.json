@@ -3822,6 +3822,39 @@
               "code": ":ballot_box:"
             }
          ]
-      } 
+      },
+      {
+         "title":"লেখালিখি",
+         "items":[
+            {
+              "definition": "✏️",
+              "code": ":pencil2:"
+            },   
+            {
+              "definition": "✒️",
+              "code": ":black_nib:"
+            },  
+            {
+              "definition": "🖋️",
+              "code": ":fountain_pen:"
+            },    
+            {
+              "definition": "🖊️",
+              "code": ":pen:"
+            },  
+            {
+              "definition": "🖌️",
+              "code": ":paintbrush:"
+            },    
+            {
+              "definition": "🖍️",
+              "code": ":crayon:"
+            },   
+            {
+              "definition": "📝",
+              "code": ":memo:"
+            }
+         ]
+      }  
    ]
 }
