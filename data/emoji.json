@@ -2834,6 +2834,63 @@
               "code": ":ship:"
             }
          ]
+      },
+      {
+         "title":"আকাশ যানবাহন",
+         "items":[
+            {
+              "definition": "✈",
+              "code": ":airplane:"
+            },    
+            {
+              "definition": "🛩️",
+              "code": ":small_airplane:"
+            },  
+            {
+              "definition": "🛫",
+              "code": ":flight_departure:"
+            },   
+            {
+              "definition": "🛬",
+              "code": ":flight_arrival:"
+            },  
+            {
+              "definition": "🪂",
+              "code": ":parachute:"
+            },  
+            {
+              "definition": "💺",
+              "code": ":seat:"
+            },  
+            {
+              "definition": "🚁",
+              "code": ":helicopter:"
+            },   
+            {
+              "definition": "🚟",
+              "code": ":suspension_railway:"
+            },  
+            {
+              "definition": "🚠",
+              "code": ":mountain_cableway:"
+            },  
+            {
+              "definition": "🚡",
+              "code": ":aerial_tramway:"
+            },  
+            {
+              "definition": "🛰️",
+              "code": ":artificial_satellite:"
+            },   
+            {
+              "definition": "🚀",
+              "code": ":rocket:"
+            },  
+            {
+              "definition": "🛸",
+              "code": ":flying_saucer:"
+            }
+         ]
       }
    ]
 }
