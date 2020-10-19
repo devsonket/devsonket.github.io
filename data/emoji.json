@@ -2604,6 +2604,199 @@
                "code":":zombie_man:"
             }
          ]
+      },
+      {
+         "title":"স্থলযান",
+         "items":[
+            {
+              "definition": "🚂",
+              "code": ":steam_locomotive:"
+            },   
+            {
+              "definition": "🚃",
+              "code": ":railway_car:"
+            }, 
+            {
+              "definition": "🚄",
+              "code": ":bullettrain_side:"
+            },   
+            {
+              "definition": "🚅",
+              "code": ":bullettrain_front:"
+            }, 
+            {
+              "definition": "🚆",
+              "code": ":train2:"
+            },   
+            {
+              "definition": "🚇",
+              "code": ":metro:"
+            }, 
+            {
+              "definition": "🚈",
+              "code": ":light_rail:"
+            },   
+            {
+              "definition": "🚉",
+              "code": ":station:"
+            }, 
+            {
+              "definition": "🚊",
+              "code": ":tram:"
+            },   
+            {
+              "definition": "🚝",
+              "code": ":monorail:"
+            },  
+            {
+              "definition": "🚞",
+              "code": ":mountain_railway:"
+            },   
+            {
+              "definition": "🚋",
+              "code": ":train:"
+            }, 
+            {
+              "definition": "🚌",
+              "code": ":bus:"
+            },  
+            {
+              "definition": "🚍",
+              "code": ":oncoming_bus:"
+            },  
+            {
+              "definition": "🚎",
+              "code": ":trolleybus:"
+            },   
+            {
+              "definition": "🚐",
+              "code": ":minibus:"
+            }, 
+            {
+              "definition": "🚑",
+              "code": ":ambulance:"
+            },  
+            {
+              "definition": "🚒",
+              "code": ":fire_engine:"
+            }, 
+            {
+              "definition": "🚓",
+              "code": ":police_car:"
+            },   
+            {
+              "definition": "🚔",
+              "code": ":oncoming_police_car:"
+            }, 
+            {
+              "definition": "🚕",
+              "code": ":taxi:"
+            },   
+            {
+              "definition": "🚖",
+              "code": ":oncoming_taxi:"
+            }, 
+{           
+              "definition": "🚗",
+              "code": ":car:"
+            },
+            {
+              "definition": "🚘",
+              "code": ":oncoming_automobile:"
+            }, 
+            {
+              "definition": "🚙",
+              "code": ":blue_car:"
+            },   
+            {
+              "definition": "🚚",
+              "code": ":truck:"
+            }, 
+            {
+              "definition": "🚛",
+              "code": ":articulated_lorry:"
+            },  
+            {
+              "definition": "🚜",
+              "code": ":tractor:"
+            }, 
+            {
+              "definition": "🏎️",
+              "code": ":racing_car:"
+            },   
+            {
+              "definition": "🏍️",
+              "code": ":motorcycle:"
+            },  
+            {
+              "definition": "🛵",
+              "code": ":motor_scooter:"
+            },  
+            {
+              "definition": "🦽",
+              "code": ":manual_wheelchair:"
+            }, 
+            {
+              "definition": "🦼",
+              "code": ":motorized_wheelchair:"
+            },   
+            {
+              "definition": "🛺",
+              "code": ":auto_rickshaw:"
+            }, 
+            {
+              "definition": "🚲",
+              "code": ":bike:"
+            },   
+            {
+              "definition": "🛴",
+              "code": ":kick_scooter:"
+            },  
+            {
+              "definition": "🛹",
+              "code": ":skateboard:"
+            },   
+            {
+              "definition": "🚏",
+              "code": ":bus:"
+            }, 
+            {
+              "definition": "🛣️",
+              "code": ":motorway:"
+            },   
+            {
+              "definition": "🛤️",
+              "code": ":railway_track:"
+            }, 
+            {
+              "definition": "🛢️",
+              "code": ":oil_drum:"
+            },   
+            {
+              "definition": "⛽",
+              "code": ":fuelpump:"
+            },  
+            {
+              "definition": "🚨",
+              "code": ":rotating_light:"
+            },   
+            {
+              "definition": "🚥",
+              "code": ":traffic_light:"
+            }, 
+            {
+              "definition": "🚦",
+              "code": ":vertical_traffic_light:"
+            },   
+            {
+              "definition": "🛑",
+              "code": ":_sign:"
+            }, 
+            {
+              "definition": "🚧",
+              "code": ":construction:"
+            }
+         ]
       }
    ]
 }
