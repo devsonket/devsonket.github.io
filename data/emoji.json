@@ -3582,6 +3582,75 @@
               "code": ":abacus:"
             }
          ]
+      },
+      {
+         "title":"লাইট ও ভিডিও",
+         "items":[
+            {
+              "definition": "🎥",
+              "code": ":movie_camera:"
+            },   
+            {
+              "definition": "🎞️",
+              "code": ":film_strip:"
+            },  
+            {
+              "definition": "📽️",
+              "code": ":film_projector:"
+            },   
+            {
+              "definition": "🎬",
+              "code": ":clapper:"
+            }, 
+            {
+              "definition": "📺",
+              "code": ":tv:"
+            },   
+            {
+              "definition": "📷",
+              "code": ":camera:"
+            },  
+            {
+              "definition": "📸",
+              "code": ":camera_flash:"
+            },   
+            {
+              "definition": "📹",
+              "code": ":video_camera:"
+            },  
+            {
+              "definition": "📼",
+              "code": ":vhs:"
+            },  
+            {
+              "definition": "🔍",
+              "code": ":mag:"
+            }, 
+            {
+              "definition": "🔎",
+              "code": ":mag_right:"
+            },  
+            {
+              "definition": "🕯️",
+              "code": ":candle:"
+            },  
+            {
+              "definition": "💡",
+              "code": ":bulb:"
+            },   
+            {
+              "definition": "🔦",
+              "code": ":flashlight:"
+            },  
+            {           
+              "definition": "🏮",
+              "code": ":izakaya_lantern:"
+            }, 
+            {
+              "definition": "🪔",
+              "code": ":diya_lamp:"
+            }
+         ]
       }    
    ]
 }
