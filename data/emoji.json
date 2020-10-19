@@ -4066,6 +4066,39 @@
               "code": ":magnet:"
             }
          ]
+      },
+      {
+         "title":"বিভিন্ন টুলস",
+         "items":[
+            {
+              "definition": "🔭",
+              "code": ":telescope:"
+            }, 
+            {
+              "definition": "⚗️",
+              "code": ":alembic:"
+            },  
+            {
+              "definition": "🧪",
+              "code": ":test_tube:"
+            }, 
+            {
+              "definition": "🧫",
+              "code": ":petri_dish:"
+            },   
+            {
+              "definition": "🧬",
+              "code": ":dna:"
+            }, 
+            {
+              "definition": "🔬",
+              "code": ":microscope:"
+            },   
+            {
+              "definition": "📡",
+              "code": ":satellite:"
+            }
+         ]
       }  
    ]
 }
