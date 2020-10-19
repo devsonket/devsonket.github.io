@@ -3724,6 +3724,47 @@
               "code": ":label:"
             }
          ]
-      }
+      },
+       {
+         "title":"টাকা পয়সা",
+         "items":[
+            {
+              "definition": "💰",
+              "code": ":moneybag:"
+            },   
+            {
+              "definition": "💴",
+              "code": ":yen:"
+            }, 
+            {
+              "definition": "💵",
+              "code": ":dollar:"
+            },   
+            {
+              "definition": "💶",
+              "code": ":euro:"
+            },  
+            {
+              "definition": "💷",
+              "code": ":pound:"
+            },  
+            {
+              "definition": "💸",
+              "code": ":money_with_wings:"
+            },  
+            {
+              "definition": "💳",
+              "code": ":credit_card:"
+            },  
+            {
+              "definition": "🧾",
+              "code": ":receipt:"
+            }, 
+            {
+              "definition": "💹",
+              "code": ":chart:"
+            }
+         ]
+      } 
    ]
 }
