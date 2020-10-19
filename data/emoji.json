@@ -4197,6 +4197,59 @@
               "code": ":shopping_cart:"
             }
          ]
+      },
+      {
+         "title":"বিভিন্ন সতর্কতা চিন্হ",
+         "items":[
+            {
+              "definition": "⚠️",
+              "code": ":warning:"
+            },   
+            {
+              "definition": "🚸",
+              "code": ":children_crossing:"
+            }, 
+            {
+              "definition": "⛔",
+              "code": ":no_entry:"
+            },   
+            {
+              "definition": "🚫",
+              "code": ":no_entry_sign:"
+            }, 
+            {
+              "definition": "🚳",
+              "code": ":no_bicycles:"
+            },  
+            {
+              "definition": "🚭",
+              "code": ":no_smoking:"
+            },  
+            {
+              "definition": "🚯",
+              "code": ":do_not_litter:"
+            },  
+            {
+              "definition": "🚱",
+              "code": "non-potable_water"
+            },
+            {           
+              "definition": "🚷",
+              "code": ":no_pedestrians:"
+            },   
+            {
+              "definition": "📵",
+              "code": ":no_mobile_phones:"
+            },  
+            {
+              "definition": "🔞",
+              "code": ":underage:"
+            },   
+            {
+              "definition": "☢️",
+              "code": ":radioactive:"
+            }
+         ]
       }  
    ]
 }
