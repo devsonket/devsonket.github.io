@@ -3952,6 +3952,35 @@
               "code": ":wastebasket:"
             }
          ]
+      },
+      {
+         "title":"তালা চাবি",
+         "items":[
+             {
+              "definition": "🔒",
+              "code": ":lock:"
+            },   
+            {
+              "definition": "🔓",
+              "code": ":unlock:"
+            },  
+            {
+              "definition": "🔏",
+              "code": ":lock_with_ink_pen:"
+            },  
+            {
+              "definition": "🔐",
+              "code": ":closed_lock_with_key:"
+            },  
+            {
+              "definition": "🔑",
+              "code": ":key:"
+            },  
+            {
+              "definition": "🗝️",
+              "code": ":old_key:"
+            }
+         ]
       }  
    ]
 }
