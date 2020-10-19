@@ -4099,6 +4099,31 @@
               "code": ":satellite:"
             }
          ]
+      },
+      {
+         "title":"মেডিকেল সায়েন্সে ব্যবহৃত টুলস",
+         "items":[
+            {
+              "definition": "💉",
+              "code": ":syringe:"
+            },  
+            {
+              "definition": "🩸",
+              "code": ":drop_of_blood:"
+            }, 
+            {
+              "definition": "💊",
+              "code": ":pill:"
+            },   
+            {
+              "definition": "🩹",
+              "code": ":adhesive_bandage:"
+            },  
+            {
+              "definition": "🩺",
+              "code": ":stethoscope:"
+            }
+         ]
       }  
    ]
 }
