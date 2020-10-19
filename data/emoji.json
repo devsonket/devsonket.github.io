@@ -3020,6 +3020,119 @@
               "code": ":clock1130:"
             } 
          ]
-      }
+      },
+      {
+         "title":"খেলাধুলা সামগ্রী",
+         "items":[
+            {
+              "definition": "⚽",
+              "code": ":soccer:  "
+            }, 
+            {
+              "definition": "⚾",
+              "code": ":baseball: "
+            }, 
+            {
+              "definition": "🥎",
+              "code": ":softball:  "
+            }, 
+            {
+              "definition": "🏀",
+              "code": ":basketball: "
+            }, 
+            {
+              "definition": "🏐",
+              "code": ":volleyball:  "
+            }, 
+            {
+              "definition": "🏈",
+              "code": ":football: "
+            }, 
+            {
+              "definition": "🏉",
+              "code": ":rugby_football:"
+            },   
+            {
+              "definition": "🎾",
+              "code": ":tennis: "
+            }, 
+            {
+              "definition": "🥏",
+              "code": ":flying_disc: "
+            }, 
+            {
+              "definition": "🎳",
+              "code": ":bowling:"
+            }, 
+            {
+              "definition": "🏏",
+              "code": ":cricket_game:  "
+            }, 
+            {
+              "definition": "🏑",
+              "code": ":field_hockey: "
+            }, 
+            {
+              "definition": "🏒",
+              "code": ":ice_hockey:  "
+            }, 
+            {
+              "definition": "🥍",
+              "code": ":lacrosse: "
+            }, 
+            {
+              "definition": "🏓",
+              "code": ":ping_pong: "
+            }, 
+            {
+              "definition": "🏸",
+              "code": ":badminton:"
+            }, 
+            {
+              "definition": "🥊",
+              "code": ":boxing_glove:  "
+            }, 
+            {
+              "definition": "🥋",
+              "code": ":martial_arts_uniform:"
+            }, 
+            {
+              "definition": "🥅",
+              "code": ":goal_net:  "
+            }, 
+            {
+              "definition": "⛳",
+              "code": ":golf: "
+            }, 
+            {
+              "definition": "⛸️",
+              "code": ":ice_skate: "
+            }, 
+            {
+              "definition": "🎣",
+              "code": ":fishing_pole_and_fish:"
+            }, 
+            {
+              "definition": "🤿",
+              "code": ":diving_mask: "
+            }, 
+            {
+              "definition": "🎽",
+              "code": ":running_shirt_with_sash:"
+            }, 
+            {
+              "definition": "🎿",
+              "code": ":ski: "
+            }, 
+            {
+              "definition": "🛷",
+              "code": ":sled: "
+            }, 
+            {
+              "definition": "🥌",
+              "code": ":curling_stone: "
+            }
+         ]
+      } 
    ]
 }
