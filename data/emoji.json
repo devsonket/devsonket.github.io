@@ -3131,6 +3131,86 @@
             {
               "definition": "🥌",
               "code": ":curling_stone: "
+            },
+            {
+              "definition": "🎯",
+              "code": ":dart:  "
+            }, 
+            {
+              "definition": "🪀",
+              "code": ":yo_yo:"
+            }, 
+            {
+              "definition": "🪁",
+              "code": ":kite:  "
+            }, 
+            {
+              "definition": "🎱",
+              "code": ":8ball:"
+            }, 
+            {
+              "definition": "🔮",
+              "code": ":crystal_ball:  "
+            }, 
+            {
+              "definition": "🧿",
+              "code": ":nazar_amulet: "
+            }, 
+            {
+              "definition": "🎮",
+              "code": ":video_game:  "
+            }, 
+            {
+              "definition": "🕹️",
+              "code": ":joystick: "
+            }, 
+            {
+              "definition": "🎰",
+              "code": ":slot_machine:  "
+            }, 
+            {
+              "definition": "🎲",
+              "code": ":game_die: "
+            }, 
+            {
+              "definition": "🧩",
+              "code": ":jigsaw:  "
+            }, 
+            {
+              "definition": "🧸",
+              "code": ":teddy_bear: "
+            }, 
+            {
+              "definition": "♠️",
+              "code": ":spades:  "
+            }, 
+            {
+              "definition": "♥️",
+              "code": ":hearts: "
+            }, 
+            {
+              "definition": "♦️",
+              "code": ":diamonds:  "
+            }, 
+            {
+              "definition": "♣️",
+              "code": ":clubs:"
+            }, 
+            {
+              "definition": "♟️",
+              "code": ":chess_pawn:  "
+            }, 
+            {
+              "definition": "🃏",
+              "code": ":black_joker:"
+            }, 
+            {
+              "definition": "🀄",
+              "code": ":mahjong: "
+            }, 
+            {
+              "definition": "🎴",
+              "code": ":flower_playing_"
             }
          ]
       } 
