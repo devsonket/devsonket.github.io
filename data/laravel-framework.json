@@ -341,7 +341,6 @@
                 "definition": "কোন মডেলের আইডি দিয়ে খুঁজে বের করার জন্য  ",
                 "code": "Model::find(yourId);"
             },
-                      ,
             {
                 "definition": "মডেলের কতগুলা ডেটা ফিরে আসলো তা গুনতে হলে ",
                 "code": "Model::where('columnName','matchingValue')->count();"
