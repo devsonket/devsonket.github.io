@@ -2891,6 +2891,135 @@
               "code": ":flying_saucer:"
             }
          ]
+      },
+      {
+         "title":"",
+         "items":[
+           {
+              "definition": "⌛",
+              "code": ":hourglass:"
+            },  
+            {
+              "definition": "⏳",
+              "code": ":hourglass_flowing_sand:"
+            },  
+            {
+              "definition": "⌚",
+              "code": ":watch:"
+            },  
+            {
+              "definition": "⏰",
+              "code": ":alarm_clock:"
+            }, 
+            {
+              "definition": "⏱️",
+              "code": ":watch:"
+            },  
+            {
+              "definition": "⏲️",
+              "code": ":timer_clock:"
+            }, 
+            {
+              "definition": "🕰️",
+              "code": ":mantelpiece_clock:"
+            },  
+            {
+              "definition": "🕛",
+              "code": ":clock12:"
+            }, 
+            {
+              "definition": "🕧",
+              "code": ":clock1230:"
+            },  
+            {
+              "definition": "🕐",
+              "code": ":clock1:"
+            },  
+            {
+              "definition": "🕜",
+              "code": ":clock130:"
+            },   
+            {
+              "definition": "🕑",
+              "code": ":clock2:"
+            },  
+            {
+              "definition": "🕝",
+              "code": ":clock230:"
+            },   
+            {
+              "definition": "🕒",
+              "code": ":clock3:"
+            },  
+            {
+              "definition": "🕞",
+              "code": ":clock330:"
+            },   
+            {
+              "definition": "🕓",
+              "code": ":clock4:"
+            },  
+            {
+              "definition": "🕟",
+              "code": ":clock430:"
+            },   
+            {
+              "definition": "🕔",
+              "code": ":clock5:"
+            },  
+            {
+              "definition": "🕠",
+              "code": ":clock530:"
+            },   
+            {
+              "definition": "🕕",
+              "code": ":clock6:"
+            },  
+            {
+              "definition": "🕡",
+              "code": ":clock630:"
+            },   
+            {
+              "definition": "🕖",
+              "code": ":clock7:"
+            },  
+            {
+              "definition": "🕢",
+              "code": ":clock730:"
+            },   
+            {
+              "definition": "🕗",
+              "code": ":clock8:"
+            },  
+            {
+              "definition": "🕣",
+              "code": ":clock830:"
+            },   
+            {
+              "definition": "🕘",
+              "code": ":clock9:"
+            },  
+            {
+              "definition": "🕤",
+              "code": ":clock930:"
+            },   
+            {
+              "definition": "🕙",
+              "code": ":clock10:"
+            }, 
+            {
+              "definition": "🕥",
+              "code": ":clock1030:"
+            },  
+            {
+              "definition": "🕚",
+              "code": ":clock11:"
+            }, 
+            {
+              "definition": "🕦",
+              "code": ":clock1130:"
+            } 
+         ]
       }
    ]
 }
