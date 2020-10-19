@@ -3765,6 +3765,63 @@
               "code": ":chart:"
             }
          ]
+      },
+      {
+         "title":"চিটিপত্র",
+         "items":[
+            {
+              "definition": "✉️",
+              "code": ":envelope:"
+            },
+           {           
+              "definition": "📧",
+              "code": "e-mail"
+            }, 
+           {           
+              "definition": "📨",
+              "code": ":incoming_envelope:"
+            },   
+            {
+              "definition": "📩",
+              "code": ":envelope_with_arrow:"
+            },  
+            {
+              "definition": "📤",
+              "code": ":outbox_tray:"
+            },   
+            {
+              "definition": "📥",
+              "code": ":inbox_tray:"
+            },   
+            {
+              "definition": "📦",
+              "code": ":package:"
+            },   
+            {
+              "definition": "📫",
+              "code": ":mailbox:"
+            },  
+            {
+              "definition": "📪",
+              "code": ":mailbox_closed:"
+            },    
+            {
+              "definition": "📬",
+              "code": ":mailbox_with_mail:"
+            },  
+            {
+              "definition": "📭",
+              "code": ":mailbox_with_no_mail:"
+            },    
+            {
+              "definition": "📮",
+              "code": ":postbox:"
+            },  
+            {
+              "definition": "🗳️",
+              "code": ":ballot_box:"
+            }
+         ]
       } 
    ]
 }
