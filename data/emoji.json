@@ -3431,6 +3431,75 @@
               "code": ":no_bell:"
             }
          ]
-      }  
+      },
+      {
+         "title":"বাদ্য (music) ও বিভিন্ন বাদ্যযন্ত্র্ (Muscial Instrument)",
+         "items":[
+            {
+              "definition": "🎼",
+              "code": ":musical_score:"
+            },  
+            {
+              "definition": "🎵",
+              "code": ":musical_note:"
+            },  
+            {
+              "definition": "🎶",
+              "code": ":notes:"
+            },  
+            {
+              "definition": "🎙️",
+              "code": ":studio_microphone:"
+            }, 
+            {
+              "definition": "🎚️",
+              "code": ":level_slider:"
+            },   
+            {
+              "definition": "🎛️",
+              "code": ":control_knobs:"
+            }, 
+            {
+              "definition": "🎤",
+              "code": ":microphone:"
+            },   
+            {
+              "definition": "🎧",
+              "code": ":headphones:"
+            },  
+            {
+              "definition": "📻",
+              "code": ":radio:"
+            },
+            {
+              "definition": "🎷",
+              "code": ":saxophone:"
+            },  
+            {
+              "definition": "🎸",
+              "code": ":guitar:"
+            },  
+            {
+              "definition": "🎹",
+              "code": ":musical_keyboard:"
+            },   
+            {
+              "definition": "🎺",
+              "code": ":trumpet:"
+            }, 
+            {
+              "definition": "🎻",
+              "code": ":violin:"
+            },   
+            {
+              "definition": "🪕",
+              "code": ":banjo:"
+            }, 
+            {
+              "definition": "🥁",
+              "code": ":drum:"
+            }
+         ]
+      }   
    ]
 }
