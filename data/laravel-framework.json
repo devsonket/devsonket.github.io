@@ -3,7 +3,7 @@
     "title": "লারাভেল পিএইচপি ফ্রেমওয়ার্কিং",
     "slug": "laravel-framework",
     "description": "লারাভেল একটি ওপেন সোর্স পিএইচপি ফ্রেমওয়ার্ক। ২০১১ সালে টেইলর অটওয়েল প্রথম লারাভেল ডেভেলপ করেন। সাধারণ ব্লগ, কনটেন্ট ম্যানেজমেন্ট সিস্টেম, ইকমার্স সাইট, বড় ধরনের ওয়েব এপ্লিকেশন, কিংবা মোবাইল এপ্লিকেশনের জন্য JSON নির্ভর এপ্লিকেশন সহ সব কিছুই এখন লারাভেল ব্যবহার করে ডেভেলপ করা সম্ভব।",
-    "colorPref": "#3A241D",
+    "colorPref": "#FF2D20",
     "contents": [{
             "title": "আরটিসান কমান্ড",
             "items": [{
@@ -323,6 +323,59 @@
             }, {
                 "definition": "ডিলিট করার জন্য",
                 "code": "DB::table('users')->where('votes', '<', 100)->delete();"
+            }]
+        },
+         {
+            "title": "বেসিক ডাটাবেস ব্যবহার - ও আর এম (ORM)",
+            "items": [{
+                "definition": "একটি  নির্দিষ্ট মডেলের সকল ডেটা নিয়ে আসতে চাইলে ",
+                "code": "Model::all();"
+            }, {
+                "definition": "একটি  নির্দিষ্ট মডেলের কন্ডিশন অনুযায়ী ডেটা নিয়ে আসতে  চাইলে",
+                "code": "Model::where('columnName','matchingValue')->get();"
+            },{
+                "definition": "মডেলের প্রথম ডেটা নিয়ে আসতে চাইলে ",
+                "code": "Model::first();"
+            },
+            {
+                "definition": "কোন মডেলের আইডি দিয়ে খুঁজে বের করার জন্য  ",
+                "code": "Model::find(yourId);"
+            },
+            {
+                "definition": "মডেলের কতগুলা ডেটা ফিরে আসলো তা গুনতে হলে ",
+                "code": "Model::where('columnName','matchingValue')->count();"
+            },
+            {
+                "definition": "মডেল দিয়ে CREATE করতে চাইলে ",
+                "code": "Model::create(pass your data array);"
+            },
+            {
+                "definition": "মডেল দিয়ে SELECT করতে চাইলে ",
+                "code": "Model::select('columnName','columnName')->get();"
+            },
+            {
+                "definition": "মডেল দিয়ে UPDATE করতে চাইলে ",
+                "code": "Model::find(yourId)->update(your updated data array);"
+            },
+            {
+                "definition": "মডেল দিয়ে DELETE করতে চাইলে ",
+                "code": "Model::find(yourId)->delete();"
+            },
+            {
+                "definition": "মডেল এর ডেটা লিমিট করার জন্য ",
+                "code": "Model::where('columnName','matchingValue')->limit(limiterNumber)->get();"
+            },
+            {
+                "definition": "মডেলের মধ্যে mass  assignment  ইনাবল করার জন্য ",
+                "code": "protected $guarded = [];"
+            },
+            {
+                "definition": "মডেল দিয়ে DELETE করতে চাইলে ",
+                "code": "Model::find(yourId)->delete();"
+            },
+            {
+                "definition": "মডেল দিয়ে DELETE করতে চাইলে ",
+                "code": "Model::find(yourId)->delete();"
             }]
         },
         {
