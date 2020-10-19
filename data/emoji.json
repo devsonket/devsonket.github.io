@@ -4609,8 +4609,8 @@
             },  
             {
               "definition": "🇪🇭",
-              "code": ":western_sahara"
-            },  : 
+              "code": ":western_sahara: "
+            },  
             {
               "definition": "🇪🇷",
               "code": ":eritrea: "
@@ -4655,7 +4655,7 @@
               "definition": "🇬🇦",
               "code": ":gabon: "
             },  
-{           
+			{           
               "definition": "🇬🇧",
               "code": ":uk: "
             },  
@@ -4753,8 +4753,8 @@
             },  
             {
               "definition": "🇮🇨",
-              "code": ":canary_islands"
-            },  : 
+              "code": ":canary_islands: "
+            },  
             {
               "definition": "🇮🇩",
               "code": ":indonesia: "
