@@ -377,7 +377,7 @@
             {
                 "definition": "মডেল দিয়ে DELETE করতে চাইলে ",
                 "code": "Model::find(yourId)->delete();"
-            }          
+            }]
         },
         {
             "title": "সেশন এর ব্যবহার",
