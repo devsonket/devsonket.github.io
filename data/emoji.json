@@ -3981,6 +3981,91 @@
               "code": ":old_key:"
             }
          ]
+      },
+      {
+         "title":"বিভিন্ন টুলস",
+         "items":[
+             {
+              "definition": "🔨",
+              "code": ":hammer:"
+            },   
+            {
+              "definition": "🪓",
+              "code": ":axe:"
+            }, 
+            {
+              "definition": "⛏️",
+              "code": ":pick:"
+            },   
+            {
+              "definition": "⚒️",
+              "code": ":hammer_and_pick:"
+            }, 
+            {
+              "definition": "🛠️",
+              "code": ":hammer_and_wrench:"
+            },  
+            {
+              "definition": "🗡️",
+              "code": ":dagger:"
+            },  
+            {
+              "definition": "⚔️",
+              "code": ":crossed_swords:"
+            },   
+            {
+              "definition": "🔫",
+              "code": ":gun:"
+            }, 
+            {
+              "definition": "🏹",
+              "code": ":bow_and_arrow:"
+            },  
+            {
+              "definition": "🛡️",
+              "code": ":shield:"
+            },  
+            {
+              "definition": "🔧",
+              "code": ":wrench:"
+            },   
+            {
+              "definition": "🔩",
+              "code": ":nut_and_bolt:"
+            },  
+            {
+              "definition": "⚙️",
+              "code": ":gear:"
+            },   
+            {
+              "definition": "🗜️",
+              "code": ":clamp:"
+            }, 
+            {
+              "definition": "⚖️",
+              "code": ":balance_scale:"
+            },  
+            {
+              "definition": "🦯",
+              "code": ":probing_cane:"
+            },  
+            {
+              "definition": "🔗",
+              "code": ":link:"
+            },   
+            {
+              "definition": "⛓️",
+              "code": ":chains:"
+            },   
+            {
+              "definition": "🧰",
+              "code": ":toolbox:"
+            },  
+            {
+              "definition": "🧲",
+              "code": ":magnet:"
+            }
+         ]
       }  
    ]
 }
