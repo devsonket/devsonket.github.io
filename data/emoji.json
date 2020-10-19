@@ -4124,6 +4124,79 @@
               "code": ":stethoscope:"
             }
          ]
+      },
+       {
+         "title":"গৃহস্থলির বিভিন্ন জিিি",
+         "items":[
+            {
+              "definition": "🚪",
+              "code": ":door:"
+            },   
+            {
+              "definition": "🛏️",
+              "code": ":bed:"
+            }, 
+            {
+              "definition": "🛋️",
+              "code": ":couch_and_lamp:"
+            },   
+            {
+              "definition": "🪑",
+              "code": ":chair:"
+            }, 
+            {
+              "definition": "🚽",
+              "code": ":toilet:"
+            },   
+            {
+              "definition": "🚿",
+              "code": ":shower:"
+            },  
+            {
+              "definition": "🛁",
+              "code": ":bathtub:"
+            },  
+            {
+              "definition": "🪒",
+              "code": ":razor:"
+            }, 
+            {
+              "definition": "🧴",
+              "code": ":lotion_bottle:"
+            },  
+            {
+              "definition": "🧷",
+              "code": ":safety_pin:"
+            },  
+            {
+              "definition": "🧹",
+              "code": ":broom:"
+            },  
+            {
+              "definition": "🧺",
+              "code": ":basket:"
+            },  
+            {
+              "definition": "🧻",
+              "code": ":roll_of_paper:"
+            },  
+            {
+              "definition": "🧼",
+              "code": ":soap:"
+            },  
+            {
+              "definition": "🧽",
+              "code": ":sponge:"
+            },   
+            {
+              "definition": "🧯",
+              "code": ":fire_extinguisher:"
+            }, 
+            {
+              "definition": "🛒",
+              "code": ":shopping_cart:"
+            }
+         ]
       }  
    ]
 }
