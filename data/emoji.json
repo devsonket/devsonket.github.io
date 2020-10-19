@@ -3651,6 +3651,79 @@
               "code": ":diya_lamp:"
             }
          ]
-      }    
+      },
+      {
+         "title":"বই-পুস্তক",
+         "items":[
+            {
+              "definition": "📔",
+              "code": ":notebook_with_decorative_cover:"
+            },   
+            {
+              "definition": "📕",
+              "code": ":closed_book:"
+            }, 
+            {
+              "definition": "📖",
+              "code": ":open_book:"
+            }, 
+            {           
+              "definition": "📗",
+              "code": ":green_book:"
+            },  
+            {
+              "definition": "📘",
+              "code": ":blue_book:"
+            },  
+            {
+              "definition": "📙",
+              "code": ":orange_book:"
+            }, 
+            {
+              "definition": "📚",
+              "code": ":books:"
+            },  
+            {
+              "definition": "📓",
+              "code": ":notebook:"
+            },  
+            {
+              "definition": "📒",
+              "code": ":ledger:"
+            },   
+            {
+              "definition": "📃",
+              "code": ":page_with_curl:"
+            },  
+            {
+              "definition": "📜",
+              "code": ":scroll:"
+            },   
+            {
+              "definition": "📄",
+              "code": ":page_facing_up:"
+            },  
+            {
+              "definition": "📰",
+              "code": ":newspaper:"
+            },  
+            {
+              "definition": "🗞️",
+              "code": ":newspaper_roll:"
+            },  
+            {
+              "definition": "📑",
+              "code": ":bookmark_tabs:"
+            },  
+            {
+              "definition": "🔖",
+              "code": ":bookmark:"
+            },  
+            {
+              "definition": "🏷️",
+              "code": ":label:"
+            }
+         ]
+      }
    ]
 }
