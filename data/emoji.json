@@ -3213,6 +3213,224 @@
               "code": ":flower_playing_"
             }
          ]
-      } 
+      } ,
+      {
+         "title":"বিভিন্ন পরিধেয়",
+         "items":[
+            {
+              "definition": "👓",
+              "code": ":eyeglasses:  "
+            }, 
+            {
+              "definition": "🕶️",
+              "code": ":dark_sunglasses"
+            }, 
+            {
+              "definition": "🥽",
+              "code": ":goggles: "
+            }, 
+            {
+              "definition": "🥼",
+              "code": ":lab_coat: "
+            }, 
+            {
+              "definition": "🦺",
+              "code": ":safety_vest: "
+            }, 
+            {
+              "definition": "👔",
+              "code": ":necktie:"
+            }, 
+			{           
+              "definition": "👕",
+              "code": ":shirt::tshirt: "
+            }, 
+            {
+              "definition": "👖",
+              "code": ":jeans:"
+            }, 
+            {
+              "definition": "🧣",
+              "code": ":scarf: "
+            }, 
+            {
+              "definition": "🧤",
+              "code": ":gloves: "
+            }, 
+            {
+              "definition": "🧥",
+              "code": ":coat:  "
+            }, 
+            {
+              "definition": "🧦",
+              "code": ":socks:"
+            }, 
+            {
+              "definition": "👗",
+              "code": ":dress: "
+            }, 
+            {
+              "definition": "👘",
+              "code": ":kimono: "
+            }, 
+            {
+              "definition": "🥻",
+              "code": ":sari:  "
+            }, 
+            {
+              "definition": "🩱",
+              "code": ":one_piece_swimsuit: "
+            }, 
+            {
+              "definition": "🩲",
+              "code": ":swim_brief:  "
+            }, 
+            {
+              "definition": "🩳",
+              "code": ":shorts: "
+            }, 
+            {
+              "definition": "👙",
+              "code": ":bikini:  "
+            }, 
+            {
+              "definition": "👚",
+              "code": ":womans_clothes:"
+            },  
+            {
+              "definition": "👛",
+              "code": ":purse: "
+            }, 
+            {
+              "definition": "👜",
+              "code": ":handbag:"
+            }, 
+            {
+              "definition": "👝",
+              "code": ":pouch: "
+            }, 
+            {
+              "definition": "🛍️",
+              "code": ":shopping: "
+            },  
+            {
+              "definition": "🎒",
+              "code": ":school_satchel:"
+            },   
+            {           
+              "definition": "👞",
+              "code": "mans_shoe:"
+            }, 
+            {
+              "definition": "👟",
+              "code": ":athletic_shoe: "
+            }, 
+            {
+              "definition": "🥾",
+              "code": ":hiking_boot:"
+            }, 
+            {
+              "definition": "🥿",
+              "code": ":flat_shoe: "
+            }, 
+            {
+              "definition": "👠",
+              "code": ":high_heel:"
+            }, 
+            {
+              "definition": "👡",
+              "code": ":sandal:  "
+            }, 
+            {
+              "definition": "🩰",
+              "code": ":ballet_shoes: "
+            }, 
+            {
+              "definition": "👢",
+              "code": ":boot:  "
+            }, 
+            {
+              "definition": "👑",
+              "code": ":crown:"
+            }, 
+            {
+              "definition": "👒",
+              "code": ":womans_hat:  "
+            }, 
+            {
+              "definition": "🎩",
+              "code": ":hat: "
+            }, 
+            {
+              "definition": "🎓",
+              "code": ":mortar_board:  "
+            }, 
+            {
+              "definition": "🧢",
+              "code": ":billed_cap: "
+            }, 
+            {
+              "definition": "⛑️",
+              "code": ":rescue_worker_helmet:  "
+            }, 
+            {
+              "definition": "📿",
+              "code": ":prayer_beads: "
+            }, 
+            {
+              "definition": "💄",
+              "code": ":lipstick:  "
+            }, 
+            {
+              "definition": "💍",
+              "code": ":ring: "
+            }, 
+            {
+              "definition": "💎",
+              "code": ":gem:"
+            }
+         ]
+      },
+      {
+         "title":"শব্দ প্রকাশক ইমোজি",
+         "items":[
+            {
+              "definition": "🔇",
+              "code": ":mute:"
+            },   
+            {
+              "definition": "🔈",
+              "code": ":speaker:"
+            }, 
+            {
+              "definition": "🔉",
+              "code": ":sound:"
+            },  
+            {
+              "definition": "🔊",
+              "code": ":loud_sound:"
+            },  
+            {
+              "definition": "📢",
+              "code": ":loudspeaker:"
+            },  
+            {
+              "definition": "📣",
+              "code": ":mega:"
+            },  
+            {
+              "definition": "📯",
+              "code": ":postal_horn:"
+            },  
+            {
+              "definition": "🔔",
+              "code": ":bell:"
+            },  
+            {
+              "definition": "🔕",
+              "code": ":no_bell:"
+            }
+         ]
+      }  
    ]
 }
