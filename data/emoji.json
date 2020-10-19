@@ -3500,6 +3500,88 @@
               "code": ":drum:"
             }
          ]
-      }   
+      },
+      {
+         "title":"মোবাইল ও কম্পিউটার",
+         "items":[
+            {
+              "definition": "📱",
+              "code": ":iphone:"
+            },   
+            {
+              "definition": "📲",
+              "code": ":calling:"
+            }, 
+            {           
+              "definition": "☎️",
+              "code": ":telephone:"
+            }, 
+            {
+              "definition": "📞",
+              "code": ":telephone_receiver:"
+            },  
+            {
+              "definition": "📟",
+              "code": ":pager:"
+            },  
+            {
+              "definition": "📠",
+              "code": ":fax:"
+            }, 
+
+            {
+              "definition": "🔋",
+              "code": ":battery:"
+            },  
+            {
+              "definition": "🔌",
+              "code": ":electric_plug:"
+            }, 
+            {
+              "definition": "💻",
+              "code": ":computer:"
+            },   
+            {
+              "definition": "🖥️",
+              "code": ":des_computer:"
+            },  
+            {
+              "definition": "🖨️",
+              "code": ":printer:"
+            },  
+            {
+              "definition": "⌨️",
+              "code": ":keyboard:"
+            },  
+            {
+              "definition": "🖱️",
+              "code": ":computer_mouse:"
+            },   
+            {
+              "definition": "🖲️",
+              "code": ":trackball:"
+            }, 
+            {
+              "definition": "💽",
+              "code": ":minidisc:"
+            },   
+            {
+              "definition": "💾",
+              "code": ":floppy_disk:"
+            }, 
+            {
+              "definition": "💿",
+              "code": ":cd:"
+            },   
+            {
+              "definition": "📀",
+              "code": ":dvd:"
+            }, 
+            {
+              "definition": "🧮",
+              "code": ":abacus:"
+            }
+         ]
+      }    
    ]
 }
