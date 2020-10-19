@@ -2797,6 +2797,43 @@
               "code": ":construction:"
             }
          ]
+      },
+      {
+         "title":"জলযান",
+         "items":[
+            {
+              "definition": "⚓",
+              "code": ":anchor:"
+            },   
+            {
+              "definition": "⛵",
+              "code": ":boat:"
+            }, 
+            {
+              "definition": "🛶",
+              "code": ":canoe:"
+            },  
+            {
+              "definition": "🚤",
+              "code": ":speedboat:"
+            }, 
+            {
+              "definition": "🛳️",
+              "code": ":passenger_ship:"
+            },   
+            {
+              "definition": "⛴️",
+              "code": ":ferry:"
+            }, 
+            {
+              "definition": "🛥️",
+              "code": ":motor_boat:"
+            },   
+            {
+              "definition": "🚢",
+              "code": ":ship:"
+            }
+         ]
       }
    ]
 }
