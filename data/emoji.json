@@ -166,6 +166,39 @@
          ]
       },
       {
+         "title":"বিরামচিহ্ন",
+         "items":[
+            {
+               "definition":"❕",
+               "code":":grey_exclamation:"
+            },
+            {
+               "definition":"❔",
+               "code":":grey_question:"
+            },
+            {
+               "definition":"❗",
+               "code":":exclamation:"
+            },
+            {
+               "definition":"❓",
+               "code":":question:"
+            },
+            {
+               "definition":"‼️",
+               "code":":bangbang:"
+            },
+            {
+               "definition":"⁉️",
+               "code":":interrobang:"
+            },
+            {
+               "definition":"〰️",
+               "code":":wavy_dash:"
+            }
+         ]
+      },
+      {
          "title":"মুখে হাত দিয়ে বিভিন্ন বচনভঙ্গি",
          "items":[
             {
