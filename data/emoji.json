@@ -166,6 +166,31 @@
          ]
       },
       {
+         "title": " ম্যাথ চিহ্ন",
+         "items":[
+            {
+               "definition":"➕",
+               "code":":heavy_plus_sign:"
+            },
+            {
+               "definition":"➖",
+               "code":":heavy_minus_sign:"
+            },
+            {
+               "definition":"✖️",
+               "code":":heavy_multiplication_x:"
+            },
+            {
+               "definition":"➗",
+               "code":":heavy_division_sign:"
+            },
+            {
+               "definition":"♾️",
+               "code":":infinity:"
+            }
+         ]
+      },
+      {
          "title":"মুখে হাত দিয়ে বিভিন্ন বচনভঙ্গি",
          "items":[
             {
