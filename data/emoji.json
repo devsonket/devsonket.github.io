@@ -193,6 +193,63 @@
          ]
       },
       {
+         "title":"পরিবহন সাইন",
+         "items":[
+            {
+               "definition":"🏧",
+               "code":":atm:"
+            },
+            {
+               "definition":"🚰",
+               "code":":potable_water:"
+            },
+            {
+               "definition":"🚹",
+               "code":":mens:"
+            },
+            {
+               "definition":"🚻",
+               "code":":restroom:"
+            },
+            {
+               "definition":"🚾",
+               "code":":wc:"
+            },
+            {
+               "definition":"🛃",
+               "code":":customs:"
+            },
+            {
+               "definition":"🛅",
+               "code":":left_luggage:"
+            },
+            {
+               "definition":"🚮",
+               "code":":put_litter_in_its_place:"
+            },
+            {
+               "definition":"♿",
+               "code":":wheelchair:"
+            },
+            {
+               "definition":"🚺",
+               "code":":womens:"
+            },
+            {
+               "definition":"🚼",
+               "code":":baby_symbol:"
+            },
+            {
+               "definition":"🛂",
+               "code":":passport_control:"
+            },
+            {
+               "definition":"🛄",
+               "code":":baggage_claim:"
+            }
+         ]
+      },
+      {
          "title":"ভালোবাসার অনুভুতি",
          "items":[
             {
