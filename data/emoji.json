@@ -63,15 +63,64 @@
          ]
       },
       {
+         "title":"সংখ্যা চিহ্ন",
+         "items":[
+            {
+               "definition":"0️⃣",
+               "code":":zero:"
+            },
+            {
+               "definition":"1️⃣",
+               "code":":one:"
+            },
+            {
+               "definition":"2️⃣",
+               "code":":two:"
+            },
+            {
+               "definition":"3️⃣",
+               "code":":three:"
+            },
+            {
+               "definition":"4️⃣",
+               "code":":four:"
+            },
+            {
+               "definition":"5️⃣",
+               "code":":five:"
+            },
+            {
+               "definition":"6️⃣",
+               "code":":six:"
+            },
+            {
+               "definition":"7️⃣",
+               "code":":seven:"
+            },
+                       {
+               "definition":"8️⃣",
+               "code":":eight:"
+            },
+            {
+               "definition":"9️⃣",
+               "code":":nine:"
+            },
+            {
+               "definition":"🔟",
+               "code":":keycap_ten:"
+            },
+            {
+               "definition":"🔢",
+               "code":":symbols:"
+            }
+         ]
+      },
+      {
          "title":"তীর চিহ্ন",
          "items":[
             {
                "definition":"⬆️",
                "code":":arrow_up:"
-            },
-            {
-               "definition":"➡️",
-               "code":":arrow_right:"
             },
             {
                "definition":"⬇️",
@@ -82,20 +131,64 @@
                "code":":arrow_left:"
             },
             {
+               "definition":"➡️",
+               "code":":arrow_right:"
+            },
+            {
                "definition":"↕️",
                "code":":arrow_up_down:"
+            },
+            {
+               "definition":"↔️",
+               "code":":left_right_arrow:"
+            },
+            {
+               "definition":"↗️",
+               "code":":arrow_upper_right:"
+            },
+            {
+               "definition":"↖️",
+               "code":":arrow_upper_left:"
+            },
+            {
+               "definition":"↘️",
+               "code":":arrow_lower_right:"
+            },
+            {
+               "definition":"↙️",
+               "code":":arrow_lower_left:"
+            },
+            {
+               "definition":"🔄",
+               "code":":arrows_counterclockwise:"
             },
             {
                "definition":"↩️",
                "code":":leftwards_arrow_with_hook:"
             },
             {
+               "definition":"↪️",
+               "code":":arrow_right_hook:"
+            },
+            {
+               "definition":"⤵️",
+               "code":":arrow_heading_down:"
+            },
+            {
                "definition":"⤴️",
                "code":":arrow_heading_up:"
             },
             {
+               "definition":"🔀",
+               "code":":twisted_rightwards_arrows:"
+            },
+            {
                "definition":"🔜",
                "code":":soon:"
+            },
+            {
+               "definition":"🆗",
+               "code":":ok:"
             }
          ]
       },
