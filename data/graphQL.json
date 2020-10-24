@@ -1,0 +1,151 @@
+{
+  "id": "graphql",
+  "title": "গ্রাফকিউএল",
+  "slug": "graphql",
+  "description": "গ্রাফকিউএল হল একটি ওপেন-সোর্স ডেটা কুয়েরি ভাষা এবং এপিআইগুলির বিদ্যমান ডেটা দিয়ে কুয়েরি পূরণের জন্য একটি রানটাইম। ",
+  "colorPref": "#e35898",
+  "contents": [
+    {
+      "title": "টাইপস (Types)",
+      "items": [
+        {
+          "definition": "পূর্ণসংখ্যা",
+          "code": "Int"
+        }, 
+        {
+          "definition": "ফ্লোটিং পয়েন্ট সংখ্যা",
+          "code": "Float"
+        }, 
+        {
+          "definition": "এ সিকুয়েন্স অফ ইউনিকোড ক্যারেক্টারস",
+          "code": "String"
+        }, 
+        {
+          "definition": "কোন আইডি ব্যবহার করা",
+          "code": "ID"
+        }, 
+        {
+          "definition": "স্কেলার টাইপ",
+          "code": "scalar"
+        }, 
+        {
+          "definition": "অবজেক্ট টাইপ",
+          "code": "type"
+        }, 
+        {
+          "definition": "ইন্টারফেস টাইপ",
+          "code": "interface"
+        }, 
+        {
+          "definition": "ইউনিয়ন টাইপ",
+          "code": "union"
+        }, 
+        {
+          "definition": "ইনুমিরেশন টাইপ",
+          "code": "enum"
+        }, 
+        {
+          "definition": "ইনপুট অবজেক্ট টাইপ",
+          "code": "input"
+        }, 
+        {
+          "definition": "নালয়েবল স্ট্রিং",
+          "code": "String"
+        }, 
+        {
+          "definition": "রিকোয়ার্ড স্ট্রিং",
+          "code": "String!"
+        }, 
+        {
+          "definition": "লিস্ট অব স্ট্রিং",
+          "code": "[String]"
+        }, 
+        {
+          "definition": "রিকোয়ার্ড লিস্ট অব স্ট্রিং",
+          "code": "[String]!"
+        }, 
+        {
+          "definition": "রিকোয়ার্ড লিস্ট অব রিকোয়ার্ড স্ট্রিং",
+          "code": "[String!]!"
+        }
+      ]
+    },
+    {
+      "title": "কুয়েরি (Query)",
+      "items": [
+        {
+          "definition": "বেসিক কুয়েরি",
+          "code": "{ status }"
+        },
+        {
+          "definition": "নেস্টেট কুয়েরি",
+          "code": "{ user { name height } }"
+        },
+        {
+          "definition": "লিস্ট দেখা",
+          "code": "{ friends { name } }"
+        }
+      ]
+    },
+    {
+      "title": "ইনপুট আর্গুমেন্ট (Input Arguments)",
+      "items": [
+        {
+          "definition": "বেসিক ইনপুট",
+          "code": "type Query { users(limit: Int): [User] }"
+        },
+        {
+          "definition": "ডিফল্ট মান সহ ইনপুট",
+          "code": "type Query { users(limit: Int = 10): [User] }"
+        },
+        {
+          "definition": "অনেক গুলো আর্গুমেন্ট",
+          "code": "type Query { users(limit: Int, sort: String): [User] }"
+        },
+        {
+          "definition": "ডিফল্ট মান সহ অনেক গুলো আর্গুমেন্ট",
+          "code": "type Query { users(limit: Int = 10, sort: String = 'abc'): [User] }"
+        }
+      ]
+    },
+    {
+      "title": "ইন্টারফেস (Interfaces)",
+      "items": [
+        {
+          "definition": "সিঙ্গেল ইন্টারফেস ডিক্লেয়ার করা",
+          "code": "interface Foo { is_foo: Boolean }"
+        },
+        {
+          "definition": "ইন্টারফেস ইমপ্লিমেন্ট করা",
+          "code": "type Bar implements Foo { is_foo: Boolean }"
+        }
+      ]
+    },
+    {
+      "title": "ইউনিয়ন (Unions)",
+      "items": [
+        {
+          "definition": "সিঙ্গেল ইউনিয়ন ডিক্লেয়ার করা",
+          "code": "type Foo { name: String }"
+        },
+        {
+          "definition": "ইউনিয়ন ইমপ্লিমেন্ট করা",
+          "code": "union SingleUnion = Foo"
+        }
+      ]
+    },
+    {
+      "title": "ইনুমিরেশন (Enums)",
+      "items": [
+        {
+          "definition": "ইনুমিরেশন ডিক্লেয়ার করা",
+          "code": "enum userType { REST, GraphQL, Both }"
+        },
+        {
+          "definition": "ইনুমিরেশন ইমপ্লিমেন্ট করা",
+          "code": "type Root { checkType(userID: ID!): userType! }"
+        }
+      ]
+    }
+  ]
+}
