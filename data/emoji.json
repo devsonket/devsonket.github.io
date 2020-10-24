@@ -316,27 +316,35 @@
          ]
       },
       {
-         "title": " ম্যাথ চিহ্ন",
+         "title":"বিরামচিহ্ন",
          "items":[
             {
-               "definition":"➕",
-               "code":":heavy_plus_sign:"
+               "definition":"❕",
+               "code":":grey_exclamation:"
             },
             {
-               "definition":"➖",
-               "code":":heavy_minus_sign:"
+               "definition":"❔",
+               "code":":grey_question:"
             },
             {
-               "definition":"✖️",
-               "code":":heavy_multiplication_x:"
+               "definition":"❗",
+               "code":":exclamation:"
             },
             {
-               "definition":"➗",
-               "code":":heavy_division_sign:"
+               "definition":"❓",
+               "code":":question:"
             },
             {
-               "definition":"♾️",
-               "code":":infinity:"
+               "definition":"‼️",
+               "code":":bangbang:"
+            },
+            {
+               "definition":"⁉️",
+               "code":":interrobang:"
+            },
+            {
+               "definition":"〰️",
+               "code":":wavy_dash:"
             }
          ]
       },
