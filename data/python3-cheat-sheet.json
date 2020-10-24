@@ -200,7 +200,7 @@
             ]
         },
         {
-            "title": "পাইথন লিস্ট মেথড (Python List Method)",
+            "title": "পাইথন লিস্ট মেথড (Python List Methods)",
             "items": [{
                     "definition": "লিস্টের শেষে নতুন উপাদান সংযুক্ত করা",
                     "code": "_oldList.append('item1')"
@@ -244,6 +244,82 @@
                 {
                     "definition": "লিস্টের উপাদান ঊর্ধ্বক্রম এবং অধঃক্রম অনুসারে সাজানো",
                     "code": "list.sort() \nউদাহরণ: \n_AList = ['A','C']   \n_AList.sort(reverse=False)   \nprint(_AList) → ['A','C']   \n_AList.sort(reverse=True)   \nprint(_AList) → ['C','A']"
+                }
+            ]
+        },
+        {
+            "title": "পাইথন টুপল মেথড (Python Tuple Methods)",
+            "items": [{
+                    "definition": "টুপলে একটি উপাদান কতবার আছে গণনা করা",
+                    "code": "_tuple.count(value)"
+                },
+                {
+                    "definition": "টুপলে একটি উপাদানের অবস্থান বের করা",
+                    "code": "_tuple.index(value)"
+                }
+            ]
+        },
+        {
+            "title": "পাইথন সেট মেথড (Python Set Methods)",
+            "items": [{
+                    "definition": "সেটে নতুন উপাদান সংযুক্ত করা",
+                    "code": "_set.add('item')"
+                },
+                {
+                    "definition": "সেটের সকল উপাদান মুছে ফেলা",
+                    "code": "_set.clear()"
+                },
+                {
+                    "definition": "সেটের প্রতিলিপি করা",
+                    "code": "_newSet = _set.copy()"
+                },
+                {
+                    "definition": "দুটি সেটের পার্থক্য বের করা",
+                    "code": "_cSet = _aSet.difference(_bSet)"
+                },
+                {
+                    "definition": "একটি সেটের এমন উপাদান বাদ দেওয়া যা অন্য একটি সেটে আছে",
+                    "code": "_aSet.difference_update(_bSet)  \nউদাহরণ: \n_aSet = {'apple', 'banana'} \n_bSet = {'cherry', 'apple'}   \n_aSet.difference_update(_bSet)   \nprint(_aSet) → {'banana'}"
+                },
+                {
+                    "definition": "দুটি সেটের সাধারণ উপাদান ব্যতীত সকল উপাদান বের করা",
+                    "code": "_cSet = _aSet.symmetric_difference(_bSet)  \nউদাহরণ: \n_aSet = {'apple', 'banana'} \n_bSet = {'cherry', 'apple'}   \n_cSet=_aSet.symmetric_difference(_bSet)   \nprint(_cSet) → {'cherry', 'banana'}"
+                },
+                {
+                    "definition": "দুটি সেটের সাধারণ উপাদান বাদ দেওয়া এবং ঐ দুটি সেটের সাধারণ উপাদান ব্যতীত সকল উপাদান একটি সেটে সংযুক্ত করা",
+                    "code": "_aSet.symmetric_difference_update(_bSet)  \nউদাহরণ: \n_aSet = {'apple', 'banana'} \n_bSet = {'cherry', 'apple'}   \n_aSet.symmetric_difference_update(_bSet)   \nprint(_aSet) → {'cherry', 'banana'}"
+                },
+                {
+                    "definition": "দুটি সেটে ছেদ/সাধারণ উপাদান আছে কিনা যাচাই করা",
+                    "code": "_result = _aSet.isdisjoint(_bSet)  \nউদাহরণ: \n_aSet = {'apple', 'banana'} \n_bSet = {'cherry', 'apple'}   \n_result = _aSet.isdisjoint(_bSet)   \nprint(_result) → False"
+                },
+                {
+                    "definition": "দুটি সেটের ছেদ/সাধারণ উপাদান বের করা",
+                    "code": "_cSet = _aSet.intersection(_bSet)  \nউদাহরণ: \n_aSet = {'apple', 'banana'} \n_bSet = {'cherry', 'apple'}   \n_cSet=_aSet.intersection(_bSet)   \nprint(_cSet) → {'apple'}"
+                },
+                {
+                    "definition": "একটি সেটের এমন উপাদান বাদ দেওয়া যা অন্য একটি সেটে নেই",
+                    "code": "_aSet.intersection_update(_bSet)  \nউদাহরণ: \n_aSet = {'apple', 'banana'} \n_bSet = {'cherry', 'apple'}   \n_aSet.intersection_update(_bSet)   \nprint(_aSet) → {'apple'}"
+                },
+                {
+                    "definition": "দুটি সেটের ইউনিয়ন বের করা",
+                    "code": "_cSet = _aSet.union(_bSet)  \nউদাহরণ: \n_aSet = {'apple', 'banana'} \n_bSet = {'cherry', 'apple'}   \n_cSet=_aSet.union(_bSet)   \nprint(_cSet) → {'apple', 'cherry', 'banana'}"
+                },
+                {
+                    "definition": "একটি সেটের সব উপাদান অন্য একটি সেটে উপস্থিত কিনা যাচাই করা",
+                    "code": "_result = _aSet.issubset(_bSet)  \nউদাহরণ: \n_aSet = {'apple', 'banana'} \n_bSet = {'banana','cherry', 'apple'}   \n_result = _aSet.issubset(_bSet)   \nprint(_result) → True"
+                },
+                {
+                    "definition": "একটি সেটে অন্য একটি সেটের সব উপাদান উপস্থিত কিনা যাচাই করা",
+                    "code": "_result = _aSet.issuperset(_bSet)  \nউদাহরণ: \n_aSet = {'apple', 'cherry', 'banana'} \n_bSet = {'banana', 'apple'}   \n_result = _aSet.issuperset(_bSet)   \nprint(_result) → True"
+                },
+                {
+                    "definition": "একটি সেটে অন্য একটি সেটের সব উপাদান সংযুক্ত করা",
+                    "code": "_aSet.update(_bSet)  \nউদাহরণ: \n_aSet = {'apple', 'banana'} \n_bSet = {'cherry', 'apple'}   \n_aSet.update(_bSet)   \nprint(_aSet) → {'apple', 'banana', 'cherry'}"
+                },
+                {
+                    "definition": "সেটের নির্দিষ্ট উপাদান মুছে ফেলা",
+                    "code": "_aSet.discard(item)/_aSet.remove(item)"
                 }
             ]
         },
