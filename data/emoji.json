@@ -251,7 +251,43 @@
       },
       {
          "title":"ভৌগলিক কাজে ব্যবহৃত চিন্হ",
-         "items":[	
+         "items":[
+            {
+            	"definition":"🔴",
+            	"code": ":red_circle:"
+            },		
+			{
+            	"definition":"🟠",
+            	"code": ":orange_circle:"
+            },		
+			{
+            	"definition":"🟡",
+            	"code": ":yellow_circle:"
+            },		
+			{
+            	"definition":"🟢",
+            	"code": ":green_circle:"
+            },		
+			{
+            	"definition":"🔵",
+            	"code": ":large_blue_circle:"
+            },		
+			{
+            	"definition":"🟣",
+            	"code": ":purple_circle:"
+            },		
+			{
+            	"definition":"🟤",
+            	"code": ":brown_circle:"
+            },		
+			{
+            	"definition":"⚫",
+            	"code": ":black_circle:"
+            },		
+			{
+            	"definition":"⚪",
+            	"code": ":white_circle:"
+            },		
 			{
             	"definition":"🟥",
             	"code": ":red_square:"
@@ -2085,7 +2121,7 @@
             },
             {
                "definition":"🐝",
-               "code":"bee::honeybee"
+               "code":"bee: বা :honeybee"
             },
             {
                "definition":"🐞",
@@ -3588,7 +3624,7 @@
         },
         {
           "definition":"👕",
-          "code":":shirt::tshirt: "
+          "code":":shirt: বা :tshirt: "
         },
         {
           "definition":"👖",
