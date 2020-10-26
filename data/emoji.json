@@ -274,6 +274,83 @@
          ]
       },
       {
+         "title":"ভিডিও প্লেয়ার (AV) সম্পর্কিত ইমোজি",
+         "items":[
+            {
+            	"definition":"🔀",
+            	"code": ":twisted_rightwards_arrows:"
+            },		
+			{
+            	"definition":"🔁",
+            	"code": ":repeat:"
+            },			
+			{
+            	"definition":"▶️",
+            	"code": ":arrow_forward:"
+            },		
+			{
+            	"definition":"⏩",
+            	"code": ":fast_forward:"
+            },		
+			{
+            	"definition":"⏭️",
+            	"code": ":next_track_button:"
+            },		
+			{
+            	"definition":"⏯️",
+            	"code": ":play_or_pause_button:"
+            },		
+			{
+            	"definition":"◀️",
+            	"code": ":arrow_backward:"
+            },		
+			{
+            	"definition":"⏪",
+            	"code": ":rewind:"
+            },		
+			{
+            	"definition":"⏮️",
+            	"code": ":previous_track_button:"
+            },		
+			{
+            	"definition":"🔼",
+            	"code": ":arrow_up_small:"
+            },		
+			{
+            	"definition":"⏫",
+            	"code": ":arrow_double_up:"
+            },		
+			{
+            	"definition":"🔽",
+            	"code": ":arrow_down_small:"
+            },		
+			{
+            	"definition":"⏬",
+            	"code": ":arrow_double_down:"
+            },		
+			{
+            	"definition":"⏸️",
+            	"code": ":pause_button:"
+            },		
+			{
+            	"definition":"⏹️",
+            	"code": ":stop_button:"
+            },		
+			{
+            	"definition":"⏺️",
+            	"code": ":record_button:"
+            },		
+			{
+            	"definition":"⏏️",
+            	"code": ":eject_button:"
+            },		
+			{
+            	"definition":"🎦",
+            	"code": ":cinema:"
+            }
+         ]
+      },
+      {
          "title":"বিভিন্ন সাংকেতিক চিন্হ",
          "items":[
             {
