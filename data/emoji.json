@@ -63,6 +63,91 @@
          ]
       },
       {
+         "title":"বিভিন্ন চিন্হসমুহ",
+         "items":[
+         	{
+            	"definition":"♻️",
+            	"code": ":recycle:"
+            },
+         	{
+            	"definition":"✅",
+            	"code": ":white_check_mark:"
+            },		
+			{
+            	"definition":"☑️",
+            	"code": ":ballot_box_with_check:"
+            },		
+			{
+            	"definition":"✔️",
+            	"code": ":heavy_check_mark:"
+            },		
+			{
+            	"definition":"❌",
+            	"code": ":x:"
+            },		
+			{
+            	"definition":"❎",
+            	"code": ":negative_squared_cross_mark:"
+            },
+            {
+            	"definition":"⚕️",
+            	"code": ":medical_symbol:"
+            },			
+			{
+            	"definition":"⚜️",
+            	"code": ":fleur_de_lis:"
+            },		
+			{
+            	"definition":"🔱",
+            	"code": ":trident:"
+            },		
+			{
+            	"definition":"📛",
+            	"code": ":name_badge:"
+            },		
+			{
+            	"definition":"🔰",
+            	"code": ":beginner:"
+            },		
+			{
+            	"definition":"⭕",
+            	"code": ":o:"
+            },		
+			{
+            	"definition":"➰",
+            	"code": ":curly_loop:"
+            },		
+			{
+            	"definition":"➿",
+            	"code": ":loop:"
+            },		
+			{
+            	"definition":"〽️",
+            	"code": ":part_alternation_mark:"
+            },		
+			{
+            	"definition":"✳️",
+            	"code": ":eight_spoked_asterisk:"
+            },		
+			{
+            	"definition":"✴️",
+            	"code": ":eight_pointed_black_star:"
+            },		
+			{
+            	"definition":"❇️",
+            	"code": ":sparkle:"
+            },		
+			{
+            	"definition":"©️",
+            	"code": ":copyright:"
+            },		
+			{
+            	"definition":"®️",
+            	"code": ":registered:"
+            }
+         ]
+      },
+      {
          "title":"সংখ্যা চিহ্ন",
          "items":[
             {
