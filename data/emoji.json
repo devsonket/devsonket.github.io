@@ -250,6 +250,111 @@
          ]
       },
       {
+         "title":"ভৌগলিক কাজে ব্যবহৃত চিন্হ",
+         "items":[	
+			{
+            	"definition":"🟥",
+            	"code": ":red_square:"
+            },		
+			{
+            	"definition":"🟧",
+            	"code": ":orange_square:"
+            },		
+			{
+            	"definition":"🟨",
+            	"code": ":yellow_square:"
+            },		
+			{
+            	"definition":"🟩",
+            	"code": ":green_square:"
+            },		
+			{
+            	"definition":"🟦",
+            	"code": ":blue_square:"
+            },		
+			{
+            	"definition":"🟪",
+            	"code": ":purple_square:"
+            },		
+			{
+            	"definition":"🟫",
+            	"code": ":brown_square:"
+            },		
+			{
+            	"definition":"⬛",
+            	"code": ":black_large_square:"
+            },		
+			{
+            	"definition":"⬜",
+            	"code": ":white_large_square:"
+            },		
+			{
+            	"definition":"◼️",
+            	"code": ":black_medium_square:"
+            },		
+			{
+            	"definition":"◻️",
+            	"code": ":white_medium_square:"
+            },		
+			{
+            	"definition":"◾",
+            	"code": ":black_medium_small_square:"
+            },		
+			{
+            	"definition":"◽",
+            	"code": ":white_medium_small_square:"
+            },		
+			{
+            	"definition":"▪️",
+            	"code": ":black_small_square:"
+            },		
+			{
+            	"definition":"▫️",
+            	"code": ":white_small_square:"
+            },		
+			{
+            	"definition":"🔶",
+            	"code": ":large_orange_diamond:"
+            },		
+			{
+            	"definition":"🔷",
+            	"code": ":large_blue_diamond:"
+            },		
+			{
+            	"definition":"🔸",
+            	"code": ":small_orange_diamond:"
+            },		
+			{
+            	"definition":"🔹",
+            	"code": ":small_blue_diamond:"
+            },		
+			{
+            	"definition":"🔺",
+            	"code": ":small_red_triangle:"
+            },		
+			{
+            	"definition":"🔻",
+            	"code": ":small_red_triangle_down:"
+            },		
+			{
+            	"definition":"💠",
+            	"code": ":diamond_shape_with_a_dot_inside:"
+            },		
+			{
+            	"definition":"🔘",
+            	"code": ":radio_button:"
+            },		
+			{
+            	"definition":"🔳",
+            	"code": ":white_square_button:"
+            },		
+			{
+            	"definition":"🔲",
+            	"code": ":black_square_button:"
+            }
+         ]
+      },
+      {
          "title":"ভালোবাসার অনুভুতি",
          "items":[
             {
