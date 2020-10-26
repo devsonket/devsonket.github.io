@@ -283,7 +283,11 @@
 			{
             	"definition":"🔁",
             	"code": ":repeat:"
-            },			
+            },		
+			{
+            	"definition":"🔂",
+            	"code": ":repeat_one:"
+            },		
 			{
             	"definition":"▶️",
             	"code": ":arrow_forward:"
