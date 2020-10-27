@@ -4872,6 +4872,63 @@
       ]
     },
     {
+         "title":"রাশিচক্রে ব্যবহৃত ইমোজি",
+         "items":[
+			{
+            	"definition":"♈",
+            	"code": ":aries:"
+            },		
+			{
+            	"definition":"♉",
+            	"code": ":taurus:"
+            },	
+			{
+            	"definition":"♊",
+            	"code": ":gemini:"
+            },	
+			{
+            	"definition":"♋",
+            	"code": ":cancer:"
+            },	
+			{
+            	"definition":"♌",
+            	"code": ":leo:"
+            },	
+			{
+            	"definition":"♍",
+            	"code": ":virgo:"
+            },	
+			{
+            	"definition":"♎",
+            	"code": ":libra:"
+            },	
+			{
+            	"definition":"♏",
+            	"code": ":scorpius:"
+            },	
+			{
+            	"definition":"♐",
+            	"code": ":sagittarius:"
+            },	
+			{
+            	"definition":"♑",
+            	"code": ":capricorn:"
+            },	
+			{
+            	"definition":"♒",
+            	"code": ":aquarius:"
+            },		
+			{
+            	"definition":"♓",
+            	"code": ":pisces:"
+            },	
+			{
+            	"definition":"⛎",
+            	"code": ":ophiuchus:"
+            }
+         ]
+      },
+    {
       "title":"পতাকা",
       "items":[
         {
