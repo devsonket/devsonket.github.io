@@ -3143,6 +3143,41 @@
          ]
       },
       {
+         "title":"মানচিত্র",
+         "items":[
+			{
+            	"definition":"🌍",
+            	"code": ":earth_africa:"
+            },	
+			{
+            	"definition":"🌎",
+            	"code": ":earth_americas:"
+            },	
+			{
+            	"definition":"🌏",
+            	"code": ":earth_asia:"
+            },	
+			{
+            	"definition":"🌐",
+            	"code": ":globe_with_meridians:"
+            },	
+			{
+            	"definition":"🗺️",
+            	"code": ":world_map:"
+            },	
+			{
+            	"definition":"🗾",
+            	"code": ":japan:"
+            },	
+			{
+            	"definition":"🧭",
+            	"code": ":compass:"
+            },	
+
+            
+         ]
+      },
+      {
       "title":"স্থলযান",
       "items":[
         {
