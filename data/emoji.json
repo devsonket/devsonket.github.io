@@ -4956,6 +4956,42 @@
             	"definition":"🆒",
             	"code": ":cool:"
             },	
+            {	
+            	"definition":"🅰️",
+            	"code": ":a:"
+            },	
+			{
+            	"definition":"🆎",
+            	"code": ":ab:"
+            },		
+			{
+            	"definition":"🅱️",
+            	"code": ":b:"
+            },	
+			{
+            	"definition":"🆑",
+            	"code": ":cl:"
+            },
+            {
+            	"definition":"🆚",
+            	"code": ":vs:"
+            },		
+            {
+            	"definition":"🅾️",
+            	"code": ":o2:"
+            },		
+			{
+            	"definition":"🆗",
+            	"code": ":ok:"
+            },	
+			{
+            	"definition":"🅿️",
+            	"code": ":parking:"
+            },		
+			{
+            	"definition":"🆘",
+            	"code": ":sos:"
+            },	
 			{
             	"definition":"🆓",
             	"code": ":free:"
