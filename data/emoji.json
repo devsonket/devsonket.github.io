@@ -4928,6 +4928,134 @@
             }
          ]
       },
+      {
+         "title":"আলফা-নিউমেরিক চিন্হ",
+         "items":[
+			{
+            	"definition":"🔠",
+            	"code": ":capital_abcd:"
+            },		
+			{
+            	"definition":"🔡",
+            	"code": ":abcd:"
+            },	
+			{
+            	"definition":"🔢",
+            	"code": ":1234:"
+            },		
+			{
+            	"definition":"🔣",
+            	"code": ":symbols:"
+            },	
+			{
+            	"definition":"🔤",
+            	"code": ":abc:"
+            },		
+				
+			{
+            	"definition":"🆒",
+            	"code": ":cool:"
+            },	
+			{
+            	"definition":"🆓",
+            	"code": ":free:"
+            },		
+			{
+            	"definition":"ℹ️",
+            	"code": ":information_source:"
+            },	
+			{
+            	"definition":"🆔",
+            	"code": ":id:"
+            },		
+			{
+            	"definition":"Ⓜ️",
+            	"code": ":m:"
+            },	
+			{
+            	"definition":"🆕",
+            	"code": ":new:"
+            },		
+			{
+            	"definition":"🆖",
+            	"code": ":ng:"
+            },	
+			
+			{
+            	"definition":"🆙",
+            	"code": ":up:"
+            },		
+			
+			{
+            	"definition":"🈁",
+            	"code": ":koko:"
+            },		
+			{
+            	"definition":"🈂️",
+            	"code": ":sa:"
+            },	
+			{
+            	"definition":"🈷️",
+            	"code": ":u6708:"
+            },		
+			{
+            	"definition":"🈶",
+            	"code": ":u6709:"
+            },	
+			{
+            	"definition":"🈯",
+            	"code": ":u6307:"
+            },		
+			{
+            	"definition":"🉐",
+            	"code": ":ideograph_advantage:"
+            },	
+			{
+            	"definition":"🈹",
+            	"code": ":u5272:"
+            },		
+			{
+            	"definition":"🈚",
+            	"code": ":u7121:"
+            },	
+			{
+            	"definition":"🈲",
+            	"code": ":u7981:"
+            },		
+			{
+            	"definition":"🉑",
+            	"code": ":accept:"
+            },	
+			{
+            	"definition":"🈸",
+            	"code": ":u7533:"
+            },		
+			{
+            	"definition":"🈴",
+            	"code": ":u5408:"
+            },	
+			{
+            	"definition":"🈳",
+            	"code": ":u7a7a:"
+            },		
+			{
+            	"definition":"㊗️",
+            	"code": ":congratulations:"
+            },	
+			{
+            	"definition":"㊙️",
+            	"code": ":secret:"
+            },		
+			{
+            	"definition":"🈺",
+            	"code": ":u55b6:"
+            },	
+			{
+            	"definition":"🈵",
+            	"code": ":u6e80:"
+            },	
+         ]
+      },
     {
       "title":"পতাকা",
       "items":[
