@@ -1,8 +1,8 @@
 {
   "id": "shrotcut-chrome-win",
-  "title": "গুগুল ক্রোম(উইন্ডোজ)",
+  "title": "গুগল ক্রোম(উইন্ডোজ)",
   "slug": "shrotcut-chrome-win",
-  "description": "গুগুল ক্রোমের প্রয়োজনী উইন্ডোজ শর্টকাট কী",
+  "description": "গুগল ক্রোমের প্রয়োজনী উইন্ডোজ শর্টকাট কী",
   "colorPref": "#f2dd2d",
   "contents": [
     {
