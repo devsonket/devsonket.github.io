@@ -2935,6 +2935,36 @@
          ]
       },
       {
+         "title":"রান্নার কাজে ব্যবহৃত যন্ত্রাংশ",
+         "items":[
+         	{
+            	"definition":"🥢",
+            	"code": ":chopsticks:"
+            },	
+			{
+            	"definition":"🍽️",
+            	"code": ":plate_with_cutlery:"
+            },	
+			{
+            	"definition":"🍴",
+            	"code": ":fork_and_knife:"
+            },	
+			{
+            	"definition":"🥄",
+            	"code": ":spoon:"
+            },	
+			{
+            	"definition":"🔪",
+            	"code": ":hocho:"
+            },	
+			{
+            	"definition":"🏺",
+            	"code": ":amphora:"
+            },	
+            
+         ]
+      },
+      {
          "title":"রুপকথার চরিত্র",
          "items":[
             {
