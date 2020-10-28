@@ -9,6 +9,9 @@
         "title": "সাধারণ",
         "items": [
           {
+            "definition": "রেগুলার এক্সপ্রেশন লেখার নিয়ম",
+            "code": "/ <regular_expressions> / <flags>"
+          },{
             "definition": "নতুন লাইন ছাড়া যেকোনো ক্যারেক্টার",
             "code": "."
           }, {
