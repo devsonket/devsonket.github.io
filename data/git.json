@@ -103,15 +103,15 @@
       "title":"সাধারণ (General)",
       "items":[
         {
-          "definition":"নতুন রিপোসিটোরি তৈরী করা",
+          "definition":"নতুন রিপোজিটরি তৈরী করা",
           "code":"git init"
         },
         {
-          "definition":"কোনো রিপোসিটোরি ক্লোন করা(লোকাল মেশিনে ডাউনলোড করা)",
+          "definition":"কোনো রিপোজিটরি ক্লোন করা(লোকাল মেশিনে ডাউনলোড করা)",
           "code":"git clone [url]"
         },
         {
-          "definition":"রিপোসিটোরি এর বর্তমান অবস্থা/পরিবর্তনগুলো দেখা (নতুন অথবা পুরোনো, কি কি ফাইল কমিট করতে হবে, ওয়ার্কিং ব্রাঞ্চ ইত্যাদি)",
+          "definition":"রিপোজিটরি এর বর্তমান অবস্থা/পরিবর্তনগুলো দেখা (নতুন অথবা পুরোনো, কি কি ফাইল কমিট করতে হবে, ওয়ার্কিং ব্রাঞ্চ ইত্যাদি)",
           "code":"git status"
         },
         {
@@ -135,7 +135,7 @@
           "code":"git add folder/*.ext"
         },
         {
-          "definition":"রিপোসিটোরি তে কিছু কমিট করা (কমিট মেসেজসহ)",
+          "definition":"রিপোজিটরি তে কিছু কমিট করা (কমিট মেসেজসহ)",
           "code":"git commit -m \"YourCommitMessage\""
         },
         {
@@ -520,11 +520,11 @@
           "code":"git remote set-url <RemoteName> <RemoteURL>"
         },
         {
-          "definition":"Fork রিপোসিটোরি ক্ষেত্রে আপস্ট্রিম রিমোট এড করা",
+          "definition":"Fork রিপোজিটরি ক্ষেত্রে আপস্ট্রিম রিমোট এড করা",
           "code":"git remote add upstream <RemoteURL>"
         },
         {
-          "definition":"Fork রিপোসিটোরি ক্ষেত্রে আপস্ট্রিম রিমোট পরিবর্তন করা",
+          "definition":"Fork রিপোজিটরি ক্ষেত্রে আপস্ট্রিম রিমোট পরিবর্তন করা",
           "code":"git remote set-url upstream <RemoteURL>"
         },
         {
@@ -532,11 +532,11 @@
           "code":"git remote add upstream ssh://root@123.123.123.123/path/to/repository/.git"
         },
         {
-          "definition":"অন্য রিপোসিটোরি থেকে ব্রাঞ্চ/রেফ/অবজেক্ট fetch করা",
+          "definition":"অন্য রিপোজিটরি থেকে ব্রাঞ্চ/রেফ/অবজেক্ট fetch করা",
           "code":"git fetch RepositoryName"
         },
         {
-          "definition":"Fetch/Fork রিপোসিটোরি কে আপস্ট্রিম(upstream) এর সাথে up-to-date রাখা",
+          "definition":"Fetch/Fork রিপোজিটরি কে আপস্ট্রিম(upstream) এর সাথে up-to-date রাখা",
           "code":"git fetch upstream"
         },
         {
@@ -564,7 +564,7 @@
           "code":"git checkout -b local_branchname upstream/remote_branchname"
         },
         {
-          "definition":"রিপোসিটোরি তে লোকাল ব্রাঞ্চ থেকে আপলোড করা",
+          "definition":"রিপোজিটরি তে লোকাল ব্রাঞ্চ থেকে আপলোড করা",
           "code":"git push -u origin master OR git push -u origin [branchName]"
         },
         {
@@ -576,7 +576,7 @@
           "code":"`git push origin master --force"
         },
         {
-          "definition":"রিপোসিটোরি থেকে নতুন চেঞ্জ গুলো পুল করা",
+          "definition":"রিপোজিটরি থেকে নতুন চেঞ্জ গুলো পুল করা",
           "code":"git pull"
         },
         {
@@ -584,7 +584,7 @@
           "code":"git pull origin branchname"
         },
         {
-          "definition":"কোনো রিপোসিটোরি ক্লোন করা(লোকাল মেশিনে ডাউনলোড করা)",
+          "definition":"কোনো রিপোজিটরি ক্লোন করা(লোকাল মেশিনে ডাউনলোড করা)",
           "code":"git clone https://github.com/user/project.git OR git clone ssh://user@domain.com/~/dir/.git"
         },
         {
