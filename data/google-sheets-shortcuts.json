@@ -1,0 +1,141 @@
+{
+  "id": "google-sheets-shortcuts",
+  "title": "গুগল শিট",
+  "slug": "google-sheets-shortcuts",
+  "description": "গুগল শিটের প্রয়োজনীয় শটকার্ট ও টিপস এবং ট্রিক্স",
+  "colorPref": "#23A566",
+  "contents": [
+    {
+      "title": "ব্যাসিক শর্টকাট",
+      "items": [
+        {
+          "definition": "ফাইল চালু করতে",
+          "code": "Ctrl + O"
+        }, {
+          "definition": "প্রিন্ট করতে",
+          "code": "Ctrl + P"
+        }, {
+          "definition": "কলাম সিলেক্ট করতে",
+          "code": "Ctrl + Space"
+        }, {
+          "definition": "সারি সিলেক্ট করতে",
+          "code": "Shift + Space"
+        }, {
+          "definition": "শিটের সকল কিছু সিলেক্ট করতে",
+          "code": "Ctrl + A"
+        }, {
+          "definition": "সারি ও কলাম যুক্ত করতে",
+          "code": "Ctrl + Alt + ="
+        }, {
+          "definition": "সারি ও কলাম ডিলেট করতে",
+          "code": "Ctrl + Alt + -"
+        }, {
+          "definition": "সারি হাইড করতে",
+          "code": "Ctrl + Alt + 9"
+        }, {
+          "definition": "সারি আনহাইড করতে",
+          "code": "Ctrl + Shift + 9"
+        }, {
+          "definition": "কলাম হাইড করতে",
+          "code": "Ctrl + Alt + 0"
+        }, {
+          "definition": "কলাম আনহাইড করতে",
+          "code": ".Ctrl + Shift + 0"
+        }, {
+          "definition": "নতুন শিট যুক্ত করার জন্য",
+          "code": "Shift + F11"
+        }
+      ]
+    }, {
+      "title": "এডিটিং শর্টকাট",
+      "items": [
+        {
+          "definition": "কপি করতে",
+          "code": "Ctrl + C"
+        }, {
+          "definition": "কাট করতে",
+          "code": "Ctrl + X"
+        }, {
+          "definition": "পেস্ট (Paste)",
+          "code": "Ctrl + V"
+        }, {
+          "definition": "শুধুমাত্র ভ্যালু পেস্ট করতে (Paste values only)",
+          "code": "Ctrl + Shift + V"
+        }, {
+          "definition": "পূর্বাবস্থায় ফেরা (Undo)",
+          "code": "Ctrl + Z"
+        }, {
+          "definition": "আবার করুন ফরোয়ার্ড (Redo / Step Forward)",
+          "code": "Ctrl + Y"
+       }, {
+        "definition": "খুজুন এবং পরিবর্তন করুন (Find and replace)",
+        "code": "Ctrl + H"
+      }, {
+        "definition": " যুক্ত করুন বা এডিট লিংক  (Insert or edit a link)",
+        "code": "Ctrl + K"
+      }
+      ]
+    }, {
+      "title": "ফর্ম্যাটিং শর্টকাট",
+      "items": [
+        {
+          "definition": "লেখা বোল্ড করতে",
+          "code": "Ctrl + B"
+        }, {
+          "definition": "লেখা ইটালিক করতে",
+          "code": "Ctrl + I"
+        }, {
+          "definition": "লেখার নিচে আন্ডারলাইন করতে",
+          "code": "Ctrl + U"
+        }, {
+          "definition": "বামদিকে সারিবদ্ধ করতে",
+          "code": "Ctrl + Shift + L"
+        }, {
+          "definition": "মাঝখানে সারিবদ্ধ করতে",
+          "code": "Ctrl + Shift + E"
+        }, {
+          "definition": "ডানদিকে সারিবদ্ধ করতে",
+          "code": "Ctrl + Shift + R"
+        }, {
+          "definition": " সেলের মাঝে বর্ডার দিতে",
+          "code": "Alt + Shift + 7"
+        }, {
+          "definition": "দশমিক হিসাবে ফর্ম্যাট করুন",
+          "code": "Ctrl + Shift + 1"
+        }, {
+          "definition": "সময় হিসাবে ফর্ম্যাট করুন",
+          "code": "Ctrl + Shift + 2"
+        }, {
+          "definition": "তারিখ হিসাবে ফর্ম্যাট করুন",
+          "code": "Ctrl + Shift + 3"
+        }, {
+          "definition": "মুদ্রা হিসাবে ফর্ম্যাট করুন",
+          "code": "Ctrl + Shift + 4"
+        }
+      ]
+    }, {
+      "title": "নেভিগেশন শর্টকাট",
+      "items": [
+        {
+          "definition": "সারির শুরুতে যাওয়ার জন্য",
+          "code": "Home"
+        }, {
+          "definition": "সারির শেষে যাওয়ার জন্য",
+          "code": "End"
+        }, {
+          "definition": "A1 সেলে যাওয়ার জন্য (Move to cell A1)",
+          "code": "Ctrl + Home"
+        },  {
+          "definition": "শিটের শেষে যাওয়ার জন্য",
+          "code": "Ctrl + End"
+        },  {
+          "definition":  "পরবর্তী শিটে যাওয়ার জন্য",
+          "code": "Alt + Arrow Down"
+        },  {
+          "definition": " পূর্ববর্তী শিটে যাওয়ার জন্য",
+          "code": "Alt + Arrow Up"
+        }
+      ]
+    }
+  ]
+}

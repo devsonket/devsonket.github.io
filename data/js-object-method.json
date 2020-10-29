@@ -58,11 +58,11 @@
         },
         {
           "definition": "স্ট্রিং এর শুরু থেকে খালি স্পেস সরিয়ে ফেলা",
-          "code": "trimStart()"
+          "code": "trimStart() অথবা, trimLeft()"
         },
         {
           "definition": "স্ট্রিং এর শেষ প্রান্ত থেকে খালি স্পেস সরিয়ে ফেলা",
-          "code": "trimEnd()"
+          "code": "trimEnd() অথবা, trimRight()"
         },
         {
           "definition": "স্ট্রিং থেকে প্রিমিটিভ ভ্যালু(থাকলে) রিটার্ণ করা",
