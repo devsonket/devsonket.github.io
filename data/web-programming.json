@@ -41,6 +41,8 @@
         }, {
           "code": "<a>"
         }, {
+          "code": "<abbr>"
+        }, {
           "code": "<link>"
         }, {
           "code": "<table>"
@@ -93,11 +95,27 @@
         }, {
           "code": "<sup>"
         }, {
+          "code": "<svg>"
+        }, {
           "code": "<iframe>"
         }, {
           "code": "<fieldset>"
         }, {
           "code": "<legend>"
+        }, {
+          "code": "<select>"
+        }, {
+          "code": "<option>"
+        }, {
+          "code": "<textarea>"
+        }, {
+          "code": "<strong>"
+        }, {
+          "code": "<progress>"
+        }, {
+          "code": "<noscript>"
+        }, {
+          "code": "<noframes>"
         }
       ]
     }, {
@@ -172,7 +190,7 @@
         }, {
           "code": "div span"
         }, {
-          "code": "siv, span"
+          "code": "div, span"
         }, {
           "code": ".class1 .class2"
         }, {
