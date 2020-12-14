@@ -534,8 +534,28 @@
                     "code": "arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])\nfor i, x in np.ndenumerate(arr):\n\tprint(i, x)\n\nবিঃদ্রঃ এখানে i হল ইনডেক্স এবং x হল ভেলু"
                 },
                 {
-                    "definition": "join",
-                    "code": ""
+                    "definition": "দুটি অ্যারে জয়েন (1D)",
+                    "code": "arr1 = np.array([1, 2, 3])\narr2 = np.array([4, 5, 6])\nnewArr = np.concatenate((arr1, arr2))"
+                },
+                {
+                    "definition": "দুটি অ্যারে জয়েন (2D)",
+                    "code": "arr1 = np.array([[1, 2], [3, 4]])\narr2 = np.array([[5, 6], [7, 8]])\nnewArr = np.concatenate((arr1, arr2), axis=1)\n\nবিঃদ্রঃ এখানে axis=1 মানে রো। ১ম অ্যারে এর ১ম রো এবং ২য় অ্যারে এর ১ম রো হবে নিউ অ্যারে এর ১ম রো। আর যদি axis=0 দেয়া হতো তাহলে কলাম অনুযায়ী নিউ অ্যারে হতো। সেক্ষেত্রে, ১ম অ্যারে এর ১ম এবং ২য় রো হতো নিউ অ্যারে এর ১ম এবং ২য় রো। ২য় অ্যারে এর ১ম, ২য় হবে নিউ অ্যারে এর ৩য়, ৪র্থ রো।"
+                },
+                {
+                    "definition": "stact() মেথড দিয়ে দুটি অ্যারে জয়েন",
+                    "code": "arr1 = np.array([1, 2, 3])\narr2 = np.array([4, 5, 6])\nnewArr = np.stack((arr1, arr2), axis=1)"
+                },
+                {
+                    "definition": "hstact() মেথড দিয়ে রো ভাবে দুটি অ্যারে জয়েন",
+                    "code": "arr1 = np.array([1, 2, 3])\narr2 = np.array([4, 5, 6])\nnewArr = np.hstack((arr1, arr2))"
+                },
+                {
+                    "definition": "vstact() মেথড দিয়ে কলাম ভাবে দুটি অ্যারে জয়েন",
+                    "code": "arr1 = np.array([1, 2, 3])\narr2 = np.array([4, 5, 6])\nnewArr = np.vstack((arr1, arr2))"
+                },
+                {
+                    "definition": "দুটি অ্যারে এর একই ইনডেক্স নিয়ে dstack() মেথড দিয়ে অ্যারে জয়েন",
+                    "code": "arr1 = np.array([1, 2, 3])\narr2 = np.array([4, 5, 6])\nnewArr = np.dstack((arr1, arr2))\n\nবিঃদ্রঃ এখানে দুটি অ্যারে এড় 0 ইনডেক্স নিয়ে নিউ অ্যারে এর ১ম রো এবং ইনডেক্স 1 নিয়ে নিউ অ্যারে এর ২য় রো। তাই রেজাল্ট হবে [[[1, 4], [2, 5], [3, 6]]]"
                 },
                 {
                     "definition": "split",
