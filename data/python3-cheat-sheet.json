@@ -326,7 +326,7 @@
         {
             "title": "ফাইল পরিচালনা (File Handling)",
             "items": [{
-                    "definition": "ফাইল খোলা",
+                    "definition": "ফাইল খোলা (ফাইল উপস্থিত না থাকলে এরর দেখাবে)",
                     "code": "file = open(fileLocation, 'r') \nউদাহরণ: \nfile = open('D:\\myfiles\\myFile.txt', 'r')"
                 },
                 {
@@ -343,11 +343,19 @@
                 },
                 {
                     "definition": "নতুন ফাইল তৈরি করা",
-                    "code": "newFile=open(fileName,'x') \nউদাহরণ: \nfile = open('D:\\myfiles\\myNewFile.txt', 'x')"
+                    "code": "newFile = open(fileName,'x') \nউদাহরণ: \nfile = open('D:\\myfiles\\myNewFile.txt', 'x')"
+                },
+                {
+                    "definition": "পুরাতন ফাইল আপডেট করা",
+                    "code": "updateFile = open(fileName,'w') \nউদাহরণ: \nfile = open('D:\\myfiles\\myNewFile.txt', 'w')"
                 },
                 {
                     "definition": "ফাইল অপসারণ করা",
                     "code": "os.remove(newFile) \nউদাহরণ: \nos.remove('D:\\myfiles\\myNewFile.txt')"
+                },
+                {
+                    "definition": "ফাইল বাইনারি বা টেক্সট মোড হিসাবে পরিচালনা করতে পারেন (b - বাইনারি, t - টেক্সট)",
+                    "code": "file = open(fileLocation, 'rb') \nউদাহরণ: \nfile = open('D:\\myfiles\\myFile.png', 'rb')\n\nবিঃদ্রঃ এখানে, পড়ার জন্য 'r', এবং বাইনারির জন্য 'b'"
                 }
             ]
         },
@@ -426,7 +434,7 @@
                     "code": "df['column_name'].value_counts()"
                 },
                 {
-                    "definition": "ডাটাফ্রেমের ইন্ডেক্স সোর্ট করে।",
+                    "definition": "ডাটাফ্রেমের ইন্ডেক্স সোর্ট করে",
                     "code": "df.sort_index()"
                 },
                 {
@@ -442,8 +450,52 @@
                     "code": "df.fillna(value)"
                 },
                 {
-                    "definition": "কলামের নাম পরিবর্তন করা।",
+                    "definition": "কলামের নাম পরিবর্তন করা",
                     "code": "df.rename(columns = {'old_name': 'new_name'})"
+                }
+            ]
+        },
+        {
+            "title": "নামপাই ডাটাফ্রাম (Numpy Library)",
+            "items": [{
+                    "definition": "নামপাই ইনস্টল করা",
+                    "code": "pip install numpy"
+                },
+                {
+                    "definition": "নামপাই ইম্পোর্ট করা",
+                    "code": "import numpy as np\n\nবিঃদ্রঃ এখানে, np হল alias বা শর্ট নেম। ফুল numpy না লেখে np লেখলেও হবে এখন থেকে"
+                },
+                {
+                    "definition": "ভার্সন চেক করা",
+                    "code": "np.__version__"
+                },
+                {
+                    "definition": "অ্যারে তৈরি করা (নামপাই-এ অ্যারে অবজেক্টকে ndarray বলা হয়)",
+                    "code": "arr = np.array([1, 2, 3, 4, 5])"
+                },
+                {
+                    "definition": "অ্যারের ডাইম্যানসন চেক করা",
+                    "code": "arr.ndim"
+                },
+                {
+                    "definition": "৫ ডাইম্যানসন অ্যারে তৈরি করা",
+                    "code": "arr5D = np.array([1, 2, 3], ndmin=5)"
+                },
+                {
+                    "definition": "অ্যারে ইনডেক্সিং",
+                    "code": "arr[0]\nলাস্ট উপাদানঃ arr[-1]"
+                },
+                {
+                    "definition": "১ম ডাইম্যানসন(রো) এর চতুর্থ উপাদান",
+                    "code": "arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])\nprint(arr[0, 3])"
+                },
+                {
+                    "definition": "অ্যারে স্লাইস ([স্টার্ট:এন্ড] এবং [স্টার্ট:এন্ড:স্টেপ] হল স্টেপ সহ)",
+                    "code": "ইনডেক্স ১ থেকে ৫ এর জন্যঃ arr[1:5]\nইনডেক্স ১ থেকে ৫ এর জন্য ২ স্টেপ পর পরঃ arr[1:5:2]\nইনডেক্স ৩ থেকে লাস্ট এর জন্যঃ arr[3:]\nইনডেক্স 0 থেকে ৪ এর জন্যঃ  arr[:5]\n\nবিঃদ্রঃ [স্টার্ট:এন্ড] এখানে, এন্ড অন্তর্ভুক্ত না। মানে arr[:4] এর জন্য ইনডেক্স ০,১,২,৩ এর ভালু দেখাবে, কিন্তু ইনডেক্স ৪ এর ভালু দেখাবেনা।"
+                },
+                {
+                    "definition": "নামপাই-এ ডেটা টাইপস",
+                    "code": "i - পূর্ণসংখ্যা (integer)\nb - বুলিয়ান (boolean)\nu - আনসাইনড পূর্ণসংখ্যা (unsigned integer)\nf - ফ্লোট (float)\nc - কমপ্লেক্স ফ্লোট (complex float)\nm - টাইমডেল্টা (timedelta)\nM - ডেটটাইম (datetime)\nO - অবজেক্ট (object)\nS - স্ট্রিং (string)\nU - ইউনিকোড স্ট্রিং (unicode string)\nV - ভয়েড (void)\n\nবিঃদ্রঃ চেক ডেটাটাইপঃ arr.dtype"
                 }
             ]
         }
