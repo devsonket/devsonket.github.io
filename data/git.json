@@ -116,7 +116,7 @@
         },
         {
           "definition":"কমিট এর জন্যে সব পরিবর্তিত ফাইল এড করা",
-          "code":"git add OR git add . OR git add --all"
+          "code":"git add OR git add . OR git add --all OR git add -A"
         },
         {
           "definition":"কাস্টম ফাইল কমিট এর জন্যে এড করা ",
