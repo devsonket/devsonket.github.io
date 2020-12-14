@@ -474,8 +474,24 @@
                     "code": "arr = np.array([1, 2, 3, 4, 5])"
                 },
                 {
+                    "definition": "অ্যারে copy করা",
+                    "code": "arr = np.array([1, 2, 3, 4, 5])\nnewArr = arr.copy()"
+                },
+                {
                     "definition": "অ্যারের ডাইম্যানসন চেক করা",
                     "code": "arr.ndim"
+                },
+                {
+                    "definition": "অ্যারের shape চেক করা",
+                    "code": "arr.shape"
+                },
+                {
+                    "definition": "অ্যারের shape চেঞ্জ করা (1D থেকে 2D)",
+                    "code": "arr = np.array([1, 2, 3, 4, 5, 6])\nnewArr = arr.reshape(3, 2)\n\nবিঃদ্রঃ এখানে arr অ্যারেটা ১ম ডাইম্যানসন এর এবং newArr অ্যারেটা (৩, ২) ডাইম্যানসন এর। মানে ৩ টা অ্যারে এবং প্রত্যেক অ্যারেতে ২ টা করে এলিমেনট। অন্যভাবে বলতে গেলে, ৩ টা রো এবং ২ টা কলাম।\n\n[[1, 2], [3, 4], [5, 6]]"
+                },
+                {
+                    "definition": "অ্যারের shape চেঞ্জ করা (1D থেকে 3D)",
+                    "code": "arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])\nnewArr = arr.reshape(2, 3, 2)\n\nবিঃদ্রঃ এখানে arr অ্যারেটা ১ম ডাইম্যানসন এর এবং newArr অ্যারেটা (২, ৩, ২) ডাইম্যানসন এর। মানে ২ টা অ্যারে, আবার ওই ২ অ্যারে এর প্রত্যেকটা তে ৩ টা করে অ্যারে এবং এক এক অ্যারেতে ২ টা করে এলিমেনট।\n\n[[[1, 2], [3, 4], [5, 6]], [[7, 8], [9, 10], [11, 12]]]"
                 },
                 {
                     "definition": "৫ ডাইম্যানসন অ্যারে তৈরি করা",
@@ -496,6 +512,54 @@
                 {
                     "definition": "নামপাই-এ ডেটা টাইপস",
                     "code": "i - পূর্ণসংখ্যা (integer)\nb - বুলিয়ান (boolean)\nu - আনসাইনড পূর্ণসংখ্যা (unsigned integer)\nf - ফ্লোট (float)\nc - কমপ্লেক্স ফ্লোট (complex float)\nm - টাইমডেল্টা (timedelta)\nM - ডেটটাইম (datetime)\nO - অবজেক্ট (object)\nS - স্ট্রিং (string)\nU - ইউনিকোড স্ট্রিং (unicode string)\nV - ভয়েড (void)\n\nবিঃদ্রঃ চেক ডেটাটাইপঃ arr.dtype"
+                },
+                {
+                    "definition": "অ্যারে ইটারেটিং (1D)",
+                    "code": "arr = np.array([1, 2, 3])\nfor x in arr:\n\tprint(x)"
+                },
+                {
+                    "definition": "অ্যারে ইটারেটিং (2D)",
+                    "code": "arr = np.array([[1, 2, 3], [4, 5, 6]])\nfor x in arr:\n\tfor y in x:\n\t\tprint(y)"
+                },
+                {
+                    "definition": "অ্যারে ইটারেটিং (3D)",
+                    "code": "arr = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])\nfor x in np.nditer(arr):\n\tprint(x)"
+                },
+                {
+                    "definition": "অ্যারে ইটারেট (বিভিন্ন স্টেপ এ)",
+                    "code": "arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])\nfor x in np.nditer(arr[:, ::2]):\n\tprint(x)\n\nবিঃদ্রঃ এখানে ১ টা করে এলিমেনট বা উপাদান স্কিপ করে শো করবে। ::3 হলে ২ টা করে স্কিপ করে শো করতো। যেহেতু ::2, তাই রেজাল্ট শো করবে 1 3 5 7"
+                },
+                {
+                    "definition": "অ্যারে ইটারেট (ইনডেক্স নাম্বার সহ)",
+                    "code": "arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])\nfor i, x in np.ndenumerate(arr):\n\tprint(i, x)\n\nবিঃদ্রঃ এখানে i হল ইনডেক্স এবং x হল ভেলু"
+                },
+                {
+                    "definition": "join",
+                    "code": ""
+                },
+                {
+                    "definition": "split",
+                    "code": ""
+                },
+                {
+                    "definition": "search",
+                    "code": ""
+                },
+                {
+                    "definition": "sort",
+                    "code": ""
+                },
+                {
+                    "definition": "filter",
+                    "code": ""
+                },
+                {
+                    "definition": "random",
+                    "code": ""
+                },
+                {
+                    "definition": "universal functions",
+                    "code": ""
                 }
             ]
         }
