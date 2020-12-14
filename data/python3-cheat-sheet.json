@@ -456,7 +456,7 @@
             ]
         },
         {
-            "title": "নামপাই ডাটাফ্রাম (Numpy Library)",
+            "title": "নামপাই লাইব্রেরি (Numpy Library)",
             "items": [{
                     "definition": "নামপাই ইনস্টল করা",
                     "code": "pip install numpy"
@@ -587,15 +587,31 @@
                 },
                 {
                     "definition": "filter",
-                    "code": ""
+                    "code": "arr = np.array([10, 20, 30, 40])\nx = [True, False, True, False]\nnewArr = arr[x]\n\nবিঃদ্রঃ এখানে রেজাল্ট [10, 30], কারণ নতুন ফিল্টারটিতে কেবলমাত্র সেই মান রয়েছে যেখানে ফিল্টার অ্যারের মানটি সত্য ছিল"
                 },
                 {
-                    "definition": "random",
-                    "code": ""
+                    "definition": "0 থেকে 1 পর্যন্ত একটি রেনডম পূর্ণসংখ্যা তৈরি করুন",
+                    "code": "from numpy import random\nx = random.rand()"
                 },
                 {
-                    "definition": "universal functions",
-                    "code": ""
+                    "definition": "0 থেকে 100 পর্যন্ত একটি রেনডম পূর্ণসংখ্যা তৈরি করুন",
+                    "code": "from numpy import random\nx = random.randint(100)"
+                },
+                {
+                    "definition": "৫ সংখ্যার একটি রেনডম অ্যারে তৈরি করা (1D)",
+                    "code": "x=random.randint(100, size=(5))"
+                },
+                {
+                    "definition": "৩ রো এবং ৫ কলাম এর একটি রেনডম পূর্ণসংখ্যার অ্যারে তৈরি করা (2D)",
+                    "code": "x = random.randint(100, size=(3, 5))"
+                },
+                {
+                    "definition": "৩ রো এবং ৫ কলাম এর একটি রেনডম দশমিক সংখ্যার অ্যারে তৈরি করা (2D)",
+                    "code": "x = random.rand(3, 5)"
+                },
+                {
+                    "definition": "প্রদত্ত অ্যারে এর মানগুলি ব্যাবহার করে ৩ রো এবং ৫ কলাম এর একটি 2D অ্যারে তৈরি করুন",
+                    "code": "x = random.choice([3, 5, 7, 9], size=(3, 5))"
                 }
             ]
         }
