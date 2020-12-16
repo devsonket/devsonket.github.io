@@ -1,10 +1,11 @@
 {
-    "id": "reduxjs-cheat-sheet",
-    "title": "রিডাক্স ফান্ডামেন্টালস",
+    "id": "reduxjs",
+    "title": "রিডাক্স JS ফান্ডামেন্টালস",
     "slug": "রিডাক্স ",
-    "description": "রিডাক্স  এর ফান্ডামেন্টালস ",
-    "colorPref": "#E74292",
+    "description": "রিডাক্স JS(State Management Library for Javascript Apps) এর ফান্ডামেন্টালস ",
+    "colorPref": "#764abc",
     "contents": [
+        
         {
             "title": "রিডাক্স JS ইনস্টল  করা ",
             "items": [
