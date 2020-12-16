@@ -326,7 +326,7 @@
         {
             "title": "ফাইল পরিচালনা (File Handling)",
             "items": [{
-                    "definition": "ফাইল খোলা",
+                    "definition": "ফাইল খোলা (ফাইল উপস্থিত না থাকলে এরর দেখাবে)",
                     "code": "file = open(fileLocation, 'r') \nউদাহরণ: \nfile = open('D:\\myfiles\\myFile.txt', 'r')"
                 },
                 {
@@ -343,11 +343,19 @@
                 },
                 {
                     "definition": "নতুন ফাইল তৈরি করা",
-                    "code": "newFile=open(fileName,'x') \nউদাহরণ: \nfile = open('D:\\myfiles\\myNewFile.txt', 'x')"
+                    "code": "newFile = open(fileName,'x') \nউদাহরণ: \nfile = open('D:\\myfiles\\myNewFile.txt', 'x')"
+                },
+                {
+                    "definition": "পুরাতন ফাইল আপডেট করা",
+                    "code": "updateFile = open(fileName,'w') \nউদাহরণ: \nfile = open('D:\\myfiles\\myNewFile.txt', 'w')"
                 },
                 {
                     "definition": "ফাইল অপসারণ করা",
                     "code": "os.remove(newFile) \nউদাহরণ: \nos.remove('D:\\myfiles\\myNewFile.txt')"
+                },
+                {
+                    "definition": "ফাইল বাইনারি বা টেক্সট মোড হিসাবে পরিচালনা করতে পারেন (b - বাইনারি, t - টেক্সট)",
+                    "code": "file = open(fileLocation, 'rb') \nউদাহরণ: \nfile = open('D:\\myfiles\\myFile.png', 'rb')\n\nবিঃদ্রঃ এখানে, পড়ার জন্য 'r', এবং বাইনারির জন্য 'b'"
                 }
             ]
         },
@@ -426,7 +434,7 @@
                     "code": "df['column_name'].value_counts()"
                 },
                 {
-                    "definition": "ডাটাফ্রেমের ইন্ডেক্স সোর্ট করে।",
+                    "definition": "ডাটাফ্রেমের ইন্ডেক্স সোর্ট করে",
                     "code": "df.sort_index()"
                 },
                 {
@@ -442,8 +450,168 @@
                     "code": "df.fillna(value)"
                 },
                 {
-                    "definition": "কলামের নাম পরিবর্তন করা।",
+                    "definition": "কলামের নাম পরিবর্তন করা",
                     "code": "df.rename(columns = {'old_name': 'new_name'})"
+                }
+            ]
+        },
+        {
+            "title": "নামপাই লাইব্রেরি (Numpy Library)",
+            "items": [{
+                    "definition": "নামপাই ইনস্টল করা",
+                    "code": "pip install numpy"
+                },
+                {
+                    "definition": "নামপাই ইম্পোর্ট করা",
+                    "code": "import numpy as np\n\nবিঃদ্রঃ এখানে, np হল alias বা শর্ট নেম। ফুল numpy না লেখে np লেখলেও হবে এখন থেকে"
+                },
+                {
+                    "definition": "ভার্সন চেক করা",
+                    "code": "np.__version__"
+                },
+                {
+                    "definition": "অ্যারে তৈরি করা (নামপাই-এ অ্যারে অবজেক্টকে ndarray বলা হয়)",
+                    "code": "arr = np.array([1, 2, 3, 4, 5])"
+                },
+                {
+                    "definition": "অ্যারে copy করা",
+                    "code": "arr = np.array([1, 2, 3, 4, 5])\nnewArr = arr.copy()"
+                },
+                {
+                    "definition": "অ্যারের ডাইম্যানসন চেক করা",
+                    "code": "arr.ndim"
+                },
+                {
+                    "definition": "অ্যারের shape চেক করা",
+                    "code": "arr.shape"
+                },
+                {
+                    "definition": "অ্যারের shape চেঞ্জ করা (1D থেকে 2D)",
+                    "code": "arr = np.array([1, 2, 3, 4, 5, 6])\nnewArr = arr.reshape(3, 2)\n\nবিঃদ্রঃ এখানে arr অ্যারেটা ১ম ডাইম্যানসন এর এবং newArr অ্যারেটা (৩, ২) ডাইম্যানসন এর। মানে ৩ টা অ্যারে এবং প্রত্যেক অ্যারেতে ২ টা করে এলিমেনট। অন্যভাবে বলতে গেলে, ৩ টা রো এবং ২ টা কলাম।\n\n[[1, 2], [3, 4], [5, 6]]"
+                },
+                {
+                    "definition": "অ্যারের shape চেঞ্জ করা (1D থেকে 3D)",
+                    "code": "arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])\nnewArr = arr.reshape(2, 3, 2)\n\nবিঃদ্রঃ এখানে arr অ্যারেটা ১ম ডাইম্যানসন এর এবং newArr অ্যারেটা (২, ৩, ২) ডাইম্যানসন এর। মানে ২ টা অ্যারে, আবার ওই ২ অ্যারে এর প্রত্যেকটা তে ৩ টা করে অ্যারে এবং এক এক অ্যারেতে ২ টা করে এলিমেনট।\n\n[[[1, 2], [3, 4], [5, 6]], [[7, 8], [9, 10], [11, 12]]]"
+                },
+                {
+                    "definition": "৫ ডাইম্যানসন অ্যারে তৈরি করা",
+                    "code": "arr5D = np.array([1, 2, 3], ndmin=5)"
+                },
+                {
+                    "definition": "অ্যারে ইনডেক্সিং",
+                    "code": "arr[0]\nলাস্ট উপাদানঃ arr[-1]"
+                },
+                {
+                    "definition": "১ম ডাইম্যানসন(রো) এর চতুর্থ উপাদান",
+                    "code": "arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])\nprint(arr[0, 3])"
+                },
+                {
+                    "definition": "অ্যারে স্লাইস ([স্টার্ট:এন্ড] এবং [স্টার্ট:এন্ড:স্টেপ] হল স্টেপ সহ)",
+                    "code": "ইনডেক্স ১ থেকে ৫ এর জন্যঃ arr[1:5]\nইনডেক্স ১ থেকে ৫ এর জন্য ২ স্টেপ পর পরঃ arr[1:5:2]\nইনডেক্স ৩ থেকে লাস্ট এর জন্যঃ arr[3:]\nইনডেক্স 0 থেকে ৪ এর জন্যঃ  arr[:5]\n\nবিঃদ্রঃ [স্টার্ট:এন্ড] এখানে, এন্ড অন্তর্ভুক্ত না। মানে arr[:4] এর জন্য ইনডেক্স ০,১,২,৩ এর ভালু দেখাবে, কিন্তু ইনডেক্স ৪ এর ভালু দেখাবেনা।"
+                },
+                {
+                    "definition": "নামপাই-এ ডেটা টাইপস",
+                    "code": "i - পূর্ণসংখ্যা (integer)\nb - বুলিয়ান (boolean)\nu - আনসাইনড পূর্ণসংখ্যা (unsigned integer)\nf - ফ্লোট (float)\nc - কমপ্লেক্স ফ্লোট (complex float)\nm - টাইমডেল্টা (timedelta)\nM - ডেটটাইম (datetime)\nO - অবজেক্ট (object)\nS - স্ট্রিং (string)\nU - ইউনিকোড স্ট্রিং (unicode string)\nV - ভয়েড (void)\n\nবিঃদ্রঃ চেক ডেটাটাইপঃ arr.dtype"
+                },
+                {
+                    "definition": "অ্যারে ইটারেটিং (1D)",
+                    "code": "arr = np.array([1, 2, 3])\nfor x in arr:\n\tprint(x)"
+                },
+                {
+                    "definition": "অ্যারে ইটারেটিং (2D)",
+                    "code": "arr = np.array([[1, 2, 3], [4, 5, 6]])\nfor x in arr:\n\tfor y in x:\n\t\tprint(y)"
+                },
+                {
+                    "definition": "অ্যারে ইটারেটিং (3D)",
+                    "code": "arr = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])\nfor x in np.nditer(arr):\n\tprint(x)"
+                },
+                {
+                    "definition": "অ্যারে ইটারেট (বিভিন্ন স্টেপ এ)",
+                    "code": "arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])\nfor x in np.nditer(arr[:, ::2]):\n\tprint(x)\n\nবিঃদ্রঃ এখানে ১ টা করে এলিমেনট বা উপাদান স্কিপ করে শো করবে। ::3 হলে ২ টা করে স্কিপ করে শো করতো। যেহেতু ::2, তাই রেজাল্ট শো করবে 1 3 5 7"
+                },
+                {
+                    "definition": "অ্যারে ইটারেট (ইনডেক্স নাম্বার সহ)",
+                    "code": "arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])\nfor i, x in np.ndenumerate(arr):\n\tprint(i, x)\n\nবিঃদ্রঃ এখানে i হল ইনডেক্স এবং x হল ভেলু"
+                },
+                {
+                    "definition": "দুটি অ্যারে জয়েন (1D)",
+                    "code": "arr1 = np.array([1, 2, 3])\narr2 = np.array([4, 5, 6])\nnewArr = np.concatenate((arr1, arr2))"
+                },
+                {
+                    "definition": "দুটি অ্যারে জয়েন (2D)",
+                    "code": "arr1 = np.array([[1, 2], [3, 4]])\narr2 = np.array([[5, 6], [7, 8]])\nnewArr = np.concatenate((arr1, arr2), axis=1)\n\nবিঃদ্রঃ এখানে axis=1 মানে রো। ১ম অ্যারে এর ১ম রো এবং ২য় অ্যারে এর ১ম রো হবে নিউ অ্যারে এর ১ম রো। আর যদি axis=0 দেয়া হতো তাহলে কলাম অনুযায়ী নিউ অ্যারে হতো। সেক্ষেত্রে, ১ম অ্যারে এর ১ম এবং ২য় রো হতো নিউ অ্যারে এর ১ম এবং ২য় রো। ২য় অ্যারে এর ১ম, ২য় হবে নিউ অ্যারে এর ৩য়, ৪র্থ রো।"
+                },
+                {
+                    "definition": "stact() মেথড দিয়ে দুটি অ্যারে জয়েন",
+                    "code": "arr1 = np.array([1, 2, 3])\narr2 = np.array([4, 5, 6])\nnewArr = np.stack((arr1, arr2), axis=1)"
+                },
+                {
+                    "definition": "hstact() মেথড দিয়ে রো ভাবে দুটি অ্যারে জয়েন",
+                    "code": "arr1 = np.array([1, 2, 3])\narr2 = np.array([4, 5, 6])\nnewArr = np.hstack((arr1, arr2))"
+                },
+                {
+                    "definition": "vstact() মেথড দিয়ে কলাম ভাবে দুটি অ্যারে জয়েন",
+                    "code": "arr1 = np.array([1, 2, 3])\narr2 = np.array([4, 5, 6])\nnewArr = np.vstack((arr1, arr2))"
+                },
+                {
+                    "definition": "দুটি অ্যারে এর একই ইনডেক্স নিয়ে dstack() মেথড দিয়ে অ্যারে জয়েন",
+                    "code": "arr1 = np.array([1, 2, 3])\narr2 = np.array([4, 5, 6])\nnewArr = np.dstack((arr1, arr2))\n\nবিঃদ্রঃ এখানে দুটি অ্যারে এড় 0 ইনডেক্স নিয়ে নিউ অ্যারে এর ১ম রো এবং ইনডেক্স 1 নিয়ে নিউ অ্যারে এর ২য় রো। তাই রেজাল্ট হবে [[[1, 4], [2, 5], [3, 6]]]"
+                },
+                {
+                    "definition": "অ্যারে split",
+                    "code": "arr = np.array([1, 2, 3, 4, 5, 6])\nnewArr = np.array_split(arr, 3)\n\nবিঃদ্রঃ এখানে 3 ব্যাবহার করা হয়েছে ৩ ভাগ এ ভাগ করার জন্য"
+                },
+                {
+                    "definition": "রো অনুযায়ী একটি 2D অ্যারে কে ৩টি 2D তে ভাগ(split) করা",
+                    "code": "arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]])\nnewarr = np.array_split(arr, 3, axis=1)"
+                },
+                {
+                    "definition": "where() মেথড দিয়ে অ্যারে থেকে কোন ভেলু সার্চ",
+                    "code": "arr = np.array([1, 2, 3, 4, 5, 4, 4])\nx = np.where(arr == 4)\n\nবিঃদ্রঃ এখানে রেজাল্ট হিসেবে (array([3, 5, 6],) পাবো। আমরা চাইলে whire() মেথড এর মদ্ধে আরও কনডিসন ব্যাবহার করতে পারি। জোর সংখ্যা এর জন্য arr%2 == 0 এরকম।"
+                },
+                {
+                    "definition": "searchsorted() মেথড দিয়ে অ্যারে কে অটো সর্ট করে তারপর কোন ভেলু এর ইনডেক্স সার্চ করা",
+                    "code": "arr = np.array([6, 8, 9, 7])\nx = np.searchsorted(arr, 7)\n\nবিঃদ্রঃ এখানে রেজাল্ট হিসেবে আমরা 1  পাবো, কারণ সর্ট করার পর 7 এর ভেলু ইনডেক্স 1 এ আসবে। মানে সর্ট করা অ্যারে টা হল [6, 7, 8, 9]। তাই রেজাল্ট 1 আসবে, যেহেতু 7 এর ইনডেক্স 1"
+                },
+                {
+                    "definition": "ইনডেক্সগুলি সন্ধান করুন যেখানে 2, 4 এবং 6 মানগুলি ইন্সার্ট করানো উচিত",
+                    "code": "arr = np.array([1, 5, 8, 9])\nx = np.searchsorted(arr, [2, 4, 6])\n\nবিঃদ্রঃ এখানে রেজাল্ট [1, 1, 2]"
+                },
+                {
+                    "definition": "অ্যারে সর্ট (1D)",
+                    "code": "arr = np.array([3, 2, 0, 1])\nnewArr = np.sort(arr)"
+                },
+                {
+                    "definition": "অ্যারে সর্ট (2D)",
+                    "code": "arr = np.array([[3, 2, 4], [5, 0, 1]])\nnewArr = np.sort(arr)\n\nবিঃদ্রঃ এখানে রেজাল্ট [[2, 3, 4], [0, 1, 5]]"
+                },
+                {
+                    "definition": "filter",
+                    "code": "arr = np.array([10, 20, 30, 40])\nx = [True, False, True, False]\nnewArr = arr[x]\n\nবিঃদ্রঃ এখানে রেজাল্ট [10, 30], কারণ নতুন ফিল্টারটিতে কেবলমাত্র সেই মান রয়েছে যেখানে ফিল্টার অ্যারের মানটি সত্য ছিল"
+                },
+                {
+                    "definition": "0 থেকে 1 পর্যন্ত একটি রেনডম পূর্ণসংখ্যা তৈরি করুন",
+                    "code": "from numpy import random\nx = random.rand()"
+                },
+                {
+                    "definition": "0 থেকে 100 পর্যন্ত একটি রেনডম পূর্ণসংখ্যা তৈরি করুন",
+                    "code": "from numpy import random\nx = random.randint(100)"
+                },
+                {
+                    "definition": "৫ সংখ্যার একটি রেনডম অ্যারে তৈরি করা (1D)",
+                    "code": "x=random.randint(100, size=(5))"
+                },
+                {
+                    "definition": "৩ রো এবং ৫ কলাম এর একটি রেনডম পূর্ণসংখ্যার অ্যারে তৈরি করা (2D)",
+                    "code": "x = random.randint(100, size=(3, 5))"
+                },
+                {
+                    "definition": "৩ রো এবং ৫ কলাম এর একটি রেনডম দশমিক সংখ্যার অ্যারে তৈরি করা (2D)",
+                    "code": "x = random.rand(3, 5)"
+                },
+                {
+                    "definition": "প্রদত্ত অ্যারে এর মানগুলি ব্যাবহার করে ৩ রো এবং ৫ কলাম এর একটি 2D অ্যারে তৈরি করুন",
+                    "code": "x = random.choice([3, 5, 7, 9], size=(3, 5))"
                 }
             ]
         }
