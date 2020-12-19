@@ -113,7 +113,7 @@
                     "definition": "অ্যাড্রেস লেখার সেকশন",
                     "code": "<address>...</address>"
                 }, {
-                    "definition": "em",
+                    "definition": "Emphasize",
                     "code": "<em>...</em>"
                 }, {
                     "definition": "strong",
@@ -154,10 +154,10 @@
                     "definition": "ইমেজে বর্ডার",
                     "code": "<img ... border=...>"
                 }, {
-                    "definition": "ইমজের উচ্চতা",
+                    "definition": "ইমেজের উচ্চতা",
                     "code": "<img ... height=...>"
                 }, {
-                    "definition": "ইমজের দৈর্ঘ্য",
+                    "definition": "ইমেজের দৈর্ঘ্য",
                     "code": "<img ... width=...>"
                 }, {
                     "definition": "ইমেজের বিকল্প লেখা",

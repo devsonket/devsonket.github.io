@@ -1,0 +1,508 @@
+{
+    "id": "dart",
+    "title": "ডার্ট প্রোগ্রামিং",
+    "slug": "dart",
+    "description": "ডার্ট হলো টেক-জায়ান্ট গুগলের তৈরি একটি ক্লায়েন্ট অপটিমাইজড প্রোগ্রামিং ল্যাংগুয়েজ। বর্তমানে বহুল জনপ্রিয় ওপেন সোর্স সফটওয়্যার ডেভেলপমেন্ট কিট 'ফ্লাটার' এর মূল ভিত্তি হলো ডার্ট প্রোগ্রামিং ল্যাংগুয়েজ। এই Cheat-Sheet এর মাধ্যমে ডার্ট এর দৈনন্দিন প্রয়োজনীয় টপিকগুলোকে হাইলাইট করা হয়েছে।",
+    "colorPref": "#0078D7",
+    "contents": [
+        {
+            "title": "ভ্যারিয়েবল ও ডেটা টাইপ",
+            "items": [
+                {
+                    "definition": "৬৪-বিট পূর্ণসংখ্যা",
+                    "code": "int"
+                },
+                {
+                    "definition": "৬৪-বিট ফ্লোটিং পয়েন্ট সংখ্যা",
+                    "code": "double"
+                },
+                {
+                    "definition": "বুলিয়ান",
+                    "code": "bool"
+                },
+                {
+                    "definition": "পরিবর্তনশীল টাইপ ও ভ্যালু",
+                    "code": "dynamic"
+                },
+                {
+                    "definition": "অপরিবর্তনশীল টাইপ ও পরিবর্তনশীল ভ্যালু",
+                    "code": "var"
+                },
+                {
+                    "definition": "রান-টাইমে গণনাযোগ্য অপরিবর্তনশীল টাইপ ও অপরিবর্তনশীল ভ্যালু",
+                    "code": "final"
+                },
+                {
+                    "definition": "কম্পাইল-টাইমে গণনাযোগ্য অপরিবর্তনশীল টাইপ ও অপরিবর্তনশীল ভ্যালু",
+                    "code": "const"
+                }
+            ]
+        },
+        {
+            "title": "অপারেটর",
+            "items": [
+                {
+                    "definition": "গতানুগতিক গাণিতিক অপারেটর",
+                    "code": "+, -, *, /, %, ~/"
+                },
+                {
+                    "definition": "অ্যাসাইনমেন্ট অপারেটর",
+                    "code": "=, *=, /=, +=, -=, &=, ^="
+                },
+                {
+                    "definition": "তুলনামূলক অপারেটর",
+                    "code": "==, !=, <, >, <=, >="
+                },
+                {
+                    "definition": "লজিক্যাল অপারেটর",
+                    "code": "&&, ||, !"
+                },
+                {
+                    "definition": "ভ্যালু রিটার্ন করে ইনক্রিমেন্ট/ডিক্রিমেন্ট",
+                    "code": "x++, x--"
+                },
+                {
+                    "definition": "ইনক্রিমেন্ট/ডিক্রিমেন্ট করে ভ্যালু রিটার্ন করা",
+                    "code": "++x, --x"
+                },
+                {
+                    "definition": "টাইপ টেস্টিং অপারেটর",
+                    "code": "is, is!"
+                },
+                {
+                    "definition": "টাইপ কাস্ট ও লাইব্রেরী প্রিফিক্স অপারেটর",
+                    "code": "as"
+                },
+                {
+                    "definition": "নাল কিনা",
+                    "code": "??"
+                },
+                {
+                    "definition": "বিট লজিক্যাল অপারেটর অথবা, বিটওয়াইজ অপারেটর",
+                    "code": "&, |, ^, <<, >>"
+                }
+            ]
+        },
+        {
+            "title": "স্ট্রিং",
+            "items": [
+                {
+                    "definition": "সিঙ্গেল কোটেশন",
+                    "code": "'Dart is cool'"
+                },
+                {
+                    "definition": "ডবল কোটেশন",
+                    "code": "\"Dart is cool\""
+                },
+                {
+                    "definition": "স্ট্রিং ইন্টারপোলেশন",
+                    "code": "print('Flutter docs: ${flutter_docs_url}');"
+                },
+                {
+                    "definition": "কনক্যাট",
+                    "code": "\"Welcome, \" + \"back\""
+                }
+            ]
+        },
+        {
+            "title": "স্ট্রিং মেথড ও প্রপার্টিজ",
+            "items": [
+                {
+                    "definition": "তুলনা করা",
+                    "code": "'abc'.compareTo('def')"
+                },
+                {
+                    "definition": "একটি স্ট্রিং এর মধ্যে একটি অক্ষর খোঁজা",
+                    "code": "'John Doe Jahangir'.contains('Doe')"
+                },
+                {
+                    "definition": "একটি স্ট্রিং একটি নির্দিষ্ট অক্ষর দিয়ে শেষ হয় কিনা",
+                    "code": "'yoDevs'.endsWith('evs')"
+                },
+                {
+                    "definition": "একটি স্ট্রিং একটি নির্দিষ্ট অক্ষর দিয়ে শুরু হয় কিনা",
+                    "code": "'yoDevs'.startsWith('yo')"
+                },
+                {
+                    "definition": "একটি স্ট্রিং এর মধ্যে কোনো একটি বর্ণ/অক্ষর এর সর্বশেষ অবস্থান খোঁজা",
+                    "code": "'yoDevs'.lastIndexOf('D')"
+                },
+                {
+                    "definition": "সাব-স্ট্রিং",
+                    "code": "'my_name_is_khan'.substring(11,15)"
+                },
+                {
+                    "definition": "শুরু ও শেষে সব অতিরিক্ত ফাঁকা স্পেস সরিয়ে দেয়া",
+                    "code": "'  cats are cute  '.trim()"
+                },
+                {
+                    "definition": "একটি বর্ণ/যতিচিহ্ন/অক্ষরকে স্ট্রিং এর সকল জায়গায় অন্য একটি বর্ণ/যতিচিহ্ন/অক্ষর দিয়ে প্রতিস্থাপন করা",
+                    "code": "'cats arE cutE'.replaceAll('E','e')"
+                },
+                {
+                    "definition": "স্ট্রিং এর দৈর্ঘ্য",
+                    "code": "'cat'.length"
+                },
+                {
+                    "definition": "একটি স্ট্রিং খালি কিনা",
+                    "code": "''.isEmpty"
+                }
+            ]
+        },
+        {
+            "title": "টাইপ কনভার্শন",
+            "items": [
+                {
+                    "definition": "স্ট্রিং থেকে ইন্টিজার",
+                    "code": "int.parse('1')"
+                },
+                {
+                    "definition": "স্ট্রিং থেকে ডবল",
+                    "code": "double.parse('3.1415')"
+                },
+                {
+                    "definition": "ইন্টিজার থেকে স্ট্রিং",
+                    "code": "1.toString()"
+                },
+                {
+                    "definition": "ডবল থেকে দশমিকের পর নির্দিষ্ট ঘর পর্যন্ত স্ট্রিং",
+                    "code": "3.1415.toStringAsFixed(2)"
+                },
+                {
+                    "definition": "স্প্লিট করে স্ট্রিং থেকে লিস্ট",
+                    "code": "'Welcome back'.split(' ')  // ['Welcome', 'back']"
+                }
+            ]
+        },
+        {
+            "title": "কালেকশনঃ লিস্ট",
+            "items": [
+                {
+                    "definition": "স্প্রেড অপারেটর",
+                    "code": "['apple', 'orange', ...otherList]"
+                },
+                {
+                    "definition": "নাল স্প্রেড অপারেটর",
+                    "code": "['apple', 'orange', ...?otherList]"
+                },
+                {
+                    "definition": "ম্যাপ করে ট্রান্সফর্মেশন",
+                    "code": "[79,84,99].map((marks) => marks + 1).toList()  // [80, 85, 100]"
+                },
+                {
+                    "definition": "এলিমেন্ট ফিল্টার করা",
+                    "code": "[79,84,99].where((marks) => marks>80)  // (84, 99)"
+                },
+                {
+                    "definition": "রিডিউস করা",
+                    "code": "[80,80,80].reduce((v, e) => v + e)  // 240"
+                },
+                {
+                    "definition": "কালেক্ট থ্রু কন্ডিশান",
+                    "code": "var grade = [if(isPublished) 'A+', 'B+']"
+                },
+                {
+                    "definition": "কালেক্ট থ্রু ইটারেশন",
+                    "code": "[ 79, for (var i in [80, 81]) i , 82]"
+                }
+            ]
+        },
+        {
+            "title": "লিস্টের আরো",
+            "items": [
+                {
+                    "definition": "লিস্ট ফোল্ডিং",
+                    "code": "var x = [1,2,3].fold(5, (i, j) => i + j);"
+                },
+                {
+                    "definition": "লিস্টের শেষে আরেকটা লিস্টের এলিমেন্টগুলি যোগ করা",
+                    "code": "[1, 2, 3].followedBy([4, 5])"
+                },
+                {
+                    "definition": "একটি কন্ডিশন লিস্টের যেকোনো একটি এলিমেন্টকে স্যাটিসফাই করে কিনা",
+                    "code": "[71, 75, 81].any((elem) => elem > 80)"
+                },
+                {
+                    "definition": "একটি কন্ডিশন লিস্টের সবগুলো এলিমেন্টকে স্যাটিসফাই করে কিনা",
+                    "code": "[71, 75, 81].every((elem) => elem > 80)"
+                },
+                {
+                    "definition": "লিস্টকে দৈবভাবে পুনর্বিন্যস্ত করা",
+                    "code": "var list = [1, 2, 3]; list.shuffle();"
+                },
+                {
+                    "definition": "সেট থেকে লিস্টে কনভার্শন",
+                    "code": "List.from({1, 2, 3})"
+                },
+                {
+                    "definition": "লিস্ট এক্সপান্ড",
+                    "code": "[1, 3, 5].expand((i) => [i, ++i]).toList()  // [1, 2, 3, 4, 5, 6]"
+                },
+                {
+                    "definition": "লিস্ট থেকে প্রথম n সংখ্যক এলিমেন্ট নেয়া",
+                    "code": "[1, 3, 5, 7].take(2)"
+                },
+                {
+                    "definition": "লিস্ট থেকে প্রথম n সংখ্যক এলিমেন্ট বাদে বাকিগুলো নেয়া",
+                    "code": "[1, 3, 5, 7].skip(2)"
+                }
+            ]
+        },
+        {
+            "title": "কালেকশনঃ সেট",
+            "items": [
+                {
+                    "definition": "নির্দিষ্ট টাইপের ফাঁকা সেট",
+                    "code": "<int>{}"
+                },
+                {
+                    "definition": "এডিশন/রিমুভ করা",
+                    "code": "add(10), remove(10)"
+                },
+                {
+                    "definition": "লিস্ট থেকে সেটে এলিমেন্ট এডিশন",
+                    "code": "addAll([1, 2, 3, 4])"
+                },
+                {
+                    "definition": "দুটি সেটের মধ্যে প্রতিচ্ছেদ করা",
+                    "code": "{1, 2, 3}.intersection({3, 4, 5})"
+                },
+                {
+                    "definition": "দুটি সেটের সাধারণ উপাদানগুলো একত্রিত করা",
+                    "code": "{1, 2, 3}.union({3, 4, 5})"
+                }
+            ]
+        },
+        {
+            "title": "কালেকশনঃ ম্যাপ",
+            "items": [
+                {
+                    "definition": "স্ট্রিং টু স্ট্রিং",
+                    "code": "var doraemon = {'type':'Robot', 'cameFrom':'22nd century', 'friend':'Nobita'};"
+                },
+                {
+                    "definition": "ম্যাপকে এক্সেস করা",
+                    "code": "doraemon['type']"
+                },
+                {
+                    "definition": "ম্যাপে একটি কী-(Key) এর অস্তিত্ব আছে কিনা",
+                    "code": "doraemon.containsKey('cameFrom')"
+                },
+                {
+                    "definition": "ম্যাপে একটি ভ্যালুর অস্তিত্ব আছে কিনা",
+                    "code": "doraemon.containsValue('Nobita')"
+                },
+                {
+                    "definition": "ম্যাপের সকল কী প্রিন্ট করা",
+                    "code": "doraemon.keys.forEach(print)"
+                },
+                {
+                    "definition": "ম্যাপের সকল ভ্যালু প্রিন্ট করা",
+                    "code": "doraemon.values.forEach(print);"
+                },
+                {
+                    "definition": "ম্যাপের কী এবং ভ্যালুগুলোর ওপর ইটারেশন",
+                    "code": "doraemon.forEach((k, v) => print('Key : $k, Value : $v'));"
+                }
+            ]
+        },
+        {
+            "title": "অ্যাসিনক্রোনাস প্রোগ্রামিং",
+            "items": [
+                {
+                    "definition": "অপারেশন রিপ্রেজেন্টেশানঃ ফিউচার",
+                    "code": "Future<void> asyncTask() => Future.delayed(Duration(seconds: 2), () => print('It takes 2 seconds'));"
+                },
+                {
+                    "definition": "অ্যাসিনক্রোনাস ফাংশান ও রিটার্ন টাইপ",
+                    "code": "Future<String> getMessage() async { ··· }"
+                },
+                {
+                    "definition": "অ্যাসিনক্রোনাস ফাংশান কে কল করা",
+                    "code": "await getMessage()"
+                },
+                {
+                    "definition": "অ্যাসিনক্রোনাস ফাংশানঃ এরোর হ্যান্ডলিং-১",
+                    "code": "Future<String> login() async { try{...} catch(error){...} }"
+                },
+                {
+                    "definition": "অ্যাসিনক্রোনাস ফাংশানঃ এরোর হ্যান্ডলিং-২",
+                    "code": "Future<void> asyncTask() => Future.delayed(Duration(seconds: 2), () => throw '404 not found'));"
+                }
+            ]
+        },
+        {
+            "title": "ফাংশান",
+            "items": [
+                {
+                    "definition": "অ্যারো দিয়ে এক-লাইনে ফাংশান",
+                    "code": "int square(int n) => n*n;"
+                },
+                {
+                    "definition": "পজিশনাল প্যারামিটার",
+                    "code": "bool isEven(int n) => n%2==0;"
+                },
+                {
+                    "definition": "ঐচ্ছিক নেইমড প্যারামিটার",
+                    "code": "String chat(int positional, {int named}){ ... }"
+                },
+                {
+                    "definition": "ঐচ্ছিক পজিশনাল প্যারামিটার",
+                    "code": "String chat(int mandatory, [int optional]){ ... }"
+                },
+                {
+                    "definition": "ডিফল্ট ভ্যালু",
+                    "code": "String calculate({int a = 1}){ ... }"
+                },
+                {
+                    "definition": "প্যারামিটার হিসেবে ফাংশান",
+                    "code": "void go(int Function(int) move) { ... }"
+                }
+            ]
+        },
+        {
+            "title": "কন্ট্রোল ফ্লো",
+            "items": [
+                {
+                    "definition": "হোয়াইল লুপ",
+                    "code": "while(condition) { ... }"
+                },
+                {
+                    "definition": "ডু হোয়াইল লুপ",
+                    "code": "do { ... } while(condition);"
+                },
+                {
+                    "definition": "কন্ডিশন-একশান ফর লুপ",
+                    "code": "for(condition) { ... }"
+                },
+                {
+                    "definition": "লিস্ট এক্সেসের জন্য ফর লুপ",
+                    "code": "for(var elements in list) { ... }"
+                },
+                {
+                    "definition": "ফর-ইচ লুপের সাথে আর্গুমেন্ট হিসেবে ফাংশান",
+                    "code": "[1, 2, 3, 4].forEach(print);"
+                },
+                {
+                    "definition": "সেটকে ফর-ইচ দিয়ে এক্সেস করা",
+                    "code": "Set.from([1, 2, 3]).forEach((element) => print(element)); "
+                }
+            ]
+        },
+        {
+            "title": "তারিখ ও সময়",
+            "items": [
+                {
+                    "definition": "বর্তমান তারিখ ও সময়",
+                    "code": "DateTime.now()"
+                },
+                {
+                    "definition": "বর্তমান বছর, মাস, দিন",
+                    "code": "DateTime.now().year, DateTime.now().month, DateTime.now().day"
+                },
+                {
+                    "definition": "বর্তমান সময়ঃ ঘন্টা, মিনিট, সেকেন্ড",
+                    "code": "DateTime.now().hour, DateTime.now().minute, DateTime.now().second"
+                },
+                {
+                    "definition": "আজকের \"দিন ও সময়\" থেকে কয়েক \"দিন ও সময়\" পরে",
+                    "code": "DateTime.now().add(Duration(days: 3, hours: 9, minutes: 27))"
+                },
+                {
+                    "definition": "একটি তারিখ আরেকটি তারিখের পরে কিনা",
+                    "code": "DateTime.utc(2020, 12, 16).isAfter(DateTime.utc(2019, 03, 26))"
+                },
+                {
+                    "definition": "একটি তারিখের 'বার/দিন' চেক করা",
+                    "code": "DateTime.utc(2020, 03, 26).weekday == DateTime.sunday"
+                },
+                {
+                    "definition": "দিনের হিসেবে দুটি তারিখের পার্থক্য",
+                    "code": "DateTime.utc(2020, 12, 16).difference(DateTime.utc(2020, 03, 26)).inDays"
+                },
+                {
+                    "definition": "স্ট্রিং থেকে ডেট-টাইমে কনভার্ট করা",
+                    "code": "var parsedDate = DateTime.parse('1971-12-16 00:00:00.000');"
+                }
+            ]
+        },
+        {
+            "title": "অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং",
+            "items": [
+                {
+                    "definition": "ক্লাস",
+                    "code": "class BirthCertificate { ... }"
+                },
+                {
+                    "definition": "ক্লাস প্রপার্টিজ",
+                    "code": "class BirthCertificate { String name; int age; }"
+                },
+                {
+                    "definition": "শর্ট ফর্মের ডিফল্ট কন্স্ট্রাক্টর",
+                    "code": "BirthCertificate(this.name, this.age);"
+                },
+                {
+                    "definition": "নেইমড কন্স্ট্রাক্টর ও ডিফল্ট কন্স্ট্রাক্টরকে কল করা",
+                    "code": "BirthCertificate.newBornBaby(String onlyName) : this(onlyName, 0);"
+                },
+                {
+                    "definition": "গেটার",
+                    "code": "String get getInfo { ... }"
+                },
+                {
+                    "definition": "সেটার",
+                    "code": "set setInfo(String info) { ... }"
+                },
+                {
+                    "definition": "এবস্ট্রাক্ট ক্লাস",
+                    "code": "abstract class Person { ... }"
+                },
+                {
+                    "definition": "মিক্সিন ডেফিনিশান",
+                    "code": "mixin Engineer { ... }"
+                },
+                {
+                    "definition": "এবস্ট্রাক্ট ক্লাস ইনহেরিট করা ও মিক্সিনের ব্যাবহার",
+                    "code": "class Programmer extends Person with Engineer { ... }"
+                }
+            ]
+        },
+        {
+            "title": "পাব্ সিএলআই",
+            "items": [
+                {
+                    "definition": "প্রোজেক্টের সবগুলো প্যাকেজ ডাউনলোড করা",
+                    "code": "pub get"
+                },
+                {
+                    "definition": "লোকাল ক্যাশ থেকে প্যাকেজ সংযুক্ত করা",
+                    "code": "pub get --offline"
+                },
+                {
+                    "definition": "লোকাল ক্যাশে একটি প্যাকেজ সংযুক্ত করা",
+                    "code": "pub cache add <প্যাকেজের নাম> --version \"<প্যাকেজের ভার্সন>\""
+                },
+                {
+                    "definition": "সম্পাদনার কারণে প্যাকেজ মেরামতের জন্য পুনরায় ইনস্টল করা",
+                    "code": "pub cache repair"
+                },
+                {
+                    "definition": "ব্যবহৃত প্যাকেজগুলোকে ট্রি আকারে প্রিন্ট করা",
+                    "code": "pub deps"
+                },
+                {
+                    "definition": "ব্যবহৃত কোনো প্যাকেজের নতুন ভার্সন এসেছে কিনা খুঁজে দেখা",
+                    "code": "pub outdated"
+                },
+                {
+                    "definition": "ব্যবহৃত প্যাকেজগুলোকে নতুন ভার্সনে আপগ্রেড করা",
+                    "code": "pub upgrade"
+                },
+                {
+                    "definition": "সার্বজনীন উপলব্ধ প্যাকেজ সচল করা",
+                    "code": "pub global activate <প্যাকেজের নাম>"
+                }
+            ]
+        }
+    ]
+}

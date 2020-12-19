@@ -1,0 +1,407 @@
+{
+    "id": "provat-keymap",
+    "title": "প্রভাত বাংলা কীবোর্ড",
+    "slug": "provat-keymap",
+    "description": "ইউনিকোড ভিত্তিক জনপ্রিয় বাংলা কীবোর্ড প্রভাত ব্যবহার করে দ্রুতগতিতে বাংলা লেখার উপায়। প্রভাতে কোন কী-তে কোন বর্ণ তা নিচে দেয়া হলঃ",
+    "colorPref": "#4CAF50",
+    "contents": [
+      {
+        "title": "স্বরবর্ণ",
+        "items": [
+          {
+            "definition": "অ",
+            "code": "A"
+          },
+          {
+            "definition": "আ",
+            "code": "v"
+          },
+          {
+            "definition": "ই",
+            "code": "I"
+          },
+          {
+            "definition": "ঈ",
+            "code": "E"
+          },
+          {
+            "definition": "উ",
+            "code": "U"
+          },
+          {
+            "definition": "ঊ",
+            "code": "W"
+          }
+        ]
+      },
+      {
+        "title": "স্বরবর্ণ",
+        "items": [
+          {
+            "definition": "ঋ",
+            "code": "V"
+          },
+          {
+            "definition": "এ",
+            "code": "y"
+          },
+          {
+            "definition": "ঐ",
+            "code": "Y"
+          },
+          {
+            "definition": "ও",
+            "code": "o"
+          },
+          {
+            "definition": "ঔ",
+            "code": "O"
+          }
+        ]
+      },
+      {
+        "title": "ব্যাঞ্জনবর্ণ",
+        "items": [
+          {
+            "definition": "ক",
+            "code": "k"
+          },
+          {
+            "definition": "খ",
+            "code": "K"
+          },
+          {
+            "definition": "গ",
+            "code": "g"
+          },
+          {
+            "definition": "ঘ",
+            "code": "G"
+          },
+          {
+            "definition": "ঙ",
+            "code": "M"
+          }
+        ]
+      },
+      {
+        "title": "ব্যাঞ্জনবর্ণ",
+        "items": [
+          {
+            "definition": "চ",
+            "code": "c"
+          },
+          {
+            "definition": "ছ",
+            "code": "C"
+          },
+          {
+            "definition": "জ",
+            "code": "j"
+          },
+          {
+            "definition": "ঝ",
+            "code": "J"
+          },
+          {
+            "definition": "ঞ",
+            "code": "& (& = shift+7)"
+          }
+        ]
+      },
+      {
+        "title": "ব্যাঞ্জনবর্ণ",
+        "items": [
+          {
+            "definition": "ট",
+            "code": "t"
+          },
+          {
+            "definition": "ঠ",
+            "code": "T"
+          },
+          {
+            "definition": "ড",
+            "code": "d"
+          },
+          {
+            "definition": "ঢ",
+            "code": "D"
+          },
+          {
+            "definition": "ণ",
+            "code": "N"
+          }
+        ]
+      },
+      {
+        "title": "ব্যাঞ্জনবর্ণ",
+        "items": [
+          {
+            "definition": "ত",
+            "code": "f"
+          },
+          {
+            "definition": "থ",
+            "code": "F"
+          },
+          {
+            "definition": "দ",
+            "code": "q"
+          },
+          {
+            "definition": "ধ",
+            "code": "Q"
+          },
+          {
+            "definition": "ন",
+            "code": "n"
+          }
+        ]
+      },
+      {
+        "title": "ব্যাঞ্জনবর্ণ",
+        "items": [
+          {
+            "definition": "প",
+            "code": "p"
+          },
+          {
+            "definition": "ফ",
+            "code": "P"
+          },
+          {
+            "definition": "ব",
+            "code": "b"
+          },
+          {
+            "definition": "ভ",
+            "code": "B"
+          },
+          {
+            "definition": "ম",
+            "code": "m"
+          }
+        ]
+      },
+      {
+        "title": "ব্যাঞ্জনবর্ণ",
+        "items": [
+          {
+            "definition": "য",
+            "code": "Z"
+          },
+          {
+            "definition": "র",
+            "code": "r"
+          },
+          {
+            "definition": "ল",
+            "code": "l"
+          },
+          {
+            "definition": "শ",
+            "code": "x"
+          },
+          {
+            "definition": "ষ",
+            "code": "S"
+          }
+        ]
+      },
+      {
+        "title": "ব্যাঞ্জনবর্ণ",
+        "items": [
+          {
+            "definition": "স",
+            "code": "s"
+          },
+          {
+            "definition": "হ",
+            "code": "h"
+          },
+          {
+            "definition": "ড়",
+            "code": "R"
+          },
+          {
+            "definition": "ঢ়",
+            "code": "X"
+          }
+        ]
+      },
+      {
+        "title": "ব্যাঞ্জনবর্ণ",
+        "items": [
+          {
+            "definition": "য়",
+            "code": "z"
+          },
+          {
+            "definition": "ৎ",
+            "code": "* (* = shift+8)"
+          },
+          {
+            "definition": "ং",
+            "code": "L"
+          },
+          {
+            "definition": "ঃ",
+            "code": "H"
+          },
+          {
+            "definition": "ঁ",
+            "code": ">"
+          }
+        ]
+      },
+      {
+        "title": "কার",
+        "items": [
+          {
+            "definition": "া (আ-কার)",
+            "code": "a"
+          },
+          {
+            "definition": "ি (ই-কার)",
+            "code": "i"
+          },
+          {
+            "definition": "ী (ঈ-কার)",
+            "code": "e"
+          },
+          {
+            "definition": "ু (উ-কার) ",
+            "code": "u"
+          },
+          {
+            "definition": "ূ (ঊ-কার)",
+            "code": "w"
+          }
+        ]
+      },
+      {
+        "title": "কার",
+        "items": [
+          {
+            "definition": "ৃ (ঋ-কার)",
+            "code": "<"
+          },
+          {
+            "definition": "ে (এ-কার)",
+            "code": "["
+          },
+          {
+            "definition": "ৈ (ঐ-কার) ",
+            "code": "{"
+          },
+          {
+            "definition": "ো (ও-কার) ",
+            "code": "]"
+          },
+          {
+            "definition": "ৌ (ঔ-কার) ",
+            "code": "}"
+          }
+        ]
+      },
+      {
+        "title": "ফলা",
+        "items": [
+          {
+            "definition": "্য (য-ফলা)",
+            "code": "(যে বর্ণে য-ফলা দিতে চান সেটি এখানে বসাতে হবে)/Z"
+          },
+          {
+            "definition": "্ব (ব-ফলা)",
+            "code": "(যে বর্ণে ব-ফলা দিতে চান সেটি এখানে বসাতে হবে)/b"
+          },
+          {
+            "definition": "্র (র-ফলা) ",
+            "code": "(যে বর্ণে র-ফলা দিতে চান সেটি এখানে বসাতে হবে)/r,"
+          }
+        ]
+      },
+      {
+        "title": "ফলা",
+        "items": [
+          {
+            "definition": "্ল (ল-ফলা)",
+            "code": "(যে বর্ণে ল-ফলা দিতে চান সেটি এখানে বসাতে হবে)/l"
+          },
+          {
+            "definition": "্ম (ম-ফলা) ",
+            "code": "(যে বর্ণে ম-ফলা দিতে চান সেটি এখানে বসাতে হবে)/m"
+          },
+          {
+            "definition": "র্ (রেফ)",
+            "code": "r/(যে বর্ণে রেফ দিতে চান সেটি এখানে বসাতে হবে)"
+          }
+        ]
+      },
+      {
+        "title": "যুক্তবর্ণ",
+        "items": [
+          {
+            "definition": "ক্ষ",
+            "code": "k/S"
+          },
+          {
+            "definition": "হ্ম ( হ+ম)",
+            "code": "h/m"
+          },
+          {
+            "definition": "জ্ঞ (ঞ+জ)",
+            "code": "j/&"
+          },
+          {
+            "definition": "ঞ্জ (ঞ+জ)",
+            "code": "&/j"
+          }
+        ]
+      },
+      {
+        "title": "যুক্তবর্ণ",
+        "items": [
+          {
+            "definition": "ঞ্চ (ঞ+চ)",
+            "code": "&/c"
+          },
+          {
+            "definition": "ঞ্ছ (ঞ+ছ)",
+            "code": "&/C"
+          },
+          {
+            "definition": "ষ্ণ (ষ+ণ)",
+            "code": " S/N"
+          },
+          {
+            "definition": "ত্ত (ত+ত)",
+            "code": "f/f"
+          }
+        ]
+      },
+      {
+        "title": "যুক্তবর্ণ",
+        "items": [
+          {
+            "definition": "হ্ণ (হ+ণ)",
+            "code": "h/N"
+          },
+          {
+            "definition": "হ্ন (হ+ন)",
+            "code": "h/n"
+          },
+          {
+            "definition": "ঙ্ক (ঙ+ক)",
+            "code": "M/k"
+          },
+          {
+            "definition": "র‍্য (র+য)",
+            "code": "r`/Z"
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -6,6 +6,24 @@
   "colorPref": "#0288d1",
   "contents": [
     {
+      "title": "রিঅ্যাক্ট JS ইন্সটল করা",
+      "items": [
+        {
+          "definition": "npx এর সাহায্যে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
+          "code": "npx create-react-app <project-name>"
+        },
+        {
+          "definition": "npm এর সাহায্যে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
+          "code": "npm init react-app <project-name>"
+        },
+        {
+          "definition": "yarn এর সাহায্যে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
+          "code": "yarn create react-app <project-name>"
+        }
+        
+      ]
+    },
+    {
       "title": "রিঅ্যাক্ট JS এ 'Hello world' প্রিন্ট করা",
       "items": [
         {
@@ -30,7 +48,7 @@
           "code": "class"
         },
         {
-          "definition": "লোকাল স্টেটটা ডিফাইন করে এবং কম্পোনেন্ট মাউন্ট হওয়ার আগে ফায়ার করবে",
+          "definition": "লোকাল স্টেট ডিফাইন করে এবং কম্পোনেন্ট মাউন্ট হওয়ার আগে ফায়ার করবে",
           "code": "constructor(props)"
         },
         {
@@ -80,19 +98,19 @@
           "code": "componentWillUnmount()"
         },
         {
-          "definition": "যখন কম্পোনেন্ট নতুন প্রপস রিসীভড করে",
+          "definition": "কম্পোনেন্ট নতুন কোন প্রপস  গ্রহন করলে",
           "code": "componentWillReceiveProps()"
         },
         {
-          "definition": "কম্পোনেন্ট নতুন প্রপস রিসীভড করার পর রেন্ডারিং এর আগে ইনভোক হয়",
+          "definition": "কম্পোনেন্ট নতুন প্রপস গ্রহন করার পর এবং রেন্ডারিং এর আগে ইনভোক হয়",
           "code": "shouldComponentUpdate() "
         },
         {
-          "definition": "immediately ইনভোক হয় নতুন প্রপস অথবা স্টেট পরিবর্তন হয়",
+          "definition": "নতুন প্রপস অথবা স্টেট পরিবর্তন হওয়ার সাথে সাথে  ইনভোক হয় ",
           "code": "componentWillUpdate()"
         },
         {
-          "definition": "কম্পোনেন্ট নতুন প্রপস রিসীভড কর রেন্ডারিং এর পর ইনভোক হয়",
+          "definition": "কম্পোনেন্ট নতুন প্রপস গ্রহন করে তা রেন্ডার করার পর  ইনভোক হয়",
           "code": "componentDidUpdate()"
         }
       ]
@@ -127,6 +145,56 @@
         {
           "definition": "যে হুক দ্বারা DOM measurements(scroll event, viewport height/width) করা যায় এবং synchronously re-render হতে থাকে state আপডেটের পর",
           "code": "useLayoutEffect(() => {}, [dependencies])"
+        }
+      ]
+    },
+    {
+      "title": "রিঅ্যাক্ট রাউটার হুক্স",
+      "items": [
+        {
+          "definition": "ডাইন্যামিক্যালি নেভিগেশন বা রুট পরিবর্তন করতে চাইলে",
+          "code": "useHistory()"
+        },
+        {
+          "definition": "ডাইন্যামিক্যালি URL প্যারামিটার সেট করতে চাইলে",
+          "code": "useParams()"
+        },
+        {
+          "definition": "বর্তমান URL এর অবস্থান জানতে বা ব্যাবহার করতে হলে",
+          "code": "useLocation()"
+        }
+      ]
+    },
+    {
+      "title": "রিঅ্যাক্ট রাউটার v5",
+      "items": [
+        {
+          "definition": "রাউটার ইন্সটল",
+          "code": "npm install react-router-dom"
+        },
+        {
+          "definition": "Router সেট করতে App.js এ যুক্ত করুন",
+          "code": "import { BrowserRouter as Router } from 'react-router-dom'"
+        },
+        {
+          "definition": "Router Render করতে App.js এ যুক্ত করুন",
+          "code": "import { BrowserRouter as Router, Route } from 'react-router-dom'"
+        },
+        {
+          "definition": "লিংক বা সুইচ এর মাধ্যমে পেইজ পরিবর্তন করতে App.js এ যুক্ত করুন",
+          "code": "import { BrowserRouter as Router, Route, Link or Switch } from 'react-router-dom'"
+        },
+        {
+          "definition": "একটি উদাহরণ",
+          "code": "<Router> <Switch> <Route path='/about' component={About}/> </Switch> </Router>"
+        },
+        {
+          "definition": "Route-এ প্যারামিটার পাস করতে হলে",
+          "code": "<Router> <Switch> <Route path='/about/:param' component={About}/> </Switch> </Router>"
+        },
+        {
+          "definition": "Protected Route এর একটি উদাহরণ",
+          "code": "<Switch> <Route path='/home' component={Home}/> {isAuthenticated ? <> <Route path='/about/:parma' component ={About} </> : <Redirect to='/home'/> } </Switch>"
         }
       ]
     }

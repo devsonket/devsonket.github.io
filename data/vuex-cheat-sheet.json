@@ -1,0 +1,76 @@
+{
+  "id": "vuex",
+  "title": "ভিউ এক্স",
+  "slug": "vuex",
+  "description": "ভিউ এক্স হচ্ছে ভিউ জেএস  অ্যাপ্লিকেশন এর জন্য একটি স্টেট ম্যানেজমেন্ট প্যাটার্ন + লাইব্রেরী। এটি একটি অ্যাপ্লিকেশনের সমস্ত কম্পোনেন্টের (components) জন্য একটি কেন্দ্রীভূত স্টোর হিসাবে কাজ করে, এবং নিশ্চিত করে যেন স্টেটগুলো শুধুমাত্র প্রত্যাশিতভাবে মিউটেট হতে পারে। এটা ভিউ এর অফিশিয়াল ডেভটুল এক্সটেনশন এর সাথেও পুরোপুরি খাপ খায়, যা জিরো-কনফিগ টাইম ট্রাভেল ডিবাগিং এবং স্টেট স্নাপশট ইমপোর্ট/এক্সপোর্ট এর মত জটিল কাজ করতে সাহায্য করে।",
+  "colorPref": "#41B883",
+  "contents": [
+    {
+      "title": "Vuex এর স্টোর  যদি বানাতে চাও",
+      "items": [
+        {
+          "definition": "একটি নতুন স্টোর  শুরু করতে চাইলে ",
+          "code": "new Vuex.Store({ //all properties will go here })"
+        },
+        {
+          "definition": " স্টোর এর প্রপার্টি ( স্ট্রিক্ট মোড ) - স্ট্রিক্ট মোড ট্রু থাকলে , ভিউএক্স এর স্টেট যদি মিউটেশন হ্যান্ডেলার এর বাইরে মিউটেট করা হয় তাহলে এরর থ্রো করবে ",
+          "code": "strict: true"
+        },
+        {
+          "definition": "ভিউএক্সের স্টোর এর ভিতর স্টেট রাখা ",
+          "code": "const store = new Vuex.Store({\nstate: { \n todos: [ \n \t { id: 1, text: '...', done: true }, \n \t { id: 2, text: '...', done: false } \n ] \n } \n })"
+        },
+        {
+          "definition": "ভিউএক্সের স্টোর এর ভিতর গেটার রাখা",
+		  "code": "const store = new Vuex.Store({ \n...\ngetters: {\n \t doneTodos:\n \t\t state => {\n \t \t \t return state.todos.filter(todo => todo.done)\n \t}\n}\n})"
+		},
+		{
+			"definition": "ভিউএক্সের স্টোর এর ভিতর মিঊটেশন রাখা",
+			"code": "const store = new Vuex.Store({\n...\nmutations: {\n \t anyMutationName (state) {\n// mutate any state here\n \t }\n}\n})"
+		},
+		{
+			"definition": "ভিউএক্সের স্টোর এর ভিতর একশন   রাখা - মিঊটেশন এর ভিতর সরাসরি মিউটেট না করে একশন এর ভিতরে  মিউটেট করা উচিৎ ",
+			"code": "const store = new Vuex.Store({\n...\nactions: {\n \t anyActionName (context) {\n \t \t context.commit('anyMutationName')\n \t}\n}\n})"
+		},
+		{
+			"definition": "যখন আমরা লার্জ স্কেলে কোন প্রজেক্ট করি তখন খুব সহজেই আমাদের স্টোর ফাইল বিশাল বড় হয়ে যেতে পারে , তাই  আমরা আমাদের স্টোর কে ছোট ছোট ভাগে ভাগ করে নিতে পারি মডিউল করার মাধ্যমে।",
+			"code": "const moduleA = {\n \t state: () => ({ ...\n\t}),\n\tmutations: { ...\n\t},\n\tactions: { ...\n\t},\n\tgetters: { ...\n\t}\n\t}\n\n\nconst moduleB = {\n\tstate: () => ({ ...\n\t}),\n\tmutations: { ...\n\t},\n\tactions: { ...\n\t}\n}\n\n\nconst store = new Vuex.Store({\n\tmodules: {\n\ta: moduleA,\n\tb: moduleB\n\t}\n})\n\n\nstore.state.a // -> `moduleA`'s state\nstore.state.b // -> `moduleB`'s state\n"
+		  }
+      ]
+    },
+    {
+      "title": "ভিউএক্স এ কম্পোনেন্টের স্টেট হেল্পার মেথড ",
+      "items": [
+        {
+          "definition": "স্টোর এর যেকোন স্টেট কে এক্সেস করার জন্য ",
+          "code": "mapState()"
+        },
+        {
+          "definition": "স্টোর এর যেকোন গেটার  কে এক্সেস করার জন্য ",
+          "code": " mapGetters()"
+        },
+        {
+          "definition": "স্টোর এর যেকোন একশন   কে কম্পোনেন্ট এর ভিতর এভেইলেভেল করার জন্য ",
+          "code": " mapActions()"
+		},
+		{
+			"definition": "স্টোর এর যেকোন মিউটেশন কে কম্পোনেন্ট এর ভিতর এভেইলেভেল করার জন্য , যা পরে কম্পোনেন্ট এর নিজস্ব ফাংশন এর মতই রান করা যায় ",
+			"code": "mapMutations()"
+		}
+      ]
+    },
+    {
+      "title": "ভিউএক্স এর স্টোর এর কিছু ইন্সট্যান্স মেথড  ",
+      "items": [
+        {
+          "definition": "মিউটেশন একশন এর ভিতরে  করার জন্য ",
+          "code": "commit('anyMutationName')"
+        },
+        {
+          "definition": "একশন কে ট্রিগার করার জন্য ",
+          "code": " dispatch('anyActionName')"
+        }
+      ]
+    }
+  ]
+}

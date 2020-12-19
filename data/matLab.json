@@ -1,0 +1,447 @@
+{
+  "id": "matlab",
+  "title": "ম্যাটল্যাব",
+  "slug": "matlab",
+  "description": "ম্যাটল্যাব হল ম্যাথওয়ার্কস দ্বারা নির্মিত একটি স্বতন্ত্র মাল্টি-প্যারাডিয়াম প্রোগ্রামিং ভাষা এবং সংখ্যাগত কম্পিউটিং পরিবেশ। ম্যাটল্যাব ম্যাট্রিক্স ম্যানিপুলেশনস, ফাংশন এবং ডেটার প্লট করা, অ্যালগোরিদম বাস্তবায়ন, ইউজার ইন্টারফেস তৈরি এবং অন্যান্য ভাষায় লিখিত প্রোগ্রামগুলির সাথে ইন্টারফেসিংয়ের অনুমতি দেয়। ",
+  "colorPref": "#13aa52",
+  "contents": [
+    {
+      "title": "ম্যাটল্যাব ফাইল এক্সটেনশনস (File extensions)",
+      "items": [
+        {
+          "definition": "ম্যাটল্যাব এর ফাংশন, ক্লাস নিয়ে কাজ করতে ব্যবহার করা হয়",
+          "code": ".m"
+        },
+        {
+          "definition": "ম্যাটল্যাব এর ডাটা স্টোরেজ ওয়ার্কস্পেস নিয়ে কাজ করতে ব্যবহার করা হয়",
+          "code": ".mat"
+        },
+        {
+          "definition": "ম্যাটল্যাব এর ফিগার ওর গুই টেম্পলেট নিয়ে কাজ করতে ব্যবহার করা হয়",
+          "code": ".fig"
+        },
+        {
+          "definition": "ম্যাটল্যাব এর প্রোটেক্টেড ফাংশন ফাইল নিয়ে কাজ করতে ব্যবহার করা হয়",
+          "code": ".p"
+        },
+        {
+          "definition": "ম্যাটল্যাব এর লাইভ স্ক্রিপ্ট নিয়ে কাজ করতে ব্যবহার করা হয়",
+          "code": ".mlx"
+        },
+        {
+          "definition": "ম্যাটল্যাব এর এক্সেকিউটাবল নিয়ে কাজ করতে ব্যবহার করা হয়",
+          "code": ".mex"
+        },
+        {
+          "definition": "ম্যাটল্যাব এর অ্যাপ ডিজাইনার টেম্পলেট নিয়ে কাজ করতে ব্যবহার করা হয়",
+          "code": ".mlapp"
+        },
+        {
+          "definition": "ম্যাটল্যাব এর শিমুলিন্ক মডেল নিয়ে কাজ করতে ব্যবহার করা হয়",
+          "code": ".mdl .slx"
+        },
+        {
+          "definition": "ম্যাটল্যাব এর শিমুলিন্ক প্রোটেক্টেড মডেল নিয়ে কাজ করতে ব্যবহার করা হয়",
+          "code": ".mdlp .slxp"
+        },
+        {
+          "definition": "ম্যাটল্যাব এর টুলবাক্স ফাইল নিয়ে কাজ করতে ব্যবহার করা হয়",
+          "code": ".mltbx"
+        }
+      ]
+    },
+    {
+      "title": "কমন ডাটা টাইপস (Common data types)",
+      "items": [
+        {
+          "definition": "সিঙ্গেল প্রিসিশন নিউমেরিকাল ডাটা (৩২ বিটস)",
+          "code": "single"
+        },
+        {
+          "definition": "ডাবল প্রিসিশন নিউমেরিকাল ডাটা (৬৪ বিটস)",
+          "code": "double"
+        },
+        {
+          "definition": "ক্যারেক্টার অ্যারে",
+          "code": "char"
+        },
+        {
+          "definition": "স্ট্রিং অ্যারে",
+          "code": "string"
+        },
+        {
+          "definition": "বুলিয়ান (০/১)",
+          "code": "logical"
+        },
+        {
+          "definition": "স্ট্রাকচার অ্যারে",
+          "code": "struct"
+        },
+        {
+          "definition": "সেল অ্যারে",
+          "code": "cell"
+        }
+      ]
+    },
+    {
+      "title": "কীবোর্ড শর্টকাট (Keyboard shortcuts)",
+      "items": [
+        {
+          "definition": "ডিসপ্লেসস হটকিজ",
+          "code": "Alt"
+        },
+        {
+          "definition": "হেল্প",
+          "code": "F1"
+        },
+        {
+          "definition": "রান কোড",
+          "code": "F5"
+        },
+        {
+          "definition": "রান হাইলাইটেড কোড",
+          "code": "F9"
+        },
+        {
+          "definition": "রান কোড লাইন",
+          "code": "F10"
+        },
+        {
+          "definition": "রান কোড লাইন, এন্টার ফাংশন",
+          "code": "F11"
+        },
+        {
+          "definition": "লিভ ডিবাগার",
+          "code": "Shift+F5"
+        },
+        {
+          "definition": "ইনসার্ট ব্রেক পয়েন্ট",
+          "code": "F12"
+        },
+        {
+          "definition": "মুভ বিটউইন টেব",
+          "code": "Ctrl+Page up/down"
+        },
+        {
+          "definition": "মুভ বিটউইন কম্পোনেন্টস",
+          "code": "Ctrl+shift"
+        },
+        {
+          "definition": "ইন্টারআপ কোড",
+          "code": "Ctrl+C"
+        },
+        {
+          "definition": "ওপেন হাইলাইটেড কোড ফাইল",
+          "code": "Ctrl+D"
+        },
+        {
+          "definition": "কমেন্ট / আনকমেন্ট লাইন",
+          "code": "Ctrl+R/T"
+        },
+        {
+          "definition": "নতুন স্ক্রিপ্ট",
+          "code": "Ctrl+N"
+        },
+        {
+          "definition": "ক্লোজ স্ক্রিপ্ট",
+          "code": "Ctrl+W"
+        },
+        {
+          "definition": "ডক্স উইন্ডো",
+          "code": "Ctrl+shift+d"
+        },
+        {
+          "definition": "আনডক্স উইন্ডো",
+          "code": "Ctrl+shift+u"
+        },
+        {
+          "definition": "ম্যাক্স উইন্ডো",
+          "code": "Ctrl+shift+m"
+        }
+      ]
+    },
+    {
+      "title": "পরশন্স অফ ম্যাট্রিক এন্ড ভেক্টর (Portions of matrices and vectors)",
+      "items": [
+        {
+          "definition": "অল এলিমেন্টস অফ x",
+          "code": "x(:)"
+        },
+        {
+          "definition": "j থেকে শেষ এলিমেন্টস অফ x",
+          "code": "x(j:end)"
+        },
+        {
+          "definition": "২য় থেকে ৫ম এলিমেন্টস অফ x",
+          "code": "x(2:5)"
+        },
+        {
+          "definition": "অল j সারি এলিমেন্টস",
+          "code": "x(j,:)"
+        },
+        {
+          "definition": "অল j কলাম এলিমেন্টস",
+          "code": "x(:,j)"
+        },
+        {
+          "definition": "ডায়াগোনাল এলিমেন্টস অফ x",
+          "code": "diag(x)"
+        },
+        {
+          "definition": "কনক্যাটেন্টেস অনুভূমিকভাবে",
+          "code": "[A,B]"
+        },
+        {
+          "definition": "কনক্যাটেন্টেস উল্লম্বভাবে",
+          "code": "[A;B]"
+        }
+      ]
+    },
+    {
+      "title": "লজিকাল অপারেটর (Logical operators)",
+      "items": [
+        {
+          "definition": "শর্ট সার্কিট এন্ড",
+          "code": "&&"
+        },
+        {
+          "definition": "এন্ড",
+          "code": "&"
+        },
+        {
+          "definition": "শর্ট সার্কিট ওর",
+          "code": "||"
+        },
+        {
+          "definition": "ওর",
+          "code": "|"
+        },
+        {
+          "definition": "নট",
+          "code": "-"
+        },
+        {
+          "definition": "ইকুয়ালিটি কোম্পারিসন",
+          "code": "=="
+        },
+        {
+          "definition": "নট ইকুয়াল",
+          "code": "~="
+        }
+      ]
+    },
+    {
+      "title": "ভেরিয়েবল জেনারেশন (Variable generation)",
+      "items": [
+        {
+          "definition": "রো ভেক্টর [j,j+1,..,k]",
+          "code": "j:k"
+        },
+        {
+          "definition": "রো ভেক্টর [j,j+i,..,k]",
+          "code": "j:i:k"
+        },
+        {
+          "definition": "a x b ম্যাট্রিক্স অফ নান ভ্যালু",
+          "code": "NaN(a,b)"
+        },
+        {
+          "definition": "a x b ম্যাট্রিক্স অফ ১ ভ্যালু",
+          "code": "ones(a,b)"
+        },
+        {
+          "definition": "a x b ম্যাট্রিক্স অফ ০ ভ্যালু",
+          "code": "zeros(a,b)"
+        },
+        {
+          "definition": "2d গ্রিড অফ x এন্ড y ভেক্টরস",
+          "code": "meshgrid(x,y)"
+        },
+        {
+          "definition": "গিভস x গ্লোবাল স্কোপ",
+          "code": "global x"
+        }
+      ]
+    },
+    {
+      "title": "বেসিক ম্যাথ ফাংশন(Basic math functions)",
+      "items": [
+        {
+          "definition": "অ্যাবসলিউট ভ্যালু অফ x",
+          "code": "abs(x)"
+        },
+        {
+          "definition": "স্কয়ার রুট অফ x",
+          "code": "sqrt(x)"
+        },
+        {
+          "definition": "সাইন অফ x",
+          "code": "sign(x)"
+        },
+        {
+          "definition": "রাউন্ড অফ x",
+          "code": "round(x)"
+        },
+        {
+          "definition": "রাউন্ড অফ x টোয়াড পজিটিভ ইনফিনিটি",
+          "code": "ceil(x)"
+        },
+        {
+          "definition": "রাউন্ড অফ x টোয়াড জিরো",
+          "code": "fix(x)"
+        },
+        {
+          "definition": "রাউন্ড অফ x টোয়াড নেগেটিভ ইনফিনিটি",
+          "code": "floor(x)"
+        },
+        {
+          "definition": "রিয়েল পার্ট অফ কমপ্লেক্স নম্বর",
+          "code": "real(x)"
+        },
+        {
+          "definition": "ইমাজিনারি পার্ট অফ কমপ্লেক্স নম্বর",
+          "code": "image(x)"
+        },
+        {
+          "definition": "কমপ্লেক্স কংজুগেট অফ x",
+          "code": "conj(x)"
+        },
+        {
+          "definition": "ন্যাচারাল লগারিদম অফ x",
+          "code": "log(x)"
+        },
+        {
+          "definition": "কমন লগারিদম অফ x",
+          "code": "log10(x)"
+        },
+        {
+          "definition": "এক্সপোনেনশিয়াল অফ x (e^x)",
+          "code": "exp(x)"
+        },
+        {
+          "definition": "রিমাইন্ডার আফটার ডিভিশন অফ a বাই b",
+          "code": "rem(a,b)"
+        },
+        {
+          "definition": "মডিউল অপারেশন",
+          "code": "mod(a,b)"
+        },
+        {
+          "definition": "লিস্ট কমন মাল্টিপ্লস অফ a এন্ড b",
+          "code": "lcm(a,b)"
+        },
+        {
+          "definition": "গ্রেটেস্ট কমন মাল্টিপ্লস অফ a এন্ড b",
+          "code": "gcd(a,b)"
+        },
+        {
+          "definition": "রিয়েল এন-তম রুট অফ a",
+          "code": "nthroot(a,n)"
+        }
+      ]
+    },
+    {
+      "title": "ম্যাট্রিক্স এন্ড ভেক্টর অপারেশন্স (Matrix and Vector operations)",
+      "items": [
+        {
+          "definition": "১ x ৩ (রো) ভেক্টর ডিফাইন্ড",
+          "code": "x=[1, 2, 3]"
+        },
+        {
+          "definition": "৩ x ১ (কলাম) ভেক্টর ডিফাইন্ড",
+          "code": "x=[1; 2; 3]"
+        },
+        {
+          "definition": "২ x ২ ম্যাট্রিক্স",
+          "code": "x=[1, 2; 3, 4]"
+        },
+        {
+          "definition": "চেঞ্জ ২য় ইনডেক্স ভ্যালু ",
+          "code": "x(2)=4"
+        },
+        {
+          "definition": "এলিমেন্ট বাই এলিমেন্ট মাল্টিপ্লিকেশন",
+          "code": "x.*y"
+        },
+        {
+          "definition": "এলিমেন্ট বাই এলিমেন্ট ডিভিশন",
+          "code": "x./y"
+        },
+        {
+          "definition": "এলিমেন্ট বাই এলিমেন্ট এড্ডিশন",
+          "code": "x+y"
+        },
+        {
+          "definition": "এলিমেন্ট বাই এলিমেন্ট সাবট্রাকশন",
+          "code": "x-y"
+        },
+        {
+          "definition": "ম্যাট্রিক্স পাওয়ার অফ a",
+          "code": "A^n"
+        },
+        {
+          "definition": "ট্রান্সপোস",
+          "code": "A'"
+        },
+        {
+          "definition": "ইনভার্স অফ ম্যাট্রিক্স",
+          "code": "inv(A)"
+        },
+        {
+          "definition": "রো এন্ড কলাম নম্বর",
+          "code": "size(x)"
+        },
+        {
+          "definition": "আইডেন্টিটি অফ ম্যাট্রিক্স",
+          "code": "eye(n)"
+        },
+        {
+          "definition": "শর্টস ভেক্টর ফ্রম স্মলেস্ট তো লার্জেস্ট",
+          "code": "sort(A)"
+        }
+      ]
+    },
+    {
+      "title": "স্ট্যাটিসটিকাল কমান্ডস (Statistical commands)",
+      "items": [
+        {
+          "definition": "হিস্টোগ্রাম",
+          "code": "hist(x)"
+        },
+        {
+          "definition": "রেন্ডম নম্বর ফ্রম ডিস্ট",
+          "code": "distrnd"
+        },
+        {
+          "definition": "পিডিএফ ফ্রম ডিস্ট",
+          "code": "distpdf"
+        },
+        {
+          "definition": "সিডিএফ ডিস্ট",
+          "code": "distcdf"
+        }
+      ]
+    },
+    {
+      "title": "ফাংশন (is functions)",
+      "items": [
+        {
+          "definition": "X ও B সমান",
+          "code": "isequal(X,B)"
+        },
+        {
+          "definition": "X ও B সমান (নান ভ্যালু সহ)",
+          "code": "isequaln(X,B)"
+        },
+        {
+          "definition": "X এলিমেন্টস আর ইন এসেন্ডিং অর্ডার.",
+          "code": "issorted(X)"
+        },
+        {
+          "definition": "X হলো ভ্যালিড ম্যাটল্যাব ভ্যারিয়েবলের নাম",
+          "code": "isvarname(X)"
+        }
+      ]
+    }
+  ]
+}

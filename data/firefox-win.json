@@ -2,7 +2,7 @@
   "id": "firefox-win",
   "title": "মজিলা ফায়ারফক্স(উইন্ডোজ)",
   "slug": "firefox-win",
-  "description": "মজিলা ফায়ারফক্সের প্রয়োজনী উইন্ডোজ শর্টকাট কী এবং অন্যান্য গুরুত্বপূর্ণ তথ্য",
+  "description": "মজিলা ফায়ারফক্সের প্রয়োজনীয় উইন্ডোজ শর্টকাট কী এবং অন্যান্য গুরুত্বপূর্ণ তথ্য",
   "colorPref": "#e31b41",
   "contents": [
     {
@@ -204,6 +204,47 @@
         } , {
           "definition": "টেক্সটের সাইজ বাড়ানো",
           "code": "Ctrl + Scroll Down"
+        }
+      ]
+    }, {
+      "title": "ফায়ারফক্স এড অন্স বা এক্সটেনশন",
+      "items": [
+        {
+          "definition": "ইংলিশ ওয়ার্ডের ভুল সংশোধনের জন্য",
+          "code": "Grammarly for Chrome"
+        }, {
+          "definition": "কোন পেজ থেকে সরাসরি লেখা ট্রান্সেলেট করতে চাইলে",
+          "code": "Google Translate"
+        }, {
+          "definition": "কোন ওয়েব এপ্লিকেশনে কি কি টুল ব্যাবহার করছে সেটা জানার জন্যে",
+          "code": "wappalyzer"
+        }, {
+          "definition": "ইমেল চেক করার জন্য",
+          "code": "Checker Plus for Gmail"
+        }, {
+          "definition": "কোন ওয়ার্ড সম্পর্কে বিস্তারিত জানতে চাইলে",
+          "code": "Google Translate, ImTranslator, Dictionary, TTS"
+        }, {
+          "definition": "কোন পেজের ফুল পেজ স্কিন সর্ট নিতে চাইলেে",
+          "code": "Movavi ScreenShot"
+        }, {
+          "definition": "ওয়েব পেইজে কোন ফন্ট ব্যবহার করা হয়েছে তা জানতে চাইলেে",
+          "code": "Font Finder (revived)"
+        }, {
+          "definition": "ওয়েব পেইজের কালার পিক করতে চাইলে",
+          "code": "ColorZilla"
+        }, {
+          "definition": "ওয়েবসাইটের র‌্যাঙ্কিং জানতে চাইলেে",
+          "code": "Alexa Traffic Rank"
+        }, {
+          "definition": "পাসওয়ার্ড সংরক্ষণ করতে চাইলে",
+          "code": "LastPass: Free Password Manager"
+        }, {
+          "definition": "ডেস্কটপ থেকে সরাসরি মোবাইল ইনস্টাগ্রাম সাইট ব্রাউজ করতে",
+          "code": "Desktop 4 Instagram"
+        }, {
+          "definition": "কুকিজ অটো ডিলেট করতে চাইলে",
+          "code": "Cookie Auto Delete"
         }
       ]
     }, {

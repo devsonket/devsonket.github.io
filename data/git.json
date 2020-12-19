@@ -1,708 +1,716 @@
 {
-  "id": "git-cheat-sheet",
-  "title": "গিট",
-  "slug": "git-cheat-sheet",
-  "description": "গিট এর চিটশিট। গিট হচ্ছে ভার্সন কন্ট্রোল সিস্টেম।  ডেভেলপাররা সাধারণত প্রজেক্টের ভার্সন কন্ট্রোল এবং একই প্রজেক্টে একের অধিক ডেভেলপার কাজ করার জন্য গিট ব্যবহার করে। ",
-  "colorPref": "#000",
-  "contents": [
+  "id":"git-cheat-sheet",
+  "title":"গিট",
+  "slug":"git-cheat-sheet",
+  "description":"গিট হচ্ছে ভার্সন কন্ট্রোল সিস্টেম।  ডেভেলপাররা সাধারণত প্রজেক্টের ভার্সন কন্ট্রোল এবং একই প্রজেক্টে একের অধিক ডেভেলপার কাজ করার জন্য গিট ব্যবহার করে। ",
+  "colorPref":"#000",
+  "contents":[
     {
-      "title": "ইন্সটল (Setup)",
-      "items": [
+      "title":"ইনস্টল (Setup)",
+      "items":[
         {
-          "definition": "গিট ইনস্টল ম্যাক",
-          "code": "brew install git"
-        }, 
+          "definition":"গিট ইনস্টল ( ম্যাক )",
+          "code":"brew install git"
+        },
         {
-          "definition": "গিট আনইনস্টল ম্যাক",
-          "code": "brew remove git"
-        }, 
+          "definition":"গিট আনইনস্টল (ম্যাক)",
+          "code":"brew remove git"
+        },
         {
-          "definition": "গিট আনইনস্টল উবুন্টু",
-          "code": "sudo apt-get remove git"
-        }, 
+          "definition":"গিট ইনস্টল (উবুন্টু)",
+          "code":"sudo apt-get install git"
+        },
         {
-          "definition": "গিট ইনস্টল উবুন্টু",
-          "code": "sudo apt-get install git"
-        }, 
+          "definition":"গিট আনইনস্টল (উবুন্টু)",
+          "code":"sudo apt-get remove git"
+        },
         {
-          "definition": "গিট ভার্সন চেক",
-          "code": "git --version"
-        }, 
+          "definition":"গিট ভার্সন চেক",
+          "code":"git --version"
+        },
         {
-          "definition": "গিটটি কোথায় রয়েছে তা দেখুন",
-          "code": "which git"
-        }, 
+          "definition":"গিটটি কোথায় রয়েছে তা দেখুন",
+          "code":"which git"
+        },
         {
-          "definition": "গিট সাহায্য",
-          "code": "git help"
+          "definition":"গিট সাহায্য",
+          "code":"git help"
         }
       ]
     },
     {
-      "title": "কনফিগ (Config)",
-      "items": [
+      "title":"কনফিগ (Config)",
+      "items":[
         {
-          "definition": "গিট এর গ্লোবাল ইউজার নেম সেট করা",
-          "code": "git config --global user.name \"username\""
-        }, 
+          "definition":"গিট এর গ্লোবাল ইউজার নেম সেট করা",
+          "code":"git config --global user.name \"username\""
+        },
         {
-          "definition": "গিট এর গ্লোবাল ইউজার নেম চেক করা",
-          "code": "git config --global user.name"
-        }, 
+          "definition":"গিট এর গ্লোবাল ইউজার নেম চেক করা",
+          "code":"git config --global user.name"
+        },
         {
-          "definition": "গিট এর গ্লোবাল ইউজার ইমেল সেট করা",
-          "code": "git config --global user.email \"user@name.com\""
-        }, 
+          "definition":"গিট এর গ্লোবাল ইউজার ইমেল সেট করা",
+          "code":"git config --global user.email \"user@name.com\""
+        },
         {
-          "definition": "গিট এর গ্লোবাল ইউজার ইমেল চেক করা",
-          "code": "git config --global user.email"
-        }, 
+          "definition":"গিট এর গ্লোবাল ইউজার ইমেল চেক করা",
+          "code":"git config --global user.email"
+        },
         {
-          "definition": "গিট এর লোকাল/একটি নির্দিষ্ট রিপোজিটরির ইউজার নেম সেট করা",
-          "code": "git config user.name \"username\""
-        }, 
+          "definition":"গিট এর লোকাল/একটি নির্দিষ্ট রিপোজিটরির ইউজার নেম সেট করা",
+          "code":"git config user.name \"username\""
+        },
         {
-          "definition": "গিট এর লোকাল/একটি নির্দিষ্ট রিপোজিটরির ইউজার নেম চেক করা",
-          "code": "git config user.name"
-        }, 
+          "definition":"গিট এর লোকাল/একটি নির্দিষ্ট রিপোজিটরির ইউজার নেম চেক করা",
+          "code":"git config user.name"
+        },
         {
-          "definition": "গিট এর লোকাল/একটি নির্দিষ্ট রিপোজিটরির ইউজার ইমেল সেট করা",
-          "code": "git config user.email \"user@name.com\""
-        }, 
+          "definition":"গিট এর লোকাল/একটি নির্দিষ্ট রিপোজিটরির ইউজার ইমেল সেট করা",
+          "code":"git config user.email \"user@name.com\""
+        },
         {
-          "definition": "গিট এর লোকাল/একটি নির্দিষ্ট রিপোজিটরির ইউজার ইমেল চেক করা",
-          "code": "git config user.email"
-        }, 
+          "definition":"গিট এর লোকাল/একটি নির্দিষ্ট রিপোজিটরির ইউজার ইমেল চেক করা",
+          "code":"git config user.email"
+        },
         {
-          "definition": "গিট এর গ্লোবাল ইউজার নেম বাতিল করা",
-          "code": "git config --global --unset-all user.name"
-        }, 
+          "definition":"গিট এর গ্লোবাল ইউজার নেম বাতিল করা",
+          "code":"git config --global --unset-all user.name"
+        },
         {
-          "definition": "গিট এর গ্লোবাল ইউজার ইমেইল বাতিল করা",
-          "code": "git config --global --unset-all user.email"
-        }, 
+          "definition":"গিট এর গ্লোবাল ইউজার ইমেইল বাতিল করা",
+          "code":"git config --global --unset-all user.email"
+        },
         {
-          "definition": "গিট এর লোকাল/একটি নির্দিষ্ট রিপোজিটরির ইউজার নেম বাতিল করা",
-          "code": "git config --unset user.name"
-        }, 
+          "definition":"গিট এর লোকাল/একটি নির্দিষ্ট রিপোজিটরির ইউজার নেম বাতিল করা",
+          "code":"git config --unset user.name"
+        },
         {
-          "definition": "গিট এর লোকাল/একটি নির্দিষ্ট রিপোজিটরির ইউজার ইমেইল বাতিল করা",
-          "code": "git config --unset user.email"
-        }, 
+          "definition":"গিট এর লোকাল/একটি নির্দিষ্ট রিপোজিটরির ইউজার ইমেইল বাতিল করা",
+          "code":"git config --unset user.email"
+        },
         {
-          "definition": "একটি নির্দিষ্ট ব্রাঞ্চের জন্য ইউজার নেম, পাসওয়ার্ড সেভ করা",
-          "code": "git config credential.helper store"
-        }, 
+          "definition":"একটি নির্দিষ্ট ব্রাঞ্চের জন্য ইউজার নেম, পাসওয়ার্ড সেভ করা",
+          "code":"git config credential.helper store"
+        },
         {
-          "definition": "সকল ব্রাঞ্চের জন্য ইউজার নেম, পাসওয়ার্ড সেভ করা",
-          "code": "git config --global credential.helper store"
+          "definition":"সকল ব্রাঞ্চের জন্য ইউজার নেম, পাসওয়ার্ড সেভ করা",
+          "code":"git config --global credential.helper store"
         }
       ]
     },
     {
-      "title": "সাধারণ (General)",
-      "items": [
+      "title":"সাধারণ (General)",
+      "items":[
         {
-          "definition": "নতুন রিপোসিটোরি তৈরী করা",
-          "code": "git init"
-        }, 
+          "definition":"নতুন রিপোজিটরি তৈরী করা",
+          "code":"git init"
+        },
         {
-          "definition": "কোনো রিপোসিটোরি ক্লোন করা(লোকাল মেশিনে ডাউনলোড করা)",
-          "code": "git clone [url]"
-        }, 
+          "definition":"কোনো রিপোজিটরি ক্লোন করা(লোকাল মেশিনে ডাউনলোড করা)",
+          "code":"git clone [url]"
+        },
         {
-          "definition": "রিপোসিটোরি এর বর্তমান অবস্থা/পরিবর্তনগুলো দেখা (নতুন অথবা পুরোনো, কি কি ফাইল কমিট করতে হবে, ওয়ার্কিং ব্রাঞ্চ ইত্যাদি)",
-          "code": "git status"
-        }, 
+          "definition":"রিপোজিটরি এর বর্তমান অবস্থা/পরিবর্তনগুলো দেখা (নতুন অথবা পুরোনো, কি কি ফাইল কমিট করতে হবে, ওয়ার্কিং ব্রাঞ্চ ইত্যাদি)",
+          "code":"git status"
+        },
         {
-          "definition": "কমিট এর জন্যে সব পরিবর্তিত ফাইল এড করা",
-          "code": "git add OR git add . OR git add --all"
-        }, 
+          "definition":"কমিট এর জন্যে সব পরিবর্তিত ফাইল এড করা",
+          "code":"git add OR git add . OR git add --all OR git add -A"
+        },
         {
-          "definition": "কাস্টম ফাইল কমিট এর জন্যে এড করা ",
-          "code": "git add index.html OR git add [file]"
-        }, 
+          "definition":"কাস্টম ফাইল কমিট এর জন্যে এড করা ",
+          "code":"git add index.html OR git add [file]"
+        },
         {
-          "definition": "একটি নির্দিষ্ট এক্সটেনশন এর সকল ফাইল এড করা",
-          "code": "git add *.ext"
-        }, 
+          "definition":"একটি নির্দিষ্ট এক্সটেনশন এর সকল ফাইল এড করা",
+          "code":"git add *.ext"
+        },
         {
-          "definition": "একটি নির্দিষ্ট ফোল্ডারের সকল ফাইল এড করা",
-          "code": "git add /folder"
-        }, 
+          "definition":"একটি নির্দিষ্ট ফোল্ডারের সকল ফাইল এড করা",
+          "code":"git add /folder"
+        },
         {
-          "definition": "একটি নির্দিষ্ট ফোল্ডারের একটি নির্দিষ্ট এক্সটেনশন এর সকল ফাইল এড করা",
-          "code": "git add folder/*.ext"
-        }, 
+          "definition":"একটি নির্দিষ্ট ফোল্ডারের একটি নির্দিষ্ট এক্সটেনশন এর সকল ফাইল এড করা",
+          "code":"git add folder/*.ext"
+        },
         {
-          "definition": "রিপোসিটোরি তে কিছু কমিট করা (কমিট মেসেজসহ)",
-          "code": "git commit -m \"YourCommitMessage\""
-        }, 
+          "definition":"রিপোজিটরি তে কিছু কমিট করা (কমিট মেসেজসহ)",
+          "code":"git commit -m \"YourCommitMessage\""
+        },
         {
-          "definition": "কমিট মেসেজ সংশোধন করা",
-          "code": "git commit --amend -m \"your message\""
-        }, 
+          "definition":"কমিট মেসেজ সংশোধন করা",
+          "code":"git commit --amend -m \"your message\""
+        },
         {
-          "definition": "টাইটেল এবং ডেসক্রিপশন সহ কমিট করতে",
-          "code": "git commit -m \"Title\" -m \"Description...\""
-        }, 
+          "definition":"টাইটেল এবং ডেসক্রিপশন সহ কমিট করতে",
+          "code":"git commit -m \"Title\" -m \"Description...\""
+        },
         {
-          "definition": "অ্যাড এবং কমিট এক স্টেপ এ করতে",
-          "code": "git commit -am \"Message\""
-        }, 
+          "definition":"অ্যাড এবং কমিট এক স্টেপ এ করতে",
+          "code":"git commit -am \"Message\""
+        },
         {
-          "definition": "সমস্ত পরিবর্তন আপডেট করতে",
-          "code": "git add -u"
-        }, 
+          "definition":"সমস্ত পরিবর্তন আপডেট করতে",
+          "code":"git add -u"
+        },
         {
-          "definition": "ফাইল রিমুভ করতে",
-          "code": "git rm index.html"
-        }, 
+          "definition":"ফাইল রিমুভ করতে",
+          "code":"git rm index.html"
+        },
         {
-          "definition": "রিপোজিটরিতে এড করা ফাইল আনট্র্যাক করা",
-          "code": "git rm --cached index.html OR git rm --cached filename"
-        }, 
+          "definition":"রিপোজিটরিতে এড করা ফাইল আনট্র্যাক করা",
+          "code":"git rm --cached index.html OR git rm --cached filename"
+        },
         {
-          "definition": "gitignore এ থাকা সকল ফাইল আনট্র্যাক করা",
-          "code": "git rm -r --cached ."
-        }, 
+          "definition":"gitignore এ থাকা সকল ফাইল আনট্র্যাক করা",
+          "code":"git rm -r --cached ."
+        },
         {
-          "definition": "ফাইল মুভ অথবা রিনেইম করতে",
-          "code": "git mv index.html dir/index_new.html"
-        }, 
+          "definition":"ফাইল মুভ অথবা রিনেইম করতে",
+          "code":"git mv index.html dir/index_new.html"
+        },
         {
-          "definition": "নির্দিষ্ট কমিট পরিবর্তন না করা (ফাইল সর্বশেষ কমিট ভার্সন থেকে রিস্টোর করতে)",
-          "code": "git checkout -- index.html"
-        }, 
+          "definition":"নির্দিষ্ট কমিট পরিবর্তন না করা (ফাইল সর্বশেষ কমিট ভার্সন থেকে রিস্টোর করতে)",
+          "code":"git checkout -- index.html"
+        },
         {
-          "definition": "সকল কমিট পরিবর্তন না করা",
-          "code": "git checkout -- ."
-        }, 
+          "definition":"সকল কমিট পরিবর্তন না করা",
+          "code":"git checkout -- ."
+        },
         {
-          "definition": "ফাইল কাস্টম কমিট ভার্সন থেকে রিস্টোর করতে (কারেন্ট ব্রাঞ্চ এ)",
-          "code": "git checkout 6eb715d -- index.html"
+          "definition":"ফাইল কাস্টম কমিট ভার্সন থেকে রিস্টোর করতে (কারেন্ট ব্রাঞ্চ এ)",
+          "code":"git checkout 6eb715d -- index.html"
         }
       ]
     },
     {
-      "title": "রিসেট (Reset)",
-      "items": [
+      "title":"রিসেট (Reset)",
+      "items":[
         {
-          "definition": "কমিট প্রত্যাবর্তন করা",
-          "code": "git revert 073791e7dd71b90daa853b2c5acc2c925f02dbc6 OR git revert <commit hash>"
-        }, 
+          "definition":"কমিট প্রত্যাবর্তন করা",
+          "code":"git revert 073791e7dd71b90daa853b2c5acc2c925f02dbc6 OR git revert <commit hash>"
+        },
         {
-          "definition": "নির্দিষ্ট কমিট প্রত্যাবর্তন করা",
-          "code": "git revert -n <commit hash>"
-        }, 
+          "definition":"নির্দিষ্ট কমিট প্রত্যাবর্তন করা",
+          "code":"git revert -n <commit hash>"
+        },
         {
-          "definition": "সফট রিসেট (move HEAD only; neither staging nor working dir is changed)",
-          "code": "git reset --soft 073791e7dd71b90daa853b2c5acc2c925f02dbc6"
-        }, 
+          "definition":"সফট রিসেট (move HEAD only; neither staging nor working dir is changed)",
+          "code":"git reset --soft 073791e7dd71b90daa853b2c5acc2c925f02dbc6"
+        },
         {
-          "definition": "শেষ কমিট থেকে stage এরিয়া তে মুভ করা",
-          "code": "git reset --soft HEAD~"
-        }, 
+          "definition":"শেষ কমিট থেকে stage এরিয়া তে মুভ করা",
+          "code":"git reset --soft HEAD~"
+        },
         {
-          "definition": "মিক্সেড রিসেট (move HEAD and change staging to match repo; does not affect working dir)",
-          "code": "git reset --mixed 073791e7dd71b90daa853b2c5acc2c925f02dbc6"
-        }, 
+          "definition":"মিক্সেড রিসেট (move HEAD and change staging to match repo; does not affect working dir)",
+          "code":"git reset --mixed 073791e7dd71b90daa853b2c5acc2c925f02dbc6"
+        },
         {
-          "definition": "হার্ড রিসেট (move HEAD and change staging dir and working dir to match repo)",
-          "code": "git reset --hard 073791e7dd71b90daa853b2c5acc2c925f02dbc6"
-        }, 
+          "definition":"হার্ড রিসেট (move HEAD and change staging dir and working dir to match repo)",
+          "code":"git reset --hard 073791e7dd71b90daa853b2c5acc2c925f02dbc6"
+        },
         {
-          "definition": "শেষ কমিট ডিলেট করা",
-          "code": "git reset --hard HEAD^"
-        }, 
+          "definition":"শেষ কমিট ডিলেট করা",
+          "code":"git reset --hard HEAD^"
+        },
         {
-          "definition": "শেষ দুটি কমিট ডিলেট করা",
-          "code": "git reset --hard HEAD^^"
-        }, 
+          "definition":"শেষ দুটি কমিট ডিলেট করা",
+          "code":"git reset --hard HEAD^^"
+        },
         {
-          "definition": "সিঙ্গেল ফাইল হার্ড রিসেট করতে (@ is short for HEAD)",
-          "code": "git checkout @ -- index.html"
+          "definition":"সিঙ্গেল ফাইল হার্ড রিসেট করতে (@ is short for HEAD)",
+          "code":"git checkout @ -- index.html"
         }
       ]
     },
     {
-      "title": "আপডেট এবং ডিলিট (Update & Delete)",
-      "items": [
+      "title":"আপডেট এবং ডিলিট (Update & Delete)",
+      "items":[
         {
-          "definition": "আনট্র্যাক ফাইলগুলো টেস্ট ডিলিট করতে",
-          "code": "git clean -n"
-        }, 
+          "definition":"আনট্র্যাক ফাইলগুলো টেস্ট ডিলিট করতে",
+          "code":"git clean -n"
+        },
         {
-          "definition": "আনট্র্যাক ফাইলগুলো ডিলিট করতে",
-          "code": "git clean -f"
-        }, 
+          "definition":"আনট্র্যাক ফাইলগুলো ডিলিট করতে",
+          "code":"git clean -f"
+        },
         {
-          "definition": "আনস্টেজড (undo adds)",
-          "code": "git reset HEAD index.html"
+          "definition":"আনস্টেজড (undo adds)",
+          "code":"git reset HEAD index.html"
         }
       ]
     },
     {
-      "title": "ব্রাঞ্চ (Branch)",
-      "items": [
+      "title":"ব্রাঞ্চ (Branch)",
+      "items":[
         {
-          "definition": "সব লোকাল ব্রাঞ্চ এর নাম লিস্ট করা",
-          "code": "git branch"
-        }, 
+          "definition":"সব লোকাল ব্রাঞ্চ এর নাম লিস্ট করা",
+          "code":"git branch"
+        },
         {
-          "definition": "নতুন ব্রাঞ্চ তৈরী",
-          "code": "git branch [branch_name]"
-        }, 
+          "definition":"নতুন ব্রাঞ্চ তৈরী",
+          "code":"git branch [branch_name]"
+        },
         {
-          "definition": "ব্রাঞ্চ চেঞ্জ করতে",
-          "code": "git checkout [branch_name]"
-        }, 
+          "definition":"ব্রাঞ্চ চেঞ্জ করতে",
+          "code":"git checkout [branch_name]"
+        },
         {
-          "definition": "ব্রাঞ্চ তৈরী এবং চেঞ্জ করা",
-          "code": "git checkout -b \"branch name\""
-        }, 
+          "definition":"ব্রাঞ্চ তৈরী এবং চেঞ্জ করা",
+          "code":"git checkout -b \"branch name\""
+        },
         {
-          "definition": "রিপোজিটরি/ব্রাঞ্চ রিনেম করা",
-          "code": "git branch -m branchname new_branchname OR git branch --move branchname new_branchname"
-        }, 
+          "definition":"রিপোজিটরি/ব্রাঞ্চ রিনেম করা",
+          "code":"git branch -m branchname new_branchname OR git branch --move branchname new_branchname"
+        },
         {
-          "definition": "কারেন্ট ব্রাঞ্চ এর সাথে মার্জ করা সকল ব্রাঞ্চগুলো শো করতে",
-          "code": "git branch --merged"
-        }, 
+          "definition":"কারেন্ট ব্রাঞ্চ এর সাথে মার্জ করা সকল ব্রাঞ্চগুলো শো করতে",
+          "code":"git branch --merged"
+        },
         {
-          "definition": "ব্রাঞ্চ রিমুভ করা (only possible if not HEAD)",
-          "code": "git branch -d branchname OR git branch --delete branchname"
-        }, 
+          "definition":"ব্রাঞ্চ রিমুভ করা (only possible if not HEAD)",
+          "code":"git branch -d branchname OR git branch --delete branchname"
+        },
         {
-          "definition": "রিমোট ব্রাঞ্চ রিমুভ করা",
-          "code": "git push --delete origin [branch-name]"
-        }, 
+          "definition":"রিমোট ব্রাঞ্চ রিমুভ করা",
+          "code":"git push --delete origin [branch-name]"
+        },
         {
-          "definition": "মার্জ করা না এমন ব্রাঞ্চ রিমুভ করতে",
-          "code": "git branch -D branch_to_delete"
+          "definition":"মার্জ করা না এমন ব্রাঞ্চ রিমুভ করতে",
+          "code":"git branch -D branch_to_delete"
         }
       ]
     },
     {
-      "title": "মার্জ (Merge)",
-      "items": [
+      "title":"মার্জ (Merge)",
+      "items":[
         {
-          "definition": "ট্রু মার্জ (fast forward)",
-          "code": "git merge branchname"
-        }, 
+          "definition":"ট্রু মার্জ (fast forward)",
+          "code":"git merge branchname"
+        },
         {
-          "definition": "মাস্টারে মার্জ করতে (only if fast forward)",
-          "code": "git merge --ff-only branchname"
-        }, 
+          "definition":"মাস্টারে মার্জ করতে (only if fast forward)",
+          "code":"git merge --ff-only branchname"
+        },
         {
-          "definition": "মাস্টারে মার্জ করতে (force a new commit)",
-          "code": "git merge --no-ff branchname"
-        }, 
+          "definition":"মাস্টারে মার্জ করতে (force a new commit)",
+          "code":"git merge --no-ff branchname"
+        },
         {
-          "definition": "মার্জ বন্ধ করতে (in case of conflicts)",
-          "code": "git merge --abort"
-        }, 
+          "definition":"মার্জ বন্ধ করতে (in case of conflicts)",
+          "code":"git merge --abort"
+        },
         {
-          "definition": "মার্জ বন্ধ করতে  (in case of conflicts)",
-          "code": "git reset --merge // prior to v1.7.4"
-        }, 
+          "definition":"মার্জ বন্ধ করতে  (in case of conflicts)",
+          "code":"git reset --merge // prior to v1.7.4"
+        },
         {
-          "definition": "লোকাল মার্জ  আন্ডু করতে যেই মার্জটি এখনো পুশ করা হইনাই",
-          "code": "git reset --hard origin/master"
-        }, 
+          "definition":"লোকাল মার্জ  আন্ডু করতে যেই মার্জটি এখনো পুশ করা হইনাই",
+          "code":"git reset --hard origin/master"
+        },
         {
-          "definition": "স্পেসিফিক একটি কমিট মার্জ করতে",
-          "code": "git cherry-pick 073791e7"
-        }, 
+          "definition":"স্পেসিফিক একটি কমিট মার্জ করতে",
+          "code":"git cherry-pick 073791e7"
+        },
         {
-          "definition": "রিবেস",
-          "code": "git checkout branchname » git rebase master OR git merge master branchname"
-        }, 
+          "definition":"রিবেস",
+          "code":"git checkout branchname » git rebase master OR git merge master branchname"
+        },
         {
-          "definition": "রিবেস ক্যানসেল করতে",
-          "code": "git rebase --abort"
-        }, 
+          "definition":"রিবেস ক্যানসেল করতে",
+          "code":"git rebase --abort"
+        },
         {
-          "definition": "মাল্টিপল কমিট একটি কমিট এ স্কোয়াশ করতে",
-          "code": "git rebase -i HEAD~3 (source)"
-        }, 
+          "definition":"মাল্টিপল কমিট একটি কমিট এ স্কোয়াশ করতে",
+          "code":"git rebase -i HEAD~3 (source)"
+        },
         {
-          "definition": "ফীচার ব্রাঞ্চ Squash-merge করতে (একটি কমিট এ)",
-          "code": "git merge --squash branchname (commit afterwards)"
+          "definition":"ফীচার ব্রাঞ্চ Squash-merge করতে (একটি কমিট এ)",
+          "code":"git merge --squash branchname (commit afterwards)"
         }
       ]
     },
     {
-      "title": "স্টাশ (Stash)",
-      "items": [
+      "title":"স্টাশ (Stash)",
+      "items":[
         {
-          "definition": "স্টাশ এ রাখতে",
-          "code": "git stash save \"Message\""
-        }, 
+          "definition":"স্টাশ এ রাখতে",
+          "code":"git stash save \"Message\""
+        },
         {
-          "definition": "স্টাশ লিস্ট শো করতে",
-          "code": "git stash list"
-        }, 
+          "definition":"স্টাশ লিস্ট শো করতে",
+          "code":"git stash list"
+        },
         {
-          "definition": "স্টাশ স্ট্যাটাস শো করতে",
-          "code": "git stash show stash@{0}"
-        }, 
+          "definition":"স্টাশ স্ট্যাটাস শো করতে",
+          "code":"git stash show stash@{0}"
+        },
         {
-          "definition": "স্টাশ এর পরিবর্তনগুলি শো করতে",
-          "code": "git stash show -p stash@{0}"
-        }, 
+          "definition":"স্টাশ এর পরিবর্তনগুলি শো করতে",
+          "code":"git stash show -p stash@{0}"
+        },
         {
-          "definition": "কাস্টম স্টাশ আইটেম ব্যবহার এবং ড্রপ করতে",
-          "code": "git stash pop stash@{0}"
-        }, 
+          "definition":"কাস্টম স্টাশ আইটেম ব্যবহার এবং ড্রপ করতে",
+          "code":"git stash pop stash@{0}"
+        },
         {
-          "definition": "কাস্টম স্টাশ আইটেম ব্যবহার এবং ড্রপ না করতে",
-          "code": "git stash apply stash@{0}"
-        }, 
+          "definition":"কাস্টম স্টাশ আইটেম ব্যবহার এবং ড্রপ না করতে",
+          "code":"git stash apply stash@{0}"
+        },
         {
-          "definition": "কাস্টম স্টাশ আইটেম ব্যবহার এবং ইনডেক্স করতে",
-          "code": "git stash apply --index"
-        }, 
+          "definition":"কাস্টম স্টাশ আইটেম ব্যবহার এবং ইনডেক্স করতে",
+          "code":"git stash apply --index"
+        },
         {
-          "definition": "স্টাশ থেকে নতুন ব্রাঞ্চ করতে",
-          "code": "git stash branch new_branch"
-        }, 
+          "definition":"স্টাশ থেকে নতুন ব্রাঞ্চ করতে",
+          "code":"git stash branch new_branch"
+        },
         {
-          "definition": "কাস্টম স্টাশ আইটেম বাদ দিতে",
-          "code": "git stash drop stash@{0}"
-        }, 
+          "definition":"কাস্টম স্টাশ আইটেম বাদ দিতে",
+          "code":"git stash drop stash@{0}"
+        },
         {
-          "definition": "সম্পূর্ণ স্টাশ ডিলিট করতে",
-          "code": "git stash clear"
+          "definition":"সম্পূর্ণ স্টাশ ডিলিট করতে",
+          "code":"git stash clear"
         }
       ]
     },
     {
-      "title": "লগ (Log)",
-      "items": [
+      "title":"লগ (Log)",
+      "items":[
         {
-          "definition": "কমিট লগ বিস্তারিত দেখতে",
-          "code": "git log"
-        }, 
+          "definition":"কমিট লগ বিস্তারিত দেখতে",
+          "code":"git log"
+        },
         {
-          "definition": "এক লাইন এ কমিট লগ এর সামারি শো করতে",
-          "code": "git log --oneline"
-        }, 
+          "definition":"এক লাইন এ কমিট লগ এর সামারি শো করতে",
+          "code":"git log --oneline"
+        },
         {
-          "definition": "এক লাইন এ কমিট লগ এর সামারি ফুল SHA-1 ফরম্যাট এ শো করতে",
-          "code": "git log --format=oneline"
-        }, 
+          "definition":"এক লাইন এ কমিট লগ এর সামারি ফুল SHA-1 ফরম্যাট এ শো করতে",
+          "code":"git log --format=oneline"
+        },
         {
-          "definition": "কমিট লগ সামারি আকারে দেখতে((৫টি)",
-          "code": "git log --oneline -5"
-        }, 
+          "definition":"কমিট লগ সামারি আকারে দেখতে((৫টি)",
+          "code":"git log --oneline -5"
+        },
         {
-          "definition": "শুধুমাত্র কাস্টম কমিটগুলো শো করতে",
-          "code": "git log --author=\"Sven\" git log --grep=\"Message\" git log --until=2013-01-01 git log --since=2013-01-01"
-        }, 
+          "definition":"শুধুমাত্র কাস্টম কমিটগুলো শো করতে",
+          "code":"git log --author=\"Sven\" git log --grep=\"Message\" git log --until=2013-01-01 git log --since=2013-01-01"
+        },
         {
-          "definition": "শুধুমাত্র কাস্টম কমিট এর ডাটা শো করতে",
-          "code": "git log --format=short git log --format=full git log --format=fuller git log --format=email git log --format=raw"
-        }, 
+          "definition":"শুধুমাত্র কাস্টম কমিট এর ডাটা শো করতে",
+          "code":"git log --format=short git log --format=full git log --format=fuller git log --format=email git log --format=raw"
+        },
         {
-          "definition": "পরিবর্তনগুলি শো করতে",
-          "code": "git log -p"
-        }, 
+          "definition":"পরিবর্তনগুলি শো করতে",
+          "code":"git log -p"
+        },
         {
-          "definition": "শুধুমাত্র কাস্টম ফাইল এর সবগুলো কমিট শো করতে",
-          "code": "git log 6eb715d.. index.html"
-        }, 
+          "definition":"শুধুমাত্র কাস্টম ফাইল এর সবগুলো কমিট শো করতে",
+          "code":"git log 6eb715d.. index.html"
+        },
         {
-          "definition": "শুধুমাত্র কাস্টম ফাইল এর সবগুলো কমিট এর পরিবর্তনগুলি শো করতে",
-          "code": "git log -p 6eb715d.. index.html"
-        }, 
+          "definition":"শুধুমাত্র কাস্টম ফাইল এর সবগুলো কমিট এর পরিবর্তনগুলি শো করতে",
+          "code":"git log -p 6eb715d.. index.html"
+        },
         {
-          "definition": "কমিটগুলোর স্ট্যাটাস এবং সামারি শো করতে",
-          "code": "git log --stat --summary"
-        }, 
+          "definition":"কমিটগুলোর স্ট্যাটাস এবং সামারি শো করতে",
+          "code":"git log --stat --summary"
+        },
         {
-          "definition": "কমিটগুলোর হিস্ট্রি গ্রাফ আকারে শো করতে",
-          "code": "git log --graph"
-        }, 
+          "definition":"কমিটগুলোর হিস্ট্রি গ্রাফ আকারে শো করতে",
+          "code":"git log --graph"
+        },
         {
-          "definition": "কমিটগুলোর হিস্ট্রি গ্রাফ আকারে সামারি শো করতে",
-          "code": "git log --oneline --graph --all --decorate"
+          "definition":"কমিটগুলোর হিস্ট্রি গ্রাফ আকারে সামারি শো করতে",
+          "code":"git log --oneline --graph --all --decorate"
         }
       ]
     },
     {
-      "title": "তুলনা (Compare)",
-      "items": [
+      "title":"তুলনা (Compare)",
+      "items":[
         {
-          "definition": "শেষ কমিট এবং বর্তমান unstaged ভার্শনের পার্থক্য দেখা",
-          "code": "git diff"
-        }, 
+          "definition":"শেষ কমিট এবং বর্তমান unstaged ভার্শনের পার্থক্য দেখা",
+          "code":"git diff"
+        },
         {
-          "definition": "মডিফাইড ফাইলস তুলনা এবং পরিবর্তনগুলি হাইলাইট করতে",
-          "code": "git diff --color-words index.html"
-        }, 
+          "definition":"মডিফাইড ফাইলস তুলনা এবং পরিবর্তনগুলি হাইলাইট করতে",
+          "code":"git diff --color-words index.html"
+        },
         {
-          "definition": "শেষ কমিট এবং বর্তমান staged ভার্শনের পার্থক্য দেখা",
-          "code": "git diff --staged"
-        }, 
+          "definition":"শেষ কমিট এবং বর্তমান staged ভার্শনের পার্থক্য দেখা",
+          "code":"git diff --staged"
+        },
         {
-          "definition": "ব্রাঞ্চগুলো তুলনা করতে",
-          "code": "git diff master..branchname"
-        }, 
+          "definition":"ব্রাঞ্চগুলো তুলনা করতে",
+          "code":"git diff master..branchname"
+        },
         {
-          "definition": "উপরের মত ব্রাঞ্চগুলো তুলনা করতে",
-          "code": "git diff --color-words master..branchname^"
-        }, 
+          "definition":"উপরের মত ব্রাঞ্চগুলো তুলনা করতে",
+          "code":"git diff --color-words master..branchname^"
+        },
         {
-          "definition": "কমিটগুলো তুলনা করতে",
-          "code": "git diff 6eb715d git diff 6eb715d..HEAD git diff 6eb715d..537a09f"
-        }, 
+          "definition":"কমিটগুলো তুলনা করতে",
+          "code":"git diff 6eb715d git diff 6eb715d..HEAD git diff 6eb715d..537a09f"
+        },
         {
-          "definition": "ফাইল এর কমিটগুলো তুলনা করতে",
-          "code": "git diff 6eb715d index.html git diff 6eb715d..537a09f index.html"
-        }, 
+          "definition":"ফাইল এর কমিটগুলো তুলনা করতে",
+          "code":"git diff 6eb715d index.html git diff 6eb715d..537a09f index.html"
+        },
         {
-          "definition": "দরকারী তুলনা",
-          "code": "git diff --stat --summary 6eb715d..HEAD"
-        }, 
+          "definition":"দরকারী তুলনা",
+          "code":"git diff --stat --summary 6eb715d..HEAD"
+        },
         {
-          "definition": "ব্ল্যাম",
-          "code": "git blame -L10,+1 index.html"
+          "definition":"ব্ল্যাম",
+          "code":"git blame -L10,+1 index.html"
         }
       ]
     },
     {
-      "title": "রিলিজ & ভার্সন (Releases & Version)",
-      "items": [
+      "title":"রিলিজ & ভার্সন (Releases & Version)",
+      "items":[
         {
-          "definition": "ট্যাগ লিস্ট দেখতে",
-          "code": "git tag"
-        }, 
+          "definition":"ট্যাগ লিস্ট দেখতে",
+          "code":"git tag"
+        },
         {
-          "definition": "ট্যাগ তৈরি করা",
-          "code": "git tag [tag-name]"
-        }, 
+          "definition":"ট্যাগ তৈরি করা",
+          "code":"git tag [tag-name]"
+        },
         {
-          "definition": "প্রকাশিত সবগুলো ভার্শন কমিটগুলো সহ শো করতে",
-          "code": "git tag -l -n1"
-        }, 
+          "definition":"প্রকাশিত সবগুলো ভার্শন কমিটগুলো সহ শো করতে",
+          "code":"git tag -l -n1"
+        },
         {
-          "definition": "রিলিজ ভার্শন তৈরী করতে",
-          "code": "git tag v1.0.0"
-        }, 
+          "definition":"রিলিজ ভার্শন তৈরী করতে",
+          "code":"git tag v1.0.0"
+        },
         {
-          "definition": "কমেন্টসহ রিলিজ ভার্শন তৈরী করতে",
-          "code": "git tag -a v1.0.0 -m 'Message'"
-        }, 
+          "definition":"কমেন্টসহ রিলিজ ভার্শন তৈরী করতে",
+          "code":"git tag -a v1.0.0 -m 'Message'"
+        },
         {
-          "definition": "নির্দিষ্ট রিলিজ ভার্শনে চেকআউট করতে",
-          "code": "git checkout v1.0.0"
+          "definition":"নির্দিষ্ট রিলিজ ভার্শনে চেকআউট করতে",
+          "code":"git checkout v1.0.0"
         }
       ]
     },
     {
-      "title": "সহযোগিতা (Collaborate)",
-      "items": [
+      "title":"সহযোগিতা (Collaborate)",
+      "items":[
         {
-          "definition": "রিমোট শো করতে",
-          "code": "git remote"
-        }, 
+          "definition":"রিমোট শো করতে",
+          "code":"git remote"
+        },
         {
-          "definition": "সবগুলো রিমোটের লিস্ট নাম এবং URL সহ দেখা",
-          "code": "git remote -v"
-        }, 
+          "definition":"সবগুলো রিমোটের লিস্ট নাম এবং URL সহ দেখা",
+          "code":"git remote -v"
+        },
         {
-          "definition": "রিমোট এড করা",
-          "code": "git remote add RemoteName RemoteURL"
-        }, 
+          "definition":"নতুন রিমোট এড করা",
+          "code":"git remote add <RemoteName> <RemoteURL> "
+        },
         {
-          "definition": "Fork রিপোসিটোরি ক্ষেত্রে আপস্ট্রিম রিমোট কনফিগার করা",
-          "code": "git remote add upstream https://github.com/user/project.git"
-        }, 
+          "definition":"রিমোট পরিবর্তন করা",
+          "code":"git remote set-url <RemoteName> <RemoteURL>"
+        },
         {
-          "definition": "সার্ভারে আপস্ট্রিম রিমোট কনফিগার করা",
-          "code": "git remote add upstream ssh://root@123.123.123.123/path/to/repository/.git"
-        }, 
+          "definition":"Fork রিপোজিটরি ক্ষেত্রে আপস্ট্রিম রিমোট এড করা",
+          "code":"git remote add upstream <RemoteURL>"
+        },
         {
-          "definition": "অন্য রিপোসিটোরি থেকে ব্রাঞ্চ/রেফ/অবজেক্ট fetch করা",
-          "code": "git fetch RepositoryName"
-        }, 
+          "definition":"Fork রিপোজিটরি ক্ষেত্রে আপস্ট্রিম রিমোট পরিবর্তন করা",
+          "code":"git remote set-url upstream <RemoteURL>"
+        },
         {
-          "definition": "Fetch/Fork রিপোসিটোরি কে আপস্ট্রিম এর সাথে up-to-date রাখা",
-          "code": "git fetch upstream"
-        }, 
+          "definition":"সার্ভারে আপস্ট্রিম রিমোট কনফিগার করা",
+          "code":"git remote add upstream ssh://root@123.123.123.123/path/to/repository/.git"
+        },
         {
-          "definition": "fetched কমিটগুলো মার্জ করতে",
-          "code": "git merge upstream/master OR git merge upstream/branchname"
-        }, 
+          "definition":"অন্য রিপোজিটরি থেকে ব্রাঞ্চ/রেফ/অবজেক্ট fetch করা",
+          "code":"git fetch RepositoryName"
+        },
         {
-          "definition": "কাস্টম ব্রাঞ্চ Fetch করতে",
-          "code": "git fetch upstream branchname:local_branchname"
-        }, 
+          "definition":"Fetch/Fork রিপোজিটরি কে আপস্ট্রিম(upstream) এর সাথে up-to-date রাখা",
+          "code":"git fetch upstream"
+        },
         {
-          "definition": "অরিজিন রিমুভ করতে",
-          "code": "git remote rm origin"
-        }, 
+          "definition":"fetched কমিটগুলো মার্জ করতে",
+          "code":"git merge upstream/master OR git merge upstream/branchname"
+        },
         {
-          "definition": "সব রিমোট ব্রাঞ্চ এর নাম লিস্ট করা",
-          "code": "git branch -r"
-        }, 
+          "definition":"কাস্টম ব্রাঞ্চ Fetch করতে",
+          "code":"git fetch upstream branchname:local_branchname"
+        },
         {
-          "definition": "সব লোকাল এবং রিমোট ব্রাঞ্চ এর নাম লিস্ট করা",
-          "code": "git branch -a"
-        }, 
+          "definition":"অরিজিন রিমুভ করতে",
+          "code":"git remote rm origin"
+        },
         {
-          "definition": "রিমোট ব্রাঞ্চ থেকে ব্রাঞ্চ তৈরি এবং  চেকআউট করতে",
-          "code": "git checkout -b local_branchname upstream/remote_branchname"
-        }, 
+          "definition":"সব রিমোট ব্রাঞ্চ এর নাম লিস্ট করা",
+          "code":"git branch -r"
+        },
         {
-          "definition": "রিপোসিটোরি তে লোকাল ব্রাঞ্চ থেকে আপলোড করা",
-          "code": "git push -u origin master OR git push -u origin [branchName]"
-        }, 
+          "definition":"সব লোকাল এবং রিমোট ব্রাঞ্চ এর নাম লিস্ট করা",
+          "code":"git branch -a"
+        },
         {
-          "definition": "পুশ",
-          "code": "git push origin master"
-        }, 
+          "definition":"রিমোট ব্রাঞ্চ থেকে ব্রাঞ্চ তৈরি এবং  চেকআউট করতে",
+          "code":"git checkout -b local_branchname upstream/remote_branchname"
+        },
         {
-          "definition": "ফোর্স পুশ",
-          "code": "`git push origin master --force"
-        }, 
+          "definition":"রিপোজিটরি তে লোকাল ব্রাঞ্চ থেকে আপলোড করা",
+          "code":"git push -u origin master OR git push -u origin [branchName]"
+        },
         {
-          "definition": "রিপোসিটোরি থেকে নতুন চেঞ্জ গুলো পুল করা",
-          "code": "git pull"
-        }, 
+          "definition":"পুশ",
+          "code":"git push origin master"
+        },
         {
-          "definition": "স্পেসিফিক ব্রাঞ্চ পুল করতে",
-          "code": "git pull origin branchname"
-        }, 
+          "definition":"ফোর্স পুশ",
+          "code":"`git push origin master --force"
+        },
         {
-          "definition": "কোনো রিপোসিটোরি ক্লোন করা(লোকাল মেশিনে ডাউনলোড করা)",
-          "code": "git clone https://github.com/user/project.git OR git clone ssh://user@domain.com/~/dir/.git"
-        }, 
+          "definition":"রিপোজিটরি থেকে নতুন চেঞ্জ গুলো পুল করা",
+          "code":"git pull"
+        },
         {
-          "definition": "লোকাল ফোল্ডার এ ক্লোন করতে",
-          "code": "git clone https://github.com/user/project.git ~/dir/folder"
-        }, 
+          "definition":"স্পেসিফিক ব্রাঞ্চ পুল করতে",
+          "code":"git pull origin branchname"
+        },
         {
-          "definition": "স্পেসিফিক ব্রাঞ্চ লোকাল এ ক্লোন করতে",
-          "code": "git clone -b branchname https://github.com/user/project.git"
-        }, 
+          "definition":"কোনো রিপোজিটরি ক্লোন করা(লোকাল মেশিনে ডাউনলোড করা)",
+          "code":"git clone https://github.com/user/project.git OR git clone ssh://user@domain.com/~/dir/.git"
+        },
         {
-          "definition": "অথেনটিকেশন টোকেন ব্যবহার করে ক্লোন করতে",
-          "code": "git clone https://oauth2:<token>@gitlab.com/username/repo.git"
-        }, 
+          "definition":"লোকাল ফোল্ডার এ ক্লোন করতে",
+          "code":"git clone https://github.com/user/project.git ~/dir/folder"
+        },
         {
-          "definition": "রিমোট ব্রাঞ্চ ডিলিট করতে",
-          "code": "git push origin :branchname OR git push origin --delete branchname"
-        }, 
+          "definition":"স্পেসিফিক ব্রাঞ্চ লোকাল এ ক্লোন করতে",
+          "code":"git clone -b branchname https://github.com/user/project.git"
+        },
         {
-          "definition": "কন্ট্রিবিউটরদের নামের লিস্ট দেখা",
-          "code": "git shortlog -sn"
-        }, 
+          "definition":"অথেনটিকেশন টোকেন ব্যবহার করে ক্লোন করতে",
+          "code":"git clone https://oauth2:<token>@gitlab.com/username/repo.git"
+        },
         {
-          "definition": "কন্ট্রিবিউটরদের নাম এবং তাঁদের সকল কমিট লিস্ট আকারে দেখা",
-          "code": "git shortlog"
+          "definition":"রিমোট ব্রাঞ্চ ডিলিট করতে",
+          "code":"git push origin :branchname OR git push origin --delete branchname"
+        },
+        {
+          "definition":"কন্ট্রিবিউটরদের নামের লিস্ট দেখা",
+          "code":"git shortlog -sn"
+        },
+        {
+          "definition":"কন্ট্রিবিউটরদের নাম এবং তাঁদের সকল কমিট লিস্ট আকারে দেখা",
+          "code":"git shortlog"
         }
       ]
     },
     {
-      "title": "গিট্ ফ্লো (Git flow)",
-      "items": [
+      "title":"গিট্ ফ্লো (Git flow)",
+      "items":[
         {
-          "definition": "গিট flow ইনস্টল ম্যাক(Homebrew)",
-          "code": "brew install git-flow-avh"
-        }, 
+          "definition":"Homebrew দিয়ে গিট flow ইনস্টল (ম্যাক)",
+          "code":"brew install git-flow-avh"
+        },
         {
-          "definition": "গিট flow ইনস্টল ম্যাক(Macports)",
-          "code": "port install git-flow-avh"
-        }, 
+          "definition":"Macports দিয়ে গিট flow ইনস্টল (ম্যাক)",
+          "code":"port install git-flow-avh"
+        },
         {
-          "definition": "গিট flow ইনস্টল লিনাক্স",
-          "code": "apt-get install git-flow"
-        }, 
+          "definition":"গিট flow ইনস্টল (লিনাক্স) ",
+          "code":"apt-get install git-flow"
+        },
         {
-          "definition": "গিট flow ইনস্টল উইন্ডোজ",
-          "code": "wget -q -O - --no-check-certificate https://raw.github.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh install stable | bash"
-        }, 
+          "definition":"গিট flow ইনস্টল (উইন্ডোজ)",
+          "code":"wget -q -O - --no-check-certificate https://raw.github.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh install stable | bash"
+        },
         {
-          "definition": "গিট flow শুরু করা",
-          "code": "git flow init"
-        }, 
+          "definition":"গিট flow শুরু করা",
+          "code":"git flow init"
+        },
         {
-          "definition": "নতুন ফিচার শুরু করা",
-          "code": "git flow feature start features_name"
-        }, 
+          "definition":"নতুন ফিচার শুরু করা",
+          "code":"git flow feature start features_name"
+        },
         {
-          "definition": "ফিচার শেষ করা",
-          "code": "git flow feature finish features_name"
-        }, 
+          "definition":"ফিচার শেষ করা",
+          "code":"git flow feature finish features_name"
+        },
         {
-          "definition": "ফিচার পাবলিশ করা",
-          "code": "git flow feature publish features_name"
-        }, 
+          "definition":"ফিচার পাবলিশ করা",
+          "code":"git flow feature publish features_name"
+        },
         {
-          "definition": "ফিচার পুল করা",
-          "code": "git flow feature pull origin features_name"
-        }, 
+          "definition":"ফিচার পুল করা",
+          "code":"git flow feature pull origin features_name"
+        },
         {
-          "definition": "ফিচার ট্র্যাক করা",
-          "code": "git flow feature track features_name"
-        }, 
+          "definition":"ফিচার ট্র্যাক করা",
+          "code":"git flow feature track features_name"
+        },
         {
-          "definition": "রিলিজ শুরু করা",
-          "code": "git flow release start RELEASE [BASE]"
-        }, 
+          "definition":"রিলিজ শুরু করা",
+          "code":"git flow release start RELEASE [BASE]"
+        },
         {
-          "definition": "রিলিজ শেষ করা",
-          "code": "git flow release finish RELEASE"
-        }, 
+          "definition":"রিলিজ শেষ করা",
+          "code":"git flow release finish RELEASE"
+        },
         {
-          "definition": "রিলিজ পাবলিশ করা",
-          "code": "git flow release publish RELEASE"
-        }, 
+          "definition":"রিলিজ পাবলিশ করা",
+          "code":"git flow release publish RELEASE"
+        },
         {
-          "definition": "রিলিজ ট্র্যাক করা",
-          "code": "git flow release track RELEASE"
-        }, 
+          "definition":"রিলিজ ট্র্যাক করা",
+          "code":"git flow release track RELEASE"
+        },
         {
-          "definition": "হটফিক্স শুরু করা",
-          "code": "git flow hotfix start VERSION [BASENAME]"
-        }, 
+          "definition":"হটফিক্স শুরু করা",
+          "code":"git flow hotfix start VERSION [BASENAME]"
+        },
         {
-          "definition": "হটফিক্স শেষ করা",
-          "code": "git flow hotfix finish VERSION"
+          "definition":"হটফিক্স শেষ করা",
+          "code":"git flow hotfix finish VERSION"
         }
       ]
     },
     {
-      "title": "গিটহাব ইস্যু (Github issues)",
-      "items": [
+      "title":"গিটহাব ইস্যু (Github issues)",
+      "items":[
         {
-          "code": "close"
-        }, 
+          "code":"close"
+        },
         {
-          "code": "closes"
-        }, 
+          "code":"closes"
+        },
         {
-          "code": "closed"
-        }, 
+          "code":"closed"
+        },
         {
-          "code": "fix"
-        }, 
+          "code":"fix"
+        },
         {
-          "code": "fixes"
-        }, 
+          "code":"fixes"
+        },
         {
-          "code": "fixed"
-        }, 
+          "code":"fixed"
+        },
         {
-          "code": "resolve"
-        }, 
+          "code":"resolve"
+        },
         {
-          "code": "resolves"
-        }, 
+          "code":"resolves"
+        },
         {
-          "code": "resolved"
+          "code":"resolved"
         }
       ]
     }
