@@ -80,7 +80,7 @@
                     "definition": "স্ক্রিনের একটি নির্দিষ্ট অংশের স্ক্রিনশন নেয়া",
                     "code": "WIN + Shift + S"
                 }, {
-                    "definition": "ক্লিপবোর্ড হিস্টোরি দেখা",
+                    "definition": "ক্লিপবোর্ড হিস্টোরি দেখা (ক্লিপবোর্ড আক্টিভ করতে Start  > Settings  > System  > Clipboard এবং টার্ন অন করুন Clipboard history)",
                     "code": "WIN + V"
                 }, {
                     "definition": "রান এপ্লিকেশন ওপেন করা",
