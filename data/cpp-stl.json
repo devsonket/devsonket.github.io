@@ -91,6 +91,26 @@
             {
                 "definition": "ভেক্টর-এর পুরাতন ভ্যালু গুলো নতুন দ্বারা প্রতিস্থাপন করা",
                 "code": "myVector.assign(size, newnumber)"
+            },
+            {
+                "definition": "ভেক্টর-এর ভ্যালু ঊর্ধ্বগামী (এসেন্ডিং) ক্রমে সাজানো",
+                "code": "sort(myVector.begin(), myVector.end())"
+            },
+            {
+                "definition": "ভেক্টর-এর ভ্যালু অধোগামী (ডিসেন্ডিং) ক্রমে সাজানো",
+                "code": "sort(myVector.begin(), myVector.end(), greater<int>())"
+            },
+            {
+                "definition": "ভেক্টর-এর কোন ইনডেক্স এর ভ্যালু পাওয়ার উপায়-১",
+                "code": "myVector.at(indexPosition)"
+            },
+            {
+                "definition": "ভেক্টর-এর কোন ইনডেক্স এর ভ্যালু পাওয়ার উপায়-২",
+                "code": "myVector[indexPosition]"
+            },
+            {
+                "definition": "ভেক্টর-এর ভ্যালু রিভার্স করা",
+                "code": "reverse(myVector.begin(), myVector.end())"
             }
         ]
     }, {
