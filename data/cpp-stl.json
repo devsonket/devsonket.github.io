@@ -558,6 +558,43 @@
                 "code": "myPair(anotherPair)"
             }
         ]
+    },
+    {
+        "title": "প্রায়োরিটি কিউ",
+        "items": [
+            {
+                "definition": "প্রায়োরিটি কিউ-এর স্ট্যান্ডার্ড লাইব্রেরি",
+                "code": "#include <queue>"
+            },
+            {
+                "definition": "প্রায়োরিটি কিউ-এর ভেরিয়েবল ডিক্লেয়ার করা(প্রায়োরিটি প্রায়োরিটি কিউ)",
+                "code": "priority_queue <int> myPriorityQueue"
+            },
+            {
+                "definition": "প্রায়োরিটি কিউ-এ ভ্যালু রাখা",
+                "code": "myPriorityQueue.push(value)"
+            },
+            {
+                "definition": "প্রায়োরিটি কিউ-এর সামনে থেকে ভ্যালু বের করা",
+                "code": "myPriorityQueue.pop()"
+            },
+            {
+                "definition": "প্রায়োরিটি কিউ-এর উপরের ভ্যালু দেখা",
+                "code": "myPriorityQueue.top()"
+            },
+            {
+                "definition": "প্রায়োরিটি কিউ খালি কি-না তা জানতে চাওয়া",
+                "code": "myPriorityQueue.empty()"
+            },
+            {
+                "definition": "প্রায়োরিটি কিউ-এ মোট কতগুলো ভ্যালু আছে",
+                "code": "myPriorityQueue.size()"
+            },
+            {
+                "definition": "দুইটি প্রায়োরিটি কিউ-এর মধ্যে ভ্যালু বিনিময় করা",
+                "code": "myPriorityQueue.swap(anotherPriorityQueue)"
+            }
+        ]
     }
   ]
 }
