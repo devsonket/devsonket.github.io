@@ -1,0 +1,81 @@
+{
+    "id": "reduxjs",
+    "title": "রিডাক্স JS ফান্ডামেন্টালস",
+    "slug": "রিডাক্স ",
+    "description": "রিডাক্স JS(State Management Library for Javascript Apps) এর ফান্ডামেন্টালস ",
+    "colorPref": "#764abc",
+    "contents": [
+        
+        {
+            "title": "রিডাক্স JS ইনস্টল  করা ",
+            "items": [
+                {
+                    "definition": "npm এর  সাহায্যে ইনস্টল  করা ",
+                    "code": "npm install redux"
+                },
+                {
+                    "definition": "yarn এর  সাহায্যে ইনস্টল  করা ",
+                    "code": "yarn add redux"
+                }
+            ]  
+        },
+        {
+            "title": "কোনটা কী ",
+            "items": [
+                {
+                    "definition": "Action  ",
+                    "code": "কোনো কাজ করাকে বোঝায় ।  যেমন : addToCart,buyBook ইত্যাদি "
+                },
+                {
+                    "definition": "Reducer  ",
+                    "code": "অ্যাকশন আর ফলে স্টোরে কি ঘটবে তা  ডিফাইন করে "
+                },
+                {
+                    "definition": "Store  ",
+                    "code": "সম্পূর্ণ  এপ্লিকেশন এর  স্টেট  হোল্ড করে  "
+                },
+                {
+                    "definition": "Store Enhancers  ",
+                    "code": "Store Enhancers হলো Higher order functions যেটা রিডাক্স স্টোরে এক্সট্রা ফাঙ্কশনালিটি এড করে  "
+                },
+                {
+                    "definition": "Middleware  ",
+                    "code": "Middleware রিডাক্স স্টোরে কাস্টম ফাঙ্কশনালিটি এড করতে ব্যবহার করা হয় ।যেমন :লগিং ,ক্র্যাশ রিপোর্টিং ,আসিন্ক্রনাস টাস্ক পারফর্ম করা ইত্যাদি  "
+                }    
+            ]  
+        },
+        {
+            "title": "স্টোর ফান্ডামেন্টালস",
+            "items": [
+                {
+                    "definition": "স্টোর তৈরি করা ",
+                    "code": "createStore(reducer)"
+                },
+                {
+                    "definition": "স্টোর এর স্টেট পেতে  ",
+                    "code": "getState()"
+                },  {
+                    "definition": "অ্যাকশন ডিসপ্যাচ করতে  ",
+                    "code": "dispatch(action)"
+                },
+                {
+                    "definition": " UI এ  স্টেট  চেঞ্জ  করতে  ",
+                    "code": "subscribe(listener)"
+                },
+                {
+                    "definition": "Middleware এপলাই করতে ",
+                    "code": "applyMiddleware(middleware)"
+                }
+            ]  
+        },
+        {
+            "title": "রেডিউসার  এর  ধারণা ",
+            "items": [
+                {
+                    "definition": "বিভিন্ন রেডিউসার কম্বাইন  করতে ",
+                    "code": "combineReducers({name:reducer,name:reducer})"
+                }
+            ]  
+        }
+    ]
+}
