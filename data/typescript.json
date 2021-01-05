@@ -10,7 +10,19 @@
         "title": "ইন্সটলেশন ও কনফিগারেশন",
         "items": [
           {
-            "definition": "টাইপস্ক্রিপ্ট ইন্সটল করা",
+            "definition": "গ্লোবালি টাইপস্ক্রিপ্ট ইন্সটল করা (yarn এর সাহার্যে)",
+            "code": "yarn global add typescript"
+          },
+          {
+            "definition": "গ্লোবালি টাইপস্ক্রিপ্ট ইন্সটল করা (npm এর সাহার্যে)",
+            "code": "npm install typescript -g"
+          },
+          {
+            "definition": "লোকাল প্রজেক্টে টাইপস্ক্রিপ্ট ইন্সটল করা (yarn এর সাহার্যে)",
+            "code": "yarn add typescript"
+          },
+  		  {
+            "definition": "লোকাল প্রজেক্টে টাইপস্ক্রিপ্ট ইন্সটল করা (npm এর সাহার্যে)",
             "code": "npm install typescript"
           },
 
