@@ -94,6 +94,27 @@
           "code": "p n"
         }
       ]
+    },
+    {
+        "title":"উইন্ডোজ শাট্‌ডাউন, রিস্টার্ট ও লগ আউট",
+        "items": [
+            {
+              "definition": "উইন্ডোজ শাট্‌ডাউন করতে",
+              "code": "shutdown /s"
+            },
+            {
+                "definition": "উইন্ডোজ রিস্টার্ট করতে",
+                "code": "shutdown /r"
+            },
+            {
+                "definition": "উইন্ডোজ লগ আউট করতে",
+                "code": "shutdown /l"
+            },
+            {
+                "definition": "বিকল্পগুলির সম্পূর্ণ তালিকার জন্য",
+                "code": "shutdown /?"
+            }
+        ]
     }
   ]
 }
