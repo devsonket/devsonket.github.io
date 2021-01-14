@@ -369,6 +369,11 @@
                 "definition": "মডেলের মধ্যে mass  assignment  ইনাবল করার জন্য ",
                 "code": "protected $guarded = [];"
             },
+                      
+            {
+                "definition": "মডেলের মধ্যে  নির্দিষ্ট কলামের mass  assignment  ইনাবল করার জন্য ",
+                "code": "protected $fillable = ['column_name_one','column_name_two','column_name_three'...];"
+            },
             {
                 "definition": "মডেল দিয়ে DELETE করতে চাইলে ",
                 "code": "Model::find(yourId)->delete();"
