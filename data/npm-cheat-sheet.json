@@ -25,6 +25,10 @@
           "code": "npm init"
         },
         {
+          "definition": "package.json ফাইলের সকল ডিপেন্ডেন্সি ইন্সটল করা",
+          "code": "npm install অথবা npm i " 
+        },
+        {
           "definition": "লোকালি প্যাকেজ ইনস্টল করা",
           "code": "npm i <package-name>"
         },
