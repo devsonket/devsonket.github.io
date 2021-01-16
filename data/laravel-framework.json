@@ -158,22 +158,28 @@
             "items": [{
                 "definition": "যেকোনো value প্রদর্শন করতে ব্যবহৃত হয়",
                 "code": "@yield"
-            }, {
+            },{
                 "definition": "টেমপ্লেটের যেকোনো section define করতে ব্যবহৃত হয়",
                 "code": "@section"
-            }, {
+            },{
                 "definition": "define করা section end করতে ব্যবহৃত হয়",
                 "code": "@endsection"
-            }, {
+            },{
                 "definition": "এক view file কে অন্য view file এ include করার জন্য",
                 "code": "@include"
-            }, {
+            },{
                 "definition": "Master Layout কে Child Layout এ extends বা inherit করার জন্য",
                 "code": "@extends"
-            }, {
+            },{
                 "definition": "লারাভেল ব্লেড টেমপ্লেটে Comments করা",
                 "code": "{{-- devsonket --}}"
-            }, {
+            },{
+                "definition": "ব্লেড টেমপ্লেটে PHP Variable থেকে HTML রেন্ডার করা",
+                "code": "{!! devsonket !!}"
+            },{
+                "definition": "ব্লেড টেমপ্লেটে Vue JS এর Syntax ব্যবহার করা",
+                "code": "@{{ devsonket }}"
+            },{
                 "definition": "ব্লেড টেমপ্লেটের মধ্যে পিএইচপি ব্লক লেখার জন্য",
                 "code": "@php"
             }, {
@@ -368,6 +374,11 @@
             {
                 "definition": "মডেলের মধ্যে mass  assignment  ইনাবল করার জন্য ",
                 "code": "protected $guarded = [];"
+            },
+                      
+            {
+                "definition": "মডেলের মধ্যে  নির্দিষ্ট কলামের mass  assignment  ইনাবল করার জন্য ",
+                "code": "protected $fillable = ['column_name_one','column_name_two','column_name_three'...];"
             },
             {
                 "definition": "মডেল দিয়ে DELETE করতে চাইলে ",
