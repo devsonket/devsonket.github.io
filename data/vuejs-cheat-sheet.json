@@ -66,6 +66,9 @@
         }, {
           "definition": "click ইভেন্ট এর প্রোপাগ্যাশন বন্ধ করতে",
           "code": "<a @click.stop='doThis'></a>"
+        }, {
+          "definition": "Vue Js এর সকল Event Modifier '.stop (Stop event propagation), .prevent (Prevent default behavior), .capture (Event inner element এ যাওয়া আগে capture করা), .self (Only triggering self target), .once (Trigger only one time), .passive (Use to improving performance on mobile)'",
+          "code": "<div v-on:scroll.passive='doThis'></div>"
         }
       ]
     },
