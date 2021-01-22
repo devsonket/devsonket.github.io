@@ -89,6 +89,10 @@
                 {
                     "definition": "ডকার ইমেজ remove করতে",
                     "code": "docker rmi <image_id>"
+                },
+                {
+                    "definition": "ডকার ইমেজ রিপোজিটরি/ট্যাঁগ নেইম change করতে",
+                    "code": "docker image tag <old repository name>:<old tag name> <new repository name>:<new tag name>"
                 }
 
             ]
