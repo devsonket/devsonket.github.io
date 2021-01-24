@@ -189,6 +189,10 @@
           "code": "<Router> <Switch> <Route path='/about' component={About}/> </Switch> </Router>"
         },
         {
+          "definition": "লিংক এর একটি উদাহরন",
+          "code": "<Link to='/about'> About </Link>"
+        },
+        {
           "definition": "Route-এ প্যারামিটার পাস করতে হলে",
           "code": "<Router> <Switch> <Route path='/about/:param' component={About}/> </Switch> </Router>"
         },
