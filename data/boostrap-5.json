@@ -160,6 +160,10 @@
              {
                 "definition":"রিস্পন্সিভ ইমেজ",
                 "code":"<img class='img-fluid'>"
+             },
+             {
+                "definition":"রাউন্ড কর্নার এবং বর্ডার এক সাথে",
+                "code":"<img class='img-thumbnail'>"
              }
           ]
        }
