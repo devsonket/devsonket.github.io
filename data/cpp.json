@@ -23,6 +23,9 @@
                 }, {
                     "definition": "কনসোল থেকে ইনপুট নেয়া",
                     "code": "cin >>"
+                }, {
+                    "definition": "cout এবং cin দ্রুত কাজ করার জন্য",
+                    "code": "ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);"
                 }
             ]
         }, {
