@@ -66,8 +66,8 @@
 					"code": "DROP USER 'username'@'localhost';"
 				},
 				{
-					"definition": "ডিফল্ট এডমিন `root` এর পাসওয়ার্ড চেঞ্জ করতে",
-					"code": "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new_password'; FLUSH PRIVILEGES;"
+					"definition": "সেটিংস গুলো তৎক্ষণাৎ প্রয়োগ করতে",
+					"code": "FLUSH PRIVILEGES;"
 				}
 			]
 		},
