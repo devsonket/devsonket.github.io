@@ -1,0 +1,250 @@
+{
+  "id":"typescript",
+  "title":"টাইপস্ক্রিপ্ট",
+  "slug":"typescript",
+  "description":"টাইপস্ক্রিপ্ট জাভাস্ক্রিপ্ট ল্যাংগুয়েজের একটি সুপারসেট। এটির উদ্দেশ্য হলো জাভাস্ক্রিপ্টকে স্ট্রংলি টাইপড ল্যাংগুয়েজের একটা ফ্লেভার দেওয়া যাতে আমাদের কোডের ইরর সহজে ধরা পড়ে এবং এপ্লিকেশনের অনেক অনাকাঙ্ক্ষিত আচরণ থেকে আমরা রক্ষা পাই। টাইপস্ক্রিপ্ট জাভাস্ক্রিপ্টের মত ব্রাউজারে লেখা যায় না।",
+  "colorPref":"#2E86C1",
+  "contents":[
+    {
+      "title":"ইন্সটলেশন ও কনফিগারেশন",
+      "items":[
+        {
+          "definition":"গ্লোবালি টাইপস্ক্রিপ্ট ইন্সটল করা (yarn এর সাহার্যে)",
+          "code":"yarn global add typescript"
+        },
+        {
+          "definition":"গ্লোবালি টাইপস্ক্রিপ্ট ইন্সটল করা (npm এর সাহার্যে)",
+          "code":"npm install typescript -g"
+        },
+        {
+          "definition":"লোকাল প্রজেক্টে টাইপস্ক্রিপ্ট ইন্সটল করা (yarn এর সাহার্যে)",
+          "code":"yarn add typescript"
+        },
+        {
+          "definition":"লোকাল প্রজেক্টে টাইপস্ক্রিপ্ট ইন্সটল করা (npm এর সাহার্যে)",
+          "code":"npm install typescript"
+        },
+        {
+          "definition":"টাইপস্ক্রিপ্ট প্রজেক্টে ইনিশিয়ালাইজ করা",
+          "code":"tsc --init"
+        },
+        {
+          "definition":"একটি নির্দিষ্ট ফাইলকে কম্পাইল করা",
+          "code":"tsc app.ts"
+        },
+        {
+          "definition":"একটি নির্দিষ্ট ফাইলকে ওয়াচমোডে কম্পাইল করা",
+          "code":"tsc app.ts -w"
+        },
+        {
+          "definition":"সব টাইপস্ক্রিপ্ট ফাইলকে কম্পাইল করা",
+          "code":"tsc"
+        },
+        {
+          "definition":"সব টাইপস্ক্রিপ্ট ফাইলকে ওয়াচমোডে কম্পাইল করা",
+          "code":"tsc -w"
+        },
+        {
+          "definition":"কোন ফাইলকে কম্পাইল করতে না চাইলে tsconfig.json ফাইলে গিয়ে শেষ ব্র্যাকেটের আগে এভাবে কোড লিখতে হবে",
+          "code":"\"exclude\": [\n\t\"example.ts\",\n\t\"example2.ts\",\n\t\"*.dev.ts\",   //.dev.ts দিয়ে শেষ হওয়া ফাইলগুলো বাদ \n\t\"**/*.dev.ts\" //সব ফোল্ডারে .dev.ts দিয়ে শেষ হওয়া ফাইলগুলো বাদ\n]"
+        },
+        {
+          "definition":"কোন ফাইলকে কম্পাইল প্রোসেসে এড করতে চাইলে tsconfig.json ফাইলে গিয়ে শেষ ব্র্যাকেটের আগে এভাবে কোড লিখতে হবে",
+          "code":"\"include\": [\n\t\"app.ts\"\n]"
+        }
+      ]
+    },
+    {
+      "title":"ডেটাটাইপ",
+      "items":[
+        {
+          "definition":"বেসিক ডেটাটাইপগুলো",
+          "code":"Any, number, string, boolean, object, Array, Tuple, Enum, undefined, null, void, never, unknown"
+        },
+        {
+          "definition":"ইউনিয়ন ডেটাটাইপ",
+          "code":"const userId: number | string"
+        },
+        {
+          "definition":"ইন্টারসেকশন ডেটাটাইপ",
+          "code":"let myIntersectionType: Foo & Bar;"
+        },
+        {
+          "definition":"লিটারেল ডেটাটাইপ (স্ট্রিং)",
+          "code":"let direction: 'left' | 'right'"
+        },
+        {
+          "definition":"লিটারেল ডেটাটাইপ (নাম্বার)",
+          "code":"let roll: 1 | 2 | 3 | 4 | 5"
+        }
+      ]
+    },
+    {
+      "title":"ভ্যারিয়েবল",
+      "items":[
+        {
+          "definition":"ভ্যারিয়েবল ডিক্লারেশন",
+          "code":"let age: number"
+        },
+        {
+          "definition":"ভ্যারিয়েবল ডিক্লারেশনের সময় ভ্যালু এসাইন করা",
+          "code":"let age: number = 20"
+        },
+        {
+          "definition":"টাইপের এলিয়াস/উপনাম",
+          "code":"type Direction: 'left' | 'right';\nlet direction: Direction;"
+        },
+        {
+          "definition":"টাইপের এসারশন",
+          "code":"let someValue: any = 'this is a string';\nlet strLength: number = (someValue as string).length;"
+        }
+      ]
+    },
+    {
+      "title":"অ্যারে ও টাপল",
+      "items":[
+        {
+          "definition":"অ্যারে ডিক্লারেশন",
+          "code":"let ages: number[]"
+        },
+        {
+          "definition":"ইউনিয়ন টাইপ অ্যারে ডিক্লারেশন",
+          "code":"let x: (number | boolean | string)[];"
+        },
+        {
+          "definition":"অ্যারেতে ভ্যালু এসাইন করা",
+          "code":"ages = [12, 5];"
+        },
+        {
+          "definition":"অ্যারের কোন পজিশনের ভ্যালু এক্সেস করা",
+          "code":"let secondAge = ages[1]"
+        },
+        {
+          "definition":"টাপল ডিক্লারেশন",
+          "code":"let tp: [number, string]"
+        },
+        {
+          "definition":"টাপলে ভ্যালু এসাইন করা",
+          "code":"tp = [10, 'player']"
+        }
+      ]
+    },
+    {
+      "title":"ফাংশন",
+      "items":[
+        {
+          "definition":"কন্সট্রাক্টর",
+          "code":"new () => ConstructedType;"
+        },
+        {
+          "definition":"ফাংশন প্যারামিটার ও রিটার্ন টাইপ",
+          "code":"function add (n1: number, n2: number) => number; \n\n\t //or \n\nfunction add (n1: number, n2: number): number;"
+        },
+        {
+          "definition":"এরো ফাংশন",
+          "code":"let greeting = (name: string): string => {\n\treturn \"Hello \" + name;\n}\n\nlet greetUser = greeting(\"Shadab\")\nconsole.log(greetUser);"
+        },
+        {
+          "definition":"অপশনাল প্যারামিটার",
+          "code":"(arg1: Type, optional?: Type) => ReturnType"
+        },
+        {
+          "definition":"ডিফল্ট প্যারামিটার",
+          "code":"function fn(arg1 = 'default'): ReturnType {}"
+        },
+        {
+          "definition":"রেস্ট প্যারামিটার",
+          "code":"(arg1: Type, ...allOtherArgs: Type[]) => ReturnType"
+        },
+        {
+          "definition":"ওভারলোড",
+          "code":"function conv(a: string): number;\nfunction conv(a: number): string;\nfunction conv(a: string | number): string | number\n{...}"
+        }
+      ]
+    },
+    {
+      "title":"অবজেক্ট",
+      "items":[
+        {
+          "definition":"ডিক্লারেশন",
+          "code":"var person = { \n\tfirstname:\"Tom\",\n\tlastname:\"Hanks\"\n\tsayHello:function() {  }\n};\nperson.sayHello = function() {\n\tconsole.log('hello'+person.firstName)\n};\nperson.sayHello();"
+        },
+        {
+          "definition":"প্রোপার্টি এক্সেস করা",
+          "code":"person.firstname;\nperson.sayHello();"
+        }
+      ]
+    },
+    {
+      "title":"ক্লাস",
+      "items":[
+        {
+          "definition":"ডিক্লারেশন",
+          "code":"class Greeter {\n\tgreeting: string;\n\n\tconstructor(message: string) {\n\t\tthis.greeting = message;\n\t}\n\n\tgreet() {\n\t\treturn \"Hello, \" + this.greeting;\n\t}\n}"
+        },
+        {
+          "definition":"পাবলিক মডিফায়ার",
+          "code":"class Animal {\n\tpublic name: string;\n\tpublic constructor(theName: string) {\n\t\tthis.name = theName;\n\t}\n\tpublic move(distance: number) {\n\t  console.log(`${this.name} moved ${distance}m.`);\n\t}\n}"
+        },
+        {
+          "definition":"প্রাইভেট মডিফায়ার",
+          "code":"class Animal {\n\tprivate name: string;\n\n\tpublic constructor(theName: string) {\n\t\tthis.name = theName;\n\t}\n}"
+        },
+        {
+          "definition":"প্রোটেক্টেড মডিফায়ার",
+          "code":"class Animal {\n\tprotected name: string;\n\n\tpublic constructor(theName: string) {\n\t\tthis.name = theName;\n\t}\n}"
+        },
+        {
+          "definition":"ক্লাসকে ব্যবহার করা",
+          "code":"let greeter = new Greeter(\"world\");"
+        },
+        {
+          "definition":"ক্লাসের ইনহেরিটেন্স",
+          "code":"class Animal {\n\tmove(distance: number = 0) {\n\t  console.log(`Animal moved ${distance}m.`);\n\t}\n}\n\nclass Dog extends Animal {\n\tbark() {\n\t\tconsole.log(\"Woof! Woof!\");\n\t}\n}\n\nconst dog = new Dog();\ndog.bark();\ndog.move(10);\ndog.bark();"
+        },
+        {
+          "definition":"এবস্ট্রাক্ট ক্লাস",
+          "code":"abstract class Animal {\n\n\tabstract makeSound(): void;\n\n\tmove(): void {\n\t\tconsole.log(\"roaming the earth...\");\n\t}\n}"
+        },
+        {
+          "definition":"ক্লাসকে ইন্টারফেসের মতো ব্যবহার করা",
+          "code":"class Point {\n\tx: number;\n\ty: number;\n}\n\ninterface Point3d extends Point {\n\tz: number;\n}\n\nlet point3d: Point3d = { x: 1, y: 2, z: 3 };"
+        }
+      ]
+    },
+    {
+      "title":"ইন্টারফেস",
+      "items":[
+        {
+          "definition":"ডিক্লারেশন",
+          "code":"interface ClockInterface {\n\tcurrentTime: Date;\n\tsetTime(d: Date): void;\n}"
+        },
+        {
+          "definition":"ইন্টারফেস ইমপ্লিমেন্ট করা",
+          "code":"class Clock implements ClockInterface {\n\n\tcurrentTime: Date = new Date();\n\n\tsetTime(d: Date) {\n\t\tthis.currentTime = d;\n\t}\n\n\tconstructor(h: number, m: number) {}\n}"
+        },
+        {
+          "definition":"ইন্টারফেসে ইনহেরিটেন্স",
+          "code":"interface Child extends Parent, SomeClass {\n\tproperty: Type;\n\toptionalProp?: Type;\n\toptionalMethod?(arg1: Type): ReturnType;\n}"
+        }
+      ]
+    },
+    {
+      "title":"ইনিউমারেশন বা ইনাম",
+      "items":[
+        {
+          "definition":"ডিক্লারেশন",
+          "code":"enum Role { ADMIN, READ_ONLY, AUTHOR }"
+        },
+        {
+          "definition":"সিরিয়াল অন্য নাম্বার থেকে শুরু করা",
+          "code":"enum Role { ADMIN = 5, READ_ONLY, AUTHOR }"
+        },
+        {
+          "definition":"নিজের ইচ্ছামত ভ্যালু এসাইন করা",
+          "code":"enum Role { ADMIN = 'Admin', READ_ONLY = 300, AUTHOR = 250 }"
+        }
+      ]
+    }
+  ]
+}

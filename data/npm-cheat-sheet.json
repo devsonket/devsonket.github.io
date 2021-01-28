@@ -25,6 +25,14 @@
           "code": "npm init"
         },
         {
+          "definition": "package.json ফাইলের সকল ডিপেন্ডেন্সি ইন্সটল করা",
+          "code": "npm install অথবা npm i " 
+        },
+        {
+          "definition": "package.json ফাইলের সকল ডিপেন্ডেন্সি ইন্সটল করা, ডেভ ডিপেন্ডেন্সি ছাড়া",
+          "code": "npm i --production" 
+        },        
+        {
           "definition": "লোকালি প্যাকেজ ইনস্টল করা",
           "code": "npm i <package-name>"
         },
@@ -93,8 +101,16 @@
           "code": "npm update"
         },
         {
+          "definition": "লোকাল ডেভ প্যাকেজ সমূহ আপডেট করতে",
+          "code": "npm update --dev"
+        },
+        {
           "definition": "গ্লোবাল প্যাকেজ সমূহ আপডেট করতে",
           "code": "npm update -g"
+        },
+        {
+          "definition": "নির্দিষ্ট প্যাকেজ উপডেট করতেে",
+          "code": "npm update <package-name>"
         },
         {
           "definition": "লোকাল প্যাকেজ আনইনস্টল করতে",

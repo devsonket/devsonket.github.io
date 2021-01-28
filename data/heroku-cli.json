@@ -20,6 +20,9 @@
           }, {
             "definition": "সাহায্য",
             "code": "heroku help"
+          }, {
+            "definition": "নির্দিষ্ট কোনো কমান্ড এর সাহায্য",
+            "code": "heroku help কমান্ড এর নাম"
           }
         ]
       }, {
@@ -52,6 +55,9 @@
             "definition": "অ্যাপ কনফিগ",
             "code": "heroku config"
           }, {
+            "definition": "নির্দিষ্ট কনফিগ ভেরিয়েবলের মান",
+            "code": "heroku config:get ভেরিয়েবলের নাম"
+          }, {
             "definition": "অ্যাপ এর অবস্থা",
             "code": "heroku ps"
           }, {
@@ -71,6 +77,20 @@
           }, {
             "definition": "সবগুলো কী লিস্ট করা",
             "code": "heroku keys"
+          }
+        ]
+      }, {
+        "title": "ডোমেইন ম্যানেজ",
+        "items": [
+          {
+            "definition": "ডোমেইন অ্যাড করা",
+            "code": "heroku domains:add ডোমেইন-এর-নাম"
+          }, {
+            "definition": "ডোমেইন রিমুভ করা",
+            "code": "heroku domains:remove ডোমেইন-এর-নাম"
+          }, {
+            "definition": "সবগুলো ডোমেইন রিমুভ করা",
+            "code": "heroku domains:clear"
           }
         ]
       }

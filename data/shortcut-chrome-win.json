@@ -1,180 +1,288 @@
 {
-  "id": "shrotcut-chrome-win",
-  "title": "গুগুল ক্রোম(উইন্ডোজ)",
-  "slug": "shrotcut-chrome-win",
-  "description": "গুগুল ক্রোমের প্রয়োজনী উইন্ডোজ শর্টকাট কী",
-  "colorPref": "#f2dd2d",
-  "contents": [
+  "id":"shrotcut-chrome-win",
+  "title":"গুগল ক্রোম(উইন্ডোজ)",
+  "slug":"shrotcut-chrome-win",
+  "description":"গুগল ক্রোম হলো গুগলের তৈরি সর্বাধিক জনপ্রিয় ও বহুল ব্যবহৃত ওয়েব ব্রাউজার। গুগল ক্রোমের(উইন্ডোজ) জন্য প্রযোজনীয় সকল  শর্টকাট কী নিয়ে তৈরি চিটশিট",
+  "colorPref":"#f2dd2d",
+  "contents":[
     {
-      "title": "উইন্ডো এবং ট্যাব ম্যানেজ",
-      "items": [
+      "title":"উইন্ডো এবং ট্যাব ম্যানেজ",
+      "items":[
         {
-          "definition": "মাত্র ক্লোজ করা ট্যাব অথবা উইন্ডো একে একে ফিরিয়ে আনা",
-          "code": "Ctrl + Shift + T"
-        }, {
-          "definition": "একটা নির্দিষ্ট ট্যাবে যাওয়া",
-          "code": "Ctrl চেপে 1 থেকে 9 পর্যন্ত"
-        }, {
-          "definition": "আগের ট্যাবে যাওয়া",
-          "code": "Ctrl + Shift + tab"
-        }, {
-          "definition": "পরের ট্যাবে যাওয়া",
-          "code": "Ctrl + Tab"
-        }, {
-          "definition": "বর্তমান ট্যাব ক্লোজ করা",
-          "code": "Ctrl + W"
-        }, {
-          "definition": "লিঙ্ক নতুন ট্যাবে ওপেন করা",
-          "code": "Ctrl হোল্ড করে লিঙ্কে ক্লিক করুন"
-        }, {
-          "definition": "লিঙ্ক নতুন উইন্ডোতে ওপেন করা",
-          "code": "Shift হোল্ড করে লিঙ্কে ক্লিক করুন"
-        }, {
-          "definition": "প্রাইভেট ব্রাউজিং শুরু করা",
-          "code": "Ctrl + Shift + N"
-        }, {
-          "definition": "নতুন ট্যাব খোলা",
-          "code": "Ctrl + T"
-        } , {
-          "definition": "নতুন উইন্ডো ওপেন করা",
-          "code": "Ctrl + n"
-        } , {
-          "definition": "পরবর্তী ট্যাব এ যাওয়া",
-          "code": "Ctrl + Tab"
-        } , {
-          "definition": "নিদৃষ্ট ট্যাব এ যাওয়া (১-৮ এর মধ্যে)",
-          "code": "Ctrl + 1"
-        } , {
-          "definition": "শেষ ট্যাব এ যাওয়া",
-          "code": "Ctrl + 9"
-        } , {
-          "definition": "পূর্বের এড্রেস এ যাওয়া",
-          "code": "Alt + Left arrow"
-        } , {
-          "definition": "পরবর্তী এড্রেস এ যাওয়া",
-          "code": "Alt + Right arrow"
-        }  , {
-          "definition": "বর্তমান উইন্ডো ক্লোজ করা",
-          "code": "Ctrl + Shift + w"
-        }  
-      ]
-    }, {
-      "title": "পেজ কন্ট্রোল",
-      "items": [
+          "definition":"মাত্র ক্লোজ করা ট্যাব অথবা উইন্ডো একে একে ফিরিয়ে আনা",
+          "code":"Ctrl + Shift + T"
+        },
         {
-          "definition": "কোনো পেজের একদম উপরে যাওয়া",
-          "code": "Home"
-        }, {
-          "definition": "কোনো পেজের একদম নিচে যাওয়া",
-          "code": "End"
-        }, {
-          "definition": "কোনো পেজে স্ক্রল ডাউন করা",
-          "code": "Space অথবা PageDown"
-        }, {
-          "definition": "কোনো পেজে সমান্তরাল ভাবে স্ক্রল করা",
-          "code": "Shift + মাউস wheel উপরের দিকে ঘুরানো"
-        }, {
-          "definition": "কোনো পেজে স্ক্রল আপ করা",
-          "code": "Shift + Space অথবা PageUp"
-        }, {
-          "definition": "পেজ লোড স্টপ করা",
-          "code": "Escape"
-        }, {
-          "definition": "পেজ রিলোড করা",
-          "code": "Ctrl + R অথবা F5"
-        }, {
-          "definition": "ইউআরএল বার অ্যাক্সেস করা",
-          "code": "Ctrl + L"
-        }, {
-          "definition": "জুম পজিশন থেকে বাই ডিফল্ট পজিশনে আসা",
-          "code": "Ctrl + 0"
-        }, {
-          "definition": "বর্তমান পেজ বুকমার্ক করা",
-          "code": "Ctrl + D"
-        }, {
-          "definition": "ফুলস্ক্রিন এ ব্রাউস করতে",
-          "code": "F11"
-        } , {
-          "definition": "পেইজ জুম করতে",
-          "code": "Ctrl এবং অথবা Ctrl + মাউস wheel নিচের দিকে ঘুরানো"
-        }, {
-          "definition": "পেইজ আনজুম করতে",
-          "code": "Ctrl এবং - অথবা Ctrl + মাউস wheel উপরের দিকে ঘুরানো"
-        }, {
-          "definition": "পেইজ প্রিন্ট করতে",
-          "code": "Ctrl + p"
+          "definition":"একটা নির্দিষ্ট ট্যাবে যাওয়া",
+          "code":"Ctrl চেপে 1 থেকে 9 পর্যন্ত"
+        },
+        {
+          "definition":"আগের ট্যাবে যাওয়া",
+          "code":"Ctrl + Shift + tab"
+        },
+        {
+          "definition":"পরের ট্যাবে যাওয়া",
+          "code":"Ctrl + Tab"
+        },
+        {
+          "definition":"বর্তমান ট্যাব ক্লোজ করা",
+          "code":"Ctrl + W"
+        },
+        {
+          "definition":"লিঙ্ক নতুন ট্যাবে ওপেন করা",
+          "code":"Ctrl হোল্ড করে লিঙ্কে ক্লিক করুন"
+        },
+        {
+          "definition":"লিঙ্ক নতুন উইন্ডোতে ওপেন করা",
+          "code":"Shift হোল্ড করে লিঙ্কে ক্লিক করুন"
+        },
+        {
+          "definition":"প্রাইভেট ব্রাউজিং শুরু করা",
+          "code":"Ctrl + Shift + N"
+        },
+        {
+          "definition":"নতুন ট্যাব খোলা",
+          "code":"Ctrl + T"
+        },
+        {
+          "definition":"নতুন উইন্ডো ওপেন করা",
+          "code":"Ctrl + n"
+        },
+        {
+          "definition":"পরবর্তী ট্যাব এ যাওয়া",
+          "code":"Ctrl + Tab"
+        },
+        {
+          "definition":"নিদৃষ্ট ট্যাব এ যাওয়া (১-৮ এর মধ্যে)",
+          "code":"Ctrl + 1"
+        },
+        {
+          "definition":"শেষ ট্যাব এ যাওয়া",
+          "code":"Ctrl + 9"
+        },
+        {
+          "definition":"পূর্বের এড্রেস এ যাওয়া",
+          "code":"Alt + Left arrow"
+        },
+        {
+          "definition":"পরবর্তী এড্রেস এ যাওয়া",
+          "code":"Alt + Right arrow"
+        },
+        {
+          "definition":"বর্তমান উইন্ডো ক্লোজ করা",
+          "code":"Ctrl + Shift + w"
+        },
+        {
+          "definition":"বর্তমান উইন্ডো মিনিমাইজ করা",
+          "code":"Alt + Space + N"
+        },
+        {
+          "definition":"বর্তমান উইন্ডো  ম্যাক্সিমাইজ বা বড় করা",
+          "code":"Alt + Space + N"
         }
       ]
-    }, {
-      "title": "অন্যান্য",
-      "items": [
+    },
+    {
+      "title":"পেজ কন্ট্রোল",
+      "items":[
         {
-          "definition": "একটা পেজে কোন টেক্সট খুঁজতে চাচ্ছেন?",
-          "code": "Ctrl + F অথবা F3"
-        }, {
-          "definition": "ডাউনলোড লিস্ট অ্যাক্সেস করতে",
-          "code": "Ctrl + J"
-        }, {
-          "definition": "ডেভেলপার কন্সোল অ্যাক্সেস করতে",
-          "code": "Ctrl + Shift + J"
-        }, {
-          "definition": "পেজ সোর্স দেখতে",
-          "code": "Ctrl + U"
-        }, {
-          "definition": "ইন্সপেক্ট করতে",
-          "code": "Ctrl + Shift + I"
-        } , {
-          "definition": "ব্রাউসিং এর ইতিহাস দেখতে",
-          "code": "Ctrl + h"
-        } , {
-          "definition": "ব্রাউসিং এর ইতিহাস মুছে ফেলার ট্যাব",
-          "code": "Ctrl + Shift + Delete"
-        } , {
-          "definition": "অন্য ইউজার এ যেতে",
-          "code": "Ctrl + Shift + m"
-        } , {
-          "definition": "টাস্ক মেনেজার দেখতে",
-          "code": "Shift + Esc"
-        } , {
-          "definition": "ফোকাস চেঞ্জ করতে",
-          "code": "F6"
-        } , {
-          "definition": "এড্রেস বার এ যেতে",
-          "code": "Alt + d"
-        } , {
-          "definition": "সার্চ ইঞ্জিন এর মাধ্যমে এড্রেস বার এ সার্চ করতে",
-          "code": "Ctrl + e"
+          "definition":"কোনো পেজের একদম উপরে যাওয়া",
+          "code":"Home"
+        },
+        {
+          "definition":"কোনো পেজের একদম নিচে যাওয়া",
+          "code":"End"
+        },
+        {
+          "definition":"কোনো পেজে স্ক্রল ডাউন করা",
+          "code":"Space অথবা PageDown"
+        },
+        {
+          "definition":"কোনো পেজে সমান্তরাল ভাবে স্ক্রল করা",
+          "code":"Shift + মাউস wheel উপরের দিকে ঘুরানো"
+        },
+        {
+          "definition":"কোনো পেজে স্ক্রল আপ করা",
+          "code":"Shift + Space অথবা PageUp"
+        },
+        {
+          "definition":"পেজ লোড স্টপ করা",
+          "code":"Escape"
+        },
+        {
+          "definition":"পেজ রিলোড করা",
+          "code":"Ctrl + R অথবা F5"
+        },
+        {
+          "definition":"ইউআরএল বার অ্যাক্সেস করা",
+          "code":"Ctrl + L"
+        },
+        {
+          "definition":"জুম পজিশন থেকে বাই ডিফল্ট পজিশনে আসা",
+          "code":"Ctrl + 0"
+        },
+        {
+          "definition":"বর্তমান পেজ বুকমার্ক করা",
+          "code":"Ctrl + D"
+        },
+        {
+          "definition":"সবগুলো পেজ একসাথে বুকমার্ক করা",
+          "code":"Ctrl + Shift + D"
+        },
+        {
+          "definition":"বুকমার্ক বার টোগল করা",
+          "code":"Ctrl + Shift + B"
+        },
+        {
+          "definition":"বুকমার্ক  ম্যানেজার দেখা",
+          "code":"Ctrl + Shift + O"
+        },
+        {
+          "definition":"ফুলস্ক্রিন এ ব্রাউস করতে",
+          "code":"F11"
+        },
+        {
+          "definition":"পেইজ জুম করতে",
+          "code":"Ctrl এবং অথবা Ctrl + মাউস wheel নিচের দিকে ঘুরানো"
+        },
+        {
+          "definition":"পেইজ আনজুম করতে",
+          "code":"Ctrl এবং - অথবা Ctrl + মাউস wheel উপরের দিকে ঘুরানো"
+        },
+        {
+          "definition":"পেইজ প্রিন্ট করতে",
+          "code":"Ctrl + p"
         }
-
       ]
-    }, {
-      "title": "ক্রোম এক্সটেনশন",
-      "items": [
+    },
+    {
+      "title":"অন্যান্য",
+      "items":[
         {
-          "definition": "ইংলিশ ওয়ার্ডের ভুল সংশোধনের জন্য",
-          "code": "Grammarly for Chrome"
-        }, {
-          "definition": "কোন পেজ থেকে সরাসরি লেখা ট্রান্সেলেট করতে চাইলে",
-          "code": "Google Translate"
-        }, {
-          "definition": "কোন ওয়েব এপ্লিকেশনে কি কি টুল ব্যাবহার করছে সেটা জানার জন্যে",
-          "code": "wappalyzer"
-        }, {
-          "definition": "এপিআই টেস্ট করার জন্য",
-          "code": "Postman"
-        }, {
-          "definition": "ইমেল চেক করার জন্য",
-          "code": "Google Mail Checker"
-        } , {
-          "definition": "কোন ওয়ার্ড সম্পর্কে বিস্তারিত জানতে চাইলে",
-          "code": "google dictionary"
-        } , {
-          "definition": "টুডু লিস্ট করতে চাইলে",
-          "code": "google keep"
-        } , {
-          "definition": "কোন পেজের ফুল পেজ স্কিন সর্ট নিতে চাইলেে",
-          "code": "Full Page Screen Capture"
-        } 
+          "definition":"একটা পেজে কোন টেক্সট খুঁজতে চাচ্ছেন?",
+          "code":"Ctrl + F অথবা F3"
+        },
+        {
+          "definition":"ডাউনলোড লিস্ট অ্যাক্সেস করতে",
+          "code":"Ctrl + J"
+        },
+        {
+          "definition":"ডেভেলপার কন্সোল অ্যাক্সেস করতে",
+          "code":"Ctrl + Shift + J"
+        },
+        {
+          "definition":"পেজ সোর্স দেখতে",
+          "code":"Ctrl + U"
+        },
+        {
+          "definition":"ইন্সপেক্ট করতে",
+          "code":"Ctrl + Shift + I"
+        },
+        {
+          "definition":"ব্রাউসিং এর ইতিহাস দেখতে",
+          "code":"Ctrl + h"
+        },
+        {
+          "definition":"ব্রাউসিং এর ইতিহাস মুছে ফেলার ট্যাব",
+          "code":"Ctrl + Shift + Delete"
+        },
+        {
+          "definition":"অন্য ইউজার এ যেতে",
+          "code":"Ctrl + Shift + m"
+        },
+        {
+          "definition":"টাস্ক মেনেজার দেখতে",
+          "code":"Shift + Esc"
+        },
+        {
+          "definition":"ফোকাস চেঞ্জ করতে",
+          "code":"F6"
+        },
+        {
+          "definition":"এড্রেস বার এ যেতে",
+          "code":"Alt + d"
+        },
+        {
+          "definition":"সার্চ ইঞ্জিন এর মাধ্যমে এড্রেস বার এ সার্চ করতে",
+          "code":"Ctrl + e"
+        },
+        {
+          "definition":"ক্রোমের মেনু  দেখতে",
+          "code":"Alt + E"
+        }
+      ]
+    },
+    {
+      "title":"ক্রোম এক্সটেনশন",
+      "items":[
+        {
+          "definition":"ইংলিশ ওয়ার্ডের ভুল সংশোধনের জন্য",
+          "code":"Grammarly for Chrome"
+        },
+        {
+          "definition":"কোন পেজ থেকে সরাসরি লেখা ট্রান্সেলেট করতে চাইলে",
+          "code":"Google Translate"
+        },
+        {
+          "definition":"কোন ওয়েব এপ্লিকেশনে কি কি টুল ব্যাবহার করছে সেটা জানার জন্যে",
+          "code":"wappalyzer"
+        },
+        {
+          "definition":"এপিআই টেস্ট করার জন্য",
+          "code":"Postman"
+        },
+        {
+          "definition":"ইমেল চেক করার জন্য",
+          "code":"Google Mail Checker"
+        },
+        {
+          "definition":"কোন ওয়ার্ড সম্পর্কে বিস্তারিত জানতে চাইলে",
+          "code":"google dictionary"
+        },
+        {
+          "definition":"টুডু লিস্ট করতে চাইলে",
+          "code":"google keep"
+        },
+        {
+          "definition":"কোন পেজের নির্দিষ্ট অংশের স্ক্রিনসট নিতে চাইলেে",
+          "code":"Lightshot (screenshot tool)"
+        },
+        {
+          "definition":"কোন পেজের ফুল পেজ স্কিন সর্ট নিতে চাইলেে",
+          "code":"Full Page Screen Capture"
+        },
+        {
+          "definition":"ওয়েব পেইজে কোন ফন্ট ব্যবহার করা হয়েছে তা জানতে চাইলেে",
+          "code":"Font Finder"
+        },
+        {
+          "definition":"ওয়েব পেইজের কালার পিক করতে চাইলে",
+          "code":"ColorZilla"
+        },
+        {
+          "definition":"ওয়েবসাইটের র‌্যাঙ্কিং জানতে চাইলেে",
+          "code":"Alexa Traffic Rank"
+        },
+        {
+          "definition":"পাসওয়ার্ড সংরক্ষণ করতে চাইলে",
+          "code":"LastPass: Free Password Manager"
+        },
+        {
+          "definition":"ওয়েব ব্রাউজার লক করে রাখতে চাইলে",
+          "code":"LockPW"
+        },
+        {
+          "definition":"ডেস্কটপ থেকে সরাসরি মোবাইল ইনস্টাগ্রাম সাইট ব্রাউজ করতে",
+          "code":"Desktopify"
+        },
+        {
+          "definition":"ডেভলপার কন্সোলে জাভাস্ক্রিপ্ট (ইএস৬) কোড লেখা ও  কম্পাইল করতে",
+          "code":"Scratch JS"
+        },
+        {
+          "definition":"ডার্ক মুড ব্যবহার করতে চাইলে",
+          "code":"Dark Reader"
+        }
       ]
     }
   ]

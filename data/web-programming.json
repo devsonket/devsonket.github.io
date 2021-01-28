@@ -15,9 +15,107 @@
         }, {
           "code": "<head>"
         }, {
+          "code": "<title>"
+        }, {
           "code": "<body>"
         }, {
+          "code": "<h1> to <h6>"
+        }, {
+          "code": "<div>"
+        }, {
+          "code": "<p>"
+        }, {
+          "code": "<br>"
+        }, {
+          "code": "<hr>"
+        }, {
+          "code": "<form>"
+        }, {
+          "code": "<label>"
+        }, {
+          "code": "<input>"
+        }, {
+          "code": "<button>"
+        }, {
+          "code": "<img>"
+        }, {
+          "code": "<a>"
+        }, {
+          "code": "<abbr>"
+        }, {
+          "code": "<link>"
+        }, {
+          "code": "<table>"
+        }, {
+          "code": "<span>"
+        }, {
+          "code": "<script>"
+        }, {
           "code": "<!-- comment -->"
+        }, {
+          "code": "<main>"
+        }, {
+          "code": "<meta>"
+        }, {
+          "code": "<nav>"
+        }, {
+          "code": "<aside>"
+        }, {
+          "code": "<ol>"
+        }, {
+          "code": "<ul>"
+        }, {
+          "code": "<li>"
+        }, {
+          "code": "<header>"
+        }, {
+          "code": "<section>"
+        }, {
+          "code": "<article>"
+        }, {
+          "code": "<blockquote>"
+        }, {
+          "code": "<figure>"
+        }, {
+          "code": "<figcaption>"
+        }, {
+          "code": "<code>"
+        }, {
+          "code": "<i>"
+        }, {
+          "code": "<u>"
+        }, {
+          "code": "<audio>"
+        }, {
+          "code": "<video>"
+        }, {
+          "code": "<footer>"
+        }, {
+          "code": "<sub>"
+        }, {
+          "code": "<sup>"
+        }, {
+          "code": "<svg>"
+        }, {
+          "code": "<iframe>"
+        }, {
+          "code": "<fieldset>"
+        }, {
+          "code": "<legend>"
+        }, {
+          "code": "<select>"
+        }, {
+          "code": "<option>"
+        }, {
+          "code": "<textarea>"
+        }, {
+          "code": "<strong>"
+        }, {
+          "code": "<progress>"
+        }, {
+          "code": "<noscript>"
+        }, {
+          "code": "<noframes>"
         }
       ]
     }, {
@@ -43,9 +141,41 @@
         }, {
           "code": "onBlur"
         }, {
+          "code": "onClick"
+        }, {
           "code": "onChange"
         }, {
           "code": "onFocus"
+        }, {
+          "code": "onSubmit"
+        }, {
+          "code": "onSelect"
+        }, {
+          "code": "onKeydown"
+        }, {
+          "code": "onKeypress"
+        }, {
+          "code": "onKeyup"
+        }, {
+          "code": "onClick"
+        }, {
+          "code": "onDbclick"
+        }, {
+          "code": "onMousedown"
+        }, {
+          "code": "onMousemove"
+        }, {
+          "code": "onMouseout"
+        }, {
+          "code": "onMouseover"
+        }, {
+          "code": "onScroll"
+        }, {
+          "code": "onCopy"
+        }, {
+          "code": "onPaste"
+        }, {
+          "code": "onCut"
         }
       ]
     }, {
@@ -60,7 +190,11 @@
         }, {
           "code": "div span"
         }, {
-          "code": "siv, span"
+          "code": "div, span"
+        }, {
+          "code": ".class1 .class2"
+        }, {
+          "code": "#id"
         }
       ]
     }, {
@@ -76,6 +210,10 @@
           "code": "background-attachment"
         }, {
           "code": "background-repeat"
+        }, {
+          "code": "background-position"
+        }, {
+          "code": "background-size"
         }
       ]
     }, {
@@ -90,7 +228,11 @@
         }, {
           "code": "text-shadow"
         }, {
+          "code": "text-transform"
+        }, {
           "code": "letter-spacing"
+        }, {
+          "code": "line-height"
         }
       ]
     }, {
@@ -106,6 +248,8 @@
           "code": "margin-right"
         }, {
           "code": "margin-bottom"
+        }, {
+          "code": "box-shadow"
         }
       ]
     }, {

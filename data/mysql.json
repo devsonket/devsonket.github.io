@@ -1,399 +1,613 @@
 {
-    "id": "mysql",
-    "title": "মাইএসকিউএল",
-    "slug": "mysql",
-    "description": "মাইএসকিউএল(MySQL) হচ্ছে একটা ওপেন সোর্স রিলেশনাল ডাটাবেজ ম্যানেজমেন্ট সিস্টেম। নামের প্রথম অংশ \"My\" এর নামকরণ করা হয়েছে কো-ফাউন্ডার Michael Widenius মেয়ের নামে, আা SQL মানে হচ্ছে Structured Query Language",
-    "colorPref": "#00758f",
-    "contents": [
-        {
-            "title": "ডাটা টাইপ",
-            "items": [
-                {
-                    "definition": "স্ট্রিং(০ - ২৫৫)",
-                    "code": "CHAR"
-                }, {
-                    "definition": "স্ট্রিং(০ - ২৫৫)",
-                    "code": "VARCHAR"
-                }, {
-                    "definition": "স্ট্রিং(০ - ২৫৫)",
-                    "code": "TINYTEXT"
-                }, {
-                    "definition": "স্ট্রিং(০ - ৬৫৫৩৫)",
-                    "code": "TEXT"
-                }, {
-                    "definition": "স্ট্রিং(০ - ৬৫৫৩৫)",
-                    "code": "BLOB"
-                }, {
-                    "definition": "স্ট্রিং(০ - ১৬৭৭৭২১৫)",
-                    "code": "MEDIUMTEXT"
-                }, {
-                    "definition": "স্ট্রিং(০ - ১৬৭৭৭২১৫)",
-                    "code": "MEDIUMBLOB"
-                }, {
-                    "definition": "স্ট্রিং(০ - ৪২৯৪৯৬৭২৯৫)",
-                    "code": "LONGTEXT"
-                }, {
-                    "definition": "স্ট্রিং(০ - ৪২৯৪৯৬৭২৯৫)",
-                    "code": "LONGBLOB"
-                }, {
-                    "definition": "ইন্টিজার(-১২৮ থেকে ১২৭)",
-                    "code": "TINYINT"
-                }, {
-                    "definition": "ইন্টিজার(-৩২৭৬৮ থেকে ৩২৭৬৭)",
-                    "code": "SMALLINT"
-                }, {
-                    "definition": "ইন্টিজার(-৮৩৮৮৬০৮ থেকে ৮৩৮৮৬০৭)",
-                    "code": "MEDIUMINT"
-                }, {
-                    "definition": "ইন্টিজার(-২১৪৭৪৮৩৬৪৮ থেকে ২১৪৭৪৮৩৬৪৭)",
-                    "code": "INT"
-                }, {
-                    "definition": "ইন্টিজার(-৯২২৩৩৭২০৩৬৮৫৪৭৭৫৮০৮ থেকে ৯২২৩৩৭২০৩৬৮৫৪৭৭৫৮০৭)",
-                    "code": "BIGINT"
-                }, {
-                    "definition": "ডেসিমল(২৩ ডিজিট)",
-                    "code": "FLOAT"
-                }, {
-                    "definition": "ডেসিমল(২৪ থেকে ৫৩ ডিজিট)",
-                    "code": "DOUBLE"
-                }, {
-                    "definition": "DOUBLE স্ট্রিং হিসেবে স্টোর হয়",
-                    "code": "DECIMAL"
-                }, {
-                    "definition": "বববব-মামা-দিদি",
-                    "code": "DATE"
-                }, {
-                    "definition": "বববব-মামা-দিদি ঘঘঃমিমিঃসেসে",
-                    "code": "DATETIME"
-                }, {
-                    "definition": "ববববমামাদিদিঘঘমিমিসেসে",
-                    "code": "TIMESTAMP"
-                }, {
-                    "definition": "ঘঘঃমিমিঃসেসে",
-                    "code": "TIME"
-                }, {
-                    "definition": "প্রিসেট অপশন",
-                    "code": "ENUM"
-                }, {
-                    "definition": "প্রিসেট অপশন সিলেক্ট",
-                    "code": "SET"
-                }, {
-                    "definition": "TINYINT(1)",
-                    "code": "BOOLEAN"
-                }
-            ]
-        }, {
-            "title": "গ্রুপিং ফাংশন",
-            "items": [
-		            {
-                    "code": "AVG"
-                }, {
-                    "code": "BIT_AND"
-                }, {
-                    "code": "BIT_OR"
-                }, {
-                    "code": "COUNT"
-                }, {
-                    "code": "GROUP_CONCAT"
-                }, {
-                    "code": "MIN"
-                }, {
-                    "code": "MAX"
-                }, {
-                    "code": "STD"
-                }, {
-                    "code": "STDDEV"
-                }, {
-                    "code": "SUM"
-                }, {
-                    "code": "VARIANCE"
-                }
-            ]
-        }, {
-            "title": "গাণিতিক ফাংশন",
-            "items": [
-		            {
-                    "code": "ABS"
-                }, {
-                    "code": "SIGN"
-                }, {
-                    "code": "MOD"
-                }, {
-                    "code": "FLOOR"
-                }, {
-                    "code": "CEILING"
-                }, {
-                    "code": "ROUND"
-                }, {
-                    "code": "DIV"
-                }, {
-                    "code": "EXP"
-                }, {
-                    "code": "LN"
-                }, {
-                    "code": "LOG"
-                }, {
-                    "code": "LOG2"
-                }, {
-                    "code": "LOG10"
-                }, {
-                    "code": "POW"
-                }, {
-                    "code": "POWER"
-                }, {
-                    "code": "SQRT"
-                }, {
-                    "code": "PI"
-                }, {
-                    "code": "COS"
-                }, {
-                    "code": "SIN"
-                }, {
-                    "code": "TAN"
-                }, {
-                    "code": "ACOS"
-                }, {
-                    "code": "ASIN"
-                }, {
-                    "code": "ATAN"
-                }, {
-                    "code": "ATAN2"
-                }, {
-                    "code": "COT"
-                }, {
-                    "code": "RAND"
-                }, {
-                    "code": "LEAST"
-                }, {
-                    "code": "GREATEST"
-                }, {
-                    "code": "DEGREES"
-                }, {
-                    "code": "RADIANS"
-                }, {
-                    "code": "TRUNCATE"
-                }
-            ]
-        }, {
-            "title": "স্ট্রিং ফাংশন",
-            "items": [
-		            {
-                    "code": "ASCII"
-                }, {
-                    "code": "ORD"
-                }, {
-                    "code": "CONV"
-                }, {
-                    "code": "BIN"
-                }, {
-                    "code": "OCT"
-                }, {
-                    "code": "HEX"
-                }, {
-                    "code": "CHAR"
-                }, {
-                    "code": "CONCAT"
-                }, {
-                    "code": "CONCAT_WS"
-                }, {
-                    "code": "LENGTH"
-                }, {
-                    "code": "CHAR_LENGTH"
-                }, {
-                    "code": "BIT_LENGTH"
-                }, {
-                    "code": "LOCATE"
-                }, {
-                    "code": "INSTR"
-                }, {
-                    "code": "LPAD"
-                }, {
-                    "code": "RPAD"
-                }, {
-                    "code": "LEFT"
-                }, {
-                    "code": "RIGHT"
-                }, {
-                    "code": "SUBSTRING"
-                }, {
-                    "code": "MID"
-                }, {
-                    "code": "SUBSTRING_INDEX"
-                }, {
-                    "code": "LTRIM"
-                }, {
-                    "code": "RTRIM"
-                }, {
-                    "code": "TRIM"
-                }, {
-                    "code": "SOUNDEX"
-                }, {
-                    "code": "SPACE"
-                }, {
-                    "code": "REPLACE"
-                }, {
-                    "code": "REPEAT"
-                }, {
-                    "code": "REVERSE"
-                }, {
-                    "code": "INSERT"
-                }, {
-                    "code": "ELT"
-                }, {
-                    "code": "FIELD"
-                }, {
-                    "code": "LCASE"
-                }, {
-                    "code": "UCASE"
-                }, {
-                    "code": "LOAD_FILE"
-                }, {
-                    "code": "QUOTE"
-                }
-            ]
-        }, {
-            "title": "সময়ের ফাংশন",
-            "items": [
-		            {
-                    "code": "DAYOFWEEK"
-                }, {
-                    "code": "WEEKDAY"
-                }, {
-                    "code": "DAYOFMONTH"
-                }, {
-                    "code": "DAYOFYEAR"
-                }, {
-                    "code": "MONTH"
-                }, {
-                    "code": "DAYNAME"
-                }, {
-                    "code": "MONTHNAME"
-                }, {
-                    "code": "QUARTER"
-                }, {
-                    "code": "WEEK"
-                }, {
-                    "code": "YEAR"
-                }, {
-                    "code": "YEARWEEK"
-                }, {
-                    "code": "HOUR"
-                }, {
-                    "code": "MINUTE"
-                }, {
-                    "code": "SECOND"
-                }, {
-                    "code": "PERIOD_ADD"
-                }, {
-                    "code": "PERIOD_DIFF"
-                }, {
-                    "code": "DATE_ADD"
-                }, {
-                    "code": "DATE_SUB"
-                }, {
-                    "code": "ADDDATE"
-                }, {
-                    "code": "SUBDATE"
-                }, {
-                    "code": "EXTRACT"
-                }, {
-                    "code": "TO_DAYS"
-                }, {
-                    "code": "FROM_DAYS"
-                }, {
-                    "code": "DATE_FORMAT"
-                }, {
-                    "code": "TIME_FORMAT"
-                }, {
-                    "code": "CURRENT_DATE"
-                }, {
-                    "code": "CURRENT_TIME"
-                }, {
-                    "code": "NOW"
-                }, {
-                    "code": "SYSDATE"
-                }, {
-                    "code": "UNIX_TIMESTAMP"
-                }, {
-                    "code": "FROM_UNIXTIME"
-                }, {
-                    "code": "SEC_TO_TIME"
-                }, {
-                    "code": "TIME_TO_SEC"
-                }
-            ]
-        }, {
-            "title": "কন্ট্রোল ফ্লো ফাংশন",
-            "items": [
-		            {
-                    "code": "IF"
-                }, {
-                    "code": "NULLIF"
-                }, {
-                    "code": "IFNULL"
-                }
-            ]
-        }, {
-            "title": "অন্যান্য ফাংশন",
-            "items": [
-		            {
-                    "code": "BIT_COUNT"
-                }, {
-                    "code": "DATABASE"
-                }, {
-                    "code": "USER"
-                }, {
-                    "code": "SYSTEM_USER"
-                }, {
-                    "code": "SESSION_USER"
-                }, {
-                    "code": "CURRENT_USER"
-                }, {
-                    "code": "PASSWORD"
-                }, {
-                    "code": "OLD_PASSWORD"
-                }, {
-                    "code": "ENCRYPT"
-                }, {
-                    "code": "DECODE"
-                }, {
-                    "code": "MD5"
-                }, {
-                    "code": "SHA1"
-                }, {
-                    "code": "AES_ENCRYPT"
-                }, {
-                    "code": "AES_DECRYPT"
-                }, {
-                    "code": "DES_ENCRYPT"
-                }, {
-                    "code": "DES_DECRYPT"
-                }, {
-                    "code": "LAST_INSERT_ID"
-                }, {
-                    "code": "FORMAT"
-                }, {
-                    "code": "VERSION"
-                }, {
-                    "code": "CONNECTION_ID"
-                }, {
-                    "code": "GET_LOCK"
-                }, {
-                    "code": "RELEASE_LOCK"
-                }, {
-                    "code": "IS_FREE_LOCK"
-                }, {
-                    "code": "BENCHMARK"
-                }, {
-                    "code": "INET_NTOA"
-                }, {
-                    "code": "INET_ATON"
-                }, {
-                    "code": "FOUND_ROWS"
-                }, {
-                    "code": "STRCMP"
-                }
-            ]
-        }
-    ]
+	"id": "mysql",
+	"title": "মাইএসকিউএল",
+	"slug": "mysql",
+	"description": "মাইএসকিউএল(MySQL) হচ্ছে একটা ওপেন সোর্স রিলেশনাল ডাটাবেজ ম্যানেজমেন্ট সিস্টেম। নামের প্রথম অংশ \"My\" এর নামকরণ করা হয়েছে কো-ফাউন্ডার Michael Widenius মেয়ের নামে, আর SQL মানে হচ্ছে Structured Query Language",
+	"colorPref": "#00758f",
+	"contents": [
+		{
+			"title": "উবুন্টু তে MySQL সেটআপ",
+			"items": [
+				{
+					"definition": "প্রথমে উবুন্টু সিস্টেম আপডেট করুন",
+					"code": "sudo apt update"
+				},
+				{
+					"definition": "MySQL ইন্সটল করুন",
+					"code": "sudo apt install mysql-server"
+				},
+				{
+					"definition": "MySQL সিকিউরিটি ইন্সটল করুন",
+					"code": "sudo mysql_secure_installation"
+				}
+			]
+		},
+		{
+			"title": "মাইএসকিউএল এর প্রাথমিক কমান্ড সমুহ",
+			"items": [
+				{
+					"definition": "MySQL এর root ইউজারে অ্যাক্সেস করতে",
+					"code": "mysql -u root -p <your password>"
+				},
+				{
+					"definition": "ডাটাবেজ তৈরি করার জন্য",
+					"code": "CREATE DATABASE dbname;"
+				},
+				{
+					"definition": "নতুন তৈরি করা ডাটাবেজ নিয়ে কাজ করার জন্য",
+					"code": "USE dbname;"
+				},
+				{
+					"definition": "টেবিল তৈরি করার জন্য",
+					"code": "CREATE TABLE tableName;"
+				},
+				{
+					"definition": "এই নামে কোন টেবিল আছে কিনা চেক করে নতুন টেবিল তৈরি করা",
+					"code": "CREATE TABLE tableName IF NOT EXISTS;"
+				},
+				{
+					"definition": "কোন টেবিল ডিলেট করতে",
+					"code": "DROP TABLE tableName IF EXIST;"
+				},
+				{
+					"definition": "ডাটাবেজ ডিলেট করতে",
+					"code": "DROP DATABASE dbname IF EXIST;"
+				}
+			]
+		},
+		{
+			"title": "ডাটা টাইপ",
+			"items": [
+				{
+					"definition": "স্ট্রিং(০ - ২৫৫)",
+					"code": "CHAR"
+				},
+				{
+					"definition": "স্ট্রিং(০ - ২৫৫)",
+					"code": "VARCHAR"
+				},
+				{
+					"definition": "স্ট্রিং(০ - ২৫৫)",
+					"code": "TINYTEXT"
+				},
+				{
+					"definition": "স্ট্রিং(০ - ৬৫৫৩৫)",
+					"code": "TEXT"
+				},
+				{
+					"definition": "স্ট্রিং(০ - ৬৫৫৩৫)",
+					"code": "BLOB"
+				},
+				{
+					"definition": "স্ট্রিং(০ - ১৬৭৭৭২১৫)",
+					"code": "MEDIUMTEXT"
+				},
+				{
+					"definition": "স্ট্রিং(০ - ১৬৭৭৭২১৫)",
+					"code": "MEDIUMBLOB"
+				},
+				{
+					"definition": "স্ট্রিং(০ - ৪২৯৪৯৬৭২৯৫)",
+					"code": "LONGTEXT"
+				},
+				{
+					"definition": "স্ট্রিং(০ - ৪২৯৪৯৬৭২৯৫)",
+					"code": "LONGBLOB"
+				},
+				{
+					"definition": "ইন্টিজার(-১২৮ থেকে ১২৭)",
+					"code": "TINYINT"
+				},
+				{
+					"definition": "ইন্টিজার(-৩২৭৬৮ থেকে ৩২৭৬৭)",
+					"code": "SMALLINT"
+				},
+				{
+					"definition": "ইন্টিজার(-৮৩৮৮৬০৮ থেকে ৮৩৮৮৬০৭)",
+					"code": "MEDIUMINT"
+				},
+				{
+					"definition": "ইন্টিজার(-২১৪৭৪৮৩৬৪৮ থেকে ২১৪৭৪৮৩৬৪৭)",
+					"code": "INT"
+				},
+				{
+					"definition": "ইন্টিজার(-৯২২৩৩৭২০৩৬৮৫৪৭৭৫৮০৮ থেকে ৯২২৩৩৭২০৩৬৮৫৪৭৭৫৮০৭)",
+					"code": "BIGINT"
+				},
+				{
+					"definition": "ডেসিমল(২৩ ডিজিট)",
+					"code": "FLOAT"
+				},
+				{
+					"definition": "ডেসিমল(২৪ থেকে ৫৩ ডিজিট)",
+					"code": "DOUBLE"
+				},
+				{
+					"definition": "DOUBLE স্ট্রিং হিসেবে স্টোর হয়",
+					"code": "DECIMAL"
+				},
+				{
+					"definition": "বববব-মামা-দিদি",
+					"code": "DATE"
+				},
+				{
+					"definition": "বববব-মামা-দিদি ঘঘঃমিমিঃসেসে",
+					"code": "DATETIME"
+				},
+				{
+					"definition": "ববববমামাদিদিঘঘমিমিসেসে",
+					"code": "TIMESTAMP"
+				},
+				{
+					"definition": "ঘঘঃমিমিঃসেসে",
+					"code": "TIME"
+				},
+				{
+					"definition": "প্রিসেট অপশন",
+					"code": "ENUM"
+				},
+				{
+					"definition": "প্রিসেট অপশন সিলেক্ট",
+					"code": "SET"
+				},
+				{
+					"definition": "TINYINT(1)",
+					"code": "BOOLEAN"
+				}
+			]
+		},
+		{
+			"title": "গ্রুপিং ফাংশন",
+			"items": [
+				{
+					"code": "AVG"
+				},
+				{
+					"code": "BIT_AND"
+				},
+				{
+					"code": "BIT_OR"
+				},
+				{
+					"code": "COUNT"
+				},
+				{
+					"code": "GROUP_CONCAT"
+				},
+				{
+					"code": "MIN"
+				},
+				{
+					"code": "MAX"
+				},
+				{
+					"code": "STD"
+				},
+				{
+					"code": "STDDEV"
+				},
+				{
+					"code": "SUM"
+				},
+				{
+					"code": "VARIANCE"
+				}
+			]
+		},
+		{
+			"title": "গাণিতিক ফাংশন",
+			"items": [
+				{
+					"code": "ABS"
+				},
+				{
+					"code": "SIGN"
+				},
+				{
+					"code": "MOD"
+				},
+				{
+					"code": "FLOOR"
+				},
+				{
+					"code": "CEILING"
+				},
+				{
+					"code": "ROUND"
+				},
+				{
+					"code": "DIV"
+				},
+				{
+					"code": "EXP"
+				},
+				{
+					"code": "LN"
+				},
+				{
+					"code": "LOG"
+				},
+				{
+					"code": "LOG2"
+				},
+				{
+					"code": "LOG10"
+				},
+				{
+					"code": "POW"
+				},
+				{
+					"code": "POWER"
+				},
+				{
+					"code": "SQRT"
+				},
+				{
+					"code": "PI"
+				},
+				{
+					"code": "COS"
+				},
+				{
+					"code": "SIN"
+				},
+				{
+					"code": "TAN"
+				},
+				{
+					"code": "ACOS"
+				},
+				{
+					"code": "ASIN"
+				},
+				{
+					"code": "ATAN"
+				},
+				{
+					"code": "ATAN2"
+				},
+				{
+					"code": "COT"
+				},
+				{
+					"code": "RAND"
+				},
+				{
+					"code": "LEAST"
+				},
+				{
+					"code": "GREATEST"
+				},
+				{
+					"code": "DEGREES"
+				},
+				{
+					"code": "RADIANS"
+				},
+				{
+					"code": "TRUNCATE"
+				}
+			]
+		},
+		{
+			"title": "স্ট্রিং ফাংশন",
+			"items": [
+				{
+					"code": "ASCII"
+				},
+				{
+					"code": "ORD"
+				},
+				{
+					"code": "CONV"
+				},
+				{
+					"code": "BIN"
+				},
+				{
+					"code": "OCT"
+				},
+				{
+					"code": "HEX"
+				},
+				{
+					"code": "CHAR"
+				},
+				{
+					"code": "CONCAT"
+				},
+				{
+					"code": "CONCAT_WS"
+				},
+				{
+					"code": "LENGTH"
+				},
+				{
+					"code": "CHAR_LENGTH"
+				},
+				{
+					"code": "BIT_LENGTH"
+				},
+				{
+					"code": "LOCATE"
+				},
+				{
+					"code": "INSTR"
+				},
+				{
+					"code": "LPAD"
+				},
+				{
+					"code": "RPAD"
+				},
+				{
+					"code": "LEFT"
+				},
+				{
+					"code": "RIGHT"
+				},
+				{
+					"code": "SUBSTRING"
+				},
+				{
+					"code": "MID"
+				},
+				{
+					"code": "SUBSTRING_INDEX"
+				},
+				{
+					"code": "LTRIM"
+				},
+				{
+					"code": "RTRIM"
+				},
+				{
+					"code": "TRIM"
+				},
+				{
+					"code": "SOUNDEX"
+				},
+				{
+					"code": "SPACE"
+				},
+				{
+					"code": "REPLACE"
+				},
+				{
+					"code": "REPEAT"
+				},
+				{
+					"code": "REVERSE"
+				},
+				{
+					"code": "INSERT"
+				},
+				{
+					"code": "ELT"
+				},
+				{
+					"code": "FIELD"
+				},
+				{
+					"code": "LCASE"
+				},
+				{
+					"code": "UCASE"
+				},
+				{
+					"code": "LOAD_FILE"
+				},
+				{
+					"code": "QUOTE"
+				}
+			]
+		},
+		{
+			"title": "সময়ের ফাংশন",
+			"items": [
+				{
+					"code": "DAYOFWEEK"
+				},
+				{
+					"code": "WEEKDAY"
+				},
+				{
+					"code": "DAYOFMONTH"
+				},
+				{
+					"code": "DAYOFYEAR"
+				},
+				{
+					"code": "MONTH"
+				},
+				{
+					"code": "DAYNAME"
+				},
+				{
+					"code": "MONTHNAME"
+				},
+				{
+					"code": "QUARTER"
+				},
+				{
+					"code": "WEEK"
+				},
+				{
+					"code": "YEAR"
+				},
+				{
+					"code": "YEARWEEK"
+				},
+				{
+					"code": "HOUR"
+				},
+				{
+					"code": "MINUTE"
+				},
+				{
+					"code": "SECOND"
+				},
+				{
+					"code": "PERIOD_ADD"
+				},
+				{
+					"code": "PERIOD_DIFF"
+				},
+				{
+					"code": "DATE_ADD"
+				},
+				{
+					"code": "DATE_SUB"
+				},
+				{
+					"code": "ADDDATE"
+				},
+				{
+					"code": "SUBDATE"
+				},
+				{
+					"code": "EXTRACT"
+				},
+				{
+					"code": "TO_DAYS"
+				},
+				{
+					"code": "FROM_DAYS"
+				},
+				{
+					"code": "DATE_FORMAT"
+				},
+				{
+					"code": "TIME_FORMAT"
+				},
+				{
+					"code": "CURRENT_DATE"
+				},
+				{
+					"code": "CURRENT_TIME"
+				},
+				{
+					"code": "NOW"
+				},
+				{
+					"code": "SYSDATE"
+				},
+				{
+					"code": "UNIX_TIMESTAMP"
+				},
+				{
+					"code": "FROM_UNIXTIME"
+				},
+				{
+					"code": "SEC_TO_TIME"
+				},
+				{
+					"code": "TIME_TO_SEC"
+				}
+			]
+		},
+		{
+			"title": "কন্ট্রোল ফ্লো ফাংশন",
+			"items": [
+				{
+					"code": "IF"
+				},
+				{
+					"code": "NULLIF"
+				},
+				{
+					"code": "IFNULL"
+				}
+			]
+		},
+		{
+			"title": "অন্যান্য ফাংশন",
+			"items": [
+				{
+					"code": "BIT_COUNT"
+				},
+				{
+					"code": "DATABASE"
+				},
+				{
+					"code": "USER"
+				},
+				{
+					"code": "SYSTEM_USER"
+				},
+				{
+					"code": "SESSION_USER"
+				},
+				{
+					"code": "CURRENT_USER"
+				},
+				{
+					"code": "PASSWORD"
+				},
+				{
+					"code": "OLD_PASSWORD"
+				},
+				{
+					"code": "ENCRYPT"
+				},
+				{
+					"code": "DECODE"
+				},
+				{
+					"code": "MD5"
+				},
+				{
+					"code": "SHA1"
+				},
+				{
+					"code": "AES_ENCRYPT"
+				},
+				{
+					"code": "AES_DECRYPT"
+				},
+				{
+					"code": "DES_ENCRYPT"
+				},
+				{
+					"code": "DES_DECRYPT"
+				},
+				{
+					"code": "LAST_INSERT_ID"
+				},
+				{
+					"code": "FORMAT"
+				},
+				{
+					"code": "VERSION"
+				},
+				{
+					"code": "CONNECTION_ID"
+				},
+				{
+					"code": "GET_LOCK"
+				},
+				{
+					"code": "RELEASE_LOCK"
+				},
+				{
+					"code": "IS_FREE_LOCK"
+				},
+				{
+					"code": "BENCHMARK"
+				},
+				{
+					"code": "INET_NTOA"
+				},
+				{
+					"code": "INET_ATON"
+				},
+				{
+					"code": "FOUND_ROWS"
+				},
+				{
+					"code": "STRCMP"
+				}
+			]
+		}
+	]
 }

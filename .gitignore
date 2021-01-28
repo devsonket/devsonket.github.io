@@ -53,6 +53,7 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.*
 
 # gatsby files
 .cache/
@@ -67,3 +68,7 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# Thumbnails
+static/static/thumbnail/*.jpg
+!static/static/thumbnail/thumbnail.jpg

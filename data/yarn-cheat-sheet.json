@@ -1,0 +1,152 @@
+{
+  "id": "yarn",
+  "title": "ইয়ার্ন ",
+  "slug": "yarn",
+  "description": "ইয়ার্ন হল ডেভলপারদের কাছে সর্বাধিক জনপ্রিয় একটি প্যাকেজ ম্যানেজার। ছোট কিংবা বড় সকল ধরনের প্রজেক্ট ম্যানেজ করার জন্য অত্যান্ত সহজ ও নির্ভরযোগ্য সমারধান হল ইয়ার্ন প্যাকেজ ম্যানেজার। ",
+  "colorPref": "#2988b6",
+  "contents": [{
+      "title": "ইয়ার্ন সম্পর্কিত সাধারণ তথ্য",
+      "items": [{
+          "definition": "Yarn ইনস্টলেশন সম্পর্কিত সার্বিক তথ্য দেখা",
+          "code": "yarn info"
+        },
+        {
+          "definition": "Yarn এর সকল কমান্ড ও ফ্লাগ সম্পর্কিত তথ্য দেখতে",
+          "code": "yarn help"
+        },
+        {
+          "definition": "Yarn এর ভার্শন দেখা",
+          "code": "yarn -v বা  yarn --version"
+        },
+        {
+          "definition": "yarn.com এ অ্যাকাউন্ট ক্রিয়েট",
+          "code": "yarn adduser"
+        },
+        {
+          "definition": "yarn.com এ অ্যাকাউন্ট লগইন",
+          "code": "yarn login"
+        },
+        {
+          "definition": "পাবলিশিং প্যাকেজ আপডেট করতে",
+          "code": "yarn version <major/minor/patch>"
+        }
+      ]
+    },
+    {
+      "title": "প্যাকেজ সম্পর্কিত সাধারন তথ্যঃ",
+      "items": [{
+          "definition": "Yarn দিয়ে প্রজেক্ট শুরু করার সময় প্রয়োজনীয় প্রশ্নের উত্তর দিয়ে  package.json ফাইল ইনিশিয়ালাইজেশন",
+          "code": "yarn init"
+        },
+        {
+          "definition": "কোনো প্রশ্নের উত্তর না দিয়ে  package.json ফাইল ইনিশিয়ালাইজেশন",
+          "code": "yarn init -y"
+        },
+        {
+          "definition": "কোন প্যাকেজের তথ্য দেখতে",
+          "code": "yarn info <package-name> "
+        },
+        {
+          "definition": "নির্দিষ্ট ফরম্যাটে কোন প্যাকেজের তথ্য দেখতে",
+          "code": "yarn info <package-name> <field>"
+        },
+        {
+          "definition": "কোন প্যাকেজের নির্দিষ্ট ভার্সনের তথ্য দেখতে",
+          "code": "yarn info <package-name>@<version> "
+        },
+        {
+          "definition": "কোন প্যাকেজের  সকল ভার্সনের তথ্য দেখতে",
+          "code": "yarn info <package-name> versions"
+        },
+        {
+          "definition": "প্রোজেক্টে ব্যবহৃত প্যাকেজের লাইসেন্স দেখতে ",
+          "code": "yarn licenses ls "
+        },
+        {
+          "definition": "প্রোজেক্টে কোন নির্দিষ্ট প্যাকেজ ব্যবহৃত হচ্ছে কিনা জানতে",
+          "code": "yarn why <package-name> "
+        },
+        {
+          "definition": "লোকালি ইনস্টল্ড সকল ডিপেনডেন্সি, ডেভডিপেনডেন্সি এবং ডিপেনডেন্সির ডিপেনডেন্সির লিস্ট ও ভার্শন",
+          "code": "yarn list"
+        },
+        {
+          "definition": "গ্লোবালি ইনস্টল্ড সকল ডিপেনডেন্সি, ডেভডিপেনডেন্সি এবং ডিপেনডেন্সির ডিপেনডেন্সির লিস্ট ও ভার্শন",
+          "code": "yarn global list"
+        },
+        {
+          "definition": "শুধুমাত্র নিজের অ্যাপলিকেশনের ডিপেনডেন্সি ও ডেভডিপেনডেন্সির লিস্ট এবং তাদের ভার্সন",
+          "code": "yarn list --depth=0"
+        },
+        {
+          "definition": "গ্লোবালি ইনস্টল্ড প্যাকেজসমূহের লিস্ট ও তাদের ভার্সন",
+          "code": "yarn global list --depth=0"
+        },
+        {
+          "definition": "package.json এর  যেকোন স্ক্রিপ্ট রান করতে",
+          "code": "yarn <script-name>"
+        }
+      ]
+    },
+    {
+      "title": "প্যাকেজ  ইনস্টল,রিমুভ,আপডেট সম্পর্কিত কমান্ডসঃ",
+      "items": [{
+          "definition": "package.json ফাইলে উল্লেখকরা প্যাকেজসমুহ ইনস্টল করা",
+          "code": "yarn"
+        },
+        {
+          "definition": "লোকালি প্যাকেজ ইনস্টল করা",
+          "code": "yarn add <package-name>"
+        },
+        {
+          "definition": "গ্লোবালি প্যাকেজ ইনস্টল করা",
+          "code": "yarn global add <package-name>"
+        },
+        {
+          "definition": "নির্দিষ্ট ভার্শনের প্যাকেজ লোকালি ইনস্টল করা",
+          "code": "yarn add <package-name>@version"
+        },
+        {
+          "definition": "নির্দিষ্ট ভার্শনের প্যাকেজ গ্লোবালি ইনস্টল করা",
+          "code": "yarn global add <package-name>@version"
+        },
+        {
+          "definition": "ডেভ ডিপেনডেন্সি হিসেবে প্যাকেজ ইনস্টল করা",
+          "code": "yarn add <package-name> --dev"
+        },
+        {
+          "definition": "লোকাল প্যাকেজ আনইনস্টল করতে",
+          "code": "yarn remove <package-name>"
+        },
+        {
+          "definition": "গ্লোবাল প্যাকেজ আনইনস্টল করতে",
+          "code": "yarn global remove <package-name>"
+        },
+        {
+          "definition": "লোকালি আউটডেটেড প্যাকেজ সমূহ দেখা",
+          "code": "yarn outdated"
+        },
+        {
+          "definition": "গ্লোবালি আউটডেটেড প্যাকেজ সমূহ দেখা",
+          "code": "yarn global outdated"
+        },
+        {
+          "definition": "লোকাল প্যাকেজ সমূহ আপডেট করতে",
+          "code": "yarn upgrade"
+        },
+        {
+          "definition": "গ্লোবাল প্যাকেজ সমূহ আপডেট করতে",
+          "code": "yarn global upgrade"
+        },
+        {
+          "definition": "প্রোজেক্টে ব্যবহৃত সব প্যাকেজ আপডেট না করে নির্দিষ্ট প্যাকেজ আপগ্রেড করতে",
+          "code": "yarn upgrade-interactive "
+        },
+        {
+          "definition": "package.json থেকে অব্যবহৃত প্যাকেজ রিমুভ করতে",
+          "code": "yarn autoclean "
+        }
+      ]
+    }
+  ]
+}

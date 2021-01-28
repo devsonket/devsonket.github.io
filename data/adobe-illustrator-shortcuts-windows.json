@@ -1,0 +1,172 @@
+{
+    "id": "adobe-illustrator-shortcuts-windows",
+    "title": "অ্যাডোবি ইলাস্ট্রেটর",
+    "slug": "adobe-illustrator-shortcuts-windows",
+    "description": "অ্যাডোবি ইলাস্ট্রেটরের এর প্রয়োজনীয় উইন্ডোজ শর্টকাট কী",
+    "colorPref": "#FF9A00",
+    "contents": [
+      {
+        "title": "ব্যাসিক শর্টকাট",
+        "items": [
+          {
+            "definition": "নতুন ফাইল",
+            "code": "Ctrl + N"
+          },
+          {
+            "definition": "ফাইল ওপেন করতে",
+            "code": "Ctrl + O"
+          },
+          {
+            "definition": "ফাইল এডোবি ব্রিজে ব্রাউজ করতে (Browse in Bridge)",
+            "code": "Alt + Ctrl + O"
+          },
+            {
+            "definition": "একটি টেম্পলেট থেকে নথি তৈরি করুন",
+            "code": "Shift + Ctrl + N"
+          },
+          {
+            "definition": "ফাইল বন্ধ করতে",
+            "code": "Ctrl + W"
+          },
+          {
+            "definition": "ফাইল সেভ করতে",
+            "code": "Ctrl + S"
+          },
+          {
+            "definition": "ফাইল ফরম্যাট হিসেবে সেভ করতে",
+            "code": "Shift + Ctrl + S"
+          },
+          {
+            "definition": "ওয়েব এর জন্য ফাইল সেভ করতে",
+            "code": "Alt + Shift + Ctrl + S"
+          },
+          {
+            "definition": "ফাইল আগেকার অবস্থায় আনতে",
+            "code": "F12"
+          },
+          {
+            "definition": "ফাইল সম্পর্কিত তথ্য",
+            "code": "Alt + Shift + Ctrl + I"
+          },
+          {
+            "definition": "ফাইল প্রিন্ট করতে",
+            "code": "Ctrl + P"
+          },
+          {
+            "definition": "প্যাকেজ ডকুমেন্ট",
+            "code": "Alt + Shift + Ctrl + P"
+          },
+          {
+            "definition": "ইলাস্ট্রেটর বন্ধ করতে",
+            "code": "Ctrl + Q"
+          }
+        ]
+      },
+      {
+        "title": "এডিট শর্টকাট",
+        "items": [
+          {
+            "definition": "পূর্বাবস্থায় ফেরা (Undo)",
+            "code": "Ctrl + Z"
+          },
+          {
+            "definition": "আবার করুন ফরোয়ার্ড (Redo / Step Forward)",
+            "code": "Shift + Ctrl + Z"
+          },
+          {
+            "definition": "কাট করতে",
+            "code": "Ctrl + X"
+          },
+          {
+            "definition": "কপি করতে",
+            "code": "Ctrl + C"
+          },
+          {
+            "definition": "পেস্ট (Paste)",
+            "code": "Ctrl + V"
+          },
+          {
+            "definition": "সামনে পেস্ট করুন",
+            "code": "Ctrl + F"
+          },
+          {
+            "definition": "পিছনে পেস্ট করুন",
+            "code": "Ctrl + B"
+          },
+          {
+            "definition": "পেস্ট ইন প্লেস",
+            "code": "Shift + Ctrl + B"
+          },
+          {
+            "definition": "পেস্ট অন অল বোর্ডস",
+            "code": "Alt + Shift + Ctrl + B"
+          },
+          {
+            "definition": "বানান যাচাই করো",
+            "code": "Ctrl + I"
+          },
+          {
+            "definition": "কালার সেটিংস",
+            "code": "Shift + Ctrl + K"
+          },
+          {
+            "definition": "কীবোর্ড শর্টকাটগুলি",
+            "code": "Alt + Shift + Ctrl + K"
+          },
+          {
+            "definition": "প্রেফারেন্সেস চালু করতে",
+            "code": "Ctrl + K"
+          }
+        ]
+      },
+      {
+        "title": "ভিউ শর্টকাট (View Shortcuts)",
+        "items": [
+          {
+            "definition": "স্ক্রিন মোডগুলির মধ্যে স্যুইচ করুন (সাধারণ, পূর্ণ স্ক্রিন ইত্যাদি)",
+            "code": "F"
+          },
+          {
+            "definition": "পূর্ণ স্ক্রিন মোড থেকে প্রস্থান করুন",
+            "code": "Esc"
+          },
+          {
+            "definition": "আর্টবোর্ডগুলি দেখান বা লুকান",
+            "code": "Shift + Ctrl + H"
+          },
+          {
+            "definition": "রুলার দেখান বা লুকান",
+            "code": "Ctrl + R"
+          },
+          {
+            "definition": "স্মার্ট গাইড দেখান বা লুকান",
+            "code": "Ctrl + U"
+          },
+          {
+            "definition": "গ্রিড দেখান বা লুকান",
+            "code": "Ctrl + '"
+          },
+          {
+            "definition": "গ্রিডে স্ন্যাপটি চালু বা বন্ধ করুন",
+            "code": "Shift + Ctrl + '"
+          },
+          {
+            "definition": "স্ন্যাপটি পয়েন্টে চালু বা বন্ধ করুন",
+            "code": "Alt + Ctrl + '"
+          },
+          {
+            "definition": "জুম ইন আউট",
+            "code": "Ctrl + +-"
+          },
+          {
+            "definition": "উইন্ডো ফিট",
+            "code": "Ctrl + 0"
+          },
+          {
+            "definition": "আসল আকার দেখুন",
+            "code": "Ctrl + 1"
+          }
+        ]
+      }
+    ]
+  }

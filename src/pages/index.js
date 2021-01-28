@@ -1,30 +1,23 @@
-import React, { useState } from "react"
+import React from "react"
 
-import App from "../components/app"
-import SEO from "../components/seo"
-import Intro from "../components/intro"
-import View from "../components/view"
-import Library from "../components/library"
+import AppContainer from "../components/layout/AppContainer"
+import HeroContainer from "../components/layout/HeroContainer"
+import ContentContainer from "../components/layout/ContentContainer"
 
-import "./index.css"
+import Footer from "../components/Footer"
+
+import { SEO } from "../components/common"
 
 export default () => {
-  const [searchInput, setsearchInput] = useState("")
-
-  const handleInputChange = e => {
-    setsearchInput(e.target.value)
-  }
-
   return (
-    <App>
+    <AppContainer>
       <SEO
-        title="ডেভেলপার চিটশিট"
-        description="বাংলা চিটশিটের ভান্ডার। নিজের মাতৃভাষায় চিটশিটের ভান্ডার সমৃদ্ধ করতে আপনিও যোগ দিন"
-        lang="bn"
+        title="বাংলা ডেভেলপার চিটশিট"
+        description="ডেভেলপারদের জন্য, ডেভেলপারদের দ্বারা, মাতৃভাষা বাংলায় সবচেয়ে বড় চিটশিট ভান্ডার"
       />
-      <Intro input={searchInput} handleInputChange={handleInputChange} />
-      <View input={searchInput} />
-      <Library />
-    </App>
+      <HeroContainer />
+      <ContentContainer />
+      <Footer />
+    </AppContainer>
   )
 }
