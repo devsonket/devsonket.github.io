@@ -116,6 +116,9 @@
                 }, {
                     "definition": "টেবিলের সব রো ডিলিট করে দেয়া",
                     "code": "DELETE FROM table_name"
+                }, {
+                    "definition": "টেবিলের (যে টেবিল অন্য টেবিলের সাথে রিলেশন আছে) সব রো ডিলিট করার ক্ষেত্রে",
+                    "code": "TRUNCATE tableName RESTART IDENTITY CASCADE"
                 }
             ]
         },
