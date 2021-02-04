@@ -135,6 +135,35 @@
          ]
        },
        {
+          "title": "হেডিংস",
+          "items":[
+             {
+               "definition": "হেডিং ওয়ান",
+               "code": "<p class='h1'>h1. Bootstrap heading</p>"
+             },
+             {
+               "definition": "হেডিং টু",
+               "code": "<p class='h1'>h1. Bootstrap heading</p>"
+             },
+             {
+               "definition": "হেডিং থ্রি",
+               "code": "<p class='h1'>h1. Bootstrap heading</p>"
+             },
+             {
+               "definition": "হেডিং ফোর",
+               "code": "<p class='h1'>h1. Bootstrap heading</p>"
+             },
+             {
+                "definition": "হেডিং ফাইভ",
+                "code": "<p class='h1'>h1. Bootstrap heading</p>"
+             },
+             {
+                "definition": "হেডিং সিক্স ",
+                "code": "<p class='h1'>h1. Bootstrap heading</p>"
+            }
+         ]
+       },
+       {
           "title":"ইমেজ ক্লাস",
           "items":[
              {
@@ -164,6 +193,79 @@
              {
                 "definition":"রাউন্ড কর্নার এবং বর্ডার এক সাথে",
                 "code":"<img class='img-thumbnail'>"
+             }
+          ]
+       },
+       {
+          "title":"টেবিল",
+          "items":[
+             {
+                "definition":"টেবিল রো প্রাইমারি কালার",
+                "code":"<tr class='table-primary'>"
+             },
+             {
+                "definition":"টেবিল রো সেকেন্ডারি কালার",
+                "code":"<tr class='table-secondary'>"
+             },
+             {
+                "definition":"টেবিল রো সাক্সেস কালার",
+                "code":"<tr class='table-success'>"
+             },
+             {
+                "definition":"টেবিল রো ডেঞ্জার কালার",
+                "code":"<tr class='table-danger'>"
+             },
+             {
+                "definition":"টেবিল রো ওয়ার্নিং কালার",
+                "code":"<tr class='table-warning'>"
+             },
+             {
+                "definition":"টেবিল রো ইনফো কালার",
+                "code":"<tr class='table-info'>"
+             },
+             {
+                "definition":"টেবিল রো লাইট কালার",
+                "code":"<tr class='table-light'>"
+             },
+             {
+                "definition":"টেবিল রো ডার্ক কালার",
+                "code":"<tr class='table-dark'>"
+             },
+             {
+                "definition":"টেবিল স্ট্রাইপ দেখানো",
+                "code":"<table class='table table-striped'>"
+             },
+             {
+                "definition":"টেবিল হোভার দেখানো",
+                "code":"<table class='table table-hover'>"
+             },
+             {
+                "definition":"টেবিল রো তে একটিভ স্টাইল দেখানো",
+                "code":"<tr class='table-active'>"
+             },
+             {
+                "definition":"টেবিল সেল এ একটিভ স্টাইল দেখানো",
+                "code":"<td class='table-active'>"
+             },
+             {
+                "definition":"টেবিলে বর্ডার দেখানো",
+                "code":"<table class='table table-bordered'>"
+             },
+             {
+                "definition":"টেবিলের বর্ডার বাতিল করা",
+                "code":"<table class='table table-borderless'>"
+             },
+             {
+                "definition":"টেবিলের সাইজ ছোট করা",
+                "code":"<table class='table table-sm'>"
+             },
+             {
+                "definition":"টেবিলের ক্যাপশন এড করা",
+                "code":"<table class='table caption-top'><caption>List of users</caption>"
+             },
+             {
+                "definition":"টেবিলের সাইজ ছোট করা",
+                "code":"<table class='table table-sm'>"
              }
           ]
        }
