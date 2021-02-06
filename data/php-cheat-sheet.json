@@ -131,6 +131,10 @@
         {
           "definition": "স্ট্রিংয়ের থেকে HTML Tag রিমুভ করা",
           "code": "strip_tags(string $something ,array|string|null $allowed_tags = null) : string"
+        },
+        {
+          "definition": "স্ট্রিংকে কোন নির্দিষ্ট স্ট্রিং দিয়ে বিভক্ত করা (প্রতিটি ভাগকে একটি অ্যারের ইলিমেন্ট আকারে পাওয়া)",
+          "code": "explode(string $separator , string $string [, int $limit])"
         }
       ]
     },
