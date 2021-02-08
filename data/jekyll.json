@@ -1,0 +1,85 @@
+{
+    "id": "Jekyll",
+    "title": "জ্যাকিল চিটশিট",
+    "slug": "Jekyll",
+    "description": "জ্যাকিল হচ্ছে একটি স্ট্যাটিক সাইট জেনারেটর। জ্যাকিল দিয়ে আপনি খুব সহজেই একটি স্ট্যাটিক সাইট বানিয়ে ফেলতে পারেন Markdown, Plain Text দিয়ে",
+    "colorPref": "#252426",
+    "contents": [
+      {
+        "title": "উবুন্টু তে Jekyll ও Jekyll Dependencies সেটআপ করা",
+        "items": [
+          {
+            "definition": "Ruby এবং অন্যান্য Dependencies ইনস্টল করুন",
+            "code": "sudo apt-get install ruby-full build-essential zlib1g-dev"
+          },
+          {
+            "definition": "Ruby Gems ইনস্টল করুন এবং Environment Path সেট করুন",
+            "code": [
+              "echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc",
+              "echo 'export GEM_HOME='$HOME/gems'' >> ~/.bashrc",
+              "echo 'export PATH='$HOME/gems/bin:$PATH'' >> ~/.bashrc",
+              "source ~/.bashrc"
+            ]
+          },
+          {
+            "definition": "Jekyll এবং বান্ডলার Gem ইনস্টল করা",
+            "code": "gem install jekyll bundler"
+          }
+        ]
+      },
+      {
+        "title": "প্রাথমিক কমান্ড সমূহঃ",
+        "items": [
+          {
+            "definition": "একটি নতুন Jekyll সাইট তৈরি করা",
+            "code": "jekyll new mysite"
+          },
+          {
+            "definition": "নতুন সাইট ডিরেক্টরিতে যাওয়া",
+            "code": "cd mysite"
+          },
+          {
+            "definition": "একটি নতুন Jekyll থিম তৈরি করা",
+            "code": "jekyll new-theme"
+          },
+          {
+            "definition": "সাইটটি Build করা",
+            "code": "jekyll build, jekyll b"
+          },
+          {
+            "definition": "সাইটটির Local ডেভলপমেন্ট সার্ভার চালু করা",
+            "code": "jekyll serve, jekyll s"
+          },
+          {
+            "definition": "সমস্ত উৎপন্ন ফাইলগুলি সরিয়ে দেয়া: গন্তব্য ফোল্ডার, মেটাডেটা ফাইল, সাস এবং Jekyll ক্যাশে",
+            "code": "jekyll clean"
+          },
+          {
+            "definition": "Jekyll এর ভার্শন চেক করা",
+            "code": "jekyll -version, jekyll -v"
+          },
+          {
+            "definition": "Jekyll এর কমান্ড সম্পর্কিত হেল্প এর জন্য",
+            "code": "jekyll help"
+          },
+          {
+            "definition": "কোনো কনফিগারেশন সমস্যা দেখার জন্য",
+            "code": "jekyll doctor"
+          }
+        ]
+      },
+      {
+        "title": "Jekyll রিলেটেড সাব-কমান্ড সমুহ",
+        "items": [
+          {
+            "definition": "নির্দিষ্ট Path ও Default Theme এ একটি নতুন Jekyll সাইট তৈরি করা",
+            "code": "jekyll new PATH"
+          },
+          {
+            "definition": "নির্দিষ্ট Path এ একটি নতুন ফাঁকা Jekyll সাইট তৈরি করা",
+            "code": "jekyll new PATH --blank"
+          }
+        ]
+      }
+    ]
+  }
