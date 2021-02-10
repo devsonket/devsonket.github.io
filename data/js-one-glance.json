@@ -167,7 +167,7 @@
         }, {
           "code": "createDocument"
         }, {
-          "code": "createDocumentFargment"
+          "code": "createDocumentFragment"
         }, {
           "code": "createElement"
         }, {
