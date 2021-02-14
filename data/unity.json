@@ -613,6 +613,10 @@
           "code": "Mathf.Ceil(x)"
         },
         {
+          "definition": "দশমিকের নিচের দিকের কাছের পূর্নসংখ্যা বাহির করার জন্য",
+          "code": "Mathf.Floor(x)"
+        },
+        {
           "definition": "২ এর গুনিতক কিনা বাহির করার জন্য",
           "code": "Mathf.IsPowerOfTwo(x)"
         }
