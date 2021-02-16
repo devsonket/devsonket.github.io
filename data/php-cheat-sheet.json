@@ -131,6 +131,30 @@
         {
           "definition": "স্ট্রিংয়ের থেকে HTML Tag রিমুভ করা",
           "code": "strip_tags(string $something ,array|string|null $allowed_tags = null) : string"
+        },
+        {
+          "definition": "স্ট্রিংকে কোন নির্দিষ্ট স্ট্রিং দিয়ে বিভক্ত করা (প্রতিটি ভাগকে একটি অ্যারের ইলিমেন্ট আকারে পাওয়া)",
+          "code": "explode(string $separator , string $string [, int $limit])"
+        },
+        {
+          "definition": "স্ট্রিং এর প্রথম অক্ষরটি বড় হাতের করা",
+          "code": "ucfirst($string)"
+        },
+        {
+          "definition": "স্ট্রিং এর প্রতিটি শব্দের প্রথম অক্ষরকে বড় হাতের করা",
+          "code": "ucwords($string)"
+        },
+        {
+          "definition": "স্ট্রিং এর প্রথম অক্ষরটি ছোট হাতের করা",
+          "code": "lcfirst($string)"
+        },
+        {
+          "definition": "সম্পুর্ণ স্ট্রিং কে বড় হাতের করা",
+          "code": "strtoupper($string)"
+        },
+        {
+          "definition": "সম্পুর্ণ স্ট্রিং কে ছোট হাতের করা",
+          "code": "strtolower($string)"
         }
       ]
     },
@@ -180,6 +204,14 @@
         {
           "definition": "অ্যারের কি এর সিরিয়াল অদল বদল করতে",
           "code": "shuffle()"
+        },
+        {
+          "definition": "একটি স্ট্রিং দ্বারা অ্যারেকে যুক্ত করা",
+          "code": "implode ( string $separator , array $array )"
+        },
+        {
+          "definition": "একটি স্ট্রিং দ্বারা অ্যারেকে যুক্ত করা(উপায় ২)",
+          "code": "join ( string $separator , array $array )"
         }
       ]
     }

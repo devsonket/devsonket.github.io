@@ -126,6 +126,31 @@
           "code": "python manage.py findstatic staticfile [staticfile ...]"
         }
       ]
+    },
+    {
+      "title": "টেমপ্লেট ট্যাগ",
+      "items": [
+        {
+          "definition":"টেমপ্টেল এক্সটেন্ড করা",
+          "code": "{%extends '<html file name>'%}"
+        },
+        {
+          "definition":"টেমপ্টেল এর ভেতরে স্ট্যাটিক ফাইল লোড করা",
+          "code": "{%load static%}"
+        },
+        {
+          "definition":"টেমপ্টেল এর ভেতরে ব্লক তৈরি করা",
+          "code": "{%block <block name>%} ... {%endblock <block name>%}"
+        },
+        {
+          "definition":"টেমপ্টেল এর ভেতরে কন্ডিশন তৈরি করা",
+          "code": "{%if <condition>%} .. {%elif <condition>%} .. {%else%}...{%endif%}"
+        },
+        {
+          "definition":"টেমপ্টেল এর ভেতরে লুপ তৈরি",
+          "code": "{%for i in <context data name>%} ... {%endfor%}"
+        }
+      ]
     }
     {
       "title": "টেমপ্লেট ট্যাগ",

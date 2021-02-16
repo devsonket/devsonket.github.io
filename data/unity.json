@@ -1,0 +1,626 @@
+{
+  "id": "unity",
+  "title": "ইউনিটি গেইম ইঞ্জিন",
+  "slug": "unity",
+  "description": "জনপ্রিয় ইউনিটি গেইম ইঞ্জিনের প্রয়োজনীয় হট-কী এবং কোড স্নিপেট",
+  "colorPref": "#393839",
+  "contents": [
+    {
+      "title": "হট-কী",
+      "items": [
+        {
+          "definition": "প্যান টুল",
+          "code": "Q"
+        },
+        {
+          "definition": "মুভ টুল",
+          "code": "W"
+        },
+        {
+          "definition": "রোটেট টুল",
+          "code": " E"
+        },
+        {
+          "definition": "স্কেল টুল",
+          "code": "R"
+        },
+        {
+          "definition": "রেক্ট টুল",
+          "code": "T"
+        },
+        {
+          "definition": "অরবিট ন্যাভিগেশন",
+          "code": "Alt+LMB"
+        },
+        {
+          "definition": "ড্রাগ ন্যাভিগেশন (Drag)",
+          "code": "Alt+MMB"
+        },
+        {
+          "definition": "জুম (Zoom)",
+          "code": "Scroll wheel"
+        },
+        {
+          "definition": "নতুন এম্পটি গেইম অবজেক্ট বানাতে",
+          "code": "Ctrl+Shift+N"
+        },
+        {
+          "definition": "চাইল্ডের মধ্যে নতুন এম্পটি গেইম অবজেক্ট বানাতে",
+          "code": "Alt+Shift+N"
+        },
+        {
+          "definition": "সিলেক্টেড গেইম অবজেক্ট ডুপ্লিকেট করতে",
+          "code": "Ctrl+D"
+        },
+        {
+          "definition": "পূর্বাবস্থায় ফেরা (Undo)",
+          "code": "Ctrl+Z"
+        },
+        {
+          "definition": "পুনরায় করা (Redo)",
+          "code": "Ctrl+Y"
+        },
+        {
+          "definition": "সব সিলেক্ট করা (Select All)",
+          "code": "Ctrl+A"
+        },
+        {
+          "definition": "ইনভার্ট সিলেকশন (Invert Selection)",
+          "code": "Ctrl+I"
+        },
+        {
+          "definition": "সব ডিসিলেক্ট করা (Deselect All)",
+          "code": "Shift+D"
+        },
+        {
+          "definition": "গেইম অবজেক্ট খুজা (Find Object)",
+          "code": "Ctrl+F"
+        },
+        {
+          "definition": "গেইম অবজেক্ট ডিলিট করা",
+          "code": "Delete"
+        },
+        {
+          "definition": "ভিউ এর সাথে এলাইন করা (Align with view)",
+          "code": "Ctrl+Shift+F"
+        },
+        {
+          "definition": "প্লে/আন-প্লে (Play/Unplay)",
+          "code": "Ctrl+P"
+        },
+        {
+          "definition": "পজ/আন-পজ (Pause/Unpause)",
+          "code": "Ctrl+Shift+P"
+        },
+        {
+          "definition": "পরবর্তী ফ্রেমে যাওয়া (Step)",
+          "code": "Ctrl+Alt+P"
+        },
+        {
+          "definition": "সিলেক্টেড অবজেক্ট ভিউ এর সেন্টারে আনা",
+          "code": "F"
+        },
+        {
+          "definition": "সিলেক্টেড অবজেক্টে ভিউ লক করা",
+          "code": "Shift+F"
+        },
+        {
+          "definition": "ম্যাক্সিমাইজ/মিনিমাইজ উইন্ডো",
+          "code": "Shift+Space"
+        },
+        {
+          "definition": "বিল্ড এন্ড রান (Build and Run)",
+          "code": "Ctrl+B"
+        },
+        {
+          "definition": "বিল্ড সেটিংস ওপেন করা",
+          "code": "Ctrl+Shift+B"
+        },
+        {
+          "definition": "নতুন Scene বানানো",
+          "code": "Ctrl+N"
+        },
+        {
+          "definition": "Scene ওপেন করা",
+          "code": "Ctrl+O"
+        },
+        {
+          "definition": "Scene সেইভ করা",
+          "code": "Ctrl+S"
+        },
+        {
+          "definition": "Scene Save As প্রম্পট",
+          "code": "Ctrl+Shift+S"
+        },
+        {
+          "definition": "এসেট ডেটাবেজ রিফ্রেশ",
+          "code": "Ctrl+R"
+        }
+      ]
+    },
+    {
+      "title": "মনো বিহেভিওর ইভেন্ট ফাংশন (ক্রমানুসারে)",
+      "items": [
+        {
+          "code": "void Awake() { /*স্ক্রিপ্ট লোড হওয়ার সময় কল হয়। আবার গেইম শুরু হওয়ার একেবারে প্রথমে কল হয়।*/ }"
+        },
+        {
+          "code": "void OnEnable() { /*অবজেক্ট ইনেবল হওয়ার সময় কল হয়*/ }"
+        },
+        {
+          "code": "void Start() { /*গেইম শুরুর প্রথম ফ্রেমে, প্রথম আপডেটের আগে কল হয়। শুধু একবারই কল হয়*/ }"
+        },
+        {
+          "code": "void FixedUpdate() { /*নির্দিষ্ট কিছু সময় পর পর বারবার কল হয়, ফ্রেমের উপর নির্ভরশীল নয়। ফিজিক্স ইভেন্টগুলো এরপর কল হয়*/ }"
+        },
+        {
+          "code": "void Update() { /*প্রত্যেক ফ্রেমে একবার কল হয়*/ }"
+        },
+        {
+          "code": "void LateUpdate() { /*প্রত্যেক ফ্রেমে আপডেট কল হওয়ার পর একবার কল হয়*/ }"
+        },
+        {
+          "code": "void OnBecameVisible() { /*কোনো renderer কোনো ক্যামেরা দ্বারা দৃশ্যমান হলে কল হয়*/ }"
+        },
+        {
+          "code": "void OnBecameInvisible() { /*কোনো renderer কোনো ক্যামেরা দ্বারা অদৃশ্যমান হলে কল হয়*/ }"
+        },
+        {
+          "code": "void OnPreRender() { /*ক্যামেরা scene রেন্ডার শুরু করার পূর্বমূহুর্তে কল হয়*/ }"
+        },
+        {
+          "code": "void OnRenderObject() { /*ক্যামেরা scene রেন্ডার শেষ করার সময় কল হয়*/ }"
+        },
+        {
+          "code": "void OnPostRender() { /*ক্যামেরা scene রেন্ডার শেষ করার পর কল হয়*/ }"
+        },
+        {
+          "code": "void OnApplicationPause() { /*ফ্রেমের শেষে কল হয় যদি গেইম পজ করা হয়*/ }"
+        },
+        {
+          "code": "void OnApplicationQuit() { /*গেইম কুইট করার পূর্বমূহুর্তে কল হয়*/ }"
+        },
+        {
+          "code": "void OnDisable() { /*কোনো অবজেক্ট ডিজেবল হলে কল হয়*/ }"
+        },
+        {
+          "code": "void OnDestroy() { /*পূর্বে এক্টিভ ছিলো এমন গেইম অবজেক্ট ডিস্ট্রয় হলে কল হয়*/ }"
+        }
+      ]
+    },
+    {
+      "title": "গেইম অবজেক্ট",
+      "items": [
+        {
+          "definition": "নতুন গেইম অবজেক্ট বানাতে",
+          "code": "Instantiate(GameObject go);"
+        },
+        {
+          "definition": "নতুন গেইম অবজেক্ট বানাতে (পজিশন,রোটেশন সহ)",
+          "code": "Instantiate(GameObject go, Vector3 position, Quaternion rotation);"
+        },
+        {
+          "definition": "গেইম অবজেক্ট খুজতে",
+          "code": "GameObject.Find(\"গেইম_অবজেক্টের_নাম\");"
+        },
+        {
+          "definition": "গেইম অবজেক্ট খুজতে (গেইম অবজেক্টে প্যারেন্ট থাকা যাবে না)",
+          "code": "GameObject.Find(\"/গেইম_অবজেক্টের_নাম\");"
+        },
+        {
+          "definition": "কোনো প্যারেন্ট থেকে চাইল্ড গেইম অবজেক্ট খুজতে",
+          "code": "GameObject.Find(\"প্যারেন্টের_নাম/চাইল্ডের_নাম/গেইম_অবজেক্টের_নাম\");"
+        },
+        {
+          "definition": "একই ট্যাগযুক্ত গেইম অবজেক্টদ্বয় খুজতে",
+          "code": "GameObject.FindGameObjectsWithTag(\"ট্যাগের_নাম\");"
+        },
+        {
+          "definition": "কোনো ট্যাগযুক্ত গেইম অবজেক্ট খুজতে (একই ট্যাগের সর্বপ্রথম যেই গেইমঅবজেক্ট খুজে পাবে)",
+          "code": "GameObject.FindWithTag(\"ট্যাগের_নাম\");"
+        },
+        {
+          "definition": "গেইম অবজেক্টের নাম",
+          "code": "go.name;"
+        },
+        {
+          "definition": "গেইম অবজেক্ট এক্টিভ করতে",
+          "code": "go.SetActive(true);"
+        },
+        {
+          "definition": "গেইম অবজেক্ট ডি-এক্টিভ করতে",
+          "code": "go.SetActive(false);"
+        },
+        {
+          "definition": "গেইম অবজেক্ট ডিস্ট্রয় করতে",
+          "code": "Destroy(gameObject);"
+        },
+        {
+          "definition": "গেইম অবজেক্ট থেকে কোনো কম্পোনেন্ট নিতে",
+          "code": "go.GetComponent<কম্পোনেন্ট_টাইপ>();"
+        },
+        {
+          "definition": "প্যারেন্ট গেইম অবজেক্ট থেকে কোনো কম্পোনেন্ট নিতে",
+          "code": "go.GetComponentInParent<কম্পোনেন্ট_টাইপ>();"
+        },
+        {
+          "definition": "চাইল্ড গেইম অবজেক্ট থেকে কোনো কম্পোনেন্ট নিতে (চাইল্ড থেকে সর্বপ্রথম যেটা খুজে পাবে)",
+          "code": "go.GetComponentInChildren<কম্পোনেন্ট_টাইপ>();"
+        },
+        {
+          "definition": "চাইল্ড গেইম অবজেক্ট (ইন-একটিভ সহ) থেকে কোনো কম্পোনেন্ট নিতে (চাইল্ড থেকে সর্বপ্রথম যেটা খুজে পাবে)",
+          "code": "go.GetComponentInChildren<কম্পোনেন্ট_টাইপ>(true);"
+        },
+        {
+          "definition": "গেইম অবজেক্টের পজিশন সেট করা",
+          "code": "go.transform.position = new Vector3(5f, 1f, 10.5f);"
+        },
+        {
+          "definition": "গেইম অবজেক্টের রোটেশন সেট করা",
+          "code": "go.transform.eulerAngles = new Vector3(60f, 0f, 30f);"
+        }
+      ]
+    },
+    {
+      "title": "ইনপুট (লেগাসি)",
+      "items": [
+        {
+          "definition": "কোনো কী(Key) চাপা হয়েছিলো কিনা",
+          "code": "if (Input.GetKeyDown(KeyCode.Return)) { Debug.Log(\"Return key was pressed.\"); }"
+        },
+        {
+          "definition": "কোনো কী(Key) ছেড়ে দেওয়া হয়েছিলো কিনা",
+          "code": "if (Input.GetKeyUp(KeyCode.Return)) { Debug.Log(\"Return key was released.\"); }"
+        },
+        {
+          "definition": "কোনো কী(Key) চেপে রাখা হয়েছে কিনা",
+          "code": "if (Input.GetKey(KeyCode.Return)) { Debug.Log(\"Return key is being held down\"); }"
+        },
+        {
+          "definition": "মাউসের প্রাইমারি (LMB) বাটন চাপা হয়েছিলো কিনা",
+          "code": "if (Input.GetMouseButtonDown(0)) { Debug.Log(\"Mouse Primary Button was pressed.\"); }"
+        },
+        {
+          "definition": "মাউসের প্রাইমারি (LMB) বাটন ছেড়ে দেওয়া হয়েছিলো কিনা",
+          "code": "if (Input.GetMouseButtonUp(0)) { Debug.Log(\"Mouse Primary Button was released.\"); }"
+        },
+        {
+          "definition": "মাউসের প্রাইমারি (LMB) বাটন চেপে রাখা হয়েছে কিনা",
+          "code": "if (Input.GetMouseButton(0)) { Debug.Log(\"Mouse Primary Button is being held down.\"); }"
+        },
+        {
+          "definition": "মাউসের সেকেন্ডারি (RMB) বাটন চাপা হয়েছিলো কিনা",
+          "code": "if (Input.GetMouseButtonDown(1)) { Debug.Log(\"Mouse Secondary Button was pressed.\"); }"
+        },
+        {
+          "definition": "মাউসের মিডল/স্ক্রল-হুইল (MMB) বাটন চাপা হয়েছিলো কিনা",
+          "code": "if (Input.GetMouseButtonDown(২)) { Debug.Log(\"Mouse Middle Button was pressed.\"); }"
+        },
+        {
+          "definition": "কোনো এক্সিসের ইনপুট ভ্যালু (-1~1)",
+          "code": "float value = Input.GetAxis(\"এক্সিসের নাম (Edit > Project Settings > Input)\");"
+        },
+        {
+          "definition": "হরিজন্টাল এক্সিসের ইনপুট ভ্যালু (-1~1)",
+          "code": "float value = Input.GetAxis(\"Horizontal\");"
+        },
+        {
+          "definition": "হরিজন্টাল এক্সিসের raw (স্মুথিং বাদে) ইনপুট ভ্যালু (-1~1)",
+          "code": "float value = Input.GetAxisRaw(\"Horizontal\");"
+        },
+        {
+          "definition": "ভার্টিকাল এক্সিসের ইনপুট ভ্যালু (-1~1)",
+          "code": "float value = Input.GetAxis(\"Vertical\");"
+        },
+        {
+          "definition": "ভার্টিকাল এক্সিসের raw (স্মুথিং বাদে) ইনপুট ভ্যালু (-1~1)",
+          "code": "float value = Input.GetAxisRaw(\"Vertical\");"
+        }
+      ]
+    },
+    {
+      "title": "টাচ ইনপুট",
+      "items": [
+        {
+          "definition": "স্ক্রিনে টাচের সংখ্যা",
+          "code": "Input.touchCount"
+        },
+        {
+          "definition": "নির্দিষ্ট কোনো টাচের ইনফোরমেশন (Touch স্ট্রাক্ট)",
+          "code": "Touch touch = Input.GetTouch(n); //n টাচের ইন্ডেক্স, 0 মানে প্রথম টাচের ইনফো নিবে"
+        },
+        {
+          "definition": "নির্দিষ্ট কোনো টাচের স্ক্রিন পজিশন",
+          "code": "Vector3 touchPosition = touch.position;"
+        },
+        {
+          "definition": "নির্দিষ্ট কোনো টাচের স্ক্রিন পজিশন স্কিন স্পেস থেকে ওয়ার্ল্ড স্পেসে কনভার্সন",
+          "code": "Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);"
+        },
+        {
+          "definition": "নির্দিষ্ট কোনো টাচের দশা",
+          "code": "Touch touch = Input.GetTouch(0);\n switch (touch.phase)\n {\n //যখন টাচ সনাক্ত হয় \n case TouchPhase.Began:\n break;\n //যদি টাচটি মুভিং হয় \n case TouchPhase.Moved:\n break;\n //যখন টাচটি শেষ হয়ে যায় \n case TouchPhase.Ended: \n break; \n } \n"
+        }
+      ]
+    },
+    {
+      "title": "টাইম",
+      "items": [
+        {
+          "definition": "গেইম শুরু থেকে বর্তমান পর্যন্ত অতিবাহিত সময় (সেকেন্ড)",
+          "code": "float timePassed = Time.time;"
+        },
+        {
+          "definition": "গেইমের বর্তমান টাইম স্কেল (১ = নরমাল)",
+          "code": "float currentTimeScale = Time.timeScale;"
+        },
+        {
+          "definition": "টাইম স্কেলের মাধ্যমে গেইম থামানো",
+          "code": "Time.timeScale = 0;"
+        },
+        {
+          "definition": "পূর্বের ফ্রেম সম্পন্ন হতে অতিবাহিত সময়",
+          "code": "float timePassedForLastFrame = Time.deltaTime;"
+        },
+        {
+          "definition": "ফিজিক্স ইভেন্ট সম্পন্ন হতে অতিবাহিত সময়",
+          "code": "float timePassedForPhysics = Time.fixedDeltaTime;"
+        }
+      ]
+    },
+    {
+      "title": "ফিজিক্স ইভেন্টস",
+      "items": [
+        {
+          "definition": "দু'টি গেইমঅবজেক্টের মধ্যে সংঘর্ষ হলে",
+          "code": "void OnCollisionEnter(Collision col) { Debug.log(gameObject.name + \"Hits\" + col.gameObject.name); }"
+        },
+        {
+          "definition": "দু'টি গেইমঅবজেক্টের মধ্যে সংঘর্ষ চলমান থাকলে",
+          "code": "void OnCollisionStay(Collision col) { Debug.log(gameObject.name + \"Hitting\" + col.gameObject.name); }"
+        },
+        {
+          "definition": "দু'টি গেইমঅবজেক্টের মধ্যে সংঘর্ষ শেষ হলে",
+          "code": "void OnCollisionExit(Collision col) { Debug.log(gameObject.name + \"Stopped hitting\" + col.gameObject.name); }"
+        },
+        {
+          "definition": "ট্রিগার ইনেবলড দু'টি গেইমঅবজেক্টের মধ্যে সংঘর্ষ হলে",
+          "code": "void OnTriggerEnter(Collider col) { Debug.log(gameObject.name + \"Hits\" + col.gameObject.name); }"
+        },
+        {
+          "definition": "ট্রিগার ইনেবলড দু'টি গেইমঅবজেক্টের মধ্যে সংঘর্ষ চলমান থাকলে",
+          "code": "void OnTriggerStay(Collider col) { Debug.log(gameObject.name + \"Hitting\" + col.gameObject.name); }"
+        },
+        {
+          "definition": "ট্রিগার ইনেবলড দু'টি গেইমঅবজেক্টের মধ্যে সংঘর্ষ শেষ হলে",
+          "code": "void OnTriggerExit(Collider col) { Debug.log(gameObject.name + \"Stopped hitting\" + col.gameObject.name); }"
+        },
+        {
+          "definition": "2D গেইমঅবজেক্টের ফিজিক্স ইভেন্টের জন্য মেথড ও প্যারামিটারগুলোর শেষে 2D লাগাতে হবে",
+          "code": "void OnCollisionEnter2D(Collision2D col) { Debug.log(gameObject.name + \"Hits\" + col.gameObject.name); }"
+        }
+      ]
+    },
+    {
+      "title": "কোরুটিন",
+      "items": [
+        {
+          "definition": "কোরুটিনের উদাহরন",
+          "code": "IEnumerator WaitOneSecond()\n {\n yield return new WaitForSeconds(1.0f);\n Debug.Log(\"1 Second Passed...\");\n }"
+        },
+        {
+          "definition": "কোরুটিন কল করা",
+          "code": "StartCoroutine(WaitOneSecond());"
+        },
+        {
+          "definition": "মেথডের নাম দ্বারা কোরুটিন কল করা",
+          "code": "StartCoroutine(\"WaitOneSecond\");"
+        },
+        {
+          "definition": "ভ্যারিয়েবলে কোরুটিন স্টোর করা",
+          "code": "IEnumerator myCoroutine = WaitOneSecond();"
+        },
+        {
+          "definition": "ভ্যারিয়েবল থেকে কোরুটিন কল করা",
+          "code": "StartCoroutine(myCoroutine);"
+        },
+        {
+          "definition": "স্টোর করা কোরুটিন বন্ধ করা",
+          "code": "StopCoroutine(myCoroutine);"
+        },
+        {
+          "definition": "মেথডের নাম দ্বারা কোরুটিন বন্ধ করা",
+          "code": "StopCoroutine(\"myCoroutine\");"
+        },
+        {
+          "definition": "সকল কোরুটিন বন্ধ করা",
+          "code": "StopAllCoroutines();"
+        },
+        {
+          "definition": "পরবর্তী Update() পর্যন্ত অপেক্ষা করা",
+          "code": "yield return null;"
+        },
+        {
+          "definition": "পরবর্তী FixedUpdate() পর্যন্ত অপেক্ষা করা",
+          "code": "yield return new WaitForFixedUpdate();"
+        },
+        {
+          "definition": "বর্তমান ফ্রেমের সব এক্সিকিউট হওয়া অপেক্ষা করা",
+          "code": "yield return new WaitForEndOfFrame();"
+        },
+        {
+          "definition": "কিছু সময় অপেক্ষা করা (টাইম স্কেল অনুযায়ী)",
+          "code": "yield return new WaitForSeconds(2f);"
+        },
+        {
+          "definition": "কিছু সময় অপেক্ষা করা (Unscaled টাইম অনুযায়ী)",
+          "code": "yield return new WaitForSecondsRealtime(2f);"
+        },
+        {
+          "definition": "অন্য কোনো কোরুটিনের জন্য অপেক্ষা করা",
+          "code": "yield return StartCoroutine(AnotherCoroutine());"
+        },
+        {
+          "definition": "কোনো কন্ডিশনের জন্য অপেক্ষা করা",
+          "code": "yield return new WaitUntill(() => fatherInLaw.isAgreed == true);"
+        }
+      ]
+    },
+    {
+      "title": "সিন(Scene) ম্যানেজমেন্ট",
+      "items": [
+        {
+          "definition": "প্রয়োজনীয় ডিরেক্টিভ",
+          "code": "using UnityEngine.SceneManagement;"
+        },
+        {
+          "definition": "কোনো scene লোড করা",
+          "code": "SceneManager.LoadScene(\"SceneName\");"
+        },
+        {
+          "definition": "কোনো scene ব্যাকগ্রাউন্ডে asynchronously লোড করা",
+          "code": "SceneManager.LoadSceneAsync(\"SceneName\");"
+        },
+        {
+          "definition": "বর্তমান scene",
+          "code": "Scene scene = SceneManager.GetActiveScene();"
+        },
+        {
+          "definition": "বর্তমান scene রিলোড করা",
+          "code": "SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);"
+        },
+        {
+          "definition": "নাম দ্বারা scene পাওয়া",
+          "code": "Scene scene = SceneManager.GetSceneByName(\"SceneName\");"
+        },
+        {
+          "definition": "এক scene থেকে অন্য scene এ গেইমঅবজেক্ট পাঠানো",
+          "code": "SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetSceneByName(\"SceneName\"));"
+        },
+        {
+          "definition": "scene change এর সময় কোনো অবজেক্ট ডিস্ট্রয় না করা",
+          "code": "DontDestroyOnLoad(gameObject);"
+        },
+        {
+          "definition": "এক্টিভ scene change হওয়ার ইভেন্ট",
+          "code": "SceneManager.activeSceneChanged += (currentScene, nextScene) => { };"
+        }
+      ]
+    },
+    {
+      "title": "ইউজার ইন্টারফেইস",
+      "items": [
+        {
+          "definition": "প্রয়োজনীয় ডিরেক্টিভ",
+          "code": "using UnityEngine.UI;"
+        },
+        {
+          "definition": "গেইম অবজেক্ট থেকে টেক্সট কম্পোনেন্ট নেওয়া",
+          "code": "Text myText = go.GetComponent<Text>();"
+        },
+        {
+          "definition": "গেইম অবজেক্ট থেকে ইমেজ কম্পোনেন্ট নেওয়া",
+          "code": "Image myImage = go.GetComponent<Image>();"
+        },
+        {
+          "definition": "টেক্সটের ভ্যালু পরিবর্তন",
+          "code": "myText.text = \"This is a Text.\""
+        },
+        {
+          "definition": "ফ্লোট/ইন্টিজার টেক্সটে ভ্যালু হিসেবে",
+          "code": "myText.text = myFloat.ToString(); অথবা myText.text = myFloat + \"\";"
+        },
+        {
+          "definition": "দশমিকের পর ৩ ঘর পর্যন্ত সংখ্যা দেখাতে (12.123)",
+          "code": "myText.text = myFloat.ToString(\"0.000\");"
+        },
+        {
+          "definition": "১০০ এর ছোট সংখ্যার আগে ০ দেখাতে (006)",
+          "code": "myText.text = myFloat.ToString(\"000\");"
+        },
+        {
+          "definition": "ইমেজের কালারের আলফা ভ্যালু পরিবর্তন (0~1, 0 ট্রান্সপ্যারেন্ট)",
+          "code": "myImage.color = new Color(myImage.color.r, myImage.color.g, myImage.color.b, 0.1f);"
+        }
+      ]
+    },
+    {
+      "title": "অডিও",
+      "items": [
+        {
+          "definition": "ভ্যারিয়েবলে অডিও ক্লিপ স্টোর করা",
+          "code": "public AudioClip clip;"
+        },
+        {
+          "definition": "গেইম অবজেক্ট থেকে অডিও সোর্স কম্পোনেন্ট নেওয়া",
+          "code": "AudioSource audioSource = go.GetComponent<AudioSource>();"
+        },
+        {
+          "definition": "অডিও সোর্সে থাকা ক্লিপ প্লে করতে (চলাকালীন সময় পুনরায় কল করলে পুনরায় প্লে হবে)",
+          "code": "audioSource.Play();"
+        },
+        {
+          "definition": "অডিও সোর্সে কোনো ক্লিপ সম্পূর্ন একবার প্লে করতে (চলাকালীন সময় পুনরায় কল করলে পূর্ববর্তী ক্লিপ শেষ হওয়ার পর প্লে হবে)",
+          "code": "audioSource.PlayOneShot(clip);"
+        },
+        {
+          "definition": "অডিও সোর্স থামাতে (PlayOneShot() দ্বারা চালিত ক্লিপ থামবে না)",
+          "code": "audioSource.Pause();"
+        },
+        {
+          "definition": "অডিও সোর্স বন্ধ করতে (PlayOneShot() দ্বারা চালিত ক্লিপ বন্ধ হবে না)",
+          "code": "audioSource.Stop();"
+        },
+        {
+          "definition": "অডিও সোর্সের ভলিউম (0~1)",
+          "code": "audioSource.volume = 0.5f;"
+        },
+        {
+          "definition": "অডিও সোর্সের পিচ (-3~3)",
+          "code": "audioSource.pitch = 2f;"
+        }
+      ]
+    },
+    {
+      "title": "ম্যাথ ফাংশন",
+      "items": [
+        {
+          "definition": "পরমমান বাহির করার জন্য",
+          "code": "Mathf.Abs(x)"
+        },
+        {
+          "definition": "সর্বনিম্ন এবং সর্বাধিক মানের মধ্যে সীমাবদ্ধ করা",
+          "code": "Mathf.Clamp(value, min, max)"
+        },
+        {
+          "definition": "দুটি বা ততোধিক সংখ্যার মধ্যে বড় সংখ্যা বাহির করার জন্য",
+          "code": "Mathf.Max(x,y)"
+        },
+        {
+          "definition": "দুটি বা ততোধিক সংখ্যার মধ্যে ছোট সংখ্যা বাহির করার জন্য",
+          "code": "Mathf.Min(x,y)"
+        },
+        {
+          "definition": "x টু দা পাওয়ার y এর জন্য",
+          "code": "Mathf.Pow(x,y)"
+        },
+        {
+          "definition": "বর্গমূল বাহির করার জন্য",
+          "code": "Mathf.Sqrt(x)"
+        },
+        {
+          "definition": "দশমিকের উপরের দিকের কাছের পূর্নসংখ্যা বাহির করার জন্য",
+          "code": "Mathf.Ceil(x)"
+        },
+        {
+          "definition": "দশমিকের নিচের দিকের কাছের পূর্নসংখ্যা বাহির করার জন্য",
+          "code": "Mathf.Floor(x)"
+        },
+        {
+          "definition": "২ এর গুনিতক কিনা বাহির করার জন্য",
+          "code": "Mathf.IsPowerOfTwo(x)"
+        }
+      ]
+    }
+  ]
+}
