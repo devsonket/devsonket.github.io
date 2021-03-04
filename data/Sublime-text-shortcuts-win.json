@@ -51,6 +51,14 @@
         {
         "definition": "সাবলাইম টেক্সট বন্ধ করতে",
         "code": "Ctrl + W"
+        },
+        {
+        "definition": "পুরো লাইন কপি করতে",
+        "code": "Ctrl + Shift + D"
+        },
+        {
+        "definition": "সিলেক্ট করা লেখার মতো আরো লেখা সিলেক্ট করতে",
+        "code": "Ctrl + D"
         }
     ]
     },
