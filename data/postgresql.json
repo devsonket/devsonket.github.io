@@ -163,6 +163,33 @@
                     "code": "SELECT c1, aggregate(c2) FROM t GROUP BY c1 HAVING condition;"
                 } 
             ]
+        },
+        {
+            "title": "একাধিক টেবিল থেকে ডেটা অনুসন্ধান করা",
+            "items": [
+                {
+                    "defination": "টেবিল ১ এবং টেবিল ২ এর ইনার জয়েন/জয়েন্ট(Inner Join)",
+                    "code": "SELECT c1, c2 FROM t1 INNER JOIN t2 ON condition;"
+                }, {
+                    "defination": "টেবিল ১ এবং টেবিল ১ এর বাম জয়েন/জয়েন্ট(Left Join)",
+                    "code": "SELECT c1, c2 FROM t1 LEFT JOIN t2 ON condition;"
+                }, {
+                    "defination": "টেবিল ১ এবং টেবিল ২ এর ডানে জয়েন/জয়েন্ট (Right Join)",
+                    "code": "SELECT c1, c2 FROM t1 RIGHT JOIN t2 ON condition;"
+                }, {
+                    "defination": "ফুল আউটার  জয়েন/জয়েন্ট (Full-Outer Join)",
+                    "code": "SELECT c1, c2 FROM t1 FULL OUTER JOIN t2 ON condition;"
+                }, {
+                    "defination": "সারণিতে/টেবিলে  সারিগুলির কার্টেসিয়ান মান তৈরি করা",
+                    "code": "SELECT c1, c2 FROM t1 CROSS JOIN t2;"
+                }, {
+                    "deination": "ক্রস জয়েন সম্পাদন করার আরেকটি উপায়",
+                    "code": "SELECT c1, c2 FROM t1, t2;"
+                }, {
+                    "defination": "জয়েন্ট  টেবিল ১ নিজের সাথে ইনার জয়েন্ট ব্যবহার করে",
+                    "code": "SELECT c1, c2 FROM t1 A INNER JOIN t2 B ON condition;"
+                }
+            ]
         }
     ]
 }
