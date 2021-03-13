@@ -133,6 +133,36 @@
                     "code": "psql -h localhost -U postgres mynewcreateddb -f newgenerateddb.sql"
                 }
             ]
+        },
+        {
+            "title": "একটি টেবিল থেকে ডেটা অনুসন্ধান করা",
+            "items": [
+                {
+                    "defination": "একটি সারণী/টেবিল থেকে কলাম c1, c2 এ ডেটা অনুসন্ধান করা",
+                    "code": "SELECT c1, c2 FROM t;"
+                }, {
+                    "defination": "একটি সারণী/টেবিল থেকে সমস্ত সারি এবং কলাম অনুসন্ধান করা",
+                    "code": "SELECT * FROM t;"
+                }, {
+                    "defination": "একটি টেবিল থেকে কলাম c1, c2 এর (কন্ডিশন)শর্ত অনুযায়ী ডেটা বের করা",
+                    "code": "SELECT c1, c2 FROM t WHERE condition;"
+                }, {
+                    "defination": "একটি টেবিল থেকে অদ্বিতীয়(ইউনিক) সারি/রো বের করা",
+                    "code": "SELECT DISTINCT column FROM t WHERE condition;"
+                }, {
+                    "defination": "একটি টেবিল থেকে কলামের ডেটাকে ঊর্ধ্বক্রম(বড় থেকে ছোট) অথবা অধঃক্রম (ছোট থেকে বড়) সাজানো",
+                    "code": "SELECT c1, c2 FROM t ORDER BY c1 ASC[DESC];"
+                }, {
+                    "defination": "টেবিলের সারিগুলির অফসেট এড়িয়ে যেতে এবং পরবর্তী n তম সারিতে ফিরে যেতে",
+                    "code": "SELECT c1, c2 FROM t ORDER BY c1 LIMIT n OFFSET offset;"
+                }, {
+                    "defination": "এগ্রিগেট ফাংশন ব্যবহার করে গ্রুপ রো(সারি)",
+                    "code": "SELECT c1, aggregate(c2) FROM t GROUP BY c1;"
+                }, {
+                    "defination": "HAVING ধারাটি(clause) ব্যবহার করে গ্রুপগুলি ফিল্টার করা",
+                    "code": "SELECT c1, aggregate(c2) FROM t GROUP BY c1 HAVING condition;"
+                } 
+            ]
         }
     ]
 }
