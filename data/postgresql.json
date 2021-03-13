@@ -190,6 +190,66 @@
                     "code": "SELECT c1, c2 FROM t1 A INNER JOIN t2 B ON condition;"
                 }
             ]
+        },
+        {
+            "title": "এসকিউএল অপারেটর ব্যবহার করা",
+            "items": [
+                {
+                    "defination": "দুটি কুয়েরি থেকে সারি একত্রিত করা",
+                    "code": "SELECT c1, c2 FROM t1 UNION [ALL] SELECT c1, c2 FROM t2;"
+                }, {
+                    "defination": "দুটি কুয়েরি থেকে প্রতিচ্ছেদ(ইন্টারসেকশন) বের করা",
+                    "code": "SELECT c1, c2 FROM t1 INTERSECT SELECT c1, c2 FROM t2;"
+                }, {
+                    "defination": "অন্য ফলাফল সেট থেকে একটি ফলাফল সেট বিয়োগ করা",
+                    "code": "SELECT c1, c2 FROM t1 EXCEPT SELECT c1,c2 FROM t2;"
+                }, {
+                    "defination": "প্যাটার্ন মিলিয়ে %, _ ব্যবহার করে সারিগুলি অনুসন্ধান করা",
+                    "code": "SELECT c1, c2 FROM t WHERE c1[NOT] LIKE pattern;"
+                }, {
+                    "defination": "একটি তালিকায় সারি সন্ধান করা",
+                    "code": "SELECT c1, c2 FROM t WHERE c1[NOT] IN value_list;"
+                }, {
+                    "defination": "দুটি মানের মধ্যে সারি সন্ধান করা",
+                    "code": "SELECT c1, c2 FROM t WHERE c1 BETWEEN low_value AND high_value;"
+                }, {
+                    "defination": "কোনও টেবিলের মানগুলি নাল বা খালি তা পরীক্ষা করে দেখা",
+                    "code": "SELECT c1, c2 FROM t WHERE c1 IS [NOT]NULL;"
+                }
+            ]
+        },
+        {
+            "title": "ট্যাবলেটগুলি পরিচালনা করা",
+            "items": [
+                {
+                    "defination": "তিনটি কলাম সহ একটি নতুন টেবিল তৈরি করা",
+                    "code": "CREATE TABLE( id SERIAL PRIMARY KEY, name VARCHAR NOT NULL, price NUMERIC(10,2) DEFAULT 0 );"
+                }, {
+                    "defination": "ডাটাবেস থেকে সারণী/টেবিল মুছুন",
+                    "code": "DROP TABLE t CASCADE;"
+                }, {
+                    "defination": "টেবিলটিতে একটি নতুন কলাম যুক্ত করা",
+                    "code": "ALTER TABLE t ADD column;"
+                }, {
+                    "defination": "টেবিল থেকে কলাম সি ড্রপ করা",
+                    "code": "ALTER TABLE t DROP COLUMN c;"
+                }, {
+                    "defination": "একটি বাধা যুক্ত করা",
+                    "code": "ALTER TABLE t ADD contraint;"
+                }, {
+                    "defination": "একটি সীমাবদ্ধতা ফেলে দিন",
+                    "code": "ALTER TABLE t DROP constraint;"
+                }, {
+                    "defination": "টি 1 থেকে টি 2-তে একটি টেবিলটির নাম পরিবর্তন করা",
+                    "code": "ALTER TABLE t1 RENAME TO t2;"
+                }, {
+                    "defination": "সি 1 হতে সি ২ কলামের নাম পরিবর্তন করা",
+                    "code": "ALTER TABLE t1 RENAME c1 to c2;"
+                }, {
+                    "defination": "একটি টেবিলের সমস্ত ডেটা করানো",
+                    "code": "TRUNCATE TABLE t CASCADE;"
+                }
+            ]
         }
     ]
 }
