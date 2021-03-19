@@ -1,0 +1,123 @@
+{
+    "id": "pip-pipenv",
+    "title": "পিপ ও ভার্চুয়াল এনভায়রনমেন্ট",
+    "slug": "pip",
+    "description": "পিপ হচ্ছে পাইথনের প্যাকেজ ইন্সটলার। এরমাধ্যমে PyPI অথবা অন্য ইনডেক্স থেকে পাইথনের প্যাকেজ ইন্সটল করা হয়। Pipenv পাইথন প্রজেক্টের ডিপেন্ডেন্সি ম্যানেজার যা মূলত পিপ এবং ভার্চুয়াল এনভায়রনমেন্টের একটি সমন্বিত রুপ।",
+    "colorPref": "#87CEEB",
+    "contents": [
+        {
+            "title": "পিপ(pip)",
+            "items": [
+                {
+                    "definition": "পিপ এর বর্তমান ভার্সন চেক করা",
+                    "code": "pip -V"
+                },
+                {
+                    "definition": "পিপ আপগ্রেড করা",
+                    "code": "python -m pip install -U pip"
+                },
+                {
+                    "definition": "কোনো প্যাকেজ ডাউনলোড করা",
+                    "code": "pip download <package name>"
+                },
+                {
+                    "definition": "কোনো প্যাকেজ ইনস্টল করা",
+                    "code": "pip install <package name>"
+                },
+                {
+                    "definition": "কোনো প্যাকেজ আনইনস্টল করা",
+                    "code": "pip uninstall <package name>"
+                },
+                {
+                    "definition": "ইনস্টল করা কোনো প্যাকেজ সম্পর্কে তথ্য দেখা",
+                    "code": "pip show <package name>"
+                },
+                {
+                    "definition": "সকল ইনস্টলকৃত প্যাকেজের লিস্ট দেখা",
+                    "code": "pip list"
+                },
+                {
+                    "definition": "সকল ইনস্টলকৃত প্যাকেজের লিস্ট রিকোয়ারমেন্ট ফরম্যাটে দেখা",
+                    "code": "pip freeze"
+                },
+                {
+                    "definition": "সকল ইনস্টলকৃত প্যাকেজের লিস্ট দিয়ে requirements.txt ফাইল তৈরী করা",
+                    "code": "pip freeze > requirements.txt"
+                },
+                {
+                    "definition": "ইনস্টল করা প্যাকেজ সমূহের কম্প্যাটিবল ডিপেন্ডেন্সি চেক করা",
+                    "code": "pip check"
+                }
+            ]
+        },
+        {
+            "title": "পিপ ইএনভি(pipenv)",
+            "items": [
+                {
+                    "definition": "pipenv প্যাকেজটি ইনস্টল করা",
+                    "code": "pip install pipenv"
+                },
+                {
+                    "definition": "pipenv এর ভার্সন চেক করা",
+                    "code": "pipenv --version"
+                },
+                {
+                    "definition": "পাইথনের নির্দিষ্ট ভার্সন(যেমন 3.7) দিয়ে ভার্চুয়াল এনভায়রনমেন্ট তৈরী করা",
+                    "code": "pipenv --python 3.7"
+                },
+                {
+                    "definition": "ভার্চুয়াল এনভায়রনমেন্টে প্রবেশ করা",
+                    "code": "pipenv shell"
+                },
+                {
+                    "definition": "ভার্চুয়াল এনভায়রনমেন্টের লোকেশন দেখা",
+                    "code": "pipenv --where"
+                },
+                {
+                    "definition": "প্যাকেজ ইনস্টল করা",
+                    "code": "pipenv install <package name>"
+                },
+                {
+                    "definition": "প্যাকেজ আনইনস্টল করা",
+                    "code": "pipenv uninstall <package name>"
+                },
+                {
+                    "definition": "পিপফাইল অনুযায়ী সকল প্যাকেজ ইনস্টল করা",
+                    "code": "pip install"
+                },
+                {
+                    "definition": "ডেভ ডিপেন্ডেসি সহ পিপফাইল অনুযায়ী প্যাকেজ ইনস্টল করা",
+                    "code": "pipenv install --dev"
+                },
+                {
+                    "definition": "পিপফাইলে নেই এমন প্যাকেজ আনইনস্টল করা",
+                    "code": "pipenv clean"
+                },
+                {
+                    "definition": "Pipfile.lock জেনারেট করা",
+                    "code": "pipenv lock"
+                },
+                {
+                    "definition": "pipenv দিয়ে পিপ কমান্ড চালানো",
+                    "code": "pipenv run pip freeze"
+                },
+                {
+                    "definition": "সকল ইনস্টলড প্যাকেজের ডিপেন্ডেন্সি ইনফরমেশন দেখা",
+                    "code": "pipenv graph"
+                },
+                {
+                    "definition": "সেফটি সিকিউরিটি চেক করা",
+                    "code": "pipenv check"
+                },
+                {
+                    "definition": "ভার্চুয়াল এনভায়রনমেন্ট থেকে বের হওয়া",
+                    "code": "deactivate"
+                },
+                {
+                    "definition": "কোনো প্রজেক্টের ভার্চুয়াল এনভায়রনমেন্ট রিমুভ করে দেয়া",
+                    "code": "pipenv --rm"
+                }
+            ]
+        }
+    ]
+}
