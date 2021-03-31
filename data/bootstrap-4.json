@@ -286,87 +286,87 @@
         {
             "title": "বাটন",
             "items": [{
-                    "definition": "",
+                    "definition": "প্রাথমিক",
                     "code": "<button type='button' class='btn btn-primary'>Primary</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "মাধ্যমিক",
                     "code": "<button type='button' class='btn btn-secondary'>Secondary</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "সাফল্য",
                     "code": "<button type='button' class='btn btn-success'>Success</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "বিপদ",
                     "code": "<button type='button' class='btn btn-danger'>Danger</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "সতর্কতা",
                     "code": "<button type='button' class='btn btn-warning'>Warning</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "তথ্য",
                     "code": "<button type='button' class='btn btn-info'>Info</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "সামান্য",
                     "code": "<button type='button' class='btn btn-light'>Light</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "অন্ধকার",
                     "code": "<button type='button' class='btn btn-dark'>Dark</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "সংযুক্ত",
                     "code": "<button type='button' class='btn btn-link'>Link</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "প্রান্তরেখা প্রাথমিক",
                     "code": "<button type='button' class='btn btn-outline-primary'>Primary</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "প্রান্তরেখা মাধ্যমিক",
                     "code": "<button type='button' class='btn btn-outline-secondary'>Secondary</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "প্রান্তরেখা সাফল্য",
                     "code": "<button type='button' class='btn btn-outline-success'>Success</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "প্রান্তরেখা বিপদ",
                     "code": "<button type='button' class='btn btn-outline-danger'>Danger</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "প্রান্তরেখা সতর্কতা",
                     "code": "<button type='button' class='btn btn-outline-warning'>Warning</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "প্রান্তরেখা তথ্য",
                     "code": "<button type='button' class='btn btn-outline-info'>Info</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "প্রান্তরেখা সামান্য",
                     "code": "<button type='button' class='btn btn-outline-light'>Light</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "প্রান্তরেখা অন্ধকার",
                     "code": "<button type='button' class='btn btn-outline-dark'>Dark</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "বড়",
                     "code": "<button type='button' class='btn btn-primary btn-lg'>Large button</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "ছোট",
                     "code": "<button type='button' class='btn btn-primary btn-sm'>Small button</button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "বন্ধ",
                     "code": "<button type='button' class='btn-close' aria-label='Close'></button>"
                 },
                 {
-                    "definition": "",
+                    "definition": "বন্ধ সাদা",
                     "code": "<button type='button' class='btn-close btn-close-white' aria-label='Close'></button>"
                 }
             ]
