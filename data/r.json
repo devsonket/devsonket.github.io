@@ -345,23 +345,23 @@
                                 "code": "paste(x, collapse = ' ')"
                             },
                             {
-                                "definition": "",
+                                "definition": "x এর ভিতর রেগুলার এক্সপ্রেশন খোজা ",
                                 "code": "grep(pattern, x)"
                             },
                             {
-                                "definition": "",
+                                "definition": "x এর ভিতর মিলমত স্ট্রিং প্রতিস্থাপন করা",
                                 "code": "gsub(pattern, replace, x)"
                             },
                             {
-                                "definition": "",
+                                "definition": "বড় হাতের অক্ষরে রূপান্তর করা",
                                 "code": "toupper(x)"
                             },
                             {
-                                "definition": "",
+                                "definition": "ছোট হাতের অক্ষরে রূপান্তর করা",
                                 "code": "tolower(x)"
                             },
                             {
-                                "definition": "",
+                                "definition": "স্ট্রিং এর ভেতর ক্যারেক্টার এর সংখ্যা",
                                 "code": "nchar(x)"
                             }
                         ]
