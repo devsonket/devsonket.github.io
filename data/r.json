@@ -399,6 +399,22 @@
                     "code": "summary"
                 }
             ]
+        },
+        {
+            "title": "প্লটিং",
+            "items": [{
+                    "definition": "x এর ভেলু্র ক্রমানুসারে",
+                    "code": "plot(x)"
+                },
+                {
+                    "definition": "y এর বিপরীতে x এর ভেলু্র",
+                    "code": "plot(x,y)"
+                },
+                {
+                    "definition": "x এর হিস্টোগ্রাম",
+                    "code": "hist(x)"
+                }
+            ]
         }
     ]
 }
