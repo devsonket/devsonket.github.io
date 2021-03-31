@@ -655,16 +655,260 @@
                     "code": "NT"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "definition": "জ্ব",
+                    "code": "jw"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "definition": "জ্য",
+                    "code": "jy, jZ"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "definition": "জ্র",
+                    "code": "jr"
+                },
+                {
+                    "definition": "ঞ্চ",
+                    "code": "nc, NGc"
+                },
+                {
+                    "definition": "ঞ্ছ",
+                    "code": "nch, NGch"
+                },
+                {
+                    "definition": "ঞ্জ",
+                    "code": "nj, NGj"
+                },
+                {
+                    "definition": "ঞ্ঝ",
+                    "code": "njh, NGjh"
+                },
+                {
+                    "definition": "ট্ট",
+                    "code": "TT"
+                },
+                {
+                    "definition": "ত্ত",
+                    "code": "tt"
+                },
+                {
+                    "definition": "ত্ত্ব",
+                    "code": "ttw"
+                },
+                {
+                    "definition": "ত্থ",
+                    "code": "tth"
+                },
+                {
+                    "definition": "ত্ন",
+                    "code": "tn"
+                },
+                {
+                    "definition": "ত্ব",
+                    "code": "tw"
+                },
+                {
+                    "definition": "ত্ম",
+                    "code": "tm"
+                },
+                {
+                    "definition": "ত্ম্য",
+                    "code": "tmy, tmZ"
+                },
+                {
+                    "definition": "ত্য",
+                    "code": "ty, tZ"
+                },
+                {
+                    "definition": "ত্র",
+                    "code": "tr"
+                },
+                {
+                    "definition": "থ্ব",
+                    "code": "thw"
+                },
+                {
+                    "definition": "থ্য",
+                    "code": "thy, thZ"
+                },
+                {
+                    "definition": "থ্র",
+                    "code": "thr"
+                },
+                {
+                    "definition": "দ্গ",
+                    "code": "dg"
+                },
+                {
+                    "definition": "দ্ঘ",
+                    "code": "dgh"
+                },
+                {
+                    "definition": "দ্দ",
+                    "code": "dd"
+                },
+                {
+                    "definition": "দ্দ্ব",
+                    "code": "ddw "
+                },
+                {
+                    "definition": "দ্ধ",
+                    "code": "ddh"
+                },
+                {
+                    "definition": "দ্ব",
+                    "code": "dw"
+                },
+                {
+                    "definition": "দ্ভ",
+                    "code": "dv, dbh"
+                },
+                {
+                    "definition": "দ্ম",
+                    "code": "dm"
+                },
+                {
+                    "definition": "দ্য",
+                    "code": "dy, dZ"
+                },
+                {
+                    "definition": "দ্র",
+                    "code": "dr"
+                },
+                {
+                    "definition": "ন্ম",
+                    "code": "nm"
+                },
+                {
+                    "definition": "ন্য",
+                    "code": "ny, nZ"
+                },
+                {
+                    "definition": "ন্স",
+                    "code": "ns"
+                },
+                {
+                    "definition": "ণ্ঠ",
+                    "code": "NTh"
+                },
+                {
+                    "definition": "ণ্ড",
+                    "code": "ND"
+                },
+                {
+                    "definition": "ণ্ড্য",
+                    "code": "NDy,NDZ"
+                },
+                {
+                    "definition": "ণ্ড্র",
+                    "code": "NDr"
+                },
+                {
+                    "definition": "ণ্ঢ",
+                    "code": "NDh"
+                },
+                {
+                    "definition": "ণ্ব",
+                    "code": "Nw"
+                },
+                {
+                    "definition": "ণ্ম",
+                    "code": "Nm"
+                },
+                {
+                    "definition": "ণ্য",
+                    "code": "Ny, NZ"
+                },
+                {
+                    "definition": "ধ্ন",
+                    "code": "dhn"
+                },
+                {
+                    "definition": "ধ্ব",
+                    "code": "dhw"
+                },
+                {
+                    "definition": "ধ্য",
+                    "code": "dhy,dhZ"
+                },
+                {
+                    "definition": "ধ্র",
+                    "code": "dhr"
+                },
+                {
+                    "definition": "ন্ট",
+                    "code": "nT"
+                },
+                {
+                    "definition": "ন্ঠ",
+                    "code": "nTh"
+                },
+                {
+                    "definition": "ন্ড",
+                    "code": "nD"
+                },
+                {
+                    "definition": "ন্ত",
+                    "code": "nt"
+                },
+                {
+                    "definition": "ন্ত্ব",
+                    "code": "ntw"
+                },
+                {
+                    "definition": "ন্ত্য",
+                    "code": "nty, ntZ"
+                },
+                {
+                    "definition": "ন্ত্র",
+                    "code": "ntr"
+                },
+                {
+                    "definition": "ন্থ",
+                    "code": "nth"
+                },
+                {
+                    "definition": "ন্দ",
+                    "code": "nd"
+                },
+                {
+                    "definition": "ন্দ্য",
+                    "code": "ndy, ndZ"
+                },
+                {
+                    "definition": "ন্দ্ব",
+                    "code": "ndw"
+                },
+                {
+                    "definition": "ন্দ্র",
+                    "code": "ndr"
+                },
+                {
+                    "definition": "ন্ধ",
+                    "code": "ndh"
+                },
+                {
+                    "definition": "ন্ধ্য",
+                    "code": "ndhy, ndhZ"
+                },
+                {
+                    "definition": "ন্ধ্র",
+                    "code": "ndhr"
+                },
+                {
+                    "definition": "ন্ন",
+                    "code": "nn"
+                },
+                {
+                    "definition": "ন্ব",
+                    "code": "nw"
+                },
+                {
+                    "definition": "ভ্য",
+                    "code": "vy, vZ, bhy, bhZ"
+                },
+                {
+                    "definition": "ভ্র",
+                    "code": "vr, bhr"
                 }
             ]
         }
