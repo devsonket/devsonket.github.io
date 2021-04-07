@@ -130,6 +130,14 @@
         {
           "definition":"টাপলে ভ্যালু এসাইন করা",
           "code":"tp = [10, 'player']"
+        },
+        {
+          "definition":"কন্ডিশনাল টাপল ডিক্লারেশন",
+          "code":"let tp: [number, string?]"
+        },
+        {
+          "definition":"কন্ডিশনাল টাপলে ভ্যালু এসাইন করা",
+          "code":"tp = [10]"
         }
       ]
     },
