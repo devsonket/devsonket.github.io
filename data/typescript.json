@@ -76,6 +76,10 @@
         {
           "definition":"লিটারেল ডেটাটাইপ (নাম্বার)",
           "code":"let roll: 1 | 2 | 3 | 4 | 5"
+        },
+        {
+          "definition":"লিটারেল ডেটাটাইপ (বুলিয়ান)",
+          "code":"let isOnline: true | false"
         }
       ]
     },
