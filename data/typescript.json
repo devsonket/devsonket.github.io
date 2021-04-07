@@ -184,6 +184,14 @@
         {
           "definition":"প্রোপার্টি এক্সেস করা",
           "code":"person.firstname;\nperson.sayHello();"
+        },
+        {
+          "definition":"কন্ডিশনাল প্রপার্টি সহ ডিক্লারেশন",
+          "code":"var person = { \n\tfirstname:\"Tom\",\n\tlastname?:string,\n} = {firstname: 'Hridoy'}"
+        },
+        {
+          "definition":"কন্ডিশনাল প্রোপার্টি এক্সেস করা",
+          "code":"console.log(person.lastname?.length)"
         }
       ]
     },
