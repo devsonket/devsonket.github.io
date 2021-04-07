@@ -96,7 +96,7 @@
         },
         {
           "definition":"টাইপের এসারশন",
-          "code":"let someValue: any = 'this is a string';\nlet strLength: number = (someValue as string).length;"
+          "code":"let someValue: any = 'this is a string';\nlet strLength: number = (someValue as string).length;\nconst myCanvas = document.getElementById('main_canvas') as HTMLCanvasElement;"
         }
       ]
     },
