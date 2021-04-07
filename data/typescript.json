@@ -108,12 +108,16 @@
           "code":"let ages: number[]"
         },
         {
+          "definition":"অ্যারেতে ভ্যালু এসাইন করা",
+          "code":"ages = [12, 5];"
+        },
+        {
           "definition":"ইউনিয়ন টাইপ অ্যারে ডিক্লারেশন",
           "code":"let x: (number | boolean | string)[];"
         },
         {
-          "definition":"অ্যারেতে ভ্যালু এসাইন করা",
-          "code":"ages = [12, 5];"
+          "definition":"ইউনিয়ন টাইপ অ্যারেতে ভ্যালু এসাইন করা",
+          "code":"x = [23, true, 'AnyString'];"
         },
         {
           "definition":"অ্যারের কোন পজিশনের ভ্যালু এক্সেস করা",
