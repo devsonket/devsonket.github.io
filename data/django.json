@@ -79,7 +79,7 @@
           "code": "django-admin startproject <project_name>"
         },
         {
-          "definition": "ডেভলপমেন্ট সার্ভার চালু করা",
+          "definition": "ডেভেলপমেন্ট সার্ভার চালু করা",
           "code": "python manage.py runserver"
         }
       ]
@@ -92,11 +92,15 @@
           "code": "python manage.py startapp <app_name>"
         },
         {
+          "definition": "সব অ্যাপ মাইগ্রেশনের জন্য",
+          "code": "python manage.py makemigrations"
+        },
+        {
           "definition": "অ্যাপ মাইগ্রেশনের জন্য",
           "code": "python manage.py makemigrations <app_name>"
         },
         {
-          "definition": "মাইগ্রেশনের জন্য",
+          "definition": "মাইগ্রেশন ডাটাবেজে এপ্লাইয়ের জন্য",
           "code": "python manage.py migrate"
         }
       ]
@@ -131,23 +135,23 @@
       "title": "টেমপ্লেট ট্যাগ",
       "items": [
         {
-          "definition":"টেমপ্টেল এক্সটেন্ড করা",
+          "definition":"টেমপ্লেট এক্সটেন্ড করা",
           "code": "{%extends '<html file name>'%}"
         },
         {
-          "definition":"টেমপ্টেল এর ভেতরে স্ট্যাটিক ফাইল লোড করা",
+          "definition":"টেমপ্লেট এর ভেতরে স্ট্যাটিক ফাইল লোড করা",
           "code": "{%load static%}"
         },
         {
-          "definition":"টেমপ্টেল এর ভেতরে ব্লক তৈরি করা",
+          "definition":"টেমপ্লেট এর ভেতরে ব্লক তৈরি করা",
           "code": "{%block <block name>%} ... {%endblock <block name>%}"
         },
         {
-          "definition":"টেমপ্টেল এর ভেতরে কন্ডিশন তৈরি করা",
+          "definition":"টেমপ্লেট এর ভেতরে কন্ডিশন তৈরি করা",
           "code": "{%if <condition>%} .. {%elif <condition>%} .. {%else%}...{%endif%}"
         },
         {
-          "definition":"টেমপ্টেল এর ভেতরে লুপ তৈরি",
+          "definition":"টেমপ্লেট এর ভেতরে লুপ তৈরি",
           "code": "{%for i in <context data name>%} ... {%endfor%}"
         }
       ]
