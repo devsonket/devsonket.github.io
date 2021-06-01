@@ -157,39 +157,39 @@
             "code": "w-screen"
           },
           {
-            "definition": "width: auto",
+            "definition": "ওয়াইড: auto",
             "code": "w-auto"
           },
           {
-            "definition": "width: 1px",
+            "definition": "ওয়াইড: 1px",
             "code": "w-px"
           },
           {
-            "definition": "width: 0",
+            "definition": "ওয়াইড: 0",
             "code": "w-0"
           },
           {
-            "definition": "width: 0.25rem/ 4px",
+            "definition": "ওয়াইড: 0.25rem/ 4px",
             "code": "w-1"
           },
           {
-            "definition": "width: 0.5rem/ 8px",
+            "definition": "ওয়াইড: 0.5rem/ 8px",
             "code": "w-2"
           },
           {
-            "definition": "width: 0.75rem/ 12px",
+            "definition": "ওয়াইড: 0.75rem/ 12px",
             "code": "w-3"
           },
           {
-            "definition": "width: 1rem/ 16px",
+            "definition": "ওয়াইড: 1rem/ 16px",
             "code": "w-4"
           },
           {
-            "definition": "width: 50%",
+            "definition": "ওয়াইড: 50%",
             "code": "w-1/2, w-2/4, w-3/6, w-6/12"
           },
           {
-            "definition": "width: 25%",
+            "definition": "ওয়াইড: 25%",
             "code": "w-1/4, w-3/12, w-3/6, w-6/12"
           },
           {
