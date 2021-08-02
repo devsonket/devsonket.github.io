@@ -128,6 +128,13 @@
             ]
         },
         {
+            "title": "কন্ডিশনাল সেটেটমেন্ট (Conditional Statements)",
+            "items": [{
+                "definition": "শর্তাবলি অনুসারে প্রগরাম চালানোর জন্য",
+                "code": "if condition_1:task_1 \nelif condition_2:task_2 \nelse:default_task উদাহরণ: animal='cat' \nif animal=='cat': print('Meow') \n else: print('Cat not found') → Meow"
+            }]
+        },
+        {
             "title": "পাইথন লুপ (Python Loops)",
             "items": [{
                     "definition": "একটি পরিসীমা উপর পুনরাবৃত্তি(iteration)",
