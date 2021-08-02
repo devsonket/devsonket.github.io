@@ -128,7 +128,7 @@
             ]
         },
         {
-            "title": "পাইথন স্টিং মেথড",
+            "title": "পাইথন স্ট্রিং মেথড (Python String Methods)",
             "items": [{
                     "definition": "একটি স্ট্রিং এর প্রথম অক্ষরকে বড় হাতের অক্ষরে রূপান্তর করা",
                     "code": "txt.capitalize()"
