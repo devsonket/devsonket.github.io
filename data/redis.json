@@ -34,7 +34,7 @@
       "tite": "রেডিস স্ট্রিংস",
       "items": [
         {
-          "definition": "রেডিস কমান্ডে সবগুলো কি একসাথে দেখার জন্য",
+          "definition": "রেডিস কমান্ডে সবগুলো কী (key) একসাথে দেখার জন্য",
           "code": "KEYS *"
         },
         {
@@ -84,6 +84,26 @@
         {
           "definition": "স্ট্রিং এর রেঞ্জ এর ভিতরের ভ্যালু",
           "code": "GETRANGE <key> <start> <end>"
+        },
+        {
+          "definition": "কী (Key) তে ভ্যালু না থাকলে সেট করতে",
+          "code": "SETNX <key> <value>"
+        },
+        {
+          "definition": "নির্দিষ্ট সময়ের মধ্যে কী (Key) মুছে ফেলার জন্য",
+          "code": "EXPIRE <key> <Seconds>"
+        },
+        {
+          "definition": "সংযুক্ত বর্তমান ডাটাবেস থেকে সমস্ত কী (Key) মুছে দিতে",
+          "code": "FLUSHDB"
+        },
+        {
+          "definition": "সমস্ত ডাটাবেস থেকে সমস্ত কী(Key) মুছে দিতে",
+          "code": "FLUSHALL"
+        },
+        {
+          "definition": "সক্রিয় সংযোগ গুলো দেখতে",
+          "code": "CLIENT LIST"
         }
       ]
     }
