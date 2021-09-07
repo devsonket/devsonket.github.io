@@ -51,6 +51,15 @@ flutter channel beta
 flutter upgrade
 flutter config --enable-web
 ```
+বর্তমানে কোন চ্যানেলে আছেন সেটা দেখতে
+```bash
+flutter channel
+```
+চ্যানেল পরিবর্তন করতেে
+```bash
+flutter channel dev/master/stable/beta
+```
+```
 ## Hello world
 
 ```dart
