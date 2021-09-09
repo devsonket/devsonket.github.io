@@ -12,6 +12,10 @@
         {
           "definition": "কোন লিঙ্ক থেকে HTML ডাটা পেতে",
           "code": "curl http://www.exmaple.com"
+        },
+        {
+          "definition": "কোন লিঙ্ক থেকে HTML ডাটা নিয়ে তা কোন ফাইলে সেভ করার জন্য",
+          "code": " curl -o example.html http://www.exmaple.com"
         }
       ]
     }
