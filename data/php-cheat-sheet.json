@@ -81,24 +81,24 @@
       "items": [
         {
           "definition": "স্ট্রিং এর দৈর্ঘ্য",
-          "code": "strlen(something)"
+          "code": "strlen($string)"
         },
         {
           "definition": "স্ট্রিং এর i ক্যারেক্টার পজিশন",
-          "code": "strpos(something)"
+          "code": "strpos($string)"
         },
         {
           "definition": "ASCII ভ্যালু থেকে স্ট্রিং",
-          "code": "chr(something)"
+          "code": "chr($string)"
         },
         {
           "definition": "স্ট্রিং থেকে ASCII ভ্যালু",
-          "code": "ord(something)"
+          "code": "ord($string)"
         },
         {
 
           "definition": "স্ট্রিং-কে ক্যারেক্টার এরেতে রূপান্তর",
-          "code": "str_split(something)"
+          "code": "str_split($string)"
         },
         {
           "definition": "দুটি স্ট্রিং জয়েন",
@@ -114,7 +114,7 @@
         },
         {
           "definition": " এক বা একাধিক স্ট্রিং প্রিন্ট করা ",
-          "code": "print(something)"
+          "code": "print($string)"
         },
         {
           "definition": " স্ট্রিং ফরমেট আকারে প্রিন্ট করা ",
@@ -126,7 +126,7 @@
         },
         {
           "definition": "স্ট্রিংয়ের ওয়ার্ড গণনা",
-          "code": "str_word_count(something)"
+          "code": "str_word_count($string)"
         },
         {
           "definition": "স্ট্রিংয়ের থেকে HTML Tag রিমুভ করা",
