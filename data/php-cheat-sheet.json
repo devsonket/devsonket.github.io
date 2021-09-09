@@ -105,14 +105,6 @@
           "code": " . (dot sign) "
         },
         {
-          "definition": "ছোট হাতের অক্ষরে রুপান্তর",
-          "code": "strtolower(something)"
-        },
-        {
-          "definition": "বড় হাতের অক্ষরে রুপান্তর",
-          "code": "strtoupper(something)"
-        },
-        {
           "definition": " এক বা একাধিক স্ট্রিং প্রিন্ট করা ",
           "code": "print($string)"
         },
