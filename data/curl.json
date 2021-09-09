@@ -7,7 +7,7 @@
   "colorPref": "#07334e",
   "contents": [
     {
-      "title": "'GET Request' সম্পর্কিত সাধারন তথ্যাবলি",
+      "title": "CURL সম্পর্কিত সাধারন অপারেশন",
       "items": [
         {
           "definition": "কোন লিঙ্ক থেকে HTML ডাটা পেতে",
