@@ -16,6 +16,19 @@
         {
           "definition": "কোন লিঙ্ক থেকে HTML ডাটা নিয়ে তা কোন ফাইলে সেভ করার জন্য",
           "code": " curl -o example.html http://www.exmaple.com"
+        },
+        {
+          "definition": "প্রক্সি ব্যবহার করার জন্য",
+          "code": " curl -x 123.45.67.89:1080 -o example.html http://www.exmaple.com"
+        }
+      ]
+    },
+    {
+      "title": "ফাইল সম্পর্কিত অপারেশন",
+      "items": [
+        {
+          "definition": "FTP ইউজারনেম ও পাসওয়ার্ড সেট করতে",
+          "code": " curl -u name:passwd ftp://ip:port/path/file‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌\ncurl ftp://name:passwd@ip:port/path/file"
         }
       ]
     }
