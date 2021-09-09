@@ -29,6 +29,10 @@
         {
           "definition": "FTP ইউজারনেম ও পাসওয়ার্ড সেট করতে",
           "code": " curl -u name:passwd ftp://ip:port/path/file‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌\ncurl ftp://name:passwd@ip:port/path/file"
+        },
+        {
+          "definition": "ফাইল আপলোড করেত",
+          "code": "curl -T localfile -u name:passwd ftp://upload_site:port/path/\ncurl -T localfile http://cgi2.tky.3web.ne.jp/~zzh/abc.cgi"
         }
       ]
     }
