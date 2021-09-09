@@ -122,7 +122,7 @@
         },
         {
           "definition": "স্ট্রিংয়ের এক বা একাধিক ক্যারেক্টার রিপ্লেস করা",
-          "code": "str_replace()"
+          "code": "str_replace($string)"
         },
         {
           "definition": "স্ট্রিংয়ের ওয়ার্ড গণনা",
