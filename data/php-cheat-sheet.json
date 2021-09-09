@@ -118,7 +118,7 @@
         },
         {
           "definition": " স্ট্রিং ফরমেট আকারে প্রিন্ট করা ",
-          "code": "printf(something)"
+          "code": "printf('something %s','$string')"
         },
         {
           "definition": "স্ট্রিংয়ের এক বা একাধিক ক্যারেক্টার রিপ্লেস করা",
