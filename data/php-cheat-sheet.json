@@ -215,6 +215,10 @@
         {
           "definition":"একটি স্ট্রিং দ্বারা অ্যারেকে যুক্ত করা(উপায় ২)",
           "code":"join ( string $separator , array $array )"
+        },
+        {
+          "definition":"একটি স্ট্রিং কে আ্যরেতে রুপান্তর করতে",
+          "code":"explode ( string $separator , array $array )"
         }
       ]
     }
