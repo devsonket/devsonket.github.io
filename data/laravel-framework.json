@@ -191,6 +191,9 @@
             }, {
                 "definition": "বিভিন্ন page এর সাথে লিংক করার জন্য",
                 "code": "{{URL::to('/your_page_link')}}"
+            }, {
+                "definition": "লাইন ব্রেক রাখার জন্য ",
+                "code": "{!! nl2br(e($content)) !!}"
             }]
         },
         {
@@ -390,6 +393,10 @@
             {
                 "definition": "মডেল দিয়ে DELETE করতে চাইলে ",
                 "code": "Model::find(yourId)->delete();"
+            },
+            {
+                "definition": "মডেল দিয়ে শেষের রেকর্ডটি পেতে চাইলে ",
+                "code": "Model::all()->last() অথবা Model::latest()->first() অথবা Model::orderBy('id', 'desc')->first()"
             }]
         },
         {
