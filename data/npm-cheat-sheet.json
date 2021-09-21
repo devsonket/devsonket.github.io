@@ -39,6 +39,18 @@
         {
           "definition": "এনপিএম কনফিগারেশন ফাইল ম্যানেজ করা",
           "code": "npm config"
+        },
+        {
+          "definition": "কোন কমান্ডের হেল্প সংক্ষেপে পাওয়ার জন্য",
+          "code": "npm <command> -h যেমন: npm install -h"
+        },
+        {
+          "definition": "কোন কমান্ডের হেল্প বিশদভাবে পাওয়ার জন্য",
+          "code": "npm help <command> যেমন: npm help install"
+        },
+        {
+          "definition": "সকল কমান্ড লিস্ট এবং ব্যবহার অনুযায়ী দেখার জন্য",
+          "code": "npm -l"
         }
       ]
     },
@@ -47,7 +59,7 @@
       "items": [
         {
           "definition": "package.json ফাইলের সকল ডিপেন্ডেন্সি ইন্সটল করা",
-          "code": "npm install অথবা npm i " 
+          "code": "npm install অথবা npm i অথবা npm add" 
         },
         {
           "definition": "package.json ফাইলের সকল ডিপেন্ডেন্সি ইন্সটল করা, ডেভ ডিপেন্ডেন্সি ছাড়া",
