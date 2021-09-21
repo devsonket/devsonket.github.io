@@ -395,6 +395,32 @@
                 "definition": " দিন বা তারিখ জানার জন্য",
                 "code": "Carbon::nextWeekDay();"
             }]
+        },{
+            "title": "যেখানে সম্ভব সেখানে সংক্ষিপ্ত এবং বেশি পাঠযোগ্য সিনট্যাক্স ব্যবহার করুন",
+            "items": [{
+                "definition": "সেসন থেকে ডাটা নিতে",
+                "code": "session('cart'), Session::get('cart'), $request->session()->get('cart')"
+            },{
+                "definition": "সেসন এ ডাটা স্টোর করতে",
+                "code": "session(['cart' => $data]), Session::put('cart', $data)"
+            }
+            ,{
+                "definition": "রিকুয়েস্ট থেকে ডাটা নিতে",
+                "code": " $request->name, request('name'), $request->input('name'), Request::get('name')"
+            }
+            ,{
+                "definition": "রিকুয়েস্ট রিটার্ন করতে",
+                "code": "return back(),return Redirect::back()"
+            }
+            ,{
+                "definition": "ফাকা/শূন্য অবজেক্রটের ডাটা প্রিন্ট করতে",
+                "code": "optional($object->relation)->id, is_null($object->relation) ? null : $object->relation->id"
+            }
+            ,{
+                "definition": "ব্লেডে ডাটা সেন্ড করতে",
+                "code": "return view('index', compact('title', 'client')), return view('index')->with('title', $title)->with('client', $client), return view('index',['title'=>$title,'client'=>$client]"
+            }
+        ]
         }
     ]
 }
