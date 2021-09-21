@@ -1,0 +1,160 @@
+{
+  "id": "rustlang",
+  "title": "রাস্ট",
+  "slug": "rustlang",
+  "description": "রাস্ট হচ্ছে মেমরি সেইফ কম্পাইলড্ ল্যাংঙ্গুয়েজ যার পারফর্মেন্স সি/সি++ এর কাছাকাছি বা কখনো কখনো তাদের থেকে ভালো",
+  "colorPref": "#CE412B",
+  "contents": [
+    {
+      "title": "কার্গো",
+      "items": [
+        {
+          "definition": "নতুন প্রজেক্ট তৈরি করা",
+          "code": "cargo init YOUR_PROJECT"
+        },
+        {
+          "definition": "কোনো CLI ইন্সটল করা",
+          "code": "cargo install YOUR_CLI"
+        },
+        {
+          "definition": "git ছাড়া প্রজেক্ট তৈরি করা",
+          "code": "cargo init YOUR_PROJECT --vcs none"
+        },
+        {
+          "definition": "কারেন্ট ডাইরেক্টরিতে প্রজেক্ট তৈরি করা",
+          "code": "cargo init ."
+        },
+        {
+          "definition": "প্রজেক্ট বিল্ড করা(debug)",
+          "code": "cargo build"
+        },
+        {
+          "definition": "প্রজেক্ট বিল্ড করা(release)",
+          "code": "cargo build --release"
+        },
+        {
+          "definition": "টেস্ট রান করা",
+          "code": "cargo test"
+        },
+        {
+          "definition": "প্রজেক্ট রান করা(debug)",
+          "code": "cargo run"
+        },
+        {
+          "definition": "প্রজেক্ট রান করা(release)",
+          "code": "cargo run --release"
+        },
+        {
+          "definition": "অন্য টার্গেট এর জন্য কম্পাইল করা",
+          "code": "cargo build --target=YOUR-TARGET"
+        },
+        {
+          "definition": "প্রজেক্টের docs জেনারেট করা",
+          "code": "cargo doc"
+        }
+      ]
+    },
+    {
+      "title": "Cargo.toml",
+      "items": [
+        {
+          "definition": "কোনো ডিপেন্ডেন্সির নামসহ ভার্সন",
+          "code": "CRATE = \"CRATE_VERSION\""
+        },
+        {
+          "definition": "ক্রেটের নির্দিষ্ট ফিচার ব্যবহার করা",
+          "code": "CRATE = { version = \"VERSION\", features = [\"FEATURE-1\"] }"
+        },
+        {
+          "definition": "লিংক টাইম অপ্টিমাইজেশন ব্যবহার করা(release বিল্ড)",
+          "code": "[profile.release]\nlto=true"
+        },
+        {
+          "definition": "লিংক টাইম অপ্টিমাইজেশন ব্যবহার করা(debug বিল্ড)",
+          "code": "[profile.debug]\nlto=true"
+        }
+      ]
+    },
+    {
+      "title": "rustup",
+      "items": [
+        {
+          "definition": "nightly toolchain ব্যবহার করা",
+          "code": "rustup default nightly"
+        },
+        {
+          "definition": "toolchain আপডেট করা",
+          "code": "rustup update toolchain"
+        },
+        {
+          "definition": "Target ইনস্টল করা",
+          "code": "rustup target add TARGET"
+        }
+      ]
+    },
+    {
+      "title": "বিভিন্ন রিসোর্স",
+      "items": [
+        {
+          "definition": "The Book",
+          "code": "https://docs.rust-lang.org/book"
+        },
+        {
+          "definition": "Package registry",
+          "code": "https://crates.io"
+        },
+        {
+          "definition": "Crates documentations",
+          "code": "https://docs.rs"
+        }
+      ]
+    },
+    {
+      "title": "Traits",
+      "items": [
+        {
+          "definition": "আর্গুমেন্টে String এবং str দুটাই অ্যালাউ করা",
+          "code": "fn the_function(arg: impl AsRef<str>) {\n\t//do something\n}"
+        },
+        {
+          "definition": "struct এর জন্য কোনো trait ইমপ্লিমেন্ট করা",
+          "code": "impl SomeTrait for SomeStruct {\n\t// Trait stuff here\n}"
+        },
+        {
+          "definition": "trait ডিক্লেয়ার করা",
+          "code": "trait SomeTrait {\n\t// Your trait stuff here\n}"
+        }
+      ]
+    },
+    {
+      "title": "টেস্টিং",
+      "items": [
+        {
+          "definition": "টেস্ট মডিউল",
+          "code": "#[cfg(test)]\nmod test{\n\t#[test]\n\tfn test() {\n\t\tassert_eq!(2+2, 4);\n\t}\n}"
+        }
+      ]
+    },
+    {
+      "title": "General",
+      "items": [
+        {
+          "definition": "Panicking",
+          "code": "panic!(\"Houston, we have a problem\");"
+        },
+        {
+          "definition": "Match",
+          "code": "match Somestuff {\n\t2 => println!(\"It's 2!\"),\n\t_ => println!(\"It's something else\")\n}"
+        },
+        {
+          "definition": "Struct",
+          "code": "struct SomeStruct {\n\tsome_private_value: String,\n\tpub some_public_value: u64\n}"
+        },
+        {
+          "definition": "Implementing struct",
+          "code": "impl SomeStruct {\n\tpub fn new() {}\n}"
+        }
+      ]
+    }
+  ]
+}

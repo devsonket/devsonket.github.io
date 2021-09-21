@@ -1,105 +1,226 @@
 {
-    "id": "php-cheat-sheet",
-    "title": "পিএইচপি প্রোগ্রামিং",
-    "slug": "php-cheat-sheet",
-    "description": "পিএইচপি হচ্ছে একটি সার্ভার সাইড স্ক্রিপ্টিং ল্যাঙ্গুয়েজ, যা তৈরী করেন রাসমাস লারডোর্ফ ১৯৯৪ সালে। যা বিশেষ করে যে কোনো ডাইনামিক এবং ইন্টারেক্টিভ ওয়েব ডেভেলপমেন্ট অথবা ওয়েব ভিত্তিক সফটওয়্যার তৈরিতে ব্যবহৃত হয়",
-    "colorPref": "#3A241D",
-    "contents": [
-      {
-        "title": "গাণিতিক অপারেশন",
-        "items": [
-          {
-            "definition": "সাধারন গাণিতিক অপারেশন",
-            "code": " +, -, *, /, %"
-          }, {
-            "definition": "i এ ১ যোগ করবে অথবা ১ বিয়োগ করে i এর মধ্যে রাখবে, পরে i এর ভ্যালু রিটার্ন করবে",
-            "code": "++i,--i"
-          }, {
-            "definition": "i এর আগের ভ্যালু রির্টান করবে,পরে i এর ভ্যালু ১ বাড়াবে অথবা কমাবে",
-            "code": "i++,i--"
-          }, {
-            "definition": "বেসিক লজিক্যাল অপারেটর",
-            "code": "&&,||,!"
-          }, {
-            "definition": "বিট লজিক্যাল অপারেটর অথবা বিটওয়াইজ অপারেটর",
-            "code": "&, |, ^, ~!, <<, >>"
-          }, {
-            "definition": "তুলনামূলক অপারেটর",
-            "code": " ==, !=, <, >, <=, >="
-          }, {
-            "definition": "নির্ধারিত করন অপারেটর",
-            "code": "="
-          }
-        ]
-      }
-	  ,{
-          "title": "গাণিতিক ফাংশন",
-          "items": [
-            {
-              "definition": "বর্গমূল করার জন্য",
-              "code": "sqrt()"
-            }, {
-              "definition": "সাধারন লগারিদম পাওয়ার জন্য",
-              "code": "log()"
-            }, {
-              "definition": "এক্সপোনেনশিয়াল নাম্বার এর জন্য",
-              "code": "exp()"
-            }, {
-              "definition": "y এর পাওয়ার হিসেবে x কে নেয়ার জন্য",
-              "code": "pow(x,y)"
-            }, {
-              "definition": "x এর নিকটস্থ, x এর তুলনায় বড়মানের পূর্ণসংখ্যার জন্য",
-              "code": "ceil(x)"
-            }, {
-              "definition": "x এর নিকটস্থ, x এর তুলনায় ছোটমানের পূর্ণসংখ্যার জন্য",
-              "code": "floor(x)"
-            }, {
-              "definition": "x এর এবসোলিউট ভ্যালু এর জন্য ",
-              "code": "abs(x)"
-            }, {
-              "definition": "দৈবচয়নে(রান্ডম) নাম্বার জেনারেট করার জন্য",
-              "code": "random()"
-            }
-          ]
+  "id":"php",
+  "title":"পিএইচপি প্রোগ্রামিং",
+  "slug":"php",
+  "description":"পিএইচপি হচ্ছে একটি সার্ভার সাইড স্ক্রিপ্টিং ল্যাঙ্গুয়েজ, যা তৈরী করেন রাসমাস লারডোর্ফ ১৯৯৪ সালে। যা বিশেষ করে যে কোনো ডাইনামিক এবং ইন্টারেক্টিভ ওয়েব ডেভেলপমেন্ট অথবা ওয়েব ভিত্তিক সফটওয়্যার তৈরিতে ব্যবহৃত হয়",
+  "colorPref":"#8892BF",
+  "contents":[
+    {
+      "title":"গাণিতিক অপারেশন",
+      "items":[
+        {
+          "definition":"সাধারন গাণিতিক অপারেশন",
+          "code":" +, -, *, /, %"
         },
-		{
-            "title": "স্ট্রিং এর জন্য প্রয়োজনীয় ফাংশন",
-            "items": [
-              {
-                "definition": "স্ট্রিং এর দৈর্ঘ্য",
-                "code": "strlen(something)"
-              },{
-                "definition": "স্ট্রিং এর i ক্যারেক্টার পজিশন",
-                "code": "strpos(something)"
-              },{
-                "definition": "ASCII ভ্যালু থেকে স্ট্রিং",
-                "code": "chr(something)"
-              },{
-                "definition": "স্ট্রিং-কে ক্যারেক্টার এরেতে রূপান্তর",
-                "code": "str_split(something)"
-              },{
-                "definition": "দুটি স্ট্রিং জয়েন",
-                "code": " . "
-              },{
-                "definition": "ছোট হাতের অক্ষরে রুপান্তর",
-                "code": "strtolower(something)"
-              },{
-                "definition": "বড় হাতের অক্ষরে রুপান্তর",
-                "code": "strtoupper(something)"
-              },{
-                "definition": " এক বা একাধিক স্ট্রিং প্রিন্ট করা ",
-                "code": "print(something)"
-              },{
-                "definition": " স্ট্রিং ফরমেট আকারে প্রিন্ট করা ",
-                "code": "printf(something)"
-              },{
-                "definition": "স্ট্রিংয়ের এক বা একাধিক ক্যারেক্টার রিপ্লেস করা",
-                "code": "str_replace()"
-              },{
-                "definition": "স্ট্রিংয়ের ওয়ার্ড গণনা",
-                "code": "str_word_count(something)"
-              }
-            ]
+        {
+          "definition":"i এ ১ যোগ করবে অথবা ১ বিয়োগ করে i এর মধ্যে রাখবে, পরে i এর ভ্যালু রিটার্ন করবে",
+          "code":"++i,--i"
+        },
+        {
+          "definition":"i এর আগের ভ্যালু রির্টান করবে,পরে i এর ভ্যালু ১ বাড়াবে অথবা কমাবে",
+          "code":"i++,i--"
+        },
+        {
+          "definition":"বেসিক লজিক্যাল অপারেটর",
+          "code":"&&,||,!"
+        },
+        {
+          "definition":"বিট লজিক্যাল অপারেটর অথবা বিটওয়াইজ অপারেটর",
+          "code":"&, |, ^, ~!, <<, >>"
+        },
+        {
+          "definition":"তুলনামূলক অপারেটর",
+          "code":" ==, !=, <, >, <=, >="
+        },
+        {
+          "definition":"নির্ধারিত করন অপারেটর",
+          "code":"="
         }
-    ]
-  }
+      ]
+    },
+    {
+      "title":"প্রয়োজনীয় ফাংশন (বিল্ড-ইন)",
+      "items":[
+        {
+          "definition":"কোন কিছুর আউটপুট দেখার জন্য",
+          "code":"echo 'Hello World'"
+        },
+        {
+          "definition":"কোন কিছুর টাইপ ও ভ্যালু দেখতে",
+          "code":"var_dump()"
+        }
+      ]
+    },
+    {
+      "title":"গাণিতিক ফাংশন",
+      "items":[
+        {
+          "definition":"বর্গমূল করার জন্য",
+          "code":"sqrt()"
+        },
+        {
+          "definition":"সাধারন লগারিদম পাওয়ার জন্য",
+          "code":"log()"
+        },
+        {
+          "definition":"এক্সপোনেনশিয়াল নাম্বার এর জন্য",
+          "code":"exp()"
+        },
+        {
+          "definition":"y এর পাওয়ার হিসেবে x কে নেয়ার জন্য",
+          "code":"pow(x,y)"
+        },
+        {
+          "definition":"x এর নিকটস্থ, x এর তুলনায় বড়মানের পূর্ণসংখ্যার জন্য",
+          "code":"ceil(x)"
+        },
+        {
+          "definition":"x এর নিকটস্থ, x এর তুলনায় ছোটমানের পূর্ণসংখ্যার জন্য",
+          "code":"floor(x)"
+        },
+        {
+          "definition":"x এর এবসোলিউট ভ্যালু এর জন্য ",
+          "code":"abs(x)"
+        },
+        {
+          "definition":"দৈবচয়নে(রান্ডম) নাম্বার জেনারেট করার জন্য",
+          "code":"rand()"
+        }
+      ]
+    },
+    {
+      "title":"স্ট্রিং এর জন্য প্রয়োজনীয় ফাংশন",
+      "items":[
+        {
+          "definition":"স্ট্রিং এর দৈর্ঘ্য",
+          "code":"strlen($string)"
+        },
+        {
+          "definition":"স্ট্রিং এর i ক্যারেক্টার পজিশন",
+          "code":"strpos($string)"
+        },
+        {
+          "definition":"ASCII ভ্যালু থেকে স্ট্রিং",
+          "code":"chr($string)"
+        },
+        {
+          "definition":"স্ট্রিং থেকে ASCII ভ্যালু",
+          "code":"ord($string)"
+        },
+        {
+          "definition":"স্ট্রিং-কে ক্যারেক্টার এরেতে রূপান্তর",
+          "code":"str_split($string)"
+        },
+        {
+          "definition":"দুটি স্ট্রিং জয়েন",
+          "code":" . (dot sign) "
+        },
+        {
+          "definition":" এক বা একাধিক স্ট্রিং প্রিন্ট করা ",
+          "code":"print($string)"
+        },
+        {
+          "definition":" স্ট্রিং ফরমেট আকারে প্রিন্ট করা ",
+          "code":"printf('something %s','$string')"
+        },
+        {
+          "definition":"স্ট্রিংয়ের এক বা একাধিক ক্যারেক্টার রিপ্লেস করা",
+          "code":"str_replace($string)"
+        },
+        {
+          "definition":"স্ট্রিংয়ের ওয়ার্ড গণনা",
+          "code":"str_word_count($string)"
+        },
+        {
+          "definition":"স্ট্রিংয়ের থেকে HTML Tag রিমুভ করা",
+          "code":"strip_tags(string $something ,array|string|null $allowed_tags = null) : string"
+        },
+        {
+          "definition":"স্ট্রিংকে কোন নির্দিষ্ট স্ট্রিং দিয়ে বিভক্ত করা (প্রতিটি ভাগকে একটি অ্যারের ইলিমেন্ট আকারে পাওয়া)",
+          "code":"explode(string $separator , string $string [, int $limit])"
+        },
+        {
+          "definition":"স্ট্রিং এর প্রথম অক্ষরটি বড় হাতের করা",
+          "code":"ucfirst($string)"
+        },
+        {
+          "definition":"স্ট্রিং এর প্রতিটি শব্দের প্রথম অক্ষরকে বড় হাতের করা",
+          "code":"ucwords($string)"
+        },
+        {
+          "definition":"স্ট্রিং এর প্রথম অক্ষরটি ছোট হাতের করা",
+          "code":"lcfirst($string)"
+        },
+        {
+          "definition":"সম্পুর্ণ স্ট্রিং কে বড় হাতের করা",
+          "code":"strtoupper($string)"
+        },
+        {
+          "definition":"সম্পুর্ণ স্ট্রিং কে ছোট হাতের করা",
+          "code":"strtolower($string)"
+        }
+      ]
+    },
+    {
+      "title":"অ্যারে এর জন্য প্রয়োজনীয় ফাংশন",
+      "items":[
+        {
+          "definition":"অ্যারে তৈরী করা",
+          "code":"array()"
+        },
+        {
+          "definition":"অ্যারে এর সব Key কে ক্যপিটাল বা স্মল লেটার করা",
+          "code":"array_change_key_case()"
+        },
+        {
+          "definition":"অ্যারে চানক করা",
+          "code":"array_chunk()"
+        },
+        {
+          "definition":"এক কলাম এর অ্যারে তৈরী করতে",
+          "code":"array_column()"
+        },
+        {
+          "definition":"অ্যারে Key আছে নাকি চেক করতে",
+          "code":"array_key_exists()"
+        },
+        {
+          "definition":"অ্যারের সব Key দেখতে",
+          "code":"array_keys()"
+        },
+        {
+          "definition":"অ্যারে মার্জ করতে",
+          "code":"array_merge()"
+        },
+        {
+          "definition":" অ্যারেতে ভ্যালু পুশ করা",
+          "code":"array_push()"
+        },
+        {
+          "definition":"অ্যারে থেকে ডাবল থাকা ভ্যালু বাদ দিতে",
+          "code":"array_unique()"
+        },
+        {
+          "definition":"অ্যারে সর্ট করতে",
+          "code":"sort()"
+        },
+        {
+          "definition":"অ্যারের কি এর সিরিয়াল অদল বদল করতে",
+          "code":"shuffle()"
+        },
+        {
+          "definition":"একটি স্ট্রিং দ্বারা অ্যারেকে যুক্ত করা",
+          "code":"implode ( string $separator , array $array )"
+        },
+        {
+          "definition":"একটি স্ট্রিং দ্বারা অ্যারেকে যুক্ত করা(উপায় ২)",
+          "code":"join ( string $separator , array $array )"
+        },
+        {
+          "definition":"একটি স্ট্রিং কে আ্যরেতে রুপান্তর করতে",
+          "code":"explode ( string $separator , array $array )"
+        }
+      ]
+    }
+  ]
+}

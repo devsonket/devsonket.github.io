@@ -9,8 +9,11 @@
       "title": "ডিরেক্টিভ্স",
       "items": [
         {
-          "definition": "এইচটিএমএল এলিমেন্ট, ডোম এ দেখানো/না দেখানো(সত্য/মিথ্যার উপর নির্ভর করে)",
+          "definition": "এইচটিএমএল এলিমেন্ট ডোমে দেখানো/না দেখানো(সত্য/মিথ্যার উপর নির্ভর করে)",
           "code": "v-if/v-show"
+        }, {
+          "definition": "ডোম এলিমেন্টে ইভেন্ট যোগ করতে যে ডিরেক্টিভ ব্যবহার করা হয়",
+          "code": "v-on"
         }, {
           "definition": "এইচটিএমএল এলিমেন্ট বাইন্ডিং",
           "code": "v-bind"
@@ -18,11 +21,17 @@
           "definition": "Two-way ডাটা বাইন্ডিং",
           "code": "v-model"
         }, {
-          "definition": "এইচটিএমএল এলিমেন্ট এ ইভেন্ট যুক্ত করে, ইভেন্ট টাইপ আর্গুমেন্টে বলে দেওয়া",
-          "code": "v-on:click"
-        }, {
           "definition": "ডোমে এ্যারে/লিস্ট রেন্ডার করে দেখানো",
           "code": "v-for"
+        }, {
+          "definition": "এলিমেন্ট আপডেট করতে যে ডিরেক্টিভ ব্যবহার করা হয়",
+          "code": "v-text"
+        }, {
+          "definition": "যে ডিরেক্টিভ দ্বারা এলিমেন্টের innerHTML আপডেট করা হয়(নিজস্ব ডাটা দিয়ে)",
+          "code": "v-html"
+        }, {
+          "definition": "যে ডিরেক্টিভ দ্বারা এলিমেন্ট ও কম্পোনেন্ট একবার রেন্ডার করা হয়",
+          "code": "v-once"
         }
       ]
     }, 
@@ -32,6 +41,10 @@
         {
           "definition": "ডাইনামিক ইউ-আর-এল বাইন্ডিং",
           "code": ":href='url'"
+        },
+        {
+          "definition": "ডাইনামিক ইউ-আর-এল বাইন্ডিং এবং ভেলু পাসিং",
+          "code": ":href='`url/${id}`'"
         }, {
           "definition": "isActive এর সত্য/মিথ্যার উপর নির্ভর করে active ক্লাস বাইন্ডিং",
           "code": ":class='{active: isActive}'"
@@ -53,6 +66,9 @@
         }, {
           "definition": "click ইভেন্ট এর প্রোপাগ্যাশন বন্ধ করতে",
           "code": "<a @click.stop='doThis'></a>"
+        }, {
+          "definition": "Vue Js এর সকল Event Modifier '.stop (Stop event propagation), .prevent (Prevent default behavior), .capture (Event inner element এ যাওয়া আগে capture করা), .self (Only triggering self target), .once (Trigger only one time), .passive (Use to improving performance on mobile)'",
+          "code": "<div v-on:scroll.passive='doThis'></div>"
         }
       ]
     },

@@ -23,6 +23,55 @@
 			]
 		},
 		{
+			"title": "মাইএসকিউএল ইউজার ও এডমিন ম্যানেজমেন্ট",
+			"items": [
+				{
+					"definition": "`mysql_secure_installation` প্রসেস সম্পন্ন করার পর, এর root ইউজারে অ্যাক্সেস করতে",
+					"code": "mysql -u root -p <your password>"
+				},
+				{
+					"definition": "যদি `mysql_secure_installation` প্রসেস সম্পন্ন না করা হয়, তাহলে `root` ইউজারে এক্সেস পেতে",
+					"code": "sudo mysql"
+				},
+				{
+					"definition": "বর্তমান ইউজার ও এডমিনদের তথ্য তালিকা হিসেবে দেখতে",
+					"code": "SELECT user,authentication_string,plugin,host FROM mysql.user;"
+				},
+				{
+					"definition": "ডিফল্ট এডমিন `root` এর পাসওয়ার্ড চেঞ্জ করতে",
+					"code": "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new_password';"
+				},
+				{
+					"definition": "নতুন ইউজার তৈরী করতে",
+					"code": "CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'new_user_password';"
+				},
+				{
+					"definition": "`new_user` কে নতুন এডমিন তৈরী করতে (সব পারমিশন দিয়ে)",
+					"code": "GRANT ALL PRIVILEGES ON * . * TO 'new_user'@'localhost';"
+				},
+				{
+					"definition": "ইউজারকে বিশেষ পারমিশন দিতে",
+					"code": "GRANT type_of_permission ON database_name.table_name TO 'username'@'localhost';"
+				},
+				{
+					"definition": "ইউজার থেকে বিশেষ পারমিশন তুলে নিতে",
+					"code": "REVOKE type_of_permission ON database_name.table_name FROM 'username'@'localhost';"
+				},
+				{
+					"definition": "একজন ইউজারের বর্তমান পারমিশন গুলো দেখতে",
+					"code": "SHOW GRANTS FOR 'username'@'localhost';"
+				},
+				{
+					"definition": "কোন ইউজারকে ডিলেট করতে",
+					"code": "DROP USER 'username'@'localhost';"
+				},
+				{
+					"definition": "সেটিংস গুলো তৎক্ষণাৎ প্রয়োগ করতে",
+					"code": "FLUSH PRIVILEGES;"
+				}
+			]
+		},
+		{
 			"title": "মাইএসকিউএল এর প্রাথমিক কমান্ড সমুহ",
 			"items": [
 				{
@@ -509,6 +558,9 @@
 		{
 			"title": "কন্ট্রোল ফ্লো ফাংশন",
 			"items": [
+				{
+					"code": "CASE"
+				},
 				{
 					"code": "IF"
 				},

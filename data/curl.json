@@ -1,0 +1,39 @@
+{
+  "id": "curl",
+  "title": "কার্ল (CURL)",
+  "slug": "curl",
+  "description": "CURL হল একটি কম্পিউটার সফটওয়্যার প্রজেক্ট যা বিভিন্ন নেটওয়ার্ক প্রোটোকল ব্যবহার করে তথ্য স্থানান্তরের (এক স্থান থেকে অন্য স্থানে নেওয়া) জন্য একটি লাইব্রেরি এবং কমান্ড-লাইন টুল। curl এর অর্থ 'Client URL'",
+  "colorPref": "#07334e",
+  "contents": [
+    {
+      "title": "CURL সম্পর্কিত সাধারন অপারেশন",
+      "items": [
+        {
+          "definition": "কোন লিঙ্ক থেকে HTML ডাটা পেতে",
+          "code": "curl http://www.exmaple.com"
+        },
+        {
+          "definition": "কোন লিঙ্ক থেকে HTML ডাটা নিয়ে তা কোন ফাইলে সেভ করার জন্য",
+          "code": " curl -o example.html http://www.exmaple.com"
+        },
+        {
+          "definition": "প্রক্সি ব্যবহার করার জন্য",
+          "code": " curl -x 123.45.67.89:1080 -o example.html http://www.exmaple.com"
+        }
+      ]
+    },
+    {
+      "title": "ফাইল সম্পর্কিত অপারেশন",
+      "items": [
+        {
+          "definition": "FTP ইউজারনেম ও পাসওয়ার্ড সেট করতে",
+          "code": " curl -u name:passwd ftp://ip:port/path/file‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌\ncurl ftp://name:passwd@ip:port/path/file"
+        },
+        {
+          "definition": "ফাইল আপলোড করতে",
+          "code": "curl -T localfile -u name:passwd ftp://upload_site:port/path/\ncurl -T localfile http://cgi2.tky.3web.ne.jp/~zzh/abc.cgi"
+        }
+      ]
+    }
+  ]
+}

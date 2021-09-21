@@ -53,6 +53,18 @@
         }, {
           "definition": "কোন একটি ওয়েবপেজ কে গুগল ক্যাশে দেখার জন্য",
           "code": "cache:[ওয়েবপেজ], যেমনঃ cache:facebook.com"
+        }, {
+          "definition": "নিকটবর্তী কিছু খোঁজার জন্য",
+          "code": "[শব্দ] near me অথবা [শব্দ] nearby, যেমন:  ebl atm near me অথবা ebl atm nearby"
+        }, {
+          "definition": "কোন জায়গার বর্তমান সময় জানার জন্য",
+          "code": "time [জায়গার নাম], যেমন: time dhaka অথবা time bhutan"
+        }, {
+          "definition": "মুদ্রার হার তুলনা করার জন্য",
+          "code": "[মুদ্রার নাম] to [অন্য মুদ্রার নাম], যেমন: usd to bdt অথবা bhutan currency to bdt"
+        }, {
+          "definition": "ইউনিট তুলনা করার জন্য",
+          "code": "[ইউনিট] to [অন্য ইউনিট] যেমন: miles to km, kg to gram, 2 meter to feet"
         }
       ]
     }, {

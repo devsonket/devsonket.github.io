@@ -4,11 +4,9 @@
     "slug": "dart",
     "description": "ডার্ট হলো টেক-জায়ান্ট গুগলের তৈরি একটি ক্লায়েন্ট অপটিমাইজড প্রোগ্রামিং ল্যাংগুয়েজ। বর্তমানে বহুল জনপ্রিয় ওপেন সোর্স সফটওয়্যার ডেভেলপমেন্ট কিট 'ফ্লাটার' এর মূল ভিত্তি হলো ডার্ট প্রোগ্রামিং ল্যাংগুয়েজ। এই Cheat-Sheet এর মাধ্যমে ডার্ট এর দৈনন্দিন প্রয়োজনীয় টপিকগুলোকে হাইলাইট করা হয়েছে।",
     "colorPref": "#0078D7",
-    "contents": [
-        {
+    "contents": [{
             "title": "ভ্যারিয়েবল ও ডেটা টাইপ",
-            "items": [
-                {
+            "items": [{
                     "definition": "৬৪-বিট পূর্ণসংখ্যা",
                     "code": "int"
                 },
@@ -40,14 +38,17 @@
         },
         {
             "title": "অপারেটর",
-            "items": [
-                {
+            "items": [{
                     "definition": "গতানুগতিক গাণিতিক অপারেটর",
                     "code": "+, -, *, /, %, ~/"
                 },
                 {
                     "definition": "অ্যাসাইনমেন্ট অপারেটর",
                     "code": "=, *=, /=, +=, -=, &=, ^="
+                },
+                {
+                    "definition": "সমীকরণের চিহ্ন বিপরীত করে দেয়",
+                    "code": "-expr"
                 },
                 {
                     "definition": "তুলনামূলক অপারেটর",
@@ -85,8 +86,7 @@
         },
         {
             "title": "স্ট্রিং",
-            "items": [
-                {
+            "items": [{
                     "definition": "সিঙ্গেল কোটেশন",
                     "code": "'Dart is cool'"
                 },
@@ -106,8 +106,7 @@
         },
         {
             "title": "স্ট্রিং মেথড ও প্রপার্টিজ",
-            "items": [
-                {
+            "items": [{
                     "definition": "তুলনা করা",
                     "code": "'abc'.compareTo('def')"
                 },
@@ -151,8 +150,7 @@
         },
         {
             "title": "টাইপ কনভার্শন",
-            "items": [
-                {
+            "items": [{
                     "definition": "স্ট্রিং থেকে ইন্টিজার",
                     "code": "int.parse('1')"
                 },
@@ -176,8 +174,7 @@
         },
         {
             "title": "কালেকশনঃ লিস্ট",
-            "items": [
-                {
+            "items": [{
                     "definition": "স্প্রেড অপারেটর",
                     "code": "['apple', 'orange', ...otherList]"
                 },
@@ -209,8 +206,7 @@
         },
         {
             "title": "লিস্টের আরো",
-            "items": [
-                {
+            "items": [{
                     "definition": "লিস্ট ফোল্ডিং",
                     "code": "var x = [1,2,3].fold(5, (i, j) => i + j);"
                 },
@@ -250,8 +246,7 @@
         },
         {
             "title": "কালেকশনঃ সেট",
-            "items": [
-                {
+            "items": [{
                     "definition": "নির্দিষ্ট টাইপের ফাঁকা সেট",
                     "code": "<int>{}"
                 },
@@ -275,8 +270,7 @@
         },
         {
             "title": "কালেকশনঃ ম্যাপ",
-            "items": [
-                {
+            "items": [{
                     "definition": "স্ট্রিং টু স্ট্রিং",
                     "code": "var doraemon = {'type':'Robot', 'cameFrom':'22nd century', 'friend':'Nobita'};"
                 },
@@ -308,8 +302,7 @@
         },
         {
             "title": "অ্যাসিনক্রোনাস প্রোগ্রামিং",
-            "items": [
-                {
+            "items": [{
                     "definition": "অপারেশন রিপ্রেজেন্টেশানঃ ফিউচার",
                     "code": "Future<void> asyncTask() => Future.delayed(Duration(seconds: 2), () => print('It takes 2 seconds'));"
                 },
@@ -333,8 +326,7 @@
         },
         {
             "title": "ফাংশান",
-            "items": [
-                {
+            "items": [{
                     "definition": "অ্যারো দিয়ে এক-লাইনে ফাংশান",
                     "code": "int square(int n) => n*n;"
                 },
@@ -362,8 +354,7 @@
         },
         {
             "title": "কন্ট্রোল ফ্লো",
-            "items": [
-                {
+            "items": [{
                     "definition": "হোয়াইল লুপ",
                     "code": "while(condition) { ... }"
                 },
@@ -391,8 +382,7 @@
         },
         {
             "title": "তারিখ ও সময়",
-            "items": [
-                {
+            "items": [{
                     "definition": "বর্তমান তারিখ ও সময়",
                     "code": "DateTime.now()"
                 },
@@ -428,8 +418,7 @@
         },
         {
             "title": "অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং",
-            "items": [
-                {
+            "items": [{
                     "definition": "ক্লাস",
                     "code": "class BirthCertificate { ... }"
                 },
@@ -469,8 +458,7 @@
         },
         {
             "title": "পাব্ সিএলআই",
-            "items": [
-                {
+            "items": [{
                     "definition": "প্রোজেক্টের সবগুলো প্যাকেজ ডাউনলোড করা",
                     "code": "pub get"
                 },

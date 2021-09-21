@@ -91,6 +91,26 @@
             {
                 "definition": "ভেক্টর-এর পুরাতন ভ্যালু গুলো নতুন দ্বারা প্রতিস্থাপন করা",
                 "code": "myVector.assign(size, newnumber)"
+            },
+            {
+                "definition": "ভেক্টর-এর ভ্যালু ঊর্ধ্বগামী (এসেন্ডিং) ক্রমে সাজানো",
+                "code": "sort(myVector.begin(), myVector.end())"
+            },
+            {
+                "definition": "ভেক্টর-এর ভ্যালু অধোগামী (ডিসেন্ডিং) ক্রমে সাজানো",
+                "code": "sort(myVector.begin(), myVector.end(), greater<int>())"
+            },
+            {
+                "definition": "ভেক্টর-এর কোন ইনডেক্স এর ভ্যালু পাওয়ার উপায়-১",
+                "code": "myVector.at(indexPosition)"
+            },
+            {
+                "definition": "ভেক্টর-এর কোন ইনডেক্স এর ভ্যালু পাওয়ার উপায়-২",
+                "code": "myVector[indexPosition]"
+            },
+            {
+                "definition": "ভেক্টর-এর ভ্যালু রিভার্স করা",
+                "code": "reverse(myVector.begin(), myVector.end())"
             }
         ]
     }, {
@@ -499,6 +519,205 @@
             {
                 "definition": "মাল্টি-মেপ-এর ভ্যালু আছে কিনা দেখা",
                 "code": "myMultiMap.empty()"
+            }
+        ]
+    },
+    {
+        "title": "পেয়ার",
+        "items": [
+            {
+                "definition": "পেয়ার-এর স্ট্যান্ডার্ড লাইব্রেরি",
+                "code": "#include <utility>"
+            },
+            {
+                "definition": "পেয়ার-এ ভেরিয়েবল ডিক্লেয়ার করা",
+                "code": "pair <int, char> myPair"
+            },
+            {
+                "definition": "পেয়ার-এ ভেরিয়েবল ডিক্লেয়ার করার সময় ভ্যালু রাখা",
+                "code": "pair <string, string> myPair (value1, value2)"
+            },
+            {
+                "definition": "পেয়ার-এ ফার্স্ট এলিমেন্ট তে ভ্যালু রাখা",
+                "code": "myPair.first = value1"
+            },
+            {
+                "definition": "পেয়ার-এ সেকেন্ড এলিমেন্ট তে ভ্যালু রাখা",
+                "code": "myPair.second = value2"
+            },
+            {
+                "definition": "পেয়ার-এ ভ্যালু রাখা ফার্স্ট এলিমেন্ট ও সেকেন্ড এলিমেন্ট একসাথে",
+                "code": "myPair = make_pair(value1, value2)"
+            },
+            {
+                "definition": "পেয়ার-এর দুই অবস্থানের মধ্যে ভ্যালু বিনিময় করা",
+                "code": "myPair.swap(anotherPair)"
+            },
+            {
+                "definition": "পেয়ার থেকে অন্য পেয়ার-এ কপি করা ভ্যালু",
+                "code": "myPair(anotherPair)"
+            }
+        ]
+    },
+    {
+        "title": "প্রায়োরিটি কিউ",
+        "items": [
+            {
+                "definition": "প্রায়োরিটি কিউ-এর স্ট্যান্ডার্ড লাইব্রেরি",
+                "code": "#include <queue>"
+            },
+            {
+                "definition": "প্রায়োরিটি কিউ-এর ভেরিয়েবল ডিক্লেয়ার করা(প্রায়োরিটি প্রায়োরিটি কিউ)",
+                "code": "priority_queue <int> myPriorityQueue"
+            },
+            {
+                "definition": "প্রায়োরিটি কিউ-এ ভ্যালু রাখা",
+                "code": "myPriorityQueue.push(value)"
+            },
+            {
+                "definition": "প্রায়োরিটি কিউ-এর সামনে থেকে ভ্যালু বের করা",
+                "code": "myPriorityQueue.pop()"
+            },
+            {
+                "definition": "প্রায়োরিটি কিউ-এর উপরের ভ্যালু দেখা",
+                "code": "myPriorityQueue.top()"
+            },
+            {
+                "definition": "প্রায়োরিটি কিউ খালি কি-না তা জানতে চাওয়া",
+                "code": "myPriorityQueue.empty()"
+            },
+            {
+                "definition": "প্রায়োরিটি কিউ-এ মোট কতগুলো ভ্যালু আছে",
+                "code": "myPriorityQueue.size()"
+            },
+            {
+                "definition": "দুইটি প্রায়োরিটি কিউ-এর মধ্যে ভ্যালু বিনিময় করা",
+                "code": "myPriorityQueue.swap(anotherPriorityQueue)"
+            }
+        ]
+    },
+    {
+        "title": "লিস্ট",
+        "items": [
+            {
+                "definition": "লিস্ট-এর স্ট্যান্ডার্ড লাইব্রেরি",
+                "code": "#include <list>"
+            },
+            {
+                "definition": "লিস্ট-এ ভেরিয়েবল ডিক্লেয়ার করা",
+                "code": "list <int> myList"
+            },
+            {
+                "definition": "লিস্ট-এ একই ভ্যালু রাখা নির্দিষ্ট সংখ্যক",
+                "code": "myList.assign(total, value)"
+            },
+            {
+                "definition": "লিস্ট-এ ভ্যালু রাখা নির্দিষ্ট জায়গায় অন্য ভ্যালু-এর বদলে",
+                "code": "myList.insert(iterator_position, value)"
+            },
+            {
+                "definition": "লিস্ট-এ ভ্যালু রাখা নির্দিষ্ট জায়গায়",
+                "code": "myList.emplace(iterator_position, value)"
+            },
+            {
+                "definition": "লিস্ট-এর সামনের দিকে ভ্যালু রাখা উপায়-১",
+                "code": "myList.push_front(value)"
+            },
+            {
+                "definition": "লিস্ট-এর সামনের দিকে ভ্যালু রাখা উপায়-২",
+                "code": "myList.emplace_front(value)"
+            },
+            {
+                "definition": "লিস্ট-এর পিছনের দিকে ভ্যালু রাখা উপায়-১",
+                "code": "myList.push_back(value)"
+            },
+            {
+                "definition": "লিস্ট-এর পিছনের দিকে ভ্যালু রাখা উপায়-২",
+                "code": "myList.emplace_back(value)"
+            },
+            {
+                "definition": "লিস্ট-এর সামনের দিক থেকে ভ্যালু বের করা",
+                "code": "myList.pop_front()"
+            },
+            {
+                "definition": "লিস্ট-এর পিছনের দিক থেকে ভ্যালু বের করা",
+                "code": "myList.pop_back()"
+            },
+            {
+                "definition": "লিস্ট-এর সব ভ্যালু মুছে ফেলা",
+                "code": "myList.clear()"
+            },
+            {
+                "definition": "লিস্ট খালি কি-না তা জানতে চাওয়া",
+                "code": "myList.empty()"
+            },
+            {
+                "definition": "লিস্ট-এ মোট কতগুলো ভ্যালু আছে",
+                "code": "myList.size()"
+            },
+            {
+                "definition": "লিস্ট-এর প্রথম অবস্থানের ভ্যালু জানতে চাওয়া",
+                "code": "myList.front()"
+            },
+            {
+                "definition": "লিস্ট-এর শেষ অবস্থানের ভ্যালু জানতে চাওয়া",
+                "code": "myList.back()"
+            },
+            {
+                "definition": "লিস্ট-এর প্রথম অবস্থানের ইটেরেটর উপায়-১",
+                "code": "myList.begin()"
+            },
+            {
+                "definition": "লিস্ট-এর প্রথম অবস্থানের ইটেরেটর উপায়-২",
+                "code": "myList.rend()"
+            },
+            {
+                "definition": "লিস্ট-এর শেষ অবস্থানের ইটেরেটর উপায়-১",
+                "code": "myList.end()"
+            },
+            {
+                "definition": "লিস্ট-এর শেষ অবস্থানের ইটেরেটর উপায়-২",
+                "code": "myList.rbegin()"
+            },
+            {
+                "definition": "লিস্ট-এর প্রথম ভ্যালু অপসারণ করা",
+                "code": "myList.erase(myList.begin())"
+            },
+            {
+                "definition": "দুইটি লিস্ট-এর ভ্যালু বিনিময় করা",
+                "code": "myList.swap(anotherList)"
+            },
+            {
+                "definition": "লিস্ট-এর মধ্যে সর্বোচ্চ কত ভ্যালু রাখা যাবে তা চেক করা",
+                "code": "myList.max_size()"
+            },
+            {
+                "definition": "লিস্ট-এর মধ্যে থেকে ডুপ্লিকেট বাদ দেয়া",
+                "code": "myList.unique()"
+            },
+            {
+                "definition": "লিস্ট-এর ভ্যালু অন্য লিস্ট-এ পাঠানো",
+                "code": "myList.splice(myList.begin(), anotherList)"
+            },
+            {
+                "definition": "লিস্ট-এর ভ্যালু আরেক লিস্ট এর সাথে মার্জ করা",
+                "code": "myList.merge(anotherList)"
+            },
+            {
+                "definition": "লিস্ট-এর ভ্যালু ঊর্ধ্বগামী (এসেন্ডিং) ক্রমে সাজানো",
+                "code": "myList.sort()"
+            },
+            {
+                "definition": "লিস্ট-এর থেকে কোনো নির্দিষ্ট ভ্যালু বাদ দেয়া",
+                "code": "myList.remove(value)"
+            },
+            {
+                "definition": "লিস্ট-এর থেকে কোনো নির্দিষ্ট ভ্যালু বাদ দেয়া শর্তসাপেক্ষে",
+                "code": "myList.remove_if(predicate)"
+            },
+            {
+                "definition": "লিস্ট-এর ভ্যালু রিভার্স করা",
+                "code": "myList.reverse()"
             }
         ]
     }

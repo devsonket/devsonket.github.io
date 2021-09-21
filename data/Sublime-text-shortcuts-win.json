@@ -1,0 +1,108 @@
+{
+"id": "Sublime-text-shortcuts-win",
+"title": "সাবলাইম টেক্সট এডিটর(উইন্ডোজ)",
+"slug": "Sublime-text-shortcuts-win",
+"description": "সাবলাইম টেক্সট কোড এডিটর এর প্রয়োজনী উইন্ডোজ শর্টকাট কী",
+"colorPref": "#FF9800",
+"contents": [
+    {
+    "title": "সাধারণ",
+    "items": [
+        {
+        "definition": "কমান্ড প্যালেট দেখানো/হাইড করা",
+        "code": "CTRL + SHIFT + p"
+        },
+        {
+        "definition": "সিলেক্ট করা লাইনকে কমেন্ট করে ফেলা",
+        "code": "Ctrl + /"
+        },
+        {
+        "definition": "টোগল সাইড বার",
+        "code": "Ctrl + KB"
+        },
+        {
+        "definition": "সো স্কোপ ইন স্ট্যাটাস বার",
+        "code": "Ctrl + ⇧ + Alt + P"
+        },
+        {
+        "definition": "নতুন উইন্ডো চালু করতে",
+        "code": "Ctrl + Shift + N"
+        },
+        {
+        "definition": "উইন্ডো বন্ধ করতে",
+        "code": "Ctrl + Shift + W"
+        },
+        {
+        "definition": "ফাইল চালু করতে",
+        "code": "Ctrl + O"
+        },
+        {
+        "definition": "পূরবর্তী ফাইল চালু করতে",
+        "code": "Ctrl + Shift + T"
+        },
+        {
+        "definition": "নতুন ফাইল চালু করতে",
+        "code": "Ctrl + N"
+        },
+        {
+        "definition": "ফাইল সেইভ করতে",
+        "code": "Ctrl + S"
+        },
+        {
+        "definition": "সাবলাইম টেক্সট বন্ধ করতে",
+        "code": "Ctrl + W"
+        },
+        {
+        "definition": "পুরো লাইন কপি করতে",
+        "code": "Ctrl + Shift + D"
+        },
+        {
+        "definition": "সিলেক্ট করা লেখার মতো আরো লেখা সিলেক্ট করতে",
+        "code": "Ctrl + D"
+        }
+    ]
+    },
+    {
+    "title": "বুকমার্কস",
+    "items": [
+        {
+        "definition": "নতুন বুকমার্ক তৈরি",
+        "code": "Ctrl + F2"
+        },
+        {
+        "definition": "পরবর্তী বুকমার্ক",
+        "code": "F2"
+        },
+        {
+        "definition": "পূর্ববর্তী বুকমার্ক",
+        "code": "Shift + F2"
+        },
+        {
+        "definition": "ক্লিয়ার বুকমার্ক",
+        "code": "Ctrl + Shift + F2"
+        }
+    ]
+    },
+    {
+    "title": "ফোল্ডিং",
+    "items": [
+        {
+        "definition": "ফোল্ড সেকশন",
+        "code": "Ctrl + ALT + ["
+        },
+        {
+        "definition": "আনফোল্ড সেকশন",
+        "code": "Ctrl + ALT + ]"
+        },
+        {
+        "definition": "ফোল্ড সব",
+        "code": "Ctrl+K, Ctrl+1"
+        },
+        {
+        "definition": "আনফোল্ড সব",
+        "code": "Ctrl+K, Ctrl+J"
+        }
+        ]
+    }
+]
+}

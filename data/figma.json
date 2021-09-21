@@ -1,0 +1,501 @@
+{
+    "id": "figma",
+    "title": "ফিগমা",
+    "slug": "figma",
+    "description": "ফিগমা একটি ডিজাইন এবং প্রটোটাইপিং টুল যেটার মধ্যমে যেকোনো ইউজার ইন্টারফেস এবং ইউজার এক্সপেরিয়েন্স তৈরি করা যায়। ফিগমার ওয়েব ভার্সন এবং ডেস্কটপ দুটি থাকায় যেকোনো সময় যেকোনো জায়গা থেকে ডিজাইন করা সম্ভব। ",
+    "colorPref": "#8a4af3",
+    "contents": [
+      {
+        "title": "ফাইল সিস্টেম (File System)",
+        "items": [
+          {
+            "definition": "নতুন ট্যাব খোলা",
+            "code": "Ctrl + N"
+          },
+          {
+            "definition": "নতুন উইন্ডো খোলা",
+            "code": "Ctrl + Shift + N"
+          },
+          {
+            "definition": "এক উইন্ডো থেকে আরেক উইন্ডো তে যাওয়া",
+            "code": "Ctrl + Tab"
+          }
+        ]
+      },
+      {
+        "title": "গুরুত্বপূর্ন শর্টকাট",
+        "items": [
+          {
+            "definition": "সার্চ বার ওপেন করা",
+            "code": "Ctrl + /"
+          },
+          {
+            "definition": "কালার পিকার ওপেন করা",
+            "code": "I"
+          },
+          {
+            "definition": "সরানো টুল ওপেন করা",
+            "code": "V"
+          },
+          {
+            "definition": "ফ্রেম টুল ওপেন করা",
+            "code": "F"
+          },
+          {
+            "definition": "পেন টুল ওপেন করা",
+            "code": "P"
+          },
+          {
+            "definition": "পেন্সিল টুল ওপেন করা",
+            "code": "Ctrl + Shift + I"
+          },
+          {
+            "definition": "আয়তক্ষেত্র (Rectangle)  টুল ওপেন করা",
+            "code": "R"
+          },
+          {
+            "definition": "টেক্সট টুল ওপেন করা",
+            "code": "T"
+          },
+          {
+            "definition": "উপবৃত্ত (Oval) টুল ওপেন করা",
+            "code": "O"
+          },
+          {
+            "definition": "লাইন টুল ওপেন করা",
+            "code": "L"
+          },
+          {
+            "definition": "এরো টুল ওপেন করা",
+            "code": "Shift + L"
+          },
+          {
+            "definition": "কমেন্ট দেখা অথবা লিখা",
+            "code": "T"
+          },
+          {
+            "definition": "স্লাইস টুল ওপেন করা",
+            "code": "S"
+          },
+          {
+            "definition": "স্কেল টুল ওপেন করা",
+            "code": "K"
+          },
+          {
+            "definition": "কম্পোনেন্ট তৈরি করা",
+            "code": "Ctrl + Alt + K"
+          }
+        ]
+      },
+      {
+        "title": "ভিউ অপশন (View Option)",
+        "items": [
+          {
+            "definition": "একের অধিক কন্ট্রিবিউটর দের কার্সার দেখানো অথবা সরানো",
+            "code": "Ctrl + Alt + \\"
+          },
+          {
+            "definition": "ইউ আই অপশন দেখানো অথবা সরানো",
+            "code": "Ctrl + \\"
+          },
+          {
+            "definition": "রুলার দেখনো অথবা সরানো ",
+            "code": "Shift + R"
+          },
+          {
+            "definition": "কম্পোনেন্ট এর আউটলাইন দেখানো অথবা সরানো",
+            "code": "Ctrl + Shift + 3"
+          },
+          {
+            "definition": "পিক্সেল গ্রিড দেখানো অথবা সরানো",
+            "code": "Ctrl + '"
+          },
+          {
+            "definition": "লেয়ার্স প্যানেল দেখানো",
+            "code": "Alt + 1"
+          },
+          {
+            "definition": "আসেটস প্যানেল দেখানো",
+            "code": "Alt + 2"
+          },
+          {
+            "definition": "ডিজাইন প্যানেল দেখানো",
+            "code": "Alt + 8"
+          },
+          {
+            "definition": "প্রোটোটাইপ প্যানেল দেখানো",
+            "code": "Alt + 9"
+          },
+          {
+            "definition": "কোড প্যানেল দেখানো",
+            "code": "Alt + 0"
+          }
+        ]
+      },
+      {
+        "title": "প্রসারিত অপশন (Zoom Option)",
+        "items": [
+          {
+            "definition": "সম্পূর্ন উইন্ডো প্যান করা",
+            "code": "Space + drag"
+          },
+          {
+            "definition": "প্রসারিত করা",
+            "code": "+"
+          },
+          {
+            "definition": "সংকুচিত করা",
+            "code": "-"
+          },
+          {
+            "definition": "১০০% প্রসারিত করা",
+            "code": "Shift + 0"
+          },
+          {
+            "definition": "উইন্ডো তে সব কম্পোনেন্ট একসাথে দেখা",
+            "code": "Shift + 1"
+          },
+          {
+            "definition": "একটি কম্পোনেন্ট নির্বাচন করে সেটাকে প্রসারিত করা",
+            "code": "Shift + 2"
+          },
+          {
+            "definition": "পরবর্তি ফ্রেম প্রসারিত করা",
+            "code": "N"
+          },
+          {
+            "definition": "পূর্ববর্তি ফ্রেম প্রসারিত করা",
+            "code": "Shift + N"
+          },
+          {
+            "definition": "পূর্ববর্তি পেইজ এ যাওয়া",
+            "code": "Page Up"
+          },
+          {
+            "definition": "পরবর্তি পেইজ এ যাওয়া",
+            "code": "Page Down"
+          },
+          {
+            "definition": "পূর্ববর্তি ফ্রেম এ যাওয়া",
+            "code": "Home"
+          },
+          {
+            "definition": "পরবর্তি ফ্রেম এ যাওয়া",
+            "code": "End"
+          },
+          {
+            "definition": "নির্দিষ্ট কোন যায়গা প্রসারিত করতে",
+            "code": "Z + Select area"
+          }
+        ]
+      },
+      {
+        "title": "টেক্সট এডিট (Text Edit)",
+        "items": [
+          {
+            "definition": "টেক্সট বোল্ড করা",
+            "code": "Ctrl + B"
+          },
+          {
+            "definition": "টেক্সট ইটালিক করা",
+            "code": "Ctrl + I"
+          },
+          {
+            "definition": "টেক্সট আন্ডারলাইন করা",
+            "code": "Ctrl + U"
+          },
+          {
+            "definition": "স্টাইল সহ কোন একটি লিখা পেস্ট করা",
+            "code": "Ctrl + Shift + V"
+          },
+          {
+            "definition": "টেক্সট এর প্রান্তিককরণ (Alignment) বামে রাখা",
+            "code": "Ctrl + Alt + L"
+          },
+          {
+            "definition": "টেক্সট এর প্রান্তিককরণ ডানে রাখা ",
+            "code": "Ctrl + Alt + R"
+          },
+          {
+            "definition": "টেক্সট এর প্রান্তিককরণ মাঝে রাখা",
+            "code": "Ctrl + Alt + T"
+          },
+          {
+            "definition": "টেক্সট এর প্রান্তিককরণ জাস্টিফাই রাখা ",
+            "code": "Ctrl + Alt + J"
+          },
+          {
+            "definition": "ফন্ট সাইজ বাড়ানো",
+            "code": "Ctrl + Shift + >"
+          },
+          {
+            "definition": "ফন্ট সাইজ কমানো",
+            "code": "Ctrl + Shift + <"
+          },
+          {
+            "definition": "ফন্ট পুরুত্ত্ব বাড়ানো",
+            "code": "Ctrl + Alt + >"
+          },
+          {
+            "definition": "ফন্ট পুরুত্ত্ব কমানো",
+            "code": "Ctrl + Alt + <"
+          },
+          {
+            "definition": "শব্দের মাঝের ফাঁকা জায়গা বাড়ানো",
+            "code": "Alt + >"
+          },
+          {
+            "definition": "শব্দের মাঝের ফাঁকা জায়গা কমানো",
+            "code": "Alt + <"
+          },
+          {
+            "definition": "লাইন এর ফাঁকা বাড়ানো",
+            "code": "Shift + Alt + >"
+          },
+          {
+            "definition": "লাইন এর ফাঁকা কমানো",
+            "code": "Shift + Alt + <"
+          }
+        ]
+      },
+      {
+        "title": "আকৃতি অপশন (Shape option)",
+        "items": [
+          {
+            "definition": "পূরণ (Fill) সরানো",
+            "code": "Alt + /"
+          },
+          {
+            "definition": "আকৃতির স্ট্রোক সরানো",
+            "code": "/"
+          },
+          {
+            "definition": "স্ট্রোক এর স্টাইল পূরণ এ দেয়া অথবা ভাইসভার্সা",
+            "code": "Shift + X"
+          },
+          {
+            "definition": "আকৃতির রূপরেখা আনা",
+            "code": "Ctrl + Shift + O"
+          }
+        ]
+      },
+      {
+        "title": "নিবার্চন অপশন (Selection option)",
+        "items": [
+          {
+            "definition": "সব একসাথে সিলেক্ট করা",
+            "code": "Ctrl + A"
+          },
+          {
+            "definition": "বিপরীত নির্বাচন করা",
+            "code": "Ctrl + Shift + A"
+          },
+          {
+            "definition": "কোন কিছু সিলেক্ট না করা",
+            "code": "Esc"
+          },
+          {
+            "definition": "আকৃতির রূপরেখা আনা",
+            "code": "Ctrl + Shift + O"
+          },
+          {
+            "definition": "নির্বাচিত কম্পোনেন্ট গুলো একত্রীকরণ করা",
+            "code": "Ctrl + J"
+          },
+          {
+            "definition": "নির্দিষ্ট কম্পোনেন্ট নির্বাচন করা",
+            "code": "Ctrl + click"
+          },
+          {
+            "definition": "লেয়ার মেনু নির্বাচন করা",
+            "code": "Ctrl + right-click"
+          },
+          {
+            "definition": "চাইল্ড নির্বাচন করা",
+            "code": "Enter"
+          },
+          {
+            "definition": "প্যারেন্ট নির্বাচন করা",
+            "code": "Shift + Enter"
+          },
+          {
+            "definition": "পরবর্তি সিব্লিং নির্বাচন করা",
+            "code": "Tab"
+          },
+          {
+            "definition": "পুর্ববর্তি সিব্লিং নির্বাচন করা",
+            "code": "Shift + Tab"
+          },
+          {
+            "definition": "নির্বাচন গুলো  গ্রুপ করা",
+            "code": "Ctrl + G"
+          },
+          {
+            "definition": "নির্বাচন গুলো  গ্রুপ ছাড়া করা",
+            "code": "Ctrl + Shift + G"
+          },
+          {
+            "definition": "নির্বাচিত অংশ দেখানো অথবা সরানো",
+            "code": "Ctrl + Shift + H"
+          },
+          {
+            "definition": "নির্বাচিত অংশ লক করা অথবা আনলক করা",
+            "code": "Ctrl + Shift + L"
+          }
+        ]
+      },
+      {
+        "title": "কার্সার অপশন (Cursor option)",
+        "items": [
+          {
+            "definition": "এক কম্পোনেন্ট থেকে আরেক কম্পোনেন্ট এর দূরত্ব মাপতে",
+            "code": "Alt + Point with cursor"
+          },
+          {
+            "definition": "কম্পোনেন্ট এর ডুপ্লিকেট করতে",
+            "code": "Alt + drag"
+          },
+          {
+            "definition": "আনুপাতিকভাবে কম্পোনেন্ট এক যায়গা থেকে অন্য যায়গায় সরানো",
+            "code": "Shift + ➡ / ⬅"
+          }
+        ]
+      },
+      {
+        "title": "এডিট অপশন (Edit option)",
+        "items": [
+          {
+            "definition": "কপি করা",
+            "code": "Ctrl + C"
+          },
+          {
+            "definition": "কাট করা",
+            "code": "Ctrl + X"
+          },
+          {
+            "definition": "পেস্ট করা",
+            "code": "Ctrl + V"
+          },
+          {
+            "definition": "কোন একটি কম্পোনেন্ট এর উপর কিছু পেস্ট করা",
+            "code": "Select something + Ctrl + Shift + V"
+          },
+          {
+            "definition": "ডুপ্লিকেট করা",
+            "code": "Ctrl + D"
+          },
+          {
+            "definition": "নাম পাল্টানো",
+            "code": "Ctrl + R"
+          },
+          {
+            "definition": "কোন কিছু এক্সপোর্ট করা",
+            "code": "Ctrl + Shift + E"
+          },
+          {
+            "definition": "কম্পোনেন্ট এর প্রোপার্টিস কপি করা",
+            "code": "Ctrl + Alt + C"
+          },
+          {
+            "definition": "কম্পোনেন্ট এর প্রোপার্টিস পেস্ট করা",
+            "code": "Ctrl + Alt + V"
+          }
+        ]
+      },
+      {
+        "title": "রূপান্তর অপশন (Transform option)",
+        "items": [
+          {
+            "definition": "অনুভূমিকভাবে উল্টানো",
+            "code": "Shift + H"
+          },
+          {
+            "definition": "উল্লম্বভাবে উল্টানো",
+            "code": "Shift + V"
+          },
+          {
+            "definition": "মাস্ক তৈরি করা",
+            "code": "Ctrl + Alt + M"
+          },
+          {
+            "definition": "কোন আকৃতি অথবা ছবি এডিট করা",
+            "code": "Enter"
+          },
+          {
+            "definition": "ছবি এনে বসানো",
+            "code": "Ctrl + Shift + K"
+          },
+          {
+            "definition": "ছবি কাটা (Crop image)",
+            "code": "Alt + Double click"
+          },
+          {
+            "definition": "১০% অস্বচ্ছতা সেট করা",
+            "code": "1"
+          },
+          {
+            "definition": "৫০% অস্বচ্ছতা সেট করা",
+            "code": "5"
+          },
+          {
+            "definition": "১০০% অস্বচ্ছতা সেট করা",
+            "code": "0"
+          }
+        ]
+      },
+      {
+        "title": "সাজানো অপশন (Arrange option)",
+        "items": [
+          {
+            "definition": "একধাপ এগিয়ে আনা",
+            "code": "Ctrl + ]"
+          },
+          {
+            "definition": "একধাপ পিছিয়ে নেয়া",
+            "code": "Ctrl + ["
+          },
+          {
+            "definition": "সামনে আনা",
+            "code": "Ctrl + Shift + ]"
+          },
+          {
+            "definition": "পিছনে নেয়া",
+            "code": "Ctrl + Shift + ["
+          },
+          {
+            "definition": "বামে সারিবদ্ধ করা",
+            "code": "Alt + A"
+          },
+          {
+            "definition": "ডানে সারিবদ্ধ করা",
+            "code": "Alt + D"
+          },
+          {
+            "definition": "শীর্ষে সারিবদ্ধ করা",
+            "code": "Alt + W"
+          },
+          {
+            "definition": "নীচে সারিবদ্ধ করা",
+            "code": "Alt + S"
+          },
+          {
+            "definition": "অনুভূমিকভাবে মাঝে সারিবদ্ধ করা",
+            "code": "Alt + H"
+          },
+          {
+            "definition": "উল্লম্বভাবে মাঝে সারিবদ্ধ করা",
+            "code": "Alt + V"
+          },
+          {
+            "definition": "অটো লেআউট সেট করা",
+            "code": "Shift + A"
+          },
+          {
+            "definition": "অটো লেআউট সরানো",
+            "code": "Alt + Shift + A"
+          }
+        ]
+      }
+    ]
+  }
+  

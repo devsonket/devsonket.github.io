@@ -11,34 +11,44 @@
                 {
                     "definition": "লিনাক্সে ইনস্টল",
                     "code": "sudo apt-get install postgresql postgresql-contrib"
-                }, {
+                },
+                {
                     "definition": "উইন্ডোজে ইনস্টল",
                     "code": "just type in the name of the executable and hit enter(PostgreSQL-Installer.exe)"
-                }, {
+                },
+                {
                     "definition": "ম্যাকে ইনস্টল",
                     "code": "brew install postgresql"
-                }, {
+                },
+                {
                     "definition": "সার্ভারের সাথে কানেক্ট করা",
                     "code": "sudo su - postgres(ডিফল্ট ইউজার)"
-                }, {
+                },
+                {
                     "definition": "সার্ভারে লগইন করা",
                     "code": "psql"
-                }, {
+                },
+                {
                     "definition": "লগইন ডিটেইলস জানা",
                     "code": "\\conninfo"
-                }, {
+                },
+                {
                     "definition": "নতুন ইউজার ক্রিয়েট করা",
                     "code": "sudo -u postgres createuser <username>"
-                }, {
+                },
+                {
                     "definition": "নতুন ইউজারের পাসওয়ার্ড সেট করা",
                     "code": "alter user <username> with encrypted password '<password>'"
-                }, {
+                },
+                {
                     "definition": "নতুন ইউজারকে নির্দিষ্ট ডেটাবেজে এক্সেস পারমিশন দেয়া",
                     "code": "grant all privileges on database <dbname> to <username>"
-                }, {
+                },
+                {
                     "definition": "নির্দিষ্ট ইউজারকে ডিলিট করা",
                     "code": "su - postgres -c 'dropuser www-dtata'"
-                }, {
+                },
+                {
                     "definition": "সার্ভার থেকে ডিসকানেক্ট/লগআউট হয়ে যাওয়া",
                     "code": "\\q"
                 }
@@ -50,34 +60,44 @@
                 {
                     "definition": "ডেটাবেজ ক্রিয়েট করা",
                     "code": "CREATE DATABASE yourdbname"
-                }, {
+                },
+                {
                     "definition": "স্পেসিফিক ডেটাবেজের সাথে কানেক্ট হওয়া",
                     "code": "\\c database_name"
-                }, {
+                },
+                {
                     "definition": "সার্ভারে এভাইলেবল ডাটাবেজের লিস্ট দেখা",
                     "code": "\\l"
-                }, {
+                },
+                {
                     "definition": "সার্ভারে এভাইলেবল ডাটাবেজের স্কিমা দেখা",
                     "code": "\\dn"
-                }, {
+                },
+                {
                     "definition": "কারেন্ট ডাটাবেজের সব টেবিল দেখা",
                     "code": "\\dt"
-                }, {
+                },
+                {
                     "definition": "স্পেসিফিক টেবিলের সব ইনফরমেশন দেখা",
                     "code": "\\d+ table_name"
-                }, {
+                },
+                {
                     "definition": "সকল ইউজারের লিস্ট দেখা",
                     "code": "\\du"
-                }, {
+                },
+                {
                     "definition": "নতুন রোল ক্রিয়েট করা",
                     "code": "CREATE ROLE role_name"
-                }, {
+                },
+                {
                     "definition": "ডেটাবেজ পার্মানেন্টলি ডিলিট করে দেয়া",
                     "code": "DROP DATABASE [IF EXISTS] db_name"
-                }, {
+                },
+                {
                     "definition": "ডেটাবেজের নাম পরিবর্তন",
                     "code": "ALTER DATABASE <old_name> RENAME TO <new_name>"
-                }, {
+                },
+                {
                     "definition": "কারেন্ট ইউজার দেখা",
                     "code": "SELECT current_user"
                 }
@@ -89,33 +109,124 @@
                 {
                     "definition": "একটা টেবিলের সব ডেটা দেখা",
                     "code": "SELECT * FROM table_name"
-                }, {
+                },
+                {
                     "definition": "স্পেসিফিক কলামের সব ডেটা দেখা",
                     "code": "SELECT column, column2….FROM table"
-                }, {
+                },
+                {
                     "definition": "টেবিলের ইউনিক রো এর ডেটা দেখা",
                     "code": "SELECT DISTINCT (column) FROM table"
-                }, {
+                },
+                {
                     "definition": "ফিল্টার করে ডেটা দেখা",
                     "code": "SELECT * FROM table WHERE condition"
-                }, {
+                },
+                {
+                    "definition": "একাধিক কন্ডিশন ফিল্টার করে ডেটা দেখা(AND / OR)",
+                    "code": "SELECT * FROM table WHERE condition1 AND condition2 OR condition3 ...... conditionN;"
+                },
+                {
+                    "definition": "একটি কলামের মানের জন্য একাধিক ভ্যালু ফিল্টার করে ডেটা দেখা(IN)",
+                    "code": "SELECT * FROM table WHERE (column) IN (value1,value2,...... valueN);"
+                },
+                {
+                    "definition": "একটি কলামের মান নির্দিষ্ট সীমায় আছে কীনা চেক করা(BETWEEN)",
+                    "code": "SELECT * FROM table WHERE (column) BETWEEN (lower bound) AND (upper bound);"
+                },
+                {
+                    "definition": "নির্দিষ্ট সংখ্যক আউটপুট কুয়েরি করা(LIMIT)",
+                    "code": "SELECT * FROM table LIMIT 10;"
+                },
+                {
+                    "definition": "কুয়েরির ১ম থেকে নির্দিষ্ট সংখ্যক রো বাদ দিয়ে তারপর থেকে দেখানো(OFFSET)",
+                    "code": "SELECT * FROM table OFFSET 10;"
+                },
+                {
                     "definition": "স্ট্রিং ম্যাচ করে ডেটা দেখা",
                     "code": "SELECT * FROM table_name WHERE column LIKE '%value%'"
-                }, {
+                },
+                {
                     "definition": "কুয়েরি আউটপুট pretty-format এ দেখা",
                     "code": "\\x"
-                }, {
+                },
+                {
                     "definition": "টেবিল নতুন কলাম এড করা",
                     "code": "ALTER TABLE table_name ADD COLUMN new_column_name TYPE"
-                }, {
+                },
+                {
                     "definition": "টেবিলের স্পেসিফিক রো ডিলিট করে দেয়া",
                     "code": "DELETE FROM table_name WHERE condition"
-                }, {
+                },
+                {
                     "definition": "টেবিলের ইউনিক রো এর ডেটা দেখা",
                     "code": "SELECT DISTINCT (column) FROM table"
-                }, {
+                },
+                {
                     "definition": "টেবিলের সব রো ডিলিট করে দেয়া",
                     "code": "DELETE FROM table_name"
+                },
+                {
+                    "definition": "টেবিলের (যে টেবিল অন্য টেবিলের সাথে রিলেশন আছে) সব রো ডিলিট করার ক্ষেত্রে",
+                    "code": "TRUNCATE tableName RESTART IDENTITY CASCADE"
+                },
+                {
+                    "definition": "ক্রমানুসারে ডাটা কুয়েরি করা",
+                    "code": "SELECT * FROM table ORDER BY ASC/ DESC;"
+                }
+            ]
+        },
+        {
+            "title": "গাণিতিক অপারেশন",
+            "items": [
+                {
+                    "definition": "কলামের সর্বনিম্ন মান বের করা",
+                    "code": "SELECT MIN(column name) FROM table;"
+                },
+                {
+                    "definition": "কলামের সর্বোচ্চ মান বের করা",
+                    "code": "SELECT MAX(column name) FROM table;"
+                },
+                {
+                    "definition": "কলামের সকল মানের গড় বের করা",
+                    "code": "SELECT AVG(column name) FROM table;"
+                },
+                {
+                    "definition": "কলামের সকল মানের সমষ্টি বের করা",
+                    "code": "SELECT SUM(column name) FROM table;"
+                },
+                {
+                    "definition": "n দশমিক স্থান পর্যন্ত আসন্ন মান বের করা(ROUND)",
+                    "code": "SELECT ROUND(AVG(column name), n) FROM table;"
+                },
+                {
+                    "definition": "n দশমিক স্থান পর্যন্ত মান বের করা(TRUNC) ",
+                    "code": "SELECT TRUNC(AVG(column name), n) FROM table;"
+                }
+            ]
+        },
+        {
+            "title": "টেবিল জয়েন",
+            "items": [
+                {
+                    "definition": "ক্রস জয়েন(ডান টেবিলের প্রতি রো এর জন্য বাম টেবিলের সকল রো এর কম্বিনেশন)",
+                    "code": "SELECT (column) FROM left_table CROSS JOIN right_table;"
+                },
+                {
+                    "definition": "ইনার জয়েন(বাম টেবিলের যেসব রো এর প্রাইমারি কি ডান টেবিলে ফরেইন কি হিসেবে আছে)",
+                    "code": "SELECT left_table.column,...right_table.column FROM left_table INNER JOIN right_table ON left_table.pk = right_table.fk;"
+                },
+                {
+                    "definition": "লেফট আউটার জয়েন(বাম টেবিলের সব রো, ডান টেবিলের মিলে যাওয়া রো)",
+                    "code": "SELECT (columns) FROM left_table LEFT OUTER JOIN right_table ON left_table.pk = right_table.fk;"
+                },
+                {
+                    "definition": "রাইট আউটার জয়েন(ডান টেবিলের সব রো, বাম টেবিলের মিলে যাওয়া রো)",
+                    "code": "SELECT (columns) FROM left_table RIGHT OUTER JOIN right_table ON left_table.pk = right_table.fk;"
+                },
+                {
+                    "definition": "ফুল আউটার জয়েন(২ টেবিলের কমন আনকমন সব রো)",
+                    "code": "SELECT * FROM left_table FULL OUTER JOIN right_table ON left_table.pk = right_table.fk;"
                 }
             ]
         },
@@ -125,7 +236,8 @@
                 {
                     "definition": "এক্সিস্টিং ডেটাবেজ এর কপি/ডাম্প ক্রিয়েট করা",
                     "code": "pg_dump -h localhost -U postgres --no-acl --no-owner existingdb > newgenerateddb.sql"
-                }, {
+                },
+                {
                     "definition": "ব্যাকআপ নেয়া ডেটা নতুন ডেটাবেজে লোড করা",
                     "code": "psql -h localhost -U postgres mynewcreateddb -f newgenerateddb.sql"
                 }

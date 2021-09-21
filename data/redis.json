@@ -1,0 +1,111 @@
+{
+  "id": "redis",
+  "title": "রেডিস",
+  "slug": "redis",
+  "description": "রেডিস (Redis) একটি ওপেন সোর্স ইন মেমরি ডাটা স্ট্রাকচার স্টোর। যা সাধারণত কি ভ্যালু (KV) ডাটাবেস, ক্যাশ, মেসেজ ব্রোকার হিসেবে ব্যবহার হয়ে থাকে। রেডিস বিভিন্ন ধরনের ডাটা স্ট্রাকচার সাপোর্ট করে যেমন, স্ট্রিংস, লিস্টস, ম্যাপস, সেটস, সর্টেড সেটস, ইত্যাদি।",
+  "colorPref": "#d92b21",
+  "contents": [
+    {
+      "tite" :"রেডিস সি এল আই (CLI)",
+      "items": [
+        {
+          "definition": "রেডিস ভারশন",
+          "code": "redis-cli --version"
+        },
+        {
+          "definition": "এন্টার রেডিস সি এল আই",
+          "code": "redis-cli"
+        },
+        {
+          "definition": "রেডিস সি এল আই এ প্রথম কমান্ড",
+          "code": "PING"
+        },
+        {
+          "definition": "রেডিস সি এল আই অথেন্টিকেট",
+          "code": "AUTH <your_redis_password>"
+        },
+        {
+          "definition": "রেডিস সি এল আই এক্সিট",
+          "code": "exit"
+        }
+      ]
+    },
+    {
+      "tite": "রেডিস স্ট্রিংস",
+      "items": [
+        {
+          "definition": "রেডিস কমান্ডে সবগুলো কী (key) একসাথে দেখার জন্য",
+          "code": "KEYS *"
+        },
+        {
+          "definition": "স্টোর ভ্যালু বাই কী (key)",
+          "code": "SET <key> <value>"
+        },
+        {
+          "definition": "স্টোর ভ্যালু বাই কী (key) সাথে এক্সপাইর টাইম সহ (TTL) ",
+          "code": "SET <key> <value> <TTL>"
+        },
+        {
+          "definition":"গেট ভ্যালু বাই কী (key)",
+          "code": "GET <key>"
+        },
+        {
+          "definition": "ডিলিট ভ্যালু বাই কী (key)",
+          "code": "DEL <key>"
+        },
+        {
+          "definition": "নিউমেরিক ভ্যালুএ এক এক করে বাড়ানো (ইঙ্ক্রিমেন্ট)",
+          "code": "INCR <key>"
+        },
+        {
+          "definition": "নিউমেরিক ভ্যালুএ এক এক করে কমানো (ডিক্রিমেন্ট)",
+          "code": "DECR <key>"
+        },
+        {
+          "definition": "নিউমেরিক ভ্যালুতে নির্দিষ্ট সংখ্যা বাড়ানো",
+          "code": "INCRBY <key> <number>"
+        },
+        {
+          "definition": "নিউমেরিক ভ্যালুতে নির্দিষ্ট সংখ্যা কমানো",
+          "code": "DECRBY <key> <number>"
+        },
+        {
+          "definition":"রেডিসে একটা কি আছে কি না চেক করতে",
+          "code":"EXISTS <key>"
+        },
+        {
+          "definition": "স্ট্রিং এ নতুন স্ট্রিং এড করতে",
+          "code": "APPEND <key> <new_string>"
+        },
+        {
+          "definition": "স্ট্রিং এর লেন্থ বের করতে",
+          "code": "STRLEN <key>"
+        },
+        {
+          "definition": "স্ট্রিং এর রেঞ্জ এর ভিতরের ভ্যালু",
+          "code": "GETRANGE <key> <start> <end>"
+        },
+        {
+          "definition": "কী (Key) তে ভ্যালু না থাকলে সেট করতে",
+          "code": "SETNX <key> <value>"
+        },
+        {
+          "definition": "নির্দিষ্ট সময়ের মধ্যে কী (Key) মুছে ফেলার জন্য",
+          "code": "EXPIRE <key> <Seconds>"
+        },
+        {
+          "definition": "সংযুক্ত বর্তমান ডাটাবেস থেকে সমস্ত কী (Key) মুছে দিতে",
+          "code": "FLUSHDB"
+        },
+        {
+          "definition": "সমস্ত ডাটাবেস থেকে সমস্ত কী(Key) মুছে দিতে",
+          "code": "FLUSHALL"
+        },
+        {
+          "definition": "সক্রিয় সংযোগ গুলো দেখতে",
+          "code": "CLIENT LIST"
+        }
+      ]
+    }
+  ]
+}

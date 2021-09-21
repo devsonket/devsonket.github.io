@@ -31,8 +31,11 @@
                 {
                     "definition": "List of all ডকার কন্টেইনার even not running",
                     "code": "docker ps -a"
+                },
+                {
+                    "definition": "শো all রানিং ডকার কন্টাইনের id-s ",
+                    "code": "docker ps -q"
                 }
-
             ]
         }, 
         {
@@ -69,6 +72,14 @@
                     "code": "docker stop <container_id>"
                 },
                 {
+                    "definition": "সব ডকার কন্টেইনার stop করতে",
+                    "code": "docker kill $(docker ps -q)"
+                },
+                {
+                    "definition": "সব ডকার কন্টেইনার remove করতে",
+                    "code": "docker rm $(docker ps -a -q)"
+                },
+                {
                     "definition": "ডকার কন্টেইনার remove করতে",
                     "code": "docker rm <container_id>"
                 },
@@ -89,6 +100,14 @@
                 {
                     "definition": "ডকার ইমেজ remove করতে",
                     "code": "docker rmi <image_id>"
+                },
+                {
+                    "definition": "সব ডকার ইমেজ remove করতে",
+                    "code": "docker rmi $(docker images -q)"
+                },
+                {
+                    "definition": "ডকার ইমেজ রিপোজিটরি/ট্যাঁগ নেইম change করতে",
+                    "code": "docker image tag <old repository name>:<old tag name> <new repository name>:<new tag name>"
                 }
 
             ]

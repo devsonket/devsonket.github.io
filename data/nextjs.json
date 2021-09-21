@@ -1,0 +1,165 @@
+{
+   "id":"nextjs",
+   "title":"নেক্সট জেএস",
+   "slug":"next-js",
+   "description":"নেক্সট জেএস হচ্ছে একটি প্রোডাকশন রেডী রিয়্যাক্ট ফ্রেমওয়ার্ক যেটা দিয়ে খুব সহজেই স্ট্যাটিক সাইট বা সার্ভার সাইড রেন্ডারড এপ্লিকেশন বানানো যায়",
+   "colorPref":"#1d1f21",
+   "contents":[
+      {
+         "title":"প্রাথমিক কমান্ড সমূহ",
+         "items":[
+            {
+               "definition":"একটি ফ্রেশ নেক্সট জেএস প্রজেক্ট তৈরি করার জন্য (npm)",
+               "code":"npx create-next-app project-name"
+            },
+            {
+               "definition":"একটি ফ্রেশ নেক্সট জেএস প্রজেক্ট তৈরি করার জন্য (yarn)",
+               "code":"yarn create next-app project-name"
+            },
+            {
+               "definition":"নেক্সট জেএস লোকাল ডেভেলপমেন্ট সার্ভার রান করার জন্য",
+               "code":"npm run dev"
+            },
+            {
+               "definition":"নেক্সট জেএস প্রোডাকশন সাইট বিল্ড করার জন্য",
+               "code":"npm run build"
+            },
+            {
+               "definition":"নেক্সট জেএস প্রোডাকশন সার্ভার রান করার জন্য",
+               "code":"npm run start"
+            },
+            {
+               "definition":"নেক্সট জেএস স্ট্যাটিক সাইটের আউটপুট তৈরি করা জন্য",
+               "code":"npm run export"
+            },
+            {
+               "definition":"নেক্সট জেএস CLI কামান্ড সূমহ দেখার জন্য",
+               "code":"npx next -h"
+            },
+            {
+               "definition":"নেক্সট জেএস ডেভেলপমেন্ট সার্ভার স্পেসিফিক পোর্টে রান করার জন্য",
+               "code":"npm run dev -- -p 8000"
+            }
+         ]
+      },
+      {
+         "title":"নেক্সট জেএস Data Fetching ফাংশন (প্রয়োজনীয় ফাংশন page থেকে async ফাংশন হিসাবে export করতে হবে)",
+         "items":[
+            {
+               "definition":"এই ফাংশন টি স্ট্যাটিক সাইট জেনারেশনের জন্য।এই ফাংশন build time এ ডাটা fetch করবে এবং প্যারামিটার হিসাবে context গ্রহন করবে",
+               "code":"getStaticProps"
+            },
+            {
+               "definition":"এই ফাংশন টি স্ট্যাটিক সাইট জেনারেশনের জন্য।এই ফাংশন build time এ dynamic route এর জন্য ডাটা fetch করে স্ট্যাটিক HTML পেজ রেন্ডার করবে। এই ফাংশনের কোন প্যারামিটার নেই",
+               "code":"getStaticPaths"
+            },
+            {
+               "definition":"এই ফাংশন টি সার্ভার সাইড রেন্ডারিং এর জন্য।এই ফাংশন টি প্রতিটি request এ ডাটা fetch করে পেজ রেন্ডার করবে।এই ফাংশন প্যারামিটার হিসাবে context গ্রহন করবে",
+               "code":"getServerSideProps"
+            }
+         ]
+      },
+      {
+         "title":"নেক্সট জেএস Data Fetching ফাংশন getStaticProps(SSG) এর প্যারামিটার context অবজেক্ট এর বিষয়ে আরো তথ্য",
+         "items":[
+            {
+               "definition":"এই প্রপার্টি মূলত dynamic রাউটের জন্য রাউট প্যারামিটার ধারন করে",
+               "code":"params"
+            },
+            {
+               "definition":"প্রিভিউ প্রপার্ট পেজটি প্রিভিউ মুডে আছে কিনা সেটা নির্দেশ করে। এটির ভ্যালু বুলিয়ান",
+               "code":"preview"
+            }
+         ]
+      },
+      {
+         "title":"নেক্সট জেএস Data Fetching ফাংশন getServerSideProps(SSR) এর প্যারামিটার context অবজেক্ট এর বিষয়ে আরো তথ্য",
+         "items":[
+            {
+               "definition":"এই প্রপার্টি মূলত dynamic রাউটের জন্য রাউট প্যারামিটার ধারন করে",
+               "code":"params"
+            },
+            {
+               "definition":"এটি এইচটিটিপি ইনকামিং রিকুয়েস্ট অবজেক্ট। নোড জেএস req অবজেক্টএর মতই সমস্ত রিকুয়েস্ট সম্পর্কিত তথ্য এই অবজেক্ট এ থাকে",
+               "code":"req"
+            },
+            {
+               "definition":"এটি এইচটিটিপি রেসপন্স অবজেক্ট। নোড জেএস res অবজেক্টএর মতই প্রোপার এইচটিটিপি resonse তৈরি করার জন্য ব্যাবহার হয়",
+               "code":"res"
+            },
+            {
+               "definition":"এটি কুয়েরি স্ট্রিং। এট কুয়েরি স্ট্রিং পার্স করার জন্য ব্যাবহার করা হয়",
+               "code":"query"
+            }
+         ]
+      },
+      {
+         "title":"নেক্সট জেএস Data Fetching ফাংশন getStaticProps(SSG) থেকে একটি অবজেক্ট রিটার্ন করতে হবে। অবজেক্টে যা যা থাকতে হবে",
+         "items":[
+            {
+               "definition":"এটি অবজেক্টের আবশ্যক প্রপার্টি। এর প্রপার্টির মধ্যে পেজের জন্য প্রয়োজনীয় ডাটা আপনার ইচ্ছা মত ডাটা স্ট্রাকচারে রিটার্ন করতে পারবেন",
+               "code":"props"
+            },
+            {
+               "definition":"এটি অবজেক্টের ঐচ্ছিক প্রপার্টি। এর প্রপার্টির মধ্যে আপনি সময় বলে দিতে পারেন সেকেন্ডে নেক্সট সেই সময় পর পর পেজ আবার তৈরি করবে",
+               "code":"revalidate"
+            }
+         ]
+      },
+      {
+         "title":"নেক্সট জেএস Data Fetching ফাংশন getStaticProps(SSG) থেকে একটি অবজেক্ট রিটার্ন করতে হবে। অবজেক্টে যা যা থাকতে হবে",
+         "items":[
+            {
+               "definition":"এটি অবজেক্টের আবশ্যক প্রপার্টি। এর প্রপার্টি থেকে আপনাকে এক টী আবজেক্টের অ্যারে রিটার্ন করতে হবে। প্রতিটি অবজেক্টে অবশ্যই এক টি প্রপার্টি থাকতে হবে params যেটি সাধারনত আপনার রিসোর্সের আইডেন্টিফাইয়ার হিসেবে কাজ করে। উদাহারনঃ {paths: [{ params: { id:1 } }] }",
+               "code":"paths"
+            },
+            {
+               "definition":"এটি অবজেক্টের ঐচ্ছিক প্রপার্টি। এটি বুলিয়ান ভ্যালু হতে হবে যদি false রিটার্ন করা হয় তাহলে রিসোর্সের জন্য পেজ না থাকলে 404 পেজ রিটার্ন করবে, আর true রিটার্ন করলে রিসোর্স ফেচ করে পেজ রেন্ডার করে রিটার্ন করবে",
+               "code":"fallback"
+            }
+         ]
+      },
+      {
+         "title":"নেক্সট জেএস Data Fetching ফাংশন getServerSideProps(SSR) থেকে একটি অবজেক্ট রিটার্ন করতে হবে। অবজেক্টে যা যা থাকতে হবে",
+         "items":[
+            {
+               "definition":"এটি অবজেক্টের আবশ্যক প্রপার্টি। এর প্রপার্টির মধ্যে পেজের জন্য প্রয়োজনীয় ডাটা আপনার ইচ্ছা মত ডাটা স্ট্রাকচারে রিটার্ন করতে পারবেন",
+               "code":"props"
+            }
+         ]
+      },
+      {
+         "title":"প্রয়োজনীয় লিঙ্ক সমূহ",
+         "items":[
+            {
+               "definition":"নেক্সট জেএস রাউটার",
+               "code":"https://nextjs.org/docs/api-reference/next/router"
+            },
+            {
+               "definition":"নেক্সট জেএস লিংক",
+               "code":"https://nextjs.org/docs/api-reference/next/link"
+            },
+            {
+               "definition":"নেক্সট জেএস ইমেজ",
+               "code":"https://nextjs.org/docs/api-reference/next/image"
+            },
+            {
+               "definition":"নেক্সট জেএস হেড",
+               "code":"https://nextjs.org/docs/api-reference/next/head"
+            },
+            {
+               "definition":"নেক্সট জেএস হেড",
+               "code":"https://nextjs.org/docs/api-reference/next/head"
+            },
+            {
+               "definition":"নেক্সট জেএস হেড",
+               "code":"https://nextjs.org/docs/api-reference/next/head"
+            },
+            {
+               "definition":"নেক্সট জেএস কনফিগ",
+               "code":"https://nextjs.org/docs/api-reference/next.config.js/introduction"
+            }
+         ]
+      }
+   ]
+}
