@@ -2,7 +2,7 @@
   "id":"git-cheat-sheet",
   "title":"গিট",
   "slug":"git-cheat-sheet",
-  "description":"গিট হচ্ছে ভার্সন কন্ট্রোল সিস্টেম।  ডেভেলপাররা সাধারণত প্রজেক্টের ভার্সন কন্ট্রোল এবং একই প্রজেক্টে একের অধিক ডেভেলপার কাজ করার জন্য গিট ব্যবহার করে। ",
+  "description":"গিট হচ্ছে ভার্সন কন্ট্রোল সিস্টেম। ডেভেলপাররা সাধারণত প্রজেক্টের ভার্সন কন্ট্রোল এবং একই প্রজেক্টে একের অধিক ডেভেলপার কাজ করার জন্য গিট ব্যবহার করে।",
   "colorPref":"#000",
   "contents":[
     {
@@ -151,6 +151,10 @@
           "code":"git commit -am \"Message\""
         },
         {
+          "definition":"নির্দিষ্ট কমিট দেখা",
+          "code":"git show {commit-id}"
+        },
+        {
           "definition":"সমস্ত পরিবর্তন আপডেট করতে",
           "code":"git add -u"
         },
@@ -189,7 +193,7 @@
       "items":[
         {
           "definition":"কমিট প্রত্যাবর্তন করা",
-          "code":"git revert 073791e7dd71b90daa853b2c5acc2c925f02dbc6 OR git revert <commit hash>"
+          "code":"git revert {commit-id} OR git revert <commit hash>"
         },
         {
           "definition":"নির্দিষ্ট কমিট প্রত্যাবর্তন করা",
@@ -197,7 +201,7 @@
         },
         {
           "definition":"সফট রিসেট (move HEAD only; neither staging nor working dir is changed)",
-          "code":"git reset --soft 073791e7dd71b90daa853b2c5acc2c925f02dbc6"
+          "code":"git reset --soft {commit-id}"
         },
         {
           "definition":"শেষ কমিট থেকে stage এরিয়া তে মুভ করা",
@@ -205,11 +209,11 @@
         },
         {
           "definition":"মিক্সেড রিসেট (move HEAD and change staging to match repo; does not affect working dir)",
-          "code":"git reset --mixed 073791e7dd71b90daa853b2c5acc2c925f02dbc6"
+          "code":"git reset --mixed {commit-id}"
         },
         {
           "definition":"হার্ড রিসেট (move HEAD and change staging dir and working dir to match repo)",
-          "code":"git reset --hard 073791e7dd71b90daa853b2c5acc2c925f02dbc6"
+          "code":"git reset --hard {commit-id}"
         },
         {
           "definition":"শেষ কমিট ডিলেট করা",
@@ -312,7 +316,7 @@
         },
         {
           "definition":"স্পেসিফিক একটি কমিট মার্জ করতে",
-          "code":"git cherry-pick 073791e7"
+          "code":"git cherry-pick {commit-id}"
         },
         {
           "definition":"রিবেস",
@@ -418,7 +422,7 @@
         },
         {
           "definition":"কমিটগুলোর স্ট্যাটাস এবং সামারি শো করতে",
-          "code":"git log --stat --summary"
+          "code":"git log --stat \",\" git log --stat --summary"
         },
         {
           "definition":"কমিটগুলোর হিস্ট্রি গ্রাফ আকারে শো করতে",
@@ -455,15 +459,15 @@
         },
         {
           "definition":"কমিটগুলো তুলনা করতে",
-          "code":"git diff 6eb715d git diff 6eb715d..HEAD git diff 6eb715d..537a09f"
+          "code":"git diff {commit-id} git diff {commit-id}..HEAD git diff {commit-id}..{commit-id}"
         },
         {
           "definition":"ফাইল এর কমিটগুলো তুলনা করতে",
-          "code":"git diff 6eb715d index.html git diff 6eb715d..537a09f index.html"
+          "code":"git diff {commit-id} index.html git diff {commit-id}..{commit-id} index.html"
         },
         {
           "definition":"দরকারী তুলনা",
-          "code":"git diff --stat --summary 6eb715d..HEAD"
+          "code":"git diff --stat --summary {commit-id}..HEAD"
         },
         {
           "definition":"ব্ল্যাম",
