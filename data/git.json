@@ -192,6 +192,10 @@
           "code":"git revert 073791e7dd71b90daa853b2c5acc2c925f02dbc6 OR git revert <commit hash>"
         },
         {
+          "definition":"সর্বশেষ কমিট প্রত্যাবর্তন করা",
+          "code":"git revert HEAD"
+        },
+        {
           "definition":"নির্দিষ্ট কমিট প্রত্যাবর্তন করা",
           "code":"git revert -n <commit hash>"
         },
