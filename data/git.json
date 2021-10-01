@@ -450,6 +450,10 @@
           "code":"git diff --staged"
         },
         {
+          "definition":"সর্বশেষ কমিটের আগের কমিট ও সর্বশেষ কমিটের মাঝে তুলনা করতে",
+          "code":" git diff HEAD^ HEAD"
+        },
+        {
           "definition":"ব্রাঞ্চগুলো তুলনা করতে",
           "code":"git diff main..branchname"
         },
