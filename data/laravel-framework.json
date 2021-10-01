@@ -500,6 +500,18 @@
                 "definition": "ব্লেডে ডাটা সেন্ড করতে",
                 "code": "return view('index', compact('title', 'client')), return view('index')->with('title', $title)->with('client', $client), return view('index',['title'=>$title,'client'=>$client]"
             }
+            ,{
+                "definition": "রিকুয়েস্ট থেকে ডাটা চেক করে ডাটা নিতে",
+                "code": "$request->has('value') ? $request->value : 'default', $request->get('value', 'default') "
+            }
+            ,{
+                "definition": "ডাটাবেজ এ কন্ডিশন দিয়ে ডাটা বের করতে",
+                "code": "->where('column', '=', 1), ->where('column', 1), ->whereColumn(1)"
+            }
+            ,{
+                "definition": "web.php Route ফাইলে কন্টোলার ইমপোর্ট এর সর্টকার্ট",
+                "code": "App/Http/Controllers/{ 1st controller, 2nd controller, 3rd controller}"
+            }
         ]
         }
     ]
