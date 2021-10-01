@@ -508,6 +508,10 @@
                 "definition": "ডাটাবেজ এ কন্ডিশন দিয়ে ডাটা বের করতে",
                 "code": "->where('column', '=', 1), ->where('column', 1), ->whereColumn(1)"
             }
+            ,{
+                "definition": "web.php Route ফাইলে কন্টোলার ইমপোর্ট এর সর্টকার্ট",
+                "code": "App/Http/Controllers/{ 1st controller, 2nd controller, 3rd controller}"
+            }
         ]
         }
     ]
