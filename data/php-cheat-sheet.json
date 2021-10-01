@@ -221,6 +221,51 @@
           "code":"explode ( string $separator , array $array )"
         }
       ]
+    },
+    {
+      "title":"কমান্ড লাইনে ব্যবহৃত প্রয়োজনীয় কিছু কমান্ডস",
+      "items":[
+        {
+          "definition":"হেল্প কমান্ডস গুলো দেখার জন্য",
+          "code":"php -h"
+        },
+        {
+          "definition":".ini কনফিগারেশন ফাইল গুলো পেতে",
+          "code":"php --ini"
+        },
+        {
+          "definition":"PHP এর কি কি মডিউল বা এক্সটেশন ইনস্টল করা আছে",
+          "code":"php -m"
+        },
+        {
+          "definition":"PHP এর কোন একটা মডিউল ইনস্টল করা আছে কিনা তা চেক করার জন্য",
+          "code":"php -m | grep zip"
+        },
+        {
+          "definition":"PHP এর বিস্তারিত কনফিগারেশন বা ইনফো দেখার জন্য",
+          "code":"php -i"
+        },
+        {
+          "definition":"বিল্টইন ওয়েব সার্ভার রান করার জন্য",
+          "code":"php -S localhost:8000"
+        },
+        {
+          "definition":"কোন ফাইল রান/এক্সিকিউট করার জন্য",
+          "code":"php -f file_path/test.php"
+        },
+        {
+          "definition":"রান টাইমে মেমোরি বাড়ানোর জন্য",
+          "code":"php -d memory_limit=-1 artisan migrate"
+        },
+        {
+          "definition":"বিল্টইন ভ্যারিএবল এর মান জানতে",
+          "code":"php -i | grep variable_name যেমন: php -i | grep upload_max_filesize"
+        },
+        {
+          "definition":"ইরোর লগ ফাইলের লোকেশন জানতে",
+          "code":"php -i | grep error_log"
+        }
+      ]
     }
   ]
 }
