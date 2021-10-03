@@ -333,22 +333,38 @@
                 "definition": "ডিলিট করার জন্য",
                 "code": "DB::table('users')->where('votes', '<', 100)->delete();"
             }]
-        },
-         {
+            },
+            {
             "title": "বেসিক ডাটাবেস ব্যবহার - ও আর এম (ORM)",
             "items": [{
                 "definition": "একটি  নির্দিষ্ট মডেলের সকল ডেটা নিয়ে আসতে চাইলে ",
                 "code": "Model::all();"
-            }, {
+            },
+            {
+                "definition": "একটি  নির্দিষ্ট মডেলের সকল ডেটা হতে সিলেকটেড কলাম রিটার্ন এর জন্য",
+                "code": "Model::all(['id', 'name', 'email']);"
+            },
+            {
                 "definition": "একটি  নির্দিষ্ট মডেলের কন্ডিশন অনুযায়ী ডেটা নিয়ে আসতে  চাইলে",
                 "code": "Model::where('columnName','matchingValue')->get();"
             },{
                 "definition": "মডেলের প্রথম ডেটা নিয়ে আসতে চাইলে ",
                 "code": "Model::first();"
+            },{
+                "definition": "মডেলের প্রথম ডেটা নিয়ে আসা বা ডাটা না পেলে ৪০৪ এ রিটার্ন করা ",
+                "code": "Model::firstOrFail();"
             },
             {
                 "definition": "কোন মডেলের আইডি দিয়ে খুঁজে বের করার জন্য  ",
                 "code": "Model::find(yourId);"
+            },
+            {
+                "definition": "আইডি দিয়ে মাল্টিপাল মডেল খুঁজে বের করার জন্য  ",
+                "code": "Model::find([1,2,3]);"
+            },
+            {
+                "definition": "কোন মডেলের আইডি দিয়ে খুঁজে বের করা এবং ডাটা না পেলে ৪০৪ এ রিটার্ন করার জন্য  ",
+                "code": "Model::findOrFail(yourId);"
             },
             {
                 "definition": "মডেলের কতগুলা ডেটা ফিরে আসলো তা গুনতে হলে ",
@@ -393,6 +409,14 @@
             {
                 "definition": "মডেল দিয়ে DELETE করতে চাইলে ",
                 "code": "Model::find(yourId)->delete();"
+            },
+            {
+                "definition": "মডেলর সর্বশেষ রেকর্ড গুলো পেতে চাইলে ",
+                "code": "Model::latest()->get();"
+            },
+            {
+                "definition": "মডেলর প্রবীণতম রেকর্ড গুলো পেতে চাইলে ",
+                "code": "Model::oldest()->get();"
             },
             {
                 "definition": "মডেল দিয়ে শেষের রেকর্ডটি পেতে চাইলে ",
