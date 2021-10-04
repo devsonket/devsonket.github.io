@@ -158,7 +158,7 @@
             "code": "$sum"
           }, {
             "definition": "JOIN",
-            "code": "$unwind"
+            "code": "$lookup"
           }
         ]
       }, {
