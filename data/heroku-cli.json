@@ -4,7 +4,7 @@
     "slug": "heroku-cli",
     "description": "হিরোকো(heroku) কমান্ড লাইনের হেল্প গাইড",
     "colorPref": "#645fa1",
- "contents": [
+    "contents": [
       {
         "title": "সাধারণ",
         "items": [
@@ -126,4 +126,4 @@
         ]
       }
     ]
-}
+  }
