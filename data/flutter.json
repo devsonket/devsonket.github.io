@@ -22,10 +22,6 @@
         },
         {
           "definition":"ওয়েব সাপোর্ট সহ নতুন প্রোজেক্ট বানাতে",
-          "code":"flutter devices"
-        },
-        {
-          "definition":"যেসব ডিভাইস আপনার পিসির সাথে কানেক্টেড আছে তা জানতে",
           "code":"flutter channel beta\n flutter upgrade\n flutter config --enable-web"
         },
         {
