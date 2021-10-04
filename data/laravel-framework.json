@@ -536,7 +536,16 @@
                 "definition": "web.php Route ফাইলে কন্টোলার ইমপোর্ট এর সর্টকার্ট",
                 "code": "App/Http/Controllers/{ 1st controller, 2nd controller, 3rd controller}"
             }
+            ,{
+                "definition": "কন্ট্রোলার থেকে কোথাও রিডিরেক্ট করে দিতে চাইলে",
+                "code": "redirect('/path/to/route'), redirect()->route('route-name')"
+            }
+            ,{
+                "definition": "কন্ট্রোলার থেকে ফ্ল্যাশ সেশন নিয়ে রিডাইরেক্ট করতে চাইলে",
+                "code": "redirect('/path/to/route')->with('status', 'Your post has been published successfully!')"
+            }
         ]
         }
     ]
 }
+\\
