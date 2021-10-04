@@ -65,6 +65,9 @@
         }, {
           "definition": "ইউনিট তুলনা করার জন্য",
           "code": "[ইউনিট] to [অন্য ইউনিট] যেমন: miles to km, kg to gram, 2 meter to feet"
+        }, {
+          "definition": "সময় অনুযায়ী সার্চ করার জন্য",
+          "code": "[শব্দ/বাক্য] before:yyyy-mm-dd after:yyyy-mm-dd যেমন: \"js promise\" after:2021-02-01 before:2021-02-12"
         }
       ]
     }, {
