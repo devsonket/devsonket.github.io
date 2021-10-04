@@ -45,7 +45,7 @@
             ]
         },
         {
-            "title": "ভার্টিকাল আলাইনমেন্ট",
+            "title": "ভার্টিকাল অ্যালাইনমেন্ট",
             "items": [{
                     "definition": "সব কলাম উপরে দেখানো",
                     "code": "<div class='row align-items-start'><div class='col'>...</div><div class='col'>...</div></div>"
@@ -73,7 +73,7 @@
             ]
         },
         {
-            "title": "হরিজেন্টাল আলাইনমেন্ট",
+            "title": "হরিজেন্টাল অ্যালাইনমেন্ট",
             "items": [{
                     "definition": "সব কলাম বামে দেখানো",
                     "code": "<div class='row justify-content-start'><div class='col'>...</div><div class='col'>...</div></div>"
