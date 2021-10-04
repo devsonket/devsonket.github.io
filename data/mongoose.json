@@ -34,6 +34,18 @@
         }
       ]
     },
+	{
+      "title": "মঙ্গুজ-এর মধ্যমে ডকুমেন্ট ইনসার্ট করা",
+      "items": [
+        {
+          "definition": "একটি ডকুমেন্ট সরাসরি ইনসার্ট করা",
+          "code": "modelName.create({name : 'Morol'})"
+        }, {
+          "definition": "অনেকগুলো ডকুমেন্ট সরাসরি ইনসার্ট করা",
+          "code": "modelName.insertMany([{ name: 'Morol' }, { name: 'Jinnatul' }])"
+        }
+      ]
+    },
     {
       "title": "মঙ্গুজ-এর মধ্যমে ডকুমেন্ট খোঁজা",
       "items": [
