@@ -121,7 +121,7 @@
                 },
                 {
                     "definition": "N সংখ্যক ডকার কনটেইনার run করতে",
-                    "code": "for i in {1..N}; do docker container run -d --name image$(printf \"$i\") image; done"
+                    "code": "for i in {1..N}; do docker container run -d --name image$(printf '$i') image; done"
                 },
                 {
                     "definition": "ডকার ইমেজ build করতে",
