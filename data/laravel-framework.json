@@ -244,16 +244,23 @@
             }, {
                 "definition": "রেস্টফুল কন্ট্রোলার-৩",
                 "code": "Route::resource('photo', 'PhotoController',['except' => ['update', 'destroy']]);"
-            }, {
+            },
+            {
                 "definition": "ট্রিগারিং এররস-১",
                 "code": "App::abort(404);"
-            }, {
+            },
+            {
                 "definition": "ট্রিগারিং এররস-২",
                 "code": "App::missing(function($exception){});"
             }, {
                 "definition": "ট্রিগারিং এররস-৩",
                 "code": "throw new NotFoundHttpException;"
-            }, {
+            },
+            {
+                "definition": "ট্রিগারিং এররস-4",
+                "code": "return abort(error code, error message)"
+            },
+            {
                 "definition": "রাউট প্যারামিটার-১",
                 "code": "Route::get('foo/{bar}', function($bar){});"
             }, {
