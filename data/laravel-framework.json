@@ -208,10 +208,28 @@
             "items": [{
                 "definition": "বেসিক রাউটিং-১",
                 "code": "Route::get('foo', function(){});"
-            }, {
+            },
+            {
                 "definition": "লারাভেল ৮ রাউটিং",
                 "code": "Route::get('/user', [UserController::class, 'index']);"
-            }, {
+            },
+            {
+                "definition": "লারাভেল ৮ রেস্টফুল রাউটিং",
+                "code": "Route::resource('user', UserController::class);"
+            },
+            {
+                "definition": "লারাভেল ৮ মডেল বাইন্ডিং রাউট-1",
+                "code": "Route::get('user/{user}', [UserController::class, 'show']);"
+            },
+            {
+                "definition": "লারাভেল ৮ মডেল বাইন্ডিং রাউট (with slug)-2",
+                "code": "Route::get('user/{user:slug}', [UserController::class, 'show']);"
+            },
+            {
+                "definition": "লারাভেল ৮ view routing",
+                "code": "Route::view('user/', 'blade_path');"
+            },
+            {
                 "definition": "বেসিক রাউটিং-২",
                 "code": "Route::get('foo', 'ControllerName@function');"
             }, {
