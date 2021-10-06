@@ -115,6 +115,31 @@
             "code": "ultra-condensed | extra-condensed | condensed | semi-condensed | normal | semi-expanded | expanded | extra-expanded | ultra-expanded | initial | inherit"
           }
         ]
+      },
+      {
+        "title": "ট্রানজিশন",
+        "items": [
+          {
+            "definition": "ট্রানজিশন প্রপার্টি",
+            "code": "transition | transition-delay | transition-duration | transition-property | transition-timing-function"
+          },
+          {
+            "definition": "ট্রানজিশন ডিলে ভ্যালু",
+            "code": "time (1s, 1ms etc) - কত সময় পর ট্রানজিশন ইফেক্ট শুরু হবে।"
+          },
+          {
+            "definition": "ট্রানজিশন ডিউরেশন ভ্যালু",
+            "code": "time (2s, 2ms etc) - কত সময় পর্যন্ত ট্রানজিশন ইফেক্ট চলবে।"
+          },
+          {
+            "definition": "ট্রানজিশন প্রপার্টি ভ্যালু",
+            "code": "none | all - অল এর মাধ্যমে সকল ট্রানজিশন ইফেক্ট কাজ করবে।"
+          },
+          {
+            "definition": "ট্রানজিশন-টাইমিং-ফাংশন ভ্যালু",
+            "code": "linear | ease | ease-in | ease-out | ease-in-out | step-start | step-end | steps(int,start|end) | cubic-bezier(n,n,n,n) | initial | inherit"
+          }
+        ]
       }
     ]
   }
