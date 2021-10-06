@@ -59,6 +59,24 @@ flutter channel
 ```bash
 flutter channel dev/master/stable/beta
 ```
+নতুন প্রোজেক্ট ক্রিয়েট, এনালাইজ, টেস্ট, রান করতে
+```bash
+ flutter create my_app
+ cd my_app
+ flutter analyze
+ flutter test
+ flutter run lib/main.dart
+```
+ফ্লাটার প্যাকেজ গেট এবং আপগ্রেড করতে
+```bash
+ flutter pub get
+ flutter pub outdated
+ flutter pub upgrade
+```
+ফ্লাটার যতগুলো কমান্ড সাপোর্ট করে তা দেখতে
+```bash
+flutter --help --verbose
+```
 ```
 ## Hello world
 
