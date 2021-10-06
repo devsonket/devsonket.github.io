@@ -96,7 +96,7 @@
           },
           {
             "definition": "ফন্ট ওয়েট ভ্যালু",
-            "code": "normal | bold | bolder | lighter | number | initial | inherit"
+            "code": "normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | initial | inherit"
           },
           {
             "definition": "ফন্ট সাইজ ভ্যালু",
