@@ -252,6 +252,10 @@
         {
           "definition":".gz ফাইলকে এক্সট্রাক্ট করতে",
           "code":"tar xzf file.tar.gz"
+        },
+        {
+          "definition": "কোনো ফাইল খোঁজার জন্য",
+          "code": "find /example/path -type f -name file_name.txt"
         }
       ]
     },
