@@ -1,0 +1,97 @@
+{
+  "id": "homebrew",
+  "title": "Homebrew এর কমান্ড",
+  "slug": "Homebrew",
+  "description": "হোমব্রু একটি ফ্রি এবং ওপেন সোর্স সফটওয়্যার প্যাকেজ ম্যানেজমেন্ট সিস্টেম যা অ্যাপলের অপারেটিং সিস্টেম, ম্যাকওএস এবং লিনাক্সে সফটওয়্যার ইনস্টলেশন সহজ করে।",
+  "colorPref": "#000",
+  "contents": [
+    {
+      "title": "Homebrew এর কমান্ড সমূহ",
+      "items": [
+        {
+          "definition": "ইন্সটল",
+          "code": "brew install [FORMULA|CASK...]"
+        },
+        {
+          "definition": "বর্ণনা",
+          "code": "brew search TEXT|/REGEX/"
+        },
+        {
+          "definition": "বর্ণনা",
+          "code": "brew info [FORMULA|CASK...]"
+        },
+        {
+          "definition": "বর্ণনা",
+          "code": "brew update"
+        },
+        {
+          "definition": "বর্ণনা",
+          "code": " brew upgrade [FORMULA|CASK...]"
+        },
+        {
+          "definition": "বর্ণনা",
+          "code": "brew uninstall [FORMULA|CASK...]"
+        },
+        {
+          "definition": "বর্ণনা",
+          "code": "brew list [FORMULA|CASK...]"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "items": [
+        {
+          "definition": "কাজের বিবরণ",
+          "code": "brew config"
+        },
+        {
+          "definition": "কাজের বিবরণ",
+          "code": " brew doctor"
+        },
+        {
+          "definition": "কাজের বিবরণ",
+          "code": "brew install --verbose --debug FORMULA|CASK"
+        },
+        {
+          "definition": "কাজের বিবরণ",
+          "code": "কোড"
+        },
+        {
+          "definition": "কাজের বিবরণ",
+          "code": "কোড"
+        }
+      ]
+    },
+    {
+      "title": "Contributing",
+      "items": [
+        {
+          "definition": "রেন্ডারিং এর আগে",
+          "code": "brew create URL [--no-fetch]"
+        },
+        {
+          "definition": "কম্পোনেন্ট মাউন্ট হওয়ার আগে",
+          "code": "brew edit [FORMULA|CASK...]"
+        }
+      ]
+    },
+    {
+      "title": "help",
+      "items": [
+        {
+          "definition": "",
+          "code": "brew commands"
+        },
+        {
+          "definition": "সাহায্য",
+          "code": "brew help [COMMAND]"
+        },
+        {
+          "definition": "",
+          "code": "man brew"
+        }
+      ]
+    }
+  ]
+}
