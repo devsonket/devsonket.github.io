@@ -9,88 +9,76 @@
       "title": "Homebrew এর কমান্ড সমূহ",
       "items": [
         {
-          "definition": "ইন্সটল",
+          "definition": "হোমব্রু ইন্সটল ফর্মুলা/কাস্ক",
           "code": "brew install [FORMULA|CASK...]"
         },
         {
-          "definition": "বর্ণনা",
+          "definition": "হোমব্রু নতুন ফরমুলা/কাস্ক খোঁজা",
           "code": "brew search TEXT|/REGEX/"
         },
         {
-          "definition": "বর্ণনা",
+          "definition": "হোমব্রু ফর্মুলা/কাস্ক সম্বন্ধে জানা",
           "code": "brew info [FORMULA|CASK...]"
         },
         {
-          "definition": "বর্ণনা",
+          "definition": "হোমব্রু হালনাগাদ করা",
           "code": "brew update"
         },
         {
-          "definition": "বর্ণনা",
+          "definition": "হোমব্রু আপগ্রেড",
           "code": " brew upgrade [FORMULA|CASK...]"
         },
         {
-          "definition": "বর্ণনা",
+          "definition": "হোমব্রু আনইনস্টল ফর্মুলা/কাস্ক",
           "code": "brew uninstall [FORMULA|CASK...]"
         },
         {
-          "definition": "বর্ণনা",
+          "definition": "হোমব্রু ইন্সটলেড ফর্মুলা/কাস্ক লিস্ট",
           "code": "brew list [FORMULA|CASK...]"
         }
       ]
     },
     {
-      "title": "Troubleshooting",
+      "title": "সমস্যা সমাধান",
       "items": [
         {
-          "definition": "কাজের বিবরণ",
+          "definition": "হোমব্রু config",
           "code": "brew config"
         },
         {
-          "definition": "কাজের বিবরণ",
+          "definition": "হোমব্রু doctor",
           "code": " brew doctor"
         },
         {
-          "definition": "কাজের বিবরণ",
+          "definition": "হোমব্রু ডিবাগিং ইনফরম্যাশন",
           "code": "brew install --verbose --debug FORMULA|CASK"
-        },
-        {
-          "definition": "কাজের বিবরণ",
-          "code": "কোড"
-        },
-        {
-          "definition": "কাজের বিবরণ",
-          "code": "কোড"
         }
       ]
     },
     {
-      "title": "Contributing",
+      "title": "অবদান",
       "items": [
         {
-          "definition": "রেন্ডারিং এর আগে",
+          "definition": "নতুন হোমব্রু তৈরি",
           "code": "brew create URL [--no-fetch]"
         },
         {
-          "definition": "কম্পোনেন্ট মাউন্ট হওয়ার আগে",
+          "definition": "হোমব্রু সম্পাদন",
           "code": "brew edit [FORMULA|CASK...]"
         }
       ]
     },
     {
-      "title": "help",
+      "title": "সাহায্য",
       "items": [
         {
-          "definition": "",
+          "definition": "হোমব্রু কমান্ড গুলো দেখা",
           "code": "brew commands"
         },
         {
-          "definition": "সাহায্য",
+          "definition": "হোমব্রু সাহায্য",
           "code": "brew help [COMMAND]"
-        },
-        {
-          "definition": "",
-          "code": "man brew"
-        }
+        }†
       ]
     }
   ]
