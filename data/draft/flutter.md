@@ -59,6 +59,10 @@ flutter channel
 ```bash
 flutter channel dev/master/stable/beta
 ```
+ফ্লাটার লগস
+```bash
+flutter logs -d <device-id>
+```
 নতুন প্রোজেক্ট ক্রিয়েট, এনালাইজ, টেস্ট, রান করতে
 ```bash
  flutter create my_app
@@ -151,6 +155,45 @@ class _WidgetWithStateState extends State<WidgetWithState> {
         FlatButton(onPressed: decrement, child: Text('Decrement')),
         Text(counter.toString()),
       ],
+    );
+  }
+}
+```
+## Basic Navigation
+```dart
+class FirstPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: RaisedButton(
+          child: Text('Go to second page'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => SecondPage(),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class SecondPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: RaisedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text('Go back!'),
+        ),
+      ),
     );
   }
 }
