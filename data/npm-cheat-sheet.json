@@ -6,14 +6,14 @@
   "colorPref": "#3A241D",
   "contents": [
     {
-      "title": "এনপিএম কমান্ডস",
+      "title": "এনপিএম সাধারন কমান্ডস",
       "items": [
         {
-          "definition": "node ভার্শন",
+          "definition": "node এর ভার্শন দেখা",
           "code": "node -v"
         },
         {
-          "definition": "npm ভার্শন",
+          "definition": "npm এর ভার্শন দেখা",
           "code": "npm -v"
         },
         {
@@ -25,8 +25,41 @@
           "code": "npm init"
         },
         {
+          "definition": "npm.com এ অ্যাকাউন্ট ক্রিয়েট",
+          "code": "npm adduser"
+        },
+        {
+          "definition": "npm.com এ অ্যাকাউন্ট লগইন",
+          "code": "npm login"
+        },
+        {
+          "definition": "পাবলিশিং প্যাকেজ আপডেট করতে",
+          "code": "npm version <major/minor/patch>"
+        },
+        {
+          "definition": "এনপিএম কনফিগারেশন ফাইল ম্যানেজ করা",
+          "code": "npm config"
+        },
+        {
+          "definition": "কোন কমান্ডের হেল্প সংক্ষেপে পাওয়ার জন্য",
+          "code": "npm <command> -h যেমন: npm install -h"
+        },
+        {
+          "definition": "কোন কমান্ডের হেল্প বিশদভাবে পাওয়ার জন্য",
+          "code": "npm help <command> যেমন: npm help install"
+        },
+        {
+          "definition": "সকল কমান্ড লিস্ট এবং ব্যবহার অনুযায়ী দেখার জন্য",
+          "code": "npm -l"
+        }
+      ]
+    },
+    {
+      "title": "এনপিএম প্যাকেজ ইনস্টল সম্পর্কিত কমান্ডস",
+      "items": [
+        {
           "definition": "package.json ফাইলের সকল ডিপেন্ডেন্সি ইন্সটল করা",
-          "code": "npm install অথবা npm i " 
+          "code": "npm install অথবা npm i অথবা npm add" 
         },
         {
           "definition": "package.json ফাইলের সকল ডিপেন্ডেন্সি ইন্সটল করা, ডেভ ডিপেন্ডেন্সি ছাড়া",
@@ -51,7 +84,41 @@
         {
           "definition": "ডেভ ডিপেনডেন্সি হিসেবে প্যাকেজ ইনস্টল করা",
           "code": "npm i -D <package-name>"
+        }
+      ]
+    },
+    {
+      "title": "এনপিএম প্যাকেজ আপডেট ও রিমুভ সম্পর্কিত কমান্ডস",
+      "items": [
+        {
+          "definition": "লোকাল প্যাকেজ সমূহ আপডেট করতে",
+          "code": "npm update"
         },
+        {
+          "definition": "লোকাল ডেভ প্যাকেজ সমূহ আপডেট করতে",
+          "code": "npm update --dev"
+        },
+        {
+          "definition": "গ্লোবাল প্যাকেজ সমূহ আপডেট করতে",
+          "code": "npm update -g"
+        },
+        {
+          "definition": "নির্দিষ্ট প্যাকেজ উপডেট করতেে",
+          "code": "npm update <package-name>"
+        },
+        {
+          "definition": "লোকাল প্যাকেজ আনইনস্টল করতে",
+          "code": "npm un <package-name>"
+        },
+        {
+          "definition": "গ্লোবাল প্যাকেজ আনইনস্টল করতে",
+          "code": "npm un -g <package-name>"
+        }
+      ]
+    },
+    {
+      "title": "এনপিএম প্যাকেজ লিস্ট সম্পর্কিত কমান্ডস",
+      "items": [
         {
           "definition": "লোকালি ইনস্টল্ড সকল ডিপেনডেন্সি, ডেভডিপেনডেন্সি এবং ডিপেনডেন্সির ডিপেনডেন্সির লিস্ট ও ভার্শন",
           "code": "npm list"
@@ -95,42 +162,6 @@
         {
           "definition": "npm-check-updates cli এর মাধ্যমে আউটডেটেড প্যাকেজ সমূহ চেক",
           "code": "ncu"
-        },
-        {
-          "definition": "লোকাল প্যাকেজ সমূহ আপডেট করতে",
-          "code": "npm update"
-        },
-        {
-          "definition": "লোকাল ডেভ প্যাকেজ সমূহ আপডেট করতে",
-          "code": "npm update --dev"
-        },
-        {
-          "definition": "গ্লোবাল প্যাকেজ সমূহ আপডেট করতে",
-          "code": "npm update -g"
-        },
-        {
-          "definition": "নির্দিষ্ট প্যাকেজ উপডেট করতেে",
-          "code": "npm update <package-name>"
-        },
-        {
-          "definition": "লোকাল প্যাকেজ আনইনস্টল করতে",
-          "code": "npm un <package-name>"
-        },
-        {
-          "definition": "গ্লোবাল প্যাকেজ আনইনস্টল করতে",
-          "code": "npm un -g <package-name>"
-        },
-        {
-          "definition": "npm.com এ অ্যাকাউন্ট ক্রিয়েট",
-          "code": "npm adduser"
-        },
-        {
-          "definition": "npm.com এ অ্যাকাউন্ট লগইন",
-          "code": "npm login"
-        },
-        {
-          "definition": "পাবলিশিং প্যাকেজ আপডেট করতে",
-          "code": "npm version <major/minor/patch>"
         }
       ]
     }

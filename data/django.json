@@ -58,6 +58,10 @@
           "code": "pip install <package_name>"
         },
         {
+          "definition": "রিকোয়ারমেন্ট ফাইল থেকে প্যাকেজ ডিপেন্ডেসি ইন্সটল করা",
+          "code": "pip install -r requirements.txt"
+        },
+        {
           "definition": "যেকোনো প্যাকেজ ডিপেন্ডেন্সী আনইন্সটল করা",
           "code": "pip uninstall <package_name>"
         },
@@ -89,7 +93,7 @@
       "items": [
         {
           "definition": "অ্যাপ তৈরী করা",
-          "code": "python manage.py startapp <app_name>"
+          "code": "django-admin startapp <app_name>"
         },
         {
           "definition": "সব অ্যাপ মাইগ্রেশনের জন্য",
