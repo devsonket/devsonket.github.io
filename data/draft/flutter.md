@@ -59,6 +59,10 @@ flutter channel
 ```bash
 flutter channel dev/master/stable/beta
 ```
+রিয়েল ডিভাইসে টেস্টের জন্য .apk জেনারেট করতে
+```bash
+flutter build apk
+```
 ফ্লাটার লগস
 ```bash
 flutter logs -d <device-id>
@@ -80,6 +84,28 @@ flutter logs -d <device-id>
 ফ্লাটার যতগুলো কমান্ড সাপোর্ট করে তা দেখতে
 ```bash
 flutter --help --verbose
+```
+বিভিন্ন ডিভাইসের জন্য রেস্পন্সিভনেস চেক করতে
+```bash
+import 'package:device_preview/device_preview.dart';
+
+void main() => runApp(
+  DevicePreview(
+    enabled: !kReleaseMode,
+    builder: (context) => MyApp(), // Wrap your app
+  ),
+);
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      locale: DevicePreview.locale(context), // Add the locale here
+      builder: DevicePreview.appBuilder, // Add the builder here
+      home: HomePage(),
+    );
+  }
+}
 ```
 ```
 ## Hello world
