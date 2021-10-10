@@ -1,0 +1,85 @@
+{
+  "id": "homebrew",
+  "title": "Homebrew এর কমান্ড",
+  "slug": "Homebrew",
+  "description": "হোমব্রু একটি ফ্রি এবং ওপেন সোর্স সফটওয়্যার প্যাকেজ ম্যানেজমেন্ট সিস্টেম যা অ্যাপলের অপারেটিং সিস্টেম, ম্যাকওএস এবং লিনাক্সে সফটওয়্যার ইনস্টলেশন সহজ করে।",
+  "colorPref": "#000",
+  "contents": [
+    {
+      "title": "Homebrew এর কমান্ড সমূহ",
+      "items": [
+        {
+          "definition": "হোমব্রু ইন্সটল ফর্মুলা/কাস্ক",
+          "code": "brew install [FORMULA|CASK...]"
+        },
+        {
+          "definition": "হোমব্রু নতুন ফরমুলা/কাস্ক খোঁজা",
+          "code": "brew search TEXT|/REGEX/"
+        },
+        {
+          "definition": "হোমব্রু ফর্মুলা/কাস্ক সম্বন্ধে জানা",
+          "code": "brew info [FORMULA|CASK...]"
+        },
+        {
+          "definition": "হোমব্রু হালনাগাদ করা",
+          "code": "brew update"
+        },
+        {
+          "definition": "হোমব্রু আপগ্রেড",
+          "code": " brew upgrade [FORMULA|CASK...]"
+        },
+        {
+          "definition": "হোমব্রু আনইনস্টল ফর্মুলা/কাস্ক",
+          "code": "brew uninstall [FORMULA|CASK...]"
+        },
+        {
+          "definition": "হোমব্রু ইন্সটলেড ফর্মুলা/কাস্ক লিস্ট",
+          "code": "brew list [FORMULA|CASK...]"
+        }
+      ]
+    },
+    {
+      "title": "সমস্যা সমাধান",
+      "items": [
+        {
+          "definition": "হোমব্রু config",
+          "code": "brew config"
+        },
+        {
+          "definition": "হোমব্রু doctor",
+          "code": " brew doctor"
+        },
+        {
+          "definition": "হোমব্রু ডিবাগিং ইনফরম্যাশন",
+          "code": "brew install --verbose --debug FORMULA|CASK"
+        }
+      ]
+    },
+    {
+      "title": "অবদান",
+      "items": [
+        {
+          "definition": "নতুন হোমব্রু তৈরি",
+          "code": "brew create URL [--no-fetch]"
+        },
+        {
+          "definition": "হোমব্রু সম্পাদন",
+          "code": "brew edit [FORMULA|CASK...]"
+        }
+      ]
+    },
+    {
+      "title": "সাহায্য",
+      "items": [
+        {
+          "definition": "হোমব্রু কমান্ড গুলো দেখা",
+          "code": "brew commands"
+        },
+        {
+          "definition": "হোমব্রু সাহায্য",
+          "code": "brew help [COMMAND]"
+        }
+      ]
+    }
+  ]
+}
