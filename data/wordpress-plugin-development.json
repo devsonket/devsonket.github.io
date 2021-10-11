@@ -321,18 +321,31 @@
       "title": "প্লাগইন সিকিউরিটি (ভ্যালিডেশন)",
       "items": [
         {
-          "code": "isset() and empty()"
+          "definition": "Array/ Object এ কোন key সেট করা আছে কিনা চেক করতে",
+          "code": "isset()"
         },
         {
+          "definition": "Array/ Object/ String খালি কিনা চেক করতে। এটা isset() এর কাজ ও করে।",
+          "code": "empty()"
+        },
+        {
+          "definition": "String এ কত গুলো char আছে জানতে",
           "code": "mb_strlen() or strlen()"
         },
         {
-          "code": "preg_match(), strpos()"
+          "definition": "রেগুলার এক্সপ্রেশন দিয়ে কোন String থেকে Sub String বের করতে",
+          "code": "preg_match()"
+        },
+         {
+          "definition": "একটা String থেকে অন্য Sub String এর পজিশন বের করতে", 
+          "code": "strpos()"
         },
         {
+          "definition": "Array তে কত গুলো এলিমেন্ট আছে জানতে",
           "code": "count()"
         },
         {
+          "definition": "Array কিনা জানতে",
           "code": "in_array()"
         },
         {
