@@ -584,8 +584,12 @@
           "code":"git push origin main"
         },
         {
+          "definition":"বর্তমান/ Checkout/ Current ব্রাঞ্চ এ পুশ করতে",
+          "code":"git push origin HEAD"
+        },
+        {
           "definition":"ফোর্স পুশ",
-          "code":"`git push origin main --force"
+          "code":"git push origin main --force"
         },
         {
           "definition":"রিপোজিটরি থেকে নতুন চেঞ্জ গুলো পুল করা",
