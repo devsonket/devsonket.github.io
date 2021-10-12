@@ -104,6 +104,10 @@
         {
           "definition": "পিএম২ লিস্ট থেকে সকল প্রসেস আইডিকে ডিলিট করে দেয়",
           "code": "pm2 delete all"
+        },
+        {
+          "definition" : "মেমরি ৩০০ মেগাবাইট এর বেশি গেলে এপ্লিকেশন ড়িস্টার্ট নিবে"
+          "code": "pm2 start server.js --exp-backoff-restart-delay=100 --max-memory-restart 300M"
         }
       ]
     },
