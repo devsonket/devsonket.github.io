@@ -1,0 +1,147 @@
+{
+    "id": "kubernetes-cheat-sheet",
+    "title": "কুবারনেট",
+    "slug": "kubernetes-cheat-sheet",
+    "description": "কুবারনেট চিটশিট",
+    "colorPref": "#000",
+    "contents": [
+        {
+            "title": "কুবারনেট রিসউরস দেখা ও খোঁজা",
+            "items": [
+                {
+                    "definition": "সার্ভিস লিস্ট",
+                    "code": "kubectl get services"
+                },
+                {
+                    "definition": "পোড লিস্ট",
+                    "code": "kubectl get pods"
+                },
+                {
+                    "definition": "পোড ডিটেইল লিস্ট",
+                    "code": "kubectl get pods -o wide"
+                },
+                {
+                    "definition": "পোড কনফিগ",
+                    "code": "kubectl get pod my-pod -o yaml"
+                },
+                {
+                    "definition": "পোড ভলিউম",
+                    "code": "kubectl get pv --sort-by=.spec.capacity.storage"
+                },
+                {
+                    "definition": "রানিং পোড",
+                    "code": "kubectl get pods --field-selector=status.phase=Running"
+                }
+            ]
+        },
+        {
+            "title": "কুবারনেট রসদ পরিবর্তন",
+            "items": [
+                {
+                    "definition": "পোড লেবেলিং",
+                    "code": "kubectl label pods my-pod new-label=awesome"
+                },
+                {
+                    "definition": "নতুন সনক্রন দেওয়া",
+                    "code": "kubectl set image deployment/frontend www=image:v2"
+                },
+                {
+                    "definition": "সনক্রন ইতিহাস",
+                    "code": "kubectl rollout history deployment/frontend"
+                },
+                {
+                    "definition": "পূর্বের সনক্রন ফেরত",
+                    "code": "kubectl rollout undo deployment/frontend"
+                },
+                {
+                    "definition": "পূর্বের সনক্রন ফেরত",
+                    "code": "kubectl rollout undo deployment/frontend"
+                }
+            ]
+        },
+        {
+            "title": "কুবারনেট রসদ পরিবর্তন",
+            "items": [
+                {
+                    "definition": "পোড লেবেলিং",
+                    "code": "kubectl label pods my-pod new-label=awesome"
+                },
+                {
+                    "definition": "নতুন সনক্রন দেওয়া",
+                    "code": "kubectl set image deployment/frontend www=image:v2"
+                },
+                {
+                    "definition": "সনক্রন ইতিহাস",
+                    "code": "kubectl rollout history deployment/frontend"
+                },
+                {
+                    "definition": "পূর্বের সনক্রন ফেরত",
+                    "code": "kubectl rollout undo deployment/frontend"
+                },
+                {
+                    "definition": "নতুন সনক্রনের অবস্থা",
+                    "code": "kubectl rollout status -w deployment/frontend"
+                },
+                {
+                    "definition": "পছন্দের এডিটর ব্যাবহার",
+                    "code": "KUBE_EDITOR=\"nano\" kubectl edit svc/docker-registry"
+                }
+            ]
+        },
+        {
+            "title": "কুবারনেট রসদ বাড়ানো",
+            "items": [
+                {
+                    "definition": "অটো ডেপলয় বাড়ানো",
+                    "code": "kubectl autoscale deployment foo --min=2 --max=10"
+                },
+                {
+                    "definition": "রসদ কপি বাড়ানো",
+                    "code": "kubectl scale --replicas=3 rs/foo"
+                },
+                {
+                    "definition": "রসদ কপি বাড়ানো ফাইল থেকে",
+                    "code": "kubectl scale --replicas=3 -f foo.yaml"
+                },
+                {
+                    "definition": "অনেক কপি কন্ট্রোলার বাড়ানো",
+                    "code": "kubectl scale --replicas=5 rc/foo rc/bar rc/baz"
+                },
+                {
+                    "definition": "অনেক কপি কন্ট্রোলার বাড়ানো",
+                    "code": "kubectl scale --replicas=5 rc/foo rc/bar rc/baz"
+                }
+            ]
+        },
+        {
+            "title": "কুবারনেট লগ দেখা ও কমান্ড দেওয়া",
+            "items": [
+                {
+                    "definition": "একটি পডের লগ",
+                    "code": "kubectl logs my-pod"
+                },
+                {
+                    "definition": "পোড এ কমান্ড রান করা",
+                    "code": "kubectl exec my-pod -- ls /"
+                },
+                {
+                    "definition": "পোড এ কমান্ড ব্যাস করা",
+                    "code": "kubectl exec --stdin --tty my-pod -- /bin/sh"
+                }
+            ]
+        },
+        {
+            "title": "কুবারনেট পোর্ট",
+            "items": [
+                {
+                    "definition": "পডের সাথে বাইন্ড \\( ভিতর ৬০০০ বাইরে ৫০০০\\)",
+                    "code": "kubectl port-forward my-pod 5000:6000"
+                },
+                {
+                    "definition": "সার্ভিস এর সাথে বাইন্ড",
+                    "code": "kubectl port-forward svc/my-service 5000 "
+                }
+            ]
+        }
+    ]
+}
