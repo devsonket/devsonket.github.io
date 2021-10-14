@@ -442,11 +442,16 @@
             {
                 "definition": "মডেলর প্রবীণতম রেকর্ড গুলো পেতে চাইলে ",
                 "code": "Model::oldest()->get();"
-            },
-            {
+            }
+            ,{
                 "definition": "মডেল দিয়ে শেষের রেকর্ডটি পেতে চাইলে ",
                 "code": "Model::all()->last() অথবা Model::latest()->first() অথবা Model::orderBy('id', 'desc')->first()"
-            }]
+            }
+            ,{
+                "definition": "Where Method এর মাঝে 'or' পাস করা",
+                "code": "Model::where('columnName', 'value')->orWhere('columnName','value')->get();  অথবা Model::where('columnName', 'value')->where('columnName','value', 'or')->get();"
+            }
+        ]
         },
         {
             "title": "সেশন এর ব্যবহার",
