@@ -269,6 +269,15 @@
           "code":"enum Role { ADMIN = 'Admin', READ_ONLY = 300, AUTHOR = 250 }"
         }
       ]
+    },
+    {
+      "title":"ইউটিলিটি টাইপ",
+      "items":[
+        {
+          "definition":"পারশিয়াল বা আংশিক টাইপ",
+          "code":"interface Person {\n\tname: string;\n\tage: number;\n\theight: string;\n}\nconst person1:Partial<Person> = {\n\tname: 'Hridoy',\n\tage: 28\n}"
+        }
+      ]
     }
   ]
 }
