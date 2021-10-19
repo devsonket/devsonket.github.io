@@ -102,6 +102,10 @@
           "code":"cat> YourFileName"
         },
         {
+          "definition":"এক কমান্ড দিয়ে অনেকগুলো ফাইল তৈরি করা",
+          "code":"touch index.html style.css main.js"
+        },
+        {
           "definition":"ফাইল মুছে ফেলা",
           "code":"rm YourFileName"
         },
