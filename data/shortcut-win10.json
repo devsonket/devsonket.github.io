@@ -53,6 +53,10 @@
                 {
                     "definition": "টাস্ক ম্যানেজার ওপেন করা",
                     "code": "Ctrl + Alt + Del"
+                },
+                {
+                    "definition": "টাস্কগুলোর মধ্যে সুইচ করা",
+                    "code": "Alt + Tab"
                 }
             ]
         },
