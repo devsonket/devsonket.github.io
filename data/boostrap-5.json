@@ -136,23 +136,23 @@
                 },
                 {
                     "definition": "হেডিং টু",
-                    "code": "<p class='h1'>h1. Bootstrap heading</p>"
+                    "code": "<p class='h2'>h2. Bootstrap heading</p>"
                 },
                 {
                     "definition": "হেডিং থ্রি",
-                    "code": "<p class='h1'>h1. Bootstrap heading</p>"
+                    "code": "<p class='h3'>h3. Bootstrap heading</p>"
                 },
                 {
                     "definition": "হেডিং ফোর",
-                    "code": "<p class='h1'>h1. Bootstrap heading</p>"
+                    "code": "<p class='h4'>h4. Bootstrap heading</p>"
                 },
                 {
                     "definition": "হেডিং ফাইভ",
-                    "code": "<p class='h1'>h1. Bootstrap heading</p>"
+                    "code": "<p class='h5'>h5. Bootstrap heading</p>"
                 },
                 {
                     "definition": "হেডিং সিক্স ",
-                    "code": "<p class='h1'>h1. Bootstrap heading</p>"
+                    "code": "<p class='h6'>h6. Bootstrap heading</p>"
                 }
             ]
         },
