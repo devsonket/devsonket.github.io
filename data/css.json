@@ -2,11 +2,11 @@
     "id": "css",
     "title": "সিএসএস",
     "slug": "css",
-    "description": " সিএসএস এর মাধ্যমে ওয়েব পেইজের লেআউট ডিজাইন ও ওয়েব ব্রাউজারে ডকুমেন্ট কিভাবে প্রদর্শন হবে তা নির্ধারন করা হয়।",
+    "description": "সিএসএস এর মাধ্যমে ওয়েব পেইজের লেআউট ডিজাইন ও ওয়েব ব্রাউজারে ডকুমেন্ট কিভাবে প্রদর্শন হবে তা নির্ধারন করা হয়।",
     "colorPref": "#264DE4",
     "contents": [
       {
-        "title": "ব্যাসিক ধারণা",
+        "title": "প্রাথমিক ধারণা",
         "items": [
           {
             "definition": "সিনট্যাক্স সিলেক্টর",
@@ -117,7 +117,7 @@
         ]
       },
       {
-        "title": "ট্রানজিশন",
+        "title": "ট্রানজিশন এবং ট্রান্সফর্ম",
         "items": [
           {
             "definition": "ট্রানজিশন প্রপার্টি",
@@ -138,6 +138,14 @@
           {
             "definition": "ট্রানজিশন-টাইমিং-ফাংশন ভ্যালু",
             "code": "linear | ease | ease-in | ease-out | ease-in-out | step-start | step-end | steps(int,start|end) | cubic-bezier(n,n,n,n) | initial | inherit"
+          },
+          {
+            "definition": "ট্রান্সফর্ম থ্রিডি",
+            "code": "transform: translate3d(0, -350px, 0);"
+          },
+          {
+            "definition": "ট্রান্সফর্ম স্কেল",
+            "code": "transform: scale(1, 1);"
           }
         ]
       }
