@@ -57,6 +57,10 @@
                 {
                     "definition": "টাস্কগুলোর মধ্যে সুইচ করা",
                     "code": "Alt + Tab"
+                },
+                {
+                    "definition": "এড্রেসবার সিলেক্ট করা",
+                    "code": "Alt + D"
                 }
             ]
         },
@@ -195,7 +199,7 @@
                     "code": "Win + Shift + Left/Right arrow"
                 },
                 {
-                    "definition": "উইন্ডো ক্লোজ করা",
+                    "definition": "উইন্ডো ক্লোজ করা/কম্পিউটার শাট ডাউন করা",
                     "code": "Ctrl + W"
                 }
             ]
