@@ -1,0 +1,177 @@
+{
+  "id": "svelte",
+  "title": "এসভেল্ট",
+  "slug": "svelte",
+  "description": "এসভেল্ট (Svelte) হচ্ছে একটি জাভাস্ক্রিপ্ট ইউজার ইন্টারফেস তৈরির ফ্রেমওয়ার্ক, যেটি অন্যান্য UI ফ্রেমওয়ার্ক থেকে ভিন্ন, কেননা এটি ডেভলাপমেন্টের সময় আপনার কোডকে ব্রাউজারের জন্য তৈরি করে নেয়।",
+  "colorPref": "#333",
+  "contents": [
+    {
+      "title": "শুরু",
+      "items": [
+        {
+          "definition": "npx এর মাধ্যমে ইন্সটল করতে",
+          "code": "\n npx degit sveltejs/template awsome-svelte\n cd awsome-svelte\n npm install\n npm run dev"
+        },
+        {
+          "definition": "Git এর মাধ্যমে ইন্সটল",
+          "code": "\n git clone https://github.com/sveltejs/template.git awsome-svelte\n cd awsome-svelte\n npm install\n npm run dev"
+        }
+      ]
+    },
+    {
+      "title": "এসভেল্ট এর সাধারণ বিষয়াবলি",
+      "items": [
+        {
+          "definition": "ভ্যারিয়েবল ডিক্লেয়ার",
+          "code": "<script> \n let name = 'world'; \n</script> \n<h1>Hello {name}!</h1>"
+        },
+        {
+          "definition": "ডায়ন্যামিক অ্যাট্রিবিউট",
+          "code": "<script> \n let src = 'tutorial/image.gif', widht='100', height='100'; \n</script>  \n<img {src} {width} {height}>"
+        },
+        {
+          "definition": "কম্পোনেন্ট স্ট্যাইল",
+          "code": "\n <p>This is a paragraph.</p>\n<style>\n p{\n\t color: purple; \n} \n</style>"
+        },
+        {
+          "definition": "নেস্টেড কম্পোনেন্ট",
+          "code": [
+            "\n//App.svelte \n<script>\n\t import ChildComponent from './Child.svelte'; \n</script> \n<h2>I'm Parent Component</h2> \n<ChildComponent/> \n",
+            "\n//Child.svelte \n <h2>I'm Child Component</h2>"
+          ]
+        },
+        {
+          "definition": "নেস্টেড কম্পোনেন্ট এ props পাঠানো",
+          "code": [
+            "//App.svelte \n <script>\n import ChildComponent from './Child.svelte'; \n let title = 'I'm Child Component'; \n</script> \n <h2>I'm Parent Component</h2> \n <ChildComponent {title}/> \n",
+            "\n//Child.svelte \n <script> \n export let title; \n</script> \n<h2>{title || 'Hello world'}</h2>"
+          ]
+        },
+        {
+          "definition": "ডিফল্ট props",
+          "code": [
+            "//App.svelte \n <script>\n import ChildComponent from './Child.svelte'; \n let title = 'I'm Child Component'; \n</script> \n <h2>I'm Parent Component</h2> \n",
+            "<ChildComponent {title}/> \n <ChildComponent/> \n",
+            "\n//Child.svelte \n <script> \n export let title = 'Hello world'; \n</script> \n<h2>{title}</h2>"
+          ]
+        },
+        {
+          "definition": "ইভেন্ট হ্যান্ডেলার",
+          "code": [
+            "<script> \n let count = 0; \n function incrementCount() { \n count += 1; \n } \n</script>\n",
+            "<button on:click={incrementCount}> Clicked {count} {count === 1 ? 'time' : 'times'}</button>"
+          ]
+        },
+        {
+          "definition": "রিয়্যাক্টিভ অ্যাসাইনমেন্ট",
+          "code": [
+            "<script> \n let count = 0; \n $: doubled = count * 2; \n function incrementCount() { \n count += 1; \n } \n</script>\n",
+            "<button on:click={incrementCount}> Clicked {count} {count === 1 ? 'time' : 'times'}</button>\n",
+            "<p>{count} doubled is {doubled}</p>"
+          ]
+        },
+        {
+          "definition": "রিয়্যাক্টিভ লজিক",
+          "code": [
+            "<script>\n let x = 7;\n </script>\n",
+            "{#if x > 10}\n <p>{x} is greater than 10</p> \n {:else if 5 > x}\n <p>{x} is less than 5</p> \n {:else}\n <p>{x} is between 5 and 10</p>\n {/if}\n"
+          ]
+        },
+        {
+          "definition": "লজিক",
+          "code": [
+            "<script> \n let count = 0; \n $: if (count >= 10) { \n alert(`count is dangerously high!`); \n count = 9; \n} \n function incrementCount() { \n count += 1; \n } \n</script>\n",
+            "<button on:click={incrementCount}> Clicked {count} {count === 1 ? 'time' : 'times'}</button>\n"
+          ]
+        },
+        {
+          "definition": "লুপ",
+          "code": [
+            "<script> \n let cats = [ { id: 'J---aiyznGQ', name: 'Keyboard Cat' }, { id: 'z_AbfPXTKms', name: 'Maru' }, { id: 'OUtn3pvWmpg', name: 'Henri The Existential Cat' } ]; \n</script> \n",
+            "<h1>The Famous Cats of YouTube</h1>\n",
+            "{#each cats as { id, name }, i} \n <div> \n <a target='_blank' href='https: //www.youtube.com/watch?v={id}'>{i + 1}: {name}</a> \n </div> \n {/each}"
+          ]
+        },
+        {
+          "definition": "ডম ইভেন্ট হ্যান্ডেলার",
+          "code": [
+            "<script> \n let m = { x: 0, y: 0 }; \n function handleMousemove(event) { \n m.x = event.clientX; \n m.y = event.clientY; \n } \n </script> \n",
+            "<div on:mousemove={handleMousemove}> \n The mouse position is {m.x} x {m.y} \n </div> \n",
+            "<style> \n div { \n width: 100%; \n height: 100%; \n } \n</style>"
+          ]
+        },
+        {
+          "definition": "ইনলাইন ডম ইভেন্ট হ্যান্ডেলার",
+          "code": [
+            "<script> \n let m = { x: 0, y: 0 }; \n </script> \n",
+            "<div on:mousemove='{e => m = { x: e.clientX, y: e.clientY}}'> \n The mouse position is {m.x} x {m.y} \n </div> \n",
+            "<style> \n div { \n width: 100%; \n height: 100%; \n } \n</style>"
+          ]
+        },
+        {
+          "definition": "কম্পোনেন্ট ইভেন্টস",
+          "code": [
+            "//App.svelte ",
+            "\n <script> \n import Inner from './Inner.svelte'; \n  function handleMessage(event) { \n alert(event.detail.text); \n } \n </script> \n",
+            "<Inner on:message={handleMessage}/>",
+            "\n\n//Inner.svelte",
+            "\n <script> \n import { createEventDispatcher } from 'svelte'; \n const dispatch = createEventDispatcher(); \n ",
+            "function sayHello() { \n dispatch('message', { \n\t text: 'Hello!'}); \n } \n </script> \n",
+            "<button on:click={sayHello}> Click to say hello </button>"
+          ]
+        },
+        {
+          "definition": "text/number/textarea input ফিল্ড বাইন্ডিং",
+          "code": [
+            "<script> \n let name = 'world'; \n </script> \n",
+            "<input bind:value={name}> \n",
+            "<h1>Hello {name}!</h1>"
+          ]
+        },
+        {
+          "definition": "checkbox বাইন্ডিং",
+          "code": [
+            "<script> \n let yes = false; \n </script> \n",
+            "<input type=checkbox checked={yes}> \n"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "লাইফসাইকেল হুক",
+      "items": [
+        {
+          "definition": "onMount",
+          "code": [
+            "<script> \n import { onMount } from 'svelte'; \n let photos = []; \n",
+            "onMount(async () => { \n const res = await fetch(`https://jsonplaceholder.typicode.com/photos?_limit=20`); \n photos = await res.json(); \n }); \n",
+            "</script>\n",
+            "<h1>Photo album</h1>\n <div>{JSON.stringify(photos)}</div>"
+          ]
+        },
+        {
+          "definition": "onDestroy",
+          "code": [
+            "//App.svelte \n <script> \n import Timer from './Timer.svelte'; \n let open = true; \n let seconds = 0; \n const toggle = () => (open = !open); \n const handleTick = () => (seconds += 1); \n</script> \n",
+            "<div> \n <button on:click={toggle}>{open ? 'Close' : 'Open'} Timer</button> \n <p>\n \t The Timer component has been open for \t {seconds} {seconds === 1 ? 'second' : 'seconds'} \n </p> \n {#if open} \n <Timer on:tick={handleTick}/> \n {/if} \n </div> \n\n",
+            "\n //Timer.svelte \n <script> \n import { onInterval } from './utils.js'; \n export let callback; \n export let interval = 1000; \n onInterval(callback, interval); \n </script> \n",
+            "\n <p> This component executes a callback every  {interval } millisecond{interval === 1 ? '' : 's' } </p> \n",
+            "//utils.js \n import { onDestroy } from 'svelte'; \n export function onInterval(callback, milliseconds) { \n const interval = setInterval(callback, milliseconds); \n onDestroy(() => { \n clearInterval(interval); \n }); \n } \n"
+          ]
+        },
+        {
+          "definition": "beforeUpdate, afterUpdate",
+          "code": [
+            "import { beforeUpdate, afterUpdate } from 'svelte';"
+          ]
+        },
+        {
+          "definition": "tick",
+          "code": [
+            "import { tick } from 'svelte';"
+          ]
+        }
+      ]
+    }
+  ]
+}
