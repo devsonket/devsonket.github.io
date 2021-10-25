@@ -92,6 +92,15 @@
           "code": "fun singleLineFunc() = println(“Hello World”)  "
         }
       ]
+    },
+       {
+      "title": "স্কোপ ফাংশন",
+      "items": [
+        {
+          "definition": "লেট স্কোপ ফাংশন ,নাল চেক করার জন্য ",
+          "code":"  mediaString?.let { media ->\n\t//do your opeartion you want to do on mediaString object.But use \"media\" in stead of mediaString. It is an alternative of  \"if(mediaString != null){}\" in java\n}"
+        }
+      ]
     }
   ]
 }

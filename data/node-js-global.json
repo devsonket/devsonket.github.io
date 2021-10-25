@@ -65,6 +65,9 @@
                 }, {
                     "definition": "এক্সপ্রেশন মিথ্যা হলে Assertion Error থ্রো করা",
                     "code": "console.assert(expression, [message]);"
+                }, {
+                    "definition": "কনসোল আউটপুট টেবিল আকারে দেখতে",
+                    "code": "console.table();"
                 }
             ]
         },

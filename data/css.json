@@ -1,0 +1,158 @@
+{
+    "id": "css",
+    "title": "সিএসএস",
+    "slug": "css",
+    "description": "সিএসএস এর মাধ্যমে ওয়েব পেইজের লেআউট ডিজাইন ও ওয়েব ব্রাউজারে ডকুমেন্ট কিভাবে প্রদর্শন হবে তা নির্ধারন করা হয়।",
+    "colorPref": "#264DE4",
+    "contents": 
+    [
+      {
+        "title": "প্রাথমিক ধারণা",
+        "items": 
+        [
+          {
+            "definition": "সিনট্যাক্স সিলেক্টর",
+            "code": "selector{ property: value;}"
+          },
+          {
+            "definition": "External CSS ফাইল যুক্ত করুতে",
+            "code": "<link rel='stylesheet' href='style.css'>"
+          },
+          {
+            "definition": "Internal CSS ফাইল যুক্ত করুতে",
+            "code": "<style> body {background: blue;}</style>"
+          },
+          {
+            "definition": "Inline CSS লিখতে",
+            "code": "<h1 style='color:blue;'>A Blue Heading</h1>"
+          },
+          {
+            "definition": "সকল ইলিমেন্ট সিলেক্ট করতে",
+            "code": "* {property: value;}"
+          },
+          {
+            "definition": "সকল আইডি সিলেক্ট করতে",
+            "code": "#id {property: value;}"
+          },
+          {
+            "definition": "সকল ক্লাস সিলেক্ট করতে",
+            "code": ".class {property: value;}"
+          }
+        ]
+      },
+      {
+        "title": "ব্যাকগ্রাউন্ড",
+        "items": 
+        [
+          {
+            "definition": "ব্যাকগ্রাউন্ড প্রপার্টিস",
+            "code": "background | background-color | background-image | background-position | background-size | background-attachment | background-repeat |  background-clip | background-origin"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড কালার ভ্যালু",
+            "code": "Color Code - #fffff, #000000 | transparent | Color Name - White, Red, etc"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড ইমেজ ভ্যালু",
+            "code": "url | gradient | none"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড পজিশন",
+            "code": "top | left | center | bottom | right | top center | top left | top right | bottom left | bottom right | bottom center | center left | center center | center right"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড সাইজ",
+            "code": "auto | length | percentage | cover | contain | initial | inherit"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড এটাচমেন্ট",
+            "code": "scroll | fixed | local | initial | inherit "
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড রিপিট ভ্যালু",
+            "code": "repeat | repeat-x | repeat-y | no-repeat | space | round | initial | inherit"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড ক্লিপ ভ্যালু - ব্যবহার কালার ও ইমেজ",
+            "code": "border-box | padding-box | content-box | initial | inherit"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড অরিজিন ভ্যালু - ব্যবহার ব্যাকগ্রাউন্ড ইমেজ",
+            "code": "padding-box | border-box | content-box | initial | inherit "
+          }
+        ]
+      },
+      {
+        "title": "ফন্ট বা টাইপোগ্রাফি",
+        "items": 
+        [
+          {
+            "definition": "ফন্ট প্রপার্টি",
+            "code": "font-style | font-variant | font-weight | font-size | line-height | font-family | font-stretch"
+          },
+          {
+            "definition": "ফন্ট স্টাইল ভ্যালু",
+            "code": "normal | italic | oblique  | initial | inherit"
+          },
+          {
+            "definition": "ফন্ট ভ্যারিয়ান্ট ভ্যালু",
+            "code": "normal | small-caps | initial | inherit"
+          },
+          {
+            "definition": "ফন্ট ওয়েট ভ্যালু",
+            "code": "normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | initial | inherit"
+          },
+          {
+            "definition": "ফন্ট সাইজ ভ্যালু",
+            "code": "medium | xx-small | x-small | small | large | x-large | xx-large | smaller | larger | length | initial | inherit | percentage"
+          },
+          {
+            "definition": "লাইন হাইট ভ্যালু",
+            "code": "normal | number | length | initial | inherit"
+          },
+          {
+            "definition": "ফন্ট ফ্যামিলি",
+            "code": "font-family: Arial, Helvetica, sans-serif;"
+          },
+          {
+            "definition": "ফন্ট স্ট্রেচ",
+            "code": "ultra-condensed | extra-condensed | condensed | semi-condensed | normal | semi-expanded | expanded | extra-expanded | ultra-expanded | initial | inherit"
+          }
+        ]
+      },
+      {
+        "title": "ট্রানজিশন এবং ট্রান্সফর্ম",
+        "items":
+        [
+          {
+            "definition": "ট্রানজিশন প্রপার্টি",
+            "code": "transition | transition-delay | transition-duration | transition-property | transition-timing-function"
+          },
+          {
+            "definition": "ট্রানজিশন ডিলে ভ্যালু",
+            "code": "time (1s, 1ms etc) - কত সময় পর ট্রানজিশন ইফেক্ট শুরু হবে।"
+          },
+          {
+            "definition": "ট্রানজিশন ডিউরেশন ভ্যালু",
+            "code": "time (2s, 2ms etc) - কত সময় পর্যন্ত ট্রানজিশন ইফেক্ট চলবে।"
+          },
+          {
+            "definition": "ট্রানজিশন প্রপার্টি ভ্যালু",
+            "code": "none | all - অল এর মাধ্যমে সকল ট্রানজিশন ইফেক্ট কাজ করবে।"
+          },
+          {
+            "definition": "ট্রানজিশন-টাইমিং-ফাংশন ভ্যালু",
+            "code": "linear | ease | ease-in | ease-out | ease-in-out | step-start | step-end | steps(int,start|end) | cubic-bezier(n,n,n,n) | initial | inherit"
+          },
+          {
+            "definition": "ট্রান্সফর্ম থ্রিডি",
+            "code": "transform: translate3d(0, -350px, 0);"
+          },
+          {
+            "definition": "ট্রান্সফর্ম স্কেল",
+            "code": "transform: scale(1, 1);"
+          }
+        ]
+      }
+    ]
+  }

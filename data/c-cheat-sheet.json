@@ -4,387 +4,374 @@
     "slug": "c-cheat-sheet",
     "description": "প্রোগ্রামিং ল্যাঙ্গুয়েজ সি এর আদ্যোপান্ত",
     "colorPref": "#1290FD",
-    "contents": [
-      {
+    "contents": [{
         "title": "ডাটা টাইপ",
-        "items": [
-          {
-            "definition": "অক্ষর",
-            "code": "char"
-          }, {
-            "definition": "পূর্ণসংখ্যা",
-            "code": "int"
-          }, {
-            "definition": "ছোট পূর্ণসংখ্যা",
-            "code": "short int"
-          }, {
-            "definition": "বড় পূর্ণসংখ্যা",
-            "code": "long"
-          }, {
-            "definition": "ফ্লোটিং পয়েন্ট সংখ্যা",
-            "code": "float"
-          }, {
-            "definition": "ডাবল পয়েন্ট সংখ্যা",
-            "code": "double"
-          },{
-            "definition": "পয়েন্টার টাইপ",
-            "code": "*p"
-          },
-          {
-            "definition": "ডাবল পয়েন্টার টাইপ",
-            "code": "**p"
-          }
+        "items": [{
+                "definition": "অক্ষর",
+                "code": "char"
+            }, {
+                "definition": "পূর্ণসংখ্যা",
+                "code": "int"
+            }, {
+                "definition": "ছোট পূর্ণসংখ্যা",
+                "code": "short int"
+            }, {
+                "definition": "বড় পূর্ণসংখ্যা",
+                "code": "long"
+            }, {
+                "definition": "ফ্লোটিং পয়েন্ট সংখ্যা",
+                "code": "float"
+            }, {
+                "definition": "ডাবল পয়েন্ট সংখ্যা",
+                "code": "double"
+            }, {
+                "definition": "পয়েন্টার টাইপ",
+                "code": "*p"
+            },
+            {
+                "definition": "ডাবল পয়েন্টার টাইপ",
+                "code": "**p"
+            }
         ]
-      }, {
+    },{
+        "title": "ইউজার ডিফাইন্ড ডাটা টাইপ",
+        "items": [{
+                "definition": "ভিন্ন ভিন্ন বিল্ট ইন ডাটা টাইপের সমন্বয়",
+                "code": "struct"
+            }, {
+                "definition": "একই ম্যমোরি এড্রেসে ভিন্ন ভিন্ন বিল্ট ইন ডাটা টাইপের সমন্বয় (শুধুমাত্র সর্বশেষ ডাটা স্টোর থাকবে)",
+                "code": "union"
+            }, {
+                "definition": "ভিন্ন ডাটা টাইপকে ধ্রুব মান এর মাধ্যমে প্রকাশ",
+                "code": "enum"
+            }
+        ]
+    }, {
         "title": "ভ্যারিয়েবল",
-        "items": [
-          {
+        "items": [{
             "definition": "একটা সাধারণ ভ্যারিয়েবল",
             "code": "int x;"
-          }, {
+        }, {
             "definition": "একই সাথে ভ্যারিয়েবল ডিক্লেয়ার করা এবং ইনিশিয়ালাইজ করা",
             "code": "int x = 10;"
-          }, {
+        }, {
             "definition": "একই টাইপের একাধিক ভ্যারিয়েবল ডিক্লেয়ার করা",
             "code": "float a, b, c;"
-          }, {
+        }, {
             "definition": "কন্সট্যান্ট ভ্যারিয়েবল(ডিক্লেয়ার এর পরে অ্যাসাইন করা যাবে না)",
             "code": "const int x = 10;"
-          }
-        ]
-      }, {
+        }]
+    }, {
         "title": "ভ্যারিয়েবল নামকরন",
-        "items": [
-          {
+        "items": [{
             "definition": "যেকোনো অক্ষর দিয়ে শুরু হতে পারবে",
             "code": "myName"
-          }, {
+        }, {
             "definition": "নাম্বার দিয়ে শুরু হতে পারবে না",
             "code": "1996myBirthYear(ভুল)"
-          }, {
+        }, {
             "definition": "রিসার্ভড কী-ওয়ার্ড দিয়ে নেওয়া যাবে না",
             "code": "for(ভুল)"
-          }, {
+        }, {
             "definition": "নামের মাঝে ফাঁকা যায়গা থাকতে পারবে না",
             "code": "my name(ভুল)"
-          }, {
+        }, {
             "definition": "৩১ ক্যারেক্টারের বেশী নাম নেওয়া যাবে না",
             "code": "thisIsMyFullNameGivenByMyParentsAndMyGrandparents(ভুল)"
-          }
-        ]
-      }, {
+        }]
+    }, {
         "title": "প্রিমিটিভ ভ্যারিয়েবল টাইপ(ইন্টিজার)",
-        "items": [
-          {
+        "items": [{
             "definition": "unsigned অথবা signed ১ বাইট",
             "code": "char"
-          }, {
+        }, {
             "definition": "unsigned ১ বাইট",
             "code": "unsigned char"
-          }, {
+        }, {
             "definition": "signed ১ বাইট",
             "code": "signed char"
-          }, {
+        }, {
             "definition": "unsigned অথবা signed ২/৪ বাইট",
             "code": "int"
-          }, {
+        }, {
             "definition": "unsigned ২/৪ বাইট",
             "code": "unsigned int"
-          }, {
+        }, {
             "definition": "signed ২/৪ বাইট",
             "code": "signed int"
-          }, {
+        }, {
             "definition": "unsigned অথবা signed ২ বাইট",
             "code": "short"
-          }, {
+        }, {
             "definition": "unsigned ২ বাইট",
             "code": "unsigned short"
-          }, {
+        }, {
             "definition": "signed ২ বাইট",
             "code": "signed short"
-          }, {
+        }, {
             "definition": "unsigned অথবা signed ৪/৮ বাইট",
             "code": "long"
-          }, {
+        }, {
             "definition": "unsigned ৪/৮ বাইট",
             "code": "unsigned long"
-          }, {
+        }, {
             "definition": "signed ৪/৮ বাইট",
             "code": "signed long"
-          }, {
+        }, {
             "definition": "unsigned অথবা signed ৮ বাইট",
             "code": "long long"
-          }, {
+        }, {
             "definition": "unsigned ৮ বাইট",
             "code": "unsigned long long"
-          }, {
+        }, {
             "definition": "signed ৮ বাইট",
             "code": "signed long long"
-          }
-        ]
-      }, {
+        }]
+    }, {
         "title": "প্রিমিটিভ ভ্যারিয়েবল টাইপ(ফ্লোট)",
-        "items": [
-          {
+        "items": [{
             "definition": "৪ বাইট",
             "code": "char"
-          }, {
+        }, {
             "definition": "৪/৮ বাইট",
             "code": "unsigned char"
-          }, {
+        }, {
             "definition": "ARM:৮, AVR:৪, x86:১০, x64:১৬ বাইট",
             "code": "signed char"
-          }
-        ]
-      }, {
+        }]
+    }, {
         "title": "প্রিমিটিভ ভ্যারিয়েবল টাইপ(কোয়ালিফায়ার)",
-        "items": [
-          {
+        "items": [{
             "definition": "রিড-ওয়ানলি ভ্যারিয়েবল",
             "code": "const type"
-          }, {
+        }, {
             "definition": "আন-প্রেডিক্টেবল ভ্যারিয়েবল",
             "code": "volatile type"
-          }
-        ]
-      }, {
+        }]
+    }, {
         "title": "প্রিমিটিভ ভ্যারিয়েবল টাইপ(স্টোরেজ ক্লাস)",
-        "items": [
-          {
+        "items": [{
             "definition": "রেজিস্টার ভ্যারিয়েবল",
             "code": "char"
-          }, {
+        }, {
             "definition": "স্ট্যাটিক ভ্যারিয়েবল",
             "code": "unsigned char"
-          }, {
+        }, {
             "definition": "অন্য ফাইলে ভ্যারিয়েবল ডিক্লেয়ার",
             "code": "signed char"
-          }
-        ]
-      }, {
+        }]
+    }, {
         "title": "প্রিমিটিভ ভ্যারিয়েবল টাইপ(টাইপ-কাস্টিং)",
-        "items": [
-          {
+        "items": [{
             "definition": "x কে type ডাটাতে রিটার্ণ করা",
             "code": "(type)x"
-          }
-        ]
-      }, {
+        }]
+    }, {
         "title": "বর্ধিত ভ্যারিয়েবল টাইপ(stdint.h)",
-        "items": [
-          {
+        "items": [{
             "definition": "১ বাইটের signed অথবা unsigned ইন্টিজার",
             "code": "int8_t"
-          }, {
+        }, {
             "definition": "১ বাইটের unsigned ইন্টিজার",
             "code": "uint8_t"
-          }, {
+        }, {
             "definition": "২ বাইটের signed অথবা unsigned ইন্টিজার",
             "code": "int16_t"
-          }, {
+        }, {
             "definition": "২ বাইটের unsigned ইন্টিজার",
             "code": "uint16_t"
-          }, {
+        }, {
             "definition": "৪ বাইটের signed অথবা unsigned ইন্টিজার",
             "code": "int32_t"
-          }, {
+        }, {
             "definition": "৪ বাইটের unsigned ইন্টিজার",
             "code": "uint32_t"
-          }, {
+        }, {
             "definition": "৮ বাইটের signed অথবা unsigned ইন্টিজার",
             "code": "int64_t"
-          }, {
+        }, {
             "definition": "৮ unsigned ইন্টিজার",
             "code": "uint64_t"
-          }, {
+        }, {
             "definition": "বুলিয়ান ১ বাইট",
             "code": "bool"
-          }
-        ]
-      }, {
+        }]
+    }, {
         "title": "গাণিতিক অপারেশন",
-        "items": [
-          {
+        "items": [{
             "definition": "সাধারন গাণিতিক অপারেশন",
             "code": " +, -, *, /, %"
-          }, {
+        }, {
             "definition": "i থেকে ১ যোগ অথবা বিয়োগ করবে এবং ফলাফল i এর মধ্যে রাখবে",
             "code": "++i,--i"
-          }, {
+        }, {
             "definition": "i এর ভ্যালু মনে রাখবে, i এর ভ্যালু ১ বাড়াবে অথবা কমাবে এবং i এর আগের ভ্যালু রির্টান করবে",
             "code": "i++,i--"
-          }, {
+        }, {
             "definition": "বেসিক লজিক্যাল অপারেটর",
             "code": "&&,||,!"
-          }, {
+        }, {
             "definition": "বিট লজিক্যাল অপারেটর অথবা বিটওয়াইজ অপারেটর",
             "code": "&,|,^,~!"
-          }, {
+        }, {
             "definition": "তুলনামূলক অপারেটর",
             "code": " == != < > <= >="
-          }, {
+        }, {
             "definition": "নির্ধারিত করন অপারেটর",
             "code": "="
-          }
-        ]
-      }, {
+        }]
+    }, {
         "title": "বিল্ট-ইন ফাংশন",
-        "items": [
-          {
+        "items": [{
             "definition": "ফাইল খোলার জন্য",
             "code": "fopen()"
-          }, {
+        }, {
             "definition": "ফাইল বন্ধ করার জন্য",
             "code": "fclose()"
-          }, {
+        }, {
             "definition": "১টা অক্ষর পড়ার জন্য",
             "code": "getchar()"
-          }, {
+        }, {
             "definition": "১টা অক্ষর লিখার জন্য",
             "code": "putchar()"
-          }, {
+        }, {
             "definition": "ফাইল থেকে অক্ষর পড়ার জন্য",
             "code": "fgetc()"
-          }, {
+        }, {
             "definition": "ফাইল এ অক্ষর লিখার জন্য",
             "code": "fputc()"
-          }, {
+        }, {
             "definition": "আর্গুমেন্টস আকারে কিছু পড়ার জন্য",
             "code": "scanf()"
-          }, {
+        }, {
             "definition": "আর্গুমেন্টস আকারে কিছু ফাইল থেকে পড়ার জন্য",
             "code": "fscanf()"
-          }, {
+        }, {
             "definition": "আর্গুমেন্টস আকারে কিছু লিখার জন্য",
             "code": "printf()"
-          }, {
+        }, {
             "definition": "আর্গুমেন্টস আকারে কিছু ফাইল এ লিখার জন্য",
             "code": "fprintf()"
-          }, {
+        }, {
             "definition": "ফাইল অপারশন শেষে সত্য রির্টান করার জন্য",
             "code": "feof()"
-          }, {
+        }, {
             "definition": "একটি স্ট্রিং পড়ার জন্য",
             "code": "gets()"
-          }, {
+        }, {
             "definition": "একটি স্ট্রিং লেখার জন্য",
             "code": "puts()"
-          }, {
+        }, {
             "definition": "ইনপুটে দেওয়া মেমোরি ক্রিয়েট করবে (যদি available  থাকে)",
             "code": "malloc()"
-          }, {
+        }, {
             "definition": "ইনপুটে দেওয়া মেমোরি সাইজটির সমপরিমান মেমোরি ক্রিয়েট করবে",
             "code": "realloc()"
-          },{
+        }, {
             "definition": " আর্গুমেন্ট হিসেবে পাঠানো পয়েন্টার এর মেমোরি কে মুছে ফেলে",
             "code": "free()"
-          }, {
+        }, {
             "definition": "clock সংখ্যা রিটার্ন করে,আর কোন এরর হলে -1  রিটার্ন করে ",
             "code": "clock()"
-          }, {
+        }, {
             "definition": "array element গুলো ছোট থেকে বড় এভাবে সাজিয়ে ইনপুটে দেওয়া array এর মধ্যে রাখবে।",
             "code": "qsort()"
-          },{
+        }, {
             "definition": "ইনপুটে দেওয়া দুইটি স্ট্রিং একসাথে করে ১ম আর্গুমেন্টের মধ্যে সংরক্ষ্ণ করে ",
             "code": "strcat()"
-          },{
+        }, {
             "definition": "ইনপুটে দেওয়া দুইটি স্ট্রিং তুলনা করে ফলাফল দেখাবে",
             "code": "strcmp()"
-          },{
+        }, {
             "definition": "২য় স্ট্রিং কে ১ম স্ট্রিং - ভ্যারিয়েবল এর মধ্যে কপি করবে",
             "code": "strcpy()"
-          },{
+        }, {
             "definition": "ইনপুটে দেওয়া স্ট্রিংটিতে কয়টি বর্ণ আছে",
             "code": "strelen()"
-          }
-        ]
-      },{
-          "title": "গাণিতিক বিল্ট-ইন ফাংশন",
-          "items": [
-            {
-              "definition": "রুট করার জন্য",
-              "code": "sqrt()"
-            }, {
-              "definition": "সাধারন লগারিদম পাওয়ার জন্য",
-              "code": "log()"
-            }, {
-              "definition": "এক্সপোনেনশিয়াল নাম্বার এর জন্য",
-              "code": "exp()"
-            }, {
-              "definition": "y এর পাওয়ার হিসেবে x কে নেয়ার জন্য",
-              "code": "pow(x,y)"
-            }, {
-              "definition": "অনেক গুলো নাম্বার থেকে সিলিং অথবা বড় মানের পূর্ণসংখ্যার জন্য",
-              "code": "ceil()"
-            }, {
-              "definition": "অনেক গুলো নাম্বার থেকে ফ্লোর অথবা ছোট মানের পূর্ণসংখ্যার জন্য",
-              "code": "floor()"
-            }, {
-              "definition": "x এর এবসোলিউট ভ্যালু এর জন্য ",
-              "code": "abs(x)"
-            }, {
-              "definition": "রান্ডম নাম্বার জেনারেট করার জন্য",
-              "code": "random()"
-            }
-          ]
+        }]
+    }, {
+        "title": "গাণিতিক বিল্ট-ইন ফাংশন",
+        "items": [{
+            "definition": "রুট করার জন্য",
+            "code": "sqrt()"
+        }, {
+            "definition": "সাধারন লগারিদম পাওয়ার জন্য",
+            "code": "log()"
+        }, {
+            "definition": "এক্সপোনেনশিয়াল নাম্বার এর জন্য",
+            "code": "exp()"
+        }, {
+            "definition": "x এর পাওয়ার হিসেবে y কে নেয়ার জন্য",
+            "code": "pow(x,y)"
+        }, {
+            "definition": "অনেক গুলো নাম্বার থেকে সিলিং অথবা বড় মানের পূর্ণসংখ্যার জন্য",
+            "code": "ceil()"
+        }, {
+            "definition": "অনেক গুলো নাম্বার থেকে ফ্লোর অথবা ছোট মানের পূর্ণসংখ্যার জন্য",
+            "code": "floor()"
+        }, {
+            "definition": "x এর এবসোলিউট ভ্যালু এর জন্য ",
+            "code": "abs(x)"
+        }, {
+            "definition": "রান্ডম নাম্বার জেনারেট করার জন্য",
+            "code": "random()"
+        }]
+    }, {
+        "title": "প্রচলিত বিশেষ ক্যারেক্টার",
+        "items": [{
+            "definition": "নতুন লাইন প্রর্দশন",
+            "code": "\\n"
+        }, {
+            "definition": "ট্যাব প্রর্দশন",
+            "code": "\\t"
+        }, {
+            "definition": "পূর্ণসংখ্যা প্রর্দশন",
+            "code": "%d"
+        }, {
+            "definition": "ফ্লোটিং পয়েন্ট সংখ্যা প্রর্দশন",
+            "code": "%f"
+        }, {
+            "definition": "ডাবল পয়েন্ট সংখ্যা প্রর্দশন",
+            "code": "%lf"
+        }, {
+            "definition": "মেমোরি লোকেশন প্রর্দশন",
+            "code": "%p"
+        }, {
+            "definition": "স্ট্রিং প্রর্দশন",
+            "code": "%s"
+        }, {
+            "definition": "ক্যারেক্টার প্রর্দশন",
+            "code": "%c"
         },{
-          "title": "প্রচলিত বিশেষ ক্যারেক্টার",
-          "items": [
-            {
-              "definition": "নতুন লাইন প্রর্দশন",
-              "code": "\\n"
-            }, {
-              "definition": "ট্যাব প্রর্দশন",
-              "code": "\\t"
-            }, {
-              "definition": "পূর্ণসংখ্যা প্রর্দশন",
-              "code": "%d"
-            }, {
-              "definition": "ফ্লোটিং পয়েন্ট সংখ্যা প্রর্দশন",
-              "code": "%f"
-            }, {
-              "definition": "ডাবল পয়েন্ট সংখ্যা প্রর্দশন",
-              "code": "%lf"
-            }, {
-              "definition": "মেমোরি লোকেশন প্রর্দশন",
-              "code": "%p"
-            }, {
-              "definition": "স্ট্রিং প্রর্দশন",
-              "code": "%s"
-            }, {
-              "definition": "ক্যারেক্টার প্রর্দশন",
-              "code": "%c"
-            }
-          ]
-      }, {
-          "title": "নাম্বার লিটারেল",
-          "items": [
-            {
-              "definition": "বাইনারী",
-              "code": "0b11111111/0B11111111"
-            }, {
-              "definition": "অক্ট্যাল",
-              "code": "0377"
-            }, {
-              "definition": "ডেসিমল",
-              "code": "255"
-            }, {
-              "definition": "হেক্সা-ডেসিমল",
-              "code": "0xff/0xFF"
-            }, {
-              "definition": "রিয়েল নাম্বার(একক প্রেসিশন ফ্লোট)",
-              "code": "24.0f/24.5453434f"
-            }, {
-              "definition": "রিয়েল নাম্বার(ডাবল প্রেসিশন ফ্লোট)",
-              "code": "24.0/24.545343435464"
-            }, {
-              "definition": "পজিটিভ নাম্বার",
-              "code": "62/+62"
-            }, {
-              "definition": "নেগেটিভ নাম্বার",
-              "code": "-62"
-            }
-          ]
-      }
-    ]
-  }
+            "definition": "ম্যামোরি এড্রেস প্রদর্শন",
+            "code": "%u"
+        }]
+    }, {
+        "title": "নাম্বার লিটারেল",
+        "items": [{
+            "definition": "বাইনারী",
+            "code": "0b11111111/0B11111111"
+        }, {
+            "definition": "অক্ট্যাল",
+            "code": "0377"
+        }, {
+            "definition": "ডেসিমল",
+            "code": "255"
+        }, {
+            "definition": "হেক্সা-ডেসিমল",
+            "code": "0xff/0xFF"
+        }, {
+            "definition": "রিয়েল নাম্বার(একক প্রেসিশন ফ্লোট)",
+            "code": "24.0f/24.5453434f"
+        }, {
+            "definition": "রিয়েল নাম্বার(ডাবল প্রেসিশন ফ্লোট)",
+            "code": "24.0/24.545343435464"
+        }, {
+            "definition": "পজিটিভ নাম্বার",
+            "code": "62/+62"
+        }, {
+            "definition": "নেগেটিভ নাম্বার",
+            "code": "-62"
+        }]
+    }]
+}

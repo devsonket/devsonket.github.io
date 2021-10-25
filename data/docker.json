@@ -118,12 +118,53 @@
 		        {
                     "definition": "ডকারফাইল run",
                     "code": "docker run -p 3000:3000 image"
-                },    
+                },
+                {
+                    "definition": "N সংখ্যক ডকার কনটেইনার run করতে",
+                    "code": "for i in {1..N}; do docker container run -d --name image$(printf '$i') image; done"
+                },
                 {
                     "definition": "ডকার ইমেজ build করতে",
                     "code": "docker build -t <imagename> ."
                 }
 
+            ]
+        },
+        {
+            "title": "ডকার কম্পোজ কমান্ডসমূহ",
+            "items": [
+                {
+                    "definition": "ডকার কম্পোজ up",
+                    "code": "docker-compose up -d -f docker-compose.yml"
+                },
+                {
+                    "definition": "List of all running ডকার কন্টেইনার",
+                    "code": "docker-compose ps"
+                },
+                {
+                    "definition": "ডকার কন্টেইনার restart করতে",
+                    "code": "docker-compose restart"
+                },
+                {
+                    "definition": "ডকার কন্টেইনার pause করতে",
+                    "code": "docker-compose pause"
+                },
+                {
+                    "definition": "ডকার কন্টেইনার unpause করতে",
+                    "code": "docker-compose unpause"
+                },
+                {
+                    "definition": "নির্দিষ্ট কন্টেইনারে প্রবেশ করতে",
+                    "code": "docker-compose exec container /bin/bash"
+                },
+                {
+                    "definition": "নেটওয়ার্ক সহ কন্টেইনার remove করতে",
+                    "code": "docker-compose down"
+                },
+                {
+                    "definition": "নেটওয়ার্ক ভলিউম সহ সবকিছু remove করতে  ",
+                    "code": "docker-compose down --rmi all --volumes"
+                }
             ]
         },
         {
