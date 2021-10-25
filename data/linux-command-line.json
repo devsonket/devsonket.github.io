@@ -53,6 +53,10 @@
           "code":"man কমান্ড"
         },
         {
+          "definition":"কমান্ডের ধরণ দেখা",
+          "code":"type কমান্ড"
+        },
+        {
           "definition":"আইপি এড্রেস দেখা",
           "code":"hostname -i"
         },
@@ -102,6 +106,10 @@
           "code":"cat> YourFileName"
         },
         {
+          "definition":"এক কমান্ড দিয়ে অনেকগুলো ফাইল তৈরি করা",
+          "code":"touch index.html style.css main.js"
+        },
+        {
           "definition":"ফাইল মুছে ফেলা",
           "code":"rm YourFileName"
         },
@@ -130,12 +138,20 @@
           "code":"ls -l"
         },
         {
+          "definition":"নির্দিষ্ট ডিরেক্টরি অথবা ফাইল এর বর্ণনা দেখা",
+          "code":"ls -l <filename>"
+        },
+        {
           "definition":"ডিরেক্টরি অথবা ফাইল দেখা উল্টো উপায়ে ",
           "code":"ls -r"
         },
         {
           "definition":"ডিরেক্টরি অথবা ফাইল দেখা বরাদ্দ কৃত জায়গাসহ",
           "code":"ls -s"
+        },
+        {
+          "definition":"ডিরেক্টরি অথবা ফাইল দেখা সর্বশেষ পরিবর্তনের সময় অনুসারে",
+          "code":"ls -t"
         },
         {
           "definition":"ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনা এবং লুকানো ফাইল/ডিরেক্টরিসহ)",
@@ -256,6 +272,10 @@
         {
           "definition": "কোনো ফাইল খোঁজার জন্য",
           "code": "find /example/path -type f -name file_name.txt"
+        },
+        {
+          "definition":"ফাইলের ডাটাবেজ হালনাগাদ করা",
+          "code":"updatedb"
         }
       ]
     },

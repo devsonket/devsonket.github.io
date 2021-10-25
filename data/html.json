@@ -308,7 +308,7 @@
                 },
                 {
                     "definition": "তারিখ এর জন্যে ইনপুট",
-                    "code": "<input type=\"date\/month\/week\/time\" name=\"নাম\">"
+                    "code": "<input type=\"date\/month\/week\/time\/datetime\/datetime-local\" name=\"নাম\">"
                 },
                 {
                     "definition": "সার্চ এর জন্যে ইনপুট",
@@ -317,6 +317,10 @@
                 {
                     "definition": "কালার এর জন্যে ইনপুট",
                     "code": "<input type=\"color\" name=\"নাম\">"
+                },
+                {
+                    "definition": "টেলিফোন নাম্বার এর জন্যে ইনপুট",
+                    "code": "<input type=\"tel\" name=\"নাম\">"
                 }
             ]
         },
@@ -385,6 +389,66 @@
                 {
                     "definition": "সেলের লাইন না ভাঙ্গা",
                     "code": "<td nowrap>...</td>"
+                }
+            ]
+        },
+        {
+            "title": "এইচটিএমএল ৫",
+            "items": [{
+                    "definition": "ইন্ডিপেনডেন্ট কন্টেন্ট অথবা ডকুমেন্ট",
+                    "code": "<article></article>"
+                },
+                {
+                    "definition": "রিলেটেড অংশ একটা পেজের",
+                    "code": "<aside></aside>"
+                },
+                {
+                    "definition": "আডিও ফাইল সংযুক্ত",
+                    "code": "<audio src=\"\"></audio>"
+                },
+                {
+                    "definition": "গ্রাফিকাল কিছু প্রেসেন্ট করতে",
+                    "code": "<canvas></canvas>"
+                },
+                {
+                    "definition": "অতিরিক্ত ইনফরমেশন",
+                    "code": "<details></details>"
+                },
+                {
+                    "definition": "বাহিরের কোন ইন্টারেক্টিভ কন্টেন্ট",
+                    "code": "<embed src=\"\" type=\"\">"
+                },
+                {
+                    "definition": "স্বয়ংসম্পূর্ণ প্রবাহ সামগ্রী",
+                    "code": "<figure></figure>"
+                },
+                {
+                    "definition": "ফুটার সেকশন এর জন্য",
+                    "code": "<footer></footer>"
+                },
+                {
+                    "definition": "হেডার সেকশন এর জন্য",
+                    "code": "<header></header>"
+                },
+                {
+                    "definition": "একটি সেকশনের প্রধান",
+                    "code": "<hgroup></hgroup>"
+                },
+                {
+                    "definition": "ন্যাভিগেশন",
+                    "code": "<nav></nav>"
+                },
+                {
+                    "definition": "একটি জেনেরিক ডকুমেন্ট বা অ্যাপ্লিকেশন বিভাগ",
+                    "code": "<section></section>"
+                },
+                {
+                    "definition": "ভিডিও ফাইল সংযুক্ত",
+                    "code": "<video src=\"\"></video>"
+                },
+                {
+                    "definition": "লাইন বিরতির সুযোগ",
+                    "code": "<wbr>"
                 }
             ]
         }
