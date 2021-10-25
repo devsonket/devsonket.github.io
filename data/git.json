@@ -360,11 +360,15 @@
           "code":"git stash show -p stash@{0}"
         },
         {
-          "definition":"কাস্টম স্টাশ আইটেম ব্যবহার এবং ড্রপ করতে",
+          "definition":"স্টাশ এর সবগুলি আইটেম একসাথে ব্যবহার এবং ড্রপ করতে",
+          "code":"git stash pop"
+        },
+        {
+          "definition":"স্টাশ লিস্ট এর স্পেসিফিক আইটেম ব্যবহার এবং ড্রপ করতে",
           "code":"git stash pop stash@{0}"
         },
         {
-          "definition":"কাস্টম স্টাশ আইটেম ব্যবহার এবং ড্রপ না করতে",
+          "definition":"স্টাশ লিস্ট এর স্পেসিফিক আইটেম শুধু ব্যবহার এবং ড্রপ না করতে",
           "code":"git stash apply stash@{0}"
         },
         {
@@ -376,7 +380,11 @@
           "code":"git stash branch new_branch"
         },
         {
-          "definition":"কাস্টম স্টাশ আইটেম বাদ দিতে",
+          "definition":"স্টাশ লিস্ট এর প্রথম আইটেম বাদ দিতে",
+          "code":"git stash drop"
+        },
+        {
+          "definition":"স্টাশ লিস্ট এর স্পেসিফিক আইটেম বাদ দিতে",
           "code":"git stash drop stash@{0}"
         },
         {
