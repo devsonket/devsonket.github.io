@@ -142,6 +142,50 @@
           {
             "definition": "ফ্লেক্স ডিরেকশন কলাম রিভার্স",
             "code": "flex-col-reverse"
+          },
+          {
+            "definition": "জাস্টিফাই কনটেন্ট ফ্লেক্স স্টার্ট",
+            "code": "justify-start"
+          },
+          {
+            "definition": "জাস্টিফাই কনটেন্ট ফ্লেক্স এন্ড",
+            "code": "justify-end"
+          },
+          {
+            "definition": "জাস্টিফাই কনটেন্ট সেন্টার",
+            "code": "justify-center"
+          },
+          {
+            "definition": "জাস্টিফাই কনটেন্ট স্পেস বিটুইন",
+            "code": "justify-between"
+          },
+          {
+            "definition": "জাস্টিফাই কনটেন্ট স্পেস এরাউন্ড",
+            "code": "justify-around"
+          },
+          {
+            "definition": "জাস্টিফাই কনটেন্ট স্পেস ইভেনলি",
+            "code": "justify-evenly"
+          },
+          {
+            "definition": "এলাইন আইটেমস ফ্লেক্স স্টার্ট",
+            "code": "items-start"
+          },
+          {
+            "definition": "এলাইন আইটেমস ফ্লেক্স এন্ড",
+            "code": "items-end"
+          },
+          {
+            "definition": "এলাইন আইটেমস সেন্টার",
+            "code": "items-center"
+          },
+          {
+            "definition": "এলাইন আইটেমস বেসলাইন",
+            "code": "items-baseline"
+          },
+          {
+            "definition": "এলাইন আইটেমস স্ট্রেচ",
+            "code": "items-stretch"
           }
         ]
       },
@@ -297,4 +341,4 @@
       }
     ]
   }
-  
+
