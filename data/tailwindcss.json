@@ -338,6 +338,75 @@
             "code": "font-mono"
           }
         ]
+      },
+      {
+        "title": "ব্যাকগ্রাউন্ড",
+        "items": [
+          {
+            "definition": "ব্যাকগ্রাউন্ড এটাচমেন্ট ফিক্সড",
+            "code": "bg-fixed"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড এটাচমেন্ট লোকাল",
+            "code": "bg-local"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড এটাচমেন্ট স্ক্রোল",
+            "code": "bg-scroll"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড ক্লিপ বর্ডারবক্স",
+            "code": "bg-clip-border"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড ক্লিপ পেডিংবক্স",
+            "code": "bg-clip-padding"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড ক্লিপ কন্টেন্টবক্স",
+            "code": "bg-clip-content"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড ক্লিপ টেক্সট",
+            "code": "bg-clip-text"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড রিপিট রিপিট",
+            "code": "bg-repeat"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড রিপিট নো রিপিট",
+            "code": "bg-no-repeat"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড রিপিট এক্স",
+            "code": "bg-repeat-x"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড রিপিট অই",
+            "code": "bg-repeat-y"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড রিপিট রাউন্ড",
+            "code": "bg-repeat-space"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড রিপিট স্পেস",
+            "code": "bg-repeat-round"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড সাইজ অটো",
+            "code": "bg-auto"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড সাইজ কভার",
+            "code": "bg-cover"
+          },
+          {
+            "definition": "ব্যাকগ্রাউন্ড সাইজ কনটেইন",
+            "code": "bg-contain"
+          }
+        ]
       }
     ]
   }
