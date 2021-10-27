@@ -11,22 +11,28 @@
                 {
                     "definition": "নাম্বার",
                     "code": "var defineNumber = 1062.16"
-                }, {
+                },
+                {
                     "definition": "স্ট্রিং",
                     "code": "var myString = \"wxyz\""
-                }, {
+                },
+                {
                     "definition": "বুলিয়ান",
                     "code": "var defineBool = true;"
-                }, {
+                },
+                {
                     "definition": "অ্যারে",
                     "code": "var defineArray = [ \"​w\", \"​x\", \"​y\", \"​z\" ]"
-                }, {
+                },
+                {
                     "definition": "অবজেক্ট",
                     "code": "var defineObject = { \"number\": 7 };"
-                }, {
+                },
+                {
                     "definition": "নাল",
                     "code": "var defineNull = null;"
-                }, {
+                },
+                {
                     "definition": "আন্ডিফাইন্ড",
                     "code": "var defineUndefined;"
                 }
@@ -37,75 +43,181 @@
             "items": [
                 {
                     "code": "var defineObject = {"
-                }, {
+                },
+                {
                     "code": "   \"title\": \"জেসন চিটশিট\","
-                }, {
+                },
+                {
                     "code": "   \"creator\": \"আবুল\","
-                }, {
+                },
+                {
                     "code": "   \"id\": 39,"
-                }, {
+                },
+                {
                     "code": "   \"color\": \"#49a34c\","
-                }, {
+                },
+                {
                     "code": "   \"page\": 70,"
-                }, {
+                },
+                {
                     "code": "   \"definition\": true"
-                }, {
+                },
+                {
                     "code": "};"
                 }
             ]
-        }, {
+        },
+        {
             "title": "অবজেক্ট প্রপার্টি",
             "items": [
                 {
                     "definition": "title পাওয়ার জন্যে",
                     "code": "defineObject.title"
-                }, {
+                },
+                {
                     "definition": "id পাওয়ার জন্যে",
                     "code": "defineObject[\"id\"]"
-                }, {
+                },
+                {
                     "definition": "color পাওয়ার জন্যে",
                     "code": "defineObject[3]"
-                }, {
+                },
+                {
                     "definition": "কিছু না থাকলে <code>undefined</code> আসবে",
                     "code": "defineObject.notExist"
-                }, {
+                },
+                {
                     "definition": "কিছু না থাকলে <code>undefined</code> আসবে",
                     "code": "defineObject[100]"
                 }
             ]
-        }, {
+        },
+        {
             "title": "অ্যারে",
             "items": [
                 {
                     "code": "var defineArray = ["
-                }, {
+                },
+                {
                     "code": "   \"জেসন চিটশিট\","
-                }, {
+                },
+                {
                     "code": "   \"আবুল\","
-                }, {
+                },
+                {
                     "code": "   39,"
-                }, {
+                },
+                {
                     "code": "   \"#49a34c\","
-                }, {
+                },
+                {
                     "code": "   70,"
-                }, {
+                },
+                {
                     "code": "   true"
-                }, {
+                },
+                {
                     "code": "];"
                 }
             ]
-        }, {
+        },
+        {
             "title": "অ্যারে ইলিমেন্ট অ্যাক্সেস",
             "items": [
                 {
                     "definition": "সরাসরি ইন্ডেক্স নাম্বার দিয়ে অ্যাক্সেস",
                     "code": "defineArray[0]"
-                }, {
+                },
+                {
                     "definition": "সরাসরি ইন্ডেক্স নাম্বার দিয়ে অ্যাক্সেস",
                     "code": "defineArray[3]"
-                }, {
+                },
+                {
                     "definition": "ইন্ডেক্স নাম্বার বেশী দিলে <code>undefined</code> আসবে",
                     "code": "defineArray[100]"
+                }
+            ]
+        },
+        {
+            "title": "অ্যারে এর ভিতর অবজেক্ট",
+            "items": [
+                {
+                    "code": "var defineArray = ["
+                },
+                {
+                    "code": "{"
+                },
+                {
+                    "code": "   \"first\": \"Farhan\","
+                },
+                {
+                    "code": "   \"last\": \"Chowdhury\","
+                },
+                {
+                    "code": "   \"id\": CSE41,"
+                },
+                {
+                    "code": "   \"salary\": 40000,"
+                },
+                {
+                    "code": "   \"age\": 33,"
+                },
+                {
+                    "code": "   \"definition\": true"
+                },
+                {
+                    "code": "},"
+                },
+                {
+                    "code": "{"
+                },
+                {
+                    "code": "   \"first\": \"Sojib\","
+                },
+                {
+                    "code": "   \"last\": \"Ahmed\","
+                },
+                {
+                    "code": "   \"id\": CSE45,"
+                },
+                {
+                    "code": "   \"salary\": 30000,"
+                },
+                {
+                    "code": "   \"age\": 29,"
+                },
+                {
+                    "code": "   \"definition\": true"
+                },
+                {
+                    "code": "},"
+                },
+                {
+                    "code": "{"
+                },
+                {
+                    "code": "   \"first\": \"Gourav\","
+                },
+                {
+                    "code": "   \"last\": \"Dev\","
+                },
+                {
+                    "code": "   \"id\": CSE47,"
+                },
+                {
+                    "code": "   \"salary\": 55000,"
+                },
+                {
+                    "code": "   \"age\": 35,"
+                },
+                {
+                    "code": "   \"definition\": true"
+                },
+                {
+                    "code": "}"
+                },
+                {
+                    "code": "];"
                 }
             ]
         }
