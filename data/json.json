@@ -108,6 +108,64 @@
                     "code": "defineArray[100]"
                 }
             ]
+        }, {
+            "title": "অ্যারে এর ভিতর অবজেক্ট",
+            "items": [
+                {
+                    "code": "var defineArray = ["
+                }, {
+                    "code": "{"
+                }, {
+                    "code": "   \"first\": \"Farhan\","
+                }, {
+                    "code": "   \"last\": \"Chowdhury\","
+                }, {
+                    "code": "   \"id\": CSE41,"
+                }, {
+                    "code": "   \"salary\": 40000,"
+                }, {
+                    "code": "   \"age\": 33,"
+                }, {
+                    "code": "   \"definition\": true"
+                }, {
+                    "code": "},"
+                },{
+                    "code": "{"
+                }, {
+                    "code": "   \"first\": \"Sojib\","
+                }, {
+                    "code": "   \"last\": \"Ahmed\","
+                }, {
+                    "code": "   \"id\": CSE45,"
+                }, {
+                    "code": "   \"salary\": 30000,"
+                }, {
+                    "code": "   \"age\": 29,"
+                }, {
+                    "code": "   \"definition\": true"
+                }, {
+                    "code": "},"
+                },{
+                    "code": "{"
+                },{
+                    "code": "   \"first\": \"Gourav\","
+                }, {
+                    "code": "   \"last\": \"Dev\","
+                }, {
+                    "code": "   \"id\": CSE47,"
+                }, {
+                    "code": "   \"salary\": 55000,"
+                }, {
+                    "code": "   \"age\": 35,"
+                }, {
+                    "code": "   \"definition\": true"
+                }, {
+                    "code": "}"
+                },{
+                    "code": "];"
+                }
+                
+            ]
         }
     ]
 }
