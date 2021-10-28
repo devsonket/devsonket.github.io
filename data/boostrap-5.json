@@ -303,6 +303,42 @@
                     "code": "<div class='alert alert-dismissible' role='alert'>A simple dismissible alert—check it out!</div>"
                 }
             ]
+        },
+        {
+            "title": "ফিগার্স",
+            "items": [{
+                    "definition": "ফিগার্স নেওয়ার জন্য",
+                    "code": "<figure class='figure'>.....</figure>"
+                },
+                {
+                    "definition": "ফিগার্সে ছবি যুক্ত করার জন্য",
+                    "code": "<img src='...' class='figure-img img-fluid rounded' alt='...'>"
+                },
+                {
+                    "definition": "ফিগার্সে ক্যাপশন যুক্ত করার জন্য",
+                    "code": "<figcaption class='figure-caption'>A caption for the above image.</figcaption>"
+                }
+            ]
+        },
+        {
+            "title": "ক্যারোসেল",
+            "items": [{
+                    "definition": "ক্যারোসেল-ফেইড-অ্যানিমেশন",
+                    "code": "<div class='carousel-fade' data-bs-ride='carousel'>"
+                },
+                {
+                    "definition": "ক্যারোসেল-ইনডিকেটর",
+                    "code": " <div class='carousel-indicators'><button type='button' data-bs-slide-to='1'></button><button type='button' data-bs-slide-to='2'></button></div>"
+                },
+                {
+                    "definition": "ক্যারোসেল-আইটেম",
+                    "code": "<div class='carousel-item'>......</div>"
+                },
+                {
+                    "definition": "ক্যারোসেল-ক্যাপশন",
+                    "code": "<div class='carousel-caption'>......</div>"
+                }
+            ]
         }
     ]
 }
