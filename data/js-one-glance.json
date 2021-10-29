@@ -97,6 +97,38 @@
           "code": "splice"
         }, {
           "code": "unshift"
+        }, {
+          "code": "copyWithin"
+        }, {
+          "code": "entries"
+        }, {
+          "code": "every"
+        }, {
+          "code": "fill"
+        }, {
+          "code": "filter"
+        }, {
+          "code": "includes"
+        }, {
+          "code": "forEach"
+        }, {
+          "code": "findIndex"
+        }, {
+          "code": "find"
+        }, {
+          "code": "lastIndexOf"
+        }, {
+          "code": "isArray"
+        }, {
+          "code": "indexOf"
+        }, {
+          "code": "reduce"
+        }, {
+          "code": "map"
+        }, {
+          "code": "slice"
+        }, {
+          "code": "some"
         }
       ]
     }, {
