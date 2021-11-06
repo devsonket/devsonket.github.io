@@ -148,12 +148,8 @@
                "code":"https://nextjs.org/docs/api-reference/next/head"
             },
             {
-               "definition":"নেক্সট জেএস হেড",
-               "code":"https://nextjs.org/docs/api-reference/next/head"
-            },
-            {
-               "definition":"নেক্সট জেএস হেড",
-               "code":"https://nextjs.org/docs/api-reference/next/head"
+               "definition":"নেক্সট জেএস ডায়নামিক রুট",
+               "code":"https://nextjs.org/docs/routing/dynamic-routes"
             },
             {
                "definition":"নেক্সট জেএস কনফিগ",
