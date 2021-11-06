@@ -144,6 +144,10 @@
                "code":"https://nextjs.org/docs/api-reference/next/image"
             },
             {
+               "definition":"নেক্সট জেএস ইমেজ ওপ্তিমাইজ",
+               "code":"https://nextjs.org/docs/basic-features/image-optimization"
+            },
+            {
                "definition":"নেক্সট জেএস হেড",
                "code":"https://nextjs.org/docs/api-reference/next/head"
             },
