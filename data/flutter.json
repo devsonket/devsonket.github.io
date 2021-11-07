@@ -31,6 +31,14 @@
         {
           "definition":"চ্যানেল পরিবর্তন করতেে",
           "code":"flutter channel dev/master/stable/beta"
+        },
+        {
+          "definition":"ঠিকঠাক মত ইন্সটল হয়েছে কিনা জানতে " ,
+          "code":"flutter doctor"
+        },
+        {
+          "definition":"ঠিকঠাক মত ইন্সটল হয়েছে কিনা আরো এডভান্স জানতে " ,
+          "code":"flutter doctor -v"
         }
       ]
     }
