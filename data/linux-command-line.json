@@ -25,6 +25,14 @@
           "code":"uname -r"
         },
         {
+          "definition":"শুধু আর্কিটেকচার দেখা",
+          "code":"uname -m"
+        },
+        {
+          "definition":"ভার্চুয়ালাইজেশন দেখা",
+          "code":"systemd-detect-virt"
+        },
+        {
           "definition":"আপটাইম দেখা",
           "code":"uptime"
         },
@@ -69,16 +77,16 @@
           "code":"date"
         },
         {
-          "definition":"ইউজার ইক্টিবিটি লগ দেখা",
+          "definition":"ইউজার এক্টিভিটি লগ দেখা",
           "code":"sudo less /var/log/auth.log"
         },
         {
           "definition":"পিসি বন্ধ করা",
-          "code":"sudo poweroff অথবা poweroff"
+          "code":"sudo poweroff অথবা poweroff অথবা shutdown"
         },
         {
           "definition":"কমান্ড লাইন থেকে পিসি বন্ধ করে আবার চালু করা",
-          "code":"sudo reboot অথবা reboot"
+          "code":"sudo reboot অথবা reboot অথবা shutdown -r"
         }
       ]
     },
@@ -268,6 +276,10 @@
         {
           "definition":".gz ফাইলকে এক্সট্রাক্ট করতে",
           "code":"tar xzf file.tar.gz"
+        },
+        {
+          "definition": "কোনো ফোল্ডার খোঁজার জন্য",
+          "code": "find /example/path -type d -name folder_name"
         },
         {
           "definition": "কোনো ফাইল খোঁজার জন্য",
