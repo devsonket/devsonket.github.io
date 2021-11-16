@@ -413,6 +413,48 @@
               "definition": "listIterator(int index) LinkedList এর মেথড প্যারামিটার ভ্যালু তম ইন্ডেক্স থেকে শেষ পর্যন্ত ইলিমেন্ট গুলোর একটি list-iterator return করে ",
               "code": "myLinkedList.listIterator(int index);"
             }]
+          },
+        {
+          "title": "HashMap ক্লাস মেথডস",
+          "items": [
+            {
+              "definition": "int size() hashMap এর সাইজ রিটার্ন করে",
+              "code": "hmap.size()"
+            }, {
+              "definition": "boolean isEmpty() hashMap এম্পটি কিনা এটা চেক করে, true Or false রিটার্ন করে",
+              "code": "hmap.isEmpty"
+            }, {
+              "definition": "put(Key k, Value v) hashMap -এ কি এবং ভ্যালু ইন্সার্ট করে",
+              "code": "hashMap.put(1,\"Jewel Chowdhury\")"
+            }, {
+              "definition": "get(Object key) এটা কোরেস্পন্ডিং key এর ভ্যালু রিটার্ন করে",
+              "code": "hmap.get(1)"
+            }, {
+              "definition": "keySet() এটি hashMap এর সকল কি সেট রিটার্ন করে",
+              "code": "hmap.keySet()"
+            },{
+              "definition": "Collection values() এটি hashMap এর সকল ভ্যালু রিটার্ন করে",
+              "code": "hmap.values()"
+            }, {
+              "definition": "Object clone() এটি একটি ম্যাপ এর সকল কি এবং ভ্যালু হুবাহু কপি করে",
+              "code": "hmap.clone()"
+            },{
+              "definition": "boolean containsKey(Object key) যদি key hashMap এ পাওয়া যায় তবে true অন্যথায় false রিটার্ন করে",
+              "code": "hmap.containsKey(1)"
+            },{
+              "definition": "boolean containsValue(Object value) যদি value hashMap এ পাওয়া যায় তবে true অন্যথায় false রিটার্ন করে",
+              "code": "hmap.containsValue(\"Jewel Chowdhury\")"
+            },{
+              "definition": "Value remove(Object key) এটি hashMap থেকে কোরেস্পন্ডিং key এর জন্য কি-ভ্যালু পেয়ারটি রিমুভ করে",
+              "code": "hmap.remove(1)"
+            },{
+              "definition": "void putAll(Map m) এটি hashMap থেকে সকল এলিমেন্ট কপি করে নতুন একটি ম্যাপে রাখে",
+              "code": "hmap2.putAll(hmap)"
+            }, {
+              "definition": "void clear() এটি hashMap থেকে সকল কি এবং ভ্যালু রিমুভ করে/মুছে ফেলে",
+              "code": "hmap.clear()"
+            }
+          ]
           }
           
     ]

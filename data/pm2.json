@@ -78,6 +78,10 @@
       "title": "অ্যাকশনস(Actions)",
       "items": [
         {
+          "definition": "প্রসেস শুরু করা",
+          "code": "pm2 start  app.js"
+        },
+        {
           "definition": "সব প্রসেসকে বন্ধ করে দেয়",
           "code": "pm2 stop all"
         },
