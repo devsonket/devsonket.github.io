@@ -144,16 +144,24 @@
                "code":"https://nextjs.org/docs/api-reference/next/image"
             },
             {
-               "definition":"নেক্সট জেএস হেড",
-               "code":"https://nextjs.org/docs/api-reference/next/head"
+               "definition":"নেক্সট জেএস ইমেজ অপ্টিমাইজ",
+               "code":"https://nextjs.org/docs/basic-features/image-optimization"
             },
             {
                "definition":"নেক্সট জেএস হেড",
                "code":"https://nextjs.org/docs/api-reference/next/head"
             },
             {
-               "definition":"নেক্সট জেএস হেড",
-               "code":"https://nextjs.org/docs/api-reference/next/head"
+               "definition":"নেক্সট জেএস ডায়নামিক রুট",
+               "code":"https://nextjs.org/docs/routing/dynamic-routes"
+            },
+            {
+               "definition":"নেক্সট জেএস কাস্টম সার্ভার",
+               "code":"https://nextjs.org/docs/advanced-features/custom-server"
+            },
+            {
+               "definition":"নেক্সট জেএস কর্মক্ষমতা পরিমাপ",
+               "code":"https://nextjs.org/docs/advanced-features/measuring-performance"
             },
             {
                "definition":"নেক্সট জেএস কনফিগ",

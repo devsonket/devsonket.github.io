@@ -67,6 +67,10 @@
         {
           "definition": "ফাইল থেকে বের হতে (Exit)",
           "code": "Ctrl + Q"
+        },
+        {
+          "definition": "ছবি সিলেক্ট এবং মাস্কিং করা",
+          "code": "Ctrl + Alt + R"
         }
       ]
     },
