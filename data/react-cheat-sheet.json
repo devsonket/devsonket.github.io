@@ -13,6 +13,10 @@
           "code": "npx create-react-app <project-name>"
         },
         {
+          "definition": "npx এর সাহায্যে প্রজেক্ট নাম ছাড়া রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
+          "code": "npx create-react-app . "
+        },
+        {
           "definition": "npm এর সাহায্যে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
           "code": "npm init react-app <project-name>"
         },
