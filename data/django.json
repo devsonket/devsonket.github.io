@@ -93,6 +93,14 @@
         {
           "definition": "জ্যাঙ্গো প্রোজেক্ট পরীক্ষা করে",
           "code": "python manage.py check"
+        },
+        {
+          "definition": "জ্যাঙ্গো প্রোজেক্ট ইন্টারেক্টিভ ইন্টারপ্রেটার",
+          "code": "python manage.py shell"
+        },
+        {
+          "definition": "জ্যাঙ্গো প্রোজেক্ট মেয়াদোত্তীর্ণ সেশনগুলি পরিষ্কার করে",
+          "code": "python manage.py clearsessions"
         }
       ]
     },
