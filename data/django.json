@@ -83,8 +83,16 @@
           "code": "django-admin startproject <project_name>"
         },
         {
+          "definition": "ব্যবহারের তথ্য এবং প্রতিটি অ্যাপ্লিকেশন দ্বারা প্রদত্ত কমান্ডের একটি তালিকা প্রদর্শন করে",
+          "code": "python manage.py help"
+        },
+        {
           "definition": "ডেভেলপমেন্ট সার্ভার চালু করা",
           "code": "python manage.py runserver"
+        },
+        {
+          "definition": "জ্যাঙ্গো প্রোজেক্ট পরীক্ষা করে",
+          "code": "python manage.py check"
         }
       ]
     },
@@ -110,11 +118,15 @@
       ]
     },
     {
-      "title": "এডমিন",
+      "title": "জ্যাঙ্গো অথ",
       "items": [
         {
           "definition": "সুপার ইউজার তৈরী করা",
           "code": "python manage.py createsuperuser"
+        },
+        {
+          "definition": "পাসওয়ার্ড পরিবর্তন করা",
+          "code": "python manage.py changepassword <username>"
         }
       ]
     },
