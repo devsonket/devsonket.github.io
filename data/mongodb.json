@@ -270,6 +270,23 @@
             "code": "$last"
           }
         ]
+      },{
+        "title": "মঙ্গডিবি ডাটা ইমপোর্ট এবং এক্সপোর্ট",
+        "items": [
+          {
+            "definition": "JSON ফরম্যাটে ডাটা ইমপোর্ট করতে",
+            "code": "mongoimport --uri '<Atlas Cluster URI>' --drop=<filename>.json"
+          }, {
+            "definition": "JSON ফরম্যাটে ডাটা এক্সপোর্ট করতে",
+            "code": "mongoexport --uri '<Atlas Cluster URI>' --collection=<collection_name> --out=<filename>.json"
+          },{
+            "definition": "BSON ফরম্যাটে ডাটা ইমপোর্ট করতে",
+            "code": "mongorestore --uri '<Atlas Cluster URI>' --drop dump"
+          }, {
+            "definition": "BSON ফরম্যাটে ডাটা এক্সপোর্ট করতে",
+            "code": "mongodump --uri '<Atlas Cluster URI>'"
+          }
+        ]
       }
     ]
   }
