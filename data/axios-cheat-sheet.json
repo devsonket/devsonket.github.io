@@ -10,7 +10,7 @@
             "items": [
                 {
                     "definition": "(npm) দিয়ে ইন্সটল করার জন্য",
-                    "code": "npm install axios"
+                    "code": "npm i axios"
                 },
                 {
                     "definition": "(yarn) দিয়ে ইন্সটল করার জন্য",
