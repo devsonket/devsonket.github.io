@@ -16,5 +16,5 @@ module.exports = data => {
       }
     }
   })
-  return charMap
+  return charMap;
 }
