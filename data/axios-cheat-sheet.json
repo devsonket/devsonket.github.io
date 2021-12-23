@@ -1,0 +1,52 @@
+{
+    "id": "axios-cheat-sheet",
+    "title": "এক্সিয়স",
+    "slug": "axios-cheat-sheet",
+    "description": "এক্সিয়স চিটশিট",
+    "colorPref": "#2F3D75",
+    "contents": [{
+            "title": "ইন্সটল প্রক্রিয়া",
+            "items": [{
+                    "definition": "(npm) দিয়ে ইন্সটল করার জন্য",
+                    "code": "npm i axios"
+                },
+                {
+                    "definition": "(yarn) দিয়ে ইন্সটল করার জন্য",
+                    "code": "yarn add axios"
+                },
+                {
+                    "definition": "(jsDelivr) সিডিএন দিয়ে ইন্সটল করার জন্য",
+                    "code": "<script src=https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js></script>"
+                },
+                {
+                    "definition": "(unpkg) সিডিএন দিয়ে ইন্সটল করার জন্য",
+                    "code": "<script src=https://unpkg.com/axios/dist/axios.min.js></script>"
+                },
+                {
+                    "definition": "বওয়ের দিয়ে ইন্সটল করার জন্য",
+                    "code": "bower install axios"
+                }
+            ]
+        },
+        {
+            "title": "রিকোয়েস্ট উদাহরণ",
+            "items": [{
+                    "definition": "ডাটা get এর জন্য",
+                    "code": "axios.get()"
+                },
+                {
+                    "definition": "ডাটা post এর জন্য",
+                    "code": "axios.post()"
+                },
+                {
+                    "definition": "ডাটা delete এর জন্য",
+                    "code": "axios.delete()"
+                },
+                {
+                    "definition": "সিঙ্গেল ডাটা মডিফাই করার জন্য",
+                    "code": "axios.put()"
+                }
+            ]
+        }
+    ]
+}

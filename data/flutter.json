@@ -39,6 +39,10 @@
         {
           "definition":"ঠিকঠাক মত ইন্সটল হয়েছে কিনা আরো এডভান্স জানতে " ,
           "code":"flutter doctor -v"
+        },
+        {
+          "definition":"অর্গানাইজেশন/প্রতিষ্ঠানের নাম সেট করতে" ,
+          "code":"flutter create --org com.yourorg your_project"
         }
       ]
     }
