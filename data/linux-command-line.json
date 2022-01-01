@@ -1,281 +1,279 @@
 {
-  "id":"linux-command-line",
-  "title":"লিনাক্স কমান্ড লাইন",
-  "slug":"linux-command-line",
-  "description":"লিনাক্স কমান্ড লাইনের যাবতীয় সবকিছু",
-  "colorPref":"#000",
-  "contents":[
-    {
-      "title":"সিস্টেম সম্পর্কিত সাধারণ কিছু কমান্ড",
-      "items":[
-        {
-          "definition":"রুট ইউজারে প্রবেশ করা",
-          "code":"sudo su"
+  "id": "linux-command-line",
+  "title": "লিনাক্স কমান্ড লাইন",
+  "slug": "linux-command-line",
+  "description": "লিনাক্স কমান্ড লাইনের যাবতীয় সবকিছু",
+  "colorPref": "#000",
+  "contents": [{
+      "title": "সিস্টেম সম্পর্কিত সাধারণ কিছু কমান্ড",
+      "items": [{
+          "definition": "রুট ইউজারে প্রবেশ করা",
+          "code": "sudo su"
         },
         {
-          "definition":"ডিস্ট্রিবিউশন দেখা",
-          "code":"head -n1 /etc/issue"
+          "definition": "ডিস্ট্রিবিউশন দেখা",
+          "code": "head -n1 /etc/issue"
         },
         {
-          "definition":"সিস্টেম এবং কার্নেল দেখা",
-          "code":"uname -a"
+          "definition": "সিস্টেম এবং কার্নেল দেখা",
+          "code": "uname -a"
         },
         {
-          "definition":"শুধু কার্নেল দেখা",
-          "code":"uname -r"
+          "definition": "শুধু কার্নেল দেখা",
+          "code": "uname -r"
         },
         {
-          "definition":"শুধু আর্কিটেকচার দেখা",
-          "code":"uname -m"
+          "definition": "শুধু আর্কিটেকচার দেখা",
+          "code": "uname -m"
         },
         {
-          "definition":"ভার্চুয়ালাইজেশন দেখা",
-          "code":"systemd-detect-virt"
+          "definition": "ভার্চুয়ালাইজেশন দেখা",
+          "code": "systemd-detect-virt"
         },
         {
-          "definition":"আপটাইম দেখা",
-          "code":"uptime"
+          "definition": "আপটাইম দেখা",
+          "code": "uptime"
         },
         {
-          "definition":"হোস্টনেইম দেখা",
-          "code":"hostname"
+          "definition": "হোস্টনেইম দেখা",
+          "code": "hostname"
         },
         {
-          "definition":"ইউজারনেইম দেখা",
-          "code":"whoami"
+          "definition": "ইউজারনেইম দেখা",
+          "code": "whoami"
         },
         {
-          "definition":"অনলাইনে কে আছে দেখা",
-          "code":"w বা who"
+          "definition": "অনলাইনে কে আছে দেখা",
+          "code": "w বা who"
         },
         {
-          "definition":"সর্বশেষ লগইন করার তথ্য দেখতে",
-          "code":"last"
+          "definition": "সর্বশেষ লগইন করার তথ্য দেখতে",
+          "code": "last"
         },
         {
-          "definition":"চলমান মাসের ক্যালেন্ডার দেখা",
-          "code":"cal"
+          "definition": "চলমান মাসের ক্যালেন্ডার দেখা",
+          "code": "cal"
         },
         {
-          "definition":"কমান্ডের ম্যানুয়াল দেখা",
-          "code":"man কমান্ড"
+          "definition": "কমান্ডের ম্যানুয়াল দেখা",
+          "code": "man কমান্ড"
         },
         {
-          "definition":"কমান্ডের ধরণ দেখা",
-          "code":"type কমান্ড"
+          "definition": "কমান্ডের ধরণ দেখা",
+          "code": "type কমান্ড"
         },
         {
-          "definition":"আইপি এড্রেস দেখা",
-          "code":"hostname -i"
+          "definition": "আইপি এড্রেস দেখা",
+          "code": "hostname -i"
         },
         {
-          "definition":"রিবুট হিস্টরি দেখা",
-          "code":"last reboot"
+          "definition": "রিবুট হিস্টরি দেখা",
+          "code": "last reboot"
         },
         {
-          "definition":"সিস্টেম ডেট দেখা",
-          "code":"date"
+          "definition": "সিস্টেম ডেট দেখা",
+          "code": "date"
         },
         {
-          "definition":"ইউজার এক্টিভিটি লগ দেখা",
-          "code":"sudo less /var/log/auth.log"
+          "definition": "ইউজার এক্টিভিটি লগ দেখা",
+          "code": "sudo less /var/log/auth.log"
         },
         {
-          "definition":"পিসি বন্ধ করা",
-          "code":"sudo poweroff অথবা poweroff অথবা shutdown"
+          "definition": "পিসি বন্ধ করা",
+          "code": "sudo poweroff অথবা poweroff অথবা shutdown"
         },
         {
-          "definition":"কমান্ড লাইন থেকে পিসি বন্ধ করে আবার চালু করা",
-          "code":"sudo reboot অথবা reboot অথবা shutdown -r"
+          "definition": "কমান্ড লাইন থেকে পিসি বন্ধ করে আবার চালু করা",
+          "code": "sudo reboot অথবা reboot অথবা shutdown -r"
         }
       ]
     },
+    
     {
-      "title":"ফাইল এবং ডিরেক্টরি সম্পর্কিত কমান্ডসমূহ",
-      "items":[
-        {
-          "definition":"নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা",
-          "code":"mkdir NewDirectoryName"
+      "title": "ফাইল এবং ডিরেক্টরি সম্পর্কিত কমান্ডসমূহ",
+      "items": [{
+          "definition": "নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা",
+          "code": "mkdir NewDirectoryName"
         },
         {
-          "definition":"নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা ও অনুমতি দেয়া",
-          "code":"mkdir -m777 NewDirectoryName"
+          "definition": "নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা ও অনুমতি দেয়া",
+          "code": "mkdir -m777 NewDirectoryName"
         },
         {
-          "definition":"নতুন ফাইল তৈরি করা উপায় - ১",
-          "code":"touch YourFileName"
+          "definition": "নতুন ফাইল তৈরি করা উপায় - ১",
+          "code": "touch YourFileName"
         },
         {
-          "definition":"নতুন ফাইল তৈরি করা উপায় - ২",
-          "code":"> YourFileName"
+          "definition": "নতুন ফাইল তৈরি করা উপায় - ২",
+          "code": "> YourFileName"
         },
         {
-          "definition":"নতুন ফাইল তৈরি করা উপায় - ৩",
-          "code":"cat> YourFileName"
+          "definition": "নতুন ফাইল তৈরি করা উপায় - ৩",
+          "code": "cat> YourFileName"
         },
         {
-          "definition":"এক কমান্ড দিয়ে অনেকগুলো ফাইল তৈরি করা",
-          "code":"touch index.html style.css main.js"
+          "definition": "এক কমান্ড দিয়ে অনেকগুলো ফাইল তৈরি করা",
+          "code": "touch index.html style.css main.js"
         },
         {
-          "definition":"ফাইল মুছে ফেলা",
-          "code":"rm YourFileName"
+          "definition": "ফাইল মুছে ফেলা",
+          "code": "rm YourFileName"
         },
         {
-          "definition":"ডিরেক্টরি মুছে ফেলা কমান্ডের সংস্করণ দেখা",
-          "code":"rmdir --version"
+          "definition": "ডিরেক্টরি মুছে ফেলা কমান্ডের সংস্করণ দেখা",
+          "code": "rmdir --version"
         },
         {
-          "definition":"পুরো একটি ডিরেক্টরি মুছে ফেলা",
-          "code":"rm -rf YourDirectoryName"
+          "definition": "পুরো একটি ডিরেক্টরি মুছে ফেলা",
+          "code": "rm -rf YourDirectoryName"
         },
         {
-          "definition":"কোনো ডিরেক্টরির অধীনস্থ নির্দিষ্ট ফরমেটের সব ফাইলকে অন্য ডিরেক্টরিতে মুভ করা",
-          "code":"mv *.FileExtension PathToWhereYouWantToMove/"
+          "definition": "কোনো ডিরেক্টরির অধীনস্থ নির্দিষ্ট ফরমেটের সব ফাইলকে অন্য ডিরেক্টরিতে মুভ করা",
+          "code": "mv *.FileExtension PathToWhereYouWantToMove/"
         },
         {
-          "definition":"একাধিক ডিরেক্টরিকে একসাথে একটা নির্দিষ্ট ডিরেক্টরিতে মুভ করা",
-          "code":"mv DirectoryOne/ DirectoryTwo/ PathToWhereYouWantToMove/"
+          "definition": "একাধিক ডিরেক্টরিকে একসাথে একটা নির্দিষ্ট ডিরেক্টরিতে মুভ করা",
+          "code": "mv DirectoryOne/ DirectoryTwo/ PathToWhereYouWantToMove/"
         },
         {
-          "definition":"ডিরেক্টরি অথবা ফাইল দেখা",
-          "code":"ls"
+          "definition": "ডিরেক্টরি অথবা ফাইল দেখা",
+          "code": "ls"
         },
         {
-          "definition":"ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনাসহ)",
-          "code":"ls -l"
+          "definition": "ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনাসহ)",
+          "code": "ls -l"
         },
         {
-          "definition":"নির্দিষ্ট ডিরেক্টরি অথবা ফাইল এর বর্ণনা দেখা",
-          "code":"ls -l <filename>"
+          "definition": "নির্দিষ্ট ডিরেক্টরি অথবা ফাইল এর বর্ণনা দেখা",
+          "code": "ls -l <filename>"
         },
         {
-          "definition":"ডিরেক্টরি অথবা ফাইল দেখা উল্টো উপায়ে ",
-          "code":"ls -r"
+          "definition": "ডিরেক্টরি অথবা ফাইল দেখা উল্টো উপায়ে ",
+          "code": "ls -r"
         },
         {
-          "definition":"ডিরেক্টরি অথবা ফাইল দেখা বরাদ্দ কৃত জায়গাসহ",
-          "code":"ls -s"
+          "definition": "ডিরেক্টরি অথবা ফাইল দেখা বরাদ্দ কৃত জায়গাসহ",
+          "code": "ls -s"
         },
         {
-          "definition":"ডিরেক্টরি অথবা ফাইল দেখা সর্বশেষ পরিবর্তনের সময় অনুসারে",
-          "code":"ls -t"
+          "definition": "ডিরেক্টরি অথবা ফাইল দেখা সর্বশেষ পরিবর্তনের সময় অনুসারে",
+          "code": "ls -t"
         },
         {
-          "definition":"ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনা এবং লুকানো ফাইল/ডিরেক্টরিসহ)",
-          "code":"ls -al"
+          "definition": "ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনা এবং লুকানো ফাইল/ডিরেক্টরিসহ)",
+          "code": "ls -al"
         },
         {
-          "definition":"ডিরেক্টরি এবং ফাইলের মধ্যে থেকে শুধুমাত্র ডিরেক্টরিগুলো লিস্ট অাকারে দেখা",
-          "code":"sudo ls -d */"
+          "definition": "ডিরেক্টরি এবং ফাইলের মধ্যে থেকে শুধুমাত্র ডিরেক্টরিগুলো লিস্ট অাকারে দেখা",
+          "code": "sudo ls -d */"
         },
         {
-          "definition":"কোন ডিরেক্টরির ভিতেরর না প্রবেশ করে তার সকল সাব-ডিরেক্টরী এবং ফাইল দেখতে  ",
-          "code":"ls <directory-name>"
+          "definition": "কোন ডিরেক্টরির ভিতেরর না প্রবেশ করে তার সকল সাব-ডিরেক্টরী এবং ফাইল দেখতে  ",
+          "code": "ls <directory-name>"
         },
         {
-          "definition":"কোন ডিরেক্টরির নির্দিষ্ট ফরম্যাটের ফাইল খোঁজার জন্য",
-          "code":"ls *.<file_format>"
+          "definition": "কোন ডিরেক্টরির নির্দিষ্ট ফরম্যাটের ফাইল খোঁজার জন্য",
+          "code": "ls *.<file_format>"
         },
         {
-          "definition":"কোন ফোল্ডার অথবা ডিরেক্টরিতে প্রবেশ করা",
-          "code":"cd YourFileName"
+          "definition": "কোন ফোল্ডার অথবা ডিরেক্টরিতে প্রবেশ করা",
+          "code": "cd YourFileName"
         },
         {
-          "definition":"কোন ফোল্ডার অথবা ডিরেক্টরি থেকে বের হওয়া",
-          "code":"cd .."
+          "definition": "কোন ফোল্ডার অথবা ডিরেক্টরি থেকে বের হওয়া",
+          "code": "cd .."
         },
         {
-          "definition":"কোন ফাইলে কতটি লাইন আছে তা জানতে",
-          "code":"wc - l <file-name>"
+          "definition": "কোন ফাইলে কতটি লাইন আছে তা জানতে",
+          "code": "wc - l <file-name>"
         },
         {
-          "definition":"vim এডিটর দিয়ে ফাইল এডিট করা",
-          "code":"vi YourFileName"
+          "definition": "vim এডিটর দিয়ে ফাইল এডিট করা",
+          "code": "vi YourFileName"
         },
         {
-          "definition":"nano এডিটর দিয়ে ফাইল এডিট করা",
-          "code":"nano YourFileName"
+          "definition": "nano এডিটর দিয়ে ফাইল এডিট করা",
+          "code": "nano YourFileName"
         },
         {
-          "definition":"gedit এডিটর দিয়ে ফাইল এডিট করা",
-          "code":"gedit YourFileName"
+          "definition": "gedit এডিটর দিয়ে ফাইল এডিট করা",
+          "code": "gedit YourFileName"
         },
         {
-          "definition":"বর্তমান ওয়ার্কিং ডিরেক্টরি প্রিন্ট করা",
-          "code":"pwd"
+          "definition": "বর্তমান ওয়ার্কিং ডিরেক্টরি প্রিন্ট করা",
+          "code": "pwd"
         },
         {
-          "definition":"ফাইল কপি করা",
-          "code":"cp PathToSourceFile PathToWhereYouWantToMove"
+          "definition": "ফাইল কপি করা",
+          "code": "cp PathToSourceFile PathToWhereYouWantToMove"
         },
         {
-          "definition":"ফাইলের নাম পরিবর্তন করা",
-          "code":"mv FileOldName FileNewName"
+          "definition": "ফাইলের নাম পরিবর্তন করা",
+          "code": "mv FileOldName FileNewName"
         },
         {
-          "definition":"ফাইলের কনটেন্ট দেখা উপায় - ১",
-          "code":"cat YourFileName"
+          "definition": "ফাইলের কনটেন্ট দেখা উপায় - ১",
+          "code": "cat YourFileName"
         },
         {
-          "definition":"ফাইলের কনটেন্ট দেখা উপায় - ২",
-          "code":"more YourFileName"
+          "definition": "ফাইলের কনটেন্ট দেখা উপায় - ২",
+          "code": "more YourFileName"
         },
         {
-          "definition":"সিস্টেমে ওপেন থাকা ফাইলসমূহের লিস্ট দেখা",
-          "code":"lsof"
+          "definition": "সিস্টেমে ওপেন থাকা ফাইলসমূহের লিস্ট দেখা",
+          "code": "lsof"
         },
         {
-          "definition":"ইউজার দ্বারা ওপেন সমস্ত ফাইলসমূহের লিস্ট দেখা",
-          "code":"lsof -u YourUserName"
+          "definition": "ইউজার দ্বারা ওপেন সমস্ত ফাইলসমূহের লিস্ট দেখা",
+          "code": "lsof -u YourUserName"
         },
         {
-          "definition":"ফাইল ব্রাউজ করা",
-          "code":"less YourFileName"
+          "definition": "ফাইল ব্রাউজ করা",
+          "code": "less YourFileName"
         },
         {
-          "definition":"ফাইলের প্রথম ১০ লাইন দেখা",
-          "code":"head YourFileName"
+          "definition": "ফাইলের প্রথম ১০ লাইন দেখা",
+          "code": "head YourFileName"
         },
         {
-          "definition":"ফাইলের শেষ ১০ লাইন দেখা",
-          "code":"tail -f YourFileName"
+          "definition": "ফাইলের শেষ ১০ লাইন দেখা",
+          "code": "tail -f YourFileName"
         },
         {
-          "definition":"ফাইল অথবা ডিরেক্টরির সাইজ দেখা",
-          "code":"du YourFileOrDirectory"
+          "definition": "ফাইল অথবা ডিরেক্টরির সাইজ দেখা",
+          "code": "du YourFileOrDirectory"
         },
         {
-          "definition":"বর্তমান ওয়ার্কিং ডিরেক্টরির সাইজ দেখা",
-          "code":"du -sh"
+          "definition": "বর্তমান ওয়ার্কিং ডিরেক্টরির সাইজ দেখা",
+          "code": "du -sh"
         },
         {
-          "definition":"সকল ফাইল ও ডিরেক্টরীর ডিক্স ইউজ দেখতে",
-          "code":"du -ah"
+          "definition": "সকল ফাইল ও ডিরেক্টরীর ডিক্স ইউজ দেখতে",
+          "code": "du -ah"
         },
         {
-          "definition":"ফাইলের পারমিশন সবার জন্য রিড, রাইট, এক্সিকিউট (read, write, execute) করা",
-          "code":"chmod 777 YourFileName"
+          "definition": "ফাইলের পারমিশন সবার জন্য রিড, রাইট, এক্সিকিউট (read, write, execute) করা",
+          "code": "chmod 777 YourFileName"
         },
         {
-          "definition":"রিমোট ফাইল ডাউনলোড করা (wget ইন্সটল থাকতে হবে)",
-          "code":"wget https://example.com/remote.pdf"
+          "definition": "রিমোট ফাইল ডাউনলোড করা (wget ইন্সটল থাকতে হবে)",
+          "code": "wget https://example.com/remote.pdf"
         },
         {
-          "definition":"নতুন .tar ফাইল তৈরী করতে",
-          "code":"tar cf file_name.tar files"
+          "definition": "নতুন .tar ফাইল তৈরী করতে",
+          "code": "tar cf file_name.tar files"
         },
         {
-          "definition":"কোন .tar ফাইলকে এক্সট্রাক্ট করতে",
-          "code":"tar xf file.tar"
+          "definition": "কোন .tar ফাইলকে এক্সট্রাক্ট করতে",
+          "code": "tar xf file.tar"
         },
         {
-          "definition":"Gzip ফাইল (.gz) তৈরী করতে",
-          "code":"tar czf file.tar.gz files"
+          "definition": "Gzip ফাইল (.gz) তৈরী করতে",
+          "code": "tar czf file.tar.gz files"
         },
         {
-          "definition":".gz ফাইলকে এক্সট্রাক্ট করতে",
-          "code":"tar xzf file.tar.gz"
+          "definition": ".gz ফাইলকে এক্সট্রাক্ট করতে",
+          "code": "tar xzf file.tar.gz"
         },
         {
           "definition": "কোনো ফোল্ডার খোঁজার জন্য",
@@ -286,69 +284,68 @@
           "code": "find /example/path -type f -name file_name.txt"
         },
         {
-          "definition":"ফাইলের ডাটাবেজ হালনাগাদ করা",
-          "code":"updatedb"
+          "definition": "ফাইলের ডাটাবেজ হালনাগাদ করা",
+          "code": "updatedb"
         }
       ]
     },
     {
-      "title":"হার্ডওয়্যার তথ্য",
-      "items":[
-        {
-          "definition":"সকল হার্ডওয়্যারের লিস্ট দেখা",
-          "code":"lshw"
+      "title": "হার্ডওয়্যার তথ্য",
+      "items": [{
+          "definition": "সকল হার্ডওয়্যারের লিস্ট দেখা",
+          "code": "lshw"
         },
         {
-          "definition":"কার্নেল রিং বাফারে ম্যাসেজ দেখা",
-          "code":"dmesg"
+          "definition": "কার্নেল রিং বাফারে ম্যাসেজ দেখা",
+          "code": "dmesg"
         },
         {
-          "definition":"সিপিও তথ্য দেখা",
-          "code":"cat /proc/cpuinfo"
+          "definition": "সিপিও তথ্য দেখা",
+          "code": "cat /proc/cpuinfo"
         },
         {
-          "definition":"মেমোরি তথ্য দেখা",
-          "code":"cat /proc/meminfo"
+          "definition": "মেমোরি তথ্য দেখা",
+          "code": "cat /proc/meminfo"
         },
         {
-          "definition":"খালি এবং ব্যবহৃত মেমোরি দেখা",
-          "code":"free -h, free -m, free -g"
+          "definition": "খালি এবং ব্যবহৃত মেমোরি দেখা",
+          "code": "free -h, free -m, free -g"
         },
         {
-          "definition":"PCI ডিভাইস দেখা",
-          "code":"lspci -tv"
+          "definition": "PCI ডিভাইস দেখা",
+          "code": "lspci -tv"
         },
         {
-          "definition":"USB ডিভাইস দেখা",
-          "code":"lsusb -tv"
+          "definition": "USB ডিভাইস দেখা",
+          "code": "lsusb -tv"
         },
         {
-          "definition":"Hard Drive ডিভাইস দেখা",
-          "code":"lsblk"
+          "definition": "Hard Drive ডিভাইস দেখা",
+          "code": "lsblk"
         },
         {
-          "definition":"BIOS থেকে DMI/SMBIOS সম্পর্কিত তথ্য দেখা",
-          "code":"dmidecode"
+          "definition": "BIOS থেকে DMI/SMBIOS সম্পর্কিত তথ্য দেখা",
+          "code": "dmidecode"
         },
         {
-          "definition":"হার্ডড্রাইভ সম্পর্কিত তথ্য দেখা",
-          "code":"hdparm -i  /dev/YourDriveName"
+          "definition": "হার্ডড্রাইভ সম্পর্কিত তথ্য দেখা",
+          "code": "hdparm -i  /dev/YourDriveName"
         },
         {
-          "definition":"সোয়াপ সম্পর্কিত তথ্য দেখা",
-          "code":"swapon -s"
+          "definition": "সোয়াপ সম্পর্কিত তথ্য দেখা",
+          "code": "swapon -s"
         },
         {
-          "definition":"মাউন্টেড ফাইল সিস্টেম দেখা",
-          "code":"mount"
+          "definition": "মাউন্টেড ফাইল সিস্টেম দেখা",
+          "code": "mount"
         },
         {
-          "definition":"মাউন্টেড ফাইলের ব্যবহৃত ও অব্যবহৃত  স্পেস দেখা",
-          "code":"df -h"
+          "definition": "মাউন্টেড ফাইলের ব্যবহৃত ও অব্যবহৃত  স্পেস দেখা",
+          "code": "df -h"
         },
         {
-          "definition":"পার্টিশন সম্পর্কিত তথ্য দেখা ",
-          "code":"fdisk -l"
+          "definition": "পার্টিশন সম্পর্কিত তথ্য দেখা ",
+          "code": "fdisk -l"
         },
         {
           "definition": "নেটওয়ার্ক ইন্টারফেস গুলোর লিস্ট দেখতে চাইলে",
@@ -357,160 +354,158 @@
       ]
     },
     {
-      "title":"সিস্টেম পারফর্মেন্স অ্যান্ড মনিটরিং",
-      "items":[
-        {
-          "definition":"টপ প্রসেসগুলো দেখা এবং ম্যানেজ করা",
-          "code":"top"
+      "title": "সিস্টেম পারফর্মেন্স অ্যান্ড মনিটরিং",
+      "items": [{
+          "definition": "টপ প্রসেসগুলো দেখা এবং ম্যানেজ করা",
+          "code": "top"
         },
         {
-          "definition":"টপ প্রসেস দেখা",
-          "code":"top&"
+          "definition": "টপ প্রসেস দেখা",
+          "code": "top&"
         },
         {
-          "definition":"ফাইলের তথ্য দেখা",
-          "code":"locate YourFileName"
+          "definition": "ফাইলের তথ্য দেখা",
+          "code": "locate YourFileName"
         },
         {
-          "definition":"ভার্চুয়াল মেমোরি সম্পর্কিত তথ্য দেখা",
-          "code":"vmstat"
+          "definition": "ভার্চুয়াল মেমোরি সম্পর্কিত তথ্য দেখা",
+          "code": "vmstat"
         },
         {
-          "definition":"বর্তমান অ্যাক্টিভ প্রসেসগুলো দেখা",
-          "code":"ps"
+          "definition": "বর্তমান অ্যাক্টিভ প্রসেসগুলো দেখা",
+          "code": "ps"
         },
         {
-          "definition":"বর্তমান অ্যাক্টিভ ও ঘুমন্ত প্রসেসগুলো দেখা",
-          "code":"ps -afx"
+          "definition": "বর্তমান অ্যাক্টিভ ও ঘুমন্ত প্রসেসগুলো দেখা",
+          "code": "ps -afx"
         },
         {
-          "definition":"টার্মিনালের (সেল) পিআইডি (PID) দেখতে",
-          "code":"echo $$"
+          "definition": "টার্মিনালের (সেল) পিআইডি (PID) দেখতে",
+          "code": "echo $$"
         },
         {
-          "definition":"নির্দিষ্ট প্রসেস আইডির (PID) কোন প্রসেস কিল করা",
-          "code":"kill PID"
+          "definition": "নির্দিষ্ট প্রসেস আইডির (PID) কোন প্রসেস কিল করা",
+          "code": "kill PID"
         },
         {
-          "definition":"নির্দিষ্ট নামের কোন প্রসেস কিল করা",
-          "code":"killall ProcessName"
+          "definition": "নির্দিষ্ট নামের কোন প্রসেস কিল করা",
+          "code": "killall ProcessName"
         },
         {
-          "definition":"রানিং প্রসেসগুলো ট্রি ফরম্যাটে দেখা",
-          "code":"pstree"
+          "definition": "রানিং প্রসেসগুলো ট্রি ফরম্যাটে দেখা",
+          "code": "pstree"
         },
         {
-          "definition":"কোন প্রসেস এর প্রসেস আইডি (PID) দেখা",
-          "code":"pgrep ProcessName"
+          "definition": "কোন প্রসেস এর প্রসেস আইডি (PID) দেখা",
+          "code": "pgrep ProcessName"
         },
         {
-          "definition":"গ্র্যাফিকাল কোন প্রোগ্রাম সিলেক্ট করার মাধ্যমে কিল করা",
-          "code":"xkill"
+          "definition": "গ্র্যাফিকাল কোন প্রোগ্রাম সিলেক্ট করার মাধ্যমে কিল করা",
+          "code": "xkill"
         },
         {
-          "definition":"সিস্টেমের এক্সিকিউটেবল পাথ দেখা",
-          "code":"echo $PATH"
+          "definition": "সিস্টেমের এক্সিকিউটেবল পাথ দেখা",
+          "code": "echo $PATH"
         },
         {
-          "definition":"কোন এক্সিকিউটেবল ফাইলের (এপ্লিকেশনের) ফুল পাথ বের করা",
-          "code":"which ExecutableFileName"
+          "definition": "কোন এক্সিকিউটেবল ফাইলের (এপ্লিকেশনের) ফুল পাথ বের করা",
+          "code": "which ExecutableFileName"
         },
         {
-          "definition":"কোন এপ্লিকেশনের ফাইলের সম্ভাব্য সকল ফুল পাথ বের করা",
-          "code":"whereis <application-name>"
+          "definition": "কোন এপ্লিকেশনের ফাইলের সম্ভাব্য সকল ফুল পাথ বের করা",
+          "code": "whereis <application-name>"
         },
         {
-          "definition":"বর্তমান চলমান সার্ভিস গুলো কোন পোর্টে চলতেছে তা দেখার জন্য",
-          "code":"lsof -i -P -n | grep LISTEN"
+          "definition": "বর্তমান চলমান সার্ভিস গুলো কোন পোর্টে চলতেছে তা দেখার জন্য",
+          "code": "lsof -i -P -n | grep LISTEN"
         },
         {
-          "definition":"কোন সার্ভিস একটি নির্দিস্ট পোর্ট নাম্বারে চলতেছে তা দেখার জন্য",
-          "code":"lsof -i :[পোর্ট নাম্বার] যেমন: lsof -i :80"
+          "definition": "কোন সার্ভিস একটি নির্দিস্ট পোর্ট নাম্বারে চলতেছে তা দেখার জন্য",
+          "code": "lsof -i :[পোর্ট নাম্বার] যেমন: lsof -i :80"
         }
       ]
     },
     {
-      "title":"ব্যাশ শর্টকাট",
-      "items":[
-        {
-          "definition":"টারমিনালের সকল কমান্ড মুছে ফেলা",
-          "code":"clear অথবা Ctrl+l"
+      "title": "ব্যাশ শর্টকাট",
+      "items": [{
+          "definition": "টারমিনালের সকল কমান্ড মুছে ফেলা",
+          "code": "clear অথবা Ctrl+l"
         },
         {
-          "definition":"টারমিনাল ক্লোজ করা",
-          "code":"exit অথবা Ctrl+D"
+          "definition": "টারমিনাল ক্লোজ করা",
+          "code": "exit অথবা Ctrl+D"
         },
         {
-          "definition":"টারমিনাল ক্লোজ না করে প্রাথমিক অবস্থায় ফিরে যেতে",
-          "code":"reset"
+          "definition": "টারমিনাল ক্লোজ না করে প্রাথমিক অবস্থায় ফিরে যেতে",
+          "code": "reset"
         },
         {
-          "definition":"বর্তমান কমান্ড স্টপ করা",
-          "code":"Ctrl-c"
+          "definition": "বর্তমান কমান্ড স্টপ করা",
+          "code": "Ctrl-c"
         },
         {
-          "definition":"প্রোগ্রামকে ঘুম পাড়ানো",
-          "code":"Ctrl-z"
+          "definition": "প্রোগ্রামকে ঘুম পাড়ানো",
+          "code": "Ctrl-z"
         },
         {
-          "definition":"লাইনের শুরুতে যাওয়া",
-          "code":"Ctrl-a"
+          "definition": "লাইনের শুরুতে যাওয়া",
+          "code": "Ctrl-a"
         },
         {
-          "definition":"লাইনের শেষে যাওয়া",
-          "code":"Ctrl-e"
+          "definition": "লাইনের শেষে যাওয়া",
+          "code": "Ctrl-e"
         },
         {
-          "definition":"কার্সর এর আগের শব্দগুলো মুছে ফেলা",
-          "code":"Ctrl+w"
+          "definition": "কার্সর এর আগের শব্দগুলো মুছে ফেলা",
+          "code": "Ctrl+w"
         },
         {
-          "definition":"ফাইল/ফোল্ডার এর নাম অটোকমপ্লিট করা",
-          "code":"Tab"
+          "definition": "ফাইল/ফোল্ডার এর নাম অটোকমপ্লিট করা",
+          "code": "Tab"
         },
         {
-          "definition":"ব্যাকস্পেস এর শর্টকাট",
-          "code":"Ctrl+h"
+          "definition": "ব্যাকস্পেস এর শর্টকাট",
+          "code": "Ctrl+h"
         },
         {
-          "definition":"লাইনের শুরু থেকে কাট করা",
-          "code":"Ctrl-u"
+          "definition": "লাইনের শুরু থেকে কাট করা",
+          "code": "Ctrl-u"
         },
         {
-          "definition":"লাইনের শেষ পর্যন্ত কাট করা",
-          "code":"Ctrl-k"
+          "definition": "লাইনের শেষ পর্যন্ত কাট করা",
+          "code": "Ctrl-k"
         },
         {
-          "definition":"হিস্টোরি খোঁজা",
-          "code":"Ctrl-r"
+          "definition": "হিস্টোরি খোঁজা",
+          "code": "Ctrl-r"
         },
         {
-          "definition":"সর্বশেষ ব্যবহৃত হওয়া ৩০ টি কমান্ড দেখার জন্য",
-          "code":"history | tail -30"
+          "definition": "সর্বশেষ ব্যবহৃত হওয়া ৩০ টি কমান্ড দেখার জন্য",
+          "code": "history | tail -30"
         },
         {
-          "definition":"শেষ কমান্ড পুনরাবৃত্তি করা",
-          "code":"!!"
+          "definition": "শেষ কমান্ড পুনরাবৃত্তি করা",
+          "code": "!!"
         },
         {
-          "definition":"অমুক(abc) দিয়ে শুরু শেষ কমান্ড পুনরাবৃত্তি করা",
-          "code":"!abc"
+          "definition": "অমুক(abc) দিয়ে শুরু শেষ কমান্ড পুনরাবৃত্তি করা",
+          "code": "!abc"
         },
         {
-          "definition":"অমুক(abc) দিয়ে শুরু শেষ কমান্ড প্রিন্ট করা",
-          "code":"!abc:p"
+          "definition": "অমুক(abc) দিয়ে শুরু শেষ কমান্ড প্রিন্ট করা",
+          "code": "!abc:p"
         },
         {
-          "definition":"আগের কমান্ডের শেষ আর্গুমেন্ট",
-          "code":"!$"
+          "definition": "আগের কমান্ডের শেষ আর্গুমেন্ট",
+          "code": "!$"
         },
         {
-          "definition":"আগের কমান্ডের সব আর্গুমেন্ট",
-          "code":"!*"
+          "definition": "আগের কমান্ডের সব আর্গুমেন্ট",
+          "code": "!*"
         },
         {
-          "definition":"আগের অমুক(abc) কমান্ড খোঁজ করে তমুক() দিয়ে রিপ্লেস করে রান",
-          "code":"^abc^123"
+          "definition": "আগের অমুক(abc) কমান্ড খোঁজ করে তমুক() দিয়ে রিপ্লেস করে রান",
+          "code": "^abc^123"
         }
       ]
     }
