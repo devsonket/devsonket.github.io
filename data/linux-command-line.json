@@ -97,6 +97,10 @@
         {
           "definition": "ডাউনলোডকৃত প্যাকেজ আপগ্রেড করার জন্য",
           "code": "sudo apt upgrade"
+        },
+        {
+          "definition": "প্যাকেজ ডাউনলোড ও আপগ্রেড একসাথে করার জন্য",
+          "code": "sudo apt update ; sudo apt upgrade"
         }
       ]
     },
