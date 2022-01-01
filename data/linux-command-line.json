@@ -93,6 +93,10 @@
       "items": [{
           "definition": "কনফিগারড সোর্সের প্যাকেজ ডাউনলোড করার জন্য",
           "code": "sudo apt update"
+        },
+        {
+          "definition": "ডাউনলোডকৃত প্যাকেজ আপগ্রেড করার জন্য",
+          "code": "sudo apt upgrade"
         }
       ]
     },
