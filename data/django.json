@@ -39,6 +39,23 @@
       ]
     },
     {
+      "title": "ভার্চুয়াল ইনভাইরমেন্ট তৈরি করা", 
+      "items": [
+        {
+          "definition": "ভার্চুয়াল ইনভাইরমেন্ট এর ফোল্ডার তৈরি করা",
+          "code": "python3 -m venv myvenv <virtual_environment_name>"
+        },
+        {
+          "definition": "উন্ডোজে ভার্চুয়াল ইনভাইরমেন্ট রান করা",
+          "code": "<virtual_environment_name>\Scripts\activate"
+        },
+        {
+          "definition": "লিনাক্সে ভার্চুয়াল ইনভাইরমেন্ট রান করা",
+          "code": "source <virtual_environment_name>\bin\activate"
+        },
+      ]
+    },
+    {
       "title": "pip কমান্ডস", 
       "items": [
         {
