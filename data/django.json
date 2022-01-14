@@ -47,11 +47,11 @@
         },
         {
           "definition": "উন্ডোজে ভার্চুয়াল ইনভাইরমেন্ট রান করা",
-          "code": "<virtual_environment_name>\Scripts\activate"
+          "code": "<virtual_environment_name>/Scripts/activate"
         },
         {
           "definition": "লিনাক্সে ভার্চুয়াল ইনভাইরমেন্ট রান করা",
-          "code": "source <virtual_environment_name>\bin\activate"
+          "code": "source <virtual_environment_name>/bin/activate"
         },
       ]
     },
