@@ -8,15 +8,15 @@
         {
             "title": "ডকার ভারশন",
             "items": [
-	        	{
+                {
                     "definition": "ডকার ভারশন",
                     "code": "docker --version"
                 },
-		        {
+                {
                     "definition": "ডকার ইনস্টলেশন সম্পর্কে আরও বিস্তারিত দেখতে",
                     "code": "docker info"
                 },
-		        {
+                {
                     "definition": "টেস্ট ডকার ইনস্টলেশন",
                     "code": "docker run hello-world"
                 },
@@ -37,7 +37,7 @@
                     "code": "docker ps -q"
                 }
             ]
-        }, 
+        },
         {
             "title": "ডকার কন্টেইনার কমান্ডসমূহ",
             "items": [
@@ -61,8 +61,6 @@
                     "definition": "সর্বশেষ তৈরি করা N সংখ্যক ডকার কন্টেইনার দেখার জন্য",
                     "code": "docker container ls -n 5"
                 },
-                   
-            
                 {
                     "definition": "List of stopped ডকার কন্টেইনার",
                     "code": "docker container ls -f 'status=exited'"
@@ -87,16 +85,15 @@
                     "definition": "ডকার কন্টেইনার focely remove করতে",
                     "code": "docker rm -f <container_id>"
                 }
-
             ]
         },
         {
             "title": "ডকার ইমেজ কমান্ডসমূহ",
             "items": [
-		        {
+                {
                     "definition": "List of all ডকার ইমেজ",
                     "code": "docker images"
-                },    
+                },
                 {
                     "definition": "ডকার ইমেজ remove করতে",
                     "code": "docker rmi <image_id>"
@@ -109,13 +106,12 @@
                     "definition": "ডকার ইমেজ রিপোজিটরি/ট্যাঁগ নেইম change করতে",
                     "code": "docker image tag <old repository name>:<old tag name> <new repository name>:<new tag name>"
                 }
-
             ]
         },
         {
             "title": "ডকার ইমেজ and কন্টেইনার run কমান্ডসমূহ",
             "items": [
-		        {
+                {
                     "definition": "ডকারফাইল run",
                     "code": "docker run -p 3000:3000 image"
                 },
@@ -127,7 +123,6 @@
                     "definition": "ডকার ইমেজ build করতে",
                     "code": "docker build -t <imagename> ."
                 }
-
             ]
         },
         {
@@ -168,15 +163,42 @@
             ]
         },
         {
+            "title": "ডকার সিস্টেম কমান্ডসমূহ",
+            "items": [
+                {
+                    "definition": "ডকার ডিস্ক ইউসেজ জানতে",
+                    "code": "docker system df"
+                },
+                {
+                    "definition": "সার্ভার থেকে রিয়েল টাইম ইভেন্ট চেক করতে",
+                    "code": "docker system events"
+                },
+                {
+                    "definition": "রানিং ডকার সিস্টেম সম্পর্কে বিস্তারিত জানতে",
+                    "code": "docker system info"
+                },
+                {
+                    "definition": "অব্যবহৃত সকল ডকার ইমেজ, কন্টেইনার, ক্যাশ ও ভলিউম রিমুভ করতে",
+                    "code": "docker system prune"
+                },
+                {
+                    "definition": "ব্যবহৃত এবং অব্যবহৃত সকল ডকার ইমেজ রিমুভ করতে",
+                    "code": "docker system prune -a"
+                },
+                {
+                    "definition": "অব্যবহৃত সকল ডকার ভলিউম রিমুভ করতে",
+                    "code": "docker system prune --volumes"
+                }
+            ]
+        },
+        {
             "title": "ডকার credentials কমান্ডসমূহ",
             "items": [
-		        {
+                {
                     "definition": "ডকার login",
                     "code": "docker login"
                 }
-
             ]
         }
-
     ]
 }
