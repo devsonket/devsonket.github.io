@@ -283,6 +283,43 @@
                     "code": "pow(x, y);"
                 }
             ]
+        },
+        {
+            "title": "প্রয়োজনীয় হেডার ফাইল সমূহ",
+            "items": [
+                {
+                    "definition": "সকল স্ট্যান্ডার্ড লাইব্রেরি এবং এস টি এল একবারে অ্যাড করতে",
+                    "code": "#include <bits/stdc++.h>"
+                },
+                {
+                    "definition": "স্ট্যান্ডার্ড ইনপুট আউটপুট প্রকাশে সি এর ফাইল",
+                    "code": "#include<stdio.h>"
+                },
+                {
+                    "definition": "স্ট্রিং সম্পর্কিত কার্যক্রমের জন্য",
+                    "code": "#include<string.h>"
+                },
+                {
+                    "definition": "গাণিতিক ফাংশন ব্যাবহার এর জন্য",
+                    "code": "#include<math.h>"
+                },
+                {
+                    "definition": "ইনপুট এবং অউটপুটের ডাটা ম্যানুপুলেট সম্পর্কিত ফাংশন ব্যাবহারের জন্য",
+                    "code": "#include<iomanip.h>"
+                },
+                {
+                    "definition": "এরর হ্যান্ডেলিং সম্পর্কিত ফাংশন",
+                    "code": "#include<errno.h>"
+                },
+                {
+                    "definition": "বাইরের ফাইল থেকে ডাটা রিড এবং রাইট করা",
+                    "code": "#include<fstream.h>"
+                },
+                {
+                    "definition": "সময় সম্পর্কিত ফাইল",
+                    "code": "#include<time.h>"
+                }
+            ]
         }
     ]
 }
