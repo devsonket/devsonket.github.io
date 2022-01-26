@@ -4,303 +4,451 @@
     "slug": "html",
     "description": "এইচটিএমএল(HTML) এর পূর্নরুপ হচ্ছে Hypertext Markup Language, ওয়েব পেজ ও ওয়েব অ্যাপ্লিকেশন তৈরী করার জন্যে স্ট্যান্ডার্ড মার্কাপ ল্যাংগুয়েজ হিসেবে ব্যবহৃত হয়",
     "colorPref": "#e44d26",
-    "contents": [
-        {
+    "contents": [{
             "title": "সাধারণ",
-            "items": [
-                {
+            "items": [{
                     "definition": "এইচটিএমএল ডকুমেন্ট তৈরী করা",
                     "code": "<html>...</html>"
-                }, {
+                },
+                {
                     "definition": "টাইটেলসহ অন্যান্য তথ্য সেট",
                     "code": "<head>...</head>"
-                }, {
+                },
+                {
                     "definition": "দৃশ্যমান অংশ সেট",
                     "code": "<body>...</body>"
-                }, {
+                },
+                {
                     "definition": "ডকুমেন্ট এর টাইটেল সেট",
                     "code": "<title>...</title>"
                 }
             ]
-        }, {
+        },
+        {
             "title": "ফরম্যাট",
-            "items": [
-                {
+            "items": [{
                     "definition": "নতুন প্যারাগ্রাফ তৈরী",
                     "code": "<p>...</p>"
-                }, {
+                },
+                {
                     "definition": "লাইন ব্রেক",
                     "code": "<br>"
-                }, {
+                },
+                {
                     "definition": "উক্তি তৈরী করা",
                     "code": "<blockquote>...</blockquote>"
-                }, {
+                },
+                {
                     "definition": "ব্লক সেকশন তৈরী",
                     "code": "<div>...</div>"
-                }, {
+                },
+                {
                     "definition": "একই লাইনে সেকশন তৈরী",
                     "code": "<span>...</span>"
                 }
             ]
-        }, {
+        },
+        {
             "title": "বডি অ্যাট্রিবউট(ইমেইল টেমপ্লেট)",
-            "items": [
-                {
+            "items": [{
                     "definition": "ব্যাকগ্রাউন্ড কালার সেট",
                     "code": "<body bgcolor=...>...</body>"
-                }, {
+                },
+                {
                     "definition": "লেখার কালার সেট",
                     "code": "<body text=...>...</body>"
-                }, {
+                },
+                {
                     "definition": "লিঙ্ক এর কালার সেট",
                     "code": "<body link=...>...</body>"
-                }, {
+                },
+                {
                     "definition": "ভিসিট করা লিঙ্ক এর কালার সেট",
                     "code": "<body vlink=...>...</body>"
-                }, {
+                },
+                {
                     "definition": "অ্যাক্টিভ লিঙ্ক এর কালার সেট",
                     "code": "<body alink=...>...</body>"
                 }
             ]
-        }, {
+        },
+        {
             "title": "বডি অ্যাট্রিবউট(ইমেইল টেমপ্লেট)",
-            "items": [
-                {
+            "items": [{
                     "definition": "অর্ডারবিহীন লিস্ট তৈরী",
                     "code": "<ul>...</ul>"
-                }, {
+                },
+                {
                     "definition": "অর্ডার লিস্ট তৈরী",
                     "code": "<ol>...</ol>"
-                }, {
+                },
+                {
                     "definition": "লিস্ট আইটেম",
                     "code": "<li>...</li>"
-                }, {
+                },
+                {
                     "definition": "ডেফিনেশন লিস্ট তৈরী",
                     "code": "<dl>...</dl>"
-                }, {
+                },
+                {
                     "definition": "ডেফিনেশন টার্ম",
                     "code": "<dt>...</dt>"
-                }, {
+                },
+                {
                     "definition": "ডেফিনেশন বর্ণনা",
                     "code": "<dd>...</dd>"
+                },
+                {
+                    "definition": "ডিলেট বর্ণনা",
+                    "code": "<del>...</del>"
+                },
+                {
+                    "definition": "সংক্ষেপণ",
+                    "code": "<abbr>...</abbr>"
+                },
+                {
+                    "definition": "সংক্ষিপ্ত বিবরণ",
+                    "code": "<acronym>...</acronym>"
+                },
+                {
+                    "definition": "চিত্রের ভিতরের একটি অঞ্চল সংজ্ঞা দেয়",
+                    "code": "<area>...</area>"
                 }
             ]
-        }, {
+        },
+        {
             "title": "লেখার ট্যাগ",
-            "items": [
-                {
+            "items": [{
                     "definition": "ফরম্যাটেড লেখা",
                     "code": "<pre>...</pre>"
-                }, {
+                },
+                {
                     "definition": "হেডলাইন",
                     "code": "<[h1-h6]>...</[h1-h6]>"
-                }, {
+                },
+                {
                     "definition": "বোল্ড লেখা",
                     "code": "<b>...</b>"
-                }, {
+                },
+                {
                     "definition": "ইটালিক লেখা",
                     "code": "<i>...</i>"
-                }, {
+                },
+                {
                     "definition": "টাইপরাইটার স্টাইল লেখা",
                     "code": "<tt>...</tt>"
-                }, {
+                },
+                {
                     "definition": "কোড লেখা",
                     "code": "<code>...</code>"
-                }, {
+                },
+                {
                     "definition": "citation",
                     "code": "<cite>...</cite>"
-                }, {
+                },
+                {
                     "definition": "অ্যাড্রেস লেখার সেকশন",
                     "code": "<address>...</address>"
-                }, {
+                },
+                {
                     "definition": "Emphasize",
                     "code": "<em>...</em>"
-                }, {
+                },
+                {
                     "definition": "strong",
                     "code": "<strong>...</strong>"
-                }, {
+                },
+                {
                     "definition": "ফন্ট সাইজ সেট(1-7)",
                     "code": "<font size=...>...</font>"
-                }, {
+                },
+                {
                     "definition": "ফন্ট কালার সেট",
                     "code": "<font color=...>...</font>"
-                }, {
+                },
+                {
                     "definition": "ফন্ট সেট",
                     "code": "<font face=...>...</font>"
                 }
             ]
-        }, {
+        },
+        {
             "title": "গ্রাফিক্যাল ইলিমেন্ট",
-            "items": [
-                {
+            "items": [{
                     "definition": "হরিজন্টাল লাইন",
                     "code": "<hr>"
-                }, {
+                },
+                {
                     "definition": "হরিজন্টাল লাইনের উচ্চতা",
                     "code": "<hr size>"
-                }, {
+                },
+                {
                     "definition": "হরিজন্টাল লাইনের দৈর্ঘ্য",
                     "code": "<hr width>"
-                }, {
+                },
+                {
                     "definition": "হরিজন্টাল লাইন ছায়া ছাড়া",
                     "code": "<hr noshade>"
-                }, {
+                },
+                {
                     "definition": "ইমেজ যুক্ত ইউআরএল দিয়ে",
                     "code": "<img src=\"ইউআরএল\">"
-                }, {
+                },
+                {
                     "definition": "ইমেজ অ্যালাইন করা",
                     "code": "<img ... align=...>"
-                }, {
+                },
+                {
                     "definition": "ইমেজে বর্ডার",
                     "code": "<img ... border=...>"
-                }, {
+                },
+                {
                     "definition": "ইমেজের উচ্চতা",
                     "code": "<img ... height=...>"
-                }, {
+                },
+                {
                     "definition": "ইমেজের দৈর্ঘ্য",
                     "code": "<img ... width=...>"
-                }, {
+                },
+                {
                     "definition": "ইমেজের বিকল্প লেখা",
                     "code": "<img ... alt=\"বিকল্প-লেখা\">"
                 }
             ]
-        }, {
+        },
+        {
             "title": "লিঙ্ক",
-            "items": [
-                {
+            "items": [{
                     "definition": "কোনো ইউআরএল এ হাইপারলিঙ্ক সেট",
                     "code": "<a href=\"ইউআরএল\">লেখা</a>"
-                }, {
+                },
+                {
                     "definition": "কোনো ইমেইলে এ হাইপারলিঙ্ক সেট",
                     "code": "<a href=\"mailto:ইমেইল\">লেখা</a>"
-                }, {
+                },
+                {
                     "definition": "ডকুমেন্ট এর মধ্যেই লিঙ্ক সেট",
                     "code": "<a name=\"নাম\">লেখা</a>"
-                }, {
+                },
+                {
                     "definition": "পেজের মধ্যেই লিঙ্ক সেট",
                     "code": "<a href=\"#নাম\">লেখা</a>"
                 }
             ]
-        }, {
+        },
+        {
             "title": "ফর্ম",
-            "items": [
-                {
+            "items": [{
                     "definition": "ফর্ম তৈরী",
                     "code": "<form>...</form>"
-                }, {
+                },
+                {
                     "definition": "একাধিক সিলেক্ট করার মেনু তৈরী",
                     "code": "<select multiple name=\"নাম\" size=\"সাইজ\">...</select>"
-                }, {
+                },
+                {
                     "definition": "সিলেক্ট করার মেনু তৈরী",
                     "code": "<select name=\"নাম\">...</select>"
-                }, {
+                },
+                {
                     "definition": "সিলেক্ট মেনুর অপশন",
                     "code": "<option>...</option>"
-                }, {
+                },
+                {
                     "definition": "লেখার বক্স তৈরী কলাম রো সহ",
                     "code": "<textarea name=\"নাম\" cols=... rows=...>...</textarea>"
-                }, {
+                },
+                {
                     "definition": "চেকবক্স তৈরী",
                     "code": "<input type=\"checkbox\" name=\"নাম\" value=\"ভ্যালু\">"
-                }, {
+                },
+                {
                     "definition": "চেকবক্স চেক অবস্থায় তৈরী",
                     "code": "<input type=\"checkbox\" ... ... checked>"
-                }, {
+                },
+                {
                     "definition": "রেডিও বাটন তৈরী",
                     "code": "<input type=\"radio\" name=\"নাম\" value=\"ভ্যালু\">"
-                }, {
+                },
+                {
                     "definition": "রেডিও বাটন চেক অবস্থায় তৈরী",
                     "code": "<input type=\"checkbox\" ... ... checked>"
-                }, {
+                },
+                {
                     "definition": "লেখার বক্স তৈরী",
                     "code": "<input type=\"text\" name=\"নাম\" value=\"ভ্যালু\">"
-                }, {
+                },
+                {
                     "definition": "সাবমিট বাটন তৈরী",
                     "code": "<input type=\"submit\" value=\"ভ্যালু\">"
-                }, {
+                },
+                {
                     "definition": "রিসেট বাটন তৈরী",
                     "code": "<input type=\"reset\" name=\"নাম\" value=\"ভ্যালু\">"
                 }
             ]
-        }, {
+        },
+        {
             "title": "ইনপুট ট্যাগ",
-            "items": [
-                {
+            "items": [{
                     "definition": "ইমেইল অ্যাড্রেস এর জন্যে ইনপুট",
                     "code": "<input type=\"email\" name=\"নাম\">"
-                }, {
+                },
+                {
                     "definition": "ইউআরএল এর জন্যে ইনপুট",
                     "code": "<input type=\"url\" name=\"নাম\">"
-                }, {
+                },
+                {
                     "definition": "নাম্বার এর জন্যে ইনপুট",
                     "code": "<input type=\"number\" name=\"নাম\">"
-                }, {
+                },
+                {
                     "definition": "নাম্বার রেঞ্জ এর জন্যে ইনপুট",
                     "code": "<input type=\"range\" name=\"নাম\">"
-                }, {
+                },
+                {
                     "definition": "তারিখ এর জন্যে ইনপুট",
-                    "code": "<input type=\"date\/month\/week\/time\" name=\"নাম\">"
-                }, {
+                    "code": "<input type=\"date\/month\/week\/time\/datetime\/datetime-local\" name=\"নাম\">"
+                },
+                {
                     "definition": "সার্চ এর জন্যে ইনপুট",
                     "code": "<input type=\"search\" name=\"নাম\">"
-                }, {
+                },
+                {
                     "definition": "কালার এর জন্যে ইনপুট",
                     "code": "<input type=\"color\" name=\"নাম\">"
+                },
+                {
+                    "definition": "টেলিফোন নাম্বার এর জন্যে ইনপুট",
+                    "code": "<input type=\"tel\" name=\"নাম\">"
                 }
             ]
-        }, {
+        },
+        {
             "title": "টেবিল",
-            "items": [
-                {
+            "items": [{
                     "definition": "টেবিল তৈরী",
                     "code": "<table>...</table>"
-                }, {
+                },
+                {
                     "definition": "রো সেট",
                     "code": "<tr>...</tr>"
-                }, {
+                },
+                {
                     "definition": "রো তে সেল সেট",
                     "code": "<td>...</td>"
-                }, {
+                },
+                {
                     "definition": "টেবিল হেডার",
                     "code": "<th>...</th>"
                 }
             ]
-        }, {
+        },
+        {
             "title": "টেবিল অ্যাট্রিবউট",
-            "items": [
-                {
+            "items": [{
                     "definition": "বর্ডারের দৈর্ঘ্য সেট",
                     "code": "<table border=...>...</table>"
-                }, {
+                },
+                {
                     "definition": "সেলের মধ্যকার স্পেস",
                     "code": "<table cellspacing=...>...</table>"
-                }, {
+                },
+                {
                     "definition": "সেলের বর্ডার এবং কন্টেন্ট এর মধ্যকার স্পেস",
                     "code": "<table cellpadding=...>...</table>"
-                }, {
+                },
+                {
                     "definition": "টেবিলের দৈর্ঘ্য",
                     "code": "<table width=...>...</table>"
-                }, {
+                },
+                {
                     "definition": "রো এর ভিতরে সেলের অ্যালাইনমেন্ট",
                     "code": "<tr align=...>...</tr>"
-                }, {
+                },
+                {
                     "definition": "সেলের অ্যালাইনমেন্ট",
                     "code": "<td align=...>...</td>"
-                }, {
+                },
+                {
                     "definition": "রো এর ভিতরে সেলের উপর-নিচ অ্যালাইনমেন্ট",
                     "code": "<tr valign=...>...</tr>"
-                }, {
+                },
+                {
                     "definition": "সেলের উপর-নিচ অ্যালাইনমেন্ট",
                     "code": "<td valign=...>...</td>"
-                }, {
+                },
+                {
                     "definition": "একটা সেলের রো সংখ্যা",
                     "code": "<td rowspan>...</td>"
-                }, {
+                },
+                {
                     "definition": "একটা সেলের কলাম সংখ্যা",
                     "code": "<td colspan>...</td>"
-                }, {
+                },
+                {
                     "definition": "সেলের লাইন না ভাঙ্গা",
                     "code": "<td nowrap>...</td>"
+                }
+            ]
+        },
+        {
+            "title": "এইচটিএমএল ৫",
+            "items": [{
+                    "definition": "ইন্ডিপেনডেন্ট কন্টেন্ট অথবা ডকুমেন্ট",
+                    "code": "<article></article>"
+                },
+                {
+                    "definition": "রিলেটেড অংশ একটা পেজের",
+                    "code": "<aside></aside>"
+                },
+                {
+                    "definition": "আডিও ফাইল সংযুক্ত",
+                    "code": "<audio src=\"\"></audio>"
+                },
+                {
+                    "definition": "গ্রাফিকাল কিছু প্রেসেন্ট করতে",
+                    "code": "<canvas></canvas>"
+                },
+                {
+                    "definition": "অতিরিক্ত ইনফরমেশন",
+                    "code": "<details></details>"
+                },
+                {
+                    "definition": "বাহিরের কোন ইন্টারেক্টিভ কন্টেন্ট",
+                    "code": "<embed src=\"\" type=\"\">"
+                },
+                {
+                    "definition": "স্বয়ংসম্পূর্ণ প্রবাহ সামগ্রী",
+                    "code": "<figure></figure>"
+                },
+                {
+                    "definition": "ফুটার সেকশন এর জন্য",
+                    "code": "<footer></footer>"
+                },
+                {
+                    "definition": "হেডার সেকশন এর জন্য",
+                    "code": "<header></header>"
+                },
+                {
+                    "definition": "একটি সেকশনের প্রধান",
+                    "code": "<hgroup></hgroup>"
+                },
+                {
+                    "definition": "ন্যাভিগেশন",
+                    "code": "<nav></nav>"
+                },
+                {
+                    "definition": "একটি জেনেরিক ডকুমেন্ট বা অ্যাপ্লিকেশন বিভাগ",
+                    "code": "<section></section>"
+                },
+                {
+                    "definition": "ভিডিও ফাইল সংযুক্ত",
+                    "code": "<video src=\"\"></video>"
+                },
+                {
+                    "definition": "লাইন বিরতির সুযোগ",
+                    "code": "<wbr>"
                 }
             ]
         }

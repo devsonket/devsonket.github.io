@@ -25,6 +25,14 @@
           "code":"uname -r"
         },
         {
+          "definition":"শুধু আর্কিটেকচার দেখা",
+          "code":"uname -m"
+        },
+        {
+          "definition":"ভার্চুয়ালাইজেশন দেখা",
+          "code":"systemd-detect-virt"
+        },
+        {
           "definition":"আপটাইম দেখা",
           "code":"uptime"
         },
@@ -53,6 +61,10 @@
           "code":"man কমান্ড"
         },
         {
+          "definition":"কমান্ডের ধরণ দেখা",
+          "code":"type কমান্ড"
+        },
+        {
           "definition":"আইপি এড্রেস দেখা",
           "code":"hostname -i"
         },
@@ -65,16 +77,16 @@
           "code":"date"
         },
         {
-          "definition":"ইউজার ইক্টিবিটি লগ দেখা",
+          "definition":"ইউজার এক্টিভিটি লগ দেখা",
           "code":"sudo less /var/log/auth.log"
         },
         {
           "definition":"পিসি বন্ধ করা",
-          "code":"sudo poweroff অথবা poweroff"
+          "code":"sudo poweroff অথবা poweroff অথবা shutdown"
         },
         {
           "definition":"কমান্ড লাইন থেকে পিসি বন্ধ করে আবার চালু করা",
-          "code":"sudo reboot অথবা reboot"
+          "code":"sudo reboot অথবা reboot অথবা shutdown -r"
         }
       ]
     },
@@ -100,6 +112,10 @@
         {
           "definition":"নতুন ফাইল তৈরি করা উপায় - ৩",
           "code":"cat> YourFileName"
+        },
+        {
+          "definition":"এক কমান্ড দিয়ে অনেকগুলো ফাইল তৈরি করা",
+          "code":"touch index.html style.css main.js"
         },
         {
           "definition":"ফাইল মুছে ফেলা",
@@ -130,12 +146,20 @@
           "code":"ls -l"
         },
         {
+          "definition":"নির্দিষ্ট ডিরেক্টরি অথবা ফাইল এর বর্ণনা দেখা",
+          "code":"ls -l <filename>"
+        },
+        {
           "definition":"ডিরেক্টরি অথবা ফাইল দেখা উল্টো উপায়ে ",
           "code":"ls -r"
         },
         {
           "definition":"ডিরেক্টরি অথবা ফাইল দেখা বরাদ্দ কৃত জায়গাসহ",
           "code":"ls -s"
+        },
+        {
+          "definition":"ডিরেক্টরি অথবা ফাইল দেখা সর্বশেষ পরিবর্তনের সময় অনুসারে",
+          "code":"ls -t"
         },
         {
           "definition":"ডিরেক্টরি অথবা ফাইল দেখা (বর্ণনা এবং লুকানো ফাইল/ডিরেক্টরিসহ)",
@@ -252,6 +276,18 @@
         {
           "definition":".gz ফাইলকে এক্সট্রাক্ট করতে",
           "code":"tar xzf file.tar.gz"
+        },
+        {
+          "definition": "কোনো ফোল্ডার খোঁজার জন্য",
+          "code": "find /example/path -type d -name folder_name"
+        },
+        {
+          "definition": "কোনো ফাইল খোঁজার জন্য",
+          "code": "find /example/path -type f -name file_name.txt"
+        },
+        {
+          "definition":"ফাইলের ডাটাবেজ হালনাগাদ করা",
+          "code":"updatedb"
         }
       ]
     },
@@ -313,6 +349,10 @@
         {
           "definition":"পার্টিশন সম্পর্কিত তথ্য দেখা ",
           "code":"fdisk -l"
+        },
+        {
+          "definition": "নেটওয়ার্ক ইন্টারফেস গুলোর লিস্ট দেখতে চাইলে",
+          "code": "ifconfig"
         }
       ]
     },
@@ -378,6 +418,14 @@
         {
           "definition":"কোন এপ্লিকেশনের ফাইলের সম্ভাব্য সকল ফুল পাথ বের করা",
           "code":"whereis <application-name>"
+        },
+        {
+          "definition":"বর্তমান চলমান সার্ভিস গুলো কোন পোর্টে চলতেছে তা দেখার জন্য",
+          "code":"lsof -i -P -n | grep LISTEN"
+        },
+        {
+          "definition":"কোন সার্ভিস একটি নির্দিস্ট পোর্ট নাম্বারে চলতেছে তা দেখার জন্য",
+          "code":"lsof -i :[পোর্ট নাম্বার] যেমন: lsof -i :80"
         }
       ]
     },

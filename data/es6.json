@@ -1,390 +1,385 @@
 {
-    "id": "es6",
-    "title": "ইএস৬ চিটশিট ",
-    "slug": "es6-cheat-sheet",
-    "description": "ইএস৬ অথবা ইকমাস্ক্রিপ্ট হল স্ক্রিপ্টিং-ভাষা স্পেসিফিকেশন, ইকমা ইন্টারন্যাশনাল দ্বারা প্রমিত। এটি জাভাস্ক্রিপ্ট ভাষার একটি বড় বর্ধন, এবং বৃহত্তর স্কেল সফ্টওয়্যার গুলোকে আরও সহজ করার উদ্দেশ্যে অনেক বৈশিষ্ট্য যুক্ত করা হয়েছে",
-    "colorPref": "#fcbc2c",
-    "contents": [
-      {
-        "title": "ভ্যারিয়েবল ডিক্লেয়ার করা",
-        "items": [
-          {
-            "definition": "let, এই ডিক্লেরেশন দিয়ে ব্লক স্কোপ তৈরি করা হয়",
-            "code": "let a = 5"
-          },
-          {
-            "definition": "const, ব্লক স্কোপ তৈরী কিন্তু পুনরায় এসাইন বা ডিক্লেয়ার করা যায় না",
-            "code": "const pi = 3.1416"
-          }
-        ]
+  "id": "es6",
+  "title": "ইএস৬ চিটশিট ",
+  "slug": "es6-cheat-sheet",
+  "description": "ইএস৬ অথবা ইকমাস্ক্রিপ্ট হল স্ক্রিপ্টিং-ভাষা স্পেসিফিকেশন, ইকমা ইন্টারন্যাশনাল দ্বারা প্রমিত। এটি জাভাস্ক্রিপ্ট ভাষার একটি বড় বর্ধন, এবং বৃহত্তর স্কেল সফ্টওয়্যার গুলোকে আরও সহজ করার উদ্দেশ্যে অনেক বৈশিষ্ট্য যুক্ত করা হয়েছে",
+  "colorPref": "#fcbc2c",
+  "contents": [{
+          "title": "ভ্যারিয়েবল ডিক্লেয়ার করা",
+          "items": [{
+                  "definition": "let, এই ডিক্লেরেশন দিয়ে ব্লক স্কোপ তৈরি করা হয়",
+                  "code": "let a = 5"
+              },
+              {
+                  "definition": "const, ব্লক স্কোপ তৈরী কিন্তু পুনরায় এসাইন বা ডিক্লেয়ার করা যায় না",
+                  "code": "const pi = 3.1416"
+              }
+          ]
       },
       {
-        "title": "টেম্পলেট স্ট্রিং",
-        "items": [
-          {
-            "code": "const name = 'Devsonket';"
-          },
-          {
-            "code": "console.log(`Welcome to ${name}!`)"
-          },
-          {
-            "code": "// Welcome to Devsonket!"
-          }
-        ]
+          "title": "টেম্পলেট স্ট্রিং",
+          "items": [{
+                  "code": "const name = 'Devsonket';"
+              },
+              {
+                  "code": "console.log(`Welcome to ${name}!`)"
+              },
+              {
+                  "code": "// Welcome to Devsonket!"
+              }
+          ]
       },
       {
-        "title": "একের অধিক লাইন একসাথে প্রিন্ট করা স্পেশাল ক্যারেক্টার ব্যবহার না করে",
-        "items": [
-          {
-            "code": "console.log(`Hello Programmer."
-          },
-          {
-            "code": "Welcome to Devsonket.`);"
-          },
-          {
-            "code": "// Hello Programmer."
-          },
-          {
-            "code": "Welcome to Devsonket."
-          }
-        ]
+          "title": "একের অধিক লাইন একসাথে প্রিন্ট করা স্পেশাল ক্যারেক্টার ব্যবহার না করে",
+          "items": [{
+                  "code": "console.log(`Hello Programmer."
+              },
+              {
+                  "code": "Welcome to Devsonket.`);"
+              },
+              {
+                  "code": "// Hello Programmer."
+              },
+              {
+                  "code": "Welcome to Devsonket."
+              }
+          ]
       },
       {
-        "title": "স্ট্রিং ম্যাথড",
-        "items": [
-          {
-            "definition": "একটি স্ট্রিং এ নির্দিষ্ট কিছু অক্ষর আছে কিনা দেখে true অথবা false রিটার্ন করা",
-            "code": "includes(), যেমন: 'Apple'.includes('pl'), // true"
-          },
-          {
-            "definition": "কোন একটি স্ট্রিং নির্দিষ্ট কিছু অক্ষর দিয়ে শুরু হয়েছে কিনা দেখে true অথবা false রিটার্ন করা ",
-            "code": "startsWith(), যেমন: 'Apple'.startsWith('bl'), // false"
-          },
-          {
-            "definition": "repeat(), একটি স্ট্রিং কতবার পুনরাবৃত্তি হবে তা বলা",
-            "code": "repeat(), যেমন: 'Apple'.repeat(2) // 'AppleApple'"
-          },
-          {
-            "definition": "একটি স্ট্রিং এর শুরুতে নির্দিষ্ট আরেকটি স্ট্রিং বসানো যতক্ষণ না পর্যন্ত স্ট্রিং টির নির্দিষ্ট দৈর্ঘ্য শেষ হয়",
-            "code": "string.padStart(targetLength, padString), যেমন: 'hello'.padStart(8, '!') // '!!!hello'"
-          },
-          {
-            "definition": "একটি স্ট্রিং এর শেষে নির্দিষ্ট আরেকটি স্ট্রিং বসানো যতক্ষণ না পর্যন্ত স্ট্রিং টির নির্দিষ্ট দৈর্ঘ্য শেষ হয়",
-            "code": "string.padEnd(targetLength, padString), যেমন: 'hello'.padEnd(8, '!') // 'hello!!!'"
-          }
-        ]
+          "title": "স্ট্রিং ম্যাথড",
+          "items": [{
+                  "definition": "একটি স্ট্রিং এ নির্দিষ্ট কিছু অক্ষর আছে কিনা দেখে true অথবা false রিটার্ন করা",
+                  "code": "includes(), যেমন: 'Apple'.includes('pl'), // true"
+              },
+              {
+                  "definition": "কোন একটি স্ট্রিং নির্দিষ্ট কিছু অক্ষর দিয়ে শুরু হয়েছে কিনা দেখে true অথবা false রিটার্ন করা ",
+                  "code": "startsWith(), যেমন: 'Apple'.startsWith('bl'), // false"
+              },
+              {
+                  "definition": "repeat(), একটি স্ট্রিং কতবার পুনরাবৃত্তি হবে তা বলা",
+                  "code": "repeat(), যেমন: 'Apple'.repeat(2) // 'AppleApple'"
+              },
+              {
+                  "definition": "একটি স্ট্রিং এর শুরুতে নির্দিষ্ট আরেকটি স্ট্রিং বসানো যতক্ষণ না পর্যন্ত স্ট্রিং টির নির্দিষ্ট দৈর্ঘ্য শেষ হয়",
+                  "code": "string.padStart(targetLength, padString), যেমন: 'hello'.padStart(8, '!') // '!!!hello'"
+              },
+              {
+                  "definition": "একটি স্ট্রিং এর শেষে নির্দিষ্ট আরেকটি স্ট্রিং বসানো যতক্ষণ না পর্যন্ত স্ট্রিং টির নির্দিষ্ট দৈর্ঘ্য শেষ হয়",
+                  "code": "string.padEnd(targetLength, padString), যেমন: 'hello'.padEnd(8, '!') // 'hello!!!'"
+              },
+              {
+                  "definition": "একটি স্ট্রিং এর শেষে নির্দিষ্ট স্পেসিং করা যতক্ষণ না পর্যন্ত স্ট্রিং টির নির্দিষ্ট দৈর্ঘ্য শেষ হয়",
+                  "code": "string.padEnd(targetLength, padString), যেমন: 'hello'.padEnd(8) // 'hello   '"
+              }
+          ]
       },
       {
-        "title": "লুপ",
-        "items": [
-          {
-            "definition": "ফর অব লুপ",
-            "code": "for(let i of list){ // লুপের মধ্যের কাজ }"
-          },
-          {
-            "definition": "ফর ইন লুপ",
-            "code": "for(let i in list){ // লুপের মধ্যের কাজ }"
-          }
-        ]
+          "title": "লুপ",
+          "items": [{
+                  "definition": "ফর অব লুপ",
+                  "code": "for(let i of list){ // লুপের মধ্যের কাজ }"
+              },
+              {
+                  "definition": "ফর ইন লুপ",
+                  "code": "for(let i in list){ // লুপের মধ্যের কাজ }"
+              }
+          ]
       },
       {
-        "title": "এরো ফাংশন",
-        "items": [
-          {
-            "code": "const sum = (a, b) => a + b"
-          },
-          {
-            "code": "console.log(sum(2, 8))"
-          },
-          {
-            "code": "// 10 প্রিন্ট করবে"
-          },
-          {
-            "code": "const mul = a => a * a  // একটি প্যারামিটার থাকলে () এর প্রয়োজন হয় না"
-          },
-          {
-            "code": "console.log(mul(8))"
-          },
-          {
-            "code": "// 64 প্রিন্ট করবে"
-          },
-          {
-            "code": "const printPI = _ => 3.1416 // কোন প্যারামিটার না থাকলে _ দিলে ভালিড্‌ হয়"
-          },
-          {
-            "code": "console.log(printPI())"
-          },
-          {
-            "code": "// 3.1416 প্রিন্ট করবে"
-          }
-        ]
+          "title": "এরো ফাংশন",
+          "items": [{
+                  "code": "const sum = (a, b) => a + b"
+              },
+              {
+                  "code": "console.log(sum(2, 8))"
+              },
+              {
+                  "code": "// 10 প্রিন্ট করবে"
+              },
+              {
+                  "code": "const mul = a => a * a  // একটি প্যারামিটার থাকলে () এর প্রয়োজন হয় না"
+              },
+              {
+                  "code": "console.log(mul(8))"
+              },
+              {
+                  "code": "// 64 প্রিন্ট করবে"
+              },
+              {
+                  "code": "const printPI = _ => 3.1416 // কোন প্যারামিটার না থাকলে _ দিলে ভালিড্‌ হয়"
+              },
+              {
+                  "code": "console.log(printPI())"
+              },
+              {
+                  "code": "// 3.1416 প্রিন্ট করবে"
+              }
+          ]
       },
       {
-        "title": "ইএস৬ ক্লাস",
-        "items": [
-          {
-            "code": "class Car {"
-          },
-          {
-            "code": "constructor(brand) {"
-          },
-          {
-            "code": "this.carName = brand; }"
-          },
-          {
-            "code": "}"
-          },
-          {
-            "code": "mycar = new Car('Audi')"
-          }
-        ]
+          "title": "ইএস৬ ক্লাস",
+          "items": [{
+                  "code": "class Car {"
+              },
+              {
+                  "code": "constructor(brand) {"
+              },
+              {
+                  "code": "this.carName = brand; }"
+              },
+              {
+                  "code": "}"
+              },
+              {
+                  "code": "mycar = new Car('Audi')"
+              }
+          ]
       },
       {
-        "title": "ডিফল্ট প্যারামিটার",
-        "items": [
-          {
-            "code": "function print(a = 5) {"
-          },
-          {
-            "code": "console.log(a) }"
-          },
-          {
-            "code": "print() // 5 প্রিন্ট করবে"
-          },
-          {
-            "code": "print(22) // 22 প্রিন্ট করবে"
-          }
-        ]
+          "title": "ডিফল্ট প্যারামিটার",
+          "items": [{
+                  "code": "function print(a = 5) {"
+              },
+              {
+                  "code": "console.log(a) }"
+              },
+              {
+                  "code": "print() // 5 প্রিন্ট করবে"
+              },
+              {
+                  "code": "print(22) // 22 প্রিন্ট করবে"
+              }
+          ]
       },
       {
-        "title": "ডিস্ট্রাকচারিং এরে",
-        "items": [
-          {
-            "code": "let [a, b] = [3, 6]"
-          },
-          {
-            "code": "console.log(a) // 3 প্রিন্ট করবে"
-          },
-          {
-            "code": "console.log(b) // 6 প্রিন্ট করবে"
-          }
-        ]
+          "title": "ডিস্ট্রাকচারিং অ্যারে",
+          "items": [{
+                  "code": "let [a, b] = [3, 6]"
+              },
+              {
+                  "code": "console.log(a) // 3 প্রিন্ট করবে"
+              },
+              {
+                  "code": "console.log(b) // 6 প্রিন্ট করবে"
+              }
+          ]
       },
       {
-        "title": "ডিস্ট্রাকচারিং অবজেক্ট",
-        "items": [
-          {
-            "code": "let obj = {"
-          },
-          {
-            "code": "a : 50,"
-          },
-          {
-            "code": "b : 60"
-          },
-          {
-            "code": "}"
-          },
-          {
-            "code": "let {a, b } = obj;"
-          },
-          {
-            "code": "console.log(a) // 50 প্রিন্ট করবে"
-          },
-          {
-              "code": "console.log(b) // 60 প্রিন্ট করবে"
-          }
-        ]
+          "title": "ডিস্ট্রাকচারিং অবজেক্ট",
+          "items": [{
+                  "code": "let obj = {"
+              },
+              {
+                  "code": "a : 50,"
+              },
+              {
+                  "code": "b : 60"
+              },
+              {
+                  "code": "}"
+              },
+              {
+                  "code": "let {a, b } = obj;"
+              },
+              {
+                  "code": "console.log(a) // 50 প্রিন্ট করবে"
+              },
+              {
+                  "code": "console.log(b) // 60 প্রিন্ট করবে"
+              }
+          ]
       },
       {
-        "title": "অবজেক্ট প্রপার্টি এসাইন করা",
-        "items": [
-          {
-            "code": "const a = 5; const b = 10;"
-          },
-          {
-            "code": "const obj = {a, b}"
-          },
-          {
-            "code": "console.log(obj) // { a: 2, b: 5 } প্রিন্ট করবে"
-          }
-        ]
+          "title": "অবজেক্ট প্রপার্টি এসাইন করা",
+          "items": [{
+                  "code": "const a = 5; const b = 10;"
+              },
+              {
+                  "code": "const obj = {a, b}"
+              },
+              {
+                  "code": "console.log(obj) // { a: 2, b: 5 } প্রিন্ট করবে"
+              }
+          ]
       },
       {
-        "title": "অবজেক্ট ফাংশন এসাইন করা",
-        "items": [
-          {
-            "code": "const obj = {"
-          },
-          {
-            "code": "a: 10,"
-          },
-          {
-            "code": "b() { console.log('b') }"
-          },
-          {
-            "code": "}"
-          },
-          {
-            "code": "obj.b() // b প্রিন্ট করবে"
-          }
-        ]
+          "title": "অবজেক্ট ফাংশন এসাইন করা",
+          "items": [{
+                  "code": "const obj = {"
+              },
+              {
+                  "code": "a: 10,"
+              },
+              {
+                  "code": "b() { console.log('b') }"
+              },
+              {
+                  "code": "}"
+              },
+              {
+                  "code": "obj.b() // b প্রিন্ট করবে"
+              }
+          ]
       },
       {
-        "title": "স্প্রেড অপারেটর",
-        "items": [
-          {
-            "code": "const a = [1, 2]; const b = [4, 5, 6];"
-          },
-          {
-            "code": "const c = [...a, 3, ...b, 7]"
-          },
-          {
-            "code": "console.log(c) // [1, 2, 3, 4, 5, 6, 7] প্রিন্ট করবে"
-          }
-        ]
+          "title": "স্প্রেড অপারেটর",
+          "items": [{
+                  "code": "const a = [1, 2]; const b = [4, 5, 6];"
+              },
+              {
+                  "code": "const c = [...a, 3, ...b, 7]"
+              },
+              {
+                  "code": "console.log(c) // [1, 2, 3, 4, 5, 6, 7] প্রিন্ট করবে"
+              }
+          ]
       },
       {
-        "title": "প্যারামিটার্স",
-        "items": [
-          {
-            "definition": "রেস্ট প্যারামিটার্স",
-            "code": "function logArg(...args){ // ভ্যালু দিয়ে কিছু করা }"
-          },
-          {
-            "definition": "নামকরণ প্যারামিটার্স",
-            "code": "function initialize({a=10,b=20,c=50}){ // ভ্যালু দিয়ে কিছু করা }"
-          }
-        ]
+          "title": "প্যারামিটার্স",
+          "items": [{
+                  "definition": "রেস্ট প্যারামিটার্স",
+                  "code": "function logArg(...args){ // ভ্যালু দিয়ে কিছু করা }"
+              },
+              {
+                  "definition": "নামকরণ প্যারামিটার্স",
+                  "code": "function initialize({a=10,b=20,c=50}){ // ভ্যালু দিয়ে কিছু করা }"
+              }
+          ]
       },
       {
-        "title": "প্রমিজ",
-        "items": [
-          {
-            "definition": "প্রমিজ অবজেক্টটি একটি অ্যাসিনক্রোনাস অপারেশনের সমাপ্তি (বা ব্যর্থতা) এবং এর ফলাফলের মানকে উপস্থাপন করে। ",
-            "code": "let promise = new Promise(function(resolve, reject) { // অন্য কাজ })"
-          },
-          {
-            "definition": "কাজ সঠিকভাবে সম্পন্ন হলে এই ফাংশন চলবে",
-            "code": "resolve(value)"
-          },
-          {
-            "definition": "কাজ সঠিকভাবে সম্পন্ন না হলে এই ফাংশন চলবে",
-            "code": "reject(error)"
-          }
-        ]
+          "title": "প্রমিজ",
+          "items": [{
+                  "definition": "প্রমিজ অবজেক্টটি একটি অ্যাসিনক্রোনাস অপারেশনের সমাপ্তি (বা ব্যর্থতা) এবং এর ফলাফলের মানকে উপস্থাপন করে। ",
+                  "code": "let promise = new Promise(function(resolve, reject) { // অন্য কাজ })"
+              },
+              {
+                  "definition": "কাজ সঠিকভাবে সম্পন্ন হলে এই ফাংশন চলবে",
+                  "code": "resolve(value)"
+              },
+              {
+                  "definition": "কাজ সঠিকভাবে সম্পন্ন না হলে এই ফাংশন চলবে",
+                  "code": "reject(error)"
+              }
+          ]
       },
       {
-        "title": "নাম্বার প্রপার্টিস",
-        "items": [
-          {
-            "definition": "এপ্সিলন মান বের করা",
-            "code": "Number.EPSILON"
-          },
-          {
-            "definition": "সবথেকে ছোট নিরাপদ সংখ্যা বের করা",
-            "code": "Number.MIN_SAFE_INTEGER"
-          },
-          {
-            "definition": "সবথেকে বড় নিরাপদ সংখ্যা বের করা",
-            "code": "Number.MAX_SAFE_INTEGER"
-          },
-          {
-            "definition": "একটি সংখ্যা ইন্টিজার কিনা দেখে true অথবা false রিটার্ন করা",
-            "code": "isInteger(ভ্যালু)"
-          },
-          {
-            "definition": "একটি সংখ্যা নিরাপদ ইন্টিজার কিনা দেখে true অথবা false রিটার্ন করা",
-            "code": "isSafeInteger(ভ্যালু)"
-          },
-          {
-            "definition": "একটি সংখ্যা অনন্ত ইন্টিজার সংখ্যা কিনা দেখে true অথবা false রিটার্ন করা",
-            "code": "isFinite(ভ্যালু)"
-          },
-          {
-            "definition": "একটি মান NaN কিনা সেটি দেখা",
-            "code": "isNaN(ভ্যালু)"
-          }
-        ]
+          "title": "নাম্বার প্রপার্টিস",
+          "items": [{
+                  "definition": "এপ্সিলন মান বের করা",
+                  "code": "Number.EPSILON"
+              },
+              {
+                  "definition": "সবথেকে ছোট নিরাপদ সংখ্যা বের করা",
+                  "code": "Number.MIN_SAFE_INTEGER"
+              },
+              {
+                  "definition": "সবথেকে বড় নিরাপদ সংখ্যা বের করা",
+                  "code": "Number.MAX_SAFE_INTEGER"
+              },
+              {
+                  "definition": "একটি সংখ্যা ইন্টিজার কিনা দেখে true অথবা false রিটার্ন করা",
+                  "code": "isInteger(ভ্যালু)"
+              },
+              {
+                  "definition": "একটি সংখ্যা নিরাপদ ইন্টিজার কিনা দেখে true অথবা false রিটার্ন করা",
+                  "code": "isSafeInteger(ভ্যালু)"
+              },
+              {
+                  "definition": "একটি সংখ্যা অনন্ত ইন্টিজার সংখ্যা কিনা দেখে true অথবা false রিটার্ন করা",
+                  "code": "isFinite(ভ্যালু)"
+              },
+              {
+                  "definition": "একটি মান NaN কিনা সেটি দেখা",
+                  "code": "isNaN(ভ্যালু)"
+              }
+          ]
+      },
+
+      {
+        "title": "অ্যারে প্রপার্টিস",
+        "items": [{
+                "definition": "আর্গুমেন্ট এর উপর নির্ভর করে একটি নতুন অ্যারে তৈরি করা",
+                "code": "Array.of(); যেমন: Array.of(1,2,3) // [1,2,3]"
+            },
+
+            {
+                "definition": "একটি অ্যারের শুরু ইনডেক্স থেকে শেষ ইনডেক্স পর্যন্ত একটি স্থির ভ্যালু এসাইন করা",
+                "code": "Array.fill(); যেমন: [0,0,0,0].fill(5, 1, 3) //  [0, 5, 5, 0]"
+            },
+            {
+                "definition": "একটি অ্যারের প্রথম উপাদানটির মান রিটার্ন করা যেটা সরবরাহ করা ফাংশনটিকে সত্যায়িত করে",
+                "code": "Array.find(); যেমন: [1, 2, 3].find(x => x == 3) // 3"
+            },
+            {
+                "definition": "একটি অ্যারের প্রথম উপাদানটির ইনডেক্স রিটার্ন করা যেটা সরবরাহ করা ফাংশনটিকে সত্যায়িত করে",
+                "code": "Array.findIndex(); যেমন: [1, 2, 3].findIndex(x => x == 3) // 2"
+            },
+            {
+                "definition": "অ্যারের কোনও অংশ কে একই অ্যারের অন্য স্থানে অনুলিপি করে অ্যারের দৈর্ঘ্য পরিবর্তন না করে রিটার্ন করা",
+                "code": "Array.copyWithin(); যেমন: [1, 2, 3, 4, 5].copyWithin(2, 0, 4) // [1, 2, 1, 2, 3]"
+            },
+            {
+                "definition": "অ্যারে রিটার্ন করে, যে কোন অব্জেক্ট থেকে যার দৈর্ঘ্য আছে বা একটি ইটারেবল অব্জেক্ট থেকে যেমন Set,Map",
+                "code": "Array.from(); যেমন: Array.from('hello') // [h,e,l,l,o]"
+            },
+			{
+				"definition": "একটি অ্যারের মধ্য থেকে সবগুলো ইনডেক্স বের করা",
+				"code": "Array.keys(); যেমন: var array = [1,2,4,]; console.log(..array.keys()); // 0 1 2"
+			},
+			{
+				"definition": "একটি অ্যারের মধ্য থেকে সবগুলো ভ্যালু বের করা",
+				"code": "Array.values(); যেমন: var array = [1,2,4,]; console.log(..array.values()); // 1 2 4"
+			}
+         ]
+      },
+
+      {
+          "title": "ইএস৬ এক্সপোর্ট",
+          "items": [{
+                  "definition": "নামের মাধ্যমে এক্সপোর্ট করা",
+                  "code": "export let name = 'Dev';"
+              },
+              {
+                  "definition": "কয়েকটি অবজেক্ট কে একসাথে লিস্ট আকারে এক্সপোর্ট করা",
+                  "code": "export { sumTwoNumber, multiplyTwoNumber };"
+              },
+              {
+                  "definition": "একটি ফাংশন কে এক্সপোর্ট করা",
+                  "code": "export function sumTwoNumber();"
+              },
+              {
+                  "definition": "ডিফল্ট বাইন্ডিং এক্সপোর্ট করা",
+                  "code": "export default api;"
+              }
+          ]
       },
       {
-        "title": "এরে প্রপার্টিস",
-        "items": [
-          {
-            "definition": "আর্গুমেন্ট এর উপর নির্ভর করে একটি নতুন এরে তৈরি করা",
-            "code": "Array.of(); যেমন: Array.of(1,2,3) // [1,2,3]"
-          },
-          {
-            "definition": "একটি এরের শুরু ইনডেক্স থেকে শেষ ইনডেক্স পর্যন্ত একটি স্থির ভ্যালু এসাইন করা",
-            "code": "Array.fill(); যেমন: [0,0,0,0].fill(5, 1, 3) //  [0, 5, 5, 0]"
-          },
-          {
-            "definition": "একটি এরের প্রথম উপাদানটির মান রিটার্ন করা যেটা সরবরাহ করা ফাংশনটিকে সত্যায়িত করে",
-            "code": "Array.find(); যেমন: [1, 2, 3].find(x => x == 3) // 3"
-          },
-          {
-            "definition": "একটি এরের প্রথম উপাদানটির ইনডেক্স রিটার্ন করা যেটা সরবরাহ করা ফাংশনটিকে সত্যায়িত করে",
-            "code": "Array.findIndex(); যেমন: [1, 2, 3].findIndex(x => x == 3) // 2"
-          },
-          {
-            "definition": "এরের কোনও অংশ কে একই এরের অন্য স্থানে অনুলিপি করে এরের দৈর্ঘ্য পরিবর্তন না করে রিটার্ন করা",
-            "code": "Array.copyWithin(); যেমন: [1, 2, 3, 4, 5].copyWithin(2, 0, 4) // [1, 2, 1, 2, 3]"
-          },
-          {
-             "definition": "অ্যারে রিটার্ন করে, যে কোন অব্জেক্ট থেকে যার দৈর্ঘ্য আছে বা একটি ইটারেবল অব্জেক্ট থেকে যেমন Set,Map",
-              "code": "Array.from(); যেমন: Array.from('hello') // [h,e,l,l,o]"
-          }          
-        ]
-      },
-      {
-        "title": "ইএস৬ এক্সপোর্ট",
-        "items": [
-          {
-            "definition": "নামের মাধ্যমে এক্সপোর্ট করা",
-            "code": "export let name = 'Dev';"
-          },
-          {
-            "definition": "কয়েকটি অবজেক্ট কে একসাথে লিস্ট আকারে এক্সপোর্ট করা",
-            "code": "export { sumTwoNumber, multiplyTwoNumber };"
-          },
-          {
-            "definition": "একটি ফাংশন কে এক্সপোর্ট করা",
-            "code": "export function sumTwoNumber();"
-          },
-          {
-            "definition": "ডিফল্ট বাইন্ডিং এক্সপোর্ট করা",
-            "code": "export default api;"
-          }
-        ]
-      },
-      {
-        "title": "ইএস৬ ইম্পোর্ট",
-        "items": [
-          {
-            "definition": "একটি সম্পূর্ন ফাইল কে ইম্পোর্ট করা",
-            "code": "import 'devcode';"
-          },
-          {
-            "definition": "নাম ধরে ইম্পোর্ট করা",
-            "code": "import { sumTwoNumber, sumThreeNumber } from 'math/addition';"
-          },
-          {
-            "definition": "পুনঃনামকরণ করে কোন মডিউল ইম্পোর্ট করা",
-            "code": "import {sumTwoNumber as addTwo} from 'math/addition';"
-          },
-          {
-            "definition": "মডিউলের সবকিছু একসাথে ইম্পোর্ট করা",
-            "code": "import * as equation from 'math/addition';"
-          },
-          {
-            "definition": "কোন মডিউল থেকে ভ্যালুর লিস্ট ইম্পোর্ট করা",
-            "code": "import * as equation from 'math/addition'; const { sumTwoNumber, sumThreeNumber } = equation;"
-          },
-          {
-            "definition": "ডিফল্ট বাইন্ডিং ইম্পোর্ট করা",
-            "code": "import api from 'math/addition'"
-          }
-        ]
+          "title": "ইএস৬ ইম্পোর্ট",
+          "items": [{
+                  "definition": "একটি সম্পূর্ন ফাইল কে ইম্পোর্ট করা",
+                  "code": "import 'devcode';"
+              },
+              {
+                  "definition": "নাম ধরে ইম্পোর্ট করা",
+                  "code": "import { sumTwoNumber, sumThreeNumber } from 'math/addition';"
+              },
+              {
+                  "definition": "পুনঃনামকরণ করে কোন মডিউল ইম্পোর্ট করা",
+                  "code": "import {sumTwoNumber as addTwo} from 'math/addition';"
+              },
+              {
+                  "definition": "মডিউলের সবকিছু একসাথে ইম্পোর্ট করা",
+                  "code": "import * as equation from 'math/addition';"
+              },
+              {
+                  "definition": "কোন মডিউল থেকে ভ্যালুর লিস্ট ইম্পোর্ট করা",
+                  "code": "import * as equation from 'math/addition'; const { sumTwoNumber, sumThreeNumber } = equation;"
+              },
+              {
+                  "definition": "ডিফল্ট বাইন্ডিং ইম্পোর্ট করা",
+                  "code": "import api from 'math/addition'"
+              }
+          ]
       }
-    ]
-  }
+  ]
+}

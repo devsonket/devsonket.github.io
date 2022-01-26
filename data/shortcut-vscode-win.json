@@ -190,6 +190,14 @@
              {
                 "definition":"টগল ওয়ার্ড রাপ",
                 "code":"Alt + Z"
+             },
+             {
+                 "definition":"কোনো লাইন কমেন্ট টোগল করা",
+                 "code": "Ctrl + K Ctrl + U"
+             },
+             {
+                 "definition":"কোনো লাইন কমেন্ট টোগল করা",
+                 "code": "Ctrl + K Ctrl + C"
              }
           ]
        },

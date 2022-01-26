@@ -1,0 +1,203 @@
+{
+    "id":"shrotcut-androidstudio-win",
+    "title":"অ্যান্ড্রোয়েড স্টুডিও(উইন্ডোজ)",
+    "slug":"shrotcut-androidstudio-win",
+    "description":"অ্যান্ড্রয়েড স্টুডিও অ্যান্ড্রয়েড অ্যাপ্লিকেশন ডেভেলপম্যান্টের জন্য অফিসিয়াল ইন্টিগ্রেটেড ডেভেলপমেন্ট এনভায়রনমেন্ট (আইডিই)। অ্যান্ড্রোয়েড স্টুডিও(উইন্ডোজ) জন্য প্রযোজনীয় সকল  শর্টকাট কী নিয়ে তৈরি চিটশিট",
+    "colorPref":"#f2dd2d",
+    "contents":[
+      {
+        "title":"সাধারণ",
+        "items":[
+          {
+            "definition":"সেভ করতে",
+            "code":"Ctrl + S"
+          },
+          {
+              "definition": "এডিটর বড়, ছোট করতে",
+              "code": "Ctrl + Shift + F12"
+          },
+          {
+              "definition": "পছন্দের তালিকায় যুক্ত করতে",
+              "code": "Alt + Shift + F"
+          },
+          {
+              "definition": "সেটিং ডায়লগবক্স খুলতে",
+              "code": "Ctrl + Alt + S"
+          },
+          {
+              "definition": "প্রজেক্ট স্ট্রাকচার ডায়লগবক্স খুলতে",
+              "code": "Ctrl + Alt + Shift + S"
+          },
+          {
+              "definition": "ট্যাবগুলির মধ্যে স্যুইচ করতে",
+              "code": "Ctrl + Tab"
+          }
+        ]
+      },
+      {
+        "title":"খোঁজাখুঁজি",
+        "items":[
+          {
+            "definition":"সবকিছু খুঁজতে",
+            "code":"Shift + Shift"
+          },
+          {
+            "definition":"একটি ফাইলে কিছু খুঁজতে",
+            "code":"Ctrl + F"
+          },
+          {
+            "definition":"পুরো প্রজেক্টে কিছু খুঁজতে",
+            "code":"Ctrl + Shift + F"
+          },
+          {
+            "definition":"কোনো ফাইলে কিছু প্রতিস্থাপন করতে",
+            "code":"Ctrl + R"
+          },
+          {
+            "definition":"পুরো প্রজেক্টে কিছু একটা প্রতিস্থাপন করতে",
+            "code":"Ctrl + Shift + R"
+          },
+          {
+            "definition":"কোনো একটা ক্লাস খুঁজতে",
+            "code":"Ctrl + N"
+          },
+          {
+            "definition":"কোনো একটা ফাইল খুঁজতে",
+            "code":"Ctrl + Shift + N"
+          },
+          {
+            "definition":"ফাইল স্ট্রাকচার ডায়লগবক্স ওপেন খুঁজতে",
+            "code":"Ctrl + F12"
+          },
+          {
+            "definition":"সম্প্রতি ওপেন করেছেন এমন ফাইলগুলির পপ-আপ ওপেন খুঁজতে",
+            "code":"Ctrl + E"
+          },
+          {
+            "definition":"সম্প্রতি এডিট করেছেন এমন ফাইলগুলির পপ-আপ ওপেন খুঁজতে",
+            "code":"Ctrl + Shift + E"
+          },
+          {
+            "definition":"সম্প্রতি পরিবর্তন করেছেন এমন লোকেশনে যেতে",
+            "code":"Ctrl + Shift + Backspace"
+          },
+          {
+            "definition":"সক্রিয় ট্যাব বন্ধ করুন",
+            "code":"Ctrl + F4"
+          },
+          {
+            "definition":"নির্দিষ্ট কোনো লাইনে যেতে",
+            "code":"Ctrl + G"
+          }
+        ]
+      },
+      {
+        "title":"কোড সম্পর্কিত",
+        "items":[
+          {
+            "definition":"স্বয়ংক্রিয় কোড তৈরী করতে ( গেটার, সেটার মেথড, কনস্ট্রাক্টর ইত্যাদি)",
+            "code":"Alt + Insert"
+          },
+          {
+            "definition":"অভাররাইড মেথডগুলো ওপেন করতে",
+            "code":"Ctrl + 0"
+          },
+          {
+            "definition":"নির্দিষ্ট কোড ব্লক ট্রাই-ক্যাচ অথবা ইফ-এলস দিয়ে বেষ্টিত করতে",
+            "code":"Ctrl + Alt + T"
+          },
+          {
+            "definition":"কোড সম্পূর্ন করতে",
+            "code":"Ctrl + Space"
+          },
+          {
+            "definition":"বর্তমাণ লাইনের সদৃশ নতুন একটি লাইন তৈরী করতে",
+            "code":"Ctrl + D"
+          },
+          {
+            "definition":"কুইক ডকুমেন্টেশন দেখতে",
+            "code":"Ctrl + Q"
+          },
+          {
+            "definition":"কোনো একটা ক্লাস / মেথডের পেরেন্ট ক্লাস / মেথডে যেতে",
+            "code":"Ctrl + U"
+          },
+          {
+            "definition":"কোড সুন্দর ভাবে সাঁজাতে",
+            "code":"Ctrl + Alt + S"
+          }
+        ]
+      },
+      {
+        "title":"বিল্ড এবং রান",
+        "items":[
+          {
+            "definition":"বিল্ড করতে",
+            "code":"Ctrl + F9"
+          },
+          {
+            "definition":"বিল্ড এবং রান একসাথে করতে",
+            "code":"Shift + F10"
+          },
+          {
+            "definition":"পরিবর্তনগুলো প্রয়োগ করে, এক্টিভিটি পুনরায় চালু করতে",
+            "code":"Ctrl + F10"
+          },
+          {
+            "definition":"কোডের পরিবর্তন গুলো প্রয়োগ করতে",
+            "code":"Ctrl + Alt + F10"
+          }
+        ]
+      },
+      {
+        "title":"ডিবাগিং",
+        "items":[
+          {
+            "definition":"ডিবাগ করতে",
+            "code":"Shift + F9"
+          },
+          {
+            "definition":"স্টেপ অভার করতে",
+            "code":"F8"
+          },
+          {
+            "definition":"স্টেপ আউট করতে",
+            "code":"Shift + F8"
+          },
+          {
+            "definition":"স্টেপ ইন্টু",
+            "code":"F7"
+          },
+          {
+            "definition":"ব্রেকপয়েন্ট টগল করতে",
+            "code":"Ctrl + F8"
+          },
+          {
+            "definition":"ব্রেকপয়েন্ট দেখতে",
+            "code":"Ctrl + Shift + F8"
+          }
+        ]
+      },
+      {
+        "title":"ভার্সন কন্ট্রোল",
+        "items":[
+          {
+            "definition":"কমিট করতে",
+            "code":"Ctrl + K"
+          },
+          {
+            "definition":"প্রজেক্ট আপডেট করতে",
+            "code":"Ctrl + T"
+          },
+          {
+            "definition":"সাম্প্রতিক পরিবর্তনগুলো দেখতে",
+            "code":"Alt + Shift + C"
+          },
+          {
+            "definition":"ভার্সন কন্ট্রোল পপ আপ ওপেন করতে",
+            "code":"Alt + `"
+          }
+        ]
+      }
+    ]
+  }

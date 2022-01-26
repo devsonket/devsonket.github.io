@@ -23,6 +23,9 @@
           }, {
             "definition": "নির্দিষ্ট কোনো কমান্ড এর সাহায্য",
             "code": "heroku help কমান্ড এর নাম"
+          }, {
+            "definition": "ডাইনোস রিস্টার্ট",
+            "code": "heroku restart"
           }
         ]
       }, {
@@ -91,6 +94,34 @@
           }, {
             "definition": "সবগুলো ডোমেইন রিমুভ করা",
             "code": "heroku domains:clear"
+          }
+        ]
+      }, {
+        "title": "এডোন্স",
+        "items": [
+          {
+            "definition": "এপ্লিকেশনে যুক্ত সকল এডোন্স",
+            "code": "heroku addons"
+          }, {
+            "definition": "নতুন এডোন্স যুক্ত করা",
+            "code": "heroku addons:create SERVICE:PLAN"
+          }, {
+            "definition": "এডোন্স বাদ দেয়া",
+            "code": "heroku addons:destroy এডোন্স এর নাম "
+          }
+        ]
+      }, {
+        "title": "ডাটাবেইজ ম্যানেজ",
+        "items": [
+          {
+            "definition": "ডাটাবেইজ তৈরি",
+            "code": "heroku addons:create heroku-postgresql:hobby-dev"
+          }, {
+            "definition": "ডাটাবেইজ সম্পর্কে তথ্য",
+            "code": "heroku pg:info"
+          }, {
+            "definition": "ডাটাবেইজ কানেকশান এর তথ্য",
+            "code": "heroku pg:credentials:url"
           }
         ]
       }

@@ -1,0 +1,177 @@
+{
+    "id": "valet",
+    "title": "ভ্যালেট চিটশিট",
+    "slug": "valet-cheat-sheet",
+    "description": "ভ্যালেট হলো ম্যাকওস এর জন্য এনজিনএক্স বেজড সার্ভার এনভাইরনমেন্ট যেটা ডিএনএসমাস্ক ও সাপোর্ট করে",
+    "colorPref": "#ff2e20",
+    "contents": [
+      {
+        "title": "ব্যবহারবিধি",
+        "items": [
+          {
+            "definition": "কমান্ড ব্যবহারের সম্ভাব্য উপায়",
+            "code": "valet [command] [options] [arguments]"
+          }
+        ]
+      },
+      {
+        "title": "কমান্ড সমূহ",
+        "items": [
+          {
+            "definition": "আউটপুট ডায়াগনস্টিকস ডিবাগিং করতে সাহায্য করে",
+            "code": "valet diagnose"
+          },
+          {
+            "definition": "ডিরেক্টরি-তালিকাভুক্ত আচরণ নির্ধারণ করুন। ডিফল্ট বন্ধ, যার মানে একটি 404 প্রদর্শন করা হবে",
+            "code": "valet directory-listing"
+          },
+          {
+            "definition": "বর্তমান Ngrok টানেলের URL পান",
+            "code": "valet fetch-share-url"
+          },
+          {
+            "definition": "[unpark] ভ্যালেটের পাথের তালিকা থেকে বর্তমান কার্যকরী (বা নির্দিষ্ট) ডিরেক্টরি সরান",
+            "code": "valet forget"
+          },
+          {
+            "definition": "কমান্ডের জন্য সাহায্য প্রদর্শন করুন",
+            "code": "valet help"
+          },
+          {
+            "definition": "ভ্যালেট সার্ভিসগুলি ইনস্টল করুন",
+            "code": "valet install"
+          },
+          {
+            "definition": "বর্তমান কাজের ডিরেক্টরিটি ভ্যাল্টের সাথে লিঙ্ক করুন",
+            "code": "valet link"
+          },
+          {
+            "definition": "সমস্ত নিবন্ধিত ভ্যালেট লিঙ্ক প্রদর্শন করুন",
+            "code": "valet links"
+          },
+          {
+            "definition": "কমান্ড তালিকা",
+            "code": "valet list"
+          },
+          {
+            "definition": "লগ ফাইল ট্র্যাক করুন",
+            "code": "valet log"
+          },
+          {
+            "definition": "ভ্যালেট সাইটগুলির জন্য ব্যবহৃত লুপব্যাক ঠিকানা পান বা সেট করুন",
+            "code": "valet loopback"
+          },
+          {
+            "definition": "এটি ভ্যালেটের সর্বশেষ সংস্করণ কিনা তা দেখুন",
+            "code": "valet on-latest-version"
+          },
+          {
+            "definition": "আপনার ব্রাউজারে বর্তমান (বা নির্দিষ্ট) ডিরেক্টরিটির জন্য সাইটটি খুলুন",
+            "code": "valet open"
+          },
+          {
+            "definition": "ভ্যালেটের সাথে বর্তমান কার্যকরী (বা নির্দিষ্ট) ডিরেক্টরি নিবন্ধন করুন",
+            "code": "valet park"
+          },
+          {
+            "definition": "পার্ক করা পথের মধ্যে সমস্ত বর্তমান সাইট প্রদর্শন করুন",
+            "code": "valet parked"
+          },
+          {
+            "definition": "ভ্যালেটের সাথে নিবন্ধিত সমস্ত পথ পান",
+            "code": "valet paths"
+          },
+          {
+            "definition": "সমস্ত প্রক্সি সাইট প্রদর্শন করুন",
+            "code": "valet proxies"
+          },
+          {
+            "definition": "নির্দিষ্ট হোস্টের জন্য একটি Nginx প্রক্সি সাইট তৈরি করুন। ডকার, মেইলহগ ইত্যাদির জন্য দরকারী",
+            "code": "valet proxy"
+          },
+          {
+            "definition": "ভ্যালেটের সার্ভিসগুলো পুনরায় চালু করুন",
+            "code": "valet restart"
+          },
+          {
+            "definition": "একটি বিশ্বস্ত TLS সার্টিফিকেট দিয়ে প্রদত্ত ডোমেইনটি সুরক্ষিত করুন",
+            "code": "valet secure"
+          },
+          {
+            "definition": "আপনার প্রকল্পের জন্য একটি সর্বজনীন অ্যাক্সেসযোগ্য URL তৈরি করুন",
+            "code": "valet share"
+          },
+          {
+            "definition": "ভ্যালেটের সার্ভিসগুলো শুরু করুন",
+            "code": "valet start"
+          },
+          {
+            "definition": "ভ্যালেটের সার্ভিসগুলো বন্ধ করুন",
+            "code": "valet stop"
+          },
+          {
+            "definition": "[ডোমেইন] ভ্যালেট সাইটের জন্য ব্যবহৃত TLD পান বা সেট করুন",
+            "code": "valet tld"
+          },
+          {
+            "definition": "পাসওয়ার্ড ছাড়াই ভ্যালেটের কমান্ডগুলি চালানোর জন্য ব্রিউ এবং ভ্যালেটের জন্য সুডোর ফাইল যুক্ত করুন",
+            "code": "valet trust"
+          },
+          {
+            "definition": "ভ্যালেটের সার্ভিসগুলো আনইনস্টল করুন",
+            "code": "valet uninstall"
+          },
+          {
+            "definition": "নির্দিষ্ট ভ্যালেট লিঙ্কটি মুছে ফেলুন",
+            "code": "valet unlink"
+          },
+          {
+            "definition": "Nginx প্রক্সি কনফিগ মুছুন",
+            "code": "valet unproxy"
+          },
+          {
+            "definition": "HTTPS এর মাধ্যমে প্রদত্ত ডোমেইন পরিবেশন বন্ধ করুন এবং বিশ্বস্ত TLS সার্টিফিকেট সরান",
+            "code": "valet unsecure"
+          },
+          {
+            "definition": "ভ্যালেটের ব্যবহৃত পিএইচপি ভার্সন পরিবর্তন করুন",
+            "code": "valet use"
+          },
+          {
+            "definition": "কোন ভ্যালেট ড্রাইভার বর্তমান ডিরেক্টরি পরিবেশন করে তা নির্ধারণ করুন",
+            "code": "valet which"
+          }
+        ]
+      },
+      {
+        "title": "অপশন সমূহ",
+        "items": [
+          {
+            "definition": "প্রদত্ত কমান্ডের জন্য সাহায্য প্রদর্শন করুন। যখন কোনও কমান্ড দেওয়া হয় না তখন তালিকা কমান্ডের জন্য প্রদর্শন সহায়তা",
+            "code": "-h, --help"
+          },
+          {
+            "definition": "কোন বার্তা আউটপুট করবে না",
+            "code": "-q, --quiet"
+          },
+          {
+            "definition": "ভ্যালেটের সংস্করণ দেখুন",
+            "code": "-V, --version"
+          },
+          {
+            "definition": "ANSI ( NON ANSI ) আউটপুট দেখান",
+            "code": "--ansi|--no-ansi"
+          },
+          {
+            "definition": "কোনো ইন্টারেক্টিভ প্রশ্ন করবে না",
+            "code": "-n, --no-interaction"
+          },
+          {
+            "definition": "মেসেজের ভার্বোসিটি বাড়ান: সাধারণ আউটপুটের জন্য 1, আরও ভার্বোজ আউটপুটের জন্য 2 এবং ডিবাগের জন্য 3",
+            "code": "-v|vv|vvv, --verbose"
+          }
+        ]
+      }
+    ]
+  }
+  

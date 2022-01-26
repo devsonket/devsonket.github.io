@@ -1,0 +1,50 @@
+{
+  "id":"flutter",
+  "title":"ফ্লাটার",
+  "slug":"flutter",
+  "description":"Flutter গুগলের তৈরি একটি ফ্রেমওয়ার্ক যার মাধ্যমে android,iOS app এবং ওয়েবসাইট শুধুমাত্র একটি কোডবেস ব্যবহার করে তৈরি করা যায়। Flutter প্রতিটি প্ল্যাটফর্মের জন্য নেটিভলি কম্পাইল্ড হওয়াতে অন্যান্য ফ্রেমওয়ার্ক থেকে অনেক দ্রুত কাজ করে। ",
+  "colorPref":"#49caf5",
+  "contents":[
+    {
+      "title":"ফ্লাটার সিএলআই টুলস (Flutter CLI tools)",
+      "items":[
+        {
+          "definition":"কোন ভার্সন ইন্সটল দেওয়া আছে তা জানতে",
+          "code":"flutter --version"
+        },
+        {
+          "definition":"নতুন Flutter প্রোজেক্ট বানাতে",
+          "code":"flutter create <আপনার_প্রোজেক্টের_নাম>"
+        },
+        {
+          "definition":"যেসব ডিভাইস আপনার পিসির সাথে কানেক্টেড আছে তা জানতে",
+          "code":"flutter devices"
+        },
+        {
+          "definition":"ওয়েব সাপোর্ট সহ নতুন প্রোজেক্ট বানাতে",
+          "code":"flutter channel beta\n flutter upgrade\n flutter config --enable-web"
+        },
+        {
+          "definition":"বর্তমানে কোন চ্যানেলে আছেন সেটা দেখতে",
+          "code":"flutter channel"
+        },
+        {
+          "definition":"চ্যানেল পরিবর্তন করতেে",
+          "code":"flutter channel dev/master/stable/beta"
+        },
+        {
+          "definition":"ঠিকঠাক মত ইন্সটল হয়েছে কিনা জানতে " ,
+          "code":"flutter doctor"
+        },
+        {
+          "definition":"ঠিকঠাক মত ইন্সটল হয়েছে কিনা আরো এডভান্স জানতে " ,
+          "code":"flutter doctor -v"
+        },
+        {
+          "definition":"অর্গানাইজেশন/প্রতিষ্ঠানের নাম সেট করতে" ,
+          "code":"flutter create --org com.yourorg your_project"
+        }
+      ]
+    }
+  ]
+}

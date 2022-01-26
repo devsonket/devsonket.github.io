@@ -191,6 +191,9 @@
             }, {
                 "definition": "বিভিন্ন page এর সাথে লিংক করার জন্য",
                 "code": "{{URL::to('/your_page_link')}}"
+            }, {
+                "definition": "লাইন ব্রেক রাখার জন্য ",
+                "code": "{!! nl2br(e($content)) !!}"
             }]
         },
         {
@@ -205,10 +208,28 @@
             "items": [{
                 "definition": "বেসিক রাউটিং-১",
                 "code": "Route::get('foo', function(){});"
-            }, {
+            },
+            {
                 "definition": "লারাভেল ৮ রাউটিং",
                 "code": "Route::get('/user', [UserController::class, 'index']);"
-            }, {
+            },
+            {
+                "definition": "লারাভেল ৮ রেস্টফুল রাউটিং",
+                "code": "Route::resource('user', UserController::class);"
+            },
+            {
+                "definition": "লারাভেল ৮ মডেল বাইন্ডিং রাউট-1",
+                "code": "Route::get('user/{user}', [UserController::class, 'show']);"
+            },
+            {
+                "definition": "লারাভেল ৮ মডেল বাইন্ডিং রাউট (with slug)-2",
+                "code": "Route::get('user/{user:slug}', [UserController::class, 'show']);"
+            },
+            {
+                "definition": "লারাভেল ৮ view routing",
+                "code": "Route::view('user/', 'blade_path');"
+            },
+            {
                 "definition": "বেসিক রাউটিং-২",
                 "code": "Route::get('foo', 'ControllerName@function');"
             }, {
@@ -223,16 +244,23 @@
             }, {
                 "definition": "রেস্টফুল কন্ট্রোলার-৩",
                 "code": "Route::resource('photo', 'PhotoController',['except' => ['update', 'destroy']]);"
-            }, {
+            },
+            {
                 "definition": "ট্রিগারিং এররস-১",
                 "code": "App::abort(404);"
-            }, {
+            },
+            {
                 "definition": "ট্রিগারিং এররস-২",
                 "code": "App::missing(function($exception){});"
             }, {
                 "definition": "ট্রিগারিং এররস-৩",
                 "code": "throw new NotFoundHttpException;"
-            }, {
+            },
+            {
+                "definition": "ট্রিগারিং এররস-4",
+                "code": "return abort(error code, error message)"
+            },
+            {
                 "definition": "রাউট প্যারামিটার-১",
                 "code": "Route::get('foo/{bar}', function($bar){});"
             }, {
@@ -330,22 +358,38 @@
                 "definition": "ডিলিট করার জন্য",
                 "code": "DB::table('users')->where('votes', '<', 100)->delete();"
             }]
-        },
-         {
+            },
+            {
             "title": "বেসিক ডাটাবেস ব্যবহার - ও আর এম (ORM)",
             "items": [{
                 "definition": "একটি  নির্দিষ্ট মডেলের সকল ডেটা নিয়ে আসতে চাইলে ",
                 "code": "Model::all();"
-            }, {
+            },
+            {
+                "definition": "একটি  নির্দিষ্ট মডেলের সকল ডেটা হতে সিলেকটেড কলাম রিটার্ন এর জন্য",
+                "code": "Model::all(['id', 'name', 'email']);"
+            },
+            {
                 "definition": "একটি  নির্দিষ্ট মডেলের কন্ডিশন অনুযায়ী ডেটা নিয়ে আসতে  চাইলে",
                 "code": "Model::where('columnName','matchingValue')->get();"
             },{
                 "definition": "মডেলের প্রথম ডেটা নিয়ে আসতে চাইলে ",
                 "code": "Model::first();"
+            },{
+                "definition": "মডেলের প্রথম ডেটা নিয়ে আসা বা ডাটা না পেলে ৪০৪ এ রিটার্ন করা ",
+                "code": "Model::firstOrFail();"
             },
             {
                 "definition": "কোন মডেলের আইডি দিয়ে খুঁজে বের করার জন্য  ",
                 "code": "Model::find(yourId);"
+            },
+            {
+                "definition": "আইডি দিয়ে মাল্টিপাল মডেল খুঁজে বের করার জন্য  ",
+                "code": "Model::find([1,2,3]);"
+            },
+            {
+                "definition": "কোন মডেলের আইডি দিয়ে খুঁজে বের করা এবং ডাটা না পেলে ৪০৪ এ রিটার্ন করার জন্য  ",
+                "code": "Model::findOrFail(yourId);"
             },
             {
                 "definition": "মডেলের কতগুলা ডেটা ফিরে আসলো তা গুনতে হলে ",
@@ -375,7 +419,10 @@
                 "definition": "মডেলের মধ্যে mass  assignment  ইনাবল করার জন্য ",
                 "code": "protected $guarded = [];"
             },
-                      
+            {
+                "definition": "মডেলের মধ্যে  নির্দিষ্ট কলামের mass  assignment  ডিজাবল করার জন্য  ",
+                "code": "protected $guarded = ['column_name_one','column_name_two','column_name_three'...];"
+            },        
             {
                 "definition": "মডেলের মধ্যে  নির্দিষ্ট কলামের mass  assignment  ইনাবল করার জন্য ",
                 "code": "protected $fillable = ['column_name_one','column_name_two','column_name_three'...];"
@@ -387,7 +434,24 @@
             {
                 "definition": "মডেল দিয়ে DELETE করতে চাইলে ",
                 "code": "Model::find(yourId)->delete();"
-            }]
+            },
+            {
+                "definition": "মডেলর সর্বশেষ রেকর্ড গুলো পেতে চাইলে ",
+                "code": "Model::latest()->get();"
+            },
+            {
+                "definition": "মডেলর প্রবীণতম রেকর্ড গুলো পেতে চাইলে ",
+                "code": "Model::oldest()->get();"
+            }
+            ,{
+                "definition": "মডেল দিয়ে শেষের রেকর্ডটি পেতে চাইলে ",
+                "code": "Model::all()->last() অথবা Model::latest()->first() অথবা Model::orderBy('id', 'desc')->first()"
+            }
+            ,{
+                "definition": "Where Method এর মাঝে 'or' পাস করা",
+                "code": "Model::where('columnName', 'value')->orWhere('columnName','value')->get();  অথবা Model::where('columnName', 'value')->where('columnName','value', 'or')->get();"
+            }
+        ]
         },
         {
             "title": "সেশন এর ব্যবহার",
@@ -465,6 +529,52 @@
                 "definition": " দিন বা তারিখ জানার জন্য",
                 "code": "Carbon::nextWeekDay();"
             }]
+        },{
+            "title": "যেখানে সম্ভব সেখানে সংক্ষিপ্ত এবং বেশি পাঠযোগ্য সিনট্যাক্স ব্যবহার করুন",
+            "items": [{
+                "definition": "সেসন থেকে ডাটা নিতে",
+                "code": "session('cart'), Session::get('cart'), $request->session()->get('cart')"
+            },{
+                "definition": "সেসন এ ডাটা স্টোর করতে",
+                "code": "session(['cart' => $data]), Session::put('cart', $data)"
+            }
+            ,{
+                "definition": "রিকুয়েস্ট থেকে ডাটা নিতে",
+                "code": " $request->name, request('name'), $request->input('name'), Request::get('name')"
+            }
+            ,{
+                "definition": "রিকুয়েস্ট রিটার্ন করতে",
+                "code": "return back(),return Redirect::back()"
+            }
+            ,{
+                "definition": "ফাকা/শূন্য অবজেক্রটের ডাটা প্রিন্ট করতে",
+                "code": "optional($object->relation)->id, is_null($object->relation) ? null : $object->relation->id"
+            }
+            ,{
+                "definition": "ব্লেডে ডাটা সেন্ড করতে",
+                "code": "return view('index', compact('title', 'client')), return view('index')->with('title', $title)->with('client', $client), return view('index',['title'=>$title,'client'=>$client]"
+            }
+            ,{
+                "definition": "রিকুয়েস্ট থেকে ডাটা চেক করে ডাটা নিতে",
+                "code": "$request->has('value') ? $request->value : 'default', $request->get('value', 'default') "
+            }
+            ,{
+                "definition": "ডাটাবেজ এ কন্ডিশন দিয়ে ডাটা বের করতে",
+                "code": "->where('column', '=', 1), ->where('column', 1), ->whereColumn(1)"
+            }
+            ,{
+                "definition": "web.php Route ফাইলে কন্টোলার ইমপোর্ট এর সর্টকার্ট",
+                "code": "App/Http/Controllers/{ 1st controller, 2nd controller, 3rd controller}"
+            }
+            ,{
+                "definition": "কন্ট্রোলার থেকে কোথাও রিডিরেক্ট করে দিতে চাইলে",
+                "code": "redirect('/path/to/route'), redirect()->route('route-name')"
+            }
+            ,{
+                "definition": "কন্ট্রোলার থেকে ফ্ল্যাশ সেশন নিয়ে রিডাইরেক্ট করতে চাইলে",
+                "code": "redirect('/path/to/route')->with('status', 'Your post has been published successfully!')"
+            }
+        ]
         }
     ]
 }

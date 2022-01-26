@@ -51,6 +51,63 @@ flutter channel beta
 flutter upgrade
 flutter config --enable-web
 ```
+বর্তমানে কোন চ্যানেলে আছেন সেটা দেখতে
+```bash
+flutter channel
+```
+চ্যানেল পরিবর্তন করতেে
+```bash
+flutter channel dev/master/stable/beta
+```
+রিয়েল ডিভাইসে টেস্টের জন্য .apk জেনারেট করতে
+```bash
+flutter build apk
+```
+ফ্লাটার লগস
+```bash
+flutter logs -d <device-id>
+```
+নতুন প্রোজেক্ট ক্রিয়েট, এনালাইজ, টেস্ট, রান করতে
+```bash
+ flutter create my_app
+ cd my_app
+ flutter analyze
+ flutter test
+ flutter run lib/main.dart
+```
+ফ্লাটার প্যাকেজ গেট এবং আপগ্রেড করতে
+```bash
+ flutter pub get
+ flutter pub outdated
+ flutter pub upgrade
+```
+ফ্লাটার যতগুলো কমান্ড সাপোর্ট করে তা দেখতে
+```bash
+flutter --help --verbose
+```
+বিভিন্ন ডিভাইসের জন্য রেস্পন্সিভনেস চেক করতে
+```bash
+import 'package:device_preview/device_preview.dart';
+
+void main() => runApp(
+  DevicePreview(
+    enabled: !kReleaseMode,
+    builder: (context) => MyApp(), // Wrap your app
+  ),
+);
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      locale: DevicePreview.locale(context), // Add the locale here
+      builder: DevicePreview.appBuilder, // Add the builder here
+      home: HomePage(),
+    );
+  }
+}
+```
+```
 ## Hello world
 
 ```dart
@@ -124,6 +181,45 @@ class _WidgetWithStateState extends State<WidgetWithState> {
         FlatButton(onPressed: decrement, child: Text('Decrement')),
         Text(counter.toString()),
       ],
+    );
+  }
+}
+```
+## Basic Navigation
+```dart
+class FirstPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: RaisedButton(
+          child: Text('Go to second page'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => SecondPage(),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class SecondPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: RaisedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text('Go back!'),
+        ),
+      ),
     );
   }
 }
@@ -477,6 +573,85 @@ class _MyHomePageState extends State {
       ),
     );
   }
+}
+```
+## Refresh Indicator
+
+```dart
+RefreshIndicator(
+strokeWidth: 5,
+color: Colors.yellow,
+backroundColor: Colors.red,
+onRefresh: _refresh,
+child: ListView(),
+)
+```
+## Expansion Panel
+
+```dart
+// stores ExpansionPanel state information
+class Item {
+  Item({
+    required this.expandedValue,
+    required this.headerValue,
+    this.isExpanded = false,
+  });
+
+  String expandedValue;
+  String headerValue;
+  bool isExpanded;
+}
+
+List<Item> generateItems(int numberOfItems) {
+  return List<Item>.generate(numberOfItems, (int index) {
+    return Item(
+      headerValue: 'Panel $index',
+      expandedValue: 'This is item number $index',
+    );
+  });
+}
+
+// ...
+
+final List<Item> _data = generateItems(8);
+
+@override
+Widget build(BuildContext context) {
+  return SingleChildScrollView(
+    child: Container(
+      child: _buildPanel(),
+    ),
+  );
+}
+
+Widget _buildPanel() {
+  return ExpansionPanelList(
+    expansionCallback: (int index, bool isExpanded) {
+      setState(() {
+        _data[index].isExpanded = !isExpanded;
+      });
+    },
+    children: _data.map<ExpansionPanel>((Item item) {
+      return ExpansionPanel(
+        headerBuilder: (BuildContext context, bool isExpanded) {
+          return ListTile(
+            title: Text(item.headerValue),
+          );
+        },
+        body: ListTile(
+          title: Text(item.expandedValue),
+          subtitle: const Text('To delete this panel, tap the trash can icon'),
+          trailing: const Icon(Icons.delete),
+          onTap: () {
+            setState(() {
+              _data.removeWhere((Item currentItem) => item == currentItem);
+            });
+          }
+        ),
+        isExpanded: item.isExpanded,
+      );
+    }).toList(),
+  );
 }
 ```
 

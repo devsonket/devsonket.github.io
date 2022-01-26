@@ -2,7 +2,7 @@
   "id":"git-cheat-sheet",
   "title":"গিট",
   "slug":"git-cheat-sheet",
-  "description":"গিট হচ্ছে ভার্সন কন্ট্রোল সিস্টেম।  ডেভেলপাররা সাধারণত প্রজেক্টের ভার্সন কন্ট্রোল এবং একই প্রজেক্টে একের অধিক ডেভেলপার কাজ করার জন্য গিট ব্যবহার করে। ",
+  "description":"গিট হচ্ছে ভার্সন কন্ট্রোল সিস্টেম। ডেভেলপাররা সাধারণত প্রজেক্টের ভার্সন কন্ট্রোল এবং একই প্রজেক্টে একের অধিক ডেভেলপার কাজ করার জন্য গিট ব্যবহার করে।",
   "colorPref":"#000",
   "contents":[
     {
@@ -151,6 +151,10 @@
           "code":"git commit -am \"Message\""
         },
         {
+          "definition":"নির্দিষ্ট কমিট দেখা",
+          "code":"git show {commit-id}"
+        },
+        {
           "definition":"সমস্ত পরিবর্তন আপডেট করতে",
           "code":"git add -u"
         },
@@ -189,7 +193,11 @@
       "items":[
         {
           "definition":"কমিট প্রত্যাবর্তন করা",
-          "code":"git revert 073791e7dd71b90daa853b2c5acc2c925f02dbc6 OR git revert <commit hash>"
+          "code":"git revert {commit-id} OR git revert <commit hash>"
+        },
+        {
+          "definition":"সর্বশেষ কমিট প্রত্যাবর্তন করা",
+          "code":"git revert HEAD"
         },
         {
           "definition":"নির্দিষ্ট কমিট প্রত্যাবর্তন করা",
@@ -197,7 +205,7 @@
         },
         {
           "definition":"সফট রিসেট (move HEAD only; neither staging nor working dir is changed)",
-          "code":"git reset --soft 073791e7dd71b90daa853b2c5acc2c925f02dbc6"
+          "code":"git reset --soft {commit-id}"
         },
         {
           "definition":"শেষ কমিট থেকে stage এরিয়া তে মুভ করা",
@@ -205,11 +213,11 @@
         },
         {
           "definition":"মিক্সেড রিসেট (move HEAD and change staging to match repo; does not affect working dir)",
-          "code":"git reset --mixed 073791e7dd71b90daa853b2c5acc2c925f02dbc6"
+          "code":"git reset --mixed {commit-id}"
         },
         {
           "definition":"হার্ড রিসেট (move HEAD and change staging dir and working dir to match repo)",
-          "code":"git reset --hard 073791e7dd71b90daa853b2c5acc2c925f02dbc6"
+          "code":"git reset --hard {commit-id}"
         },
         {
           "definition":"শেষ কমিট ডিলেট করা",
@@ -308,15 +316,15 @@
         },
         {
           "definition":"লোকাল মার্জ  আন্ডু করতে যেই মার্জটি এখনো পুশ করা হইনাই",
-          "code":"git reset --hard origin/master"
+          "code":"git reset --hard origin/main"
         },
         {
           "definition":"স্পেসিফিক একটি কমিট মার্জ করতে",
-          "code":"git cherry-pick 073791e7"
+          "code":"git cherry-pick {commit-id}"
         },
         {
           "definition":"রিবেস",
-          "code":"git checkout branchname » git rebase master OR git merge master branchname"
+          "code":"git checkout branchname » git rebase main OR git merge main branchname"
         },
         {
           "definition":"রিবেস ক্যানসেল করতে",
@@ -352,11 +360,15 @@
           "code":"git stash show -p stash@{0}"
         },
         {
-          "definition":"কাস্টম স্টাশ আইটেম ব্যবহার এবং ড্রপ করতে",
+          "definition":"স্টাশ এর সবগুলি আইটেম একসাথে ব্যবহার এবং ড্রপ করতে",
+          "code":"git stash pop"
+        },
+        {
+          "definition":"স্টাশ লিস্ট এর স্পেসিফিক আইটেম ব্যবহার এবং ড্রপ করতে",
           "code":"git stash pop stash@{0}"
         },
         {
-          "definition":"কাস্টম স্টাশ আইটেম ব্যবহার এবং ড্রপ না করতে",
+          "definition":"স্টাশ লিস্ট এর স্পেসিফিক আইটেম শুধু ব্যবহার এবং ড্রপ না করতে",
           "code":"git stash apply stash@{0}"
         },
         {
@@ -368,7 +380,11 @@
           "code":"git stash branch new_branch"
         },
         {
-          "definition":"কাস্টম স্টাশ আইটেম বাদ দিতে",
+          "definition":"স্টাশ লিস্ট এর প্রথম আইটেম বাদ দিতে",
+          "code":"git stash drop"
+        },
+        {
+          "definition":"স্টাশ লিস্ট এর স্পেসিফিক আইটেম বাদ দিতে",
           "code":"git stash drop stash@{0}"
         },
         {
@@ -418,7 +434,7 @@
         },
         {
           "definition":"কমিটগুলোর স্ট্যাটাস এবং সামারি শো করতে",
-          "code":"git log --stat --summary"
+          "code":"git log --stat \",\" git log --stat --summary"
         },
         {
           "definition":"কমিটগুলোর হিস্ট্রি গ্রাফ আকারে শো করতে",
@@ -446,24 +462,28 @@
           "code":"git diff --staged"
         },
         {
+          "definition":"সর্বশেষ কমিটের আগের কমিট ও সর্বশেষ কমিটের মাঝে তুলনা করতে",
+          "code":" git diff HEAD^ HEAD"
+        },
+        {
           "definition":"ব্রাঞ্চগুলো তুলনা করতে",
-          "code":"git diff master..branchname"
+          "code":"git diff main..branchname"
         },
         {
           "definition":"উপরের মত ব্রাঞ্চগুলো তুলনা করতে",
-          "code":"git diff --color-words master..branchname^"
+          "code":"git diff --color-words main..branchname^"
         },
         {
           "definition":"কমিটগুলো তুলনা করতে",
-          "code":"git diff 6eb715d git diff 6eb715d..HEAD git diff 6eb715d..537a09f"
+          "code":"git diff {commit-id} git diff {commit-id}..HEAD git diff {commit-id}..{commit-id}"
         },
         {
           "definition":"ফাইল এর কমিটগুলো তুলনা করতে",
-          "code":"git diff 6eb715d index.html git diff 6eb715d..537a09f index.html"
+          "code":"git diff {commit-id} index.html git diff {commit-id}..{commit-id} index.html"
         },
         {
           "definition":"দরকারী তুলনা",
-          "code":"git diff --stat --summary 6eb715d..HEAD"
+          "code":"git diff --stat --summary {commit-id}..HEAD"
         },
         {
           "definition":"ব্ল্যাম",
@@ -541,7 +561,7 @@
         },
         {
           "definition":"fetched কমিটগুলো মার্জ করতে",
-          "code":"git merge upstream/master OR git merge upstream/branchname"
+          "code":"git merge upstream/main OR git merge upstream/branchname"
         },
         {
           "definition":"কাস্টম ব্রাঞ্চ Fetch করতে",
@@ -565,15 +585,19 @@
         },
         {
           "definition":"রিপোজিটরি তে লোকাল ব্রাঞ্চ থেকে আপলোড করা",
-          "code":"git push -u origin master OR git push -u origin [branchName]"
+          "code":"git push -u origin main OR git push -u origin [branchName]"
         },
         {
           "definition":"পুশ",
-          "code":"git push origin master"
+          "code":"git push origin main"
+        },
+        {
+          "definition":"বর্তমান/ Checkout/ Current ব্রাঞ্চ এ পুশ করতে",
+          "code":"git push origin HEAD"
         },
         {
           "definition":"ফোর্স পুশ",
-          "code":"`git push origin master --force"
+          "code":"git push origin main --force"
         },
         {
           "definition":"রিপোজিটরি থেকে নতুন চেঞ্জ গুলো পুল করা",

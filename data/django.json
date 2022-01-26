@@ -58,6 +58,10 @@
           "code": "pip install <package_name>"
         },
         {
+          "definition": "রিকোয়ারমেন্ট ফাইল থেকে প্যাকেজ ডিপেন্ডেসি ইন্সটল করা",
+          "code": "pip install -r requirements.txt"
+        },
+        {
           "definition": "যেকোনো প্যাকেজ ডিপেন্ডেন্সী আনইন্সটল করা",
           "code": "pip uninstall <package_name>"
         },
@@ -79,8 +83,24 @@
           "code": "django-admin startproject <project_name>"
         },
         {
-          "definition": "ডেভলপমেন্ট সার্ভার চালু করা",
+          "definition": "ব্যবহারের তথ্য এবং প্রতিটি অ্যাপ্লিকেশন দ্বারা প্রদত্ত কমান্ডের একটি তালিকা প্রদর্শন করে",
+          "code": "python manage.py help"
+        },
+        {
+          "definition": "ডেভেলপমেন্ট সার্ভার চালু করা",
           "code": "python manage.py runserver"
+        },
+        {
+          "definition": "জ্যাঙ্গো প্রোজেক্ট পরীক্ষা করে",
+          "code": "python manage.py check"
+        },
+        {
+          "definition": "জ্যাঙ্গো প্রোজেক্ট ইন্টারেক্টিভ ইন্টারপ্রেটার",
+          "code": "python manage.py shell"
+        },
+        {
+          "definition": "জ্যাঙ্গো প্রোজেক্ট মেয়াদোত্তীর্ণ সেশনগুলি পরিষ্কার করে",
+          "code": "python manage.py clearsessions"
         }
       ]
     },
@@ -89,24 +109,32 @@
       "items": [
         {
           "definition": "অ্যাপ তৈরী করা",
-          "code": "python manage.py startapp <app_name>"
+          "code": "django-admin startapp <app_name>"
+        },
+        {
+          "definition": "সব অ্যাপ মাইগ্রেশনের জন্য",
+          "code": "python manage.py makemigrations"
         },
         {
           "definition": "অ্যাপ মাইগ্রেশনের জন্য",
           "code": "python manage.py makemigrations <app_name>"
         },
         {
-          "definition": "মাইগ্রেশনের জন্য",
+          "definition": "মাইগ্রেশন ডাটাবেজে এপ্লাইয়ের জন্য",
           "code": "python manage.py migrate"
         }
       ]
     },
     {
-      "title": "এডমিন",
+      "title": "জ্যাঙ্গো অথ",
       "items": [
         {
           "definition": "সুপার ইউজার তৈরী করা",
           "code": "python manage.py createsuperuser"
+        },
+        {
+          "definition": "পাসওয়ার্ড পরিবর্তন করা",
+          "code": "python manage.py changepassword <username>"
         }
       ]
     },
@@ -131,23 +159,23 @@
       "title": "টেমপ্লেট ট্যাগ",
       "items": [
         {
-          "definition":"টেমপ্টেল এক্সটেন্ড করা",
+          "definition":"টেমপ্লেট এক্সটেন্ড করা",
           "code": "{%extends '<html file name>'%}"
         },
         {
-          "definition":"টেমপ্টেল এর ভেতরে স্ট্যাটিক ফাইল লোড করা",
+          "definition":"টেমপ্লেট এর ভেতরে স্ট্যাটিক ফাইল লোড করা",
           "code": "{%load static%}"
         },
         {
-          "definition":"টেমপ্টেল এর ভেতরে ব্লক তৈরি করা",
+          "definition":"টেমপ্লেট এর ভেতরে ব্লক তৈরি করা",
           "code": "{%block <block name>%} ... {%endblock <block name>%}"
         },
         {
-          "definition":"টেমপ্টেল এর ভেতরে কন্ডিশন তৈরি করা",
+          "definition":"টেমপ্লেট এর ভেতরে কন্ডিশন তৈরি করা",
           "code": "{%if <condition>%} .. {%elif <condition>%} .. {%else%}...{%endif%}"
         },
         {
-          "definition":"টেমপ্টেল এর ভেতরে লুপ তৈরি",
+          "definition":"টেমপ্লেট এর ভেতরে লুপ তৈরি",
           "code": "{%for i in <context data name>%} ... {%endfor%}"
         }
       ]

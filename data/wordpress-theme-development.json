@@ -262,6 +262,23 @@
             "code": "<php endif; ?>"
           }
         ]
+      },
+      {
+        "title": "Hooks এবং Filters",
+        "items": [
+          {
+            "definition": "থিম লোড হওয়ার আগে কিছু করতে চাইলে।",
+            "code": "add_action('setup_theme', 'callback_function')"
+          },
+          {
+            "definition": "থিম লোড হওয়ার সাথে সাথে কিছু করতে চাইলে।",
+            "code": "add_action('after_setup_theme', 'callback_function')"
+          },
+          {
+            "definition": "ওয়ার্ডপ্রেস সম্পুর্ণ লোড হওয়ার পরে কিছু করতে চাইলে।",
+            "code": "add_action('wp_loaded', 'callback_function')"
+          }
+        ]
       }
     ]
   }

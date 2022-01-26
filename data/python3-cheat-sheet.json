@@ -128,7 +128,28 @@
             ]
         },
         {
-            "title": "পাইথন স্টিং মেথড",
+            "title": "কন্ডিশনাল সেটেটমেন্ট (Conditional Statements)",
+            "items": [{
+                "definition": "শর্তাবলি অনুসারে প্রগরাম চালানোর জন্য",
+                "code": "if condition_1:task_1 \nelif condition_2:task_2 \nelse:default_task উদাহরণ: animal='cat' \nif animal=='cat': print('Meow') \n else: print('Cat not found') → Meow"
+            }]
+        },
+        {
+            "title": "পাইথন লুপ (Python Loops)",
+            "items": [{
+                    "definition": "একটি পরিসীমা উপর পুনরাবৃত্তি(iteration)",
+                    "code": "for var in range(begin_val,end_val,step): do_something উদাহরণ: for i in range(1,4):print(i) → 1 \n2 \n3",
+                    "note": "By default, step এর মান 1 থাকে এবং begin_val এর মান 0 থাকে"
+                },
+                {
+                    "definition": "একটি মান পর্যন্ত পরিসিমা করা",
+                    "code": "while condition: do_something উদাহরণ: while i!=3 : print(i) \n i+=1 → 1 \n2 \n3",
+                    "note": "Condition সম্পূর্ণ না করলে প্রগরাম infinite loop - এ চলে যায়"
+                }
+            ]
+        },
+        {
+            "title": "পাইথন স্ট্রিং মেথড (Python String Methods)",
             "items": [{
                     "definition": "একটি স্ট্রিং এর প্রথম অক্ষরকে বড় হাতের অক্ষরে রূপান্তর করা",
                     "code": "txt.capitalize()"

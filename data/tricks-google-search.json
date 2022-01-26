@@ -11,77 +11,138 @@
         {
           "definition": "একটা নির্দিষ্ট ওয়েবসাইট থেকে সার্চ করা",
           "code": "site:[ওয়েবসাইটের-অ্যাড্রেস] যা খুঁজতে চান, যেমনঃ site:zonayed.me জাভাস্ক্রিপ্ট"
-        }, {
+        },
+        {
           "definition": "একটা নির্দিষ্ট টাইপের(pdf, doc, txt, ...) ফাইল খোঁজা",
           "code": "filetype:[ফাইল-এক্সটেনশন] যা খুঁজতে চান, যেমনঃ filetype:pdf বরফ গলা নদী"
-        }, {
+        },
+        {
           "definition": "একটা শব্দের ডেফিনেশন জানা",
           "code": "define:[কাঙ্খিত-শব্দ], যেমনঃ define:role"
-        }, {
+        },
+        {
           "definition": "ওয়েবপেজের টাইটেল থেকে খোঁজা",
           "code": "intitle:[কাঙ্খিত-শব্দ], যেমনঃ intitle:হাতেকলমে জাভাস্ক্রিপ্ট"
-        }, {
+        },
+        {
           "definition": "একটা নির্দিষ্ট রেঞ্জের নাম্বার(ডেট, প্রাইস,...) খোঁজা",
           "code": "phone price [5000..10000]"
-        }, {
+        },
+        {
           "definition": "শব্দের ভিতরের অন্য প্যাটার্নের শব্দ খোঁজা",
           "code": "[শব্দ] * [শব্দ], যেমনঃ বাংলা * ভান্ডার"
-        }, {
+        },
+        {
           "definition": "কোনো শব্দ বাদ দিয়ে খোঁজা",
           "code": "সার্চের ফলাফলে যাতে -[এই-শব্দ] না থাকে, যেমনঃ Redmi Note 5 -pro"
-        }, {
+        },
+        {
           "definition": "ঠিক এরকম একটা শব্দ ফলাফলে থাকলেই ফলাফল দেখানো",
           "code": "ঠিক এই '[শব্দ]' চাই, যেমনঃ Configure 'netis' router"
-        }, {
+        },
+        {
           "definition": "ঠিক এরকম শব্দগুচ্ছ মিললেই ফলাফল দেখানো",
           "code": "ঠিক '[এই শব্দগুচ্ছ]' চাই, যেমনঃ How to 'tie a tie'"
-        }, {
+        },
+        {
           "definition": "এডাল্ট বিষয় বাদ দিয়ে ফলাফল দেখানো",
           "code": "safesearch:[কাঙ্খিত-শব্দ], যেমনঃ safesearch:sex education"
-        }, {
+        },
+        {
           "definition": "ওয়েবপেজ এর তথ্য জানতে",
           "code": "info:[কাঙ্খিত-শব্দ], যেমনঃ info:facebook"
-        }, {
+        },
+        {
           "definition": "একটি ওয়েবপেজ এর সংশ্লিষ্ট আরো ওয়েবপেজ পাওয়া",
           "code": "related:[কাঙ্খিত-শব্দ], যেমনঃ related:facebook.com"
-        }, {
+        },
+        {
           "definition": "URL এ এই শব্দ থাকলে ফলাফল দেখানো",
           "code": "inurl:[কাঙ্খিত-শব্দ], যেমনঃ inurl:job"
-        }, {
+        },
+        {
           "definition": "URL এ এই শব্দগুচ্ছ থাকলে ফলাফল দেখানো",
           "code": "allinurl: [কাঙ্খিত-শব্দ], যেমনঃ allinurl:admin job"
-        }, {
+        },
+        {
           "definition": "কোন একটি ওয়েবপেজ কে গুগল ক্যাশে দেখার জন্য",
           "code": "cache:[ওয়েবপেজ], যেমনঃ cache:facebook.com"
+        },
+        {
+          "definition": "নিকটবর্তী কিছু খোঁজার জন্য",
+          "code": "[শব্দ] near me অথবা [শব্দ] nearby, যেমন:  ebl atm near me অথবা ebl atm nearby"
+        },
+        {
+          "definition": "কোন জায়গার বর্তমান সময় জানার জন্য",
+          "code": "time [জায়গার নাম], যেমন: time dhaka অথবা time bhutan"
+        },
+        {
+          "definition": "মুদ্রার হার তুলনা করার জন্য",
+          "code": "[মুদ্রার নাম] to [অন্য মুদ্রার নাম], যেমন: usd to bdt অথবা bhutan currency to bdt"
+        },
+        {
+          "definition": "ইউনিট তুলনা করার জন্য",
+          "code": "[ইউনিট] to [অন্য ইউনিট] যেমন: miles to km, kg to gram, 2 meter to feet"
+        },
+        {
+          "definition": "সময় অনুযায়ী সার্চ করার জন্য",
+          "code": "[শব্দ/বাক্য] before:yyyy-mm-dd after:yyyy-mm-dd যেমন: \"js promise\" after:2021-02-01 before:2021-02-12"
+        },
+        {
+          "definition": "দুটো জিনিসের মাঝে কম্পেয়ার করার জন্য",
+          "code": "[কাঙ্খিত-শব্দ] vs [কাঙ্খিত-শব্দ], যেমন: rice vs quinoa"
+        },
+        {
+          "definition": "কোনো সফটওয়্যার এর কি খুঁজার জন্য",
+          "code": "[সফটওয়্যার নেইম] 94FBR, যেমন: IDM 94FBR"
+        },
+        {
+          "definition": "কোনো নাম্বারকে শব্দে কনভার্ট করার জন্য",
+          "code": "[নাম্বার] = English, যেমন: 1064305 = English"
+        },
+        {
+          "definition": "নিজের আইপি এড্রেস দেখার জন্য",
+          "code": "my ip address"
+        },
+        {
+          "definition": "টাইমার সেট করার জন্য",
+          "code": "set timer"
         }
       ]
-    }, {
+    },
+    {
       "title": "ক্যালকুলেটর",
       "items": [
         {
           "definition": "যোগ, বিয়োগ, ভাগ, গুণ",
           "code": "10 + 20, 20 - 10, 4 * 2, 6 / 3"
-        }, {
+        },
+        {
           "definition": "একটা নাম্বারের পার্সেন্টেজ বের করা",
           "code": "[x] % of [y], যেমনঃ 12 % of 68"
-        }, {
+        },
+        {
           "definition": "ত্রিকোণোমিত্রি",
           "code": "cos(), sin(), ..."
-        }, {
+        },
+        {
           "definition": "একটা ইউনিট থেকে আরেক ইউনিটে কনভার্ট",
           "code": "[অমুক] to [তমুক], যেমনঃ 1kg to gm"
         }
       ]
-    }, {
+    },
+    {
       "title": "তথ্য",
       "items": [
         {
           "definition": "আবহাওয়া",
           "code": "weather [এলাকার-নাম], যেমনঃ weather shimla"
-        }, {
+        },
+        {
           "definition": "মুভিস",
           "code": "movies [মুভির-নাম], যেমনঃ movies frozen"
-        }, {
+        },
+        {
           "definition": "ফ্লাইট স্ট্যাটাস",
           "code": "[এয়ারপোর্ট-কোড] [ফ্লাইট-নাম্বার], যেমনঃ HA 124"
         }

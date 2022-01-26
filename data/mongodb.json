@@ -6,6 +6,86 @@
     "colorPref": "#13aa52",
     "contents": [
       {
+        "title": "উবুন্টু তে ইনস্টলেশন",
+        "items": [
+          {
+            "code": "curl -fsSL https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -"
+          }, {
+            "code": "apt-key list"
+          }, {
+            "code": "echo 'deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse' | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list"
+          }, {
+            "code": "sudo apt update"
+          }, {
+            "code": "sudo apt install mongodb-org"
+          }
+        ]
+      },
+      {
+        "title": "সিস্টেম সার্ভিস রান করা",
+        "items":[
+          {
+            "code": "sudo systemctl start mongod.service"
+          }
+        ]
+      },
+      {
+        "title": "সিস্টেম সম্পর্কিত তথ্য দেখা",
+        "items": [
+          {
+            "code": "sudo systemctl status mongod"
+          }
+        ]
+      },
+      {
+        "title": "মেশিন বুট টাইমে মঙ্গোডিবি সার্ভিস অটো চালু করা",
+        "items": [
+          {
+            "code": "sudo systemctl enable mongod"
+          }
+        ]
+      },
+      {
+        "title": "সিস্টেম সার্ভিস বন্ধ করা",
+        "items": [
+          {
+            "code": "sudo systemctl stop mongod"
+          }
+        ]
+      },
+      {
+        "title": "সিস্টেম সার্ভিস বন্ধ থাকলে রান করা",
+        "items": [
+          {
+            "code": "sudo systemctl start mongod"
+          }
+        ]
+      },
+      {
+        "title": "সিস্টেম সার্ভিস রিস্টার্ট করা",
+        "items": [
+          {
+            "code": "sudo systemctl restart mongod"
+          }
+        ]
+      },
+      {
+        "title":"মঙ্গোডিবি সার্ভিস সংযোগ তথ্য দেখা",
+        "items": [
+          {
+            "code": "mongo --eval 'db.runCommand({ connectionStatus: 1 })'"
+          }
+        ]
+      },
+      {
+        "title":"মেশিন বুট টাইমে মঙ্গোডিবি সার্ভিস অটো চালু করা বন্ধ করতে",
+        "items":[
+          {
+            "code": "sudo systemctl disable mongod"
+          }
+        ]
+      },
+      {
         "title": "ডকুমেন্ট ইনসার্ট করা",
         "items": [
           {
@@ -158,7 +238,7 @@
             "code": "$sum"
           }, {
             "definition": "JOIN",
-            "code": "$unwind"
+            "code": "$lookup"
           }
         ]
       }, {
@@ -188,6 +268,23 @@
           }, {
             "definition": "শেষ ডকুমেন্ট পাওয়া",
             "code": "$last"
+          }
+        ]
+      },{
+        "title": "মঙ্গডিবি ডাটা ইমপোর্ট এবং এক্সপোর্ট",
+        "items": [
+          {
+            "definition": "JSON ফরম্যাটে ডাটা ইমপোর্ট করতে",
+            "code": "mongoimport --uri '<Atlas Cluster URI>' --drop=<filename>.json"
+          }, {
+            "definition": "JSON ফরম্যাটে ডাটা এক্সপোর্ট করতে",
+            "code": "mongoexport --uri '<Atlas Cluster URI>' --collection=<collection_name> --out=<filename>.json"
+          },{
+            "definition": "BSON ফরম্যাটে ডাটা ইমপোর্ট করতে",
+            "code": "mongorestore --uri '<Atlas Cluster URI>' --drop dump"
+          }, {
+            "definition": "BSON ফরম্যাটে ডাটা এক্সপোর্ট করতে",
+            "code": "mongodump --uri '<Atlas Cluster URI>'"
           }
         ]
       }

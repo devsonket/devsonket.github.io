@@ -2,7 +2,7 @@
   "id": "reactjs-cheat-sheet",
   "title": "রিঅ্যাক্ট JS টুকিটাকি",
   "slug": "reactjs-cheat-sheet",
-  "description": "রিঅ্যাক্ট JS এর আদ্যোপান্ত",
+  "description": "ফ্রন্ট-এন্ড ওয়েব ডেভেলপমেন্ট এর এক যুগান্তকারী টুলস এর নাম রিয়েক্ট জেএস। এটি একটি ইন্টারেক্টিভ ইউজার ইন্টারফেস (UI) ভিত্তিক জাভাস্ক্রিপ্ট লাইব্রেরী।",
   "colorPref": "#0288d1",
   "contents": [
     {
@@ -11,6 +11,10 @@
         {
           "definition": "npx এর সাহায্যে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
           "code": "npx create-react-app <project-name>"
+        },
+        {
+          "definition": "npx এর সাহায্যে প্রজেক্ট নাম ছাড়া রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
+          "code": "npx create-react-app . "
         },
         {
           "definition": "npm এর সাহায্যে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
@@ -103,7 +107,7 @@
         },
         {
           "definition": "কম্পোনেন্ট নতুন প্রপস গ্রহন করার পর এবং রেন্ডারিং এর আগে ইনভোক হয়",
-          "code": "shouldComponentUpdate() "
+          "code": "shouldComponentUpdate()"
         },
         {
           "definition": "নতুন প্রপস অথবা স্টেট পরিবর্তন হওয়ার সাথে সাথে  ইনভোক হয় ",
@@ -160,8 +164,12 @@
           "code": "useParams()"
         },
         {
-          "definition": "বর্তমান URL এর অবস্থান জানতে বা ব্যাবহার করতে হলে",
+          "definition": "বর্তমান URL এর অবস্থান জানতে বা ব্যবহার করতে হলে",
           "code": "useLocation()"
+        },
+        {
+          "definition": "প্রদত্ত কম্পোনেন্ট একটি নির্দিষ্ট পৃষ্ঠায় আছে কিনা তা জানুন",
+          "code": "useRouteMatch()"
         }
       ]
     },
@@ -169,8 +177,12 @@
       "title": "রিঅ্যাক্ট রাউটার v5",
       "items": [
         {
-          "definition": "রাউটার ইন্সটল",
+          "definition": "npm এর সাহায্যে রাউটার ইন্সটল",
           "code": "npm install react-router-dom"
+        },
+        {
+          "definition": "yarn এর সাহায্যে রাউটার ইন্সটল",
+          "code": "yarn add react-router-dom"
         },
         {
           "definition": "Router সেট করতে App.js এ যুক্ত করুন",
@@ -185,12 +197,24 @@
           "code": "import { BrowserRouter as Router, Route, Link or Switch } from 'react-router-dom'"
         },
         {
-          "definition": "একটি উদাহরণ",
+          "definition": "ন্যাভ লিংক মাধ্যমে পেইজ পরিবর্তন করতে App.js এ যুক্ত করুন",
+          "code": "import { NavLink } from 'react-router-dom'"
+        },
+        {
+          "definition": "match অবজেক্ট",
+          "code": "match.params , match.isExact , match.path , match.url"
+        },
+        {
+          "definition": "সুইচ এর একটি উদাহরণ",
           "code": "<Router> <Switch> <Route path='/about' component={About}/> </Switch> </Router>"
         },
         {
           "definition": "লিংক এর একটি উদাহরন",
           "code": "<Link to='/about'> About </Link>"
+        },
+        {
+          "definition": "ন্যাভ লিংক এর একটি উদাহরন",
+          "code": "<NavLink to='/about'> About </NavLink>"
         },
         {
           "definition": "Route-এ প্যারামিটার পাস করতে হলে",

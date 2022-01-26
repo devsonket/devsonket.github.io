@@ -1,357 +1,937 @@
 {
-  "id": "avro-keymap",
-  "title": "অভ্র বাংলা কীবোর্ড",
-  "slug": "avro-keymap",
-  "description": "জনপ্রিয় বাংলা লেখার অ্যাপ অভ্র কীবোর্ডে নির্ভুলভাবে বাংলা লেখা",
-  "colorPref": "#bb401f",
-  "contents": [
-    {
-      "title": "স্বরবর্ণ",
-      "items": [
+    "id": "avro-keymap",
+    "title": "অভ্র বাংলা কীবোর্ড",
+    "slug": "avro-keymap",
+    "description": "জনপ্রিয় বাংলা লেখার অ্যাপ অভ্র কীবোর্ডে নির্ভুলভাবে বাংলা লেখা",
+    "colorPref": "#bb401f",
+    "contents": [
         {
-          "definition": "অ",
-          "code": "o"
-        }, {
-          "definition": "আ, া",
-          "code": "a"
-        }, {
-          "definition": "ই, ি",
-          "code": "i"
-        }, {
-          "definition": "ঈ, ী",
-          "code": "I"
-        }, {
-          "definition": "উ, ু",
-          "code": "u, oo"
-        }, {
-          "definition": "ঊ, ূ",
-          "code": "U"
-        }
-      ]
-    }, {
-      "title": "স্বরবর্ণ",
-      "items": [
+            "title": "স্বরবর্ণ",
+            "items": [
+                {
+                    "definition": "অ",
+                    "code": "o"
+                },
+                {
+                    "definition": "আ, া",
+                    "code": "a"
+                },
+                {
+                    "definition": "ই, ি",
+                    "code": "i"
+                },
+                {
+                    "definition": "ঈ, ী",
+                    "code": "I"
+                },
+                {
+                    "definition": "উ, ু",
+                    "code": "u, oo"
+                },
+                {
+                    "definition": "ঊ, ূ",
+                    "code": "U"
+                }
+            ]
+        },
         {
-          "definition": "ঋ, ৃ",
-          "code": "rri"
-        },{
-          "definition": "এ, ে",
-          "code": "e"
-        }, {
-          "definition": "ঐ, ৈ",
-          "code": "OI"
-        },{
-          "definition": "ও, ো",
-          "code": "O"
-        },{
-          "definition": "ঔ, ৌ",
-          "code": "OU"
-        }
-      ]
-    }, {
-      "title": "জোরপূর্বক মূল স্বরবর্ণ",
-      "items": [
+            "title": "স্বরবর্ণ",
+            "items": [
+                {
+                    "definition": "ঋ, ৃ",
+                    "code": "rri"
+                },
+                {
+                    "definition": "এ, ে",
+                    "code": "e"
+                },
+                {
+                    "definition": "ঐ, ৈ",
+                    "code": "OI"
+                },
+                {
+                    "definition": "ও, ো",
+                    "code": "O"
+                },
+                {
+                    "definition": "ঔ, ৌ",
+                    "code": "OU"
+                }
+            ]
+        },
         {
-          "definition": "অ",
-          "code": "`o"
-        }, {
-          "definition": "আ",
-          "code": "`a"
-        }, {
-          "definition": "ই",
-          "code": "`i"
-        }, {
-          "definition": "ঈ",
-          "code": "`I"
-        }, {
-          "definition": "উ",
-          "code": "`u, `oo"
-        }, {
-          "definition": "ঊ",
-          "code": "`U"
-        }
-      ]
-    }, {
-      "title": "জোরপূর্বক মূল স্বরবর্ণ",
-      "items": [
+            "title": "জোরপূর্বক মূল স্বরবর্ণ",
+            "items": [
+                {
+                    "definition": "অ",
+                    "code": "`o"
+                },
+                {
+                    "definition": "আ",
+                    "code": "`a"
+                },
+                {
+                    "definition": "ই",
+                    "code": "`i"
+                },
+                {
+                    "definition": "ঈ",
+                    "code": "`I"
+                },
+                {
+                    "definition": "উ",
+                    "code": "`u, `oo"
+                },
+                {
+                    "definition": "ঊ",
+                    "code": "`U"
+                }
+            ]
+        },
         {
-          "definition": "ঋ",
-          "code": "`rri"
-        },{
-          "definition": "এ",
-          "code": "`e"
-        }, {
-          "definition": "ঐ",
-          "code": "`OI"
-        },{
-          "definition": "ও",
-          "code": "`O"
-        },{
-          "definition": "ঔ",
-          "code": "`OU"
-        }
-      ]
-    }, {
-      "title": "জোরপূর্বক স্বরবর্ণের সংক্ষিপ্ত রূপ",
-      "items": [
+            "title": "জোরপূর্বক মূল স্বরবর্ণ",
+            "items": [
+                {
+                    "definition": "ঋ",
+                    "code": "`rri"
+                },
+                {
+                    "definition": "এ",
+                    "code": "`e"
+                },
+                {
+                    "definition": "ঐ",
+                    "code": "`OI"
+                },
+                {
+                    "definition": "ও",
+                    "code": "`O"
+                },
+                {
+                    "definition": "ঔ",
+                    "code": "`OU"
+                }
+            ]
+        },
         {
-          "definition": "কিছু লেখা হবে না",
-          "code": "o`"
-        }, {
-          "definition": "া",
-          "code": "a`"
-        }, {
-          "definition": "ি",
-          "code": "i`"
-        }, {
-          "definition": "ী",
-          "code": "I`"
-        }, {
-          "definition": "ু",
-          "code": "u`, oo`"
-        }, {
-          "definition": "ূ",
-          "code": "U`"
-        }
-      ]
-    }, {
-      "title": "জোরপূর্বক স্বরবর্ণের সংক্ষিপ্ত রূপ",
-      "items": [
+            "title": "জোরপূর্বক স্বরবর্ণের সংক্ষিপ্ত রূপ",
+            "items": [
+                {
+                    "definition": "কিছু লেখা হবে না",
+                    "code": "o`"
+                },
+                {
+                    "definition": "া",
+                    "code": "a`"
+                },
+                {
+                    "definition": "ি",
+                    "code": "i`"
+                },
+                {
+                    "definition": "ী",
+                    "code": "I`"
+                },
+                {
+                    "definition": "ু",
+                    "code": "u`, oo`"
+                },
+                {
+                    "definition": "ূ",
+                    "code": "U`"
+                }
+            ]
+        },
         {
-          "definition": "ৃ",
-          "code": "rri`"
-        },{
-          "definition": "ে",
-          "code": "e`"
-        }, {
-          "definition": "ৈ",
-          "code": "OI`"
-        },{
-          "definition": "ো",
-          "code": "O`"
-        },{
-          "definition": "ৌ",
-          "code": "OU`"
-        }
-      ]
-    }, {
-      "title": "ব্যাঞ্জনবর্ণ",
-      "items": [
+            "title": "জোরপূর্বক স্বরবর্ণের সংক্ষিপ্ত রূপ",
+            "items": [
+                {
+                    "definition": "ৃ",
+                    "code": "rri`"
+                },
+                {
+                    "definition": "ে",
+                    "code": "e`"
+                },
+                {
+                    "definition": "ৈ",
+                    "code": "OI`"
+                },
+                {
+                    "definition": "ো",
+                    "code": "O`"
+                },
+                {
+                    "definition": "ৌ",
+                    "code": "OU`"
+                }
+            ]
+        },
         {
-          "definition": "ক",
-          "code": "k"
-        }, {
-          "definition": "খ",
-          "code": "kh"
-        }, {
-          "definition": "গ",
-          "code": "g"
-        }, {
-          "definition": "ঘ",
-          "code": "gh"
-        }, {
-          "definition": "ঙ",
-          "code": "Ng"
-        }
-      ]
-    }, {
-      "title": "ব্যাঞ্জনবর্ণ",
-      "items": [
+            "title": "ব্যাঞ্জনবর্ণ",
+            "items": [
+                {
+                    "definition": "ক",
+                    "code": "k"
+                },
+                {
+                    "definition": "খ",
+                    "code": "kh"
+                },
+                {
+                    "definition": "গ",
+                    "code": "g"
+                },
+                {
+                    "definition": "ঘ",
+                    "code": "gh"
+                },
+                {
+                    "definition": "ঙ",
+                    "code": "Ng"
+                }
+            ]
+        },
         {
-          "definition": "চ",
-          "code": "c"
-        }, {
-          "definition": "ছ",
-          "code": "ch"
-        }, {
-          "definition": "জ",
-          "code": "j"
-        }, {
-          "definition": "ঝ",
-          "code": "jh"
-        }, {
-          "definition": "ঞ",
-          "code": "NG"
-        }
-      ]
-    }, {
-      "title": "ব্যাঞ্জনবর্ণ",
-      "items": [
+            "title": "ব্যাঞ্জনবর্ণ",
+            "items": [
+                {
+                    "definition": "চ",
+                    "code": "c"
+                },
+                {
+                    "definition": "ছ",
+                    "code": "ch"
+                },
+                {
+                    "definition": "জ",
+                    "code": "j"
+                },
+                {
+                    "definition": "ঝ",
+                    "code": "jh"
+                },
+                {
+                    "definition": "ঞ",
+                    "code": "NG"
+                }
+            ]
+        },
         {
-          "definition": "ট",
-          "code": "T"
-        }, {
-          "definition": "ঠ",
-          "code": "Th"
-        }, {
-          "definition": "ড",
-          "code": "D"
-        }, {
-          "definition": "ঢ",
-          "code": "Dh"
-        }, {
-          "definition": "ণ",
-          "code": "N"
-        }
-      ]
-    }, {
-      "title": "ব্যাঞ্জনবর্ণ",
-      "items": [
+            "title": "ব্যাঞ্জনবর্ণ",
+            "items": [
+                {
+                    "definition": "ট",
+                    "code": "T"
+                },
+                {
+                    "definition": "ঠ",
+                    "code": "Th"
+                },
+                {
+                    "definition": "ড",
+                    "code": "D"
+                },
+                {
+                    "definition": "ঢ",
+                    "code": "Dh"
+                },
+                {
+                    "definition": "ণ",
+                    "code": "N"
+                }
+            ]
+        },
         {
-          "definition": "ত",
-          "code": "t"
-        }, {
-          "definition": "থ",
-          "code": "th"
-        }, {
-          "definition": "দ",
-          "code": "d"
-        }, {
-          "definition": "ধ",
-          "code": "dh"
-        }, {
-          "definition": "ন",
-          "code": "n"
-        }
-      ]
-    }, {
-      "title": "ব্যাঞ্জনবর্ণ",
-      "items": [
+            "title": "ব্যাঞ্জনবর্ণ",
+            "items": [
+                {
+                    "definition": "ত",
+                    "code": "t"
+                },
+                {
+                    "definition": "থ",
+                    "code": "th"
+                },
+                {
+                    "definition": "দ",
+                    "code": "d"
+                },
+                {
+                    "definition": "ধ",
+                    "code": "dh"
+                },
+                {
+                    "definition": "ন",
+                    "code": "n"
+                }
+            ]
+        },
         {
-          "definition": "প",
-          "code": "p"
-        }, {
-          "definition": "ফ",
-          "code": "f, ph"
-        }, {
-          "definition": "ব",
-          "code": "b"
-        }, {
-          "definition": "ভ",
-          "code": "v, bh"
-        }, {
-          "definition": "ম",
-          "code": "m"
-        }
-      ]
-    }, {
-      "title": "ব্যাঞ্জনবর্ণ",
-      "items": [
+            "title": "ব্যাঞ্জনবর্ণ",
+            "items": [
+                {
+                    "definition": "প",
+                    "code": "p"
+                },
+                {
+                    "definition": "ফ",
+                    "code": "f, ph"
+                },
+                {
+                    "definition": "ব",
+                    "code": "b"
+                },
+                {
+                    "definition": "ভ",
+                    "code": "v, bh"
+                },
+                {
+                    "definition": "ম",
+                    "code": "m"
+                }
+            ]
+        },
         {
-          "definition": "য",
-          "code": "z"
-        }, {
-          "definition": "র",
-          "code": "r"
-        }, {
-          "definition": "ল",
-          "code": "l"
-        }, {
-          "definition": "শ",
-          "code": "sh, S"
-        }, {
-          "definition": "ষ",
-          "code": "Sh"
-        }
-      ]
-    }, {
-      "title": "ব্যাঞ্জনবর্ণ",
-      "items": [
+            "title": "ব্যাঞ্জনবর্ণ",
+            "items": [
+                {
+                    "definition": "য",
+                    "code": "z"
+                },
+                {
+                    "definition": "র",
+                    "code": "r"
+                },
+                {
+                    "definition": "ল",
+                    "code": "l"
+                },
+                {
+                    "definition": "শ",
+                    "code": "sh, S"
+                },
+                {
+                    "definition": "ষ",
+                    "code": "Sh"
+                }
+            ]
+        },
         {
-          "definition": "স",
-          "code": "s"
-        }, {
-          "definition": "হ",
-          "code": "h"
-        }, {
-          "definition": "ড়",
-          "code": "R"
-        }, {
-          "definition": "ঢ়",
-          "code": "Rh"
-        }
-      ]
-    }, {
-      "title": "ব্যাঞ্জনবর্ণ",
-      "items": [
+            "title": "ব্যাঞ্জনবর্ণ",
+            "items": [
+                {
+                    "definition": "স",
+                    "code": "s"
+                },
+                {
+                    "definition": "হ",
+                    "code": "h"
+                },
+                {
+                    "definition": "ড়",
+                    "code": "R"
+                },
+                {
+                    "definition": "ঢ়",
+                    "code": "Rh"
+                }
+            ]
+        },
         {
-          "definition": "য়",
-          "code": "y, Y"
-        }, {
-          "definition": "ৎ",
-          "code": "t``"
-        }, {
-          "definition": "ং",
-          "code": "ng"
-        }, {
-          "definition": "ঃ",
-          "code": ":"
-        }, {
-          "definition": "ঁ",
-          "code": "^"
-        }
-      ]
-    }, {
-      "title": "যুক্তবর্ণ",
-      "items": [
+            "title": "ব্যাঞ্জনবর্ণ",
+            "items": [
+                {
+                    "definition": "য়",
+                    "code": "y, Y"
+                },
+                {
+                    "definition": "ৎ",
+                    "code": "t``"
+                },
+                {
+                    "definition": "ং",
+                    "code": "ng"
+                },
+                {
+                    "definition": "ঃ",
+                    "code": ":"
+                },
+                {
+                    "definition": "ঁ",
+                    "code": "^"
+                }
+            ]
+        },
         {
-          "definition": "অক্ষর",
-          "code": "okkhor"
-        }, {
-          "definition": "অন্ত",
-          "code": "onto"
-        }, {
-          "definition": "বিজ্ঞ",
-          "code": "biggo"
-        }, {
-          "definition": "ব্রাহ্মণ",
-          "code": "brahmoN"
-        }, {
-          "definition": "লক্ষ্মী",
-          "code": "lokkhmI"
-        }, {
-          "definition": "হ্ব (হ+ব)",
-          "code": "h+w"
-        }, {
-          "definition": "চ্ছ্ব (চ+ছ+ব)",
-          "code": "c+ch+w"
-        }, {
-          "definition": "স্ফ (স+ফ)",
-          "code": "s+f"
-        }, {
-          "definition": "ষ্ট্র (ষ+ট+র-ফলা)",
-          "code": "Sh+T+r"
-        }
-      ]
-    }, {
-      "title": "যুক্তাক্ষর",
-      "items": [
+            "title": "যুক্তাক্ষর",
+            "items": [
+                {
+                    "definition": "অক্ষর",
+                    "code": "okkhor"
+                },
+                {
+                    "definition": "অন্ত",
+                    "code": "onto"
+                },
+                {
+                    "definition": "বিজ্ঞ",
+                    "code": "biggo"
+                },
+                {
+                    "definition": "ব্রাহ্মণ",
+                    "code": "brahmoN"
+                },
+                {
+                    "definition": "লক্ষ্মী",
+                    "code": "lokkhmI"
+                },
+                {
+                    "definition": "গ্লোব",
+                    "code": "glOb"
+                },
+                {
+                    "definition": "অক্টোপাস",
+                    "code": "okTOpas"
+                },
+                {
+                    "definition": "আগলানো",
+                    "code": "ag`lano"
+                },
+                {
+                    "definition": "একটা",
+                    "code": "ek`Ta"
+                },
+                {
+                    "definition": "স্বাধীন",
+                    "code": "swadhIn"
+                },
+                {
+                    "definition": "রুক্মিণী",
+                    "code": "rukmiNI"
+                },
+                {
+                    "definition": "নিষ্ফল",
+                    "code": "niShfol"
+                },
+                {
+                    "definition": "রাষ্ট্র",
+                    "code": "raShTr"
+                }
+            ]
+        },
         {
-          "definition": "গ্লোব",
-          "code": "glOb"
-        }, {
-          "definition": "অক্টোপাস",
-          "code": "okTOpas"
-        }, {
-          "definition": "আগলানো",
-          "code": "ag`lano"
-        }, {
-          "definition": "একটা",
-          "code": "ek`Ta"
-        }, {
-          "definition": "স্বাধীন",
-          "code": "swadhIn"
-        }, {
-          "definition": "রুক্মিণী",
-          "code": "rukmiNI"
-        }, {
-          "definition": "নিষ্ফল",
-          "code": "niShfol"
-        }, {
-          "definition": "রাষ্ট্র",
-          "code": "raShTr"
+            "title": "যুক্তবর্ণ",
+            "items": [
+                {
+                    "definition": "হ্ব (হ+ব)",
+                    "code": "h+w"
+                },
+                {
+                    "definition": "চ্ছ্ব (চ+ছ+ব)",
+                    "code": "c+ch+w"
+                },
+                {
+                    "definition": "স্ফ (স+ফ)",
+                    "code": "s+f"
+                },
+                {
+                    "definition": "ষ্ট্র (ষ+ট+র-ফলা)",
+                    "code": "Sh+T+r"
+                },
+                {
+                    "definition": "ক্ক",
+                    "code": "kk"
+                },
+                {
+                    "definition": "ক্ট",
+                    "code": "kT"
+                },
+                {
+                    "definition": "ক্ত",
+                    "code": "kt"
+                },
+                {
+                    "definition": "ক্ত্র",
+                    "code": "ktr"
+                },
+                {
+                    "definition": "ক্ব",
+                    "code": "kw"
+                },
+                {
+                    "definition": "ক্ম",
+                    "code": "km"
+                },
+                {
+                    "definition": "ক্য",
+                    "code": "ky, kZ"
+                },
+                {
+                    "definition": "ক্র",
+                    "code": "kr"
+                },
+                {
+                    "definition": "ক্ল",
+                    "code": "kl"
+                },
+                {
+                    "definition": "ক্ষ",
+                    "code": "kkh, kx"
+                },
+                {
+                    "definition": "ক্ষ্ণ",
+                    "code": "kkhN, kxN"
+                },
+                {
+                    "definition": "ক্ষ্ম",
+                    "code": "kkhm, kxm"
+                },
+                {
+                    "definition": "ক্ষ্য",
+                    "code": "kkhy, kxy, kkhZ, kxZ"
+                },
+                {
+                    "definition": "ক্স",
+                    "code": "ks"
+                },
+                {
+                    "definition": "খ্য",
+                    "code": "khy,khZ"
+                },
+                {
+                    "definition": "খ্র",
+                    "code": "khr"
+                },
+                {
+                    "definition": "গ্‌ণ",
+                    "code": "gN"
+                },
+                {
+                    "definition": "গ্ধ",
+                    "code": "gdh"
+                },
+                {
+                    "definition": "ঙ্ম",
+                    "code": "Ngm"
+                },
+                {
+                    "definition": "চ্চ",
+                    "code": "cc"
+                },
+                {
+                    "definition": "চ্ছ",
+                    "code": "cch"
+                },
+                {
+                    "definition": "চ্ছ্ব",
+                    "code": "cchw"
+                },
+                {
+                    "definition": "চ্ছ্র",
+                    "code": "cchr"
+                },
+                {
+                    "definition": "চ্ঞ",
+                    "code": "cNG"
+                },
+                {
+                    "definition": "চ্য",
+                    "code": "cy,cZ"
+                },
+                {
+                    "definition": "জ্জ",
+                    "code": "jj"
+                },
+                {
+                    "definition": "জ্জ্ব",
+                    "code": "jjw"
+                },
+                {
+                    "definition": "জ্ঝ",
+                    "code": "jjh"
+                },
+                {
+                    "definition": "জ্ঞ",
+                    "code": "gg,jNG"
+                },
+                {
+                    "definition": "গ্ন",
+                    "code": "gn"
+                },
+                {
+                    "definition": "গ্ন্য",
+                    "code": "gny,gnZ"
+                },
+                {
+                    "definition": "গ্ব",
+                    "code": "gw"
+                },
+                {
+                    "definition": "গ্ম",
+                    "code": "gm"
+                },
+                {
+                    "definition": "গ্য",
+                    "code": "gy,gZ"
+                },
+                {
+                    "definition": "গ্র",
+                    "code": "gr"
+                },
+                {
+                    "definition": "গ্ল",
+                    "code": "gl"
+                },
+                {
+                    "definition": "ঘ্ন",
+                    "code": "ghn"
+                },
+                {
+                    "definition": "ঘ্য",
+                    "code": "ghy, ghZ"
+                },
+                {
+                    "definition": "ঘ্র",
+                    "code": "ghr"
+                },
+                {
+                    "definition": "ঙ্ক",
+                    "code": "nk, Ngk"
+                },
+                {
+                    "definition": "ঙ্ক্য",
+                    "code": "nky, Ngky, nkZ, NgkZ"
+                },
+                {
+                    "definition": "ঙ্ক্ষ",
+                    "code": "Ngkkh,Ngkx"
+                },
+                {
+                    "definition": "ঙ্খ",
+                    "code": "Ngkh"
+                },
+                {
+                    "definition": "ঙ্গ",
+                    "code": "Ngg"
+                },
+                {
+                    "definition": "ঙ্গ্য",
+                    "code": "Nggy,NggZ"
+                },
+                {
+                    "definition": "ঙ্ঘ",
+                    "code": "Nggh"
+                },
+                {
+                    "definition": "ঙ্ঘ্য",
+                    "code": "Ngghy, NgghZ"
+                },
+                {
+                    "definition": "ঙ্ঘ্র",
+                    "code": "Ngghr"
+                },
+                {
+                    "definition": "ট্ব",
+                    "code": "Tw"
+                },
+                {
+                    "definition": "ট্ম",
+                    "code": "Tm"
+                },
+                {
+                    "definition": "ট্য",
+                    "code": "Ty,TZ"
+                },
+                {
+                    "definition": "ট্র",
+                    "code": "Tr"
+                },
+                {
+                    "definition": "ড্ড",
+                    "code": "DD"
+                },
+                {
+                    "definition": "ড্য",
+                    "code": "Dy,DZ"
+                },
+                {
+                    "definition": "ড্র",
+                    "code": "Dr"
+                },
+                {
+                    "definition": "ঢ্য",
+                    "code": "Dhy,DhZ"
+                },
+                {
+                    "definition": "ঢ্র",
+                    "code": "Dhr"
+                },
+                {
+                    "definition": "ণ্ট",
+                    "code": "NT"
+                },
+                {
+                    "definition": "জ্ব",
+                    "code": "jw"
+                },
+                {
+                    "definition": "জ্য",
+                    "code": "jy, jZ"
+                },
+                {
+                    "definition": "জ্র",
+                    "code": "jr"
+                },
+                {
+                    "definition": "ঞ্চ",
+                    "code": "nc, NGc"
+                },
+                {
+                    "definition": "ঞ্ছ",
+                    "code": "nch, NGch"
+                },
+                {
+                    "definition": "ঞ্জ",
+                    "code": "nj, NGj"
+                },
+                {
+                    "definition": "ঞ্ঝ",
+                    "code": "njh, NGjh"
+                },
+                {
+                    "definition": "ট্ট",
+                    "code": "TT"
+                },
+                {
+                    "definition": "ত্ত",
+                    "code": "tt"
+                },
+                {
+                    "definition": "ত্ত্ব",
+                    "code": "ttw"
+                },
+                {
+                    "definition": "ত্থ",
+                    "code": "tth"
+                },
+                {
+                    "definition": "ত্ন",
+                    "code": "tn"
+                },
+                {
+                    "definition": "ত্ব",
+                    "code": "tw"
+                },
+                {
+                    "definition": "ত্ম",
+                    "code": "tm"
+                },
+                {
+                    "definition": "ত্ম্য",
+                    "code": "tmy, tmZ"
+                },
+                {
+                    "definition": "ত্য",
+                    "code": "ty, tZ"
+                },
+                {
+                    "definition": "ত্র",
+                    "code": "tr"
+                },
+                {
+                    "definition": "থ্ব",
+                    "code": "thw"
+                },
+                {
+                    "definition": "থ্য",
+                    "code": "thy, thZ"
+                },
+                {
+                    "definition": "থ্র",
+                    "code": "thr"
+                },
+                {
+                    "definition": "দ্গ",
+                    "code": "dg"
+                },
+                {
+                    "definition": "দ্ঘ",
+                    "code": "dgh"
+                },
+                {
+                    "definition": "দ্দ",
+                    "code": "dd"
+                },
+                {
+                    "definition": "দ্দ্ব",
+                    "code": "ddw "
+                },
+                {
+                    "definition": "দ্ধ",
+                    "code": "ddh"
+                },
+                {
+                    "definition": "দ্ব",
+                    "code": "dw"
+                },
+                {
+                    "definition": "দ্ভ",
+                    "code": "dv, dbh"
+                },
+                {
+                    "definition": "দ্ম",
+                    "code": "dm"
+                },
+                {
+                    "definition": "দ্য",
+                    "code": "dy, dZ"
+                },
+                {
+                    "definition": "দ্র",
+                    "code": "dr"
+                },
+                {
+                    "definition": "ন্ম",
+                    "code": "nm"
+                },
+                {
+                    "definition": "ন্য",
+                    "code": "ny, nZ"
+                },
+                {
+                    "definition": "ন্স",
+                    "code": "ns"
+                },
+                {
+                    "definition": "ণ্ঠ",
+                    "code": "NTh"
+                },
+                {
+                    "definition": "ণ্ড",
+                    "code": "ND"
+                },
+                {
+                    "definition": "ণ্ড্য",
+                    "code": "NDy,NDZ"
+                },
+                {
+                    "definition": "ণ্ড্র",
+                    "code": "NDr"
+                },
+                {
+                    "definition": "ণ্ঢ",
+                    "code": "NDh"
+                },
+                {
+                    "definition": "ণ্ব",
+                    "code": "Nw"
+                },
+                {
+                    "definition": "ণ্ম",
+                    "code": "Nm"
+                },
+                {
+                    "definition": "ণ্য",
+                    "code": "Ny, NZ"
+                },
+                {
+                    "definition": "ধ্ন",
+                    "code": "dhn"
+                },
+                {
+                    "definition": "ধ্ব",
+                    "code": "dhw"
+                },
+                {
+                    "definition": "ধ্য",
+                    "code": "dhy,dhZ"
+                },
+                {
+                    "definition": "ধ্র",
+                    "code": "dhr"
+                },
+                {
+                    "definition": "ন্ট",
+                    "code": "nT"
+                },
+                {
+                    "definition": "ন্ঠ",
+                    "code": "nTh"
+                },
+                {
+                    "definition": "ন্ড",
+                    "code": "nD"
+                },
+                {
+                    "definition": "ন্ত",
+                    "code": "nt"
+                },
+                {
+                    "definition": "ন্ত্ব",
+                    "code": "ntw"
+                },
+                {
+                    "definition": "ন্ত্য",
+                    "code": "nty, ntZ"
+                },
+                {
+                    "definition": "ন্ত্র",
+                    "code": "ntr"
+                },
+                {
+                    "definition": "ন্থ",
+                    "code": "nth"
+                },
+                {
+                    "definition": "ন্দ",
+                    "code": "nd"
+                },
+                {
+                    "definition": "ন্দ্য",
+                    "code": "ndy, ndZ"
+                },
+                {
+                    "definition": "ন্দ্ব",
+                    "code": "ndw"
+                },
+                {
+                    "definition": "ন্দ্র",
+                    "code": "ndr"
+                },
+                {
+                    "definition": "ন্ধ",
+                    "code": "ndh"
+                },
+                {
+                    "definition": "ন্ধ্য",
+                    "code": "ndhy, ndhZ"
+                },
+                {
+                    "definition": "ন্ধ্র",
+                    "code": "ndhr"
+                },
+                {
+                    "definition": "ন্ন",
+                    "code": "nn"
+                },
+                {
+                    "definition": "ন্ব",
+                    "code": "nw"
+                },
+                {
+                    "definition": "ভ্য",
+                    "code": "vy, vZ, bhy, bhZ"
+                },
+                {
+                    "definition": "ভ্র",
+                    "code": "vr, bhr"
+                },
+                {
+                    "definition": "হৃ",
+                    "code": "hrri"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

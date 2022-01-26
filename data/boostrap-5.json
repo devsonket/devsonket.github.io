@@ -1,274 +1,344 @@
 {
-    "id":"bootstrap5",
-    "title":"বুটস্ট্রাপ ৫",
-    "slug":"bootstrap5",
-    "description":"বুটস্ট্রাপ হলো একটি ফ্রি এবং ওপেন সোর্স সিএসএস ফ্রেমওয়ার্ক যা রেস্পন্সিভ মোবাইল ফাস্ট ফ্রন্ট-এন্ড ওয়েব ডেভেলপমেন্ট করতে ব্যবহার করা হয়। যার সর্বশেষ সংস্করণ হলো বুটস্ট্রাপ v5.0.0-beta1, এটি খুবই দ্রুত ওয়েব পেজ ও ওয়েব অ্যাপ্লিকেশন তৈরী করার জন্যে এটা ব্যাপকভাবে ব্যাবহৃত ।",
-    "colorPref":"#7711F7",
-    "contents":[
-       {
-          "title":"কন্টেইনার ক্লাস",
-          "items":[
-             {
-                "definition":"রেস্পন্সিভ ফিক্স উইড",
-                "code":"<div class='container'>...</div>"
-             },
-             {
-                "definition":"ফুল উইড",
-                "code":"<div class='container-fluid'>...</div>"
-             }
-          ]
-       },
-       {
-          "title":"গ্রিড ক্লাস",
-          "items":[
-             {
-                "definition":"স্ক্রীন প্রস্থ যখন ৫৭৬পিক্সেল এর ছোট",
-                "code":"<div class='col-'>...</div>"
-             },
-             {
-                "definition":"স্ক্রীন প্রস্থ যখন ৫৭৬পিক্সেল এর সমান বা বড়",
-                "code":"<div class='col-sm'>...</div>"
-             },
-             {
-                "definition":"স্ক্রীন প্রস্থ যখন ৭৬৮পিক্সেল এর সমান বা বড়",
-                "code":"<div class='col-md'>...</div>"
-             },
-             {
-                "definition":"স্ক্রীন প্রস্থ যখন ৯৯২পিক্সেল এর সমান বা বড়",
-                "code":"<div class='col-lg'>...</div>"
-             },
-             {
-                "definition":"স্ক্রীন প্রস্থ যখন ১২০০পিক্সেল এর সমান বা বড়",
-                "code":"<div class='col-xl'>...</div>"
-             },
-             {
-                "definition":"স্ক্রীন প্রস্থ যখন ১৪০০পিক্সেল এর সমান বা বড়",
-                "code":"<div class='col-xxl'>...</div>"
-             }
-          ]
-       },
-       {
-          "title":"ভার্টিকাল আলাইনমেন্ট",
-          "items":[
-             {
-                "definition":"সব কলাম উপরে দেখানো",
-                "code":"<div class='row align-items-start'><div class='col'>...</div><div class='col'>...</div></div>"
-             },
-             {
-                "definition":"সব কলাম মাঝে দেখানো",
-                "code":"<div class='row align-items-center'><div class='col'>...</div><div class='col'>...</div></div>"
-             },
-             {
-                "definition":"সব কলাম নিচে দেখানো",
-                "code":"<div class='row align-items-end'><div class='col'>...</div><div class='col'>...</div></div>"
-             },
-             {
-                "definition":"একটি কলাম উপরে দেখানো",
-                "code":"<div class='row'><div class='col align-self-start'>...</div></div>"
-             },
-             {
-                "definition":"একটি কলাম মাঝে দেখানো",
-                "code":"<div class='row'><div class='col align-self-center'>...</div></div>"
-             },
-             {
-                "definition":"একটি কলাম নিচে দেখানো",
-                "code":"<div class='row'><div class='col align-self-end'>...</div></div>"
-             }
-          ]
-       },
-       {
-          "title":"হরিজেন্টাল আলাইনমেন্ট",
-          "items":[
-             {
-                "definition":"সব কলাম বামে দেখানো",
-                "code":"<div class='row justify-content-start'><div class='col'>...</div><div class='col'>...</div></div>"
-             },
-             {
-                "definition":"সব কলাম মাঝে দেখানো",
-                "code":"<div class='row justify-content-center'><div class='col'>...</div><div class='col'>...</div></div>"
-             },
-             {
-                "definition":"সব কলাম ডানে দেখানো",
-                "code":"<div class='row justify-content-end'><div class='col'>...</div><div class='col'>...</div></div>"
-             },
-             {
-                "definition":"সব কলাম ডানে বামে সমান গ্যাপে দেখানো",
-                "code":"<div class='row justify-content-around'><div class='col'>...</div></div>"
-             },
-             {
-                "definition":"সব কলাম এর মাঝে সমান গ্যাপে দেখানো",
-                "code":"<div class='row justify-content-between'><div class='col'>...</div></div>"
-             },
-             {
-                "definition":"সব কলাম সমান গ্যাপে দেখানো",
-                "code":"<div class='row justify-content-evenly'><div class='col'>...</div></div>"
-             }
-          ]
-       },
-       {
-          "title": "ডিসপ্লে হেডিংস",
-          "items":[
-             {
-               "definition": "ডিসপ্লে ওয়ান",
-               "code": "<h1 class='display-1'>Display 1</h1>"
-             },
-             {
-               "definition": "ডিসপ্লে টু",
-               "code": "<h2 class='display-2'>Display 2</h2>"
-             },
-             {
-               "definition": "ডিসপ্লে থ্রি",
-               "code": "<h3 class='display-3'>Display 3</h3>"
-             },
-             {
-               "definition": "ডিসপ্লে ফোর",
-               "code": "<h4 class='display-4'>Display 4</h4>"
-             },
-             {
-                "definition": "ডিসপ্লে ফাইভ",
-                "code": "<h5 class='display-5'>Display 5</h5>"
-             },
-             {
-                "definition": "ডিসপ্লে সিক্স ",
-                "code": "<h6 class='display-6'>Display 6</h6>"
-            }
-         ]
-       },
-       {
-          "title": "হেডিংস",
-          "items":[
-             {
-               "definition": "হেডিং ওয়ান",
-               "code": "<p class='h1'>h1. Bootstrap heading</p>"
-             },
-             {
-               "definition": "হেডিং টু",
-               "code": "<p class='h1'>h1. Bootstrap heading</p>"
-             },
-             {
-               "definition": "হেডিং থ্রি",
-               "code": "<p class='h1'>h1. Bootstrap heading</p>"
-             },
-             {
-               "definition": "হেডিং ফোর",
-               "code": "<p class='h1'>h1. Bootstrap heading</p>"
-             },
-             {
-                "definition": "হেডিং ফাইভ",
-                "code": "<p class='h1'>h1. Bootstrap heading</p>"
-             },
-             {
-                "definition": "হেডিং সিক্স ",
-                "code": "<p class='h1'>h1. Bootstrap heading</p>"
-            }
-         ]
-       },
-       {
-          "title":"ইমেজ ক্লাস",
-          "items":[
-             {
-                "definition":"রাউন্ড কর্নার",
-                "code":"<img class='rounded'>"
-             },
-             {
-                "definition":"বৃত্ত আকার",
-                "code":"<img class='rounded-circle'>"
-             },
-             {
-                "definition":"লেফট অ্যালাইন",
-                "code":"<img class='float-start'>"
-             },
-             {
-                "definition":"রাইট অ্যালাইন",
-                "code":"<img class='float-end'>"
-             },
-             {
-                "definition":"সেন্টার অ্যালাইন",
-                "code":"<img class='d-block mx-auto'>"
-             },
-             {
-                "definition":"রিস্পন্সিভ ইমেজ",
-                "code":"<img class='img-fluid'>"
-             },
-             {
-                "definition":"রাউন্ড কর্নার এবং বর্ডার এক সাথে",
-                "code":"<img class='img-thumbnail'>"
-             }
-          ]
-       },
-       {
-          "title":"টেবিল",
-          "items":[
-             {
-                "definition":"টেবিল রো প্রাইমারি কালার",
-                "code":"<tr class='table-primary'>"
-             },
-             {
-                "definition":"টেবিল রো সেকেন্ডারি কালার",
-                "code":"<tr class='table-secondary'>"
-             },
-             {
-                "definition":"টেবিল রো সাক্সেস কালার",
-                "code":"<tr class='table-success'>"
-             },
-             {
-                "definition":"টেবিল রো ডেঞ্জার কালার",
-                "code":"<tr class='table-danger'>"
-             },
-             {
-                "definition":"টেবিল রো ওয়ার্নিং কালার",
-                "code":"<tr class='table-warning'>"
-             },
-             {
-                "definition":"টেবিল রো ইনফো কালার",
-                "code":"<tr class='table-info'>"
-             },
-             {
-                "definition":"টেবিল রো লাইট কালার",
-                "code":"<tr class='table-light'>"
-             },
-             {
-                "definition":"টেবিল রো ডার্ক কালার",
-                "code":"<tr class='table-dark'>"
-             },
-             {
-                "definition":"টেবিল স্ট্রাইপ দেখানো",
-                "code":"<table class='table table-striped'>"
-             },
-             {
-                "definition":"টেবিল হোভার দেখানো",
-                "code":"<table class='table table-hover'>"
-             },
-             {
-                "definition":"টেবিল রো তে একটিভ স্টাইল দেখানো",
-                "code":"<tr class='table-active'>"
-             },
-             {
-                "definition":"টেবিল সেল এ একটিভ স্টাইল দেখানো",
-                "code":"<td class='table-active'>"
-             },
-             {
-                "definition":"টেবিলে বর্ডার দেখানো",
-                "code":"<table class='table table-bordered'>"
-             },
-             {
-                "definition":"টেবিলের বর্ডার বাতিল করা",
-                "code":"<table class='table table-borderless'>"
-             },
-             {
-                "definition":"টেবিলের সাইজ ছোট করা",
-                "code":"<table class='table table-sm'>"
-             },
-             {
-                "definition":"টেবিলের ক্যাপশন এড করা",
-                "code":"<table class='table caption-top'><caption>List of users</caption>"
-             },
-             {
-                "definition":"টেবিলের সাইজ ছোট করা",
-                "code":"<table class='table table-sm'>"
-             }
-          ]
-       }
+    "id": "bootstrap5",
+    "title": "বুটস্ট্রাপ ৫",
+    "slug": "bootstrap5",
+    "description": "বুটস্ট্রাপ হলো একটি ফ্রি এবং ওপেন সোর্স সিএসএস ফ্রেমওয়ার্ক যা রেস্পন্সিভ মোবাইল ফাস্ট ফ্রন্ট-এন্ড ওয়েব ডেভেলপমেন্ট করতে ব্যবহার করা হয়। যার সর্বশেষ সংস্করণ হলো বুটস্ট্রাপ v5.0.0-beta1, এটি খুবই দ্রুত ওয়েব পেজ ও ওয়েব অ্যাপ্লিকেশন তৈরী করার জন্যে এটা ব্যাপকভাবে ব্যাবহৃত ।",
+    "colorPref": "#7711F7",
+    "contents": [{
+            "title": "কন্টেইনার ক্লাস",
+            "items": [{
+                    "definition": "রেস্পন্সিভ ফিক্স উইড",
+                    "code": "<div class='container'>...</div>"
+                },
+                {
+                    "definition": "ফুল উইড",
+                    "code": "<div class='container-fluid'>...</div>"
+                }
+            ]
+        },
+        {
+            "title": "গ্রিড ক্লাস",
+            "items": [{
+                    "definition": "স্ক্রীন প্রস্থ যখন ৫৭৬পিক্সেল এর ছোট",
+                    "code": "<div class='col-'>...</div>"
+                },
+                {
+                    "definition": "স্ক্রীন প্রস্থ যখন ৫৭৬পিক্সেল এর সমান বা বড়",
+                    "code": "<div class='col-sm'>...</div>"
+                },
+                {
+                    "definition": "স্ক্রীন প্রস্থ যখন ৭৬৮পিক্সেল এর সমান বা বড়",
+                    "code": "<div class='col-md'>...</div>"
+                },
+                {
+                    "definition": "স্ক্রীন প্রস্থ যখন ৯৯২পিক্সেল এর সমান বা বড়",
+                    "code": "<div class='col-lg'>...</div>"
+                },
+                {
+                    "definition": "স্ক্রীন প্রস্থ যখন ১২০০পিক্সেল এর সমান বা বড়",
+                    "code": "<div class='col-xl'>...</div>"
+                },
+                {
+                    "definition": "স্ক্রীন প্রস্থ যখন ১৪০০পিক্সেল এর সমান বা বড়",
+                    "code": "<div class='col-xxl'>...</div>"
+                }
+            ]
+        },
+        {
+            "title": "ভার্টিকাল অ্যালাইনমেন্ট",
+            "items": [{
+                    "definition": "সব কলাম উপরে দেখানো",
+                    "code": "<div class='row align-items-start'><div class='col'>...</div><div class='col'>...</div></div>"
+                },
+                {
+                    "definition": "সব কলাম মাঝে দেখানো",
+                    "code": "<div class='row align-items-center'><div class='col'>...</div><div class='col'>...</div></div>"
+                },
+                {
+                    "definition": "সব কলাম নিচে দেখানো",
+                    "code": "<div class='row align-items-end'><div class='col'>...</div><div class='col'>...</div></div>"
+                },
+                {
+                    "definition": "একটি কলাম উপরে দেখানো",
+                    "code": "<div class='row'><div class='col align-self-start'>...</div></div>"
+                },
+                {
+                    "definition": "একটি কলাম মাঝে দেখানো",
+                    "code": "<div class='row'><div class='col align-self-center'>...</div></div>"
+                },
+                {
+                    "definition": "একটি কলাম নিচে দেখানো",
+                    "code": "<div class='row'><div class='col align-self-end'>...</div></div>"
+                }
+            ]
+        },
+        {
+            "title": "হরিজেন্টাল অ্যালাইনমেন্ট",
+            "items": [{
+                    "definition": "সব কলাম বামে দেখানো",
+                    "code": "<div class='row justify-content-start'><div class='col'>...</div><div class='col'>...</div></div>"
+                },
+                {
+                    "definition": "সব কলাম মাঝে দেখানো",
+                    "code": "<div class='row justify-content-center'><div class='col'>...</div><div class='col'>...</div></div>"
+                },
+                {
+                    "definition": "সব কলাম ডানে দেখানো",
+                    "code": "<div class='row justify-content-end'><div class='col'>...</div><div class='col'>...</div></div>"
+                },
+                {
+                    "definition": "সব কলাম ডানে বামে সমান গ্যাপে দেখানো",
+                    "code": "<div class='row justify-content-around'><div class='col'>...</div></div>"
+                },
+                {
+                    "definition": "সব কলাম এর মাঝে সমান গ্যাপে দেখানো",
+                    "code": "<div class='row justify-content-between'><div class='col'>...</div></div>"
+                },
+                {
+                    "definition": "সব কলাম সমান গ্যাপে দেখানো",
+                    "code": "<div class='row justify-content-evenly'><div class='col'>...</div></div>"
+                }
+            ]
+        },
+        {
+            "title": "ডিসপ্লে হেডিংস",
+            "items": [{
+                    "definition": "ডিসপ্লে ওয়ান",
+                    "code": "<h1 class='display-1'>Display 1</h1>"
+                },
+                {
+                    "definition": "ডিসপ্লে টু",
+                    "code": "<h2 class='display-2'>Display 2</h2>"
+                },
+                {
+                    "definition": "ডিসপ্লে থ্রি",
+                    "code": "<h3 class='display-3'>Display 3</h3>"
+                },
+                {
+                    "definition": "ডিসপ্লে ফোর",
+                    "code": "<h4 class='display-4'>Display 4</h4>"
+                },
+                {
+                    "definition": "ডিসপ্লে ফাইভ",
+                    "code": "<h5 class='display-5'>Display 5</h5>"
+                },
+                {
+                    "definition": "ডিসপ্লে সিক্স ",
+                    "code": "<h6 class='display-6'>Display 6</h6>"
+                }
+            ]
+        },
+        {
+            "title": "হেডিংস",
+            "items": [{
+                    "definition": "হেডিং ওয়ান",
+                    "code": "<p class='h1'>h1. Bootstrap heading</p>"
+                },
+                {
+                    "definition": "হেডিং টু",
+                    "code": "<p class='h2'>h2. Bootstrap heading</p>"
+                },
+                {
+                    "definition": "হেডিং থ্রি",
+                    "code": "<p class='h3'>h3. Bootstrap heading</p>"
+                },
+                {
+                    "definition": "হেডিং ফোর",
+                    "code": "<p class='h4'>h4. Bootstrap heading</p>"
+                },
+                {
+                    "definition": "হেডিং ফাইভ",
+                    "code": "<p class='h5'>h5. Bootstrap heading</p>"
+                },
+                {
+                    "definition": "হেডিং সিক্স ",
+                    "code": "<p class='h6'>h6. Bootstrap heading</p>"
+                }
+            ]
+        },
+        {
+            "title": "ইমেজ ক্লাস",
+            "items": [{
+                    "definition": "রাউন্ড কর্নার",
+                    "code": "<img class='rounded'>"
+                },
+                {
+                    "definition": "বৃত্ত আকার",
+                    "code": "<img class='rounded-circle'>"
+                },
+                {
+                    "definition": "লেফট অ্যালাইন",
+                    "code": "<img class='float-start'>"
+                },
+                {
+                    "definition": "রাইট অ্যালাইন",
+                    "code": "<img class='float-end'>"
+                },
+                {
+                    "definition": "সেন্টার অ্যালাইন",
+                    "code": "<img class='d-block mx-auto'>"
+                },
+                {
+                    "definition": "রিস্পন্সিভ ইমেজ",
+                    "code": "<img class='img-fluid'>"
+                },
+                {
+                    "definition": "রাউন্ড কর্নার এবং বর্ডার এক সাথে",
+                    "code": "<img class='img-thumbnail'>"
+                }
+            ]
+        },
+        {
+            "title": "টেবিল",
+            "items": [{
+                    "definition": "টেবিল রো প্রাইমারি কালার",
+                    "code": "<tr class='table-primary'>"
+                },
+                {
+                    "definition": "টেবিল রো সেকেন্ডারি কালার",
+                    "code": "<tr class='table-secondary'>"
+                },
+                {
+                    "definition": "টেবিল রো সাক্সেস কালার",
+                    "code": "<tr class='table-success'>"
+                },
+                {
+                    "definition": "টেবিল রো ডেঞ্জার কালার",
+                    "code": "<tr class='table-danger'>"
+                },
+                {
+                    "definition": "টেবিল রো ওয়ার্নিং কালার",
+                    "code": "<tr class='table-warning'>"
+                },
+                {
+                    "definition": "টেবিল রো ইনফো কালার",
+                    "code": "<tr class='table-info'>"
+                },
+                {
+                    "definition": "টেবিল রো লাইট কালার",
+                    "code": "<tr class='table-light'>"
+                },
+                {
+                    "definition": "টেবিল রো ডার্ক কালার",
+                    "code": "<tr class='table-dark'>"
+                },
+                {
+                    "definition": "টেবিল স্ট্রাইপ দেখানো",
+                    "code": "<table class='table table-striped'>"
+                },
+                {
+                    "definition": "টেবিল হোভার দেখানো",
+                    "code": "<table class='table table-hover'>"
+                },
+                {
+                    "definition": "টেবিল রো তে একটিভ স্টাইল দেখানো",
+                    "code": "<tr class='table-active'>"
+                },
+                {
+                    "definition": "টেবিল সেল এ একটিভ স্টাইল দেখানো",
+                    "code": "<td class='table-active'>"
+                },
+                {
+                    "definition": "টেবিলে বর্ডার দেখানো",
+                    "code": "<table class='table table-bordered'>"
+                },
+                {
+                    "definition": "টেবিলের বর্ডার বাতিল করা",
+                    "code": "<table class='table table-borderless'>"
+                },
+                {
+                    "definition": "টেবিলের সাইজ ছোট করা",
+                    "code": "<table class='table table-sm'>"
+                },
+                {
+                    "definition": "টেবিলের ক্যাপশন এড করা",
+                    "code": "<table class='table caption-top'><caption>List of users</caption>"
+                },
+                {
+                    "definition": "টেবিলের সাইজ ছোট করা",
+                    "code": "<table class='table table-sm'>"
+                }
+            ]
+        },
+        {
+            "title": "এলার্টস",
+            "items": [{
+                    "definition": "প্রাথমিক",
+                    "code": "<div class='alert alert-primary' role='alert'>A simple primary alert—check it out!</div>"
+                },
+                {
+                    "definition": "মাধ্যমিক",
+                    "code": "<div class='alert alert-secondary' role='alert'>A simple secondary alert—check it out!</div>"
+                },
+                {
+                    "definition": "সাফল্য",
+                    "code": "<div class='alert alert-success' role='alert'>A simple success alert—check it out!</div>>"
+                },
+                {
+                    "definition": "বিপদ",
+                    "code": "<div class='alert alert-danger' role='alert'>A simple danger alert—check it out!</div>"
+                },
+                {
+                    "definition": "সতর্কতা",
+                    "code": "<div class='alert alert-warning' role='alert'>A simple warning alert—check it out!</div>"
+                },
+                {
+                    "definition": "তথ্য",
+                    "code": "<div class='alert alert-info' role='alert'>A simple info alert—check it out!</div>"
+                },
+                {
+                    "definition": "সামান্য",
+                    "code": "<div class='alert alert-light' role='alert'>A simple light alert—check it out!</div>"
+                },
+                {
+                    "definition": "অন্ধকার",
+                    "code": "<div class='alert alert-dark' role='alert'>A simple dark alert—check it out!</div>"
+                },
+                {
+                    "definition": "সংযুক্ত",
+                    "code": "<div class='alert alert-link' role='alert'>A simple link alert—check it out!</div>"
+                },
+                {
+                    "definition": "খারিজযোগ্য",
+                    "code": "<div class='alert alert-dismissible' role='alert'>A simple dismissible alert—check it out!</div>"
+                }
+            ]
+        },
+        {
+            "title": "ফিগার্স",
+            "items": [{
+                    "definition": "ফিগার্স নেওয়ার জন্য",
+                    "code": "<figure class='figure'>.....</figure>"
+                },
+                {
+                    "definition": "ফিগার্সে ছবি যুক্ত করার জন্য",
+                    "code": "<img src='...' class='figure-img img-fluid rounded' alt='...'>"
+                },
+                {
+                    "definition": "ফিগার্সে ক্যাপশন যুক্ত করার জন্য",
+                    "code": "<figcaption class='figure-caption'>A caption for the above image.</figcaption>"
+                }
+            ]
+        },
+        {
+            "title": "ক্যারোসেল",
+            "items": [{
+                    "definition": "ক্যারোসেল-ফেইড-অ্যানিমেশন",
+                    "code": "<div class='carousel-fade' data-bs-ride='carousel'>"
+                },
+                {
+                    "definition": "ক্যারোসেল-ইনডিকেটর",
+                    "code": " <div class='carousel-indicators'><button type='button' data-bs-slide-to='1'></button><button type='button' data-bs-slide-to='2'></button></div>"
+                },
+                {
+                    "definition": "ক্যারোসেল-আইটেম",
+                    "code": "<div class='carousel-item'>......</div>"
+                },
+                {
+                    "definition": "ক্যারোসেল-ক্যাপশন",
+                    "code": "<div class='carousel-caption'>......</div>"
+                }
+            ]
+        }
     ]
- }
-
+}

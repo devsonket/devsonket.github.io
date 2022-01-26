@@ -11,53 +11,67 @@
                 {
                     "definition": "ইনপুট/আউটপুট স্ট্যান্ডার্ড লাইব্রেরি ব্যবহার করার জন্য হেডার ফাইল",
                     "code": "#include <iostream>"
-                }, {
+                },
+                {
                     "definition": "কনসোলে আউটপুট দেখানো",
                     "code": "cout <<"
-                }, {
+                },
+                {
                     "definition": "কনসোলে এরোর দেখানো",
                     "code": "cerr <<"
-                }, {
+                },
+                {
                     "definition": "কনসোলে লগ দেখানো",
                     "code": "clog <<"
-                }, {
+                },
+                {
                     "definition": "কনসোল থেকে ইনপুট নেয়া",
                     "code": "cin >>"
-                }, {
+                },
+                {
                     "definition": "cout এবং cin দ্রুত কাজ করার জন্য",
                     "code": "ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);"
                 }
             ]
-        }, {
+        },
+        {
             "title": "প্রিপ্রসেসর",
             "items": [
                 {
                     "definition": "বর্তমান ডিরেক্টরিতে ফাইল যুক্ত করা",
                     "code": "#include \"myfile.h\""
-                }, {
+                },
+                {
                     "definition": "X কে some_text দিয়ে রিপ্লেস করা",
                     "code": "#define X some_text"
-                }, {
+                },
+                {
                     "definition": "F(a,b) কে a+b দ্বারা রিপ্লেস করা",
                     "code": "#define F(a,b) a+b"
-                }, {
+                },
+                {
                     "definition": "ডিফিনেশন রিমুভ করা",
                     "code": "#undef X"
-                }, {
+                },
+                {
                     "definition": "কন্ডিশনাল কম্পাইলেশন (#if defined(X))",
                     "code": "#ifdef X"
-                }, {
+                },
+                {
                     "definition": "কন্ডিশনাল কম্পাইলেশন (#if !defined(X))",
                     "code": "#ifndef X"
-                }, {
+                },
+                {
                     "definition": "কন্ডিশনাল কম্পাইলেশন",
                     "code": "#else"
-                }, {
+                },
+                {
                     "definition": "#if এবং #ifdef এর পর কন্ডিশন সমাপ্তি করার জন্য",
                     "code": "#endif"
                 }
             ]
-        }, {
+        },
+        {
             "title": "ফাইল স্ট্রিমস",
             "items": [
                 {
@@ -113,113 +127,158 @@
                     "code": "myFile.is_open()"
                 }
             ]
-        }, {
+        },
+        {
             "title": "এক্সপ্রেশন",
             "items": [
                 {
                     "definition": "T ক্লাশে X নেইম ডিফাইন করা",
                     "code": "T::X"
-                }, {
+                },
+                {
                     "definition": "N নেইমস্পেসে X নেইম ডিফাইন করা",
                     "code": "N::X"
-                }, {
+                },
+                {
                     "definition": "গ্লোবাল নেইম X",
                     "code": "::X"
-                }, {
+                },
+                {
                     "definition": "t ক্লাস অথবা স্ট্র্যাক্ট এর x মেম্বার",
                     "code": "t.x"
-                }, {
+                },
+                {
                     "definition": "ক্লাস অথবা স্ট্র্যাক্ট এর x মেম্বারকে p দ্বারা পয়েন্ট করা",
                     "code": "p->x"
-                }, {
+                },
+                {
                     "definition": "a অ্যারের i ইলিমেন্ট",
                     "code": "a[i]"
-                }, {
+                },
+                {
                     "definition": "x,y আর্গুমেন্ট সহ f ফাংশনকে কল করা",
                     "code": "f(x,y)"
-                }, {
+                },
+                {
                     "definition": "x এবং y সহ T ক্লাশের অবজেক্টকে ইনশিয়ালাইজ করা",
                     "code": "T(x,y)"
-                }, {
+                },
+                {
                     "definition": "x টাইপ",
                     "code": "typeid(x)"
-                }, {
+                },
+                {
                     "definition": "x কে T তে কনভার্ট করে এবং রানটাইমে চেক করে",
                     "code": "dynamic_cast<T>(x)"
-                }, {
+                },
+                {
                     "definition": "x কে T তে কনভার্ট করে কিন্তু কোনো চেক করা ছাড়াই",
                     "code": "static_cast<T>(x)"
-                }, {
+                },
+                {
                     "definition": "T হিসেবে x এর বিটগুলোকে ইন্ট্যারপ্রেট করা",
                     "code": "reinterpret_cast<T>(x)"
-                }, {
+                },
+                {
                     "definition": "x কে T এর সেইম টাইপে কনভার্ট করা",
                     "code": "const_cast<T>(x)"
-                }, {
+                },
+                {
                     "definition": "অবজেক্ট x কে রিপ্রেসেন্ট করতে ব্যবহৃত বাইটের সংখ্যা দেখা",
                     "code": "sizeof x"
-                }, {
+                },
+                {
                     "definition": "টাইপ T কে রিপ্রেসেন্ট করতে ব্যবহৃত বাইটের সংখ্যা দেখা",
                     "code": "sizeof(T)"
-                }, {
+                },
+                {
                     "definition": "p এড্রেসের কন্টেন্ট",
                     "code": "*p"
-                }, {
+                },
+                {
                     "definition": "নতুন এলোকেট করা T অবজেক্টের এড্রেস",
                     "code": "new T"
-                }, {
+                },
+                {
                     "definition": "x এবং y ইনিশিয়ালাইজ করা T অবজেক্টের এড্রেস",
                     "code": "new T(x,y)"
-                }, {
+                },
+                {
                     "definition": "p এড্রেসে থাকা অবজেক্টকে ধ্বংস করা এবং জায়গা খালি করা",
                     "code": "delete p"
-                }, {
+                },
+                {
                     "definition": "p এড্রেসে থাকা অবজেক্টের অ্যারেকে ধ্বংস করা এবং জায়গা খালি করা",
                     "code": "delete[] p"
                 }
             ]
-        }, {
+        },
+        {
             "title": "ইটেরেটরস",
             "items": [
                 {
                     "definition": "ইটেরটর ইনপুট/আউটপুট স্ট্রিম ডিক্লেয়ার করা",
                     "code": "#include <iterator>"
-                }, {
+                },
+                {
                     "definition": "ইনপুট স্ট্রিম থেকে ভ্যালু নিয়ে ইনপুট ইটেরেটর ডিফাইন করা",
                     "code": "istream_iterator<T> in(is);"
-                }, {
+                },
+                {
                     "definition": "আউটপুট ইটেরেটর ডিফাইন করা",
                     "code": "ostream_iterator<T> out(os);"
                 }
             ]
-        },{
+        },
+        {
+            "title": "অ্যারে ফাংশন",
+            "items": [
+                {
+                    "definition": "সর্ট নাম্বার অ্যারে (ছোট থেকে বড়)",
+                    "code": "sort(array, array + n)"
+                },
+                {
+                    "definition": "সর্ট নাম্বার অ্যারে (বড় থেকে ছোট)",
+                    "code": "sort(array, array + n, greater<int>()))"
+                }
+            ]
+        },
+        {
             "title": "গাণিতিক লাইব্রেরি ফাংশন সমূহ",
             "items": [
                 {
                     "definition": "দুটি সংখ্যার মধ্যে বড় সংখ্যা টি বের করা",
                     "code": "max(x, y);"
-                }, {
+                },
+                {
                     "definition": "দুটি সংখ্যার মধ্যে ছোট সংখ্যা টি বের করা",
                     "code": "min(x, y);"
-                }, {
+                },
+                {
                     "definition": "বর্গমুল বের করা",
                     "code": "sqrt(x);"
-                }, {
+                },
+                {
                     "definition": " দশমিক সংখ্যাকে পুর্ণসংখ্যা করা",
                     "code": "round(x);"
-                }, {
+                },
+                {
                     "definition": "লগারিদম বের করা",
                     "code": "log(x);"
-                }, {
+                },
+                {
                     "definition": "পরম মান বের করা",
                     "code": "abs(x);"
-                }, {
+                },
+                {
                     "definition": "দশমিক সংখ্যাকে তার কাছাকাছি বড় পূর্ণসংখ্যা করা",
                     "code": "ceil(x);"
-                }, {
+                },
+                {
                     "definition": "দশমিক সংখ্যাকে থেকে দশমিক অংশটুকু বাদ দিয়ে পূর্ণসংখ্যা করা",
                     "code": "floor(x);"
-                }, {
+                },
+                {
                     "definition": "কোনো সংখ্যার(x) এর ঘাত (y) হলে তার মান বের করা",
                     "code": "pow(x, y);"
                 }
