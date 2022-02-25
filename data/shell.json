@@ -61,6 +61,10 @@
             "code": "cd <directory-path>"
           },
           {
+            "definition": "ওয়ার্কিং ডিরেক্টরি থেকে আগের ডিরেক্টরিতে যেতে",
+            "code": "popd OR cd .."
+          },
+          {
             "definition": "ডিরেক্টরি তৈরী করা",
             "code": "mkdir <directory-name>"
           },
