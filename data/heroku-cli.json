@@ -26,6 +26,9 @@
           }, {
             "definition": "ডাইনোস রিস্টার্ট",
             "code": "heroku restart"
+          }, {
+            "definition": "লগিন করা সদস্যের নাম",
+            "code": "heroku whoami"
           }
         ]
       }, {
