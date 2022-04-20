@@ -320,7 +320,7 @@
         },
         {
           "definition":"ওপেন করা ফাইলটি বন্ধ করতে",
-          "code":"echo fclose($opened_file);"
+          "code":"fclose($opened_file);"
         },
         {
           "definition":"ওপেন করা ফাইলের কন্টেন্ট গুলো দেখার জন্য",
