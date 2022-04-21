@@ -13,6 +13,10 @@
           "code": "npm install mongoose"
         },
         {
+          "definition": "মঙ্গুজ-এর ইয়ার্ন ইনস্টল করা",
+          "code": "yarn add mongoose"
+        },
+        {
           "definition": "মঙ্গুজ অ্যাপ্লিকেশনে সংযুক্ত করা (ইএস৫)",
           "code": "let mongoose = require('mongoose');"
         },
@@ -118,6 +122,10 @@
         }, {
           "definition": "একটি ডকুমেন্ট খোঁজা ও অ্যাট্রিবিউট মডিফাই করা",
           "code": "modelName.findOneAndUpdate()"
+        },
+        {
+          "definition": "মঙ্গুজ-এর ​পপু​​লেট ব্যবহার করে একাধিক কালেকশন ​যুক্ত করা​​",
+          "code": "modelName.methodName().populate('model-reference')"
         }
       ]
     }
