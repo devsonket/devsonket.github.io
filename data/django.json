@@ -163,6 +163,10 @@
           "code": "{%extends '<html file name>'%}"
         },
         {
+          "definition":"টেমপ্লেট অন্তর্ভুক্ত করা",
+          "code": "{%include '<html file name>'%}"
+        },
+        {
           "definition":"টেমপ্লেট এর ভেতরে স্ট্যাটিক ফাইল লোড করা",
           "code": "{%load static%}"
         },
