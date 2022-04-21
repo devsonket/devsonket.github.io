@@ -1,0 +1,133 @@
+{
+    "id": "Pyspark",
+    "title": "পাইস্পার্ক চিটশিট",
+    "slug": "Pyspark",
+    "description": "PySpark হল Apache Spark-এর Python API, এটি ওপেন সোর্স, distributed computing framework  এবং রিয়েল-টাইম, large-scale data processing এর কাজে ব্যবহৃত হয়",
+    "colorPref": "#b57521",
+    "contents": [
+      {
+        "title": "SparkSession সেটআপ/চালু করা",
+        "items": [
+          {
+            "definition": "SparkSession এ Pyspark initialize করুন",
+            "code": [
+            "from pyspark.sql import SparkSession",
+            "spark = SparkSession.builder.appName('randomName').getOrCreate()"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "ডাটাফ্রেম তৈরী ও লোড করা",
+        "items": [
+          {
+            "definition": "ডাটাফ্রেম তৈরী করা",
+            "code": [
+              "from pyspark.sql.types import*",
+              "spark.createDataFrame([(1, 'a'), (2, 'b')], ['num', 'letter'])"
+            ]
+          },
+          {
+            "definition": " CSV file লোড করা",
+            "code": "df = spark.read.load('/home/Dataset/Case.csv', format = 'csv', sep = ',', inferScheme = True, header = True)"
+          },
+          {
+            "definition": "Txt file লোড করা",
+            "code": "df = spark.read.text('people.txt')"
+          },
+          {
+            "definition": "JSON file লোড করা",
+            "code": "df = spark.read.json('customer.json')"
+          }
+        ]
+      },
+      {
+        "title": "Data Modify রিলেটেড কমান্ড সমুহ",
+        "items": [
+          {
+            "definition": "Data ফিল্টার করা",
+            "code": "df.filter(df['age']>24).show()"
+          },
+          {
+            "definition": "Duplicate Data ড্রপ করা",
+            "code": "df.dropDuplicates()"
+          },
+          {
+            "definition": "null Data সরানো",
+            "code": "df.na.drop().show()"
+          },
+          {
+            "definition": "null value replace করা",
+            "code": "df.na.fill(50).show()"
+          },
+          {
+            "definition": "নির্দিষ্ট কলাম show করা",
+            "code": "df.select('columnName').show()"
+          }
+        ]
+      },
+      {
+        "title": "Data Inspect রিলেটেড কমান্ড সমুহ",
+        "items": [
+          {
+            "definition": "কলামের নাম ও ডাটা টাইপ দেখা",
+            "code": "df.dtypes"
+          },
+          {
+            "definition": "df এর কনটেন্ট show করা",
+            "code": "df.show()"
+          },
+          {
+            "definition": "df এর প্রথম ১০টি row দেখা ",
+            "code": "df.head(10)"
+          },
+          {
+            "definition": "df এর প্রথম row দেখা",
+            "code": "df.first()"
+          },
+          {
+            "definition": "Row এর সংখ্যা দেখা",
+            "code": "df.count()"
+          },
+          {
+            "definition": "df এর Schema দেখা",
+            "code": "df.printSchema()"
+          },
+          {
+            "definition": "df এর logical ও physical plan দেখা",
+            "code": "df.explain()"
+          }
+        ]
+      },
+      {
+        "title": "Convert ও Output রিলেটেড কমান্ড সমুহ",
+        "items": [
+          {
+            "definition": "DataFrame কে RDD তে রূপান্তর করা",
+            "code": "rdd1 = df.rdd"
+          },
+          {
+            "definition": "df এর কনটেন্ট Pandas Dataframe এ করে দেখা",
+            "code": "df.toPandas()"
+          },
+          {
+            "definition": "ফাইল Write ও Save করা",
+            "code": "RDD.write.option('header',True).csv('/home/Data')"
+          },
+          {
+            "definition": "Text ফাইল Save করা",
+            "code": "textRdd.saveAsTextFile('/home/Data')"
+          }
+        ]
+      },
+      {
+        "title": "SparkSession Close করা",
+        "items": [
+          {
+            "definition": "তৈরিকৃত Session Close করা",
+            "code": "spark.stop()"
+          }
+        ]
+      }
+    ]
+  }
