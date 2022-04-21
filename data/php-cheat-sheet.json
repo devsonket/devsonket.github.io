@@ -294,6 +294,103 @@
           "code":"php -i | grep error_log"
         }
       ]
+    },
+    {
+      "title":"ফাইল সিস্টেম এর জন্য ব্যবহৃত ফাংশন সমূহ",
+      "items":[
+        {
+          "definition":"সরাসরি কোনো ফাইলের কন্টেন্ট দেখার জন্য",
+          "code":"echo readfile($file_name);"
+        },
+        {
+          "definition":"কোনো ফাইলের কন্টেন্ট গুলোকে অ্যারে হিসেবে পেতে",
+          "code":"file($file_name);"
+        },
+        {
+          "definition":"কোনো ফাইলের কন্টেন্ট গুলোকে স্ট্রিং হিসেবে পেতে",
+          "code":"file_get_contents($file_name);"
+        },
+        {
+          "definition":"কোনো ফাইল নির্দিষ্ট ঠিকানায় আদৌ আছে কী না জানতে",
+          "code":"file_exists($file_name);"
+        },
+        {
+          "definition":"কোনো ফাইল রিড/রাইট ইত্যাদি মোডে ওপেন করার জন্য",
+          "code":"$file = fopen($file_name, $mode);"
+        },
+        {
+          "definition":"ওপেন করা ফাইলটি বন্ধ করতে",
+          "code":"fclose($opened_file);"
+        },
+        {
+          "definition":"ওপেন করা ফাইলের কন্টেন্ট গুলো দেখার জন্য",
+          "code":"echo fread($file, filesize($file_name));"
+        },
+        {
+          "definition":"ওপেন করা ফাইলের কন্টেন্টের শুধুমাত্র প্রথম লাইনটি দেখার জন্য",
+          "code":"echo fgets($file_name);"
+        },
+        {
+          "definition":"ওপেন করা ফাইলের কন্টেন্টের শুধুমাত্র প্রথম অক্ষরটি দেখার জন্য",
+          "code":"echo fgetc($file_name);"
+        },
+        {
+          "definition":"ওপেন করা ফাইলের কন্টেন্টের শেষ লাইনে পৌঁছেছে কী না দেখতে",
+          "code":"echo feof($file_name);"
+        },
+        {
+          "definition":"ওপেন করা ফাইলে কোনো নতুন ডেটা লিখতে",
+          "code":"fwrite($file_name, $data);"
+        },
+        {
+          "definition":"কোনো ফাইলের ডিরেক্টরি প্যাথ পেতে",
+          "code":"echo dirname('/uploads/file.php');"
+        },
+        {
+          "definition":"কোনো নির্দিষ্ট ফাইল পাথ হতে ফাইলের নাম আলাদা করে দেখতে",
+          "code":"echo basename('../path/filepath/file.php');"
+        },
+        {
+          "definition":"ওপেন করা ফাইলের পারমিশন মোড পরিবর্তন করতে",
+          "code":"chmod($file_name, $mode);"
+        },
+        {
+          "definition":"কোনো ফাইল ডিলিট করতে",
+          "code":"unlink($file_name);"
+        },
+        {
+          "definition":"কোনো ফাইল কপি করতে",
+          "code":"copy($file_name);"
+        },
+        {
+          "definition":"ফাইল বা ডিরেক্টরির নাম পরিবর্তন করতে",
+          "code":"rename($old_name, $new_name);"
+        },
+        {
+          "definition":"কোনো ফাইলের টাইপ জানতে",
+          "code":"echo filetype($file_name);"
+        },
+        {
+          "definition":"কোনো ফাইলের সাইজ bytes হিসেবে পেতে",
+          "code":"echo filesize($file_name);"
+        },
+        {
+          "definition":"কোনো ফাইল শেষ কখন মডিফাই হয়েছিলো জানতে",
+          "code":"echo date('F d Y H:i:s.', filemtime($file_name));"
+        },
+        {
+          "definition":"কোনো ফাইলে শেষ কখন অ্যাক্সেস করা হয়েছিলো জানতে",
+          "code":"echo date('F d Y H:i:s.', fileatime($file_name));"
+        },
+        {
+          "definition":"কোনো ফাইলে শেষ কখন পরিবর্তন করা হয়েছিলো জানতে",
+          "code":"echo date('F d Y H:i:s.', filectime($file_name))"
+        },
+        {
+          "definition":"কোনো ফাইলের টাইপ জানতে",
+          "code":"echo filetype($file_name);"
+        }
+      ]
     }
   ]
 }
