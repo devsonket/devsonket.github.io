@@ -117,6 +117,23 @@
       ]
     },
     {
+      "title": "এনপিএম কনফিগারেশন সম্পর্কিত কমান্ডস",
+      "items": [
+        {
+          "definition": "প্রজেক্টে ডিফল্ট author ইনিশিয়ালাইজ করতে",
+          "code": "npm config set init.author.name <author-name>"
+        },
+        {
+          "definition": "ডিফল্ট ইমেইল ইনিশিয়ালাইজেশন",
+          "code": "npm config set init.author.email <email-address>"
+        },
+        {
+          "definition": "ডিফল্ট হিসেবে package.json ফাইলে লাইসেন্স ইনিশিয়ালাইজ করতে",
+          "code": "npm config set init.license <license-name>"
+        }
+      ]
+    },
+    {
       "title": "এনপিএম প্যাকেজ লিস্ট সম্পর্কিত কমান্ডস",
       "items": [
         {
