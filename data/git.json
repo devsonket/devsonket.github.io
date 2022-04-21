@@ -266,6 +266,10 @@
           "code":"git checkout [branch_name]"
         },
         {
+          "definition":"ব্রাঞ্চ চেঞ্জ করতে(নতুন কমান্ড)",
+          "code":"git switch [branch_name]"
+        },
+        {
           "definition":"ব্রাঞ্চ তৈরী এবং চেঞ্জ করা",
           "code":"git checkout -b \"branch name\""
         },
