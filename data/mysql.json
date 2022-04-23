@@ -79,12 +79,20 @@
 					"code": "mysql -u root -p <your password>"
 				},
 				{
+					"definition": "বর্তমানে কি কি ডাটাবেজ আছে তা দেখতে",
+					"code": "SHOW DATABASES;"
+				},
+				{
 					"definition": "ডাটাবেজ তৈরি করার জন্য",
 					"code": "CREATE DATABASE dbname;"
 				},
 				{
 					"definition": "নতুন তৈরি করা ডাটাবেজ নিয়ে কাজ করার জন্য",
 					"code": "USE dbname;"
+				},
+				{
+					"definition": "কোন স্পেসিফিক ডাটাবেজের টেবিল সমূহের লিস্ট দেখতে",
+					"code": "SHOW TABLES;"
 				},
 				{
 					"definition": "টেবিল তৈরি করার জন্য",
