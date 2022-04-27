@@ -1,0 +1,127 @@
+{
+	"id": "notepad++-shortcuts-windows",
+	"title": "নোটপ্যাড++ ",
+	"slug": "notepad++-shortcuts-windows",
+	"description": "নোটপ্যাড++ এর কিছু প্রয়োজনীয় উইন্ডোজ শর্টকাট কী",
+	"colorPref": "#6BCB77",
+	"contents": [{
+			"title": "ব্যাসিক শর্টকাট",
+			"items": [{
+					"definition": "নতুন ফাইল বানাতে চাইলে",
+					"code": "Ctrl + N"
+				},
+				{
+					"definition": "ফাইল ওপেন করতে চাইলে",
+					"code": "Ctrl + O"
+				},
+				{
+					"definition": "ফাইল সেভ করতে চাইলে",
+					"code": "Ctrl + S"
+				},
+				{
+					"definition": "ফাইল ফরম্যাট হিসেবে সেভ করতে চাইলে",
+					"code": "Crtl + Alt + S"
+				},
+				{
+					"definition": "সব ফাইল একসাথে সেভ করতে চাইলে",
+					"code": "Crtl + Shift + S"
+				},
+				{
+					"definition": "ফাইল ক্লোজ করতে চাইলে",
+					"code": "Crtl + W"
+				},
+				{
+					"definition": "সব ফাইল একসাথে ক্লোজ করতে চাইলে",
+					"code": "Crtl + Shift + W"
+				},
+				{
+					"definition": "ফাইল প্রিন্ট করতে",
+					"code": "Ctrl + P"
+				},
+				{
+					"definition": "নোটপ্যাড++ বন্ধ করতে",
+					"code": "Alt + F4"
+				}
+			]
+		},
+		{
+			"title": "এডিট শর্টকাট",
+			"items": [{
+					"definition": "পূর্বাবস্থায় ফেরা (Undo)",
+					"code": "Ctrl + Z"
+				},
+				{
+					"definition": "কাট করতে",
+					"code": "Ctrl + X"
+				},
+				{
+					"definition": "কপি করতে",
+					"code": "Ctrl + C"
+				},
+				{
+					"definition": "পেস্ট (Paste)",
+					"code": "Ctrl + V"
+				},
+				{
+					"definition": "লেখা/শব্দ রিপ্লেস করতে চাইলে (Replace)",
+					"code": "Ctrl + H"
+				},
+				{
+					"definition": "বাক্যের সবগুলো শব্দ বড়ো হাতের করতে চাইলে(UpperCase)",
+					"Code": "Ctrl + Shift + U"
+				},
+				{
+					"definition": "বাক্যের সবগুলো শব্দ  ছোট হাতের করতে চাইলে(LowerCase)",
+					"Code": "Ctrl + U"
+				
+				},
+				{
+					"definition": "বাক্যের সবগুলো শব্দ বড়ো হাতের করতে চাইলে(UpperCase)",
+					"Code": "Ctrl + Shift + U"
+				},
+				{
+					"definition": "কোনো নির্দিষ্ট লাইনকে ডুপ্লিকেট করতে(Duplicate)",
+				    "Code": "Crtl + Shift + U"
+				},
+				{
+					"definition": "দুইটি লাইনকে একত্রে করতে(Join Lines)",
+				    "Code": "Crtl + J"
+				},
+				{
+					"definition": "কোনো নির্দিষ্ট লাইনকে উপরে নিতে(Move up current line)",
+				    "Code": "Crtl + Shift + Up"
+				},
+				{
+					"definition": "কোনো নির্দিষ্ট লাইনকে নিচে নিতে(Move down current line)",
+				    "Code": "Crtl + Shift + Down"
+				},
+				{
+					"definition": "কোনো নির্দিষ্ট লাইনকে কমেন্ট করতে(Single Line Comment)",
+				    "Code": "Crtl + K"
+				},
+				{
+					"definition": "কোনো নির্দিষ্ট লাইনকে আনকমেন্ট করতে(Single Line Uncomment)",
+				    "Code": "Crtl + Shift + K"
+				},
+				{
+					"definition": "কলাম এডিটর(Column Editor)",
+				    "Code": "Alt + C"
+				},
+				{
+			"title": "সার্চ  শর্টকাট",
+			"items":[{
+					"definition": "লেখা/শব্দ খুঁজতে(Find)",
+					"code": "Ctrl + F"
+				},
+				{
+					"definition": "ফাইলের মধ্যে লেখা/শব্দ খুঁজতে(Find in Files)",
+					"code": "Ctrl + Shift + F"
+				},
+				{
+					"definition": "লেখা/শব্দ রিপ্লেস করতে চাইলে (Replace)",
+					"code": "Ctrl + H"
+				}
+		]
+      }
+    ]
+  }
