@@ -1,6 +1,6 @@
 {
 	"id": "notepad++-shortcuts-windows",
-	"title": "নোটপ্যাড++ ",
+	"title": "নোটপ্যাড++",
 	"slug": "notepad++-shortcuts-windows",
 	"description": "নোটপ্যাড++ এর কিছু প্রয়োজনীয় উইন্ডোজ শর্টকাট কী",
 	"colorPref": "#6BCB77",
@@ -47,7 +47,7 @@
 		{
 			"title": "এডিট শর্টকাট",
 			"items": [{
-					"definition": "পূর্বাবস্থায় ফেরা (Undo)",
+					"definition": "পূর্বাবস্থায় ফেরা",
 					"code": "Ctrl + Z"
 				},
 				{
@@ -59,69 +59,66 @@
 					"code": "Ctrl + C"
 				},
 				{
-					"definition": "পেস্ট (Paste)",
+					"definition": "পেস্ট  করতে",
 					"code": "Ctrl + V"
 				},
 				{
-					"definition": "লেখা/শব্দ রিপ্লেস করতে চাইলে (Replace)",
+					"definition": "লেখা/শব্দ রিপ্লেস করতে চাইলে",
 					"code": "Ctrl + H"
 				},
 				{
-					"definition": "বাক্যের সবগুলো শব্দ বড়ো হাতের করতে চাইলে(UpperCase)",
-					"Code": "Ctrl + Shift + U"
+					"definition": "বাক্যের সবগুলো শব্দ বড়ো হাতের করতে চাইলে",
+					"code": "Ctrl + Shift + U"
 				},
 				{
-					"definition": "বাক্যের সবগুলো শব্দ  ছোট হাতের করতে চাইলে(LowerCase)",
-					"Code": "Ctrl + U"
-				
+					"definition": "বাক্যের সবগুলো শব্দ  ছোট হাতের করতে চাইলে",
+					"code": "Ctrl + U"
 				},
 				{
-					"definition": "বাক্যের সবগুলো শব্দ বড়ো হাতের করতে চাইলে(UpperCase)",
-					"Code": "Ctrl + Shift + U"
+					"definition": "কোনো নির্দিষ্ট লাইনকে ডুপ্লিকেট করতে",
+					"code": "Crtl + D"
 				},
 				{
-					"definition": "কোনো নির্দিষ্ট লাইনকে ডুপ্লিকেট করতে(Duplicate)",
-				    "Code": "Crtl + Shift + U"
+					"definition": "দুইটি লাইনকে একত্রে করতে",
+					"code": "Crtl + J"
 				},
 				{
-					"definition": "দুইটি লাইনকে একত্রে করতে(Join Lines)",
-				    "Code": "Crtl + J"
+					"definition": "কোনো নির্দিষ্ট লাইনকে উপরে নিতে",
+					"code": "Crtl + Shift + Up"
 				},
 				{
-					"definition": "কোনো নির্দিষ্ট লাইনকে উপরে নিতে(Move up current line)",
-				    "Code": "Crtl + Shift + Up"
+					"definition": "কোনো নির্দিষ্ট লাইনকে নিচে নিতে",
+					"code": "Crtl + Shift + Down"
 				},
 				{
-					"definition": "কোনো নির্দিষ্ট লাইনকে নিচে নিতে(Move down current line)",
-				    "Code": "Crtl + Shift + Down"
+					"definition": "কোনো নির্দিষ্ট লাইনকে কমেন্ট করতে",
+					"code": "Crtl + K"
 				},
 				{
-					"definition": "কোনো নির্দিষ্ট লাইনকে কমেন্ট করতে(Single Line Comment)",
-				    "Code": "Crtl + K"
+					"definition": "কোনো নির্দিষ্ট লাইনকে আনকমেন্ট করতে",
+					"code": "Crtl + Shift + Down"
 				},
 				{
-					"definition": "কোনো নির্দিষ্ট লাইনকে আনকমেন্ট করতে(Single Line Uncomment)",
-				    "Code": "Crtl + Shift + K"
-				},
-				{
-					"definition": "কলাম এডিটর(Column Editor)",
-				    "Code": "Alt + C"
-				},
-				{
+					"definition": "কলাম এডিটর",
+					"code": "Alt + C"
+				}
+			]
+		},
+		{
 			"title": "সার্চ  শর্টকাট",
-			"items":[{
-					"definition": "লেখা/শব্দ খুঁজতে(Find)",
+			"items": [{
+					"definition": "লেখা/শব্দ খুঁজতে",
 					"code": "Ctrl + F"
 				},
 				{
-					"definition": "ফাইলের মধ্যে লেখা/শব্দ খুঁজতে(Find in Files)",
+					"definition": "ফাইলের মধ্যে লেখা/শব্দ খুঁজতে",
 					"code": "Ctrl + Shift + F"
 				},
 				{
-					"definition": "লেখা/শব্দ রিপ্লেস করতে চাইলে (Replace)",
+					"definition": "লেখা/শব্দ রিপ্লেস করতে চাইলে",
 					"code": "Ctrl + H"
 				}
-		]
-      }
-    ]
-  }
+			]
+		}
+	]
+}
