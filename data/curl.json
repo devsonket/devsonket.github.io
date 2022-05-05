@@ -47,7 +47,7 @@
       "items": [
         {
           "definition": "FTP ইউজারনেম ও পাসওয়ার্ড সেট করতে",
-          "code": " curl -u name:passwd ftp://ip:port/path/file‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌\ncurl ftp://name:passwd@ip:port/path/file"
+          "code": "curl -u name:passwd ftp://ip:port/path/file‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌\ncurl ftp://name:passwd@ip:port/path/file"
         },
         {
           "definition": "ফাইল আপলোড করতে",
