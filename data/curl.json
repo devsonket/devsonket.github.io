@@ -60,7 +60,7 @@
       "items": [
         {
           "definition": "GET মেথড এ ডাটা বা কুয়েরি স্ট্রিং(QSA) আট্টাছ করতে হলে",
-          "code": "curl -G -d search=keyword -d status=active http://www.exmaple.com"
+          "code": "curl -G -d search=keyword -d status=active http://www.exmaple.com \n curl -G -d 'search=keyword&status=active' http://www.exmaple.com"
         },
         {
           "definition": "POST মেথড এ ডাটা আট্টাছ করতে হলে",
