@@ -72,3 +72,4 @@ yarn-error.log
 # Thumbnails
 static/static/thumbnail/*.jpg
 !static/static/thumbnail/thumbnail.jpg
+.idea/*
