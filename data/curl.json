@@ -92,6 +92,10 @@
       "title": "হেডার অপারেশন",
       "items": [
         {
+          "definition": "অনুরোধে হেডার যোগ করতে হলে",
+          "code": "curl -H '{key}: {value}' http://www.exmaple.com"
+        },
+        {
           "definition": "GET মেথডে রেসপন্স JSON ডাটা পেতে হলে",
           "code": "curl -H 'Accept: application/json' http://www.exmaple.com"
         },
