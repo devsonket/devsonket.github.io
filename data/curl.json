@@ -33,11 +33,11 @@
           "code": "curl -w '%{time_total}\n' -o /dev/null -s http://www.example.com"
         },
         {
-          "definition": "HTTP স্ট্যাটাস কোড ছেক করতে",
+          "definition": "HTTP স্ট্যাটাস কোড প্রদর্শন করতে",
           "code": "curl -o /dev/null --silent -Iw \"%{http_code}\" http://www.example.com"
         },
         {
-          "definition": "লোকাল ফাইলে HTTP রেস্পন্সে সেভ করা",
+          "definition": "লোকাল ফাইলে HTTP রেস্পন্সে সেভ করতে",
           "code": "curl -o filepath.txt http://www.example.com"
         }
       ]
@@ -63,27 +63,27 @@
       "title": "ডাটা অপারেশন",
       "items": [
         {
-          "definition": "GET মেথড এ ডাটা বা কুয়েরি স্ট্রিং(QSA) আট্টাছ করতে হলে",
+          "definition": "GET মেথডে ডাটা বা কুয়েরি স্ট্রিং(QSA) আট্টাছ করতে হলে",
           "code": "curl -G -d search=keyword -d status=active http://www.exmaple.com \n curl -G -d 'search=keyword&status=active' http://www.exmaple.com"
         },
         {
-          "definition": "POST মেথড এ ডাটা পাঠাতে করতে হলে",
+          "definition": "POST মেথডে ডাটা পাঠাতে করতে হলে",
           "code": "curl -X POST -d name=keyword -d age=12 http://www.example.com"
         },
         {
-          "definition": "POST মেথড এ ডাটা পাঠাতে করতে হলে (বাধ্যতামূলক ফর্ম অনুরোধ)",
+          "definition": "POST মেথডে ডাটা পাঠাতে করতে হলে হেডার সহ",
           "code": "curl -X POST -d name=keyword -d age=12 -H 'Content-Type: application/x-www-form-urlencoded' http://www.example.com"
         },
         {
-          "definition": "POST মেথড এ JSON পাঠাতে করতে হলে",
+          "definition": "POST মেথডে JSON পাঠাতে করতে হলে",
           "code": "curl -X POST -d '{\"login\":\"my_login\",\"password\":\"my_password\"}' http://www.example.com"
         },
         {
-          "definition": "POST মেথড এ JSON পাঠাতে করতে হলে হেডার সহ",
+          "definition": "POST মেথডে JSON পাঠাতে করতে হলে হেডার সহ",
           "code": "curl -X POST -d '{\"login\":\"my_login\",\"password\":\"my_password\"}' -H 'Content-Type: application/json' http://www.example.com"
         },
         {
-          "definition": "POST মেথড এ XML পাঠাতে করতে হলে হেডার সহ",
+          "definition": "POST মেথডে XML পাঠাতে করতে হলে হেডার সহ",
           "code": "curl -X POST -d '<Request><Login>my_login</Login><Password>my_password</Password></Request>' -H 'Content-Type: application/json' http://www.example.com"
         }
       ]
@@ -92,11 +92,11 @@
       "title": "হেডার অপারেশন",
       "items": [
         {
-          "definition": "GET মেথড রেসপন্স JSON ডাটা পেতে হলে",
+          "definition": "GET মেথডে রেসপন্স JSON ডাটা পেতে হলে",
           "code": "curl -H 'Accept: application/json' http://www.exmaple.com"
         },
         {
-          "definition": "POST মেথড রেসপন্স JSON ডাটা পেতে হলে",
+          "definition": "POST মেথডে রেসপন্স JSON ডাটা পেতে হলে",
           "code": "curl -X POST -H 'Accept: application/json' http://www.exmaple.com"
         },
         {
