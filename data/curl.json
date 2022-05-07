@@ -121,7 +121,7 @@
           "code": "curl -k https://www.exmaple.com"
         },
         {
-          "definition": "HTTP রিডাইরেক্ট ফলো করা",
+          "definition": "HTTP রিডাইরেক্ট ফলো করতে",
           "code": "curl -L http://www.exmaple.com"
         },
         {
