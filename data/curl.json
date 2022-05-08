@@ -100,7 +100,7 @@
           "code": "curl -H 'Accept: application/json' http://www.exmaple.com"
         },
         {
-          "definition": "POST মেথডে রেসপন্স JSON ডাটা পেতে হলে",
+          "definition": "POST মেথডে রেসপন্স JSON ডাটা পেতে",
           "code": "curl -X POST -H 'Accept: application/json' http://www.exmaple.com"
         },
         {
