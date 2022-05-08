@@ -84,7 +84,7 @@
         },
         {
           "definition": "POST মেথডে XML পাঠাতে করতে হলে হেডার সহ",
-          "code": "curl -X POST -d '<Request><Login>my_login</Login><Password>my_password</Password></Request>' -H 'Content-Type: application/json' http://www.example.com"
+          "code": "curl -X POST -d '<Request><Login>my_login</Login><Password>my_password</Password></Request>' -H 'Content-Type: application/xml' http://www.example.com"
         }
       ]
     },
