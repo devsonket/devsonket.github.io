@@ -127,6 +127,10 @@
         {
           "definition": "রেকুএস্ত ওয়েটিং টাইম সেট করা(সেকেন্ড)",
           "code": "curl --connection-timeout 5 http://www.exmaple.com"
+        },
+        {
+          "definition": "cURL ভার্সন চেক করতে",
+          "code": "curl -V"
         }
       ]
     }
