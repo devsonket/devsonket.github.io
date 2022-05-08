@@ -63,11 +63,11 @@
       "title": "ডাটা অপারেশন",
       "items": [
         {
-          "definition": "GET মেথডে ডাটা বা কুয়েরি স্ট্রিং(QSA) আট্টাছ করতে হলে",
+          "definition": "GET মেথডে ডাটা বা কুয়েরি স্ট্রিং(QSA) আট্টাছ করতে",
           "code": "curl -G -d search=keyword -d status=active http://www.exmaple.com \n curl -G -d 'search=keyword&status=active' http://www.exmaple.com"
         },
         {
-          "definition": "POST মেথডে ডাটা পাঠাতে করতে হলে",
+          "definition": "POST মেথডে ডাটা পাঠাতে করতে",
           "code": "curl -X POST -d name=keyword -d age=12 http://www.example.com"
         },
         {
