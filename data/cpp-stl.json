@@ -720,6 +720,75 @@
                 "code": "myList.reverse()"
             }
         ]
+    },
+    {
+        "title": "ডিকিউ",
+        "items": [
+            {
+                "definition": "ডিকিউ-এর স্ট্যান্ডার্ড লাইব্রেরি",
+                "code": "#include <deque>"
+            },
+            {
+                "definition": "ডিকিউ-এর ভেরিয়েবল ডিক্লেয়ার করা",
+                "code": "deque<int> dq"
+            },
+            {
+                "definition": "ডিকিউ-এর শুরুতে অথবা শেষে ভ্যালু পুশ করা",
+                "code": "dq.push_front(value) , dq.push_back(value)"
+            },
+            {
+                "definition": "ডিকিউ-এর সামনে অথবা পেছন থেকে ভ্যালু বের / পপ করা",
+                "code": "dq.pop_front() , dq.pop_back()"
+            },
+            {
+                "definition": "ডিকিউ-এর সামনের অথবা পেছনের ভ্যালু দেখা",
+                "code": "dq.front() , dq.back()"
+            },
+            {
+                "definition": "ডিকিউ-এর শুরু এবং শেষের ইটারেটর বের করা",
+                "code": "dq.begin() , dq.end()"
+            },
+            {
+                "definition": "ডিকিউ-এর রিভার্স ইটারেটর বের করা",
+                "code": "dq.rbegin() , dq.rend()"
+            },
+            {
+                "definition": "ডিকিউ-এর নির্দিষ্ট ইটারেটর-এ ভ্যালু ইনসারট করা",
+                "code": "dq.insert(iterator , value)"
+            },
+            {
+                "definition": "ডিকিউ খালি করা",
+                "code": "dq.clear()"
+            },
+            {
+                "definition": "ডিকিউ খালি কি-না তা জানতে চাওয়া",
+                "code": "dq.empty()"
+            },
+            {
+                "definition": "ডিকিউ-এর নির্দিষ্ট ইটারেটর-এর ভ্যালু ডিলিট করা",
+                "code": "dq.erase(iterator)"
+            },
+            {
+                "definition": "ডিকিউ-এর নির্দিষ্ট ইটারেটর-রেঞ্জ এর ভ্যালু ডিলিট করা",
+                "code": "dq.erase(start_iterator, end_iterator)"
+            },
+            {
+                "definition": "ডিকিউ-এ মোট কতগুলো ভ্যালু আছ?",
+                "code": "dq.size()"
+            },
+            {
+                "definition": "ডিকিউ টি মেক্সিমাম কতগুলো ভ্যালু রাখতে পারবে?",
+                "code": "dq.max_size()"
+            },
+            {
+                "definition": "ডিকিউ-তে কোন ভ্যালু খোজা",
+                "code": "dq.find()"
+            },
+            {
+                "definition": "দুইটি ডিকিউ-এর মধ্যে ভ্যালু অদলবদল করা",
+                "code": "dq1.swap(dq2)"
+            }
+        ]
     }
   ]
 }
