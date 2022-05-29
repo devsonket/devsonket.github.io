@@ -124,7 +124,7 @@
           },
           {
             "definition":"কোড সুন্দর ভাবে সাঁজাতে",
-            "code":"Ctrl + Alt + S"
+            "code":"Ctrl + Alt + L"
           }
         ]
       },
@@ -196,6 +196,31 @@
           {
             "definition":"ভার্সন কন্ট্রোল পপ আপ ওপেন করতে",
             "code":"Alt + `"
+          }
+        ]
+      },
+      {
+        "title":"লেআউট দেখা",
+        "items":[
+          {
+            "definition":"জুম ইন",
+            "code":"Ctrl + +"
+          },
+          {
+            "definition":"জুম আউট",
+            "code":"Ctrl + -"
+          },
+          {
+            "definition":"পর্দার জন্য সঠিক",
+            "code":"Ctrl + 0"
+          },
+          {
+            "definition":"সঠিক আকার",
+            "code":"Ctrl + Shift + 1"
+          },
+          {
+            "definition":"XML এ যান",
+            "code":"Ctrl + B"
           }
         ]
       }
