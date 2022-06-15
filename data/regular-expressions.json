@@ -95,6 +95,39 @@
           "code": "\\O"
         }
       ]
+    },
+    {
+      "title": "বিশেষ অক্ষর",
+      "items": [
+        {
+          "definition": "নিউলাইন",
+          "code": "\\s"
+        },
+        {
+          "definition": "কোরিয়াগে রিটার্ন",
+          "code": "\\S"
+        },
+        {
+          "definition": "ট্যাব",
+          "code": "w"
+        },
+        {
+          "definition": "ভার্টিকাল ট্যাব",
+          "code": "\\W"
+        },
+        {
+          "definition": "ফর্ম ফিড",
+          "code": "\\d"
+        },
+        {
+          "definition": "অক্টাল ক্যারেক্টার xxx",
+          "code": "\\D"
+        },
+        {
+          "definition": "হেক্স ক্যারেক্টার hh",
+          "code": "\\x"
+        }
+      ]
     }
   ]
 }
