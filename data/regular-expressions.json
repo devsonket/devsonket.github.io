@@ -128,6 +128,47 @@
           "code": "\\x"
         }
       ]
+    },
+    {
+      "title": "গ্রুপ এবং রেঞ্জ",
+      "items": [
+        {
+          "definition": "নিউলাইন (\\n) ছাড়া যেকোন অক্ষর",
+          "code": "."
+        },
+        {
+          "definition": "a বা b",
+          "code": "(a|b)"
+        },
+        {
+          "definition": "গ্রুপ",
+          "code": "(...)"
+        },
+        {
+          "definition": "প্যাসিভ (নন-ক্যাপচারিং) গ্রুপ",
+          "code": "(?:...)"
+        },
+        {
+          "definition": "a, b বা c",
+          "code": "[abc]"
+        },
+        {
+          "definition": "a, b বা c না",
+          "code": "[^abc]"
+        },
+        {
+          "definition": "a থেকে z পর্যন্ত অক্ষর",
+          "code": "[a-z]"
+        },
+        {
+          "definition": "A থেকে Z পর্যন্ত বড় হাতের অক্ষর",
+          "code": "[A-Z]"
+        },
+        {
+          "definition": "0 থেকে 9 পর্যন্ত ডিজিট",
+          "code": "[0-9]"
+        }
+      ]
     }
   ]
 }
