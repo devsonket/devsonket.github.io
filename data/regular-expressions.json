@@ -6,19 +6,19 @@
   "colorPref": "#07334e",
   "contents": [
     {
-      "title": "",
+      "title": "মৌলিক সিনট্যাক্স",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "definition": "regex delimiters শুরু এবং শেষ করুন",
+          "code": "/.../"
         },
         {
-          "definition": "",
-          "code": ""
+          "definition": "অল্টারনেশন",
+          "code": "|"
         },
         {
-          "definition": "",
-          "code": ""
+          "definition": "গ্রুপিং",
+          "code": "()"
         }
       ]
     }
