@@ -285,6 +285,63 @@
           "code": "(?#…)"
         }
       ]
+    },
+    {
+      "title": "পসিক্স",
+      "items": [
+        {
+          "definition": "বড় হাতের অক্ষর",
+          "code": "[:upper:]"
+        },
+        {
+          "definition": "ছোট হাতের অক্ষর",
+          "code": "[:lower:]"
+        },
+        {
+          "definition": "সব অক্ষর",
+          "code": "[:alpha:]"
+        },
+        {
+          "definition": "ডিজিটস এন্ড লেটারস",
+          "code": "[:alnum:]"
+        },
+        {
+          "definition": "ডিজিটস",
+          "code": "[:digit:]"
+        },
+        {
+          "definition": "হেক্সাডেসিমেল ডিজিট",
+          "code": "[:xdigit:]"
+        },
+        {
+          "definition": "পুনচ্যুয়েশন",
+          "code": "[:punct:]"
+        },
+        {
+          "definition": "স্পেস এবং ট্যাব",
+          "code": "[:blank:]"
+        },
+        {
+          "definition": "ব্ল্যান্ক অক্ষর",
+          "code": "[:space:]"
+        },
+        {
+          "definition": "কন্ট্রোল অক্ষর",
+          "code": "[:cntrl:]"
+        },
+        {
+          "definition": "প্রিন্টেড অক্ষর",
+          "code": "[:graph:]"
+        },
+        {
+          "definition": "প্রিন্টেড অক্ষর এবং স্পেস",
+          "code": "[:print:]"
+        },
+        {
+          "definition": "ডিজিটস, লেটারস এন্ড আন্ডারস্কোর",
+          "code": "[:word:]"
+        }
+      ]
     }
   ]
 }
