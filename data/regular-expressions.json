@@ -58,6 +58,43 @@
           "code": "\\>"
         }
       ]
+    },
+    {
+      "title": "ক্যারেক্টার ক্লাস",
+      "items": [
+        {
+          "definition": "হোয়াইটস্পেস",
+          "code": "\\s"
+        },
+        {
+          "definition": "হোয়াইটস্পেস নয়",
+          "code": "\\S"
+        },
+        {
+          "definition": "শব্দ",
+          "code": "w"
+        },
+        {
+          "definition": "শব্দ নয়",
+          "code": "\\W"
+        },
+        {
+          "definition": "ডিজিট",
+          "code": "\\d"
+        },
+        {
+          "definition": "ডিজিট নয়",
+          "code": "\\D"
+        },
+        {
+          "definition": "হেক্সাডেসিমেল ডিজিট",
+          "code": "\\x"
+        },
+        {
+          "definition": "অক্টাল ডিজিট",
+          "code": "\\O"
+        }
+      ]
     }
   ]
 }
