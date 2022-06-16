@@ -1,0 +1,164 @@
+{
+    "id": "shortcut-atom-mac",
+    "title": "অ্যাটম কোড এডিটর(ম্যাক)",
+    "slug": "shortcut-atom-mac",
+    "description": "অ্যাটম কোড এডিটর এর প্রয়োজনী ম্যাক শর্টকাট কী",
+    "colorPref": "#666",
+    "contents": [{
+            "title": "সাধারণ",
+            "items": [{
+                    "definition": "নতুন ফাইল তৈরী",
+                    "code": "⌘ + N"
+                },
+                {
+                    "definition": "নতুন উইন্ডো খোলা",
+                    "code": "⌘ + Shift + N"
+                },
+                {
+                    "definition": "ফাইল খোলা (অনুসন্ধান করতে নাম টাইপ করা)",
+                    "code": "⌘ + P"
+                },
+                {
+                    "definition": "নতুন ফাইল খোলা",
+                    "code": "⌘ + O"
+                },
+                {
+                    "definition": "ফোল্ডার খোলা",
+                    "code": "⌘ + Shift + O"
+                },
+                {
+                    "definition": "সেভ করা",
+                    "code": "⌘ + S"
+                },
+                {
+                    "definition": "সেভ এস",
+                    "code": "⌘ + Shift + S"
+                },
+                {
+                    "definition": "ট্যাব বন্ধ করা",
+                    "code": "⌘ + W"
+                },
+                {
+                    "definition": "উইন্ডো বন্ধ করা",
+                    "code": "⌘ + Shift + W"
+                },
+                {
+                    "definition": "এটম পুনরায় লোড করা",
+                    "code": "⌘ + Option + R"
+                },
+                {
+                    "definition": "খোলা ফাইলের তালিকা ব্রাউজ করা",
+                    "code": "⌘ + B"
+                },
+                {
+                    "definition": "কমান্ড প্যালেট খোলা এবং বন্ধ করা",
+                    "code": "⌘ + Shift + P"
+                },
+                {
+                    "definition": "খোলা ট্যাবের মধ্য দিয়ে বাম চক্র",
+                    "code": "⌘ + Alt + Arrow Left"
+                },
+                {
+                    "definition": "খোলা ট্যাবের মধ্য দিয়ে ডান চক্র",
+                    "code": "⌘ + Alt + Arrow Right"
+                },
+                {
+                    "definition": "পছন্দ/সেটিংস খোলা",
+                    "code": "⌘ + ,"
+                },
+                {
+                    "definition": "ফাইলটি যে ভাষায় আছে সেটি নির্বাচন করা",
+                    "code": "⌘ + Shift + L"
+                },
+                {
+                    "definition": "Chrome ডেভেলপার টুল খোলা",
+                    "code": "⌘ + Shift + I"
+                },
+                {
+                    "definition": "উপলব্ধ কোড স্নিপেট দেখান",
+                    "code": "Option + Shift + S"
+                },
+                {
+                    "definition": "মার্কডাউন পূর্বরূপ",
+                    "code": "⌘ + Shift + M"
+                },
+                {
+                    "definition": "ডেভেলপার টুল টগল করা",
+                    "code": "⌘ + Option + I"
+                },
+                {
+                    "definition": "পাঠ্যের আকার বাড়ান",
+                    "code": "⌘ + Shift + ="
+                },
+                {
+                    "definition": "পাঠ্যের আকার হ্রাস করা",
+                    "code": "⌘ + Shift + -"
+                },
+                {
+                    "definition": "পাঠ্যের আকার পুনরায় সেট করা",
+                    "code": "⌘ + 0 (zero)"
+                },
+                {
+                    "definition": "পর্দা জুড়ে প্রদর্শন",
+                    "code": "F11"
+                }
+            ]
+        },
+        {
+            "title": "",
+            "items": [{
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "",
+            "items": [{
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        }
+    ]
+}
