@@ -4,11 +4,9 @@
     "slug": "avro-keymap",
     "description": "জনপ্রিয় বাংলা লেখার অ্যাপ অভ্র কীবোর্ডে নির্ভুলভাবে বাংলা লেখা",
     "colorPref": "#bb401f",
-    "contents": [
-        {
+    "contents": [{
             "title": "স্বরবর্ণ",
-            "items": [
-                {
+            "items": [{
                     "definition": "অ",
                     "code": "o"
                 },
@@ -36,8 +34,7 @@
         },
         {
             "title": "স্বরবর্ণ",
-            "items": [
-                {
+            "items": [{
                     "definition": "ঋ, ৃ",
                     "code": "rri"
                 },
@@ -61,8 +58,7 @@
         },
         {
             "title": "জোরপূর্বক মূল স্বরবর্ণ",
-            "items": [
-                {
+            "items": [{
                     "definition": "অ",
                     "code": "`o"
                 },
@@ -90,8 +86,7 @@
         },
         {
             "title": "জোরপূর্বক মূল স্বরবর্ণ",
-            "items": [
-                {
+            "items": [{
                     "definition": "ঋ",
                     "code": "`rri"
                 },
@@ -115,8 +110,7 @@
         },
         {
             "title": "জোরপূর্বক স্বরবর্ণের সংক্ষিপ্ত রূপ",
-            "items": [
-                {
+            "items": [{
                     "definition": "কিছু লেখা হবে না",
                     "code": "o`"
                 },
@@ -144,8 +138,7 @@
         },
         {
             "title": "জোরপূর্বক স্বরবর্ণের সংক্ষিপ্ত রূপ",
-            "items": [
-                {
+            "items": [{
                     "definition": "ৃ",
                     "code": "rri`"
                 },
@@ -169,8 +162,7 @@
         },
         {
             "title": "ব্যাঞ্জনবর্ণ",
-            "items": [
-                {
+            "items": [{
                     "definition": "ক",
                     "code": "k"
                 },
@@ -194,8 +186,7 @@
         },
         {
             "title": "ব্যাঞ্জনবর্ণ",
-            "items": [
-                {
+            "items": [{
                     "definition": "চ",
                     "code": "c"
                 },
@@ -219,8 +210,7 @@
         },
         {
             "title": "ব্যাঞ্জনবর্ণ",
-            "items": [
-                {
+            "items": [{
                     "definition": "ট",
                     "code": "T"
                 },
@@ -244,8 +234,7 @@
         },
         {
             "title": "ব্যাঞ্জনবর্ণ",
-            "items": [
-                {
+            "items": [{
                     "definition": "ত",
                     "code": "t"
                 },
@@ -269,8 +258,7 @@
         },
         {
             "title": "ব্যাঞ্জনবর্ণ",
-            "items": [
-                {
+            "items": [{
                     "definition": "প",
                     "code": "p"
                 },
@@ -294,8 +282,7 @@
         },
         {
             "title": "ব্যাঞ্জনবর্ণ",
-            "items": [
-                {
+            "items": [{
                     "definition": "য",
                     "code": "z"
                 },
@@ -319,8 +306,7 @@
         },
         {
             "title": "ব্যাঞ্জনবর্ণ",
-            "items": [
-                {
+            "items": [{
                     "definition": "স",
                     "code": "s"
                 },
@@ -340,8 +326,7 @@
         },
         {
             "title": "ব্যাঞ্জনবর্ণ",
-            "items": [
-                {
+            "items": [{
                     "definition": "য়",
                     "code": "y, Y"
                 },
@@ -365,8 +350,7 @@
         },
         {
             "title": "যুক্তাক্ষর",
-            "items": [
-                {
+            "items": [{
                     "definition": "অক্ষর",
                     "code": "okkhor"
                 },
@@ -422,8 +406,7 @@
         },
         {
             "title": "যুক্তবর্ণ",
-            "items": [
-                {
+            "items": [{
                     "definition": "হ্ব (হ+ব)",
                     "code": "h+w"
                 },

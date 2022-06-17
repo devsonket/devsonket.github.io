@@ -4,170 +4,204 @@
     "slug": "phpstorm-shortcut-windows10",
     "description": "বহুল ব্যবহৃত পিএইচপিস্ট্রম (IDE) এর প্রয়োজনীয় কীবোর্ড শর্টকাট কী",
     "colorPref": "#0078d7",
-    "contents": [
-        {
+    "contents": [{
             "title": "এডিটিং",
-            "items": [
-                {
+            "items": [{
                     "definition": "বেসিক কোড সমাপ্তি",
                     "code": "Ctrl + Space"
-                }, {
+                },
+                {
                     "definition": "সাধারণ সমস্যা এর সমাধান পেতে",
                     "code": "Alt + Enter"
-                }, {
+                },
+                {
                     "definition": "দ্রুত ডকুমেন্টেশন দেখুন",
                     "code": "Ctrl + Q"
-                }, {
+                },
+                {
                     "definition": "ফাংশন সম্পর্কে সম্পূর্ণ তথ্য",
                     "code": "Ctrl + mouse over code"
-                }, {
+                },
+                {
                     "definition": "দ্রুত Wrap করার কাজে ব্যবহার করা হয় ... (if..else, try..catch, for, etc.)",
                     "code": "Ctrl + Alt + T"
-                }, {
+                },
+                {
                     "definition": "কোড ব্লক Comment/uncomment করার ক্ষেতে খুব খুব সাহায্য করে (Line Comment)",
                     "code": "Ctrl + /"
-                }, {
+                },
+                {
                     "definition": "কোড ব্লক Comment/uncomment করার ক্ষেতে খুব খুব সাহায্য করে (Block Comment)",
                     "code": "Ctrl + Shift + /"
-                }, {
+                },
+                {
                     "definition": "একটি সম্পূর্ণ কোড ব্লক সিলেক্ট করা যায়",
                     "code": "Ctrl + W"
-                }, {
+                },
+                {
                     "definition": "অগোছালো কোন কোডকে খুব সহজেই গোছানো যায়",
                     "code": "Ctrl + Alt + L"
-                }, {
+                },
+                {
                     "definition": "মাউচ ছাড়া নিচের লাইনে যাওয়ার সহজ উপায়",
                     "code": "Ctrl + Alt + I"
-                }, {
+                },
+                {
                     "definition": "লাইন বা সিলেক্ট করা কোড ব্লক ডাবল করার ক্ষেত্রে খুব খুব সাহায্য করে",
                     "code": "Ctrl + D"
-                }, {
+                },
+                {
                     "definition": "কোড ব্লক Expand/collapse",
                     "code": "Ctrl + NumPad+/-"
-                }, {
+                },
+                {
                     "definition": "এডিটর এ Active Tab বন্ধ করার কাজে ব্যবহার করা হয়",
                     "code": "Ctrl + F4"
-                }, {
+                },
+                {
                     "definition": "একাধিক কোড কপি করা থাকালে আগের কোড/টেষ্ট পেষ্ট করার ক্ষেতে ইউসফুল",
                     "code": "Ctrl+Shift+V"
                 }
             ]
-        }, {
+        },
+        {
             "title": "অনুসন্ধান / প্রতিস্থাপন (Search/Replace)",
-            "items":  [
-                {
+            "items": [{
                     "definition": "কোড Find/Replace",
                     "code": "Ctrl + F/R"
-                }, {
+                },
+                {
                     "definition": "Find/Replace in path",
-                    "code": "Ctrl + Shift + F/R"                
+                    "code": "Ctrl + Shift + F/R"
                 }
             ]
-        }, {
+        },
+        {
             "title": "ফাইল-এক্সপ্লোরার কীবোর্ড শর্টকাট",
-            "items": [
-              {
-                  "definition": "ফাইল এবং ফোল্ডার আইকনের সাইজ পরিবর্তন করা",
-                  "code": "Ctrl + mouse scroll wheel"
-              }, {
-                  "definition": "নতুন ফোল্ডার তৈরি করা",
-                  "code": "Ctrl + Shift + N"
-              }, {
-                  "definition": "প্রিভিও প্যানেল ডিসপ্লে করা",
-                  "code": "Alt + P"
-              }, {
-                  "definition": "পূর্বের ফোল্ডারে যাওয়া",
-                  "code": "Backspace"
-              }, {
-                  "definition": "পরবর্তী ফোল্ডার দেখা",
-                  "code": "Alt + Right arrow (->)"
-              }, {
-                  "definition": "পূর্বের ফোল্ডার দেখা",
-                  "code": "Alt + Left arrow (<-)"
-              }, {
-                  "definition": "ফোল্ডারটি যেই ফোল্ডারে রয়েছে সেটি দেখা",
-                  "code": "Alt + Up arrow"
-              }, {
-                  "definition": "ফাইল এক্সপ্লোরারে কোনও ফাইল বা ফোল্ডার অনুসন্ধান করুন।",
-                  "code": "F3"
-              }
+            "items": [{
+                    "definition": "ফাইল এবং ফোল্ডার আইকনের সাইজ পরিবর্তন করা",
+                    "code": "Ctrl + mouse scroll wheel"
+                },
+                {
+                    "definition": "নতুন ফোল্ডার তৈরি করা",
+                    "code": "Ctrl + Shift + N"
+                },
+                {
+                    "definition": "প্রিভিও প্যানেল ডিসপ্লে করা",
+                    "code": "Alt + P"
+                },
+                {
+                    "definition": "পূর্বের ফোল্ডারে যাওয়া",
+                    "code": "Backspace"
+                },
+                {
+                    "definition": "পরবর্তী ফোল্ডার দেখা",
+                    "code": "Alt + Right arrow (->)"
+                },
+                {
+                    "definition": "পূর্বের ফোল্ডার দেখা",
+                    "code": "Alt + Left arrow (<-)"
+                },
+                {
+                    "definition": "ফোল্ডারটি যেই ফোল্ডারে রয়েছে সেটি দেখা",
+                    "code": "Alt + Up arrow"
+                },
+                {
+                    "definition": "ফাইল এক্সপ্লোরারে কোনও ফাইল বা ফোল্ডার অনুসন্ধান করুন।",
+                    "code": "F3"
+                }
             ]
-        },{
+        },
+        {
             "title": "রানিং",
-            "items": [
-              {
-                  "definition": "কোড রান",
-                  "code": "Shift + F10"
-              }, {
-                  "definition": "কোড ডিবাগ",
-                  "code": "Shift + F9"
-              }
+            "items": [{
+                    "definition": "কোড রান",
+                    "code": "Shift + F10"
+                },
+                {
+                    "definition": "কোড ডিবাগ",
+                    "code": "Shift + F9"
+                }
             ]
-        }, {
+        },
+        {
             "title": "নেভিগেশন",
-            "items": [
-              {
-                  "definition": "যেকোন PHP ক্লাস খুজে বের করা",
-                  "code": "Ctrl + N"
-              }, {
-                  "definition": "যেকোন ফাইল খুজে বের করা",
-                  "code": "Ctrl + Shift + N"
-              }, {
-                  "definition": "নির্দিষ্ট কোন লাইনে যাওয়া",
-                  "code": "Ctrl + G"
-              }, {
-                  "definition": "সর্বশেষ ইডিট লোকেশনে যাওয়া",
-                  "code": "Ctrl + Shift + Backspace"
-              }, {
-                  "definition": "ইডিটরে ফিরে যাওয়া",
-                  "code": "Esc"
-              }, {
-                  "definition": "রিসেন্টরি ওপেন করা ফাইলের একটা ছোট লিষ্ট",
-                  "code": "Ctrl + E"
-              }, {
-                  "definition": "ইডিটরে ওপেন করা টেবের সামনে বা পিছনে যাওয়া (Cycle through tabs)",
-                  "code": "Alt + Right/Left"
-              }
+            "items": [{
+                    "definition": "যেকোন PHP ক্লাস খুজে বের করা",
+                    "code": "Ctrl + N"
+                },
+                {
+                    "definition": "যেকোন ফাইল খুজে বের করা",
+                    "code": "Ctrl + Shift + N"
+                },
+                {
+                    "definition": "নির্দিষ্ট কোন লাইনে যাওয়া",
+                    "code": "Ctrl + G"
+                },
+                {
+                    "definition": "সর্বশেষ ইডিট লোকেশনে যাওয়া",
+                    "code": "Ctrl + Shift + Backspace"
+                },
+                {
+                    "definition": "ইডিটরে ফিরে যাওয়া",
+                    "code": "Esc"
+                },
+                {
+                    "definition": "রিসেন্টরি ওপেন করা ফাইলের একটা ছোট লিষ্ট",
+                    "code": "Ctrl + E"
+                },
+                {
+                    "definition": "ইডিটরে ওপেন করা টেবের সামনে বা পিছনে যাওয়া (Cycle through tabs)",
+                    "code": "Alt + Right/Left"
+                }
             ]
-        }, {
-            "title":"জেনারেল শর্টকাট",
-            "items": [
-              {
-                  "definition": "এডিটরের স্পটলাইট (Search everywhere)",
-                  "code": "Double Shift"
-              }, {
-                  "definition": "এডিটর ফুল স্ক্রিন করা এবং আগের অবস্থানে আনা",
-                  "code": "Ctrl + Alt + F11"
-              }, {
-                  "definition": "সাইডবার হাইড এবং শো করা",
-                  "code": "Ctrl + Shift + F12"
-              }, {
-                  "definition": "এডিটর সেটিং বা কন্টোল পেনেল ওপেন করা",
-                  "code": "Ctrl + Alt + S"
-              }, {
-                  "definition": "নির্বাচিত অঞ্চল বা ফুল ডিসপ্লে বা অ্যাক্টিভ উইন্ডোর স্ক্রিনশট নেওয়ার জন্য স্ক্রিনশট টুল ওপেন করা (ক্লিপবোর্ডে কপি হয়)",
-                  "code": "WIN + Shift + S"
-              }
+        },
+        {
+            "title": "জেনারেল শর্টকাট",
+            "items": [{
+                    "definition": "এডিটরের স্পটলাইট (Search everywhere)",
+                    "code": "Double Shift"
+                },
+                {
+                    "definition": "এডিটর ফুল স্ক্রিন করা এবং আগের অবস্থানে আনা",
+                    "code": "Ctrl + Alt + F11"
+                },
+                {
+                    "definition": "সাইডবার হাইড এবং শো করা",
+                    "code": "Ctrl + Shift + F12"
+                },
+                {
+                    "definition": "এডিটর সেটিং বা কন্টোল পেনেল ওপেন করা",
+                    "code": "Ctrl + Alt + S"
+                },
+                {
+                    "definition": "নির্বাচিত অঞ্চল বা ফুল ডিসপ্লে বা অ্যাক্টিভ উইন্ডোর স্ক্রিনশট নেওয়ার জন্য স্ক্রিনশট টুল ওপেন করা (ক্লিপবোর্ডে কপি হয়)",
+                    "code": "WIN + Shift + S"
+                }
             ]
-        }, {
-            "title":"সিনিপিট (Snippets)",
-            "items": [
-              {
-                  "definition": "আগের সেভ করা Snippet বাবহ্যার করা",
-                  "code": "Ctrl + J"
-              }, {
-                  "definition": "এডিটর ফুল স্ক্রিন করা এবং আগের অবস্থানে আনা",
-                  "code": "Ctrl + Alt + F11"
-              }, {
-                  "definition": "সাইডবার হাইড এবং শো করা",
-                  "code": "Ctrl + Shift + F12"
-              }, {
-                  "definition": "এডিটর সেটিং বা কন্টোল পেনেল ওপেন করা",
-                  "code": "Ctrl + Alt + S"
-              }, {
-                  "definition": "নির্বাচিত অঞ্চল বা ফুল ডিসপ্লে বা অ্যাক্টিভ উইন্ডোর স্ক্রিনশট নেওয়ার জন্য স্ক্রিনশট টুল ওপেন করা (ক্লিপবোর্ডে কপি হয়)",
-                  "code": "WIN + Shift + S"
-              }
+        },
+        {
+            "title": "সিনিপিট (Snippets)",
+            "items": [{
+                    "definition": "আগের সেভ করা Snippet বাবহ্যার করা",
+                    "code": "Ctrl + J"
+                },
+                {
+                    "definition": "এডিটর ফুল স্ক্রিন করা এবং আগের অবস্থানে আনা",
+                    "code": "Ctrl + Alt + F11"
+                },
+                {
+                    "definition": "সাইডবার হাইড এবং শো করা",
+                    "code": "Ctrl + Shift + F12"
+                },
+                {
+                    "definition": "এডিটর সেটিং বা কন্টোল পেনেল ওপেন করা",
+                    "code": "Ctrl + Alt + S"
+                },
+                {
+                    "definition": "নির্বাচিত অঞ্চল বা ফুল ডিসপ্লে বা অ্যাক্টিভ উইন্ডোর স্ক্রিনশট নেওয়ার জন্য স্ক্রিনশট টুল ওপেন করা (ক্লিপবোর্ডে কপি হয়)",
+                    "code": "WIN + Shift + S"
+                }
             ]
         }
     ]

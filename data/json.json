@@ -4,11 +4,9 @@
     "slug": "json",
     "description": "জেসন (JSON) এর পূর্নরুপ হচ্ছে জাভাস্ক্রিপ্ট অবজেক্ট নোটেশন (JavaScript Object Notation)। এটা হালকা একটা ডাটা রিপ্রেজেন্ট করার ফরম্যাট। আমরা সহজেই এর সাহায্যে ডাটা পড়তে বা লিখতে পারি এবং একই সাথে ম্যাশিনের জন্যও লিখা বা পড়া সহজ। এটা জাভাস্ক্রিপ্ট বেসড একটা ফরম্যাট (জাভাস্ক্রিপ্ট স্ট্যান্ডার্ড ECMA-262 তৃতীয় এডিশন - ডিসেম্বর ১৯৯৯)",
     "colorPref": "#49a34c",
-    "contents": [
-        {
+    "contents": [{
             "title": "ডাটা টাইপ",
-            "items": [
-                {
+            "items": [{
                     "definition": "নাম্বার",
                     "code": "var defineNumber = 1062.16"
                 },
@@ -40,8 +38,7 @@
         },
         {
             "title": "অবজেক্ট",
-            "items": [
-                {
+            "items": [{
                     "code": "var defineObject = {"
                 },
                 {
@@ -69,8 +66,7 @@
         },
         {
             "title": "অবজেক্ট প্রপার্টি",
-            "items": [
-                {
+            "items": [{
                     "definition": "title পাওয়ার জন্যে",
                     "code": "defineObject.title"
                 },
@@ -94,8 +90,7 @@
         },
         {
             "title": "অ্যারে",
-            "items": [
-                {
+            "items": [{
                     "code": "var defineArray = ["
                 },
                 {
@@ -123,8 +118,7 @@
         },
         {
             "title": "অ্যারে ইলিমেন্ট অ্যাক্সেস",
-            "items": [
-                {
+            "items": [{
                     "definition": "সরাসরি ইন্ডেক্স নাম্বার দিয়ে অ্যাক্সেস",
                     "code": "defineArray[0]"
                 },
@@ -140,8 +134,7 @@
         },
         {
             "title": "অ্যারে এর ভিতর অবজেক্ট",
-            "items": [
-                {
+            "items": [{
                     "code": "var defineArray = ["
                 },
                 {
