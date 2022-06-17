@@ -105,58 +105,50 @@
             ]
         },
         {
-            "title": "",
+            "title": "লাইন ম্যানেজ করা",
             "items": [{
-                    "definition": "",
-                    "code": ""
+                    "definition": "লাইন এ যাওয়া",
+                    "code": "⌘ + G"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "definition": "লাইন সিলেক্ট করা",
+                    "code": "⌘ + L"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "definition": "লাইন ডুপ্লিকেট করা",
+                    "code": "⌘ + Shift + D"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "definition": "লাইন ডিলিট করা",
+                    "code": "⌘ + Shift + K"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "definition": "লাইন উপরে মুভ করা",
+                    "code": "⌘ + Arrow Up"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "definition": "লাইন নিচে মুভ করা",
+                    "code": "⌘ + Arrow Down"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "definition": "কমেন্ট লাইন এ টগল করা",
+                    "code": "⌘ + /"
                 },
                 {
-                    "definition": "",
-                    "code": ""
-                }
-            ]
-        },
-        {
-            "title": "",
-            "items": [{
-                    "definition": "",
-                    "code": ""
+                    "definition": "নিচে নতুন লাইন করা",
+                    "code": "⌘ + Return"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "definition": "সিলেক্টেড লাইন ইনডেন্ট করা ",
+                    "code": "⌘ + ["
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "definition": "সিলেক্টেড লাইন আউটডেন্ট করা",
+                    "code": "⌘ + ]"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "definition": "লাইন জয়েন করা",
+                    "code": "⌘ + J"
                 }
             ]
         }

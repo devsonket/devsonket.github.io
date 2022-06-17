@@ -1,138 +1,132 @@
 {
-  "id": "curl",
-  "title": "কার্ল (CURL)",
-  "slug": "curl",
-  "description": "CURL হল একটি কম্পিউটার সফটওয়্যার প্রজেক্ট যা বিভিন্ন নেটওয়ার্ক প্রোটোকল ব্যবহার করে তথ্য স্থানান্তরের (এক স্থান থেকে অন্য স্থানে নেওয়া) জন্য একটি লাইব্রেরি এবং কমান্ড-লাইন টুল। curl এর অর্থ 'Client URL'",
-  "colorPref": "#07334e",
-  "contents": [
-    {
-      "title": "সাধারন অপারেশন",
-      "items": [
-        {
-          "definition": "কোন লিঙ্ককে GET মেথডে অনুরোধ পাঠাতে",
-          "code": "curl http://www.exmaple.com"
+    "id": "curl",
+    "title": "কার্ল (CURL)",
+    "slug": "curl",
+    "description": "CURL হল একটি কম্পিউটার সফটওয়্যার প্রজেক্ট যা বিভিন্ন নেটওয়ার্ক প্রোটোকল ব্যবহার করে তথ্য স্থানান্তরের (এক স্থান থেকে অন্য স্থানে নেওয়া) জন্য একটি লাইব্রেরি এবং কমান্ড-লাইন টুল। curl এর অর্থ 'Client URL'",
+    "colorPref": "#07334e",
+    "contents": [{
+            "title": "সাধারন অপারেশন",
+            "items": [{
+                    "definition": "কোন লিঙ্ককে GET মেথডে অনুরোধ পাঠাতে",
+                    "code": "curl http://www.exmaple.com"
+                },
+                {
+                    "definition": "কোন লিঙ্ককে POST মেথডে অনুরোধ পাঠাতে",
+                    "code": "curl -X POST http://www.example.com"
+                },
+                {
+                    "definition": "কোন লিঙ্ককে PUT মেথডে অনুরোধ পাঠাতে",
+                    "code": "curl -X PUT http://www.example.com"
+                },
+                {
+                    "definition": "কোন লিঙ্ককে DELETE মেথডে অনুরোধ পাঠাতে",
+                    "code": "curl -X DELETE http://www.example.com"
+                },
+                {
+                    "definition": "ইউজার এজেন্ট পৃথক ভাবে সেট করতে",
+                    "code": "curl -A 'Mozilla/5.0 [en] (X11; U; Linux 2.2.15 i686)' http://www.example.com"
+                },
+                {
+                    "definition": "রেকুএস্ট একবার সম্পন্ন হওয়ার সময় প্রদর্শন করতে",
+                    "code": "curl -w '%{time_total}\n' -o /dev/null -s http://www.example.com"
+                },
+                {
+                    "definition": "HTTP স্ট্যাটাস কোড প্রদর্শন করতে",
+                    "code": "curl -o /dev/null --silent -Iw \"%{http_code}\" http://www.example.com"
+                },
+                {
+                    "definition": "লোকাল ফাইলে HTTP রেস্পন্সে সেভ করতে",
+                    "code": "curl -o filepath.txt http://www.example.com"
+                }
+            ]
         },
         {
-          "definition": "কোন লিঙ্ককে POST মেথডে অনুরোধ পাঠাতে",
-          "code": "curl -X POST http://www.example.com"
+            "title": "ফাইল অপারেশন",
+            "items": [{
+                    "definition": "FTP ইউজারনেম ও পাসওয়ার্ড সেট করতে",
+                    "code": "curl -u name:passwd ftp://ip:port/path/file‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌\ncurl ftp://name:passwd@ip:port/path/file"
+                },
+                {
+                    "definition": "ফাইল আপলোড করতে",
+                    "code": "curl -T localfile -u name:passwd ftp://upload_site:port/path/\ncurl -T localfile http://cgi2.tky.3web.ne.jp/~zzh/abc.cgi"
+                },
+                {
+                    "definition": "ফাইল ডাউনলোড করতে",
+                    "code": "curl -o http://www.example.com/path/file.txt"
+                }
+            ]
         },
         {
-          "definition": "কোন লিঙ্ককে PUT মেথডে অনুরোধ পাঠাতে",
-          "code": "curl -X PUT http://www.example.com"
+            "title": "ডাটা অপারেশন",
+            "items": [{
+                    "definition": "GET মেথডে ডাটা বা কুয়েরি স্ট্রিং(QSA) আট্টাছ করতে",
+                    "code": "curl -G -d search=keyword -d status=active http://www.exmaple.com \n curl -G -d 'search=keyword&status=active' http://www.exmaple.com"
+                },
+                {
+                    "definition": "POST মেথডে ডাটা পাঠাতে করতে",
+                    "code": "curl -X POST -d name=keyword -d age=12 http://www.example.com"
+                },
+                {
+                    "definition": "POST মেথডে ডাটা পাঠাতে করতে হলে হেডার সহ",
+                    "code": "curl -X POST -d name=keyword -d age=12 -H 'Content-Type: application/x-www-form-urlencoded' http://www.example.com"
+                },
+                {
+                    "definition": "POST মেথডে JSON পাঠাতে করতে হলে",
+                    "code": "curl -X POST -d '{\"login\":\"my_login\",\"password\":\"my_password\"}' http://www.example.com"
+                },
+                {
+                    "definition": "POST মেথডে JSON পাঠাতে করতে হলে হেডার সহ",
+                    "code": "curl -X POST -d '{\"login\":\"my_login\",\"password\":\"my_password\"}' -H 'Content-Type: application/json' http://www.example.com"
+                },
+                {
+                    "definition": "POST মেথডে XML পাঠাতে করতে হলে হেডার সহ",
+                    "code": "curl -X POST -d '<Request><Login>my_login</Login><Password>my_password</Password></Request>' -H 'Content-Type: application/xml' http://www.example.com"
+                }
+            ]
         },
         {
-          "definition": "কোন লিঙ্ককে DELETE মেথডে অনুরোধ পাঠাতে",
-          "code": "curl -X DELETE http://www.example.com"
+            "title": "হেডার অপারেশন",
+            "items": [{
+                    "definition": "অনুরোধে কাস্টম হেডার যোগ করতে",
+                    "code": "curl -H '{key}: {value}' http://www.exmaple.com"
+                },
+                {
+                    "definition": "GET মেথডে রেসপন্স JSON ডাটা পেতে",
+                    "code": "curl -H 'Accept: application/json' http://www.exmaple.com"
+                },
+                {
+                    "definition": "POST মেথডে রেসপন্স JSON ডাটা পেতে",
+                    "code": "curl -X POST -H 'Accept: application/json' http://www.exmaple.com"
+                },
+                {
+                    "definition": "Basic Auth অনুমোদন হেডার যোগ করতে",
+                    "code": "curl -u myusername:mypassword http://www.exmaple.com"
+                },
+                {
+                    "definition": "Bearer Token Auth অনুমোদন হেডার যোগ করতে",
+                    "code": "curl -H 'Authorization: Bearer {token_string}' http://www.exmaple.com"
+                }
+            ]
         },
         {
-          "definition": "ইউজার এজেন্ট পৃথক ভাবে সেট করতে",
-          "code": "curl -A 'Mozilla/5.0 [en] (X11; U; Linux 2.2.15 i686)' http://www.example.com"
-        },
-        {
-          "definition": "রেকুএস্ট একবার সম্পন্ন হওয়ার সময় প্রদর্শন করতে",
-          "code": "curl -w '%{time_total}\n' -o /dev/null -s http://www.example.com"
-        },
-        {
-          "definition": "HTTP স্ট্যাটাস কোড প্রদর্শন করতে",
-          "code": "curl -o /dev/null --silent -Iw \"%{http_code}\" http://www.example.com"
-        },
-        {
-          "definition": "লোকাল ফাইলে HTTP রেস্পন্সে সেভ করতে",
-          "code": "curl -o filepath.txt http://www.example.com"
+            "title": "বিবিধ অপারেশন",
+            "items": [{
+                    "definition": "SSL/HTTPS সার্টিফিকেট ত্রুটি উপেক্ষা করতে",
+                    "code": "curl -k https://www.exmaple.com"
+                },
+                {
+                    "definition": "HTTP রিডাইরেক্ট ফলো করতে",
+                    "code": "curl -L http://www.exmaple.com"
+                },
+                {
+                    "definition": "রেকুএস্ত ওয়েটিং টাইম সেট করা(সেকেন্ড)",
+                    "code": "curl --connection-timeout 5 http://www.exmaple.com"
+                },
+                {
+                    "definition": "cURL ভার্সন চেক করতে",
+                    "code": "curl -V"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "title": "ফাইল অপারেশন",
-      "items": [
-        {
-          "definition": "FTP ইউজারনেম ও পাসওয়ার্ড সেট করতে",
-          "code": "curl -u name:passwd ftp://ip:port/path/file‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌\ncurl ftp://name:passwd@ip:port/path/file"
-        },
-        {
-          "definition": "ফাইল আপলোড করতে",
-          "code": "curl -T localfile -u name:passwd ftp://upload_site:port/path/\ncurl -T localfile http://cgi2.tky.3web.ne.jp/~zzh/abc.cgi"
-        },
-        {
-          "definition": "ফাইল ডাউনলোড করতে",
-          "code": "curl -o http://www.example.com/path/file.txt"
-        }
-      ]
-    },
-    {
-      "title": "ডাটা অপারেশন",
-      "items": [
-        {
-          "definition": "GET মেথডে ডাটা বা কুয়েরি স্ট্রিং(QSA) আট্টাছ করতে",
-          "code": "curl -G -d search=keyword -d status=active http://www.exmaple.com \n curl -G -d 'search=keyword&status=active' http://www.exmaple.com"
-        },
-        {
-          "definition": "POST মেথডে ডাটা পাঠাতে করতে",
-          "code": "curl -X POST -d name=keyword -d age=12 http://www.example.com"
-        },
-        {
-          "definition": "POST মেথডে ডাটা পাঠাতে করতে হলে হেডার সহ",
-          "code": "curl -X POST -d name=keyword -d age=12 -H 'Content-Type: application/x-www-form-urlencoded' http://www.example.com"
-        },
-        {
-          "definition": "POST মেথডে JSON পাঠাতে করতে হলে",
-          "code": "curl -X POST -d '{\"login\":\"my_login\",\"password\":\"my_password\"}' http://www.example.com"
-        },
-        {
-          "definition": "POST মেথডে JSON পাঠাতে করতে হলে হেডার সহ",
-          "code": "curl -X POST -d '{\"login\":\"my_login\",\"password\":\"my_password\"}' -H 'Content-Type: application/json' http://www.example.com"
-        },
-        {
-          "definition": "POST মেথডে XML পাঠাতে করতে হলে হেডার সহ",
-          "code": "curl -X POST -d '<Request><Login>my_login</Login><Password>my_password</Password></Request>' -H 'Content-Type: application/xml' http://www.example.com"
-        }
-      ]
-    },
-    {
-      "title": "হেডার অপারেশন",
-      "items": [
-        {
-          "definition": "অনুরোধে কাস্টম হেডার যোগ করতে",
-          "code": "curl -H '{key}: {value}' http://www.exmaple.com"
-        },
-        {
-          "definition": "GET মেথডে রেসপন্স JSON ডাটা পেতে",
-          "code": "curl -H 'Accept: application/json' http://www.exmaple.com"
-        },
-        {
-          "definition": "POST মেথডে রেসপন্স JSON ডাটা পেতে",
-          "code": "curl -X POST -H 'Accept: application/json' http://www.exmaple.com"
-        },
-        {
-          "definition": "Basic Auth অনুমোদন হেডার যোগ করতে",
-          "code": "curl -u myusername:mypassword http://www.exmaple.com"
-        },
-        {
-          "definition": "Bearer Token Auth অনুমোদন হেডার যোগ করতে",
-          "code": "curl -H 'Authorization: Bearer {token_string}' http://www.exmaple.com"
-        }
-      ]
-    },
-    {
-      "title": "বিবিধ অপারেশন",
-      "items": [
-        {
-          "definition": "SSL/HTTPS সার্টিফিকেট ত্রুটি উপেক্ষা করতে",
-          "code": "curl -k https://www.exmaple.com"
-        },
-        {
-          "definition": "HTTP রিডাইরেক্ট ফলো করতে",
-          "code": "curl -L http://www.exmaple.com"
-        },
-        {
-          "definition": "রেকুএস্ত ওয়েটিং টাইম সেট করা(সেকেন্ড)",
-          "code": "curl --connection-timeout 5 http://www.exmaple.com"
-        },
-        {
-          "definition": "cURL ভার্সন চেক করতে",
-          "code": "curl -V"
-        }
-      ]
-    }
-  ]
+    ]
 }

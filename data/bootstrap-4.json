@@ -181,7 +181,7 @@
                 {
                     "definition": "বৃত্ত আকার",
                     "code": "<img class='rounded-circle'>"
-                },                      
+                },
                 {
                     "definition": "বড়ি আকার",
                     "code": "<img class='rounded-pill'>"

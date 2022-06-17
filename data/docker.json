@@ -4,11 +4,9 @@
     "slug": "docker-cheat-sheet",
     "description": "ডকার চিটশিট",
     "colorPref": "#000",
-    "contents": [
-        {
+    "contents": [{
             "title": "ডকার ভারশন",
-            "items": [
-                {
+            "items": [{
                     "definition": "ডকার ভারশন",
                     "code": "docker --version"
                 },
@@ -40,8 +38,7 @@
         },
         {
             "title": "ডকার কন্টেইনার কমান্ডসমূহ",
-            "items": [
-                {
+            "items": [{
                     "definition": "List of all ডকার কন্টেইনার, even not running",
                     "code": "docker container ls -a"
                 },
@@ -89,8 +86,7 @@
         },
         {
             "title": "ডকার ইমেজ কমান্ডসমূহ",
-            "items": [
-                {
+            "items": [{
                     "definition": "List of all ডকার ইমেজ",
                     "code": "docker images"
                 },
@@ -110,8 +106,7 @@
         },
         {
             "title": "ডকার ইমেজ and কন্টেইনার run কমান্ডসমূহ",
-            "items": [
-                {
+            "items": [{
                     "definition": "ডকারফাইল run",
                     "code": "docker run -p 3000:3000 image"
                 },
@@ -127,8 +122,7 @@
         },
         {
             "title": "ডকার কম্পোজ কমান্ডসমূহ",
-            "items": [
-                {
+            "items": [{
                     "definition": "ডকার কম্পোজ up",
                     "code": "docker-compose up -d -f docker-compose.yml"
                 },
@@ -164,8 +158,7 @@
         },
         {
             "title": "ডকার সিস্টেম কমান্ডসমূহ",
-            "items": [
-                {
+            "items": [{
                     "definition": "ডকার ডিস্ক ইউসেজ জানতে",
                     "code": "docker system df"
                 },
@@ -193,12 +186,10 @@
         },
         {
             "title": "ডকার credentials কমান্ডসমূহ",
-            "items": [
-                {
-                    "definition": "ডকার login",
-                    "code": "docker login"
-                }
-            ]
+            "items": [{
+                "definition": "ডকার login",
+                "code": "docker login"
+            }]
         }
     ]
 }

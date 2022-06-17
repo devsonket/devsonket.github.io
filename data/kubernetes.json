@@ -4,11 +4,9 @@
     "slug": "kubernetes-cheat-sheet",
     "description": "কুবারনেট চিটশিট",
     "colorPref": "#000",
-    "contents": [
-        {
+    "contents": [{
             "title": "কুবারনেট রিসউরস দেখা ও খোঁজা",
-            "items": [
-                {
+            "items": [{
                     "definition": "সার্ভিস লিস্ট",
                     "code": "kubectl get services"
                 },
@@ -36,8 +34,7 @@
         },
         {
             "title": "কুবারনেট রসদ পরিবর্তন",
-            "items": [
-                {
+            "items": [{
                     "definition": "পোড লেবেলিং",
                     "code": "kubectl label pods my-pod new-label=awesome"
                 },
@@ -61,8 +58,7 @@
         },
         {
             "title": "কুবারনেট রসদ পরিবর্তন",
-            "items": [
-                {
+            "items": [{
                     "definition": "পোড লেবেলিং",
                     "code": "kubectl label pods my-pod new-label=awesome"
                 },
@@ -90,8 +86,7 @@
         },
         {
             "title": "কুবারনেট রসদ বাড়ানো",
-            "items": [
-                {
+            "items": [{
                     "definition": "অটো ডেপলয় বাড়ানো",
                     "code": "kubectl autoscale deployment foo --min=2 --max=10"
                 },
@@ -115,8 +110,7 @@
         },
         {
             "title": "কুবারনেট লগ দেখা ও কমান্ড দেওয়া",
-            "items": [
-                {
+            "items": [{
                     "definition": "একটি পডের লগ",
                     "code": "kubectl logs my-pod"
                 },
@@ -132,8 +126,7 @@
         },
         {
             "title": "কুবারনেট পোর্ট",
-            "items": [
-                {
+            "items": [{
                     "definition": "পডের সাথে বাইন্ড \\( ভিতর ৬০০০ বাইরে ৫০০০\\)",
                     "code": "kubectl port-forward my-pod 5000:6000"
                 },
