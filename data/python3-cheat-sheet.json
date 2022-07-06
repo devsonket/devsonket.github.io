@@ -29,6 +29,18 @@
             ]
         },
         {
+            "title": "এরর এবং এক্সেপশন হ্যান্ডলিং (Errors and Exceptions)",
+            "items": [{
+                "definition": "কোন এরর রাইজ করলে কিভাবে তা এক্সেপ্ট করতে হয় এবং ফাইনালি কি দেখাতে হয়:",
+                "code": "try:
+                            result = x/y
+                         except ZeroDivisionError:
+                            print ("division by zero!")
+                         finally:
+                            print("executing finally clause")"
+            }]
+        },
+        {
             "title": "টাইপ যাচাই (Type Verification)",
             "items": [{
                 "definition": "যে কোনো ভ্যারিয়েবলের টাইপ যাচাই",
