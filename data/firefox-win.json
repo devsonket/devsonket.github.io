@@ -257,6 +257,86 @@
             ]
         },
         {
+            "title": "পিডিএফ শর্টকাট",
+            "items": [{
+                    "definition": "পরবর্তী পৃষ্ঠা",
+                    "code": "N or J or →"
+                },
+                {
+                    "definition": "আগের পৃষ্ঠা",
+                    "code": "P or K or ←"
+                },
+                {
+                    "definition": "জুম ইন করা",
+                    "code": "Ctrl + +"
+                },
+                {
+                    "definition": "জুম আউট করা",
+                    "code": "Ctrl + -"
+                },
+                {
+                    "definition": "পৃষ্ঠাটি ঘড়ির কাঁটার দিকে ঘোরানো",
+                    "code": "R"
+                },
+                {
+                    "definition": "পৃষ্ঠাটি ঘড়ির কাঁটার বিপরীতে ঘোরানো",
+                    "code": "Shift + R"
+                },
+                {
+                    "definition": "প্রেজেন্টেশন মোডে সুইচ করা",
+                    "code": "Ctrl + Alt + P"
+                }
+            ]
+        },
+        {
+            "title": "মিডিয়া শর্টকাট",
+            "items": [{
+                    "definition": "চালু আর স্থির করা",
+                    "code": "Space bar"
+                },
+                {
+                    "definition": "ভলিউম কমানো",
+                    "code": "↓"
+                },
+                {
+                    "definition": "ভলিউম বাড়ানো",
+                    "code": "↑"
+                },
+                {
+                    "definition": "অডিও বন্ধ করা",
+                    "code": "Ctrl + ↓"
+                },
+                {
+                    "definition": "অডিও চালু করা",
+                    "code": "Ctrl + ↑"
+                },
+                {
+                    "definition": "১৫ সেকেন্ড পিছিয়ে নেওয়া",
+                    "code": "←"
+                },
+                {
+                    "definition": "১৫ সেকেন্ড সামনে  নেওয়া",
+                    "code": "→"
+                },
+                {
+                    "definition": "১০% পেছনে নেওয়া",
+                    "code": "Ctrl + ←"
+                },
+                {
+                    "definition": "১০% সামনে  নেওয়া",
+                    "code": "Ctrl + →"
+                },
+                {
+                    "definition": "শুরুতে যাওয়া",
+                    "code": "Home"
+                },
+                {
+                    "definition": "শেষে যাওয়া",
+                    "code": "End"
+                }
+            ]
+        },
+        {
             "title": "ফায়ারফক্স এড-অন্স বা এক্সটেনশন",
             "items": [{
                     "definition": "ইংলিশ ওয়ার্ডের ভুল সংশোধনের জন্য",
