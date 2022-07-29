@@ -47,6 +47,10 @@
                     "code": "docker container ps -a"
                 },
                 {
+                    "definition": "সকল রানিং ডকার কন্টেইনার",
+                    "code": "docker container ls"
+                },
+                {
                     "definition": "List of all ডকার কন্টেইনার",
                     "code": "docker container list -a"
                 },
