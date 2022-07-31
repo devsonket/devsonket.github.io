@@ -1,7 +1,7 @@
 {
   "id": "firebase",
   "title": "ফায়ারবেস",
-  "slug": "mix",
+  "slug": "firebase",
   "description": "সব ফরম্যাট একসাথে মিক্স করেও দিতে পারবেন",
   "colorPref": "#000",
   "contents": [
