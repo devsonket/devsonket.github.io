@@ -15,31 +15,11 @@
         {
           "definition": "",
           "code": "FB.authAnonymously(···)\nFB.authWithPassword(···)\nFB.authWithOAuthPopup(···)\nFB.authWithOAuthToken(···)\n"
-        },
-        {
-          "definition": "বর্ণনা",
-          "code": "কোড"
-        },
-        {
-          "definition": "বর্ণনা",
-          "code": "কোড"
-        },
-        {
-          "definition": "বর্ণনা",
-          "code": "কোড"
-        },
-        {
-          "definition": "বর্ণনা",
-          "code": "কোড"
-        },
-        {
-          "definition": "বর্ণনা",
-          "code": "কোড"
         }
       ]
     },
     {
-      "title": "টাইটেল",
+      "title": "জিজ্ঞাসাবাদ (Querying)",
       "items": [
         {
           "code": "কোড"
