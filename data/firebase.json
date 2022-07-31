@@ -6,15 +6,15 @@
   "colorPref": "#745fb5",
   "contents": [
     {
-      "title": "প্রমাণীকরণ করা হচ্ছে",
+      "title": "প্রমাণীকরণ করা হচ্ছে (Authenticating)",
       "items": [
         {
-          "definition": "বর্ণনা",
-          "code": "কোড"
+          "definition": "",
+          "code": "FB = new Firebase('https://xxx.firebase.io')\nFB.auth(TOKEN, (err, result) => { ···})\n"
         },
         {
-          "definition": "বর্ণনা",
-          "code": "কোড"
+          "definition": "",
+          "code": "FB.authAnonymously(···)\nFB.authWithPassword(···)\nFB.authWithOAuthPopup(···)\nFB.authWithOAuthToken(···)\n"
         },
         {
           "definition": "বর্ণনা",
