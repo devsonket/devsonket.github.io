@@ -37,6 +37,35 @@
             ]
         },
         {
+            "title": "(venv) ভার্চুয়াল এনভায়রনমেন্ট ইনিশিয়ালাইজেশন",
+            "items": [{
+                    "definition": "প্রোজেক্ট ডিরেক্টরী তৈরী করা",
+                    "code": "mkdir <directory_name>"
+                },
+                {
+                    "definition": "প্রোজেক্ট ডিরেক্টরীতে নেভিগেইট করা",
+                    "code": "cd <directory_name>"
+                },
+                {
+                    "definition": "গ্লোবালি virtualenv install করা",
+                    "code": "py -m pip install --user virtualenv"
+                    
+                },
+                {
+                    "definition": "venv ইনিশিয়ালাইজ করা",
+                    "code": "py -m venv env"
+                },
+                {
+                    "definition": "virtualenv Activeate করা",
+                    "code": "./env/Scripts/activate"
+                },
+                {
+                    "definition": "virtualenv deactivate করা",
+                    "code": "deactivate"
+                }
+            ]
+        },
+        {
             "title": "pip কমান্ডস",
             "items": [{
                     "definition": "pip ভার্সন দেখা",
@@ -49,6 +78,10 @@
                 {
                     "definition": "django ইন্সটল করা",
                     "code": "pip install django"
+                },
+                {
+                    "definition": "নির্দিষ্ট django ভার্সন ইন্সটল করা",
+                    "code": "pip install Django==<needed_version>"
                 },
                 {
                     "definition": "যেকোনো প্যাকেজ ডিপেন্ডেন্সী ইন্সটল করা",
@@ -85,6 +118,10 @@
                 {
                     "definition": "ডেভেলপমেন্ট সার্ভার চালু করা",
                     "code": "python manage.py runserver"
+                },
+                {
+                    "definition": "নির্দিষ্ট Port এ ডেভেলপমেন্ট সার্ভার চালু করা",
+                    "code": "python manage.py runserver <port_number>"
                 },
                 {
                     "definition": "জ্যাঙ্গো প্রোজেক্ট পরীক্ষা করে",
