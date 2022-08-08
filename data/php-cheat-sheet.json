@@ -241,6 +241,74 @@
                 {
                     "definition": "একটি স্ট্রিং কে আ্যরেতে রুপান্তর করতে",
                     "code": "explode ( string $separator , array $array )"
+                },
+                {
+                    "definition": "অ্যারের সকল ভ্যালু দেখতে",
+                    "code": "array_values()"
+                },
+                {
+                    "definition": "কী গুলির জন্য একটি এবং এর ভ্যালু গুলির জন্য অন্য একটি অ্যারে ব্যবহার করে একটি অ্যারে তৈরি করতে",
+                    "code": "array_combine()"
+                },
+                {
+                    "definition": "ডিসেন্ডিং অর্ডার অ্যারে সাজাতে এবং ইনডেক্স গুলি একত্রে মেইনটেন করতে",
+                    "code": "arsort()"
+                },
+                {
+                    "definition": "অ্যারের উপাদান গণনা করতে",
+                    "code": "count()"
+                },
+                {
+                    "definition": "একটি অ্যারের সমস্ত ভ্যালু গণনা করতে",
+                    "code": "array_count_values()"
+                },
+                {
+                    "definition": "অ্যারের পার্থক্য গণনা করতে",
+                    "code": "array_diff()"
+                },
+                {
+                    "definition": "একটি অ্যারের ভ্যালুকে কি এবং কী কে ভ্যালু তে রূপান্তর করতে",
+                    "code": "array_flip()"
+                },
+                {
+                    "definition": "অ্যারের মধ্যে থেকে কমন ভ্যালু গুলোকে বের করতে",
+                    "code": "array_intersect()"
+                },
+                {
+                    "definition": "অ্যারে লিস্ট কি না চেক করতে",
+                    "code": "array_is_list()"
+                },
+                {
+                    "definition": "অ্যারের প্রথম কী সন্ধান করতে ",
+                    "code": "array_key_first()"
+                },
+                {
+                    "definition": "অ্যারের শেষ কী সন্ধান করতে ",
+                    "code": "array_key_last()"
+                },
+                {
+                    "definition": "একাধিক অ্যারে বা মাল্টি ডায়মেনসোনাল অ্যারে শর্ট করতে",
+                    "code": "array_multisort()"
+                },
+                {
+                    "definition": "অ্যারের শেষ উপাদান অ্যারে থেকে বের করে আনতে ",
+                    "code": "array_pop()"
+                },
+                {
+                    "definition": "অ্যারের প্রথম উপাদান অ্যারে থেকে বের করে আনতে ",
+                    "code": "array_shift()"
+                },
+                {
+                    "definition": "অ্যারের কী ধরে ভ্যালু পৰিৱৰ্তন করতে",
+                    "code": "array_replace()"
+                },
+                {
+                    "definition": "অ্যারের ভ্যালু গুলোর যোগফল নির্ণয় করতে",
+                    "code": "array_sum()"
+                },
+                {
+                    "definition": "অ্যারেতে কোন নির্দিষ্ট ভ্যালু আছে কি না চেক করতে",
+                    "code": "in_array()"
                 }
             ]
         },
