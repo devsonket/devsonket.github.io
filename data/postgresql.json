@@ -4,11 +4,9 @@
     "slug": "postgresql",
     "description": "পোস্টগ্রেস / পোস্টজিআরই এসকিউএল একটি এডভান্সড ওপেন সোর্স রিলেশনাল ডেটাবেজ",
     "colorPref": "#6cc24a",
-    "contents": [
-        {
+    "contents": [{
             "title": "ব্যাসিক কমান্ডস",
-            "items": [
-                {
+            "items": [{
                     "definition": "লিনাক্সে ইনস্টল",
                     "code": "sudo apt-get install postgresql postgresql-contrib"
                 },
@@ -56,8 +54,7 @@
         },
         {
             "title": "জেনারেল কমান্ডস",
-            "items": [
-                {
+            "items": [{
                     "definition": "ডেটাবেজ ক্রিয়েট করা",
                     "code": "CREATE DATABASE yourdbname"
                 },
@@ -105,8 +102,7 @@
         },
         {
             "title": "ডেটাবেজ কুয়েরি",
-            "items": [
-                {
+            "items": [{
                     "definition": "একটা টেবিলের সব ডেটা দেখা",
                     "code": "SELECT * FROM table_name"
                 },
@@ -178,8 +174,7 @@
         },
         {
             "title": "গাণিতিক অপারেশন",
-            "items": [
-                {
+            "items": [{
                     "definition": "কলামের সর্বনিম্ন মান বের করা",
                     "code": "SELECT MIN(column name) FROM table;"
                 },
@@ -207,8 +202,7 @@
         },
         {
             "title": "টেবিল জয়েন",
-            "items": [
-                {
+            "items": [{
                     "definition": "ক্রস জয়েন(ডান টেবিলের প্রতি রো এর জন্য বাম টেবিলের সকল রো এর কম্বিনেশন)",
                     "code": "SELECT (column) FROM left_table CROSS JOIN right_table;"
                 },
@@ -232,8 +226,7 @@
         },
         {
             "title": "ডেটাবেজ ব্যাকআপ",
-            "items": [
-                {
+            "items": [{
                     "definition": "এক্সিস্টিং ডেটাবেজ এর কপি/ডাম্প ক্রিয়েট করা",
                     "code": "pg_dump -h localhost -U postgres --no-acl --no-owner existingdb > newgenerateddb.sql"
                 },
