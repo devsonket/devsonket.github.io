@@ -2,8 +2,8 @@
 	"id": "oracledb",
 	"title": "ওরাকল ডিবি",
 	"slug": "oracle-db",
-	"description": "Oracle DB একটি রিলেশনাল ডাটাবেজ ম্যানেজমেন্ট সিস্টেম।",
-	"colorPref": "#ff0000",
+	"description": "Oracle DB একটি রিলেশনাল ডাটাবেজ ম্যানেজমেন্ট সিস্টেম। [Stack Overflow](https://survey.stackoverflow.co/2022/#databases) এর তথ্য মতে ২০২২ সালে অন্যতম ব্যবহার করা DBMS গুলোর মধ্যে অবস্থান করছে Oracle DB",
+	"colorPref": "#C74634",
 	"contents": [
 		{
 			"title": "Oracle DB ইন্সটল করতে",
