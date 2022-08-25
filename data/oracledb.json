@@ -47,10 +47,6 @@
 			"title": "ওরাকল ডিবির প্রাথমিক কমান্ড সমুহ",
 			"items": [
 				{
-					"definition": "ডাটাবেজ স্কিমা তৈরি করাতে",
-					"code": ";"
-				},
-				{
 					"definition": "বর্তমানে কি কি টেবিল এবং ভিউ আছে তা দেখতে",
 					"code": "SELECT * FROM TABS;"
 				},
@@ -63,12 +59,121 @@
 					"code": "CREATE TABLE tableName IF NOT EXISTS(col1 DataType, col2 DataType,..., coln DataType);"
 				},
 				{
-					"definition": "কোন টেবিল ডাটা ইনসার্ট করতে",
+					"definition": "কোন টেবিলে ডাটা ইনসার্ট করতে",
 					"code": "INSERT INTO tableName(col1 DataType, col2 DataType,..., coln DataType) VALUES(col1_Value, col2_Value,... coln_Value);"
 				},
 				{
 					"definition": "কোন টেবিল ডিলেট করতে",
 					"code": "DROP TABLE tableName IF EXIST;"
+				}
+			]
+		},
+		{
+			"title": "ডাটা টাইপ",
+			"items": [
+				{
+					"definition": "ক্যারেক্টার টাইপ `CHAR`",
+					"code": "CHAR"
+				},
+				{
+					"definition": "ভেরিয়েবল লেংথ ক্যারেক্টার `VARCHAR2`",
+					"code": "VARCHAR2"
+				},
+				{
+					"definition": "ইউনিকোড ক্যারেক্টার NCHAR",
+					"code": "NCHAR"
+				},
+				{
+					"definition": "ভেরিয়েবল লেংথ ইউনিকোড ক্যারেক্টার NVARCHAR2",
+					"code": "NVARCHAR2"
+				},
+				{
+					"definition": "NUMBER",
+					"code": "NUMBER"
+				},
+				{
+					"definition": "FLOAT",
+					"code": "FLOAT"
+				},
+				{
+					"definition": "ক্যারেক্টার ডাটা আপটু ২ গিগাবাইট এর জন্য `LONG`",
+					"code": "LONG"
+				},
+				{
+					"definition": "DATE",
+					"code": "DATE"
+				},
+				{
+					"definition": "TIMESTAMP",
+					"code": "TIMESTAMP"
+				},
+				{
+					"definition": "বড় বাইনারি অবজেক্ট BLOB",
+					"code": "BLOB"
+				},
+				{
+					"definition": "বড় ক্যারেক্টার অবজেক্ট CLOB",
+					"code": "CLOB"
+				},
+				{
+					"definition": "বড় ইউনিকোড ক্যারেক্টার অবজেক্ট NCHAR",
+					"code": "NCLOB"
+				},
+				{
+					"definition": "ডাটাবেজের বাইরের কোন বড় ফাইল লোকেটর BFILE",
+					"code": "BFILE"
+				},
+				{
+					"definition": "কোন রো এর ইউনিক অ্যাড্রেস ROWID",
+					"code": "ROWID"
+				}
+			]
+		},
+		{
+			"title": "গ্রুপিং ফাংশন",
+			"items": [
+				{
+					"code": ""
+				}
+			]
+		},
+		{
+			"title": "গাণিতিক ফাংশন",
+			"items": [
+				{
+					"code": ""
+				}
+			]
+		},
+		{
+			"title": "স্ট্রিং ফাংশন",
+			"items": [
+				{
+					"code": "ASCII"
+				}
+			]
+		},
+		{
+			"title": "সময়ের ফাংশন",
+			"items": [
+				{
+					"code": ""
+				}
+			]
+		},
+		{
+			"title": "কন্ট্রোল ফ্লো ফাংশন",
+			"items": [
+				{
+					"code": ""
+				}
+			]
+		},
+		{
+			"title": "অন্যান্য ফাংশন",
+			"items": [
+				{
+					"code": ""
 				}
 			]
 		}
