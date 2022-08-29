@@ -138,17 +138,21 @@
             ]
         },
         {
-            "title": "অ্যাপ",
+            "title": "অ্যাপ তৈরি",
             "items": [{
                     "definition": "অ্যাপ তৈরী করা",
                     "code": "django-admin startapp <app_name>"
+                },
+                 {
+                    "definition": "প্রোজেক্ট এর settings.py ফাইলে অ্যাাপ ইনস্টল করার জন্য",
+                    "code": "INSTALLED_APPS = ['app_name',]"
                 },
                 {
                     "definition": "সব অ্যাপ মাইগ্রেশনের জন্য",
                     "code": "python manage.py makemigrations"
                 },
                 {
-                    "definition": "অ্যাপ মাইগ্রেশনের জন্য",
+                    "definition": "নির্দিষ্ট করে অ্যাপ মাইগ্রেশনের জন্য",
                     "code": "python manage.py makemigrations <app_name>"
                 },
                 {
