@@ -359,6 +359,18 @@
                     "code": "$(selector).not();"
                 }
             ]
+        },
+        {
+            "title": "জেকুয়েরি - এজ্যাক্স",
+            "items": [{
+                    "definition": "সার্ভারে HTTP GET রিকুয়েস্ট পাঠিয়ে কাঙ্ক্ষিত ডেটা পেতে",
+                    "code": "$.get('URL/file_name.ext', function(data, status){})"
+                },
+                {
+                    "definition": "সার্ভারে HTTP POST রিকুয়েস্ট এ কিছু ডাটা পাঠিয়ে এক্সিকিউটেড ডেটা পেতে",
+                    "code": "$.post('URL/file_name.ext', data, function(data, status){})"
+                }
+            ]
         }
     ]
 }
