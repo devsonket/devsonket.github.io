@@ -180,7 +180,7 @@
                 },
                 {
                     "definition": "এলিমেন্টের মার্কআপ সহ কন্টেন্ট সেট করতে",
-                    "code": "$(selector).html('hello world');"
+                    "code": "$(selector).html('<h3>hello world</h3>');"
                 },
                 {
                     "definition": "ফর্ম এলিমেন্টের ভ্যালু সেট করতে",
