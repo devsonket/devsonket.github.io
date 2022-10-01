@@ -1,0 +1,32 @@
+{
+    "id": "python-nltk",
+    "title": "পাইথনের NLTK মডিউল",
+    "slug": "nltk",
+    "description": "NLTK হলো একটি পাইথন মডিউল যা দ্বারা পাইথন প্রোগ্রামিং ভাষায় ন্যাচালার ল্যাঙ্গুয়েজ প্রসেসিংয়ের কাজ করা হয়।"",
+    "colorPref": "#E6515E",
+    "contents": [{
+            "title": "সেট-আপ",
+            "items": [{
+                    "definition": "মডিউল ইনস্টল করা",
+                    "code": "pip install nltk"
+                },
+                {
+                    "definition": "মডিউল ইমপোর্ট করা",
+                    "code": "import nltk"
+                }
+            ]
+        },
+        {
+            "title": "টোকেনাইজেশন",
+            "items": [{
+                    "definition": "শব্দ টোকেনাইজেশন",
+                    "code": ""
+                },
+                {
+                    "definition": "বাক্য টোকেনাইজেশন",
+                    "code": ""
+                }
+            ]
+        }
+    ]
+}
