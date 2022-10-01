@@ -9,6 +9,17 @@
             "items": [{
                     "definition": "প্রোজেক্ট স্টার্ট করার জন্য",
                     "code": "php artisan serve"
+                }, {
+                    "definition": "প্রোজেক্টের সকল ক্যাশ ক্লিলিয়ার/রিমুভ করার জন্য",
+                    "code": "php artisan optimize:clear"
+                },
+                {
+                    "definition": "প্রোজেক্টের সকল রাউট লিস্ট দেখার জন্য",
+                    "code": "php artisan route:list"
+                },
+                {
+                    "definition": "প্রোজেক্টের মেথড অনুযায়ী রাউট লিস্ট দেখার জন্য",
+                    "code": "php artisan route:list --method={method type [get,post,put,delete,patch etc]}"
                 },
                 {
                     "definition": "রাউট কে ক্যাশে নেয়া",
