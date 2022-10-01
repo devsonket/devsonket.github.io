@@ -2,7 +2,7 @@
     "id": "Jekyll",
     "title": "জ্যাকিল চিটশিট",
     "slug": "Jekyll",
-    "description": "জ্যাকিল হচ্ছে একটি স্ট্যাটিক সাইট জেনারেটর। জ্যাকিল দিয়ে আপনি খুব সহজেই একটি স্ট্যাটিক সাইট বানিয়ে ফেলতে পারেন Markdown, Plain Text দিয়ে",
+    "description": "জ্যাকিল হচ্ছে একটি স্ট্যাটিক সাইট জেনারেটর। জ্যাকিল দিয়ে আপনি খুব সহজেই একটি স্ট্যাটিক সাইট বানিয়ে ফেলতে পারেন Markdown, Plain Text দিয়ে।",
     "colorPref": "#252426",
     "contents": [{
             "title": "উবুন্টু তে Jekyll ও Jekyll Dependencies সেটআপ করা",
@@ -26,7 +26,7 @@
             ]
         },
         {
-            "title": "প্রাথমিক কমান্ড সমূহঃ",
+            "title": "প্রাথমিক কমান্ড সমূহ:",
             "items": [{
                     "definition": "একটি নতুন Jekyll সাইট তৈরি করা",
                     "code": "jekyll new mysite"
@@ -52,7 +52,7 @@
                     "code": "jekyll clean"
                 },
                 {
-                    "definition": "Jekyll এর ভার্শন চেক করা",
+                    "definition": "Jekyll এর ভার্সন দেখা",
                     "code": "jekyll -version, jekyll -v"
                 },
                 {
@@ -66,7 +66,7 @@
             ]
         },
         {
-            "title": "Jekyll রিলেটেড সাব-কমান্ড সমুহ",
+            "title": "Jekyll রিলেটেড সাব-কমান্ড সমূহ:",
             "items": [{
                     "definition": "নির্দিষ্ট Path ও Default Theme এ একটি নতুন Jekyll সাইট তৈরি করা",
                     "code": "jekyll new PATH"
