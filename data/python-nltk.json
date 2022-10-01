@@ -20,11 +20,11 @@
             "title": "টোকেনাইজেশন",
             "items": [{
                     "definition": "শব্দ টোকেনাইজেশন",
-                    "code": ""
+                    "code": "nltk.word_tokenize(text)"
                 },
                 {
                     "definition": "বাক্য টোকেনাইজেশন",
-                    "code": ""
+                    "code": "nltk.sent_tokenize(text)"
                 }
             ]
         }
