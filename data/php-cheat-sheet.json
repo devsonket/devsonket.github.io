@@ -451,6 +451,16 @@
                     "code": "echo filetype($file_name);"
                 }
             ]
+        },
+        {
+            "title": "অবজেক্ট এর খুটিনাটি",
+            "items": [{
+                "definition": "ইমটি অবজেক্ট এর ভ্যালু দেখার জন্য < php 8.0",
+                "code": "echo optional($obj)->devsonket;"
+            }, {
+                "definition": "ইমটি অবজেক্ট এর ভ্যালু দেখার জন্য > php 8.0",
+                "code": "echo $obj?->devsonket;"
+            }]
         }
     ]
 }
