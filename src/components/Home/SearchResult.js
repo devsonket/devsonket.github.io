@@ -206,9 +206,11 @@ const SearchResult = () => {
               }
               return input.length
                 ? data.map(edge => {
-                    const { id, title, description } = require(`../../../data/${
-                      edge.node.name
-                    }.json`)
+                    const {
+                      id,
+                      title,
+                      description,
+                    } = require(`../../../data/${edge.node.name}.json`)
                     return (
                       <li key={id}>
                         <Link to={`/${id}`}>
