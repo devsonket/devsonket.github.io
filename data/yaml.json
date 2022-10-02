@@ -1,0 +1,40 @@
+{
+  "id": "yaml",
+  "title": "ওয়াই এ এম এল",
+  "slug": "yaml",
+  "description": "YAML/ওয়াই এ এম এল (/ˈjæməl/ এবং YAH-ml) (দেখুন § ইতিহাস এবং নাম) একটি মানব-পাঠযোগ্য ডেটা-ক্রমিক ভাষা।",
+  "colorPref": "#745fb5",
+  "contents": [
+    {
+      "title": "মাল্টিলাইন স্ট্রিং (Multiline strings)",
+      "items": [
+        {
+          "code": "\n\nMultiline: |\n  hello\n  world\n\n"
+        }
+      ]
+    },
+    {
+      "title": "রেফারেন্স বিষয়বস্তু (Reference content)",
+      "items": [
+        {
+          "code": "values: &ref",
+          "definition": "- এই মানগুলি\n- নীচে পুনরায় ব্যবহার করা হবে"
+        },
+        {
+          "code": "other_values:\n  <<: *ref"
+        }
+      ]
+    },
+    {
+      "title": "উত্তরাধিকার (Inheritance)",
+      "items": [
+        {
+          "code": "parent: &defaults\n  a: 2\n  b: 3"
+        },
+        {
+          "code": "child:\n  <<: *defaults\n  b: 4"
+        }
+      ]
+    }
+  ]
+}
