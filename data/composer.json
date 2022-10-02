@@ -80,12 +80,11 @@
       "title": "প্যাকেজগুলি সরানো হচ্ছে (Removing packages)",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "definition": "composer.json থেকে বিক্রেতা/প্যাকেজ সরিয়ে দেয় এবং আনইনস্টল করে",
+          "code": "composer remove vendor/package"
         },
         {
-          "definition": "",
-          "code": ""
+          "definition": "এই কমান্ডটি composer.json এবং composer.lock ফাইল উভয়ই পরিবর্তন করে।"
         }
       ]
     },
