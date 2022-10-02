@@ -6,7 +6,7 @@
     "colorPref": "#745fb5",
     "contents": [
         {
-            "title": "",
+            "title": "Node.js",
             "items": [
                 {
                     "definition": "",
@@ -17,6 +17,123 @@
                     "code": ""
                 }
             ]
-        }
+        },
+        {
+            "title": "Ruby",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "জীবনচক্র তৈরি করুন (Build lifecycle)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "শাখাগুলি (Branches)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "পরিবেশের ভার্স (Environment vars)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "কাস্টম পরীক্ষা কমান্ড (Custom test command)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "Apt প্যাকেজ (Apt packages)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "শাখাগুলি (Branches)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "ই টি সি (Etc)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "তথ্যসূত্র (References)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
     ]
 }
