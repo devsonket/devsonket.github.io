@@ -93,14 +93,10 @@
       "title": "যাচাই করা হচ্ছে (Verifying)",
       "items": [
         {
-          "definition": "",
-          "code": ""
-        },
-        {
-          "definition": "",
-          "code": ""
+          "definition": "শুধুমাত্র সেই প্যাকেজগুলি দেখান যেগুলি রুট প্যাকেজের দ্বারা সরাসরি প্রয়োজনীয় পুরানো",
+          "code": "composer outdated --direct"
         }
       ]
-    },
+    }
   ]
 }
