@@ -35,12 +35,17 @@
             "title": "আরম্ভ (Initialization)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "RUN bundle install"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "WORKDIR /myapp"
+                },
+                {
+                    "definition": "মাউন্ট পয়েন্ট জন্য স্পেসিফিকেশন",
+                    "code": "VOLUME [\"/data\"]"
+                },
+                {
+                    "code": "ADD file.xyz /file.xyz\nCOPY --chown=user:group host_file.xyz /path/container_file.xyz"
                 }
             ]
         },
