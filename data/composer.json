@@ -28,12 +28,27 @@
       "title": "প্যাকেজ আপডেট করা হচ্ছে (Updating packages)",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "definition": "সমস্ত প্যাকেজ আপডেট করে",
+          "code": "composer update"
         },
         {
-          "definition": "",
-          "code": ""
+          "definition": "সমস্ত প্যাকেজ এবং এর নির্ভরতা আপডেট করে",
+          "code": "composer update --with-dependencies"
+        },
+        {
+          "definition": "ভেন্ডর-এর কাছ থেকে একটি নির্দিষ্ট প্যাকেজ আপডেট করে",
+          "code": "composer update vendor/package"
+        },
+        {
+          "definition": "ভেন্ডর থেকে সব প্যাকেজ আপডেট",
+          "code": "composer update vendor/*"
+        },
+        {
+          "definition": "কোনো প্যাকেজ আপডেট না করেই composer.lock হ্যাশ আপডেট করে",
+          "code": "composer update --lock"
+        },
+        {
+          "definition": "এই কমান্ডটি শুধুমাত্র composer.lock ফাইল পরিবর্তন করে।"
         }
       ]
     },
@@ -50,11 +65,11 @@
       "title": "প্যাকেজ যুক্ত করা হচ্ছে (Adding packages)",
       "items": [
         {
-          "definition": "বিক্রেতা থেকে composer.json এর প্রয়োজন বিভাগে প্যাকেজ যোগ করে এবং এটি ইনস্টল করে",
+          "definition": "ভেন্ডর থেকে composer.json এর প্রয়োজন বিভাগে প্যাকেজ যোগ করে এবং এটি ইনস্টল করে",
           "code": "composer require vendor/package"
         },
         {
-          "definition": "বিক্রেতা থেকে composer.json-এর প্রয়োজন-dev বিভাগে প্যাকেজ যোগ করে এবং এটি ইনস্টল করে।",
+          "definition": "ভেন্ডর থেকে composer.json-এর প্রয়োজন-dev বিভাগে প্যাকেজ যোগ করে এবং এটি ইনস্টল করে।",
           "code": "composer require vendor/package --dev"
         },
         {
@@ -79,7 +94,7 @@
       "title": "প্যাকেজগুলি সরানো হচ্ছে (Removing packages)",
       "items": [
         {
-          "definition": "composer.json থেকে বিক্রেতা/প্যাকেজ সরিয়ে দেয় এবং আনইনস্টল করে",
+          "definition": "composer.json থেকে ভেন্ডর/প্যাকেজ সরিয়ে দেয় এবং আনইনস্টল করে",
           "code": "composer remove vendor/package"
         },
         {
