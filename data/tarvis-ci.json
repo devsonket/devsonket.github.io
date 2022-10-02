@@ -126,12 +126,13 @@
             "title": "তথ্যসূত্র (References)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "http://about.travis-ci.org/docs/user/build-configuration/"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "http://about.travis-ci.org/docs/user/languages/javascript-with-nodejs/"
+                },
+                {
+                    "code": "http://about.travis-ci.org/docs/user/languages/ruby/"
                 }
             ]
         },
