@@ -6,7 +6,8 @@
     "colorPref": "#E0EFEf",
     "contents": [{
             "title": "সংক্ষিপ্ত উদাহরণ",
-            "items": [{
+            "items": [
+                {
                     "definition": "শীর্ষস্থানীয় EditorConfig ফাইল ফ্ল্যাগ সেট করতে",
                     "code": "root = true"
                 },
@@ -37,12 +38,17 @@
                 {
                     "definition": "ফাইলের শেষে একটি নতুন লাইন যোগ করার জন্য",
                     "code": "insert_final_newline = true"
+                },
+                {
+                    "definition": "একটি লাইনে অনুমোদিত সর্বাধিক সংখ্যক অক্ষর সেট করার জন্য",
+                    "code": "max_line_length = 80"
                 }
             ]
         },
         {
             "title": "রিকোয়েস্ট উদাহরণ",
-            "items": [{
+            "items": [
+                {
                     "definition": "ডাটা get এর জন্য",
                     "code": "axios.get()"
                 },
