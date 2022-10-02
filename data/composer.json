@@ -81,12 +81,44 @@
       "title": "ক্ষণস্থায়ী সংস্করণ (Passing versions)",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "definition": "১.৩.২ ইনস্টল করে",
+          "code": "composer require vendor/pkg \"1.3.2\""
         },
         {
-          "definition": "",
-          "code": ""
+          "definition": "উপরে বা সমান ১.৩.২",
+          "code": "composer require vendor/pkg \">=1.3.2\""
+        },
+        {
+          "definition": "১.৩.২ এর নিচে",
+          "code": "composer require vendor/pkg \"<1.3.2\""
+        },
+        {
+          "definition": "এর সর্বশেষ >=১.৩.০ <১.৪.০",
+          "code": "composer require vendor/pkg \"1.3.*\""
+        },
+        {
+          "definition": "এর সর্বশেষ >=১.৩.০ <১.৪.০",
+          "code": "composer require vendor/pkg \"~1.3.2\""
+        },
+        {
+          "definition": "এর সর্বশেষ >=১.৩.২ <১.৪.০",
+          "code": "composer require vendor/pkg \"~1.3\""
+        },
+        {
+          "definition": "এর সর্বশেষ >=১.৩.০ <২.০.০",
+          "code": "composer require vendor/pkg \"^1.3.2\""
+        },
+        {
+          "definition": "এর সর্বশেষ >=১.৩.০ <২.০.০",
+          "code": "composer require vendor/pkg \"^1.3\""
+        },
+        {
+          "definition": "এর সর্বশেষ >=০.৩.০ <০.৪.০ (প্রি-১.০ এর জন্য)",
+          "code": "composer require vendor/pkg \"^0.3.2\""
+        },
+        {
+          "definition": "শাখা BRANCH_NAME থেকে",
+          "code": "composer require vendor/pkg \"dev-BRANCH_NAME\""
         }
       ]
     },
