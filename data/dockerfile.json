@@ -87,12 +87,19 @@
             "title": "এন্ট্রিপয়েন্ট (Entrypoint)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "ENTRYPOINT [\"executable\", \"param1\", \"param2\"]"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "ENTRYPOINT command param1 param2"
+                },
+                {
+                    "definition": "একটি ধারক কনফিগার করে যা একটি এক্সিকিউটেবল হিসাবে চালানো হবে৷"
+                },
+                {
+                    "code": "ENTRYPOINT exec top -b"
+                },
+                {
+                    "definition": "এটি শেল ভেরিয়েবলগুলিকে প্রতিস্থাপন করতে শেল প্রক্রিয়াকরণ ব্যবহার করবে এবং যেকোন সিএমডি বা ডকার রান কমান্ড লাইন আর্গুমেন্ট উপেক্ষা করবে।"
                 }
             ]
         },
