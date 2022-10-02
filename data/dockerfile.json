@@ -74,12 +74,13 @@
             "title": "মেটাডেটা (Metadata)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "LABEL version=\"1.0\""
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "LABEL \"com.example.vendor\"=\"ACME Incorporated\"\nLABEL com.example.label-with-value=\"foo\""
+                },
+                {
+                    "code": "LABEL description=\"This text illustrates \\\nthat label-values can span multiple lines.\""
                 }
             ]
         },
