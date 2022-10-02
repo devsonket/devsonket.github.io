@@ -41,12 +41,8 @@
       "title": "স্বয়ংক্রিয় লোডার আপডেট করা হচ্ছে (Updating autoloader)",
       "items": [
         {
-          "definition": "",
-          "code": ""
-        },
-        {
-          "definition": "",
-          "code": ""
+          "definition": "অপ্টিমাইজ করা অটোলোড ফাইল তৈরি করে",
+          "code": "composer dumpautoload -o"
         }
       ]
     },
