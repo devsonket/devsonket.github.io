@@ -87,12 +87,10 @@
             "title": "Apt প্যাকেজ (Apt packages)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "before_install:\n  - sudo apt-get update -q\n  - sudo apt-get install gcc-4.8 -y"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "https://docs.travis-ci.com/user/installing-dependencies/"
                 }
             ]
         },
