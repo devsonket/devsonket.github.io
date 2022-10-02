@@ -37,12 +37,34 @@
             "title": "জীবনচক্র তৈরি করুন (Build lifecycle)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "before_install"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "install"
+                },
+                {
+                    "code": "before_script"
+                },
+                {
+                    "code": "script"
+                },
+                {
+                    "code": "after_success or after_failure"
+                },
+                {
+                    "code": "after_script"
+                },
+                {
+                    "definition": "optional",
+                    "code": "before_deploy"
+                },
+                {
+                    "definition": "optional",
+                    "code": "deploy"
+                },
+                {
+                    "definition": "optional",
+                    "code": "after_deploy"
                 }
             ]
         },
