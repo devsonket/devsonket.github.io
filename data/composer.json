@@ -1,0 +1,22 @@
+{
+  "id": "composer",
+  "title": "কম্পোজার",
+  "slug": "composer",
+  "description": "সমস্ত কম্পোজার কমান্ড, আপনার ইনস্টলের উপর নির্ভর করে, গ্লোবাল/প্লেইন কম্পোজারের পরিবর্তে কম্পোজারের জন্য ইনস্টল ফোল্ডারে php composer.phar ব্যবহার করতে হতে পারে",
+  "colorPref": "#745fb5",
+  "contents": [
+    {
+      "title": "",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    }
+  ]
+}
