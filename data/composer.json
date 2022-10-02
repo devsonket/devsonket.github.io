@@ -54,12 +54,15 @@
       "title": "প্যাকেজ যুক্ত করা হচ্ছে (Adding packages)",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "definition": "বিক্রেতা থেকে composer.json এর প্রয়োজন বিভাগে প্যাকেজ যোগ করে এবং এটি ইনস্টল করে",
+          "code": "composer require vendor/package"
         },
         {
-          "definition": "",
-          "code": ""
+          "definition": "বিক্রেতা থেকে composer.json-এর প্রয়োজন-dev বিভাগে প্যাকেজ যোগ করে এবং এটি ইনস্টল করে।",
+          "code": "composer require vendor/package --dev"
+        },
+        {
+          "definition": "এই কমান্ডটি composer.json এবং composer.lock ফাইল উভয়ই পরিবর্তন করে।"
         }
       ]
     },
