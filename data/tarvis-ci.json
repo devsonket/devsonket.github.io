@@ -74,12 +74,16 @@
             "title": "কাস্টম পরীক্ষা কমান্ড (Custom test command)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "script: make test"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "before_script: make pretest"
+                },
+                {
+                    "code": "after_script:  make clean"
+                },
+                {
+                    "code": "before_script:\n  - make pretest1\n  - make pretest2"
                 }
             ]
         },
