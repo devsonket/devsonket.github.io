@@ -121,7 +121,7 @@
                     "code": "a := 45 \n fmt.Printf(\"%T\", a) \n // int"
                 },
                 {
-                    "definition": "ইন্টিজারকে ফ্ল্যোট এ  রূপান্তর করাs",
+                    "definition": "ইন্টিজারকে ফ্ল্যোট এ  রূপান্তর করা",
                     "code": "var i int = 45 \n var j float 32 \n j = float32(i)"
                 },
                 {
