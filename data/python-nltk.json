@@ -27,6 +27,18 @@
                     "code": "nltk.sent_tokenize(text)"
                 }
             ]
-        }
+        },
+        {
+            "title": "লেমাটাইজেশন ও স্টেমিং",
+            "items": [{
+                    "definition": "স্টেমার ইনিশিয়ালাইজ করা",
+                    "code": "porter­=nl­tk.P­or­ter­Stemmer"
+                 },
+                 {
+                    "definition": "WordNet লেমাটাইজার ইনিশিয়ালাইজ করা",
+                    "code": "WNL=nl­tk.W­or­dNe­tLe­mma­tizer()"
+                  }
+              ]
+        },
     ]
 }
