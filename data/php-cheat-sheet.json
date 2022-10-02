@@ -5,6 +5,49 @@
     "description": "পিএইচপি হচ্ছে একটি সার্ভার সাইড স্ক্রিপ্টিং ল্যাঙ্গুয়েজ, যা তৈরী করেন রাসমাস লারডোর্ফ ১৯৯৪ সালে। যা বিশেষ করে যে কোনো ডাইনামিক এবং ইন্টারেক্টিভ ওয়েব ডেভেলপমেন্ট অথবা ওয়েব ভিত্তিক সফটওয়্যার তৈরিতে ব্যবহৃত হয়",
     "colorPref": "#8892BF",
     "contents": [{
+            "title": "পিএইচপি ব্যাসিক",
+            "items": [{
+                    "definition": "পিএইচপি শুরু করতে",
+                    "code": "<?php // place PHP code here ?>"
+                },
+                {
+                    "definition": "কমেন্ট করার জন্য",
+                    "code": "// or # or /*...*/"
+                },
+                {
+                    "definition": "ফাংশন লিখতে",
+                    "code": "function NameOfTheFunction() { //place PHP code here }"
+                },
+                {
+                    "definition": "ভ্যারিএবল তৈরি করতে",
+                    "code": "$variableName = 'value';"
+                },
+                {
+                    "definition": "কন্সট্যান্ট তৈরি করতে",
+                    "code": "define('CONSTANT_NAME', 'value');"
+                },
+                {
+                    "definition": "কন্ডিশন লিখতে",
+                    "code": "if (condition) { //place PHP code here }"
+                },
+                {
+                    "definition": "লুপ লিখতে",
+                    "code": "for (initialization; condition; increment) { //place PHP code here }"
+                },
+                {
+                    "definition": "অ্যারে লিখতে",
+                    "code": "$arrayName = array('value1', 'value2', 'value3');"
+                },
+                {
+                    "definition": "অ্যারে এক্সেস করতে",
+                    "code": "$arrayName[0];"
+                },
+                {
+                    "definition": "অ্যারের সাইজ বের করতে",
+                    "code": "count($arrayName);"
+                }
+            ]
+        }, {
             "title": "গাণিতিক অপারেশন",
             "items": [{
                     "definition": "সাধারন গাণিতিক অপারেশন",
