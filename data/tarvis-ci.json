@@ -113,12 +113,7 @@
             "title": "ই টি সি (Etc)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
-                },
-                {
-                    "definition": "",
-                    "code": ""
+                    "code": "gemfile:\n  - gemfiles/Gemfile.rails-2.3.x\n  - gemfiles/Gemfile.rails-3.0.x"
                 }
             ]
         },
@@ -135,6 +130,6 @@
                     "code": "http://about.travis-ci.org/docs/user/languages/ruby/"
                 }
             ]
-        },
+        }
     ]
 }
