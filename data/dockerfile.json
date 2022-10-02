@@ -6,7 +6,111 @@
     "colorPref": "#745fb5",
     "contents": [
         {
-            "title": "",
+            "title": "উত্তরাধিকার (Inheritance)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "ভেরিয়েবল (Variables)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "আরম্ভ (Initialization)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "কঠোর শেলের মধ্যে কমান্ড চালান (Run commands in strict shell)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "অনবিল্ড করুন (Onbuild)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "মেটাডেটা (Metadata)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "এন্ট্রিপয়েন্ট (Entrypoint)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "আদেশ (Commands)",
+            "items": [
+                {
+                    "definition": "",
+                    "code": ""
+                },
+                {
+                    "definition": "",
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "title": "আরো দেখুন (See also)",
             "items": [
                 {
                     "definition": "",
