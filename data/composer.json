@@ -23,6 +23,84 @@
           "definition": "composer.lock সবসময় সংগ্রহস্থলে প্রতিশ্রুতিবদ্ধ হওয়া উচিত। স্থানীয় নির্ভরতাকে শেষ প্রতিশ্রুতিবদ্ধ অবস্থায় আনার জন্য প্রয়োজনীয় সমস্ত তথ্য এতে রয়েছে। যদি সেই ফাইলটি রিপোজিটরিতে পরিবর্তন করা হয়, তাহলে সেই ফাইলটিতে আপনার স্থানীয় নির্ভরতা আপডেট করার জন্য পরিবর্তনগুলি আনার পরে আপনাকে আবার কম্পোজার ইনস্টল চালাতে হবে।"
         }
       ]
-    }
+    },
+    {
+      "title": "প্যাকেজ আপডেট করা হচ্ছে (Updating packages)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "স্বয়ংক্রিয় লোডার আপডেট করা হচ্ছে (Updating autoloader)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "প্যাকেজ যুক্ত করা হচ্ছে (Adding packages)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "ক্ষণস্থায়ী সংস্করণ (Passing versions)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "প্যাকেজগুলি সরানো হচ্ছে (Removing packages)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "যাচাই করা হচ্ছে (Verifying)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
   ]
 }
