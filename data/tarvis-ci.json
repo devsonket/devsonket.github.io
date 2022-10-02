@@ -61,12 +61,7 @@
             "title": "পরিবেশের ভার্স (Environment vars)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
-                },
-                {
-                    "definition": "",
-                    "code": ""
+                    "code": "\n\nenv:\n  - 'rack=master'\n  - 'rack=1.3.4'\n\n"
                 }
             ]
         },
