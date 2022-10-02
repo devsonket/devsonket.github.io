@@ -113,12 +113,8 @@
             "title": "আরো দেখুন (See also)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
-                },
-                {
-                    "definition": "",
-                    "code": ""
+                    "definition": "ওয়েব লিংক",
+                    "code": "https://docs.docker.com/engine/reference/builder/"
                 }
             ]
         }
