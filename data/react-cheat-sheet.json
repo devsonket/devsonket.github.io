@@ -141,6 +141,14 @@
                 {
                     "definition": "যে হুক দ্বারা DOM measurements(scroll event, viewport height/width) করা যায় এবং synchronously re-render হতে থাকে state আপডেটের পর",
                     "code": "useLayoutEffect(() => {}, [dependencies])"
+                },
+                {
+                    "definition": "যে হুক দ্বারা ইউনিক আইডি জেনারেট করা হয়",
+                    "code": "const id = useId()"
+                },
+                {
+                    "definition": "যে হুক দ্বারা কোন স্টেটের আপডেট মনিটর করা হয় এবং সেই স্টেটের আপডেট হওয়া পর্যন্ত পেন্ডিং স্টেট শো করে।",
+                    "code": "const [isPending, startTransition] = useTransition()"
                 }
             ]
         },
