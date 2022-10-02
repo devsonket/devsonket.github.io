@@ -22,12 +22,10 @@
             "title": "Ruby",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "language: ruby"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "rvm:\n  - 2.0.0\n  - 1.9.3\n  - 1.8.7"
                 }
             ]
         },
