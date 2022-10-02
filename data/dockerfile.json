@@ -22,12 +22,10 @@
             "title": "ভেরিয়েবল (Variables)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "ENV APP_HOME /myapp\nRUN mkdir $APP_HOME"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "ARG APP_HOME=\"\"\nRUN mkdir $APP_HOME"
                 }
             ]
         },
