@@ -48,12 +48,7 @@
             "title": "শাখাগুলি (Branches)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
-                },
-                {
-                    "definition": "",
-                    "code": ""
+                    "code": "branches:\n  except: ['..']\n  only: ['master']"
                 }
             ]
         },
