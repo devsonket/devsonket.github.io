@@ -100,12 +100,10 @@
             "title": "আদেশ (Commands)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "EXPOSE 5900"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "CMD    [\"bundle\", \"exec\", \"rails\", \"server\"]"
                 }
             ]
         },
