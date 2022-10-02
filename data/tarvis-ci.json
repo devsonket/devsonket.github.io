@@ -100,12 +100,10 @@
             "title": "শাখাগুলি (Branches)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "branches:\n  except:\n    - legacy"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "only:\n    - gh-pages\n    - /^deploy/"
                 }
             ]
         },
