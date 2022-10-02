@@ -48,12 +48,25 @@
             "title": "কঠোর শেলের মধ্যে কমান্ড চালান (Run commands in strict shell)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "ENV my_var\nSHELL [\"/bin/bash\", \"-euo\", \"pipefail\", \"-c\"]"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "definition": "কঠোর মোড সঙ্গে"
+                },
+                {
+                    "definition": "&& ব্যবহার করার মত বিল্ড ব্যর্থ হয়",
+                    "code": "RUN false"
+                },
+                {
+                    "definition": "টাইপোর কারণে ত্রুটি নিক্ষেপ করবে",
+                    "code": "RUN echo \"$myvar\""
+                },
+                {
+                    "definition": "পাইপ থেকে বেইল আউট হবে",
+                    "code": "RUN true | false"
+                },
+                {
+                    "definition": "শেল ব্যবহার করা শেল কমান্ডের জন্য কঠোর মোড চালু করবে।"
                 }
             ]
         },
@@ -61,12 +74,8 @@
             "title": "অনবিল্ড করুন (Onbuild)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
-                },
-                {
-                    "definition": "",
-                    "code": ""
+                    "definition": "যখন অন্য ফাইলের সাথে ব্যবহার করা হয়",
+                    "code": "ONBUILD RUN bundle install"
                 }
             ]
         },
