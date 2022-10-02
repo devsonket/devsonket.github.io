@@ -9,12 +9,13 @@
             "title": "Node.js",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "language: node_js"
                 },
                 {
-                    "definition": "",
-                    "code": ""
+                    "code": "node_js:\n  - '4'"
+                },
+                {
+                    "definition": "ডিফল্টগুলি npm ইনস্টলে ইনস্টল করে এবং ডিফল্টগুলি npm পরীক্ষায় পরীক্ষা করে।"
                 }
             ]
         },
