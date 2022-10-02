@@ -1,147 +1,147 @@
 {
-  "id": "composer",
-  "title": "কম্পোজার",
-  "slug": "composer",
-  "description": "সমস্ত কম্পোজার কমান্ড, আপনার ইনস্টলের উপর নির্ভর করে, গ্লোবাল/প্লেইন কম্পোজারের পরিবর্তে কম্পোজারের জন্য ইনস্টল ফোল্ডারে php composer.phar ব্যবহার করতে হতে পারে",
-  "colorPref": "#745fb5",
-  "contents": [
-    {
-      "title": "নির্ভরতা ইনস্টল করা (Installing dependencies)",
-      "items": [
+    "id": "composer",
+    "title": "কম্পোজার",
+    "slug": "composer",
+    "description": "সমস্ত কম্পোজার কমান্ড, আপনার ইনস্টলের উপর নির্ভর করে, গ্লোবাল/প্লেইন কম্পোজারের পরিবর্তে কম্পোজারের জন্য ইনস্টল ফোল্ডারে php composer.phar ব্যবহার করতে হতে পারে",
+    "colorPref": "#745fb5",
+    "contents": [
         {
-          "definition": "composer.lock ফাইলে বর্ণিত সমস্ত লাইব্রেরি এবং নির্ভরতা ডাউনলোড এবং ইনস্টল করে। যদি ফাইলটি বিদ্যমান না থাকে তবে এটি composer.json সন্ধান করবে এবং একই কাজ করবে, একটি composer.lock ফাইল তৈরি করবে।",
-          "code": "composer install"
+            "title": "নির্ভরতা ইনস্টল করা (Installing dependencies)",
+            "items": [
+                {
+                    "definition": "composer.lock ফাইলে বর্ণিত সমস্ত লাইব্রেরি এবং নির্ভরতা ডাউনলোড এবং ইনস্টল করে। যদি ফাইলটি বিদ্যমান না থাকে তবে এটি composer.json সন্ধান করবে এবং একই কাজ করবে, একটি composer.lock ফাইল তৈরি করবে।",
+                    "code": "composer install"
+                },
+                {
+                    "definition": "কিছু ইনস্টল না করেই ইনস্টল অনুকরণ করে",
+                    "code": "composer install --dry-run"
+                },
+                {
+                    "definition": "এই কমান্ড কোনো ফাইল পরিবর্তন করে না। composer.lock উপস্থিত না থাকলে, এটি তৈরি করবে।"
+                },
+                {
+                    "definition": "composer.lock সবসময় সংগ্রহস্থলে প্রতিশ্রুতিবদ্ধ হওয়া উচিত। স্থানীয় নির্ভরতাকে শেষ প্রতিশ্রুতিবদ্ধ অবস্থায় আনার জন্য প্রয়োজনীয় সমস্ত তথ্য এতে রয়েছে। যদি সেই ফাইলটি রিপোজিটরিতে পরিবর্তন করা হয়, তাহলে সেই ফাইলটিতে আপনার স্থানীয় নির্ভরতা আপডেট করার জন্য পরিবর্তনগুলি আনার পরে আপনাকে আবার কম্পোজার ইনস্টল চালাতে হবে।"
+                }
+            ]
         },
         {
-          "definition": "কিছু ইনস্টল না করেই ইনস্টল অনুকরণ করে",
-          "code": "composer install --dry-run"
+            "title": "প্যাকেজ আপডেট করা হচ্ছে (Updating packages)",
+            "items": [
+                {
+                    "definition": "সমস্ত প্যাকেজ আপডেট করে",
+                    "code": "composer update"
+                },
+                {
+                    "definition": "সমস্ত প্যাকেজ এবং এর নির্ভরতা আপডেট করে",
+                    "code": "composer update --with-dependencies"
+                },
+                {
+                    "definition": "ভেন্ডর-এর কাছ থেকে একটি নির্দিষ্ট প্যাকেজ আপডেট করে",
+                    "code": "composer update vendor/package"
+                },
+                {
+                    "definition": "ভেন্ডর থেকে সব প্যাকেজ আপডেট",
+                    "code": "composer update vendor/*"
+                },
+                {
+                    "definition": "কোনো প্যাকেজ আপডেট না করেই composer.lock হ্যাশ আপডেট করে",
+                    "code": "composer update --lock"
+                },
+                {
+                    "definition": "এই কমান্ডটি শুধুমাত্র composer.lock ফাইল পরিবর্তন করে।"
+                }
+            ]
         },
         {
-          "definition": "এই কমান্ড কোনো ফাইল পরিবর্তন করে না। composer.lock উপস্থিত না থাকলে, এটি তৈরি করবে।"
+            "title": "স্বয়ংক্রিয় লোডার আপডেট করা হচ্ছে (Updating autoloader)",
+            "items": [
+                {
+                    "definition": "অপ্টিমাইজ করা অটোলোড ফাইল তৈরি করে",
+                    "code": "composer dumpautoload -o"
+                }
+            ]
         },
         {
-          "definition": "composer.lock সবসময় সংগ্রহস্থলে প্রতিশ্রুতিবদ্ধ হওয়া উচিত। স্থানীয় নির্ভরতাকে শেষ প্রতিশ্রুতিবদ্ধ অবস্থায় আনার জন্য প্রয়োজনীয় সমস্ত তথ্য এতে রয়েছে। যদি সেই ফাইলটি রিপোজিটরিতে পরিবর্তন করা হয়, তাহলে সেই ফাইলটিতে আপনার স্থানীয় নির্ভরতা আপডেট করার জন্য পরিবর্তনগুলি আনার পরে আপনাকে আবার কম্পোজার ইনস্টল চালাতে হবে।"
+            "title": "প্যাকেজ যুক্ত করা হচ্ছে (Adding packages)",
+            "items": [
+                {
+                    "definition": "ভেন্ডর থেকে composer.json এর প্রয়োজন বিভাগে প্যাকেজ যোগ করে এবং এটি ইনস্টল করে",
+                    "code": "composer require vendor/package"
+                },
+                {
+                    "definition": "ভেন্ডর থেকে composer.json-এর প্রয়োজন-dev বিভাগে প্যাকেজ যোগ করে এবং এটি ইনস্টল করে।",
+                    "code": "composer require vendor/package --dev"
+                },
+                {
+                    "definition": "এই কমান্ডটি composer.json এবং composer.lock ফাইল উভয়ই পরিবর্তন করে।"
+                }
+            ]
+        },
+        {
+            "title": "ক্ষণস্থায়ী সংস্করণ (Passing versions)",
+            "items": [
+                {
+                    "definition": "১.৩.২ ইনস্টল করে",
+                    "code": "composer require vendor/pkg \"1.3.2\""
+                },
+                {
+                    "definition": "উপরে বা সমান ১.৩.২",
+                    "code": "composer require vendor/pkg \">=1.3.2\""
+                },
+                {
+                    "definition": "১.৩.২ এর নিচে",
+                    "code": "composer require vendor/pkg \"<1.3.2\""
+                },
+                {
+                    "definition": "এর সর্বশেষ >=১.৩.০ <১.৪.০",
+                    "code": "composer require vendor/pkg \"1.3.*\""
+                },
+                {
+                    "definition": "এর সর্বশেষ >=১.৩.০ <১.৪.০",
+                    "code": "composer require vendor/pkg \"~1.3.2\""
+                },
+                {
+                    "definition": "এর সর্বশেষ >=১.৩.২ <১.৪.০",
+                    "code": "composer require vendor/pkg \"~1.3\""
+                },
+                {
+                    "definition": "এর সর্বশেষ >=১.৩.০ <২.০.০",
+                    "code": "composer require vendor/pkg \"^1.3.2\""
+                },
+                {
+                    "definition": "এর সর্বশেষ >=১.৩.০ <২.০.০",
+                    "code": "composer require vendor/pkg \"^1.3\""
+                },
+                {
+                    "definition": "এর সর্বশেষ >=০.৩.০ <০.৪.০ (প্রি-১.০ এর জন্য)",
+                    "code": "composer require vendor/pkg \"^0.3.2\""
+                },
+                {
+                    "definition": "শাখা BRANCH_NAME থেকে",
+                    "code": "composer require vendor/pkg \"dev-BRANCH_NAME\""
+                }
+            ]
+        },
+        {
+            "title": "প্যাকেজগুলি সরানো হচ্ছে (Removing packages)",
+            "items": [
+                {
+                    "definition": "composer.json থেকে ভেন্ডর/প্যাকেজ সরিয়ে দেয় এবং আনইনস্টল করে",
+                    "code": "composer remove vendor/package"
+                },
+                {
+                    "definition": "এই কমান্ডটি composer.json এবং composer.lock ফাইল উভয়ই পরিবর্তন করে।"
+                }
+            ]
+        },
+        {
+            "title": "যাচাই করা হচ্ছে (Verifying)",
+            "items": [
+                {
+                    "definition": "শুধুমাত্র সেই প্যাকেজগুলি দেখান যেগুলি রুট প্যাকেজের দ্বারা সরাসরি প্রয়োজনীয় পুরানো",
+                    "code": "composer outdated --direct"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "title": "প্যাকেজ আপডেট করা হচ্ছে (Updating packages)",
-      "items": [
-        {
-          "definition": "সমস্ত প্যাকেজ আপডেট করে",
-          "code": "composer update"
-        },
-        {
-          "definition": "সমস্ত প্যাকেজ এবং এর নির্ভরতা আপডেট করে",
-          "code": "composer update --with-dependencies"
-        },
-        {
-          "definition": "ভেন্ডর-এর কাছ থেকে একটি নির্দিষ্ট প্যাকেজ আপডেট করে",
-          "code": "composer update vendor/package"
-        },
-        {
-          "definition": "ভেন্ডর থেকে সব প্যাকেজ আপডেট",
-          "code": "composer update vendor/*"
-        },
-        {
-          "definition": "কোনো প্যাকেজ আপডেট না করেই composer.lock হ্যাশ আপডেট করে",
-          "code": "composer update --lock"
-        },
-        {
-          "definition": "এই কমান্ডটি শুধুমাত্র composer.lock ফাইল পরিবর্তন করে।"
-        }
-      ]
-    },
-    {
-      "title": "স্বয়ংক্রিয় লোডার আপডেট করা হচ্ছে (Updating autoloader)",
-      "items": [
-        {
-          "definition": "অপ্টিমাইজ করা অটোলোড ফাইল তৈরি করে",
-          "code": "composer dumpautoload -o"
-        }
-      ]
-    },
-    {
-      "title": "প্যাকেজ যুক্ত করা হচ্ছে (Adding packages)",
-      "items": [
-        {
-          "definition": "ভেন্ডর থেকে composer.json এর প্রয়োজন বিভাগে প্যাকেজ যোগ করে এবং এটি ইনস্টল করে",
-          "code": "composer require vendor/package"
-        },
-        {
-          "definition": "ভেন্ডর থেকে composer.json-এর প্রয়োজন-dev বিভাগে প্যাকেজ যোগ করে এবং এটি ইনস্টল করে।",
-          "code": "composer require vendor/package --dev"
-        },
-        {
-          "definition": "এই কমান্ডটি composer.json এবং composer.lock ফাইল উভয়ই পরিবর্তন করে।"
-        }
-      ]
-    },
-    {
-      "title": "ক্ষণস্থায়ী সংস্করণ (Passing versions)",
-      "items": [
-        {
-          "definition": "১.৩.২ ইনস্টল করে",
-          "code": "composer require vendor/pkg \"1.3.2\""
-        },
-        {
-          "definition": "উপরে বা সমান ১.৩.২",
-          "code": "composer require vendor/pkg \">=1.3.2\""
-        },
-        {
-          "definition": "১.৩.২ এর নিচে",
-          "code": "composer require vendor/pkg \"<1.3.2\""
-        },
-        {
-          "definition": "এর সর্বশেষ >=১.৩.০ <১.৪.০",
-          "code": "composer require vendor/pkg \"1.3.*\""
-        },
-        {
-          "definition": "এর সর্বশেষ >=১.৩.০ <১.৪.০",
-          "code": "composer require vendor/pkg \"~1.3.2\""
-        },
-        {
-          "definition": "এর সর্বশেষ >=১.৩.২ <১.৪.০",
-          "code": "composer require vendor/pkg \"~1.3\""
-        },
-        {
-          "definition": "এর সর্বশেষ >=১.৩.০ <২.০.০",
-          "code": "composer require vendor/pkg \"^1.3.2\""
-        },
-        {
-          "definition": "এর সর্বশেষ >=১.৩.০ <২.০.০",
-          "code": "composer require vendor/pkg \"^1.3\""
-        },
-        {
-          "definition": "এর সর্বশেষ >=০.৩.০ <০.৪.০ (প্রি-১.০ এর জন্য)",
-          "code": "composer require vendor/pkg \"^0.3.2\""
-        },
-        {
-          "definition": "শাখা BRANCH_NAME থেকে",
-          "code": "composer require vendor/pkg \"dev-BRANCH_NAME\""
-        }
-      ]
-    },
-    {
-      "title": "প্যাকেজগুলি সরানো হচ্ছে (Removing packages)",
-      "items": [
-        {
-          "definition": "composer.json থেকে ভেন্ডর/প্যাকেজ সরিয়ে দেয় এবং আনইনস্টল করে",
-          "code": "composer remove vendor/package"
-        },
-        {
-          "definition": "এই কমান্ডটি composer.json এবং composer.lock ফাইল উভয়ই পরিবর্তন করে।"
-        }
-      ]
-    },
-    {
-      "title": "যাচাই করা হচ্ছে (Verifying)",
-      "items": [
-        {
-          "definition": "শুধুমাত্র সেই প্যাকেজগুলি দেখান যেগুলি রুট প্যাকেজের দ্বারা সরাসরি প্রয়োজনীয় পুরানো",
-          "code": "composer outdated --direct"
-        }
-      ]
-    }
-  ]
+    ]
 }
