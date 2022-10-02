@@ -9,12 +9,7 @@
             "title": "উত্তরাধিকার (Inheritance)",
             "items": [
                 {
-                    "definition": "",
-                    "code": ""
-                },
-                {
-                    "definition": "",
-                    "code": ""
+                    "code": "FROM php:8.1-fpm-alpine3.16"
                 }
             ]
         },
