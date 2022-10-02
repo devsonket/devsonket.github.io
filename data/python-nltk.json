@@ -33,12 +33,24 @@
             "items": [{
                     "definition": "স্টেমার ইনিশিয়ালাইজ করা",
                     "code": "porter­=nl­tk.P­or­ter­Stemmer"
-                 },
-                 {
+                },
+                {
                     "definition": "WordNet লেমাটাইজার ইনিশিয়ালাইজ করা",
                     "code": "WNL=nl­tk.W­or­dNe­tLe­mma­tizer()"
-                  }
-              ]
+                }
+            ]
         },
+        {
+            "title": "POS ট্যাগিং",
+            "items": [{
+                    "definition": "POS-এর ডেফিনিশন দেখা",
+                    "code": "nltk.h­elp.up­enn­_ta­gse­t('MD')"
+                },
+                {
+                    "definition": "বিল্ট-ইন POS ট্যাগার ব্যবহার করা",
+                    "code": "nltk.h­elp.up­enn­_ta­gse­t('MD')"
+                }
+            ]
+        }
     ]
 }
