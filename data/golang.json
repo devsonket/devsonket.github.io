@@ -29,6 +29,42 @@
             ]
         },
         {
+            "title": "ডাটা টাইপ",
+            "items": [{
+                    "definition": "অক্ষর",
+                    "code": "char"
+                },
+                {
+                    "definition": "পূর্ণসংখ্যা",
+                    "code": "int/int32/int64"
+                },
+                {
+                    "definition": "ফ্লোটিং পয়েন্ট সংখ্যা",
+                    "code": "float/float32/float64"
+                },
+                {
+                    "definition": "বুলিয়ান",
+                    "code": "bool"
+                },
+                {
+                    "definition": "স্ট্রিং",
+                    "code": "string"
+                },
+                {
+                    "definition":"পয়েন্টার টাইপ",
+                    "code":"*type (যেকোনো ডাটা টাইপ, যেমন int, float, string)"
+                }
+            ]
+        },
+        {
+            "title": "ইউজার ডিফাইন্ড ডাটা টাইপ",
+            "items": [{
+                    "definition": "ভিন্ন ভিন্ন বিল্ট ইন ডাটা টাইপের সমন্বয়ে নতুন ডাটা টাইপ তৈরি করা",
+                    "code": "struct"
+                }
+            ]
+        },
+        {
             "title": "ফাইল প্রিন্ট করা এবং ভ্যারিয়েবল ডিক্লেয়ার করা",
             "items": [{
                     "definition": "নিচের লাইন ফাঁকা রেখে কিছু প্রিন্ট করা",
