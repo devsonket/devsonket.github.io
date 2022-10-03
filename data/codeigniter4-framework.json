@@ -9,185 +9,24 @@
 			"title": "অ্যারে হেলপার",
 			"items": [
 				{
-					"definition": "লোডিং অ্যারে",
-					"code": "$this->load->helper('array');"
+					"definition": "লোডিং অ্যারে হেলপার",
+					"code": "helper('array');"
 				},
 				{
-					"definition": "ইলেমেন্ট ফাংশন",
-					"code": "element()"
+					"definition": "ডট অ্যারে অনুসন্ধান ফাংশন",
+					"code": "dot_array_search(string $search, array $data);"
 				},
 				{
-					"definition": "ইলেমেন্টস ফাংশন",
-					"code": "elements()"
+					"definition": "অ্যারে গভীর অনুসন্ধান ফাংশন (অনিশ্চিত গভীরতার অ্যারের উপাদান)",
+					"code": "array_deep_search(mixed $key, array $data);"
 				},
 				{
-					"definition": "রেন্ডোম ইলেমেন্ট",
-					"code": "random_element()"
-				}
-			]
-		},
-		{
-			"title": "বেঞ্চমার্কিং ক্লাস",
-			"items": [
-				{
-					"definition": "বেঞ্চমার্ক ক্লাস এড করা",
-					"code": "class CI_Benchmark"
+					"definition": "একাধিক কী ব্যবহার করে অ্যারে সর্টিং ফাংশন",
+					"code": "array_sort_by_multiple_keys(array $data, array $columns);"
 				},
 				{
-					"definition": "ক্যালকুলেট এবং রিটার্ণ সময়ের সাথে দুইটি মার্ক পয়েন্টের পার্থক্য",
-					"code": "elapsed_time()"
-				},
-				{
-					"definition": "বেঞ্চমার্ক মার্কার সেট করা",
-					"code": "mark()"
-				},
-				{
-					"definition": "মেমরী ইউসেজ",
-					"code": "memory_usage()"
-				}
-			]
-		},
-		{
-			"title": "ক্যাশে ক্লাস",
-			"items": [
-				{
-					"definition": "ক্যাশে ক্লাস এড করা",
-					"code": "class CI_Cache"
-				},
-				{
-					"definition": "ডাটাবেজ ক্যাশে ইনফরম্যশন",
-					"code": "var_dump($this->cache->cache_info());"
-				},
-				{
-					"definition": "ক্যাশে মুছা",
-					"code": "$this->cache->clean();"
-				},
-				{
-					"definition": "রো স্টোর ভ্যালুর এটমিক ডিক্রিমেন্টটেশন",
-					"code": "decrement($id[, $offset = 1])"
-				},
-				{
-					"definition": "নির্দিষ্ট ক্যাশে মুছা",
-					"code": "$this->cache->delete('cache_item_id');"
-				},
-				{
-					"definition": "নির্দিষ্ট আইটেমের ক্যাশে দেখানো",
-					"code": "$this->cache->get('my_cached_item');"
-				},
-				{
-					"definition": "নির্দিষ্ট আইটেমের সম্পূর্ণ ক্যাশে দেখানো",
-					"code": "var_dump($this->cache->get_metadata('my_cached_item'));"
-				},
-				{
-					"definition": "রো স্টোর ভ্যালুর এটমিক ডিক্রিমেন্টটেশন",
-					"code": "increment($id[, $offset = 1])"
-				},
-				{
-					"definition": "ক্যাশিং ড্রাইভার",
-					"code": "is_supported($driver)"
-				},
-				{
-					"definition": "ক্যাশে স্টোরে সেভ করা",
-					"code": "save($id, $data[, $ttl = 60[, $raw = FALSE]])"
-				}
-			]
-		},
-		{
-			"title": "ক্যালেন্ডারিং ক্লাস",
-			"items": [
-				{
-					"definition": "ক্লাস লোড করা",
-					"code": "$this->load->library('calendar');"
-				},
-				{
-					"definition": "ক্লাস এড করা",
-					"code": "class CI_Calendar"
-				},
-				{
-					"definition": "মাস/বছরের সঠিক মেথড এড করা",
-					"code": "adjust_date($month, $year)"
-				},
-				{
-					"definition": "ডিফল্ট টেমপ্লেট সেট করা",
-					"code": "default_template()"
-				},
-				{
-					"definition": "ক্যালেন্ডার জেনারেট করা",
-					"code": "generate([$year = ''[, $month = ''[, $data = array()]]])"
-				},
-				{
-					"definition": "দিন দেখানো দিনের টাইপ এর মাধ্যমে",
-					"code": "get_day_names($day_type = '')"
-				},
-				{
-					"definition": "মাস দেখানো মাসের টাইপ এর মাধ্যমে",
-					"code": "get_month_name($month)"
-				},
-				{
-					"definition": "নির্দিষ্ট মাসের সকল দিন দেখানো",
-					"code": "get_total_days($month, $year)"
-				},
-				{
-					"definition": "ক্যালেন্ডারিং প্রিফারেন্স ইনিসিয়ালাইজ",
-					"code": "initialize([$config = array()])"
-				},
-				{
-					"definition": "ইন্সটেন্স(মেথড চেইনিং)",
-					"code": "parse_template()"
-				}
-			]
-		},
-		{
-			"title": "ক্যাপচা হেলপার",
-			"items": [
-				{
-					"definition": "ক্যাপচা ক্লাস লোড করা",
-					"code": "$this->load->helper('captcha');"
-				},
-				{
-					"definition": "ক্যাপচা তৈরি",
-					"code": "create_captcha([$data = ''[, $img_path = ''[, $img_url = ''[, $font_path = '']]]])"
-				}
-			]
-		},
-		{
-			"title": "কনফিগ",
-			"items": [
-				{
-					"definition": "কনফিগ ক্লাস লোড করা",
-					"code": "$this->config->load('filename');"
-				},
-				{
-					"definition": "কনফিগ ক্লাস এড করা",
-					"code": "class CI_Config"
-				},
-				{
-					"definition": "বেজ url ফাংশন এড করা",
-					"code": "base_url()"
-				},
-				{
-					"definition": "কনফিগ ফাইল আইটেম",
-					"code": "item($item[, $index=''])"
-				},
-				{
-					"definition": "কনফিগ ফাইল লোড করা",
-					"code": "load([$file = ''[, $use_sections = FALSE[, $fail_gracefully = FALSE]]])"
-				},
-				{
-					"definition": "নির্দিষ্ট ভ্যালু কনফিগ ফাইলে সেট করা",
-					"code": "set_item($item, $value)"
-				},
-				{
-					"definition": "সাইট url ফাংশন এড করা",
-					"code": "site_url()"
-				},
-				{
-					"definition": "কনফিগ আইটেম ফাংশন এড করা যদি ফরোয়ার্ড শ্ল্যাস অথবা নাল ভ্যালু না থাকে",
-					"code": "slash_item($item)"
-				},
-				{
-					"definition": "সিস্টেম url ফাংশন এড করা",
-					"code": "system_url()"
+					"definition": "ডট ইনডেক্স দিয়ে অ্যারে ফেলাটেন করার ফাংশন",
+					"code": "array_flatten_with_dots(array $data);"
 				}
 			]
 		},
@@ -196,140 +35,142 @@
 			"items": [
 				{
 					"definition": "কুকি হেলপার লোড করা",
-					"code": "$this->load->helper('cookie');"
+					"code": "helper('cookie');"
 				},
 				{
-					"definition": "কুকি ডিলেট করা",
-					"code": "delete_cookie($name[, $domain = ''[, $path = '/'[, $prefix = '']]])"
+					"definition": "কুকি সেট করা",
+					"code": "set_cookie($name[, $value = ''[, $expire = ''[, $domain = ''[, $path = '/'[, $prefix = ''[, $secure = false[, $httpOnly = false[, $sameSite = '']]]]]]]])"
 				},
 				{
 					"definition": "কুকি আনা",
 					"code": "get_cookie($index[, $xss_clean = NULL])"
 				},
 				{
-					"definition": "কুকি সেট করা",
-					"code": "set_cookie($name[, $value = ''[, $expire = ''[, $domain = ''[, $path = '/'[, $prefix = ''[, $secure = NULL[, $httponly = NULL]]]]]]])"
+					"definition": "কুকি আছে কিনা চেক করা",
+					"code": "has_cookie(string $name[, ?string $value = null[, string $prefix = '']])"
+				},
+				{
+					"definition": "কুকি ডিলেট করা",
+					"code": "delete_cookie($name[, $domain = ''[, $path = '/'[, $prefix = '']]])"
 				}
 			]
 		},
 		{
-			"title": "ডাটাবেজ",
+			"title": "ডেট-টাইম হেলপার",
 			"items": [
 				{
-					"definition": "ক্লাস এড করা",
-					"code": "class CI_DB_driver"
+					"definition": "ডেট-টাইম হেলপার লোড করা",
+					"code": "helper('date');"
 				},
 				{
-					"definition": "এফেক্টেড নাম্বার অফ রো",
-					"code": "affected_rows()"
+					"definition": "বর্তমান ইউনিক্স(UNIX) টাইমস্ট্যাম্প ফাংশন",
+					"code": "now(string $timezone = null);"
 				},
 				{
-					"definition": "ক্যাশে মুছা",
-					"code": "cache_delete([$segment_one = ''[, $segment_two = '']])"
+					"definition": "প্রদত্ত কোড ব্লক ফাংশনের ভিতরে প্রদত্ত টাইমজোনটি পাস করুন",
+					"code": "timezone_select(mixed $class = '', string $default = '', $what = DateTimeZone::ALL, $country = null);"
+				}
+			]
+		},
+		{
+			"title": "ফাইল সিস্টেম হেলপার",
+			"items": [
+				{
+					"definition": "ফাইল সিস্টেম হেলপার লোড করা",
+					"code": "helper('filesystem');"
 				},
 				{
-					"definition": "সকল ক্যাশে মুছা",
-					"code": "cache_delete_all()"
+					"definition": "একটি নির্দিষ্ট ডিরেক্টরি গভীরতা পর্যন্ত ফাইল তালিকা ফাংশন",
+					"code": "directory_map(string $source_dir, $directory_depth = 0, $hidden = false);"
 				},
 				{
-					"definition": "ক্যাশে বন্ধ করা",
-					"code": "cache_off()"
+					"definition": "মূল ডিরেক্টরির ফাইল এবং ডিরেক্টরিগুলিকে লক্ষ্য ডিরেক্টরিতে অনুলিপি করার ফাংশন",
+					"code": "directory_mirror(string $original_path, string $target_path, $overwrite = true);"
 				},
 				{
-					"definition": "ক্যাশে অন করা",
-					"code": "cache_on()"
+					"definition": "ফাইলে ডেটা লেখার ফাংশন",
+					"code": "write_file(string $target_path, string $content, string $mode = 'wb');"
 				},
 				{
-					"definition": "ক্যাশে সেট করা",
-					"code": "cache_set_path([$path = ''])"
+					"definition": "সরবরাহকৃত পথে থাকা সমস্ত ফাইল মুছে ফেলার ফাংশন",
+					"code": "delete_files(string $path, bool $del_directories = false, bool $htdocs = false, bool $hidden = false);"
 				},
 				{
-					"definition": "ফাংশন কল করা",
-					"code": "call_function($function)"
+					"definition": "নির্দিষ্ট পথ থেকে সমস্ত ফাইলের নাম পেতে ফাংশন",
+					"code": "get_filenames(string $source_directory, bool $include_path = false, bool $hidden = false, bool $include_dir = true);"
 				},
 				{
-					"definition": "ডাটাবেজ কানেকশন বন্ধ করা",
-					"code": "close()"
+					"definition": "ডিরেক্টরি থেকে ফাইলের নাম, আকার, তারিখ এবং অনুমতি সম্বলিত করার ফাংশন",
+					"code": "get_dir_file_info(string $source_path, bool $top_level_only = true);"
 				},
 				{
-					"definition": "কম্পাইল বাইন্ড",
-					"code": "compile_binds($sql, $binds)"
+					"definition": "ডিরেক্টরি থেকে ফাইলের নাম, আকার, তারিখ এবং অনুমতি সম্বলিত করার ফাংশন",
+					"code": "get_file_info(string $filepath, array $attributes = ['name', 'size', 'date', 'readable', 'writeable', 'executable', 'fileperms']);"
 				},
 				{
-					"definition": "নির্দিষ্ট টেবিল কাউন্ট",
-					"code": "count_all([$table = ''])"
+					"definition": "ফাইল অনুমতির স্ট্যান্ডার্ড প্রতীকী(symbolic) ভেলুস পেতে ফাংশন",
+					"code": "symbolic_permissions(int $permissions);"
 				},
 				{
-					"definition": "ডাটাবেজ কানেকশন",
-					"code": "db_connect($persistent = TRUE)"
+					"definition": "ফাইল অনুমতির স্ট্যান্ডার্ড প্রতীকী(symbolic) ভেলুস পেতে ফাংশন নাম্বার ফরম্যাটে",
+					"code": "octal_permissions(int $permissions);"
 				},
 				{
-					"definition": "ডাটাবেজ পার্সিস্টেন্স কানেকশন",
-					"code": "db_pconnect()"
+					"definition": "বিভিন্ন ফাইল সামগ্রীর তুলনা করার ফাংশন",
+					"code": "same_file($filepath1, $filepath2);"
+				}
+			]
+		},
+		{
+			"title": "ইনফ্লেক্টর হেলপার",
+			"items": [
+				{
+					"definition": "ইনফ্লেক্টর হেলপার লোড করা",
+					"code": "helper('inflector');"
 				},
 				{
-					"definition": "সিলেক্ট ডাটাবেজ",
-					"code": "db_select([$database = ''])"
+					"definition": "একটি বহুবচন শব্দকে একবচনে পরিবর্তন করার ফাংশন",
+					"code": "singular(string $word);"
 				},
 				{
-					"definition": "সেট চার্জসেট",
-					"code": "db_set_charset($charset)"
+					"definition": "একটি একবচনে শব্দকে বহুবচন পরিবর্তন করার ফাংশন",
+					"code": "plural(string $word);"
 				},
 				{
-					"definition": "এরর ডিসপ্লে",
-					"code": "display_error([$error = ''[, $swap = ''[, $native = FALSE]]])"
+					"definition": "একটি শব্দ পরিবর্তন এবং একটি বাক্যাংশে এর গণনা করার ফাংশন",
+					"code": "counted(int $count, string $word);"
 				},
 				{
-					"definition": "ইলাপ্সড টাইম",
-					"code": "elapsed_time([$decimals = 6])"
+					"definition": "কেমেল কেস(camelCase) এ স্ট্রিং পরিবর্তন করার ফাংশন",
+					"code": "camelize(string $word);"
 				},
 				{
-					"definition": "এস্কেপ ভ্যালু",
-					"code": "escape($str)"
+					"definition": "প্যাসকেল কেস(PascalCase) এ স্ট্রিং পরিবর্তন করার ফাংশন",
+					"code": "pascalize(string $word);"
 				},
 				{
-					"definition": "এস্কেপ আইডেন্টিফায়ারস",
-					"code": "escape_identifiers($item)"
+					"definition": "সেনেক কেস(snake_Case) এ স্ট্রিং পরিবর্তন করার ফাংশন",
+					"code": "underscore(string $word);"
 				},
 				{
-					"definition": "এস্কেপ স্ট্রিং ভ্যালু",
-					"code": "escape_like_str($str)"
+					"definition": "সেন্টেন্সে কেস(Sentence Case)  এ স্ট্রিং পরিবর্তন করার ফাংশন",
+					"code": "humanize(string $word);"
 				},
 				{
-					"definition": "এস্কেপ স্ট্রিং ভ্যালু ইউজিং লাইক",
-					"code": "escape_str($str[, $like = FALSE])"
+					"definition": "শব্দটি বহুবচনযোগ্য কিনা তা পরীক্ষা করার ফাংশন",
+					"code": "is_pluralizable(string $word);"
 				},
 				{
-					"definition": "ফিল্ড ডাটা",
-					"code": "field_data($table)"
+					"definition": "একটি স্ট্রিংকে স্লাগ ফর্মে রূপান্তর করার ফাংশন",
+					"code": "dasherize(string $word);"
 				},
 				{
-					"definition": "ফিল্ড এক্সিটস",
-					"code": "field_exists($field_name, $table_name)"
+					"definition": "একটি সংখ্যার ক্রমিক স্ট্রিং পাওয়ার ফাংশন",
+					"code": "ordinal(int $number);"
 				},
 				{
-					"definition": "ইনিশিয়ালাইজ ডাটা",
-					"code": "initialize()"
-				},
-				{
-					"definition": "স্ট্রিং ইনসার্ট",
-					"code": "insert_string($table, $data)"
-				},
-				{
-					"definition": "রাইট টাইপ",
-					"code": "is_write_type($sql)"
-				},
-				{
-					"definition": "লাস্ট কুয়েরী",
-					"code": "last_query()"
-				},
-				{
-					"definition": "লাস্ট ফিল্ড",
-					"code": "list_fields($table)"
-				},
-				{
-					"definition": "টেবিল লিস্ট",
-					"code": "list_tables([$constrain_by_prefix = FALSE])"
+					"definition": "একটি সংখ্যাকে একটি অর্ডিনাল স্ট্রিংয়ে পরিণত করার ফাংশন",
+					"code": "ordinalize(int $number);"
 				}
 			]
 		}
