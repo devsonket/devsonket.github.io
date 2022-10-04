@@ -101,6 +101,14 @@
                 {
                     "definition": "সক্রিয় সংযোগ গুলো দেখতে",
                     "code": "CLIENT LIST"
+                },
+                {
+                    "definition": "গ্রুপ বা ট্যাগ এর মধ্যে মেম্বার কী(key) রাখতে",
+                    "code": "SADD <group_key> <member_key>"
+                },
+                {
+                    "definition": "গ্রুপ বা ট্যাগ এর মধ্যে সকল মেম্বার কী(Key) দেখতে",
+                    "code": "SMEMBERS <group_key>"
                 }
             ]
         }
