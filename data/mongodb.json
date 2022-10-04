@@ -251,7 +251,7 @@
                 },
                 {
                     "definition": "COUNT",
-                    "code": "$sum"
+                    "code": "$count"
                 },
                 {
                     "definition": "JOIN",
@@ -284,6 +284,10 @@
                 {
                     "definition": "কোনো ভ্যালু পুশ করা(ডুপ্লিকেট ছাড়া)",
                     "code": "$addToSet"
+                },
+                {
+                    "definition": "কোনো ভ্যালু পুল করা",
+                    "code": "$pull"
                 },
                 {
                     "definition": "প্রথম ডকুমেন্ট পাওয়া",
