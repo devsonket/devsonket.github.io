@@ -32,7 +32,7 @@
             "title": "ডাটা টাইপ",
             "items": [{
                     "definition": "অক্ষর",
-                    "code": "char"
+                    "code": "rune"
                 },
                 {
                     "definition": "পূর্ণসংখ্যা",
