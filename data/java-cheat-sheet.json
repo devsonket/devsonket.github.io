@@ -409,6 +409,22 @@
             ]
         },
         {
+            "title": "সহজে অদলবদল দুইটির মান",
+            "items": [{
+                    "code": "let x =5, y=10;"
+                },
+                {
+                    "code": "[x,y]=[y,x];"
+                },
+                {
+                    "code": "consol.log(x) //10;"
+                },
+                {
+                    "code": "consol.log(y) //5;"
+                },
+             ]
+        },
+        {
             "title": "কালেকশন এ পি আই (collection API)-LinkedList",
             "items": [{
                     "definition": "জাভাতে LinkedList ক্লাস linked-list ডেটা স্ট্রাকচার provide করে",
