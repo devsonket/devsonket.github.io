@@ -281,6 +281,51 @@
             ]
         },
         {
+            "title": "পাইথন ডিকশনারি মেথড (Python Dictionary Methods)",
+            "items": [
+                {
+                    "definition": "ডিকশনারি কি?",
+                    "code": "ডিকশনারি বিভিন্ন তথ্যের মধ্যে সংযোগ স্থাপন করে থাকে। ডিকশনারির মধ্যে তথ্যগুলো মূল-মান জোড়া (Key-Value pair) হিসেবে থাকে।"
+                },
+                {
+                    "definition": "একটি ডিকশনারির উদাহরণ। \nনিচের উদাহরণে কোলন(:) এর আগের অংশটিকে key এবং কোলন(:) এর পরের অংশটিকে value বলা হয়। প্রতিটি Key-Value pair একটি অপরটি থেকে কমা(,) দিয়ে পৃথক করা থাকে।",
+                    "code": "student = { 'name': 'John', 'age': 20 }"
+                },
+                {
+                    "definition": "ডিকশনারির থেকে যেকোনো ভ্যালু এক্সেস করা বা নেয়া",
+                    "code": "print(student['name']) -> 'John' \nprint(student['age']) -> 20"
+                },
+                {
+                    "definition": "get() দিয়ে ডিকশনারির থেকে যেকোনো ভ্যালু এক্সেস করা বা নেয়া। \nযদি যে key টি এক্সেস করতে চাচ্ছি, তা না থেকে থাকে, তবে get() ব্যবহার করলে কোনো error না দেখিয়ে None দেখাবে। কিন্তু উপরের পদ্ধতিটি ব্যবহার করলে key না পেলে error দেখিয়ে আপনার প্রোগ্রাম ব্রেক করতে পারে। তাই নিরাপদ হল get() ব্যবহার করে key এর মাধ্যমে value এক্সেস করা। নিচের উদাহরণে 'address' নামে আমাদের কোনো key নেই, তাই value হিসেবে None আসবে।",
+                    "code": "print(student['name']) -> John \nprint(student.get('address')) -> None"
+                },
+                {
+                    "definition": "ডিকশনারিতে একটি নতুন Key-Value pair যোগ করা",
+                    "code": "student['gpa'] = 4.0 \n-> নতুন ডিকশনারিটি হবে, student = {'name': 'John', , 'age': 20, 'gpa': 4.0}"
+                },
+                {
+                    "definition": "ডিকশনারি এর সকল key গুলো নিয়ে list বানানোর পদ্ধতি",
+                    "code": "list(student.keys()) \n-> ['name', 'age', 'gpa']"
+                },
+                {
+                    "definition": "ডিকশনারি এর সকল value গুলো নিয়ে list বানানোর পদ্ধতি",
+                    "code": "list(student.values()) \n-> ['John', 20, 4.0]"
+                },
+                {
+                    "definition": "ডিকশনারি এর সকল (key, value) গুলো নিয়ে list বানানোর পদ্ধতি",
+                    "code": "list(student.items()) \n-> [('name', 'John'), ('age', 20), ('gpa', 4.0)]"
+                },
+                {
+                    "definition": "ডিকশনারি থেকে Key-Value pair বাদ দেয়া বা remove করা",
+                    "code": "del student['gpa'] \n-> নতুন ডিকশনারিটি হবে, student = {'name': 'John', , 'age': 20}"
+                },
+                {
+                    "definition": "Dictionary Comprehension (সহজে ডিকশনারি তৈরি)",
+                    "code": "squares = {x:x**2 for x in range(5)} \n-> {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}"
+                }
+            ]
+        },
+        {
             "title": "পাইথন সেট মেথড (Python Set Methods)",
             "items": [{
                     "definition": "সেটে নতুন উপাদান সংযুক্ত করা",
