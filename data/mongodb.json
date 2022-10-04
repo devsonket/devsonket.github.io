@@ -204,17 +204,17 @@
             ]
         },
         {
-            "title": "ইন্ডেক্স - হিন্ট এবং স্টেটিস্টিক্স",
+            "title": "স্টেটিস্টিক্স",
             "items": [{
-                    "definition": "ইন্ডেক্স ইউসেজ এক্সপ্লেইন করা",
+                    "definition": "কুয়েরী এক্সপ্লেইন করা",
                     "code": "db.coll.find({'name':'শাওমি'}).explain()"
                 },
                 {
-                    "definition": "ইন্ডেক্স ড্রপ করা",
+                    "definition": "কালেকশনের স্টেটিস্টিক্স বের করা",
                     "code": "db.coll.stats()"
                 },
                 {
-                    "definition": "কম্পাউন্ড ইন্ডেক্স তৈরী করা",
+                    "definition": "কালেকশনের টোটাল ইনডেক্স সাইজ বের করা",
                     "code": "db.coll.totalIndexSize() "
                 }
             ]
