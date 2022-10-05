@@ -29,6 +29,42 @@
             ]
         },
         {
+            "title": "ডাটা টাইপ",
+            "items": [{
+                    "definition": "অক্ষর",
+                    "code": "rune"
+                },
+                {
+                    "definition": "পূর্ণসংখ্যা",
+                    "code": "int/int32/int64"
+                },
+                {
+                    "definition": "ফ্লোটিং পয়েন্ট সংখ্যা",
+                    "code": "float/float32/float64"
+                },
+                {
+                    "definition": "বুলিয়ান",
+                    "code": "bool"
+                },
+                {
+                    "definition": "স্ট্রিং",
+                    "code": "string"
+                },
+                {
+                    "definition":"পয়েন্টার টাইপ",
+                    "code":"*type (যেকোনো ডাটা টাইপ, যেমন int, float, string)"
+                }
+            ]
+        },
+        {
+            "title": "ইউজার ডিফাইন্ড ডাটা টাইপ",
+            "items": [{
+                    "definition": "ভিন্ন ভিন্ন বিল্ট ইন ডাটা টাইপের সমন্বয়ে নতুন ডাটা টাইপ তৈরি করা",
+                    "code": "struct"
+                }
+            ]
+        },
+        {
             "title": "ফাইল প্রিন্ট করা এবং ভ্যারিয়েবল ডিক্লেয়ার করা",
             "items": [{
                     "definition": "নিচের লাইন ফাঁকা রেখে কিছু প্রিন্ট করা",
@@ -121,7 +157,7 @@
                     "code": "a := 45 \n fmt.Printf(\"%T\", a) \n // int"
                 },
                 {
-                    "definition": "ইন্টিজারকে ফ্ল্যোট এ  রূপান্তর করাs",
+                    "definition": "ইন্টিজারকে ফ্ল্যোট এ  রূপান্তর করা",
                     "code": "var i int = 45 \n var j float 32 \n j = float32(i)"
                 },
                 {
@@ -253,6 +289,19 @@
             "title": "সুইচ স্ট্যাট্ম্যান্ট",
             "items": [{
                     "code": "switch 2 {"
+                },
+                {
+                    "code": "return x > 10000"
+                },
+                {
+                    "code": "}"
+                }
+            ]
+        },
+              {
+            "title": "ল্যাম্বদাস ( Lambdas )",
+            "items": [{
+                    "code": "myfunc := func() bool {"
                 },
                 {
                     "code": "case 1: \n\t fmt.Println(\"One\"}"
