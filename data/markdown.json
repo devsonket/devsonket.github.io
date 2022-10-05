@@ -29,6 +29,10 @@
                 {
                     "definition": "h6 ট্যাগ",
                     "code": "###### H6"
+                },
+                {
+                    "definition": "হেডিং আইডি সেট করার জন্য",
+                    "code": "### My Great Heading {#custom-id}"
                 }
             ]
         },
@@ -252,6 +256,22 @@
             "items": [{
                 "code": "<details> <summary> সংক্ষিপ্ত নাম </summary> </details>"
             }]
-        }
+        },
+        {
+            "title": "টাস্ক লিস্ট তৈরি করার জন্য",
+            "items": [
+                {
+                    "code": "- [x] Write the press release"
+                },
+                {
+                    "definition": "টাস্ক কমপ্লিট হলে এভাবে লিখতে হবে",
+                    "code": "- [x] Task 1: Today Create Website"
+                },
+                {
+                    "definition": "নতুন টাস্ক লিখার জন্য এই ফরম্যাটে লিখতে হবে",
+                    "code": "- [ ] Task2: Tommorow Update the website"
+                }
+            ]
+        }        
     ]
 }
