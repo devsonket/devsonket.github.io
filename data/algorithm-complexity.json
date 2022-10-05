@@ -581,7 +581,7 @@
             ]
         },
         {
-            "title": "টীম সর্ট",
+            "title": "টিম সর্ট/টীম সর্ট",
             "items": [{
                     "definition": "সবচেয়ে ভালো",
                     "code": "Ω(n)"
@@ -893,26 +893,6 @@
                 {
                     "definition": "স্পেস কমপ্লেক্সিটি",
                     "code": "O(|V|+ |E|)"
-                }
-            ]
-        },
-        {
-            "title": "টিম সর্ট",
-            "items": [{
-                    "definition": "সবচেয়ে ভালো",
-                    "code": "O(n)"
-                },
-                {
-                    "definition": "এভারেজ",
-                    "code": "O(n log(n))"
-                },
-                {
-                    "definition": "সবচেয়ে খারাপ",
-                    "code": "O(n log(n))"
-                },
-                {
-                    "definition": "স্পেস কমপ্লেক্সিটি",
-                    "code": "O(n)"
                 }
             ]
         }
