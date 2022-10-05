@@ -32,7 +32,7 @@
             "title": "ডাটা টাইপ",
             "items": [{
                     "definition": "অক্ষর",
-                    "code": "char"
+                    "code": "rune"
                 },
                 {
                     "definition": "পূর্ণসংখ্যা",
@@ -289,6 +289,19 @@
             "title": "সুইচ স্ট্যাট্ম্যান্ট",
             "items": [{
                     "code": "switch 2 {"
+                },
+                {
+                    "code": "return x > 10000"
+                },
+                {
+                    "code": "}"
+                }
+            ]
+        },
+              {
+            "title": "ল্যাম্বদাস ( Lambdas )",
+            "items": [{
+                    "code": "myfunc := func() bool {"
                 },
                 {
                     "code": "case 1: \n\t fmt.Println(\"One\"}"
