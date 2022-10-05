@@ -6,7 +6,8 @@
     "colorPref": "#E6515E",
     "contents": [{
             "title": "ডিরেক্টিভস",
-            "items": [{
+            "items": [
+                {
                     "definition": "রোট ইলেমেন্ট",
                     "code": "ng-app='plaintext'"
                 },
@@ -130,7 +131,8 @@
         },
         {
             "title": "গ্লোবাল ফাংশন",
-            "items": [{
+            "items": [
+                {
                     "definition": "বাইন্ডিং fn ফাংশন",
                     "code": "angular.bind(self, fn, args)"
                 },
@@ -145,6 +147,31 @@
                 {
                     "definition": "জেকুয়েরী অবজেক্ট",
                     "code": "angular.element(element);"
+                }
+            ]
+        },
+        {
+            "title": "বিল্ড এন্ড সার্ভ কমান্ড",
+            "items": [
+                {
+                    "definition": "বিল্ড ইন সার্ভিং",
+                    "code": "ng build"
+                },
+                {
+                    "definition": "অপ্রয়োজনীয় কোড ব্যবহার না করে বিল্ড",
+                    "code": "ng build --aot"
+                },
+                {
+                    "definition": "প্রোডাকশন এর জন্য বিল্ড",
+                    "code": "ng build --prod"
+                },
+                {
+                    "definition": "একটি ব্রাউজার ওপেন করার সাথে নির্দিষ্ট সার্ভ",
+                    "code": "ng serve -o"
+                },
+                {
+                    "definition": "কোড পরিবর্তন করলে পুনরায় লোড",
+                    "code": "ng serve --live-reload"
                 }
             ]
         }

@@ -291,6 +291,19 @@
                     "code": "switch 2 {"
                 },
                 {
+                    "code": "return x > 10000"
+                },
+                {
+                    "code": "}"
+                }
+            ]
+        },
+              {
+            "title": "ল্যাম্বদাস ( Lambdas )",
+            "items": [{
+                    "code": "myfunc := func() bool {"
+                },
+                {
                     "code": "case 1: \n\t fmt.Println(\"One\"}"
                 },
                 {
