@@ -126,12 +126,7 @@
       "title": "হোস্ট (Hosts)",
       "items": [
         {
-          "definition": "",
-          "code": ""
-        },
-        {
-          "definition": "",
-          "code": ""
+          "code": "services:\n  web:\n    extra_hosts:\n      - \"somehost:192.168.1.100\""
         }
       ]
     },
