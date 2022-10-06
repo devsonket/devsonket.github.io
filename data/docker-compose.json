@@ -6,7 +6,215 @@
   "colorPref": "#745fb5",
   "contents": [
     {
-      "title": "",
+      "title": "মূল উদাহরণ (Basic example)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "মৌলিক কমান্ড (Basic Commands)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "বিল্ডিং (Building)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "পোর্ট (Ports)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "কমান্ড (Commands)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "এনভায়রনমেন্ট ভেরিএবলেস (Environment variables)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "ডিপেন্ডেন্সিস (Dependencies)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "অন্যান্য বিকল্প (Other options)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "লেবেল (Labels)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "হোস্ট (Hosts)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "বাহ্যিক নেটওয়ার্ক (External network)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "ডিএনএস সার্ভার (DNS servers)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "নেটওয়ার্ক (Network)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "ভলিউম (Volume)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "ডিভাইস (Devices)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "বাহ্যিক লিঙ্ক (External links)",
+      "items": [
+        {
+          "definition": "",
+          "code": ""
+        },
+        {
+          "definition": "",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "title": "ব্যবহারকারী (User)",
       "items": [
         {
           "definition": "",
