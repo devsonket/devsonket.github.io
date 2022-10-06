@@ -178,12 +178,11 @@
       "title": "ভলিউম (Volume)",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "definition": "মাউন্ট হোস্ট পাথ বা নাম ভলিউম, একটি পরিষেবার উপ-বিকল্প হিসাবে নির্দিষ্ট করা হয়",
+          "code": "db:\n    image: postgres:latest\n    volumes:\n      - \"/var/run/postgres/postgres.sock:/var/run/postgres/postgres.sock\"\n      - \"dbdata:/var/lib/postgresql/data\""
         },
         {
-          "definition": "",
-          "code": ""
+          "code": "volumes:\n  dbdata:"
         }
       ]
     },
