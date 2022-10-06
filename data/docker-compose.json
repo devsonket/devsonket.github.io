@@ -191,12 +191,7 @@
       "title": "ডিভাইস (Devices)",
       "items": [
         {
-          "definition": "",
-          "code": ""
-        },
-        {
-          "definition": "",
-          "code": ""
+          "code": "services:\n  web:\n    devices:\n    - \"/dev/ttyUSB0:/dev/ttyUSB0\""
         }
       ]
     },
