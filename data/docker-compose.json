@@ -152,12 +152,7 @@
       "title": "ডিএনএস সার্ভার (DNS servers)",
       "items": [
         {
-          "definition": "",
-          "code": ""
-        },
-        {
-          "definition": "",
-          "code": ""
+          "code": "services:\n  web:\n    dns: 8.8.8.8\n    dns:\n      - 8.8.8.8\n      - 8.8.4.4"
         }
       ]
     },
