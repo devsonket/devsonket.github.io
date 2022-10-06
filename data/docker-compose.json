@@ -204,12 +204,7 @@
       "title": "বাহ্যিক লিঙ্ক (External links)",
       "items": [
         {
-          "definition": "",
-          "code": ""
-        },
-        {
-          "definition": "",
-          "code": ""
+          "code": "services:\n  web:\n    external_links:\n      - redis_1\n      - project_db_1:mysql"
         }
       ]
     },
