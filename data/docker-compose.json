@@ -100,12 +100,15 @@
       "title": "অন্যান্য বিকল্প (Other options)",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "definition": "এই পরিষেবাটি আরও প্রসারিত করুন",
+          "code": "extends:\n    file: common.yml  # optional\n    service: webapp"
         },
         {
-          "definition": "",
-          "code": ""
+          "code": "volumes:\n    - /var/lib/mysql\n    - ./_data:/var/lib/mysql"
+        },
+        {
+          "definition": "স্বয়ংক্রিয়ভাবে কন্টেইনার পুনরায় চালু করুন\nসর্বদা, ব্যর্থতা, না (ডিফল্ট) (always, on-failure, no (default))",
+          "code": "restart: unless-stopped"
         }
       ]
     },
