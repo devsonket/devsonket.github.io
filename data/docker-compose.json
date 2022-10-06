@@ -136,19 +136,6 @@
       ]
     },
     {
-      "title": "বাহ্যিক নেটওয়ার্ক (External network)",
-      "items": [
-        {
-          "definition": "",
-          "code": ""
-        },
-        {
-          "definition": "",
-          "code": ""
-        }
-      ]
-    },
-    {
       "title": "ডিএনএস সার্ভার (DNS servers)",
       "items": [
         {
@@ -162,6 +149,15 @@
         {
           "definition": "'ফ্রন্টএন্ড' নামে একটি কাস্টম নেটওয়ার্ক তৈরি করা",
           "code": "networks:\n  frontend:"
+        }
+      ]
+    },
+    {
+      "title": "বাহ্যিক নেটওয়ার্ক (External network)",
+      "items": [
+        {
+          "definition": "একটি পূর্ব-বিদ্যমান নেটওয়ার্কে যোগদান করুন",
+          "code": "networks:\n  default:\n    external:\n      name: frontend"
         }
       ]
     },
