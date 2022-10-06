@@ -113,12 +113,7 @@
       "title": "লেবেল (Labels)",
       "items": [
         {
-          "definition": "",
-          "code": ""
-        },
-        {
-          "definition": "",
-          "code": ""
+          "code": "services:\n  web:\n    labels:\n      com.example.description: \"Accounting web app\""
         }
       ]
     },
