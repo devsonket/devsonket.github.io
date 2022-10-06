@@ -6,6 +6,20 @@
     "colorPref": "#745fb5",
     "contents": [
         {
+            "title": "PHP",
+            "items": [
+                {
+                    "code": "language: php"
+                },
+                {
+                    "code": "php:\n  - '5.4'\n  - '5.6'\n  - '7.0'\n  - hhvm # on Trusty only\n  - nightly"
+                },
+                {
+                    "definition": "ট্র্যাভিস সিআই বেশ কয়েকটি পিএইচপি সংস্করণ সরবরাহ করে, যার সবকটিতেই রয়েছে এক্সডিবাগ এবং পিএইচপিউনিট। Travis CI ভার্চুয়াল মেশিনে ইনস্টল করা বিভিন্ন PHP সংস্করণ পরিচালনা করতে phpenv ব্যবহার করে।"
+                }
+            ]
+        },
+        {
             "title": "Node.js",
             "items": [
                 {
