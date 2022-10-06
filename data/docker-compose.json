@@ -217,12 +217,12 @@
       "title": "ব্যবহারকারী (User)",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "definition": "ব্যবহারকারী নির্দিষ্ট করা",
+          "code": "user: root"
         },
         {
-          "definition": "",
-          "code": ""
+          "definition": "আইডি সহ ব্যবহারকারী এবং গোষ্ঠী উভয়ই নির্দিষ্ট করা",
+          "code": "user: 0:0"
         }
       ]
     }
