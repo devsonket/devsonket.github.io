@@ -165,12 +165,8 @@
       "title": "নেটওয়ার্ক (Network)",
       "items": [
         {
-          "definition": "",
-          "code": ""
-        },
-        {
-          "definition": "",
-          "code": ""
+          "definition": "'ফ্রন্টএন্ড' নামে একটি কাস্টম নেটওয়ার্ক তৈরি করা",
+          "code": "networks:\n  frontend:"
         }
       ]
     },
