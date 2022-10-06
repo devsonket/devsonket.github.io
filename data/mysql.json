@@ -96,15 +96,15 @@
                 },
                 {
                     "definition": "এই নামে কোন টেবিল আছে কিনা চেক করে নতুন টেবিল তৈরি করা",
-                    "code": "CREATE TABLE tableName IF NOT EXISTS;"
+                    "code": "CREATE TABLE IF NOT EXISTS tableName;"
                 },
                 {
                     "definition": "কোন টেবিল ডিলেট করতে",
-                    "code": "DROP TABLE tableName IF EXIST;"
+                    "code": "DROP TABLE IF EXIST tableName;"
                 },
                 {
                     "definition": "ডাটাবেজ ডিলেট করতে",
-                    "code": "DROP DATABASE dbname IF EXIST;"
+                    "code": "DROP DATABASE IF EXIST dbname;"
                 }
             ]
         },

@@ -1,0 +1,149 @@
+{
+    "id": "travis-ci",
+    "title": "ট্র্যাভিস-সি আই",
+    "slug": "travis-ci",
+    "description": "ক্লাউড বা অন-প্রেমে আপনার প্রকল্পগুলি পরীক্ষা এবং স্থাপন করার সহজতম উপায়।\nট্র্যাভিস সিআইয়ের সাথে আপনার প্রকল্পগুলি সহজেই সিঙ্ক করুন এবং আপনি মিনিটের মধ্যে আপনার কোড পরীক্ষা করবেন।",
+    "colorPref": "#745fb5",
+    "contents": [
+        {
+            "title": "Node.js",
+            "items": [
+                {
+                    "code": "language: node_js"
+                },
+                {
+                    "code": "node_js:\n  - '4'"
+                },
+                {
+                    "definition": "ডিফল্টগুলি npm ইনস্টলে ইনস্টল করে এবং ডিফল্টগুলি npm পরীক্ষায় পরীক্ষা করে।"
+                }
+            ]
+        },
+        {
+            "title": "Ruby",
+            "items": [
+                {
+                    "code": "language: ruby"
+                },
+                {
+                    "code": "rvm:\n  - 2.0.0\n  - 1.9.3\n  - 1.8.7"
+                },
+                {
+                    "definition": "ডিফল্টস ইন্সটল টু বান্ডেল ইন্সটল, ডিফল্ট টেস্ট টু রেক।"
+                }
+            ]
+        },
+        {
+            "title": "জীবনচক্র তৈরি করুন (Build lifecycle)",
+            "items": [
+                {
+                    "code": "before_install"
+                },
+                {
+                    "code": "install"
+                },
+                {
+                    "code": "before_script"
+                },
+                {
+                    "code": "script"
+                },
+                {
+                    "code": "after_success or after_failure"
+                },
+                {
+                    "code": "after_script"
+                },
+                {
+                    "definition": "optional",
+                    "code": "before_deploy"
+                },
+                {
+                    "definition": "optional",
+                    "code": "deploy"
+                },
+                {
+                    "definition": "optional",
+                    "code": "after_deploy"
+                }
+            ]
+        },
+        {
+            "title": "শাখাগুলি (Branches)",
+            "items": [
+                {
+                    "code": "branches:\n  except: ['..']\n  only: ['master']"
+                }
+            ]
+        },
+        {
+            "title": "পরিবেশের ভার্স (Environment vars)",
+            "items": [
+                {
+                    "code": "\n\nenv:\n  - 'rack=master'\n  - 'rack=1.3.4'\n\n"
+                }
+            ]
+        },
+        {
+            "title": "কাস্টম পরীক্ষা কমান্ড (Custom test command)",
+            "items": [
+                {
+                    "code": "script: make test"
+                },
+                {
+                    "code": "before_script: make pretest"
+                },
+                {
+                    "code": "after_script:  make clean"
+                },
+                {
+                    "code": "before_script:\n  - make pretest1\n  - make pretest2"
+                }
+            ]
+        },
+        {
+            "title": "Apt প্যাকেজ (Apt packages)",
+            "items": [
+                {
+                    "code": "before_install:\n  - sudo apt-get update -q\n  - sudo apt-get install gcc-4.8 -y"
+                },
+                {
+                    "code": "https://docs.travis-ci.com/user/installing-dependencies/"
+                }
+            ]
+        },
+        {
+            "title": "শাখাগুলি (Branches)",
+            "items": [
+                {
+                    "code": "branches:\n  except:\n    - legacy"
+                },
+                {
+                    "code": "only:\n    - gh-pages\n    - /^deploy/"
+                }
+            ]
+        },
+        {
+            "title": "ই টি সি (Etc)",
+            "items": [
+                {
+                    "code": "gemfile:\n  - gemfiles/Gemfile.rails-2.3.x\n  - gemfiles/Gemfile.rails-3.0.x"
+                }
+            ]
+        },
+        {
+            "title": "তথ্যসূত্র (References)",
+            "items": [
+                {
+                    "code": "http://about.travis-ci.org/docs/user/build-configuration/"
+                },
+                {
+                    "code": "http://about.travis-ci.org/docs/user/languages/javascript-with-nodejs/"
+                },
+                {
+                    "code": "http://about.travis-ci.org/docs/user/languages/ruby/"
+                }
+            ]
+        }
+    ]
+}
