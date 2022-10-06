@@ -19,6 +19,14 @@
                     "code": "function NameOfTheFunction() { //place PHP code here }"
                 },
                 {
+                    "definition": "কন্সট্যাকটর ফাংশন লিখতে <  PHP 7.4",
+                    "code": "class Ugh{\n public $devsonket; \n function __construct($devsonket) {\n $this->devsonket = $devsonket;\n }\n}"
+                },
+                {
+                    "definition": "কন্সট্যাকটর ফাংশন লিখতে >  PHP 7.4",
+                    "code": "class Wow{\n  function __construct(public $devsonket) { }}"
+                },
+                {
                     "definition": "ভ্যারিএবল তৈরি করতে",
                     "code": "$variableName = 'value';"
                 },
