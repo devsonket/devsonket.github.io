@@ -9,12 +9,8 @@
       "title": "মূল উদাহরণ (Basic example)",
       "items": [
         {
-          "definition": "",
-          "code": ""
-        },
-        {
-          "definition": "",
-          "code": ""
+          "definition": "docker-compose.yml",
+          "code": "version: '2'\n\nservices:\n  web:\n    build:\n    # ডকারফাইল থেকে তৈরি করুন\n      context: ./Path\n      dockerfile: Dockerfile\n    ports:\n     - \"5000:5000\"\n    volumes:\n     - .:/code\n  redis:\n    image: redis"
         }
       ]
     },
