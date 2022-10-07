@@ -26,6 +26,7 @@ Flutter গুগলের তৈরি একটি ফ্রেমওয়ার
 - [Animation](#animation)
 - [Responsive Header](#responsive-header)
 - [Snackbar](#snackbar)
+- [Carousel](#carousel)
 
 
 ## Flutter CLI tools
