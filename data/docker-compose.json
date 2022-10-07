@@ -87,12 +87,12 @@
       "title": "ডিপেন্ডেন্সিস (Dependencies)",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "definition": "হোস্টনাম `ডাটাবেস` হিসাবে `db` পরিষেবা উপলব্ধ করে\n(নির্ভর করে বোঝায়)",
+          "code": "links:\n    - db:database\n    - redis"
         },
         {
-          "definition": "",
-          "code": ""
+          "definition": "শুরু করার আগে নিশ্চিত করুন যে `db` জীবিত আছে",
+          "code": "depends_on:\n    - db"
         }
       ]
     },
