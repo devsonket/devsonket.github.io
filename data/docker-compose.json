@@ -61,12 +61,12 @@
       "title": "কমান্ড (Commands)",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "definition": "কমান্ড চালানোর আদেশ",
+          "code": "command: bundle exec thin -p 3000\n  command: [bundle, exec, thin, -p, 3000]"
         },
         {
-          "definition": "",
-          "code": ""
+          "definition": "এন্ট্রিপয়েন্ট ওভাররাইড করুন",
+          "code": "entrypoint: /app/start.sh\n  entrypoint: [php, -d, vendor/bin/phpunit]"
         }
       ]
     },
