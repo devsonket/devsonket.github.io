@@ -170,6 +170,27 @@
                 },
                 {
                     "code": "<noframes>"
+                },
+                {
+                    "code": "<datalist>"
+                },
+                {
+                    "code": "<details>"
+                },
+                {
+                    "code": "<del>"
+                },
+                {
+                    "code": "<ins>"
+                },
+                {
+                    "code": "<outgroup>"
+                },
+                {
+                    "code": "<progress>"
+                },
+                {
+                    "code": "<meter>"
                 }
             ]
         },
