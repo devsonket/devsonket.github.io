@@ -22,12 +22,13 @@
       "title": "মৌলিক কমান্ড (Basic Commands)",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "code": "docker-compose start\ndocker-compose stop"
         },
         {
-          "definition": "",
-          "code": ""
+          "code": "docker-compose pause\ndocker-compose unpause"
+        },
+        {
+          "code": "docker-compose ps\ndocker-compose up\ndocker-compose down"
         }
       ]
     },
