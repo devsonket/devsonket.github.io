@@ -45,15 +45,14 @@
       ]
     },
     {
-      "title": "পোর্ট (Ports)",
+      "title": "পোর্টস (Ports)",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "code": "ports:\n    - \"3000\"\n    - \"8000:80\"  # host:container\n"
         },
         {
-          "definition": "",
-          "code": ""
+          "definition": "লিঙ্ক করা পরিষেবাগুলিতে পোর্টগুলি প্রকাশ করুন (হোস্ট করার জন্য নয়)",
+          "code": "expose: [\"3000\"]"
         }
       ]
     },
