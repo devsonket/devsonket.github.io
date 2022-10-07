@@ -108,7 +108,6 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
-```
 ## Hello world
 
 ```dart
