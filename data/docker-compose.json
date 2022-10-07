@@ -35,12 +35,15 @@
       "title": "বিল্ডিং (Building)",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "code": "web:\n  # ডকারফাইল থেকে তৈরি করুন\n  build: .\n  args:     # বিল্ড আর্গুমেন্ট যুক্ত করুন\n    APP_HOME: app"
         },
         {
-          "definition": "",
-          "code": ""
+          "definition": "কাস্টম ডকারফাইল থেকে তৈরি করুন",
+          "code": "build:\n    context: ./dir\n    dockerfile: Dockerfile.dev"
+        },
+        {
+          "definition": "ইমেজ থেকে তৈরি করুন",
+          "code": "image: ubuntu\n  image: ubuntu:14.04\n  image: tutum/influxdb\n  image: example-registry:4000/postgresql\n  image: a4bc65fd"
         }
       ]
     },
