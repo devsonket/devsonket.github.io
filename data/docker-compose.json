@@ -74,12 +74,12 @@
       "title": "এনভায়রনমেন্ট ভেরিএবলেস (Environment variables)",
       "items": [
         {
-          "definition": "",
-          "code": ""
+          "definition": "এনভায়রনমেন্ট ভার্স",
+          "code": "environment:\n    RACK_ENV: development\n  environment:\n    - RACK_ENV=development"
         },
         {
-          "definition": "",
-          "code": ""
+          "definition": "ফাইল থেকে এনভায়রনমেন্টের পরিবর্তন করা",
+          "code": "env_file: .env\n  env_file: [.env, .development.env]"
         }
       ]
     },
