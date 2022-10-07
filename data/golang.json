@@ -298,7 +298,7 @@
                 }
             ]
         },
-              {
+        {
             "title": "ল্যাম্বদাস ( Lambdas )",
             "items": [{
                     "code": "myfunc := func() bool {"
@@ -343,6 +343,10 @@
                 {
                     "definition": "আর্গুমেন্ট সহ ফাংশান তৈরি করা",
                     "code": "func greeting(msg string, nmbr int){}"
+                },
+                {
+                    "definition":"রিসিভার সহ ফাংশান তৈরি করা",
+                    "code":"func (p Persion)greeting(msg string, nmbr int) string {}"
                 },
                 {
                     "definition": "বেনামি ফাংশান",
