@@ -709,7 +709,8 @@
                     "code": "redirect('/path/to/route')->with('status', 'Your post has been published successfully!')"
                 }
             ]
-        },{
+        },
+        {
             "title": "অ্যারে এবং অবজেক্ট হেল্পার",
             "items": [{
                     "definition": "অ্যারে বা অবজেক্ট এক্সেসিবেল কি না চেক করতে",
@@ -814,6 +815,39 @@
                     "definition": "অ্যারের শেষ ভ্যালু দেখতে",
                     "code": "last()"
                 }   
+            ]
+        },
+        {
+            "title": "মডেল এর গুরুতপূর্ন তথ্য",
+            "items": [
+                {
+                    "definition": "ডাটাবেজ এর কানেকশন সেট করে দেয়া",
+                    "code": "protected $connection = 'sqlite';"
+                },
+                {
+                    "definition": "টেবিল সেট করে দেয়া",
+                    "code": "protected $table = 'users';"
+                },
+                {
+                    "definition": "টেবিল এর প্রাইমেরি কি সেট করে দেয়া",
+                    "code": "protected $primaryKey = 'column_id';"
+                },
+                {
+                    "definition": "ফিল্ড ডেট টাইপ হিসেবে পাওয়ার জন্য",
+                    "code": "protected $dates = ['dob'];"
+                },
+                {
+                    "definition": "যেসব ফিল্ড এ ডাটা ইন্সার্ট করতে চাই",
+                    "code": "protected $guarded = ['name', 'age'];"
+                },
+                {
+                    "definition": "মডেল ইভেন্টে ডিফল্ট ইভেন্ট বাইন্ড করে দেয়া",
+                    "code": "protected $dispatchesEvents = ['creating' => Event::class];"
+                },
+                {
+                    "definition": "ফিল্ড এর ভ্যালু কাস্টিং করে চেইঞ্জ করে ফেলা",
+                    "code": "protected $casts = ['dob' => 'int'];"
+                }
             ]
         }
     ]
