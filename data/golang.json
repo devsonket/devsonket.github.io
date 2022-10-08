@@ -429,6 +429,30 @@
                 "code": "\\n"
                 }
             ]
+        },
+        {
+            "title":"গোরুটিন এবং চ্যানেল",
+            "items":[{
+                "definition":"গোরুটাইন তৈরি করা",
+                "code":"go func() {\n\t// কোড লিখতে হবে\n}()"
+            },
+            {
+                "definition":"চ্যানেল তৈরি করা",
+                "code":"ch := make(chan int)"
+            },
+            {
+                "definition":"চ্যানেল এ ভ্যালু পাঠান",
+                "code":"ch <- 5"
+            },
+            {
+                "definition":"চ্যানেল থেকে ভ্যালু নেয়া",
+                "code":"val := <- ch"
+            },
+            {
+                "definition":"চ্যানেল এর সাইজ নির্ধারণ করা",
+                "code":"ch := make(chan int, 5)"
+            }
+            ]
         }
     ]
 }
