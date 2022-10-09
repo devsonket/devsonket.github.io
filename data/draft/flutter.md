@@ -891,6 +891,58 @@ class SnackBarPage extends StatelessWidget {
   }
 }
 ```
+## Buttons
+```dart
+import 'package:flutter/material.dart';
+
+void main() => runApp(ButtonsDemo());
+
+class ButtonsDemo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Buttons Demo',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Buttons Demo'),
+        ),
+        body: ButtonsDemoPage(),
+class ButtonsDemoPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+    children:[
+    // Text Button
+    
+    TextButton(
+    onPressed: () {
+      // Respond to button press
+     },
+     child: Text("TEXT BUTTON"),
+     ),
+     
+    // Outlined Button
+    
+    OutlinedButton(
+      onPressed: () {
+        // Respond to button press
+      },
+     child: Text("OUTLINED BUTTON"),
+      ),
+      
+      // Elevated Button
+      
+      ElevatedButton(
+        onPressed: () {
+          // Respond to button press
+          },
+         child: Text('CONTAINED BUTTON'),
+         ),
+    ]
+    );
+  }
+}
+```
 ## Carousel
 ```dart
 import 'package:flutter/material.dart';
@@ -1176,4 +1228,3 @@ class _HomePageState extends State<HomePage> {
   }
 }
 ```
-
