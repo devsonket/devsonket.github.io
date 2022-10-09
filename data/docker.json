@@ -151,8 +151,16 @@
                     "code": "docker-compose down"
                 },
                 {
-                    "definition": "নেটওয়ার্ক ভলিউম সহ সবকিছু remove করতে  ",
+                    "definition": "নেটওয়ার্ক ভলিউম সহ সবকিছু remove করতে",
                     "code": "docker-compose down --rmi all --volumes"
+                },
+                {
+                    "definition": "ডকার কম্পোজ বিল্ড করা যাতে কোন cache না থাকে",
+                    "code": "docker-compose build --no-cache"
+                },
+                {
+                    "definition": "ডকার কম্পোজ এর অরফান কন্টেইনার রিমুভ করা ",
+                    "code": "docker-compose up --remove-orphans"
                 }
             ]
         },
@@ -181,6 +189,14 @@
                 {
                     "definition": "অব্যবহৃত সকল ডকার ভলিউম রিমুভ করতে",
                     "code": "docker system prune --volumes"
+                },
+                {
+                    "definition": "কন্টেইনার এর লগ দেখতে",
+                    "code": "docker logs <container_id>"
+                },
+                {
+                    "definition": "কন্টেইনার ইন্সপেক্ট করে দেখতে",
+                    "code": "docker inspect <container_id>"
                 }
             ]
         },

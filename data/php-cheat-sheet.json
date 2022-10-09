@@ -19,12 +19,16 @@
                     "code": "function NameOfTheFunction() { //place PHP code here }"
                 },
                 {
-                    "definition": "ভ্যারিএবল তৈরি করতে",
-                    "code": "$variableName = 'value';"
+                    "definition": "কন্সট্যাকটর ফাংশন লিখতে <  PHP 7.4",
+                    "code": "class Ugh{\n public $devsonket; \n function __construct($devsonket) {\n $this->devsonket = $devsonket;\n }\n}"
                 },
                 {
-                    "definition": "কন্সট্যান্ট তৈরি করতে",
-                    "code": "define('CONSTANT_NAME', 'value');"
+                    "definition": "কন্সট্যাকটর ফাংশন লিখতে >  PHP 7.4",
+                    "code": "class Wow{\n  function __construct(public $devsonket) { }}"
+                },
+                {
+                    "definition": "ভ্যারিএবল তৈরি করতে",
+                    "code": "$variableName = 'value';"
                 },
                 {
                     "definition": "কন্ডিশন লিখতে",
@@ -45,6 +49,49 @@
                 {
                     "definition": "অ্যারের সাইজ বের করতে",
                     "code": "count($arrayName);"
+                }
+            ]
+        }, {
+            "title": "কন্সট্যান্ট",
+            "items": [{
+                    "definition": "কন্সট্যান্ট তৈরি করতে",
+                    "code": "define('CONSTANT_NAME', 'value');"
+                },
+                {
+                    "definition": "কন্সট্যান্ট এক্সেস করতে",
+                    "code": "CONSTANT_NAME;"
+                },
+                {
+                    "definition": " __LINE__ কন্সট্যান্ট",
+                    "code": "ফাইলের বর্তমান লাইনের সংখ্যা নির্দেশ করতে"
+                },
+                {
+                    "definition": " __FILE__ কন্সট্যান্ট",
+                    "code": "ফাইলের সম্পূর্ণ পাথ এবং ফাইলের নাম"
+                },
+                {
+                    "definition": " __DIR__ কন্সট্যান্ট",
+                    "code": "ফাইলের ডিরেক্টরি পাথ নির্দেশ করতে"
+                },
+                {
+                    "definition": " __FUNCTION__ কন্সট্যান্ট",
+                    "code": "ফাংশনের নাম নির্দেশ করতে"
+                },
+                {
+                    "definition": " __CLASS__ কন্সট্যান্ট",
+                    "code": "ক্লাসের নামটি যে নামস্থানে ঘোষণা করা হয়েছিল তা  নির্দেশ করতে"
+                },
+                {
+                    "definition": " __TRAIT__ কন্সট্যান্ট",
+                    "code": "ট্রেট ও তার নেমস্পেস নির্দেশ করতে"
+                },
+                {
+                    "definition": " __METHOD__ কন্সট্যান্ট",
+                    "code": "ক্লাস মেথড নেম"
+                },
+                {
+                    "definition": " __NAMESPACE__ কন্সট্যান্ট",
+                    "code": "নেমস্পেস নির্দেশ করতে"
                 }
             ]
         }, {
