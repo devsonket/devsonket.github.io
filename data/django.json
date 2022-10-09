@@ -15,6 +15,10 @@
                     "code": "cd <directory_name>"
                 },
                 {
+                    "definition": "প্রোজেক্ট ডিরেক্টরীতে ভার্চুয়াল  ইনভাইরোনমেন্ট ক্রিয়েট করা ",
+                    "code": "mkdir <.venv>"
+                },
+                {
                     "definition": "pipenv ইনিশিয়ালাইজ করা",
                     "code": "pipenv install"
                 },
@@ -196,6 +200,12 @@
                     "code": "{%extends '<html file name>'%}"
                 },
                 {
+                    "definition": "টেমপ্লেট ট্যাগ এক্সটেন্ড করার জন্য (কোড রিডিউস করার জন্য ) ",
+                    "code": "{% block content %} ... {% endblock %} or {% block content %} ... {% endblock content %}"
+
+
+                },
+                {
                     "definition": "টেমপ্লেট অন্তর্ভুক্ত করা",
                     "code": "{%include '<html file name>'%}"
                 },
@@ -214,7 +224,51 @@
                 {
                     "definition": "টেমপ্লেট এর ভেতরে লুপ তৈরি",
                     "code": "{%for i in <context data name>%} ... {%endfor%}"
+                },
+                {
+                    "definition":"ট্যাগ তৈরী করা",
+                    "code":"{% load <tag_or_filter_lib> %}"
+                },
+                {
+                    "definition":"ফিল্টার ব্যাবহার করা ",
+                    "code":"{% filter <filter>[|<filter>...] %}"
+                },
+                {
+                    "definition":"স্ট্যাটিক ফাইল লোড করা",
+                    "code": "{% load static \"custom.css\" %}"
+                },
+                {
+                    "definition":"টেম্পলেট এ  ভেরিয়েবল ব্যাবহার করা",
+                    "code":"{{ variable_name }}"
+                },
+                {
+                    "definition" :"url লিঙ্ক করা ",
+                    "code":"{% url \"some-other-page\" %}"
+                },
+                {
+                    "definition":"url এর ভিতরে ভেরিয়েবল পাস করা",
+                    "code": "{% url \"\"blog-view\"\" blog.id %}"
+
+                },
+                {
+                    "definition":"উক্ত  '|'  সিম্বল এর মাধ্যমে ফিল্টার ব্যাবহার করা",
+                    "code":"{{ variable_name | filter_name }}"
+                },
+                {
+                    "definition":"উক্ত  '|'  সিম্বল এর মাধ্যমে ফিল্টার আর্গুমেন্ট পাস করা",
+                    "code":"{{ variable_name | filter_name:\"argument\"}}"
+                },
+                {
+                    "definition":"উক্ত  '|'  সিম্বল এর মাধ্যমে ডিকশনারি শর্ট করা",
+                    "code":"{{ dictionary_name | dictsort:\"key_name\"}}"
+
+                },
+                {
+                    "definition":"উক্ত  '|'  সিম্বল এর মাধ্যমে ডাটাটাইপ ফিল্টার করা",
+                    "code":"{{ date_time | time\"H\": \"i\" }}"
+
                 }
+
             ]
         }
     ]

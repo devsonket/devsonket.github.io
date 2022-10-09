@@ -118,6 +118,9 @@
                     "code": "<i>"
                 },
                 {
+                    "code": "<em>"
+                },
+                {
                     "code": "<u>"
                 },
                 {
@@ -167,6 +170,27 @@
                 },
                 {
                     "code": "<noframes>"
+                },
+                {
+                    "code": "<datalist>"
+                },
+                {
+                    "code": "<details>"
+                },
+                {
+                    "code": "<del>"
+                },
+                {
+                    "code": "<ins>"
+                },
+                {
+                    "code": "<outgroup>"
+                },
+                {
+                    "code": "<progress>"
+                },
+                {
+                    "code": "<meter>"
                 }
             ]
         },
@@ -225,7 +249,7 @@
                     "code": "onClick"
                 },
                 {
-                    "code": "onDbclick"
+                    "code": "onDblclick"
                 },
                 {
                     "code": "onMousedown"
@@ -275,6 +299,117 @@
                 },
                 {
                     "code": "#id"
+                },
+                {
+                    "code": ".class1.class2"
+                },
+                {
+                    "code": "div > div"
+                },
+                {
+                    "code": "div ~ div"
+                },
+                {
+                    "code": "div + div"
+                },
+                {
+                    "code": "[target]"
+                },
+                {
+                    "code": "[target=_blank]"
+                },
+                {
+                    "code": "[title~=flower]"
+                },
+                {
+                    "code": "[lang|=en]"
+                },
+                {
+                    "code": "a[href^='http://']"
+                },
+                {
+                    "code": "a[href$='.jpg']"
+                },
+                {
+                    "code": "a[href*=devsonket]"
+                },
+                {
+                    "code": "div:first-child"
+                },
+                {
+                    "code": "div:last-child"
+                },
+                {
+                    "code": "div:only-child"
+                },
+                {
+                    "code": "div:nth-child(n)"
+                },
+                {
+                    "code": "div:nth-last-child(n)"
+                },
+                {
+                    "code": "div:first-of-type"
+                },
+                {
+                    "code": "div:last-of-type"
+                },
+                {
+                    "code": "div:only-of-type"
+                },
+                {
+                    "code": "div:nth-of-type(n)"
+                },
+                {
+                    "code": "div:nth-last-of-type(n)"
+                },
+                {
+                    "code": "div:empty"
+                },
+                {
+                    "code": "div:link"
+                },
+                {
+                    "code": "div:visited"
+                },
+                {
+                    "code": "div:active"
+                },
+                {
+                    "code": "div:hover"
+                },
+                {
+                    "code": "div:focus"
+                },
+                {
+                    "code": "div:target"
+                },
+                {
+                    "code": "div:lang(language)"
+                },
+                {
+                    "code": "div:enabled"
+                },
+                {
+                    "code": "div:disabled"
+                },
+                {
+                    "code": "div:checked"
+                },
+                {
+                    "code": "div:not(selector)"
+                },
+                {
+                    "code": "div:root"
+                },
+                {
+                    "code": "div:nth-child(n)"
+                },
+                {
+                    "code": "div:nth-last-child(n)"
+                },
+                {
+                    "code": "div:nth-last-of-type(n)"
                 }
             ]
         },
@@ -347,6 +482,21 @@
                 },
                 {
                     "code": "box-shadow"
+                },
+                {
+                    "code": "padding"
+                },
+                {
+                    "code": "padding-top"
+                },
+                {
+                    "code": "padding-left"
+                },
+                {
+                    "code": "padding-right"
+                },
+                {
+                    "code": "padding-bottom"
                 }
             ]
         },
