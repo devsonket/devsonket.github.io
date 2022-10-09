@@ -97,6 +97,23 @@
             ]
         },
         {
+            "title": "সহজে অদলবদল দুইটির মান",
+            "items": [{
+                    "code": "let x =5, y=10;"
+                },
+                {
+                    "code": "[x,y]=[y,x];"
+                },
+                {
+                    "code": "consol.log(x) //10;"
+                },
+                {
+                    "code": "consol.log(y) //5"
+                }
+    	    ]
+       },
+       
+        {
             "title": "গাণিতিক ফাংশন",
             "items": [{
                     "definition": "বর্গমূল করার জন্য",
