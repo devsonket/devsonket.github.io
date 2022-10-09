@@ -86,6 +86,11 @@ flutter logs -d <device-id>
 ```bash
 flutter --help --verbose
 ```
+ডিভাইসের দৈর্ঘ্য, প্রস্থ বের করতে
+```bash
+double screenHeight =  MediaQuery.of(context).size.height;
+double screenWidth =  MediaQuery.of(context).size.width;
+```
 বিভিন্ন ডিভাইসের জন্য রেস্পন্সিভনেস চেক করতে
 ```bash
 import 'package:device_preview/device_preview.dart';
