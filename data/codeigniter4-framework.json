@@ -6,6 +6,56 @@
 	"colorPref": "#25C7E3",
 	"contents": [
 		{
+			"title": "গ্লোবাল ফাংশন",
+			"items": [
+				{
+					"definition": "ক্যাশ সার্ভিস অ্যাক্সেসর ফাংশন",
+					"code": "cache(string $key);"
+				},				
+				{
+					"definition": "কুকি সার্ভিস অ্যাক্সেসর ফাংশন",
+					"code": "cookie(string $name, string $value, array $options);\ncookies(array $cookies, bool $getGlobal);"
+				},
+				{
+					"definition": "(env)পরিবেশ ভেরিয়েবলের মান পাওয়ার ফাংশন",
+					"code": "env(string $key, $default);"
+				},
+				{
+					"definition": "প্লেইন এইচটিএমএল, জেএস, এক্সএসএস স্ক্রিপ্ট এনকোড করার ফাংশন",
+					"code": "esc(string|array $data, $context = 'html', $encoding); \n//context types : html, js, css, url, attr, raw"
+				},
+				{
+					"definition": "একটি স্ট্রিং এর অনুবাদ পুনরুদ্ধার করার ফাংশন",
+					"code": "lang(string $text, array $substitutes, string $locale);"
+				},
+				{
+					"definition": "মডেল ইন্সটেন্স তৈরির সহজ উপায় ফাংশন",
+					"code": "model(string $classname, bool $getShared = true, &$dbconnection = null);"
+				},
+				{
+					"definition": "ফর্মের ওল্ড ভালু পাওয়ার ফাংশন",
+					"code": "old(string $key, $default = null, $escape = 'html');"
+				},
+				{
+					"definition": "সেশন সার্ভিস অ্যাক্সেসর ফাংশন",
+					"code": "session(string $key);"
+				},
+				{
+					"definition": "টাইমার সার্ভিস অ্যাক্সেসর ফাংশন",
+					"code": "timer(string $name);"
+				},
+				{
+					"definition": "ভিউ(view) রেন্ডার ফাংশন",
+					"code": "view(string $viewpath, array $data, array $options); \n//options : saveData, cache, debug"
+				},
+				{
+					"definition": "ভিউসেল(view cell) কন্ট্রোলার ছাড়া ভিউ রেন্ডার ফাংশন",
+					"code": "view_cell(string $class, array $params, integer $ttl, string $cacheName); \n//ttl - cache duration"
+				}
+
+			]
+		},
+		{
 			"title": "অ্যারে হেলপার",
 			"items": [
 				{
@@ -172,6 +222,64 @@
 					"definition": "একটি সংখ্যাকে একটি অর্ডিনাল স্ট্রিংয়ে পরিণত করার ফাংশন",
 					"code": "ordinalize(int $number);"
 				}
+			]
+		},
+		{
+			"title": "গ্লোবাল কনস্ট্যান্টস",
+			"items": [
+				{
+					"definition": "অ্যাপ ডিরেক্টরির পথ",
+					"code": "APPPATH"
+				},				
+				{
+					"definition": "প্রোজেক্ট রুট ডিরেক্টরির পথ",
+					"code": "ROOTPATH"
+				},
+				{
+					"definition": "সিস্টেম ডিরেক্টরির পথ",
+					"code": "SYSTEMPATH"
+				},
+				{
+					"definition": "কন্ট্রোলার ধারণকারী ডিরেক্টরির পথ",
+					"code": "FCPATH"
+				},
+				{
+					"definition": "লেখার যোগ্য ডিরেক্টরির পথ",
+					"code": "WRITEPATH"
+				},
+				{
+					"definition": "সেকেন্ডের সময়কাল",
+					"code": "SECOND"
+				},
+				{
+					"definition": "মিনিটের সময়কাল (সেকেন্ডে)",
+					"code": "MINUTE"
+				},
+				{
+					"definition": "ঘন্টার সময়কাল (সেকেন্ডে)",
+					"code": "HOUR"
+				},
+				{
+					"definition": "দিনের সময়কাল (সেকেন্ডে)",
+					"code": "DAY"
+				},
+				{
+					"definition": "সপ্তাহের সময়কাল (সেকেন্ডে)",
+					"code": "WEEK"
+				},
+				{
+					"definition": "মাসের সময়কাল (সেকেন্ডে)",
+					"code": "MONTH"
+				},
+				{
+					"definition": "বছরের সময়কাল (সেকেন্ডে)",
+					"code": "YEAR"
+				},
+				{
+					"definition": "দশকের সময়কাল (সেকেন্ডে)",
+					"code": "DECADE"
+				}
+
 			]
 		}
 	]
