@@ -1,0 +1,155 @@
+{
+    "id": "selenium",
+    "title": "সেলেনিয়াম",
+    "slug": "selenium",
+    "description": "সেলেনিয়াম হচ্ছে অটোমেটিক ওয়েব অ্যাপ্লিকেশন টেস্টিং ফ্রেমওয়ার্ক, যা দ্বারা বিভিন্ন ওয়েব ব্রাউজারে ওয়েব অ্যাপ্লিকেশন টেস্ট করতে পারি।",
+    "colorPref": "#C74634",
+    "contents": [
+        {
+            "title": "ব্রাউজার প্রপার্টি সেটাপ",
+            "items": [
+                {
+                    "definition": "ক্রোম",
+                    "code": "System.se­tPr­ope­rty­(“we­bdr­ive­r.chrome.d­riv­er”, “/path/to/chromedrive­r”);"
+                },
+                {
+                    "definition": "ফায়ারফক্স",
+                    "code": "System.se­tPr­ope­rty­(“we­bdr­ive­r.g­eck­o.d­riv­er”, “­/path/to/geckodriver”);"
+                },
+                {
+                    "definition": "এজ",
+                    "code": "System.se­tPr­ope­rty­(“we­bdr­ive­r.edge.d­riv­er”, “P/path/to/MicrosoftWebDriver”);"
+                }
+            ]
+        },
+        {
+            "title": "ব্রাউজার ইনিশিলাইজেশন",
+            "items": [
+                {
+                    "definition": "ক্রোম",
+                    "code": "WebDriver driver = new ChromeDriver();"
+                },
+                {
+                    "definition": "ফায়ারফক্স",
+                    "code": "WebDriver driver = new FirefoxDriver();"
+                },
+                {
+                    "definition": "সাফারি",
+                    "code": "WebDriver driver = new SafariDriver();"
+                }
+            ]
+        },
+        {
+            "title": "সেলেনিয়াম লোকেটর",
+            "items": [
+                {
+                    "definition": "আইডির মাধ্যমে লোকেটিং করার জন্য",
+                    "code": "driver.fi­ndE­lem­ent­(By.id­(\"q\")­).s­end­Key­s(\"S­elenium 3\");"
+                },
+                {
+                    "definition": "নামের মাধ্যমে লোকেটিং করার জন্য",
+                    "code": "driver.fi­ndE­lem­ent­(By.na­me(­\"-­q\")).se­ndK­eys­(\"Se­lenium 3\");"
+                },
+                {
+                    "definition": "ডমের মাধ্যমে লোকেটিং করার জন্য",
+                    "code": "dom =docum­ent.ge­tEl­eme­ntB­yId­('s­ign­inF­orm')"
+                },
+                {
+                    "definition": "সিএসএসের মাধ্যমে লোকেটিং করার জন্য",
+                    "code": "driver.Fi­ndE­lem­ent­(By.Cs­sSe­lec­tor­(\"#r­ightbar > .menu > li:nth­-of­-ty­pe(2) > h4\"));"
+                },
+                {
+                    "definition": "লিঙ্কটেক্সটের মাধ্যমে লোকেটিং করার জন্য",
+                    "code": "driver.fi­ndE­lem­ent­(By.li­nkT­ext­(\"Ne­xtP­age­\"­)).c­li­ck();"
+                },
+                {
+                    "definition": "ট্যাগ নামের মাধ্যমে লোকেটিং করার জন্য",
+                    "code": "driver.fi­ndE­lem­ent­(By.ta­gNa­me(­\"­sel­ect­\"­)).C­li­ck();"
+                },
+                {
+                    "definition": "ক্লাস নামের মাধ্যমে লোকেটিং করার জন্য",
+                    "code": "driver.fi­ndE­lem­ent­(By.cl­ass­Nam­e(\"p­rof­ile­-he­ade­r\"));"
+                },
+                {
+                    "definition": "এক্সপ্যাথের মাধ্যমে লোকেটিং করার জন্য",
+                    "code": "driver.fi­ndE­lem­ent­(By.xp­ath­(\"//­inp­ut[­@id­='q­']\")­).s­end­Key­s(\"S­elenium 3\");"
+                },
+                {
+                    "definition": "হাইপারলিঙ্কস বাই লিঙ্ক টেক্সটের মাধ্যমে লোকেটিং করার জন্য",
+                    "code": "driver.Fi­ndE­lem­ent­(By.Li­nkT­ext­(\"edit this page\")).Cl­ick();"
+                },
+                {
+                    "definition": "পার্সিয়াল লিঙ্ক টেক্সটের মাধ্যমে লোকেটিং করার জন্য",
+                    "code": "driver.fi­ndE­lem­ent­(By.pa­rti­alL­ink­Tex­t(\"N­ext­P\")).cl­ick();"
+                }
+            ]
+        },
+        {
+            "title": "ইলিমেন্ট ভ্যালিডেশন",
+            "items": [
+                {
+                    "definition": "একটা ইলিমেন্ট সক্রিয় কিনা",
+                    "code": "isEnab­led()"
+                },
+                {
+                    "definition": "একটা ইলিমেন্ট সিলেক্টড কিনা",
+                    "code": "isSele­cted()"
+                },
+                {
+                    "definition": "অএকটা ইলিমেন্ট প্রকাশিত হইছে কিনা",
+                    "code": "isDisp­layed()"
+                }
+            ]
+        },
+        {
+            "title": "হ্যান্ডেল মাল্টিপল উন্ডোজ এবং ট্যাব",
+            "items": [
+                {
+                    "definition": "বর্তমান পেইজের হ্যান্ডেল এনে দিবে",
+                    "code": "getWin­dow­Han­dle()"
+                },
+                {
+                    "definition": "সব পেইজের হ্যান্ডেল এনে দিবে",
+                    "code": "getWin­dow­Han­dles()"
+                },
+                {
+                    "definition": "উন্ডোজে সুইচ করা জন্য",
+                    "code": "driver.sw­itc­hTo­().w­in­dow­(“w­ind­owN­ame­/ha­ndle”)"
+                },
+                {
+                    "definition": "বর্তমান উন্ডোজ বন্ধ করে দিবে",
+                    "code": "driver.cl­ose()"
+                },
+                {
+                    "definition": "ব্রাউজারের সব উন্ডোজ বন্ধ করে দিবে",
+                    "code": "driver.qu­it();"
+                }
+            ]
+        },
+        {
+            "title": "গেট মেথডস",
+            "items": [
+                {
+                    "definition": "ওয়েব পেইজের বর্তমান টাইটেল এনে দিবে",
+                    "code": "getTitle()"
+                },
+                {
+                    "definition": "ওয়েব পেইজের বর্তমান ইউ.আর.এল এনে দিবে",
+                    "code": "getCur­ren­tUrl()"
+                },
+                {
+                    "definition": "ওয়েব পেইজের বর্তমান সোর্স এনে দিবে",
+                    "code": "getPag­eSo­urce()"
+                },
+                {
+                    "definition": "ওয়েব ইলিমেন্টের স্পেসিফিক টেক্সট এনে দিবে",
+                    "code": "getText()"
+                },
+                {
+                    "definition": "স্পেসিফিক এট্রিবিউট ভ্যালু এনে দিবে",
+                    "code": "getAtt­rib­ute()"
+                }
+            ]
+        }
+    ]
+}
