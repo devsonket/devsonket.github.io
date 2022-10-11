@@ -81,6 +81,27 @@
 			]
 		},
 		{
+			"title": "ফরম হেলপার",
+			"items": [
+				{
+					"definition": "লোডিং ফরম হেলপার",
+					"code": "helper('form');"
+				},
+				{
+					"definition": "ফরম জেনারেটর এইচটিএমএল আকারে",
+					"code": "form_open('form_name');"
+				},
+				{
+					"definition": "ফরম জেনারেটর এইচটিএমএল আকারে ফাইল আপলোড হেল্পার সহ",
+					"code": "form_open_multipart('form_name');"
+				},
+				{
+					"definition": "হিডেন ফিল্ড তৈরি করার জন্য",
+					"code": "form_hidden('username', 'johndoe');"
+				},
+			]
+		},
+		{
 			"title": "কুকি হেলপার",
 			"items": [
 				{
