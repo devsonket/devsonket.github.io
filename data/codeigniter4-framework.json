@@ -98,7 +98,7 @@
 				{
 					"definition": "হিডেন ফিল্ড তৈরি করার জন্য",
 					"code": "form_hidden('username', 'johndoe');"
-				},
+				}
 			]
 		},
 		{
