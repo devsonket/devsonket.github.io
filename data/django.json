@@ -267,6 +267,35 @@
                     "definition":"উক্ত  '|'  সিম্বল এর মাধ্যমে ডাটাটাইপ ফিল্টার করা",
                     "code":"{{ date_time | time\"H\": \"i\" }}"
 
+                },
+                {
+                    "definition":"কমেন্ট ব্যাবহার করা",
+                    "code":"{% comment %} .... {% endcomment %}"
+
+                },
+                {
+                    "definition":"লুপে ইনডেক্স নাম্বার চেক করা",
+                    "code":"{{ forloop.counter }} #starting index 1 Or {{ forloop.counter0 }} # starting index 0"
+                },
+                {
+                    "definition":"লুপে রিভার্স ইনডেক্স নাম্বার চেক করা",
+                    "code":"{{ forloop.revcounter }} # end index 1 Or {{ forloop.revcounter0 }} # end index 0"
+                },
+                {
+                    "definition":"টেমপ্লেট এর কিছু পরিবর্তন হলো কিনা চেক করা",
+                    "code":"{% ifchanged %} …. {% endifchanged %}"
+                },
+                {
+                    "definition":"Random টেক্স জেনারেট করা",
+                    "code":"{% lorem %}"
+                },
+                {
+                    "definition":"বর্তমান সময়",
+                    "code":"{% now \"SHORT_DATETIME_FORMAT\" %}"
+                },
+                {
+                    "definition":"এইচটিএমএল ট্যাগের হোয়াইটস্পেস মুছা",
+                    "code":"{% spaceless %}  …..  {% endspaceless %}"
                 }
 
             ]
