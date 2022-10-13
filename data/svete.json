@@ -7,12 +7,8 @@
     "contents": [{
             "title": "শুরু",
             "items": [{
-                    "definition": "npx এর মাধ্যমে ইন্সটল করতে",
-                    "code": "\n npx degit sveltejs/template awsome-svelte\n cd awsome-svelte\n npm install\n npm run dev"
-                },
-                {
-                    "definition": "Git এর মাধ্যমে ইন্সটল",
-                    "code": "\n git clone https://github.com/sveltejs/template.git awsome-svelte\n cd awsome-svelte\n npm install\n npm run dev"
+                    "definition": "npm এর মাধ্যমে vite এর সাহায্যে ইন্সটল করতে",
+                    "code": "\n npm create vite@latest myapp -- --template svelte\n cd myapp\n npm install\n npm run dev"
                 }
             ]
         },
