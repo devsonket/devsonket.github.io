@@ -27,6 +27,10 @@
                     "code": "@media (min-width: 640px) { ... }"
                 },
                 {
+                    "definition": "এস্পেস্কট রেশিও",
+                    "code": "aspect-video"
+                },
+                {
                     "definition": "ব্রেকপয়েন্টস: md",
                     "code": "@media (min-width: 768px) { ... }"
                 },
@@ -97,6 +101,22 @@
                 {
                     "definition": "ডিসপ্লে ইনলাইন গ্রিড",
                     "code": "inline-grid"
+                },
+                {
+                    "definition": "static পজিশনিং",
+                    "code": "static"
+                }, 
+                {
+                    "definition": "fixed পজিশনিং",
+                    "code": "fixed"
+                }, 
+                {
+                    "definition": "absolute পজিশনিং",
+                    "code": "absolute"
+                }, 
+                {
+                    "definition": "relative পজিশনিং",
+                    "code": "relative"
                 }
             ]
         },
