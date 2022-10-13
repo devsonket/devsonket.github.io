@@ -23,6 +23,14 @@
                     "code": "sudo apt-get remove git"
                 },
                 {
+                    "definition": "গিট ইন্সটল CentOs",
+                    "code": "sudo yum install git"
+                },
+                {
+                    "definition": "গিট আনইনস্টল CentOs",
+                    "code": "yum remove git"
+                },
+                {
                     "definition": "গিট ভার্সন চেক",
                     "code": "git --version"
                 },
