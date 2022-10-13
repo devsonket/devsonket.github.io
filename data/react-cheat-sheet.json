@@ -35,11 +35,15 @@
         },
         {
           "definition": "ReactDOM কে ইম্পোর্ট করে নেয়া",
-          "code": "import ReactDOM from 'react-dom'"
+          "code": "import ReactDOM from 'react-dom/client'"
         },
         {
-          "definition": "ReactDOM.render এই মেথডটি ২টি আরগুমেন্ট নেয় রেন্ডার ইলিমেন্ট এবং রেন্ডার স্কোপ",
-          "code": "ReactDOM.render(<h1>Hello, world!</h1>,document.getElementById('root'))"
+          "definition": "এরপরে প্রজেক্টের root তৈরী করা ReactDOM এর সাহায্যে",
+          "code": "const root = ReactDOM.createRoot(document.getElementById('root'))"
+        },
+        {
+          "definition": "ReactDOM এর সাহায্যে তৈরী root টিকে রেন্ডার করা",
+          "code": "root.render(<h1>Hello world!</h1>)"
         }
       ]
     },
