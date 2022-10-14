@@ -160,7 +160,7 @@
                 }
             ]
         },
-                 {
+        {
             "title": "গ্রিড",
             "items": [{
                     "definition": "গ্রিড",
@@ -209,7 +209,7 @@
                 {
                     "definition": "গ্রিড অটো রোজ (size = auto/min/max/fr)",
                     "code": "auto-rows-{size}"
-                },
+                }
             ]
         },
         {
