@@ -309,6 +309,14 @@
                 {
                     "definition": "সময় সম্পর্কিত ফাইল",
                     "code": "#include<time.h>"
+                },
+                {
+                    "definition": "স্ট্যান্ডার্ড আর্গুমেন্ট ফাংশন সম্পর্কিত ফাইল",
+                    "code": "#include<stdarg.h>"
+                },
+                {
+                    "definition": "এটি সিগন্যাল হ্যান্ডলিং ফাংশন সম্পর্কিত ফাইল",
+                    "code": "#include<signal.h>"
                 }
             ]
         }
