@@ -137,7 +137,7 @@
                     "code": "Math.exp()"
                 },
                 {
-                    "definition": "y এর পাওয়ার হিসেবে x কে নেয়ার জন্য",
+                    "definition": "x এর পাওয়ার হিসেবে y কে নেয়ার জন্য",
                     "code": "Math.pow(x,y)"
                 },
                 {
