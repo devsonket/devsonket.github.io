@@ -1,0 +1,93 @@
+{
+	"id": "aws-sam",
+	"title": "AWS সার্ভারলেস অ্যাপ্লিকেশন মডেল (SAM)",
+	"slug": "aws-sam",
+	"description": "AWS সার্ভারলেস অ্যাপ্লিকেশন মডেল (SAM) কমান্ড লাইন ইন্টারফেস এর চিটশিট",
+	"colorPref": "#ec7211",
+	"contents": [
+		{
+			"title": "ইন্সটলেশন, ভ্যারিফিকেশন, আপগ্রেড",
+			"items": [
+				{
+					"definition": "কমান্ড লাইন ইন্টারফেস ইন্সটল করা",
+					"code": "brew tap aws/tap\n brew install aws-sam-cli"
+				},
+				{
+					"definition": "ভার্সন ভ্যারিফিকেশন",
+					"code": "$ sam --version"
+				},
+				{
+					"definition": "কমান্ড লাইন ইন্টারফেস আপগ্রেড করা",
+					"code": "brew upgrade aws-sam-cli"
+				}
+			]
+		},
+		{
+			"title": "বিল্ড এবং ডিপ্লোয় অ্যাপ্লিকেশন",
+			"items": [
+				{
+					"definition": "স্যাম্পল অ্যাপ্লিকেশন ডাউনলোড করা",
+					"code": "$ sam init"
+				},
+				{
+					"definition": "অ্যাপ্লিকেশন বিল্ড করা",
+					"code": "$ sam  build"
+				},
+				{
+					"definition": "অ্যাপ্লিকেশন ডিপ্লোয় করা",
+					"code": "$ sam deploy --guided"
+				},
+				{
+					"definition": "API গুলো লোকাল ভাবে হোস্ট করা",
+					"code": "$ sam local start-api"
+				},
+				{
+					"definition": "ডিরেক্ট ভাবে ল্যাম্বডা ফাংশন ইনভোক করা",
+					"code": "$ sam local invoke \"LambdaFunction\" -e events/event.json"
+				},
+				{
+					"definition": "SAM অ্যাপ্লিকেশনকে প্যাকেজ করা",
+					"code": "$ sam package"
+				},
+				{
+					"definition": "একটি AWS SAM অ্যাপ্লিকেশনকে AWS সার্ভারলেস রিপোসিটরিতে পাবলিশ করা",
+					"code": "$ sam publish"
+				},
+				{
+					"definition": "AWS SAM এর টেমপ্লেট ফাইল ভ্যালিড কিনা যাচাই করা",
+					"code": "$ sam validate"
+				},
+				{
+					"definition": "ল্যাম্বডা ফাংশনে এনভাইরনমেন্ট ভ্যারিয়েবল প্রদান করা",
+					"code": "$ sam local invoke --env-vars env.json \"LambdaFunction\""
+				}
+			]
+		},
+		{
+			"title": "লগিং",
+			"items": [
+				{
+					"definition": "AWS ক্লাউড ফরমেশন স্ট্যাক ব্যবহার করে লগ ফেচ করা",
+					"code": "$ sam logs -n LambdaFunction --stack-name mystack"
+				},
+				{
+					"definition": "ফাংশন নাম দিয়ে লগ ফেচ করা",
+					"code": "$ sam logs -n LambdaFunction"
+				},
+				{
+					"definition": "লগ ফিল্টার করা",
+					"code": "$ sam logs -n LambdaFunction --stack-name mystack --filter \"error\""
+				}
+			]
+		},
+		{
+			"title": "ইভেন্ট জেনারেসন",
+			"items": [
+				{
+					"definition": "AWS S3 put অপারেশনের জন্য স্যাম্পল ইভেন্ট জেনেরেট করা",
+					"code": "$ sam local generate-event s3 delete"
+				}
+			]
+		}
+	]
+}
