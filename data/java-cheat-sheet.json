@@ -99,13 +99,22 @@
         {
             "title": "সহজে অদলবদল দুইটির মান",
             "items": [{
-                    "code": "let x =5, y=10;"
+                    "code": "int x =5, y=10;"
                 },
                 {
-                    "code": "[x,y]=[y,x];"
+                    "code": "int temp;"
                 },
                 {
-                    "code": "System.out.println(x); //10;"
+                    "code": "temp = x;"
+                },
+                {
+                    "code": "x = y;"
+                },
+                {
+                    "code": "y = temp;"
+                },
+                {
+                    "code": "System.out.println(x); //10"
                 },
                 {
                     "code": "System.out.println(y); //5"
