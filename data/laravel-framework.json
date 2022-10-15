@@ -814,7 +814,7 @@
                 },{
                     "definition": "অ্যারের শেষ ভ্যালু দেখতে",
                     "code": "last()"
-                }   
+                }
             ]
         },
         {
@@ -849,6 +849,27 @@
                     "code": "protected $casts = ['dob' => 'int'];"
                 }
             ]
-        }
+        },
+        {
+            "title": "প্রয়োজোনীয় কিছু হেল্পার ফাংশন",
+            "items":[
+               {
+                   "definition": "ডাই এবং ডিবাগ",
+                   "code": "dd($Variable_name)"
+               },
+               {
+                   "definition": "ডাই,ডিবাগ এবং ডাম্প ",
+                   "code": "ddd($Variable_name)"
+               },
+               {
+                   "definition": "হল্ট/এবোর্ট/টার্মিনেট করার জন্য",
+                   "code": "abort(HTTP response Code)"
+               },
+               {
+                   "definition": "লারাভেল এর ডিফল্ট বিক্রিপ্ট এলগরিদম দিয়ে হ্যাশ মেক",
+                   "code": "bcrypt('String')"
+               }
+            ]
+       }
     ]
 }
