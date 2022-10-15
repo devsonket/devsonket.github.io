@@ -165,6 +165,31 @@
             ]
         },
         {
+          "title": "ডকার Hub এর কমান্ডসমূহ",
+          "items": [
+            {
+              "definition": "ডকার CLI এ লগইন করতে",
+              "code": "docker login"
+            },
+            {
+              "definition": "ডকার Hub থেকে স্যাম্পল ইমেজ পুল করতে",
+              "code": "docker pull hello-world"
+            },
+            {
+              "definition": "ডকার ইমেজ build করুন ডকার Hub এ আপলোড এর জন্য",
+              "code": "docker build -t <your_username>/my-private-repo"
+            },
+            {
+              "definition": "ডকার ইমেজ locally রান করতে",
+              "code": "docker run <your_username>/my-private-repo"
+            },
+            {
+              "definition": "ডকার ইমেজটি ডকার Hub এ পুশ করতে",
+              "code": "docker push <your_username>/my-private-repo"
+            }
+          ]
+        },
+        {
             "title": "ডকার সিস্টেম কমান্ডসমূহ",
             "items": [{
                     "definition": "ডকার ডিস্ক ইউসেজ জানতে",
