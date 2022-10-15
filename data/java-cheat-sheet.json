@@ -105,10 +105,10 @@
                     "code": "[x,y]=[y,x];"
                 },
                 {
-                    "code": "consol.log(x) //10;"
+                    "code": "System.out.println(x); //10;"
                 },
                 {
-                    "code": "consol.log(y) //5"
+                    "code": "System.out.println(y); //5"
                 }
     	    ]
        },
