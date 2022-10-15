@@ -93,6 +93,14 @@
                 {
                     "definition": "এক সাথে বড় হাতের এবং উল্টো করার জন্য",
                     "code": "\"­Hel­lo\".upcase.reverse"
+                },
+                {
+                    "definition": "একটি সাব স্ট্রিং মুছার জন্য ",
+                    "code": "full_string = \"WANTED_STRING  SUBSTRING\"\n full_string.slice!(\"SUBSTRING\")\n puts full_string "
+                },
+                {
+                    "definition": "একটি সাব স্ট্রিং এর সকল আবির্ভাব অন্য একটি সাবস্ট্রিং দ্বারা রিপ্লেস করার জন্য",
+                    "code": "full_string = \"SUBSTRING HAS BEEN SUBSTRING \" \n puts full_string.gsub(\"SUBSTRING\",\"REPLACED\")"
                 }
             ]
         },

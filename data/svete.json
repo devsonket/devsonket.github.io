@@ -24,7 +24,7 @@
                 },
                 {
                     "definition": "কম্পোনেন্ট স্ট্যাইল",
-                    "code": "\n <p>This is a paragraph.</p>\n<style>\n p{\n\t color: purple; \n} \n</style>"
+                    "code": "\n<p>This is a paragraph.</p>\n<style>\np{\n\tcolor: purple;\n}\n</style>"
                 },
                 {
                     "definition": "নেস্টেড কম্পোনেন্ট",
@@ -51,14 +51,14 @@
                 {
                     "definition": "ইভেন্ট হ্যান্ডেলার",
                     "code": [
-                        "<script> \n let count = 0; \n function incrementCount() { \n count += 1; \n } \n</script>\n",
+                        "<script> \n let count = 0; \n function incrementCount() { \n\t count += 1; \n } \n</script>\n",
                         "<button on:click={incrementCount}> Clicked {count} {count === 1 ? 'time' : 'times'}</button>"
                     ]
                 },
                 {
                     "definition": "রিয়্যাক্টিভ অ্যাসাইনমেন্ট",
                     "code": [
-                        "<script> \n let count = 0; \n $: doubled = count * 2; \n function incrementCount() { \n count += 1; \n } \n</script>\n",
+                        "<script> \n let count = 0; \n $: doubled = count * 2; \n function incrementCount() { \n\t count += 1; \n } \n</script>\n",
                         "<button on:click={incrementCount}> Clicked {count} {count === 1 ? 'time' : 'times'}</button>\n",
                         "<p>{count} doubled is {doubled}</p>"
                     ]
@@ -161,6 +161,34 @@
                     "definition": "tick",
                     "code": [
                         "import { tick } from 'svelte';"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "এসভেল্ট স্টোর",
+            "items": [{
+                    "definition": "রাইটেবল(writable)",
+                    "code": [
+                        "import { writable } from 'svelte/store';\n\nconst count = writable(0);\ncount.subscribe(value => {\n\tconsole.log(value);\n}); // logs '0'\ncount.set(1);\ncount.set(1); // logs '1'\ncount.update(n => n + 1); // logs '2'"
+                    ]
+                },
+                {
+                    "definition": "রিডেবল(readable )",
+                    "code": [
+                        "import { readable } from 'svelte/store';\nconst time = readable(null, set => {\n\tset(new Date());\n\tconst interval = setInterval(() => {\n\t\tset(new Date());\n\t}, 1000);\n\treturn () => clearInterval(interval);\n});"
+                    ]
+                },
+                {
+                    "definition": "ডিরাইভড(derived)",
+                    "code": [
+                        "import { derived } from 'svelte/store';\nconst doubled = derived(a, $a => $a * 2);"
+                    ]
+                },
+                {
+                    "definition": "গেট(get)",
+                    "code": [
+                        "import { get } from 'svelte/store';\nconst value = get(store);"
                     ]
                 }
             ]

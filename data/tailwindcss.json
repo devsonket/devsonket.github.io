@@ -161,6 +161,58 @@
             ]
         },
         {
+            "title": "গ্রিড",
+            "items": [{
+                    "definition": "গ্রিড",
+                    "code": "grid"
+                },
+                {
+                    "definition": "গ্রিড টেমপ্লেট কলাম (n = 1 - 12 বা 'none')",
+                    "code": "grid-cols-{n}"
+                },
+                {
+                    "definition": "গ্রিড কলাম স্প্যান (n = 1 - 12 বা 'full')",
+                    "code": "col-span-{n}"
+                },
+                {
+                    "definition": "গ্রিড কলাম স্টার্ট (n = 1 - 13 বা 'auto')",
+                    "code": "col-start-{n}"
+                },
+                {
+                    "definition": "গ্রিড কলাম এন্ড (n = 1 - 13 বা 'auto')",
+                    "code": "col-end-{n}"
+                },
+                {
+                    "definition": "গ্রিড টেমপ্লেট রো (n = 1 - 6 বা 'none')",
+                    "code": "grid-rows-{n}"
+                },
+                {
+                    "definition": "গ্রিড রো স্প্যান (n = 1 - 6 বা 'full')",
+                    "code": "row-span-{n}"
+                },
+                {
+                    "definition": "গ্রিড রো স্টার্ট (n = 1 - 7 বা 'auto')",
+                    "code": "row-start-{n}"
+                },
+                {
+                    "definition": "গ্রিড রো এন্ড (n = 1 - 7 বা 'auto')",
+                    "code": "row-end-{n}"
+                },
+                {
+                    "definition": "গ্রিড অটো ফ্লো (keyword = row/col/dense/row-dense/col-dense)",
+                    "code": "grid-flow-{keyword}"
+                },
+                {
+                    "definition": "গ্রিড অটো কলামস (size = auto/min/max/fr)",
+                    "code": "auto-cols-{size}"
+                },
+                {
+                    "definition": "গ্রিড অটো রোজ (size = auto/min/max/fr)",
+                    "code": "auto-rows-{size}"
+                }
+            ]
+        },
+        {
             "title": "সাইজিং",
             "items": [{
                     "definition": "ফুল ওয়াইড: 100%",
