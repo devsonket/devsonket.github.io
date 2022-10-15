@@ -159,6 +159,16 @@ const Footer = () => (
                     Nazir Ahmed Sabbir
                   </a>
                 </li>
+                <li>
+                  টি-শার্টঃ{" "}
+                  <a
+                    target="__blank"
+                    rel="noopener noreferrer"
+                    href="https://blace.com.bd"
+                  >
+                    Blace
+                  </a>
+                </li>
               </ul>
             </div>
           </FooterArea>

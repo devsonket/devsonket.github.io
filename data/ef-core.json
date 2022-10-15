@@ -1,0 +1,232 @@
+{
+    "id": "ef-core",
+    "title": "এনটিটি ফ্রেমওয়ার্ক কোর",
+    "slug": "ef-core",
+    "description": "এনটিটি ফ্রেমওয়ার্ক কোর হলো মাইক্রোসফটের তৈরি একটি ওপেন সোর্স ডেটা একসেস টেকনোলজি। ক্রস প্ল্যাটফর্ম সফটওয়্যার ডেভেলপমেন্ট ফ্রেমওয়ার্ক ডটনেট কোরে অবজেক্ট রিলেশনাল ম্যাপিং এর জন্য এটি বহুল জনপ্রিয়।",
+    "colorPref": "#512cd4",
+    "contents": [{
+            "title": "ডেটাবেজ কানেকশান",
+            "items": [{
+                    "definition": "কনফিগারেশান থেকে ডেটাবেজ কানেকশান স্ট্রিং নেয়া",
+                    "code": "var connectionString = Configuration.GetConnectionString(\"MusicAppDatabase\");"
+                },
+                {
+                    "definition": "সার্ভিস কনফিগারেশন",
+                    "code": "services.AddDbContext<MusicAppContext>(options => options.UseSqlServer(connectionString));"
+                },
+                {
+                    "definition": "পুলিং করে কনটেক্সট ইনস্ট্যান্স পুনর্ব্যবহারের মাধ্যমে থ্রুপুট বাড়ানো",
+                    "code": "services.AddDbContextPool<MusicAppContext>(options => options.UseSqlServer(connectionString));"
+                },
+                {
+                    "definition": "স্থিতিস্থাপকতাঃ ডেটাবেজে কানেকশান পেতে ব্যর্থ হলে পুনরায় চেষ্টা করা",
+                    "code": "services.AddDbContext<MusicAppContext>(options => options.UseSqlServer(connectionString, provider => provider.EnableRetryOnFailure()));"
+                }
+            ]
+        },
+        {
+            "title": "ডেটাবেজ কনটেক্সট নিয়ে কাজ করা",
+            "items": [{
+                    "definition": "ডেটাবেজ কনটেক্সটের ব্যবহার",
+                    "code": "using (var context = new MusicAppContext()) { // usage }"
+                },
+                {
+                    "definition": "ডেটাবেজের একটি টেবিলে ডেটা সন্নিবেশ করাঃ ১",
+                    "code": "context.Add<Music>(newMusicObject);"
+                },
+                {
+                    "definition": "ডেটাবেজের একটি টেবিলে ডেটা সন্নিবেশ করাঃ ২",
+                    "code": "context.Musics.Add(newMusicObject);"
+                },
+                {
+                    "definition": "ডেটাবেজের একটি টেবিলে ডেটা সন্নিবেশ করাঃ ৩",
+                    "code": "context.Entry(newMusicObject).State = EntityState.Added;"
+                },
+                {
+                    "definition": "ডেটাবেজের একটি টেবিলে ডেটা হালনাগাদ করাঃ ১",
+                    "code": "context.Update<Music>(MusicObject);"
+                },
+                {
+                    "definition": "ডেটাবেজের একটি টেবিলে ডেটা হালনাগাদ করাঃ ২",
+                    "code": "context.Entry(MusicObject).State = EntityState.Modified;"
+                },
+                {
+                    "definition": "ডেটাবেজের একটি টেবিলে ডেটা ডিলিট করাঃ ১",
+                    "code": "context.Remove(MusicObject);"
+                },
+                {
+                    "definition": "ডেটাবেজের একটি টেবিলে ডেটা ডিলিট করাঃ ২",
+                    "code": "context.Entry(MusicObject).State = EntityState.Deleted;"
+                },
+                {
+                    "definition": "উপরোক্ত সকল অপারেশনের পর ডেটাবেজে পরিবর্তন করা",
+                    "code": "context.SaveChanges();"
+                }
+            ]
+        },
+        {
+            "title": "অ্যানোটেশন ও মডেল তৈরি ",
+            "items": [{
+                    "definition": "এনটিটি সেটে ইউজার ডিফাইন্ড টাইপ প্রকাশের মাধ্যমে মডেলে এনটিটি অনর্ভুক্ত করা",
+                    "code": "class MusicAppContext : DbContext \n{ \npublic DbSet<Music> Musics { get; set; } \n}"
+                },
+                {
+                    "definition": "ন্যাভিগেশন প্রপার্টি ডিফাইন করে মডেলে এনটিটি অনর্ভুক্ত করা",
+                    "code": "class Music \n{ \n\tpublic Genre Genre { get; set; } \n}"
+                },
+                {
+                    "definition": "মডেলে এনটিটির অন্তর্ভুক্তি বাদ দেয়া",
+                    "code": "[NotMapped]"
+                },
+                {
+                    "definition": "ম্যানুয়ালি টেবিলের নাম ডিফাইন করা",
+                    "code": "[Table(\"Musics\")]"
+                },
+                {
+                    "definition": "নির্দিষ্ট স্কিমাতে টেবিল তৈরি করা",
+                    "code": "[Table(\"Musics\", Schema=\"Sangeet\")]"
+                },
+                {
+                    "definition": "টেবিলের কলামের এনটিটি প্রপার্টি অপেক্ষা ভিন্ন নাম দেয়া",
+                    "code": "[Column(\"Music_Id\")]"
+                },
+                {
+                    "definition": "কলামের ডেটাটাইপ",
+                    "code": "[Column(TypeName = \"varchar(200)\")], [Column(TypeName = \"decimal(3, 2)\")]"
+                },
+                {
+                    "definition": "সর্বোচ্চ দৈর্ঘ্য",
+                    "code": "[MaxLength(500)]"
+                },
+                {
+                    "definition": "সর্বোচ্চ দৈর্ঘ্য",
+                    "code": "[MinLength(8)]"
+                },
+                {
+                    "definition": "আবশ্যক প্রপার্টি",
+                    "code": "[Required]"
+                },
+                {
+                    "definition": "ঐচ্ছিক প্রপার্টি",
+                    "code": "public string? Caption { get; set; }"
+                },
+                {
+                    "definition": "প্রাইমারী কী ডিফাইন করা",
+                    "code": "[Key]"
+                }
+            ]
+        },
+        {
+            "title": "ফ্লুয়েন্ট এ.পি.আই ও মডেল তৈরি",
+            "items": [{
+                    "definition": "মডেলে এনটিটি অন্তর্ভুক্ত করা",
+                    "code": "protected override void OnModelCreating(ModelBuilder modelBuilder) \n{\n\tmodelBuilder.Entity<Genre>();\n}"
+                },
+                {
+                    "definition": "মডেলে এনটিটির অন্তর্ভুক্তি বাদ দেয়া",
+                    "code": "modelBuilder.Ignore<TypeName>();"
+                },
+                {
+                    "definition": "ম্যানুয়ালি টেবিলের নাম ডিফাইন করা",
+                    "code": "modelBuilder.Entity<Music>().ToTable(\"Musics\");"
+                },
+                {
+                    "definition": "নির্দিষ্ট স্কিমাতে টেবিল তৈরি করা",
+                    "code": "modelBuilder.Entity<Music>().ToTable(\"Musics\", schema: \"Sangeet\");"
+                },
+                {
+                    "definition": "টেবিলের কলামের এনটিটি প্রপার্টি অপেক্ষা ভিন্ন নাম দেয়া",
+                    "code": "modelBuilder.Entity<Music>().Property(b => b.MusicId).HasColumnName(\"Music_Id\");"
+                },
+                {
+                    "definition": "কলামের ডেটাটাইপ",
+                    "code": "modelBuilder.Entity<Music>(m => {\n\tm.Property(x => x.Url)\n\t.HasColumnType(\"varchar(200)\");\n\tm.Property(x => x.Rating)\n\t.HasColumnType(\"decimal(5, 2)\");\n});"
+                },
+                {
+                    "definition": "সর্বোচ্চ দৈর্ঘ্য",
+                    "code": "modelBuilder.Entity<Music>().Property(x => x.Url).HasMaxLength(600);"
+                },
+                {
+                    "definition": "প্রাইমারী কী ডিফাইন করা",
+                    "code": "modelBuilder.Entity<Citizen>().HasKey(c => c.NationalId);"
+                },
+                {
+                    "definition": "কম্পোজিট কী",
+                    "code": "modelBuilder.Entity<Citizen>()\n\t.HasKey(c => new { c.NationalId, c.BioMetricCode });"
+                }
+            ]
+        },
+        {
+            "title": "ফ্লুয়েন্ট এ.পি.আই ও এনটিটি রিলেশনশীপ",
+            "items": [{
+                    "definition": "ওয়ান-টু-ম্যানি (একটি কবিতা একজন কবি লিখেছেন, একজন কবি অনেকগুলো কবিতা লিখেছেন)",
+                    "code": "modelBuilder.Entity<Poem>()\n\t\t.HasOne(p => p.Poet)\n\t\t.WithMany(p => p.Poems);"
+                },
+                {
+                    "definition": "সিঙ্গেল ন্যাভিগেশন প্রপার্টি",
+                    "code": "modelBuilder.Entity<Poet>()\n\t\t.HasMany(p => p.Poems)\n\t\t.WithOne();"
+                },
+                {
+                    "definition": "একটি রিলেশনশীপে নির্দিষ্ট একটি প্রপার্টিকে ফরেইন কী হিসেবে ডিফাইন করা",
+                    "code": "modelBuilder.Entity<Poem>()\n\t\t.HasOne(p => p.Poet)\n\t\t.WithMany(p => p.Poems)\n\t\t.HasForeignKey(p => p.PoetForeignKey);"
+                },
+                {
+                    "definition": "ডেটাবেজের টেবিলে ফরেইন কী এর ভিন্ন নাম দেয়া",
+                    "code": "HasConstraintName(\"UserDefinedName\");"
+                },
+                {
+                    "definition": "ম্যানি-টু-ম্যানি রিলেশনশীপ-১",
+                    "code": "\nmodelBuilder.Entity<SingerSong>()\n\t\t.HasOne(ss => ss.Singer)\n\t\t.WithMany(s => s.SingerSong)\n\t\t.HasForeignKey(ss => ss.SingerId);"
+                },
+                {
+                    "definition": "ম্যানি-টু-ম্যানি রিলেশনশীপ-২",
+                    "code": "\nmodelBuilder.Entity<SingerSong>()\n\t\t.HasOne(ss => ss.Song)\n\t\t.WithMany(s => s.SingerSong)\n\t\t.HasForeignKey(ss => ss.SongId);"
+                }
+            ]
+        },
+        {
+            "title": "মাইগ্রেশন",
+            "items": [{
+                    "definition": "মডেলের পরিবর্তনগুলো মাইগ্রেশন করা",
+                    "code": "dotnet ef migrations add <AnyMigrationName>"
+                },
+                {
+                    "definition": "সর্বশেষ মাইগ্রেশন বাতিল করা",
+                    "code": "dotnet ef migrations remove"
+                },
+                {
+                    "definition": "সকল মাইগ্রেশনকে লিস্ট আকারে দেখা",
+                    "code": "dotnet ef migrations list"
+                },
+                {
+                    "definition": "সর্বশেষ মাইগ্রেশন অনুযায়ী ডেটাবেজে হালনাগাদ করা",
+                    "code": "dotnet ef database update"
+                },
+                {
+                    "definition": "একটি নির্দিষ্ট মাইগ্রেশন অনুযায়ী ডেটাবেজে হালনাগাদ করা",
+                    "code": "dotnet ef database update <AvailableMigrationName>"
+                }
+            ]
+        },
+        {
+            "title": "ডেটা ক্যুয়েরী করা",
+            "items": [{
+                    "definition": "ইগার লোডিং",
+                    "code": "var poets = context.Poets.Include(poet => poet.Poems).ToList();"
+                },
+                {
+                    "definition": "এক্সপ্লিসিট লোডিং",
+                    "code": "context.Entry(loadedObject).Collection(l => l.PropotiesOfLoadedObject).Load();"
+                },
+                {
+                    "definition": "স্ট্রাকচার্ড কুয়েরি ল্যাঙ্গুয়েজ",
+                    "code": "context.Poets.FromSqlRaw(\"SELECT * FROM dbo.Poets\").ToList();"
+                },
+                {
+                    "definition": "সাবকুয়েরি কম্পোজিশন",
+                    "code": "context.Poets.FromSqlInterpolated(\"...query...\")\n\t\t.Where(...)n\t\t.OrderByDescending(....)n\t\t.ToList()"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "firebase",
+  "title": "ফায়ারবেস",
+  "slug": "firebase",
+  "description": "ফায়ারবেসের প্রথম পণ্যটি ছিল ফায়ারবেস রিয়েলটাইম ডেটাবেস, একটি এপিআই যা iOS, অ্যান্ড্রয়েড এবং ওয়েব ডিভাইস জুড়ে অ্যাপ্লিকেশন ডেটা সিঙ্ক্রোনাইজ করে এবং ফায়ারবেসের ক্লাউডে সংরক্ষণ করে। পণ্যটি সফ্টওয়্যার বিকাশকারীদের রিয়েল-টাইম, সহযোগী অ্যাপ্লিকেশন তৈরিতে সহায়তা করে।",
+  "colorPref": "#745fb5",
+  "contents": [
+    {
+      "title": "প্রমাণীকরণ করা হচ্ছে (Authenticating)",
+      "items": [
+        {
+          "code": "FB = new Firebase('https://xxx.firebase.io')\nFB.auth(TOKEN, (err, result) => { ···})\n"
+        },
+        {
+          "code": "FB.authAnonymously(···)\nFB.authWithPassword(···)\nFB.authWithOAuthPopup(···)\nFB.authWithOAuthToken(···)\n"
+        }
+      ]
+    },
+    {
+      "title": "জিজ্ঞাসাবাদ (Querying)",
+      "items": [
+        {
+          "code": "Users = FB.child('users')\nUsers\n  .startAt(1000)\n  .limit(50)\n  .equalTo(priority, [name])\n  .on 'child_added', (snap) -> ···"
+        }
+      ]
+    },
+    {
+      "title": "তালিকাগুলি (Lists)",
+      "items": [
+        {
+          "code": "Posts = FB.child('posts')"
+        },
+        {
+          "code": "post = Posts.push({ title: \"How to do things\", author: \"alan\" })"
+        }
+      ]
+    },
+    {
+      "title": "ব্যবহার (Using)",
+      "items": [
+        {
+          "code": "Users = FB.child('users')"
+        },
+        {
+          "definition": "তৈরি করুন",
+          "code": "user = Users.push(first: \"Frank\", last: \"Sinatra\")\n"
+        },
+        {
+          "definition": "পুনরুদ্ধার করুন",
+          "code": "user = Users.child('alan')  // gets `users/alan`"
+        },
+        {
+          "definition": "হালনাগাদ করুন",
+          "code": "user.set(first: \"Miles\", last: \"Davis\")"
+        },
+        {
+          "code": "user.update(first: \"Miles\")"
+        },
+        {
+          "code": "user.setWithPriority({ ··· }, priority)"
+        },
+        {
+          "definition": "ধ্বংস করুন",
+          "code": "user.remove()"
+        },
+        {
+          "definition": "প্রাপ্তি (Getting)",
+          "code": "user.name()  // primary id"
+        },
+        {
+          "code": "user.once('value', (snap) => {\n  snap.name()  // primary id\n  snap.val()   // value\n}, (err) => {\n  ···\n})"
+        },
+        {
+          "definition": "ট্রাভার্সাল (traversal)",
+          "code": "user.parent()"
+        }
+      ]
+    },
+    {
+      "title": "তথ্যসূত্র",
+      "items": [
+        {
+          "code": "https://www.firebase.com/docs/web/api/"
+        },
+        {
+          "code": "https://www.firebase.com/docs/web/recipes.html"
+        }
+      ]
+    }
+  ]
+}
