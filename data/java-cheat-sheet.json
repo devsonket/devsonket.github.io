@@ -99,16 +99,25 @@
         {
             "title": "সহজে অদলবদল দুইটির মান",
             "items": [{
-                    "code": "let x =5, y=10;"
+                    "code": "int x =5, y=10;"
                 },
                 {
-                    "code": "[x,y]=[y,x];"
+                    "code": "int temp;"
                 },
                 {
-                    "code": "consol.log(x) //10;"
+                    "code": "temp = x;"
                 },
                 {
-                    "code": "consol.log(y) //5"
+                    "code": "x = y;"
+                },
+                {
+                    "code": "y = temp;"
+                },
+                {
+                    "code": "System.out.println(x); //10"
+                },
+                {
+                    "code": "System.out.println(y); //5"
                 }
     	    ]
        },
@@ -128,7 +137,7 @@
                     "code": "Math.exp()"
                 },
                 {
-                    "definition": "y এর পাওয়ার হিসেবে x কে নেয়ার জন্য",
+                    "definition": "x এর পাওয়ার হিসেবে y কে নেয়ার জন্য",
                     "code": "Math.pow(x,y)"
                 },
                 {
