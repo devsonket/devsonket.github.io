@@ -174,6 +174,23 @@
                     "code": "(i32, f64, u8)"
                 }
             ]
+        },
+                 {
+      "title": "Function",
+      "items": [
+        {
+          "definition": "Main Function",
+          "code": "fn main() {\n\tprintln!(\"Hello, world!\");\n}"
+        },
+        {
+          "definition": "Create Custom Function",
+          "code": "fn function_name() {\n\t//code area\n"
+        },
+        {
+          "definition": "Function call with Parameters Passing",
+          "code": "fn main() {\n\tanother_function(5);\n}\n\nfn another_function(x: i32) {\n\tprintln!(\"The value of x is: {x}\");\n"
         }
+      ]
+    }
     ]
 }
