@@ -161,6 +161,23 @@
             ]
         },
         {
+            "title": "ফ্লেক্স অ্যালাইনমেন্ট",
+            "items": [
+                {
+                    "definition": "জাস্টিফাই কনটেন্ট (value = start/end/center/between/around/evenly)",
+                    "code": "justify-{value}"
+                },
+                {
+                    "definition": "অ্যালাইন আইটেমস (value = baseline/start/end/center/stretch)",
+                    "code": "items-{value}"
+                },
+                {
+                    "definition": "অ্যালাইন সেল্ফ (value = auto/start/end/center/stretch/baseline)",
+                    "code": "self-{value}"
+                }
+            ]
+        },
+        {
             "title": "গ্রিড",
             "items": [{
                     "definition": "গ্রিড",
