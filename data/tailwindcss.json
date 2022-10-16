@@ -216,8 +216,15 @@
             "title": "গ্রিড অ্যালাইনমেন্ট",
             "items": [{
                     "definition": "গ্যাপ",
-                    "code": "gap-{size}", "gap-x-{size}", "gap-y-{size}"
-                                                        
+                    "code": "gap-{size}"                              
+                },
+                {
+                    "definition": "গ্যাপ-x",
+                    "code": "gap-x-{size}"                                      
+                },
+                {
+                    "definition": "গ্যাপ-y",
+                    "code": "gap-y-{size}"                                      
                 },
                 {
                     "definition": "জাস্টিফাই আইটেমস (value = start/end/center/stretch)",
