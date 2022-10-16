@@ -6,9 +6,15 @@
     "colorPref": "#333",
     "contents": [{
             "title": "শুরু",
-            "items": [{
+            "items": 
+            [
+                {
                     "definition": "npm এর মাধ্যমে vite এর সাহায্যে ইন্সটল করতে",
-                    "code": "\n npm create vite@latest myapp -- --template svelte\n cd myapp\n npm install\n npm run dev"
+                    "code": "\nnpm create vite@latest myapp -- --template svelte\n cd myapp\n npm install\n npm run dev"
+                }, 
+                {
+                    "definition": "কম্পোনেন্ট ফরম্যাট",
+                    "code": "\n<script>\n\n  // logic goes here\n</script>\n\n<!-- markup (zero or more items) goes here -->\n\n<style>\n  /* styles go here */\n</style>"
                 }
             ]
         },
@@ -18,31 +24,98 @@
             [
                 {
                     "definition": "এসভেল্ট এ 'Hello world' প্রিন্ট করা",
-                    "code": "//App.svelte\n\n<h1>Hello world!</h1>"
+                    "code": "\n//App.svelte\n\n<h1>Hello world!</h1>"
                 },
                 {
                     "definition": "ডাটা যুক্ত করা(ভ্যারিয়েবল ডিক্লেয়ার)",
-                    "code": "//App.svelte\n\n<script> \n  let name = 'world';\n</script> \n\n<h1>Hello {name}!</h1>"
+                    "code": "\n//App.svelte\n\n<script> \n  let name = 'world';\n</script> \n\n<h1>Hello {name}!</h1>"
                 },
                 {
                     "definition": "ডায়ন্যামিক অ্যাট্রিবিউট",
-                    "code": "//App.svelte\n\n<script> \n  let src = 'tutorial/image.gif', widht='100', height='100';\n</script>  \n\n<img {src} {width} {height}>"
+                    "code": "\n//App.svelte\n\n<script> \n  let src = 'tutorial/image.gif', widht='100', height='100';\n</script>  \n\n<img {src} {width} {height}>"
                 },
                 {
                     "definition": "কম্পোনেন্ট স্ট্যাইল",
-                    "code": "//App.svelte\n\n<p>This is a paragraph.</p>\n\n<style>\n  p{\n    color: purple;\n  }\n</style>"
+                    "code": "\n//App.svelte\n\n<p>This is a paragraph.</p>\n\n<style>\n  p{\n    color: purple;\n  }\n</style>"
                 },
                 {
                     "definition": "নেস্টেড কম্পোনেন্ট",
                     "code": [
-                        "//App.svelte\n\n<script>\n  import NestedComponent from './Nested.svelte'; \n</script>\n\n<h2>I'm Parent Component</h2> \n<NestedComponent/> \n",
+                        "\n//App.svelte\n\n<script>\n  import NestedComponent from './Nested.svelte'; \n</script>\n\n",
+                        "<h2>I'm Parent Component</h2> \n<NestedComponent/> \n",
                         "\n//Nested.svelte \n\n<h2>I'm Nested Component</h2>"
                     ]
                 },
                 {
                     "definition": "HTML ট্যাগস",
                     "code": [
-                        "//App.svelte\n\n<script>\n  let string = `this string contains some <strong>HTML!!!</strong>`; \n</script>\n\n<h2><p>{@html string}</p></h2>\n"
+                        "\n//App.svelte\n\n<script>\n  let string = `this string contains some <strong>HTML!!!</strong>`; \n</script>\n\n",
+                        "<h2><p>{@html string}</p></h2>\n"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "এসভেল্ট এর রিয়্যাক্টিভিটি",
+            "items": [
+                {
+                    "definition": "এসাইনমেন্ট (Assignment)",
+                    "code": [
+                        "\n//App.svelte \n\n<script>\n  let count = 0; \n\n  function incrementCount() {\n    count += 1;\n  }\n</script>\n\n",
+                        "<button on:click={incrementCount}>\n  Clicked {count} {count === 1 ? 'time' : 'times'}\n</button>"
+                    ]
+                },
+                {
+                    "definition": "ডিক্লারেশন (Declarations)",
+                    "code": [
+                        "\n//App.svelte \n\n<script>\n  let count = 0; \n\n  $: doubled = count * 2;\n\n  function handleClick() {\n    count += 1;\n  }\n</script>\n\n",
+                        "<button on:click={handleClick}>\n  Clicked {count} {count === 1 ? 'time' : 'times'}\n</button>\n\n<p>{count} doubled is {doubled}</p>"
+                    ]
+                },
+                {
+                    "definition": "ষ্টেটমেন্ট (Statements)",
+                    "code": [
+                        "\n//App.svelte \n\n<script>\n  let count = 0; \n\n  $: if (count >= 10) {\n    alert('count is dangerously high!');\n    count = 9;\n  }\n\n  function handleClick() {\n    count += 1;\n  }\n</script>\n\n",
+                        "<button on:click={handleClick}> Clicked {count} {count === 1 ? 'time' : 'times'}</button>"
+                    ]
+                },
+                {
+                    "definition": "অ্যারে এবং অবজেক্ট আপডেট",
+                    "code": [
+                        "\n//App.svelte \n\n<script>\n  let numbers = [1, 2, 3, 4];\n\n  function addNumber() {\n    numbers = [...numbers, numbers.length + 1];\n  }\n\n  $: sum = numbers.reduce((t, n) => t + n, 0);\n</script>\n\n",
+                        "<p>{numbers.join(' + ')} = {sum}</p>\n\n<button on:click={addNumber}>\n  Add a number\n</button>"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "এসভেল্ট এর প্রপস (props)",
+            "items": [
+                {
+                    "definition": "প্রপস ডিক্লারেশন",
+                    "code": [
+                        "\n//App.svelte \n\n<script>\n  import Nested from './Nested.svelte';\n</script>\n\n",
+                        "<Nested answer={42}/>\n",
+                        "\n//Nested.svelte \n\n<script>\n  export let answer;\n</script>\n\n",
+                        "<p>The answer is {answer}</p>"
+                    ]
+                },
+                {
+                    "definition": "প্রপস এর ডিফল্ট ভ্যালু",
+                    "code": [
+                        "\n//App.svelte \n\n<script>\n  import Nested from './Nested.svelte';\n</script>\n\n",
+                        "<Nested answer={42}/>\n<Nested />\n",
+                        "\n//Nested.svelte \n\n<script>\n  export let answer = 'a mystery';\n</script>\n\n",
+                        "<p>The answer is {answer}</p>"
+                    ]
+                },
+                {
+                    "definition": "প্রপস স্প্রেড",
+                    "code": [
+                        "\n//App.svelte \n\n<script>\n  import Info from './Info.svelte';\n  const pkg = {\n    name: 'svelte',\n    version: 3,\n    speed: 'blazing',\n    website: 'https://devsonket.com'\n  };\n</script>\n\n",
+                        "<Info {...pkg}/>\n",
+                        "\n//Info.svelte \n\n<script>\n  export let name;\n  export let version;\n  export let speed;\n  export let website;\n</script>\n\n",
+                        "<p>The <code>{name}</code> package is {speed} fast. Download version {version} from <a href='https://www.npmjs.com package/{name}'>npm</a> and <a href={website}>learn more here</p>"
                     ]
                 }
             ]
