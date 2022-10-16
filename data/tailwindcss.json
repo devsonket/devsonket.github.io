@@ -213,6 +213,46 @@
             ]
         },
         {
+            "title": "গ্রিড অ্যালাইনমেন্ট",
+            "items": [{
+                    "definition": "গ্যাপ",
+                    "code": "gap-{size}"                              
+                },
+                {
+                    "definition": "গ্যাপ-x",
+                    "code": "gap-x-{size}"                                      
+                },
+                {
+                    "definition": "গ্যাপ-y",
+                    "code": "gap-y-{size}"                                      
+                },
+                {
+                    "definition": "জাস্টিফাই আইটেমস (value = start/end/center/stretch)",
+                    "code": "justify-items-{value}"
+                },
+                {
+                    "definition": "জাস্টিফাই সেল্ফ (value = auto/start/end/center/stretch)",
+                    "code": "justify-self-{value}"
+                },
+                {
+                    "definition": "অ্যালাইন কনটেন্ট (value = start/end/center/between/around/evenly)",
+                    "code": "content-{value}"
+                },
+                {
+                    "definition": "প্লেস কনটেন্ট (value = start/end/center/between/around/evenly/stretch)",
+                    "code": "place-content-{value}"
+                },
+                {
+                    "definition": "প্লেস আইটেমস (value = start/end/center/stretch)",
+                    "code": "place-items-{value}"
+                },
+                {
+                    "definition": "প্লেস সেল্ফ (value = auto/start/end/center/stretch)",
+                    "code": "place-self-{value}"
+                }
+            ]
+        },
+        {
             "title": "সাইজিং",
             "items": [{
                     "definition": "ফুল ওয়াইড: 100%",
