@@ -331,17 +331,25 @@
                     "code": "<table>...</table>"
                 },
                 {
+                    "definition": "টেবিল ক্যাপশন",
+                    "code": "<caption>...</caption>"
+                },
+                {
+                    "definition": "টেবিল বডী তৈরী",
+                    "code": "<tbody>...</tbody>"
+                },
+                {
+                    "definition": "টেবিল হেডার",
+                    "code": "<th>...</th>"
+                },
+                {
                     "definition": "রো সেট",
                     "code": "<tr>...</tr>"
                 },
                 {
                     "definition": "রো তে সেল সেট",
                     "code": "<td>...</td>"
-                },
-                {
-                    "definition": "টেবিল হেডার",
-                    "code": "<th>...</th>"
-                }
+                } 
             ]
         },
         {
