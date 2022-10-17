@@ -295,6 +295,10 @@
                     "code": "<input type=\"email\" name=\"নাম\">"
                 },
                 {
+                    "definition": "পাসওয়ার্ড এর জন্যে ইনপুট",
+                    "code": "<input type=\"password\" name=\"নাম\">"
+                },
+                {
                     "definition": "ইউআরএল এর জন্যে ইনপুট",
                     "code": "<input type=\"url\" name=\"নাম\">"
                 },
@@ -321,6 +325,10 @@
                 {
                     "definition": "টেলিফোন নাম্বার এর জন্যে ইনপুট",
                     "code": "<input type=\"tel\" name=\"নাম\">"
+                },
+                {
+                    "definition": "ফাইল আপলোডের জন্য ইনপুট",
+                    "code": "<input type=\"file\" name=\"নাম\">"
                 }
             ]
         },
