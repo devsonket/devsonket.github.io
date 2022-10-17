@@ -99,7 +99,7 @@
         {
             "title": "সহজে অদলবদল দুইটির মান",
             "items": [{
-                    "code": "int x =5, y=10;"
+                    "code": "int x=5, y=10;"
                 },
                 {
                     "code": "int temp;"
