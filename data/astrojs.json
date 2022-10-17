@@ -90,7 +90,7 @@
 				},
         {"definition": " এটি tsconfig.json ফাইলে এড করুন"},
         {
-          "code": "{\n\t\"extends\": \"astro/tsconfigs/base\n}"
+          "code": "{\n\t\"extends\": \"astro/tsconfigs/base\"\n}"
         },
         {
           "definition": " আবার env.d.ts ফাইল এ এড করুন"
