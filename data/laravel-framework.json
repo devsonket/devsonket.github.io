@@ -548,6 +548,10 @@
                 {
                     "definition": "Where Method এর মাঝে 'or' পাস করা",
                     "code": "Model::where('columnName', 'value')->orWhere('columnName','value')->get();  অথবা Model::where('columnName', 'value')->where('columnName','value', 'or')->get();"
+                },
+                {
+                    "definition": "মডেল কে রেপ্লিকেট(কপি) করতে চাইলে ",
+                    "code": "$tasks = Tasks::find(1);\n$newTask = $tasks->replicate();\n$newTask->save();"
                 }
             ]
         },
