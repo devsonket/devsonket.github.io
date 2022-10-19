@@ -21,7 +21,7 @@
                 },
                 {
                     "definition": "সাবস্ক্রিপশন সেট করা ",
-                    "code": "az account set --subscription "xxx" "
+                    "code": "az account set --subscription"
                 }
             ]
         },
@@ -67,7 +67,7 @@
                 },
                 {
                     "definition":"রিসোর্স গ্রুপ বানানো ",
-                    "code":"az group create --name myresourcegroup --location eastus
+                    "code":"az group create --name myresourcegroup --location eastus"
                     "
                 },
                 {
