@@ -1,0 +1,190 @@
+{
+    "id": "azure cloud services",
+    "title": "গুগল ক্লাউড ",
+    "slug": "azure-cloud-cli",
+    "description": "Azure, মাইক্রোসফট এর  তৈরি ক্লাউড সলিউশন সার্ভিস । Azure কমান্ড লাইন ইন্টারফেস(CLI) এর  জন্য প্রযোজনীয় সকল  শর্টকাট কী নিয়ে তৈরি চিটশিট",
+    "colorPref": "#616161",
+    "contents": [{
+            "title": "লগিন করা ",
+            "items": [
+                {
+                    "definition": "ওয়েব দিয়ে লগিন",
+                    "code": "az login"
+                },
+                {
+                    "definition": "কমান্ড লাইন দিয়ে লগিন ",
+                    "code": "az login -u myemail@address.com"
+                },
+                {
+                    "definition": "একাউন্ট লিস্ট করা ",
+                    "code": "az account list"
+                },
+                {
+                    "definition": "সাবস্ক্রিপশন সেট করা ",
+                    "code": "az account set --subscription "xxx" "
+                }
+            ]
+        },
+        {
+            "title":"লোকেশন এবং রিসোর্স (জেনারেল) লিস্ট করা",
+            "items":[
+                {
+                    "definition":"সব লোকেশন লিস্ট করা",
+                    "code":"az account list-locations"
+                },
+                {
+                    "definition":"সব রিসোর্স গ্রুপ লিস্ট করা",
+                    "code":"az resource list"
+                },
+                {
+                    "definition":"কমান্ড লাইনের কোন ভার্সন চলছে জানতে",
+                    "code":"azure --version"
+                },
+                {
+                    "definition":"সাহায্য নিতে",
+                    "code":"azure help"
+                }
+            ]
+        },
+        {
+            "title":"বেসিক ভার্চুয়াল মেশিন/ রিসোর্স গ্রুপ/ স্টোরেজ একাউন্ট বানানো ",
+            "items":[
+                {
+                    "definition":"এভেইলেবল ভার্চুয়াল মেশিন সাইজ জানা ",
+                    "code":"az vm list-sizes --location eastus"
+                },
+                {
+                    "definition":"উইন্ডোজ আর লিনাক্স এর জন্য এভেইলেবল ভার্চুয়াল মেশিন ইমেজ  ",
+                    "code":"az vm image list --output table"
+                },
+                {
+                    "definition":"লিনাক্স ভার্চুয়াল মেশিন বানানো ",
+                    "code":"az vm create --resource-group myResourceGroup --name myVM --image ubuntults"
+                },
+                {
+                    "definition":"উইন্ডোজ ভার্চুয়াল মেশিন বানানো",
+                    "code":"az vm create --resource-group myResourceGroup --name myVM --image win2016datacenter"
+                },
+                {
+                    "definition":"রিসোর্স গ্রুপ বানানো ",
+                    "code":"az group create --name myresourcegroup --location eastus
+                    "
+                },
+                {
+                    "definition":"স্টোরেজ একাউন্ট বানানো ",
+                    "code":"az storage account create -g myresourcegroup -n mystorageaccount -l eastus --sku Standard_LRS"
+                }
+            ]
+        },
+        {
+            "title":"রিসোর্স গ্রুপ ডিলিট করা ",
+            "items":[
+                {
+                    "definition":"রিসোর্স গ্রুপ পুরোপুরি ভাবে ডিলিট করা ",
+                    "code":"az group delete --name myResourceGroup"
+                }
+            ]
+        },
+        {
+            "title":"ম্যানেজ ভার্চুয়াল মেশিন ",
+            "items":[
+                {
+                    "definition":"ভার্চুয়াল মেশিন লিস্ট করা ",
+                    "code":"az vm list"
+
+                },
+                {
+                    "definition":"মেশিন চালু  করা",
+                    "code":"az vm start --resource-group myResourceGroup --name myVM"
+
+                },
+                {
+                    "definition":"মেশিন বন্ধ করা ",
+                    "code":"az vm stop --resource-group myResourceGroup --name myVM"
+
+                },
+                {
+                    "definition":"মেশিন ডি-এলোকেট করা ",
+                    "code":"az vm deallocate --resource-group myResourceGroup --name myVM"
+
+                },
+                {
+                    "definition":"মেশিন পুনরায় চালু করা ",
+                    "code":"az vm restart --resource-group myResourceGroup --name myVM"
+
+                },
+                {
+                    "definition":"মেশিন পুনরায় ডেপ্লয় করা ",
+                    "code":"az vm redeploy --resource-group myResourceGroup --name myVM"
+
+                },
+                {
+                    "definition":"মেশিন ডিলিট করা ",
+                    "code":"az vm delete --resource-group myResourceGroup --name myVM"
+
+                },
+                {
+                    "definition":"মেশিন এর ইমেজ বানানো ",
+                    "code":"az image create --resource-group myResourceGroup --source myVM --name myImage"
+
+                },
+                {
+                    "definition":"ইমেজ থেকে মেশিন বানানো  ",
+                    "code":"az vm create --resource-group myResourceGroup --name myNewVM --image myImage"
+
+                },
+                {
+                    "definition":"মেশিন এর এক্সটেনশন লিস্ট করা ",
+                    "code":"az vm extension list --resource-group azure-playground-resources --vm-name azure-playground-vm"
+
+                },
+                {
+                    "definition":"মেশিন এর এক্সটেনশন ডিলিট করা ",
+                    "code":"az vm extension delete --resource-group azure-playground-resources --vm-name azure-playground-vm --name bootstrapper"
+
+                }
+            ]
+        },
+        {
+            "title":"কন্টেইনার ম্যানেজ করা  ",
+            "items":[
+                {
+                    "definition":"SSH থাকলে কন্টেইনার সার্ভিস ক্লাস্টার বানানো ",
+                    "code":"az acs create -n acs-cluster -g acsrg1 -d applink789"
+
+                },
+                {
+                    "definition":"SSH না থাকলে কন্টেইনার সার্ভিস বানানো ",
+                    "code":"az acs create -n acs-cluster -g acsrg1 -d applink789 --generate-ssh-keys"
+
+                },
+                {
+                    "definition":"সাবস্ক্রিপশন এর সব ক্লাস্টার লিস্ট করা  ",
+                    "code":"az acs list --output table"
+
+                },
+                {
+                    "definition":"ক্লাস্টার এর সব রিসোর্স লিস্ট করা  ",
+                    "code":"az acs list -g acsrg1 --output table"
+
+                },
+                {
+                    "definition":"কন্টেইনার সার্ভিস ক্লাস্টার এর বিস্তারিত জানা ",
+                    "code":"az acs show -g acsrg1 -n acs-cluster --output list"
+
+                },
+                {
+                    "definition":"ACS ব্যাবহার করে স্কেলিং করা ",
+                    "code":"az acs scale -g acsrg1 -n acs-cluster --new-agent-count 4"
+
+                },
+                {
+                    "definition":"ক্লাস্টার ডিলিট করা ",
+                    "code":"az acs delete -g acsrg1 -n acs-cluster"
+
+                }
+            ]
+        }
+       
+    ]
+}
