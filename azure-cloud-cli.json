@@ -1,6 +1,6 @@
 {
     "id": "azure cloud services",
-    "title": "গুগল ক্লাউড ",
+    "title": "Azure ক্লাউড কমান্ড লাইন(CLI) ",
     "slug": "azure-cloud-cli",
     "description": "Azure, মাইক্রোসফট এর  তৈরি ক্লাউড সলিউশন সার্ভিস । Azure কমান্ড লাইন ইন্টারফেস(CLI) এর  জন্য প্রযোজনীয় সকল  শর্টকাট কী নিয়ে তৈরি চিটশিট",
     "colorPref": "#616161",
