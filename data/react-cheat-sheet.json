@@ -259,6 +259,12 @@
             {
               "definition": "লিংক বা সুইচ এর মাধ্যমে পেইজ পরিবর্তন করতে App.js এ যুক্ত করুন",
               "code": "import { Routes, Route, Link } from 'react-router-dom'"
+            },
+            {
+              "definition": "যেভাবে রাউটার অবজেক্ট বানিয়ে রাউটার কম্পোনেন্ট সেটআপ করবেন"
+            },
+            {
+              "code": "import { useRoutes } from 'react-router-dom'\n//inside the component\nconst routes = [\n  children: [\n   {\n    element: <PageComponent />,\n    path: '/path',\n   }\n  ]\n]\nconst routerRegister = useRoutes(routes)\nreturn routerRegister"
             }
           ]
         },
