@@ -29,11 +29,15 @@
                 {
                     "definition": "h6 ট্যাগ",
                     "code": "###### H6"
+                },
+                {
+                    "definition": "হেডিং আইডি সেট করার জন্য",
+                    "code": "### My Great Heading {#custom-id}"
                 }
             ]
         },
         {
-            "title": "এম্ফেসিজ",
+            "title": "টেক্সট স্টাইল",
             "items": [{
                     "definition": "ইটালিক টেক্সট",
                     "code": "*ইটালিক টেক্সট*"
@@ -77,22 +81,44 @@
                 {
                     "definition": "ইমোজি ব্যবহার",
                     "code": ":ইমোজি নাম:"
+                },
+                {
+                    "definition": "আন্ডারলাইন টেক্সট",
+                    "code": "<ins>আন্ডারলাইন টেক্সট</ins>"
+                },
+                {
+                    "definition": "মনো স্পেস",
+                    "code": "<samp>আমি বাংলায় গান গাঁই</samp>"
+                },
+                {
+                    "definition": "সাব স্ক্রিপ্ট",
+                    "code": "আমার<sub>নাম</sub>"
+                },
+                {
+                    "definition": "সুপার স্ক্রিপ্ট",
+                    "code": "২৩<sup>৫</sup>"
+                },
+                {
+                    "definition": "সমতল রুল",
+                    "code": "---\n***\n___"
+                },
+                {
+                    "definition": "কমেন্ট করতে",
+                    "code": "<!--একটা কমেন্ট-->"
                 }
+
             ]
         },
         {
             "title": "উক্তি",
-            "items": [{
-                    "code": "স্যার বলেছিলেন"
-                },
+            "items": [
                 {
+                    "definition": "এক লাইনের উক্তি",
                     "code": "> সবকিছুর সঠিক সময় আছে"
                 },
                 {
-                    "code": "> সময়ের কাজ সময়ে করো"
-                },
-                {
-                    "code": "> নতুবা পস্তাবে"
+                    "definition": "মাল্টি লাইনের উক্তি",
+                    "code": ">> সময়ের কাজ সময়ে করো"
                 }
             ]
         },
@@ -244,6 +270,14 @@
                 {
                     "definition": "সিনট্যাক্স হাইলাইট কোড",
                     "code": "```javascript const pi = 3.1416; ```"
+                },
+                {
+                    "definition": "ম্যাথমেটিক্স এক্সপ্রেশন ইনলাইন",
+                    "code": "$x = {-b \\ pm \\ sqrt{b^2-4ac} \\ over 2a}$"
+                },
+                {
+                    "definition": "ম্যাথমেটিক্স এক্সপ্রেশন ব্লক",
+                    "code": "$\nx = {-b \\ pm \\ sqrt{b^2-4ac} \\ over 2a}\n$"
                 }
             ]
         },
@@ -252,6 +286,20 @@
             "items": [{
                 "code": "<details> <summary> সংক্ষিপ্ত নাম </summary> </details>"
             }]
-        }
+        },
+        {
+            "title": "টাস্ক লিস্ট তৈরি করার জন্য",
+            "items": [
+                {
+                    "definition": "নতুন টাস্ক তৈরি করতে",
+                    "code": "- [ ] Task 1: Run Code"
+                    
+                },
+                {
+                    "definition": "টাস্ক কমপ্লিট হলে",
+                    "code": "- [x] Task 2: Successfully Passed"
+                }
+            ]
+        }        
     ]
 }
