@@ -84,19 +84,19 @@
                 },
                 {
                     "definition": "আন্ডারলাইন টেক্সট",
-                    "code": "<ins>The quick brown fox jumps over the lazy dog.</ins>"
+                    "code": "<ins>আন্ডারলাইন টেক্সট</ins>"
                 },
                 {
                     "definition": "মনো স্পেস",
-                    "code": "<samp>The quick brown fox jumps over the lazy dog.</samp>"
+                    "code": "<samp>আমি বাংলায় গান গাঁই</samp>"
                 },
                 {
                     "definition": "সাব স্ক্রিপ্ট",
-                    "code": ":<sub>The quick brown fox jumps over the lazy dog.</sub>"
+                    "code": ":আমার<sub>নাম</sub>"
                 },
                 {
                     "definition": "সুপার স্ক্রিপ্ট",
-                    "code": "<sup>53-1</sup>"
+                    "code": "২৩<sup>৫</sup>"
                 },
                 {
                     "definition": "সমতল রুল",
