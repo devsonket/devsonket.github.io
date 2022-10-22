@@ -2,8 +2,8 @@
     "id": "svelte",
     "title": "এসভেল্ট",
     "slug": "svelte",
-    "description": "এসভেল্ট (Svelte) হচ্ছে একটি জাভাস্ক্রিপ্ট ইউজার ইন্টারফেস তৈরির ফ্রেমওয়ার্ক, যেটি অন্যান্য UI ফ্রেমওয়ার্ক থেকে ভিন্ন, কেননা এটি ডেভলাপমেন্টের সময় আপনার কোডকে ব্রাউজারের জন্য তৈরি করে নেয়।",
-    "colorPref": "#333",
+    "description": "এসভেল্ট (Svelte) হচ্ছে একটি জাভাস্ক্রিপ্ট ইউজার ইন্টারফেস তৈরির ফ্রেমওয়ার্ক, যেটি অন্যান্য UI ফ্রেমওয়ার্ক থেকে ভিন্ন, কেননা এটি ডেভলাপমেন্টের সময় আপনার কোডকে ব্রাউজারের জন্য তৈরি করে নেয়।\nরিয়াক্ট বা ভিউ এর মত ভার্চুয়াল ডমকে পরিবর্তন করা বদলে এসভেল্ট সার্জিকাল ভাবে ডমকে পরিবর্তন করে। তাই এসভেল্টকে সত্যিকারের রিয়্যাক্টিভ ফ্রেমওয়ার্ক বলা যায়।",
+    "colorPref": "#ff3e00",
     "contents": [
         {
             "title": "শুরু",
@@ -176,7 +176,7 @@
             "title": "এসভেল্ট এর অন্যান্য বিষয়াবলি",
             "items": [
                 {
-                    "definition": "নেস্টেড কম্পোনেন্ট এ props পাঠানো",
+                    "definition": "নেস্টেড     ম্পোনেন্ট এ props পাঠানো",
                     "code": [
                         "//App.svelte \n\n<script>\n  import ChildComponent from './Child.svelte'; \n  let title = 'I'm Child Component'; \n</script> \n\n<h2>I'm Parent Component</h2> \n<ChildComponent {title}/> \n",
                         "\n// Child.svelte \n\n<script> \n  export let title; \n</script> \n\n<h2>{title || 'Hello world'}</h2>"
