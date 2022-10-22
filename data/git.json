@@ -451,13 +451,13 @@
                 },
                 {
                     "definition": "কোন ডেট এর আগের লগ গুলো দেখতে",
-                    "code" : "git log --before=\“2020-08-17\”" 
+                    "code" : "git log --before= '2020-08-17' " 
 
                 },
                       
                 {
                     "definition": "এক সাপ্তাহ আগের লগ দেখতে",
-                    "code" : "git log --before=\“one week ago\”" 
+                    "code" : "git log --before='one week ago'" 
 
                 },
                   
