@@ -438,6 +438,29 @@
                     "definition": "কমিটগুলোর স্ট্যাটাস এবং সামারি শো করতে",
                     "code": "git log --stat \",\" git log --stat --summary"
                 },
+                      
+                {
+                    "definition": "একচুয়াল চেইঞ্জেস গুলো দেখাতে",
+                    "code": "git log --patch"
+                },
+                      
+                      
+                {
+                    "definition":"সর্বশেষ তিনটি এন্ট্রি দেখতে",
+                    "code": "git log -3"
+                },
+                {
+                    "definition": "কোন ডেট এর আগের লগ গুলো দেখতে",
+                    "code" : "git log --before=\“2020-08-17\”" 
+
+                },
+                      
+                {
+                    "definition": "এক সাপ্তাহ আগের লগ দেখতে",
+                    "code" : "git log --before=\“one week ago\”" 
+
+                },
+                  
                 {
                     "definition": "কমিটগুলোর হিস্ট্রি গ্রাফ আকারে শো করতে",
                     "code": "git log --graph"
