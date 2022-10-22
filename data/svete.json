@@ -162,6 +162,13 @@
                         "// Thing.svelte\n\n<script>\n  const emojis = {\n    apple: '🍎',\n    banana: '🍌',\n    carrot: '🥕',\n    doughnut: '🍩',\n    egg: '🥚'\n  }\n\n  export let name;\n\n  const emoji = emojis[name];\n</script>\n\n",
                         "<p>\n  <span>The emoji for { name } is { emoji }</span>\n</p>\n\n<style>\n  p {\n    margin: 0.8em 0;\n  }\n  span {\n    display: inline-block;\n    padding: 0.2em 1em 0.3em;\n    text-align: center;\n    \n    border-radius: 0.2em;\n    background-color: #FFDFD3;\n  }\n</style>"
                     ]
+                },
+                {
+                    "definition": "await এর ব্যবহার",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  async function getRandomNumber() {\n    const res = await fetch(`/tutorial/random-number`);\n    const text = await res.text();\n\n    if (res.ok) {\n      return text;\n    } else {\n      throw new Error(text);\n    }\n  }\n\n  let promise = getRandomNumber();\n\n  function handleClick() {,\n    promise = getRandomNumber();\n  }\n</script>\n\n",
+                        "<button on:click={handleClick}>\n  generate random number\n</button>\n\n","{#await promise}\n  <p>...waiting</p>\n{:then number}\n  <p>The number is {number}</p>\n{:catch error}\n  <p style='color: red'>{error.message}</p>\n{/await}"
+                    ]
                 }
             ]
         },
