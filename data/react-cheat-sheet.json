@@ -238,6 +238,37 @@
       ]
     },
     {
+          "title": "রিঅ্যাক্ট রাউটার v6",
+          "items": [
+            {
+              "definition": "npm এর সাহায্যে রাউটার ইন্সটল",
+              "code": "npm install react-router-dom@6"
+            },
+            {
+              "definition": "yarn এর সাহায্যে রাউটার ইন্সটল",
+              "code": "yarn add react-router-dom@6"
+            },
+            {
+              "definition": "Router সেট করতে App.js এ যুক্ত করুন",
+              "code": "import { BrowserRouter } from 'react-router-dom'"
+            },
+            {
+              "definition": "Router Render করতে App.js এ যুক্ত করুন",
+              "code": "import { Routes, Route } from 'react-router-dom'"
+            },
+            {
+              "definition": "লিংক বা সুইচ এর মাধ্যমে পেইজ পরিবর্তন করতে App.js এ যুক্ত করুন",
+              "code": "import { Routes, Route, Link } from 'react-router-dom'"
+            },
+            {
+              "definition": "যেভাবে রাউটার অবজেক্ট বানিয়ে রাউটার কম্পোনেন্ট সেটআপ করবেন"
+            },
+            {
+              "code": "import { useRoutes } from 'react-router-dom'\n//inside the component\nconst routes = [\n  children: [\n   {\n    element: <PageComponent />,\n    path: '/path',\n   }\n  ]\n]\nconst routerRegister = useRoutes(routes)\nreturn routerRegister"
+            }
+          ]
+        },
+    {
       "title": "রিঅ্যাক্ট হুকস",
       "items": [
         {
