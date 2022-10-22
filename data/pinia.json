@@ -1,0 +1,80 @@
+{
+  "id": "pinia-cheat-sheet",
+  "title": "পিনিয়া",
+  "slug": "pinia-cheat-sheet",
+  "description": "পিনিয়া ভিউ জেস এর ডিফল্ট স্টোর লাইব্রেরী, এর মাধ্যমে ভিউ জেস এর কম্পোনেন্ট/পেইজ এর মধ্যে তথ্য আদান প্রদান করা হয়।",
+  "colorPref": "#ffd859",
+  "contents": [
+    {
+      "title": "পিনিয়া অপশন এপিয়াই এর মত করে ব্যাবহার",
+      "items": [
+        {
+          "definition": "একটি নতুন স্টোর সেট করতে চাইলে",
+          "code": "import { defineStore } from 'pinia'\nexport const useStore = defineStore('main', {//store code here})"
+        },
+        {
+          "definition": "পিনিয়া স্টোর কে ভিউ প্রজেক্ট এ যুক্ত করতে চাইলে",
+          "code": "import { createPinia } from 'pinia'\nconst pinia = createPinia()\napp.use(pinia)"
+        },
+        {
+          "definition": "পিনিয়া স্টোরে একটি কাউন্ট স্টেট সেট করতে চাইলে",
+          "code": "state: () => { return {count: 0,}}"
+        },
+        {
+          "definition": "পিনিয়া স্টোরে গেটার্স সেট করতে চাইলে",
+          "code": "getters: { doubleCount: (state) => state.count * 2,},"
+        },
+        {
+          "definition": "পিনিয়া স্টোরে একশন সেট করতে চাইলে",
+          "code": "actions: {randomizeCounter() {this.count = Math.round(100 * Math.random())},},"
+        }
+      ]
+    },
+    {
+      "title": "পিনিয়া কম্পোজিশন এপিয়াই এর মত করে ব্যাবহার",
+      "items": [
+        {
+          "definition": "একটি নতুন স্টোর সেট করতে চাইলে",
+          "code": "export const useCounterStore = defineStore('counter', () => {//store code here})"
+        },
+        {
+          "definition": "পিনিয়া স্টোর কে ভিউ প্রজেক্ট এ যুক্ত করতে চাইলে",
+          "code": "import { createPinia } from 'pinia'\nconst pinia = createPinia()\napp.use(pinia)"
+        },
+        {
+          "definition": "পিনিয়া স্টোরে একটি কাউন্ট স্টেট সেট করতে চাইলে",
+          "code": " const count = ref(0)"
+        },
+        {
+          "definition": "পিনিয়া স্টোরে গেটার্স সেট করতে চাইলে",
+          "code": "const doubleCount = computed(() => count.value * 2)"
+        },
+        {
+          "definition": "পিনিয়া স্টোরে একশন সেট করতে চাইলে",
+          "code": "function increment() {count.value++}"
+        }
+      ]
+    },
+    {
+      "title": "ভিউ কম্পোনেন্ট(কম্পোজিশন এপিয়াই) এর মধ্যে পিনিয়া স্টোর এর ব্যাবহার",
+      "items": [
+        {
+          "definition": "ভিউ কম্পোনেন্ট এ পিনিয়া স্টেট কে এক্সেস করতে চাইলে",
+          "code": "const store = useStore() \n store.count++"
+        },
+        {
+          "definition": "ভিউ কম্পোনেন্ট এ পিনিয়া স্টেট কে রিসেট করতে চাইলে",
+          "code": "const store = useStore() \n store.$reset()"
+        },
+        {
+          "definition": "ভিউ কম্পোনেন্ট এ পিনিয়া গেটার্স কে এক্সেস করতে চাইলে",
+          "code": "const store = useStore() \n store.doubleCount"
+        },
+        {
+          "definition": "ভিউ কম্পোনেন্ট এ পিনিয়া একশন কে এক্সেস করতে চাইলে",
+          "code": "const store = useStore() \n store.randomizeCounter()"
+        }
+      ]
+    }
+  ]
+}
