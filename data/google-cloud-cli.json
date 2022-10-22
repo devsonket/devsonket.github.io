@@ -1,0 +1,203 @@
+{
+    "id": "google cloud services",
+    "title": "গুগল ক্লাউড ",
+    "slug": "google-cloud-cli",
+    "description": "গুগল ক্লাউড , গুগলের তৈরি ক্লাউড সলিউশন সার্ভিস । গুগল ক্লাউডের কমান্ড লাইন ইন্টারফেস(CLI) এর  জন্য প্রযোজনীয় সকল  শর্টকাট কী নিয়ে তৈরি চিটশিট",
+    "colorPref": "#039be5",
+    "contents": [{
+            "title": "সাধারণ ক্লাউড কনফিগারেশন ",
+            "items": [
+                {
+                    "definition": "প্রজেক্ট লিস্ট  করতে",
+                    "code": "gcloud config list, gcloud config list project"
+                },
+                {
+                    "definition": "প্রজেক্ট ইনফরমেশন দেখাতে",
+                    "code": "gcloud compute project-info describe"
+                },
+                {
+                    "definition": "প্রজেক্ট সুইচ করতে",
+                    "code": "gcloud config set project <project-id>"
+                },
+                {
+                    "definition": "এক্টিভ একাউন্ট সেট করতে ",
+                    "code": "gcloud config set account <ACCOUNT>"
+                },
+                {
+                    "definition": "ডিফল্ট রিজিয়ন ",
+                    "code": "gcloud config set compute/region us-west"
+                },
+                {
+                    "definition": "ডিফল্ট জোন",
+                    "code": "gcloud config set compute/zone us-west1-b"
+                },
+                {
+                    "definition": "সকল কনফিগারেশন লিস্ট করতে",
+                    "code": "gcloud config configurations list"
+                },
+                {
+                    "definition": "এক্টিভ কনফিগারেশন জানতে ",
+                    "code": "gcloud config configurations activate"
+                }
+            ]
+        },
+        {
+            "title":"আইডেন্টিটি এবং এক্সেস ম্যানেজমেন্ট (IAM)",
+            "items":[
+                {
+                    "definition":"প্রজেক্ট রোল জানতে ",
+                    "code":""
+                },
+                {
+                    "definition":"সমস্ত অর্গানাইজেশন এবং প্রজেক্ট এ রোল কপি করতে ",
+                    "code":""
+                }
+            ]
+        },
+        {
+            "title":"ক্লাউড অথোরাইজেশন (Auth)",
+            "items":[
+                {
+                    "definition":"ক্রেডেনশিয়াল একাউন্ট এর লিস্ট বের করতে",
+                    "code":"gcloud auth list"
+                },
+                {
+                    "definition":"সার্ভিস একাউন্ট দিয়ে ক্লায়েন্ট অথিনটিকেট করতে ",
+                    "code":"gcloud auth activate-service-account --key-file <key-file>"
+                },
+                {
+                    "definition":"ক্লাউড কন্টেইনার রেজিস্ট্রি অথিনটিকেট করতে ",
+                    "code":"gcloud auth configure-docker"
+                },
+                {
+                    "definition":"এক্টিভ একাউন্ট এর টোকেন প্রিন্ট করতে ",
+                    "code":"gcloud auth print-access-token, gcloud auth print-refresh-token"
+                },
+                {
+                    "definition":"পূর্ববর্তী ক্রেডেনশিয়াল তুলে নিতে ",
+                    "code":"gcloud auth <application-default> revoke"
+                }
+            ]
+        },
+        {
+            "title":"ক্লাউড স্টোরেজ",
+            "items":[
+                {
+                    "definition":"সব বাকেট এবং ফাইল লিস্ট করতে ",
+                    "code":"gsutil ls, gsutil ls -lh gs://<bucket-name>"
+
+                },
+                {
+                    "definition":"বাকেট তৈরি করা ",
+                    "code":"gsutil mb gs://<bucket-name>"
+
+                },
+                {
+                    "definition":"ফাইল ডাউনলোড করা",
+                    "code":"gsutil cp gs://<bucket-name>/<dir-path>/app.txt"
+
+                },
+                {
+                    "definition":"ফাইল আপলোড করা",
+                    "code":"gsutil cp <filename> gs://<bucket-name>/<directory>/"
+
+                },
+                {
+                    "definition":"ফাইল ডিলেট করা",
+                    "code":"gsutil rm gs://<bucket-name>/<filepath>"
+
+                },
+                {
+                    "definition":"ফাইল সরানো/মুভ করা ",
+                    "code":"gsutil mv <src-filepath> gs://<bucket-name>/<directory>/<dest-filepath>"
+
+                },
+                {
+                    "definition":"ফোল্ডার কপি করা",
+                    "code":"gsutil cp -r ./conf gs://<bucket-name>/"
+
+                },
+                {
+                    "definition":"ডিস্ক কতটুকু ব্যাবহার হয়েছে জানতে",
+                    "code":"gsutil du -h gs://<bucket-name/<directory>"
+
+                },
+                {
+                    "definition":"সব ফাইল রিডেবল বানাতে ",
+                    "code":"gsutil -m acl set -R -a public-read gs://<bucket-name>/"
+
+                },
+                {
+                    "definition":"সময়সাপেক্ষ সাইন লিংক তৈরি করা ",
+                    "code":"gsutil signurl -d 1m"
+
+                }
+            ]
+        },
+        {
+            "title":"কুবেরনেটিস ইঞ্জিন ",
+            "items":[
+                {
+                    "definition":"ক্লাস্টার তৈরি করা ",
+                    "code":"gcloud container clusters create cluster-name --num-nodes 1"
+
+                },
+                {
+                    "definition":"সব ক্লাস্টার লিস্ট করা",
+                    "code":"gcloud container clusters list"
+
+                },
+                {
+                    "definition":"কুবেরকন্ট্রোল কনটেক্সট সেট করা",
+                    "code":"gcloud container clusters get-credentials <cluster-name>"
+
+                },
+                {
+                    "definition":"ডিফল্ট ক্লাস্টার সেট করা",
+                    "code":"gcloud config set container/cluster cluster-name"
+
+                },
+                {
+                    "definition":"বানানো ক্লাস্টার লিস্ট করা",
+                    "code":"gcloud container clusters resize --num-nodes"
+
+                }
+            ]
+        },
+        {
+            "title":"কমপোনেন্টস",
+            "items":[
+                {
+                    "definition":"কম্পোনেন্টস লিস্ট করা ",
+                    "code":"gcloud components list"
+
+                },
+                {
+                    "definition":" কম্পোনেন্টস আপডেট করা ",
+                    "code":"gcloud components update"
+
+                },
+                {
+                    "definition":"কম্পোনেন্টস ইন্সটল করা",
+                    "code":"gcloud components install <component-name>"
+
+                }
+            ]
+        },
+        {
+            "title":"ডেপ্লয়মেন্ট ম্যানেজার ",
+            "items":[
+                {
+                    "definition":"ডেপ্লয়মেন্ট তৈরি করা ",
+                    "code":"gcloud deployment-manager deployments create"
+
+                },
+                {
+                    "definition":"ডেপ্লয়মেন্ট আপডেট করা",
+                    "code":"gcloud deployment-manager deployments update"
+
+                }
+            ]
+        }
+    ]
+}

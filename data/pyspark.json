@@ -44,6 +44,10 @@
                     "code": "df.filter(df['age']>24).show()"
                 },
                 {
+                    "definition": "Data lambda ফাংশন দিয়ে Sort করা",
+                    "code": "df.sortBy(lambda x: x[1]).collect()"
+                },
+                {
                     "definition": "Duplicate Data ড্রপ করা",
                     "code": "df.dropDuplicates()"
                 },
@@ -98,6 +102,10 @@
             "items": [{
                     "definition": "DataFrame কে RDD তে রূপান্তর করা",
                     "code": "rdd1 = df.rdd"
+                },
+                {
+                    "definition": "Repartition করা",
+                    "code": "df.repartition(4)"
                 },
                 {
                     "definition": "df এর কনটেন্ট Pandas Dataframe এ করে দেখা",

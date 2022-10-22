@@ -371,6 +371,34 @@
             ]
         },
         {
+            "title": "পদ্ধতি ( Methods ) | রিসিভার ( Receivers )",
+            "items": [{
+                    "code": "type Devsonk struct {"
+                },
+                {
+                    "code": "X, Y float64"
+                },
+                {
+                    "code":"}"
+                },
+                {
+                    "code": "func (v Devsonk) Abs() float64 {"
+                },
+                {
+                    "code": "return math.Sqrt(v.X * v.X + v.Y * v.Y)"
+                },
+                {
+                    "code": "}"
+                },
+                {
+                    "code": "v := Devsonk{1, 2}"
+                },
+                {
+                    "code": "v.Abs()"
+                }      
+            ]
+        },
+        {
             "title": "পয়েন্টার",
             "items": [{
                     "definition": "একটি পয়েন্টার তৈরি করা",

@@ -1,0 +1,63 @@
+{
+    "id": "maven",
+    "title": "মাভেন",
+    "slug": "maven",
+    "description": "মাভেন একটি সফ্টওয়্যার প্রকল্প পরিচালনা এবং বোধগম্য সরঞ্জাম যা মূলত জাভা ভিত্তিক প্রকল্পগুলির সাথে ব্যবহৃত হয়",
+    "colorPref": "#1d1f21",
+    "contents": [
+        {
+            "title": "মাভেনে প্রজেক্ট ইনিটালইজ করা",
+            "items": [
+                {
+                    "definition": "মাভেন প্রজেক্ট",
+                    "code": "mvn archetype:generate -DgroupId=io.stockgeeks -DartifactId=project-example"
+                },
+                {
+                    "definition": "ইন নন ইন্টারেক্টিভ মোড",
+                    "code": "mvn archetype:generate -DgroupId=io.stockgeeks -DartifactId=project-example -DinteractiveMode=false"
+                },
+                {
+                    "definition": "ওয়েব প্রোজেক্ট",
+                    "code": "mvn archetype:generate -DgroupId=io.stockgeeks -DartifactId=webproject-example -DarchetypeArtifactId=maven-archetype-webapp"
+                }
+            ]
+        },
+        {
+            "title": "কমান্ড এক্সকিউশন ফেইজ",
+            "items": [
+                {
+                    "definition": "ডাইরেক্টোরি টার্গেট ডিলেট করে দিবে",
+                    "code": "clean"
+                },
+                {
+                    "definition": "সোর্স কোড কম্পাইল করবে",
+                    "code": "compile"
+                },
+                {
+                    "definition": "প্রজেক্ট ঠিক থাকলে ভ্যালিডেট করে দিবে",
+                    "code": "validate"
+                },
+                {
+                    "definition": "টেস্ট রান করবে",
+                    "code": "test"
+                },
+                {
+                    "definition": "কম্পাইলড কোড নিয়ে ডিস্ট্রিবিউটেড ফরম্যাটে প্যাকেজ করার জন্য",
+                    "code": "package"
+                },
+                {
+                    "definition": "প্যাকেজ ভ্যালিড কিনা তা চেক করার জন্য",
+                    "code": "verify"
+                },
+                {
+                    "definition": "লোকাল রিপোসিটোরি প্যাকেজ ইন্সটাল করার জন্য",
+                    "code": "install"
+                },
+                {
+                    "definition": "ফাইনাল প্যাকেজটা রিমোর্ট রিপোসিটোরিতে কপি করার জন্য",
+                    "code": "deploy"
+                }
+            ]
+        }
+    ]
+}

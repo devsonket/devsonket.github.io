@@ -1,0 +1,20 @@
+{
+    "id": "es6-plus",
+    "title": "ইএস৬ পরবর্তী চিটশিট সমূহ ",
+    "slug": "es6-plus-cheat-sheet",
+    "description": "ইএস৬ এর পরবর্তী সকল চিটশিট সমূহ এখানে রয়েছে।",
+    "colorPref": "#fcbc20",
+    "contents": [{
+            "title": "মেথড সমূহ",
+            "items": [{
+                    "definition": "at() মেথড indexable ভ্যালুগুলোর জন্য ব্যবহার করা হয়।",
+                    "code": "arr.at(-1);"
+                },
+                {
+                    "definition": "Object.hasOwn মেথড একটি অবজেক্ট এর কোন কোন প্রপার্টি আছে কিনা তা চেক করে। যদি আছে তাহলে true রিটার্ন করে, না থাকলে false রিটার্ন করে।",
+                    "code": "myObject.hasOwn(Object, 'name');"
+                }
+            ]
+        }
+    ]
+}

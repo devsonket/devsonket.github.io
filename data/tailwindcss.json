@@ -27,6 +27,10 @@
                     "code": "@media (min-width: 640px) { ... }"
                 },
                 {
+                    "definition": "এস্পেস্কট রেশিও",
+                    "code": "aspect-video"
+                },
+                {
                     "definition": "ব্রেকপয়েন্টস: md",
                     "code": "@media (min-width: 768px) { ... }"
                 },
@@ -97,6 +101,22 @@
                 {
                     "definition": "ডিসপ্লে ইনলাইন গ্রিড",
                     "code": "inline-grid"
+                },
+                {
+                    "definition": "static পজিশনিং",
+                    "code": "static"
+                }, 
+                {
+                    "definition": "fixed পজিশনিং",
+                    "code": "fixed"
+                }, 
+                {
+                    "definition": "absolute পজিশনিং",
+                    "code": "absolute"
+                }, 
+                {
+                    "definition": "relative পজিশনিং",
+                    "code": "relative"
                 }
             ]
         },
@@ -137,6 +157,115 @@
                 {
                     "definition": "ফ্লেক্স ডিরেকশন কলাম রিভার্স",
                     "code": "flex-col-reverse"
+                }
+            ]
+        },
+        {
+            "title": "ফ্লেক্স অ্যালাইনমেন্ট",
+            "items": [
+                {
+                    "definition": "জাস্টিফাই কনটেন্ট (value = start/end/center/between/around/evenly)",
+                    "code": "justify-{value}"
+                },
+                {
+                    "definition": "অ্যালাইন আইটেমস (value = baseline/start/end/center/stretch)",
+                    "code": "items-{value}"
+                },
+                {
+                    "definition": "অ্যালাইন সেল্ফ (value = auto/start/end/center/stretch/baseline)",
+                    "code": "self-{value}"
+                }
+            ]
+        },
+        {
+            "title": "গ্রিড",
+            "items": [{
+                    "definition": "গ্রিড",
+                    "code": "grid"
+                },
+                {
+                    "definition": "গ্রিড টেমপ্লেট কলাম (n = 1 - 12 বা 'none')",
+                    "code": "grid-cols-{n}"
+                },
+                {
+                    "definition": "গ্রিড কলাম স্প্যান (n = 1 - 12 বা 'full')",
+                    "code": "col-span-{n}"
+                },
+                {
+                    "definition": "গ্রিড কলাম স্টার্ট (n = 1 - 13 বা 'auto')",
+                    "code": "col-start-{n}"
+                },
+                {
+                    "definition": "গ্রিড কলাম এন্ড (n = 1 - 13 বা 'auto')",
+                    "code": "col-end-{n}"
+                },
+                {
+                    "definition": "গ্রিড টেমপ্লেট রো (n = 1 - 6 বা 'none')",
+                    "code": "grid-rows-{n}"
+                },
+                {
+                    "definition": "গ্রিড রো স্প্যান (n = 1 - 6 বা 'full')",
+                    "code": "row-span-{n}"
+                },
+                {
+                    "definition": "গ্রিড রো স্টার্ট (n = 1 - 7 বা 'auto')",
+                    "code": "row-start-{n}"
+                },
+                {
+                    "definition": "গ্রিড রো এন্ড (n = 1 - 7 বা 'auto')",
+                    "code": "row-end-{n}"
+                },
+                {
+                    "definition": "গ্রিড অটো ফ্লো (keyword = row/col/dense/row-dense/col-dense)",
+                    "code": "grid-flow-{keyword}"
+                },
+                {
+                    "definition": "গ্রিড অটো কলামস (size = auto/min/max/fr)",
+                    "code": "auto-cols-{size}"
+                },
+                {
+                    "definition": "গ্রিড অটো রোজ (size = auto/min/max/fr)",
+                    "code": "auto-rows-{size}"
+                }
+            ]
+        },
+        {
+            "title": "গ্রিড অ্যালাইনমেন্ট",
+            "items": [{
+                    "definition": "গ্যাপ",
+                    "code": "gap-{size}"                              
+                },
+                {
+                    "definition": "গ্যাপ-x",
+                    "code": "gap-x-{size}"                                      
+                },
+                {
+                    "definition": "গ্যাপ-y",
+                    "code": "gap-y-{size}"                                      
+                },
+                {
+                    "definition": "জাস্টিফাই আইটেমস (value = start/end/center/stretch)",
+                    "code": "justify-items-{value}"
+                },
+                {
+                    "definition": "জাস্টিফাই সেল্ফ (value = auto/start/end/center/stretch)",
+                    "code": "justify-self-{value}"
+                },
+                {
+                    "definition": "অ্যালাইন কনটেন্ট (value = start/end/center/between/around/evenly)",
+                    "code": "content-{value}"
+                },
+                {
+                    "definition": "প্লেস কনটেন্ট (value = start/end/center/between/around/evenly/stretch)",
+                    "code": "place-content-{value}"
+                },
+                {
+                    "definition": "প্লেস আইটেমস (value = start/end/center/stretch)",
+                    "code": "place-items-{value}"
+                },
+                {
+                    "definition": "প্লেস সেল্ফ (value = auto/start/end/center/stretch)",
+                    "code": "place-self-{value}"
                 }
             ]
         },
