@@ -341,6 +341,39 @@
           "code": "wp comment generate --format=ids --count=3 | xargs -d ' ' -I % wp comment meta add % foo bar"
         }
       ]
+    },
+    {
+      "title":"wp package",
+      "items": [
+        {
+          "definition": "ইনিষ্টল করা প্যাকেজের তালিকা",
+          "code": "wp package list"
+        },
+        {
+          "definition": "প্যাকেজের সর্বশেষ ডেভলেপমেন্ট ভার্ষন ইনিষ্টল করা",
+          "code": "wp package install wp-cli/server-command"
+        },
+        {
+          "definition": "প্যাকেজ আনইনিষ্টল করা",
+          "code": "wp package uninstall wp-cli/server-command"
+        },
+        {
+          "definition": "প্যাকেজ আপডেট করা",
+          "code": "wp package update"
+        },
+        {
+          "definition": "ইনিষ্ট্রল করার জন্য প্যাকেজ ব্রাউজ করা",
+          "code": "wp package browse --format=yaml"
+        },
+        {
+          "definition": "ইনিষ্ট্রল করা প্যাকেজের পাথ বা ডিরেক্টরি দেখা",
+          "code": "wp package path"
+        },
+        {
+          "definition": "ইনিষ্ট্রল করা প্যাকেজের ডিরেক্টরি পরিবর্তন করা",
+          "code": "cd $(wp package path) &amp;&amp; pwd"
+        }
+      ]
     }
   ]
 }
