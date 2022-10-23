@@ -1,0 +1,16 @@
+{
+    "id": "js-web-api",
+    "title": "জাভাস্ক্রিপ্ট ওয়েব এপিআই",
+    "slug": "js-web-api",
+    "description": "জাভাস্ক্রিপ্ট এর প্রয়োজনীয় কিছু ওয়েব এপিআই",
+    "colorPref": "#f0db4f",
+    "contents": [{
+            "title": "ইন্টারফেসেস",
+            "items": [{
+                    "definition": "একটা অবজেক্ট ডিপ ক্লোন করার জন্য [optional = transferables]",
+                    "code": "structuredClone(value, transferables)"
+                }
+            ]
+        }
+   ]
+}
