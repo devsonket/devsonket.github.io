@@ -116,6 +116,109 @@
         }
         
       ]
+    },
+    {
+      "title": "wp cli রুট কমান্ড",
+      "items": [
+        {
+          "definition": "ওয়ার্ডপ্রেস ইনস্টলেশনের জন্য অ্যালাস পুনরুদ্ধার করে, সেট করে এবং আপডেট করে",
+          "code": "wp cli alias"
+        },
+        {
+          "definition": "অভ্যন্তরীণ WP-CLI ক্যাশে পরিচালনা করে",
+          "code": "wp cli cache"
+        },
+        {
+          "definition": "WP-CLI এর একটি নতুন সংস্করণ আছে কিনা তা চেক করে",
+          "code": "wp cli check-update"
+        },
+        {
+          "definition": "JSON হিসাবে ইনস্টল করা কমান্ডের তালিকা ডাম্প করে।",
+          "code": "wp cli cmd-dump"
+        },
+        {
+          "definition": "ট্যাব সমাপ্তি স্ট্রিং তৈরি করে।",
+          "code": "wp cli completions"
+        },
+        {
+          "definition": "একটি কমান্ড বিদ্যমান কিনা তা সনাক্ত করে",
+          "code": "wp cli has-command"
+        },
+        {
+          "definition": "WP-CLI পরিবেশ সম্পর্কে বিভিন্ন বিবরণ প্রিন্ট করে।",
+          "code": "wp cli info"
+        },
+        {
+          "definition": "JSON হিসাবে বা var_export বিন্যাসে গ্লোবাল প্যারামিটারের তালিকা ডাম্প করে।",
+          "code": "wp cli param-dump"
+        },
+        {
+          "definition": "সর্বশেষ রিলিজে WP-CLI আপডেট করে।",
+          "code": "wp cli update"
+        },
+        {
+          "definition": "WP-CLI সংস্করণ/ভার্সন প্রিন্ট করে।",
+          "code": "wp cli version"
+        }
+      ]
+    },
+    {
+      "title":"wp cli capability",
+      "items": [
+        {
+          "definition": "একটি নতুন ক্যাপাবিলিটি যোগ করে",
+          "code": "wp cap add"
+        },
+        {
+          "definition": "একটি ক্যাপাবিলিটি বাদ দেয়",
+          "code": "wp cap remove"
+        },
+        {
+          "definition": "ক্যাপাবিলিটি তালিকা দেখায়",
+          "code": "wp cap list"
+        }
+      ]
+    },
+    {
+      "title": "wp cli config কমান্ড",
+      "items":[
+        {
+          "definition": "একটি wp-config.php ফাইল তৈরি করে",
+          "code": "wp config create"
+        },
+        {
+          "definition": "wp-config.php ফাইল থেকে একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীল মুছে দেয়।",
+          "code": "wp config delete"
+        },
+        {
+          "definition": "wp-config.php ফাইলটি সম্পাদনা করতে সিস্টেম সম্পাদক চালু করে।",
+          "code": "wp config edit"
+        },
+        {
+          "definition": "wp-config.php ফাইলে সংজ্ঞায়িত একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীলের মান পায়।",
+          "code": "wp config get"
+        },
+        {
+          "definition": "কটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীল wp-config.php ফাইলে বিদ্যমান কিনা তা পরীক্ষা করে।",
+          "code": "wp config has"
+        },
+        {
+          "definition": "Wp-config.php ফাইলে সংজ্ঞায়িত ভেরিয়েবল, ধ্রুবক, এবং ফাইল অন্তর্ভুক্ত করে।",
+          "code": "wp config list"
+        },
+        {
+          "definition": "wp-config.php ফাইলের পথ পায়।",
+          "code": "wp config path"
+        },
+        {
+          "definition": "wp-config.php ফাইলে সংজ্ঞায়িত একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীলের মান সেট করে।",
+          "code": "wp config set"
+        },
+        {
+          "definition": "wp-config.php ফাইলে সংজ্ঞায়িত সল্ট রিফ্রেশ করে।",
+          "code": "wp config shuffle-salts"
+        }
+      ]
     }
   ]
 }
