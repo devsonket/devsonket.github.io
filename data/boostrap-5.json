@@ -339,6 +339,19 @@
                     "code": "<div class='carousel-caption'>......</div>"
                 }
             ]
+        },
+        {
+         "title": "মার্জিন",
+          "items": [{
+                    "definition": "মার্জিন টপ",
+                    "code": ".mt-0"
+                },
+                 {
+                     "definition": "মার্জিন বোটম"
+                    "code": ".mb-0"
+                }
+            ]
         }
+                 
     ]
 }
