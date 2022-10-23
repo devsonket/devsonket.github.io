@@ -155,6 +155,66 @@
           "code": "impl SomeStruct {\n\tpub fn new() {}\n}"
         }
       ]
+    },
+    {
+      "title": "ডেটা টাইপ",
+      "items": [
+        {
+          "definition": "অক্ষর",
+          "code": "char"
+        },
+        {
+          "definition": "স্ট্রিং",
+          "code": "String"
+        },
+        {
+          "definition": "ইন্টিজার টাইপ (i8 = 8 bit, i16 = 16 bit, i32 = 32 bit, i64 = 64 bit, i128 = 128 bit, isize = সিস্টেম ডিপেন্ডেন্ট)",
+          "code": "i8, i16, i32, i64, i128, isize"
+        },
+        {
+          "definition": "ফ্লোটিং পয়েন্ট টাইপ (f32 = 32 bit, f64 = 64 bit)",
+          "code": "f32, f64"
+        },
+        {
+          "definition": "বুলিয়ান",
+          "code": "bool"
+        },
+        {
+          "definition": "টাপল/টুপল",
+          "code": "(i32, f64, u8)"
+        }
+      ]
+    },
+    {
+      "title": "Function",
+      "items": [
+        {
+          "definition": "Main Function",
+          "code": "fn main() {\n\tprintln!(\"Hello, world!\");\n}"
+        },
+        {
+          "definition": "Create Custom Function",
+          "code": "fn function_name() {\n\t//code area\n"
+        },
+        {
+          "definition": "Function call with Parameters Passing",
+          "code": "fn main() {\n\tanother_function(5);\n}\n\nfn another_function(x: i32) {\n\tprintln!(\"The value of x is: {x}\");\n"
+        }
+      ]
+    },
+    {
+      "title": "Comments/কমেন্ট করা",
+      "items": [
+        {
+          "definition": "Single Line কিভাবে কমেন্ট করবেন",
+          "code": "// comment here anything"
+        },
+        {
+          "definition": "Multi Line কিভাবে কমেন্ট করবেন",
+          "code": "/* comment here anything \n The next one isn't allowed because outer doc comments \nrequire an item that will receive the doc*/"
+        }
+      ]
     }
   ]
+  
 }

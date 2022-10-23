@@ -1,0 +1,339 @@
+{
+    "id": "svelte",
+    "title": "এসভেল্ট",
+    "slug": "svelte",
+    "description": "এসভেল্ট (Svelte) হচ্ছে একটি জাভাস্ক্রিপ্ট ইউজার ইন্টারফেস তৈরির ফ্রেমওয়ার্ক, যেটি অন্যান্য UI ফ্রেমওয়ার্ক থেকে ভিন্ন, কেননা এটি ডেভলাপমেন্টের সময় আপনার কোডকে ব্রাউজারের জন্য তৈরি করে নেয়।",
+    "colorPref": "#333",
+    "contents": [
+        {
+            "title": "শুরু",
+            "items": 
+            [
+                {
+                    "definition": "npm এর মাধ্যমে vite এর সাহায্যে ইন্সটল করতে",
+                    "code": "npm create vite@latest myapp -- --template svelte\ncd myapp\nnpm install\nnpm run dev"
+                }, 
+                {
+                    "definition": "কম্পোনেন্ট ফরম্যাট",
+                    "code": "<script>\n  // logic goes here\n</script>\n\n<!-- markup (zero or more items) goes here -->\n\n<style>\n  /* styles go here */\n</style>"
+                }
+            ]
+        },
+        {
+            "title": "এসভেল্ট এর সাধারণ বিষয়াবলি",
+            "items": 
+            [
+                {
+                    "definition": "এসভেল্ট এ 'Hello world' প্রিন্ট করা",
+                    "code": "// App.svelte\n\n<h1>Hello world!</h1>"
+                },
+                {
+                    "definition": "ডাটা যুক্ত করা(ভ্যারিয়েবল ডিক্লেয়ার)",
+                    "code": "// App.svelte\n\n<script> \n  let name = 'world';\n</script> \n\n<h1>Hello {name}!</h1>"
+                },
+                {
+                    "definition": "ডায়ন্যামিক অ্যাট্রিবিউট",
+                    "code": "// App.svelte\n\n<script> \n  let src = 'tutorial/image.gif', widht='100', height='100';\n</script>  \n\n<img {src} {width} {height}>"
+                },
+                {
+                    "definition": "কম্পোনেন্ট স্ট্যাইল",
+                    "code": "// App.svelte\n\n<p>This is a paragraph.</p>\n\n<style>\n  p{\n    color: purple;\n  }\n</style>"
+                },
+                {
+                    "definition": "নেস্টেড কম্পোনেন্ট",
+                    "code": [
+                        "// App.svelte\n\n<script>\n  import NestedComponent from './Nested.svelte'; \n</script>\n\n",
+                        "<h2>I'm Parent Component</h2> \n<NestedComponent/> \n",
+                        "\n//Nested.svelte \n\n<h2>I'm Nested Component</h2>"
+                    ]
+                },
+                {
+                    "definition": "HTML ট্যাগস",
+                    "code": [
+                        "// App.svelte\n\n<script>\n  let string = `this string contains some <strong>HTML!!!</strong>`; \n</script>\n\n",
+                        "<h2><p>{@html string}</p></h2>\n"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "এসভেল্ট এর রিয়্যাক্টিভিটি",
+            "items": [
+                {
+                    "definition": "এসাইনমেন্ট (Assignment)",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  let count = 0; \n\n  function incrementCount() {\n    count += 1;\n  }\n</script>\n\n",
+                        "<button on:click={incrementCount}>\n  Clicked {count} {count === 1 ? 'time' : 'times'}\n</button>"
+                    ]
+                },
+                {
+                    "definition": "ডিক্লারেশন (Declarations)",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  let count = 0; \n\n  $: doubled = count * 2;\n\n  function handleClick() {\n    count += 1;\n  }\n</script>\n\n",
+                        "<button on:click={handleClick}>\n  Clicked {count} {count === 1 ? 'time' : 'times'}\n</button>\n\n<p>{count} doubled is {doubled}</p>"
+                    ]
+                },
+                {
+                    "definition": "ষ্টেটমেন্ট (Statements)",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  let count = 0; \n\n  $: if (count >= 10) {\n    alert('count is dangerously high!');\n    count = 9;\n  }\n\n  function handleClick() {\n    count += 1;\n  }\n</script>\n\n",
+                        "<button on:click={handleClick}> Clicked {count} {count === 1 ? 'time' : 'times'}</button>"
+                    ]
+                },
+                {
+                    "definition": "অ্যারে এবং অবজেক্ট আপডেট",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  let numbers = [1, 2, 3, 4];\n\n  function addNumber() {\n    numbers = [...numbers, numbers.length + 1];\n  }\n\n  $: sum = numbers.reduce((t, n) => t + n, 0);\n</script>\n\n",
+                        "<p>{numbers.join(' + ')} = {sum}</p>\n\n<button on:click={addNumber}>\n  Add a number\n</button>"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "এসভেল্ট এর প্রপস (props)",
+            "items": [
+                {
+                    "definition": "প্রপস ডিক্লারেশন",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  import Nested from './Nested.svelte';\n</script>\n\n",
+                        "<Nested answer={42}/>\n",
+                        "\n//Nested.svelte \n\n<script>\n  export let answer;\n</script>\n\n",
+                        "<p>The answer is {answer}</p>"
+                    ]
+                },
+                {
+                    "definition": "প্রপস এর ডিফল্ট ভ্যালু",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  import Nested from './Nested.svelte';\n</script>\n\n",
+                        "<Nested answer={42}/>\n<Nested />\n",
+                        "\n//Nested.svelte \n\n<script>\n  export let answer = 'a mystery';\n</script>\n\n",
+                        "<p>The answer is {answer}</p>"
+                    ]
+                },
+                {
+                    "definition": "প্রপস স্প্রেড",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  import Info from './Info.svelte';\n  const pkg = {\n    name: 'svelte',\n    version: 3,\n    speed: 'blazing',\n    website: 'https://devsonket.com'\n  };\n</script>\n\n",
+                        "<Info {...pkg}/>\n",
+                        "\n//Info.svelte \n\n<script>\n  export let name;\n  export let version;\n  export let speed;\n  export let website;\n</script>\n\n",
+                        "<p>The <code>{name}</code> package is {speed} fast. Download version {version} from <a href='https://www.npmjs.com package/{name}'>npm</a> and <a href={website}>learn more here</p>"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "এসভেল্টে লজিক",
+            "items": [
+                {
+                    "definition": "if এর ব্যবহার",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  let user = { loggedIn: false };\n\n  function toggle() {\n    user.loggedIn = !user.loggedIn;\n  }\n</script>\n\n",
+                        "{#if user.loggedIn}\n  <button on:click={toggle}>\n    Log out\n  </button>\n{/if}\n\n{#if !user.loggedIn}\n  <button on:click={toggle}>\n    Log in\n  </button>\n{/if}"
+                    ]
+                },
+                {
+                    "definition": "else এর ব্যবহার",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  let user = { loggedIn: false };\n\n  function toggle() {\n    user.loggedIn = !user.loggedIn;\n  }\n</script>\n\n",
+                        "{#if user.loggedIn}\n  <button on:click={toggle}>\n    Log out\n  </button>\n{:else}\n  <button on:click={toggle}>\n    Log in\n  </button>\n{/if}"
+                    ]
+                },
+                {
+                    "definition": "else if এর ব্যবহার",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  let x = 7;\n</script>\n\n",
+                        "{#if x > 10}\n  <p>{x} is greater than 10</p>\n{:else if 5 > x}\n  <p>{x} is less than 5</p>\n{:else}\n  <p>{x} is between 5 and 10</p>\n{/if}"
+                    ]
+                },
+                {
+                    "definition": "each এর ব্যবহার",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  let cats = [\n    { id: 'J---aiyznGQ', name: 'Keyboard Cat' },\n    { id: 'z_AbfPXTKms', name: 'Maru' },\n    { id: 'OUtn3pvWmpg', name: 'Henri The Existential Cat' }\n  ];\n</script>\n\n",
+                        "<h1>The Famous Cats of YouTube</h1>\n\n",
+                        "<ul>\n  {#each cats as { id, name }, i}\n    <li><a target='_blank' href='https://www.youtube.com/watch?v={id}'>\n      {i + 1}: {name}\n    </a></li>\n  {/each}\n</ul>"
+                    ]
+                },
+                {
+                    "definition": "keyed each এর ব্যবহার",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  import Thing from './Thing.svelte';\n  let things = [\n    { id: 1, name: 'apple' },\n        { id: 2, name: 'banana' },\n    { id: 3, name: 'carrot' },\n    { id: 4, name: 'doughnut' },\n    { id: 5, name: 'egg' },\n  ];\n  function handleClick() {\n    things = things.slice(1);\n  }\n</script>\n\n",
+                        "<button on:click={handleClick}>\n  Remove first thing\n</button>\n\n",
+                        "{#each things as thing (thing.id) },\n  <Thing name={thing.name}/>\n{/each}\n\n",
+                        "// Thing.svelte\n\n<script>\n  const emojis = {\n    apple: '🍎',\n    banana: '🍌',\n    carrot: '🥕',\n    doughnut: '🍩',\n    egg: '🥚'\n  }\n\n  export let name;\n\n  const emoji = emojis[name];\n</script>\n\n",
+                        "<p>\n  <span>The emoji for { name } is { emoji }</span>\n</p>\n\n<style>\n  p {\n    margin: 0.8em 0;\n  }\n  span {\n    display: inline-block;\n    padding: 0.2em 1em 0.3em;\n    text-align: center;\n    \n    border-radius: 0.2em;\n    background-color: #FFDFD3;\n  }\n</style>"
+                    ]
+                },
+                {
+                    "definition": "await এর ব্যবহার",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  async function getRandomNumber() {\n    const res = await fetch(`/tutorial/random-number`);\n    const text = await res.text();\n\n    if (res.ok) {\n      return text;\n    } else {\n      throw new Error(text);\n    }\n  }\n\n  let promise = getRandomNumber();\n\n  function handleClick() {,\n    promise = getRandomNumber();\n  }\n</script>\n\n",
+                        "<button on:click={handleClick}>\n  generate random number\n</button>\n\n","{#await promise}\n  <p>...waiting</p>\n{:then number}\n  <p>The number is {number}</p>\n{:catch error}\n  <p style='color: red'>{error.message}</p>\n{/await}"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "এসভেল্ট এর অন্যান্য বিষয়াবলি",
+            "items": [
+                {
+                    "definition": "নেস্টেড কম্পোনেন্ট এ props পাঠানো",
+                    "code": [
+                        "//App.svelte \n\n<script>\n  import ChildComponent from './Child.svelte'; \n  let title = 'I'm Child Component'; \n</script> \n\n<h2>I'm Parent Component</h2> \n<ChildComponent {title}/> \n",
+                        "\n// Child.svelte \n\n<script> \n  export let title; \n</script> \n\n<h2>{title || 'Hello world'}</h2>"
+                    ]
+                },
+                {
+                    "definition": "ডিফল্ট props",
+                    "code": [
+                        "//App.svelte \n\n<script>\n  import ChildComponent from './Child.svelte'; \n  let title = 'I'm Child Component'; \n</script> \n\n<h2>I'm Parent Component</h2> \n",
+                        "<ChildComponent {title}/> \n<ChildComponent/> \n",
+                        "\n//Child.svelte \n\n<script> \n  export let title = 'Hello world'; \n</script> \n\n<h2>{title}</h2>"
+                    ]
+                },
+                {
+                    "definition": "ইভেন্ট হ্যান্ডেলার",
+                    "code": [
+                        "<script> \n let count = 0; \n function incrementCount() { \n  count += 1; \n } \n</script>\n\n",
+                        "<button on:click={incrementCount}> Clicked {count} {count === 1 ? 'time' : 'times'}</button>"
+                    ]
+                },
+                {
+                    "definition": "রিয়্যাক্টিভ অ্যাসাইনমেন্ট",
+                    "code": [
+                        "<script> \n let count = 0; \n $: doubled = count * 2; \n function incrementCount() { \n  count += 1; \n } \n</script>\n\n",
+                        "<button on:click={incrementCount}> Clicked {count} {count === 1 ? 'time' : 'times'}</button>\n",
+                        "<p>{count} doubled is {doubled}</p>"
+                    ]
+                },
+                {
+                    "definition": "রিয়্যাক্টিভ লজিক",
+                    "code": [
+                        "<script>\n let x = 7;\n</script>\n\n",
+                        "{#if x > 10}\n <p>{x} is greater than 10</p> \n {:else if 5 > x}\n <p>{x} is less than 5</p> \n {:else}\n <p>{x} is between 5 and 10</p>\n {/if}\n"
+                    ]
+                },
+                {
+                    "definition": "লজিক",
+                    "code": [
+                        "<script> \n  let count = 0; \n  $: if (count >= 10) { \n  alert(`count is dangerously high!`); \n  count = 9; \n} \n function incrementCount() { \n  count += 1; \n } \n</script>\n\n",
+                        "<button on:click={incrementCount}> Clicked {count} {count === 1 ? 'time' : 'times'}</button>\n"
+                    ]
+                },
+                {
+                    "definition": "লুপ",
+                    "code": [
+                        "<script> \n  let cats = [{ \n\tid: 'J---aiyznGQ', name: 'Keyboard Cat' }, \n\t{ id: 'z_AbfPXTKms', name: 'Maru' },\n\t{ id: 'OUtn3pvWmpg', name: 'Henri The Existential Cat' }]; \n</script> \n\n",
+                        "<h1>The Famous Cats of YouTube</h1>\n",
+                        "{#each cats as { id, name }, i} \n <div> \n   <a target='_blank' href='https: //www.youtube.com/watch?v={id}'>{i + 1}: {name}</a> \n </div> \n{/each}"
+                    ]
+                },
+                {
+                    "definition": "ডম ইভেন্ট হ্যান্ডেলার",
+                    "code": [
+                        "<script> \n  let m = { x: 0, y: 0 }; \n  function handleMousemove(event) { \n  m.x = event.clientX; \n  m.y = event.clientY; \n } \n</script> \n\n",
+                        "<div on:mousemove={handleMousemove}> \n  The mouse position is {m.x} x {m.y} \n</div> \n\n",
+                        "<style> \n  div { \n    width: 100%; \n    height: 100%; \n  } \n</style>"
+                    ]
+                },
+                {
+                    "definition": "ইনলাইন ডম ইভেন্ট হ্যান্ডেলার",
+                    "code": [
+                        "<script> \n  let m = { x: 0, y: 0 }; \n</script> \n\n",
+                        "<div on:mousemove='{e => m = { x: e.clientX, y: e.clientY}}'> \n  The mouse position is {m.x} x {m.y} \n</div> \n\n",
+                        "<style> \n  div { \n    width: 100%; \n    height: 100%;\n } \n</style>"
+                    ]
+                },
+                {
+                    "definition": "কম্পোনেন্ট ইভেন্টস",
+                    "code": [
+                        "//App.svelte ",
+                        "\n\n<script> \n import Inner from './Inner.svelte'; \n  function handleMessage(event) { \n    alert(event.detail.text); \n  } \n</script> \n\n",
+                        "<Inner on:message={handleMessage}/>",
+                        "\n\n//Inner.svelte",
+                        "\n\n<script> \n  import { createEventDispatcher } from 'svelte'; \n  const dispatch = createEventDispatcher(); \n ",
+                        " function sayHello() { \n    dispatch('message', {text: 'Hello!'}); \n  } \n </script> \n\n",
+                        "<button on:click={sayHello}> Click to say hello </button>"
+                    ]
+                },
+                {
+                    "definition": "text/number/textarea input ফিল্ড বাইন্ডিং",
+                    "code": [
+                        "<script> \n let name = 'world'; \n </script> \n",
+                        "<input bind:value={name}> \n",
+                        "<h1>Hello {name}!</h1>"
+                    ]
+                },
+                {
+                    "definition": "checkbox বাইন্ডিং",
+                    "code": [
+                        "<script> \n let yes = false; \n </script> \n",
+                        "<input type=checkbox checked={yes}> \n"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "লাইফসাইকেল হুক",
+            "items": [{
+                    "definition": "onMount",
+                    "code": [
+                        "<script> \n import { onMount } from 'svelte'; \n let photos = []; \n",
+                        "onMount(async () => { \n const res = await fetch(`https://jsonplaceholder.typicode.com/photos?_limit=20`); \n photos = await res.json(); \n }); \n",
+                        "</script>\n",
+                        "<h1>Photo album</h1>\n <div>{JSON.stringify(photos)}</div>"
+                    ]
+                },
+                {
+                    "definition": "onDestroy",
+                    "code": [
+                        "//App.svelte \n <script> \n import Timer from './Timer.svelte'; \n let open = true; \n let seconds = 0; \n const toggle = () => (open = !open); \n const handleTick = () => (seconds += 1); \n</script> \n",
+                        "<div> \n <button on:click={toggle}>{open ? 'Close' : 'Open'} Timer</button> \n <p>\n \t The Timer component has been open for \t {seconds} {seconds === 1 ? 'second' : 'seconds'} \n </p> \n {#if open} \n <Timer on:tick={handleTick}/> \n {/if} \n </div> \n\n",
+                        "\n //Timer.svelte \n <script> \n import { onInterval } from './utils.js'; \n export let callback; \n export let interval = 1000; \n onInterval(callback, interval); \n </script> \n",
+                        "\n <p> This component executes a callback every  {interval } millisecond{interval === 1 ? '' : 's' } </p> \n",
+                        "//utils.js \n import { onDestroy } from 'svelte'; \n export function onInterval(callback, milliseconds) { \n const interval = setInterval(callback, milliseconds); \n onDestroy(() => { \n clearInterval(interval); \n }); \n } \n"
+                    ]
+                },
+                {
+                    "definition": "beforeUpdate, afterUpdate",
+                    "code": [
+                        "import { beforeUpdate, afterUpdate } from 'svelte';"
+                    ]
+                },
+                {
+                    "definition": "tick",
+                    "code": [
+                        "import { tick } from 'svelte';"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "এসভেল্ট স্টোর",
+            "items": [{
+                    "definition": "রাইটেবল(writable)",
+                    "code": [
+                        "import { writable } from 'svelte/store';\n\nconst count = writable(0);\ncount.subscribe(value => {\n\tconsole.log(value);\n}); // logs '0'\n\ncount.set(1); // logs '1'\ncount.update(n => n + 1); // logs '2'"
+                    ]
+                },
+                {
+                    "definition": "রিডেবল(readable )",
+                    "code": [
+                        "import { readable } from 'svelte/store';\nconst time = readable(null, set => {\n\tset(new Date());\n\tconst interval = setInterval(() => {\n\t\tset(new Date());\n\t}, 1000);\n\treturn () => clearInterval(interval);\n});"
+                    ]
+                },
+                {
+                    "definition": "ডিরাইভড(derived)",
+                    "code": [
+                        "import { derived } from 'svelte/store';\nconst doubled = derived(a, $a => $a * 2);"
+                    ]
+                },
+                {
+                    "definition": "গেট(get)",
+                    "code": [
+                        "import { get } from 'svelte/store';\nconst value = get(store);"
+                    ]
+                }
+            ]
+        }
+    ]
+}

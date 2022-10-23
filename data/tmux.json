@@ -1,0 +1,503 @@
+{
+  "id": "tmux",
+  "title": "টিমোক্স (Tmux)",
+  "slug": "tmux",
+  "description": "Tmux হল একটি টার্মিনাল মাল্টিপ্লেক্সার যা GNU স্ক্রিনের বিকল্প। অন্য কথায়, এর মানে হল যে আপনি একটি Tmux সেশন শুরু করতে পারেন এবং তারপর সেই সেশনের ভিতরে একাধিক উইন্ডো খুলতে পারেন। প্রতিটি উইন্ডো পুরো পর্দা দখল করে এবং আয়তক্ষেত্রাকার প্যানে বিভক্ত করা যেতে পারে।",
+  "colorPref": "#07334e",
+  "contents": [
+    {
+      "title": "সেশন কমান্ড",
+      "items": [
+        {
+          "definition": "একটি নতুন সেশন শুরু করুন",
+          "code": "tmux\ntmux new\ntmux new-session\n:new"
+        },
+        {
+          "definition": "নামযুক্ত Tmux সেশন তৈরি করা হচ্ছে",
+          "code": "tmux new -S {mysession}\n:new -s {mysession}"
+        },
+        {
+          "definition": "সমস্ত সেশন দেখান",
+          "code": "tmux ls\ntmux list-sessions"
+        },
+        {
+          "definition": "নামযুক্ত Tmux সেশন তৈরি করা হচ্ছে",
+          "code": "tmux new -S {mysession}\n:new -s {mysession}"
+        },
+        {
+          "definition": "নাম দেওয়া সেশনকে মুছুন/হত্যা করুন",
+          "code": "tmux kill-ses -t {mysession}\ntmux kill-session -t {mysession}"
+        },
+        {
+          "definition": "বর্তমান ছাড়া সব সেশন মমুছুন/হত্যা করুন",
+          "code": "tmux kill-session -a"
+        },
+        {
+          "definition": "সমস্ত সেশনগুলিকে হত্যা/মুছুন কিন্তু সেশন নামে",
+          "code": "tmux kill-session -a -t {mysession}"
+        },
+        {
+          "definition": "শেষ সেশনের সাথে সংযুক্ত করুন",
+          "code": "tmux a\ntmux at\ntmux attach\ntmux attach-session"
+        },
+        {
+          "definition": "নামের সাথে একটি সেশন সংযুক্ত করুন",
+          "code": "tmux a -t {mysession}\ntmux at -t {mysession}\ntmux attach -t {mysession}\ntmux attach-session -t {mysession}"
+        }
+      ]
+    },
+    {
+      "title": "উইন্ডোজ",
+      "items": [
+        {
+          "definition": "mysession এবং উইন্ডো mywindow নাম দিয়ে একটি নতুন অধিবেশন শুরু করুন",
+          "code": "tmux new -s mysession -n mywindow"
+        },
+        {
+          "definition": "উইন্ডো তৈরি করুন",
+          "code": "Ctrl + b  c"
+        },
+        {
+          "definition": "বর্তমান উইন্ডোর নাম পরিবর্তন করুন",
+          "code": "Ctrl + b  ,"
+        },
+        {
+          "definition": "বর্তমান উইন্ডো বন্ধ করুন",
+          "code": "Ctrl + b  &"
+        },
+        {
+          "definition": "আগের উইন্ডো",
+          "code": "Ctrl + b  p"
+        },
+        {
+          "definition": "পরবর্তী উইন্ডো",
+          "code": "Ctrl + b  n"
+        },
+        {
+          "definition": "নম্বর অনুসারে উইন্ডো স্যুইচ/নির্বাচন করুন",
+          "code": "Ctrl + b  0 ... 9"
+        },
+        {
+          "definition": "শেষ সক্রিয় উইন্ডো টগল করুন",
+          "code": "Ctrl + b  l"
+        },
+        {
+          "definition": "উইন্ডো পুনরায় সাজান, সোয়াপ উইন্ডো নম্বর 2(src) এবং 1(dst)",
+          "code": ":swap-window -s 2 -t 1"
+        },
+        {
+          "definition": "একটি অবস্থান দ্বারা বর্তমান উইন্ডো বাম দিকে সরান",
+          "code": ":swap-window -t -1"
+        }
+      ]
+    },
+    {
+      "title": "প্যানস",
+      "items": [
+        {
+          "definition": "শেষ সক্রিয় প্যানে টগল করুন",
+          "code": "Ctrl + b  ;"
+        },
+        {
+          "definition": "অনুভূমিক বিন্যাস সহ বিভক্ত প্যানে",
+          "code": "Ctrl + b  %"
+        },
+        {
+          "definition": "উল্লম্ব বিন্যাস সহ বিভক্ত প্যানে",
+          "code": "Ctrl + b  {"
+        },
+        {
+          "definition": "বর্তমান প্যানটি ডানদিকে সরান",
+          "code": "Ctrl + b  }"
+        },
+        {
+          "definition": "দিক থেকে প্যানে স্যুইচ করুন",
+          "code": "Ctrl + b  ↑\nCtrl + b  ↓\nCtrl + b  ←\nCtrl + b  →"
+        },
+        {
+          "definition": "সিঙ্ক্রোনাইজ-প্যান টগল করুন (সমস্ত প্যানে কমান্ড পাঠান)",
+          "code": ":setw synchronize-panes"
+        },
+        {
+          "definition": "প্যান লেআউটগুলির মধ্যে টগল করুন",
+          "code": "Ctrl + b  Spacebar"
+        },
+        {
+          "definition": "পরবর্তী প্যানে স্যুইচ করুন",
+          "code": "Ctrl + b  o"
+        },
+        {
+          "definition": "প্যান নম্বর দেখান",
+          "code": "Ctrl + b  q"
+        },
+        {
+          "definition": "নম্বর অনুসারে প্যানে পরিবর্তন/নির্বাচন করুন",
+          "code": "Ctrl + b  q  0 ... 9"
+        },
+        {
+          "definition": "প্যান জুম টগল করুন",
+          "code": "Ctrl + b  z"
+        },
+        {
+          "definition": "প্যানটিকে একটি উইন্ডোতে রূপান্তর করুন",
+          "code": "Ctrl + b  !"
+        },
+        {
+          "definition": "বর্তমান প্যানের উচ্চতার আকার পরিবর্তন করুন (দ্বিতীয় কী রাখা ঐচ্ছিক)",
+          "code": "Ctrl + b + ↑\nCtrl + b  Ctrl + ↑\nCtrl + b + ↓\nCtrl + b  Ctrl + ↓"
+        },
+        {
+          "definition": "বর্তমান প্যানের প্রস্থের মাপ পরিবর্তন করুন (দ্বিতীয় কীটি রাখা ঐচ্ছিক)",
+          "code": "Ctrl + b + ←\nCtrl + b  Ctrl + ←\nCtrl + b + →\nCtrl + b  Ctrl + →"
+        },
+        {
+          "definition": "বর্তমান প্যান বন্ধ করুন",
+          "code": "Ctrl + b  x"
+        }
+      ]
+    },
+    {
+      "title": "অনুলিপি মোড",
+      "items": [
+        {
+          "definition": "বাফারে vi কীগুলি ব্যবহার করুন",
+          "code": ":setw -g mode-keys vi"
+        },
+        {
+          "definition": "অনুলিপি মোডে প্রবেশ করুন",
+          "code": "Ctrl + b  ["
+        },
+        {
+          "definition": "অনুলিপি মোডে প্রবেশ করুন এবং এক পৃষ্ঠা উপরে স্ক্রোল করুন",
+          "code": "Ctrl + b PgUp"
+        },
+        {
+          "definition": "মোড থেকে প্রস্থান করুন",
+          "code": "q"
+        },
+        {
+          "definition": "শীর্ষ লাইনে যান",
+          "code": "g"
+        },
+        {
+          "definition": "নিচের লাইনে যান",
+          "code": "G"
+        },
+        {
+          "definition": "উপরে স্ক্রল করুন",
+          "code": "↑"
+        },
+        {
+          "definition": "নিচে স্ক্রল করুন",
+          "code": "↓"
+        },
+        {
+          "definition": "কার্সার বাম দিকে সরান",
+          "code": "h"
+        },
+        {
+          "definition": "কার্সার নিচে নিয়ে যান",
+          "code": "j"
+        },
+        {
+          "definition": "কার্সারকে উপরে নিয়ে যান",
+          "code": "k"
+        },
+        {
+          "definition": "কার্সার ডানদিকে সরান",
+          "code": "l"
+        },
+        {
+          "definition": "এক সময়ে একটি শব্দ সামনের দিকে কার্সার সরান",
+          "code": "w"
+        },
+        {
+          "definition": "এক সময়ে একটি শব্দ পিছনের দিকে কার্সার সরান",
+          "code": "b"
+        },
+        {
+          "definition": "সামনের দিকে অনুসন্ধান করুন",
+          "code": "/"
+        },
+        {
+          "definition": "পিছনের দিকে অনুসন্ধান করুন",
+          "code": "?"
+        },
+        {
+          "definition": "পরবর্তী কীওয়ার্ড সংঘটন",
+          "code": "n"
+        },
+        {
+          "definition": "পূর্ববর্তী কীওয়ার্ড সংঘটন",
+          "code": "N"
+        },
+        {
+          "definition": "নির্বাচন করা শুরু করুন",
+          "code": "Spacebar"
+        },
+        {
+          "definition": "নির্বাচন পরিষ্কার করুন",
+          "code": "Esc"
+        },
+        {
+          "definition": "নির্বাচন অনুলিপি করুন",
+          "code": "Enter"
+        },
+        {
+          "definition": "বাফার_0-এর বিষয়বস্তু পেস্ট করুন",
+          "code": "Ctrl + b  ]"
+        },
+        {
+          "definition": "বাফার_0-এর বিষয়বস্তু প্রদর্শন করুন",
+          "code": ":show-buffer"
+        },
+        {
+          "definition": "একটি বাফার প্যানের সম্পূর্ণ দৃশ্যমান বিষয়বস্তু অনুলিপি করুন",
+          "code": ":capture-pane"
+        },
+        {
+          "definition": "সমস্ত বাফার দেখান",
+          "code": ":list-buffers"
+        },
+        {
+          "definition": "সমস্ত বাফার দেখান এবং নির্বাচিত অংশে পেস্ট করুন",
+          "code": ":choose-buffer"
+        },
+        {
+          "definition": "buf.txt এ বাফার বিষয়বস্তু সংরক্ষণ করুন",
+          "code": ":save-buffer buf.tx"
+        },
+        {
+          "definition": "বাফার_1 মুছুন",
+          "code": ":delete-buffer -b 1"
+        }
+      ]
+    },
+    {
+      "title": "বিবিধ",
+      "items": [
+        {
+          "definition": "কমান্ড মোডে প্রবেশ করুন",
+          "code": "Ctrl + b  :"
+        },
+        {
+          "definition": "সমস্ত সেশনের জন্য বিকল্প সেট করুন",
+          "code": ":set -g OPTION or :setw -g OPTION"
+        },
+        {
+          "definition": "মাউস মোড সক্রিয় করুন",
+          "code": ":set mouse on"
+        }
+      ]
+    },
+    {
+      "title": "সাহায্য",
+      "items": [
+        {
+          "definition": "কী বাইন্ডিংগুলি তালিকাভুক্ত করুন (শর্টকাট)",
+          "code": "tmux list-keys\n:list-keys or Ctrl + b  ?"
+        },
+        {
+          "definition": "প্রতিটি সেশন, উইন্ডো, প্যান, ইত্যাদি দেখান...",
+          "code": "tmux info"
+        }
+      ]
+    },
+    {
+      "title": "কীবোর্ড শর্টকাট",
+      "items": [
+        {
+          "definition": "সমস্ত সেশন দেখান",
+          "code": "Ctrl + b + s"
+        },
+        {
+          "definition": "সেশনের নাম পরিবর্তন করুন",
+          "code": "Ctrl + b + $"
+        },
+        {
+          "definition": "সেশন থেকে বিচ্ছিন্ন করুন",
+          "code": "Ctrl + b + d"
+        },
+        {
+          "definition": "উইন্ডো তৈরি করুন",
+          "code": "Ctrl + b  c"
+        },
+        {
+          "definition": "বর্তমান উইন্ডোর নাম পরিবর্তন করুন",
+          "code": "Ctrl + b  ,"
+        },
+        {
+          "definition": "বর্তমান উইন্ডো বন্ধ করুন",
+          "code": "Ctrl + b  &"
+        },
+        {
+          "definition": "আগের উইন্ডো",
+          "code": "Ctrl + b  p"
+        },
+        {
+          "definition": "পরবর্তী উইন্ডো",
+          "code": "Ctrl + b  n"
+        },
+        {
+          "definition": "নম্বর অনুসারে উইন্ডো স্যুইচ/নির্বাচন করুন",
+          "code": "Ctrl + b  0 ... 9"
+        },
+        {
+          "definition": "শেষ সক্রিয় উইন্ডো টগল করুন",
+          "code": "Ctrl + b  l"
+        },{
+          "definition": "শেষ সক্রিয় প্যানে টগল করুন",
+          "code": "Ctrl + b  ;"
+        },
+        {
+          "definition": "অনুভূমিক বিন্যাস সহ বিভক্ত প্যানে",
+          "code": "Ctrl + b  %"
+        },
+        {
+          "definition": "উল্লম্ব বিন্যাস সহ বিভক্ত প্যানে",
+          "code": "Ctrl + b  {"
+        },
+        {
+          "definition": "বর্তমান প্যানটি ডানদিকে সরান",
+          "code": "Ctrl + b  }"
+        },
+        {
+          "definition": "দিক থেকে প্যানে স্যুইচ করুন",
+          "code": "Ctrl + b  ↑\nCtrl + b  ↓\nCtrl + b  ←\nCtrl + b  →"
+        },
+        {
+          "definition": "প্যান লেআউটগুলির মধ্যে টগল করুন",
+          "code": "Ctrl + b  Spacebar"
+        },
+        {
+          "definition": "পরবর্তী প্যানে স্যুইচ করুন",
+          "code": "Ctrl + b  o"
+        },
+        {
+          "definition": "প্যান নম্বর দেখান",
+          "code": "Ctrl + b  q"
+        },
+        {
+          "definition": "নম্বর অনুসারে প্যানে পরিবর্তন/নির্বাচন করুন",
+          "code": "Ctrl + b  q  0 ... 9"
+        },
+        {
+          "definition": "প্যান জুম টগল করুন",
+          "code": "Ctrl + b  z"
+        },
+        {
+          "definition": "প্যানটিকে একটি উইন্ডোতে রূপান্তর করুন",
+          "code": "Ctrl + b  !"
+        },
+        {
+          "definition": "বর্তমান প্যানের উচ্চতার আকার পরিবর্তন করুন (দ্বিতীয় কী রাখা ঐচ্ছিক)",
+          "code": "Ctrl + b + ↑\nCtrl + b  Ctrl + ↑\nCtrl + b + ↓\nCtrl + b  Ctrl + ↓"
+        },
+        {
+          "definition": "বর্তমান প্যানের প্রস্থের মাপ পরিবর্তন করুন (দ্বিতীয় কীটি রাখা ঐচ্ছিক)",
+          "code": "Ctrl + b + ←\nCtrl + b  Ctrl + ←\nCtrl + b + →\nCtrl + b  Ctrl + →"
+        },
+        {
+          "definition": "বর্তমান প্যান বন্ধ করুন",
+          "code": "Ctrl + b  x"
+        },
+        {
+          "definition": "অনুলিপি মোডে প্রবেশ করুন",
+          "code": "Ctrl + b  ["
+        },
+        {
+          "definition": "অনুলিপি মোডে প্রবেশ করুন এবং এক পৃষ্ঠা উপরে স্ক্রোল করুন",
+          "code": "Ctrl + b PgUp"
+        },
+        {
+          "definition": "মোড থেকে প্রস্থান করুন",
+          "code": "q"
+        },
+        {
+          "definition": "শীর্ষ লাইনে যান",
+          "code": "g"
+        },
+        {
+          "definition": "নিচের লাইনে যান",
+          "code": "G"
+        },
+        {
+          "definition": "উপরে স্ক্রল করুন",
+          "code": "↑"
+        },
+        {
+          "definition": "নিচে স্ক্রল করুন",
+          "code": "↓"
+        },
+        {
+          "definition": "কার্সার বাম দিকে সরান",
+          "code": "h"
+        },
+        {
+          "definition": "কার্সার নিচে নিয়ে যান",
+          "code": "j"
+        },
+        {
+          "definition": "কার্সারকে উপরে নিয়ে যান",
+          "code": "k"
+        },
+        {
+          "definition": "কার্সার ডানদিকে সরান",
+          "code": "l"
+        },
+        {
+          "definition": "এক সময়ে একটি শব্দ সামনের দিকে কার্সার সরান",
+          "code": "w"
+        },
+        {
+          "definition": "এক সময়ে একটি শব্দ পিছনের দিকে কার্সার সরান",
+          "code": "b"
+        },
+        {
+          "definition": "সামনের দিকে অনুসন্ধান করুন",
+          "code": "/"
+        },
+        {
+          "definition": "পিছনের দিকে অনুসন্ধান করুন",
+          "code": "?"
+        },
+        {
+          "definition": "পরবর্তী কীওয়ার্ড সংঘটন",
+          "code": "n"
+        },
+        {
+          "definition": "পূর্ববর্তী কীওয়ার্ড সংঘটন",
+          "code": "N"
+        },
+        {
+          "definition": "নির্বাচন করা শুরু করুন",
+          "code": "Spacebar"
+        },
+        {
+          "definition": "নির্বাচন পরিষ্কার করুন",
+          "code": "Esc"
+        },
+        {
+          "definition": "নির্বাচন অনুলিপি করুন",
+          "code": "Enter"
+        },
+        {
+          "definition": "বাফার_0-এর বিষয়বস্তু পেস্ট করুন",
+          "code": "Ctrl + b  ]"
+        },
+        {
+          "definition": "বাফার_0-এর বিষয়বস্তু প্রদর্শন করুন",
+          "code": ":show-buffer"
+        },
+        {
+          "definition": "কমান্ড মোডে প্রবেশ করুন",
+          "code": "Ctrl + b  :"
+        },
+        {
+          "definition": "কী বাইন্ডিংগুলি তালিকাভুক্ত করুন (শর্টকাট)",
+          "code": "Ctrl + b  ?"
+        }
+      ]
+    }
+  ]
+}

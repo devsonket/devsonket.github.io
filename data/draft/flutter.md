@@ -26,6 +26,7 @@ Flutter গুগলের তৈরি একটি ফ্রেমওয়ার
 - [Animation](#animation)
 - [Responsive Header](#responsive-header)
 - [Snackbar](#snackbar)
+- [Carousel](#carousel)
 
 
 ## Flutter CLI tools
@@ -59,6 +60,10 @@ flutter channel
 ```bash
 flutter channel dev/master/stable/beta
 ```
+রিয়েল ডিভাইসে টেস্টের জন্য .apk জেনারেট করতে
+```bash
+flutter build apk
+```
 ফ্লাটার লগস
 ```bash
 flutter logs -d <device-id>
@@ -81,6 +86,32 @@ flutter logs -d <device-id>
 ```bash
 flutter --help --verbose
 ```
+ডিভাইসের দৈর্ঘ্য, প্রস্থ বের করতে
+```bash
+double screenHeight =  MediaQuery.of(context).size.height;
+double screenWidth =  MediaQuery.of(context).size.width;
+```
+বিভিন্ন ডিভাইসের জন্য রেস্পন্সিভনেস চেক করতে
+```bash
+import 'package:device_preview/device_preview.dart';
+
+void main() => runApp(
+  DevicePreview(
+    enabled: !kReleaseMode,
+    builder: (context) => MyApp(), // Wrap your app
+  ),
+);
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      locale: DevicePreview.locale(context), // Add the locale here
+      builder: DevicePreview.appBuilder, // Add the builder here
+      home: HomePage(),
+    );
+  }
+}
 ```
 ## Hello world
 
@@ -860,6 +891,343 @@ class SnackBarPage extends StatelessWidget {
           Scaffold.of(context).showSnackBar(snackBar);
         },
         child: Text('Show SnackBar'),
+      ),
+    );
+  }
+}
+```
+## Buttons
+```dart
+import 'package:flutter/material.dart';
+
+void main() => runApp(ButtonsDemo());
+
+class ButtonsDemo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Buttons Demo',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Buttons Demo'),
+        ),
+        body: ButtonsDemoPage(),
+class ButtonsDemoPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+    children:[
+    // Text Button
+    
+    TextButton(
+    onPressed: () {
+      // Respond to button press
+     },
+     child: Text("TEXT BUTTON"),
+     ),
+     
+    // Outlined Button
+    
+    OutlinedButton(
+      onPressed: () {
+        // Respond to button press
+      },
+     child: Text("OUTLINED BUTTON"),
+      ),
+      
+      // Elevated Button
+      
+      ElevatedButton(
+        onPressed: () {
+          // Respond to button press
+          },
+         child: Text('CONTAINED BUTTON'),
+         ),
+    ]
+    );
+  }
+}
+```
+## Carousel
+```dart
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Material App',
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Image carousel'),
+        ),
+        body: Carousel(),
+      ),
+    );
+  }
+}
+
+class Carousel extends StatefulWidget {
+  const Carousel({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  State<Carousel> createState() => _CarouselState();
+}
+
+class _CarouselState extends State<Carousel> {
+  late PageController _pageController;
+
+  List<String> images = [
+    "https://images.wallpapersden.com/image/download/purple-sunrise-4k-vaporwave_bGplZmiUmZqaraWkpJRmbmdlrWZlbWU.jpg",
+    "https://wallpaperaccess.com/full/2637581.jpg",
+    "https://uhdwallpapers.org/uploads/converted/20/01/14/the-mandalorian-5k-1920x1080_477555-mm-90.jpg"
+  ];
+
+  int activePage = 1;
+
+  @override
+  void initState() {
+    super.initState();
+    _pageController = PageController(viewportFraction: 0.8, initialPage: 1);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        SizedBox(
+          width: MediaQuery.of(context).size.width,
+          height: 200,
+          child: PageView.builder(
+              itemCount: images.length,
+              pageSnapping: true,
+              controller: _pageController,
+              onPageChanged: (page) {
+                setState(() {
+                  activePage = page;
+                });
+              },
+              itemBuilder: (context, pagePosition) {
+                bool active = pagePosition == activePage;
+                return slider(images,pagePosition,active);
+              }),
+        ),
+        Row(
+         mainAxisAlignment: MainAxisAlignment.center,
+         children: indicators(images.length,activePage))
+      ],
+    );
+  }
+}
+
+AnimatedContainer slider(images, pagePosition, active) {
+  double margin = active ? 10 : 20;
+
+  return AnimatedContainer(
+    duration: Duration(milliseconds: 500),
+    curve: Curves.easeInOutCubic,
+    margin: EdgeInsets.all(margin),
+    decoration: BoxDecoration(
+        image: DecorationImage(image: NetworkImage(images[pagePosition]))),
+  );
+}
+
+imageAnimation(PageController animation, images, pagePosition) {
+  return AnimatedBuilder(
+    animation: animation,
+    builder: (context, widget) {
+      print(pagePosition);
+
+      return SizedBox(
+        width: 200,
+        height: 200,
+        child: widget,
+      );
+    },
+    child: Container(
+      margin: EdgeInsets.all(10),
+      child: Image.network(images[pagePosition]),
+    ),
+  );
+}
+
+List<Widget> indicators(imagesLength, currentIndex) {
+  return List<Widget>.generate(imagesLength, (index) {
+    return Container(
+      margin: EdgeInsets.all(3),
+      width: 10,
+      height: 10,
+      decoration: BoxDecoration(
+          color: currentIndex == index ? Colors.black : Colors.black26,
+          shape: BoxShape.circle),
+    );
+  });
+}
+```
+## Multiselect with Checkboxes
+```dart
+// main.dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'KindaCode.com',
+      theme: ThemeData(
+        // enable Material 3
+        useMaterial3: true,
+        primarySwatch: Colors.indigo,
+      ),
+      home: const HomePage(),
+    );
+  }
+}
+
+// Multi Select widget
+// This widget is reusable
+class MultiSelect extends StatefulWidget {
+  final List<String> items;
+  const MultiSelect({Key? key, required this.items}) : super(key: key);
+
+  @override
+  State<StatefulWidget> createState() => _MultiSelectState();
+}
+
+class _MultiSelectState extends State<MultiSelect> {
+  // this variable holds the selected items
+  final List<String> _selectedItems = [];
+
+// This function is triggered when a checkbox is checked or unchecked
+  void _itemChange(String itemValue, bool isSelected) {
+    setState(() {
+      if (isSelected) {
+        _selectedItems.add(itemValue);
+      } else {
+        _selectedItems.remove(itemValue);
+      }
+    });
+  }
+
+  // this function is called when the Cancel button is pressed
+  void _cancel() {
+    Navigator.pop(context);
+  }
+
+// this function is called when the Submit button is tapped
+  void _submit() {
+    Navigator.pop(context, _selectedItems);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: const Text('Select Topics'),
+      content: SingleChildScrollView(
+        child: ListBody(
+          children: widget.items
+              .map((item) => CheckboxListTile(
+                    value: _selectedItems.contains(item),
+                    title: Text(item),
+                    controlAffinity: ListTileControlAffinity.leading,
+                    onChanged: (isChecked) => _itemChange(item, isChecked!),
+                  ))
+              .toList(),
+        ),
+      ),
+      actions: [
+        TextButton(
+          onPressed: _cancel,
+          child: const Text('Cancel'),
+        ),
+        ElevatedButton(
+          onPressed: _submit,
+          child: const Text('Submit'),
+        ),
+      ],
+    );
+  }
+}
+
+// Implement a multi select on the Home screen
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  List<String> _selectedItems = [];
+
+  void _showMultiSelect() async {
+    // a list of selectable items
+    // these items can be hard-coded or dynamically fetched from a database/API
+    final List<String> items = [
+      'Flutter',
+      'Node.js',
+      'React Native',
+      'Java',
+      'Docker',
+      'MySQL'
+    ];
+
+    final List<String>? results = await showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return MultiSelect(items: items);
+      },
+    );
+
+    // Update UI
+    if (results != null) {
+      setState(() {
+        _selectedItems = results;
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Multi Select'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // use this button to open the multi-select dialog
+            ElevatedButton(
+              onPressed: _showMultiSelect,
+              child: const Text('Select Your Favorite Topics'),
+            ),
+            const Divider(
+              height: 30,
+            ),
+            // display selected items
+            Wrap(
+              children: _selectedItems
+                  .map((e) => Chip(
+                        label: Text(e),
+                      ))
+                  .toList(),
+            )
+          ],
+        ),
       ),
     );
   }

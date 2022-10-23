@@ -13,6 +13,10 @@
           "code": "npx create-react-app <project-name>"
         },
         {
+          "definition": "npx এর সাহায্যে প্রজেক্ট নাম ছাড়া রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
+          "code": "npx create-react-app . "
+        },
+        {
           "definition": "npm এর সাহায্যে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
           "code": "npm init react-app <project-name>"
         },
@@ -20,7 +24,6 @@
           "definition": "yarn এর সাহায্যে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
           "code": "yarn create react-app <project-name>"
         }
-        
       ]
     },
     {
@@ -32,11 +35,15 @@
         },
         {
           "definition": "ReactDOM কে ইম্পোর্ট করে নেয়া",
-          "code": "import ReactDOM from 'react-dom'"
+          "code": "import ReactDOM from 'react-dom/client'"
         },
         {
-          "definition": "ReactDOM.render এই মেথডটি ২টি আরগুমেন্ট নেয় রেন্ডার ইলিমেন্ট এবং রেন্ডার স্কোপ",
-          "code": "ReactDOM.render(<h1>Hello, world!</h1>,document.getElementById('root'))"
+          "definition": "এরপরে প্রজেক্টের root তৈরী করা ReactDOM এর সাহায্যে",
+          "code": "const root = ReactDOM.createRoot(document.getElementById('root'))"
+        },
+        {
+          "definition": "ReactDOM এর সাহায্যে তৈরী root টিকে রেন্ডার করা",
+          "code": "root.render(<h1>Hello world!</h1>)"
         }
       ]
     },
@@ -145,6 +152,14 @@
         {
           "definition": "যে হুক দ্বারা DOM measurements(scroll event, viewport height/width) করা যায় এবং synchronously re-render হতে থাকে state আপডেটের পর",
           "code": "useLayoutEffect(() => {}, [dependencies])"
+        },
+        {
+          "definition": "যে হুক দ্বারা ইউনিক আইডি জেনারেট করা হয়",
+          "code": "const id = useId()"
+        },
+        {
+          "definition": "যে হুক দ্বারা কোন স্টেটের আপডেট মনিটর করা হয় এবং সেই স্টেটের আপডেট হওয়া পর্যন্ত পেন্ডিং স্টেট শো করে।",
+          "code": "const [isPending, startTransition] = useTransition()"
         }
       ]
     },
@@ -219,6 +234,50 @@
         {
           "definition": "Protected Route এর একটি উদাহরণ",
           "code": "<Switch> <Route path='/home' component={Home}/> {isAuthenticated ? <> <Route path='/about/:parma' component ={About} </> : <Redirect to='/home'/> } </Switch>"
+        }
+      ]
+    },
+    {
+          "title": "রিঅ্যাক্ট রাউটার v6",
+          "items": [
+            {
+              "definition": "npm এর সাহায্যে রাউটার ইন্সটল",
+              "code": "npm install react-router-dom@6"
+            },
+            {
+              "definition": "yarn এর সাহায্যে রাউটার ইন্সটল",
+              "code": "yarn add react-router-dom@6"
+            },
+            {
+              "definition": "Router সেট করতে App.js এ যুক্ত করুন",
+              "code": "import { BrowserRouter } from 'react-router-dom'"
+            },
+            {
+              "definition": "Router Render করতে App.js এ যুক্ত করুন",
+              "code": "import { Routes, Route } from 'react-router-dom'"
+            },
+            {
+              "definition": "লিংক বা সুইচ এর মাধ্যমে পেইজ পরিবর্তন করতে App.js এ যুক্ত করুন",
+              "code": "import { Routes, Route, Link } from 'react-router-dom'"
+            },
+            {
+              "definition": "যেভাবে রাউটার অবজেক্ট বানিয়ে রাউটার কম্পোনেন্ট সেটআপ করবেন"
+            },
+            {
+              "code": "import { useRoutes } from 'react-router-dom'\n//inside the component\nconst routes = [\n  children: [\n   {\n    element: <PageComponent />,\n    path: '/path',\n   }\n  ]\n]\nconst routerRegister = useRoutes(routes)\nreturn routerRegister"
+            }
+          ]
+        },
+    {
+      "title": "রিঅ্যাক্ট হুকস",
+      "items": [
+        {
+          "definition": "যেকোনো টাইপের স্টেট ডিফাইন করা",
+          "code": "const [state, setState] = useState(<STATE_TYPE>)"
+        },
+        {
+          "definition": "যেকোনো সাইড ইফেক্ট হ্যান্ডেল করতে useEffect",
+          "code": "useEffect(() => {\n// Update the document title using the browser API \ndocument.title = `You clicked ${count} times`;\n});"
         }
       ]
     }
