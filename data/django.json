@@ -299,6 +299,116 @@
                 }
 
             ]
+        },
+                     {
+            "title": "ডিজ্যাঙ্গু মডেল এন্ড ডেটাবেজ",
+            "items": [
+                {
+                    "definition": "models.py এর মডেল ক্লাস ইম্পোর্ট করা",
+                    "items": "from django.db import models"
+                },
+                {
+                    "definition": "model ক্লাস তৈরি করা",
+                    "items": "class Person(models.Model):"
+                },
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য", 
+                    "items" : "NULL"
+                }, 
+                {
+                    "definition": "অটোমেটিক যেকোন সাইজ এর ইন্টিজার ফিল্ড ডিক্লেয়ার করার জন্য", 
+                    "items" : "models.AutoField()"
+                }, 
+
+                {
+                    "definition": "-2147483648 থেকে  2147483647 এর মধ্যে যেকোন সাইজ এর ইন্টিজার স্টোর করার জন্য", 
+                    "items" : "models.IntegerField()"
+                }, 
+
+                {
+                    "definition": "AutoField এর মত শুধু মাত্র ৬৪ বিট এর যেকোন ইন্টিজার ইনপুট নেওয়ার জন্য", 
+                    "items" : "models.BigAutoField()"
+                }, 
+
+                {
+                    "definition": "বাইট,বাইট এরে অথবা মেমরি ভিউ এসাইন করার জন্য ", 
+                    "items" : "models.BinaryField()"
+                }, 
+
+                {
+                    "definition": "বুলিয়ান ভ্যালু এসাইন করার জন্য", 
+                    "items" : "models.BooleanField()"
+                }, 
+
+                {
+                    "definition": "", 
+                    "items" : "NULL"
+                }, 
+
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য", 
+                    "items" : "NULL"
+                }, 
+
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য", 
+                    "items" : "NULL"
+                }, 
+
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য", 
+                    "items" : "NULL"
+                }, 
+
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য", 
+                    "items" : "NULL"
+                }, 
+
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য", 
+                    "items" : "NULL"
+                }, 
+
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য", 
+                    "items" : "NULL"
+                }, 
+
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য", 
+                    "items" : "NULL"
+                }, 
+
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য", 
+                    "items" : "NULL"
+                }, 
+
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য", 
+                    "items" : "NULL"
+                }, 
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য", 
+                    "items" : "NULL"
+                }, 
+
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য", 
+                    "items" : "NULL"
+                }, 
+
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য", 
+                    "items" : "NULL"
+                }
+
+
+
+
+            ]
+            
         }
     ]
 }
