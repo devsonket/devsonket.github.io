@@ -9,6 +9,6 @@
             "items": [{
                     "definition": "একটা অবজেক্ট ডিপ ক্লোন করার জন্য [optional = transferables]",
                     "code": "structuredClone(value, transferables)"
-                }
+      }
     ]
 }
