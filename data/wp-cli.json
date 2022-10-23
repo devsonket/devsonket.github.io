@@ -1,0 +1,121 @@
+{
+  "id": "wpcli",
+  "title": "WP CLI",
+  "slug": "wp-cli",
+  "description": "WP CLI হচ্ছে ওয়ার্ডপ্রেসের একটি কমান্ড লাইন ইন্টারফেস। যার মাধ্যমে আপনি ওয়ার্ডপ্রেস সেটআপ, থিম ও প্লাগিন্স ইন্সটল, আপডেট, মাল্টিসাইট কনফিগার করতে পারবেন",
+  "colorPref": "#000",
+  "contents": [
+    {
+      "title": "WP CLI এডমিন কমান্ডস",
+      "items": [
+        {
+          "definition": "/wp-admin/ কে ব্রাউজারে ওপেন করবে",
+          "code": "wp admin"
+        },
+        {
+          "definition": "ওয়ার্ডপ্রেস ফাইলের পাথ",
+          "code": "wp admin --path=<path>"
+        },
+        {
+          "definition": "ওয়ার্ডপ্রেসের URL সেট করা",
+          "code": "wp admin --url=<url>"
+        },
+        {
+          "definition": "SSH (অথবা 'docker', 'docker-compose', 'docker-compose-run', 'vagrant') এর মাধ্যমে একটি রিমোট সার্ভারের বিরুদ্ধে অপারেশন করুন।",
+          "code": "wp admin --ssh=[<scheme>:][<user>@]<host\\|container>[:<port>][<path>]"
+        },
+        {
+          "definition": "HTTP এর মাধ্যমে রিমোট ওয়ার্ডপ্রেস ইনস্টলেশনের অপারেশন করুন।",
+          "code": "wp admin --http=<http>"
+        },
+        {
+          "definition": "ওয়ার্ডপ্রেস এডমিন ইউজার সেট করার জন্য",
+          "code": "wp admin --user=<id\\|login\\|email>"
+        },
+        {
+          "definition": "সমস্ত প্লাগইন লোড করা এড়িয়ে যান, অথবা প্লাগইনগুলির একটি কমা দ্বারা পৃথক করা তালিকা। দ্রষ্টব্য: mu-plugins এখনও লোড করা হয়.",
+          "code": "wp admin --skip-plugins[=<plugins>]"
+        },
+        {
+          "definition": "সমস্ত থিম লোড করা এড়িয়ে যান, অথবা থিমগুলির একটি কমা দ্বারা পৃথক করা তালিকা।",
+          "code": "wp admin --skip-themes[=<themes>]"
+        },
+        {
+          "definition": "সমস্ত ইনস্টল করা প্যাকেজ লোড করা এড়িয়ে যান।",
+          "code": "wp admin --skip-packages"
+        },
+        {
+          "definition": "কমান্ড চালানোর আগে পিএইচপি ফাইল লোড করুন (একবার একাধিকবার ব্যবহার করা যেতে পারে)।",
+          "code": "wp admin --require=<path>"
+        },
+        {
+          "definition": "কমান্ড চালানোর আগে পিএইচপি কোড এক্সিকিউট করুন (এটি একাধিকবার ব্যবহার করা যেতে পারে)।",
+          "code": "wp admin --exec=<php-code>"
+        },
+        {
+          "definition": "Contex ওয়ার্ডপ্রেস লোড করুন।",
+          "code": "wp admin --context=<context>"
+        },
+        {
+          "definition": "আউটপুট রঙিন করতে হবে কিনা।",
+          "code": "wp admin --[no-]color"
+        },
+        {
+          "definition": "সমস্ত PHP ত্রুটি দেখান এবং WP-CLI আউটপুটে verbosity যোগ করুন। অন্তর্নির্মিত গোষ্ঠীগুলির মধ্যে রয়েছে: বুটস্ট্র্যাপ, কমান্ডফ্যাক্টরি এবং সহায়তা।",
+          "code": "wp admin --debug[=<group>]"
+        },
+        {
+          "definition": "সমস্ত কমান্ড আর্গুমেন্টের জন্য বা কমা-বিভক্ত মান হিসাবে নির্দিষ্ট একটি উপসেট লিখতে ব্যবহারকারীকে অনুরোধ করুন।",
+          "code": "wp admin --prompt[=<assoc>]"
+        },
+        {
+          "definition": "তথ্যমূলক বার্তা দমন করুন।",
+          "code": "wp admin --quiet"
+        }
+        
+      ]
+    },
+    {
+      "title": "wp cache কমান্ড",
+      "items": [
+        {
+          "definition": "অবজেক্ট ক্যাশে একটি মান যোগ করে।",
+          "code": "wp cache add"
+        },
+        {
+          "definition": "অবজেক্ট ক্যাশে একটি মান হ্রাস করে।",
+          "code": "wp cache decr"
+        },
+        {
+          "definition": "অবজেক্ট ক্যাশে থেকে একটি মান সরিয়ে দেয়।",
+          "code": "wp cache delete"
+        },
+        {
+          "definition": "অবজেক্ট ক্যাশে ফ্লাশ করে।",
+          "code": "wp cache flush"
+        },
+        {
+          "definition": "অবজেক্ট ক্যাশে থেকে একটি মান পায়।",
+          "code": "wp cache get"
+        },
+        {
+          "definition": "অবজেক্ট ক্যাশে একটি মান বৃদ্ধি করে।",
+          "code": "wp cache incr"
+        },
+        {
+          "definition": "অবজেক্ট ক্যাশে একটি মান প্রতিস্থাপন করে, যদি মানটি ইতিমধ্যেই বিদ্যমান থাকে।",
+          "code": "wp cache replace"
+        },
+        {
+          "definition": "অবজেক্ট ক্যাশে একটি মান সেট করে, এটি ইতিমধ্যে বিদ্যমান কিনা তা নির্বিশেষে।",
+          "code": "wp cache set"
+        },
+        {
+          "definition": "কোন অবজেক্ট ক্যাশে ব্যবহার করা হচ্ছে তা নির্ধারণ করার প্রচেষ্টা।",
+          "code": "wp cache type"
+        }
+        
+      ]
+    }
+  ]
+}
