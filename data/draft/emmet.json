@@ -1,0 +1,33 @@
+{
+    "id": "emmet-shortcuts",
+    "title": "এমেট চিটশিট",
+    "slug": "emmet-shortcuts",
+    "description": "এমেট শর্টকাটগুলি",
+    "colorPref": "#a62830",
+    "contents": [
+        {
+            "title": "চাইল্ড: > ",
+            "items": [
+                {
+                        "code": "nav>ul>li"
+                }
+            ]
+        },
+        {
+            "title": "সিবিলিংস: +",
+            "items": [
+                {
+                        "code": "section>p+p+p"
+                }
+            ]
+        },
+        {
+            "title": "একধাপ উপরে যাওয়া: ^",
+            "items": [
+                {
+                        "code": "section>header>h1^footer"
+                }
+            ]
+        }
+    ]
+}
