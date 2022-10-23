@@ -1,0 +1,89 @@
+{
+  "id": "vitejs",
+  "title": "ভিট জেএস",
+  "slug": "vitejs",
+  "description": "জাভাস্ক্রিপ্ট বিল্ডটুল যা ডেভলাপমেন্টের সময় কোড লোকালি কোড সার্ভ করে আর প্রোডাকশনের সময় HTML, CSS, JavaScript সহ অন্য সকল অ্যাসেটকে বান্ডেল করে",
+  "colorPref": "#8c6ffe",
+  "contents": 
+  [
+    {
+			"title": "ইন্সটলেশন",
+			"items": [
+        {
+          "definition": "নতুন ভিট প্রজেক্ট বানানো"
+        },
+        {
+          "code": "npm create vite@latest"
+        },
+        {
+          "code": "yarn create vite"
+        },
+        {
+          "code": "pnpm create vite"
+        },
+        {
+					"definition": "প্রজেক্ট রান করে দেখুন"
+				},
+        {
+          "code": "npm run dev"
+        }, 
+        {
+          "code": "yarn run dev"
+        },
+        {
+          "code": "pnpm run dev"
+        }
+			]
+		},
+    {
+			"title": "ফিচার",
+			"items": [
+        {
+          "definition": "ন্যাটিভ ES5 সাপোর্ট",
+          "code": "import { someMethod } from 'my-dep'"
+        },
+        {
+          "definition": "jsx, tsx সাপোর্ট",
+          "code": "// vite.config.js \n\nimport { defineConfig } from 'vite'\n\nexport default defineConfig({\n  esbuild: {\n    jsxFactory: 'h',\n    jsxFragment: 'Fragment'\n  }\n})"
+        },
+        {
+          "definition": "স্ট্যাটিক আসেট",
+          "code": "import imgUrl from './img.png'\ndocument.getElementById('hero-img').src = imgUrl"
+        },
+        {
+          "definition": "JSON (জেসন)"
+        },
+        {
+          "code": "import json from './example.json'"
+        },
+        {
+          "code": "import { field } from './example.json'"
+        },
+        {
+					"definition": "গ্লোবাল ইম্পোর্ট",
+          "code": "const modules = import.meta.glob('./dir/*.js')\n\n// code produced by vite \nconst modules = {\n  './dir/foo.js': () => import('./dir/foo.js'),\n  './dir/bar.js': () => import('./dir/bar.js')\n}"
+				},
+        {
+          "definition": "মাল্টি লাইন প্যাটার্ন",
+          "code": "const modules = import.meta.glob(['./dir/*.js', './another/*.js'])"
+        },
+        {
+          "definition": "নেগেটিভ প্যাটার্ন",
+          "code": "const modules = import.meta.glob(['./dir/*.js', '!**/bar.js'])"
+        },
+        {
+          "definition": "নেইমড প্যাটার্ন",
+          "code": "const modules = import.meta.glob('./dir/*.js', { import: 'setup' })"
+        },
+        {
+          "definition": "ডাইনামিক ইম্পোর্ট",
+          "code": "const module = await import(`./dir/${file}.js`)"
+        },
+        {
+          "definition": "ওয়েব অ্যাসেম্বলি",
+          "code": "import init from './example.wasm?init'\n\ninit().then((instance) => { \n  instance.exports.test()\n})"
+        }
+			]
+		}
+  ]
+}

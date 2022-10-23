@@ -2,8 +2,8 @@
     "id": "svelte",
     "title": "এসভেল্ট",
     "slug": "svelte",
-    "description": "এসভেল্ট (Svelte) হচ্ছে একটি জাভাস্ক্রিপ্ট ইউজার ইন্টারফেস তৈরির ফ্রেমওয়ার্ক, যেটি অন্যান্য UI ফ্রেমওয়ার্ক থেকে ভিন্ন, কেননা এটি ডেভলাপমেন্টের সময় আপনার কোডকে ব্রাউজারের জন্য তৈরি করে নেয়।",
-    "colorPref": "#333",
+    "description": "এসভেল্ট (Svelte) হচ্ছে একটি জাভাস্ক্রিপ্ট ইউজার ইন্টারফেস তৈরির ফ্রেমওয়ার্ক, যেটি অন্যান্য UI ফ্রেমওয়ার্ক থেকে ভিন্ন, কেননা এটি ডেভলাপমেন্টের সময় আপনার কোডকে ব্রাউজারের জন্য তৈরি করে নেয়।\nরিয়াক্ট বা ভিউ এর মত ভার্চুয়াল ডমকে পরিবর্তন করা বদলে এসভেল্ট সার্জিকাল ভাবে ডমকে পরিবর্তন করে। তাই এসভেল্টকে সত্যিকারের রিয়্যাক্টিভ ফ্রেমওয়ার্ক বলা যায়।",
+    "colorPref": "#ff3e00",
     "contents": [
         {
             "title": "শুরু",
@@ -29,11 +29,11 @@
                 },
                 {
                     "definition": "ডাটা যুক্ত করা(ভ্যারিয়েবল ডিক্লেয়ার)",
-                    "code": "// App.svelte\n\n<script> \n  let name = 'world';\n</script> \n\n<h1>Hello {name}!</h1>"
+                    "code": "// App.svelte\n\n<script> \n  let name = 'world';\n</script> \n\n<h1>Hello {name.toUpperCase()}!</h1>"
                 },
                 {
                     "definition": "ডায়ন্যামিক অ্যাট্রিবিউট",
-                    "code": "// App.svelte\n\n<script> \n  let src = 'tutorial/image.gif', widht='100', height='100';\n</script>  \n\n<img {src} {width} {height}>"
+                    "code": "// App.svelte\n\n<script> \n  let src = '/tutorial/image.gif';\n  let name = 'Rick Astley';\n</script> \n\n<img {src} alt='{name} dances.'>"
                 },
                 {
                     "definition": "কম্পোনেন্ট স্ট্যাইল",
@@ -44,7 +44,7 @@
                     "code": [
                         "// App.svelte\n\n<script>\n  import NestedComponent from './Nested.svelte'; \n</script>\n\n",
                         "<h2>I'm Parent Component</h2> \n<NestedComponent/> \n",
-                        "\n//Nested.svelte \n\n<h2>I'm Nested Component</h2>"
+                        "\n// Nested.svelte \n\n<h2>I'm Nested Component</h2>"
                     ]
                 },
                 {
@@ -173,10 +173,101 @@
             ]
         },
         {
+            "title": "ইভেন্ট (Event)",
+            "items": [
+                {
+                    "definition": "ডম ইভেন্ট হ্যান্ডেলার",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  let m = { x: 0, y: 0 };\n\n  function handleMousemove(event) {\n    m.x = event.clientX;\n    m.y = event.clientY;\n  }\n</script>\n\n",
+                        "<div on:mousemove={handleMousemove}>\n  The mouse position is {m.x} x {m.y}\n</div>\n\n",
+                        "<style>\n  div { width: 100%; height: 100%; }\n</style>"
+                    ]
+                },
+                {
+                    "definition": "ইনলাইন ডম ইভেন্ট হ্যান্ডেলার",
+                    "code": [
+                        "// App.svelte <script>\n  let m = { x: 0, y: 0 };\n</script>\n\n",
+                        "<div on:mousemove='{e => m = { x: e.clientX, y: e.clientY}}'>\n  The mouse position is {m.x} x {m.y}\n</div>\n\n",
+                        "<style>\n  div { \n    width: 100%; \n    height: 100%;\n } \n</style>"
+                    ]
+                },
+                {
+                    "definition": "ইভেন্ট মডিফাইয়ার",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  function handleClick() {\n    alert('no more alerts')\n  }\n</script>\n\n",
+                        "<button on:click|once={handleClick}>\n  Click me\n</button>"
+                    ]
+                },
+                {
+                    "definition": "কম্পোনেন্ট ইভেন্টস",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  import Inner from './Inner.svelte';\n\n  function handleMessage(event) {\n    alert(event.detail.text);\n  }\n</script>\n\n",
+                        "<Inner on:message={handleMessage}/>\n\n",
+                        "/ Inner.svelte \n\n<script>\n  import { createEventDispatcher } from 'svelte';\n\n  const dispatch = createEventDispatcher();\n\n  function sayHello() {\n    dispatch('message', {\n      text: 'Hello!'\n    });\n  }\n</script>\n\n",
+                        "<button on:click={sayHello}>\n  Click to say hello\n</button>"
+                    ]
+                },
+                {
+                    "definition": "ইভেন্ট ফরওয়ারর্ডিং",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  import Outer from './Outer.svelte';\n\n  function handleMessage(event) {\n    alert(event.detail.text);\n  }\n</script>\n\n",
+                        "<Outer on:message={handleMessage}/>\n\n",
+                        "// Inner.svelte \n\n<script>\n  import { createEventDispatcher } from 'svelte';\n\n  const dispatch = createEventDispatcher();\n\n  function sayHello() {\n    dispatch('message', {\n      text: 'Hello!'\n    });\n  }\n</script>\n\n",
+                        "<button on:click={sayHello}>\n  Click to say hello\n</button>", 
+                        "// Outer.svelte \n\n<script>\n  import Inner from './Inner.svelte';\n</script>\n\n", 
+                        "<Inner on:message/>"
+                    ]
+                },
+                {
+                    "definition": "ডম ইভেন্ট ফরওয়ারর্ডিং",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  import CustomButton from './CustomButton.svelte';\n\n  function handleClick() {\n    alert('Button Clicked');\n  }\n</script>\n\n",
+                        "<CustomButton on:click={handleClick}/>\n\n",
+                        "// CustomButton.svelte \n\n<button on:click>\n  Click me\n</button> \n\n<style>\n  button {\n    background: #E2E8F0;\n    color: #64748B;\n    border: unset;\n    border-radius: 6px;\n    padding: .75rem 1.5rem;\n    cursor: pointer;\n  }\n  button:hover {\n    background: #CBD5E1;\n    color: #475569;\n  }\n  button:focus {\n    background: #94A3B8;\n    color: #F1F5F9;\n  }\n</style>"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "বাইন্ডিং (Bindings)",
+            "items": [
+                {
+                    "definition": "টেক্সট ইনপুট বাইন্ডিং",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  let name = 'world';\n</script>\n\n",
+                        "<input bind:value={name}>",
+                        "<h1>Hello {name}!</h1>"
+                    ]
+                },
+                {
+                    "definition": "নাম্বার ইনপুট",
+                    "code": [
+                        "// App.svelte <script>\n  let a = 1;\n  let b = 2;\n</script>\n\n",
+                        "<label>\n  <input type=number bind:value={a} min=0 max=10>\n  <input type=range bind:value={a} min=0 max=10>\n</label> \n\n<label>\n  <input type=number bind:value={b} min=0 max=10>\n  <input type=range bind:value={b} min=0 max=10> \n</label> \n\n<p>{a} + {b} = {a + b}</p>",
+                        "<style>\n  label { display: flex }\n  input, p { margin: 6px } \n</style>"
+                    ]
+                },
+                {
+                    "definition": "চেকবক্স ইনপুট",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  let yes = false;\n</script>\n\n",
+                        "<label>\n  <input type=checkbox bind:checked={yes}>\n  Yes! Send me regular email spam\n</label>\n\n{#if yes}\n  <p>Thank you. We will bombard your inbox and sell your personal details.</p>\n{:else}\n  <p>You must opt in to continue. If you're not paying, you're the product.</p>\n{/if}\n\n<button disabled={!yes}>\n  Subscribe\n</button>"
+                    ]
+                },
+                {
+                    "definition": "গ্রুপ ইনপুট",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  let scoops = 1;\n  let flavours = ['Mint choc chip'];\n  let menu = [\n    'Cookies and cream',\n    'Mint choc chip',\n    'Raspberry ripple'\n  ];\n\n  function join(flavours) {\n    if (flavours.length === 1) return flavours[0];\n    return `${flavours.slice(0, -1).join(', ')} and ${flavours[flavours.length - 1]}`;\n  }\n</script> \n\n",
+                        "<h2>Size</h2> \n\n<label>\n  <input type=radio bind:group={scoops} name='scoops' value={1}>\n  One scoop\n</label> \n\n <label> \n  <input type=radio bind:group={scoops} name='scoops' value={2}>\n  Two scoops\n</label> \n\n<label> \n  <input type=radio bind:group={scoops} name='scoops' value={3}> \nThree scoops\n</label> \n\n<h2>Flavours</h2> \n{#each menu as flavour}\n <label>\n    <input type=checkbox bind:group={flavours} name='flavours' value={flavour}> \n      {flavour}\n    </label> \n{/each} \n\n{#if flavours.length === 0}\n <p>Please select at least one flavour</p> \n{:else if flavours.length > scoops} \n  <p>Can't order more flavours than scoops!</p> \n{:else} \n  <p>\n    You ordered {scoops} {scoops === 1 ? 'scoop' : 'scoops'} of {join(flavours)} \n  </p>\n{/if}"
+                    ]
+                }
+            ]
+        },
+        {
             "title": "এসভেল্ট এর অন্যান্য বিষয়াবলি",
             "items": [
                 {
-                    "definition": "নেস্টেড কম্পোনেন্ট এ props পাঠানো",
+                    "definition": "নেস্টেড     ম্পোনেন্ট এ props পাঠানো",
                     "code": [
                         "//App.svelte \n\n<script>\n  import ChildComponent from './Child.svelte'; \n  let title = 'I'm Child Component'; \n</script> \n\n<h2>I'm Parent Component</h2> \n<ChildComponent {title}/> \n",
                         "\n// Child.svelte \n\n<script> \n  export let title; \n</script> \n\n<h2>{title || 'Hello world'}</h2>"
@@ -225,22 +316,6 @@
                         "<script> \n  let cats = [{ \n\tid: 'J---aiyznGQ', name: 'Keyboard Cat' }, \n\t{ id: 'z_AbfPXTKms', name: 'Maru' },\n\t{ id: 'OUtn3pvWmpg', name: 'Henri The Existential Cat' }]; \n</script> \n\n",
                         "<h1>The Famous Cats of YouTube</h1>\n",
                         "{#each cats as { id, name }, i} \n <div> \n   <a target='_blank' href='https: //www.youtube.com/watch?v={id}'>{i + 1}: {name}</a> \n </div> \n{/each}"
-                    ]
-                },
-                {
-                    "definition": "ডম ইভেন্ট হ্যান্ডেলার",
-                    "code": [
-                        "<script> \n  let m = { x: 0, y: 0 }; \n  function handleMousemove(event) { \n  m.x = event.clientX; \n  m.y = event.clientY; \n } \n</script> \n\n",
-                        "<div on:mousemove={handleMousemove}> \n  The mouse position is {m.x} x {m.y} \n</div> \n\n",
-                        "<style> \n  div { \n    width: 100%; \n    height: 100%; \n  } \n</style>"
-                    ]
-                },
-                {
-                    "definition": "ইনলাইন ডম ইভেন্ট হ্যান্ডেলার",
-                    "code": [
-                        "<script> \n  let m = { x: 0, y: 0 }; \n</script> \n\n",
-                        "<div on:mousemove='{e => m = { x: e.clientX, y: e.clientY}}'> \n  The mouse position is {m.x} x {m.y} \n</div> \n\n",
-                        "<style> \n  div { \n    width: 100%; \n    height: 100%;\n } \n</style>"
                     ]
                 },
                 {
