@@ -1,5 +1,5 @@
 {
-  "id": "vitejs-cheat-sheet",
+  "id": "vitejs",
   "title": "ভিট জেএস",
   "slug": "vitejs",
   "description": "জাভাস্ক্রিপ্ট বিল্ডটুল যা ডেভলাপমেন্টের সময় কোড লোকালি কোড সার্ভ করে আর প্রোডাকশনের সময় HTML, CSS, JavaScript সহ অন্য সকল অ্যাসেটকে বান্ডেল করে",
