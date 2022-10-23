@@ -270,6 +270,46 @@
             ]
         },
         {
+            "title": "ব্যাকগ্রাউন্ডস",
+            "items": [{
+                    "definition": "ব্যাকগ্রাউন্ড অ্যাটাচমেন্ট (attachment = fixed/local/scroll)",
+                    "code": "bg-{attachment}"                              
+                },
+                {
+                    "definition": "ব্যাকগ্রাউন্ড ক্লিপ (keyword = border/padding/content/text)",
+                    "code": "bg-clip-{keyword}"                                      
+                },
+                {
+                    "definition": "ব্যাকগ্রাউন্ড কালার",
+                    "code": "bg-{color}"                                      
+                },
+                {
+                    "definition": "ব্যাকগ্রাউন্ড অরিজিন (keyword = border/padding/content)",
+                    "code": "bg-origin-{keyword}"
+                },
+                {
+                    "definition": "ব্যাকগ্রাউন্ড পজিশন (position = bottom/center/left/left-bottom/left-top/right/right-bottom/right-top/top)",
+                    "code": "bg-{position}"
+                },
+                {
+                    "definition": "ব্যাকগ্রাউন্ড রিপিট (keyword = repeat/no-repeat/repeat-x/repeat-y/repeat-round/repeat-space)",
+                    "code": "bg-{keyword}"
+                },
+                {
+                    "definition": "ব্যাকগ্রাউন্ড সাইজ (size = auto/cover/contain/between/around/evenly/stretch)",
+                    "code": "bg-{size}"
+                },
+                {
+                    "definition": "ব্যাকগ্রাউন্ড ইমেজ (image = none/gradient-to-t/gradient-to-tr/gradient-to-r/gradient-to-br/gradient-to-b/gradient-to-bl/gradient-to-l/gradient-to-tl)",
+                    "code": "bg-{image}"
+                },
+                {
+                    "definition": "গ্রেডিয়েন্ট কালার স্টপস [optional = via-{color}, to-{color}]",
+                    "code": "bg-{image} from-{color} via-{color} to-{color}"
+                }
+            ]
+        },      
+        {
             "title": "সাইজিং",
             "items": [{
                     "definition": "ফুল ওয়াইড: 100%",
