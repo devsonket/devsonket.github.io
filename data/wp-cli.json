@@ -72,7 +72,7 @@
           "definition": "তথ্যমূলক বার্তা দমন করুন।",
           "code": "wp admin --quiet"
         }
-        
+
       ]
     },
     {
@@ -114,7 +114,7 @@
           "definition": "কোন অবজেক্ট ক্যাশে ব্যবহার করা হচ্ছে তা নির্ধারণ করার প্রচেষ্টা।",
           "code": "wp cache type"
         }
-        
+
       ]
     },
     {
@@ -217,6 +217,128 @@
         {
           "definition": "wp-config.php ফাইলে সংজ্ঞায়িত সল্ট রিফ্রেশ করে।",
           "code": "wp config shuffle-salts"
+        }
+      ]
+    },
+    {
+      "title":"wp cli comment",
+      "items": [
+        {
+          "definition": "একটি নতুন কমেন্ট যোগ করা",
+          "code": "wp comment create --comment_post_ID=15 --comment_content='hello blog' --comment_author='wp-cli'"
+        },
+        {
+          "definition": "একটি পুরাতন কমেন্ট আপডেট করা",
+          "code": "wp comment update 123 --comment_author='That Guy'"
+        },
+        {
+          "definition": "একটি পুরাতন কমেন্ট মুছে ফেলা",
+          "code": "wp comment delete 1337 --force"
+        },
+        {
+          "definition": "সকল স্প্যাম কমেন্ট গুলো মুছে ফেলা",
+          "code": "wp comment delete $(wp comment list --status=spam --format=ids)"
+        },
+        {
+          "definition": "নতুন কমেন্ট প্রকাশ করা",
+          "code": "wp comment approve 1234"
+        },
+        {
+          "definition": "সাইটের সকল কমেন্ট গণনা করা",
+          "code": "wp comment count"
+        },
+        {
+          "definition": "নির্দিষ্ট পোস্টের কমেন্ট গণনা করা",
+          "code": "wp comment count 123"
+        },
+        {
+          "definition": "নির্দিষ্ট কমেন্ট মুছে ফেলা",
+          "code": "wp comment delete 1234 --force"
+        },
+        {
+          "definition": "একাধিক কমেন্ট সমূহ মুছে ফেলা",
+          "code": "wp comment delete 1234 1235 --force"
+        },
+        {
+          "definition": "নির্দিষ্ট কমেন্ট যাচাই করা",
+          "code": "wp comment exists 1234"
+        },
+        {
+          "definition": "নির্দিষ্ট কমেন্টের কনটেন্ট দেখা",
+          "code": "wp comment get 21 --field=content"
+        },
+        {
+          "definition": "কমেন্ট আইডির লিস্ট দেখা",
+          "code": "wp comment list --field=ID"
+        },
+        {
+          "definition": "নির্দিষ্ট পোস্টের কমেন্টের লিস্ট দেখা",
+          "code": "wp comment list --post_id=1 --fields=ID,comment_date,comment_author"
+        },
+        {
+          "definition": "কমেন্ট মেটা সেট করা",
+          "code": "wp comment meta set 123 description 'Mary is a WordPress developer.'"
+        },
+        {
+          "definition": "কমেন্ট মেটা দেখা",
+          "code": "wp comment meta get 123 description"
+        },
+        {
+          "definition": "কমেন্ট মেটা আপডেট করা",
+          "code": "wp comment meta update 123 description 'Mary is an awesome WordPress developer.'"
+        },
+        {
+          "definition": "কমেন্ট মেটা ডিলেট করা",
+          "code": "wp comment meta delete 123 description"
+        },
+        {
+          "definition": "পুনঃ কমেন্ট গণনা করা",
+          "code": "wp comment recount 123"
+        },
+        {
+          "definition": "কমেন্টকে স্প্যাম হিসাবে চিহ্নিত করা",
+          "code": "wp comment spam 1234"
+        },
+        {
+          "definition": "কমেন্টের স্ট্যাটাস চেক করা",
+          "code": "wp comment status 1234"
+        },
+        {
+          "definition": "কমেন্ট ট্রাশে রাখা",
+          "code": "wp comment trash 1234"
+        },
+        {
+          "definition": "কমেন্ট প্রকাশ না করা",
+          "code": "wp comment unapprove 1234"
+        },
+        {
+          "definition": "স্প্যাম কমেন্টকে আন-স্প্যাম করা",
+          "code": "wp comment unspam 1234"
+        },
+        {
+          "definition": "ট্রাশে রাখা কমেন্টকে আন-ট্রাশ করা",
+          "code": "wp comment untrash 1234"
+        },
+        {
+          "definition": "ট্রাশে রাখা কমেন্টকে আন-ট্রাশ করা",
+          "code": "wp comment untrash 1234"
+        },
+        {
+          "definition": "কমেন্ট আপডেট করা",
+          "code": "wp comment update 123 --comment_author='That Guy'"
+        }
+      ]
+    },
+    {
+      "title":"wp cli dummy data generator",
+      "items": [
+        {
+          "definition": "ডামি কমেন্টস জেনারেট করা",
+          "code": "wp comment generate --format=ids --count=10 --post_id=123"
+        },
+        {
+          "definition": "জেনারেট করা ডামি কমেন্টসে মেটা অ্যাড করা",
+          "code": "wp comment generate --format=ids --count=3 | xargs -d ' ' -I % wp comment meta add % foo bar"
         }
       ]
     }
