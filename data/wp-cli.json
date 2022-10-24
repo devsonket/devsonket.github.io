@@ -374,6 +374,75 @@
           "code": "cd $(wp package path) &amp;&amp; pwd"
         }
       ]
+    },
+    {
+      "title":"wp plugin কমান্ড",
+      "items": [
+        {
+          "definition": "এক বা একাধিক প্লাগইন সক্রিয় করে",
+          "code": "wp plugin activate <slug>"
+        },
+        {
+          "definition": "প্লাগইন অটো-আপডেট পরিচালনা করে",
+          "code": "wp plugin auto-updates <slug>"
+        },
+        {
+          "definition": "এক বা একাধিক প্লাগইন নিষ্ক্রিয় করে",
+          "code": "wp plugin deactivate <slug>"
+        },
+        {
+          "definition": "নিষ্ক্রিয় বা আনইনস্টল না করে প্লাগইন ফাইল মুছে দেয়",
+          "code": "wp plugin delete <slug>"
+        },
+        {
+          "definition": "একটি ইনস্টল করা প্লাগইন সম্পর্কে বিশদ পায়",
+          "code": "wp plugin get <slug>"
+        },
+        {
+          "definition": "এক বা একাধিক প্লাগইন ইনস্টল করে",
+          "code": "wp plugin install <slug>"
+        },
+        {
+          "definition": "প্রদত্ত প্লাগইন সক্রিয় কিনা তা পরীক্ষা করে",
+          "code": "wp plugin is-active <slug>"
+        },
+        {
+          "definition": "প্রদত্ত প্লাগইন ইনস্টল করা আছে কিনা তা পরীক্ষা করে",
+          "code": "wp plugin is-installed <slug>"
+        },
+        {
+          "definition": "প্লাগইনগুলির একটি তালিকা পায়",
+          "code": "wp plugin list"
+        },
+        {
+          "definition": "একটি প্লাগইন বা প্লাগইন ডিরেক্টরির পথ পায়",
+          "code": "wp plugin path <slug>"
+        },
+        {
+          "definition": "WordPress.org প্লাগইন ডিরেক্টরি অনুসন্ধান করে",
+          "code": "wp plugin search <terms>"
+        },
+        {
+          "definition": "এক বা সমস্ত প্লাগইনের অবস্থা প্রকাশ করে",
+          "code": "wp plugin status"
+        },
+        {
+          "definition": "একটি প্লাগইন সক্রিয়করণ অবস্থা টগল করে",
+          "code": "wp plugin toggle <slug>"
+        },
+        {
+          "definition": "এক বা একাধিক প্লাগইন আনইনস্টল করে",
+          "code": "wp plugin uninstall <slug>"
+        },
+        {
+          "definition": "এক বা একাধিক প্লাগইন আপডেট করে",
+          "code": "wp plugin update <slug>"
+        },
+        {
+          "definition": "WordPress.org এর চেকসামগুলির বিরুদ্ধে প্লাগইন ফাইলগুলি যাচাই করে",
+          "code": "wp plugin verify-checksums <slug>"
+        }
+      ]
     }
   ]
 }
