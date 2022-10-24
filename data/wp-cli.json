@@ -167,11 +167,11 @@
       "items": [
         {
           "definition": "একটি নতুন ক্যাপাবিলিটি যোগ করে",
-          "code": "wp cap add"
+          "code": "wp cap add <role> <cap>"
         },
         {
           "definition": "একটি ক্যাপাবিলিটি বাদ দেয়",
-          "code": "wp cap remove"
+          "code": "wp cap remove <role> <cap>"
         },
         {
           "definition": "ক্যাপাবিলিটি তালিকা দেখায়",
