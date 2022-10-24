@@ -1,247 +1,404 @@
 {
-	"id": "wpcli",
-	"title": "WP CLI",
-	"slug": "wp-cli",
-	"description": "WP-CLI হল ওয়ার্ডপ্রেসের জন্য কমান্ড-লাইন ইন্টারফেস। আপনি ওয়েব ব্রাউজার ব্যবহার না করে প্লাগইনগুলি আপডেট করতে, মাল্টিসাইট ইনস্টলেশন কনফিগার করতে এবং আরও অনেক কিছু করতে পারেন৷",
-	"colorPref": "#000",
-	"contents": [
-		{
-			"title": "WP CLI এডমিন কমান্ডস",
-			"items": [
-				{
-					"definition": "/wp-admin/ কে ব্রাউজারে ওপেন করবে",
-					"code": "wp admin"
-				},
-				{
-					"definition": "ওয়ার্ডপ্রেস ফাইলের পাথ",
-					"code": "wp admin --path=<path>"
-				},
-				{
-					"definition": "ওয়ার্ডপ্রেসের URL সেট করা",
-					"code": "wp admin --url=<url>"
-				},
-				{
-					"definition": "SSH (অথবা 'docker', 'docker-compose', 'docker-compose-run', 'vagrant') এর মাধ্যমে একটি রিমোট সার্ভারের বিরুদ্ধে অপারেশন করুন।",
-					"code": "wp admin --ssh=[<scheme>:][<user>@]<host\\|container>[:<port>][<path>]"
-				},
-				{
-					"definition": "HTTP এর মাধ্যমে রিমোট ওয়ার্ডপ্রেস ইনস্টলেশনের অপারেশন করুন।",
-					"code": "wp admin --http=<http>"
-				},
-				{
-					"definition": "ওয়ার্ডপ্রেস এডমিন ইউজার সেট করার জন্য",
-					"code": "wp admin --user=<id\\|login\\|email>"
-				},
-				{
-					"definition": "সমস্ত প্লাগইন লোড করা এড়িয়ে যান, অথবা প্লাগইনগুলির একটি কমা দ্বারা পৃথক করা তালিকা। দ্রষ্টব্য: mu-plugins এখনও লোড করা হয়.",
-					"code": "wp admin --skip-plugins[=<plugins>]"
-				},
-				{
-					"definition": "সমস্ত থিম লোড করা এড়িয়ে যান, অথবা থিমগুলির একটি কমা দ্বারা পৃথক করা তালিকা।",
-					"code": "wp admin --skip-themes[=<themes>]"
-				},
-				{
-					"definition": "সমস্ত ইনস্টল করা প্যাকেজ লোড করা এড়িয়ে যান।",
-					"code": "wp admin --skip-packages"
-				},
-				{
-					"definition": "কমান্ড চালানোর আগে পিএইচপি ফাইল লোড করুন (একবার একাধিকবার ব্যবহার করা যেতে পারে)।",
-					"code": "wp admin --require=<path>"
-				},
-				{
-					"definition": "কমান্ড চালানোর আগে পিএইচপি কোড এক্সিকিউট করুন (এটি একাধিকবার ব্যবহার করা যেতে পারে)।",
-					"code": "wp admin --exec=<php-code>"
-				},
-				{
-					"definition": "Contex ওয়ার্ডপ্রেস লোড করুন।",
-					"code": "wp admin --context=<context>"
-				},
-				{
-					"definition": "আউটপুট রঙিন করতে হবে কিনা।",
-					"code": "wp admin --[no-]color"
-				},
-				{
-					"definition": "সমস্ত PHP ত্রুটি দেখান এবং WP-CLI আউটপুটে verbosity যোগ করুন। অন্তর্নির্মিত গোষ্ঠীগুলির মধ্যে রয়েছে: বুটস্ট্র্যাপ, কমান্ডফ্যাক্টরি এবং সহায়তা।",
-					"code": "wp admin --debug[=<group>]"
-				},
-				{
-					"definition": "সমস্ত কমান্ড আর্গুমেন্টের জন্য বা কমা-বিভক্ত মান হিসাবে নির্দিষ্ট একটি উপসেট লিখতে ব্যবহারকারীকে অনুরোধ করুন।",
-					"code": "wp admin --prompt[=<assoc>]"
-				},
-				{
-					"definition": "তথ্যমূলক বার্তা দমন করুন।",
-					"code": "wp admin --quiet"
-				}
-			]
-		},
-		{
-			"title": "wp cache কমান্ড",
-			"items": [
-				{
-					"definition": "অবজেক্ট ক্যাশে একটি মান যোগ করে।",
-					"code": "wp cache add"
-				},
-				{
-					"definition": "অবজেক্ট ক্যাশে একটি মান হ্রাস করে।",
-					"code": "wp cache decr"
-				},
-				{
-					"definition": "অবজেক্ট ক্যাশে থেকে একটি মান সরিয়ে দেয়।",
-					"code": "wp cache delete"
-				},
-				{
-					"definition": "অবজেক্ট ক্যাশে ফ্লাশ করে।",
-					"code": "wp cache flush"
-				},
-				{
-					"definition": "অবজেক্ট ক্যাশে থেকে একটি মান পায়।",
-					"code": "wp cache get"
-				},
-				{
-					"definition": "অবজেক্ট ক্যাশে একটি মান বৃদ্ধি করে।",
-					"code": "wp cache incr"
-				},
-				{
-					"definition": "অবজেক্ট ক্যাশে একটি মান প্রতিস্থাপন করে, যদি মানটি ইতিমধ্যেই বিদ্যমান থাকে।",
-					"code": "wp cache replace"
-				},
-				{
-					"definition": "অবজেক্ট ক্যাশে একটি মান সেট করে, এটি ইতিমধ্যে বিদ্যমান কিনা তা নির্বিশেষে।",
-					"code": "wp cache set"
-				},
-				{
-					"definition": "কোন অবজেক্ট ক্যাশে ব্যবহার করা হচ্ছে তা নির্ধারণ করার প্রচেষ্টা।",
-					"code": "wp cache type"
-				}
-			]
-		},
-		{
-			"title": "wp cli রুট কমান্ড",
-			"items": [
-				{
-					"definition": "ওয়ার্ডপ্রেস ইনস্টলেশনের জন্য অ্যালাস পুনরুদ্ধার করে, সেট করে এবং আপডেট করে",
-					"code": "wp cli alias"
-				},
-				{
-					"definition": "অভ্যন্তরীণ WP-CLI ক্যাশে পরিচালনা করে",
-					"code": "wp cli cache"
-				},
-				{
-					"definition": "WP-CLI এর একটি নতুন সংস্করণ আছে কিনা তা চেক করে",
-					"code": "wp cli check-update"
-				},
-				{
-					"definition": "JSON হিসাবে ইনস্টল করা কমান্ডের তালিকা ডাম্প করে।",
-					"code": "wp cli cmd-dump"
-				},
-				{
-					"definition": "ট্যাব সমাপ্তি স্ট্রিং তৈরি করে।",
-					"code": "wp cli completions"
-				},
-				{
-					"definition": "একটি কমান্ড বিদ্যমান কিনা তা সনাক্ত করে",
-					"code": "wp cli has-command"
-				},
-				{
-					"definition": "WP-CLI পরিবেশ সম্পর্কে বিভিন্ন বিবরণ প্রিন্ট করে।",
-					"code": "wp cli info"
-				},
-				{
-					"definition": "JSON হিসাবে বা var_export বিন্যাসে গ্লোবাল প্যারামিটারের তালিকা ডাম্প করে।",
-					"code": "wp cli param-dump"
-				},
-				{
-					"definition": "সর্বশেষ রিলিজে WP-CLI আপডেট করে।",
-					"code": "wp cli update"
-				},
-				{
-					"definition": "WP-CLI সংস্করণ/ভার্সন প্রিন্ট করে।",
-					"code": "wp cli version"
-				}
-			]
-		},
-		{
-			"title": "wp cli capability",
-			"items": [
-				{
-					"definition": "একটি নতুন ক্যাপাবিলিটি যোগ করে",
-					"code": "wp cap add"
-				},
-				{
-					"definition": "একটি ক্যাপাবিলিটি বাদ দেয়",
-					"code": "wp cap remove"
-				},
-				{
-					"definition": "ক্যাপাবিলিটি তালিকা দেখায়",
-					"code": "wp cap list"
-				}
-			]
-		},
-		{
-			"title": "wp cli config কমান্ড",
-			"items": [
-				{
-					"definition": "একটি wp-config.php ফাইল তৈরি করে",
-					"code": "wp config create"
-				},
-				{
-					"definition": "wp-config.php ফাইল থেকে একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীল মুছে দেয়।",
-					"code": "wp config delete"
-				},
-				{
-					"definition": "wp-config.php ফাইলটি সম্পাদনা করতে সিস্টেম সম্পাদক চালু করে।",
-					"code": "wp config edit"
-				},
-				{
-					"definition": "wp-config.php ফাইলে সংজ্ঞায়িত একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীলের মান পায়।",
-					"code": "wp config get"
-				},
-				{
-					"definition": "কটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীল wp-config.php ফাইলে বিদ্যমান কিনা তা পরীক্ষা করে।",
-					"code": "wp config has"
-				},
-				{
-					"definition": "Wp-config.php ফাইলে সংজ্ঞায়িত ভেরিয়েবল, ধ্রুবক, এবং ফাইল অন্তর্ভুক্ত করে।",
-					"code": "wp config list"
-				},
-				{
-					"definition": "wp-config.php ফাইলের পথ পায়।",
-					"code": "wp config path"
-				},
-				{
-					"definition": "wp-config.php ফাইলে সংজ্ঞায়িত একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীলের মান সেট করে।",
-					"code": "wp config set"
-				},
-				{
-					"definition": "wp-config.php ফাইলে সংজ্ঞায়িত সল্ট রিফ্রেশ করে।",
-					"code": "wp config shuffle-salts"
-				}
-			]
-		},
-		{
-			"title": "ওয়ার্ডপ্রেস প্লাগিন",
-			"items": [
-				{
-					"definition": "ওয়ার্ডপ্রেস প্লাগিন ইন্সটল করে",
-					"code": "wp plugin install plugin-slug"
-				},
-				{
-					"definition": "ওয়ার্ডপ্রেস প্লাগিন এক্টিভেট করে",
-					"code": "wp plugin activate plugin-slug"
-				},
-				{
-					"definition": "ওয়ার্ডপ্রেস প্লাগিন ডিয়েক্টিভেট করে",
-					"code": "wp plugin deactivate plugin-slug"
-				},
-				{
-					"definition": "ওয়ার্ডপ্রেস প্লাগিন ডিলেট করে",
-					"code": "wp plugin delete plugin-slug"
-				},
-				{
-					"definition": "ওয়ার্ডপ্রেস প্লাগিন আপডেট করে",
-					"code": "wp plugin update plugin-slug --version=1.0.2"
-				}
-			]
-		}
-	]
+  "id": "wpcli",
+  "title": "WP CLI",
+  "slug": "wp-cli",
+  "description": "WP CLI হচ্ছে ওয়ার্ডপ্রেসের একটি কমান্ড লাইন ইন্টারফেস। যার মাধ্যমে আপনি ওয়ার্ডপ্রেস সেটআপ, থিম ও প্লাগিন্স ইন্সটল, আপডেট, মাল্টিসাইট কনফিগার করতে পারবেন",
+  "colorPref": "#000",
+  "contents": [
+    {
+      "title": "WP CLI এডমিন কমান্ডস",
+      "items": [
+        {
+          "definition": "/wp-admin/ কে ব্রাউজারে ওপেন করবে",
+          "code": "wp admin"
+        },
+        {
+          "definition": "ওয়ার্ডপ্রেস ফাইলের পাথ",
+          "code": "wp admin --path=<path>"
+        },
+        {
+          "definition": "ওয়ার্ডপ্রেসের URL সেট করা",
+          "code": "wp admin --url=<url>"
+        },
+        {
+          "definition": "SSH (অথবা 'docker', 'docker-compose', 'docker-compose-run', 'vagrant') এর মাধ্যমে একটি রিমোট সার্ভারের বিরুদ্ধে অপারেশন করুন।",
+          "code": "wp admin --ssh=[<scheme>:][<user>@]<host\\|container>[:<port>][<path>]"
+        },
+        {
+          "definition": "HTTP এর মাধ্যমে রিমোট ওয়ার্ডপ্রেস ইনস্টলেশনের অপারেশন করুন।",
+          "code": "wp admin --http=<http>"
+        },
+        {
+          "definition": "ওয়ার্ডপ্রেস এডমিন ইউজার সেট করার জন্য",
+          "code": "wp admin --user=<id\\|login\\|email>"
+        },
+        {
+          "definition": "সমস্ত প্লাগইন লোড করা এড়িয়ে যান, অথবা প্লাগইনগুলির একটি কমা দ্বারা পৃথক করা তালিকা। দ্রষ্টব্য: mu-plugins এখনও লোড করা হয়.",
+          "code": "wp admin --skip-plugins[=<plugins>]"
+        },
+        {
+          "definition": "সমস্ত থিম লোড করা এড়িয়ে যান, অথবা থিমগুলির একটি কমা দ্বারা পৃথক করা তালিকা।",
+          "code": "wp admin --skip-themes[=<themes>]"
+        },
+        {
+          "definition": "সমস্ত ইনস্টল করা প্যাকেজ লোড করা এড়িয়ে যান।",
+          "code": "wp admin --skip-packages"
+        },
+        {
+          "definition": "কমান্ড চালানোর আগে পিএইচপি ফাইল লোড করুন (একবার একাধিকবার ব্যবহার করা যেতে পারে)।",
+          "code": "wp admin --require=<path>"
+        },
+        {
+          "definition": "কমান্ড চালানোর আগে পিএইচপি কোড এক্সিকিউট করুন (এটি একাধিকবার ব্যবহার করা যেতে পারে)।",
+          "code": "wp admin --exec=<php-code>"
+        },
+        {
+          "definition": "Contex ওয়ার্ডপ্রেস লোড করুন।",
+          "code": "wp admin --context=<context>"
+        },
+        {
+          "definition": "আউটপুট রঙিন করতে হবে কিনা।",
+          "code": "wp admin --[no-]color"
+        },
+        {
+          "definition": "সমস্ত PHP ত্রুটি দেখান এবং WP-CLI আউটপুটে verbosity যোগ করুন। অন্তর্নির্মিত গোষ্ঠীগুলির মধ্যে রয়েছে: বুটস্ট্র্যাপ, কমান্ডফ্যাক্টরি এবং সহায়তা।",
+          "code": "wp admin --debug[=<group>]"
+        },
+        {
+          "definition": "সমস্ত কমান্ড আর্গুমেন্টের জন্য বা কমা-বিভক্ত মান হিসাবে নির্দিষ্ট একটি উপসেট লিখতে ব্যবহারকারীকে অনুরোধ করুন।",
+          "code": "wp admin --prompt[=<assoc>]"
+        },
+        {
+          "definition": "তথ্যমূলক বার্তা দমন করুন।",
+          "code": "wp admin --quiet"
+        }
+
+      ]
+    },
+    {
+      "title": "wp cache কমান্ড",
+      "items": [
+        {
+          "definition": "অবজেক্ট ক্যাশে একটি মান যোগ করে।",
+          "code": "wp cache add"
+        },
+        {
+          "definition": "অবজেক্ট ক্যাশে একটি মান হ্রাস করে।",
+          "code": "wp cache decr"
+        },
+        {
+          "definition": "অবজেক্ট ক্যাশে থেকে একটি মান সরিয়ে দেয়।",
+          "code": "wp cache delete"
+        },
+        {
+          "definition": "অবজেক্ট ক্যাশে ফ্লাশ করে।",
+          "code": "wp cache flush"
+        },
+        {
+          "definition": "অবজেক্ট ক্যাশে থেকে একটি মান পায়।",
+          "code": "wp cache get"
+        },
+        {
+          "definition": "অবজেক্ট ক্যাশে একটি মান বৃদ্ধি করে।",
+          "code": "wp cache incr"
+        },
+        {
+          "definition": "অবজেক্ট ক্যাশে একটি মান প্রতিস্থাপন করে, যদি মানটি ইতিমধ্যেই বিদ্যমান থাকে।",
+          "code": "wp cache replace"
+        },
+        {
+          "definition": "অবজেক্ট ক্যাশে একটি মান সেট করে, এটি ইতিমধ্যে বিদ্যমান কিনা তা নির্বিশেষে।",
+          "code": "wp cache set"
+        },
+        {
+          "definition": "কোন অবজেক্ট ক্যাশে ব্যবহার করা হচ্ছে তা নির্ধারণ করার প্রচেষ্টা।",
+          "code": "wp cache type"
+        }
+
+      ]
+    },
+    {
+      "title": "wp cli রুট কমান্ড",
+      "items": [
+        {
+          "definition": "ওয়ার্ডপ্রেস ইনস্টলেশনের জন্য অ্যালাস পুনরুদ্ধার করে, সেট করে এবং আপডেট করে",
+          "code": "wp cli alias"
+        },
+        {
+          "definition": "অভ্যন্তরীণ WP-CLI ক্যাশে পরিচালনা করে",
+          "code": "wp cli cache"
+        },
+        {
+          "definition": "WP-CLI এর একটি নতুন সংস্করণ আছে কিনা তা চেক করে",
+          "code": "wp cli check-update"
+        },
+        {
+          "definition": "JSON হিসাবে ইনস্টল করা কমান্ডের তালিকা ডাম্প করে।",
+          "code": "wp cli cmd-dump"
+        },
+        {
+          "definition": "ট্যাব সমাপ্তি স্ট্রিং তৈরি করে।",
+          "code": "wp cli completions"
+        },
+        {
+          "definition": "একটি কমান্ড বিদ্যমান কিনা তা সনাক্ত করে",
+          "code": "wp cli has-command"
+        },
+        {
+          "definition": "WP-CLI পরিবেশ সম্পর্কে বিভিন্ন বিবরণ প্রিন্ট করে।",
+          "code": "wp cli info"
+        },
+        {
+          "definition": "JSON হিসাবে বা var_export বিন্যাসে গ্লোবাল প্যারামিটারের তালিকা ডাম্প করে।",
+          "code": "wp cli param-dump"
+        },
+        {
+          "definition": "সর্বশেষ রিলিজে WP-CLI আপডেট করে।",
+          "code": "wp cli update"
+        },
+        {
+          "definition": "WP-CLI সংস্করণ/ভার্সন প্রিন্ট করে।",
+          "code": "wp cli version"
+        }
+      ]
+    },
+    {
+      "title":"wp cli capability",
+      "items": [
+        {
+          "definition": "একটি নতুন ক্যাপাবিলিটি যোগ করে",
+          "code": "wp cap add"
+        },
+        {
+          "definition": "একটি ক্যাপাবিলিটি বাদ দেয়",
+          "code": "wp cap remove"
+        },
+        {
+          "definition": "ক্যাপাবিলিটি তালিকা দেখায়",
+          "code": "wp cap list"
+        }
+      ]
+    },
+    {
+      "title": "wp cli config কমান্ড",
+      "items":[
+        {
+          "definition": "একটি wp-config.php ফাইল তৈরি করে",
+          "code": "wp config create"
+        },
+        {
+          "definition": "wp-config.php ফাইল থেকে একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীল মুছে দেয়।",
+          "code": "wp config delete"
+        },
+        {
+          "definition": "wp-config.php ফাইলটি সম্পাদনা করতে সিস্টেম সম্পাদক চালু করে।",
+          "code": "wp config edit"
+        },
+        {
+          "definition": "wp-config.php ফাইলে সংজ্ঞায়িত একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীলের মান পায়।",
+          "code": "wp config get"
+        },
+        {
+          "definition": "কটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীল wp-config.php ফাইলে বিদ্যমান কিনা তা পরীক্ষা করে।",
+          "code": "wp config has"
+        },
+        {
+          "definition": "Wp-config.php ফাইলে সংজ্ঞায়িত ভেরিয়েবল, ধ্রুবক, এবং ফাইল অন্তর্ভুক্ত করে।",
+          "code": "wp config list"
+        },
+        {
+          "definition": "wp-config.php ফাইলের পথ পায়।",
+          "code": "wp config path"
+        },
+        {
+          "definition": "wp-config.php ফাইলে সংজ্ঞায়িত একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীলের মান সেট করে।",
+          "code": "wp config set"
+        },
+        {
+          "definition": "wp-config.php ফাইলে সংজ্ঞায়িত সল্ট রিফ্রেশ করে।",
+          "code": "wp config shuffle-salts"
+        }
+      ]
+    },
+    {
+      "title":"wp cli comment",
+      "items": [
+        {
+          "definition": "একটি নতুন কমেন্ট যোগ করা",
+          "code": "wp comment create --comment_post_ID=15 --comment_content='hello blog' --comment_author='wp-cli'"
+        },
+        {
+          "definition": "একটি পুরাতন কমেন্ট আপডেট করা",
+          "code": "wp comment update 123 --comment_author='That Guy'"
+        },
+        {
+          "definition": "একটি পুরাতন কমেন্ট মুছে ফেলা",
+          "code": "wp comment delete 1337 --force"
+        },
+        {
+          "definition": "সকল স্প্যাম কমেন্ট গুলো মুছে ফেলা",
+          "code": "wp comment delete $(wp comment list --status=spam --format=ids)"
+        },
+        {
+          "definition": "নতুন কমেন্ট প্রকাশ করা",
+          "code": "wp comment approve 1234"
+        },
+        {
+          "definition": "সাইটের সকল কমেন্ট গণনা করা",
+          "code": "wp comment count"
+        },
+        {
+          "definition": "নির্দিষ্ট পোস্টের কমেন্ট গণনা করা",
+          "code": "wp comment count 123"
+        },
+        {
+          "definition": "নির্দিষ্ট কমেন্ট মুছে ফেলা",
+          "code": "wp comment delete 1234 --force"
+        },
+        {
+          "definition": "একাধিক কমেন্ট সমূহ মুছে ফেলা",
+          "code": "wp comment delete 1234 1235 --force"
+        },
+        {
+          "definition": "নির্দিষ্ট কমেন্ট যাচাই করা",
+          "code": "wp comment exists 1234"
+        },
+        {
+          "definition": "নির্দিষ্ট কমেন্টের কনটেন্ট দেখা",
+          "code": "wp comment get 21 --field=content"
+        },
+        {
+          "definition": "কমেন্ট আইডির লিস্ট দেখা",
+          "code": "wp comment list --field=ID"
+        },
+        {
+          "definition": "নির্দিষ্ট পোস্টের কমেন্টের লিস্ট দেখা",
+          "code": "wp comment list --post_id=1 --fields=ID,comment_date,comment_author"
+        },
+        {
+          "definition": "কমেন্ট মেটা সেট করা",
+          "code": "wp comment meta set 123 description 'Mary is a WordPress developer.'"
+        },
+        {
+          "definition": "কমেন্ট মেটা দেখা",
+          "code": "wp comment meta get 123 description"
+        },
+        {
+          "definition": "কমেন্ট মেটা আপডেট করা",
+          "code": "wp comment meta update 123 description 'Mary is an awesome WordPress developer.'"
+        },
+        {
+          "definition": "কমেন্ট মেটা ডিলেট করা",
+          "code": "wp comment meta delete 123 description"
+        },
+        {
+          "definition": "পুনঃ কমেন্ট গণনা করা",
+          "code": "wp comment recount 123"
+        },
+        {
+          "definition": "কমেন্টকে স্প্যাম হিসাবে চিহ্নিত করা",
+          "code": "wp comment spam 1234"
+        },
+        {
+          "definition": "কমেন্টের স্ট্যাটাস চেক করা",
+          "code": "wp comment status 1234"
+        },
+        {
+          "definition": "কমেন্ট ট্রাশে রাখা",
+          "code": "wp comment trash 1234"
+        },
+        {
+          "definition": "কমেন্ট প্রকাশ না করা",
+          "code": "wp comment unapprove 1234"
+        },
+        {
+          "definition": "স্প্যাম কমেন্টকে আন-স্প্যাম করা",
+          "code": "wp comment unspam 1234"
+        },
+        {
+          "definition": "ট্রাশে রাখা কমেন্টকে আন-ট্রাশ করা",
+          "code": "wp comment untrash 1234"
+        },
+        {
+          "definition": "ট্রাশে রাখা কমেন্টকে আন-ট্রাশ করা",
+          "code": "wp comment untrash 1234"
+        },
+        {
+          "definition": "কমেন্ট আপডেট করা",
+          "code": "wp comment update 123 --comment_author='That Guy'"
+        }
+      ]
+    },
+    {
+      "title":"wp cli dummy data generator",
+      "items": [
+        {
+          "definition": "ডামি কমেন্টস জেনারেট করা",
+          "code": "wp comment generate --format=ids --count=10 --post_id=123"
+        },
+        {
+          "definition": "জেনারেট করা ডামি কমেন্টসে মেটা অ্যাড করা",
+          "code": "wp comment generate --format=ids --count=3 | xargs -d ' ' -I % wp comment meta add % foo bar"
+        }
+      ]
+    },
+    {
+      "title":"wp package",
+      "items": [
+        {
+          "definition": "ইনিষ্টল করা প্যাকেজের তালিকা",
+          "code": "wp package list"
+        },
+        {
+          "definition": "প্যাকেজের সর্বশেষ ডেভলেপমেন্ট ভার্ষন ইনিষ্টল করা",
+          "code": "wp package install wp-cli/server-command"
+        },
+        {
+          "definition": "প্যাকেজ আনইনিষ্টল করা",
+          "code": "wp package uninstall wp-cli/server-command"
+        },
+        {
+          "definition": "প্যাকেজ আপডেট করা",
+          "code": "wp package update"
+        },
+        {
+          "definition": "ইনিষ্ট্রল করার জন্য প্যাকেজ ব্রাউজ করা",
+          "code": "wp package browse --format=yaml"
+        },
+        {
+          "definition": "ইনিষ্ট্রল করা প্যাকেজের পাথ বা ডিরেক্টরি দেখা",
+          "code": "wp package path"
+        },
+        {
+          "definition": "ইনিষ্ট্রল করা প্যাকেজের ডিরেক্টরি পরিবর্তন করা",
+          "code": "cd $(wp package path) &amp;&amp; pwd"
+        }
+      ]
+    },
+	{
+		"title": "WP CLI প্লাগিন কমান্ড",
+		"items": [
+			{
+				"definition": "ওয়ার্ডপ্রেস প্লাগিন ইন্সটল",
+				"code": "wp plugin install plugin-slug"
+			},
+			{
+				"definition": "ওয়ার্ডপ্রেস প্লাগিন এক্টিভেট",
+				"code": "wp plugin activate plugin-slug"
+			},
+			{
+				"definition": "ওয়ার্ডপ্রেস প্লাগিন ডিয়েক্টিভেট",
+				"code": "wp plugin deactivate plugin-slug"
+			},
+			{
+				"definition": "ওয়ার্ডপ্রেস প্লাগিন ডিলেট",
+				"code": "wp plugin delete plugin-slug"
+			},
+			{
+				"definition": "ওয়ার্ডপ্রেস প্লাগিন আপডেট",
+				"code": "wp plugin update plugin-slug --version=1.0.2"
+			}
+		]
+	}
+  ]
 }
