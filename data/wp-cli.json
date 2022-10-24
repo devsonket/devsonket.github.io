@@ -443,6 +443,71 @@
           "code": "wp plugin verify-checksums <slug>"
         }
       ]
+    },
+    {
+      "title":"wp theme কমান্ড",
+      "items":[
+        {
+          "definition": "থিম একটিভ করা",
+          "code": "wp theme activate <slug>"
+        },
+        {
+          "definition": "থিম অটো-আপডেট করা",
+          "code": "wp theme auto-updates <slug>"
+        },
+        {
+          "definition": "এক বা একাধিক থিম ডিলেট করা",
+          "code": "wp theme delete <slug> <slug>"
+        },
+        {
+          "definition": "মাল্টি-সাইট থেকে এক বা একাধিক থিম ইনেইব্‌ল্ করা",
+          "code": "wp theme enable <slug> <slug>"
+        },
+        {
+          "definition": "মাল্টি-সাইট থেকে এক বা একাধিক থিম ডিস্এইব্‌ল্ করা",
+          "code": "wp theme disable <slug> <slug>"
+        },
+        {
+          "definition": "একটি ইনস্টল করা থিমের বিস্তারিত জানা",
+          "code": "wp theme get <slug>"
+        },
+        {
+          "definition": "এক বা একাধিক থিম ইনস্টল করা",
+          "code": "wp theme install <slug> <slug>"
+        },
+        {
+          "definition": "নির্দিষ্ট থিম সক্রিয় কিনা যাচাই করা",
+          "code": "wp theme is-active <slug>"
+        },
+        {
+          "definition": "নির্দিষ্ট থিম ইনস্টল করা আছে কিনা যাচাই করা",
+          "code": "wp theme is-installed <slug>"
+        },
+        {
+          "definition": "ইনিষ্টল করা থিমগুলি লিস্ট আকারে দেখা",
+          "code": "wp theme list"
+        },
+        {
+          "definition": "একটি থিম বা থিম ডিরেক্টরির পাথ দেখা",
+          "code": "wp theme path <slug>"
+        },
+        {
+          "definition": "WordPress.org তে থিম অনুসন্ধান করা",
+          "code": "wp theme search <terms>"
+        },
+        {
+          "definition": "ইনিষ্টল করা থিম গুলির স্ট্যাটাস দেখা",
+          "code": "wp theme status"
+        },
+        {
+          "definition": "এক বা একাধিক থিম আপডেট করা",
+          "code": "wp theme update <slug>"
+        },
+        {
+          "definition": "থিম কাস্টমাইজারের মোড সেট করে, পাওয়া এবং সরিয়ে দেয়া",
+          "code": "wp theme mod <command>"
+        }
+      ]
     }
   ]
 }
