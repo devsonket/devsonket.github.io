@@ -95,6 +95,6 @@
                     "code": "pnpm remove -g <package-name>"
                 }
             ]
-        },
+        }
     ]
 }
