@@ -27,7 +27,7 @@
                 {
                     "definition": "পাবলিশিং প্যাকেজ আপডেট করতে",
                     "code": "pnpm version <major/minor/patch>"
-                }
+                },
                 {
                     "definition": "পিএনপিএম সাহায্য",
                     "code": "pnpm --help বা pnpm -h"
