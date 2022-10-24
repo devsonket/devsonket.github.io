@@ -374,6 +374,31 @@
           "code": "cd $(wp package path) &amp;&amp; pwd"
         }
       ]
-    }
+    },
+	{
+		"title": "WP CLI প্লাগিন কমান্ড",
+		"items": [
+			{
+				"definition": "ওয়ার্ডপ্রেস প্লাগিন ইন্সটল",
+				"code": "wp plugin install plugin-slug"
+			},
+			{
+				"definition": "ওয়ার্ডপ্রেস প্লাগিন এক্টিভেট",
+				"code": "wp plugin activate plugin-slug"
+			},
+			{
+				"definition": "ওয়ার্ডপ্রেস প্লাগিন ডিয়েক্টিভেট",
+				"code": "wp plugin deactivate plugin-slug"
+			},
+			{
+				"definition": "ওয়ার্ডপ্রেস প্লাগিন ডিলেট",
+				"code": "wp plugin delete plugin-slug"
+			},
+			{
+				"definition": "ওয়ার্ডপ্রেস প্লাগিন আপডেট",
+				"code": "wp plugin update plugin-slug --version=1.0.2"
+			}
+		]
+	}
   ]
 }
