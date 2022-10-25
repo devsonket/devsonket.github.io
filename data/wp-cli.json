@@ -188,7 +188,7 @@
         },
         {
           "definition": "wp-config.php ফাইল থেকে একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীল মুছে দেয়।",
-          "code": "wp config delete"
+          "code": "wp config delete <name>"
         },
         {
           "definition": "wp-config.php ফাইলটি সম্পাদনা করতে সিস্টেম সম্পাদক চালু করে।",
@@ -196,11 +196,11 @@
         },
         {
           "definition": "wp-config.php ফাইলে সংজ্ঞায়িত একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীলের মান পায়।",
-          "code": "wp config get"
+          "code": "wp config get <name>"
         },
         {
           "definition": "কটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীল wp-config.php ফাইলে বিদ্যমান কিনা তা পরীক্ষা করে।",
-          "code": "wp config has"
+          "code": "wp config has <name>"
         },
         {
           "definition": "Wp-config.php ফাইলে সংজ্ঞায়িত ভেরিয়েবল, ধ্রুবক, এবং ফাইল অন্তর্ভুক্ত করে।",
@@ -212,7 +212,7 @@
         },
         {
           "definition": "wp-config.php ফাইলে সংজ্ঞায়িত একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীলের মান সেট করে।",
-          "code": "wp config set"
+          "code": "wp config set <name> <value>"
         },
         {
           "definition": "wp-config.php ফাইলে সংজ্ঞায়িত সল্ট রিফ্রেশ করে।",
