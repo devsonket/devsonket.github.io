@@ -346,15 +346,15 @@
       "title":"wp package",
       "items": [
         {
-          "definition": "ইনিষ্টল করা প্যাকেজের তালিকা",
+          "definition": "ইনস্টল করা প্যাকেজের তালিকা",
           "code": "wp package list"
         },
         {
-          "definition": "প্যাকেজের সর্বশেষ ডেভলেপমেন্ট ভার্ষন ইনিষ্টল করা",
+          "definition": "প্যাকেজের সর্বশেষ ডেভলেপমেন্ট ভার্ষন ইনস্টল করা",
           "code": "wp package install wp-cli/server-command"
         },
         {
-          "definition": "প্যাকেজ আনইনিষ্টল করা",
+          "definition": "প্যাকেজ আনইনস্টল করা",
           "code": "wp package uninstall wp-cli/server-command"
         },
         {
@@ -411,7 +411,7 @@
           "code": "wp plugin is-installed <slug>"
         },
         {
-          "definition": "ইনিষ্টল করা প্লাগইনগুলি লিস্ট আকারে দেখা",
+          "definition": "ইনস্টল করা প্লাগইনগুলি লিস্ট আকারে দেখা",
           "code": "wp plugin list"
         },
         {
@@ -423,7 +423,7 @@
           "code": "wp plugin search <terms>"
         },
         {
-          "definition": "ইনিষ্টল করা প্লাগিন গুলির স্ট্যাটাস দেখা",
+          "definition": "ইনস্টল করা প্লাগিন গুলির স্ট্যাটাস দেখা",
           "code": "wp plugin status"
         },
         {
