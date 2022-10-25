@@ -136,6 +136,10 @@
                 {
                     "definition": "নুতন ডাটাবেস মাইগ্রেট এর সাথে সিড ফাইল গুলা ও জেনারেট  করা",
                     "code": "php artisan migrate:fresh --seed"
+                },
+                {
+                    "definition": "ডাটাবেসে নির্দিষ্ট টেবিল মাইগ্রেট করা",
+                    "code": "php artisan migrate --path=/database/migrations/full_migration_file_name_migration.php"
                 }
             ]
         },
