@@ -6,7 +6,7 @@
   "colorPref": "#000",
   "contents": [
     {
-      "title": "WP CLI এডমিন কমান্ডস",
+      "title": "wp admin কমান্ডস",
       "items": [
         {
           "definition": "/wp-admin/ কে ব্রাউজারে ওপেন করবে",
@@ -163,7 +163,7 @@
       ]
     },
     {
-      "title":"wp cli capability",
+      "title":"wp capability কমান্ড",
       "items": [
         {
           "definition": "একটি নতুন ক্যাপাবিলিটি যোগ করে",
@@ -180,7 +180,7 @@
       ]
     },
     {
-      "title": "wp cli config কমান্ড",
+      "title": "wp config কমান্ড",
       "items":[
         {
           "definition": "একটি wp-config.php ফাইল তৈরি করে",
@@ -221,7 +221,7 @@
       ]
     },
     {
-      "title":"wp cli comment",
+      "title":"wp cli কমান্ড",
       "items": [
         {
           "definition": "একটি নতুন কমেন্ট যোগ করা",
@@ -343,7 +343,52 @@
       ]
     },
     {
-      "title":"wp package",
+      "title":"wp transient কমান্ড",
+      "items": [
+        {
+          "definition": "ট্রানজিয়েন্টের তালিকা দেখা",
+          "code": "wp transient list"
+        },
+        {
+          "definition": "ট্রানজিয়েন্ট সেট করা",
+          "code": "wp transient set sample_key 'test data' 3600"
+        },
+        {
+          "definition": "ট্রানজিয়েন্ট বের করা",
+          "code": "wp transient get sample_key"
+        },
+        {
+          "definition": "ট্রানজিয়েন্ট মুছে ফেলা",
+          "code": "wp transient delete sample_key"
+        },
+        {
+          "definition": "মেয়াদ উর্ত্তীণ ট্রানজিয়েন্ট মুছে ফেলা",
+          "code": "wp transient delete --expired"
+        },
+        {
+          "definition": "মাল্টিসাইট নেটওয়ার্কের মেয়াদ উর্ত্তীণ ট্রানজিয়েন্ট মুছে ফেলা",
+          "code": "wp transient delete --expired --network"
+        },
+        {
+          "definition": "সকল ট্রানজিয়েন্ট মুছে ফেলা",
+          "code": "wp transient delete --all"
+        },
+        {
+          "definition": "মাল্টিসাইট নেটওয়ার্কের সকল ট্রানজিয়েন্ট মুছে ফেলা",
+          "code": "wp transient delete --all --network"
+        },
+        {
+          "definition": "মাল্টিসাইটের সকল ট্রানজিয়েন্ট মুছে ফেলা",
+          "code": "wp transient delete --all --network &amp;&amp; wp site list --field=url | xargs -n1 -I % wp --url=% transient delete --all"
+        },
+        {
+          "definition": "ট্রানজিয়েন্ট বাস্তবায়নের টাইপ নির্ধারণ করা",
+          "code": "wp transient type"
+        }
+      ]
+    },
+    {
+      "title":"wp package কমান্ড",
       "items": [
         {
           "definition": "ইনস্টল করা প্যাকেজের তালিকা",
