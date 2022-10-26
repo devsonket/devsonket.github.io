@@ -180,6 +180,27 @@
       ]
     },
     {
+      "title":"wp cli ডাটাবেস কমান্ড",
+      "items": [
+        {
+          "definition": "একটি নতুন ডাটাবেস তৈরি করে",
+          "code": "wp db create"
+        },
+        {
+          "definition": "একটি ডাটাবেস ডিলিট করে",
+          "code": "wp db drop --yes"
+        },
+        {
+          "definition": "কারেন্ট ডাটাবেস রিসেট করে",
+          "code": "wp db reset --yes"
+        },
+        {
+          "definition": "কোন ফাইলে থাকা SQL কোয়েরি এক্সিকিউট করে",
+          "code": "wp db query < debug.sql"
+        },
+      ]
+    },
+    {
       "title": "wp cli config কমান্ড",
       "items":[
         {
