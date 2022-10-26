@@ -330,7 +330,7 @@
       ]
     },
     {
-      "title":"wp cli dummy data generator",
+      "title":"wp dummy data generate",
       "items": [
         {
           "definition": "ডামি কমেন্টস জেনারেট করা",
@@ -339,6 +339,45 @@
         {
           "definition": "জেনারেট করা ডামি কমেন্টসে মেটা অ্যাড করা",
           "code": "wp comment generate --format=ids --count=3 | xargs -d ' ' -I % wp comment meta add % foo bar"
+        }
+      ]
+    },
+    {
+      "title":"wp import কমান্ড",
+      "items": [
+        {
+          "definition": "WXR ফাইল থেকে কনটেন্ট ইমপোর্ট করা",
+          "code": "wp import example.wordpress.2016-06-21.xml --authors=create"
+        }
+      ]
+    },
+    {
+      "title":"wp export কমান্ড",
+      "items": [
+        {
+          "definition": "প্রদত্ত শুরু এবং শেষ তারিখের মধ্যে ব্যবহারকারীর প্রকাশিত পোস্টগুলি এক্সপোর্ট করুন৷",
+          "code": "wp export --dir=/tmp/ --user=admin --post_type=post --start_date=2011-01-01 --end_date=2011-12-31"
+        },
+        {
+          "definition": "আইডি দ্বারা পোস্ট এক্সপোর্ট করা",
+          "code": "wp export --dir=/tmp/ --post__in=123,124,125"
+        },
+        {
+          "definition": "কনটেন্টের একটি রান্ডম সাবসেট এক্সপোর্ট করুন",
+          "code": "wp export --post__in='$(wp post list --post_type=post --orderby=rand --posts_per_page=8 --format=ids)'"
+        }
+      ]
+    },
+    {
+      "title":"wp find কমান্ড",
+      "items": [
+        {
+          "definition": "ফাইন্ড কমান্ড ইনস্টল করা",
+          "code": "wp package install wp-cli/find-command"
+        },
+        {
+          "definition": "ফাইল সিস্টেম থেকে ওয়ার্ডপ্রেস ইনিস্টলেশন খুঁজে বের করা",
+          "code": "wp find ./"
         }
       ]
     },
