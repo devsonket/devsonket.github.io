@@ -1,0 +1,121 @@
+{
+    "id": "nestjs",
+    "title": "নেস্ট জেএস",
+    "slug": "nestjs",
+    "description": "নেস্ট জেএস হল নোড জেএস এর সাহায্যে সার্ভার-সাইড অ্যাপ্লিকেশন এবং API তৈরির জন্য একটি প্রগতিশীল ফ্রেমওয়ার্ক",
+    "colorPref": "#745fb5",
+    "contents": [
+        {
+            "title": "নেস্ট সিএলআই",
+            "items": [
+                {
+                    "code": "npm i -g @nestjs/cli"
+                }
+            ]
+        },
+        {
+            "title": "প্যাকেজ সমূহ",
+            "items": [
+                {
+                    "code": "yarn add class-validator class-transformer"
+                },
+                {
+                    "code": "yarn add @nestjs/mapped-types"
+                }
+            ]
+        },
+        {
+            "title": "কমান্ড সমূহ NPM দিয়ে",
+            "items": [
+                {
+                    "definition": "ফুল প্রজেক্ট রান করার জন্য",
+                    "code": "npm run start:dev"
+                },
+                {
+                    "definition": "কন্ট্রোলার জেনেরেট করার জন্য",
+                    "code": "nest generate controller"
+                },
+                {
+                    "definition": "সার্ভিস জেনেরেট করার জন্য",
+                    "code": "nest generate service"
+                },
+                {
+                    "definition": "মডিউল জেনেরেট করার জন্য",
+                    "code": "nest generate modue <name>"
+                },
+                {
+                    "definition": "গ্লোবালি অ্যাড্রেস বানানোর জন্য",
+                    "code": "nest g class address/dto/create-address.dto --no-spec"
+                }
+            ]
+        },
+        {
+            "title": "কমান্ড সমূহ Yarn দিয়ে",
+            "items": [
+                {
+                    "definition": "ফুল প্রজেক্ট রান করার জন্য",
+                    "code": "yarn start:dev"
+                },
+                {
+                    "definition": "কন্ট্রোলার জেনেরেট করার জন্য",
+                    "code": "nest g co"
+                },
+                {
+                    "definition": "সার্ভিস জেনেরেট করার জন্য",
+                    "code": "nest g s"
+                },
+                {
+                    "definition": "মডিউল জেনেরেট করার জন্য",
+                    "code": "nest g mo"
+                }
+            ]
+        },
+        {
+            "title": "ডেকোরেটর সমূহ",
+            "items": [
+                {
+                    "code": "@Injectable()"
+                },
+                {
+                    "code": "@Controller('route')"
+                },
+                {
+                    "code": "@Get()"
+                },
+                {
+                    "code": "@Post('user/:id/update')"
+                },
+                {
+                    "code": "@HttpCode(HttpStatus.GONE)"
+                },
+                {
+                    "code": "@Param() params"
+                },
+                {
+                    "code": "@Param('id')"
+                },
+                {
+                    "code": "@Query() params"
+                },
+                {
+                    "code": "@Query('id')"
+                },
+                {
+                    "code": "@Body() body"
+                },
+                {
+                    "code": "@Body('id')"
+                },
+                {
+                    "code": "@Res() response"
+                },
+                {
+                    "code": "@IsNumber()"
+                },
+                {
+                    "code": "@IsString()"
+                }
+            ]
+        }
+    ]
+}
