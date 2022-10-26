@@ -6,7 +6,7 @@
   "colorPref": "#000",
   "contents": [
     {
-      "title": "WP CLI এডমিন কমান্ডস",
+      "title": "wp admin কমান্ডস",
       "items": [
         {
           "definition": "/wp-admin/ কে ব্রাউজারে ওপেন করবে",
@@ -163,7 +163,7 @@
       ]
     },
     {
-      "title":"wp cli capability",
+      "title":"wp capability কমান্ড",
       "items": [
         {
           "definition": "একটি নতুন ক্যাপাবিলিটি যোগ করে",
@@ -180,7 +180,7 @@
       ]
     },
     {
-      "title": "wp cli config কমান্ড",
+      "title": "wp config কমান্ড",
       "items":[
         {
           "definition": "একটি wp-config.php ফাইল তৈরি করে",
@@ -221,7 +221,7 @@
       ]
     },
     {
-      "title":"wp cli comment",
+      "title":"wp cli কমান্ড",
       "items": [
         {
           "definition": "একটি নতুন কমেন্ট যোগ করা",
@@ -330,7 +330,7 @@
       ]
     },
     {
-      "title":"wp cli dummy data generator",
+      "title":"wp dummy data generate",
       "items": [
         {
           "definition": "ডামি কমেন্টস জেনারেট করা",
@@ -343,7 +343,91 @@
       ]
     },
     {
-      "title":"wp package",
+      "title":"wp import কমান্ড",
+      "items": [
+        {
+          "definition": "WXR ফাইল থেকে কনটেন্ট ইমপোর্ট করা",
+          "code": "wp import example.wordpress.2016-06-21.xml --authors=create"
+        }
+      ]
+    },
+    {
+      "title":"wp export কমান্ড",
+      "items": [
+        {
+          "definition": "প্রদত্ত শুরু এবং শেষ তারিখের মধ্যে ব্যবহারকারীর প্রকাশিত পোস্টগুলি এক্সপোর্ট করুন৷",
+          "code": "wp export --dir=/tmp/ --user=admin --post_type=post --start_date=2011-01-01 --end_date=2011-12-31"
+        },
+        {
+          "definition": "আইডি দ্বারা পোস্ট এক্সপোর্ট করা",
+          "code": "wp export --dir=/tmp/ --post__in=123,124,125"
+        },
+        {
+          "definition": "কনটেন্টের একটি রান্ডম সাবসেট এক্সপোর্ট করুন",
+          "code": "wp export --post__in='$(wp post list --post_type=post --orderby=rand --posts_per_page=8 --format=ids)'"
+        }
+      ]
+    },
+    {
+      "title":"wp find কমান্ড",
+      "items": [
+        {
+          "definition": "ফাইন্ড কমান্ড ইনস্টল করা",
+          "code": "wp package install wp-cli/find-command"
+        },
+        {
+          "definition": "ফাইল সিস্টেম থেকে ওয়ার্ডপ্রেস ইনিস্টলেশন খুঁজে বের করা",
+          "code": "wp find ./"
+        }
+      ]
+    },
+    {
+      "title":"wp transient কমান্ড",
+      "items": [
+        {
+          "definition": "ট্রানজিয়েন্টের তালিকা দেখা",
+          "code": "wp transient list"
+        },
+        {
+          "definition": "ট্রানজিয়েন্ট সেট করা",
+          "code": "wp transient set sample_key 'test data' 3600"
+        },
+        {
+          "definition": "ট্রানজিয়েন্ট বের করা",
+          "code": "wp transient get sample_key"
+        },
+        {
+          "definition": "ট্রানজিয়েন্ট মুছে ফেলা",
+          "code": "wp transient delete sample_key"
+        },
+        {
+          "definition": "মেয়াদ উর্ত্তীণ ট্রানজিয়েন্ট মুছে ফেলা",
+          "code": "wp transient delete --expired"
+        },
+        {
+          "definition": "মাল্টিসাইট নেটওয়ার্কের মেয়াদ উর্ত্তীণ ট্রানজিয়েন্ট মুছে ফেলা",
+          "code": "wp transient delete --expired --network"
+        },
+        {
+          "definition": "সকল ট্রানজিয়েন্ট মুছে ফেলা",
+          "code": "wp transient delete --all"
+        },
+        {
+          "definition": "মাল্টিসাইট নেটওয়ার্কের সকল ট্রানজিয়েন্ট মুছে ফেলা",
+          "code": "wp transient delete --all --network"
+        },
+        {
+          "definition": "মাল্টিসাইটের সকল ট্রানজিয়েন্ট মুছে ফেলা",
+          "code": "wp transient delete --all --network &amp;&amp; wp site list --field=url | xargs -n1 -I % wp --url=% transient delete --all"
+        },
+        {
+          "definition": "ট্রানজিয়েন্ট বাস্তবায়নের টাইপ নির্ধারণ করা",
+          "code": "wp transient type"
+        }
+      ]
+    },
+    {
+      "title":"wp package কমান্ড",
       "items": [
         {
           "definition": "ইনস্টল করা প্যাকেজের তালিকা",
