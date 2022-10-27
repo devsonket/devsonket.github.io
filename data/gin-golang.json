@@ -5,6 +5,27 @@
     "description": "জিন হল একটি HTTP ওয়েব ফ্রেমওয়ার্ক যা Go (গোলাং) এ লেখা। এটিতে মার্টিনির মতো এপিআই বৈশিষ্ট্য রয়েছে, তবে মার্টিনির চেয়ে 40 গুণ দ্রুত কর্মক্ষমতা সহ। আপনার যদি ভাল পারফরম্যান্সের প্রয়োজন হয় তবে গিন আপনার জন্য ।",
     "colorPref": "#3176d9",
     "contents": [
+    {
+        "title": "ইনিশিয়ালাইজেশন",
+        "items": [{
+                "definition": "মডিউল ইনিশিয়ালাইজেশন",
+                "code": "go mod init github.com/<username>/<projectname>"
+            },
+            {
+                "definition": "গিন ইনস্টল",
+                "code": "go get -u github.com/gin-gonic/gin"
+            },
+            {
+                "definition": "ফাইল তৈরি করা",
+                "code": "touch main.go"
+            },
+            {
+                "definition":"গিন ইম্পোর্ট করা",
+                "code":"import \"github.com/gin-gonic/gin\""
+            }
 
+        ]
+    }
+   
     ]
 }
