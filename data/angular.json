@@ -44,6 +44,10 @@
                     "code": "ng generate directive <directive-name>"
                 },
                 {
+                    "definition": "নতুন মডিউল তৈরি করা",
+                    "code": "ng generate module <module-name>"
+                },
+                {
                     "definition": "নতুন Pipe তৈরি করা",
                     "code": "ng generate pipe <pipe-name>"
                 }
