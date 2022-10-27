@@ -195,6 +195,14 @@
                 "code": "router.Use(func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
             }
         ]
+    },
+    {
+        "title":"কাস্টম মিডলওয়্যার তৈরি করা",
+        "items":[{
+            "definition":"কাস্টম মিডলওয়্যার তৈরি করা",
+            "code":"func MyCustomMiddleware() gin.HandlerFunc {\n\treturn func(c *gin.Context) {\n\t\t// এখানে কোড লিখুন\n\t}\n}"
+        }
+    ]   
     }
     ]
 }
