@@ -381,6 +381,26 @@
       ]
     },
     {
+      "title":"wp database কমান্ড",
+      "items": [
+        {
+          "definition": "নতুন ডাটাবেস তৈরি করা",
+          "code": "wp db create"
+        },
+        {
+          "definition": "একটা ডাটাবেস ড্রপ করা",
+          "code": "wp db drop --yes"
+        },
+        {
+          "definition": "কারেন্ট ডাটাবেস রিসেট করা",
+          "code": "wp db reset --yes"
+        },
+        {
+          "definition": "একটা ফাইলে থাকা SQL কোয়েরি এক্সিকিউট করা",
+          "code": "wp db query < debug.sql"
+        }
+    },
+    {
       "title":"wp import কমান্ড",
       "items": [
         {
