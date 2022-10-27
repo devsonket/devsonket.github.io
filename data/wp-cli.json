@@ -180,6 +180,44 @@
       ]
     },
     {
+
+      "title":"wp cli ডাটাবেস কমান্ড",
+      "items": [
+        {
+          "definition": "একটি নতুন ডাটাবেস তৈরি করে",
+          "code": "wp db create"
+        },
+        {
+          "definition": "একটি ডাটাবেস ডিলিট করে",
+          "code": "wp db drop --yes"
+        },
+        {
+          "definition": "কারেন্ট ডাটাবেস রিসেট করে",
+          "code": "wp db reset --yes"
+        },
+        {
+          "definition": "কোন ফাইলে থাকা SQL কোয়েরি এক্সিকিউট করে",
+          "code": "wp db query < debug.sql"
+        },
+        {
+          "definition": "ডাটাবেস চেক করে",
+          "code": "wp db check"
+        },
+        {
+          "definition": "ডাটাবেস ক্লিন করে",
+          "code": "wp db clean"
+        },
+        {
+          "definition": "wp-config.php ফাইল থেকে ক্রেডেন্সিয়াল নিয়ে MySQL এর কনসোল ওপেন করে",
+          "code": "wp db cli"
+        },
+        {
+          "definition": "একটা টেবিলের তথ্য দেখায়",
+          "code": "wp db columns"
+        }
+      ]
+    },
+    {
       "title": "wp config কমান্ড",
       "items":[
         {
