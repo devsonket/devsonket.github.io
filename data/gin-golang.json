@@ -83,6 +83,18 @@
             }
         ]
             
+    },
+    {
+        "title": "গিন রাউটার এর প্যারামিটার",
+        "items": [{
+                "definition": "প্যারামিটার নেই",
+                "code": "router.GET(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            },
+            {
+                "definition": "প্যারামিটার আছে",
+                "code": "router.GET(\"/:id\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            }
+        ]
     }
     ]
 }
