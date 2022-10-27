@@ -1,0 +1,217 @@
+{
+    "id": "sailsjs",
+    "title": "সেইলস জেএস",
+    "slug": "sailsjs",
+    "description": "সেইলস হচ্ছে Nodejs এর মোস্ট পুপলার MVC ফ্রেমওয়ার্ক",
+    "colorPref": "#745fb5",
+    "contents": [
+        {
+            "title": "আপ্লিকেশন",
+            "items": [
+                {
+                    "definition": "সেইলসের সব মডেলের লোডেড ডিকশনারি ইন্ডেক্স অনুযায়ী",
+                    "code": "sails.models"
+                },
+                {
+                    "definition": "সেইলসের সব হেল্পার এ্যাসেসিবল ডিকশনারি",
+                    "code": "sails.helpers"
+                },
+                {
+                    "definition": "সেইলসের সব হুক ডিকশনারি ইন্ডেক্স অনুযায়ী",
+                    "code": "sails.hooks"
+                },
+                {
+                    "definition": "সেইলসের ফুল সেটের কনফিগুরেশন অপশন",
+                    "code": "sails.config"
+                },
+                {
+                    "definition": "কাস্টম কনফিগুরেশন অপশন",
+                    "code": "sails.config.custom"
+                },
+                {
+                    "definition": "লো লেভের উপযোগী ওয়েব সকেট",
+                    "code": "sails.sockets"
+                },
+                {
+                    "definition": "সকেটের সাথে ডাইরেক্ট কথা বলার জন্য",
+                    "code": "sails.io"
+                },
+                {
+                    "definition": "রেগুলার ইউ.আর.এল প্যাথ আইডেন্টিফাই করার জন্য",
+                    "code": "sails.LOOKS_LIKE_ASSET_RX"
+                },
+                {
+                    "definition": "সেইলস একশনের ডিকশনারি রিটার্ন করতে",
+                    "code": "sails.getActions()"
+                },
+                {
+                    "definition": "ফাস্ট রাউটের স্পেসিফিক টার্গেট দেখতে",
+                    "code": "sails.getRouteFor(target)"
+                },
+                {
+                    "definition": "ফাস্ট রাউটের স্পেসিফিক টার্গেটের ইউ.আর.এল দেখতে",
+                    "code": "sails.getUrlFor(target)"
+                },
+                {
+                    "definition": "সেইলস এ্যাপকে প্রগ্রামেটিক্যালি লিফট করার জন্য",
+                    "code": "sailsApp.lift(configOverrides, function(err) {})"
+                },
+                {
+                    "definition": "মেমোরিতে সেইলস এ্যাপ লোড করা জন্য",
+                    "code": "sailsApp.load(configOverrides, function(err) {})"
+                },
+                {
+                    "definition": "লিফটড সেইলস এ্যাপ অফ করে দেওয়ার জন্য",
+                    "code": "sails.lower(callback)"
+                },
+                {
+                    "definition": "নতুন সেইলস একশন রেজিস্টার করার জন্য",
+                    "code": "sails.registerAction(action, name)"
+                },
+                {
+                    "definition": "নতুন সেইলস একশন মিডেলওয়্যার ফাংশন রেজিস্টার করার জন্য",
+                    "code": "sails.registerActionMiddleware(actionMiddlewareFns, actionIdentities)"
+                },
+                {
+                    "definition": "সব সেইলস একশন ফ্লাস এবং রিলোড করতে",
+                    "code": "sails.reloadActions()"
+                },
+                {
+                    "definition": "এইচটিএমএল টেমপ্লেটে কম্পাইল ভিউ আনতে",
+                    "code": "sails.renderView(pathToView, templateData)"
+                },
+                {
+                    "definition": "রানিং সেইলস ইনস্টান্সে ভার্চুয়াল রিকোয়েস্ট করতে",
+                    "code": "sails.request(request)"
+                },
+                {
+                    "code": "sails.request(url, body)"
+                },
+                {
+                    "code": "sails.request(url, callback)"
+                },
+                {
+                    "code": "sails.request(url, body, callback)"
+                },
+                {
+                    "definition": "পার্টিকুলার ডাটাস্টর অ্যাক্সেস করতে",
+                    "code": "sails.getDatastore(datastoreName)"
+                },
+                {
+                    "definition": "মেসেজ লগে শো করতে",
+                    "code": "sails.log(message)"
+                }
+            ]
+        },
+        {
+            "title": "ব্লু প্রিন্ট এপিআই",
+            "items": [
+                {
+                    "definition": "যেসকল রেকর্ড গুলো স্পেসিফিক ক্রিটেরিয়াইয় মিলে ওদের খোঁজা",
+                    "code": "GET /:model"
+                },
+                {
+                    "definition": "ডাতাবেজের স্পেসিফিক আইডি গুলোকে রেকর্ড থেকে বের করা",
+                    "code": "GET /:model/:id"
+                },
+                {
+                    "definition": "ডাটাবেজে নতুন রেকর্ড তৈরি করতে",
+                    "code": "POST /:model"
+                },
+                {
+                    "definition": "ডাটাবেজে রেকর্ড আপডেট করতে",
+                    "code": "PATCH /:model/:id"
+                },
+                {
+                    "definition": "রেকর্ড কালেকশনের সব ফরেইন রেকর্ড রিপ্লেস করে দিতে",
+                    "code": "PUT /:model/:id/:association"
+                },
+                {
+                    "definition": "রেকর্ড কালেকশনে ফরেইন রেকর্ড অ্যাড করতে",
+                    "code": "PUT /:model/:id/:association/:fk"
+                },
+                {
+                    "definition": "ডাটাবেজ থেকে স্পেসিফিক আইডি রেকর্ড ডিলেট করা জন্য",
+                    "code": "DELETE /:model/:id"
+                },
+                {
+                    "definition": "রেকর্ড কালেকশনের স্পেসিফিক ফরেইন রেকর্ড ডিলেট করতে",
+                    "code": "DELETE /:model/:id/:association/:fk"
+                }
+            ]
+        },
+        {
+            "title": "কমান্ড লাইন ইন্টারফেস",
+            "items": [
+                {
+                    "definition": "ইন্টারেক্টিভ মোডে সেইলস অ্যাাপ লিফট করার জন্য",
+                    "code": "sails console [–dontLift]"
+                },
+                {
+                    "definition": "মডেল জেনেরেট করতে",
+                    "code": "sails generate model"
+                },
+                {
+                    "definition": "স্ট্যান্ডলন একশন জেনেরেট করতে",
+                    "code": "sails generate action"
+                },
+                {
+                    "definition": "হেল্পার জেনেরেট করতে",
+                    "code": "sails generate helper"
+                },
+                {
+                    "definition": "কন্ট্রোলার জেনেরেট করতে",
+                    "code": "sails generate controller"
+                },
+                {
+                    "definition": "প্রজেক্ট হুক জেনেরেট করতে",
+                    "code": "sails generate hook"
+                },
+                {
+                    "definition": "জেনেরাটর জেনেরেট করতে",
+                    "code": "sails generate generator"
+                },
+                {
+                    "definition": "রেসপন্স জেনেরেট করতে",
+                    "code": "sails generate response"
+                },
+                {
+                    "definition": "আডাপ্টার জেনেরেট করার জন্য",
+                    "code": "sails generate adapter"
+                },
+                {
+                    "definition": "স্পেসিফিক লোকেশনে সেইলস.আইও ফাইল জেনেরেট করার জন্য",
+                    "code": "sails generate sails.io.js"
+                },
+                {
+                    "definition": "এপিআই জেনেরেট করতে",
+                    "code": "sails generate api"
+                },
+                {
+                    "definition": "নিউ এলিয়্যাস জেনেরেট করতে",
+                    "code": "sails generate new"
+                },
+                {
+                    "definition": "এক্সপেরিমেন্টাল ফাইল জেনেরেট করতে",
+                    "code": "sails generate etc"
+                },
+                {
+                    "definition": "ডিবাগার এ্যাটার্চ করতে",
+                    "code": "sails inspect"
+                },
+                {
+                    "definition": "বর্তমান ডাইরেক্টরিতে সেইলস এ্যাপ রান করতে",
+                    "code": "sails lift [–prod] [–port <portNum>] [–verbose] [–silly]"
+                },
+                {
+                    "definition": "নতুন সেইলস প্রজেক্ট তৈরি করতে",
+                    "code": "sails new <yourAppName> [–no-frontend] [–minimal] [–without=package,package,package]"
+                },
+                {
+                    "definition": "সেইলস ভার্সন জানতে",
+                    "code": "sails version"
+                }
+            ]
+        }
+    ]
+}
