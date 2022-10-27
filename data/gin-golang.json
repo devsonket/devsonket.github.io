@@ -203,6 +203,23 @@
             "code":"func MyCustomMiddleware() gin.HandlerFunc {\n\treturn func(c *gin.Context) {\n\t\t// এখানে কোড লিখুন\n\t}\n}"
         }
     ]   
+    },
+    {
+        "title": "গিন রাউটার এর গ্রুপ",
+        "items": [{
+                "definition": "গ্রুপ যোগ করা",
+                "code": "router.Group(\"/users\")"
+            },
+            {
+                "definition": "গ্রুপ এর মিডলওয়্যার যোগ করা",
+                "code": "users:= router.Group(\"/users\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            },
+            {
+                "definition": "গ্রুপ এর রাউটার যোগ করা",
+                "code":"users.GET(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+                
+            }
+        ]
     }
     ]
 }
