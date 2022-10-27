@@ -171,6 +171,30 @@
                 "code": "c.Request.URL.Host"
             }
         ]
+    },
+    {
+        "title": "গিন রাউটার এর মিডলওয়্যার",
+        "items": [{
+                "definition": "লগার মিডলওয়্যার",
+                "code": "router.Use(gin.Logger())"
+            },
+            {
+                "definition": "স্ট্যাটিক ফাইল সার্ভ করার মিডলওয়্যার",
+                "code": "router.Use(gin.Static(\"/assets\", \"./assets\"))"
+            },
+            {
+                "definition": "রিকভারি মিডলওয়্যার",
+                "code": "router.Use(gin.Recovery())"
+            },
+            {
+                "definition": "মিডলওয়্যার যোগ করা এবং প্যারামিটার নেওয়া",
+                "code": "router.Use(gin.RecoveryWithWriter(io.Writer))"
+            },
+            {
+                "definition": "কাস্টম মিডলওয়্যার",
+                "code": "router.Use(func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            }
+        ]
     }
     ]
 }
