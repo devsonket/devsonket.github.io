@@ -198,6 +198,22 @@
           "definition": "কোন ফাইলে থাকা SQL কোয়েরি এক্সিকিউট করে",
           "code": "wp db query < debug.sql"
         },
+        {
+          "definition": "ডাটাবেস চেক করে",
+          "code": "wp db check"
+        },
+        {
+          "definition": "ডাটাবেস ক্লিন করে",
+          "code": "wp db clean"
+        },
+        {
+          "definition": "wp-config.php ফাইল থেকে ক্রেডেন্সিয়াল নিয়ে MySQL এর কনসোল ওপেন করে",
+          "code": "wp db cli"
+        },
+        {
+          "definition": "একটা টেবিলের তথ্য দেখায়",
+          "code": "wp db columns"
+        }
       ]
     },
     {
