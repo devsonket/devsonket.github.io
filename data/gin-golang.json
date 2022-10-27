@@ -39,6 +39,50 @@
             "definition": "সার্ভার রান করা",
             "code": "router.Run()"
         }]
+    },
+    {
+        "title": "গিন রাউটার",
+        "items": [{
+            "definition": "গিন রাউটার",
+            "code": "router := gin.Default()"
+        }]
+    },
+    {
+        "title": "গিন রাউটার এর মেথড",
+        "items": [{
+                "definition": "GET",
+                "code": "router.GET(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            },
+            {
+                "definition": "POST",
+                "code": "router.POST(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            },
+            {
+                "definition": "PUT",
+                "code": "router.PUT(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            },
+            {
+                "definition": "DELETE",
+                "code": "router.DELETE(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            },
+            {
+                "definition": "PATCH",
+                "code": "router.PATCH(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            },
+            {
+                "definition": "HEAD",
+                "code": "router.HEAD(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            },
+            {
+                "definition": "OPTIONS",
+                "code": "router.OPTIONS(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            },
+            {
+                "definition": "Any",
+                "code": "router.Any(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            }
+        ]
+            
     }
     ]
 }
