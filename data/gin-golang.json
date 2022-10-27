@@ -32,6 +32,13 @@
             "definition": "মেইন ফাংশন",
             "code": "func main() {\n\t// এখানে কোড লিখুন\n}"
         }]
+    },
+    {
+        "title": "সার্ভার রান করা",
+        "items": [{
+            "definition": "সার্ভার রান করা",
+            "code": "router.Run()"
+        }]
     }
     ]
 }
