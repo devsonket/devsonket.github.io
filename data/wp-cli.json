@@ -399,6 +399,7 @@
           "definition": "একটা ফাইলে থাকা SQL কোয়েরি এক্সিকিউট করা",
           "code": "wp db query < debug.sql"
         }
+      ]
     },
     {
       "title":"wp import কমান্ড",
@@ -406,6 +407,19 @@
         {
           "definition": "WXR ফাইল থেকে কনটেন্ট ইমপোর্ট করা",
           "code": "wp import example.wordpress.2016-06-21.xml --authors=create"
+        }
+      ]
+    },
+    {
+      "title":"wp eval কমান্ড",
+      "items": [
+        {
+          "definition": "ওয়ার্ডপ্রেস কনটেন্ট ডিরেক্টরি দেখা",
+          "code": "wp eval 'echo WP_CONTENT_DIR;'"
+        },
+        {
+          "definition": "রান্ডম নাম্বার তৈরি করা",
+          "code": "wp eval 'echo rand();' --skip-wordpress"
         }
       ]
     },
