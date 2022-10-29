@@ -214,6 +214,22 @@
         {
           "definition": "একটা টেবিলের তথ্য দেখায়",
           "code": "wp db columns"
+        },
+        {
+          "definition": "ডাটাবেস এক্সপোর্ট করে",
+          "code": "wp db export"
+        },
+        {
+          "definition": "ডাটাবেস ইম্পোর্ট করে",
+          "code": "wp db import"
+        },
+        {
+          "definition": "ডাটাবেস অপ্টিমাইজ করে",
+          "code": "wp db optimize"
+        },
+        {
+          "definition": "ডাটাবেস এর প্রিফিক্স দেখায়",
+          "code": "wp db prefix"
         }
       ]
     },
