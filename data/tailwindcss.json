@@ -27,7 +27,7 @@
                     "code": "@media (min-width: 640px) { ... }"
                 },
                 {
-                    "definition": "এস্পেস্কট রেশিও",
+                    "definition": "এস্পেক্ট রেশিও",
                     "code": "aspect-video"
                 },
                 {
@@ -400,7 +400,7 @@
                     "code": "text-black"
                 },
                 {
-                    "definition": "টেক্সট কালার: হুয়াইট",
+                    "definition": "টেক্সট কালার: হোয়াইট",
                     "code": "text-white"
                 },
                 {
@@ -416,7 +416,7 @@
                     "code": "text-orange-100"
                 },
                 {
-                    "definition": "টেক্সট কালার: ইয়েলো (ফন্ট ওয়েট সাইজের নাম্বার এইভাবে- 100,200,300....,900)",
+                    "definition": "টেক্সট কালার: ইয়োলা (ফন্ট ওয়েট সাইজের নাম্বার এইভাবে- 100,200,300....,900)",
                     "code": "text-yellow-100"
                 },
                 {
@@ -424,23 +424,23 @@
                     "code": "text-green-100"
                 },
                 {
-                    "definition": "টেক্সট অপাচিটি: 0",
+                    "definition": "টেক্সট অপাসিটি: 0",
                     "code": "text-opacity-0"
                 },
                 {
-                    "definition": "টেক্সট অপাচিটি: 0.25",
+                    "definition": "টেক্সট অপাসিটি: 0.25",
                     "code": "text-opacity-25"
                 },
                 {
-                    "definition": "টেক্সট অপাচিটি: 0.5",
+                    "definition": "টেক্সট অপাসিটি: 0.5",
                     "code": "text-opacity-50"
                 },
                 {
-                    "definition": "টেক্সট অপাচিটি: 0.75",
+                    "definition": "টেক্সট অপাসিটি: 0.75",
                     "code": "text-opacity-75"
                 },
                 {
-                    "definition": "টেক্সট অপাচিটি: 1",
+                    "definition": "টেক্সট অপাসিটি: 1",
                     "code": "text-opacity-100"
                 },
                 {
