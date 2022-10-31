@@ -427,11 +427,11 @@
                     "code": "<aside></aside>"
                 },
                 {
-                    "definition": "আডিও ফাইল সংযুক্ত",
+                    "definition": "অডিও ফাইল সংযুক্ত",
                     "code": "<audio src=\"\"></audio>"
                 },
                 {
-                    "definition": "গ্রাফিকাল কিছু প্রেসেন্ট করতে",
+                    "definition": "গ্রাফিকাল কিছু প্রেজেন্ট করতে",
                     "code": "<canvas></canvas>"
                 },
                 {
@@ -445,6 +445,10 @@
                 {
                     "definition": "স্বয়ংসম্পূর্ণ প্রবাহ সামগ্রী",
                     "code": "<figure></figure>"
+                },
+                      {
+                    "definition": "ছবির ক্যাপশন দেওয়া",
+                    "code": "<figcaption></figcaption>"
                 },
                 {
                     "definition": "ফুটার সেকশন এর জন্য",
