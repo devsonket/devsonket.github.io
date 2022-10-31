@@ -4,9 +4,11 @@
     "slug": "tailwindcss",
     "description": "টেলওয়াইন্ড সিএসএস একটি অত্যন্ত কাস্টমাইজযোগ্য, নিম্ন-স্তরের সিএসএস ফ্রেমওয়ার্ক যা আপনাকে ওভাররাইড করার জন্য ডিজাইন তৈরি করতে সমস্ত বিল্ডিং ব্লক দেয়।",
     "colorPref": "#3393B2",
-    "contents": [{
+    "contents": [
+        {
             "title": "ইন্সটলেশন",
-            "items": [{
+            "items": [
+                {
                     "definition": "প্যাকেজ জেসন",
                     "code": "npm init -y"
                 },
@@ -22,7 +24,8 @@
         },
         {
             "title": "লেআউট",
-            "items": [{
+            "items": [
+                {
                     "definition": "ব্রেকপয়েন্টস: sm",
                     "code": "@media (min-width: 640px) { ... }"
                 },
@@ -122,7 +125,8 @@
         },
         {
             "title": "এসভিজি / SVG",
-            "items": [{
+            "items": [
+                {
                     "definition": "ফিল",
                     "code": ".fill-current"
                 },
@@ -134,7 +138,8 @@
         },
         {
             "title": "ফ্লেক্সবক্স",
-            "items": [{
+            "items": [
+                {
                     "definition": "ফ্লেক্স",
                     "code": "flex"
                 },
@@ -179,7 +184,8 @@
         },
         {
             "title": "গ্রিড",
-            "items": [{
+            "items": [
+                {
                     "definition": "গ্রিড",
                     "code": "grid"
                 },
@@ -231,7 +237,8 @@
         },
         {
             "title": "গ্রিড অ্যালাইনমেন্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "গ্যাপ",
                     "code": "gap-{size}"                              
                 },
@@ -271,7 +278,8 @@
         },
         {
             "title": "ব্যাকগ্রাউন্ডস",
-            "items": [{
+            "items": [
+                {
                     "definition": "ব্যাকগ্রাউন্ড অ্যাটাচমেন্ট (attachment = fixed/local/scroll)",
                     "code": "bg-{attachment}"                              
                 },
@@ -311,7 +319,8 @@
         },      
         {
             "title": "সাইজিং",
-            "items": [{
+            "items": [
+                {
                     "definition": "ফুল ওয়াইড: 100%",
                     "code": "w-full"
                 },
@@ -391,7 +400,8 @@
         },
         {
             "title": "টাইপোগ্রাফি",
-            "items": [{
+            "items": [
+                {
                     "definition": "টেক্সট কালার: ট্রান্সপারেন্ট",
                     "code": "text-transparent"
                 },
