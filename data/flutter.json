@@ -86,6 +86,95 @@
                     "code": "onScaleStart"
                 }
             ]
+        },
+        {
+            "title": "কিছু ইম্পরট্যান্ট ফ্লাটার শীট",
+            "items": [
+                {
+                    "definition": "এটা এমন একটা উইডগেট যেটা বিন্যাস্ত করা যায়না",
+                    "code": "StatelessWidget"
+                },
+                {
+                    "definition": "এটা এমন একটা উইডগেট যেটা বিন্যাস্ত করা যায়",
+                    "code": "StatefulWidget"
+                },
+                {
+                    "definition": "চাইল্ডকে মাঝ বরাবর নিয়ে আসবে",
+                    "code": "Center"
+                },
+                {
+                    "definition": "উইডগেটের চাইল্ডকে কলাম ভিউ করবে",
+                    "code": "Column"
+                },
+                {
+                    "definition": "উইডগেটের চাইল্ডকে রো ভিউ করবে",
+                    "code": "Row"
+                },
+                {
+                    "definition": "উইডগেটের চাইল্ডকে লিস্ট ভিউ করবে",
+                    "code": "ListView"
+                },
+                {
+                    "definition": "উইডগেটের চাইল্ডকে গির্ড ভিউ করবে",
+                    "code": "GridView"
+                },
+                {
+                    "definition": "‍প্লাগিন ইন্সটাল করতে",
+                    "code": "Plugins"
+                },
+                {
+                    "definition": "প্যাকেজ ইন্সটাল করতে",
+                    "code": "Packages"
+                },
+                {
+                    "definition": "স্টেটলেস উইডগেটের জন্য",
+                    "code": "Container"
+                },
+                {
+                    "definition": "ইমেজ ইউজ করতে",
+                    "code": "Image"
+                },
+                {
+                    "definition": "টেক্সট ইউজ করতে",
+                    "code": "Text"
+                },
+                {
+                    "definition": "স্টেটফুল উইডগেট এর জন্য",
+                    "code": "Scaffold"
+                },
+                {
+                    "definition": "অ্যাপের টাইটেল",
+                    "code": "AppBar"
+                },
+                {
+                    "definition": "স্পেস নিতে",
+                    "code": "Stack"
+                },
+                {
+                    "definition": "গেশ্চার অপশন",
+                    "code": "GestureDetector"
+                },
+                {
+                    "definition": "আইকন ইউজ করতে",
+                    "code": "Icon"
+                },
+                {
+                    "definition": "পেজ ভিউ এর জন্য",
+                    "code": "PageView"
+                },
+                {
+                    "definition": "লেআউট বিল্ড করতে",
+                    "code": "LayoutBuilder"
+                },
+                {
+                    "definition": "চাইল্ড উইডগেটের ভবিষ্যৎ বিল্ড",
+                    "code": "FutureBuilder"
+                },
+                {
+                    "definition": "স্ট্রিম বিল্ডার",
+                    "code": "StreamBuilder"
+                }
+            ]
         }
     ]
 }
