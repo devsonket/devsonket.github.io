@@ -130,6 +130,69 @@
     ]
     },
     {
+        "title": "জিন রাউটার এর মিডলওয়্যার",
+        "items": [{
+                "definition": "লগার মিডলওয়্যার",
+                "code": "router.Use(gin.Logger())"
+            },
+            {
+                "definition": "স্ট্যাটিক ফাইল সার্ভ করার মিডলওয়্যার",
+                "code": "router.Use(gin.Static(\"/assets\", \"./assets\"))"
+            },
+            {
+                "definition": "রিকভারি মিডলওয়্যার",
+                "code": "router.Use(gin.Recovery())"
+            },
+            {
+                "definition": "মিডলওয়্যার যোগ করা এবং প্যারামিটার নেওয়া",
+                "code": "router.Use(gin.RecoveryWithWriter(io.Writer))"
+            },
+            {
+                "definition": "কাস্টম মিডলওয়্যার",
+                "code": "router.Use(func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            }
+        ]
+    },
+    {
+        "title":"কাস্টম মিডলওয়্যার তৈরি করা",
+        "items":[{
+            "definition":"কাস্টম মিডলওয়্যার তৈরি করা",
+            "code":"func MyCustomMiddleware() gin.HandlerFunc {\n\treturn func(c *gin.Context) {\n\t\t// এখানে কোড লিখুন\n\t}\n}"
+        }
+    ]   
+    },
+    {
+        "title": "জিন রাউটার এর গ্রুপ",
+        "items": [{
+                "definition": "গ্রুপ যোগ করা",
+                "code": "router.Group(\"/users\")"
+            },
+            {
+                "definition": "গ্রুপ এর মিডলওয়্যার যোগ করা",
+                "code": "users:= router.Group(\"/users\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            },
+            {
+                "definition": "গ্রুপ এর রাউটার যোগ করা",
+                "code":"users.GET(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+                
+            }
+        ]
+    },
+    {
+        "title":"কুকি এর ব্যবহার",
+        "items":[{
+            "definition":"কুকি সেট করা",
+            "code":"c.SetCookie(\"cookie_name\", \"cookie_value\", 3600, \"/\", \"example.com\", false, true)"
+        },{
+            "definition":"কুকি পাওয়া",
+            "code":"cookie, err := c.Cookie(\"cookie_name\")"
+        },{
+            "definition":"কুকি ডিলিট করা",
+            "code":"c.SetCookie(\"cookie_name\", \"\", -1, \"/\", \"example.com\", false, true)"
+        }
+      ]
+    },
+    {
         "title": "জিন রাউটার এর কন্টেক্সট",
         "items": [{
                 "definition": "কন্টেক্সট থেকে প্যারামিটার নেওয়া",
@@ -204,69 +267,6 @@
                 "code": "c.Request.URL.Host"
             }
         ]
-    },
-    {
-        "title": "জিন রাউটার এর মিডলওয়্যার",
-        "items": [{
-                "definition": "লগার মিডলওয়্যার",
-                "code": "router.Use(gin.Logger())"
-            },
-            {
-                "definition": "স্ট্যাটিক ফাইল সার্ভ করার মিডলওয়্যার",
-                "code": "router.Use(gin.Static(\"/assets\", \"./assets\"))"
-            },
-            {
-                "definition": "রিকভারি মিডলওয়্যার",
-                "code": "router.Use(gin.Recovery())"
-            },
-            {
-                "definition": "মিডলওয়্যার যোগ করা এবং প্যারামিটার নেওয়া",
-                "code": "router.Use(gin.RecoveryWithWriter(io.Writer))"
-            },
-            {
-                "definition": "কাস্টম মিডলওয়্যার",
-                "code": "router.Use(func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
-            }
-        ]
-    },
-    {
-        "title":"কাস্টম মিডলওয়্যার তৈরি করা",
-        "items":[{
-            "definition":"কাস্টম মিডলওয়্যার তৈরি করা",
-            "code":"func MyCustomMiddleware() gin.HandlerFunc {\n\treturn func(c *gin.Context) {\n\t\t// এখানে কোড লিখুন\n\t}\n}"
-        }
-    ]   
-    },
-    {
-        "title": "জিন রাউটার এর গ্রুপ",
-        "items": [{
-                "definition": "গ্রুপ যোগ করা",
-                "code": "router.Group(\"/users\")"
-            },
-            {
-                "definition": "গ্রুপ এর মিডলওয়্যার যোগ করা",
-                "code": "users:= router.Group(\"/users\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
-            },
-            {
-                "definition": "গ্রুপ এর রাউটার যোগ করা",
-                "code":"users.GET(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
-                
-            }
-        ]
-    },
-    {
-        "title":"কুকি এর ব্যবহার",
-        "items":[{
-            "definition":"কুকি সেট করা",
-            "code":"c.SetCookie(\"cookie_name\", \"cookie_value\", 3600, \"/\", \"example.com\", false, true)"
-        },{
-            "definition":"কুকি পাওয়া",
-            "code":"cookie, err := c.Cookie(\"cookie_name\")"
-        },{
-            "definition":"কুকি ডিলিট করা",
-            "code":"c.SetCookie(\"cookie_name\", \"\", -1, \"/\", \"example.com\", false, true)"
-        }
-      ]
     }
     ]
 }
