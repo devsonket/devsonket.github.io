@@ -118,7 +118,7 @@
     ]
     },
     {
-        "title":"file upload",
+        "title":"ফাইল উপলোড",
         "items":[{
             "definition":"একটি ফাইল আপলোড করা",
             "code":"router.POST(\"/upload\", func(c *gin.Context) {\n\tfile, _ := c.FormFile(\"file\")\n\tc.SaveUploadedFile(file, file.Filename)\n})"
