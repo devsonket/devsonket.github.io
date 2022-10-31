@@ -99,7 +99,23 @@
             {
                 "definition": "Async একশন",
                 "code": "fetch: async (pond) => { const response = await fetch(pond) set({ fishies:  await response.json() }) },"
-            } 
+            },
+            {
+                "definition": "মেমোইজিং ( স্টোরিং ) সিলেক্টরস ",
+                "code": "const fruit = useStore(useCallback((state) => state.fruits[id], [id]))"
+            },
+            {
+                "definition": "একশনের ভিতর স্টেট থেকে রিড করা ",
+                "code": "const useStore = create((set, get) => ({ sound: 'grunt', action: () => { const sound = get().sound;} })" 
+            },
+            {
+                "definition": "রিয়েক্ট ছাড়া যুস্ট্যান্ড ইউজ করা",
+                "code": "import create from 'zustand/vanilla'; const store = create(() => ({ ... }));const { getState, setState, subscribe, destroy } = store" 
+            },
+            {
+                "definition": " immer এর সাথে যুস্ট্যান্ড ইউজ করা ",
+                "code": "import produce from 'immer'; const useStore = create((set) => ({  lush: {  forest: { contains: { a: 'bear' } } },  set: (fn) => set(produce(fn)), })); const set = useStore((state) => state.set); set((state) => { state.lush.forest.contains = null;})`"
+            }
         ]
     }
 
