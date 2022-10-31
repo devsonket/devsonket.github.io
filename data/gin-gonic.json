@@ -118,6 +118,18 @@
     ]
     },
     {
+        "title":"file upload",
+        "items":[{
+            "definition":"একটি ফাইল আপলোড করা",
+            "code":"router.POST(\"/upload\", func(c *gin.Context) {\n\tfile, _ := c.FormFile(\"file\")\n\tc.SaveUploadedFile(file, file.Filename)\n})"
+        },
+        {
+            "definition":"একাধিক ফাইল আপলোড করা",
+            "code":"router.POST(\"/upload\", func(c *gin.Context) {\n\tform, _ := c.MultipartForm()\n\tfiles := form.File[\"files\"]\n\tfor _, file := range files {\n\t\tc.SaveUploadedFile(file, file.Filename)\n\t}\n})"
+        }
+    ]
+    },
+    {
         "title": "জিন রাউটার এর কন্টেক্সট",
         "items": [{
                 "definition": "কন্টেক্সট থেকে প্যারামিটার নেওয়া",
