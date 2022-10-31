@@ -6,7 +6,8 @@
     "colorPref": "#000",
     "contents": [{
             "title": "ফাইল মেনু (File menu)",
-            "items": [{
+            "items": [
+                {
                     "definition": "নতুন ফাইল (New)",
                     "code": "Cmd + N"
                 },
@@ -46,7 +47,8 @@
         },
         {
             "title": "এডিট মেনু(Edit menu)",
-            "items": [{
+            "items": [
+                {
                     "definition": "এডিট বাতিল করা (Undo)",
                     "code": "Cmd + Z"
                 },
@@ -90,7 +92,8 @@
         },
         {
             "title": "অবজেক্ট মেনু (Object menu)",
-            "items": [{
+            "items": [
+                {
                     "definition": "অবজেক্ট গ্রুপ করা (Group)",
                     "code": "Cmd + G"
                 },
@@ -122,7 +125,8 @@
         },
         {
             "title": "উইন্ডো মেনু (Window menu)",
-            "items": [{
+            "items": [
+                {
                     "definition": "উইন্ডো ম্যাক্সিমাইজ করা (Maximize)",
                     "code": ""
                 },
@@ -138,7 +142,8 @@
         },
         {
             "title": "ভিউ মেনু (View menu)",
-            "items": [{
+            "items": [
+                {
                     "definition": "জুম ইন (Zoom in)",
                     "code": "Cmd + + OR Alt + Scrollwheel OR Alt + Swipe(magicmouse) OR Pinch out(trackpad)"
                 },
@@ -186,7 +191,8 @@
         },
         {
             "title": "পাথ/পেন (Path/Pen)",
-            "items": [{
+            "items": [
+                {
                     "definition": "ওপেন পাথ/পেন প্যানেল (Open Path/Pen panel)",
                     "code": "P"
                 },
@@ -226,7 +232,8 @@
         },
         {
             "title": "অপারেশন মেনু (Operations menu)",
-            "items": [{
+            "items": [
+                {
                     "definition": "সেন্টার থেকে (From Center)",
                     "code": "Alt"
                 },
@@ -266,7 +273,8 @@
         },
         {
             "title": "এলাইন (Align)",
-            "items": [{
+            "items": [
+                {
                     "definition": "বাম (Left)",
                     "code": "Control + Cmd + ◄"
                 },
@@ -294,7 +302,8 @@
         },
         {
             "title": "সাজান (Arrange)",
-            "items": [{
+            "items": [
+                {
                     "definition": "সামনে আনতে (Bring to Front)",
                     "code": "Cmd + Shift + ]"
                 },
@@ -314,7 +323,8 @@
         },
         {
             "title": "টেক্সট (Text)",
-            "items": [{
+            "items": [
+                {
                     "definition": "টেক্সট বোল্ড করতে",
                     "code": "Cmd + B"
                 },
@@ -326,7 +336,8 @@
         },
         {
             "title": "অপারেশন সংশোধক (Operation modifiers)",
-            "items": [{
+            "items": [
+                {
                     "definition": "হরিজোনটাল প্যান",
                     "code": "Shift + Scrollwheel"
                 },
@@ -338,7 +349,8 @@
         },
         {
             "title": "ডিস্ট্রিবিউট (Distribute)",
-            "items": [{
+            "items": [
+                {
                     "definition": "হরিজোনটাল (Horizontal)",
                     "code": "Control + Cmd + H"
                 },
