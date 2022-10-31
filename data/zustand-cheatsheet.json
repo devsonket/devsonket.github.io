@@ -1,9 +1,9 @@
 {
     "id": "zustand",
-    "title": "ডিমো চিটশিট-কোড এবং বর্ণনা",
+    "title": "Zustand - A Frontend State Management tool",
     "slug": "যুস্ট্যান্ড",
     "description": "Zustand একটি ফ্রন্ট এন্ড স্ট্যাট ম্যানেজ করার টুল। আরো সহজে বললে রিডাক্স জেএস এর বিকল্প একটি স্ট্যাট ম্যানেজ করার টুল। ",
-    "colorPref": "#000",
+    "colorPref": "#57303F",
     "contents": [
       {
         "title": "যুস্ট্যান্ড ইনস্টল  করা",
@@ -44,7 +44,7 @@
             },
             {
                 "definition": "স্টোরে ফাংশন পাস করার মাধ্যমে ইনিশিয়াল স্ট্যাট সেট করা এবং স্ট্যাট মিউটেটর ফাংশন এড করা ",
-                "code": "const useBearStore = create((set) => ({ bears: 0, increasePopulation: () => set((state) => ({ bears: state.bears + 1 })), removeAllBears: () => set({ bears:  0 }), })) "
+                "code": "const useBearStore = create((set) => ({ bears: 0, increasePopulation: () => set((state) => ({ bears: state.bears + 1 })), removeAllBears: () => set({ bears:  0 }) })) "
             },
             {
                 "definition": "স্টোর এর স্টেট পেতে (হুকের সাহায্যে )",
@@ -55,7 +55,7 @@
                 "code": "const removeAllBears = useBearStore(state => state.removeAllBears); removeAllBears();"
             },
             {
-                "definition": "Middleware এপলাই করতে স্টোরে, স্টোরের পাসকৃত ফাংশন কে middlware এর ফাংশন wrapper দিয়ে wrap করে দিতে হয়। For example: (আমরা যদি রিডাক্স এর ডেভটুল টা ইউজ করতে চাই  যুস্ট্যান্ড এর জন্য তখন আমরা middleware  ইউজ করব এভাবে)",
+                "definition": "Middleware এপলাই করতে স্টোরে, স্টোরের পাসকৃত ফাংশন কে middlware এর ফাংশন wrapper দিয়ে wrap করে দিতে হয়। For example: (আমরা যদি রিডাক্স এর ডেভটুল ইউজ করতে চাই  যুস্ট্যান্ড এর জন্য তখন আমরা middleware  ইউজ করব এভাবে)",
                 "code": "create(devtools((set) => ({})));"
             }
         ]
