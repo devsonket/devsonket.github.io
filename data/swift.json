@@ -4,7 +4,8 @@
     "slug": "swift-programming",
     "description": "সুইফট প্রোগ্রামিং এর চিটশিট",
     "colorPref": "#000",
-    "contents": [{
+    "contents": [
+        {
             "title": "কনসোলে ইনপুট/ আউটপুট",
             "items": [{
                     "definition": "ইনপুট নেয়া",
@@ -18,7 +19,8 @@
         },
         {
             "title": "স্ট্রিং",
-            "items": [{
+            "items": [
+                {
                     "definition": "স্ট্রিং ইন্টারপোলেশন",
                     "code": "let str = \"This is some \\(value)\""
                 },
@@ -46,7 +48,8 @@
         },
         {
             "title": "অ্যারে",
-            "items": [{
+            "items": [
+                {
                     "definition": "নতুন অ্যারে তৈরি",
                     "code": "var array = [TYPE]()"
                 },
@@ -78,7 +81,8 @@
         },
         {
             "title": "অপশনাল",
-            "items": [{
+            "items": [
+                {
                     "definition": "ফোর্স আনর‍্যাপ করা (আনসেইফ)",
                     "code": "let unwrapped = optionalVar!"
                 },
@@ -98,7 +102,8 @@
         },
         {
             "title": "ডিকশনারি",
-            "items": [{
+            "items": [
+                {
                     "definition": "তৈরি করা",
                     "code": "var dict = [KeyType: ValueType]()"
                 },
@@ -118,7 +123,8 @@
         },
         {
             "title": "JSON ডিকোড করা",
-            "items": [{
+            "items": [
+                {
                     "definition": "JSONDecoder দিয়ে ডিকোড করা -  ১",
                     "code": "struct হিসেবে মডেল টাইপ বানাতে হবে"
                 },
@@ -129,8 +135,9 @@
             ]
         },
         {
-            "title": "নেটওয়ার্কিং বেসিক্স",
-            "items": [{
+            "title": "নেটওয়ার্কিং বেসিকস",
+            "items": [
+                {
                     "definition": "GET",
                     "code": "URLSession.shared.dataTask(with: url) { (data, response, error) in  print(data) }"
                 },
@@ -142,7 +149,8 @@
         },
         {
             "title": "SwiftUI এর টুকিটাকি",
-            "items": [{
+            "items": [
+                {
                     "definition": "একটা ভিউতে কয়টা সাবভিউ থাকবে?",
                     "code": "একটা ভিউ থেকে একটাই সাব ভিউ রিটার্ন করা যাবে। এর বেশি চাইলে নেস্টেড চিলড্রেন হিসাবে রিটার্ন করতে হবে।"
                 },
@@ -178,7 +186,8 @@
         },
         {
             "title": "SwiftUI - Image",
-            "items": [{
+            "items": [
+                {
                     "definition": "ইমেজ নেম থেকে লোড করা",
                     "code": "Image(\"hello_world \")"
                 },
@@ -194,7 +203,8 @@
         },
         {
             "title": "SwiftUI - লে আউট",
-            "items": [{
+            "items": [
+                {
                     "definition": "VStack - ভার্টিকালি সাজানো",
                     "code": "VStack {Text(\"Hello\"); Text(\"World\")}"
                 },
@@ -210,7 +220,8 @@
         },
         {
             "title": "SwiftUI - State, ObservedObject এবং EnvrioonmentObject",
-            "items": [{
+            "items": [
+                {
                     "definition": "কাজ কি?",
                     "code": "সবগুলোই অবজার্ভার প্যাটার্ন ফলো করে। ডাইনামিক বাইন্ডিং এ ব্যবহার করা যায়।"
                 },
@@ -222,7 +233,8 @@
         },
         {
             "title": "SwiftUI - ভিউ লাইফ সাইকেল",
-            "items": [{
+            "items": [
+                {
                     "definition": "যখন ভিউ লোড হয়",
                     "code": "onAppear()"
                 },
@@ -234,19 +246,21 @@
         },
         {
             "title": "থার্ড পার্টি লাইরেরি ইন্টিগ্রেশন - Cocoapods",
-            "items": [{
+            "items": [
+                {
                     "definition": "প্রোজেক্টে কোকোয়াপড ইনিশিয়ালাইজ করা",
                     "code": "pod init"
                 },
                 {
-                    "definition": "সব Pod ইন্সটল করা",
+                    "definition": "সব POD ইন্সটল করা",
                     "code": "pod install"
                 }
             ]
         },
         {
             "title": "থার্ড পার্টি লাইরেরি ইন্টিগ্রেশন - Swift Package Manager",
-            "items": [{
+            "items": [
+                {
                     "definition": "প্যাকেজ অ্যাড করা",
                     "code": "এক্সকোড ১১ থেকে সরাসরি সুইফট প্যাকেজ প্রোজেক্টে অ্যাড করা যাত। প্যাকেজের গিটহাব বা গিটল্যাব লিংক দিয়ে সার্চ করলেই এক্সকোড অ্যাড করে নিবে।"
                 },
@@ -258,7 +272,8 @@
         },
         {
             "title": "সুইফট ৫ এ র স্ট্রিং",
-            "items": [{
+            "items": [
+                {
                     "definition": "র স্ট্রিং সিনট্যাক্স",
                     "code": "let rawString = #\"\\Hello \\World\"#"
                 },
