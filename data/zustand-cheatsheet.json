@@ -59,7 +59,28 @@
                 "code": "create(devtools((set) => ({})));"
             }
         ]
-    }
+    },
+    {
+        "title": "যুস্ট্যান্ড এর Middleware পরিচিতি",
+        "items": [
+            {
+                "definition": "রিডাক্স এর ডেভটুল ইউজ করে যুস্ট্যান্ড এর স্টেট ট্রাক করার জন্য ",
+                "code": "create(devtools((set) => ({})));"
+            },
+            {
+                "definition": " যুস্ট্যান্ড এর  স্টোর কে লোকাল স্টোরেজ এর সাথে sync বা persist করাতে চাইলে ",
+                "code": "create(persist((set) => ({})));"
+            },
+            {
+                "definition": "আপনি যদি রিডাক্স এর মত  reducers and action types ইউজ করতে চান",
+                "code": "const useGrumpyStore = create(redux(reducer, initialState))"
+            },
+            {
+                "definition": "বেসিক টাইপ্সক্রিপ্ট ইউজ  এর জন্য",
+                "code": "create<State>()(...)"
+            } 
+        ]
+      }
 
     ]
   }
