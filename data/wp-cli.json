@@ -230,6 +230,22 @@
         {
           "definition": "ডাটাবেস এর প্রিফিক্স দেখায়",
           "code": "wp db prefix"
+        },
+        {
+          "definition": "ডাটাবেস রিপেয়ার করে",
+          "code": "wp db repair"
+        },
+        {
+          "definition": "ডাটাবেস এ কোন স্ট্রিং খুঁজে দেয়",
+          "code": "wp db search <string>"
+        },
+        {
+          "definition": "ডাটাবেস এর নাম আর সাইজ দেখায়",
+          "code": "wp db size"
+        },
+        {
+          "definition": "ডাটাবেস এর টেবিলের লিস্ট দেখায়",
+          "code": "wp db tables"
         }
       ]
     },
