@@ -2,7 +2,7 @@
     "id": "gin-gonic",
     "title": "জিন-গনিক",
     "slug": "Gin-Web-Framework",
-    "description": "জিন হল একটি HTTP ওয়েব ফ্রেমওয়ার্ক যা Go (গোলাং) এ লেখা। এটিতে মার্টিনির মতো এপিআই বৈশিষ্ট্য রয়েছে, তবে মার্টিনির চেয়ে 40 গুণ দ্রুত কর্মক্ষমতা সহ। আপনার যদি ভাল পারফরম্যান্সের প্রয়োজন হয় তবে গিন আপনার জন্য ।",
+    "description": "জিন হল একটি HTTP ওয়েব ফ্রেমওয়ার্ক যা Go (গোলাং) এ লেখা। এটিতে মার্টিনির মতো এপিআই বৈশিষ্ট্য রয়েছে, তবে মার্টিনির চেয়ে 40 গুণ দ্রুত কর্মক্ষমতা সহ। আপনার যদি ভাল পারফরম্যান্সের প্রয়োজন হয় তবে জিন আপনার জন্য ।",
     "colorPref": "#3176d9",
     "contents": [
     {
@@ -12,7 +12,7 @@
                 "code": "go mod init github.com/<username>/<projectname>"
             },
             {
-                "definition": "গিন ইনস্টল",
+                "definition": "জিন ইনস্টল",
                 "code": "go get -u github.com/gin-gonic/gin"
             },
             {
@@ -20,7 +20,7 @@
                 "code": "touch main.go"
             },
             {
-                "definition":"গিন ইম্পোর্ট করা",
+                "definition":"জিন ইম্পোর্ট করা",
                 "code":"import \"github.com/gin-gonic/gin\""
             }
 
@@ -46,14 +46,14 @@
     ]
     },
     {
-        "title": "গিন রাউটার",
+        "title": "জিন রাউটার",
         "items": [{
-            "definition": "গিন রাউটার ইনিশিয়ালাইজেশন",
+            "definition": "জিন রাউটার ইনিশিয়ালাইজেশন",
             "code": "router := gin.Default()"
         }]
     },
     {
-        "title": "গিন রাউটার এর মেথড",
+        "title": "জিন রাউটার এর মেথড",
         "items": [{
                 "definition": "GET",
                 "code": "router.GET(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
@@ -90,7 +90,7 @@
             
     },
     {
-        "title": "গিন রাউটার এর প্যারামিটার",
+        "title": "জিন রাউটার এর প্যারামিটার",
         "items": [{
                 "definition": "প্যারামিটার নেই",
                 "code": "router.GET(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
@@ -102,7 +102,98 @@
         ]
     },
     {
-        "title": "গিন রাউটার এর কন্টেক্সট",
+        "title":"ফাইল রেন্ডার করা",
+        "items":[{
+            "definition":"এইচটিএমএল ফাইল রেন্ডার করা",
+            "code":"router.GET(\"/\", func(c *gin.Context) {\n\tc.HTML(http.StatusOK, \"index.html\", gin.H{})\n})"
+        },
+        {
+            "definition":"যেকোন ফাইল রেন্ডার করা",
+            "code":"router.GET(\"/\", func(c *gin.Context) {\n\tc.File(\"index.html\")\n})"
+        },
+        {
+            "definition":"static ফোল্ডার থেকে ফাইল রেন্ডার করা",
+            "code":"router.Static(\"/asset\", \"./asset\")"
+        }
+    ]
+    },
+    {
+        "title":"ফাইল উপলোড",
+        "items":[{
+            "definition":"একটি ফাইল আপলোড করা",
+            "code":"router.POST(\"/upload\", func(c *gin.Context) {\n\tfile, _ := c.FormFile(\"file\")\n\tc.SaveUploadedFile(file, file.Filename)\n})"
+        },
+        {
+            "definition":"একাধিক ফাইল আপলোড করা",
+            "code":"router.POST(\"/upload\", func(c *gin.Context) {\n\tform, _ := c.MultipartForm()\n\tfiles := form.File[\"files\"]\n\tfor _, file := range files {\n\t\tc.SaveUploadedFile(file, file.Filename)\n\t}\n})"
+        }
+    ]
+    },
+    {
+        "title": "জিন রাউটার এর মিডলওয়্যার",
+        "items": [{
+                "definition": "লগার মিডলওয়্যার",
+                "code": "router.Use(gin.Logger())"
+            },
+            {
+                "definition": "স্ট্যাটিক ফাইল সার্ভ করার মিডলওয়্যার",
+                "code": "router.Use(gin.Static(\"/assets\", \"./assets\"))"
+            },
+            {
+                "definition": "রিকভারি মিডলওয়্যার",
+                "code": "router.Use(gin.Recovery())"
+            },
+            {
+                "definition": "মিডলওয়্যার যোগ করা এবং প্যারামিটার নেওয়া",
+                "code": "router.Use(gin.RecoveryWithWriter(io.Writer))"
+            },
+            {
+                "definition": "কাস্টম মিডলওয়্যার",
+                "code": "router.Use(func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            }
+        ]
+    },
+    {
+        "title":"কাস্টম মিডলওয়্যার তৈরি করা",
+        "items":[{
+            "definition":"কাস্টম মিডলওয়্যার তৈরি করা",
+            "code":"func MyCustomMiddleware() gin.HandlerFunc {\n\treturn func(c *gin.Context) {\n\t\t// এখানে কোড লিখুন\n\t}\n}"
+        }
+    ]   
+    },
+    {
+        "title": "জিন রাউটার এর গ্রুপ",
+        "items": [{
+                "definition": "গ্রুপ যোগ করা",
+                "code": "router.Group(\"/users\")"
+            },
+            {
+                "definition": "গ্রুপ এর মিডলওয়্যার যোগ করা",
+                "code": "users:= router.Group(\"/users\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+            },
+            {
+                "definition": "গ্রুপ এর রাউটার যোগ করা",
+                "code":"users.GET(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
+                
+            }
+        ]
+    },
+    {
+        "title":"কুকি এর ব্যবহার",
+        "items":[{
+            "definition":"কুকি সেট করা",
+            "code":"c.SetCookie(\"cookie_name\", \"cookie_value\", 3600, \"/\", \"example.com\", false, true)"
+        },{
+            "definition":"কুকি পাওয়া",
+            "code":"cookie, err := c.Cookie(\"cookie_name\")"
+        },{
+            "definition":"কুকি ডিলিট করা",
+            "code":"c.SetCookie(\"cookie_name\", \"\", -1, \"/\", \"example.com\", false, true)"
+        }
+      ]
+    },
+    {
+        "title": "জিন রাউটার এর কন্টেক্সট",
         "items": [{
                 "definition": "কন্টেক্সট থেকে প্যারামিটার নেওয়া",
                 "code": "c.Param(\"id\")"
@@ -176,69 +267,6 @@
                 "code": "c.Request.URL.Host"
             }
         ]
-    },
-    {
-        "title": "গিন রাউটার এর মিডলওয়্যার",
-        "items": [{
-                "definition": "লগার মিডলওয়্যার",
-                "code": "router.Use(gin.Logger())"
-            },
-            {
-                "definition": "স্ট্যাটিক ফাইল সার্ভ করার মিডলওয়্যার",
-                "code": "router.Use(gin.Static(\"/assets\", \"./assets\"))"
-            },
-            {
-                "definition": "রিকভারি মিডলওয়্যার",
-                "code": "router.Use(gin.Recovery())"
-            },
-            {
-                "definition": "মিডলওয়্যার যোগ করা এবং প্যারামিটার নেওয়া",
-                "code": "router.Use(gin.RecoveryWithWriter(io.Writer))"
-            },
-            {
-                "definition": "কাস্টম মিডলওয়্যার",
-                "code": "router.Use(func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
-            }
-        ]
-    },
-    {
-        "title":"কাস্টম মিডলওয়্যার তৈরি করা",
-        "items":[{
-            "definition":"কাস্টম মিডলওয়্যার তৈরি করা",
-            "code":"func MyCustomMiddleware() gin.HandlerFunc {\n\treturn func(c *gin.Context) {\n\t\t// এখানে কোড লিখুন\n\t}\n}"
-        }
-    ]   
-    },
-    {
-        "title": "গিন রাউটার এর গ্রুপ",
-        "items": [{
-                "definition": "গ্রুপ যোগ করা",
-                "code": "router.Group(\"/users\")"
-            },
-            {
-                "definition": "গ্রুপ এর মিডলওয়্যার যোগ করা",
-                "code": "users:= router.Group(\"/users\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
-            },
-            {
-                "definition": "গ্রুপ এর রাউটার যোগ করা",
-                "code":"users.GET(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
-                
-            }
-        ]
-    },
-    {
-        "title":"কুকি এর ব্যবহার",
-        "items":[{
-            "definition":"কুকি সেট করা",
-            "code":"c.SetCookie(\"cookie_name\", \"cookie_value\", 3600, \"/\", \"example.com\", false, true)"
-        },{
-            "definition":"কুকি পাওয়া",
-            "code":"cookie, err := c.Cookie(\"cookie_name\")"
-        },{
-            "definition":"কুকি ডিলিট করা",
-            "code":"c.SetCookie(\"cookie_name\", \"\", -1, \"/\", \"example.com\", false, true)"
-        }
-      ]
     }
     ]
 }
