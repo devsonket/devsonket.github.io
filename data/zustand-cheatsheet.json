@@ -1,0 +1,66 @@
+{
+    "id": "zustand",
+    "title": "ডিমো চিটশিট-কোড এবং বর্ণনা",
+    "slug": "যুস্ট্যান্ড",
+    "description": "Zustand একটি ফ্রন্ট এন্ড স্ট্যাট ম্যানেজ করার টুল। আরো সহজে বললে রিডাক্স জেএস এর বিকল্প একটি স্ট্যাট ম্যানেজ করার টুল। ",
+    "colorPref": "#000",
+    "contents": [
+      {
+        "title": "যুস্ট্যান্ড ইনস্টল  করা",
+        "items": [
+            {
+                "definition": "npm এর  সাহায্যে ইনস্টল  করা ",
+                "code": "npm install zustand"
+            },
+            {
+                "definition": "yarn এর  সাহায্যে ইনস্টল  করা ",
+                "code": "yarn add zustand"
+            }
+        ]
+      },
+      {
+        "title": "কোনটা কী ",
+        "items": [
+            {
+                "definition": "Mutator",
+                "code": "স্টেট চ্যাঞ্জ করার জন্য কোন ফাংশন "
+            },
+            {
+                "definition": "Store State",
+                "code": "সম্পূর্ণ  এপ্লিকেশন এর  স্টেট  হোল্ড করে  "
+            },
+            {
+                "definition": "Middleware",
+                "code": "Middleware যুস্ট্যান্ডের স্টোরে এক্সট্রা ফিচার এড করার জন্য ব্যবহৃত হয়"
+            }
+        ]
+    },
+    {
+        "title": "স্টোর ফান্ডামেন্টালস",
+        "items": [
+            {
+                "definition": "স্টোর তৈরি করা ",
+                "code": "create()"
+            },
+            {
+                "definition": "স্টোরে ফাংশন পাস করার মাধ্যমে ইনিশিয়াল স্ট্যাট সেট করা এবং স্ট্যাট মিউটেটর ফাংশন এড করা ",
+                "code": "const useBearStore = create((set) => ({ bears: 0, increasePopulation: () => set((state) => ({ bears: state.bears + 1 })), removeAllBears: () => set({ bears:  0 }), })) "
+            },
+            {
+                "definition": "স্টোর এর স্টেট পেতে (হুকের সাহায্যে )",
+                "code": "const bears = useBearStore(state => state.bears)"
+            },
+            {
+                "definition": " স্ট্যাট মিউটেটর ফাংশন এক্সেস করা  ",
+                "code": "const removeAllBears = useBearStore(state => state.removeAllBears); removeAllBears();"
+            },
+            {
+                "definition": "Middleware এপলাই করতে স্টোরে, স্টোরের পাসকৃত ফাংশন কে middlware এর ফাংশন wrapper দিয়ে wrap করে দিতে হয়। For example: (আমরা যদি রিডাক্স এর ডেভটুল টা ইউজ করতে চাই  যুস্ট্যান্ড এর জন্য তখন আমরা middleware  ইউজ করব এভাবে)",
+                "code": "create(devtools((set) => ({})));"
+            }
+        ]
+    }
+
+    ]
+  }
+  
