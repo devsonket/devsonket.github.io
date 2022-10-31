@@ -80,7 +80,28 @@
                 "code": "create<State>()(...)"
             } 
         ]
-      }
+    },
+    {
+        "title": "যুস্ট্যান্ড এর কিছু রেসিপি ",
+        "items": [
+            {
+                "definition": "স্টোরের সবকিছু নিয়ে আসা",
+                "code": "const state = useBearStore()"
+            },
+            {
+                "definition": "সিলেক্টিং মাল্টিপল স্টেট স্লাইস ",
+                "code": "const nuts = useBearStore((state) => state.nuts); const honey = useBearStore((state) => state.honey)"
+            },
+            {
+                "definition": "স্টেট কে মার্জ না করে পুরো  পরিবর্তন করে ফেলতে চাইলে মিউটেশনের set ফাংশনে আপনার সেকেন্ড প্যারামিটার পাস করতে হবে এভাবে ",
+                "code": "() => set({}, true), // clears the entire store, actions included"
+            },
+            {
+                "definition": "Async একশন",
+                "code": "fetch: async (pond) => { const response = await fetch(pond) set({ fishies:  await response.json() }) },"
+            } 
+        ]
+    }
 
     ]
   }
