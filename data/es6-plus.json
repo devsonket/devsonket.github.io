@@ -4,9 +4,13 @@
     "slug": "es6-plus-cheat-sheet",
     "description": "ইএস৬ এর পরবর্তী সকল চিটশিট সমূহ এখানে রয়েছে।",
     "colorPref": "#fcbc20",
-    "contents": [{
+    "contents": 
+    [
+        {
             "title": "মেথড সমূহ",
-            "items": [{
+            "items": 
+            [
+                {
                     "definition": "at() মেথড indexable ভ্যালুগুলোর জন্য ব্যবহার করা হয়।",
                     "code": "arr.at(-1);"
                 },

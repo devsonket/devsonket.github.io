@@ -4,9 +4,12 @@
     "slug": "adobe-illustrator-shortcuts-windows",
     "description": "অ্যাডোবি ইলাস্ট্রেটরের এর প্রয়োজনীয় উইন্ডোজ শর্টকাট কী",
     "colorPref": "#FF9A00",
-    "contents": [{
+    "contents": [
+        {
             "title": "ব্যাসিক শর্টকাট",
-            "items": [{
+            "items": 
+            [
+                {
                     "definition": "নতুন ফাইল",
                     "code": "Ctrl + N"
                 },
@@ -62,7 +65,9 @@
         },
         {
             "title": "এডিট শর্টকাট",
-            "items": [{
+            "items": 
+            [
+                {
                     "definition": "পূর্বাবস্থায় ফেরা (Undo)",
                     "code": "Ctrl + Z"
                 },
@@ -118,7 +123,9 @@
         },
         {
             "title": "ভিউ শর্টকাট (View Shortcuts)",
-            "items": [{
+            "items": 
+            [
+                {
                     "definition": "স্ক্রিন মোডগুলির মধ্যে স্যুইচ করুন (সাধারণ, পূর্ণ স্ক্রিন ইত্যাদি)",
                     "code": "F"
                 },
