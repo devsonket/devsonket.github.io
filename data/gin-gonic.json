@@ -102,6 +102,22 @@
         ]
     },
     {
+        "title":"ফাইল রেন্ডার করা",
+        "items":[{
+            "definition":"এইচটিএমএল ফাইল রেন্ডার করা",
+            "code":"router.GET(\"/\", func(c *gin.Context) {\n\tc.HTML(http.StatusOK, \"index.html\", gin.H{})\n})"
+        },
+        {
+            "definition":"যেকোন ফাইল রেন্ডার করা",
+            "code":"router.GET(\"/\", func(c *gin.Context) {\n\tc.File(\"index.html\")\n})"
+        },
+        {
+            "definition":"static ফোল্ডার থেকে ফাইল রেন্ডার করা",
+            "code":"router.Static(\"/asset\", \"./asset\")"
+        }
+    ]
+    },
+    {
         "title": "জিন রাউটার এর কন্টেক্সট",
         "items": [{
                 "definition": "কন্টেক্সট থেকে প্যারামিটার নেওয়া",
