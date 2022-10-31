@@ -1,6 +1,6 @@
 {
     "id": "firefox-win",
-    "title": "মজিলা ফায়ারফক্স(উইন্ডোজ)",
+    "title": "মজিলা ফায়ারফক্স (উইন্ডোজ)",
     "slug": "firefox-win",
     "description": "মজিলা ফায়ারফক্সের প্রয়োজনীয় উইন্ডোজ শর্টকাট কী এবং অন্যান্য গুরুত্বপূর্ণ তথ্য",
     "colorPref": "#e31b41",
@@ -182,7 +182,8 @@
         },
         {
             "title": "টেক্সট শর্টকাট",
-            "items": [{
+            "items": [
+                {
                     "definition": "কপি",
                     "code": "Ctrl + C"
                 },
@@ -214,7 +215,8 @@
         },
         {
             "title": "মাউস শর্টকাট",
-            "items": [{
+            "items": [
+                {
                     "definition": "পিছনে যাওয়া",
                     "code": "Shift + Scroll Down"
                 },
