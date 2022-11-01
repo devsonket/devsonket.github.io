@@ -481,6 +481,18 @@
                 "code":"ch := make(chan int, 5)"
             }
             ]
+        },
+        {
+            "title":"জেনারিক ফাংশন",
+            "items":[{
+                "definition":"জেনারিক ফাংশন তৈরি করা",
+                "code":"func genericFunc[T any](a T) T {\n\treturn a\n}"
+            },
+            {
+                "definition":"জেনারিক ফাংশন কল করা",
+                "code":"genericFunc[int](5)"
+            }
+            ]
         }
     ]
 }
