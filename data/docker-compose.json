@@ -18,13 +18,28 @@
       "title": "মৌলিক কমান্ড (Basic Commands)",
       "items": [
         {
+          "definition": "ডকার সার্ভিস build/rebuild করতে ",
+          "code": "docker-compose build"
+        },
+        {
+          "definition": "ডকার সার্ভিস start/stop করতে ",
           "code": "docker-compose start\ndocker-compose stop"
         },
         {
+          "definition": "ডকার সার্ভিস পজ করতে \nডকার সার্ভিস পুনরায় শুরু করতে ",
           "code": "docker-compose pause\ndocker-compose unpause"
         },
         {
-          "code": "docker-compose ps\ndocker-compose up\ndocker-compose down"
+          "definition": "ডকার  সার্ভিসের বর্তমান অবস্থা জানতে",
+          "code": "docker-compose ps"
+        },
+        {
+          "definition": "ডকার সার্ভিস build/rebuild করতে, অথবা start/restart করতে, অথবা create/recreate করতে ",
+          "code": "docker-compose up"
+        },
+        {
+          "definition": "UP এর মাধ্যমে তৈরি কনটেইনার, নেটওয়ার্ক, ভলিউম এবং ইমেজ বন্ধ এবং রিমুভ করতে ",
+          "code": "docker-compose down"
         }
       ]
     },
