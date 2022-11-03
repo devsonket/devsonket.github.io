@@ -4,9 +4,11 @@
     "slug": "c-sharp",
     "description": "সি-শার্প প্রোগ্রামিং",
     "colorPref": "#1290FD",
-    "contents": [{
+    "contents": [
+        {
             "title": "ডাটা টাইপ(ভ্যালু টাইপ) [সর্বাধিক ব্যবহৃত]",
-            "items": [{
+            "items": [
+                {
                     "definition": "বুলিয়ান ভ্যালু",
                     "code": "bool"
                 },
@@ -46,7 +48,8 @@
         },
         {
             "title": "অপারেটরস",
-            "items": [{
+            "items": [
+                {
                     "definition": "সাধারন গাণিতিক অপারেশন",
                     "code": " +, -, *, /, %, ++, --"
                 },
@@ -70,7 +73,8 @@
         },
         {
             "title": "গাণিতিক বিল্ট-ইন ফাংশন",
-            "items": [{
+            "items": [
+                {
                     "definition": "বর্গমূল করার জন্য",
                     "code": "Math.Sqrt(x)"
                 },
@@ -98,7 +102,8 @@
         },
         {
             "title": "লিস্ট ক্লাস",
-            "items": [{
+            "items": [
+                {
                     "definition": "ইন্টিজার টাইপের লিস্ট তৈরি করা",
                     "code": "List<int> list = new List<int>();"
                 },
@@ -146,7 +151,8 @@
         },
         {
             "title": "ডিকশনারি ক্লাস",
-            "items": [{
+            "items": [
+                {
                     "definition": "ডিকশনারি তৈরি করা",
                     "code": "Dictionary<TKey,TValue> dict = new Dictionary<TKey,TValue>();"
                 },
@@ -170,7 +176,8 @@
         },
         {
             "title": "স্ট্রিং অপারেশন",
-            "items": [{
+            "items": [
+                {
                     "definition": "ডিক্লারেশন",
                     "code": " string str = \"Hello\"; "
                 },
@@ -234,7 +241,6 @@
                     "definition": "একটি নির্দিষ্ট ক্যারেক্টার সর্বশেষ কতো নাম্বার ইন্ডেক্সে অবস্থিত বের করা",
                     "code": "str.IndexOf('l');"
                 },
-
                 {
                     "definition": "নির্দিষ্ট ক্যারেক্টার রিপ্লেস করা",
                     "code": " string x = \"F#\";\nstring y = x.Replace('F', 'C'); "

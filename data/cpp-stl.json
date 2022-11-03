@@ -4,9 +4,11 @@
     "slug": "cpp-stl",
     "description": "সি প্লাস প্লাস এসটিএল প্রোগ্রামিং এর চিটশিট",
     "colorPref": "#000",
-    "contents": [{
+    "contents": [
+        {
             "title": "ভেক্টর",
-            "items": [{
+            "items": [
+                {
                     "definition": "ভেক্টর-এর স্ট্যান্ডার্ড লাইব্রেরি",
                     "code": "#include <vector>"
                 },
@@ -114,7 +116,8 @@
         },
         {
             "title": "স্ট্যাক",
-            "items": [{
+            "items": [
+                {
                     "definition": "স্ট্যাক-এর স্ট্যান্ডার্ড লাইব্রেরি",
                     "code": "#include <stack>"
                 },
@@ -154,7 +157,8 @@
         },
         {
             "title": "কিউ",
-            "items": [{
+            "items": [
+                {
                     "definition": "কিউ-এর স্ট্যান্ডার্ড লাইব্রেরি",
                     "code": "#include <queue>"
                 },
@@ -202,7 +206,8 @@
         },
         {
             "title": "সেট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সেট-এর স্ট্যান্ডার্ড লাইব্রেরি",
                     "code": "#include <set>"
                 },
@@ -258,7 +263,8 @@
         },
         {
             "title": "ম্যাপ",
-            "items": [{
+            "items": [
+                {
                     "definition": "ম্যাপ-এর স্ট্যান্ডার্ড লাইব্রেরি",
                     "code": "#include <map>"
                 },
@@ -326,7 +332,8 @@
         },
         {
             "title": "আনঅর্ডার-ম্যাপ",
-            "items": [{
+            "items": [
+                {
                     "definition": "আনঅর্ডার-ম্যাপ-এর স্ট্যান্ডার্ড লাইব্রেরি",
                     "code": "#include <unordered_map>"
                 },
@@ -366,7 +373,8 @@
         },
         {
             "title": "আনঅর্ডার-সেট",
-            "items": [{
+            "items": [
+                {
                     "definition": "আনঅর্ডার-সেট-এর স্ট্যান্ডার্ড লাইব্রেরি",
                     "code": "#include <set>"
                 },
@@ -422,7 +430,8 @@
         },
         {
             "title": "মাল্টি-সেট",
-            "items": [{
+            "items": [
+                {
                     "definition": "মাল্টি-সেট-এর স্ট্যান্ডার্ড লাইব্রেরি",
                     "code": "#include <set>"
                 },
@@ -478,7 +487,8 @@
         },
         {
             "title": "মাল্টি-ম্যাপ",
-            "items": [{
+            "items": [
+                {
                     "definition": "মাল্টি-ম্যাপ-এর স্ট্যান্ডার্ড লাইব্রেরি",
                     "code": "#include <map>"
                 },
@@ -518,7 +528,8 @@
         },
         {
             "title": "পেয়ার",
-            "items": [{
+            "items": [
+                {
                     "definition": "পেয়ার-এর স্ট্যান্ডার্ড লাইব্রেরি",
                     "code": "#include <utility>"
                 },
@@ -554,7 +565,8 @@
         },
         {
             "title": "প্রায়োরিটি কিউ",
-            "items": [{
+            "items": [
+                {
                     "definition": "প্রায়োরিটি কিউ-এর স্ট্যান্ডার্ড লাইব্রেরি",
                     "code": "#include <queue>"
                 },
@@ -590,7 +602,8 @@
         },
         {
             "title": "লিস্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "লিস্ট-এর স্ট্যান্ডার্ড লাইব্রেরি",
                     "code": "#include <list>"
                 },
@@ -714,7 +727,8 @@
         },
         {
             "title": "ডিকিউ",
-            "items": [{
+            "items": [
+                {
                     "definition": "ডিকিউ-এর স্ট্যান্ডার্ড লাইব্রেরি",
                     "code": "#include <deque>"
                 },
