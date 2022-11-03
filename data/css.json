@@ -4,9 +4,11 @@
     "slug": "css",
     "description": "সিএসএস এর মাধ্যমে ওয়েব পেইজের লেআউট ডিজাইন ও ওয়েব ব্রাউজারে ডকুমেন্ট কিভাবে প্রদর্শন হবে তা নির্ধারন করা হয়।",
     "colorPref": "#264DE4",
-    "contents": [{
+    "contents": [
+        {
             "title": "প্রাথমিক ধারণা",
-            "items": [{
+            "items": [
+                {
                     "definition": "সিনট্যাক্স সিলেক্টর",
                     "code": "selector{ property: value;}"
                 },
@@ -38,7 +40,8 @@
         },
         {
             "title": "ব্যাকগ্রাউন্ড",
-            "items": [{
+            "items": [
+                {
                     "definition": "ব্যাকগ্রাউন্ড প্রপার্টিস",
                     "code": "background | background-color | background-image | background-position | background-size | background-attachment | background-repeat |  background-clip | background-origin"
                 },
@@ -78,7 +81,8 @@
         },
         {
             "title": "ফন্ট বা টাইপোগ্রাফি",
-            "items": [{
+            "items": [
+                {
                     "definition": "ফন্ট প্রপার্টি",
                     "code": "font-style | font-variant | font-weight | font-size | line-height | font-family | font-stretch"
                 },
@@ -114,7 +118,8 @@
         },
         {
             "title": "ট্রানজিশন এবং ট্রান্সফর্ম",
-            "items": [{
+            "items": [
+                {
                     "definition": "ট্রানজিশন প্রপার্টি",
                     "code": "transition | transition-delay | transition-duration | transition-property | transition-timing-function"
                 },

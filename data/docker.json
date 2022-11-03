@@ -4,9 +4,11 @@
     "slug": "docker-cheat-sheet",
     "description": "ডকার চিটশিট",
     "colorPref": "#000",
-    "contents": [{
+    "contents": [
+        {
             "title": "ডকার ভারশন",
-            "items": [{
+            "items": [
+                {
                     "definition": "ডকার ভারশন",
                     "code": "docker --version"
                 },
@@ -38,7 +40,8 @@
         },
         {
             "title": "ডকার কন্টেইনার কমান্ডসমূহ",
-            "items": [{
+            "items": [
+                {
                     "definition": "List of all ডকার কন্টেইনার, even not running",
                     "code": "docker container ls -a"
                 },
@@ -86,7 +89,8 @@
         },
         {
             "title": "ডকার ইমেজ কমান্ডসমূহ",
-            "items": [{
+            "items": [
+                {
                     "definition": "List of all ডকার ইমেজ",
                     "code": "docker images"
                 },
@@ -106,7 +110,8 @@
         },
         {
             "title": "ডকার ইমেজ and কন্টেইনার run কমান্ডসমূহ",
-            "items": [{
+            "items": [
+                {
                     "definition": "ডকারফাইল run",
                     "code": "docker run -p 3000:3000 image"
                 },
@@ -122,7 +127,8 @@
         },
         {
             "title": "ডকার কম্পোজ কমান্ডসমূহ",
-            "items": [{
+            "items": [
+                {
                     "definition": "ডকার কম্পোজ up",
                     "code": "docker-compose up -d -f docker-compose.yml"
                 },
@@ -165,33 +171,34 @@
             ]
         },
         {
-          "title": "ডকার Hub এর কমান্ডসমূহ",
-          "items": [
-            {
-              "definition": "ডকার CLI এ লগইন করতে",
-              "code": "docker login"
-            },
-            {
-              "definition": "ডকার Hub থেকে স্যাম্পল ইমেজ পুল করতে",
-              "code": "docker pull hello-world"
-            },
-            {
-              "definition": "ডকার ইমেজ build করুন ডকার Hub এ আপলোড এর জন্য",
-              "code": "docker build -t <your_username>/my-private-repo"
-            },
-            {
-              "definition": "ডকার ইমেজ locally রান করতে",
-              "code": "docker run <your_username>/my-private-repo"
-            },
-            {
-              "definition": "ডকার ইমেজটি ডকার Hub এ পুশ করতে",
-              "code": "docker push <your_username>/my-private-repo"
-            }
-          ]
+            "title": "ডকার Hub এর কমান্ডসমূহ",
+            "items": [
+                {
+                    "definition": "ডকার CLI এ লগইন করতে",
+                    "code": "docker login"
+                },
+                {
+                    "definition": "ডকার Hub থেকে স্যাম্পল ইমেজ পুল করতে",
+                    "code": "docker pull hello-world"
+                },
+                {
+                    "definition": "ডকার ইমেজ build করুন ডকার Hub এ আপলোড এর জন্য",
+                    "code": "docker build -t <your_username>/my-private-repo"
+                },
+                {
+                    "definition": "ডকার ইমেজ locally রান করতে",
+                    "code": "docker run <your_username>/my-private-repo"
+                },
+                {
+                    "definition": "ডকার ইমেজটি ডকার Hub এ পুশ করতে",
+                    "code": "docker push <your_username>/my-private-repo"
+                }
+            ]
         },
         {
             "title": "ডকার সিস্টেম কমান্ডসমূহ",
-            "items": [{
+            "items": [
+                {
                     "definition": "ডকার ডিস্ক ইউসেজ জানতে",
                     "code": "docker system df"
                 },
@@ -227,10 +234,12 @@
         },
         {
             "title": "ডকার credentials কমান্ডসমূহ",
-            "items": [{
-                "definition": "ডকার login",
-                "code": "docker login"
-            }]
+            "items": [
+                {
+                    "definition": "ডকার login",
+                    "code": "docker login"
+                }
+            ]
         }
     ]
 }
