@@ -73,3 +73,7 @@ yarn-error.log
 static/static/thumbnail/*.jpg
 !static/static/thumbnail/thumbnail.jpg
 .idea/*
+
+# lock file
+yarn.lock
+package-lock.json
