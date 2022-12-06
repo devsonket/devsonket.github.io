@@ -1,6 +1,6 @@
 {
 	"id": "nmap-cheat-sheet",
-	"tittle": "Nmap Cheat Sheet বাংলায়",
+	"title": "Nmap Cheat Sheet বাংলায়",
 	"slug": "nmap",
 	"description": "Nmap একটি নেটওয়ার্ক স্ক্যানারা যেটি তৈরী করেছেন Gordon Lyon",
 	"colorPref": "#264DE4",
