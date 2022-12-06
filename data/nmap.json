@@ -1,0 +1,105 @@
+{
+    "id":"nmap-cheat-sheet",
+    "tittle":"Nmap Cheat Sheet বাংলায়",
+    "slug":"nmap",
+    "description":"Nmap একটি নেটওয়ার্ক স্ক্যানারা যেটি তৈরী করেছেন Gordon Lyon",
+    "colorPref":"#264DE4",
+    "contents":[
+       {
+          "title":"Nmap ব্যাসিক",
+          "items":[
+             {
+                "definition":"যেকোনো ওপেন পোর্ট স্ক্যান",
+                "code":"nmap [target ip/domain]"
+             },
+             {
+                "definition":"IPv6 স্ক্যান",
+                "code":"nmap -6 [target ip/domain]"
+             },
+             {
+                "definition":"ইন্টারফেস সিলেক্ট করে স্ক্যান",
+                "code":"nmap -e [INTER­FACE] [target ip/domain]"
+             },
+             {
+                "definition":"স্ক্যান রিপোর্ট সেভ করা",
+                "code":"nmap -oN [filename] [target ip/domain]"
+             },
+             {
+                "definition":"সিলেক্টেড পোর্ট স্ক্যান",
+                "code":"nmap -p[port number] [targer ip/domain]"
+             },
+             {
+                "definition":"রেঞ্জ অফ পোর্ট স্ক্যান",
+                "code":"nmap -p[1-1000] [targer ip/domain]"
+             },
+             {
+                "definition":"সার্ভিসের নাম অনুসরে পোর্ট স্ক্যান করা",
+                "code":"nmap -p smtp [target]"
+             }
+          ]
+       },
+       {
+          "title":"ফিঙারপ্রিন্টিং উইথ Nmap",
+          "items":[
+             {
+                "definition":"ডিস্প্লে সার্ভিস ভার্সন",
+                "code":"nmap -sV [target]"
+             },
+             {
+                "definition":"এগ্রেসিভ স্ক্যান",
+                "code":"nmap -A [target]"
+             },
+             {
+                "definition":"ডিটেক্ট অপারেটিং সিস্টেম",
+                "code":"nmap -O [target]"
+             },
+             {
+                "definition":"ডিটেক্ট অপারেটিং সিস্টেম verbose",
+                "code":"nmap -O -v [target]"
+             }
+          ]
+       },
+       {
+          "title":"Nmap স্ক্রিপ্ট ইঞ্জিন",
+          "items":[
+             {
+                "definition":"রান ইন্ডিভিজুয়াল স্ক্রিপ্ট",
+                "code":"nmap –script [scrip­­t.nse] [target]"
+             },
+             {
+                "definition":"এক্সিকিউট স্ক্রিপ্ট বাই ক্যাটেগরি",
+                "code":"nmap –script [category] [target]"
+             },
+             {
+                "definition":"আপডেট স্ক্রিপ্ট ডাটাবেস",
+                "code":"nmap –scrip­­t-­u­p­datedb"
+             }
+          ]
+       },
+       {
+          "title":"কিছু উদাহরণ",
+          "items":[
+             {
+                "definition":"সার্ভিস এবং অপারেটিং সিস্টেম ডিটেক্ট করার জন্য",
+                "code":"nmap -sV -O [target]"
+             },
+             {
+                "definition":"ডিটেক্ট ওয়েব সার্ভার",
+                "code":"nmap -sV --script http-title [target]"
+             },
+             {
+                "definition":"স্ক্যান কমন পোর্ট",
+                "code":"nmap --top-­ports 10 [target]"
+             },
+             {
+                "definition":"ব্রুট ফোর্স ডিএনএস রেকোর্ডস",
+                "code":"nmap --script dns-brute [target]"
+             },
+             {
+                "definition":"স্নিফার ডিটেক্ট",
+                "code":"nmap -sP --script sniffe­r-d­etect [target]"
+             }
+          ]
+       }
+    ]
+ }
