@@ -260,6 +260,33 @@
                         "// App.svelte \n\n<script>\n  let scoops = 1;\n  let flavours = ['Mint choc chip'];\n  let menu = [\n    'Cookies and cream',\n    'Mint choc chip',\n    'Raspberry ripple'\n  ];\n\n  function join(flavours) {\n    if (flavours.length === 1) return flavours[0];\n    return `${flavours.slice(0, -1).join(', ')} and ${flavours[flavours.length - 1]}`;\n  }\n</script> \n\n",
                         "<h2>Size</h2> \n\n<label>\n  <input type=radio bind:group={scoops} name='scoops' value={1}>\n  One scoop\n</label> \n\n <label> \n  <input type=radio bind:group={scoops} name='scoops' value={2}>\n  Two scoops\n</label> \n\n<label> \n  <input type=radio bind:group={scoops} name='scoops' value={3}> \nThree scoops\n</label> \n\n<h2>Flavours</h2> \n{#each menu as flavour}\n <label>\n    <input type=checkbox bind:group={flavours} name='flavours' value={flavour}> \n      {flavour}\n    </label> \n{/each} \n\n{#if flavours.length === 0}\n <p>Please select at least one flavour</p> \n{:else if flavours.length > scoops} \n  <p>Can't order more flavours than scoops!</p> \n{:else} \n  <p>\n    You ordered {scoops} {scoops === 1 ? 'scoop' : 'scoops'} of {join(flavours)} \n  </p>\n{/if}"
                     ]
+                },
+                {
+                    "definition": "টেক্সট এরিয়া ইনপুট বাইন্ডিং",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  import { marked } from 'marked';\n  let value = `Some words are *italic*, some are **bold**`;\n</script> \n\n",
+                        "{@html marked(value)}\n\n<textarea bind:value></textarea> \n\n<style>\n  textarea { width: 100%; height: 200px; }\n</style>"
+                    ]
+                },
+                {
+                    "definition": "টেক্সট এরিয়া ইনপুট বাইন্ডিং",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  import { marked } from 'marked';\n  let value = `Some words are *italic*, some are **bold**`;\n</script> \n\n",
+                        "{@html marked(value)}\n\n<textarea bind:value></textarea> \n\n<style>\n  textarea { width: 100%; height: 200px; }\n</style>"
+                    ]
+                },
+                {
+                    "definition": "সিলেক্ট বাইন্ডিং",
+                    "code": [
+                        "// App.svelte \n\n<script>\n  let questions = [\n  let questions = [\n    { id: 1, text: `Where did you go to school?` }, \n    { id: 2, text: `What is your mother's name?` },\n    { id: 3, text: `What is another personal fact that an attacker could easily find with Google?` }\n  ];\n\n  let selected;\n\n  let answer = '';\n\n  function handleSubmit() { \n    alert(`answered question ${selected.id} (${selected.text}) with '${answer}'`);\n  }\n</script> \n\n",
+                        "<h2>Insecurity questions</h2> \n\n<form on:submit|preventDefault={handleSubmit}>\n  <select bind:value={selected} on:change='{() => answer = ''}'>\n    {#each questions as question}\n      <option value={question}>\n        {question.text}\n      </option>\n    {/each} \n  </select>\n\n  <input bind:value={answer}>\n\n  <button disabled={!answer} type=submit>\n    Submit\n  </button>\n</form>\n\n<p>selected question {selected ? selected.id : '[waiting...]'}</p>\n\n<style>\n  input {\n    display: block;\n    width: 500px;\n    max-width: 100%;\n  }\n</style>"
+                    ]
+                },
+                {
+                    "definition": "একাধিক সিলেক্ট",
+                    "code": [
+                        ""
+                    ]
                 }
             ]
         },
