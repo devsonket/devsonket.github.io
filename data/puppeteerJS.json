@@ -1,0 +1,54 @@
+{
+    "id": "Puppeteer",
+    "title": "পাপিটার",
+    "slug": "puppeteer",
+    "description": "পাপিটার জেএস হচ্ছে একটি নোড.জেএস লাইব্রেরি যা আমাদের বড় ধরনের এপিআই সরবরাহো করে ডেভটুলস প্রোটোকলের মাধ্যমে ক্রোম/ক্রোমিয়াম নিয়ন্ত্রণ করার জন্যে। এর মাধ্যমে আমরা ওয়েব এস্ক্রাপিং করতে পারব অটোমেশন করতে পারব ইস্ক্রিনসট তৈরি করতে পারবো",
+    "colorPref": "#20c997",
+    "contents": [{ 
+            "title": "প্রাথমিক কমান্ডসমূহ",
+            "items": [
+                {
+                    "definition": "এনপিএম এর মাধ্যেমে ইন্সটল করার জন্যে",
+                    "code": "npm install puppeteer"
+                },
+                {
+                    "definition": "ইয়ার্ন এর মাধ্যেমে ইন্সটল করার জন্যে",
+                    "code": "yarn add puppeteer"
+                },
+                {
+                    "definition": "পাপিটারের লাইট ভার্সন পাপিটার-কোর ইন্সটল করার জন্যে",
+                    "code": "npm i puppeteer-core"
+                },
+                {
+                    "definition": "পাপিটারে সাধারণত ক্রোমিয়াম ডিফল্ট ব্রাউজার হিসেবে থাকে কিন্তু অন্য ব্রাউজারের মাধ্যমে অটোমেশন প্রোগ্রাম চালাতে হলে যেমন ফায়ারফক্স এর মাধ্যেমে করতে হলে ",
+                    "code": "PUPPETEER_PRODUCT=firefox npm i puppetee"
+                }
+            ]
+        },
+        {
+            "title": "পাপীটার জেএস রান করার কোড।", 
+            "items": [
+                {
+                    "definition": "১। পাপীটার ইম্পরট করতে হলে",
+                    "code":"import puppeteer from 'puppeteer' or const puppeteer = require('puppteer')"
+                },
+                {
+                    "definition": "২। ব্রাউজার খোলার জন্য async function এ",
+                    "code": "await puppeteer.launch();"
+                },
+                {
+                    "definition": "৩। ব্রাউজারের মাধ্যমে url ওপেন করার জন্যে",
+                    "code": "const browser = await puppeteer.launch() \nconst page = await browser.newpage() \nawait page.goto('https://www.google.com')"
+                },
+                {
+                    "definition": "৩। ব্রাউজারের মাধ্যমে url ওপেন করার জন্যে Gui মোডে রান করার জন্যে ",
+                    "code": "const browser = await puppeteer.launch({headless: false});"
+                },
+                {
+                    "definition": "৪। ব্রাউজারের মাধ্যমে screenshot তুলার জন্যে",
+                    "code": "const puppeteer = require('puppeteer')\nconst browser = await puppeteer.launch();\nconst page = await browser.newPage();\nawait page.setViewport({ width: 1280, height: 720 });\nconst website_url = 'https://www.google.com'\nawait page.goto(website_url, { waitUntil: 'networkidle0' });\nawait page.screenshot({\npath: 'screenshot.jpg'\n});\nawait browser.close();"
+                }
+            ]
+        }
+    ]
+}

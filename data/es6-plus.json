@@ -1,0 +1,32 @@
+{
+    "id": "es6-plus",
+    "title": "ইএস৬ পরবর্তী চিটশিট সমূহ ",
+    "slug": "es6-plus-cheat-sheet",
+    "description": "ইএস৬ এর পরবর্তী সকল চিটশিট সমূহ এখানে রয়েছে।",
+    "colorPref": "#fcbc20",
+    "contents": 
+    [
+        {
+            "title": "মেথড সমূহ",
+            "items": 
+            [
+                {
+                    "definition": "at() মেথড indexable ভ্যালুগুলোর জন্য ব্যবহার করা হয়।",
+                    "code": "arr.at(-1);"
+                },
+                {
+                    "definition": "arr.flat মেথড সব সাব array কে একটি নতুন array তে নির্দিষ্ট গভীরতা পর্যন্ত Recursivly  একত্রিত করে, এটি একটি প্যারামিটার নেয়, যেটি বলে দিবে কতটা সাব array একত্রিত করতে হবে।",
+                    "code": "arr.flat, যেমন const arr = [0, 1, 2, [[[3, 4]]]];  arr.flat(2); // [0, 1, 2, [3, 4]]"
+                },
+                {
+                    "definition": "arr.flatMap মেথড প্রতিটি array এর প্রতিটি Elements-এ একটি কলব্যাক ফাংশন এপ্লাই করে নতুন array তে রিটার্ন করে এবং ১ স্তরে সমতল ভাবে একত্রিত করে।",
+                    "code": "arr.flatMap, যেমন const arr1 = [1, 2, [3], [4, 5], 6, []];  const flattened = arr1.flatMap(num => num); //expected output: [1, 2, 3, 4, 5, 6]"
+                },
+                {
+                    "definition": "Object.hasOwn মেথড একটি অবজেক্ট এর কোন প্রপার্টি আছে কিনা তা চেক করে। যদি থাকে তাহলে true রিটার্ন করে, না থাকলে false রিটার্ন করে।",
+                    "code": "myObject.hasOwn(Object, 'name');"
+                }
+            ]
+        }
+    ]
+}

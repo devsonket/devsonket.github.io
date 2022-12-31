@@ -1,0 +1,196 @@
+{
+    "id": "terminal-text-editors-linux",
+    "title": "টার্মিনাল টেক্সট এডিটর (লিনাক্স)",
+    "slug": "terminal-text-editors-linux",
+    "description": "টার্মিনাল বেসড টেক্সট কোড এডিটর এর চিটশিট",
+    "colorPref": "#609",
+    "contents": [{
+            "title": "ভিম টেক্সট এডিটর",
+            "items": [{
+                    "definition": "ভিম ইন্সটল করার জন্য",
+                    "code": "sudo apt install vim"
+                },
+                {
+                    "definition": "ফাইল তৈরি বা খোলা করার জন্য",
+                    "code": "vim filename.txt"
+                },
+                {
+                    "definition": "ইনসার্ট মোড এ যাবার জন্য",
+                    "code": "i"
+                },
+                {
+                    "definition": "ইনসার্ট মোড থেকে বের হবার জন্য",
+                    "code": "Esc"
+                },
+                {
+                    "definition": "লাইন এর শুরুতে এ যাবার জন্য",
+                    "code": "0"
+                },
+                {
+                    "definition": "লাইন এর শেষ এ যাবার জন্য",
+                    "code": "$"
+                },
+                {
+                    "definition": "ফাইল এর ফার্স্ট লাইন এ যাবার জন্য",
+                    "code": "gg"
+                },
+                {
+                    "definition": "ফাইল এর লাস্ট লাইন এ যাবার জন্য",
+                    "code": "G"
+                },
+                {
+                    "definition": "n তম লাইন এ যাবার জন্য",
+                    "code": ":n"
+                },
+                {
+                    "definition": "পরে নতুন লাইন তৈরি করার জন্য",
+                    "code": "o"
+                },
+                {
+                    "definition": "পূর্বে নতুন লাইন তৈরি করার জন্য",
+                    "code": "O"
+                },
+                {
+                    "definition": "ক্যারেক্টার ডিলিট করার জন্য",
+                    "code": "x"
+                },
+                {
+                    "definition": "লাইন ডিলিট করার জন্য",
+                    "code": "dd"
+                },
+                {
+                    "definition": "মোডিফিকেশ আনডু করার জন্য",
+                    "code": "u"
+                },
+                {
+                    "definition": "মোডিফিকেশ রিডু করার জন্য",
+                    "code": "Ctrl+r"
+                },
+                {
+                    "definition": "কপি করার জন্য",
+                    "code": "yy"
+                },
+                {
+                    "definition": "পূর্বে পেস্ট করার জন্য",
+                    "code": "P"
+                },
+                {
+                    "definition": "পরে পেস্ট করার জন্য",
+                    "code": "p"
+                },
+                {
+                    "definition": "টেক্সট এরিয়া সিলেক্ট করার জন্য",
+                    "code": "v and then use arrow key"
+                },
+                {
+                    "definition": "সিলেক্ট এরিয়া বাদ করার জন্য",
+                    "code": "d"
+                },
+                {
+                    "definition": "কপি করার জন্য",
+                    "code": "y"
+                },
+                {
+                    "definition": "সার্চ করার জন্য",
+                    "code": "/string Or ?string and then press n find next"
+                },
+                {
+                    "definition": "সার্চ এন্ড রিপ্লেস করার জন্য",
+                    "code": ":%s/search/replace/g"
+                },
+                {
+                    "definition": "ফাইল সংরক্ষণ এবং বন্ধ করার জন্য",
+                    "code": ":wq / :x"
+                },
+                {
+                    "definition": "ফাইল সংরক্ষণ করার জন্য",
+                    "code": ":w"
+                },
+                {
+                    "definition": "ফাইল বন্ধ করার জন্য",
+                    "code": ":q"
+                }
+            ]
+        },
+        {
+            "title": "ন্যানো টেক্সট এডিটর",
+            "items": [{
+                    "definition": "ন্যানো ইন্সটল করার জন্য",
+                    "code": "sudo apt install nano"
+                },
+                {
+                    "definition": "ফাইল তৈরি বা খোলা করার জন্য",
+                    "code": "nano filename.txt"
+                },
+                {
+                    "definition": "লাইন এর শুরুতে এ যাবার জন্য",
+                    "code": "Ctrl+A"
+                },
+                {
+                    "definition": "লাইন এর শেষ এ যাবার জন্য",
+                    "code": "Ctrl+E"
+                },
+                {
+                    "definition": "ফাইল এর ফার্স্ট লাইন এ যাবার জন্য",
+                    "code": "Ctrl+Y"
+                },
+                {
+                    "definition": "ফাইল এর লাস্ট লাইন এ যাবার জন্য",
+                    "code": "Ctrl+V"
+                },
+                {
+                    "definition": "n তম লাইন এ যাবার জন্য",
+                    "code": "Ctrl+_"
+                },
+                {
+                    "definition": "ক্যারেক্টার ডিলিট করার জন্য",
+                    "code": "Backspace Or Delete"
+                },
+                {
+                    "definition": "লাইন ডিলিট করার জন্য",
+                    "code": "Ctrl+K"
+                },
+                {
+                    "definition": "মোডিফিকেশ আনডু করার জন্য",
+                    "code": "Alt+U"
+                },
+                {
+                    "definition": "মোডিফিকেশ রিডু করার জন্য",
+                    "code": "Alt+E"
+                },
+                {
+                    "definition": "টেক্সট এরিয়া সিলেক্ট করার জন্য",
+                    "code": "Alt+A and then use arrow key"
+                },
+                {
+                    "definition": "সিলেক্ট এরিয়া বাদ করার জন্য",
+                    "code": "Ctrl+6"
+                },
+                {
+                    "definition": "কপি করার জন্য",
+                    "code": "Alt+6"
+                },
+                {
+                    "definition": "কাট করার জন্য",
+                    "code": "Ctrl+K"
+                },
+                {
+                    "definition": "পেস্ট করার জন্য",
+                    "code": "Ctrl+U"
+                },
+                {
+                    "definition": "সার্চ এন্ড রিপ্লেস করার জন্য",
+                    "code": "Ctrl+\\"
+                },
+                {
+                    "definition": "ফাইল সংরক্ষণ করার জন্য",
+                    "code": "Ctrl+O Enter"
+                },
+                {
+                    "definition": "ফাইল বন্ধ করার জন্য",
+                    "code": "Ctrl+X"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,228 @@
+{
+    "id": "react-native",
+    "title": "রিঅ্যাক্ট নেটিভ",
+    "slug": "react-native",
+    "description": "মাত্র জাভাস্ক্রিপ্ট ব্যবহার করে নিমিশেই এন্ড্রয়েড এবং আইওএস এপ বানিয়ে ফেলার যুগান্তকারী টেকনোলোজি হচ্ছে রিয়েক্ট নেটিভ",
+    "colorPref": "#0288d1",
+    "contents": [
+        {
+            "title": "রিঅ্যাক্ট নেটিভ ইন্সটল করা",
+            "items": [
+                {
+                    "definition": "Expo ব্যবহার করে ইন্সটল করা",
+                    "code": "npx create-expo-app <project-name>"
+                },
+                {
+                    "definition": "Native CLI ব্যবহার করে ইন্সটল করা",
+                    "code": "npx react-native init <project-name>"
+                }
+            ]
+        },
+        {
+            "title": "বর্ডার সেট করা",
+            "items": [
+                {
+                    "definition": "নিচে ১ পিক্সেল পরিমান বর্ডার দেয়া",
+                    "code": "borderBottomWidth : 1"
+                },
+                {
+                    "definition": "বাম পাশে ১ পিক্সেল পরিমান বর্ডার দেয়া",
+                    "code": "borderLeftWidth : 1"
+                },
+                {
+                    "definition": "ডান পাশে ১ পিক্সেল পরিমান বর্ডার দেয়া",
+                    "code": "borderRightWidth : 1"
+                },
+                {
+                    "definition": "উপরে ১ পিক্সেল পরিমান বর্ডার দেয়া",
+                    "code": "borderTopWidth : 1"
+                },
+                {
+                    "definition": "যখন ভিউ lts থেকে শুর হয় তখন ডান পাশের বডার ",
+                    "code": "borderEndWidth : 1"
+                },
+                {
+                    "definition": "যখন ভিউ lts থেকে শুর হয় তখন বাম পাশের বডার",
+                    "code": "borderStartWidth : 1"
+                },
+                {
+                    "definition": "বর্ডারের পুরুত্ব এর পরিমান",
+                    "code": "borderWidth : 1"
+                }
+            ]
+        },
+        {
+            "title": "ইমেজ কম্পোনেন্ট",
+            "items": [
+                {
+                    "code": "backfaceVisibility"
+                },
+                {
+                    "code": "backgroundColor"
+                },
+                {
+                    "code": "borderBottomLeftRadius"
+                },
+                {
+                    "code": "borderBottomRightRadius"
+                },
+                {
+                    "code": "borderColor"
+                },
+                {
+                    "code": "borderRadius"
+                },
+                {
+                    "code": "borderTopLeftRadius"
+                },
+                {
+                    "code": "borderTopRightRadius"
+                },
+                {
+                    "code": "borderWidth"
+                },
+                {
+                    "code": "opacity"
+                },
+                {
+                    "code": "overflow"
+                },
+                {
+                    "code": "resizeMode"
+                },
+                {
+                    "code": "tintColor"
+                },
+                {
+                    "code": "overlayColor"
+                }
+            ]
+        },
+        {
+            "title": "স্কলভিউ কম্পোনেন্ট",
+            "items": [
+                {
+                    "code": "backfaceVisibility"
+                },
+                {
+                    "code": "backgroundColor"
+                },
+                {
+                    "code": "borderBottomColor"
+                },
+                {
+                    "code": "borderBottomLeftRadius"
+                },
+                {
+                    "code": "borderBottomRightRadius"
+                },
+                {
+                    "code": "borderColor"
+                },
+                {
+                    "code": "borderRadius"
+                },
+                {
+                    "code": "borderTopLeftRadius"
+                },
+                {
+                    "code": "borderTopRightRadius"
+                },
+                {
+                    "code": "borderWidth"
+                },
+                {
+                    "code": "opacity"
+                },
+                {
+                    "code": "overflow"
+                },
+                {
+                    "code": "borderStyle"
+                },
+                {
+                    "code": "elevation"
+                }
+            ]
+        },
+        {
+            "title": "টেক্সট কম্পোনেন্ট",
+            "items": [
+                {
+                    "code": "color"
+                },
+                {
+                    "code": "fontFamily"
+                },
+                {
+                    "code": "fontSize"
+                },
+                {
+                    "code": "fontStyle"
+                },
+                {
+                    "code": "fontVariant"
+                },
+                {
+                    "code": "textTransform"
+                },
+                {
+                    "code": "fontWeight"
+                },
+                {
+                    "code": "includeFontPadding"
+                },
+                {
+                    "code": "lineHeight"
+                },
+                {
+                    "code": "textAlign"
+                },
+                {
+                    "code": "textDecorationLine"
+                },
+                {
+                    "code": "textShadowColor"
+                },
+                {
+                    "code": "textShadowOffset"
+                },
+                {
+                    "code": "textShadowRadius"
+                },
+                {
+                    "code": "textAlignVertical"
+                },
+                {
+                    "code": "letterSpacing"
+                },
+                {
+                    "code": "textDecorationColor"
+                },
+                {
+                    "code": "textDecorationStyle"
+                },
+                {
+                    "code": "writingDirection"
+                }
+            ]
+        },
+        {
+            "title": "টেক্সট ইনপুট কম্পোনেন্ট",
+            "items": [
+                {
+                    "code": "autoFocus"
+                },
+                {
+                    "code": "keyboardType"
+                },
+                {
+                    "code": "maxLength"
+                },
+                {
+                    "code": "onChangeText"
+                }
+            ]
+        }
+    ]
+}

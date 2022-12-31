@@ -1,0 +1,135 @@
+{
+    "id": "dockerfile",
+    "title": "ডকারফাইল",
+    "slug": "dockerfile",
+    "description": "ডকার হল একটি পরিষেবা (PaaS) পণ্য হিসাবে প্ল্যাটফর্মের একটি সেট যা কন্টেইনার নামক প্যাকেজগুলিতে সফ্টওয়্যার সরবরাহ করতে OS-স্তরের ভার্চুয়ালাইজেশন ব্যবহার করে।\n\nএকটি ডকারফাইল হল একটি পাঠ্য নথি (ফাইল এক্সটেনশন ছাড়াই) যাতে একটি ডকার কন্টেইনারের জন্য একটি পরিবেশ সেট আপ করার নির্দেশাবলী রয়েছে। আপনি একটি ডকারফাইল ব্যবহার করে একটি ডকার ইমেজ তৈরি করতে পারেন।\n\nকমান্ড ডকার বিল্ড. এই কমান্ডটি কার্যকর করা হয় এমন ডিরেক্টরিতে ডকারফাইল ব্যবহার করে একটি ডকার ইমেজ তৈরি করে।",
+    "colorPref": "#745fb5",
+    "contents": [
+        {
+            "title": "উত্তরাধিকার (Inheritance)",
+            "items": [
+                {
+                    "code": "FROM php:8.1-fpm-alpine3.16"
+                }
+            ]
+        },
+        {
+            "title": "ভেরিয়েবল (Variables)",
+            "items": [
+                {
+                    "code": "ENV APP_HOME /myapp\nRUN mkdir $APP_HOME"
+                },
+                {
+                    "code": "ARG APP_HOME=\"\"\nRUN mkdir $APP_HOME"
+                }
+            ]
+        },
+        {
+            "title": "আরম্ভ (Initialization)",
+            "items": [
+                {
+                    "code": "RUN bundle install"
+                },
+                {
+                    "code": "WORKDIR /myapp"
+                },
+                {
+                    "definition": "মাউন্ট পয়েন্ট জন্য স্পেসিফিকেশন",
+                    "code": "VOLUME [\"/data\"]"
+                },
+                {
+                    "code": "ADD file.xyz /file.xyz\nCOPY --chown=user:group host_file.xyz /path/container_file.xyz"
+                }
+            ]
+        },
+        {
+            "title": "কঠোর শেলের মধ্যে কমান্ড চালান (Run commands in strict shell)",
+            "items": [
+                {
+                    "code": "ENV my_var\nSHELL [\"/bin/bash\", \"-euo\", \"pipefail\", \"-c\"]"
+                },
+                {
+                    "definition": "কঠোর মোড সঙ্গে"
+                },
+                {
+                    "definition": "&& ব্যবহার করার মত বিল্ড ব্যর্থ হয়",
+                    "code": "RUN false"
+                },
+                {
+                    "definition": "টাইপোর কারণে ত্রুটি নিক্ষেপ করবে",
+                    "code": "RUN echo \"$myvar\""
+                },
+                {
+                    "definition": "পাইপ থেকে বেইল আউট হবে",
+                    "code": "RUN true | false"
+                },
+                {
+                    "definition": "শেল ব্যবহার করা শেল কমান্ডের জন্য কঠোর মোড চালু করবে।"
+                }
+            ]
+        },
+        {
+            "title": "অনবিল্ড করুন (Onbuild)",
+            "items": [
+                {
+                    "definition": "যখন অন্য ফাইলের সাথে ব্যবহার করা হয়",
+                    "code": "ONBUILD RUN bundle install"
+                }
+            ]
+        },
+        {
+            "title": "মেটাডেটা (Metadata)",
+            "items": [
+                {
+                    "code": "LABEL version=\"1.0\""
+                },
+                {
+                    "code": "LABEL \"com.example.vendor\"=\"ACME Incorporated\"\nLABEL com.example.label-with-value=\"foo\""
+                },
+                {
+                    "code": "LABEL description=\"This text illustrates \\\nthat label-values can span multiple lines.\""
+                }
+            ]
+        },
+        {
+            "title": "এন্ট্রিপয়েন্ট (Entrypoint)",
+            "items": [
+                {
+                    "code": "ENTRYPOINT [\"executable\", \"param1\", \"param2\"]"
+                },
+                {
+                    "code": "ENTRYPOINT command param1 param2"
+                },
+                {
+                    "definition": "একটি ধারক কনফিগার করে যা একটি এক্সিকিউটেবল হিসাবে চালানো হবে৷"
+                },
+                {
+                    "code": "ENTRYPOINT exec top -b"
+                },
+                {
+                    "definition": "এটি শেল ভেরিয়েবলগুলিকে প্রতিস্থাপন করতে শেল প্রক্রিয়াকরণ ব্যবহার করবে এবং যেকোন সিএমডি বা ডকার রান কমান্ড লাইন আর্গুমেন্ট উপেক্ষা করবে।"
+                }
+            ]
+        },
+        {
+            "title": "আদেশ (Commands)",
+            "items": [
+                {
+                    "code": "EXPOSE 5900"
+                },
+                {
+                    "code": "CMD    [\"bundle\", \"exec\", \"rails\", \"server\"]"
+                }
+            ]
+        },
+        {
+            "title": "আরো দেখুন (See also)",
+            "items": [
+                {
+                    "definition": "ওয়েব লিংক",
+                    "code": "https://docs.docker.com/engine/reference/builder/"
+                }
+            ]
+        }
+    ]
+}
