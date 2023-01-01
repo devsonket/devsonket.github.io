@@ -267,16 +267,16 @@
                     "code": "git checkout [branch_name]"
                 },
                 {
+                    "definition": "বর্তমান ব্রাঞ্চ থেকে পূর্বের ব্রাঞ্চ এ দ্রুত টগল করা",
+                    "code": "git checkout -"
+                },
+                {
                     "definition": "ব্রাঞ্চ চেঞ্জ করতে(নতুন কমান্ড)",
                     "code": "git switch [branch_name]"
                 },
                 {
                     "definition": "ব্রাঞ্চ তৈরী এবং চেঞ্জ করা",
                     "code": "git checkout -b \"branch name\""
-                },
-                {
-                    "definition": "বর্তমান ব্রাঞ্চ থেকে পূর্বের ব্রাঞ্চ এ দ্রুত টগল করা",
-                    "code": "git checkout -"
                 },
                 {
                     "definition": "রিপোজিটরি/ব্রাঞ্চ রিনেম করা",
