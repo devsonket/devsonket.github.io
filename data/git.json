@@ -275,6 +275,10 @@
                     "code": "git checkout -b \"branch name\""
                 },
                 {
+                    "definition": "বর্তমান ব্রাঞ্চ থেকে পূর্বের ব্রাঞ্চ এ দ্রুত টগল করা",
+                    "code": "git checkout -"
+                },
+                {
                     "definition": "রিপোজিটরি/ব্রাঞ্চ রিনেম করা",
                     "code": "git branch -m branchname new_branchname OR git branch --move branchname new_branchname"
                 },
