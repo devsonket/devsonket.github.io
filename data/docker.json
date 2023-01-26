@@ -223,6 +223,14 @@
                     "code": "docker system prune --volumes"
                 },
                 {
+                    "definition": "অব্যবহৃত সকল ডকার কন্টেইনার রিমুভ করতে",
+                    "code": "docker container prune"
+                },
+                {
+                    "definition": "অব্যবহৃত সকল ইমেজ কন্টেইনার রিমুভ করতে",
+                    "code": "docker image prune"
+                },
+                {
                     "definition": "কন্টেইনার এর লগ দেখতে",
                     "code": "docker logs <container_id>"
                 },
