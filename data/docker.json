@@ -216,11 +216,11 @@
                     "code": "docker system prune --volumes"
                 },
                 {
-                    "definition": "অব্যবহৃত সকল ডকার কনটেনার রিমুভ করতে",
+                    "definition": "অব্যবহৃত সকল ডকার কন্টেইনার রিমুভ করতে",
                     "code": "docker container prune"
                 },
                 {
-                    "definition": "অব্যবহৃত সকল ইমেজ কনটেনার রিমুভ করতে",
+                    "definition": "অব্যবহৃত সকল ইমেজ কন্টেইনার রিমুভ করতে",
                     "code": "docker image prune"
                 },
                 {
