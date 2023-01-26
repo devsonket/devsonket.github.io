@@ -40,6 +40,19 @@
         {
           "definition": "UP এর মাধ্যমে তৈরি কনটেইনার, নেটওয়ার্ক, ভলিউম এবং ইমেজ বন্ধ এবং রিমুভ করতে ",
           "code": "docker-compose down"
+        },
+        {
+            "definition": "ডকার কন্টেইনার restart করতে",
+            "code": "docker-compose restart"
+        }
+        ,
+        {
+            "definition": "নির্দিষ্ট কন্টেইনারে প্রবেশ করতে",
+            "code": "docker-compose exec <service_name> bash/sh"
+        },
+        {
+            "definition": "ডকার কম্পোজ বিল্ড করা যাতে কোন cache না থাকে",
+            "code": "docker-compose build --no-cache"
         }
       ]
     },
