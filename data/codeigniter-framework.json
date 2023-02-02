@@ -332,6 +332,131 @@
                     "code": "list_tables([$constrain_by_prefix = FALSE])"
                 }
             ]
+        },
+        {
+            "title": "ফর্ম ভ্যালিডেশন",
+            "items": [
+                {
+                    "definition": "হেল্পার লোড করা",
+                    "code": "$this->load->helper(array('form', 'url'));"
+                },
+                {
+                    "definition": "লাইব্রেরি লোড করা",
+                    "code": "$this->load->library('form_validation');"
+                },
+                {
+                    "definition": "ভেলিডেশনের নিয়ম সেট করা",
+                    "code": "$this->form_validation->set_rules('name', 'Readable Name', 'rule1|rule2|rule3');"
+                },
+                {
+                    "definition": "অ্যারে আকারে ভেলিডেশনের নিয়ম সেট করা",
+                    "code": "$this->form_validation->set_rules(['field' => 'username', 'label' => 'Username','rules' => 'required']);"
+                },
+                {
+                    "definition": "ভেলিডেশনের পরে ফর্মে ডাটা ধরে রাখতে",
+                    "code": "set_value('field name');"
+                },
+                {
+                    "definition": "ভ্যালিডেশন চেক করতে",
+                    "code": "if($this->form_validation->run() == FALSE){//returnToForm}else{//Success};"
+                },
+                {
+                    "definition": "ফাঁকা ফর্ম চেক করতে",
+                    "code": "required"
+                },
+                {
+                    "definition": "ডাটার মিল চেক করতে",
+                    "code": "matches"
+                },
+                {
+                    "definition": "রেগুলার এক্সপ্রেশন এর মিল চেক করতে",
+                    "code": "regex_match"
+                },
+                {
+                    "definition": "ডাটা আলাদা কিনা চেক করতে",
+                    "code": "differs"
+                },
+                {
+                    "definition": "ডাটা ইউনিক কিনা চেক করতে",
+                    "code": "is_unique"
+                },
+                {
+                    "definition": "সর্বনিম্ন সংখ্যার সীমা নির্ধারিত করতে ",
+                    "code": "min_length[]"
+                },
+                {
+                    "definition": "সর্বোচ্চ সংখ্যার সীমা নির্ধারিত করতে",
+                    "code": "max_length[]"
+                },
+                {
+                    "definition": "নির্দিষ্ট সংখ্যার সীমা নির্ধারিত করতে",
+                    "code": "exact_length[]"
+                },
+                {
+                    "definition": "ডাটা নির্দিষ্ট সংখ্যার অধিক কি না চেক করতে",
+                    "code": "greater_than[]"
+                },
+                {
+                    "definition": "ডাটা নির্দিষ্ট সংখ্যার অধিক বা সমান কি না চেক করতে",
+                    "code": "greater_than_equal_to[]"
+                },
+                {
+                    "definition": "ডাটা নির্দিষ্ট সংখ্যার কম কি না চেক করতে",
+                    "code": "less_than[]"
+                },
+                {
+                    "definition": "ডাটা নির্দিষ্ট সংখ্যার কম বা সমান কি না চেক করতে",
+                    "code": "less_than_equal_to[]"
+                },
+                {
+                    "definition": "ডাটা অক্ষর কি না চেক করতে",
+                    "code": "alpha"
+                },
+                {
+                    "definition": "ডাটা অক্ষর বা সংখ্যাসূচক কি না চেক করতে",
+                    "code": "alpha_numeric"
+                },
+                {
+                    "definition": "ডাটা অক্ষর বা সংখ্যাসূচক এবং স্পেস আছে কি না চেক করতে",
+                    "code": "alpha_numeric_spaces"
+                },
+                {
+                    "definition": "ডাটা সংখ্যাসূচক কি না চেক করতে",
+                    "code": "numeric"
+                },
+                {
+                    "definition": "ডাটা পূর্ণসংখ্যা কি না চেক করতে",
+                    "code": "integer"
+                },
+                {
+                    "definition": "দশমিক ডাটা কি না চেক করতে",
+                    "code": "decimal"
+                },
+                {
+                    "definition": "ডাটা স্বাভাবিক সংখ্যা(0,1,2,3) কি না চেক করতে",
+                    "code": "is_natural"
+                },
+                {
+                    "definition": "ডাটা শূন্য বাদে স্বাভাবিক সংখ্যা(1,2,3) কি না চেক করতে",
+                    "code": "is_natural_no_zero"
+                },
+                {
+                    "definition": "URL বৈধ কি না চেক করতে ",
+                    "code": "valid_url"
+                },
+                {
+                    "definition": "ইমেইল বৈধ কি না চেক করতে",
+                    "code": "valid_email"
+                },
+                {
+                    "definition": "একাধিক ইমেইল বৈধ কি না চেক করতে",
+                    "code": "valid_emails"
+                },
+                {
+                    "definition": "IP বৈধ কি না চেক করতে",
+                    "code": "valid_ip"
+                }
+            ]
         }
     ]
 }
