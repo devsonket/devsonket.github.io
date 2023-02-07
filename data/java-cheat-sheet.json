@@ -97,6 +97,32 @@
             ]
         },
         {
+            "title": "সহজে অদলবদল দুইটির মান",
+            "items": [{
+                    "code": "int x=5, y=10;"
+                },
+                {
+                    "code": "int temp;"
+                },
+                {
+                    "code": "temp = x;"
+                },
+                {
+                    "code": "x = y;"
+                },
+                {
+                    "code": "y = temp;"
+                },
+                {
+                    "code": "System.out.println(x); //10"
+                },
+                {
+                    "code": "System.out.println(y); //5"
+                }
+    	    ]
+       },
+       
+        {
             "title": "গাণিতিক ফাংশন",
             "items": [{
                     "definition": "বর্গমূল করার জন্য",
@@ -111,7 +137,7 @@
                     "code": "Math.exp()"
                 },
                 {
-                    "definition": "y এর পাওয়ার হিসেবে x কে নেয়ার জন্য",
+                    "definition": "x এর পাওয়ার হিসেবে y কে নেয়ার জন্য",
                     "code": "Math.pow(x,y)"
                 },
                 {

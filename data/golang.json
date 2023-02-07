@@ -29,6 +29,58 @@
             ]
         },
         {
+            "title": "ডাটা টাইপ",
+            "items": [{
+                    "definition": "অক্ষর",
+                    "code": "rune"
+                },
+                {
+                    "definition": "পূর্ণসংখ্যা",
+                    "code": "int/int32/int64"
+                },
+                {
+                    "definition": "ফ্লোটিং পয়েন্ট সংখ্যা",
+                    "code": "float/float32/float64"
+                },
+                {
+                    "definition": "বুলিয়ান",
+                    "code": "bool"
+                },
+                {
+                    "definition": "স্ট্রিং",
+                    "code": "string"
+                },
+                {
+                    "definition":"পয়েন্টার টাইপ",
+                    "code":"*type (যেকোনো ডাটা টাইপ, যেমন int, float, string)"
+                }
+            ]
+        },
+        {
+            "title": "ইউজার ডিফাইন্ড ডাটা টাইপ",
+            "items": [{
+                    "definition": "ভিন্ন ভিন্ন বিল্ট ইন ডাটা টাইপের সমন্বয়ে নতুন ডাটা টাইপ তৈরি করা",
+                    "code": "struct"
+                }
+            ]
+        },
+        {
+            "title": "ইনপুট নিয়ে কাজ করা",
+            "items": [{
+                    "definition": "ইনপুট নিয়ে কাজ করার জন্য রিড ফাংশন ব্যবহার করা হয়",
+                    "code": "fmt.Scan(&a)"
+                },
+                {
+                    "definition": "একটি লাইন এর ইনপুট নিয়ে কাজ করার জন্য রিডলাইন ফাংশন ব্যবহার করা হয়",
+                    "code": "fmt.Scanln(&a)"
+                },
+                {
+                    "definition": "একাধিক লাইন এর ইনপুট নিয়ে কাজ করার জন্য রিডস্ট্রিং ফাংশন ব্যবহার করা হয়",
+                    "code": "fmt.Scanf(&a)"
+                }
+            ]
+        },
+        {
             "title": "ফাইল প্রিন্ট করা এবং ভ্যারিয়েবল ডিক্লেয়ার করা",
             "items": [{
                     "definition": "নিচের লাইন ফাঁকা রেখে কিছু প্রিন্ট করা",
@@ -121,7 +173,7 @@
                     "code": "a := 45 \n fmt.Printf(\"%T\", a) \n // int"
                 },
                 {
-                    "definition": "ইন্টিজারকে ফ্ল্যোট এ  রূপান্তর করাs",
+                    "definition": "ইন্টিজারকে ফ্ল্যোট এ  রূপান্তর করা",
                     "code": "var i int = 45 \n var j float 32 \n j = float32(i)"
                 },
                 {
@@ -255,6 +307,19 @@
                     "code": "switch 2 {"
                 },
                 {
+                    "code": "return x > 10000"
+                },
+                {
+                    "code": "}"
+                }
+            ]
+        },
+        {
+            "title": "ল্যাম্বদাস ( Lambdas )",
+            "items": [{
+                    "code": "myfunc := func() bool {"
+                },
+                {
                     "code": "case 1: \n\t fmt.Println(\"One\"}"
                 },
                 {
@@ -296,9 +361,41 @@
                     "code": "func greeting(msg string, nmbr int){}"
                 },
                 {
+                    "definition":"রিসিভার সহ ফাংশান তৈরি করা",
+                    "code":"func (p Persion)greeting(msg string, nmbr int) string {}"
+                },
+                {
                     "definition": "বেনামি ফাংশান",
                     "code": "func () {}()"
                 }
+            ]
+        },
+        {
+            "title": "পদ্ধতি ( Methods ) | রিসিভার ( Receivers )",
+            "items": [{
+                    "code": "type Devsonk struct {"
+                },
+                {
+                    "code": "X, Y float64"
+                },
+                {
+                    "code":"}"
+                },
+                {
+                    "code": "func (v Devsonk) Abs() float64 {"
+                },
+                {
+                    "code": "return math.Sqrt(v.X * v.X + v.Y * v.Y)"
+                },
+                {
+                    "code": "}"
+                },
+                {
+                    "code": "v := Devsonk{1, 2}"
+                },
+                {
+                    "code": "v.Abs()"
+                }      
             ]
         },
         {
@@ -322,6 +419,10 @@
             "items": [{
                     "definition": "ডিফল্ট ফরম্যাট এ ভ্যালু দেখা",
                     "code": "%v"
+                },
+                {
+                    "definition":"float ফরম্যাট এ ভ্যালু দেখা",
+                    "code":"%.1f// এখানে 1 হচ্ছে ডিসিম্যাল পজিশন এর সংখ্যা"
                 },
                 {
                     "definition": "ভ্যারিয়েবল এর টাইপ দেখা",
@@ -350,7 +451,47 @@
                 {
                     "definition": "বেইজ ১৬ তে বড় অক্ষর (A-F) এর ভ্যারিয়েবল প্রিন্ট করা",
                     "code": "%X"
+                },
+                {             
+                "definition": "স্ট্রিং এর সাথে নতুন লাইন যোগ করা",
+                "code": "\\n"
                 }
+            ]
+        },
+        {
+            "title":"গোরুটিন এবং চ্যানেল",
+            "items":[{
+                "definition":"গোরুটাইন তৈরি করা",
+                "code":"go func() {\n\t// কোড লিখতে হবে\n}()"
+            },
+            {
+                "definition":"চ্যানেল তৈরি করা",
+                "code":"ch := make(chan int)"
+            },
+            {
+                "definition":"চ্যানেল এ ভ্যালু পাঠান",
+                "code":"ch <- 5"
+            },
+            {
+                "definition":"চ্যানেল থেকে ভ্যালু নেয়া",
+                "code":"val := <- ch"
+            },
+            {
+                "definition":"চ্যানেল এর সাইজ নির্ধারণ করা",
+                "code":"ch := make(chan int, 5)"
+            }
+            ]
+        },
+        {
+            "title":"জেনারিক ফাংশন",
+            "items":[{
+                "definition":"জেনারিক ফাংশন তৈরি করা",
+                "code":"func genericFunc[T any](a T) T {\n\treturn a\n}"
+            },
+            {
+                "definition":"জেনারিক ফাংশন কল করা",
+                "code":"genericFunc[int](5)"
+            }
             ]
         }
     ]

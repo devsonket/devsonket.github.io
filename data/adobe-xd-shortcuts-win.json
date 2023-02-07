@@ -4,9 +4,12 @@
     "slug": "adobe-xd-shortcuts-win",
     "description": "অ্যাডোবি এক্সডি এর প্রয়োজনীয় উইন্ডোজ শর্টকাট কী। এডোবি এক্সপেরিয়েন্স ডিজাইন (অ্যাডোবি এক্সডি) একটি ভেক্টর বেসড ইউসার ইন্টারফেস / ইউসার এক্সপেরিয়েন্স ডিজাইন টুল যার সাহায্য ওয়েব অ্যাপ্লিকেশন এবং মোবাইল অ্যাপ্লিকেশন এর ডিজাইন এবং প্রোটোটাইপ করা হয়। অ্যাডোবি এক্সডি দিয়ে ওয়্যারফ্রেম, ডিজাইন, প্রোটোটাইপ এবং লাইভ শেয়ার করা হয়।",
     "colorPref": "#000",
-    "contents": [{
+    "contents": 
+    [
+        {
             "title": "ফাইল মেনু (File menu)",
-            "items": [{
+            "items": [
+                {
                     "definition": "নতুন ফাইল (New)",
                     "code": "Ctrl + N"
                 },
@@ -46,7 +49,8 @@
         },
         {
             "title": "এডিট মেনু(Edit menu)",
-            "items": [{
+            "items": [
+                {
                     "definition": "এডিট বাতিল করা (Undo)",
                     "code": "Ctrl + Z"
                 },
@@ -90,7 +94,8 @@
         },
         {
             "title": "অবজেক্ট মেনু (Object menu)",
-            "items": [{
+            "items": [
+                {
                     "definition": "অবজেক্ট গ্রুপ করা (Group)",
                     "code": "Ctrl + G"
                 },
@@ -122,7 +127,8 @@
         },
         {
             "title": "উইন্ডো মেনু (Window menu)",
-            "items": [{
+            "items": [
+                {
                     "definition": "উইন্ডো ম্যাক্সিমাইজ করা (Maximize)",
                     "code": "Win + ↑"
                 },
@@ -138,7 +144,8 @@
         },
         {
             "title": "ভিউ মেনু (View menu)",
-            "items": [{
+            "items": [
+                {
                     "definition": "জুম ইন (Zoom in)",
                     "code": "Ctrl + + OR Ctrl + Scrollwheel OR Pinch out(trackpad)"
                 },
@@ -186,7 +193,8 @@
         },
         {
             "title": "পাথ/পেন (Path/Pen)",
-            "items": [{
+            "items": [
+                {
                     "definition": "ওপেন পাথ/পেন প্যানেল (Open Path/Pen panel)",
                     "code": "P"
                 },
@@ -226,7 +234,8 @@
         },
         {
             "title": "অপারেশন মেনু (Operations menu)",
-            "items": [{
+            "items": [
+                {
                     "definition": "সেন্টার থেকে (From Center)",
                     "code": "Alt"
                 },
@@ -266,7 +275,8 @@
         },
         {
             "title": "এলাইন (Align)",
-            "items": [{
+            "items": [
+                {
                     "definition": "বাম (Left)",
                     "code": "Ctrl + Shift + ←"
                 },
@@ -294,7 +304,8 @@
         },
         {
             "title": "সাজান (Arrange)",
-            "items": [{
+            "items": [
+                {
                     "definition": "সামনে আনতে (Bring to Front)",
                     "code": "Ctrl + Shift + ]"
                 },
@@ -314,7 +325,8 @@
         },
         {
             "title": "টেক্সট (Text)",
-            "items": [{
+            "items": [
+                {
                     "definition": "টেক্সট বোল্ড করতে",
                     "code": "Ctrl + B"
                 },
@@ -326,7 +338,8 @@
         },
         {
             "title": "অপারেশন সংশোধক (Operation modifiers)",
-            "items": [{
+            "items": [
+                {
                     "definition": "হরিজোনটাল প্যান",
                     "code": "Shift + Scrollwheel"
                 },
@@ -338,7 +351,8 @@
         },
         {
             "title": "ডিস্ট্রিবিউট (Distribute)",
-            "items": [{
+            "items": [
+                {
                     "definition": "হরিজোনটাল (Horizontal)",
                     "code": "Ctrl + Shift + H"
                 },

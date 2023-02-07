@@ -5,6 +5,96 @@
     "description": "পিএইচপি হচ্ছে একটি সার্ভার সাইড স্ক্রিপ্টিং ল্যাঙ্গুয়েজ, যা তৈরী করেন রাসমাস লারডোর্ফ ১৯৯৪ সালে। যা বিশেষ করে যে কোনো ডাইনামিক এবং ইন্টারেক্টিভ ওয়েব ডেভেলপমেন্ট অথবা ওয়েব ভিত্তিক সফটওয়্যার তৈরিতে ব্যবহৃত হয়",
     "colorPref": "#8892BF",
     "contents": [{
+            "title": "পিএইচপি ব্যাসিক",
+            "items": [{
+                    "definition": "পিএইচপি শুরু করতে",
+                    "code": "<?php // place PHP code here ?>"
+                },
+                {
+                    "definition": "কমেন্ট করার জন্য",
+                    "code": "// or # or /*...*/"
+                },
+                {
+                    "definition": "ফাংশন লিখতে",
+                    "code": "function NameOfTheFunction() { //place PHP code here }"
+                },
+                {
+                    "definition": "কন্সট্যাকটর ফাংশন লিখতে <  PHP 7.4",
+                    "code": "class Ugh{\n public $devsonket; \n function __construct($devsonket) {\n $this->devsonket = $devsonket;\n }\n}"
+                },
+                {
+                    "definition": "কন্সট্যাকটর ফাংশন লিখতে >  PHP 7.4",
+                    "code": "class Wow{\n  function __construct(public $devsonket) { }}"
+                },
+                {
+                    "definition": "ভ্যারিএবল তৈরি করতে",
+                    "code": "$variableName = 'value';"
+                },
+                {
+                    "definition": "কন্ডিশন লিখতে",
+                    "code": "if (condition) { //place PHP code here }"
+                },
+                {
+                    "definition": "লুপ লিখতে",
+                    "code": "for (initialization; condition; increment) { //place PHP code here }"
+                },
+                {
+                    "definition": "অ্যারে লিখতে",
+                    "code": "$arrayName = array('value1', 'value2', 'value3');"
+                },
+                {
+                    "definition": "অ্যারে এক্সেস করতে",
+                    "code": "$arrayName[0];"
+                },
+                {
+                    "definition": "অ্যারের সাইজ বের করতে",
+                    "code": "count($arrayName);"
+                }
+            ]
+        }, {
+            "title": "কন্সট্যান্ট",
+            "items": [{
+                    "definition": "কন্সট্যান্ট তৈরি করতে",
+                    "code": "define('CONSTANT_NAME', 'value');"
+                },
+                {
+                    "definition": "কন্সট্যান্ট এক্সেস করতে",
+                    "code": "CONSTANT_NAME;"
+                },
+                {
+                    "definition": " __LINE__ কন্সট্যান্ট",
+                    "code": "ফাইলের বর্তমান লাইনের সংখ্যা নির্দেশ করতে"
+                },
+                {
+                    "definition": " __FILE__ কন্সট্যান্ট",
+                    "code": "ফাইলের সম্পূর্ণ পাথ এবং ফাইলের নাম"
+                },
+                {
+                    "definition": " __DIR__ কন্সট্যান্ট",
+                    "code": "ফাইলের ডিরেক্টরি পাথ নির্দেশ করতে"
+                },
+                {
+                    "definition": " __FUNCTION__ কন্সট্যান্ট",
+                    "code": "ফাংশনের নাম নির্দেশ করতে"
+                },
+                {
+                    "definition": " __CLASS__ কন্সট্যান্ট",
+                    "code": "ক্লাসের নামটি যে নামস্থানে ঘোষণা করা হয়েছিল তা  নির্দেশ করতে"
+                },
+                {
+                    "definition": " __TRAIT__ কন্সট্যান্ট",
+                    "code": "ট্রেট ও তার নেমস্পেস নির্দেশ করতে"
+                },
+                {
+                    "definition": " __METHOD__ কন্সট্যান্ট",
+                    "code": "ক্লাস মেথড নেম"
+                },
+                {
+                    "definition": " __NAMESPACE__ কন্সট্যান্ট",
+                    "code": "নেমস্পেস নির্দেশ করতে"
+                }
+            ]
+        }, {
             "title": "গাণিতিক অপারেশন",
             "items": [{
                     "definition": "সাধারন গাণিতিক অপারেশন",
@@ -241,6 +331,78 @@
                 {
                     "definition": "একটি স্ট্রিং কে আ্যরেতে রুপান্তর করতে",
                     "code": "explode ( string $separator , array $array )"
+                },
+                {
+                    "definition": "অ্যারের সকল ভ্যালু দেখতে",
+                    "code": "array_values()"
+                },
+                {
+                    "definition": "কী গুলির জন্য একটি এবং এর ভ্যালু গুলির জন্য অন্য একটি অ্যারে ব্যবহার করে একটি অ্যারে তৈরি করতে",
+                    "code": "array_combine()"
+                },
+                {
+                    "definition": "ডিসেন্ডিং অর্ডার অ্যারে সাজাতে এবং ইনডেক্স গুলি একত্রে মেইনটেন করতে",
+                    "code": "arsort()"
+                },
+                {
+                    "definition": "অ্যারের উপাদান গণনা করতে",
+                    "code": "count()"
+                },
+                {
+                    "definition": "একটি অ্যারের সমস্ত ভ্যালু গণনা করতে",
+                    "code": "array_count_values()"
+                },
+                {
+                    "definition": "অ্যারের পার্থক্য গণনা করতে",
+                    "code": "array_diff()"
+                },
+                {
+                    "definition": "একটি অ্যারের ভ্যালুকে কি এবং কী কে ভ্যালু তে রূপান্তর করতে",
+                    "code": "array_flip()"
+                },
+                {
+                    "definition": "অ্যারের মধ্যে থেকে কমন ভ্যালু গুলোকে বের করতে",
+                    "code": "array_intersect()"
+                },
+                {
+                    "definition": "অ্যারে লিস্ট কি না চেক করতে",
+                    "code": "array_is_list()"
+                },
+                {
+                    "definition": "অ্যারের প্রথম কী সন্ধান করতে ",
+                    "code": "array_key_first()"
+                },
+                {
+                    "definition": "অ্যারের শেষ কী সন্ধান করতে ",
+                    "code": "array_key_last()"
+                },
+                {
+                    "definition": "একাধিক অ্যারে বা মাল্টি ডায়মেনসোনাল অ্যারে শর্ট করতে",
+                    "code": "array_multisort()"
+                },
+                {
+                    "definition": "অ্যারের শেষ উপাদান অ্যারে থেকে বের করে আনতে ",
+                    "code": "array_pop()"
+                },
+                {
+                    "definition": "অ্যারের প্রথম উপাদান অ্যারে থেকে বের করে আনতে ",
+                    "code": "array_shift()"
+                },
+                {
+                    "definition": "অ্যারের কী ধরে ভ্যালু পৰিৱৰ্তন করতে",
+                    "code": "array_replace()"
+                },
+                {
+                    "definition": "অ্যারের ভ্যালু গুলোর যোগফল নির্ণয় করতে",
+                    "code": "array_sum()"
+                },
+                {
+                    "definition": "অ্যারেতে কোন নির্দিষ্ট ভ্যালু আছে কি না চেক করতে",
+                    "code": "in_array()"
+                },
+                {
+                    "definition": "অ্যারে মার্জ করে এবং স্প্রেড অপারেটর array_merge() ফাংশনের চেয়ে ভালো পারফরম্যান্স প্রদান করে ",
+                    "code": "...array_var"
                 }
             ]
         },
@@ -383,6 +545,16 @@
                     "code": "echo filetype($file_name);"
                 }
             ]
+        },
+        {
+            "title": "অবজেক্ট এর খুটিনাটি",
+            "items": [{
+                "definition": "ইমটি অবজেক্ট এর ভ্যালু দেখার জন্য < php 8.0",
+                "code": "echo optional($obj)->devsonket;"
+            }, {
+                "definition": "ইমটি অবজেক্ট এর ভ্যালু দেখার জন্য > php 8.0",
+                "code": "echo $obj?->devsonket;"
+            }]
         }
     ]
 }

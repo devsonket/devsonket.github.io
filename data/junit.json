@@ -1,0 +1,46 @@
+{
+    "id": "junit",
+    "title": "জেইউনিট",
+    "slug": "junit",
+    "description": "জেইউনিট হচ্ছে জাভা প্রোগ্রামিং ল্যাঙ্গুয়েজের টেস্টিং ফ্রের্মওয়ার্ক",
+    "colorPref": "#333",
+    "contents": [
+        {
+            "title": "আসর্শন মেথড",
+            "items": [
+                {
+                    "definition": "প্যারামিটার নাল কিনা যাচাই করে",
+                    "code": "assertNull(Object x)"
+                },
+                {
+                    "definition": "প্যারামিটার নাল নয় কিনা যাচাই করে",
+                    "code": "assertNotNull(Object x)"
+                },
+                {
+                    "definition": "প্যারামিটার সত্য কিনা যাচাই করে",
+                    "code": "assertTrue(boolean x)"
+                },
+                {
+                    "definition": "প্যারামিটার মিথ্যা কিনা যাচাই করে",
+                    "code": "assertFalse(boolean x)"
+                },
+                {
+                    "definition": "দুটো অবজেক্ট সমান কিনা যাচাই করে",
+                    "code": "assertEquals(Object x,Object y)"
+                },
+                {
+                    "definition": "দুটো অবজেক্ট সেইম কিনা যাচাই করে",
+                    "code": "assertSame(Object x, Objecty)"
+                },
+                {
+                    "definition": "দুটো অবজেক্ট সমান সেইম নয় কিনা যাচাই করে",
+                    "code": "assertNotSame(Object x, Object y)"
+                },
+                {
+                    "definition": "প্রোগ্রামাটিক্যালি টেস্ট ফেইল করে",
+                    "code": "fail()"
+                }
+            ]
+        }
+    ]
+}

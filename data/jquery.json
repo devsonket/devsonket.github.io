@@ -75,6 +75,10 @@
                     "code": "$(selector).blur();"
                 },
                 {
+                    "definition": "ফরম এলিমেন্টে কোন পরিবর্তন ঘটলে ইভেন্ট হ্যান্ডলার ফাংশন সংযুক্ত করে",
+                    "code": "$(selector).change();"
+                },
+                {
                     "definition": "এলিমেন্টে এক বা একাধিক ইভেন্ট হ্যান্ডলার সংযুক্ত করতে",
                     "code": "$(selector).on();"
                 },
@@ -176,7 +180,7 @@
                 },
                 {
                     "definition": "এলিমেন্টের মার্কআপ সহ কন্টেন্ট সেট করতে",
-                    "code": "$(selector).html('hello world');"
+                    "code": "$(selector).html('<h3>hello world</h3>');"
                 },
                 {
                     "definition": "ফর্ম এলিমেন্টের ভ্যালু সেট করতে",
@@ -357,6 +361,18 @@
                 {
                     "definition": "filter() মেথডের বিপরীত",
                     "code": "$(selector).not();"
+                }
+            ]
+        },
+        {
+            "title": "জেকুয়েরি - এজ্যাক্স",
+            "items": [{
+                    "definition": "সার্ভারে HTTP GET রিকুয়েস্ট পাঠিয়ে কাঙ্ক্ষিত ডেটা পেতে",
+                    "code": "$.get('URL/file_name.ext', function(data, status){})"
+                },
+                {
+                    "definition": "সার্ভারে HTTP POST রিকুয়েস্ট এ কিছু ডাটা পাঠিয়ে এক্সিকিউটেড ডেটা পেতে",
+                    "code": "$.post('URL/file_name.ext', data, function(data, status){})"
                 }
             ]
         }

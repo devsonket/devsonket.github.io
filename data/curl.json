@@ -4,9 +4,11 @@
     "slug": "curl",
     "description": "CURL হল একটি কম্পিউটার সফটওয়্যার প্রজেক্ট যা বিভিন্ন নেটওয়ার্ক প্রোটোকল ব্যবহার করে তথ্য স্থানান্তরের (এক স্থান থেকে অন্য স্থানে নেওয়া) জন্য একটি লাইব্রেরি এবং কমান্ড-লাইন টুল। curl এর অর্থ 'Client URL'",
     "colorPref": "#07334e",
-    "contents": [{
+    "contents": [
+        {
             "title": "সাধারন অপারেশন",
-            "items": [{
+            "items": [
+                {
                     "definition": "কোন লিঙ্ককে GET মেথডে অনুরোধ পাঠাতে",
                     "code": "curl http://www.exmaple.com"
                 },
@@ -42,7 +44,8 @@
         },
         {
             "title": "ফাইল অপারেশন",
-            "items": [{
+            "items": [
+                {
                     "definition": "FTP ইউজারনেম ও পাসওয়ার্ড সেট করতে",
                     "code": "curl -u name:passwd ftp://ip:port/path/file‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌\ncurl ftp://name:passwd@ip:port/path/file"
                 },
@@ -58,7 +61,8 @@
         },
         {
             "title": "ডাটা অপারেশন",
-            "items": [{
+            "items": [
+                {
                     "definition": "GET মেথডে ডাটা বা কুয়েরি স্ট্রিং(QSA) আট্টাছ করতে",
                     "code": "curl -G -d search=keyword -d status=active http://www.exmaple.com \n curl -G -d 'search=keyword&status=active' http://www.exmaple.com"
                 },
@@ -86,7 +90,8 @@
         },
         {
             "title": "হেডার অপারেশন",
-            "items": [{
+            "items": [
+                {
                     "definition": "অনুরোধে কাস্টম হেডার যোগ করতে",
                     "code": "curl -H '{key}: {value}' http://www.exmaple.com"
                 },
@@ -110,7 +115,8 @@
         },
         {
             "title": "বিবিধ অপারেশন",
-            "items": [{
+            "items": [
+                {
                     "definition": "SSL/HTTPS সার্টিফিকেট ত্রুটি উপেক্ষা করতে",
                     "code": "curl -k https://www.exmaple.com"
                 },

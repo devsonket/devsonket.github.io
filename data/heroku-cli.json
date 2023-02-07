@@ -85,6 +85,34 @@
             ]
         },
         {
+            "title": "হিরোকো কন্টেইনার",
+            "items": [{
+                    "definition": "হিরোকো কন্টেইনার এ লগিন",
+                    "code": "heroku container:login"
+                },
+                {
+                    "definition": "হিরোকো অ্যাপ থেকে web ইমেজ পুল করুন",
+                    "code": "heroku container:pull web"
+                },
+                {
+                    "definition": "ডকার ফাইল হিরোকো তে পুশ করুন",
+                    "code": "heroku container:push web -app <app>"
+                },
+                {
+                    "definition": "আগের পুশ করা ডকার ইমেজ রিলিজ করুন",
+                    "code": "heroku container:release web -app <app>"
+                },
+                {
+                    "definition": "ওয়েব কন্টেইনার রিমুভ করুন",
+                    "code": "heroku container:rm web -app <app>"
+                },
+                {
+                    "definition": "হিরোকো কন্টেইনার লগ আউট করুন",
+                    "code": "heroku container:logout"
+                }
+            ]
+        },
+        {
             "title": "এসএসএইচ ম্যানেজ",
             "items": [{
                     "definition": "কী অ্যাড করা",
@@ -147,6 +175,22 @@
                     "code": "heroku pg:credentials:url"
                 }
             ]
+        },
+        {
+          "title": "মেইনটেনেন্স স্টেটাস",
+          "items": [{
+                  "definition": "বর্তমান মেইনটেনেন্স স্টেটাস চেক করা",
+                  "code": "heroku maintenance"
+              },
+              {
+                  "definition": "মেইনটেনেন্স স্টেটাস চালু করা",
+                  "code": "heroku maintenance:on"
+              },
+              {
+                  "definition": "মেইনটেনেন্স স্টেটাস বন্ধ করা",
+                  "code": "heroku maintenance:off"
+              }
+          ]
         }
     ]
 }

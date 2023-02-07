@@ -4,15 +4,21 @@
     "slug": "django",
     "description": "জ্যাঙ্গো এর চিটশিট",
     "colorPref": "#6cc24a",
-    "contents": [{
+    "contents": [
+        {
             "title": "pipenv ইনিশিয়ালাইজেশন",
-            "items": [{
+            "items": [
+                {
                     "definition": "প্রোজেক্ট ডিরেক্টরী তৈরী করা",
                     "code": "mkdir <directory_name>"
                 },
                 {
                     "definition": "প্রোজেক্ট ডিরেক্টরীতে নেভিগেইট করা",
                     "code": "cd <directory_name>"
+                },
+                {
+                    "definition": "প্রোজেক্ট ডিরেক্টরীতে ভার্চুয়াল  ইনভাইরোনমেন্ট ক্রিয়েট করা ",
+                    "code": "mkdir <.venv>"
                 },
                 {
                     "definition": "pipenv ইনিশিয়ালাইজ করা",
@@ -37,8 +43,38 @@
             ]
         },
         {
+            "title": "(venv) ভার্চুয়াল এনভায়রনমেন্ট ইনিশিয়ালাইজেশন",
+            "items": [
+                {
+                    "definition": "প্রোজেক্ট ডিরেক্টরী তৈরী করা",
+                    "code": "mkdir <directory_name>"
+                },
+                {
+                    "definition": "প্রোজেক্ট ডিরেক্টরীতে নেভিগেইট করা",
+                    "code": "cd <directory_name>"
+                },
+                {
+                    "definition": "গ্লোবালি virtualenv install করা",
+                    "code": "py -m pip install --user virtualenv"
+                },
+                {
+                    "definition": "venv ইনিশিয়ালাইজ করা",
+                    "code": "py -m venv env"
+                },
+                {
+                    "definition": "virtualenv Activeate করা",
+                    "code": "./env/Scripts/activate"
+                },
+                {
+                    "definition": "virtualenv deactivate করা",
+                    "code": "deactivate"
+                }
+            ]
+        },
+        {
             "title": "pip কমান্ডস",
-            "items": [{
+            "items": [
+                {
                     "definition": "pip ভার্সন দেখা",
                     "code": "pip --version"
                 },
@@ -49,6 +85,10 @@
                 {
                     "definition": "django ইন্সটল করা",
                     "code": "pip install django"
+                },
+                {
+                    "definition": "নির্দিষ্ট django ভার্সন ইন্সটল করা",
+                    "code": "pip install Django==<needed_version>"
                 },
                 {
                     "definition": "যেকোনো প্যাকেজ ডিপেন্ডেন্সী ইন্সটল করা",
@@ -74,7 +114,8 @@
         },
         {
             "title": "প্রোজেক্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "প্রোজেক্ট তৈরী করা",
                     "code": "django-admin startproject <project_name>"
                 },
@@ -85,6 +126,10 @@
                 {
                     "definition": "ডেভেলপমেন্ট সার্ভার চালু করা",
                     "code": "python manage.py runserver"
+                },
+                {
+                    "definition": "নির্দিষ্ট Port এ ডেভেলপমেন্ট সার্ভার চালু করা",
+                    "code": "python manage.py runserver <port_number>"
                 },
                 {
                     "definition": "জ্যাঙ্গো প্রোজেক্ট পরীক্ষা করে",
@@ -101,17 +146,22 @@
             ]
         },
         {
-            "title": "অ্যাপ",
-            "items": [{
+            "title": "অ্যাপ তৈরি",
+            "items": [
+                {
                     "definition": "অ্যাপ তৈরী করা",
                     "code": "django-admin startapp <app_name>"
+                },
+                {
+                    "definition": "প্রোজেক্ট এর settings.py ফাইলে অ্যাাপ ইনস্টল করার জন্য",
+                    "code": "INSTALLED_APPS = ['app_name',]"
                 },
                 {
                     "definition": "সব অ্যাপ মাইগ্রেশনের জন্য",
                     "code": "python manage.py makemigrations"
                 },
                 {
-                    "definition": "অ্যাপ মাইগ্রেশনের জন্য",
+                    "definition": "নির্দিষ্ট করে অ্যাপ মাইগ্রেশনের জন্য",
                     "code": "python manage.py makemigrations <app_name>"
                 },
                 {
@@ -122,7 +172,8 @@
         },
         {
             "title": "জ্যাঙ্গো অথ",
-            "items": [{
+            "items": [
+                {
                     "definition": "সুপার ইউজার তৈরী করা",
                     "code": "python manage.py createsuperuser"
                 },
@@ -134,7 +185,8 @@
         },
         {
             "title": "স্ট্যাটিক ফাইল",
-            "items": [{
+            "items": [
+                {
                     "definition": "'স্ট্যাটিক রুট' ফোল্ডারে সকল স্ট্যাটিক ফাইল সংগ্রহ করা",
                     "code": "python manage.py collectstatic"
                 },
@@ -150,9 +202,14 @@
         },
         {
             "title": "টেমপ্লেট ট্যাগ",
-            "items": [{
+            "items": [
+                {
                     "definition": "টেমপ্লেট এক্সটেন্ড করা",
                     "code": "{%extends '<html file name>'%}"
+                },
+                {
+                    "definition": "টেমপ্লেট ট্যাগ এক্সটেন্ড করার জন্য (কোড রিডিউস করার জন্য ) ",
+                    "code": "{% block content %} ... {% endblock %} or {% block content %} ... {% endblock content %}"
                 },
                 {
                     "definition": "টেমপ্লেট অন্তর্ভুক্ত করা",
@@ -173,6 +230,163 @@
                 {
                     "definition": "টেমপ্লেট এর ভেতরে লুপ তৈরি",
                     "code": "{%for i in <context data name>%} ... {%endfor%}"
+                },
+                {
+                    "definition": "ট্যাগ তৈরী করা",
+                    "code": "{% load <tag_or_filter_lib> %}"
+                },
+                {
+                    "definition": "ফিল্টার ব্যাবহার করা ",
+                    "code": "{% filter <filter>[|<filter>...] %}"
+                },
+                {
+                    "definition": "স্ট্যাটিক ফাইল লোড করা",
+                    "code": "{% load static \"custom.css\" %}"
+                },
+                {
+                    "definition": "টেম্পলেট এ  ভেরিয়েবল ব্যাবহার করা",
+                    "code": "{{ variable_name }}"
+                },
+                {
+                    "definition": "url লিঙ্ক করা ",
+                    "code": "{% url \"some-other-page\" %}"
+                },
+                {
+                    "definition": "url এর ভিতরে ভেরিয়েবল পাস করা",
+                    "code": "{% url \"\"blog-view\"\" blog.id %}"
+                },
+                {
+                    "definition": "উক্ত  '|'  সিম্বল এর মাধ্যমে ফিল্টার ব্যাবহার করা",
+                    "code": "{{ variable_name | filter_name }}"
+                },
+                {
+                    "definition": "উক্ত  '|'  সিম্বল এর মাধ্যমে ফিল্টার আর্গুমেন্ট পাস করা",
+                    "code": "{{ variable_name | filter_name:\"argument\"}}"
+                },
+                {
+                    "definition": "উক্ত  '|'  সিম্বল এর মাধ্যমে ডিকশনারি শর্ট করা",
+                    "code": "{{ dictionary_name | dictsort:\"key_name\"}}"
+                },
+                {
+                    "definition": "উক্ত  '|'  সিম্বল এর মাধ্যমে ডাটাটাইপ ফিল্টার করা",
+                    "code": "{{ date_time | time\"H\": \"i\" }}"
+                },
+                {
+                    "definition": "কমেন্ট ব্যাবহার করা",
+                    "code": "{% comment %} .... {% endcomment %}"
+                },
+                {
+                    "definition": "লুপে ইনডেক্স নাম্বার চেক করা",
+                    "code": "{{ forloop.counter }} #starting index 1 Or {{ forloop.counter0 }} # starting index 0"
+                },
+                {
+                    "definition": "লুপে রিভার্স ইনডেক্স নাম্বার চেক করা",
+                    "code": "{{ forloop.revcounter }} # end index 1 Or {{ forloop.revcounter0 }} # end index 0"
+                },
+                {
+                    "definition": "টেমপ্লেট এর কিছু পরিবর্তন হলো কিনা চেক করা",
+                    "code": "{% ifchanged %} …. {% endifchanged %}"
+                },
+                {
+                    "definition": "Random টেক্স জেনারেট করা",
+                    "code": "{% lorem %}"
+                },
+                {
+                    "definition": "বর্তমান সময়",
+                    "code": "{% now \"SHORT_DATETIME_FORMAT\" %}"
+                },
+                {
+                    "definition": "এইচটিএমএল ট্যাগের হোয়াইটস্পেস মুছা",
+                    "code": "{% spaceless %}  …..  {% endspaceless %}"
+                }
+            ]
+        },
+        {
+            "title": "ডিজ্যাঙ্গু মডেল এন্ড ডেটাবেজ",
+            "items": [
+                {
+                    "definition": "models.py এর মডেল ক্লাস ইম্পোর্ট করা",
+                    "items": "from django.db import models"
+                },
+                {
+                    "definition": "model ক্লাস তৈরি করা",
+                    "items": "class Person(models.Model):"
+                },
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য",
+                    "items": "NULL"
+                },
+                {
+                    "definition": "অটোমেটিক যেকোন সাইজ এর ইন্টিজার ফিল্ড ডিক্লেয়ার করার জন্য",
+                    "items": "models.AutoField()"
+                },
+                {
+                    "definition": "-2147483648 থেকে  2147483647 এর মধ্যে যেকোন সাইজ এর ইন্টিজার স্টোর করার জন্য",
+                    "items": "models.IntegerField()"
+                },
+                {
+                    "definition": "AutoField এর মত শুধু মাত্র ৬৪ বিট এর যেকোন ইন্টিজার ইনপুট নেওয়ার জন্য",
+                    "items": "models.BigAutoField()"
+                },
+                {
+                    "definition": "বাইট,বাইট এরে অথবা মেমরি ভিউ এসাইন করার জন্য ",
+                    "items": "models.BinaryField()"
+                },
+                {
+                    "definition": "বুলিয়ান ভ্যালু এসাইন করার জন্য",
+                    "items": "models.BooleanField()"
+                },
+                {
+                    "definition": "",
+                    "items": "NULL"
+                },
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য",
+                    "items": "NULL"
+                },
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য",
+                    "items": "NULL"
+                },
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য",
+                    "items": "NULL"
+                },
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য",
+                    "items": "NULL"
+                },
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য",
+                    "items": "NULL"
+                },
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য",
+                    "items": "NULL"
+                },
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য",
+                    "items": "NULL"
+                },
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য",
+                    "items": "NULL"
+                },
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য",
+                    "items": "NULL"
+                },
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য",
+                    "items": "NULL"
+                },
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য",
+                    "items": "NULL"
+                },
+                {
+                    "definition": "ডাটাবেজ এ NULL এম্পটি ভেলুয় হিসেবে স্টোর করার জন্য",
+                    "items": "NULL"
                 }
             ]
         }

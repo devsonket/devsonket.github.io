@@ -36,7 +36,7 @@
                 },
                 {
                     "definition": "এক্সিস্টিং ভ্যারিয়াবলেস চেক করতে",
-                    "code": "isset() (includes arrays, objects, etc.)"
+                    "code": "isset( $variable ) {} (includes arrays, objects, etc.)"
                 },
                 {
                     "definition": "এক্সিস্টিং ফাংশনস চেক করতে",

@@ -1,6 +1,6 @@
 {
     "id": "laravel-framework",
-    "title": "লারাভেল পিএইচপি ফ্রেমওয়ার্কিং",
+    "title": "লারাভেল পিএইচপি ফ্রেমওয়ার্ক",
     "slug": "laravel-framework",
     "description": "লারাভেল একটি ওপেন সোর্স পিএইচপি ফ্রেমওয়ার্ক। ২০১১ সালে টেইলর অটওয়েল প্রথম লারাভেল ডেভেলপ করেন। সাধারণ ব্লগ, কনটেন্ট ম্যানেজমেন্ট সিস্টেম, ইকমার্স সাইট, বড় ধরনের ওয়েব এপ্লিকেশন, কিংবা মোবাইল এপ্লিকেশনের জন্য JSON নির্ভর এপ্লিকেশন সহ সব কিছুই এখন লারাভেল ব্যবহার করে ডেভেলপ করা সম্ভব।",
     "colorPref": "#FF2D20",
@@ -9,6 +9,17 @@
             "items": [{
                     "definition": "প্রোজেক্ট স্টার্ট করার জন্য",
                     "code": "php artisan serve"
+                }, {
+                    "definition": "প্রোজেক্টের সকল ক্যাশ ক্লিলিয়ার/রিমুভ করার জন্য",
+                    "code": "php artisan optimize:clear"
+                },
+                {
+                    "definition": "প্রোজেক্টের সকল রাউট লিস্ট দেখার জন্য",
+                    "code": "php artisan route:list"
+                },
+                {
+                    "definition": "প্রোজেক্টের মেথড অনুযায়ী রাউট লিস্ট দেখার জন্য",
+                    "code": "php artisan route:list --method={method type [get,post,put,delete,patch etc]}"
                 },
                 {
                     "definition": "রাউট কে ক্যাশে নেয়া",
@@ -125,6 +136,10 @@
                 {
                     "definition": "নুতন ডাটাবেস মাইগ্রেট এর সাথে সিড ফাইল গুলা ও জেনারেট  করা",
                     "code": "php artisan migrate:fresh --seed"
+                },
+                {
+                    "definition": "ডাটাবেসে নির্দিষ্ট টেবিল মাইগ্রেট করা",
+                    "code": "php artisan migrate --path=/database/migrations/full_migration_file_name_migration.php"
                 }
             ]
         },
@@ -548,6 +563,10 @@
                 {
                     "definition": "Where Method এর মাঝে 'or' পাস করা",
                     "code": "Model::where('columnName', 'value')->orWhere('columnName','value')->get();  অথবা Model::where('columnName', 'value')->where('columnName','value', 'or')->get();"
+                },
+                {
+                    "definition": "মডেল কে রেপ্লিকেট(কপি) করতে চাইলে ",
+                    "code": "$tasks = Tasks::find(1);\n$newTask = $tasks->replicate();\n$newTask->save();"
                 }
             ]
         },
@@ -698,6 +717,167 @@
                     "code": "redirect('/path/to/route')->with('status', 'Your post has been published successfully!')"
                 }
             ]
-        }
+        },
+        {
+            "title": "অ্যারে এবং অবজেক্ট হেল্পার",
+            "items": [{
+                    "definition": "অ্যারে বা অবজেক্ট এক্সেসিবেল কি না চেক করতে",
+                    "code": "Arr::accessible()"
+                },{
+                    "definition": "অ্যারেতে নতুন আইটেম যোগ করতে",
+                    "code": "Arr::add()"
+                },{
+                    "definition": "একাধিক অ্যারেকে একটি অ্যারেতে রূপান্তর করতে",
+                    "code": "Arr::collapse()"
+                },{
+                    "definition": "একাধিক অ্যারের মধ্যে ক্রস জয়েন করতে",
+                    "code": "Arr::corssJoin()"
+                },{
+                    "definition": "অ্যারের ভ্যালু এবং কী কে আলাদা আলাদা দুটি অ্যারেতে রূপান্তর করতে",
+                    "code": "Arr::devide()"
+                },{
+                    "definition": "ডট নোটেশন এর মাধ্যমে একটি মাল্টিডাইমেনশনাল অ্যারেকে সিঙ্গেল অ্যারেতে রূপান্তর করতে",
+                    "code": "Arr::dot()"
+                },{
+                    "definition": "অ্যারে থেকে একটি আইটেম ব্যাড দিতে",
+                    "code": "Arr::except()"
+                },{
+                    "definition": "অ্যারেতে আইটেমটি আছে কি না চেক করতে",
+                    "code": "Arr::exists()"
+                },{
+                    "definition": "অ্যারের প্রথম আইটেম দেখতে",
+                    "code": "Arr::first()"
+                },{
+                    "definition": "একটি মাল্টিডাইমেনশনাল অ্যারেকে সিঙ্গেল অ্যারেতে রূপান্তর করতে",
+                    "code": "Arr::flatten()"
+                },{
+                    "definition": "ডট নোটেশন এর মাধ্যমে অ্যারে থেকে একটি আইটেম রিমুভ করতে",
+                    "code": "Arr::forget()"
+                },{
+                    "definition": "মাল্টি ডাইমেনশনাল অ্যারের মধ্যে থেকে আইটেম খুঁজতে",
+                    "code": "Arr::get()"
+                },{
+                    "definition": "অ্যারের মধ্যে থেকে আইটেম আছে কি না সেকি করতে",
+                    "code": "Arr::has()"
+                },{
+                    "definition": "সেটটি অ্যারের  মধ্যে থেকে আইটেম আছে কি না চেক করতে",
+                    "code": "Arr::hasAny()"
+                },{
+                    "definition": "অ্যারেটি এসোসিয়েটিভ কি না চেক করতে",
+                    "code": "Arr::isAssos()"
+                },{
+                    "definition": "অ্যারের কী গুলো শুন্য থেকে ক্রমাগত ভাবে সাজানো আছে কি না চেক করতে",
+                    "code": "Arr::isList()"
+                },{
+                    "definition": "অ্যারের শেষ আইটেম দেখতে",
+                    "code": "Arr::last()"
+                },{
+                    "definition": "অ্যারের মধ্যে থেকে নির্দিষ্ট আইটেম গুলো দেখতে",
+                    "code": "Arr::only()"
+                },{
+                    "definition": "অ্যারের একটি সিঙ্গেল কলামের ভ্যালু দেখতে",
+                    "code": "Arr::pluck()"
+                },{
+                    "definition": "অ্যারের শুরুতে কী এবং ভ্যালু সেট করতে",
+                    "code": "Arr::prepend()"
+                },{
+                    "definition": "নির্দিষ্ট ভ্যালু বাদ দিয়ে অ্যারের দেখতে",
+                    "code": "Arr::pull()"
+                },{
+                    "definition": "অ্যারেকে কুয়েরি স্ট্রিং এ রূপান্তর করতে",
+                    "code": "Arr::query()"
+                },{
+                    "definition": "অ্যারে কী এবং ভ্যালু এলোমেলো ভাবে দেখতে",
+                    "code": "Arr::random()"
+                },{
+                    "definition": "ডট নোটেশনের মাধ্যমে অ্যারের ভেতরে ভ্যালু সেট করতে",
+                    "code": "Arr::set()"
+                },{
+                    "definition": "অ্যারের ভ্যালু গুলো সাফল করতে",
+                    "code": "Arr::shuffle()"
+                },{
+                    "definition": "অ্যারের ভ্যালু সর্ট করতে",
+                    "code": "Arr::sort()"
+                },{
+                    "definition": "সাধারণ অ্যারেকে ডট নোটেশনের মাধ্যম মাল্টিডাইমেনশনাল অ্যারেতে রূপান্তর করতে",
+                    "code": "Arr::undot()"
+                },{
+                    "definition": "অ্যারেকে ফিল্টার করতে",
+                    "code": "Arr::where()"
+                },{
+                    "definition": "অ্যারে থেকে নাল ভ্যালু রিমুভ করতে",
+                    "code": "Arr::whereNotNull()"
+                },{
+                    "definition": "ডট নোটেশনের মাধ্যমে অ্যারের ভিতরে ভ্যালু সেট করতে",
+                    "code": "data_fill()"
+                },{
+                    "definition": "ডট নোটেশনের মাধ্যমে অ্যারের ভিতরের ভ্যালু দেখতে",
+                    "code": "data_get()"
+                },{
+                    "definition": "ডট নোটেশনের মাধ্যমে অ্যারে বা অবজেক্টর ভিতরের ভ্যালু সেট করতে",
+                    "code": "data_set()"
+                },{
+                    "definition": "অ্যারের প্রথম ভ্যালু দেখতে",
+                    "code": "head()"
+                },{
+                    "definition": "অ্যারের শেষ ভ্যালু দেখতে",
+                    "code": "last()"
+                }
+            ]
+        },
+        {
+            "title": "মডেল এর গুরুতপূর্ন তথ্য",
+            "items": [
+                {
+                    "definition": "ডাটাবেজ এর কানেকশন সেট করে দেয়া",
+                    "code": "protected $connection = 'sqlite';"
+                },
+                {
+                    "definition": "টেবিল সেট করে দেয়া",
+                    "code": "protected $table = 'users';"
+                },
+                {
+                    "definition": "টেবিল এর প্রাইমেরি কি সেট করে দেয়া",
+                    "code": "protected $primaryKey = 'column_id';"
+                },
+                {
+                    "definition": "ফিল্ড ডেট টাইপ হিসেবে পাওয়ার জন্য",
+                    "code": "protected $dates = ['dob'];"
+                },
+                {
+                    "definition": "যেসব ফিল্ড এ ডাটা ইন্সার্ট করতে চাই",
+                    "code": "protected $guarded = ['name', 'age'];"
+                },
+                {
+                    "definition": "মডেল ইভেন্টে ডিফল্ট ইভেন্ট বাইন্ড করে দেয়া",
+                    "code": "protected $dispatchesEvents = ['creating' => Event::class];"
+                },
+                {
+                    "definition": "ফিল্ড এর ভ্যালু কাস্টিং করে চেইঞ্জ করে ফেলা",
+                    "code": "protected $casts = ['dob' => 'int'];"
+                }
+            ]
+        },
+        {
+            "title": "প্রয়োজোনীয় কিছু হেল্পার ফাংশন",
+            "items":[
+               {
+                   "definition": "ডাই এবং ডিবাগ",
+                   "code": "dd($Variable_name)"
+               },
+               {
+                   "definition": "ডাই,ডিবাগ এবং ডাম্প ",
+                   "code": "ddd($Variable_name)"
+               },
+               {
+                   "definition": "হল্ট/এবোর্ট/টার্মিনেট করার জন্য",
+                   "code": "abort(HTTP response Code)"
+               },
+               {
+                   "definition": "লারাভেল এর ডিফল্ট বিক্রিপ্ট এলগরিদম দিয়ে হ্যাশ মেক",
+                   "code": "bcrypt('String')"
+               }
+            ]
+       }
     ]
 }

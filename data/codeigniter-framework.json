@@ -1,12 +1,14 @@
 {
     "id": "codeigniter-framework",
-    "title": "কোডইগনিটর পিএইচপি ফ্রেমওয়ার্কিং",
+    "title": "কোডইগনিটর ৩ পিএইচপি ফ্রেমওয়ার্কিং",
     "slug": "codeigniter-framework",
     "description": "কোডইগনিটর একটি ওপেন সোর্স পিএইচপি ফ্রেমওয়ার্ক। কোডইগনাইটার জনপ্রিয় মডেল–ভিউ–কন্ট্রোলার (MVC) প্যাটার্ন এর উপর ভিত্তি করে উন্নয়ন করা হয়েছে। যেখানে কন্ট্রোলার ক্লাসগুলা হচ্ছে এর অবিচ্ছেদ্য অংশ। যেখানে মডেল ভিউ কন্ট্রোলার এর উপর গুরুত্ব আরোপ করা হয়েছে। কোডইগনিটর আরো মডিফাই করতে পারে হাইরিক্যাল মডেল ভিউ কন্ট্রোলার করতে পারবেন, যা ডেভেলপারদের কোড লিখার সুবিধার জন্যে মডেল ভিউ কন্টোলার সুবিধা প্রদান করে থাকে। কোডইগনিটর অন্য সকল পিএইচপি ফ্রেমওয়ার্কের চাইতে অনেক দ্রুত। আগস্ট ২০০৮ সালে পিএইচপির জনক রাসমুস লার্ডফ কোডইগনিটর সম্পর্কে বলেন যে  তিনি এটি পছন্দ করেন - কারণ এটি দ্রুত, হালকা এবং অন্তত একটি কাঠামো মত। ২০০৬ সালের প্রথম এলিসল্যাব এর দ্বারা এটা প্রকাশ করা হয় । ২০১৩ সালে এলিস ল্যাব নতুন একজন কর্নধারের নাম ঘোষনা করেন এটার উন্নয়নের জন্য। পরে ৬ই অক্টোবর ২০১৪ এলিস ল্যাব ব্রিটিশ কলাম্বিয়া ইন্সটিটিউট এন্ড টেকনোলজিকে এটার উন্ন্যয়নের দায়িত্বভার অর্পণ করেন।",
     "colorPref": "#EE4323",
-    "contents": [{
+    "contents": [
+        {
             "title": "অ্যারে হেলপার",
-            "items": [{
+            "items": [
+                {
                     "definition": "লোডিং অ্যারে",
                     "code": "$this->load->helper('array');"
                 },
@@ -26,7 +28,8 @@
         },
         {
             "title": "বেঞ্চমার্কিং ক্লাস",
-            "items": [{
+            "items": [
+                {
                     "definition": "বেঞ্চমার্ক ক্লাস এড করা",
                     "code": "class CI_Benchmark"
                 },
@@ -46,7 +49,8 @@
         },
         {
             "title": "ক্যাশে ক্লাস",
-            "items": [{
+            "items": [
+                {
                     "definition": "ক্যাশে ক্লাস এড করা",
                     "code": "class CI_Cache"
                 },
@@ -90,7 +94,8 @@
         },
         {
             "title": "ক্যালেন্ডারিং ক্লাস",
-            "items": [{
+            "items": [
+                {
                     "definition": "ক্লাস লোড করা",
                     "code": "$this->load->library('calendar');"
                 },
@@ -134,7 +139,8 @@
         },
         {
             "title": "ক্যাপচা হেলপার",
-            "items": [{
+            "items": [
+                {
                     "definition": "ক্যাপচা ক্লাস লোড করা",
                     "code": "$this->load->helper('captcha');"
                 },
@@ -146,7 +152,8 @@
         },
         {
             "title": "কনফিগ",
-            "items": [{
+            "items": [
+                {
                     "definition": "কনফিগ ক্লাস লোড করা",
                     "code": "$this->config->load('filename');"
                 },
@@ -186,7 +193,8 @@
         },
         {
             "title": "কুকি হেলপার",
-            "items": [{
+            "items": [
+                {
                     "definition": "কুকি হেলপার লোড করা",
                     "code": "$this->load->helper('cookie');"
                 },
@@ -206,7 +214,8 @@
         },
         {
             "title": "ডাটাবেজ",
-            "items": [{
+            "items": [
+                {
                     "definition": "ক্লাস এড করা",
                     "code": "class CI_DB_driver"
                 },
@@ -321,6 +330,131 @@
                 {
                     "definition": "টেবিল লিস্ট",
                     "code": "list_tables([$constrain_by_prefix = FALSE])"
+                }
+            ]
+        },
+        {
+            "title": "ফর্ম ভ্যালিডেশন",
+            "items": [
+                {
+                    "definition": "হেল্পার লোড করা",
+                    "code": "$this->load->helper(array('form', 'url'));"
+                },
+                {
+                    "definition": "লাইব্রেরি লোড করা",
+                    "code": "$this->load->library('form_validation');"
+                },
+                {
+                    "definition": "ভেলিডেশনের নিয়ম সেট করা",
+                    "code": "$this->form_validation->set_rules('name', 'Readable Name', 'rule1|rule2|rule3');"
+                },
+                {
+                    "definition": "অ্যারে আকারে ভেলিডেশনের নিয়ম সেট করা",
+                    "code": "$this->form_validation->set_rules(['field' => 'username', 'label' => 'Username','rules' => 'required']);"
+                },
+                {
+                    "definition": "ভেলিডেশনের পরে ফর্মে ডাটা ধরে রাখতে",
+                    "code": "set_value('field name');"
+                },
+                {
+                    "definition": "ভ্যালিডেশন চেক করতে",
+                    "code": "if($this->form_validation->run() == FALSE){//returnToForm}else{//Success};"
+                },
+                {
+                    "definition": "ফাঁকা ফর্ম চেক করতে",
+                    "code": "required"
+                },
+                {
+                    "definition": "ডাটার মিল চেক করতে",
+                    "code": "matches"
+                },
+                {
+                    "definition": "রেগুলার এক্সপ্রেশন এর মিল চেক করতে",
+                    "code": "regex_match"
+                },
+                {
+                    "definition": "ডাটা আলাদা কিনা চেক করতে",
+                    "code": "differs"
+                },
+                {
+                    "definition": "ডাটা ইউনিক কিনা চেক করতে",
+                    "code": "is_unique"
+                },
+                {
+                    "definition": "সর্বনিম্ন সংখ্যার সীমা নির্ধারিত করতে ",
+                    "code": "min_length[]"
+                },
+                {
+                    "definition": "সর্বোচ্চ সংখ্যার সীমা নির্ধারিত করতে",
+                    "code": "max_length[]"
+                },
+                {
+                    "definition": "নির্দিষ্ট সংখ্যার সীমা নির্ধারিত করতে",
+                    "code": "exact_length[]"
+                },
+                {
+                    "definition": "ডাটা নির্দিষ্ট সংখ্যার অধিক কি না চেক করতে",
+                    "code": "greater_than[]"
+                },
+                {
+                    "definition": "ডাটা নির্দিষ্ট সংখ্যার অধিক বা সমান কি না চেক করতে",
+                    "code": "greater_than_equal_to[]"
+                },
+                {
+                    "definition": "ডাটা নির্দিষ্ট সংখ্যার কম কি না চেক করতে",
+                    "code": "less_than[]"
+                },
+                {
+                    "definition": "ডাটা নির্দিষ্ট সংখ্যার কম বা সমান কি না চেক করতে",
+                    "code": "less_than_equal_to[]"
+                },
+                {
+                    "definition": "ডাটা অক্ষর কি না চেক করতে",
+                    "code": "alpha"
+                },
+                {
+                    "definition": "ডাটা অক্ষর বা সংখ্যাসূচক কি না চেক করতে",
+                    "code": "alpha_numeric"
+                },
+                {
+                    "definition": "ডাটা অক্ষর বা সংখ্যাসূচক এবং স্পেস আছে কি না চেক করতে",
+                    "code": "alpha_numeric_spaces"
+                },
+                {
+                    "definition": "ডাটা সংখ্যাসূচক কি না চেক করতে",
+                    "code": "numeric"
+                },
+                {
+                    "definition": "ডাটা পূর্ণসংখ্যা কি না চেক করতে",
+                    "code": "integer"
+                },
+                {
+                    "definition": "দশমিক ডাটা কি না চেক করতে",
+                    "code": "decimal"
+                },
+                {
+                    "definition": "ডাটা স্বাভাবিক সংখ্যা(0,1,2,3) কি না চেক করতে",
+                    "code": "is_natural"
+                },
+                {
+                    "definition": "ডাটা শূন্য বাদে স্বাভাবিক সংখ্যা(1,2,3) কি না চেক করতে",
+                    "code": "is_natural_no_zero"
+                },
+                {
+                    "definition": "URL বৈধ কি না চেক করতে ",
+                    "code": "valid_url"
+                },
+                {
+                    "definition": "ইমেইল বৈধ কি না চেক করতে",
+                    "code": "valid_email"
+                },
+                {
+                    "definition": "একাধিক ইমেইল বৈধ কি না চেক করতে",
+                    "code": "valid_emails"
+                },
+                {
+                    "definition": "IP বৈধ কি না চেক করতে",
+                    "code": "valid_ip"
                 }
             ]
         }

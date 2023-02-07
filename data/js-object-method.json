@@ -39,8 +39,8 @@
                     "code": "replaceAll(x, y)"
                 },
                 {
-                    "definition": "কোনোকিছু(x) স্ট্রিং এ থাকলে সেটার ইন্ডেক্স রিটার্ণ করা অথবা -1 রিটার্ণ করা",
-                    "code": "search()"
+                    "definition": "স্ট্রিং(y) এ কোনোকিছু(x) থাকলে সেটার ইন্ডেক্স রিটার্ণ করা অথবা -1 রিটার্ণ করা",
+                    "code": "y.search(x)"
                 },
                 {
                     "definition": "একটা স্ট্রিংকে থেকে নির্দিষ্ট কোনো কিছু অংশ আলাদা করা",
@@ -171,28 +171,28 @@
                     "code": "getFullYear()"
                 },
                 {
-                    "definition": "মাস(০-১১) রিটার্ণ করা",
-                    "code": "getMonth(x)"
+                    "definition": "ডেট(d) থেকে মাস(০-১১) রিটার্ণ করা",
+                    "code": "d.getMonth()"
                 },
                 {
-                    "definition": "তারিখ(০-৩১) রিটার্ণ করা",
-                    "code": "getDate(x)"
+                    "definition": "ডেট(d) থেকে তারিখ(১-৩১) রিটার্ণ করা",
+                    "code": "d.getDate()"
                 },
                 {
-                    "definition": "সাপ্তাহিক(০-৬) দিন পাওয়া",
-                    "code": "getDay()"
+                    "definition": "ডেট(d) থেকে সাপ্তাহিক(০-৬) দিন পাওয়া",
+                    "code": "d.getDay()"
                 },
                 {
-                    "definition": "ঘন্টা(০-২৩) রিটার্ণ করা",
-                    "code": "getHours(x)"
+                    "definition": "ডেট(d) থেকে ঘন্টা(০-২৩) রিটার্ণ করা",
+                    "code": "d.getHours()"
                 },
                 {
-                    "definition": "মিনিট(০-৫৯) রিটার্ণ করা",
-                    "code": "getMinutes(x)"
+                    "definition": "ডেট(d) থেকে মিনিট(০-৫৯) রিটার্ণ করা",
+                    "code": "d.getMinutes()"
                 },
                 {
-                    "definition": "সেকেন্ড(০-৫৯) রিটার্ণ করা",
-                    "code": "getSeconds(x)"
+                    "definition": "ডেট(d) থেকে সেকেন্ড(০-৫৯) রিটার্ণ করা",
+                    "code": "d.getSeconds()"
                 }
             ]
         },
@@ -285,6 +285,10 @@
                 {
                     "definition": "x ইন্টিজার হলে true,অন্যথায় false রিটার্ন করে",
                     "code": "isInteger(x)"
+                },
+                {
+                    "definition": "x ফাইনাইট হলে true,অন্যথায় false রিটার্ন করে",
+                    "code": "isFinite(x)"
                 }
             ]
         },

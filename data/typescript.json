@@ -262,13 +262,14 @@
         },
         {
             "title": "ডেকোরেটর",
-            "items": [{
+            "items": [
+                {
                     "definition": "ডিক্লারেশন",
-                    "code": "function food(value: string)\n{ \n return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {};}"
+                    "code": "function food(value: string) {\n\treturn function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {};\n}"
                 },
                 {
                     "definition": "ডেকোরেটর ব্যাবহার করা",
-                    "code": "@food('burger')\n class kitchen {} "
+                    "code": "@food('burger')\n class kitchen {}"
                 }
             ]
         },
