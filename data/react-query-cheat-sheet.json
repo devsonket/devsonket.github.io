@@ -1,0 +1,91 @@
+{
+    "id": "react-query-cheat-sheet",
+    "title": "রিঅ্যাক্ট কুয়েরি এর টুকিটাকি",
+    "slug": "react-query-cheat-sheet",
+    "description": "React Query হল একটি JavaScript library যা React applications এর জন্য data fetching এবং data caching সম্পর্কিত জটিল কাজগুলি সহজ করে।",
+    "colorPref": "#ff4454",
+    "contents": [
+      {
+        "title": "React Query ইনস্টল করতে আপনাকে নিম্নোক্ত কমান্ড রান করতে হবে:",
+        "items": [
+          {
+            "definition": "npx এর সাহায্যে",
+            "code": "npm install react-query"
+          },
+          {
+            "definition": "yarn এর সাহায্যে",
+            "code": "yarn add react-query"
+          },
+          {
+            "definition": "CDN এর সাহায্যে ব্যবহার করতে চাইলে নিচের স্ক্রিপ্টি অ্যাড করতে হবে",
+            "code": "<script src='https://unpkg.com/react-query/dist/react-query.production.min.js'></script>"
+          }
+        ]
+      },
+      {
+        "title": "বেসিক Query Function গুলোর পরিচিতি",
+        "items": [
+          {
+            "definition": "একটি API এর data fetching করতে ব্যবহৃত হয়ঃ ",
+            "code": "useQuery()"
+          },
+          {
+            "definition": "একসাথে অনেকগুলো API এর data fetching করতে ব্যবহৃত হয়ঃ ",
+            "code": "useQueries()"
+          },
+          {
+            "definition": "একটি API এর data mutation করতে ব্যবহৃত হয়ঃ ",
+            "code": "useMutation()"
+          },
+          {
+            "definition": "পেইজিনেশন এবং স্ক্রোলিং সম্পর্কিত কাজের জন্য ব্যবহৃত হয়ঃ ",
+            "code": "useInfiniteQuery()"
+          },
+          {
+            "definition": "বর্তমানে কি কি query চলছে সেটা জানতে ব্যবহৃত হয়ঃ ",
+            "code": "useQueryClient()"
+          },
+          {
+            "definition": "বর্তমানে কতগুলো query চলছে সেটা জানতে ব্যবহৃত হয়ঃ ",
+            "code": "useIsFetching()"
+          },
+          {
+            "definition": "Error handling এর জন্য ব্যবহৃত হয়ঃ ",
+            "code": "useQueryErrorResetBoundary()"
+          }
+        ]
+      },
+  
+      {
+        "title": "React Query সমূহের ধারণা",
+        "items": [
+          {
+            "definition": "Query Function গুলো ব্যবহার করার জন্য আমাদের তিনটি কাজ করতে হবেঃ ১/ একটি Unique Key দিতে হবে। ২/ একটি ফাংশান দিতে হবে, যেটি Promise return করে, Resolved data অথবা একটি Error return করে্টি ৩/ কুয়েরি ফাংশানে options পাঠাতে হলে সেটি ৩য় প্যারামিটারে পাঠাতে হয়।",
+            "code": "import { useQuery } from 'react-query' function App() { const info = useQuery('todos', fetchTodoList), {refetchOnWindowFocus: true} }"
+          },
+          {
+            "definition": "একসাথে অনেকগুলো কুয়েরি করার জন্য আপনি Manual Parallel Queries ব্যবহার করতে পারেন।",
+            "code": " function App () { const usersQuery = useQuery('users', fetchUsers) const teamsQuery = useQuery('teams', fetchTeams) const projectsQuery = useQuery('projects', fetchProjects) } "
+          },
+          {
+            "definition": "কুয়েরি ফাংশান সমূহ কন্ট্রোল করতে হলে, ",
+            "code": "refetchOnWindowFocus: true"
+          },
+          {
+            "definition": "Window Focus Refetch কন্ট্রোল করতে চাইলে refetchOnWindowFocus: true/false করে দিতে হবে।",
+            "code": "refetchOnWindowFocus: true"
+          },
+  
+          {
+            "definition": "Disabling/Pausing Queries করতে হলে, enable: true/false করতে হবে। ",
+            "code": "enabled: true"
+          },
+          {
+            "definition": "যখন কোনো কুয়েরি ফাংশন error throw করে, তখন automatically retry করার জন্য retry option টি ব্যবহার করতে পারেন। একটি Boolean, Number অথবা custom function accept করে। ",
+            "code": "enabled: true, enabled: 6, enabled: (failureCount, error) => ..."
+          }
+        ]
+      }
+    ]
+  }
+  
