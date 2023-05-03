@@ -878,6 +878,90 @@
                    "code": "bcrypt('String')"
                }
             ]
-       }
+       },
+		{
+            "title": "ক্যাশ (Cache) মেথড সমূহ",
+            "items": [
+                {
+                    "definition": "ক্যাশেতে একটি ভ্যালু সংরক্ষণ করতে যদি সেটি আগে থেকেই সংরক্ষিত না থাকে",
+                    "code": "Cache::add($key, $value, $seconds) /* অথবা cache()->add($key, $value, $seconds) */"
+                },
+                {
+                    "definition": "ক্যাশেতে একটি ভ্যালু সংরক্ষণ করতে",
+                    "code": "Cache::put($key, $value, $seconds) /* অথবা cache()->put($key, $value, $seconds) */"
+                },
+                {
+                    "definition": "ক্যাশেতে নির্ধারিত সময়ের জন্য 'key-value' অনুযায়ী একাধিক ভ্যালু সংরক্ষণ করতে",
+                    "code": "Cache::putMany(array $keyValuePair, $seconds) /* অথবা cache()->putMany(array $keyValuePair, $seconds) */"
+                },
+                {
+                    "definition": "নির্ধারিত সময়ের জন্য একাধিক ভ্যালু ক্যাশেতে সংরক্ষণ করতে",
+                    "code": "Cache::setMultiple(array $values, $seconds) /* অথবা cache()->setMultiple(array $values, $seconds) */"
+                },
+                {
+                    "definition": "স্থায়ীভাবে বা অনির্দিষ্টকালের জন্য ক্যাশেতে কোনো ভ্যালু সংরক্ষণ করতে",
+                    "code": "Cache::forever($key, $value) /* অথবা cache()->forever($key, $value) */"
+                },
+                {
+                    "definition": "ক্যাশেতে রাখা কোনো সংখ্যাকে এক এক করে কিংবা নির্দিষ্ট পরিমাণে বাড়াতে",
+                    "code": "Cache::increment($key, $value) /* অথবা cache()->increment($key, $value) */"
+                },
+                {
+                    "definition": "ক্যাশেতে রাখা কোনো সংখ্যাকে এক এক করে কিংবা নির্দিষ্ট পরিমাণে কমাতে",
+                    "code": "Cache::decrement($key, $value) /* অথবা cache()->decrement($key, $value) */"
+                },
+
+                {
+                    "definition": "ক্যাশ থেকে একটি ভ্যালু পেতে, অথবা যদি না থাকে তবে একটি ডিফল্ট ভ্যালু সংরক্ষণ করতে",
+                    "code": "Cache::get($key, $default) /* অথবা cache()->get($key, $default) */"
+                },
+                {
+                    "definition": "ক্যাশ থেকে 'key' অনুযায়ী একাধিক ভ্যালু পেতে",
+                    "code": "Cache::getMultiple($keys) /* অথবা cache()->getMultiple($keys) */"
+                },
+                {
+                    "definition": "ক্যাশ থেকে একটি ভ্যালু পেতে, অথবা একটি ক্লোজার এক্সিকিউট করতে এবং ফলাফলটি সংরক্ষণ করতে",
+                    "code": "Cache::remember($key, $seconds, $callback) /* অথবা cache()->remember($key, $seconds, $callback) */"
+                },
+                {
+                    "definition": "ক্যাশ থেকে একটি ভ্যালু পেতে, অথবা একটি ক্লোজার এক্সিকিউট করতে এবং অনির্দিষ্ট সময়ের জন্য ভ্যালু সংরক্ষণ করতে",
+                    "code": "Cache::rememberForever($key, $callback) /* অথবা cache()->rememberForever($key, $callback) */"
+                },
+                {
+                    "definition": "ক্যাশেতে কোনো একটি আইটেম আছে কী না তা জানতে (boolean রিটার্ন করবে)",
+                    "code": "Cache::has($key) /* অথবা cache()->has($key) */"
+                },
+
+                {
+                    "definition": "ক্যাশ থেকে কোনো একটি আইটেমকে মুছে দিতে",
+                    "code": "Cache::forget($key) /* অথবা cache()->forget($key) */"
+                },
+                {
+                    "definition": "ক্যাশেতে থাকা সকল আইটেমকে মুছে দিতে",
+                    "code": "Cache::flush() /* অথবা cache()->flush() */"
+                },
+                {
+                    "definition": "অ্যাপ্লিকেশনের সকল ক্যাশ ক্লিয়ার করতে",
+                    "code": "Cache::clear() /* অথবা cache()->clear() */"
+                },
+                {
+                    "definition": "ক্যাশ থেকে একটি আইটেম পাওয়ার পরে সেটাকে মুছে দিতে",
+                    "code": "Cache::pull($key, $default) /* অথবা cache()->pull($key, $default) */"
+                },
+                {
+                    "definition": "ক্যাশ থেকে 'key' অনুযায়ী একাধিক ভ্যালু মুছে দিতে",
+                    "code": "Cache::deleteMultiple($keys) /* অথবা cache()->deleteMultiple($keys) */"
+                },
+
+                {
+                    "definition": "ক্যাশ Facade এর জন্য নতুন Macro নির্ধারণ করতে",
+                    "code": "Cache::macro($name, callable $macro) /* অথবা cache()->macro($name, callable $macro) */"
+                },
+                {
+                    "definition": "রিলেটেড আইটেমকে ট্যাগ অনুযায়ী ক্যাশেতে সংরক্ষণ করতে",
+                    "code": "Cache::tags(['programmer', 'developer'])->put($key, $value, $seconds); /* অথবা cache()->add($key, $value, $seconds) */"
+                }
+            ]
+        }
     ]
 }
