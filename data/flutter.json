@@ -124,10 +124,10 @@
                 },
                 {
                     "definition": "প্যাকেজ ইন্সটাল করতে",
-                    "code": "Packages"
+                    "code": "flutter pub add example"
                 },
                 {
-                    "definition": "স্টেটলেস উইডগেটের জন্য",
+                    "definition": "ধারক উইডগেটের জন্য",
                     "code": "Container"
                 },
                 {
@@ -147,7 +147,7 @@
                     "code": "AppBar"
                 },
                 {
-                    "definition": "স্পেস নিতে",
+                    "definition": "উইজেট স্তূপাকার করতে",
                     "code": "Stack"
                 },
                 {
@@ -171,8 +171,12 @@
                     "code": "FutureBuilder"
                 },
                 {
-                    "definition": "স্ট্রিম বিল্ডার",
+                    "definition": "স্ট্রিম বিল্ডার এর জন্য",
                     "code": "StreamBuilder"
+                },
+                {
+                    "definition": "ডলার সাইন দেখাতে",
+                    "code": "Text('\$500')"
                 }
             ]
         }
