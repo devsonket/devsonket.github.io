@@ -91,11 +91,11 @@
             "title": "কিছু ইম্পরট্যান্ট ফ্লাটার শীট",
             "items": [
                 {
-                    "definition": "এটা এমন একটা উইডগেট যেটা বিন্যাস্ত করা যায়না",
+                    "definition": "এটা এমন একটা উইজেট যেটা বিন্যাস্ত করা যায়না",
                     "code": "StatelessWidget"
                 },
                 {
-                    "definition": "এটা এমন একটা উইডগেট যেটা বিন্যাস্ত করা যায়",
+                    "definition": "এটা এমন একটা উইজেট যেটা বিন্যাস্ত করা যায়",
                     "code": "StatefulWidget"
                 },
                 {
@@ -103,19 +103,19 @@
                     "code": "Center"
                 },
                 {
-                    "definition": "উইডগেটের চাইল্ডকে কলাম ভিউ করবে",
+                    "definition": "উইজেটের চাইল্ডকে কলাম ভিউ করবে",
                     "code": "Column"
                 },
                 {
-                    "definition": "উইডগেটের চাইল্ডকে রো ভিউ করবে",
+                    "definition": "উইজেটের চাইল্ডকে রো ভিউ করবে",
                     "code": "Row"
                 },
                 {
-                    "definition": "উইডগেটের চাইল্ডকে লিস্ট ভিউ করবে",
+                    "definition": "উইজেটের চাইল্ডকে লিস্ট ভিউ করবে",
                     "code": "ListView"
                 },
                 {
-                    "definition": "উইডগেটের চাইল্ডকে গির্ড ভিউ করবে",
+                    "definition": "উইজেটের চাইল্ডকে গির্ড ভিউ করবে",
                     "code": "GridView"
                 },
                 {
@@ -128,6 +128,7 @@
                 },
                 {
                     "definition": "ধারক উইডগেটের জন্য",
+
                     "code": "Container"
                 },
                 {
@@ -139,7 +140,7 @@
                     "code": "Text"
                 },
                 {
-                    "definition": "স্টেটফুল উইডগেট এর জন্য",
+                    "definition": "স্টেটফুল উইজেট এর জন্য",
                     "code": "Scaffold"
                 },
                 {
@@ -151,7 +152,7 @@
                     "code": "Stack"
                 },
                 {
-                    "definition": "গেশ্চার অপশন",
+                    "definition": "জেশ্চার অপশন",
                     "code": "GestureDetector"
                 },
                 {
@@ -167,7 +168,7 @@
                     "code": "LayoutBuilder"
                 },
                 {
-                    "definition": "চাইল্ড উইডগেটের ভবিষ্যৎ বিল্ড",
+                    "definition": "চাইল্ড উইজেটের ভবিষ্যৎ বিল্ড",
                     "code": "FutureBuilder"
                 },
                 {
