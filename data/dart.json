@@ -483,6 +483,10 @@
                     "code": "pub get --offline"
                 },
                 {
+                    "definition": "সমস্যা চিহ্নিত করতে",
+                    "code": "dart analyze" 
+                },
+                {
                     "definition": "লোকাল ক্যাশে একটি প্যাকেজ সংযুক্ত করা",
                     "code": "pub cache add <প্যাকেজের নাম> --version \"<প্যাকেজের ভার্সন>\""
                 },
@@ -505,6 +509,31 @@
                 {
                     "definition": "সার্বজনীন উপলব্ধ প্যাকেজ সচল করা",
                     "code": "pub global activate <প্যাকেজের নাম>"
+                }
+            ]
+        },
+        {
+            "title": "ডার্ট সিএলআই",
+            "items": [
+                {
+                    "definition": "সমস্যা চিহ্নিত করতে",
+                    "code": "dart analyze" 
+                },
+                 {
+                    "definition": "প্রস্তাবিত পরিবর্তনের পূর্বরূপ দেখতে",
+                    "code": "dart fix --dry-run" 
+                },
+                {
+                    "definition": "প্রস্তাবিত পরিবর্তনগুলি প্রয়োগ করতে",
+                    "code": "dart fix --apply" 
+                },
+                 {
+                    "definition": "সমস্যা চিহ্নিতের পর ফিক্স করতে",
+                    "code": "dart fix" 
+                },
+                {
+                    "definition": "ডার্ট ইনস্টলেশন সম্পর্কিত তথ্যে দেখতে",
+                    "code": "dart info" 
                 }
             ]
         }
