@@ -173,6 +173,10 @@
                 {
                     "definition": "স্ট্রিম বিল্ডার",
                     "code": "StreamBuilder"
+                },
+                {
+                    "definition": "ডলার সাইন দেখাতে",
+                    "code": "Text('\$500')"
                 }
             ]
         }
