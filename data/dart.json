@@ -534,6 +534,30 @@
                 {
                     "definition": "ডার্ট ইনস্টলেশন সম্পর্কিত তথ্যে দেখতে",
                     "code": "dart info" 
+                },
+                {
+                    "definition": "ডার্টকে বিভিন্ন ফরম্যাটে কম্পাইল করতে" ,
+                    "code": "dart compile exe <DART_FILE>" 
+                },
+                {
+                    "definition": "নতুন প্রোজেক্ট তৈরি করতে" ,
+                    "code": "dart create <DIRECTORY>" 
+                },
+                {
+                    "definition": "এপিআই রেফারেন্স ডকুমেন্টেশন তৈরি করতে",
+                    "code": "dart doc <DIRECTORY>" 
+                },
+                {
+                    "definition": "ডার্ট সোর্স কোড ফরম্যাট করতে",
+                    "code": "dart format <DIRECTORY|DART_FILE>" 
+                },
+                 {
+                    "definition": "ডার্ট প্রোগ্রাম রান করতে",
+                    "code": "dart run <DART_FILE>" 
+                },
+                {
+                    "definition": "যেকোনো কমান্ডের সাহায্য পেতে",
+                    "code": "dart help pub outdated" 
                 }
             ]
         }
