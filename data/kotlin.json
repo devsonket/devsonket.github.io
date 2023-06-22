@@ -53,7 +53,22 @@
                 {
                     "definition": "ক্যারেকটার",
                     "code": "val c: Char = ‘s’"
+                },
+                {
+                    "definition": "বহু লাইনের স্ট্রিং যুক্তকরন",
+                    "code": "val text = """
+                                        |First Line
+                                        |Second Line
+                                        |Third Line
+                                        """.trimMargin()"
+                },
+                {
+                    "definition": "সাব স্ট্রিং করুন",
+                    "code": "substr = str.substring(8..13)"
                 }
+                
+               
+                
             ]
         },
         {
@@ -94,6 +109,45 @@
                 "definition": "লেট স্কোপ ফাংশন ,নাল চেক করার জন্য ",
                 "code": "  mediaString?.let { media ->\n\t//do your opeartion you want to do on mediaString object.But use \"media\" in stead of mediaString. It is an alternative of  \"if(mediaString != null){}\" in java\n}"
             }]
+        },
+
+        {
+            "title": "টারনারি অপারেশনস",
+            "items": [ {
+                "definition": "টারনারি অপারেশন  ",
+                "code": "val text = if (x > 5) x > 5 else x <= 5"    
+            }]
+        },
+        {
+            "title": "বিটওয়াইজ অপারেশনস",
+            "items": [
+                 {
+                "definition": "এন্ড অপারেশন  ",
+                "code": "val andResult  = a and b"    
+                },
+                {
+                    "definition": "অর অপারেশন  ",
+                    "code": "val orResult   = a or b"    
+                },
+                {
+                    "definition": "এক্স অর অপারেশন  ",
+                    "code": "val orResult   = a xor b"    
+                },
+                {
+                    "definition": "রাইট শিফট  ",
+                    "code": "a shr 2"    
+                },
+                {
+                    "definition": "লেফট শিফট  ",
+                    "code": "a shl 2"    
+                },
+                {
+                    "definition": "আনসাইনড রাইট শিফট  ",
+                    "code": "a ushr 2"    
+                },
+                    
+        ]
         }
+       
     ]
 }
