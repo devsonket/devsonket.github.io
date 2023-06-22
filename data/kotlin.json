@@ -56,11 +56,7 @@
                 },
                 {
                     "definition": "বহু লাইনের স্ট্রিং যুক্তকরন",
-                    "code": "val text = """
-                                        |First Line
-                                        |Second Line
-                                        |Third Line
-                                        """.trimMargin()"
+                    "code": "val text = \"\"\"\n|First Line\n|Second Line\n|Third Line \"\"\".trimMargin()"
                 },
                 {
                     "definition": "সাব স্ট্রিং করুন",
@@ -73,10 +69,17 @@
         },
         {
             "title": "কন্ট্রোল ফ্লো",
-            "items": [{
+            "items": [
+                {
                     "definition": "সাধারন if-else",
                     "code": "if(condition) { ... } else { ... }"
                 },
+
+                {
+                    "definition": "মাল্টিপল কন্ডিশন ",
+                    "code": "if (score in 0..1000) { }"
+                },
+                
                 {
                     "definition": "when যেটি গতানুগতিক switch এর বিকল্প হিসেবে ব্যাবহার করা হয়",
                     "code": "when (x) {\n    1 -> print(\"x == 1\")\n    2 -> print(\"x == 2\")\n    else -> {\n        print(\"x is neither 1 nor 2\")\n    }\n}"
@@ -115,7 +118,7 @@
             "title": "টারনারি অপারেশনস",
             "items": [ {
                 "definition": "টারনারি অপারেশন  ",
-                "code": "val text = if (x > 5) x > 5 else x <= 5"    
+                "code": "val numOfTypes = if (x > 5) x > 5 else x <= 5"    
             }]
         },
         {
@@ -144,8 +147,40 @@
                 {
                     "definition": "আনসাইনড রাইট শিফট  ",
                     "code": "a ushr 2"    
-                },
+                }
                     
+        ]
+        },
+        {
+            "title": "টাইপ চেক এবং কাস্টিং",
+            "items": [
+                 {
+                "definition": "টাইপ চেক  ",
+                "code": "var age = object as? AgeData // var age = object as AgeData?"    
+                },
+                {
+                    "definition": "টাইপ চেক ( implicit )  ",
+                    "code": "if ( object is age ) { var age = object } // smart casting"    
+                }
+
+        ]
+        },
+        {
+            "title": "আর্গুমেন্ট পাস ও মেথড ডাটা রিটার্ন ",
+            "items": [
+                 {
+                "definition": "ভ্যারয়েবল নাম্বার অফ আর্গুমেন্টস  ",
+                "code": "fun doSomething(vararg numbers: Int) { }"    
+                },
+                {
+                    "definition": "সিঙ্গেল এক্সপ্রেশন ফাংশন  ",
+                    "code": "fun getAge(): Int = age "    
+                },
+                {
+                    "definition": "সিঙ্গেল এক্সপ্রেশন ফাংশন  আরো সিম্পলভাবে",
+                    "code": "fun getAge() = age // return-type is Int    "    
+                }
+
         ]
         }
        
