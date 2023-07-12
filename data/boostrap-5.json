@@ -339,6 +339,26 @@
                     "code": "<div class='carousel-caption'>......</div>"
                 }
             ]
+        },
+        {
+            "title": "মোডাল",
+            "items": [{
+                    "definition": "মোডাল-ফেইড-এনিমেশন",
+                    "code": "<div class='modal fade' id='modalID'>"
+                },
+                {
+                    "definition": "মোডাল স্ক্রিনের মাঝামাঝি রাখা",
+                    "code": " <div class='modal-dialog modal-dialog-centered'>"
+                },
+                {
+                    "definition": "লম্বা কন্টেন্ট স্ক্রল-এবল মোডাল",
+                    "code": "<div class='modal-dialog modal-dialog-scrollable'>"
+                },
+                {
+                    "definition": "মোডাল এ ডায়নামিক কন্টেন্ট দেখানো",
+                    "code": "<button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#modalID' data-bs-whatever=@mdo'>Open modal for @mdo</button>"
+                }
+            ]
         }
     ]
 }
