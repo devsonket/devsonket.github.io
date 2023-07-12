@@ -359,6 +359,30 @@
                     "code": "<button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#modalID' data-bs-whatever=@mdo'>Open modal for @mdo</button>"
                 }
             ]
+        },
+        {
+            "title": "পজিশন",
+            "items": [{
+                    "definition": "অ্যাবসল্যুট পজিশন",
+                    "code": "<div class='position-absolute'></div>"
+                },
+                {
+                    "definition": "রিলেটিভ পজিশন",
+                    "code": "<div class='position-relative'></div>"
+                },
+                {
+                    "definition": "সেন্টার এলিমেন্ট",
+                    "code": "<div class='position-absolute top-0 start-0 translate-middle'></div>"
+                },
+                {
+                    "definition": "টপ ০",
+                    "code": "<div class='top-0'></div>"
+                },
+                {
+                    "definition": "লেফ্ট ০",
+                    "code": "<div class='start-0'></div>"
+                }
+            ]
         }
     ]
 }
