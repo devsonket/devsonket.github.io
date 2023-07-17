@@ -483,10 +483,6 @@
                     "code": "pub get --offline"
                 },
                 {
-                    "definition": "সমস্যা চিহ্নিত করতে",
-                    "code": "dart analyze" 
-                },
-                {
                     "definition": "লোকাল ক্যাশে একটি প্যাকেজ সংযুক্ত করা",
                     "code": "pub cache add <প্যাকেজের নাম> --version \"<প্যাকেজের ভার্সন>\""
                 },
