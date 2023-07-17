@@ -47,6 +47,35 @@
             ]
         },
         {
+            "title": "ফ্লাটার সিএলআই টুলস (Flutter CLI tools) - For android build",
+            "items":[
+                {
+                    "definition": "বিল্ড করতে (Normal)", 
+                    "code":"flutter build apk"
+                },
+                {
+                    "definition": "বিল্ড করতে (release)", 
+                    "code":"flutter build apk --release"
+                },
+                {
+                    "definition": "বিল্ড করতে {যদি main.dart এর নাম xyz.dart হয় তাহলে}", 
+                    "code":"flutter build apk -t xyz.dart"
+                },
+                {
+                    "definition": "বিল্ড করতে {যদি main.dart অন্য ফোল্ডারে থাকে তাহলে}", 
+                    "code":"flutter build apk -t ফোল্ডারের_পাথ/main.dart"
+                },
+                {
+                    "definition": "স্প্লিট করে বিল্ড করতে(এতে আপনার এপ এর সাইজ কমে যাবে কারণ, নির্দিষ্ট ভার্সনের উপর ভিত্তি করে কোড কম্পাইল হবে)", 
+                    "code":"flutter build apk --split-per-abi -t ফোল্ডারের_পাথ/main.dart"
+                },
+                {
+                    "definition": "নির্দিষ্ট ডিভাইসের আর্কিটেকচারের স্প্লিট ভার্সন বিল্ড করতে (যেমন: arm64-v8a, armeabi-v7a, x86_64, x86) উল্লেখ করতে হবে", 
+                    "code":"flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi -t ফোল্ডারের_পাথ/main.dart"
+                }
+            ]
+        }, 
+        {
             "title": "জেশ্চার ডিটেক্ট করা জন্য",
             "items": [
                 {
