@@ -5,139 +5,263 @@
     "description": "সি-শার্প প্রোগ্রামিং",
     "colorPref": "#1290FD",
     "contents": [
-      {
-        "title": "ডাটা টাইপ(ভ্যালু টাইপ) [সর্বাধিক ব্যবহৃত]",
-        "items": [
-          {
-            "definition": "বুলিয়ান ভ্যালু",
-            "code": "bool"
-          },{
-            "definition": "৮-বিট আনসাইন্ড ইন্টিজার",
-            "code": "byte"
-          },{
-            "definition": "১৬-বিট ইউনিকোড ক্যারেক্টার",
-            "code": "char"
-          },{
-            "definition": "৬৪-বিট ডাবল প্রেসিশন ফ্লোটিং টাইপ",
-            "code": "double"
-          },{
-            "definition": "৩২-বিট সিঙ্গেল প্রেসিশন ফ্লোটিং টাইপ",
-            "code": "float"
-          },{
-            "definition": "৩২-বিট সাইন্ড ইন্টিজার টাইপ",
-            "code": "int"
-          },{
-            "definition": "৬৪-বিট সাইন্ড ইন্টিজার টাইপ",
-            "code": "long"
-          },{
-            "definition": "এ সিকুয়েন্স অফ ইউনিকোড ক্যারেক্টারস",
-            "code": "string"
-          }, {
-            "definition": "তারিখ এবং সময় রিপ্রেজেন্ট করে",
-            "code": "DateTime"
-          }
-        ]
-      }, {
-        "title": "অপারেটরস",
-        "items": [
-          {
-            "definition": "সাধারন গাণিতিক অপারেশন",
-            "code": " +, -, *, /, %, ++, --"
-          },{
-            "definition": "তুলনামূলক অপারেটরস",
-            "code": " ==, !=, >, <, >=, <="
-          },{
-            "definition": "লজিকাল অপারেটরস",
-            "code": " &&, ||, !"
-          },{
-            "definition": "বিটওয়াইজ অপারেটরস",
-            "code": " &, |, ^, ~, <<, >>"
-          },{
-            "definition": "কমপাউন্ড এসাইনমেন্ট অপারেটরস",
-            "code": " +=, -=, *=, /=, %=, &=, |=, ^=, <<=, >>=, =>"
-          }
-        ]
-      },{
-          "title": "গাণিতিক বিল্ট-ইন ফাংশন",
-          "items": [
-            {
-              "definition": "বর্গমূল করার জন্য",
-              "code": "Math.Sqrt(x)"
-            },{
-              "definition": "x এর পরম মান বের করার জন্য",
-              "code": "Math.Abs(x)"
-            },{
-              "definition": "রাউন্ড করার জন্য",
-              "code": "Math.Round(x)"
-            },{
-              "definition": "x টু দা পাওয়ার y এর জন্য",
-              "code": "Math.Pow(x, y)"
-            },{
-              "definition": "দুটির মধ্যে বড় সংখ্যা বের করার জন্য",
-              "code": "Math.Max(x, y);"
-            },{
-              "definition": "দুটির মধ্যে ছোট সংখ্যা বের করার জন্য",
-              "code": "Math.Min(x, y);"
-            }           
-          ]
-        },{
-          "title": "লিস্ট ক্লাস",
-          "items": [
-            {
-              "definition": "ইন্টিজার টাইপের লিস্ট তৈরি করা",
-              "code": "List<int> list = new List<int>();"
-            },{
-              "definition": "লিস্ট-এর উপাদান সংখ্যা",
-              "code": "list.Count"
-            },{
-              "definition": "বর্তমান লিস্টের ধারণক্ষমতা",
-              "code": "list.Capacity"
-            },{
-              "definition": "লিস্টে উপাদান যোগ করা",
-              "code": "list.Add()"
-            },{
-              "definition": "লিস্টে idx ইন্ডেক্সে value উপাদান যোগ করা",
-              "code": "list.Insert(idx, value)"
-            },{
-              "definition": "লিস্ট থেকে value উপাদান মুছে ফেলা",
-              "code": "list.Remove(value)"
-            },{
-              "definition": "লিস্টে idx ইন্ডেক্সের উপাদান মুছে ফেলা",
-              "code": "list.RemoveAt(idx)"
-            },{
-              "definition": "লিস্টে থেকে নির্দিষ্ট উপাদানের ইন্ডেক্স বের করা",
-              "code": "list.FindIndex(value)"
-            },{
-              "definition": "লিস্ট এর উপাদানগুলিকে সাজানোর জন্য",
-              "code": "list.Sort()"
-            },{
-              "definition": "লিস্ট এর উপাদানগুলিকে বিপরীত ভাবে সাজানোর জন্য",
-              "code": "list.Reverse()"
-            },{
-              "definition": "লিস্ট এর সকল উপাদানগুলি মুছে ফেলা",
-              "code": "list.Clear()"
-            }
-          ]
-        },{
-          "title": "ডিকশনারি ক্লাস",
-          "items": [
-            {
-              "definition": "ডিকশনারি তৈরি করা",
-              "code": "Dictionary<TKey,TValue> dict = new Dictionary<TKey,TValue>();"
-            },{
-              "definition": "ডিকশনারি-এর উপাদান সংখ্যা",
-              "code": "dict.Count"
-            },{
-              "definition": "ডিকশনারিতে key এর উপস্থিতি যাচাই করা",
-              "code": "dict.ContainsKey(key)"
-            },{
-              "definition": "ডিকশনারিতে key, value যুগলের উপস্থিতি যাচাই করা",
-              "code": "dict.ContainsKey(ew KeyValuePair<int,string>(key, value))"
-            },{
-              "definition": "key এর ভিত্তিতে ডিকশনারি থেকে উপাদান মুছে ফেলা",
-              "code": "dict.Remove(key)"
-            }
-          ]
+        {
+            "title": "ডাটা টাইপ(ভ্যালু টাইপ) [সর্বাধিক ব্যবহৃত]",
+            "items": [
+                {
+                    "definition": "বুলিয়ান ভ্যালু",
+                    "code": "bool"
+                },
+                {
+                    "definition": "৮-বিট আনসাইন্ড ইন্টিজার",
+                    "code": "byte"
+                },
+                {
+                    "definition": "১৬-বিট ইউনিকোড ক্যারেক্টার",
+                    "code": "char"
+                },
+                {
+                    "definition": "৬৪-বিট ডাবল প্রেসিশন ফ্লোটিং টাইপ",
+                    "code": "double"
+                },
+                {
+                    "definition": "৩২-বিট সিঙ্গেল প্রেসিশন ফ্লোটিং টাইপ",
+                    "code": "float"
+                },
+                {
+                    "definition": "৩২-বিট সাইন্ড ইন্টিজার টাইপ",
+                    "code": "int"
+                },
+                {
+                    "definition": "৬৪-বিট সাইন্ড ইন্টিজার টাইপ",
+                    "code": "long"
+                },
+                {
+                    "definition": "এ সিকুয়েন্স অফ ইউনিকোড ক্যারেক্টারস",
+                    "code": "string"
+                },
+                {
+                    "definition": "তারিখ এবং সময় রিপ্রেজেন্ট করে",
+                    "code": "DateTime"
+                }
+            ]
+        },
+        {
+            "title": "অপারেটরস",
+            "items": [
+                {
+                    "definition": "সাধারন গাণিতিক অপারেশন",
+                    "code": " +, -, *, /, %, ++, --"
+                },
+                {
+                    "definition": "তুলনামূলক অপারেটরস",
+                    "code": " ==, !=, >, <, >=, <="
+                },
+                {
+                    "definition": "লজিকাল অপারেটরস",
+                    "code": " &&, ||, !"
+                },
+                {
+                    "definition": "বিটওয়াইজ অপারেটরস",
+                    "code": " &, |, ^, ~, <<, >>"
+                },
+                {
+                    "definition": "কমপাউন্ড এসাইনমেন্ট অপারেটরস",
+                    "code": " +=, -=, *=, /=, %=, &=, |=, ^=, <<=, >>=, =>"
+                }
+            ]
+        },
+        {
+            "title": "গাণিতিক বিল্ট-ইন ফাংশন",
+            "items": [
+                {
+                    "definition": "বর্গমূল করার জন্য",
+                    "code": "Math.Sqrt(x)"
+                },
+                {
+                    "definition": "x এর পরম মান বের করার জন্য",
+                    "code": "Math.Abs(x)"
+                },
+                {
+                    "definition": "রাউন্ড করার জন্য",
+                    "code": "Math.Round(x)"
+                },
+                {
+                    "definition": "x টু দা পাওয়ার y এর জন্য",
+                    "code": "Math.Pow(x, y)"
+                },
+                {
+                    "definition": "দুটির মধ্যে বড় সংখ্যা বের করার জন্য",
+                    "code": "Math.Max(x, y);"
+                },
+                {
+                    "definition": "দুটির মধ্যে ছোট সংখ্যা বের করার জন্য",
+                    "code": "Math.Min(x, y);"
+                }
+            ]
+        },
+        {
+            "title": "লিস্ট ক্লাস",
+            "items": [
+                {
+                    "definition": "ইন্টিজার টাইপের লিস্ট তৈরি করা",
+                    "code": "List<int> list = new List<int>();"
+                },
+                {
+                    "definition": "লিস্ট-এর উপাদান সংখ্যা",
+                    "code": "list.Count"
+                },
+                {
+                    "definition": "বর্তমান লিস্টের ধারণক্ষমতা",
+                    "code": "list.Capacity"
+                },
+                {
+                    "definition": "লিস্টে উপাদান যোগ করা",
+                    "code": "list.Add()"
+                },
+                {
+                    "definition": "লিস্টে idx ইন্ডেক্সে value উপাদান যোগ করা",
+                    "code": "list.Insert(idx, value)"
+                },
+                {
+                    "definition": "লিস্ট থেকে value উপাদান মুছে ফেলা",
+                    "code": "list.Remove(value)"
+                },
+                {
+                    "definition": "লিস্টে idx ইন্ডেক্সের উপাদান মুছে ফেলা",
+                    "code": "list.RemoveAt(idx)"
+                },
+                {
+                    "definition": "লিস্টে থেকে নির্দিষ্ট উপাদানের ইন্ডেক্স বের করা",
+                    "code": "list.FindIndex(value)"
+                },
+                {
+                    "definition": "লিস্ট এর উপাদানগুলিকে সাজানোর জন্য",
+                    "code": "list.Sort()"
+                },
+                {
+                    "definition": "লিস্ট এর উপাদানগুলিকে বিপরীত ভাবে সাজানোর জন্য",
+                    "code": "list.Reverse()"
+                },
+                {
+                    "definition": "লিস্ট এর সকল উপাদানগুলি মুছে ফেলা",
+                    "code": "list.Clear()"
+                }
+            ]
+        },
+        {
+            "title": "ডিকশনারি ক্লাস",
+            "items": [
+                {
+                    "definition": "ডিকশনারি তৈরি করা",
+                    "code": "Dictionary<TKey,TValue> dict = new Dictionary<TKey,TValue>();"
+                },
+                {
+                    "definition": "ডিকশনারি-এর উপাদান সংখ্যা",
+                    "code": "dict.Count"
+                },
+                {
+                    "definition": "ডিকশনারিতে key এর উপস্থিতি যাচাই করা",
+                    "code": "dict.ContainsKey(key)"
+                },
+                {
+                    "definition": "ডিকশনারিতে key, value যুগলের উপস্থিতি যাচাই করা",
+                    "code": "dict.ContainsKey(ew KeyValuePair<int,string>(key, value))"
+                },
+                {
+                    "definition": "key এর ভিত্তিতে ডিকশনারি থেকে উপাদান মুছে ফেলা",
+                    "code": "dict.Remove(key)"
+                }
+            ]
+        },
+        {
+            "title": "স্ট্রিং অপারেশন",
+            "items": [
+                {
+                    "definition": "ডিক্লারেশন",
+                    "code": " string str = \"Hello\"; "
+                },
+                {
+                    "definition": "স্ট্রিং-এর উপাদান সংখ্যা",
+                    "code": "str.Length;"
+                },
+                {
+                    "definition": "সব গুলো ক্যারেক্টার কে ছোট হাতের অক্ষরে কনভার্ট করা",
+                    "code": "str.ToLower();"
+                },
+                {
+                    "definition": "সব গুলো ক্যারেক্টার কে বড় হাতের অক্ষরে কনভার্ট করা",
+                    "code": "str.ToUpper();"
+                },
+                {
+                    "definition": "দুটি স্ট্রিং জোরা দেওয়া",
+                    "code": "string.Concat(str, \"World\");"
+                },
+                {
+                    "definition": "একটি স্ট্রিং, অপর স্ট্রিং থেকে ছোট, বড় নাকি সমান তুলনা করা",
+                    "code": "string.Compare(str1,str2);"
+                },
+                {
+                    "definition": "দুটি স্ট্রিং ইকুয়্যাল কিনা চেক করা",
+                    "code": "string.Equals(str, str2)"
+                },
+                {
+                    "definition": "একটি স্ট্রিং এর মধ্যে নির্দিষ্ট সাব-স্ট্রিং আছে কিনা চেক করা",
+                    "code": "str.Contains(\"He\");"
+                },
+                {
+                    "definition": "স্ট্রিং কপি করা",
+                    "code": "string str2 = string.Copy(str);"
+                },
+                {
+                    "definition": "একটি স্ট্রিং নির্দিষ্ট সাব-স্ট্রিং দিয়ে শুরু হয়েছে কিনা চেক করা",
+                    "code": "str.StartsWith(\"He\");"
+                },
+                {
+                    "definition": "একটি স্ট্রিং নির্দিষ্ট সাব-স্ট্রিং দিয়ে শেষ হয়েছে কিনা চেক করা",
+                    "code": "str.EndsWith(\"lo\");"
+                },
+                {
+                    "definition": "নির্দিষ্ট চিহ্ন দিয়ে সব গুলো এলিমেন্ট জোরা লাগানো",
+                    "code": "string[] sArray = { \"Hello\", \"World\", \"from\", \"C#\" };\nstring str = string.Join('-', sArray);"
+                },
+                {
+                    "definition": "নির্দিষ্ট ইন্ডেক্সের পর বাকি ক্যারেক্টার গুলো বাদ দেওয়া",
+                    "code": "str.Remove(2);"
+                },
+                {
+                    "definition": "একটি স্ট্রিং নির্দিষ্ট ক্যারেক্টার অনুযায়ী স্প্লিট করা",
+                    "code": "line.Split(' ');"
+                },
+                {
+                    "definition": "একটি নির্দিষ্ট ক্যারেক্টার প্রথম কতো নাম্বার ইন্ডেক্সে অবস্থিত বের করা",
+                    "code": "str.IndexOf('e');"
+                },
+                {
+                    "definition": "একটি নির্দিষ্ট ক্যারেক্টার সর্বশেষ কতো নাম্বার ইন্ডেক্সে অবস্থিত বের করা",
+                    "code": "str.IndexOf('l');"
+                },
+                {
+                    "definition": "নির্দিষ্ট ক্যারেক্টার রিপ্লেস করা",
+                    "code": " string x = \"F#\";\nstring y = x.Replace('F', 'C'); "
+                },
+                {
+                    "definition": "সামনের এবং পিছনের সব স্পেস মুছে ফেলা",
+                    "code": "str.Trim();"
+                },
+                {
+                    "definition": "শুধু সামনের সব স্পেস মুছে ফেলা",
+                    "code": "str.TrimStart();"
+                },
+                {
+                    "definition": "শুধু পিছনের সব স্পেস মুছে ফেলা",
+                    "code": "str.TrimEnd();"
+                },
+                {
+                    "definition": "সামনে এবং পিছন থেকে একটি নির্দিষ্ট ক্যারেক্টার মুছে ফেলা",
+                    "code": "string line = \"**Hello World**\";\nConsole.WriteLine(line.Trim('*'));"
+                }
+            ]
         }
     ]
-  }
+}

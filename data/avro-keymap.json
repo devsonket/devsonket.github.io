@@ -349,7 +349,7 @@
             ]
         },
         {
-            "title": "যুক্তবর্ণ",
+            "title": "যুক্তাক্ষর",
             "items": [{
                     "definition": "অক্ষর",
                     "code": "okkhor"
@@ -371,26 +371,6 @@
                     "code": "lokkhmI"
                 },
                 {
-                    "definition": "হ্ব (হ+ব)",
-                    "code": "h+w"
-                },
-                {
-                    "definition": "চ্ছ্ব (চ+ছ+ব)",
-                    "code": "c+ch+w"
-                },
-                {
-                    "definition": "স্ফ (স+ফ)",
-                    "code": "s+f"
-                },
-                {
-                    "definition": "ষ্ট্র (ষ+ট+র-ফলা)",
-                    "code": "Sh+T+r"
-                }
-            ]
-        },
-        {
-            "title": "যুক্তাক্ষর",
-            "items": [{
                     "definition": "গ্লোব",
                     "code": "glOb"
                 },
@@ -421,6 +401,26 @@
                 {
                     "definition": "রাষ্ট্র",
                     "code": "raShTr"
+                }
+            ]
+        },
+        {
+            "title": "যুক্তবর্ণ",
+            "items": [{
+                    "definition": "হ্ব (হ+ব)",
+                    "code": "h+w"
+                },
+                {
+                    "definition": "চ্ছ্ব (চ+ছ+ব)",
+                    "code": "c+ch+w"
+                },
+                {
+                    "definition": "স্ফ (স+ফ)",
+                    "code": "s+f"
+                },
+                {
+                    "definition": "ষ্ট্র (ষ+ট+র-ফলা)",
+                    "code": "Sh+T+r"
                 },
                 {
                     "definition": "ক্ক",
@@ -487,7 +487,7 @@
                     "code": "khr"
                 },
                 {
-                    "definition": "",
+                    "definition": "গ্‌ণ",
                     "code": "gN"
                 },
                 {
@@ -909,6 +909,10 @@
                 {
                     "definition": "ভ্র",
                     "code": "vr, bhr"
+                },
+                {
+                    "definition": "হৃ",
+                    "code": "hrri"
                 }
             ]
         }

@@ -49,7 +49,7 @@
             ]
         },
         {
-            "title": "বডি অ্যাট্রিবউট(ইমেইল টেমপ্লেট)",
+            "title": "বডি অ্যাট্রিবিউট(ইমেইল টেমপ্লেট)",
             "items": [{
                     "definition": "ব্যাকগ্রাউন্ড কালার সেট",
                     "code": "<body bgcolor=...>...</body>"
@@ -73,7 +73,7 @@
             ]
         },
         {
-            "title": "বডি অ্যাট্রিবউট(ইমেইল টেমপ্লেট)",
+            "title": "বডি অ্যাট্রিবিউট(ইমেইল টেমপ্লেট)",
             "items": [{
                     "definition": "অর্ডারবিহীন লিস্ট তৈরী",
                     "code": "<ul>...</ul>"
@@ -213,6 +213,10 @@
                 {
                     "definition": "ইমেজের বিকল্প লেখা",
                     "code": "<img ... alt=\"বিকল্প-লেখা\">"
+                },
+                {
+                    "definition": "ইমেজের লোডিং লেখা",
+                    "code": "<img ... loading=\"লোডিং নাম\">"
                 }
             ]
         },
@@ -233,6 +237,14 @@
                 {
                     "definition": "পেজের মধ্যেই লিঙ্ক সেট",
                     "code": "<a href=\"#নাম\">লেখা</a>"
+                },
+                {
+                    "definition": "যেকোনো ডকুমেন্ট(ইমেজ, টেক্সট ইত্যাদি) ডাউনলোড করার লিঙ্ক",
+                    "code": "<a href=\"#ডকুমেন্ট পাথ\" download=\"ফাইল নাম\">লেখা</a>"
+                },
+                {
+                    "definition": "পেজের সকল লিংক এর জন্য ডিফল্ট এড্রেস এবং টার্গেট সেট করা",
+                    "code": "<base href=\"#নাম\">লেখা</a>"
                 }
             ]
         },
@@ -241,6 +253,10 @@
             "items": [{
                     "definition": "ফর্ম তৈরী",
                     "code": "<form>...</form>"
+                },
+                {
+                    "definition": "ডাটালিস্ট তৈরী",
+                    "code": "<datalist>...</datalist>"
                 },
                 {
                     "definition": "একাধিক সিলেক্ট করার মেনু তৈরী",
@@ -295,6 +311,10 @@
                     "code": "<input type=\"email\" name=\"নাম\">"
                 },
                 {
+                    "definition": "পাসওয়ার্ড এর জন্যে ইনপুট",
+                    "code": "<input type=\"password\" name=\"নাম\">"
+                },
+                {
                     "definition": "ইউআরএল এর জন্যে ইনপুট",
                     "code": "<input type=\"url\" name=\"নাম\">"
                 },
@@ -308,7 +328,7 @@
                 },
                 {
                     "definition": "তারিখ এর জন্যে ইনপুট",
-                    "code": "<input type=\"date\/month\/week\/time\" name=\"নাম\">"
+                    "code": "<input type=\"date\/month\/week\/time\/datetime\/datetime-local\" name=\"নাম\">"
                 },
                 {
                     "definition": "সার্চ এর জন্যে ইনপুট",
@@ -317,6 +337,14 @@
                 {
                     "definition": "কালার এর জন্যে ইনপুট",
                     "code": "<input type=\"color\" name=\"নাম\">"
+                },
+                {
+                    "definition": "টেলিফোন নাম্বার এর জন্যে ইনপুট",
+                    "code": "<input type=\"tel\" name=\"নাম\">"
+                },
+                {
+                    "definition": "ফাইল আপলোডের জন্য ইনপুট",
+                    "code": "<input type=\"file\" name=\"নাম\">"
                 }
             ]
         },
@@ -327,21 +355,37 @@
                     "code": "<table>...</table>"
                 },
                 {
+                    "definition": "টেবিল ক্যাপশন",
+                    "code": "<caption>...</caption>"
+                },
+                {
+                    "definition": "টেবিল হেডার তৈরী",
+                    "code": "<thead>...</thead>"
+                },
+                 {
+                    "definition": "টেবিল বডী তৈরী",
+                    "code": "<tbody>...</tbody>"
+                },
+                {
+                    "definition": "টেবিল ফুটার তৈরী",
+                    "code": "<tfoot>...</tfoot>"
+                },
+                {
+                    "definition": "টেবিল হেডার সেল",
+                    "code": "<th>...</th>"
+                },
+                {
                     "definition": "রো সেট",
                     "code": "<tr>...</tr>"
                 },
                 {
                     "definition": "রো তে সেল সেট",
                     "code": "<td>...</td>"
-                },
-                {
-                    "definition": "টেবিল হেডার",
-                    "code": "<th>...</th>"
-                }
+                } 
             ]
         },
         {
-            "title": "টেবিল অ্যাট্রিবউট",
+            "title": "টেবিল অ্যাট্রিবিউট",
             "items": [{
                     "definition": "বর্ডারের দৈর্ঘ্য সেট",
                     "code": "<table border=...>...</table>"
@@ -385,6 +429,70 @@
                 {
                     "definition": "সেলের লাইন না ভাঙ্গা",
                     "code": "<td nowrap>...</td>"
+                }
+            ]
+        },
+        {
+            "title": "এইচটিএমএল ৫",
+            "items": [{
+                    "definition": "ইন্ডিপেনডেন্ট কন্টেন্ট অথবা ডকুমেন্ট",
+                    "code": "<article></article>"
+                },
+                {
+                    "definition": "রিলেটেড অংশ একটা পেজের",
+                    "code": "<aside></aside>"
+                },
+                {
+                    "definition": "অডিও ফাইল সংযুক্ত",
+                    "code": "<audio src=\"\"></audio>"
+                },
+                {
+                    "definition": "গ্রাফিকাল কিছু প্রেজেন্ট করতে",
+                    "code": "<canvas></canvas>"
+                },
+                {
+                    "definition": "অতিরিক্ত ইনফরমেশন",
+                    "code": "<details></details>"
+                },
+                {
+                    "definition": "বাহিরের কোন ইন্টারেক্টিভ কন্টেন্ট",
+                    "code": "<embed src=\"\" type=\"\">"
+                },
+                {
+                    "definition": "স্বয়ংসম্পূর্ণ প্রবাহ সামগ্রী",
+                    "code": "<figure></figure>"
+                },
+                      {
+                    "definition": "ছবির ক্যাপশন দেওয়া",
+                    "code": "<figcaption></figcaption>"
+                },
+                {
+                    "definition": "ফুটার সেকশন এর জন্য",
+                    "code": "<footer></footer>"
+                },
+                {
+                    "definition": "হেডার সেকশন এর জন্য",
+                    "code": "<header></header>"
+                },
+                {
+                    "definition": "একটি সেকশনের প্রধান",
+                    "code": "<hgroup></hgroup>"
+                },
+                {
+                    "definition": "ন্যাভিগেশন",
+                    "code": "<nav></nav>"
+                },
+                {
+                    "definition": "একটি জেনেরিক ডকুমেন্ট বা অ্যাপ্লিকেশন বিভাগ",
+                    "code": "<section></section>"
+                },
+                {
+                    "definition": "ভিডিও ফাইল সংযুক্ত",
+                    "code": "<video src=\"\"></video>"
+                },
+                {
+                    "definition": "লাইন বিরতির সুযোগ",
+                    "code": "<wbr>"
                 }
             ]
         }

@@ -111,6 +111,38 @@
                     "code": "shutdown /?"
                 }
             ]
+        },
+        {
+            "title": "কন্ট্রোল প্যানেল টুল",
+            "items": [{
+                    "definition": "মাউস প্রপোর্টিস ওপেন করতে",
+                    "code": "main.cpl"
+                },
+                {
+                    "definition": "নেটওয়ার্ক প্রপোর্টিস ওপেন করতে",
+                    "code": "inetcpl.cpl"
+                },
+                {
+                    "definition": "নেটওয়ার্ক কানেকশন প্রপোর্টিস ওপেন করতে",
+                    "code": "ncpa.cpl"
+                },
+                {
+                    "definition": "সাউন্ড প্রপোর্টিস ওপেন করতে",
+                    "code": "mmsys.cpl"
+                },
+                {
+                    "definition": "সিস্টেম প্রপোর্টিস ওপেন করতে",
+                    "code": "sysdm.cpl"
+                },
+                {
+                    "definition": "ডিসপ্লে প্রপোর্টিস ওপেন করতে",
+                    "code": "desk.cpl"
+                },
+                {
+                    "definition": "প্রোগ্রাম রিমুভ উইন্ডো ওপেন করতে",
+                    "code": "appwiz.cpl"
+                }
+            ]
         }
     ]
 }

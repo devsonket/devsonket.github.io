@@ -1,0 +1,89 @@
+{
+    "id": "prisma2",
+    "title": "প্রিজমা২",
+    "slug": "prisma2",
+    "description": "প্রিজমা২ হল একটি ওপেন-সোর্স নেক্সট জেনারেশন নোডজেএস এবং টাইপস্ক্রিপ্ট ওআরএম",
+    "colorPref": "#1a202c",
+    "contents": [{
+        "title": "টাইপস (Types)",
+        "items": [{
+                "definition": "পূর্ণসংখ্যা",
+                "code": "Int"
+            },
+            {
+                "definition": "ফ্লোটিং পয়েন্ট সংখ্যা",
+                "code": "Float"
+            },
+            {
+                "definition": "এ সিকুয়েন্স অফ ইউনিকোড ক্যারেক্টারস",
+                "code": "String"
+            },
+            {
+                "definition": "স্কেলার লিস্ট",
+                "code": "[String]"
+            },
+            {
+                "definition": "বুলিয়ান",
+                "code": "Boolean"
+            },
+            {
+                "definition": "৮ বাইটের পূর্ণসংখ্যা",
+                "code": "BigInt"
+            },
+            {
+                "definition": "ডেসিমাল নাম্বার",
+                "code": "Decimal"
+            },
+            {
+                "definition": "টাইমস্ট্যাম্প",
+                "code": "Datetime"
+            },
+            {
+                "definition": "জেসন ডেটা",
+                "code": "Json"
+            },
+            {
+                "definition": "বাইট",
+                "code": "Bytes"
+            }
+        ]
+    }, {
+        "title": "এট্রিবিউট (Attributes)",
+        "items": [{
+                "definition": "ইউনিক আইডি",
+                "code": "@id"
+            },
+            {
+                "definition": "ইউনিক",
+                "code": "@unique"
+            },
+            {
+                "definition": "রিলেশন",
+                "code": "@relation"
+            },
+            {
+                "definition": "আপডেট অন ক্রিয়েট",
+                "code": "@updatedAt"
+            },
+            {
+                "definition": "ইগনোর ক্রিয়েট",
+                "code": "@ignore"
+            }
+        ]
+    }, {
+        "title": "ফাংশন (Functions)",
+        "items": [{
+                "definition": "ইউনিক আইডি এবং ইনক্রিমেন্ট",
+                "code": "@id @default(autoincrement())"
+            },
+            {
+                "definition": "ইউনিক আইডি এবং কলিশন রেজিস্টেন্ট আইডি",
+                "code": "@id @default(cuid())"
+            },
+            {
+                "definition": "বর্তমান টাইমস্ট্যাম্প",
+                "code": "@default(now())"
+            }
+        ]
+    }]
+}

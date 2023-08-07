@@ -4,95 +4,193 @@
     "slug": "heroku-cli",
     "description": "হিরোকো(heroku) কমান্ড লাইনের হেল্প গাইড",
     "colorPref": "#645fa1",
-    "contents": [
-      {
-        "title": "সাধারণ",
-        "items": [
-          {
-            "definition": "কমান্ড লাইনের ভার্শন",
-            "code": "heroku --version"
-          }, {
-            "definition": "কমান্ড লাইন আপডেট",
-            "code": "heroku update"
-          }, {
-            "definition": "এক্সিটিউবেল লোকেশন",
-            "code": "which heroku"
-          }, {
-            "definition": "সাহায্য",
-            "code": "heroku help"
-          }, {
-            "definition": "নির্দিষ্ট কোনো কমান্ড এর সাহায্য",
-            "code": "heroku help কমান্ড এর নাম"
-          }
-        ]
-      }, {
-        "title": "শুরু করা",
-        "items": [
-          {
-            "definition": "লগিন",
-            "code": "heroku login"
-          }, {
-            "definition": "অ্যাপ তৈরী",
-            "code": "heroku create নাম"
-          }, {
-            "definition": "অ্যাপ নামকরণ",
-            "code": "heroku apps:rename নতুন-নাম"
-          }, {
-            "definition": "অ্যাপ ডিপ্লয়",
-            "code": "git push heroku master"
-          }, {
-            "definition": "অ্যাপ ব্রাউজারে ওপেন",
-            "code": "heroku open"
-          }
-        ]
-      }, {
-        "title": "তথ্য",
-        "items": [
-          {
-            "definition": "অ্যাপ সম্পর্কে তথ্য",
-            "code": "heroku info"
-          }, {
-            "definition": "অ্যাপ কনফিগ",
-            "code": "heroku config"
-          }, {
-            "definition": "নির্দিষ্ট কনফিগ ভেরিয়েবলের মান",
-            "code": "heroku config:get ভেরিয়েবলের নাম"
-          }, {
-            "definition": "অ্যাপ এর অবস্থা",
-            "code": "heroku ps"
-          }, {
-            "definition": "অ্যাপ এর লগ",
-            "code": "heroku logs"
-          }
-        ]
-      }, {
-        "title": "এসএসএইচ ম্যানেজ",
-        "items": [
-          {
-            "definition": "কী অ্যাড করা",
-            "code": "heroku keys:add"
-          }, {
-            "definition": "কী রিমুভ করা",
-            "code": "heroku keys:remove কী-এর-নাম"
-          }, {
-            "definition": "সবগুলো কী লিস্ট করা",
-            "code": "heroku keys"
-          }
-        ]
-      }, {
-        "title": "ডোমেইন ম্যানেজ",
-        "items": [
-          {
-            "definition": "ডোমেইন অ্যাড করা",
-            "code": "heroku domains:add ডোমেইন-এর-নাম"
-          }, {
-            "definition": "ডোমেইন রিমুভ করা",
-            "code": "heroku domains:remove ডোমেইন-এর-নাম"
-          }, {
-            "definition": "সবগুলো ডোমেইন রিমুভ করা",
-            "code": "heroku domains:clear"
-          }
-        ]
-      }
+    "contents": [{
+            "title": "সাধারণ",
+            "items": [{
+                    "definition": "কমান্ড লাইনের ভার্শন",
+                    "code": "heroku --version"
+                },
+                {
+                    "definition": "কমান্ড লাইন আপডেট",
+                    "code": "heroku update"
+                },
+                {
+                    "definition": "এক্সিটিউবেল লোকেশন",
+                    "code": "which heroku"
+                },
+                {
+                    "definition": "সাহায্য",
+                    "code": "heroku help"
+                },
+                {
+                    "definition": "নির্দিষ্ট কোনো কমান্ড এর সাহায্য",
+                    "code": "heroku help কমান্ড এর নাম"
+                },
+                {
+                    "definition": "ডাইনোস রিস্টার্ট",
+                    "code": "heroku restart"
+                },
+                {
+                    "definition": "লগিন করা সদস্যের নাম",
+                    "code": "heroku whoami"
+                }
+            ]
+        },
+        {
+            "title": "শুরু করা",
+            "items": [{
+                    "definition": "লগিন",
+                    "code": "heroku login"
+                },
+                {
+                    "definition": "অ্যাপ তৈরী",
+                    "code": "heroku create নাম"
+                },
+                {
+                    "definition": "অ্যাপ নামকরণ",
+                    "code": "heroku apps:rename নতুন-নাম"
+                },
+                {
+                    "definition": "অ্যাপ ডিপ্লয়",
+                    "code": "git push heroku master"
+                },
+                {
+                    "definition": "অ্যাপ ব্রাউজারে ওপেন",
+                    "code": "heroku open"
+                }
+            ]
+        },
+        {
+            "title": "তথ্য",
+            "items": [{
+                    "definition": "অ্যাপ সম্পর্কে তথ্য",
+                    "code": "heroku info"
+                },
+                {
+                    "definition": "অ্যাপ কনফিগ",
+                    "code": "heroku config"
+                },
+                {
+                    "definition": "নির্দিষ্ট কনফিগ ভেরিয়েবলের মান",
+                    "code": "heroku config:get ভেরিয়েবলের নাম"
+                },
+                {
+                    "definition": "অ্যাপ এর অবস্থা",
+                    "code": "heroku ps"
+                },
+                {
+                    "definition": "অ্যাপ এর লগ",
+                    "code": "heroku logs"
+                }
+            ]
+        },
+        {
+            "title": "হিরোকো কন্টেইনার",
+            "items": [{
+                    "definition": "হিরোকো কন্টেইনার এ লগিন",
+                    "code": "heroku container:login"
+                },
+                {
+                    "definition": "হিরোকো অ্যাপ থেকে web ইমেজ পুল করুন",
+                    "code": "heroku container:pull web"
+                },
+                {
+                    "definition": "ডকার ফাইল হিরোকো তে পুশ করুন",
+                    "code": "heroku container:push web -app <app>"
+                },
+                {
+                    "definition": "আগের পুশ করা ডকার ইমেজ রিলিজ করুন",
+                    "code": "heroku container:release web -app <app>"
+                },
+                {
+                    "definition": "ওয়েব কন্টেইনার রিমুভ করুন",
+                    "code": "heroku container:rm web -app <app>"
+                },
+                {
+                    "definition": "হিরোকো কন্টেইনার লগ আউট করুন",
+                    "code": "heroku container:logout"
+                }
+            ]
+        },
+        {
+            "title": "এসএসএইচ ম্যানেজ",
+            "items": [{
+                    "definition": "কী অ্যাড করা",
+                    "code": "heroku keys:add"
+                },
+                {
+                    "definition": "কী রিমুভ করা",
+                    "code": "heroku keys:remove কী-এর-নাম"
+                },
+                {
+                    "definition": "সবগুলো কী লিস্ট করা",
+                    "code": "heroku keys"
+                }
+            ]
+        },
+        {
+            "title": "ডোমেইন ম্যানেজ",
+            "items": [{
+                    "definition": "ডোমেইন অ্যাড করা",
+                    "code": "heroku domains:add ডোমেইন-এর-নাম"
+                },
+                {
+                    "definition": "ডোমেইন রিমুভ করা",
+                    "code": "heroku domains:remove ডোমেইন-এর-নাম"
+                },
+                {
+                    "definition": "সবগুলো ডোমেইন রিমুভ করা",
+                    "code": "heroku domains:clear"
+                }
+            ]
+        },
+        {
+            "title": "এডোন্স",
+            "items": [{
+                    "definition": "এপ্লিকেশনে যুক্ত সকল এডোন্স",
+                    "code": "heroku addons"
+                },
+                {
+                    "definition": "নতুন এডোন্স যুক্ত করা",
+                    "code": "heroku addons:create SERVICE:PLAN"
+                },
+                {
+                    "definition": "এডোন্স বাদ দেয়া",
+                    "code": "heroku addons:destroy এডোন্স এর নাম "
+                }
+            ]
+        },
+        {
+            "title": "ডাটাবেইজ ম্যানেজ",
+            "items": [{
+                    "definition": "ডাটাবেইজ তৈরি",
+                    "code": "heroku addons:create heroku-postgresql:hobby-dev"
+                },
+                {
+                    "definition": "ডাটাবেইজ সম্পর্কে তথ্য",
+                    "code": "heroku pg:info"
+                },
+                {
+                    "definition": "ডাটাবেইজ কানেকশান এর তথ্য",
+                    "code": "heroku pg:credentials:url"
+                }
+            ]
+        },
+        {
+          "title": "মেইনটেনেন্স স্টেটাস",
+          "items": [{
+                  "definition": "বর্তমান মেইনটেনেন্স স্টেটাস চেক করা",
+                  "code": "heroku maintenance"
+              },
+              {
+                  "definition": "মেইনটেনেন্স স্টেটাস চালু করা",
+                  "code": "heroku maintenance:on"
+              },
+              {
+                  "definition": "মেইনটেনেন্স স্টেটাস বন্ধ করা",
+                  "code": "heroku maintenance:off"
+              }
+          ]
+        }
     ]
-  }
+}

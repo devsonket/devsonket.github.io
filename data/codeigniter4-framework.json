@@ -1,0 +1,305 @@
+{
+	"id": "codeigniter4-framework",
+	"title": "কোডইগনিটর ৪ ফ্রেমওয়ার্ক",
+	"slug": "codeigniter4-framework",
+	"description": "কোডইগনিটর হল একটি ওপেন সোর্স ফুল-স্ট্যাক পিএইচপি ওয়েব ফ্রেমওয়ার্ক। এটি খুব হালকা এবং কনফিগারেশন ঝামেলা-মুক্ত। কোডইগনিটর এর সর্বশেষ আপডেট সংস্করণটি ছিল 3 এবং এটি পিএইচপি 5.6 সমর্থন করে। এই ফ্রেমওয়ার্কের সম্পূর্ণরূপে পুনর্লিখিত সংস্করণটি 24 ফেব্রুয়ারি 2020-এ সংস্করণ 4 হিসাবে প্রকাশিত হয়েছিল। এটি সারা বিশ্ব থেকে উন্নত হয়েছে। যদি কেউ একটি দ্রুত এবং শূন্য-কনফিগারেশন লক্ষ্যযুক্ত প্রকল্প তৈরি করতে চায় তবে এটি আপনার সাইটে থাকা একটি দুর্দান্ত টুলকিট।",
+	"colorPref": "#25C7E3",
+	"contents": [
+		{
+			"title": "গ্লোবাল ফাংশন",
+			"items": [
+				{
+					"definition": "ক্যাশ সার্ভিস অ্যাক্সেসর ফাংশন",
+					"code": "cache(string $key);"
+				},
+				{
+					"definition": "কুকি সার্ভিস অ্যাক্সেসর ফাংশন",
+					"code": "cookie(string $name, string $value, array $options);\ncookies(array $cookies, bool $getGlobal);"
+				},
+				{
+					"definition": "(env)পরিবেশ ভেরিয়েবলের মান পাওয়ার ফাংশন",
+					"code": "env(string $key, $default);"
+				},
+				{
+					"definition": "প্লেইন এইচটিএমএল, জেএস, এক্সএসএস স্ক্রিপ্ট এনকোড করার ফাংশন",
+					"code": "esc(string|array $data, $context = 'html', $encoding); \n//context types : html, js, css, url, attr, raw"
+				},
+				{
+					"definition": "একটি স্ট্রিং এর অনুবাদ পুনরুদ্ধার করার ফাংশন",
+					"code": "lang(string $text, array $substitutes, string $locale);"
+				},
+				{
+					"definition": "মডেল ইন্সটেন্স তৈরির সহজ উপায় ফাংশন",
+					"code": "model(string $classname, bool $getShared = true, &$dbconnection = null);"
+				},
+				{
+					"definition": "ফর্মের ওল্ড ভালু পাওয়ার ফাংশন",
+					"code": "old(string $key, $default = null, $escape = 'html');"
+				},
+				{
+					"definition": "সেশন সার্ভিস অ্যাক্সেসর ফাংশন",
+					"code": "session(string $key);"
+				},
+				{
+					"definition": "টাইমার সার্ভিস অ্যাক্সেসর ফাংশন",
+					"code": "timer(string $name);"
+				},
+				{
+					"definition": "ভিউ(view) রেন্ডার ফাংশন",
+					"code": "view(string $viewpath, array $data, array $options); \n//options : saveData, cache, debug"
+				},
+				{
+					"definition": "ভিউসেল(view cell) কন্ট্রোলার ছাড়া ভিউ রেন্ডার ফাংশন",
+					"code": "view_cell(string $class, array $params, integer $ttl, string $cacheName); \n//ttl - cache duration"
+				}
+			]
+		},
+		{
+			"title": "অ্যারে হেলপার",
+			"items": [
+				{
+					"definition": "লোডিং অ্যারে হেলপার",
+					"code": "helper('array');"
+				},
+				{
+					"definition": "ডট অ্যারে অনুসন্ধান ফাংশন",
+					"code": "dot_array_search(string $search, array $data);"
+				},
+				{
+					"definition": "অ্যারে গভীর অনুসন্ধান ফাংশন (অনিশ্চিত গভীরতার অ্যারের উপাদান)",
+					"code": "array_deep_search(mixed $key, array $data);"
+				},
+				{
+					"definition": "একাধিক কী ব্যবহার করে অ্যারে সর্টিং ফাংশন",
+					"code": "array_sort_by_multiple_keys(array $data, array $columns);"
+				},
+				{
+					"definition": "ডট ইনডেক্স দিয়ে অ্যারে ফেলাটেন করার ফাংশন",
+					"code": "array_flatten_with_dots(array $data);"
+				}
+			]
+		},
+		{
+			"title": "ফরম হেলপার",
+			"items": [
+				{
+					"definition": "লোডিং ফরম হেলপার",
+					"code": "helper('form');"
+				},
+				{
+					"definition": "ফরম জেনারেটর এইচটিএমএল আকারে",
+					"code": "form_open('form_name');"
+				},
+				{
+					"definition": "ফরম জেনারেটর এইচটিএমএল আকারে ফাইল আপলোড হেল্পার সহ",
+					"code": "form_open_multipart('form_name');"
+				},
+				{
+					"definition": "হিডেন ফিল্ড তৈরি করার জন্য",
+					"code": "form_hidden('username', 'johndoe');"
+				}
+			]
+		},
+		{
+			"title": "কুকি হেলপার",
+			"items": [
+				{
+					"definition": "কুকি হেলপার লোড করা",
+					"code": "helper('cookie');"
+				},
+				{
+					"definition": "কুকি সেট করা",
+					"code": "set_cookie($name[, $value = ''[, $expire = ''[, $domain = ''[, $path = '/'[, $prefix = ''[, $secure = false[, $httpOnly = false[, $sameSite = '']]]]]]]])"
+				},
+				{
+					"definition": "কুকি আনা",
+					"code": "get_cookie($index[, $xss_clean = NULL])"
+				},
+				{
+					"definition": "কুকি আছে কিনা চেক করা",
+					"code": "has_cookie(string $name[, ?string $value = null[, string $prefix = '']])"
+				},
+				{
+					"definition": "কুকি ডিলেট করা",
+					"code": "delete_cookie($name[, $domain = ''[, $path = '/'[, $prefix = '']]])"
+				}
+			]
+		},
+		{
+			"title": "ডেট-টাইম হেলপার",
+			"items": [
+				{
+					"definition": "ডেট-টাইম হেলপার লোড করা",
+					"code": "helper('date');"
+				},
+				{
+					"definition": "বর্তমান ইউনিক্স(UNIX) টাইমস্ট্যাম্প ফাংশন",
+					"code": "now(string $timezone = null);"
+				},
+				{
+					"definition": "প্রদত্ত কোড ব্লক ফাংশনের ভিতরে প্রদত্ত টাইমজোনটি পাস করুন",
+					"code": "timezone_select(mixed $class = '', string $default = '', $what = DateTimeZone::ALL, $country = null);"
+				}
+			]
+		},
+		{
+			"title": "ফাইল সিস্টেম হেলপার",
+			"items": [
+				{
+					"definition": "ফাইল সিস্টেম হেলপার লোড করা",
+					"code": "helper('filesystem');"
+				},
+				{
+					"definition": "একটি নির্দিষ্ট ডিরেক্টরি গভীরতা পর্যন্ত ফাইল তালিকা ফাংশন",
+					"code": "directory_map(string $source_dir, $directory_depth = 0, $hidden = false);"
+				},
+				{
+					"definition": "মূল ডিরেক্টরির ফাইল এবং ডিরেক্টরিগুলিকে লক্ষ্য ডিরেক্টরিতে অনুলিপি করার ফাংশন",
+					"code": "directory_mirror(string $original_path, string $target_path, $overwrite = true);"
+				},
+				{
+					"definition": "ফাইলে ডেটা লেখার ফাংশন",
+					"code": "write_file(string $target_path, string $content, string $mode = 'wb');"
+				},
+				{
+					"definition": "সরবরাহকৃত পথে থাকা সমস্ত ফাইল মুছে ফেলার ফাংশন",
+					"code": "delete_files(string $path, bool $del_directories = false, bool $htdocs = false, bool $hidden = false);"
+				},
+				{
+					"definition": "নির্দিষ্ট পথ থেকে সমস্ত ফাইলের নাম পেতে ফাংশন",
+					"code": "get_filenames(string $source_directory, bool $include_path = false, bool $hidden = false, bool $include_dir = true);"
+				},
+				{
+					"definition": "ডিরেক্টরি থেকে ফাইলের নাম, আকার, তারিখ এবং অনুমতি সম্বলিত করার ফাংশন",
+					"code": "get_dir_file_info(string $source_path, bool $top_level_only = true);"
+				},
+				{
+					"definition": "ডিরেক্টরি থেকে ফাইলের নাম, আকার, তারিখ এবং অনুমতি সম্বলিত করার ফাংশন",
+					"code": "get_file_info(string $filepath, array $attributes = ['name', 'size', 'date', 'readable', 'writeable', 'executable', 'fileperms']);"
+				},
+				{
+					"definition": "ফাইল অনুমতির স্ট্যান্ডার্ড প্রতীকী(symbolic) ভেলুস পেতে ফাংশন",
+					"code": "symbolic_permissions(int $permissions);"
+				},
+				{
+					"definition": "ফাইল অনুমতির স্ট্যান্ডার্ড প্রতীকী(symbolic) ভেলুস পেতে ফাংশন নাম্বার ফরম্যাটে",
+					"code": "octal_permissions(int $permissions);"
+				},
+				{
+					"definition": "বিভিন্ন ফাইল সামগ্রীর তুলনা করার ফাংশন",
+					"code": "same_file($filepath1, $filepath2);"
+				}
+			]
+		},
+		{
+			"title": "ইনফ্লেক্টর হেলপার",
+			"items": [
+				{
+					"definition": "ইনফ্লেক্টর হেলপার লোড করা",
+					"code": "helper('inflector');"
+				},
+				{
+					"definition": "একটি বহুবচন শব্দকে একবচনে পরিবর্তন করার ফাংশন",
+					"code": "singular(string $word);"
+				},
+				{
+					"definition": "একটি একবচনে শব্দকে বহুবচন পরিবর্তন করার ফাংশন",
+					"code": "plural(string $word);"
+				},
+				{
+					"definition": "একটি শব্দ পরিবর্তন এবং একটি বাক্যাংশে এর গণনা করার ফাংশন",
+					"code": "counted(int $count, string $word);"
+				},
+				{
+					"definition": "কেমেল কেস(camelCase) এ স্ট্রিং পরিবর্তন করার ফাংশন",
+					"code": "camelize(string $word);"
+				},
+				{
+					"definition": "প্যাসকেল কেস(PascalCase) এ স্ট্রিং পরিবর্তন করার ফাংশন",
+					"code": "pascalize(string $word);"
+				},
+				{
+					"definition": "সেনেক কেস(snake_Case) এ স্ট্রিং পরিবর্তন করার ফাংশন",
+					"code": "underscore(string $word);"
+				},
+				{
+					"definition": "সেন্টেন্সে কেস(Sentence Case)  এ স্ট্রিং পরিবর্তন করার ফাংশন",
+					"code": "humanize(string $word);"
+				},
+				{
+					"definition": "শব্দটি বহুবচনযোগ্য কিনা তা পরীক্ষা করার ফাংশন",
+					"code": "is_pluralizable(string $word);"
+				},
+				{
+					"definition": "একটি স্ট্রিংকে স্লাগ ফর্মে রূপান্তর করার ফাংশন",
+					"code": "dasherize(string $word);"
+				},
+				{
+					"definition": "একটি সংখ্যার ক্রমিক স্ট্রিং পাওয়ার ফাংশন",
+					"code": "ordinal(int $number);"
+				},
+				{
+					"definition": "একটি সংখ্যাকে একটি অর্ডিনাল স্ট্রিংয়ে পরিণত করার ফাংশন",
+					"code": "ordinalize(int $number);"
+				}
+			]
+		},
+		{
+			"title": "গ্লোবাল কনস্ট্যান্টস",
+			"items": [
+				{
+					"definition": "অ্যাপ ডিরেক্টরির পথ",
+					"code": "APPPATH"
+				},
+				{
+					"definition": "প্রোজেক্ট রুট ডিরেক্টরির পথ",
+					"code": "ROOTPATH"
+				},
+				{
+					"definition": "সিস্টেম ডিরেক্টরির পথ",
+					"code": "SYSTEMPATH"
+				},
+				{
+					"definition": "কন্ট্রোলার ধারণকারী ডিরেক্টরির পথ",
+					"code": "FCPATH"
+				},
+				{
+					"definition": "লেখার যোগ্য ডিরেক্টরির পথ",
+					"code": "WRITEPATH"
+				},
+				{
+					"definition": "সেকেন্ডের সময়কাল",
+					"code": "SECOND"
+				},
+				{
+					"definition": "মিনিটের সময়কাল (সেকেন্ডে)",
+					"code": "MINUTE"
+				},
+				{
+					"definition": "ঘন্টার সময়কাল (সেকেন্ডে)",
+					"code": "HOUR"
+				},
+				{
+					"definition": "দিনের সময়কাল (সেকেন্ডে)",
+					"code": "DAY"
+				},
+				{
+					"definition": "সপ্তাহের সময়কাল (সেকেন্ডে)",
+					"code": "WEEK"
+				},
+				{
+					"definition": "মাসের সময়কাল (সেকেন্ডে)",
+					"code": "MONTH"
+				},
+				{
+					"definition": "বছরের সময়কাল (সেকেন্ডে)",
+					"code": "YEAR"
+				},
+				{
+					"definition": "দশকের সময়কাল (সেকেন্ডে)",
+					"code": "DECADE"
+				}
+			]
+		}
+	]
+}

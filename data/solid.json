@@ -1,0 +1,35 @@
+{
+  "id": "solidjs-cheat-sheet",
+  "title": "সলিড JS",
+  "slug": "solidjs-cheat-sheet",
+  "description": "সহজ কিন্তু খুবই পার্ফোমেন্ট UI বিল্ডিং জাভাস্ক্রিপ্ট ফ্রেইমওয়ার্ক। যেখানে ইউজার সব ধরনের রিয়াক্টিভিটি কন্ট্রোল করতে পারে",
+  "colorPref": "#315998",
+  "contents": [
+    {
+      "title": "সলিড JS ইন্সটল করা",
+      "items": [
+        {
+          "definition": "npx এর সাহায্যে নতুন একটা সলিড js প্রোজেক্ট তৈরী করতে",
+          "code": "\n npx degit solidjs/templates/js <project-name>\n \n cd myapp\n npm install\n npm run dev"
+        },
+        {
+          "definition": "ts প্রোজেক্ট তৈরী করতে",
+          "code": "\n npx degit solidjs/templates/ts <project-name>\n \n cd myapp\n npm install\n npm run dev"
+        }
+      ]
+    },
+    {
+      "title": "সলিড JS এ 'Hello world' প্রিন্ট করা",
+      "items": [
+        {
+          "definition": "solid-js/web থেকে render কে ইম্পোর্ট(ES6 কনসেপ্ট) করে নেয়া",
+          "code": "import { render } from 'solid-js/web';"
+        },
+        {
+          "definition": "render এই মেথডটি ২টি আরগুমেন্ট নেয় রেন্ডার ইলিমেন্ট এবং রেন্ডার স্কোপ",
+          "code": "render(() => <h1>Hello, world!</h1>,document.getElementById('root'))"
+        }
+      ]
+    }
+  ]
+}

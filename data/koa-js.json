@@ -1,0 +1,182 @@
+{
+    "id": "koa-js",
+    "title": "KOA জেএস",
+    "slug": "koa-js",
+    "description": "নোড জেএস এর জন্য পরবর্তী প্রজন্মের ওয়েব ফ্রেমওয়ার্ক",
+    "colorPref": "#353535",
+    "contents": [
+        {
+            "title": "ইন্সটল প্রক্রিয়া",
+            "items": [
+                {
+                    "definition": "লেটেস্ট ভার্শন ইন্সটল করা",
+                    "code": "npm install koa"
+                },
+                {
+                    "definition": "nodemon ইন্সটল করা (অটোমেটিক্যালি রিস্টারট এপ্লিকেশন হোয়েন ফাইল চেঞ্জেস)",
+                    "code": "npm i nodemon"
+                }
+            ]
+        },
+        {
+            "title": "সাধারণ",
+            "items": [
+                {
+                    "definition": "মডিউল ইনক্লুড করা",
+                    "code": "const Koa = require('koa');"
+                },
+                {
+                    "definition": "ইন্সটান্স তৈরী করা",
+                    "code": "const app = new Koa();"
+                },
+                {
+                    "definition": "সার্ভার তৈরী করা",
+                    "code": "app.listen(পোর্ট-নাম্বার)"
+                },{
+                    "definition": "সার্ভার তৈরী করা",
+                    "code": "http.createServer(কলব্যাক).listen(পোর্ট-নাম্বার);"
+                },
+                {
+                    "definition": "সার্ভার রান করা",
+                    "code": "node serverName.js / nodemon serverName.js"
+                },
+                {
+                    "definition": "কুকি key সেট করা ",
+                    "code": "app.keys = [key, key];"
+                }
+            ]
+        },
+        {
+            "title": "কনটেক্সট",
+            "items": [
+                {
+                    "definition": "প্রতিটি  রিকোয়েস্ট  অনুযায়ী একটি ctx তৈরি করা হয় এবং মিডলওয়্যারে রিসিভার বা ctx শনাক্তকারী হিসাবে উল্লেখ করা হয়",
+                    "code": "app.use(async ctx => { .... });"
+                },
+                {
+                    "definition": "মডিউল ইনক্লুড করা",
+                    "code": "var views = require('koa-views');"
+                },
+                {
+                    "definition": "রিকোয়েস্ট ",
+                    "code": "ctx.req"
+                },
+                {
+                    "definition": "রেসপন্স ",
+                    "code": "ctx.res"
+                },
+                {
+                    "definition": "স্টেট [মিডলওয়্যারের মাধ্যমে এবং আপনার ফ্রন্টএন্ড ভিউতে তথ্য পাঠানোর জন্য ভ্যারিয়েবল তৈরী করা]",
+                    "code": "ctx.state.user = await User.find(id);"
+                },
+                {
+                    "definition": "অ্যাপ্লিকেশন ইনস্ট্যান্স ",
+                    "code": "ctx.app"
+                },
+                {
+                    "definition": "কুকিস ডাটা বের করা",
+                    "code": "ctx.cookies.get(name, [options])"
+                },
+                {
+                    "definition": "কুকিস ডাটা সেট করা ",
+                    "code": "ctx.cookies.set(name, value, [options])"
+                },
+                {
+                    "definition": "কনটেক্সট থ্রো [এরর থ্রো মেথড ]",
+                    "code": "ctx.throw([status], [msg], [properties])"
+                },
+                {
+                    "definition": "কনটেক্সট এসার্ট [কোনো ভ্যালু না থাকলে এরর থ্রো করার মেথড]",
+                    "code": "ctx.assert(value, [status], [msg], [properties])"
+                },
+                {
+                    "definition": "KOA এর বিল্ট-ইন রেসপন্স হ্যান্ডলিং বাইপাস করতে",
+                    "code": "ctx.respond"
+                }
+
+            ]
+        },
+        {
+            "title": "রিকোয়েস্ট ",
+            "items": [
+                {
+                    "code": "request.header"
+                },
+                {
+                    "code": "request.method"
+                },
+                {
+                    "code": "request.length"
+                },
+                {
+                    "code": "request.url"
+                },
+                {
+                    "code": "request.originalUrl"
+                },
+                {
+                    "code": "request.origin"
+                },
+                {
+                    "code": "request.href"
+                },
+                {
+                    "code": "request.path"
+                },
+                {
+                    "code": "request.querystring"
+                }
+
+            ]
+        }, {
+            "title": "রেস্পন্স  ",
+            "items": [
+                {
+                    "code": "response.header"
+                },
+                {
+                    "code": "request.socket"
+                },
+                {
+                    "code": "response.length"
+                },
+                {
+                    "code": "response.message"
+                },
+                {
+                    "code": "response.body"
+                },
+                {
+                    "definition": "রেস্পন্স রিডাইরেক্ট ",
+                    "code": "response.redirect(url, [alt])"
+                }
+
+            ]
+        },
+        {
+            "title": "KOA ভিউ",
+            "items": [
+                {
+                    "definition": "ভার্শন ইন্সটল করা",
+                    "code": "npm install koa-views"
+                },
+                {
+                    "definition": "মডিউল ইনক্লুড করা",
+                    "code": "var views = require('koa-views');"
+                },
+                {
+                    "definition": "সাধারণ মিডলওয়্যার ইন্সটল",
+                    "code": "npm install koa-views-render"
+                },
+                {
+                    "definition": "মিডলওয়্যার মডিউল ইনক্লুড করা",
+                    "code": "var render = require('koa-views-render');"
+                },
+                {
+                    "definition": "মিডলওয়্যার ব্যাবহার",
+                    "code": "app.use(render('home', { title : 'Home Page' }));"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,223 @@
+{
+    "id": "ruby",
+    "title": "রুবি",
+    "slug": "ruby",
+    "description": "রুবি একটি রিফ্লেকটিভ, চলমান, অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং ভাষা। এর সিনট্যাক্স মূলত নেয়া হয়েছে পার্ল থেকে। এতে স্মলটক এর মত অবজেক্ট ওরিয়েন্টেশন বা বস্তু সংশ্লিষ্টতা যুক্ত করা হয়েছে। এছাড়া এতে পাইথন, লিস্প, ডিলন ও সিএলইউ এর কিছু বৈশিষ্ট্যও যুক্ত হয়েছে।",
+    "colorPref": "#563D7C",
+    "contents": [
+        {
+            "title": "লজিক অপারেটর",
+            "items": [
+                {
+                    "definition": "সমান",
+                    "code": "=="
+                },
+                {
+                    "definition": "এর চেয়ে কম",
+                    "code": "<"
+                },
+                {
+                    "definition": "এর চেয়ে বেশি",
+                    "code": ">"
+                },
+                {
+                    "definition": "এর চেয়ে কম অথবা সমান",
+                    "code": "<="
+                },
+                {
+                    "definition": "এর চেয়ে বড় অথবা সমান",
+                    "code": ">="
+                },
+                {
+                    "definition": "সমান নয়",
+                    "code": "!="
+                },
+                {
+                    "definition": "অ্যান্ড",
+                    "code": "&&"
+                },
+                {
+                    "definition": "অর",
+                    "code": "||"
+                }
+            ]
+        },
+        {
+            "title": "ভ্যারিয়েবল স্কোপ",
+            "items": [
+                {
+                    "definition": "গ্লোবাল ভ্যারিয়েবল",
+                    "code": "$variable = \"­Tes­t\" "
+                },
+                {
+                    "definition": "ক্লাস ভ্যারিয়েবল",
+                    "code": "@@variable = \"­Tes­t\" "
+                },
+                {
+                    "definition": "ইন্সটান্স ভ্যারিয়েবল",
+                    "code": "@variable = \"­Tes­t\" "
+                },
+                {
+                    "definition": "লোকাল ভ্যারিয়েবল",
+                    "code": "variable = \"­Tes­t\" "
+                },
+                {
+                    "definition": "ব্লক ভ্যারিয়েবল",
+                    "code": "variable = \"­Tes­t\" "
+                }
+            ]
+        },
+        {
+            "title": "স্ট্রিং মেথড",
+            "items": [
+                {
+                    "definition": "উল্টো করার জন্য",
+                    "code": "\"­Hel­lo\".r­everse"
+                },
+                {
+                    "definition": "ক্যাপিটালিইজ করার জন্য",
+                    "code": "\"­Hel­lo\".c­ap­italize"
+                },
+                {
+                    "definition": "ছোট হাতের করার জন্য",
+                    "code": "\"­Hel­lo\".d­ow­ncase"
+                },
+                {
+                    "definition": "বড় হাতের করার জন্য",
+                    "code": "\"­Hel­lo\".upcase"
+                },
+                {
+                    "definition": "স্ট্রিং এর লেন্থ বের করার জন্য",
+                    "code": "\"­Hel­lo\".length"
+                },
+                {
+                    "definition": "এক সাথে বড় হাতের এবং উল্টো করার জন্য",
+                    "code": "\"­Hel­lo\".upcase.reverse"
+                },
+                {
+                    "definition": "একটি সাব স্ট্রিং মুছার জন্য ",
+                    "code": "full_string = \"WANTED_STRING  SUBSTRING\"\n full_string.slice!(\"SUBSTRING\")\n puts full_string "
+                },
+                {
+                    "definition": "একটি সাব স্ট্রিং এর সকল আবির্ভাব অন্য একটি সাবস্ট্রিং দ্বারা রিপ্লেস করার জন্য",
+                    "code": "full_string = \"SUBSTRING HAS BEEN SUBSTRING \" \n puts full_string.gsub(\"SUBSTRING\",\"REPLACED\")"
+                }
+            ]
+        },
+        {
+            "title": "অ্যারে",
+            "items": [
+                {
+                    "definition": "অ্যারে ডিক্লেয়ার করা",
+                    "code": "arr = []"
+                },
+                {
+                    "definition": "অ্যারেতে ডাটা রাখা",
+                    "code": "arr = [“a”, “b”, “c”]"
+                },
+                {
+                    "definition": "অ্যারে এর পজিশন থেকে ডাটা রিটার্ন করা",
+                    "code": "arr[1]"
+                },
+                {
+                    "definition": "অ্যারে এর স্পেসিফিক পজিশনে ডাটা এ্যাড করা",
+                    "code": "arr[0] = \"d\" "
+                },
+                {
+                    "definition": "অ্যারেতে ডাটা এ্যাড করা",
+                    "code": "arr << “e” "
+                },
+                {
+                    "definition": "অ্যারে এর স্পেসিফিক পজিশনে ডাটা ডিলেট করা",
+                    "code": "arr[1] = nil"
+                },
+                {
+                    "definition": "অ্যারে ক্লিন করার জন্য",
+                    "code": "arr.clear"
+                }
+            ]
+        },
+        {
+            "title": "অ্যারে মেথড",
+            "items": [
+                {
+                    "definition": "এ্যারের সব গুলো ইলিমেন্ট একসাথে রিটার্ন করতে",
+                    "code": "array.i­nspect()"
+                },
+                {
+                    "definition": "এ্যারেকে স্ট্রিং হিসেবে দেখানোর জন্য",
+                    "code": "array.to_s()"
+                },
+                {
+                    "definition": "এ্যারের ইলিমেন্ট গুলোকে আলাদা করার জন্য",
+                    "code": "array.j­oi­n(\"-\") "
+                },
+                {
+                    "definition": "এ্যারের ইলিমেন্ট গুলো সর্ট করার জন্য",
+                    "code": "array.sort()"
+                },
+                {
+                    "definition": "এ্যারে থেকে ডুপ্লিকেট সরিয়ে ফেলার জন্য",
+                    "code": "array.uniq()"
+                },
+                {
+                    "definition": "স্পেসিফিক ইনডেক্স থেকে ভ্যালু ডিলেট করে দিবে",
+                    "code": "array.d­el­ete­_at(2)"
+                },
+                {
+                    "definition": "এ্যারে থেকে স্পেসিফিক ভ্যালু ডিলেট করে দিবে যদি থাকে",
+                    "code": "array.d­el­ete(4)"
+                },
+                {
+                    "definition": "এ্যারের পিছন থেকে ভ্যালু অ্যাড করতে",
+                    "code": "array.p­ush(4)"
+                },
+                {
+                    "definition": "এ্যারের পিছন থেকে ভ্যালু ডিলেট করতে",
+                    "code": "array.pop()"
+                },
+                {
+                    "definition": "এ্যারের সামনে থেকে ভ্যালু ডিলেট করতে",
+                    "code": "array.s­hift()"
+                },
+                {
+                    "definition": "এ্যারের সামনে থেকে ভ্যালু অ্যাড করতে",
+                    "code": "array.u­ns­hift(1)"
+                },
+                {
+                    "definition": "এ্যারে থেকে একের অধিক ভ্যালু খুঁজে ডিলেট করে দিতে",
+                    "code": "array - [9,10]"
+                },
+                {
+                    "definition": "এ্যারেতে একের অধিক ভ্যালু এ্যাড করতে",
+                    "code": "array + [9,10,­11,12]"
+                }
+            ]
+        },
+        {
+            "title": "হ্যাশ",
+            "items": [
+                {
+                    "definition": "হ্যাশের ভিতর মিক্সড ভ্যালু রাখার জন্য",
+                    "code": "mixed = {1 => [‘a’, ‘b’, ‘c’], ‘hello’ => ‘world’, [10,20] => ‘top’}"
+                },
+                {
+                    "definition": "হ্যাশের সব কি রিটার্ন করার জন্য",
+                    "code": "mixed.keys"
+                },
+                {
+                    "definition": "হ্যাশের সব ভ্যালু রিটার্ন করার জন্য",
+                    "code": "mixed.v­alues"
+                },
+                {
+                    "definition": "হ্যাশের লেন্থ বের করার জন্য",
+                    "code": "mixed.l­ength"
+                },
+                {
+                    "definition": "হ্যাশ ক্লিয়ার করার জন্য",
+                    "code": "mixed.c­lear"
+                }
+            ]
+        }
+    ]
+}

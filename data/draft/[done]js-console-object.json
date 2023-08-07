@@ -65,6 +65,10 @@
       "id": "015",
       "definition": "ওয়ার্নিং মেসেজ দেয়ার জন্য",
       "code": "console.warn()"
+    }, {
+      "id": "016",
+      "definition": "কোডের ত্রুটি বার্তা কনসোলে দেখার জন্য",
+      "code": "console.debug()"
     }]
   }]
 }

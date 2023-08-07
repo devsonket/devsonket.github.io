@@ -1,0 +1,226 @@
+{
+  "id": "docker-compose",
+  "title": "ডকার-কম্পোজ",
+  "slug": "docker-compose",
+  "description": "ডকার ব্যাপকভাবে ব্যবহার করার সময়, বিভিন্ন পাত্রের ব্যবস্থাপনা দ্রুত জটিল হয়ে ওঠে।\n\nডকার কম্পোজ এমন একটি টুল যা আমাদের এই সমস্যাটি কাটিয়ে উঠতে এবং একসাথে একাধিক পাত্রে সহজেই পরিচালনা করতে সহায়তা করে।\n\nএই টিউটোরিয়ালে, আমরা এর প্রধান বৈশিষ্ট্য এবং শক্তিশালী প্রক্রিয়াগুলি দেখব।",
+  "colorPref": "#745fb5",
+  "contents": [
+    {
+      "title": "মূল উদাহরণ (Basic example)",
+      "items": [
+        {
+          "definition": "docker-compose.yml",
+          "code": "version: '2'\n\nservices:\n  web:\n    build:\n    # ডকারফাইল থেকে তৈরি করুন\n      context: ./Path\n      dockerfile: Dockerfile\n    ports:\n     - \"5000:5000\"\n    volumes:\n     - .:/code\n  redis:\n    image: redis"
+        }
+      ]
+    },
+    {
+      "title": "মৌলিক কমান্ড (Basic Commands)",
+      "items": [
+        {
+          "definition": "ডকার সার্ভিস build/rebuild করতে ",
+          "code": "docker-compose build"
+        },
+        {
+          "definition": "ডকার সার্ভিস start/stop করতে ",
+          "code": "docker-compose start\ndocker-compose stop"
+        },
+        {
+          "definition": "ডকার সার্ভিস পজ করতে \nডকার সার্ভিস পুনরায় শুরু করতে ",
+          "code": "docker-compose pause\ndocker-compose unpause"
+        },
+        {
+          "definition": "ডকার  সার্ভিসের বর্তমান অবস্থা জানতে",
+          "code": "docker-compose ps"
+        },
+        {
+          "definition": "ডকার সার্ভিস build/rebuild করতে, অথবা start/restart করতে, অথবা create/recreate করতে ",
+          "code": "docker-compose up"
+        },
+        {
+          "definition": "UP এর মাধ্যমে তৈরি কনটেইনার, নেটওয়ার্ক, ভলিউম এবং ইমেজ বন্ধ এবং রিমুভ করতে ",
+          "code": "docker-compose down"
+        },
+        {
+            "definition": "ডকার কন্টেইনার restart করতে",
+            "code": "docker-compose restart"
+        }
+        ,
+        {
+            "definition": "নির্দিষ্ট কন্টেইনারে প্রবেশ করতে",
+            "code": "docker-compose exec <service_name> bash/sh"
+        },
+        {
+            "definition": "ডকার কম্পোজ বিল্ড করা যাতে কোন cache না থাকে",
+            "code": "docker-compose build --no-cache"
+        }
+      ]
+    },
+    {
+      "title": "বিল্ডিং (Building)",
+      "items": [
+        {
+          "code": "web:\n  # ডকারফাইল থেকে তৈরি করুন\n  build: .\n  args:     # বিল্ড আর্গুমেন্ট যুক্ত করুন\n    APP_HOME: app"
+        },
+        {
+          "definition": "কাস্টম ডকারফাইল থেকে তৈরি করুন",
+          "code": "build:\n    context: ./dir\n    dockerfile: Dockerfile.dev"
+        },
+        {
+          "definition": "ইমেজ থেকে তৈরি করুন",
+          "code": "image: ubuntu\n  image: ubuntu:14.04\n  image: tutum/influxdb\n  image: example-registry:4000/postgresql\n  image: a4bc65fd"
+        }
+      ]
+    },
+    {
+      "title": "পোর্টস (Ports)",
+      "items": [
+        {
+          "code": "ports:\n    - \"3000\"\n    - \"8000:80\"  # host:container\n"
+        },
+        {
+          "definition": "লিঙ্ক করা পরিষেবাগুলিতে পোর্টগুলি প্রকাশ করুন (হোস্ট করার জন্য নয়)",
+          "code": "expose: [\"3000\"]"
+        }
+      ]
+    },
+    {
+      "title": "কমান্ড (Commands)",
+      "items": [
+        {
+          "definition": "কমান্ড চালানোর আদেশ",
+          "code": "command: bundle exec thin -p 3000\n  command: [bundle, exec, thin, -p, 3000]"
+        },
+        {
+          "definition": "এন্ট্রিপয়েন্ট ওভাররাইড করুন",
+          "code": "entrypoint: /app/start.sh\n  entrypoint: [php, -d, vendor/bin/phpunit]"
+        }
+      ]
+    },
+    {
+      "title": "এনভায়রনমেন্ট ভেরিএবলেস (Environment variables)",
+      "items": [
+        {
+          "definition": "এনভায়রনমেন্ট ভার্স",
+          "code": "environment:\n    RACK_ENV: development\n  environment:\n    - RACK_ENV=development"
+        },
+        {
+          "definition": "ফাইল থেকে এনভায়রনমেন্টের পরিবর্তন করা",
+          "code": "env_file: .env\n  env_file: [.env, .development.env]"
+        }
+      ]
+    },
+    {
+      "title": "ডিপেন্ডেন্সিস (Dependencies)",
+      "items": [
+        {
+          "definition": "হোস্টনাম `ডাটাবেস` হিসাবে `db` পরিষেবা উপলব্ধ করে\n(নির্ভর করে বোঝায়)",
+          "code": "links:\n    - db:database\n    - redis"
+        },
+        {
+          "definition": "শুরু করার আগে নিশ্চিত করুন যে `db` জীবিত আছে",
+          "code": "depends_on:\n    - db"
+        }
+      ]
+    },
+    {
+      "title": "অন্যান্য বিকল্প (Other options)",
+      "items": [
+        {
+          "definition": "এই পরিষেবাটি আরও প্রসারিত করুন",
+          "code": "extends:\n    file: common.yml  # optional\n    service: webapp"
+        },
+        {
+          "code": "volumes:\n    - /var/lib/mysql\n    - ./_data:/var/lib/mysql"
+        },
+        {
+          "definition": "স্বয়ংক্রিয়ভাবে কন্টেইনার পুনরায় চালু করুন\nসর্বদা, ব্যর্থতা, না (ডিফল্ট) (always, on-failure, no (default))",
+          "code": "restart: unless-stopped"
+        }
+      ]
+    },
+    {
+      "title": "লেবেল (Labels)",
+      "items": [
+        {
+          "code": "services:\n  web:\n    labels:\n      com.example.description: \"Accounting web app\""
+        }
+      ]
+    },
+    {
+      "title": "হোস্ট (Hosts)",
+      "items": [
+        {
+          "code": "services:\n  web:\n    extra_hosts:\n      - \"somehost:192.168.1.100\""
+        }
+      ]
+    },
+    {
+      "title": "ডিএনএস সার্ভার (DNS servers)",
+      "items": [
+        {
+          "code": "services:\n  web:\n    dns: 8.8.8.8\n    dns:\n      - 8.8.8.8\n      - 8.8.4.4"
+        }
+      ]
+    },
+    {
+      "title": "নেটওয়ার্ক (Network)",
+      "items": [
+        {
+          "definition": "'ফ্রন্টএন্ড' নামে একটি কাস্টম নেটওয়ার্ক তৈরি করা",
+          "code": "networks:\n  frontend:"
+        }
+      ]
+    },
+    {
+      "title": "বাহ্যিক নেটওয়ার্ক (External network)",
+      "items": [
+        {
+          "definition": "একটি পূর্ব-বিদ্যমান নেটওয়ার্কে যোগদান করুন",
+          "code": "networks:\n  default:\n    external:\n      name: frontend"
+        }
+      ]
+    },
+    {
+      "title": "ভলিউম (Volume)",
+      "items": [
+        {
+          "definition": "মাউন্ট হোস্ট পাথ বা নাম ভলিউম, একটি পরিষেবার উপ-বিকল্প হিসাবে নির্দিষ্ট করা হয়",
+          "code": "db:\n    image: postgres:latest\n    volumes:\n      - \"/var/run/postgres/postgres.sock:/var/run/postgres/postgres.sock\"\n      - \"dbdata:/var/lib/postgresql/data\""
+        },
+        {
+          "code": "volumes:\n  dbdata:"
+        }
+      ]
+    },
+    {
+      "title": "ডিভাইস (Devices)",
+      "items": [
+        {
+          "code": "services:\n  web:\n    devices:\n    - \"/dev/ttyUSB0:/dev/ttyUSB0\""
+        }
+      ]
+    },
+    {
+      "title": "বাহ্যিক লিঙ্ক (External links)",
+      "items": [
+        {
+          "code": "services:\n  web:\n    external_links:\n      - redis_1\n      - project_db_1:mysql"
+        }
+      ]
+    },
+    {
+      "title": "ব্যবহারকারী (User)",
+      "items": [
+        {
+          "definition": "ব্যবহারকারী নির্দিষ্ট করা",
+          "code": "user: root"
+        },
+        {
+          "definition": "আইডি সহ ব্যবহারকারী এবং গোষ্ঠী উভয়ই নির্দিষ্ট করা",
+          "code": "user: 0:0"
+        }
+      ]
+    }
+  ]
+}

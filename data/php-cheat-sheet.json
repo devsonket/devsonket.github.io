@@ -1,219 +1,560 @@
 {
-
-  "id": "php",
-  "title": "পিএইচপি প্রোগ্রামিং",
-  "slug": "php",
-  "description": "পিএইচপি হচ্ছে একটি সার্ভার সাইড স্ক্রিপ্টিং ল্যাঙ্গুয়েজ, যা তৈরী করেন রাসমাস লারডোর্ফ ১৯৯৪ সালে। যা বিশেষ করে যে কোনো ডাইনামিক এবং ইন্টারেক্টিভ ওয়েব ডেভেলপমেন্ট অথবা ওয়েব ভিত্তিক সফটওয়্যার তৈরিতে ব্যবহৃত হয়",
-  "colorPref": "#8892BF",
-  "contents": [
-    {
-      "title": "গাণিতিক অপারেশন",
-      "items": [
-        {
-          "definition": "সাধারন গাণিতিক অপারেশন",
-          "code": " +, -, *, /, %"
+    "id": "php",
+    "title": "পিএইচপি প্রোগ্রামিং",
+    "slug": "php",
+    "description": "পিএইচপি হচ্ছে একটি সার্ভার সাইড স্ক্রিপ্টিং ল্যাঙ্গুয়েজ, যা তৈরী করেন রাসমাস লারডোর্ফ ১৯৯৪ সালে। যা বিশেষ করে যে কোনো ডাইনামিক এবং ইন্টারেক্টিভ ওয়েব ডেভেলপমেন্ট অথবা ওয়েব ভিত্তিক সফটওয়্যার তৈরিতে ব্যবহৃত হয়",
+    "colorPref": "#8892BF",
+    "contents": [{
+            "title": "পিএইচপি ব্যাসিক",
+            "items": [{
+                    "definition": "পিএইচপি শুরু করতে",
+                    "code": "<?php // place PHP code here ?>"
+                },
+                {
+                    "definition": "কমেন্ট করার জন্য",
+                    "code": "// or # or /*...*/"
+                },
+                {
+                    "definition": "ফাংশন লিখতে",
+                    "code": "function NameOfTheFunction() { //place PHP code here }"
+                },
+                {
+                    "definition": "কন্সট্যাকটর ফাংশন লিখতে <  PHP 7.4",
+                    "code": "class Ugh{\n public $devsonket; \n function __construct($devsonket) {\n $this->devsonket = $devsonket;\n }\n}"
+                },
+                {
+                    "definition": "কন্সট্যাকটর ফাংশন লিখতে >  PHP 7.4",
+                    "code": "class Wow{\n  function __construct(public $devsonket) { }}"
+                },
+                {
+                    "definition": "ভ্যারিএবল তৈরি করতে",
+                    "code": "$variableName = 'value';"
+                },
+                {
+                    "definition": "কন্ডিশন লিখতে",
+                    "code": "if (condition) { //place PHP code here }"
+                },
+                {
+                    "definition": "লুপ লিখতে",
+                    "code": "for (initialization; condition; increment) { //place PHP code here }"
+                },
+                {
+                    "definition": "অ্যারে লিখতে",
+                    "code": "$arrayName = array('value1', 'value2', 'value3');"
+                },
+                {
+                    "definition": "অ্যারে এক্সেস করতে",
+                    "code": "$arrayName[0];"
+                },
+                {
+                    "definition": "অ্যারের সাইজ বের করতে",
+                    "code": "count($arrayName);"
+                }
+            ]
+        }, {
+            "title": "কন্সট্যান্ট",
+            "items": [{
+                    "definition": "কন্সট্যান্ট তৈরি করতে",
+                    "code": "define('CONSTANT_NAME', 'value');"
+                },
+                {
+                    "definition": "কন্সট্যান্ট এক্সেস করতে",
+                    "code": "CONSTANT_NAME;"
+                },
+                {
+                    "definition": " __LINE__ কন্সট্যান্ট",
+                    "code": "ফাইলের বর্তমান লাইনের সংখ্যা নির্দেশ করতে"
+                },
+                {
+                    "definition": " __FILE__ কন্সট্যান্ট",
+                    "code": "ফাইলের সম্পূর্ণ পাথ এবং ফাইলের নাম"
+                },
+                {
+                    "definition": " __DIR__ কন্সট্যান্ট",
+                    "code": "ফাইলের ডিরেক্টরি পাথ নির্দেশ করতে"
+                },
+                {
+                    "definition": " __FUNCTION__ কন্সট্যান্ট",
+                    "code": "ফাংশনের নাম নির্দেশ করতে"
+                },
+                {
+                    "definition": " __CLASS__ কন্সট্যান্ট",
+                    "code": "ক্লাসের নামটি যে নামস্থানে ঘোষণা করা হয়েছিল তা  নির্দেশ করতে"
+                },
+                {
+                    "definition": " __TRAIT__ কন্সট্যান্ট",
+                    "code": "ট্রেট ও তার নেমস্পেস নির্দেশ করতে"
+                },
+                {
+                    "definition": " __METHOD__ কন্সট্যান্ট",
+                    "code": "ক্লাস মেথড নেম"
+                },
+                {
+                    "definition": " __NAMESPACE__ কন্সট্যান্ট",
+                    "code": "নেমস্পেস নির্দেশ করতে"
+                }
+            ]
+        }, {
+            "title": "গাণিতিক অপারেশন",
+            "items": [{
+                    "definition": "সাধারন গাণিতিক অপারেশন",
+                    "code": " +, -, *, /, %"
+                },
+                {
+                    "definition": "i এ ১ যোগ করবে অথবা ১ বিয়োগ করে i এর মধ্যে রাখবে, পরে i এর ভ্যালু রিটার্ন করবে",
+                    "code": "++i,--i"
+                },
+                {
+                    "definition": "i এর আগের ভ্যালু রির্টান করবে,পরে i এর ভ্যালু ১ বাড়াবে অথবা কমাবে",
+                    "code": "i++,i--"
+                },
+                {
+                    "definition": "বেসিক লজিক্যাল অপারেটর",
+                    "code": "&&,||,!"
+                },
+                {
+                    "definition": "বিট লজিক্যাল অপারেটর অথবা বিটওয়াইজ অপারেটর",
+                    "code": "&, |, ^, ~!, <<, >>"
+                },
+                {
+                    "definition": "তুলনামূলক অপারেটর",
+                    "code": " ==, !=, <, >, <=, >="
+                },
+                {
+                    "definition": "নির্ধারিত করন অপারেটর",
+                    "code": "="
+                }
+            ]
         },
         {
-          "definition": "i এ ১ যোগ করবে অথবা ১ বিয়োগ করে i এর মধ্যে রাখবে, পরে i এর ভ্যালু রিটার্ন করবে",
-          "code": "++i,--i"
+            "title": "প্রয়োজনীয় ফাংশন (বিল্ড-ইন)",
+            "items": [{
+                    "definition": "কোন কিছুর আউটপুট দেখার জন্য",
+                    "code": "echo 'Hello World'"
+                },
+                {
+                    "definition": "কোন কিছুর টাইপ ও ভ্যালু দেখতে",
+                    "code": "var_dump()"
+                },
+                {
+                    "definition": "কোন নেগেটিভ ভ্যালু থেকে পজিটিভ ভ্যালু বের করা  ",
+                    "code": "abs($negetive_value)"
+                }
+            ]
         },
         {
-          "definition": "i এর আগের ভ্যালু রির্টান করবে,পরে i এর ভ্যালু ১ বাড়াবে অথবা কমাবে",
-          "code": "i++,i--"
+            "title": "গাণিতিক ফাংশন",
+            "items": [{
+                    "definition": "বর্গমূল করার জন্য",
+                    "code": "sqrt()"
+                },
+                {
+                    "definition": "সাধারন লগারিদম পাওয়ার জন্য",
+                    "code": "log()"
+                },
+                {
+                    "definition": "এক্সপোনেনশিয়াল নাম্বার এর জন্য",
+                    "code": "exp()"
+                },
+                {
+                    "definition": "y এর পাওয়ার হিসেবে x কে নেয়ার জন্য",
+                    "code": "pow(x,y)"
+                },
+                {
+                    "definition": "x এর নিকটস্থ, x এর তুলনায় বড়মানের পূর্ণসংখ্যার জন্য",
+                    "code": "ceil(x)"
+                },
+                {
+                    "definition": "x এর নিকটস্থ, x এর তুলনায় ছোটমানের পূর্ণসংখ্যার জন্য",
+                    "code": "floor(x)"
+                },
+                {
+                    "definition": "x এর এবসোলিউট ভ্যালু এর জন্য ",
+                    "code": "abs(x)"
+                },
+                {
+                    "definition": "দৈবচয়নে(রান্ডম) নাম্বার জেনারেট করার জন্য",
+                    "code": "rand()"
+                },
+                {
+                    "definition": "X/y এর ভাগশেষ প্রদান করার জন্য",
+                    "code": "fmod()"
+                },
+                {
+                    "definition": "একটি মান সসীম কিনা তা পরীক্ষা করার জন্য",
+                    "code": "is_finite()"
+                },
+                {
+                    "definition": "একটি মান অসীম কিনা তা পরীক্ষা করার জন্য",
+                    "code": "is_infinite()"
+                },
+                {
+                    "definition": "একটি মান সংখ্যা কিনা তা পরীক্ষা করার জন্য",
+                    "code": "is_nan()"
+                },
+                {
+                    "definition": "একটি অ্যারেতে সর্বোচ্চ মান, অথবা বেশ কয়েকটি নির্দিষ্ট মানের সর্বোচ্চ মান প্রদান করার জন্য",
+                    "code": "max()"
+                },
+                {
+                    "definition": "একটি অ্যারেতে সর্বনিম্ন মান, অথবা কয়েকটি নির্দিষ্ট মানগুলির সর্বনিম্ন মান প্রদান করার জন্য",
+                    "code": "min()"
+                }
+            ]
         },
         {
-          "definition": "বেসিক লজিক্যাল অপারেটর",
-          "code": "&&,||,!"
+            "title": "স্ট্রিং এর জন্য প্রয়োজনীয় ফাংশন",
+            "items": [{
+                    "definition": "স্ট্রিং এর দৈর্ঘ্য",
+                    "code": "strlen($string)"
+                },
+                {
+                    "definition": "স্ট্রিং এর i ক্যারেক্টার পজিশন",
+                    "code": "strpos($string)"
+                },
+                {
+                    "definition": "ASCII ভ্যালু থেকে স্ট্রিং",
+                    "code": "chr($string)"
+                },
+                {
+                    "definition": "স্ট্রিং থেকে ASCII ভ্যালু",
+                    "code": "ord($string)"
+                },
+                {
+                    "definition": "স্ট্রিং-কে ক্যারেক্টার এরেতে রূপান্তর",
+                    "code": "str_split($string)"
+                },
+                {
+                    "definition": "দুটি স্ট্রিং জয়েন",
+                    "code": " . (dot sign) "
+                },
+                {
+                    "definition": " এক বা একাধিক স্ট্রিং প্রিন্ট করা ",
+                    "code": "print($string)"
+                },
+                {
+                    "definition": " স্ট্রিং ফরমেট আকারে প্রিন্ট করা ",
+                    "code": "printf('something %s','$string')"
+                },
+                {
+                    "definition": "স্ট্রিংয়ের এক বা একাধিক ক্যারেক্টার রিপ্লেস করা",
+                    "code": "str_replace($string)"
+                },
+                {
+                    "definition": "স্ট্রিংয়ের ওয়ার্ড গণনা",
+                    "code": "str_word_count($string)"
+                },
+                {
+                    "definition": "স্ট্রিংয়ের থেকে HTML Tag রিমুভ করা",
+                    "code": "strip_tags(string $something ,array|string|null $allowed_tags = null) : string"
+                },
+                {
+                    "definition": "স্ট্রিংকে কোন নির্দিষ্ট স্ট্রিং দিয়ে বিভক্ত করা (প্রতিটি ভাগকে একটি অ্যারের ইলিমেন্ট আকারে পাওয়া)",
+                    "code": "explode(string $separator , string $string [, int $limit])"
+                },
+                {
+                    "definition": "স্ট্রিং এর প্রথম অক্ষরটি বড় হাতের করা",
+                    "code": "ucfirst($string)"
+                },
+                {
+                    "definition": "স্ট্রিং এর প্রতিটি শব্দের প্রথম অক্ষরকে বড় হাতের করা",
+                    "code": "ucwords($string)"
+                },
+                {
+                    "definition": "স্ট্রিং এর প্রথম অক্ষরটি ছোট হাতের করা",
+                    "code": "lcfirst($string)"
+                },
+                {
+                    "definition": "সম্পুর্ণ স্ট্রিং কে বড় হাতের করা",
+                    "code": "strtoupper($string)"
+                },
+                {
+                    "definition": "সম্পুর্ণ স্ট্রিং কে ছোট হাতের করা",
+                    "code": "strtolower($string)"
+                }
+            ]
         },
         {
-          "definition": "বিট লজিক্যাল অপারেটর অথবা বিটওয়াইজ অপারেটর",
-          "code": "&, |, ^, ~!, <<, >>"
+            "title": "অ্যারে এর জন্য প্রয়োজনীয় ফাংশন",
+            "items": [{
+                    "definition": "অ্যারে তৈরী করা",
+                    "code": "array()"
+                },
+                {
+                    "definition": "অ্যারে এর সব Key কে ক্যপিটাল বা স্মল লেটার করা",
+                    "code": "array_change_key_case()"
+                },
+                {
+                    "definition": "অ্যারে চানক করা",
+                    "code": "array_chunk()"
+                },
+                {
+                    "definition": "এক কলাম এর অ্যারে তৈরী করতে",
+                    "code": "array_column()"
+                },
+                {
+                    "definition": "অ্যারে Key আছে নাকি চেক করতে",
+                    "code": "array_key_exists()"
+                },
+                {
+                    "definition": "অ্যারের সব Key দেখতে",
+                    "code": "array_keys()"
+                },
+                {
+                    "definition": "অ্যারে মার্জ করতে",
+                    "code": "array_merge()"
+                },
+                {
+                    "definition": " অ্যারেতে ভ্যালু পুশ করা",
+                    "code": "array_push()"
+                },
+                {
+                    "definition": "অ্যারে থেকে ডাবল থাকা ভ্যালু বাদ দিতে",
+                    "code": "array_unique()"
+                },
+                {
+                    "definition": "অ্যারে সর্ট করতে",
+                    "code": "sort()"
+                },
+                {
+                    "definition": "অ্যারের কি এর সিরিয়াল অদল বদল করতে",
+                    "code": "shuffle()"
+                },
+                {
+                    "definition": "একটি স্ট্রিং দ্বারা অ্যারেকে যুক্ত করা",
+                    "code": "implode ( string $separator , array $array )"
+                },
+                {
+                    "definition": "একটি স্ট্রিং দ্বারা অ্যারেকে যুক্ত করা(উপায় ২)",
+                    "code": "join ( string $separator , array $array )"
+                },
+                {
+                    "definition": "একটি স্ট্রিং কে আ্যরেতে রুপান্তর করতে",
+                    "code": "explode ( string $separator , array $array )"
+                },
+                {
+                    "definition": "অ্যারের সকল ভ্যালু দেখতে",
+                    "code": "array_values()"
+                },
+                {
+                    "definition": "কী গুলির জন্য একটি এবং এর ভ্যালু গুলির জন্য অন্য একটি অ্যারে ব্যবহার করে একটি অ্যারে তৈরি করতে",
+                    "code": "array_combine()"
+                },
+                {
+                    "definition": "ডিসেন্ডিং অর্ডার অ্যারে সাজাতে এবং ইনডেক্স গুলি একত্রে মেইনটেন করতে",
+                    "code": "arsort()"
+                },
+                {
+                    "definition": "অ্যারের উপাদান গণনা করতে",
+                    "code": "count()"
+                },
+                {
+                    "definition": "একটি অ্যারের সমস্ত ভ্যালু গণনা করতে",
+                    "code": "array_count_values()"
+                },
+                {
+                    "definition": "অ্যারের পার্থক্য গণনা করতে",
+                    "code": "array_diff()"
+                },
+                {
+                    "definition": "একটি অ্যারের ভ্যালুকে কি এবং কী কে ভ্যালু তে রূপান্তর করতে",
+                    "code": "array_flip()"
+                },
+                {
+                    "definition": "অ্যারের মধ্যে থেকে কমন ভ্যালু গুলোকে বের করতে",
+                    "code": "array_intersect()"
+                },
+                {
+                    "definition": "অ্যারে লিস্ট কি না চেক করতে",
+                    "code": "array_is_list()"
+                },
+                {
+                    "definition": "অ্যারের প্রথম কী সন্ধান করতে ",
+                    "code": "array_key_first()"
+                },
+                {
+                    "definition": "অ্যারের শেষ কী সন্ধান করতে ",
+                    "code": "array_key_last()"
+                },
+                {
+                    "definition": "একাধিক অ্যারে বা মাল্টি ডায়মেনসোনাল অ্যারে শর্ট করতে",
+                    "code": "array_multisort()"
+                },
+                {
+                    "definition": "অ্যারের শেষ উপাদান অ্যারে থেকে বের করে আনতে ",
+                    "code": "array_pop()"
+                },
+                {
+                    "definition": "অ্যারের প্রথম উপাদান অ্যারে থেকে বের করে আনতে ",
+                    "code": "array_shift()"
+                },
+                {
+                    "definition": "অ্যারের কী ধরে ভ্যালু পৰিৱৰ্তন করতে",
+                    "code": "array_replace()"
+                },
+                {
+                    "definition": "অ্যারের ভ্যালু গুলোর যোগফল নির্ণয় করতে",
+                    "code": "array_sum()"
+                },
+                {
+                    "definition": "অ্যারেতে কোন নির্দিষ্ট ভ্যালু আছে কি না চেক করতে",
+                    "code": "in_array()"
+                },
+                {
+                    "definition": "অ্যারে মার্জ করে এবং স্প্রেড অপারেটর array_merge() ফাংশনের চেয়ে ভালো পারফরম্যান্স প্রদান করে ",
+                    "code": "...array_var"
+                }
+            ]
         },
         {
-          "definition": "তুলনামূলক অপারেটর",
-          "code": " ==, !=, <, >, <=, >="
+            "title": "কমান্ড লাইনে ব্যবহৃত প্রয়োজনীয় কিছু কমান্ডস",
+            "items": [{
+                    "definition": "হেল্প কমান্ডস গুলো দেখার জন্য",
+                    "code": "php -h"
+                },
+                {
+                    "definition": ".ini কনফিগারেশন ফাইল গুলো পেতে",
+                    "code": "php --ini"
+                },
+                {
+                    "definition": "PHP এর কি কি মডিউল বা এক্সটেশন ইনস্টল করা আছে",
+                    "code": "php -m"
+                },
+                {
+                    "definition": "PHP এর কোন একটা মডিউল ইনস্টল করা আছে কিনা তা চেক করার জন্য",
+                    "code": "php -m | grep zip"
+                },
+                {
+                    "definition": "PHP এর বিস্তারিত কনফিগারেশন বা ইনফো দেখার জন্য",
+                    "code": "php -i"
+                },
+                {
+                    "definition": "বিল্টইন ওয়েব সার্ভার রান করার জন্য",
+                    "code": "php -S localhost:8000"
+                },
+                {
+                    "definition": "কোন ফাইল রান/এক্সিকিউট করার জন্য",
+                    "code": "php -f file_path/test.php"
+                },
+                {
+                    "definition": "রান টাইমে মেমোরি বাড়ানোর জন্য",
+                    "code": "php -d memory_limit=-1 artisan migrate"
+                },
+                {
+                    "definition": "বিল্টইন ভ্যারিএবল এর মান জানতে",
+                    "code": "php -i | grep variable_name যেমন: php -i | grep upload_max_filesize"
+                },
+                {
+                    "definition": "ইরোর লগ ফাইলের লোকেশন জানতে",
+                    "code": "php -i | grep error_log"
+                }
+            ]
         },
         {
-          "definition": "নির্ধারিত করন অপারেটর",
-          "code": "="
+            "title": "ফাইল সিস্টেম এর জন্য ব্যবহৃত ফাংশন সমূহ",
+            "items": [{
+                    "definition": "সরাসরি কোনো ফাইলের কন্টেন্ট দেখার জন্য",
+                    "code": "echo readfile($file_name);"
+                },
+                {
+                    "definition": "কোনো ফাইলের কন্টেন্ট গুলোকে অ্যারে হিসেবে পেতে",
+                    "code": "file($file_name);"
+                },
+                {
+                    "definition": "কোনো ফাইলের কন্টেন্ট গুলোকে স্ট্রিং হিসেবে পেতে",
+                    "code": "file_get_contents($file_name);"
+                },
+                {
+                    "definition": "কোনো ফাইল নির্দিষ্ট ঠিকানায় আদৌ আছে কী না জানতে",
+                    "code": "file_exists($file_name);"
+                },
+                {
+                    "definition": "কোনো ফাইল রিড/রাইট ইত্যাদি মোডে ওপেন করার জন্য",
+                    "code": "$file = fopen($file_name, $mode);"
+                },
+                {
+                    "definition": "ওপেন করা ফাইলটি বন্ধ করতে",
+                    "code": "fclose($opened_file);"
+                },
+                {
+                    "definition": "ওপেন করা ফাইলের কন্টেন্ট গুলো দেখার জন্য",
+                    "code": "echo fread($file, filesize($file_name));"
+                },
+                {
+                    "definition": "ওপেন করা ফাইলের কন্টেন্টের শুধুমাত্র প্রথম লাইনটি দেখার জন্য",
+                    "code": "echo fgets($file_name);"
+                },
+                {
+                    "definition": "ওপেন করা ফাইলের কন্টেন্টের শুধুমাত্র প্রথম অক্ষরটি দেখার জন্য",
+                    "code": "echo fgetc($file_name);"
+                },
+                {
+                    "definition": "ওপেন করা ফাইলের কন্টেন্টের শেষ লাইনে পৌঁছেছে কী না দেখতে",
+                    "code": "echo feof($file_name);"
+                },
+                {
+                    "definition": "ওপেন করা ফাইলে কোনো নতুন ডেটা লিখতে",
+                    "code": "fwrite($file_name, $data);"
+                },
+                {
+                    "definition": "কোনো ফাইলের ডিরেক্টরি প্যাথ পেতে",
+                    "code": "echo dirname('/uploads/file.php');"
+                },
+                {
+                    "definition": "কোনো নির্দিষ্ট ফাইল পাথ হতে ফাইলের নাম আলাদা করে দেখতে",
+                    "code": "echo basename('../path/filepath/file.php');"
+                },
+                {
+                    "definition": "ওপেন করা ফাইলের পারমিশন মোড পরিবর্তন করতে",
+                    "code": "chmod($file_name, $mode);"
+                },
+                {
+                    "definition": "কোনো ফাইল ডিলিট করতে",
+                    "code": "unlink($file_name);"
+                },
+                {
+                    "definition": "কোনো ফাইল কপি করতে",
+                    "code": "copy($file_name);"
+                },
+                {
+                    "definition": "ফাইল বা ডিরেক্টরির নাম পরিবর্তন করতে",
+                    "code": "rename($old_name, $new_name);"
+                },
+                {
+                    "definition": "কোনো ফাইলের টাইপ জানতে",
+                    "code": "echo filetype($file_name);"
+                },
+                {
+                    "definition": "কোনো ফাইলের সাইজ bytes হিসেবে পেতে",
+                    "code": "echo filesize($file_name);"
+                },
+                {
+                    "definition": "কোনো ফাইল শেষ কখন মডিফাই হয়েছিলো জানতে",
+                    "code": "echo date('F d Y H:i:s.', filemtime($file_name));"
+                },
+                {
+                    "definition": "কোনো ফাইলে শেষ কখন অ্যাক্সেস করা হয়েছিলো জানতে",
+                    "code": "echo date('F d Y H:i:s.', fileatime($file_name));"
+                },
+                {
+                    "definition": "কোনো ফাইলে শেষ কখন পরিবর্তন করা হয়েছিলো জানতে",
+                    "code": "echo date('F d Y H:i:s.', filectime($file_name))"
+                },
+                {
+                    "definition": "কোনো ফাইলের টাইপ জানতে",
+                    "code": "echo filetype($file_name);"
+                }
+            ]
+        },
+        {
+            "title": "অবজেক্ট এর খুটিনাটি",
+            "items": [{
+                "definition": "ইমটি অবজেক্ট এর ভ্যালু দেখার জন্য < php 8.0",
+                "code": "echo optional($obj)->devsonket;"
+            }, {
+                "definition": "ইমটি অবজেক্ট এর ভ্যালু দেখার জন্য > php 8.0",
+                "code": "echo $obj?->devsonket;"
+            }]
         }
-      ]
-    },
-    {
-      "title": "গাণিতিক ফাংশন",
-      "items": [
-        {
-          "definition": "বর্গমূল করার জন্য",
-          "code": "sqrt()"
-        },
-        {
-          "definition": "সাধারন লগারিদম পাওয়ার জন্য",
-          "code": "log()"
-        },
-        {
-          "definition": "এক্সপোনেনশিয়াল নাম্বার এর জন্য",
-          "code": "exp()"
-        },
-        {
-          "definition": "y এর পাওয়ার হিসেবে x কে নেয়ার জন্য",
-          "code": "pow(x,y)"
-        },
-        {
-          "definition": "x এর নিকটস্থ, x এর তুলনায় বড়মানের পূর্ণসংখ্যার জন্য",
-          "code": "ceil(x)"
-        },
-        {
-          "definition": "x এর নিকটস্থ, x এর তুলনায় ছোটমানের পূর্ণসংখ্যার জন্য",
-          "code": "floor(x)"
-        },
-        {
-          "definition": "x এর এবসোলিউট ভ্যালু এর জন্য ",
-          "code": "abs(x)"
-        },
-        {
-          "definition": "দৈবচয়নে(রান্ডম) নাম্বার জেনারেট করার জন্য",
-          "code": "rand()"
-        }
-      ]
-    },
-    {
-      "title": "স্ট্রিং এর জন্য প্রয়োজনীয় ফাংশন",
-      "items": [
-        {
-          "definition": "স্ট্রিং এর দৈর্ঘ্য",
-          "code": "strlen(something)"
-        },
-        {
-          "definition": "স্ট্রিং এর i ক্যারেক্টার পজিশন",
-          "code": "strpos(something)"
-        },
-        {
-          "definition": "ASCII ভ্যালু থেকে স্ট্রিং",
-          "code": "chr(something)"
-        },
-        {
-          "definition": "স্ট্রিং থেকে ASCII ভ্যালু",
-          "code": "ord(something)"
-        },
-        {
-
-          "definition": "স্ট্রিং-কে ক্যারেক্টার এরেতে রূপান্তর",
-          "code": "str_split(something)"
-        },
-        {
-          "definition": "দুটি স্ট্রিং জয়েন",
-          "code": " . (dot sign) "
-        },
-        {
-          "definition": "ছোট হাতের অক্ষরে রুপান্তর",
-          "code": "strtolower(something)"
-        },
-        {
-          "definition": "বড় হাতের অক্ষরে রুপান্তর",
-          "code": "strtoupper(something)"
-        },
-        {
-          "definition": " এক বা একাধিক স্ট্রিং প্রিন্ট করা ",
-          "code": "print(something)"
-        },
-        {
-          "definition": " স্ট্রিং ফরমেট আকারে প্রিন্ট করা ",
-          "code": "printf(something)"
-        },
-        {
-          "definition": "স্ট্রিংয়ের এক বা একাধিক ক্যারেক্টার রিপ্লেস করা",
-          "code": "str_replace()"
-        },
-        {
-          "definition": "স্ট্রিংয়ের ওয়ার্ড গণনা",
-          "code": "str_word_count(something)"
-        },
-        {
-          "definition": "স্ট্রিংয়ের থেকে HTML Tag রিমুভ করা",
-          "code": "strip_tags(string $something ,array|string|null $allowed_tags = null) : string"
-        },
-        {
-          "definition": "স্ট্রিংকে কোন নির্দিষ্ট স্ট্রিং দিয়ে বিভক্ত করা (প্রতিটি ভাগকে একটি অ্যারের ইলিমেন্ট আকারে পাওয়া)",
-          "code": "explode(string $separator , string $string [, int $limit])"
-        },
-        {
-          "definition": "স্ট্রিং এর প্রথম অক্ষরটি বড় হাতের করা",
-          "code": "ucfirst($string)"
-        },
-        {
-          "definition": "স্ট্রিং এর প্রতিটি শব্দের প্রথম অক্ষরকে বড় হাতের করা",
-          "code": "ucwords($string)"
-        },
-        {
-          "definition": "স্ট্রিং এর প্রথম অক্ষরটি ছোট হাতের করা",
-          "code": "lcfirst($string)"
-        },
-        {
-          "definition": "সম্পুর্ণ স্ট্রিং কে বড় হাতের করা",
-          "code": "strtoupper($string)"
-        },
-        {
-          "definition": "সম্পুর্ণ স্ট্রিং কে ছোট হাতের করা",
-          "code": "strtolower($string)"
-        }
-      ]
-    },
-    {
-      "title": "অ্যারে এর জন্য প্রয়োজনীয় ফাংশন",
-      "items": [
-        {
-          "definition": "অ্যারে তৈরী করা",
-          "code": "array()"
-        },
-        {
-          "definition": "অ্যারে এর সব Key কে ক্যপিটাল বা স্মল লেটার করা",
-          "code": "array_change_key_case()"
-        },
-        {
-          "definition": "অ্যারে চানক করা",
-          "code": "array_chunk()"
-        },
-        {
-          "definition": "এক কলাম এর অ্যারে তৈরী করতে",
-          "code": "array_column()"
-        },
-        {
-          "definition": "অ্যারে Key আছে নাকি চেক করতে",
-          "code": "array_key_exists()"
-        },
-        {
-          "definition": "অ্যারের সব Key দেখতে",
-          "code": "array_keys()"
-        },
-        {
-          "definition": "অ্যারে মার্জ করতে",
-          "code": "array_merge()"
-        },
-        {
-          "definition": " অ্যারেতে ভ্যালু পুশ করা",
-          "code": "array_push()"
-        },
-        {
-          "definition": "অ্যারে থেকে ডাবল থাকা ভ্যালু বাদ দিতে",
-          "code": "array_unique()"
-        },
-        {
-          "definition": "অ্যারে সর্ট করতে",
-          "code": "sort()"
-        },
-        {
-          "definition": "অ্যারের কি এর সিরিয়াল অদল বদল করতে",
-          "code": "shuffle()"
-        },
-        {
-          "definition": "একটি স্ট্রিং দ্বারা অ্যারেকে যুক্ত করা",
-          "code": "implode ( string $separator , array $array )"
-        },
-        {
-          "definition": "একটি স্ট্রিং দ্বারা অ্যারেকে যুক্ত করা(উপায় ২)",
-          "code": "join ( string $separator , array $array )"
-        }
-      ]
-    }
-  ]
+    ]
 }

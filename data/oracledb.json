@@ -1,0 +1,181 @@
+{
+	"id": "oracledb",
+	"title": "ওরাকল ডিবি",
+	"slug": "oracle-db",
+	"description": "Oracle DB একটি রিলেশনাল ডাটাবেজ ম্যানেজমেন্ট সিস্টেম। [Stack Overflow](https://survey.stackoverflow.co/2022/#databases) এর তথ্য মতে ২০২২ সালে অন্যতম ব্যবহার করা DBMS গুলোর মধ্যে অবস্থান করছে Oracle DB",
+	"colorPref": "#C74634",
+	"contents": [
+		{
+			"title": "Oracle DB ইন্সটল করতে",
+			"items": [
+				{
+					"definition": "Oracle এর অফিশিয়াল গাইডলাইন ফলো করুনঃ",
+					"code": "https://docs.oracle.com/en/database/oracle/oracle-database/index.html"
+				}
+			]
+		},
+		{
+			"title": "ওরাকল ডিবি ইউজার বাবস্থাপনা",
+			"items": [
+				{
+					"definition": "ওরাকল ডাটাবেজ ইন্সটল করা হলে রুট ইউজারে প্রবেশ করুনঃ",
+					"code": "sqlplus / as sysdba"
+				},
+				{
+					"definition": "নতুন ইউজার তৈরী করতে",
+					"code": "CREATE USER username"
+				},
+				{
+					"definition": "বর্তমান ইউজার ও এডমিনদের তথ্য তালিকা হিসেবে দেখতে",
+					"code": "SELECT * FROM ALL_USERS;"
+				},
+				{
+					"definition": "ডিফল্ট এডমিন `root` এর পাসওয়ার্ড চেঞ্জ করতে",
+					"code": "ALTER USER sysdba IDENTIFIED by PASSWORD;"
+				},
+				{
+					"definition": "নতুন ইউজারকে সকল প্রিভিলেজ দিতে",
+					"code": "GRANT ALL PRIVILEGES to username;"
+				},
+				{
+					"definition": "কোন ইউজারকে ডিলেট করতে",
+					"code": "DROP USER username;"
+				}
+			]
+		},
+		{
+			"title": "ওরাকল ডিবির প্রাথমিক কমান্ড সমুহ",
+			"items": [
+				{
+					"definition": "বর্তমানে কি কি টেবিল এবং ভিউ আছে তা দেখতে",
+					"code": "SELECT * FROM TABS;"
+				},
+				{
+					"definition": "টেবিল তৈরি করার জন্য",
+					"code": "CREATE TABLE tableName(col1 DataType, col2 DataType,..., coln DataType);"
+				},
+				{
+					"definition": "এই নামে কোন টেবিল আছে কিনা চেক করে নতুন টেবিল তৈরি করা",
+					"code": "CREATE TABLE tableName IF NOT EXISTS(col1 DataType, col2 DataType,..., coln DataType);"
+				},
+				{
+					"definition": "কোন টেবিলে ডাটা ইনসার্ট করতে",
+					"code": "INSERT INTO tableName(col1 DataType, col2 DataType,..., coln DataType) VALUES(col1_Value, col2_Value,... coln_Value);"
+				},
+				{
+					"definition": "কোন টেবিল ডিলেট করতে",
+					"code": "DROP TABLE tableName IF EXIST;"
+				}
+			]
+		},
+		{
+			"title": "ডাটা টাইপ",
+			"items": [
+				{
+					"definition": "ক্যারেক্টার টাইপ `CHAR`",
+					"code": "CHAR"
+				},
+				{
+					"definition": "ভেরিয়েবল লেংথ ক্যারেক্টার `VARCHAR2`",
+					"code": "VARCHAR2"
+				},
+				{
+					"definition": "ইউনিকোড ক্যারেক্টার NCHAR",
+					"code": "NCHAR"
+				},
+				{
+					"definition": "ভেরিয়েবল লেংথ ইউনিকোড ক্যারেক্টার NVARCHAR2",
+					"code": "NVARCHAR2"
+				},
+				{
+					"definition": "NUMBER",
+					"code": "NUMBER"
+				},
+				{
+					"definition": "FLOAT",
+					"code": "FLOAT"
+				},
+				{
+					"definition": "ক্যারেক্টার ডাটা আপটু ২ গিগাবাইট এর জন্য `LONG`",
+					"code": "LONG"
+				},
+				{
+					"definition": "DATE",
+					"code": "DATE"
+				},
+				{
+					"definition": "TIMESTAMP",
+					"code": "TIMESTAMP"
+				},
+				{
+					"definition": "বড় বাইনারি অবজেক্ট BLOB",
+					"code": "BLOB"
+				},
+				{
+					"definition": "বড় ক্যারেক্টার অবজেক্ট CLOB",
+					"code": "CLOB"
+				},
+				{
+					"definition": "বড় ইউনিকোড ক্যারেক্টার অবজেক্ট NCHAR",
+					"code": "NCLOB"
+				},
+				{
+					"definition": "ডাটাবেজের বাইরের কোন বড় ফাইল লোকেটর BFILE",
+					"code": "BFILE"
+				},
+				{
+					"definition": "কোন রো এর ইউনিক অ্যাড্রেস ROWID",
+					"code": "ROWID"
+				}
+			]
+		},
+		{
+			"title": "গ্রুপিং ফাংশন",
+			"items": [
+				{
+					"code": ""
+				}
+			]
+		},
+		{
+			"title": "গাণিতিক ফাংশন",
+			"items": [
+				{
+					"code": ""
+				}
+			]
+		},
+		{
+			"title": "স্ট্রিং ফাংশন",
+			"items": [
+				{
+					"code": "ASCII"
+				}
+			]
+		},
+		{
+			"title": "সময়ের ফাংশন",
+			"items": [
+				{
+					"code": ""
+				}
+			]
+		},
+		{
+			"title": "কন্ট্রোল ফ্লো ফাংশন",
+			"items": [
+				{
+					"code": ""
+				}
+			]
+		},
+		{
+			"title": "অন্যান্য ফাংশন",
+			"items": [
+				{
+					"code": ""
+				}
+			]
+		}
+	]
+}

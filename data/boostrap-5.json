@@ -45,7 +45,7 @@
             ]
         },
         {
-            "title": "ভার্টিকাল আলাইনমেন্ট",
+            "title": "ভার্টিকাল অ্যালাইনমেন্ট",
             "items": [{
                     "definition": "সব কলাম উপরে দেখানো",
                     "code": "<div class='row align-items-start'><div class='col'>...</div><div class='col'>...</div></div>"
@@ -73,7 +73,7 @@
             ]
         },
         {
-            "title": "হরিজেন্টাল আলাইনমেন্ট",
+            "title": "হরিজেন্টাল অ্যালাইনমেন্ট",
             "items": [{
                     "definition": "সব কলাম বামে দেখানো",
                     "code": "<div class='row justify-content-start'><div class='col'>...</div><div class='col'>...</div></div>"
@@ -136,23 +136,23 @@
                 },
                 {
                     "definition": "হেডিং টু",
-                    "code": "<p class='h1'>h1. Bootstrap heading</p>"
+                    "code": "<p class='h2'>h2. Bootstrap heading</p>"
                 },
                 {
                     "definition": "হেডিং থ্রি",
-                    "code": "<p class='h1'>h1. Bootstrap heading</p>"
+                    "code": "<p class='h3'>h3. Bootstrap heading</p>"
                 },
                 {
                     "definition": "হেডিং ফোর",
-                    "code": "<p class='h1'>h1. Bootstrap heading</p>"
+                    "code": "<p class='h4'>h4. Bootstrap heading</p>"
                 },
                 {
                     "definition": "হেডিং ফাইভ",
-                    "code": "<p class='h1'>h1. Bootstrap heading</p>"
+                    "code": "<p class='h5'>h5. Bootstrap heading</p>"
                 },
                 {
                     "definition": "হেডিং সিক্স ",
-                    "code": "<p class='h1'>h1. Bootstrap heading</p>"
+                    "code": "<p class='h6'>h6. Bootstrap heading</p>"
                 }
             ]
         },
@@ -301,6 +301,86 @@
                 {
                     "definition": "খারিজযোগ্য",
                     "code": "<div class='alert alert-dismissible' role='alert'>A simple dismissible alert—check it out!</div>"
+                }
+            ]
+        },
+        {
+            "title": "ফিগার্স",
+            "items": [{
+                    "definition": "ফিগার্স নেওয়ার জন্য",
+                    "code": "<figure class='figure'>.....</figure>"
+                },
+                {
+                    "definition": "ফিগার্সে ছবি যুক্ত করার জন্য",
+                    "code": "<img src='...' class='figure-img img-fluid rounded' alt='...'>"
+                },
+                {
+                    "definition": "ফিগার্সে ক্যাপশন যুক্ত করার জন্য",
+                    "code": "<figcaption class='figure-caption'>A caption for the above image.</figcaption>"
+                }
+            ]
+        },
+        {
+            "title": "ক্যারোসেল",
+            "items": [{
+                    "definition": "ক্যারোসেল-ফেইড-অ্যানিমেশন",
+                    "code": "<div class='carousel-fade' data-bs-ride='carousel'>"
+                },
+                {
+                    "definition": "ক্যারোসেল-ইনডিকেটর",
+                    "code": " <div class='carousel-indicators'><button type='button' data-bs-slide-to='1'></button><button type='button' data-bs-slide-to='2'></button></div>"
+                },
+                {
+                    "definition": "ক্যারোসেল-আইটেম",
+                    "code": "<div class='carousel-item'>......</div>"
+                },
+                {
+                    "definition": "ক্যারোসেল-ক্যাপশন",
+                    "code": "<div class='carousel-caption'>......</div>"
+                }
+            ]
+        },
+        {
+            "title": "মোডাল",
+            "items": [{
+                    "definition": "মোডাল-ফেইড-এনিমেশন",
+                    "code": "<div class='modal fade' id='modalID'>"
+                },
+                {
+                    "definition": "মোডাল স্ক্রিনের মাঝামাঝি রাখা",
+                    "code": " <div class='modal-dialog modal-dialog-centered'>"
+                },
+                {
+                    "definition": "লম্বা কন্টেন্ট স্ক্রল-এবল মোডাল",
+                    "code": "<div class='modal-dialog modal-dialog-scrollable'>"
+                },
+                {
+                    "definition": "মোডাল এ ডায়নামিক কন্টেন্ট দেখানো",
+                    "code": "<button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#modalID' data-bs-whatever=@mdo'>Open modal for @mdo</button>"
+                }
+            ]
+        },
+        {
+            "title": "পজিশন",
+            "items": [{
+                    "definition": "অ্যাবসল্যুট পজিশন",
+                    "code": "<div class='position-absolute'></div>"
+                },
+                {
+                    "definition": "রিলেটিভ পজিশন",
+                    "code": "<div class='position-relative'></div>"
+                },
+                {
+                    "definition": "সেন্টার এলিমেন্ট",
+                    "code": "<div class='position-absolute top-0 start-0 translate-middle'></div>"
+                },
+                {
+                    "definition": "টপ ০",
+                    "code": "<div class='top-0'></div>"
+                },
+                {
+                    "definition": "লেফ্ট ০",
+                    "code": "<div class='start-0'></div>"
                 }
             ]
         }

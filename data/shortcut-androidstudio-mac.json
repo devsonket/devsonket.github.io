@@ -1,0 +1,36 @@
+{
+    "id": "shrotcut-androidstudio-mac",
+    "title": "অ্যান্ড্রোয়েড স্টুডিও(ম্যাক)",
+    "slug": "shrotcut-androidstudio-mac",
+    "description": "অ্যান্ড্রয়েড স্টুডিও অ্যান্ড্রয়েড অ্যাপ্লিকেশন ডেভেলপম্যান্টের জন্য অফিসিয়াল ইন্টিগ্রেটেড ডেভেলপমেন্ট এনভায়রনমেন্ট (আইডিই)। অ্যান্ড্রোয়েড স্টুডিও(ম্যাক)এর জন্য প্রযোজনীয় সকল শর্টকাট কী নিয়ে তৈরি চিটশিট",
+    "colorPref": "#ef6c00",
+    "contents": [{
+            "title": "সাধারণ",
+            "items": [{
+                    "definition": "সেভ করতে",
+                    "code": "Command + S"
+                },
+                {
+                    "definition": "এডিটর বড়, ছোট করতে",
+                    "code": "Control + Command + F12"
+                },
+                {
+                    "definition": "পছন্দের তালিকায় যুক্ত করতে",
+                    "code": "Option + Shift + F"
+                },
+                {
+                    "definition": "সেটিং ডায়লগবক্স খুলতে",
+                    "code": "Command+,"
+                },
+                {
+                    "definition": "প্রজেক্ট স্ট্রাকচার ডায়লগবক্স খুলতে",
+                    "code": "Command+;"
+                },
+                {
+                    "definition": "ট্যাবগুলির মধ্যে স্যুইচ করতে",
+                    "code": "Ctrl + Tab"
+                }
+            ]
+        }
+    ]
+}

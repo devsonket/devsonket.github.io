@@ -23,7 +23,7 @@
                     "code": "yarn adduser"
                 },
                 {
-                    "definition": "yarn.com এ অ্যাকাউন্ট লগইন",
+                    "definition": "yarn.com এ অ্যাকাউন্টে লগইন",
                     "code": "yarn login"
                 },
                 {

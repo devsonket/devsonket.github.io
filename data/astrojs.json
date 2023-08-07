@@ -1,0 +1,161 @@
+{
+  "id": "astro-js",
+  "title": "Astro JS জাভাস্ক্রিপ্ট ফ্রেমওয়ার্ক",
+  "slug": "astro-js",
+  "description": "Astro JS জাভাস্ক্রিপ্ট ফ্রেমওয়ার্ক এর চিটশিট। যা একটি স্ট্যাটিক এইচটিএমএল এবং কম জাভাস্ক্রিপ্ট প্রিয় ফ্রেমওয়ার্ক",
+  "colorPref": "#61209A",
+  "contents": [
+    {
+      "title": "ইন্সটলেশন",
+      "items": [
+        {
+          "definition": "নতুন এস্ট্রো প্রজেক্ট বানান"
+        },
+        {
+          "code": "npm create astro@latest"
+        },
+        {
+          "code": "yarn create astro"
+        },
+        {
+          "code": "pnpm create astro@latest"
+        },
+        {
+          "definition": "এস্ট্রোজেএস প্রজেক্ট আপডেট করুন"
+        },
+        {
+          "code": "npm upgrade astro"
+        },
+        {
+          "code": "yarn upgrade astro"
+        },
+        {
+          "code": "pnpm upgrade astro"
+        },
+        {
+          "definition": "প্রজেক্ট রান করে দেখুন"
+        },
+        {
+          "code": "npm run dev"
+        },
+        {
+          "code": "yarn run dev"
+        },
+        {
+          "code": "pnpm run dev"
+        }
+      ]
+    },
+    {
+      "title": "ভিএসকোড সেটআপ এবং অন্যান্য",
+      "items": [
+        {
+          "definition": "ভিএসকোড ওপেন করে Crtl+P চাপুন, এটি বসিয়ে Enter press করুন"
+        },
+        {
+          "code": "ext install astro-build.astro-vscode"
+        },
+        {
+          "definition": "এস্ট্রোজেএস এর এক্সটেনশোন",
+          "code": ".astro"
+        },
+        {
+          "definition": "প্রজেক্টের সোর্সকোড",
+          "code": "src/*"
+        },
+        {
+          "definition": "প্রজেক্টের কনফিগারেশন ফাইল",
+          "code": "astro.config.mjs"
+        }
+      ]
+    },
+    {
+      "title": "কিছু প্রয়োজনীয় সেটাআপ সমুহ",
+      "items": [
+        {
+          "definition": "প্রিটিয়ার সেটআপ করুন"
+        },
+        {
+          "code": "npm install --save-dev prettier prettier-plugin-astro"
+        },
+        {
+          "definition": "তারপর এই কমান্ডটি প্যাকেজ এর স্ক্রিপ্ট এ যোগ করুন"
+        },
+        {
+          "code": "prettier --write ."
+        },
+        {
+          "definition": "ইএসলিন্ট সেটআপ করুন"
+        },
+        {
+          "code": "npm install --save-dev eslint eslint-plugin-astro"
+        },
+        {
+          "code": "npm install --save-dev eslint-plugin-jsx-a11y"
+        },
+        {
+          "definition": "টাইপস্ক্রিপ্ট সেটআপ করুন"
+        },
+        {
+          "definition": " এটি tsconfig.json ফাইলে এড করুন"
+        },
+        {
+          "code": "{\n\t\"extends\": \"astro/tsconfigs/base\"\n}"
+        },
+        {
+          "definition": " আবার env.d.ts ফাইল এ এড করুন"
+        },
+        {
+          "code": "/// <reference types=\"astro/client\" />"
+        }
+      ]
+    },
+    {
+      "title": "যেসব UI ফ্রেমওয়ার্ক ইন্টিগ্রেট করতে পারবেন",
+      "items": [
+        {
+          "code": "React"
+        },
+        {
+          "code": "Preact"
+        },
+        {
+          "code": "Svelte"
+        },
+        {
+          "code": "Vue"
+        },
+        {
+          "code": "SolidJS"
+        },
+        {
+          "code": "AplineJS"
+        },
+        {
+          "code": "Lit"
+        }
+      ]
+    },
+    {
+      "title": "কম্পোনেন্ট সমূহকে হাইড্রেট করানো",
+      "items": [
+        {
+          "code": "<Component client:load />",
+          "definition": "পেজ লোড হওয়ার সময় লোড করা"
+        },
+        {
+          "code": "<Component client:idle />",
+          "definition": "যখন পেজ লোড হবে তারপর লোড করা"
+        },
+        {
+          "code": "<Component client:visible />",
+          "definition": "সব কন্ডিশনে লোড করার জন্য "
+        },
+        {
+          "code": "<Component client:media=\"{max-width: 50em}\" />",
+          "definition": "সিএসএস মিডিয়া কুয়েরি অনুযায়ি"
+        }
+      ]
+    }
+  ]
+}

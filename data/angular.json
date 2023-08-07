@@ -1,0 +1,111 @@
+{
+    "id": "angular",
+    "title": "এঙ্গুলার",
+    "slug": "angular",
+    "description": "এঙ্গুলার হচ্ছে টাইপস্ক্রিপ্ট ভিত্তিক ওপেন সোর্স ফ্রন্ট-এন্ড ওয়েব ফ্রেমওয়ার্ক । ২০১৬ সালে গুগলের AngularJS টিম আবার নতুন করে এই Angular Framework ডেভেলপ করেন ।",
+    "colorPref": "#6cc24a",
+    "contents": [{ 
+            "title": "প্রাথমিক কমান্ডসমূহ",
+            "items": [
+                {
+                    "definition": "গ্লোবালি Angular CLI ইন্সটল করা",
+                    "code": "npm install -g @angular/cli"
+                },
+                {
+                    "definition": "লোকালি Angular CLI ইন্সটল করা",
+                    "code": "npm install @angular/cli"
+                },
+                {
+                    "definition": "নতুন আঙ্গুলার অ্যাপ তৈরি করা",
+                    "code": "ng new <app-name>"
+                },
+                {
+                    "definition": "আঙ্গুলার অ্যাপ রান করা",
+                    "code": "ng serve"
+                },
+                {
+                    "definition": "আঙ্গুলার অ্যাপলিকেশন কম্পাইল করা",
+                    "code": "ng build"
+                },
+                {
+                    "definition": "আঙ্গুলার Unit tests রান করা",
+                    "code": "ng test"
+                },
+                {
+                    "definition": "নতুন Component তৈরি করা",
+                    "code": "ng generate component <component-name>"
+                },
+                {
+                    "definition": "নতুন Service তৈরি করা",
+                    "code": "ng generate service <service-name>"
+                },
+                {
+                    "definition": "নতুন Directive তৈরি করা",
+                    "code": "ng generate directive <directive-name>"
+                },
+                {
+                    "definition": "নতুন মডিউল তৈরি করা",
+                    "code": "ng generate module <module-name>"
+                },
+                {
+                    "definition": "নতুন Pipe তৈরি করা",
+                    "code": "ng generate pipe <pipe-name>"
+                }
+            ]
+        },
+        {
+            "title": "ক্রমানুসারে কম্পোনেন্ট লাইফসাইকেল হুক", 
+            "items": [
+                {
+                    "definition": "১। কম্পোনেন্টের সাথে বাইন্ড করা ডেটার কোন পরিবর্তন হলে, এই মেথম কল হয়",
+                    "code": "ngOnChanges()"
+                },
+                {
+                    "definition": "২। কম্পোনেন্ট initialize হয়, শুধু একবারই কল হয় লাইফসাইকেলে ",
+                    "code": "ngOnInit()"
+                },
+                {
+                    "definition": "৩। কাসটম চেঞ্জ ডিটেকশনের জন্য কল হয়, প্রতিবার এই মেথম কলের পরেই ngOnChanges() কল হয়",
+                    "code": "ngDoCheck()"
+                },
+                {
+                    "definition": "৪। কম্পোনেন্টের এক্সটার্নাল কন্টেন্টগুলো কম্পোনেন্টে এ নিয়ে আসার পর এই মেথম কল হয় । @ContentChildren, @ContentChild সেট হয় এই হুক কল হওয়ার আগেই ।",
+                    "code": "ngAfterContentInit()"
+                },
+                {
+                    "definition": "৫। কম্পোনেন্ট এবং এর চাইল্ড কম্পোনেন্টে প্রতিবার চেঞ্জ ডিটেক্টশনের পরেই কল হয়",
+                    "code": "ngAfterContentChecked()"
+                },
+                {
+                    "definition": "৬। DOM ইন্টারপোলেশন হয়, @ViewChild কুয়েরিলিস্ট আপডেট হয়, এর পর এই হুক কল হয় ।",
+                    "code": "ngAfterViewInit()"
+                },
+                {
+                    "definition": "৭। প্রতিবার আঙ্গুলার চেঞ্জ ডেটেকশন রান করার পরেই এই হুক কল হয় ।",
+                    "code": "ngAfterViewChecked()"
+                },
+                {
+                    "definition": "৮। কম্পোনেন্ট বা ডিরেকটিভ ডিস্ট্রোয় হওয়ার আগে কল হয় ।",
+                    "code": "ngOnDestroy()"
+                }
+            ]
+        },
+        {
+            "title": "কম্পোনেন্ট এর মধ্যে ডেটা শেয়ার",
+            "items": [
+                {
+                    "definition": "প্যারেন্ট কম্পোনেন্ট থেকে চাইল্ড কম্পোনেন্টে ডেটা পাঠানো - ",
+                    "code": "প্যারেন্টে - \n<child [myData]=''></child> ,\n\n চাইল্ডে -\n @Input() myData;"
+                },
+                {
+                    "definition": "চাইল্ড কম্পোনেন্ট থেকে প্যারেন্ট কম্পোনেন্টে ডেটা পাঠানো - ",
+                    "code": "প্যারেন্টে - \n<child (getData)='handleData($event)'></child> ,\n\t handlaData(myData) {\n\t\t//do something with 'myData' from child \n\t}\n\n চাইল্ডে -\n @Output() getData;\n\t this.getData.emit(<some_data_for_passing>)"
+                },
+                {
+                    "definition": "প্যারেন্ট কম্পোনেন্ট থেকে চাইল্ড কম্পোনেন্টে \"কন্টেন্ট\" পাঠানো - ",
+                    "code": "প্যারেন্টে - \n<child>\n\t<p>This content need to show</p>\n</child> ,\n\nচাইল্ডে html -\n <div>\n\t...\n\t<ng-content></ng-content>\n\t...\n </div> "
+                } 
+            ]
+        }
+    ]
+}
