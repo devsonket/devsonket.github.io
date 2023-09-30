@@ -6,18 +6,10 @@
     "colorPref": "#000",
     "contents": [
         {
-            "title": "ওয়ার্ড শর্টকাট কী",
+            "title": "Microsoft Word শর্টকাট কী",
             "items": [
                 {
-                    "definition": "মানুষের মন্তব্যকে কপি করতে",
-                    "code": "Ctrl + C"
-                },
-                {
-                    "definition": "নির্দিষ্ট সেলেক্ট করে কপি করতে",
-                    "code": "Ctrl + C"
-                },
-                {
-                    "definition": "সাধারণ টেক্সট সিলেক্ট করে কপি করতে",
+                    "definition": "Text কপি করতে",
                     "code": "Ctrl + C"
                 },
                 {
@@ -33,20 +25,32 @@
                     "code": "Ctrl + O"
                 },
                 {
-                    "definition": "ডকুমেন্ট সংরক্ষণ করতে",
+                    "definition": "ডকুমেন্ট Save করতে",
                     "code": "Ctrl + S"
+                },
+                {
+                    "definition": "টেক্সট ফরম্যাট করতে",
+                    "code": "Ctrl + Shift + F"
+                },
+                {
+                    "definition": "টেবিল তৈরি করতে",
+                    "code": "Ctrl + T"
+                },
+                {
+                    "definition": "শর্টকাট কীগুলি দেখতে",
+                    "code": "Alt + F1"
                 }
             ]
         },
         {
-            "title": "পাওয়ারপয়েন্ট শর্টকাট কী",
+            "title": "Microsoft PowerPoint শর্টকাট কী",
             "items": [
                 {
                     "definition": "নতুন পাওয়ারপয়েন্ট প্রেজেন্টেশন তৈরি করতে",
                     "code": "Ctrl + N"
                 },
                 {
-                    "definition": "প্রেজেন্টেশন সংরক্ষণ করতে",
+                    "definition": "প্রেজেন্টেশন Save করতে",
                     "code": "Ctrl + S"
                 },
                 {
@@ -62,29 +66,37 @@
                     "code": "Ctrl + D"
                 },
                 {
+                    "definition": "অ্যানিমেশন যোগ করতে",
+                    "code": "Ctrl + Shift + W"
+                },
+                {
                     "definition": "প্রেজেন্টেশন মোড থেকে বের হতে",
                     "code": "Esc"
                 }
             ]
         },
         {
-            "title": "এক্সেল শর্টকাট কী",
+            "title": "Microsoft Excel শর্টকাট কী",
             "items": [
                 {
-                    "definition": "সেলেক্টেড সেলেক্ট করতে",
-                    "code": "Shift + Spacebar"
+                    "definition": "নতুন এক্সেল স্প্রেডশিট তৈরি করতে",
+                    "code": "Ctrl + N"
                 },
                 {
                     "definition": "সম্পূর্ণ কলাম সেলেক্ট করতে",
                     "code": "Ctrl + Spacebar"
                 },
                 {
-                    "definition": "সম্পূর্ণ সারি সেলেক্ট করতে",
-                    "code": "Shift + Spacebar"
+                    "definition": "গ্রাফ তৈরি করতে",
+                    "code": "Ctrl + F1"
                 },
                 {
-                    "definition": "সেলেক্টেড সেলেক্ট করতে",
-                    "code": "Ctrl + A"
+                    "definition": "পূর্ববর্তী সেলে যান",
+                    "code": "Ctrl + PgUp"
+                },
+                {
+                    "definition": "পরবর্তী সেলে যান",
+                    "code": "Ctrl + PgDn"
                 },
                 {
                     "definition": "ফরমুলা এডিট করতে",
