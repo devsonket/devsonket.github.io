@@ -296,7 +296,7 @@
                 },
                 { 
                     "definition": "Omit<PersonInterface,'property name you want to omit'> হ্যাকস ব্যবহার করে প্রোপার্টি বাদ দেওয়া যায়",
-                    "code": "const person1:Omit<PersonInterface,'age'> {\n\n\tname: ='Al Amin Khan',\n\n\tage:23 \n}"
+                    "code": "const person1:Omit<PersonInterface,'profession'> {\n\n\tname: ='Al Amin Khan',\n\n\tage:23 \n}"
                 }
             ]
         }
