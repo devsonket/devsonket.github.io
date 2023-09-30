@@ -4,7 +4,9 @@
     "slug": "figma",
     "description": "ফিগমা একটি ডিজাইন এবং প্রটোটাইপিং টুল যেটার মধ্যমে যেকোনো ইউজার ইন্টারফেস এবং ইউজার এক্সপেরিয়েন্স তৈরি করা যায়। ফিগমার ওয়েব ভার্সন এবং ডেস্কটপ দুটি থাকায় যেকোনো সময় যেকোনো জায়গা থেকে ডিজাইন করা সম্ভব। ",
     "colorPref": "#8a4af3",
-    "contents": [{
+    "contents": 
+    [
+        {
             "title": "ফাইল সিস্টেম (File System)",
             "items": [{
                     "definition": "নতুন ট্যাব খোলা",
@@ -22,7 +24,8 @@
         },
         {
             "title": "গুরুত্বপূর্ন শর্টকাট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সার্চ বার ওপেন করা",
                     "code": "Ctrl + /"
                 },
@@ -86,7 +89,8 @@
         },
         {
             "title": "ভিউ অপশন (View Option)",
-            "items": [{
+            "items": [
+                {
                     "definition": "একের অধিক কন্ট্রিবিউটর দের কার্সার দেখানো অথবা সরানো",
                     "code": "Ctrl + Alt + \\"
                 },
@@ -130,7 +134,8 @@
         },
         {
             "title": "প্রসারিত অপশন (Zoom Option)",
-            "items": [{
+            "items": [
+                {
                     "definition": "সম্পূর্ন উইন্ডো প্যান করা",
                     "code": "Space + drag"
                 },
@@ -186,7 +191,8 @@
         },
         {
             "title": "টেক্সট এডিট (Text Edit)",
-            "items": [{
+            "items": [
+                {
                     "definition": "টেক্সট বোল্ড করা",
                     "code": "Ctrl + B"
                 },
@@ -254,7 +260,8 @@
         },
         {
             "title": "আকৃতি অপশন (Shape option)",
-            "items": [{
+            "items": [
+                {
                     "definition": "পূরণ (Fill) সরানো",
                     "code": "Alt + /"
                 },
@@ -274,7 +281,8 @@
         },
         {
             "title": "নিবার্চন অপশন (Selection option)",
-            "items": [{
+            "items": [
+                {
                     "definition": "সব একসাথে সিলেক্ট করা",
                     "code": "Ctrl + A"
                 },
@@ -338,7 +346,8 @@
         },
         {
             "title": "কার্সার অপশন (Cursor option)",
-            "items": [{
+            "items": [
+                {
                     "definition": "এক কম্পোনেন্ট থেকে আরেক কম্পোনেন্ট এর দূরত্ব মাপতে",
                     "code": "Alt + Point with cursor"
                 },
@@ -354,7 +363,8 @@
         },
         {
             "title": "এডিট অপশন (Edit option)",
-            "items": [{
+            "items": [
+                {
                     "definition": "কপি করা",
                     "code": "Ctrl + C"
                 },
@@ -394,7 +404,8 @@
         },
         {
             "title": "রূপান্তর অপশন (Transform option)",
-            "items": [{
+            "items": [
+                {
                     "definition": "অনুভূমিকভাবে উল্টানো",
                     "code": "Shift + H"
                 },
@@ -434,7 +445,8 @@
         },
         {
             "title": "সাজানো অপশন (Arrange option)",
-            "items": [{
+            "items": [
+                {
                     "definition": "একধাপ এগিয়ে আনা",
                     "code": "Ctrl + ]"
                 },

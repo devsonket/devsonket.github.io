@@ -4,44 +4,177 @@
     "slug": "flutter",
     "description": "Flutter গুগলের তৈরি একটি ফ্রেমওয়ার্ক যার মাধ্যমে android,iOS app এবং ওয়েবসাইট শুধুমাত্র একটি কোডবেস ব্যবহার করে তৈরি করা যায়। Flutter প্রতিটি প্ল্যাটফর্মের জন্য নেটিভলি কম্পাইল্ড হওয়াতে অন্যান্য ফ্রেমওয়ার্ক থেকে অনেক দ্রুত কাজ করে। ",
     "colorPref": "#49caf5",
-    "contents": [{
-        "title": "ফ্লাটার সিএলআই টুলস (Flutter CLI tools)",
-        "items": [{
-                "definition": "কোন ভার্সন ইন্সটল দেওয়া আছে তা জানতে",
-                "code": "flutter --version"
-            },
-            {
-                "definition": "নতুন Flutter প্রোজেক্ট বানাতে",
-                "code": "flutter create <আপনার_প্রোজেক্টের_নাম>"
-            },
-            {
-                "definition": "যেসব ডিভাইস আপনার পিসির সাথে কানেক্টেড আছে তা জানতে",
-                "code": "flutter devices"
-            },
-            {
-                "definition": "ওয়েব সাপোর্ট সহ নতুন প্রোজেক্ট বানাতে",
-                "code": "flutter channel beta\n flutter upgrade\n flutter config --enable-web"
-            },
-            {
-                "definition": "বর্তমানে কোন চ্যানেলে আছেন সেটা দেখতে",
-                "code": "flutter channel"
-            },
-            {
-                "definition": "চ্যানেল পরিবর্তন করতেে",
-                "code": "flutter channel dev/master/stable/beta"
-            },
-            {
-                "definition": "ঠিকঠাক মত ইন্সটল হয়েছে কিনা জানতে ",
-                "code": "flutter doctor"
-            },
-            {
-                "definition": "ঠিকঠাক মত ইন্সটল হয়েছে কিনা আরো এডভান্স জানতে ",
-                "code": "flutter doctor -v"
-            },
-            {
-                "definition": "অর্গানাইজেশন/প্রতিষ্ঠানের নাম সেট করতে",
-                "code": "flutter create --org com.yourorg your_project"
-            }
-        ]
-    }]
+    "contents": [
+        {
+            "title": "ফ্লাটার সিএলআই টুলস (Flutter CLI tools)",
+            "items": [
+                {
+                    "definition": "কোন ভার্সন ইন্সটল দেওয়া আছে তা জানতে",
+                    "code": "flutter --version"
+                },
+                {
+                    "definition": "নতুন Flutter প্রোজেক্ট বানাতে",
+                    "code": "flutter create <আপনার_প্রোজেক্টের_নাম>"
+                },
+                {
+                    "definition": "যেসব ডিভাইস আপনার পিসির সাথে কানেক্টেড আছে তা জানতে",
+                    "code": "flutter devices"
+                },
+                {
+                    "definition": "ওয়েব সাপোর্ট সহ নতুন প্রোজেক্ট বানাতে",
+                    "code": "flutter channel beta\n flutter upgrade\n flutter config --enable-web"
+                },
+                {
+                    "definition": "বর্তমানে কোন চ্যানেলে আছেন সেটা দেখতে",
+                    "code": "flutter channel"
+                },
+                {
+                    "definition": "চ্যানেল পরিবর্তন করতেে",
+                    "code": "flutter channel dev/master/stable/beta"
+                },
+                {
+                    "definition": "ঠিকঠাক মত ইন্সটল হয়েছে কিনা জানতে ",
+                    "code": "flutter doctor"
+                },
+                {
+                    "definition": "ঠিকঠাক মত ইন্সটল হয়েছে কিনা আরো এডভান্স জানতে ",
+                    "code": "flutter doctor -v"
+                },
+                {
+                    "definition": "অর্গানাইজেশন/প্রতিষ্ঠানের নাম সেট করতে",
+                    "code": "flutter create --org com.yourorg your_project"
+                }
+            ]
+        },
+        {
+            "title": "জেশ্চার ডিটেক্ট করা জন্য",
+            "items": [
+                {
+                    "definition": "ট্যাপ করে",
+                    "code": "onTap"
+                },
+                {
+                    "definition": "ট্যাপ করে উপরে নিলে",
+                    "code": "onTapUp"
+                },
+                {
+                    "definition": "ট্যাপ করে নিচে নিলে",
+                    "code": "onTapDown"
+                },
+                {
+                    "definition": "ট্যাপ করে ধরে রাখলে",
+                    "code": "onLongPress"
+                },
+                {
+                    "definition": "দুবার ট্যাপ করলে",
+                    "code": "onDoubleTap"
+                },
+                {
+                    "definition": "সমতল ভাবে টেনে ধরলে",
+                    "code": "onHorizontalDragStart"
+                },
+                {
+                    "definition": "খাড়া ভাবে টেনে ধরলে",
+                    "code": "onVerticalDragDown"
+                },
+                {
+                    "definition": "‍নির্দিষ্ট জায়গায় ড্রাগাবল ইউজ",
+                    "code": "onPanDown"
+                },
+                {
+                    "definition": "স্কেলের উপর ডিপেন্ড করে",
+                    "code": "onScaleStart"
+                }
+            ]
+        },
+        {
+            "title": "কিছু ইম্পরট্যান্ট ফ্লাটার শীট",
+            "items": [
+                {
+                    "definition": "এটা এমন একটা উইজেট যেটা বিন্যাস্ত করা যায়না",
+                    "code": "StatelessWidget"
+                },
+                {
+                    "definition": "এটা এমন একটা উইজেট যেটা বিন্যাস্ত করা যায়",
+                    "code": "StatefulWidget"
+                },
+                {
+                    "definition": "চাইল্ডকে মাঝ বরাবর নিয়ে আসবে",
+                    "code": "Center"
+                },
+                {
+                    "definition": "উইজেটের চাইল্ডকে কলাম ভিউ করবে",
+                    "code": "Column"
+                },
+                {
+                    "definition": "উইজেটের চাইল্ডকে রো ভিউ করবে",
+                    "code": "Row"
+                },
+                {
+                    "definition": "উইজেটের চাইল্ডকে লিস্ট ভিউ করবে",
+                    "code": "ListView"
+                },
+                {
+                    "definition": "উইজেটের চাইল্ডকে গির্ড ভিউ করবে",
+                    "code": "GridView"
+                },
+                {
+                    "definition": "‍প্লাগিন ইন্সটাল করতে",
+                    "code": "Plugins"
+                },
+                {
+                    "definition": "প্যাকেজ ইন্সটাল করতে",
+                    "code": "Packages"
+                },
+                {
+                    "definition": "স্টেটলেস উইজেটের জন্য",
+                    "code": "Container"
+                },
+                {
+                    "definition": "ইমেজ ইউজ করতে",
+                    "code": "Image"
+                },
+                {
+                    "definition": "টেক্সট ইউজ করতে",
+                    "code": "Text"
+                },
+                {
+                    "definition": "স্টেটফুল উইজেট এর জন্য",
+                    "code": "Scaffold"
+                },
+                {
+                    "definition": "অ্যাপের টাইটেল",
+                    "code": "AppBar"
+                },
+                {
+                    "definition": "স্পেস নিতে",
+                    "code": "Stack"
+                },
+                {
+                    "definition": "জেশ্চার অপশন",
+                    "code": "GestureDetector"
+                },
+                {
+                    "definition": "আইকন ইউজ করতে",
+                    "code": "Icon"
+                },
+                {
+                    "definition": "পেজ ভিউ এর জন্য",
+                    "code": "PageView"
+                },
+                {
+                    "definition": "লেআউট বিল্ড করতে",
+                    "code": "LayoutBuilder"
+                },
+                {
+                    "definition": "চাইল্ড উইজেটের ভবিষ্যৎ বিল্ড",
+                    "code": "FutureBuilder"
+                },
+                {
+                    "definition": "স্ট্রিম বিল্ডার",
+                    "code": "StreamBuilder"
+                }
+            ]
+        }
+    ]
 }

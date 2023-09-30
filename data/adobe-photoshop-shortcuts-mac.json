@@ -1,12 +1,15 @@
 {
     "id": "adobe-photoshop-shortcuts-mac",
-    "title": "অ্যাডোবি ফটোশপ(ম্যাক)",
+    "title": "অ্যাডোবি ফটোশপ (ম্যাক)",
     "slug": "adobe-photoshop-shortcuts-mac",
     "description": "অ্যাডোবি ফটোশপের এর প্রয়োজনীয় ম্যাক শর্টকাট কী",
     "colorPref": "#333",
-    "contents": [{
+    "contents": [
+        {
             "title": "ফাইল (File)",
-            "items": [{
+            "items": 
+            [
+                {
                     "definition": "নতুন ফাইল (New)",
                     "code": "Cmd + N"
                 },
@@ -62,7 +65,8 @@
         },
         {
             "title": "এডিট (Edit)",
-            "items": [{
+            "items": [
+                {
                     "definition": "বাতিল করা/পুনরায় করা (Undo/Redo)",
                     "code": "Cmd + Z F1"
                 },
@@ -126,7 +130,8 @@
         },
         {
             "title": "ইমেজ (Image)",
-            "items": [{
+            "items": [
+                {
                     "definition": "ইমেজ অ্যাডজাস্টমেন্ট থেকে লেভেল সিলেক্ট কি (Adjustments > Levels)",
                     "code": "Cmd + L"
                 },
@@ -178,7 +183,8 @@
         },
         {
             "title": "লেয়ার (Layer)",
-            "items": [{
+            "items": [
+                {
                     "definition": "নতুন লেয়ার (New > Layer)",
                     "code": "Shift + Cmd + N"
                 },
@@ -230,7 +236,8 @@
         },
         {
             "title": "সিলেক্ট (Select)",
-            "items": [{
+            "items": [
+                {
                     "definition": "সব সিলেক্ট করতে (All)",
                     "code": "Cmd + A"
                 },
@@ -266,7 +273,8 @@
         },
         {
             "title": "ফিল্টার (Filter)",
-            "items": [{
+            "items": [
+                {
                     "definition": "শেষ ফিল্টার ব্যবহার করতে (Last Filter)",
                     "code": "Opt + Cmd + F"
                 },
@@ -294,7 +302,8 @@
         },
         {
             "title": "উইন্ডো (Window)",
-            "items": [{
+            "items": [
+                {
                     "definition": "মিনিমাইজে (Minimize)",
                     "code": "Control + Cmd + M"
                 },
@@ -322,7 +331,8 @@
         },
         {
             "title": "৩ডি (3D)",
-            "items": [{
+            "items": [
+                {
                     "definition": "সিলেক্টেড বহুভুজগুলো শো/হাইড করতে (Show/Hide Polygons > Within Selection)",
                     "code": "Opt + Cmd + X"
                 },
@@ -338,7 +348,8 @@
         },
         {
             "title": "ভিউ (View)",
-            "items": [{
+            "items": [
+                {
                     "definition": "প্রুফ কালারস্ (Proof Colors)",
                     "code": "Cmd + Y"
                 },
@@ -394,7 +405,8 @@
         },
         {
             "title": "টুলস (Tools)",
-            "items": [{
+            "items": [
+                {
                     "definition": "মুভ টুল (Move Tool)",
                     "code": "V"
                 },

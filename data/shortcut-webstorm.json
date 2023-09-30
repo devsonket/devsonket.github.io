@@ -1,124 +1,310 @@
 {
-    "id": "shortcut-webstorm-win",
-    "title": "শর্টকাট কী - ওয়েবস্টোর্ম",
-    "slug": "shortcut-webstorm-win",
-    "description": "ওয়েবস্টোর্ম এর প্রয়োজনী উইন্ডোজ শর্টকাট কী",
-    "colorPref": "#02CCD8",
-    "contents": [{
-            "title": "কোড",
-            "items": [{
-                    "definition": "রিফরম্যাট কোড",
-                    "code": "Ctrl + Alt + L"
-                },
-                {
-                    "definition": "অটো ইন্ডেন্ট লাইন",
-                    "code": "Ctrl + Alt + I"
-                },
-                {
-                    "definition": "অটোকমপ্লিট সাজেশন সিলেক্ট করতে",
-                    "code": "Ctrl + Space"
-                },
-                {
-                    "definition": "লাইন উপরে সরানো",
-                    "code": "Alt + Shift + আপ কী"
-                },
-                {
-                    "definition": "লাইন নিচে নামানো",
-                    "code": "Alt + Shift + ডাউন কী"
-                },
-                {
-                    "definition": "স্টেটমেন্ট উপরে সরানো",
-                    "code": "Ctrl + Shift + আপ কী"
-                },
-                {
-                    "definition": "স্টেটমেন্ট নিচে নামানো",
-                    "code": "Ctrl + Shift + ডাউন কী"
-                }
-            ]
+  "id": "shortcut-webstorm-win",
+  "title": "শর্টকাট কী - ওয়েবস্টোর্ম",
+  "slug": "shortcut-webstorm-win",
+  "description": "ওয়েবস্টোর্ম এর প্রয়োজনী উইন্ডোজ শর্টকাট কী",
+  "colorPref": "#02CCD8",
+  "contents": [
+    {
+      "title": "কোড",
+      "items": [
+        {
+          "definition": "রিফরম্যাট কোড",
+          "code": "Ctrl + Alt + L"
         },
         {
-            "title": "রিফাক্টর",
-            "items": [{
-                    "definition": "ফাইলের নাম পরিবর্তন",
-                    "code": "Shift + F6"
-                },
-                {
-                    "definition": "ফাইল কপি",
-                    "code": "F5"
-                },
-                {
-                    "definition": "ফাইল মুভ",
-                    "code": "F6"
-                }
-            ]
+          "definition": "অটো ইন্ডেন্ট লাইন",
+          "code": "Ctrl + Alt + I"
         },
         {
-            "title": "ন্যাভিগেশন",
-            "items": [{
-                    "definition": "ফাইল খুজে ওপেন করা",
-                    "code": "Ctrl + Shift + N"
-                },
-                {
-                    "definition": "ক্লাস খুজে ওপেন করা",
-                    "code": "Ctrl + N"
-                },
-                {
-                    "definition": "নির্দিষ্ট কোন লাইনে যাওয়া",
-                    "code": "Ctrl + G"
-                },
-                {
-                    "definition": "সর্বশেষ ইডিট লোকেশনে যাওয়া",
-                    "code": "Ctrl + Shift + Backspace"
-                },
-                {
-                    "definition": "পরবর্তী মেথড যাওয়া",
-                    "code": "Alt +  ডাউন কী"
-                },
-                {
-                    "definition": "পূর্ববর্তী মেথডে যাওয়া",
-                    "code": "Alt +  আপ কী"
-                }
-            ]
+          "definition": "অটোকমপ্লিট সাজেশন সিলেক্ট করতে",
+          "code": "Ctrl + Space"
         },
         {
-            "title": "এডিটর একশন",
-            "items": [{
-                    "definition": "মাউস টেনে রেক্টেঙ্গুলার সিলেক্ট টেক্সট",
-                    "code": "Ctrl + Alt + Shift + 1"
-                },
-                {
-                    "definition": "কোড ব্লক এর শেষে যেতে",
-                    "code": "Ctrl + ]"
-                },
-                {
-                    "definition": "কোড সিলেক্ট করে ব্লক এর শেষে যেতে",
-                    "code": "Ctrl + Shift + ]"
-                },
-                {
-                    "definition": "লাইন ডিলিট করা",
-                    "code": "Ctrl + Y"
-                },
-                {
-                    "definition": "লাইন ডুপ্লিকেট করা",
-                    "code": "Ctrl + D"
-                },
-                {
-                    "definition": "লাইন জয়েন করা",
-                    "code": "Ctrl + Shift + J"
-                }
-            ]
+          "definition": "লাইন উপরে সরানো",
+          "code": "Alt + Shift + আপ কী"
         },
         {
-            "title": "কমেন্ট",
-            "items": [{
-                    "definition": "লাইন কমেন্ট করা",
-                    "code": "Ctrl + /"
-                },
-                {
-                    "definition": "ব্লক কমেন্ট",
-                    "code": "Ctrl + Shift + /"
-                }
-            ]
+          "definition": "লাইন নিচে নামানো",
+          "code": "Alt + Shift + ডাউন কী"
+        },
+        {
+          "definition": "স্টেটমেন্ট উপরে সরানো",
+          "code": "Ctrl + Shift + আপ কী"
+        },
+        {
+          "definition": "স্টেটমেন্ট নিচে নামানো",
+          "code": "Ctrl + Shift + ডাউন কী"
         }
-    ]
+      ]
+    },
+    {
+      "title": "মাল্টি কার্সার ও সিলেকশন",
+      "items": [
+        {
+          "definition": "কার্সার এড/রিমুভ করা",
+          "code": "Alt + ক্লিক"
+        },
+        {
+          "definition": "কারেন্ট ওয়ার্ড এর সব ঘটনা নির্বাচন করা",
+          "code": "Shift + Ctrl + Alt + J"
+        },
+        {
+          "definition": "কারেন্ট ওয়ার্ড এর পরবর্তী ঘটনা নির্বাচন করা",
+          "code": "Alt + J"
+        },
+        {
+          "definition": "কারেন্ট ওয়ার্ড এর পরবর্তী ঘটনা অনির্বাচন করা",
+          "code": "Alt + Shift + J"
+        },
+        {
+          "definition": "সব ওয়ার্ড এবং কার্সার অনির্বাচন করা",
+          "code": "Esc"
+        }
+      ]
+    },
+    {
+      "title": "ডিবাগ করা",
+      "items": [
+        {
+          "definition": "ব্রেকপয়েন্ট এড করা",
+          "code": "Ctrl + F8"
+        },
+        {
+          "definition": "ব্রেকপয়েন্ট বের করা",
+          "code": "Ctrl + Shift + F8"
+        },
+        {
+          "definition": "ডিবাগ স্টার্ট করা",
+          "code": "F9"
+        },
+        {
+          "definition": "স্টেপ ওভার",
+          "code": "F8"
+        },
+        {
+          "definition": "স্টেপ ইনটু",
+          "code": "F7"
+        },
+        {
+          "definition": "স্টেপ আউট",
+          "code": "Shift + F8"
+        }
+      ]
+    },
+    {
+      "title": "রিফ্যা্ক্টরিং",
+      "items": [
+        {
+          "definition": "রিফ্যা্ক্টরিং করা",
+          "code": "Ctrl + Alt + Shift + T"
+        },
+        {
+          "definition": "ফাইলের নাম পরিবর্তন",
+          "code": "Shift + F6"
+        },
+        {
+          "definition": "ফাইল কপি",
+          "code": "F5"
+        },
+        {
+          "definition": "ফাইল মুভ",
+          "code": "F6"
+        },
+        {
+          "definition": "সেইফ ডিলেট",
+          "code": "Alt + Delete"
+        },
+        {
+          "definition": "ফাংশনের সিগনেচার পরিবর্তন",
+          "code": "Ctrl + F6 "
+        },
+        {
+          "definition": "ইনলাইন ভ্যারিয়েবল",
+          "code": "Ctrl + Alt + N"
+        },
+        {
+          "definition": "মেথড এক্সট্রাক্ট করা",
+          "code": "Ctrl + Alt + M"
+        },
+        {
+          "definition": "ভ্যারিয়েবল এক্সট্রাক্ট করা",
+          "code": "Ctrl + Alt + V"
+        },
+        {
+          "definition": "কন্সটেন্ট এক্সট্রাক্ট করা",
+          "code": "Ctrl + Alt + C"
+        },
+        {
+          "definition": "প্যারামিটার এক্সট্রাক্ট করা",
+          "code": "Ctrl + Alt + P"
+        }
+      ]
+    },
+    {
+      "title": "ন্যাভিগেশন",
+      "items": [
+        {
+          "definition": "ফাইল খুজে ওপেন করা",
+          "code": "Ctrl + Shift + N"
+        },
+        {
+          "definition": "ক্লাস খুজে ওপেন করা",
+          "code": "Ctrl + N"
+        },
+        {
+          "definition": "নির্দিষ্ট কোন লাইনে যাওয়া",
+          "code": "Ctrl + G"
+        },
+        {
+          "definition": "সর্বশেষ ইডিট লোকেশনে যাওয়া",
+          "code": "Ctrl + Shift + Backspace"
+        },
+        {
+          "definition": "পরবর্তী মেথড যাওয়া",
+          "code": "Alt +  ডাউন কী"
+        },
+        {
+          "definition": "পূর্ববর্তী মেথডে যাওয়া",
+          "code": "Alt +  আপ কী"
+        },
+        {
+          "definition": "পরবর্তী ট্যাবে যাওয়া",
+          "code": "Alt + রাইট কী"
+        },
+        {
+          "definition": "পূর্ববর্তী ট্যাবে যাওয়া",
+          "code": "Alt + লেফট কী"
+        },
+        {
+          "definition": "রিসেন্ট ফাইল পপআপ করা",
+          "code": "Ctrl + E"
+        },
+        {
+          "definition": "কুইক ডেফিনেশন দেখা",
+          "code": "Ctrl + Shift + I"
+        },
+        {
+          "definition": "পরবর্তী এররে যাওয়া",
+          "code": "F2"
+        },
+        {
+          "definition": "পূর্ববর্তী এররে যাওয়া",
+          "code": "Shift + F2"
+        },
+        {
+          "definition": "সোর্সে যাওয়া",
+          "code": "F4"
+        }
+      ]
+    },
+    {
+      "title": "এডিটর একশন",
+      "items": [
+        {
+          "definition": "মাউস টেনে রেক্টেঙ্গুলার সিলেক্ট টেক্সট",
+          "code": "Ctrl + Alt + Shift + 1"
+        },
+        {
+          "definition": "কোড ব্লক এর শেষে যেতে",
+          "code": "Ctrl + ]"
+        },
+        {
+          "definition": "কোড সিলেক্ট করে ব্লক এর শেষে যেতে",
+          "code": "Ctrl + Shift + ]"
+        },
+        {
+          "definition": "লাইন ডিলিট করা",
+          "code": "Ctrl + Y"
+        },
+        {
+          "definition": "লাইন ডুপ্লিকেট করা",
+          "code": "Ctrl + D"
+        },
+        {
+          "definition": "লাইন জয়েন করা",
+          "code": "Ctrl + Shift + J"
+        }
+      ]
+    },
+    {
+      "title": "কমেন্ট",
+      "items": [
+        {
+          "definition": "লাইন কমেন্ট করা",
+          "code": "Ctrl + /"
+        },
+        {
+          "definition": "ব্লক কমেন্ট",
+          "code": "Ctrl + Shift + /"
+        }
+      ]
+    },
+    {
+      "title": "খোঁজাখুঁজি/প্রতিস্থাপন",
+      "items": [
+        {
+          "definition": "ফাইলের ভিতরে খোঁজা",
+          "code": "Ctrl + F"
+        },
+        {
+          "definition": "পরবর্তী খুঁজতে",
+          "code": "F3"
+        },
+        {
+          "definition": "পূর্ববর্তী খুঁজতে",
+          "code": "Shift + F3"
+        },
+        {
+          "definition": "প্রোজেক্ট থেকে খুঁজা",
+          "code": "Ctrl + Shift + F"
+        },
+        {
+          "definition": "ফাইলের ভিতরে প্রতিস্থাপন করা",
+          "code": "Ctrl + R"
+        },
+        {
+          "definition": "প্রোজেক্ট থেকে প্রতিস্থাপন করা",
+          "code": "Ctrl + Shift + R"
+        }
+      ]
+    },
+    {
+      "title": "সাধারণ",
+      "items": [
+        {
+          "definition": "সব জায়গায় খুঁজা",
+          "code": "Double Shift"
+        },
+        {
+          "definition": "একশন খুঁজা",
+          "code": "Ctrl + Shift + A"
+        },
+        {
+          "definition": "সংশ্লিষ্ট টুলের উইন্ডো খোলা",
+          "code": "Alt + #[0-9]"
+        },
+        {
+          "definition": "উইন্ডো টুল ম্যক্সিমাইজ/মিনিমাইজ করা",
+          "code": "Ctrl + Shift + F12"
+        },
+        {
+          "definition": "কারেন্ট স্কিম দ্রুত সুইচ করা",
+          "code": "Ctrl + Back Quote(`)"
+        },
+        {
+          "definition": "সেটিংসে যাওয়া",
+          "code": "Ctrl + Alt + S"
+        },
+        {
+          "definition": "ট্যাব ও উইন্ডো টুল দ্রুত সুইচ করা",
+          "code": "Ctrl + Tab"
+        },
+        {
+          "definition": "ন্যাভিগেশন বারে যাওয়া",
+          "code": "Alt + Home"
+        }
+      ]
+    }
+  ]
 }

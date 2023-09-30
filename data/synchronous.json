@@ -1,0 +1,96 @@
+{
+    "id": "synchronous",
+    "title": "Synchronous JavaScript",
+    "slug": "synchronous",
+    "descripttion":"synchronous কি এবং এটা কিভাবে কাজ করে",
+    "colorPref": "#000",
+    "contents":[
+        {
+            "title": "জাভাস্ক্রিপ্ট কিভাবে ব্রাউসার এর ভিতরে কাজ করে",
+            "items":[
+                {
+                    "code":"const sync = () =>{"
+                },
+                {
+                    "code": "console.log('Task two Completed');"
+                },
+                {
+                    "code":"var currentTime = new Date().getTime()"
+                },
+                {
+                    "code":" while(currentTime + 3000 >= new Date().getTime());"
+                },
+                {
+                    "code": " console.log('Task three Completed')"
+                },
+                {
+                    "code": "}"
+                },
+                {
+                    "code": "console.log('Task One Completed')"
+                },
+                {
+                    "code": "sync();"
+                },
+                {
+                    "code": "console.log('All Tasks Completd');"
+                },
+                {
+                    "definition": "সবার প্রথমে একটা মেইন ফাঙ্কশন কল হয়। .যেকনো জাভাস্ক্রিপ্ট কোড রান হবার আগে একটা মেইন  ফাঙ্কশন রান  হয়."
+                },
+                {
+                    "definition":"এরপর লাইন বই লাইন বিভিন্ন জায়গায়  কলগুলো হয়."
+                },
+                {
+                    "definition": "এখানে প্রথমে কল হয়েছে console.log('Task One Completed'); ফাঙ্কশন .."
+                },
+                {
+                    "definition": "লগ এর আগে sync  এর যে বডিটা দেখা যাচ্ছে এটা হচ্ছে ফাঙ্কশন এর ডেফিনেশন এখানে আমরা কেনো ফাঙ্কশন কল করিনি।"
+                },
+                {
+                    "definition": "জাভাস্ক্রিপ্ট এক্সকিউশন শুরু হবে console.log('Task One Completed'); থেকে তারপর সে লগ ফাঙ্কশনটাকে কল স্টকে কল করবে"
+                },
+                {
+                    "definition":"তারপর কনসোলএ Task One Completed প্রিন্ট হবে।"
+                },
+                {
+                    "definition":"এরপর লগ ফাঙ্কশন এর কাজ শেষ তারপর জাভাস্ক্রিপ্ট পরের লাইনে যাবে।"
+                },
+                {
+                    "definition":"তারপর সে  sync() ফাঙ্কশনকে দেখতে পাবে। "
+                },
+                {
+                    "definition":"তারপর sync() ফাঙ্কশনকে সে কলস্ট্যাকে নিয়ে আসবে।"
+                },
+                {
+                    "definition": "তারপর সে  sync ফাঙ্কশন এর ভিতরে যাবে তারপর সে সেখানে console.log('Task two Completed'); ফাঙ্কশন দেখতে পাবে"
+                },
+                {
+                    "definition": "তারপর সে console.log('Task two Completed'); ফাঙ্কশনটাকে কল স্টকে নিয়ে আসবে তারপর কনসোল এ Task two Completed  প্রিন্ট হবে।"
+                },
+                {
+                    "definition":" তারপর জাভাস্ক্রিপ্ট পরের লাইন যাবে তখন  সে দেখবে ৩ সেকেন্ডের একটা while লুপ।"
+                },
+                {
+                    "definition": "তখন ওই ৩ সেকেন্ড ব্রাউজারের  পুরো  একটিভিটি ব্লক হয়ে থাকবে  তখন ইউসার ব্রাউজারে কোনো ক্লিক করতে পারবে না...ইউসারও ব্রাউজারে ব্লকড হয়ে থাকবে।"
+                },
+                {
+                    "definition": "এটাই হচ্ছে জাভাস্ক্রিপ্ট এর ব্লকিং বিহেভিয়ার।"
+                },
+                {
+                    "definition": "তারপর ৩ সেকেন্ড শেষ হবার পর সে কল স্ট্যাক কল করবে তারপর কনসোল এ Task three Completed প্রিন্ট হবে।"
+                },
+                {
+                    "definition":"তারপর কল স্ট্যাক থেকে  sync ফাঙ্কশনটা চলে যাবে"
+                },
+                {
+                    "definition":" তারপর console.log('All Tasks Completd'); কল স্টকে আসবে। "
+                },
+                {
+                    "definition":"তারপর কনসোল এ  All Tasks Completd প্রিন্ট হবে"
+                }
+            ]
+        }
+    ]
+
+}

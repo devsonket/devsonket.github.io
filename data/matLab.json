@@ -4,9 +4,12 @@
     "slug": "matlab",
     "description": "ম্যাটল্যাব হল ম্যাথওয়ার্কস দ্বারা নির্মিত একটি স্বতন্ত্র মাল্টি-প্যারাডিয়াম প্রোগ্রামিং ভাষা এবং সংখ্যাগত কম্পিউটিং পরিবেশ। ম্যাটল্যাব ম্যাট্রিক্স ম্যানিপুলেশনস, ফাংশন এবং ডেটার প্লট করা, অ্যালগোরিদম বাস্তবায়ন, ইউজার ইন্টারফেস তৈরি এবং অন্যান্য ভাষায় লিখিত প্রোগ্রামগুলির সাথে ইন্টারফেসিংয়ের অনুমতি দেয়। ",
     "colorPref": "#13aa52",
-    "contents": [{
+    "contents": [
+        {
             "title": "ম্যাটল্যাব ফাইল এক্সটেনশনস (File extensions)",
-            "items": [{
+            "items":
+            [
+                {
                     "definition": "ম্যাটল্যাব এর ফাংশন, ক্লাস নিয়ে কাজ করতে ব্যবহার করা হয়",
                     "code": ".m"
                 },
@@ -50,7 +53,8 @@
         },
         {
             "title": "কমন ডাটা টাইপস (Common data types)",
-            "items": [{
+            "items": [
+                {
                     "definition": "সিঙ্গেল প্রিসিশন নিউমেরিকাল ডাটা (৩২ বিটস)",
                     "code": "single"
                 },
@@ -82,7 +86,8 @@
         },
         {
             "title": "কীবোর্ড শর্টকাট (Keyboard shortcuts)",
-            "items": [{
+            "items": [
+                {
                     "definition": "ডিসপ্লেসস হটকিজ",
                     "code": "Alt"
                 },
@@ -158,7 +163,8 @@
         },
         {
             "title": "পরশন্স অফ ম্যাট্রিক এন্ড ভেক্টর (Portions of matrices and vectors)",
-            "items": [{
+            "items": [
+                {
                     "definition": "অল এলিমেন্টস অফ x",
                     "code": "x(:)"
                 },
@@ -194,7 +200,8 @@
         },
         {
             "title": "লজিকাল অপারেটর (Logical operators)",
-            "items": [{
+            "items": [
+                {
                     "definition": "শর্ট সার্কিট এন্ড",
                     "code": "&&"
                 },
@@ -226,7 +233,8 @@
         },
         {
             "title": "ভেরিয়েবল জেনারেশন (Variable generation)",
-            "items": [{
+            "items": [
+                {
                     "definition": "রো ভেক্টর [j,j+1,..,k]",
                     "code": "j:k"
                 },
@@ -258,7 +266,8 @@
         },
         {
             "title": "বেসিক ম্যাথ ফাংশন(Basic math functions)",
-            "items": [{
+            "items": [
+                {
                     "definition": "অ্যাবসলিউট ভ্যালু অফ x",
                     "code": "abs(x)"
                 },
@@ -334,7 +343,8 @@
         },
         {
             "title": "ম্যাট্রিক্স এন্ড ভেক্টর অপারেশন্স (Matrix and Vector operations)",
-            "items": [{
+            "items": [
+                {
                     "definition": "১ x ৩ (রো) ভেক্টর ডিফাইন্ড",
                     "code": "x=[1, 2, 3]"
                 },
@@ -394,7 +404,8 @@
         },
         {
             "title": "স্ট্যাটিসটিকাল কমান্ডস (Statistical commands)",
-            "items": [{
+            "items": [
+                {
                     "definition": "হিস্টোগ্রাম",
                     "code": "hist(x)"
                 },
@@ -414,7 +425,8 @@
         },
         {
             "title": "ফাংশন (is functions)",
-            "items": [{
+            "items": [
+                {
                     "definition": "X ও B সমান",
                     "code": "isequal(X,B)"
                 },

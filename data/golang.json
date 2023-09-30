@@ -371,6 +371,34 @@
             ]
         },
         {
+            "title": "পদ্ধতি ( Methods ) | রিসিভার ( Receivers )",
+            "items": [{
+                    "code": "type Devsonk struct {"
+                },
+                {
+                    "code": "X, Y float64"
+                },
+                {
+                    "code":"}"
+                },
+                {
+                    "code": "func (v Devsonk) Abs() float64 {"
+                },
+                {
+                    "code": "return math.Sqrt(v.X * v.X + v.Y * v.Y)"
+                },
+                {
+                    "code": "}"
+                },
+                {
+                    "code": "v := Devsonk{1, 2}"
+                },
+                {
+                    "code": "v.Abs()"
+                }      
+            ]
+        },
+        {
             "title": "পয়েন্টার",
             "items": [{
                     "definition": "একটি পয়েন্টার তৈরি করা",
@@ -451,6 +479,18 @@
             {
                 "definition":"চ্যানেল এর সাইজ নির্ধারণ করা",
                 "code":"ch := make(chan int, 5)"
+            }
+            ]
+        },
+        {
+            "title":"জেনারিক ফাংশন",
+            "items":[{
+                "definition":"জেনারিক ফাংশন তৈরি করা",
+                "code":"func genericFunc[T any](a T) T {\n\treturn a\n}"
+            },
+            {
+                "definition":"জেনারিক ফাংশন কল করা",
+                "code":"genericFunc[int](5)"
             }
             ]
         }
