@@ -1,0 +1,96 @@
+{
+    "id": "microsoft_office",
+    "title": "মাইক্রোসফট অফিস(ওয়ার্ড, পাওয়ারপয়েন্ট ইত্যাদির শর্টকাট কী)",
+    "slug": "microsoft_office",
+    "description": "কোড এবং বর্ণনা সমৃদ্ধ চিটশিট এর ডিমো",
+    "colorPref": "#000",
+    "contents": [
+        {
+            "title": "ওয়ার্ড শর্টকাট কী",
+            "items": [
+                {
+                    "definition": "মানুষের মন্তব্যকে কপি করতে",
+                    "code": "Ctrl + C"
+                },
+                {
+                    "definition": "নির্দিষ্ট সেলেক্ট করে কপি করতে",
+                    "code": "Ctrl + C"
+                },
+                {
+                    "definition": "সাধারণ টেক্সট সিলেক্ট করে কপি করতে",
+                    "code": "Ctrl + C"
+                },
+                {
+                    "definition": "কপি করা টেক্সট পেস্ট করতে",
+                    "code": "Ctrl + V"
+                },
+                {
+                    "definition": "নতুন ওয়ার্ড ডকুমেন্ট তৈরি করতে",
+                    "code": "Ctrl + N"
+                },
+                {
+                    "definition": "ডকুমেন্ট খোলতে",
+                    "code": "Ctrl + O"
+                },
+                {
+                    "definition": "ডকুমেন্ট সংরক্ষণ করতে",
+                    "code": "Ctrl + S"
+                }
+            ]
+        },
+        {
+            "title": "পাওয়ারপয়েন্ট শর্টকাট কী",
+            "items": [
+                {
+                    "definition": "নতুন পাওয়ারপয়েন্ট প্রেজেন্টেশন তৈরি করতে",
+                    "code": "Ctrl + N"
+                },
+                {
+                    "definition": "প্রেজেন্টেশন সংরক্ষণ করতে",
+                    "code": "Ctrl + S"
+                },
+                {
+                    "definition": "পাওয়ারপয়েন্টে নতুন স্লাইড তৈরি করতে",
+                    "code": "Ctrl + M"
+                },
+                {
+                    "definition": "পাওয়ারপয়েন্টে প্রেজেন্টেশন শুরু করতে",
+                    "code": "F5"
+                },
+                {
+                    "definition": "স্লাইড প্রস্তুত করতে",
+                    "code": "Ctrl + D"
+                },
+                {
+                    "definition": "প্রেজেন্টেশন মোড থেকে বের হতে",
+                    "code": "Esc"
+                }
+            ]
+        },
+        {
+            "title": "এক্সেল শর্টকাট কী",
+            "items": [
+                {
+                    "definition": "সেলেক্টেড সেলেক্ট করতে",
+                    "code": "Shift + Spacebar"
+                },
+                {
+                    "definition": "সম্পূর্ণ কলাম সেলেক্ট করতে",
+                    "code": "Ctrl + Spacebar"
+                },
+                {
+                    "definition": "সম্পূর্ণ সারি সেলেক্ট করতে",
+                    "code": "Shift + Spacebar"
+                },
+                {
+                    "definition": "সেলেক্টেড সেলেক্ট করতে",
+                    "code": "Ctrl + A"
+                },
+                {
+                    "definition": "ফরমুলা এডিট করতে",
+                    "code": "F2"
+                }
+            ]
+        }
+    ]
+}
