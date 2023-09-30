@@ -279,6 +279,26 @@
                 "definition": "পারশিয়াল বা আংশিক টাইপ",
                 "code": "interface Person {\n\tname: string;\n\tage: number;\n\theight: string;\n}\n\nconst person1: Partial<Person> = {\n\tname: 'Hridoy',\n\tage: 28\n}"
             }]
+        },
+             {
+            "title": "ইন্টারফেস হ্যাকস ও ট্রিকস",
+            "items": [{
+                    "definition": "অপশনাল প্রোপার্টি ডিক্লেয়ার করা('?' চিহ্ন দিয়ে) ",
+                    "code": "interface PersonInterface {\n\tname:string;\n\tage:number; \n\tprofession?:string;\n}"
+                },
+                {
+                    "definition": "উপরের interface থেকে কোনো object বানাতে গেলে profession প্রোপার্টি ছাড়াই বানানো সম্ভব হবে",
+                    "code": "const person1:PersonInterface {\n\n\tname: ='Al Amin Khan',\n\n\tage:23 \n}"
+                },
+                { 
+                    "definition": "অপশনাল প্রোপার্টি ডিক্লেয়ার না করেই প্রোপার্টি বাদ দেওয়া",
+                    "code": "interface PersonInterface {\n\tname:string;\n\tage:number; \n\tprofession:string;\n}"
+                },
+                { 
+                    "definition": "Omit<PersonInterface,'property name you want to omit'> হ্যাকস ব্যবহার করে প্রোপার্টি বাদ দেওয়া যায়",
+                    "code": "const person1:Omit<PersonInterface,'age'> {\n\n\tname: ='Al Amin Khan',\n\n\tage:23 \n}"
+                }
+            ]
         }
     ]
 }
