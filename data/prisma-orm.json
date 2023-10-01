@@ -1,68 +1,48 @@
 {
-    "id": "mix",
-    "title": "ডিমো চিটশিট-সব ফরম্যাট একসাথে মিক্স",
-    "slug": "mix",
-    "description": "সব ফরম্যাট একসাথে মিক্স করেও দিতে পারবেন",
+    "id": "prisma",
+    "title": "প্রিজমা ORM এর প্রয়োজনীয় কমান্ড",
+    "slug": "prisma",
+    "description": "প্রিজমা (Prisma) একটি ডেটাবেস ORM (Object-Relational Mapping) টুল, যা ডেটাবেসের সাথে ইন্টারেক্ট করতে সাহায্য করে।",
     "colorPref": "#000",
     "contents": [
         {
-            "title": "এখানে টাইটেল যাবে",
+            "title": "Basic Commands",
             "items": [
                 {
-                    "definition": "বর্ণনা",
-                    "code": "কোড"
+                    "definition": "Prisma ইনস্টল করুন",
+                    "code": "npm install prisma -g"
                 },
                 {
-                    "definition": "বর্ণনা",
-                    "code": "কোড"
+                    "definition": "Prisma প্রজেক্ট তৈরি করুন",
+                    "code": "npx prisma init"
                 },
                 {
-                    "definition": "বর্ণনা",
-                    "code": "কোড"
+                    "definition": "ডেটাবেজ স্কিমাতে আপনার ডেটা মডেল ম্যাপ করতে",
+                    "code": "npx prisma migrate dev --name init"
                 },
                 {
-                    "definition": "বর্ণনা",
-                    "code": "কোড"
+                    "definition": "Prisma ক্লায়েন্ট ইন্সটল করতে",
+                    "code": "npm install @prisma/client"
                 },
                 {
-                    "definition": "বর্ণনা",
-                    "code": "কোড"
+                    "definition": "Prisma ORM ক্লাস তৈরি করতে",
+                    "code": "npx prisma generate"
                 },
                 {
-                    "definition": "বর্ণনা",
-                    "code": "কোড"
+                    "definition": "Prisma Studio ওয়েব অ্যাপ খুলতে",
+                    "code": "npx prisma studio"
                 },
                 {
-                    "definition": "বর্ণনা",
-                    "code": "কোড"
+                    "definition": "Prisma ডেটাবেস ডেপ্লয় করতে",
+                    "code": "npx prisma deploy"
                 }
             ]
         },
         {
-            "title": "টাইটেল",
+            "title": "Other Commands",
             "items": [
                 {
-                    "code": "কোড"
-                },
-                {
-                    "code": "কোড"
-                },
-                {
-                    "code": "কোড"
-                },
-                {
-                    "code": "কোড"
-                },
-                {
-                    "code": "কোড"
-                }
-            ]
-        },
-        {
-            "title": "টাইটেল",
-            "items": [
-                {
-                    "definition": "কাজের বিবরণ",
+                    "definition": "একটি existing ডেটাবেজ থেকে স্কিমা introspect করতে",
                     "code": "কোড"
                 },
                 {
