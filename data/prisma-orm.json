@@ -18,7 +18,7 @@
                 },
                 {
                     "definition": "ডেটাবেজ স্কিমাতে আপনার ডেটা মডেল ম্যাপ করতে",
-                    "code": "npx prisma migrate dev --name init"
+                    "code": "npx prisma migrate"
                 },
                 {
                     "definition": "Prisma ক্লায়েন্ট ইন্সটল করতে",
@@ -43,68 +43,19 @@
             "items": [
                 {
                     "definition": "একটি existing ডেটাবেজ থেকে স্কিমা introspect করতে",
-                    "code": "কোড"
+                    "code": "npx prisma introspect"
                 },
                 {
-                    "definition": "কাজের বিবরণ",
-                    "code": "কোড"
+                    "definition": "একটি existing ডেটাবেজে prisma migrate করতে",
+                    "code": "npx prisma migrate dev"
                 },
                 {
-                    "definition": "কাজের বিবরণ",
-                    "code": "কোড"
+                    "definition": "একটি stageing ডেটাবেজে prisma migrate করতে",
+                    "code": "npx prisma migrate stage"
                 },
                 {
-                    "definition": "কাজের বিবরণ",
-                    "code": "কোড"
-                },
-                {
-                    "definition": "কাজের বিবরণ",
-                    "code": "কোড"
-                }
-            ]
-        },
-        {
-            "title": "টাইটেল",
-            "items": [
-                {
-                    "code": "কোড"
-                },
-                {
-                    "code": "কোড"
-                },
-                {
-                    "code": "কোড"
-                },
-                {
-                    "code": "কোড"
-                },
-                {
-                    "code": "কোড"
-                }
-            ]
-        },
-        {
-            "title": "টাইটেল",
-            "items": [
-                {
-                    "definition": "কাজের বিবরণ",
-                    "code": "কোড"
-                },
-                {
-                    "definition": "কাজের বিবরণ",
-                    "code": "কোড"
-                },
-                {
-                    "definition": "কাজের বিবরণ",
-                    "code": "কোড"
-                },
-                {
-                    "definition": "কাজের বিবরণ",
-                    "code": "কোড"
-                },
-                {
-                    "definition": "কাজের বিবরণ",
-                    "code": "কোড"
+                    "definition": "একটি production ডেটাবেজে prisma migrate করতে",
+                    "code": "npx prisma migrate prod"
                 }
             ]
         }
