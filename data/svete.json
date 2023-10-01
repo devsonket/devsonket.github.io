@@ -410,6 +410,46 @@
             ]
         },
         {
+            "title": "দ্বিমুখী বাঁধাই",
+            "items": [{
+                    "definition": "আপনার ফর্ম ইনপুটগুলি এইভাবে লিখুন:",
+                    "code": [
+                        "<script> \n import function handleInput(e) { \n",
+                        "value = e.target.value; \n  } \n </script> \n }); \n",
+                        "</script>\n",
+                        "<label for="name">Name</label>",
+                        "<input id="name" type="text" value="{value}" on:input="{handleInput}" />",
+                        "<p> \n",
+                        "The value is {value} \n",
+                        "<p> "
+                    ]
+                },
+                {
+                    "definition": "onDestroy",
+                    "code": [
+                        "//App.svelte \n <script> \n import Timer from './Timer.svelte'; \n let open = true; \n let seconds = 0; \n const toggle = () => (open = !open); \n const handleTick = () => (seconds += 1); \n</script> \n",
+                        "<div> \n <button on:click={toggle}>{open ? 'Close' : 'Open'} Timer</button> \n <p>\n \t The Timer component has been open for \t {seconds} {seconds === 1 ? 'second' : 'seconds'} \n </p> \n {#if open} \n <Timer on:tick={handleTick}/> \n {/if} \n </div> \n\n",
+                        "\n //Timer.svelte \n <script> \n import { onInterval } from './utils.js'; \n export let callback; \n export let interval = 1000; \n onInterval(callback, interval); \n </script> \n",
+                        "\n <p> This component executes a callback every  {interval } millisecond{interval === 1 ? '' : 's' } </p> \n",
+                        "//utils.js \n import { onDestroy } from 'svelte'; \n export function onInterval(callback, milliseconds) { \n const interval = setInterval(callback, milliseconds); \n onDestroy(() => { \n clearInterval(interval); \n }); \n } \n"
+                    ]
+                },
+                {
+                    "definition": "beforeUpdate, afterUpdate",
+                    "code": [
+                        "import { beforeUpdate, afterUpdate } from 'svelte';"
+                    ]
+                },
+                {
+                    "definition": "tick",
+                    "code": [
+                        "import { tick } from 'svelte';"
+                    ]
+                }
+            ]
+        },
+
+        {
             "title": "এসভেল্ট স্টোর",
             "items": [{
                     "definition": "রাইটেবল(writable)",
