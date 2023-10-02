@@ -4,9 +4,11 @@
     "slug": "graphql",
     "description": "গ্রাফকিউএল হল একটি ওপেন-সোর্স ডেটা কুয়েরি ভাষা এবং এপিআইগুলির বিদ্যমান ডেটা দিয়ে কুয়েরি পূরণের জন্য একটি রানটাইম। ",
     "colorPref": "#e35898",
-    "contents": [{
+    "contents": [
+        {
             "title": "টাইপস (Types)",
-            "items": [{
+            "items": [
+                {
                     "definition": "পূর্ণসংখ্যা",
                     "code": "Int"
                 },
@@ -70,7 +72,8 @@
         },
         {
             "title": "কুয়েরি (Query)",
-            "items": [{
+            "items": [
+                {
                     "definition": "বেসিক কুয়েরি",
                     "code": "{ status }"
                 },
@@ -86,7 +89,8 @@
         },
         {
             "title": "ইনপুট আর্গুমেন্ট (Input Arguments)",
-            "items": [{
+            "items": [
+                {
                     "definition": "বেসিক ইনপুট",
                     "code": "type Query { users(limit: Int): [User] }"
                 },
@@ -106,7 +110,8 @@
         },
         {
             "title": "ইন্টারফেস (Interfaces)",
-            "items": [{
+            "items": [
+                {
                     "definition": "সিঙ্গেল ইন্টারফেস ডিক্লেয়ার করা",
                     "code": "interface Foo { is_foo: Boolean }"
                 },
@@ -118,7 +123,8 @@
         },
         {
             "title": "ইউনিয়ন (Unions)",
-            "items": [{
+            "items": [
+                {
                     "definition": "সিঙ্গেল ইউনিয়ন ডিক্লেয়ার করা",
                     "code": "type Foo { name: String }"
                 },
@@ -130,13 +136,53 @@
         },
         {
             "title": "ইনুমিরেশন (Enums)",
-            "items": [{
+            "items": [
+                {
                     "definition": "ইনুমিরেশন ডিক্লেয়ার করা",
                     "code": "enum userType { REST, GraphQL, Both }"
                 },
                 {
                     "definition": "ইনুমিরেশন ইমপ্লিমেন্ট করা",
                     "code": "type Root { checkType(userID: ID!): userType! }"
+                }
+            ]
+        },
+        {
+            "title": "সাবস্ক্রিপশন (Subscriptions)",
+            "items": [
+                {
+                    "definition": "সাবস্ক্রিপশন ডিক্লেয়ার করা",
+                    "code": "type Subscription { userAdded: User }"
+                },
+                {
+                    "definition": "সাবস্ক্রিপশন ইমপ্লিমেন্ট করা",
+                    "code": "subscription { userAdded { id name } }"
+                }
+            ]
+        },
+        {
+            "title": "ডাটা মিউটেশন (Data Mutations)",
+            "items": [
+                {
+                    "definition": "মিউটেশন ডিক্লেয়ার করা",
+                    "code": "type Mutation { createUser(input: UserInput): User }"
+                },
+                {
+                    "definition": "মিউটেশন ইমপ্লিমেন্ট করা",
+                    "code": "mutation { createUser(input: { name: 'John', email: 'john@example.com' }) { id name email } }"
+                }
+            ]
+        },
+        {
+            "title": "ফ্রেগমেন্টস (Fragments)",
+            "items": [
+                {
+                    "definition": "ফ্রেগমেন্ট ডিক্লেয়ার করা",
+                    "code": "fragment UserFields on User { id name email }"
+                },
+                {
+                    "definition": "ফ্রেগমেন্ট ব্যবহার করা",
+                    "code": "{ user(id: 1) { ...UserFields } }"
                 }
             ]
         }
