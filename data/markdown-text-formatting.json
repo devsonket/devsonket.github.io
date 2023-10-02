@@ -101,6 +101,14 @@
                 {
                     "definition": "কাজের তালিকা তৈরি করা",
                     "code": "- [x] কাজ 1"
+                },
+                {
+                    "definition": "ইমেজ লিংক",
+                    "code": "![Your Image Alt Text](https://www.example.com/image.jpg)"
+                },
+                {
+                    "definition": "ইউটিউব ভিডিও ইনসার্ট",
+                    "code": "![Your youtube video name](https://www.youtube.com/watch?v=your_video_id)"
                 }
             ]
         }
