@@ -51,7 +51,7 @@
                     "code": "1. Item 1\n2. Item 2"
                 },
                 {
-                    "definition": "আনর্ডার্ড লিস্ট",
+                    "definition": "আনঅর্ডারড লিস্ট",
                     "code": "- Item 1\n- Item 2"
                 }
             ]
@@ -75,6 +75,15 @@
                 {
                     "definition": "কোড ব্লক",
                     "code": "```python\nCode Block\n```"
+                }
+            ]
+        },
+        {
+            "title": "টেবিল (Tables)",
+            "items": [
+                {
+                    "definition": "টেবিল তৈরি করা",
+                    "code": "| Header 1 | Header 2 |\n|----------|----------|\n| Data 1   | Data 2   |"
                 }
             ]
         }
