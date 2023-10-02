@@ -185,6 +185,15 @@
                     "code": "{ user(id: 1) { ...UserFields } }"
                 }
             ]
+        },
+        {
+            "title": "ডাটা লোডার (Data Loaders)",
+            "items": [
+                {
+                    "definition": "ডাটা লোডার ব্যবহার করা",
+                    "code": "const userLoader = new DataLoader(keys => batchGetUsers(keys));"
+                }
+            ]
         }
     ]
 }
