@@ -1,0 +1,82 @@
+{
+    "id": "markdown",
+    "title": "মার্কডাউন টেক্সট ফরম্যাটিং",
+    "slug": "markdown",
+    "description": "মার্কডাউন (Markdown) একটি সাধারণ টেক্সট ফরম্যাটিং সিস্টেম, যা প্লেইন টেক্সট দিয়ে সাজাতে ব্যবহার হয়। এটি লেখার সময় প্রাসঙ্গিক স্টাইল যোগ করার সহজ উপায় সরলীকরণ করে দেয়।",
+    "colorPref": "#0074D9",
+    "contents": [
+        {
+            "title": "টি হেডার (Headers)",
+            "items": [
+                {
+                    "definition": "টি হেডার 1",
+                    "code": "# Header 1"
+                },
+                {
+                    "definition": "টি হেডার 2",
+                    "code": "## Header 2"
+                },
+                {
+                    "definition": "টি হেডার 3",
+                    "code": "### Header 3"
+                },
+                {
+                    "definition": "টি হেডার 4",
+                    "code": "#### Header 4"
+                }
+            ]
+        },
+        {
+            "title": "গুরুত্বপূর্ণ লেখা (Emphasis)",
+            "items": [
+                {
+                    "definition": "বোল্ড টেক্সট",
+                    "code": "**Bold Text**"
+                },
+                {
+                    "definition": "ইটালিক টেক্সট",
+                    "code": "*Italic Text*"
+                },
+                {
+                    "definition": "হাইড টেক্সট",
+                    "code": "~~Strikethrough Text~~"
+                }
+            ]
+        },
+        {
+            "title": "লিস্ট (Lists)",
+            "items": [
+                {
+                    "definition": "অর্ডারড লিস্ট",
+                    "code": "1. Item 1\n2. Item 2"
+                },
+                {
+                    "definition": "আনর্ডার্ড লিস্ট",
+                    "code": "- Item 1\n- Item 2"
+                }
+            ]
+        },
+        {
+            "title": "লিঙ্ক (Links)",
+            "items": [
+                {
+                    "definition": "হাইপারলিংক",
+                    "code": "[Link Text](https://www.example.com)"
+                }
+            ]
+        },
+        {
+            "title": "কোড (Code)",
+            "items": [
+                {
+                    "definition": "ইনলাইন কোড",
+                    "code": "Inline code `Here`"
+                },
+                {
+                    "definition": "কোড ব্লক",
+                    "code": "```python\nCode Block\n```"
+                }
+            ]
+        }
+    ]
+}
