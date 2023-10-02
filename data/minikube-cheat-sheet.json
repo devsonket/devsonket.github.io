@@ -1,0 +1,68 @@
+{
+    "id": "minikube-cheat-sheet",
+    "title": "মিনিকিউব",
+    "slug": "minikube-cheat-sheet",
+    "description": "Minikube একটি কন্টেনার অর্কেস্ট্রেশন টুল যা ডেভেলপারদের এবং টেস্টারদের জন্য বেশ উপকারী। এটি ব্যবহার করে সহজেই লোকালি কুবার্নেটিস ক্লাস্টার তৈরি এবং পরীক্ষা করা যায়।",
+    "colorPref": "#316EE4",
+    "contents": [
+      {
+        "title": "ক্লাস্টার পরিচালনার জন্য কমান্ডসমূহ",
+        "items": [
+            {
+              "definition": "ক্লাস্টার চালু করতে",
+              "code": "minikube start"
+            },
+            {
+              "definition": "ক্লাস্টার বন্ধ করতে",
+              "code": "minikube stop"
+            },
+            {
+              "definition": "ক্লাস্টারের স্থিতি পরীক্ষা করতে",
+              "code": "minikube status"
+            },
+            {
+              "definition": "ক্লাস্টারের ড্যাশবোর্ড ওপেন করতে",
+              "code": "minikube dashboard"
+            },
+            {
+              "definition": "ক্লাস্টারের ড্যাশবোর্ড বন্ধ করতে",
+              "code": "minikube dashboard --minikubeip"
+            },
+            {
+              "definition": "ক্লাস্টার কনফিগ দেখতে",
+              "code": "minikube config view"
+            },
+            {
+              "definition": "ক্লাস্টার এন্ডপয়েন্ট প্রিন্ট করতে",
+              "code": "minikube ip"
+            },
+            {
+              "definition": "ক্লাস্টার ডিলিট করতে",
+              "code": "minikube delete"
+            },
+            {
+              "definition": "ক্লাস্টারের ভার্সন দেখতে",
+              "code": "minikube version"
+            }
+          ]
+        },
+      {
+        "title": "Minikube কনফিগারেশন কমান্ডসমূহ",
+        "items": [
+            {
+              "definition": "কনফিগারেশন দেখতে",
+              "code": "minikube config view"
+            },
+            {
+              "definition": "কনফিগারেশন সেট করতে",
+              "code": "minikube config set"
+            },
+            {
+              "definition": "কনফিগারেশন ডিলিট করতে",
+              "code": "minikube config unset"
+            }
+          ]
+        }
+    ]
+  }
+  
