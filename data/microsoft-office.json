@@ -1,0 +1,108 @@
+{
+    "id": "microsoft_office",
+    "title": "মাইক্রোসফট অফিস(ওয়ার্ড, পাওয়ারপয়েন্ট ইত্যাদির শর্টকাট কী)",
+    "slug": "microsoft_office",
+    "description": "কোড এবং বর্ণনা সমৃদ্ধ চিটশিট এর ডিমো",
+    "colorPref": "#000",
+    "contents": [
+        {
+            "title": "Microsoft Word শর্টকাট কী",
+            "items": [
+                {
+                    "definition": "Text কপি করতে",
+                    "code": "Ctrl + C"
+                },
+                {
+                    "definition": "কপি করা টেক্সট পেস্ট করতে",
+                    "code": "Ctrl + V"
+                },
+                {
+                    "definition": "নতুন ওয়ার্ড ডকুমেন্ট তৈরি করতে",
+                    "code": "Ctrl + N"
+                },
+                {
+                    "definition": "ডকুমেন্ট খোলতে",
+                    "code": "Ctrl + O"
+                },
+                {
+                    "definition": "ডকুমেন্ট Save করতে",
+                    "code": "Ctrl + S"
+                },
+                {
+                    "definition": "টেক্সট ফরম্যাট করতে",
+                    "code": "Ctrl + Shift + F"
+                },
+                {
+                    "definition": "টেবিল তৈরি করতে",
+                    "code": "Ctrl + T"
+                },
+                {
+                    "definition": "শর্টকাট কীগুলি দেখতে",
+                    "code": "Alt + F1"
+                }
+            ]
+        },
+        {
+            "title": "Microsoft PowerPoint শর্টকাট কী",
+            "items": [
+                {
+                    "definition": "নতুন পাওয়ারপয়েন্ট প্রেজেন্টেশন তৈরি করতে",
+                    "code": "Ctrl + N"
+                },
+                {
+                    "definition": "প্রেজেন্টেশন Save করতে",
+                    "code": "Ctrl + S"
+                },
+                {
+                    "definition": "পাওয়ারপয়েন্টে নতুন স্লাইড তৈরি করতে",
+                    "code": "Ctrl + M"
+                },
+                {
+                    "definition": "পাওয়ারপয়েন্টে প্রেজেন্টেশন শুরু করতে",
+                    "code": "F5"
+                },
+                {
+                    "definition": "স্লাইড প্রস্তুত করতে",
+                    "code": "Ctrl + D"
+                },
+                {
+                    "definition": "অ্যানিমেশন যোগ করতে",
+                    "code": "Ctrl + Shift + W"
+                },
+                {
+                    "definition": "প্রেজেন্টেশন মোড থেকে বের হতে",
+                    "code": "Esc"
+                }
+            ]
+        },
+        {
+            "title": "Microsoft Excel শর্টকাট কী",
+            "items": [
+                {
+                    "definition": "নতুন এক্সেল স্প্রেডশিট তৈরি করতে",
+                    "code": "Ctrl + N"
+                },
+                {
+                    "definition": "সম্পূর্ণ কলাম সেলেক্ট করতে",
+                    "code": "Ctrl + Spacebar"
+                },
+                {
+                    "definition": "গ্রাফ তৈরি করতে",
+                    "code": "Ctrl + F1"
+                },
+                {
+                    "definition": "পূর্ববর্তী সেলে যান",
+                    "code": "Ctrl + PgUp"
+                },
+                {
+                    "definition": "পরবর্তী সেলে যান",
+                    "code": "Ctrl + PgDn"
+                },
+                {
+                    "definition": "ফরমুলা এডিট করতে",
+                    "code": "F2"
+                }
+            ]
+        }
+    ]
+}
