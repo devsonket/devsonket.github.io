@@ -383,6 +383,142 @@
                     "code": "<div class='start-0'></div>"
                 }
             ]
+        },
+        {
+            "title": "স্পেসিং",
+            "items": [{
+                    "definition": "উপরের মার্জিনে স্পেসিং দেওয়ার জন্য",
+                    "code": "mt"
+                },
+                {
+                    "definition": "নিচের মার্জিনে স্পেসিং দেওয়ার জন্য",
+                    "code": "mb"
+                },
+                {
+                    "definition": "মার্জিন শুরু দিক থেকে বামে ডানে দেওয়ার জন্য",
+                    "code": "ms"
+                },
+                {
+                    "definition": "মার্জিন শেষের দিক থেকে ডানে বামে দেওয়ার জন্য",
+                    "code": "me"
+                },
+                {
+                    "definition": "মার্জিন ডানে বামে দুইদিকেই একসাথে দেওয়ার জন্য",
+                    "code": "mx"
+                },
+                {
+                    "definition": "মার্জিন ডানে বামে দুইদিকে সমান করে সেন্টার করার জন্য",
+                    "code": "<div class='mx-auto'>Centered</div>"
+                },
+                {
+                    "definition": "মার্জিন উপরে নিচে দুইদিকেই একসাথে দেওয়ার জন্য",
+                    "code": "my"
+                },
+                {
+                    "definition": "উপরে নেগেটিভ মার্জিন দেওয়ার জন্য",
+                    "code": "mt-n"
+                },
+                {
+                    "definition": "নিচে নেগেটিভ মার্জিন দেওয়ার জন্য",
+                    "code": "mb-n"
+                },
+                {
+                    "definition": "উপরের প্যাডিং স্পেসিং দেওয়ার জন্য",
+                    "code": "pt"
+                },
+                {
+                    "definition": "নিচে প্যাডিং স্পেসিং দেওয়ার জন্য",
+                    "code": "pb"
+                },
+                {
+                    "definition": "প্যাডিং শুরু দিক থেকে বামে ডানে দেওয়ার জন্য",
+                    "code": "ps"
+                },
+                {
+                    "definition": "প্যাডিং শুরু দিক থেকে ডানে বামে দেওয়ার জন্য",
+                    "code": "pe"
+                },
+                {
+                    "definition": "প্যাডিং ডানে বামে দুইদিকেই একসাথে দেওয়ার জন্য",
+                    "code": "px"
+                },
+                {
+                    "definition": "প্যাডিং উপরে নিচে দুইদিকেই একসাথে দেওয়ার জন্য",
+                    "code": "py"
+                },
+                {
+                    "definition": "উপরে নেগেটিভ প্যাডিং দেওয়ার জন্য",
+                    "code": "pt-n"
+                },
+                {
+                    "definition": "নিচে নেগেটিভ প্যাডিং দেওয়ার জন্য",
+                    "code": "pb-n"
+                },
+                {
+                    "definition": "ডিভের মধ্যে গ্যাপ দেওয়ার জন্য",
+                    "code": "<div class='gap-3'> </div>"
+                },
+                {
+                    "definition": "576 পিক্সের এর সমান বা এর থেকে ছোট সাইজের জন্য",
+                    "code": "sm"
+                },
+                {
+                    "definition": "768 পিক্সের এর সমান বা এর থেকে ছোট সাইজের জন্য",
+                    "code": "md"
+                },
+                {
+                    "definition": "992 পিক্সের এর সমান বা এর থেকে ছোট সাইজের জন্য",
+                    "code": "lg"
+                },
+                {
+                    "definition": "1200 পিক্সের এর সমান বা এর থেকে ছোট সাইজের জন্য",
+                    "code": "xl"
+                },
+                {
+                    "definition": "1400 পিক্সের এর সমান বা এর থেকে ছোট সাইজের জন্য",
+                    "code": "xxl"
+                }
+            ]
+        },
+        {
+            "title": "বাটনস",
+            "items": [{
+                    "definition": "প্রাইমারি বাটন",
+                    "code": "<button type='button' class='btn btn-primary'>Primary</button>"
+                },
+                {
+                    "definition": "সেকেন্ডারি বাটন",
+                    "code": "<button type='button' class='btn btn-secondary'>Secondary</button>"
+                },
+                {
+                    "definition": "সাক্সসেস বাটন",
+                    "code": "<button type='button' class='btn btn-success'>Success</button>"
+                },
+                {
+                    "definition": "ডেঞ্জার বাটন",
+                    "code": "<button type='button' class='btn btn-danger'>Danger</button>"
+                },
+                {
+                    "definition": "ওয়ার্নিং বাটন",
+                    "code": "<button type='button' class='btn btn-warning'>Warning</button>"
+                },
+                {
+                    "definition": "ইনফো বাটন",
+                    "code": "<button type='button' class='btn btn-info'>Info</button>"
+                },
+                {
+                    "definition": "লাইট বাটন",
+                    "code": "<button type='button' class='btn btn-light'>Light</button>"
+                },
+                {
+                    "definition": "ডার্ক বাটন",
+                    "code": "<button type='button' class='btn btn-dark'>Dark</button>"
+                },
+                {
+                    "definition": "লিঙ্ক বাটন",
+                    "code": "<button type='button' class='btn btn-link'>Link</button>"
+                }
+            ]
         }
     ]
 }
