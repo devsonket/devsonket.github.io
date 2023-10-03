@@ -359,6 +359,50 @@
                     "code": "console.warn()"
                 }
             ]
+        },
+        {
+            "title": "জাভাস্ক্রিপ্ট ম্যাপ (Map) অবজেক্ট",
+            "items": [{
+                    "definition": "একটি ম্যাপ অবজেক্ট তৈরি করতে",
+                    "code": "const myMap = new Map()"
+                },
+                {
+                    "definition": "ম্যাপে value যোগ করতে",
+                    "code": "myMap.set('key', 'value')"
+                },
+                {
+                    "definition": "ম্যাপ থেকে value পেতে",
+                    "code": "myMap.get('key')"
+                },
+                {
+                    "definition": "ম্যাপ থেকে value মুছে ফেলতে",
+                    "code": "myMap.delete('key')"
+                },
+                {
+                    "definition": "ম্যাপে একটি key আছে কি না তা চেক করার জন্য",
+                    "code": "myMap.has('key')"
+                },
+                {
+                    "definition": "ম্যাপে মোট এলিমেন্ট সংখ্যা জানার জন্য",
+                    "code": "myMap.size"
+                },
+                {
+                    "definition": "ম্যাপে সব key গুলি পেতে",
+                    "code": "Array.from(myMap.keys())"
+                },
+                {
+                    "definition": "ম্যাপে সব value গুলি পেতে",
+                    "code": "Array.from(myMap.values())"
+                },
+                {
+                    "definition": "ম্যাপ থেকে সব key এবং value গুলি পেতে",
+                    "code": "Array.from(myMap.entries())"
+                },
+                {
+                    "definition": "ম্যাপে সব key এবং value বা সব এলিমেন্ট গুলি মুছে ফেলতে",
+                    "code": "myMap.clear()"
+                },
+            ]
         }
     ]
 }
