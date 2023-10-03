@@ -195,6 +195,10 @@
                     "code": "TIME"
                 },
                 {
+                    "definition": "বছর(১৯০১ থেকে ২১৫৫)",
+                    "code": "TIME"
+                },
+                {
                     "definition": "প্রিসেট অপশন",
                     "code": "ENUM"
                 },
