@@ -173,7 +173,12 @@
                 {
                     "definition": "স্ট্রিম বিল্ডার",
                     "code": "StreamBuilder"
+                },
+                 {
+                    "definition": "পুল-টু-রিফ্রেশ করতে",
+                    "code": "RefreshIndicator"
                 }
+                
             ]
         }
     ]
