@@ -148,7 +148,7 @@
                 },
                 {
                     "definition": "স্পেস নিতে",
-                    "code": "Stack"
+                    "code": "SizedBox"
                 },
                 {
                     "definition": "জেশ্চার অপশন",
