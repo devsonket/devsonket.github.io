@@ -895,6 +895,26 @@
                     "code": "O(|V|+ |E|)"
                 }
             ]
+        },
+        {
+            "title": "ইউক্লিড্’স এলগোরিদম (Euclid's Algorithm) ২ সংখ্যার মধ্যে গসাগু ",
+            "items": [{
+                    "definition": "গড়",
+                    "code": "O(log(min(a, b))"
+                },
+                {
+                    "definition": "সবচেয়ে ভাল",
+                    "code": "O(1)"
+                },
+                {
+                    "definition": "সবচেয়ে খারাপ",
+                    "code": "O(logb)"
+                },
+                {
+                    "definition": "স্পেস কমপ্লেক্সিটি",
+                    "code": "O(1)"
+                }
+            ]
         }
     ]
 }
