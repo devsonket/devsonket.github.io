@@ -88,6 +88,69 @@
             ]
         },
         {
+        "title": "FVM (Flutter Version Management)",
+        "items": [
+            {
+            "definition": "FVM কি?",
+            "code": "FVM (Flutter Version Management) হলো একটি ভার্শন ম্যানেজমেন্ট টুল, যা দিয়ে খুব সহজেই একই পিসিতে Flutter এর বিভিন্ন ভার্শন ব্যবহার করতে পারবেন।"
+            },
+            {
+            "definition": "MacOS এ FVM ইনস্টল করুন",
+            "code": "brew tap leoafarias/fvm\nbrew install fvm"
+            },
+            {
+            "definition": "Windows এ FVM ইনস্টল করুন",
+            "code": "choco install fvm"
+            },
+            {
+            "definition": "Linux এ FVM ইনস্টল করুন",
+            "code": "brew tap leoafarias/fvm\nbrew install fvm"
+            },
+            {
+            "definition": "FVM অ্যাক্টিভেট করতে",
+            "code": "dart pub global activate fvm"
+            },
+            {
+            "definition": "Custom Path কনফিগ করার জন্য",
+            "code": "fvm config --cache-path <CACHE_PATH>"
+            },
+            {
+            "definition": "অটোমেটিক্যালি SDK এর path সুইচ করতে চাইলে .vscode/settings.json এ যেয়ে এড করুন",
+            "code": "{\n  \"dart.flutterSdkPath\": \".fvm/flutter_sdk\",\n  \"search.exclude\": {\n    \"**/.fvm\": true\n  },\n  \"files.watcherExclude\": {\n    \"**/.fvm\": true\n  }\n}"
+            },
+            {
+            "definition": "ভার্শন ইনস্টল করুন",
+            "code": "fvm install <version>"
+            },
+            {
+            "definition": "প্রজেক্টে একটি ভার্শন ব্যবহার করুন",
+            "code": "fvm use <version>"
+            },
+            {
+            "definition": "প্রজেক্টের সকল ভার্শন দেখুন",
+            "code": "fvm list"
+            },
+            {
+            "definition": "ডকুমেন্টেশন দেখুন",
+            "code": "fvm --help"
+            },
+            {
+            "definition": "fvm use কমান্ড দেওয়ার পর, ভার্সন চেঞ্জ না হলে",
+            "code": "সবার নিচের বার থেকে Dart sdk রিলোড করুন"
+            },
+            {
+            "definition": "FVM ব্যবহারের সময়, ফ্লাটারের ব্যাসিক কমান্ডগুলোর আগে fvm যোগ করে নিতে হবে। যেমন:",
+            "code": "”fvm flutter pub get”, “fvm flutter run”"
+            },
+            {
+            "definition": "অফিসিয়াল সাইট",
+            "code": "https://fvm.app"
+            }
+
+            ]
+        },
+
+        {
             "title": "কিছু ইম্পরট্যান্ট ফ্লাটার শীট",
             "items": [
                 {
@@ -139,7 +202,7 @@
                     "code": "Text"
                 },
                 {
-                    "definition": "স্টেটফুল উইজেট এর জন্য",
+                    "definition": "ম্যাটেরিয়াল ডিজাইন লে-আউট দেওয়ার জন্য",
                     "code": "Scaffold"
                 },
                 {
@@ -173,7 +236,12 @@
                 {
                     "definition": "স্ট্রিম বিল্ডার",
                     "code": "StreamBuilder"
+                },
+                 {
+                    "definition": "পুল-টু-রিফ্রেশ করতে",
+                    "code": "RefreshIndicator"
                 }
+                
             ]
         }
     ]
