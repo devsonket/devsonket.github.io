@@ -1,25 +1,25 @@
 {
     "id": "zustand",
-    "title": "Zustand - A Frontend State Management tool",
-    "slug": "যুস্ট্যান্ড",
-    "description": "Zustand একটি ফ্রন্ট এন্ড স্ট্যাট ম্যানেজ করার টুল। আরো সহজে বললে রিডাক্স জেএস এর বিকল্প একটি স্ট্যাট ম্যানেজ করার টুল। ",
+    "title": "যুস্ট্যান্ড - একটি ফ্রন্টএন্ড স্ট্যাট ম্যানেজ টুল",
+    "slug": "zustand",
+    "description": "Zustand একটি ফ্রন্টএন্ড স্ট্যাট ম্যানেজ করার টুল। আরো সহজে বললে রিডাক্স জেএস এর বিকল্প একটি স্ট্যাট ম্যানেজ করার টুল। ",
     "colorPref": "#57303F",
     "contents": [
       {
-        "title": "যুস্ট্যান্ড ইনস্টল  করা",
+        "title": "যুস্ট্যান্ড ইনস্টল করা",
         "items": [
             {
-                "definition": "npm এর  সাহায্যে ইনস্টল  করা ",
+                "definition": "npm এর  সাহায্যে ইনস্টল  করা",
                 "code": "npm install zustand"
             },
             {
-                "definition": "yarn এর  সাহায্যে ইনস্টল  করা ",
+                "definition": "yarn এর  সাহায্যে ইনস্টল  করা",
                 "code": "yarn add zustand"
             }
         ]
       },
       {
-        "title": "কোনটা কী ",
+        "title": "কোনটা কী",
         "items": [
             {
                 "definition": "Mutator",
@@ -39,7 +39,7 @@
         "title": "স্টোর ফান্ডামেন্টালস",
         "items": [
             {
-                "definition": "স্টোর তৈরি করা ",
+                "definition": "স্টোর তৈরি করা",
                 "code": "create()"
             },
             {
@@ -51,7 +51,7 @@
                 "code": "const bears = useBearStore(state => state.bears)"
             },
             {
-                "definition": " স্ট্যাট মিউটেটর ফাংশন এক্সেস করা  ",
+                "definition": "স্ট্যাট মিউটেটর ফাংশন এক্সেস করা",
                 "code": "const removeAllBears = useBearStore(state => state.removeAllBears); removeAllBears();"
             },
             {
@@ -68,7 +68,7 @@
                 "code": "create(devtools((set) => ({})));"
             },
             {
-                "definition": " যুস্ট্যান্ড এর  স্টোর কে লোকাল স্টোরেজ এর সাথে sync বা persist করাতে চাইলে ",
+                "definition": "যুস্ট্যান্ড এর  স্টোর কে লোকাল স্টোরেজ এর সাথে sync বা persist করাতে চাইলে ",
                 "code": "create(persist((set) => ({})));"
             },
             {
@@ -82,7 +82,7 @@
         ]
     },
     {
-        "title": "যুস্ট্যান্ড এর কিছু রেসিপি ",
+        "title": "যুস্ট্যান্ড এর কিছু রেসিপি",
         "items": [
             {
                 "definition": "স্টোরের সবকিছু নিয়ে আসা",
