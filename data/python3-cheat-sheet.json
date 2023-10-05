@@ -678,6 +678,10 @@
                 {
                     "definition": "প্রদত্ত অ্যারে এর মানগুলি ব্যাবহার করে ৩ রো এবং ৫ কলাম এর একটি 2D অ্যারে তৈরি করুন",
                     "code": "x = random.choice([3, 5, 7, 9], size=(3, 5))"
+                },
+                {
+                    "definition": "google.com এ একটি GET অনুরোধ করুন",
+                    "code": "response = __import__('requests').get('http://www.google.com')"
                 }
             ]
         }
