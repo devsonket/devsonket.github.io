@@ -678,10 +678,38 @@
                 {
                     "definition": "প্রদত্ত অ্যারে এর মানগুলি ব্যাবহার করে ৩ রো এবং ৫ কলাম এর একটি 2D অ্যারে তৈরি করুন",
                     "code": "x = random.choice([3, 5, 7, 9], size=(3, 5))"
+                }
+            ]
+        },
+        {
+            "title": "রিকোয়েস্ট লাইব্রেরি (Requests Library)",
+            "items": [{
+                    "definition": "রিকোয়েস্ট ইনস্টল করা",
+                    "code": "pip install requests"
                 },
                 {
-                    "definition": "google.com এ একটি GET অনুরোধ করুন",
-                    "code": "response = __import__('requests').get('http://www.google.com')"
+                    "definition": "রিকোয়েস্ট ইম্পোর্ট করা",
+                    "code": "import requests"
+                },
+                {
+                    "definition": "ওয়েবসাইট থেকে ডেটা গ্রহন করা",
+                    "code": "r = requests.get('https://api.github.com/events')"
+                },
+                {
+                    "definition": "স্ট্যাটাস কোড চেক করা",
+                    "code": "r.status_code"
+                },
+                {
+                    "definition": "হেডার চেক করা",
+                    "code": "r.headers"
+                },
+                {
+                    "definition": "টেক্সট চেক করা",
+                    "code": "r.text"
+                },
+                {
+                    "definition": "জেসন চেক করা",
+                    "code": "r.json()"
                 }
             ]
         }
