@@ -4,9 +4,11 @@
     "slug": "algorithm-complexity",
     "description": "বেশী ব্যবহৃত অ্যালগরিদম আর ডাটা স্ট্রাকচার ও তাদের মধ্যকার অপারেশনের বিগ-ও(Big-O) কমপ্লেক্সিটি সবগুলো একসাথে",
     "colorPref": "#333",
-    "contents": [{
+    "contents": [
+        {
             "title": "অ্যারে(Array)",
-            "items": [{
+            "items": [
+                {
                     "definition": "অ্যাক্সেস করতে(এভারেজ)",
                     "code": "O(1)"
                 },
@@ -46,7 +48,8 @@
         },
         {
             "title": "স্ট্যাক(Stack)",
-            "items": [{
+            "items": [
+                {
                     "definition": "অ্যাক্সেস করতে(এভারেজ)",
                     "code": "O(n)"
                 },
@@ -86,7 +89,8 @@
         },
         {
             "title": "কিউ(Queue)",
-            "items": [{
+            "items": [
+                {
                     "definition": "অ্যাক্সেস করতে(এভারেজ)",
                     "code": "O(n)"
                 },
@@ -126,7 +130,8 @@
         },
         {
             "title": "Singly-Linked List",
-            "items": [{
+            "items": [
+                {
                     "definition": "অ্যাক্সেস করতে(এভারেজ)",
                     "code": "O(n)"
                 },
@@ -166,7 +171,8 @@
         },
         {
             "title": "Doubly-Linked List",
-            "items": [{
+            "items": [
+                {
                     "definition": "অ্যাক্সেস করতে(এভারেজ)",
                     "code": "O(n)"
                 },
@@ -206,7 +212,8 @@
         },
         {
             "title": "স্কিপ(Skip) লিস্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "অ্যাক্সেস করতে(এভারেজ)",
                     "code": "Θ(log(n))"
                 },
@@ -246,7 +253,8 @@
         },
         {
             "title": "হ্যাশ(Hash) টেবিল",
-            "items": [{
+            "items": [
+                {
                     "definition": "সার্চ করতে(এভারেজ)",
                     "code": "Θ(1)"
                 },
@@ -278,7 +286,8 @@
         },
         {
             "title": "বাইনারী সার্চ ট্রি",
-            "items": [{
+            "items": [
+                {
                     "definition": "অ্যাক্সেস করতে(এভারেজ)",
                     "code": "Θ(log(n))"
                 },
@@ -318,7 +327,8 @@
         },
         {
             "title": "কার্টেসিয়ান(Cartesian) ট্রি",
-            "items": [{
+            "items": [
+                {
                     "definition": "সার্চ করতে(এভারেজ)",
                     "code": "Θ(log(n))"
                 },
@@ -350,7 +360,8 @@
         },
         {
             "title": "বি(B) ট্রি",
-            "items": [{
+            "items": [
+                {
                     "definition": "অ্যাক্সেস করতে(এভারেজ)",
                     "code": "Θ(log(n))"
                 },
@@ -390,7 +401,8 @@
         },
         {
             "title": "রেড-ব্ল্যাক ট্রি",
-            "items": [{
+            "items": [
+                {
                     "definition": "অ্যাক্সেস করতে(এভারেজ)",
                     "code": "Θ(log(n))"
                 },
@@ -430,7 +442,8 @@
         },
         {
             "title": "স্প্লে(Splay) ট্রি",
-            "items": [{
+            "items": [
+                {
                     "definition": "সার্চ করতে(এভারেজ)",
                     "code": "Θ(log(n))"
                 },
@@ -462,7 +475,8 @@
         },
         {
             "title": "এভিএল(AVL) ট্রি",
-            "items": [{
+            "items": [
+                {
                     "definition": "অ্যাক্সেস করতে(এভারেজ)",
                     "code": "Θ(log(n))"
                 },
@@ -502,7 +516,8 @@
         },
         {
             "title": "কেডি(KD) ট্রি",
-            "items": [{
+            "items": [
+                {
                     "definition": "অ্যাক্সেস করতে(এভারেজ)",
                     "code": "Θ(log(n))"
                 },
@@ -542,7 +557,8 @@
         },
         {
             "title": "কুইক সর্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সবচেয়ে ভালো",
                     "code": "Ω(n log(n))"
                 },
@@ -562,7 +578,8 @@
         },
         {
             "title": "মার্জ সর্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সবচেয়ে ভালো",
                     "code": "Ω(n log(n))"
                 },
@@ -582,7 +599,8 @@
         },
         {
             "title": "টিম সর্ট/টীম সর্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সবচেয়ে ভালো",
                     "code": "Ω(n)"
                 },
@@ -602,7 +620,8 @@
         },
         {
             "title": "হিপ সর্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সবচেয়ে ভালো",
                     "code": "Ω(n log(n))"
                 },
@@ -622,7 +641,8 @@
         },
         {
             "title": "বাবল সর্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সবচেয়ে ভালো",
                     "code": "Ω(n)"
                 },
@@ -642,7 +662,8 @@
         },
         {
             "title": "ইনসারশন সর্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সবচেয়ে ভালো",
                     "code": "Ω(n)"
                 },
@@ -662,7 +683,8 @@
         },
         {
             "title": "সিলেকশন সর্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সবচেয়ে ভালো",
                     "code": "Ω(n^2)"
                 },
@@ -682,7 +704,8 @@
         },
         {
             "title": "ট্রি সর্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সবচেয়ে ভালো",
                     "code": "Ω(n log(n))"
                 },
@@ -702,7 +725,8 @@
         },
         {
             "title": "শেল সর্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সবচেয়ে ভালো",
                     "code": "Ω(n log(n))"
                 },
@@ -722,7 +746,8 @@
         },
         {
             "title": "বাকেট সর্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সবচেয়ে ভালো",
                     "code": "Ω(n+k)"
                 },
@@ -742,7 +767,8 @@
         },
         {
             "title": "রেডিক্স সর্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সবচেয়ে ভালো",
                     "code": "Ω(nk)"
                 },
@@ -762,7 +788,8 @@
         },
         {
             "title": "কাউন্টিং সর্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সবচেয়ে ভালো",
                     "code": "Ω(n+k)"
                 },
@@ -782,7 +809,8 @@
         },
         {
             "title": "কিউব সর্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "সবচেয়ে ভালো",
                     "code": "Ω(n)"
                 },
@@ -802,7 +830,8 @@
         },
         {
             "title": "ডায়াক্সট্রা এলগোরিদম",
-            "items": [{
+            "items": [
+                {
                     "definition": "গড়",
                     "code": "O(|E| log |V|)"
                 },
@@ -818,7 +847,8 @@
         },
         {
             "title": "এ স্টার সার্চ এলগোরিদম",
-            "items": [{
+            "items": [
+                {
                     "definition": "গড়",
                     "code": "O(|E|)"
                 },
@@ -834,7 +864,8 @@
         },
         {
             "title": "প্রিম এলগোরিদম",
-            "items": [{
+            "items": [
+                {
                     "definition": "গড়",
                     "code": "O(|E| log |V|)"
                 },
@@ -850,7 +881,8 @@
         },
         {
             "title": "বেলমান-ফোর্ড এলগোরিদম",
-            "items": [{
+            "items": [
+                {
                     "definition": "গড়",
                     "code": "O(|E| . |V|)"
                 },
@@ -866,7 +898,8 @@
         },
         {
             "title": "ফ্লোয়েড-ওয়ারশাল এলগোরিদম",
-            "items": [{
+            "items": [
+                {
                     "definition": "গড়",
                     "code": "O(|V|^3)"
                 },
@@ -882,7 +915,8 @@
         },
         {
             "title": "টপোলজিকাল সর্ট",
-            "items": [{
+            "items": [
+                {
                     "definition": "গড়",
                     "code": "O(|V|+ |E|)"
                 },
@@ -895,26 +929,27 @@
                     "code": "O(|V|+ |E|)"
                 }
             ]
-        } ,
+        },
         {
             "title": "ডেপ্ত ফার্স্ট সার্চ (DFS) ট্রি",
-            "items": [{
-                "definition": "গড়",
-                "code": "O(|V|+ |E|)"
-            },
-            {
-                "definition": "সবচেয়ে ভাল",
-                "code": "O(|1|+ |E|)"
-            },
-            {
-                "definition": "সবচেয়ে খারাপ",
-                "code": "O(|V|^2+ |E|)"
-            },
-            {
-                "definition": "স্পেস কমপ্লেক্সিটি",
-                "code": "O(|V|)"
-            }
-        ]
+            "items": [
+                {
+                    "definition": "গড়",
+                    "code": "O(|V|+ |E|)"
+                },
+                {
+                    "definition": "সবচেয়ে ভাল",
+                    "code": "O(|1|+ |E|)"
+                },
+                {
+                    "definition": "সবচেয়ে খারাপ",
+                    "code": "O(|V|^2+ |E|)"
+                },
+                {
+                    "definition": "স্পেস কমপ্লেক্সিটি",
+                    "code": "O(|V|)"
+                }
+            ]
         },
         {
             "title": "ব্রেডথ-ফার্স্ট সার্চ (BFS) ট্রি",
@@ -960,7 +995,8 @@
         },
         {
             "title": "ইউক্লিড্’স এলগোরিদম (Euclid's Algorithm) ২ সংখ্যার মধ্যে গসাগু ",
-            "items": [{
+            "items": [
+                {
                     "definition": "গড়",
                     "code": "O(log(min(a, b))"
                 },
