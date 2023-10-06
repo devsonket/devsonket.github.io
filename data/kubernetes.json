@@ -51,8 +51,12 @@
                     "code": "kubectl rollout undo deployment/frontend"
                 },
                 {
-                    "definition": "পূর্বের সনক্রন ফেরত",
-                    "code": "kubectl rollout undo deployment/frontend"
+                    "definition": "নতুন সনক্রনের অবস্থা",
+                    "code": "kubectl rollout status -w deployment/frontend"
+                },
+                {
+                    "definition": "পছন্দের এডিটর ব্যাবহার",
+                    "code": "KUBE_EDITOR=\"nano\" kubectl edit svc/docker-registry"
                 }
             ]
         },
@@ -81,6 +85,10 @@
                 {
                     "definition": "পছন্দের এডিটর ব্যাবহার",
                     "code": "KUBE_EDITOR=\"nano\" kubectl edit svc/docker-registry"
+                },
+                {
+                    "definition": "পোড পুনরায় চালু করা",
+                    "code": "kubectl rollout restart deployment/frontend"
                 }
             ]
         },
@@ -133,6 +141,32 @@
                 {
                     "definition": "সার্ভিস এর সাথে বাইন্ড",
                     "code": "kubectl port-forward svc/my-service 5000 "
+                }
+            ]
+        },
+        {
+            "title": "কুবারনেট ডিপলয়মেন্ট বোঝা",
+            "items": [
+                {
+                    "definition": "ডিপলয়মেন্ট লিস্ট করা",
+                    "code": "kubectl get deployments"
+                },
+                {
+                    "definition": "ডিপলয়মেন্ট ডিটেইল লিস্ট করা",
+                    "code": "kubectl describe deployment my-deployment"
+                }
+            ]
+        },
+        {
+            "title": "কুবারনেট সার্ভিস বোঝা",
+            "items": [
+                {
+                    "definition": "সার্ভিস লিস্ট করা",
+                    "code": "kubectl get services"
+                },
+                {
+                    "definition": "সার্ভিস ডিটেইল লিস্ট করা",
+                    "code": "kubectl describe service my-service"
                 }
             ]
         }
