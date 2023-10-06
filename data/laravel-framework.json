@@ -513,6 +513,10 @@
                     "code": "Model::create(pass your data array);"
                 },
                 {
+                    "definition": "মডেল দিয়ে ড্যাটা থাকলে আপডেট না থাকলে তৈরি করতে। (১ম [] শর্ত ২য় [] ড্যাটা) ",
+                    "code": "Model::updateOrCreate(['col' => 'val', 'col-2' => 'val-2'],['col-3' => 'val-3', 'col-4' => 'val-4']);"
+                },
+                {
                     "definition": "মডেল দিয়ে SELECT করতে চাইলে ",
                     "code": "Model::select('columnName','columnName')->get();"
                 },
