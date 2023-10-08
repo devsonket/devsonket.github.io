@@ -30,7 +30,6 @@ const Item = ({ data }) => {
       {data.contents.map(({ title, items, code: onlyCode }) => (
         <Sheet
           key={title}
-          slug={data.slug}
           title={title}
           onlyCode={onlyCode}
           items={items}

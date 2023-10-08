@@ -1,0 +1,51 @@
+{
+    "id": "gcc_commands",
+    "title": "GCC (MinGW/Cygwin/UNIX) কমান্ডের চিটশিট",
+    "slug": "gcc_commands",
+    "description": "GCC হল একটি ফ্রি এবং ওপেন সোর্স কম্পাইলার যা C, C++, Objective-C, Fortran, Go, Rust, D, Pascal, RISC-V ইত্যাদি Laguage গুলিকে Compile করে।",
+    "colorPref": "#FFC0CB",
+    "contents": [
+        {
+            "title": "Common Commands",
+            "items": [
+                {
+                    "definition": "-o: আউটপুট ফাইলের নাম নির্ধারণ করে।",
+                    "code": "gcc -o output_file source_file.c"
+                },
+                {
+                    "definition": "-c: শুধুমাত্র Source কোডকে অবজেক্ট কোডে কম্পাইল করে।",
+                    "code": "gcc -c source_file.c"
+                },
+                {
+                    "definition": "-S: শুধুমাত্র Source কোডকে অ্যাসেম্বলি কোডে কম্পাইল করে।",
+                    "code": "gcc -S source_file.c"
+                },
+                {
+                    "definition": "-g: ডিবাগ তথ্য Include করে।",
+                    "code": "gcc -g source_file.c"
+                },
+                {
+                    "definition": "-Wall: Compiler warning গুলিকে Enable করে।",
+                    "code": "gcc -Wall source_file.c"
+                }
+            ]
+        },
+        {
+            "title": "Specific Commands",
+            "items": [
+                {
+                    "definition": "-ansi: ANSI C মান মেনে চলতে কম্পাইলারকে বাধ্য করে।",
+                    "code": "gcc -ansi source_file.c"
+                },
+                {
+                    "definition": "-pedantic: ANSI C মান মেনে চলতে কম্পাইলারকে Enforce করে।",
+                    "code": "gcc -pedantic source_file.c"
+                },
+                {
+                    "definition": "-Werror: Warning গুলিকে Error হিসাবে চিহ্নিত করে।",
+                    "code": "gcc -Werror source_file.c"
+                }
+            ]
+        }
+    ]
+}

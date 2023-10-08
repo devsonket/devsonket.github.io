@@ -4,9 +4,11 @@
     "slug": "redis",
     "description": "রেডিস (Redis) একটি ওপেন সোর্স ইন মেমরি ডাটা স্ট্রাকচার স্টোর। যা সাধারণত কি ভ্যালু (KV) ডাটাবেস, ক্যাশ, মেসেজ ব্রোকার হিসেবে ব্যবহার হয়ে থাকে। রেডিস বিভিন্ন ধরনের ডাটা স্ট্রাকচার সাপোর্ট করে যেমন, স্ট্রিংস, লিস্টস, ম্যাপস, সেটস, সর্টেড সেটস, ইত্যাদি।",
     "colorPref": "#d92b21",
-    "contents": [{
+    "contents": [
+        {
             "tite": "রেডিস সি এল আই (CLI)",
-            "items": [{
+            "items": [
+                {
                     "definition": "রেডিস ভারশন",
                     "code": "redis-cli --version"
                 },
@@ -30,7 +32,8 @@
         },
         {
             "tite": "রেডিস স্ট্রিংস",
-            "items": [{
+            "items": [
+                {
                     "definition": "রেডিস কমান্ডে সবগুলো কী (key) একসাথে দেখার জন্য",
                     "code": "KEYS *"
                 },
@@ -109,6 +112,43 @@
                 {
                     "definition": "গ্রুপ বা ট্যাগ এর মধ্যে সকল মেম্বার কী(Key) দেখতে",
                     "code": "SMEMBERS <group_key>"
+                },
+                {
+                    "definition": "একটি কী (Key) থেকে অন্য একটি কী (Key) এর মান কপি করতে",
+                    "code": "COPY <source_key> <destination_key>"
+                },
+                {
+                    "definition": "একটি কী (Key) এর মান সর্বনিম্ন এবং সর্বোচ্চ মান দেখতে",
+                    "code": "ZLEXCOUNT <key> <min_lex> <max_lex>"
+                },
+                {
+                    "definition": "সর্টেড সেট থেকে মান যোগ করতে",
+                    "code": "ZADD <key> <score> <member>"
+                }
+            ]
+        },
+        {
+            "title": "রেডিস পাবলিশ/সাবস্ক্রাইব (Pub/Sub)",
+            "items": [
+                {
+                    "definition": "একটি চ্যানেলে একটি মেসেজ পাঠানো",
+                    "code": "PUBLISH <channel> <message>"
+                },
+                {
+                    "definition": "একটি চ্যানেলে সাবস্ক্রাইব করা",
+                    "code": "SUBSCRIBE <channel>"
+                },
+                {
+                    "definition": "একটি চ্যানেল থেকে সাবস্ক্রাইব বন্ধ করা",
+                    "code": "UNSUBSCRIBE <channel>"
+                },
+                {
+                    "definition": "সমস্ত চ্যানেলে সাবস্ক্রাইব করা",
+                    "code": "SUBSCRIBE *"
+                },
+                {
+                    "definition": "সমস্ত চ্যানেলে সাবস্ক্রাইব বন্ধ করা",
+                    "code": "UNSUBSCRIBE *"
                 }
             ]
         }
