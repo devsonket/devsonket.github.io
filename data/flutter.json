@@ -240,6 +240,46 @@
                  {
                     "definition": "পুল-টু-রিফ্রেশ করতে",
                     "code": "RefreshIndicator"
+                },
+                {
+                    "definition": "বটোম শিট দেখাতে",
+                    "code": "BottomSheet"
+                },
+                {
+                    "definition": "কার্ড দেখাতে",
+                    "code": "Card"
+                },
+                {
+                    "definition": "চেকবক্স দেখাতে",
+                    "code": "Checkbox"
+                },
+                {
+                    "definition": "চিপস দেখাতে",
+                    "code": "Chip"
+                },
+                {
+                    "definition": "ড্রয়ার দেখাতে",
+                    "code": "Drawer"
+                },
+                {
+                    "definition": "স্লাইডার দেখাতে",
+                    "code": "Slider"
+                },
+                 {
+                    "definition": "স্নাকবার দেখাতে",
+                    "code": "Snackbar"
+                },
+                 {
+                    "definition": "সুইচ দেখাতে",
+                    "code": "Switch"
+                },
+                 {
+                    "definition": "ট্যাব বার দেখাতে",
+                    "code": "TabBar"
+                },
+                {
+                    "definition": "টেবল দেখাতে",
+                    "code": "Table"
                 }
                 
             ]
