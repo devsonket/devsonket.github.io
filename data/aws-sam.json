@@ -88,6 +88,61 @@
 					"code": "$ sam local generate-event s3 delete"
 				}
 			]
+		},
+		{
+			"title": "(SAM) সাম ডিলেট অপশন",
+			"items": [
+				{
+					"definition": "নাম দিয়ে AWS ক্লাউড ফরমেশন স্ট্যাক ডিলেট করা",
+					"code": "--stack-name TEXT"
+				},
+				{
+					"definition": "Amazon S3 বাকেট ডিলেট করার জন্য প্যাথ্‌",
+					"code": "--s3-bucket"
+				},
+				{
+					"definition": "Amazon S3 বাকেট ডিলেট করার জন্য প্রিফিক্স",
+					"code": "--s3-prefix"
+				}
+			]
+		},
+		{
+			"title": "(SAM) সাম লিস্ট অপশন",
+			"items": [
+				{
+					"definition": "AWS ক্লাউড ফরমেশন স্ট্যাকের ক্লাউড এবং লোকাল এন্ডপয়েন্ট দেখাবে",
+					"code": "sam list -h endpoints"
+				},
+				{
+					"definition": "AWS ক্লাউড ফরমেশনের ডিপ্লয়মেন্ট রিসোর্স দেখাবে",
+					"code": "sam list -h resources"
+				},
+				{
+					"definition": "AWS ক্লাউড ফরমেশন স্টাকের আউটপুট দেখাবে",
+					"code": "sam list -h stack-outputs"
+				}
+			]
+		},
+		{
+			"title": "(SAM) সাম লোকাল ইনভক অপশন",
+			"items": [
+				{
+					"definition": "AWS SAM CLI ফাংশনালিতে ইউজ করা হুকের নাম",
+					"code": "--hook-name TEXT"
+				},
+				{
+					"definition": "Terraform ক্লাউডের সাথে AWS SAM CLI ব্যবহার করার সময় স্থানীয় Terraform প্ল্যান ফাইলের প্যাথ্‌",
+					"code": "--terraform-plan-file"
+				},
+				{
+					"definition": "পরিকাঠামো পরিবর্তন না হলে প্রিপারেশন স্টেজ স্কিপ করবে",
+					"code": "s--skip-prepare-infra"
+				},
+				{
+					"definition": "খালি ইভেন্ট দিয়ে ফাংশন ইনভক করার জন্য",
+					"code": "--no-event"
+				}
+			]
 		}
 	]
 }
