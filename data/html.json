@@ -151,6 +151,30 @@
                     "code": "<address>...</address>"
                 },
                 {
+                    "definition": "মার্কি লেখা",
+                    "code": "<marquee>...</marquee>"
+                },
+                {
+                    "definition": "চিহ্নিত লেখা",
+                    "code": "<mark>...</mark>"
+                },
+                {
+                    "definition": "ছোট লেখা",
+                    "code": "<small>...</small>"
+                },
+                {
+                    "definition": "মুছে ফেলা লেখা",
+                    "code": "<del>...</del>"
+                },
+                {
+                    "definition": "সাবস্ক্রিপ্ট লেখা",
+                    "code": "<sub>...</sub>"
+                },
+                {
+                    "definition": "সুপারস্ক্রিপ্ট লেখা",
+                    "code": "<sup>...</sup>"
+                },
+                {
                     "definition": "Emphasize",
                     "code": "<em>...</em>"
                 },
