@@ -38,6 +38,10 @@
                     "code": "*Italic Text*"
                 },
                 {
+                    "definition": "হাইড টেক্সট",
+                    "code": "~~Strikethrough Text~~"
+                },
+                {
                     "definition": "সাবস্ক্রিপ্ট",
                     "code": "H~2~O"
                 },
