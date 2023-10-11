@@ -54,6 +54,7 @@
                     "definition": "সিঙ্গেল পেজ ফাইল",
                     "code": "page.php"
                 }
+                
             ]
         },
         {
@@ -179,6 +180,10 @@
                     "code": "get_links_list();"
                 },
                 {
+                    "definition": "custom theme ফাইল অন্তর্ভুক্ত করার জন্য",
+                    "code": "get_template_part();"
+                },
+                {
                     "definition": "comments.php পিএইচপি ফাইল এর কন্টেন্ট",
                     "code": "comments_template();"
                 },
@@ -223,31 +228,27 @@
                     "code": "<ul id='menu'>"
                 },
                 {
-                    "definition": " ",
-                    "code": "<li <?php if(is_home()) { ?> class='current-cat' <?php } ?> ><a href='<php bloginfo('home'); ?>'>Home</a></li>"
+                    "definition": "প্রত্যাবর্তিত সাইটের তথ্য ফিল্টার করা",
+                    "code": "get_bloginfo() "
                 },
                 {
-                    "definition": " ",
-                    "code": "<?php wp_list_categories('title_li=&orderby=id'); ?>"
+                    "definition": "বিভাগগুলির HTML তালিকা প্রদর্শন বা পুনরুদ্ধার করা",
+                    "code": "wp_list_categories()"
                 },
                 {
-                    "definition": " ",
-                    "code": "</ul>"
+                    "definition": "অবিন্যস্ত তালিকা উপাদান শুরু করা",
+                    "code": "<ul>"
                 },
                 {
                     "definition": "পৃষ্ঠা ভিত্তিক ন্যাভিগেশন",
                     "code": "<ul id='menu'>"
                 },
                 {
-                    "definition": " ",
-                    "code": "<li <?php if(is_home()) { ?> class='current_page_item' <?php } >>><a href='<php bloginfo('home'); ?>'>Home</a></li>"
+                    "definition": "তালিকাভুক্ত পৃষ্ঠাগুলির HTML আউটপুট ফিল্টার করা",
+                    "code": "wp_list_pages()"
                 },
                 {
-                    "definition": " ",
-                    "code": "<?php wp_list_pages('sort_column=menu_order&depth=1&title_li='); ?>"
-                },
-                {
-                    "definition": " ",
+                    "definition": "অবিন্যস্ত তালিকা উপাদান শেষ করা",
                     "code": "</ul>"
                 }
             ]
