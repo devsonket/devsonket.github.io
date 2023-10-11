@@ -115,6 +115,18 @@
                     "code": "the_content();"
                 },
                 {
+                    "definition": "পোস্টের কিছু অংশ রিটার্ন করে রাখে",
+                    "code": "get_the_excerpt();"
+                },
+                {
+                    "definition": "পোস্টের কিছু অংশ ইকো করে",
+                    "code": "the_excerpt();"
+                },
+                {
+                    "definition": "পোস্টের থাম্বনেইল রিটার্ন করে",
+                    "code": "get_the_post_thumbnail();"
+                },
+                {
                     "definition": "পোস্ট আছে কিনা তা পরীক্ষা করতে",
                     "code": "if(have_posts()):"
                 },
