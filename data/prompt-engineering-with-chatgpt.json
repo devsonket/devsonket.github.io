@@ -2,7 +2,7 @@
     "id": "prompt-engineering-with-chatgpt",
     "title": "প্রম্পট ইঞ্জিনিয়ারিং উইথ চ্যাট-জিপিটি ",
     "slug": "prompt-engineering-with-chatgpt",
-    "description": "প্রম্পট ইঞ্জিনিয়ারিং হল কৃত্রিম বুদ্ধিমত্তা (AI), বিশেষ করে লার্জ ল্যাংগুইজ মডেল যেমন: GPT-3, GPT-4 or PaLM 2 তে ব্যবহৃত একটি কৌশল যা নির্দিষ্ট কাজ এবং কাঙ্খিত আউটপুটগুলির জন্য ল্যাংগুইজ মডেলগুলিকে অপ্টিমাইজ করতে এবং সমন্বয় বা পরিমার্জন করতে ব্যবহৃত হয়।\n\nপ্রম্পট ইঞ্জিনিয়ারিংয়ের লক্ষ্য হল, কৃত্রিম বুদ্ধিমত্তা (AI) কে নির্দিষ্ট এবং সঠিক ভাবে প্রম্পট দিয়ে একটি নির্দিষ্ট ফলাফল অর্জন করা।",
+    "description": "প্রম্পট ইঞ্জিনিয়ারিং হল কৃত্রিম বুদ্ধিমত্তা (AI), বিশেষ করে লার্জ ল্যাংগুইজ মডেল যেমন: GPT-3, GPT-4 or PaLM 2 তে ব্যবহৃত একটি কৌশল যা নির্দিষ্ট কাজ এবং কাঙ্খিত আউটপুটগুলির জন্য ভাষার মডেলগুলিকে অপ্টিমাইজ করতে এবং সমন্বয় বা পরিমার্জন করতে ব্যবহৃত হয়।\n\nপ্রম্পট ইঞ্জিনিয়ারিংয়ের লক্ষ্য হল, কৃত্রিম বুদ্ধিমত্তা (AI) কে নির্দিষ্ট এবং সঠিক ভাবে প্রম্পট দিয়ে একটি নির্দিষ্ট ফলাফল অর্জন করা।",
 
     "colorPref": "#000954",
     "contents":[{
@@ -14,8 +14,8 @@
             },
             {
                 "definition": "নিচে একটি উদহারণ স্টেপ বাই স্টেপ দেখানো হলঃ"
-            },
-                
+            }, 
+
             {
                 "definition": "স্টেপ - ১", 
                 "code": "I want to learn how to code in python. Can you use the Pareto Principle, which identifies the 20% o f the topic that will yield 80% of the desired results, to create a focused learning plan for me?"     
@@ -48,7 +48,7 @@
             }, 
             {
                 "definition":"নিজের লার্নিং কে প্রশ্নের মাধ্যমে টেস্ট করার প্রম্পটঃ",
-                "code": " Prompt: I am currently learning about [insert topic]. Ask me a series of questions that will test my knowledge. Identify knowledge gaps in my answers and give me better answers to fill those gaps"
+                "code": "Prompt: I am currently learning about [insert topic]. Ask me a series of questions that will test my knowledge. Identify knowledge gaps in my answers and give me better answers to fill those gaps"
 
             }
         ]
@@ -57,20 +57,20 @@
         "title": "প্রোগ্রামিং এ প্রম্পট ইঞ্জিনিয়ারিং",
         "items": [{
                 "definition": "কোন কিছু কিভাবে করে তা জানতে: (How to do something)",
-                "code": "How to [action] in [programming language]? // EX: How to merge dictionaries in Python?"
+                "code": "How to [action] in [programming language]?\n\nEX: How to merge dictionaries in Python?"
             },
             {
                 "definition": "কোন কিছুর মধ্যে পার্থক্য জানতে: (Know the difference between something)",
-                "code": "What's the difference between [concept1] and [concept2] in [language]? // EX: What's the difference between lists and dictionaries in Python?"
+                "code": "What's the difference between [concept1] and [concept2] in [language]? \nEX: What's the difference between lists and dictionaries in Python?"
             },
             {
                "definition": "কোন কনসেপ্ট এক্সপ্লেইন করতে বা শিখতে চাইলে (Explain a programming concept)", 
-               "code": "Prompt-1: Explain the [Your Topic Name]in Python\nPrompt-2: I need help understanding the [programming paradigm] paradigm in [language].\nPrompt-3:Explain the difference between [concept A] and [concept B] in [language], their performance implications, and use-cases where one would be preferable over the other.\n\nউদহারণ-১: Explain the Do/while loop in python\n উদহারণ-2: Can you explain the basics of object-oriented programming and how it’s implemented in Java?"
+               "code": "Prompt-1: Explain the [Your Topic Name]in Python\nPrompt-2: I need help understanding the [programming paradigm] paradigm in [language].\nPrompt-3:Explain the difference between [concept A] and [concept B] in [language], their performance implications, and use-cases where one would be preferable over the other.\n\nউদহারণ-১: Explain the Do/while loop in python\nউদহারণ-2: Can you explain the basics of object-oriented programming and how it’s implemented in Java?"
 
             },
             {
                 "definition":"কোড জেনারেট করতে (Generate code)",
-                "code": "Prompt: I want to build a [type of website]. Can you generate some HTML for my website? \n\n EX: I want to build a job board website.Can you generate some HTML for my website?"
+                "code": "Prompt: I want to build a [type of website]. Can you generate some HTML for my website?\n\nEX: I want to build a job board website.Can you generate some HTML for my website?"
 
             },
             {
@@ -83,7 +83,7 @@
             },
             {
                 "definition":"কোডের মান উন্নত করার প্রম্পট",
-                "code": "Prompt-1: How can I make this [language] function more efficient: [paste your code ]? \n Prompt-2: What are some improvements I can make to this [language] algorithm: [code snippet]?"
+                "code": "Prompt-1: How can I make this [language] function more efficient: [paste your code ]?\nPrompt-2: What are some improvements I can make to this [language] algorithm: [code snippet]?"
             }
         ]  
       },
@@ -91,16 +91,16 @@
         "title": "রাইটিং এ প্রম্পট ইঞ্জিনিয়ারিং (Prompt Engineering in writing",
         "items":[{
             "definition":"ব্লগ পোস্ট/এসেই/আর্টিকেল লিখতেঃ",
-            "code": "Prompt: Write a [adjective] [type of content] on [goal]. Explain why: [topic1, topic2, ...]\n\nউদহারণ-১: Write a friendly blog post on why people should lose weight. Explain why obesity is a problem, how people can lose weight, and why being healthy is important \nউদহারণ-২: Write a humorous essay on how not to prepare for an exam" 
+            "code": "Prompt: Write a [adjective] [type of content] on [goal]. Explain why: [topic1, topic2, ...]\n\nউদহারণ-১: Write a friendly blog post on why people should lose weight. Explain why obesity is a problem, how people can lose weight, and why being healthy is important\nউদহারণ-২: Write a humorous essay on how not to prepare for an exam" 
             
         },
         {
             "definition": " রাইটিং এসিস্টান্ট হিসাবে ব্যাবহার করতে",
-            "code": "Prompt: Can you [action] my text [adjective]? \n\nCan you make my paragraph less formal?\nCan you make my sentence easier to read?\n Can you complete my sentence? [insert sentence]\nCan you continue my paragraph? [insert paragraph]"
+            "code": "Prompt: Can you [action] my text [adjective]?\n\nCan you make my paragraph less formal?\nCan you make my sentence easier to read?\nCan you complete my sentence? [insert sentence]\nCan you continue my paragraph? [insert paragraph]"
         },
         {
             "definition": "কপিরাইটিং এ প্রম্পট ইঞ্জিনিয়ারিং (Copywriting)",
-            "code": " Prompt: Write a [type of content] for [subject] showcasing the [benefit, benefit2, .].\n\n উদহারণ-১ঃ Write a social media ad for a productivity tool showcasing its simplicity and design.\nউদহারণ-২:Create a sales copy for a travel agency showcasing the price, destinations and commitment."
+            "code": "Prompt: Write a [type of content] for [subject] showcasing the [benefit, benefit2, .].\n\nউদহারণ-১ঃ Write a social media ad for a productivity tool showcasing its simplicity and design.\nউদহারণ-২:Create a sales copy for a travel agency showcasing the price, destinations and commitment."
         }
         ]
       },
@@ -108,7 +108,7 @@
         "title":"ই-মেইল রাইটিং এ প্রম্পট ইঞ্জিনিয়ারিং",
         "items":[{
             "definition":" মিটিং অথবা কল স্কেজুল মেইল লেখার প্রম্পট",
-            "code":"Prompt: Compose an email to schedule a meeting with [name] to discuss [the goal of the discussion]. Ask them when they’re free, and keep the email short.\n\n উদহারণ-১ঃ Compose an email to schedule a meeting with Steve Williams the CEO of ByteWave Technologies to discuss our services. Ask him when he's free and keep the email short."
+            "code":"Prompt: Compose an email to schedule a meeting with [name] to discuss [the goal of the discussion]. Ask them when they’re free, and keep the email short.\n\nউদহারণ-১ঃ Compose an email to schedule a meeting with Steve Williams the CEO of ByteWave Technologies to discuss our services. Ask him when he's free and keep the email short."
         },
         {
             "definition": "কোন কিছু রিকুয়েস্ট করে মেইল লেখার প্রম্পট",
@@ -136,13 +136,29 @@
         },
         {
             "definition":" কন্টেন্টের আউটলাইন লেখার প্রম্পট", 
-            "code":"Prompt:Create an outline for [type of content]\n\nউদহারণ-১ঃ  Create an outline for a course how to learn Python for data science. \nউদহারণ-২ঃ Create an outline for a blog post about productivity."
+            "code":"Prompt:Create an outline for [type of content]\n\nউদহারণ-১ঃ Create an outline for a course how to learn Python for data science. \nউদহারণ-২ঃ Create an outline for a blog post about productivity."
         },
         {
             "definition":" কোর্সের জন্য কুইজ বানানোর প্রম্পট", 
             "code":"Prompt:Turn a [list] into [type of quiz]. \n\nউদহারণ-১ঃ Turn a list of facts about Python Programming language  into a multiple choice quiz. \nউদহারণ-২ঃ Turn a list of facts about biology into true/false question"
         }      
         ]
-        }  
+      },
+      {
+        "title":"ডেটা সাইন্সে প্রম্পট ইঞ্জিনিয়ারিং( Prompt Engineering in Data Science)",
+        "items": [{
+            "definition":"Data Science Questions Prompt:",
+            "code": "Prompt-1: Where can I find data for my [describe project]?\n\nউদহারণ-১ঃ Where can I find data for my credit card fraud detection project?\nউদহারণ-২ঃ Where can I find data for my customer churn prediction project?\n\nPrompt-2: How to [action] my dataset?\n\nউদহারণ-১ঃ How to oversample/undersample my dataset?\nউদহারণ-২ঃ How to split my dataset into train and test sets with Python?"
+        },
+        {
+            "definition":"বেস্ট প্রাকটিস - Best Practices",
+            "code": "Prompt: Can you [best practice] my code?\n\nউদহারণ-১ঃ Can you optimize the following Python code?\nউদহারণ-২ঃ Can you simplify the following R code?\nউদহারণ-৩ঃ Can you document my code?\nউদহারণ-৪ঃ Can you check for readability in my code?"
+        },
+        {
+            "definition":"Prompt for Automate Data Science Tasks:",
+            "code": "Prompt-1: Translate my Python code to R \nPrompt-2: Turn this SQL code to Python pandas code \nPrompt-3: Format my SQL code by converting the reserved keywords to uppercase. \nPrompt-4: Create a SQL query that [describe query]. \nPrompt-5: Write a regex in Python that [describe regex]"
+        }
+        ]
+      }
     ]
 }
