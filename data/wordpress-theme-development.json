@@ -203,6 +203,10 @@
                     "code": "get_calendar();"
                 },
                 {
+                    "definition": "নির্দিষ্ট টেমপ্লেট ফাইল অন্তর্ভুক্ত করতে",
+                    "code": "get_template_part();"
+                }
+                {
                     "definition": "সাইটের আর্কাইভ লিস্ট",
                     "code": "wp_get_archives();"
                 },
@@ -303,7 +307,7 @@
         {
             "title": "লুপ",
             "items": [{
-                    "definition": " ",
+                    "definition": "লুপে উপলব্ধ আরও পোস্ট আছে কিনা তা নির্ধারণ করা",
                     "code": "<php if(have_posts()): ?>"
                 },
                 {
