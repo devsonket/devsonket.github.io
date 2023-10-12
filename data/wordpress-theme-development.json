@@ -353,6 +353,10 @@
                 {
                     "definition": "ওয়ার্ডপ্রেস সম্পুর্ণ লোড হওয়ার পরে কিছু করতে চাইলে।",
                     "code": "add_action('wp_loaded', 'callback_function')"
+                },
+                {
+                    "definition": "ওয়ার্ডপ্রেসে ফিল্টার হুক অফার করে যাতে প্লাগইনগুলি রানটাইমে বিভিন্ন ধরনের অভ্যন্তরীণ ডেটা পরিবর্তন করতে পারে।",
+                    "code": "add_filter( 'theme_page_templates', 'makewp_exclude_page_templates' )"
                 }
             ]
         }
