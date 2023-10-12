@@ -115,6 +115,18 @@
                     "code": "the_content();"
                 },
                 {
+                    "definition": "পোস্টের কিছু অংশ রিটার্ন করে রাখে",
+                    "code": "get_the_excerpt();"
+                },
+                {
+                    "definition": "পোস্টের কিছু অংশ ইকো করে",
+                    "code": "the_excerpt();"
+                },
+                {
+                    "definition": "পোস্টের থাম্বনেইল রিটার্ন করে",
+                    "code": "get_the_post_thumbnail();"
+                },
+                {
                     "definition": "পোস্ট আছে কিনা তা পরীক্ষা করতে",
                     "code": "if(have_posts()):"
                 },
@@ -203,6 +215,10 @@
                     "code": "get_calendar();"
                 },
                 {
+                    "definition": "নির্দিষ্ট টেমপ্লেট ফাইল অন্তর্ভুক্ত করতে",
+                    "code": "get_template_part();"
+                },
+                {
                     "definition": "সাইটের আর্কাইভ লিস্ট",
                     "code": "wp_get_archives();"
                 },
@@ -223,15 +239,15 @@
                     "code": "<ul id='menu'>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "এটা পিএইচপিতে value এর ব্যবহারের জন্য প্রয়োজন হয়",
                     "code": "<li <?php if(is_home()) { ?> class='current-cat' <?php } ?> ><a href='<php bloginfo('home'); ?>'>Home</a></li>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "এটা HTML তালিকা প্রদর্শন বা পুনরুদ্ধার করে।",
                     "code": "<?php wp_list_categories('title_li=&orderby=id'); ?>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "অবিন্যস্ত তালিকা শেষ করার জন্য ব্যবহার হয়",
                     "code": "</ul>"
                 },
                 {
@@ -239,15 +255,15 @@
                     "code": "<ul id='menu'>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "value এর ব্যবহারের জন্য প্রয়োজন হয়",
                     "code": "<li <?php if(is_home()) { ?> class='current_page_item' <?php } >>><a href='<php bloginfo('home'); ?>'>Home</a></li>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "লিপিবদ্ধ তালিকাগুলো বিন্যাসে পৃষ্ঠাগুলির একটি তালিকা পুনরুদ্ধার করে বা প্রদর্শন করে।",
                     "code": "<?php wp_list_pages('sort_column=menu_order&depth=1&title_li='); ?>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "লিপিবদ্ধ তালিকা শেষ করার জন্য ব্যবহার হয়",
                     "code": "</ul>"
                 }
             ]
@@ -303,23 +319,23 @@
         {
             "title": "লুপ",
             "items": [{
-                    "definition": " ",
+                    "definition": "লুপে উপলব্ধ আরও পোস্ট আছে কিনা তা নির্ধারণ করা",
                     "code": "<php if(have_posts()): ?>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "এই লুপ পিএইচপি কে বারবার নেস্টেড স্টেটগুলি কার্যকর করতে বলে, যতক্ষণ না এক্সপ্রেশনটি সত্য হিসাবে মূল্যায়ন করা হয়",
                     "code": "<php while(have_posts()): the_post(); ?>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "লুপ কার্যকর করতে কাস্টম এইচটিএমএল এবং পিএইচপি কোড লিখা হবে",
                     "code": "// Post content here (Custom HTML & PHP code)"
                 },
                 {
-                    "definition": " ",
+                    "definition": "লুপের একটি শর্ত সত্য হলে কিছু কোড এবং সেই শর্ত মিথ্যা হলে অন্য কোড কার্যকর করে",
                     "code": "<php else; ?>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "লুপ শেষ করতে ব্যবহার করা হয়",
                     "code": "<php endif; ?>"
                 }
             ]
