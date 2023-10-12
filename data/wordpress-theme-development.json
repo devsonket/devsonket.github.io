@@ -311,19 +311,19 @@
                     "code": "<php if(have_posts()): ?>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "এই লুপ পিএইচপি কে বারবার নেস্টেড স্টেটগুলি কার্যকর করতে বলে, যতক্ষণ না এক্সপ্রেশনটি সত্য হিসাবে মূল্যায়ন করা হয়",
                     "code": "<php while(have_posts()): the_post(); ?>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "লুপ কার্যকর করতে কাস্টম এইচটিএমএল এবং পিএইচপি কোড লিখা হবে",
                     "code": "// Post content here (Custom HTML & PHP code)"
                 },
                 {
-                    "definition": " ",
+                    "definition": "লুপের একটি শর্ত সত্য হলে কিছু কোড এবং সেই শর্ত মিথ্যা হলে অন্য কোড কার্যকর করে",
                     "code": "<php else; ?>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "লুপ শেষ করতে ব্যবহার করা হয়",
                     "code": "<php endif; ?>"
                 }
             ]
