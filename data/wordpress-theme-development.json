@@ -207,6 +207,10 @@
                     "code": "wp_list_cats();"
                 },
                 {
+                    "definition": "বিভাগের নামসহ লেবেলযুক্ত চেকবক্স ইনপুট উপাদানগুলির একটি ক্রমবিহীন তালিকা আউটপুট করে",
+                    "code": "wp_category_checklist();"
+                },
+                {
                     "definition": "পরবর্তী পোস্ট এর URL",
                     "code": "next_post_link('%link');"
                 },
