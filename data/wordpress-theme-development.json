@@ -291,8 +291,12 @@
                     "code": "wp_register();"
                 },
                 {
-                    "definition": "লগিন/লগআউট লিঙ্ক ডিসপ্লে করার জন্য",
-                    "code": "wp_loginout();"
+                    "definition": "রেজিস্টার লিঙ্ক ডিসপ্লে করার জন্য",
+                    "code": "wp_register();"
+                },
+                {
+                    "definition": "বিভাগগুলির HTML ড্রপডাউন তালিকা প্রদর্শন করে বা পুনরুদ্ধার করার জন্য",
+                    "code": "wp_dropdown_categories();"
                 },
                 {
                     "definition": "পেজে কন্টেন্ট বিভক্ত করার জন্য",
