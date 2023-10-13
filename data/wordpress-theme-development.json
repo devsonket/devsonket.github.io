@@ -119,6 +119,10 @@
                     "code": "get_the_excerpt();"
                 },
                 {
+                    "definition": "পোস্টের জন্য বিন্যাস স্লাগ পুনরুদ্ধার করুন",
+                    "code": "get_post_format()"
+                },            
+                {
                     "definition": "পোস্টের কিছু অংশ ইকো করে",
                     "code": "the_excerpt();"
                 },
