@@ -139,6 +139,10 @@
                     "code": "while(have_posts()): the_post();"
                 },
                 {
+                    "definition": "পোস্টে একটি ছবি সংযুক্ত আছে কিনা তা নির্ধারণ করার জন্য",
+                    "code": "has_post_thumbnail();"
+                },
+                {
                     "definition": "পিএইচপি 'while' ফাংশন বন্ধ করার জন্য",
                     "code": "endwhile;"
                 },
