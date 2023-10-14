@@ -123,6 +123,10 @@
                     "code": "the_excerpt();"
                 },
                 {
+                    "definition": "বর্তমান পোস্টের সংলগ্ন পরবর্তী পোস্টটি উদ্ধার করার জন্য।",
+                    "code": "get_next_post();"
+                },
+                {
                     "definition": "পোস্টের থাম্বনেইল রিটার্ন করে",
                     "code": "get_the_post_thumbnail();"
                 },
