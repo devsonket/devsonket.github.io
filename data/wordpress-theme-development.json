@@ -131,6 +131,14 @@
                     "code": "get_the_post_thumbnail();"
                 },
                 {
+                    "definition": "বর্তমান পোস্টের সংলগ্ন পূর্ববর্তী পোস্টটি উদ্ধার করার জন্য।",
+                    "code": "get_previous_post();"
+                },
+                {
+                    "definition": "পূর্ববর্তী পোস্ট পৃষ্ঠা লিঙ্ক পুনরুদ্ধার করার জন্য।",
+                    "code": "get_previous_posts_link();"
+                },
+                {
                     "definition": "পোস্ট আছে কিনা তা পরীক্ষা করতে",
                     "code": "if(have_posts()):"
                 },
