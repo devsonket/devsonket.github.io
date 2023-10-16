@@ -174,20 +174,20 @@
     },
     {
       "definition": "কেস #২. লিস্টের উপর ব্যবহার করার পরও, যদি RefreshIndicator কাজ না করে",
-      "code": "ওই লিস্ট টাইপ উইজেটের physics প্যারামিটারে, AlwaysScrollableScrollPhysics ইউজ করতে হবে। \n physics: AlwaysScrollableScrollPhysics(),"
+      "code": "ওই লিস্ট টাইপ উইজেটের physics প্যারামিটারে, AlwaysScrollableScrollPhysics ইউজ করতে হবে। \n\n physics: AlwaysScrollableScrollPhysics(),"
     },
     {
       "definition": "কেস #৩. আপনি যদি অন্য কোনো ScrollPhysics ব্যবহার করতে চান",
-      "code": "তাহলে সেই ScrollPhysics এর parent প্যারামিটারে, AlwaysScrollableScrollPhysics অ্যাড করতে হবে।\n physics: const BouncingScrollPhysics(\nparent: AlwaysScrollableScrollPhysics()\n),"
+      "code": "তাহলে সেই ScrollPhysics এর parent প্যারামিটারে, AlwaysScrollableScrollPhysics অ্যাড করতে হবে।\n\n physics: const BouncingScrollPhysics(\n  parent: AlwaysScrollableScrollPhysics()\n ),"
     },
     {
       "definition": "কেস #৪. shrinkWrap প্যারামিটার ব্যবহার করলে",
-      "code": "RefreshIndicator এর নিচে থাকা, লিস্ট টাইপ উইজেটের shrinkWrap প্যারামিটারটি অবশ্যই false থাকতে হবে। \n shrinkWrap: false,"
+      "code": "RefreshIndicator এর নিচে থাকা, লিস্ট টাইপ উইজেটের shrinkWrap প্যারামিটারটি অবশ্যই false থাকতে হবে। \n\n shrinkWrap: false,"
     }
     ,
     {
       "definition": "কেস #৫. আপনি যদি লিস্টভিউ ছাড়া, অন্য কোনো কাস্টম উইজেট ব্যবহার করতে চান",
-      "code": "আপনাকে Stack উইজেট ব্যবহার করতে হবে। এবং সেই Stack এর ভিতরে দুইটি উইজেট থাকবে। একটি হবে আপনার কাস্টম উইজেট, অন্যটি ListView. \n RefreshIndicator(\n onRefresh: () async { \n print('refreshing'); \n },\n child: Stack(\n children: [\n YourWidget(),\n ListView(\n physics: const AlwaysScrollableScrollPhysics(),\n ),\n ],\n ),\n ),"
+      "code": "আপনাকে Stack উইজেট ব্যবহার করতে হবে। এবং সেই Stack এর ভিতরে দুইটি উইজেট থাকবে। একটি হবে আপনার কাস্টম উইজেট, অন্যটি ListView. \n\n RefreshIndicator(\n  onRefresh: () async { \n   print('refreshing'); \n  },\n  child: Stack(\n   children: [\n    YourWidget(),\n    ListView(\n     physics: const AlwaysScrollableScrollPhysics(),\n    ),\n   ],\n  ),\n ),"
     }
   ]
 },
