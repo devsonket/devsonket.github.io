@@ -83,6 +83,18 @@
                     "code": "get_edit_post_link();"
                 },
                 {
+                    "definition": "পৃষ্ঠাগুলির একটি তালিকার বিন্যাসিত আউটপুট করার জন্য",
+                    "code": "wp_link_pages();"
+                },
+                {
+                    "definition": "একটি ঐচ্ছিক হোম লিঙ্ক সহ পৃষ্ঠাগুলির একটি তালিকা প্রদর্শন বা পুনরুদ্ধার করার জন্য",
+                    "code": "wp_page_menu();"
+                },
+                {
+                    "definition": "ড্রপডাউন হিসাবে পৃষ্ঠাগুলির একটি তালিকা পুনরুদ্ধার বা প্রদর্শন করার জন্য",
+                    "code": "wp_dropdown_pages();"
+                },
+                {
                     "definition": "সাইটের Pingback URL",
                     "code": "bloginfo('pingback_url');"
                 },
