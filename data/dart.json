@@ -556,6 +556,27 @@
                     "code": "dart help pub outdated" 
                 }
             ]
+        },
+        {
+            "title": "ডার্টে গণিত ফাংশনসমূহ",
+            "items": [
+                {
+                    "definition": "কোন সংখ্যার ঘাত",
+                    "code": "double result = pow(base, exponent);"
+                },
+                {
+                    "definition": "একটি সংখ্যার বর্গমূল",
+                    "code": "double squareRoot = sqrt(number);"
+                },
+                {
+                    "definition": "সংখ্যা নিচের মূলে পৌঁছানো",
+                    "code": "int floorValue = number.floor();"
+                },
+                {
+                    "definition": "সংখ্যা উপরের মূলে পৌঁছানো",
+                    "code": "int ceilValue = number.ceil();"
+                }
+            ]
         }
     ]
 }
