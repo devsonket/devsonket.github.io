@@ -29,6 +29,30 @@
             ]
         },
         {
+    "title": "লজিক্যাল অপারেটর R এ কিভাবে ব্যবহার করবেন",
+    "items": [{
+            "definition": "যৌক্তিক নয় | Logical NOT",
+            "code": "!"
+        },
+        {
+            "definition": "উপাদান-ভিত্তিক যৌক্তিক এবং | Element-wise Logical AND",
+            "code": "&"
+        },
+        {
+            "definition": "যৌক্তিক এবং | Logical AND",
+            "code": "&&"
+        },
+        {
+            "definition": "উপাদান-ভিত্তিক লজিক্যাল OR | Element-wise Logical OR",
+            "code": "|"
+        },
+        {
+            "definition": "যৌক্তিক OR | Logical OR",
+            "code": "||"
+        }
+    ]
+},
+        {
             "title": "কিভাবে R এ লাইব্রেবি ব্যবহার করবেন",
             "items": [{
                     "definition": "CRAN হতে প্যাকেজ ডাউনলোড এবং ইন্সটল",
