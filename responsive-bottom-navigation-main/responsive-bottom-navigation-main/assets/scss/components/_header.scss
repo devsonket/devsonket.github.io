@@ -1,0 +1,91 @@
+/*=============== HEADER ===============*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--container-color);
+    z-index: var(--z-fixed);
+    transition: .4s;
+}
+
+/*=============== NAV ===============*/
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img{
+        width: 32px;
+        border-radius: 50%;
+    }
+    &__logo{
+        color: var(--title-color);
+        font-weight: 600;
+    }
+
+    @media screen and (max-width: 767px){
+        &__menu{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background-color: var(--container-color);
+            box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+            width: 100%;
+            height: 4rem;
+            padding: 0 1rem;
+            display: grid;
+            align-content: center;
+            border-radius: 1.25rem 1.25rem 0 0;
+            transition: .4s;
+        }
+    }
+
+    &__list,
+    &__link{
+        display: flex;
+    }
+
+    &__link{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 4px;
+        color: var(--title-color);
+        font-weight: 600;
+    }
+
+    &__list{
+        justify-content: space-around;
+    }
+    &__name{
+        font-size: var(--tiny-font-size);
+        // display: none; // Minimalist design, hidden labels
+    }
+    &__icon{
+        font-size: 1.5rem;
+    }
+}
+
+/*Active link*/
+.active-link{
+    position: relative;
+    color: var(--first-color);
+    transition: .3s;
+
+    // Minimalist design, active link
+    // &::before{
+    //     content: '';
+    //     position: absolute;
+    //     bottom: -.5rem;
+    //     width: 4px;
+    //     height: 4px;
+    //     background-color: var(--first-color);
+    //     border-radius: 50%;
+    // }
+}
+
+/* Change background header */
+.scroll-header{
+    box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+}
