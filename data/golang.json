@@ -298,7 +298,12 @@
                 },
                 {
                     "code": "fmt.Println(aDoctor)"
+                },
+                {
+                    "definition": "বেনামী স্ট্রাক্ট(Anonymous structs)",
+                    "code":"point := struct {\n\tX, Y int\n}{1, 2}"
                 }
+
             ]
         },
         {
