@@ -307,6 +307,14 @@
             ]
         },
         {
+            "title": "ইন্টারফেস উদাহরণ",
+            "items":[
+                {
+                    "code": "type Shape interface {\n    Area() float64\n    Perimeter() float64\n}"
+                }
+            ]
+        },
+        {
             "title": "সুইচ স্ট্যাট্ম্যান্ট",
             "items": [{
                     "code": "switch 2 {"
