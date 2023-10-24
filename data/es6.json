@@ -56,8 +56,16 @@
                     "code": "startsWith(), যেমন: 'Apple'.startsWith('bl'), // false"
                 },
                 {
+                    "definition": "কোন একটি স্ট্রিং নির্দিষ্ট কিছু অক্ষর দিয়ে শেষ হয়েছে কিনা দেখে true অথবা false রিটার্ন করা ",
+                    "code": "endsWith(), যেমন: 'John Doe'.endsWith('Doe'), // true"
+                },
+                {
                     "definition": "repeat(), একটি স্ট্রিং কতবার পুনরাবৃত্তি হবে তা বলা",
                     "code": "repeat(), যেমন: 'Apple'.repeat(2) // 'AppleApple'"
+                },
+                {
+                    "definition": "replaceAll(), একটি স্ট্রিং থেকে একটা শব্দ রিপ্লেস করে দিবে",
+                    "code": "text = 'I love cats. 'text.replaceAll(/cats/g, 'dogs') // 'I love dogs.'"
                 },
                 {
                     "definition": "একটি স্ট্রিং এর শুরুতে নির্দিষ্ট আরেকটি স্ট্রিং বসানো যতক্ষণ না পর্যন্ত স্ট্রিং টির নির্দিষ্ট দৈর্ঘ্য শেষ হয়",
@@ -291,6 +299,14 @@
                 {
                     "definition": "একটি মান NaN কিনা সেটি দেখা",
                     "code": "isNaN(ভ্যালু)"
+                },
+                {
+                    "definition": "ভারিয়াবলটা পুর্নসংখ্যার কিনা তা চেক করতে",
+                    "code": "Number.isInteger(ভ্যালু)"
+                },
+                {
+                    "definition": "ভারিয়াবলটা নিরাপদ সংখ্যার কিনা তা চেক করতে",
+                    "code": "Number.isSafeInteger(ভ্যালু)"
                 }
             ]
         },
@@ -327,6 +343,10 @@
                 {
                     "definition": "একটি অ্যারের মধ্য থেকে সবগুলো ভ্যালু বের করা",
                     "code": "Array.values(); যেমন: var array = [1,2,4,]; console.log(..array.values()); // 1 2 4"
+                },
+                {
+                    "definition": "একটি অ্যারের ইনডেক্স থেকে ভ্যালু রিটার্ন করা",
+                    "code": "fruits = ['Banana', 'Orange', 'Apple', 'Mango']; fruits.at(2) // Apple"
                 }
             ]
         },
@@ -371,6 +391,34 @@
                 {
                     "definition": "কোন মডিউল থেকে ভ্যালুর লিস্ট ইম্পোর্ট করা",
                     "code": "import * as equation from 'math/addition'; const { sumTwoNumber, sumThreeNumber } = equation;"
+                },
+                {
+                    "definition": "ডিফল্ট বাইন্ডিং ইম্পোর্ট করা",
+                    "code": "import api from 'math/addition'"
+                }
+            ]
+        },
+        {
+            "title": "ম্যাথ মেথড",
+            "items": [{
+                    "definition": "এক্স এর পুর্নসংখ্যা রিটার্ন করবে",
+                    "code": "Math.trunc(x)"
+                },
+                {
+                    "definition": "এক্স নেগেটিভ হলে নাল অথবা পজেটিভ রিটার্ন করবে",
+                    "code": "Math.sign(x)"
+                },
+                {
+                    "definition": "এক্স এর রুট রিটার্ন করবে",
+                    "code": "Math.cbrt(x)"
+                },
+                {
+                    "definition": "এক্স এর দুই বেইস লগারিদম রিটার্ন করবে",
+                    "code": "Math.log2(x)"
+                },
+                {
+                    "definition": "এক্স এর দশ বেইস লগারিদম রিটার্ন করবে ",
+                    "code": "Math.log10(x)"
                 },
                 {
                     "definition": "ডিফল্ট বাইন্ডিং ইম্পোর্ট করা",

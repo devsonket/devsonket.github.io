@@ -71,6 +71,18 @@
                     "code": "get_stylesheet_directory_uri();"
                 },
                 {
+                    "definition": "পোস্ট আইডির উপর ভিত্তি করে পোস্টের অবস্থা পুনরুদ্ধার করার জন্য",
+                    "code": "get_post_status();"
+                },
+                {
+                    "definition": "একটি পোস্টের জন্য বিন্যাস স্লাগ পুনরুদ্ধার করার জন্য",
+                    "code": "get_post_format();"
+                },
+                {
+                    "definition": "একটি পোস্টের জন্য বিন্যাস স্লাগ পুনরুদ্ধার করার জন্য",
+                    "code": "get_edit_post_link();"
+                },
+                {
                     "definition": "সাইটের Pingback URL",
                     "code": "bloginfo('pingback_url');"
                 },
@@ -221,6 +233,26 @@
                 {
                     "definition": "সাইটের আর্কাইভ লিস্ট",
                     "code": "wp_get_archives();"
+                },
+                {
+                    "definition": "একটি পোস্ট বা পৃষ্ঠা ট্র্যাশে বা মুছে ফেলে",
+                    "code": "wp_delete_post();"
+                },
+                {
+                    "definition": "একটি পোস্ট সন্নিবেশ বা আপডেট করার জন্য",
+                    "code": "wp_insert_post();"
+                },
+                {
+                    "definition": "পোস্টের স্থিতি পরিবর্তন করে একটি পোস্ট প্রকাশ করার জন্য",
+                    "code": "wp_publish_post();"
+                },
+                {
+                    "definition": "একটি পোস্ট বা পৃষ্ঠা ট্র্যাশে স্থানান্তরিত করার জন্য",
+                    "code": "wp_trash_post();"
+                },
+                {
+                    "definition": "নতুন পোস্ট ডেটা সহ একটি পোস্ট আপডেট করার জন্য",
+                    "code": "wp_update_post();"
                 },
                 {
                     "definition": "পরবর্তী এবং আগের পোস্ট লিঙ্ক",

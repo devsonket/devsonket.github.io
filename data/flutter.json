@@ -149,6 +149,49 @@
 
             ]
         },
+        {
+  "title": "RefreshIndicator - রিফ্রেশ ইন্ডিকেটর (পুল টু রিফ্রেশ)",
+  "items": [
+    {
+      "definition": "RefreshIndicator কি?",
+      "code": "RefreshIndicator একটি Flutter উইজেট, যা দিয়ে ফ্লাটার এপে খুব সহজেই পুল টু রিফ্রেশ ফাংশনালিটি তৈরি করা যায়।"
+    },
+    {
+      "definition": "ব্যবহার করার নিয়ম",
+      "code": "RefreshIndicator(\n  onRefresh: () async {\n    // আপনার রিফ্রেশ লজিক লিখুন\n },"
+    },
+    {
+      "definition": "onRefresh প্যারামিটার:",
+      "code": "onRefresh একটি required কলব্যাক ফাংশন, যা একটি ভয়েড ফিউচার `` Future<void> `` রিটার্ন করে। পেইজ রিফ্রেশ করার জন্য, এর ভিতরেই আপনার লজিক কল করতে হবে।"
+    },
+    {
+      "definition": "RefreshIndicator এড করার পরও কাজ করছে না?",
+      "code": "RefreshIndicator ব্যবহারের সময়, ৪/৫ টি ইউজকেস অবশ্যই মাথায় রাখতে হবে"
+    },
+    {
+      "definition": "কেস #১. যেকোনো লিস্টের উপর ব্যবহার করা",
+      "code": "RefreshIndicator শুধুমাত্র যেকোনো লিস্ট টাইপের উইজেটের উপরই ব্যবহার করা যাবে। যেমনঃ ListView, GridView, SingleChildScrollView, CustomScrollView ইত্যাদি।"
+    },
+    {
+      "definition": "কেস #২. লিস্টের উপর ব্যবহার করার পরও, যদি RefreshIndicator কাজ না করে",
+      "code": "ওই লিস্ট টাইপ উইজেটের physics প্যারামিটারে, AlwaysScrollableScrollPhysics ইউজ করতে হবে। \n\n physics: AlwaysScrollableScrollPhysics(),"
+    },
+    {
+      "definition": "কেস #৩. আপনি যদি অন্য কোনো ScrollPhysics ব্যবহার করতে চান",
+      "code": "তাহলে সেই ScrollPhysics এর parent প্যারামিটারে, AlwaysScrollableScrollPhysics অ্যাড করতে হবে।\n\n physics: const BouncingScrollPhysics(\n  parent: AlwaysScrollableScrollPhysics()\n ),"
+    },
+    {
+      "definition": "কেস #৪. shrinkWrap প্যারামিটার ব্যবহার করলে",
+      "code": "RefreshIndicator এর নিচে থাকা, লিস্ট টাইপ উইজেটের shrinkWrap প্যারামিটারটি অবশ্যই false থাকতে হবে। \n\n shrinkWrap: false,"
+    }
+    ,
+    {
+      "definition": "কেস #৫. আপনি যদি লিস্টভিউ ছাড়া, অন্য কোনো কাস্টম উইজেট ব্যবহার করতে চান",
+      "code": "আপনাকে Stack উইজেট ব্যবহার করতে হবে। এবং সেই Stack এর ভিতরে দুইটি উইজেট থাকবে। একটি হবে আপনার কাস্টম উইজেট, অন্যটি ListView. \n\n RefreshIndicator(\n  onRefresh: () async { \n   print('refreshing'); \n  },\n  child: Stack(\n   children: [\n    YourWidget(),\n    ListView(\n     physics: const AlwaysScrollableScrollPhysics(),\n    ),\n   ],\n  ),\n ),"
+    }
+  ]
+},
+
 {
             "title": "ফ্লাটারের কমন কিছু Error এবং সেগুলার Fix",
             "items": [

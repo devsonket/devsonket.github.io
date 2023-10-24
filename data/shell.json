@@ -139,6 +139,29 @@
                     "code": "echo $c"
                 }
             ]
+        },
+        {
+            "title": "শেল স্ক্রিপ্টিং অ্যারে",
+            "items": [{
+                    "definition": "অ্যারে মান সংজ্ঞায়িত করা",
+                    "code": "array_name[index]=value"
+                },
+                {
+                    "definition": "ইনপুট নেয়া",
+                    "code": "NAME[0]='ARMAN'"
+                },
+                {
+                    "definition": "অ্যারে মান অ্যাক্সেস করা",
+                    "code": "${array_name[index]}"
+                },
+                {
+                    "definition": "ভ্যারিয়েবলের মান দেখানো",
+                    "code": "echo 'First Person: ${NAME[0]}'"
+                }
+
+            ]
         }
+
+        
     ]
 }
