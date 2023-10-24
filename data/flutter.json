@@ -197,8 +197,6 @@
                     "definition": "StateNotifierProvider (স্টেট নোটিফায়ার প্রোভাইডার)",
                     "code": "এটিও NotifierProvider এর মতোই, তবে মিউটেবল স্টেট ম্যানেজ করার জন্য ব্যবহার করা হয়। এটি StateNotifier ক্লাসের একটা instance তৈরি করে। \n\nfinal myStateNotifierProvider = StateNotifierProvider<MyStateNotifier, String>((ref) {\n  return MyStateNotifier();\n});"
                 }
-                
-              
             ]
         },
         {
