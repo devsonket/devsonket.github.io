@@ -71,6 +71,18 @@
                     "code": "get_stylesheet_directory_uri();"
                 },
                 {
+                    "definition": "পোস্ট আইডির উপর ভিত্তি করে পোস্টের অবস্থা পুনরুদ্ধার করার জন্য",
+                    "code": "get_post_status();"
+                },
+                {
+                    "definition": "একটি পোস্টের জন্য বিন্যাস স্লাগ পুনরুদ্ধার করার জন্য",
+                    "code": "get_post_format();"
+                },
+                {
+                    "definition": "একটি পোস্টের জন্য বিন্যাস স্লাগ পুনরুদ্ধার করার জন্য",
+                    "code": "get_edit_post_link();"
+                },
+                {
                     "definition": "সাইটের Pingback URL",
                     "code": "bloginfo('pingback_url');"
                 },
@@ -113,6 +125,18 @@
             "items": [{
                     "definition": "পোস্টের বিষয়বস্তু",
                     "code": "the_content();"
+                },
+                {
+                    "definition": "পোস্টের কিছু অংশ রিটার্ন করে রাখে",
+                    "code": "get_the_excerpt();"
+                },
+                {
+                    "definition": "পোস্টের কিছু অংশ ইকো করে",
+                    "code": "the_excerpt();"
+                },
+                {
+                    "definition": "পোস্টের থাম্বনেইল রিটার্ন করে",
+                    "code": "get_the_post_thumbnail();"
                 },
                 {
                     "definition": "পোস্ট আছে কিনা তা পরীক্ষা করতে",
@@ -203,8 +227,32 @@
                     "code": "get_calendar();"
                 },
                 {
+                    "definition": "নির্দিষ্ট টেমপ্লেট ফাইল অন্তর্ভুক্ত করতে",
+                    "code": "get_template_part();"
+                },
+                {
                     "definition": "সাইটের আর্কাইভ লিস্ট",
                     "code": "wp_get_archives();"
+                },
+                {
+                    "definition": "একটি পোস্ট বা পৃষ্ঠা ট্র্যাশে বা মুছে ফেলে",
+                    "code": "wp_delete_post();"
+                },
+                {
+                    "definition": "একটি পোস্ট সন্নিবেশ বা আপডেট করার জন্য",
+                    "code": "wp_insert_post();"
+                },
+                {
+                    "definition": "পোস্টের স্থিতি পরিবর্তন করে একটি পোস্ট প্রকাশ করার জন্য",
+                    "code": "wp_publish_post();"
+                },
+                {
+                    "definition": "একটি পোস্ট বা পৃষ্ঠা ট্র্যাশে স্থানান্তরিত করার জন্য",
+                    "code": "wp_trash_post();"
+                },
+                {
+                    "definition": "নতুন পোস্ট ডেটা সহ একটি পোস্ট আপডেট করার জন্য",
+                    "code": "wp_update_post();"
                 },
                 {
                     "definition": "পরবর্তী এবং আগের পোস্ট লিঙ্ক",
@@ -303,23 +351,23 @@
         {
             "title": "লুপ",
             "items": [{
-                    "definition": " ",
+                    "definition": "লুপে উপলব্ধ আরও পোস্ট আছে কিনা তা নির্ধারণ করা",
                     "code": "<php if(have_posts()): ?>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "এই লুপ পিএইচপি কে বারবার নেস্টেড স্টেটগুলি কার্যকর করতে বলে, যতক্ষণ না এক্সপ্রেশনটি সত্য হিসাবে মূল্যায়ন করা হয়",
                     "code": "<php while(have_posts()): the_post(); ?>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "লুপ কার্যকর করতে কাস্টম এইচটিএমএল এবং পিএইচপি কোড লিখা হবে",
                     "code": "// Post content here (Custom HTML & PHP code)"
                 },
                 {
-                    "definition": " ",
+                    "definition": "লুপের একটি শর্ত সত্য হলে কিছু কোড এবং সেই শর্ত মিথ্যা হলে অন্য কোড কার্যকর করে",
                     "code": "<php else; ?>"
                 },
                 {
-                    "definition": " ",
+                    "definition": "লুপ শেষ করতে ব্যবহার করা হয়",
                     "code": "<php endif; ?>"
                 }
             ]
@@ -337,6 +385,10 @@
                 {
                     "definition": "ওয়ার্ডপ্রেস সম্পুর্ণ লোড হওয়ার পরে কিছু করতে চাইলে।",
                     "code": "add_action('wp_loaded', 'callback_function')"
+                },
+                {
+                    "definition": "ওয়ার্ডপ্রেসে ফিল্টার হুক অফার করে যাতে প্লাগইনগুলি রানটাইমে বিভিন্ন ধরনের অভ্যন্তরীণ ডেটা পরিবর্তন করতে পারে।",
+                    "code": "add_filter( 'theme_page_templates', 'makewp_exclude_page_templates' )"
                 }
             ]
         }

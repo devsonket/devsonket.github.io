@@ -63,6 +63,72 @@
                 {
                     "definition": "ইলাস্টিক সার্চের ভার্সন জানার জন্য",
                     "code": "curl -XGET 'localhost:9200'"
+                },
+                {
+                    "definition": "ক্লাস্টার স্টেট জানার জন্য",
+                    "code": "GET /_cluster/stats?human&pretty"
+                },
+                {
+                    "definition": "নোড স্টেট জানার জন্য",
+                    "code": "GET /_nodes/stats"
+                },
+                {
+                    "definition": "ক্লাস্টারের অনিষ্পন্ন টাস্ক জানার জন্য",
+                    "code": "GET /_cluster/pending_tasks"
+                },
+                {
+                    "definition": "অ্যালকেশন জানার জন্য",
+                    "code": "GET /_cat/allocation?pretty&v"
+                },
+                {
+                    "definition": "ইনডিসের লিস্ট",
+                    "code": "GET /_cat/indices/"
+                },
+                {
+                    "definition": "শার্ডে লিস্ট",
+                    "code": "GET /_cat/shards/?pretty&v"
+                }
+            ]
+        },
+        {
+            "title": "সার্চের ধরন",
+            "items": [
+                {
+                    "definition": "সার্চ টাইপ ১",
+                    "code": "GET /_search?q=dump"
+                },
+                {
+                    "definition": "সার্চ টাইপ ২",
+                    "code": "GET /_search?q=EventCode:(512 OR 1102) AND NOT host:ImageServ*"
+                },
+                {
+                    "definition": "দিন দিয়ে সার্চ করা",
+                    "code": "GET /_search?q=message:hacker~3 AND date:[2016-01-01 TO 2018-12-31]"
+                },
+                {
+                    "definition": "অ্যালিস দিয়ে সার্চ করা",
+                    "code": "GET /myindex/_alias/*"
+                }
+            ]
+        },
+        {
+            "title": "ইনডেক্সের কাজ",
+            "items": [
+                {
+                    "definition": "ক্লোজ ইনডেক্স",
+                    "code": "POST /myindex /_close"
+                },
+                {
+                    "definition": "ওপেন ইনডেক্স",
+                    "code": "POST /myindex /_open"
+                },
+                {
+                    "definition": "ইনডেক্স মনিটর করতে",
+                    "code": "GET /myindex/_stats"
+                },
+                {
+                    "definition": "ইনডেক্স বাদ দিতে",
+                    "code": "DELETE /my_index_name"
                 }
             ]
         }

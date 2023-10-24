@@ -13,6 +13,10 @@
           "code": "npx create-react-app <project-name>"
         },
         {
+          "definition": "npx এর সাহায্যে Typescript দিয়ে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
+          "code": "npx create-react-app <project-name> --template typescript"
+        },
+        {
           "definition": "npx এর সাহায্যে প্রজেক্ট নাম ছাড়া রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
           "code": "npx create-react-app . "
         },
@@ -23,6 +27,10 @@
         {
           "definition": "yarn এর সাহায্যে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
           "code": "yarn create react-app <project-name>"
+        },
+        {
+          "definition": "yarn এর সাহায্যে Typescript দিয়ে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
+          "code": "yarn create react-app <project-name> --template typescript"
         }
       ]
     },

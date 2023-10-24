@@ -1,0 +1,63 @@
+{
+    "id": "prisma",
+    "title": "প্রিজমা ORM এর প্রয়োজনীয় কমান্ড",
+    "slug": "prisma",
+    "description": "প্রিজমা (Prisma) একটি ডেটাবেস ORM (Object-Relational Mapping) টুল, যা ডেটাবেসের সাথে ইন্টারেক্ট করতে সাহায্য করে।",
+    "colorPref": "#000",
+    "contents": [
+        {
+            "title": "Basic Commands",
+            "items": [
+                {
+                    "definition": "Prisma ইনস্টল করুন",
+                    "code": "npm install prisma -g"
+                },
+                {
+                    "definition": "Prisma প্রজেক্ট তৈরি করুন",
+                    "code": "npx prisma init"
+                },
+                {
+                    "definition": "ডেটাবেজ স্কিমাতে আপনার ডেটা মডেল ম্যাপ করতে",
+                    "code": "npx prisma migrate"
+                },
+                {
+                    "definition": "Prisma ক্লায়েন্ট ইন্সটল করতে",
+                    "code": "npm install @prisma/client"
+                },
+                {
+                    "definition": "Prisma ORM ক্লাস তৈরি করতে",
+                    "code": "npx prisma generate"
+                },
+                {
+                    "definition": "Prisma Studio ওয়েব অ্যাপ খুলতে",
+                    "code": "npx prisma studio"
+                },
+                {
+                    "definition": "Prisma ডেটাবেস ডেপ্লয় করতে",
+                    "code": "npx prisma deploy"
+                }
+            ]
+        },
+        {
+            "title": "Other Commands",
+            "items": [
+                {
+                    "definition": "একটি existing ডেটাবেজ থেকে স্কিমা introspect করতে",
+                    "code": "npx prisma introspect"
+                },
+                {
+                    "definition": "একটি existing ডেটাবেজে prisma migrate করতে",
+                    "code": "npx prisma migrate dev"
+                },
+                {
+                    "definition": "একটি stageing ডেটাবেজে prisma migrate করতে",
+                    "code": "npx prisma migrate stage"
+                },
+                {
+                    "definition": "একটি production ডেটাবেজে prisma migrate করতে",
+                    "code": "npx prisma migrate prod"
+                }
+            ]
+        }
+    ]
+}

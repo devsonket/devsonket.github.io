@@ -1,0 +1,80 @@
+{
+    "id": "vercel কমান্ড লাইন(CLI)",
+    "title": "Vercel কমান্ড লাইন(CLI)",
+    "slug": "vercel-cli",
+    "description": "Vercel, ওয়েব সাইট এবং অ্যাপ্লিকেশন হোস্টিং সার্ভিস। Vercel কমান্ড লাইন ইন্টারফেস(CLI) এর জন্য প্রযোজনীয় সকল শর্টকাট কী নিয়ে তৈরি চিটশিট",
+    "colorPref": "#616161",
+    "contents": [{
+            "title": "লগিন করা",
+            "items": [
+                {
+                    "definition": "ওয়েব দিয়ে লগিন",
+                    "code": "vercel login"
+                },
+                {
+                    "definition": "কমান্ড লাইন দিয়ে লগিন ",
+                    "code": "vercel login -u myemail@address.com"
+                },
+                {
+                    "definition": "প্রোজেক্ট লিস্ট করা",
+                    "code": "vercel list"
+                },
+                {
+                    "definition": "প্রোজেক্ট প্রজেক্ট পুনরায় চয়ন করা",
+                    "code": "vercel switch project"
+                }
+            ]
+        },
+        {
+            "title": "ডিপ্লয়মেন্ট করা",
+            "items": [
+                {
+                    "definition": "ডিপ্লয়মেন্ট করা",
+                    "code": "vercel --prod"
+                },
+                {
+                    "definition": "ভার্সন নির্বাচন করে ডিপ্লয়মেন্ট করা",
+                    "code": "vercel --prod --target production"
+                },
+                {
+                    "definition": "বিস্তারিত ডিপ্লয়মেন্ট অপশন সেট করা",
+                    "code": "vercel --prod --build-env VAR_NAME=VALUE"
+                }
+            ]
+        },
+        {
+            "title": "ডিপ্লয়মেন্ট মোনিটরিং",
+            "items": [
+                {
+                    "definition": "ডিপ্লয়মেন্ট লগ দেখা",
+                    "code": "vercel logs deploymentID"
+                },
+                {
+                    "definition": "ডিপ্লয়মেন্ট স্ট্যাটাস চেক করা",
+                    "code": "vercel status deploymentID"
+                },
+                {
+                    "definition": "ডিপ্লয়মেন্ট লিঙ্ক পেতে",
+                    "code": "vercel --prod"
+                }
+            ]
+        },
+        {
+            "title": "প্রোজেক্ট সেটিংস",
+            "items": [
+                {
+                    "definition": "ডিপ্লয়মেন্ট রিলেশন সেট করা",
+                    "code": "vercel env add VAR_NAME=VALUE"
+                },
+                {
+                    "definition": "প্রোজেক্ট এর নেম পরিবর্তন করা",
+                    "code": "vercel rename new-name"
+                },
+                {
+                    "definition": "ডিপ্লয়মেন্ট এর রেডিরেক্ট সেট করা",
+                    "code": "vercel alias set domain.com"
+                }
+            ]
+        }
+    ]
+}

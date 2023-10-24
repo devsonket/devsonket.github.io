@@ -6,6 +6,55 @@
 	"colorPref": "#000",
 	"contents": [
 		{
+			"title": "wp core কমান্ডস",
+			"items": [
+				{
+					"definition": "ওয়ার্ডপ্রেস আপডেট চেক করবে Version Check API এর মাধ্যমে",
+					"code": "wp core check-update"
+				},
+				{
+					"definition": "কোর ওয়ার্ডপ্রেস ফাইলগুলি ডাউনলোড করবে",
+					"code": "wp core download"
+				},
+				{
+					"definition": "স্ট্যান্ডার্ড ওয়ার্ডপ্রেস ইনস্টলেশন প্রক্রিয়া চালাবে",
+					"code": "wp core install"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেস ইনস্টল করা আছে কিনা তা চেক করবে",
+					"code": "wp core is-installed"
+				},
+				{
+					"definition": "সিঙ্গেল-সাইট ইনস্টলেশনকে মাল্টিসাইট ইনস্টলেশনে পরিণত করবে",
+					"code": "wp core multisite-convert"
+				},
+				{
+					"definition": "সিঙ্গেল-সাইট ইনস্টলেশনকে মাল্টিসাইট ইনস্টলেশনে পরিণত করবে",
+					"code": "wp core multisite-convert"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেস মাল্টিসাইট ইনস্টল করবে",
+					"code": "wp core multisite-install"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেসকে একটি নতুন সংস্করণে আপডেট করবে",
+					"code": "wp core update"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেস ডাটাবেস আপডেট প্রক্রিয়া চালাবে",
+					"code": "wp core update-db"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেস ফাইলগুলি WordPress.Org এর চেকসাম দিয়ে যাচাই করবে",
+					"code": "wp core verify-checksums"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেস সংস্করণ প্রদর্শন করবে",
+					"code": "wp core version"
+				}
+			]
+		},
+		{
 			"title": "wp admin কমান্ডস",
 			"items": [
 				{
