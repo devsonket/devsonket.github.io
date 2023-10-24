@@ -420,6 +420,14 @@
                {
                 "definition": "ডাটাবেজ থেকে একটা অবজেক্টের একটা ডাটা দেখাতে",
                 "code": "ModelName.objects.get(id=1)"
+               },
+               {
+                "definition": "ডাটাবেজ থেকে ফিল্টার করে অবজেক্ট দেখাতে",
+                "code": "ModelName.objects.filter(field_name=field_value)"
+               },
+               {
+                "definition": "ডাটাবেজ থেকে ডাটা নিয়ে Order করার জন্য",
+                "code": "ModelName.objects.all().order_by('field_name')"
                }
             ]
         }
