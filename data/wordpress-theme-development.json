@@ -131,6 +131,22 @@
                     "code": "get_the_excerpt();"
                 },
                 {
+                    "definition": "সংলগ্ন পোস্ট পুনরুদ্ধার করার জন্য",
+                    "code": "get_adjacent_post();"
+                },
+                {
+                    "definition": "সীমানা পোস্ট উদ্ধার করার জন্য",
+                    "code": "get_boundary_post();"
+                },
+                {
+                    "definition": "বর্তমান পোস্টের সংলগ্ন পরবর্তী পোস্টটি উদ্ধার করার জন্য",
+                    "code": "get_next_post();"
+                },
+                {
+                    "definition": "পরবর্তী পোস্ট পৃষ্ঠা লিঙ্ক পুনরুদ্ধার করার জন্য",
+                    "code": "get_next_posts_link();"
+                },
+                {
                     "definition": "পোস্টের কিছু অংশ ইকো করে",
                     "code": "the_excerpt();"
                 },
