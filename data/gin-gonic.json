@@ -42,6 +42,10 @@
         {
             "definition": "যেকোন পোর্টে সার্ভার রান করা",
             "code": "router.Run(\":3000\") // 3000 পোর্টে সার্ভার রান করা"
+        },
+        {
+            "definition": "কাস্টম HTTP কনফিগারেশন",
+            "code": "s := &http.Server{\n\tAddr: \":8080\",\n\tHandler: router,\n\tReadTimeout: 10 * time.Second,\n\tWriteTimeout: 10 * time.Second,\n\tMaxHeaderBytes: 1 << 20,\n}\ns.ListenAndServe()"
         }
     ]
     },
