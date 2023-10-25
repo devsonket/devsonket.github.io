@@ -235,6 +235,34 @@
                     "code": "wp_get_archives();"
                 },
                 {
+                    "definition": "একটি বিষয়শ্রেণীর একটি তালিকা পুনরুদ্ধার করার জন্য",
+                    "code": "get_categories();"
+                },
+                {
+                    "definition": "একটি ক্যাটাগরি স্লাগ ধারণকারী URL এর উপর ভিত্তি করে একটি বিভাগ পুনরুদ্ধার করার জন্য",
+                    "code": "get_category_by_path();"
+                },
+                {
+                    "definition": "একটি বিভাগ স্লাগ দ্বারা একটি বিভাগ বস্তু পুনরুদ্ধার করার জন্য",
+                    "code": "get_category_by_slug();"
+                },
+                {
+                    "definition": "একটি বিভাগ আইডির উপর ভিত্তি করে বিভাগের নাম পুনরুদ্ধার করার জন্য",
+                    "code": "get_the_category_by_ID();"
+                },
+                {
+                    "definition": "একটি HTML তালিকা বা কাস্টম বিন্যাসে একটি পোস্টের জন্য বিভাগ তালিকা পুনরুদ্ধার করার জন্য",
+                    "code": "get_the_category_list();"
+                },
+                {
+                    "definition": "একটি বিভাজক সহ বিভাগ অভিভাবক পুনরুদ্ধার করার জন্য",
+                    "code": "get_category_parents();"
+                },
+                {
+                    "definition": "একটি পোস্ট বিভাগ পুনরুদ্ধার করার জন্য",
+                    "code": "get_the_category();"
+                },
+                {
                     "definition": "একটি পোস্ট বা পৃষ্ঠা ট্র্যাশে বা মুছে ফেলে",
                     "code": "wp_delete_post();"
                 },
