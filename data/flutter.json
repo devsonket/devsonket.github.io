@@ -192,7 +192,47 @@
   ]
 },
 
-
+{
+            "title": "ফ্লাটারের কমন কিছু Error এবং সেগুলার Fix",
+            "items": [
+                {
+                    "definition": "A RenderFlex overflowed by 0.02 pixels on the bottom.",
+                    "code": "স্ক্রিনের হাইটের চেয়ে এলিমেন্টগুলার হাইট বড় হয়ে গেছে। যার কারনে overflow হচ্ছে। প্যারেন্ট উইজেটে Expanded ব্যবহার করুন অথবা ফিক্সড হাইট দিয়ে SingleChildScrollView ব্যবহার করুন।" 
+                },
+                {
+                    "definition": "BoxConstraints forces an infinite width.",
+                    "code": "Expanded উইজেটটি Row বা Column এর ভিতরে আছে কিনা তা চেক করুন।"
+                },
+                {
+                    "definition": "setState() or markNeedsBuild() called during widget creation.",
+                    "code": "initState এ setState ব্যবহার করা যাবে না। এটি ব্যবহার করতে হলে একটি ডিলে মেথড ব্যবহার করতে হবে।\n\nWidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));"
+                },
+                {
+                    "definition": "renderBox was not laid out: RenderFlex object was given an infinite height during layout.",
+                    "code": "SingleChildScrollView টি একটি Container বা অন্য কোন ফিক্সড হাইটের উইজেটের ভিতরে ইউজ করতে হবে।"
+                },
+                {
+                    "definition": "Don't use 'BuildContext's across async gaps. Try rewriting the code to not reference the 'BuildContext'.",
+                    "code": "StatelessWidget এ (context.mounted) এবং StatefulWidget এ (mounted) দিয়ে চেক করুন, উইজেটটি ফ্লাটারের উইজেট ট্রি'তে মাউন্ট হয়েছে কিনা।"
+                },
+                {
+                    "definition": "Duplicate GlobalKey detected in widget tree.",
+                    "code": "#১. GlobalKey অবশ্যই ইউনিক হতে হবে। একই ক্লাসের দুইটি উইজেটে একই GlobalKey ব্যবহার করা যাবে না।\n#২. প্রয়োজনে ValueKey অথবা ObjectKey ব্যবহার করতে হবে।"
+                },
+                {
+                    "definition": "The argument type 'String?' can't be assigned to the parameter type 'String'",
+                    "code": "ডাটা টাইপ চেঞ্জ হওয়ার কারনে এই এরর আসছে। null-aware operators('?' / '??') ব্যবহার করুন।"
+                },
+                {
+                    "definition": "Execution failed for task ':app:processDebugResources'.",
+                    "code": "#১. কনসোলে, flutter clean রান করে, পরে flutter pub get রান করুন। \n#২. এনড্রয়েড গ্রেডেল ফাইলে (android/app/build.gradle) সব ঠিক আছে কিনা চেক করুন।"
+                },
+                {
+                    "definition": "MissingPluginException(No implementation found for method x on channel y)",
+                    "code": "flutter pub get দিয়ে pubspec.yaml আপডেট করুন।"
+                }
+            ]
+        },
         {
             "title": "কিছু ইম্পরট্যান্ট ফ্লাটার শীট",
             "items": [
