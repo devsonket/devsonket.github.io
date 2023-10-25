@@ -298,6 +298,19 @@
                 },
                 {
                     "code": "fmt.Println(aDoctor)"
+                },
+                {
+                    "definition": "বেনামী স্ট্রাক্ট(Anonymous structs)",
+                    "code":"point := struct {\n\tX, Y int\n}{1, 2}"
+                }
+
+            ]
+        },
+        {
+            "title": "ইন্টারফেস উদাহরণ",
+            "items":[
+                {
+                    "code": "type Shape interface {\n    Area() float64\n    Perimeter() float64\n}"
                 }
             ]
         },

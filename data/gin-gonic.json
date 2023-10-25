@@ -50,6 +50,9 @@
         "items": [{
             "definition": "জিন রাউটার ইনিশিয়ালাইজেশন",
             "code": "router := gin.Default()"
+        },{
+            "definition":"জিন রাউটার ইমপ্লিমেন্টেশন",
+            "code": "router.GET(\"/\", func(c *gin.Context) {\n\t// এখানে কোড লিখুন\n})"
         }]
     },
     {
