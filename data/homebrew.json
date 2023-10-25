@@ -75,6 +75,34 @@
                     "code": "brew help [COMMAND]"
                 }
             ]
+        },
+        {
+            "title": "পরিষ্কার কর",
+            "items": [{
+                    "definition": "পুরানো সংস্করণগুলি অপসারণ করে",
+                    "code": "brew cleanup"
+                },
+                {
+                    "definition": "সমস্ত ক্যাশে করা ফাইল অপসারণ করে",
+                    "code": "brew cleanup -s"
+                }
+            ]
+        },
+        {
+            "title": "সেবা ব্যবস্থাপনা",
+            "items": [{
+                    "definition": "একটি পরিষেবা চালু করুন",
+                    "code": "brew services start service_name"
+                },
+                {
+                    "definition": "পরিষেবা বন্ধ করুন",
+                    "code": "brew services stop service_name"
+                },
+                {
+                    "definition": "পরিষেবা পুনরায় চালু করুন",
+                    "code": "brew services restart service_name"
+                }
+            ]
         }
     ]
 }
