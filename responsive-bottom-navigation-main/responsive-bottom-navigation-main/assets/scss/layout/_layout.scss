@@ -1,0 +1,21 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section{
+    padding: 4.5rem 0 2rem;
+
+    &__title{
+        font-size: var(--h1-font-size);
+        color: var(--title-color);
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    &__height{
+        height: 100vh;
+    }
+}
+
+/*=============== LAYOUT ===============*/
+.container{
+    max-width: 968px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
