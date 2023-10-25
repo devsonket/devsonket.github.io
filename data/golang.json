@@ -331,6 +331,19 @@
             ]
         },
         {
+            "title": "সময় অতিবাহিত কৌশল ( Time elapsed trick )",
+            "items": [{
+                    "definition": "Utility ",
+                    "code": "func TrackTime(pre time.Time) time.Duration { \n elapsed := time.Since(pre) \n fmt.Println(`elapsed:`, elapsed) }"
+                },
+                {
+                    "definition": "'Time now'",
+                    "code": "func TestTrackTime(t *testing.T) { \n defer TrackTime(time.Now()) // <--- THIS \n time.Sleep(500 * time.Millisecond) \n }"
+                }      
+               
+            ]
+        },
+        {
             "title": "লুপ",
             "items": [{
                     "definition": "ফর লুপ",
