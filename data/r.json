@@ -393,6 +393,26 @@
             ]
         },
         {
+    "title": "স্ট্রিং ম্যানিপুলেট করা | Manipulating Strings",
+    "items": [{
+            "definition": "স্প্লিট স্ট্রিং | Putting Together Strings ",
+            "code": "paste('string1', 'string2', sep = '/') \n # separator ('sep') is a space by default"
+        },
+        {
+            "definition": "'1/2' ফেরত | returns '1/2'",
+            "code": "paste(c('1', '2'), collapse = '/')"
+        },
+        {
+            "definition": "স্প্লিট স্ট্রিং | Split String",
+            "code": "stringr::str_split(string = v1, pattern = '-') \n # returns a list"
+        },
+        {
+            "definition": "সাবস্ট্রিং পাওয়া  | Get the substring",
+            "code": "stringr::str_sub(string = v1, start = 1, end = 3)"
+        }
+    ]
+},
+        {
             "title": "পরিসংখ্যান",
             "items": [{
                     "definition": "রৈখিক মডেল",
