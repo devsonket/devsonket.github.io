@@ -192,7 +192,96 @@
   ]
 },
 
-
+{
+            "title": "ফ্লাটারের কমন কিছু Error এবং সেগুলার Fix",
+            "items": [
+                {
+                    "definition": "A RenderFlex overflowed by 0.02 pixels on the bottom.",
+                    "code": "স্ক্রিনের হাইটের চেয়ে এলিমেন্টগুলার হাইট বড় হয়ে গেছে। যার কারনে overflow হচ্ছে। প্যারেন্ট উইজেটে Expanded ব্যবহার করুন অথবা ফিক্সড হাইট দিয়ে SingleChildScrollView ব্যবহার করুন।" 
+                },
+                {
+                    "definition": "BoxConstraints forces an infinite width.",
+                    "code": "Expanded উইজেটটি Row বা Column এর ভিতরে আছে কিনা তা চেক করুন।"
+                },
+                {
+                    "definition": "setState() or markNeedsBuild() called during widget creation.",
+                    "code": "initState এ setState ব্যবহার করা যাবে না। এটি ব্যবহার করতে হলে একটি ডিলে মেথড ব্যবহার করতে হবে।\n\nWidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));"
+                },
+                {
+                    "definition": "renderBox was not laid out: RenderFlex object was given an infinite height during layout.",
+                    "code": "SingleChildScrollView টি একটি Container বা অন্য কোন ফিক্সড হাইটের উইজেটের ভিতরে ইউজ করতে হবে।"
+                },
+                {
+                    "definition": "Don't use 'BuildContext's across async gaps. Try rewriting the code to not reference the 'BuildContext'.",
+                    "code": "StatelessWidget এ (context.mounted) এবং StatefulWidget এ (mounted) দিয়ে চেক করুন, উইজেটটি ফ্লাটারের উইজেট ট্রি'তে মাউন্ট হয়েছে কিনা।"
+                },
+                {
+                    "definition": "Duplicate GlobalKey detected in widget tree.",
+                    "code": "#১. GlobalKey অবশ্যই ইউনিক হতে হবে। একই ক্লাসের দুইটি উইজেটে একই GlobalKey ব্যবহার করা যাবে না।\n#২. প্রয়োজনে ValueKey অথবা ObjectKey ব্যবহার করতে হবে।"
+                },
+                {
+                    "definition": "The argument type 'String?' can't be assigned to the parameter type 'String'",
+                    "code": "ডাটা টাইপ চেঞ্জ হওয়ার কারনে এই এরর আসছে। null-aware operators('?' / '??') ব্যবহার করুন।"
+                },
+                {
+                    "definition": "Execution failed for task ':app:processDebugResources'.",
+                    "code": "#১. কনসোলে, flutter clean রান করে, পরে flutter pub get রান করুন। \n#২. এনড্রয়েড গ্রেডেল ফাইলে (android/app/build.gradle) সব ঠিক আছে কিনা চেক করুন।"
+                },
+                {
+                    "definition": "MissingPluginException(No implementation found for method x on channel y)",
+                    "code": "flutter pub get দিয়ে pubspec.yaml আপডেট করুন।"
+                }
+            ]
+        },
+        {
+            "title": "Riverpod (রিভারপড)",
+            "items": [
+                {
+                    "definition": "রিভারপড কি?",
+                    "code": "রিভারপড, ফ্লাটারের একটি স্টেট ম্যানেজমেন্ট লাইব্রেরি।"
+                },
+                {
+                    "definition": "কেন রিভারপড ব্যবহার করবেন?",
+                    "code": "রিভারপড দিয়ে এ্যাপের নেটওয়ার্ক রিকোয়েস্ট ও ইরর হ্যান্ডেলের মতো কমপ্লেক্স কাজগুলো খুব সহজেই করে ফেলা যায়। এমনকি ২/১ লাইন এক্সট্রা কোড লিখেই, এ্যাপে টেম্পোরারি ক্যাশিং ফাংশনালিটি ইমপ্লিমেন্ট করতে পারবেন।"
+                },
+                {
+                    "definition": "কিভাবে রিভারপড ইনস্টল করবেন?",
+                    "code": "pubspec.yaml ফাইলে নিচের ডিপেন্ডেন্সিগুলো অ্যাড করুন।\n\nflutter_riverpod: ^2.4.4\nriverpod_annotation: ^2.2.1"
+                },
+                {
+                    "definition": "কিভাবে রিভারপড ব্যবহার করবেন?",
+                    "code": "রিভারপডে মূলত ছয়টি প্রোভাইডার আছে। বিভিন্ন ইউজকেসের উপর ডিপেন্ড করে, এ প্রোভাইডারগুলো ব্যবহার করেই আপনি এ্যাপের স্টেট ম্যানেজ করতে পারবেন। এই প্রোভাইডারগুলো হলো: \n\n1. Provider\n2. StateProvider\n3. FutureProvider\n4. StreamProvider\n5. NotifierProvider\n6. StateNotifierProvider"
+                },
+                {
+                    "definition": "ProviderScope (প্রোভাইডার স্কোপ)",
+                    "code": "প্রোভাইডারগুলো কাজ করার জন্য, অবশ্যই এ্যাপের root এ ProviderScope এড করতে হবে। \n\nvoid main() {\n  runApp(\n    ProviderScope(child: MyApp()),\n  );\n}"
+                },
+                {
+                    "definition": "Provider (প্রোভাইডার)",
+                    "code": "এটি একটি বেসিক ইমিউটেবল প্রোভাইডার, যা এ্যাপের অন্য যে কোনো জায়গায় ডেটা অ্যাক্সেস করার জন্য ব্যবহৃত হয়। \n\nfinal intProvider = Provider<int>((ref) => 42);"
+                },
+                {
+                    "definition": "StateProvider (স্টেট প্রোভাইডার)",
+                    "code": "এটিও Provider এর মতো, তবে এটি মিউটেবল। আপনি প্রয়োজনে এর স্টেট চেঞ্জ করতে পারবেন। \n\nfinal counterProvider = StateProvider<int>((ref) => 0); \n\nস্টেট চেঞ্জ করার জন্য,\nref.read(counterProvider).state = 1;"
+                },
+                {
+                    "definition": "FutureProvider (ফিউচার প্রোভাইডার)",
+                    "code" : "এটি ফিউচার ডেটা রিটার্ন করে। নেটওয়ার্ক কলে নরমাল ডেটা ফেচিংএর সময় FutureProvider ব্যবহার করা যায়। \n\nfinal myFutureProvider  = FutureProvider<String>((ref) async {\n  // Perform an asynchronous operation\n  return fetchData();\n});"
+                },
+                {
+                    "definition": "StreamProvider (স্ট্রিম প্রোভাইডার)",
+                    "code": "এটিও FutureProvider এর মতোই, তবে স্ট্রিম ডেটা রিটার্ন করে। রিয়েল টাইম আপডেট বা সকেটের কাজে StreamProvider ব্যবহার করা যায়। \n\nfinal myStreamProvider = StreamProvider<String>((ref) {\n  // Start listening to a stream\n  return someStream();\n});"
+                },
+                {
+                    "definition": "NotifierProvider (নোটিফায়ার প্রোভাইডার)",
+                    "code": "Notifier ক্লাসের একটা instance তৈরি করার জন্য NotifierProvider ব্যবহার হয়। Notifier দিয়ে আপনি কমপ্লেক্স স্টেট লজিক ম্যানেজ করতে পারবেন। \n\nfinal myNotifierProvider = NotifierProvider<MyNotifier, String>((ref){\n  return MyNotifier();\n});"
+                },
+                {
+                    "definition": "StateNotifierProvider (স্টেট নোটিফায়ার প্রোভাইডার)",
+                    "code": "এটিও NotifierProvider এর মতোই, তবে মিউটেবল স্টেট ম্যানেজ করার জন্য ব্যবহার করা হয়। এটি StateNotifier ক্লাসের একটা instance তৈরি করে। \n\nfinal myStateNotifierProvider = StateNotifierProvider<MyStateNotifier, String>((ref) {\n  return MyStateNotifier();\n});"
+                }
+            ]
+        },
         {
             "title": "কিছু ইম্পরট্যান্ট ফ্লাটার শীট",
             "items": [

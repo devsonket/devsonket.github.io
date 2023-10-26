@@ -83,6 +83,18 @@
                     "code": "get_edit_post_link();"
                 },
                 {
+                    "definition": "পৃষ্ঠাগুলির একটি তালিকার বিন্যাসিত আউটপুট করার জন্য",
+                    "code": "wp_link_pages();"
+                },
+                {
+                    "definition": "একটি ঐচ্ছিক হোম লিঙ্ক সহ পৃষ্ঠাগুলির একটি তালিকা প্রদর্শন বা পুনরুদ্ধার করার জন্য",
+                    "code": "wp_page_menu();"
+                },
+                {
+                    "definition": "ড্রপডাউন হিসাবে পৃষ্ঠাগুলির একটি তালিকা পুনরুদ্ধার বা প্রদর্শন করার জন্য",
+                    "code": "wp_dropdown_pages();"
+                },
+                {
                     "definition": "সাইটের Pingback URL",
                     "code": "bloginfo('pingback_url');"
                 },
@@ -129,6 +141,22 @@
                 {
                     "definition": "পোস্টের কিছু অংশ রিটার্ন করে রাখে",
                     "code": "get_the_excerpt();"
+                },
+                {
+                    "definition": "সংলগ্ন পোস্ট পুনরুদ্ধার করার জন্য",
+                    "code": "get_adjacent_post();"
+                },
+                {
+                    "definition": "সীমানা পোস্ট উদ্ধার করার জন্য",
+                    "code": "get_boundary_post();"
+                },
+                {
+                    "definition": "বর্তমান পোস্টের সংলগ্ন পরবর্তী পোস্টটি উদ্ধার করার জন্য",
+                    "code": "get_next_post();"
+                },
+                {
+                    "definition": "পরবর্তী পোস্ট পৃষ্ঠা লিঙ্ক পুনরুদ্ধার করার জন্য",
+                    "code": "get_next_posts_link();"
                 },
                 {
                     "definition": "পোস্টের কিছু অংশ ইকো করে",
@@ -233,6 +261,34 @@
                 {
                     "definition": "সাইটের আর্কাইভ লিস্ট",
                     "code": "wp_get_archives();"
+                },
+                {
+                    "definition": "একটি বিষয়শ্রেণীর একটি তালিকা পুনরুদ্ধার করার জন্য",
+                    "code": "get_categories();"
+                },
+                {
+                    "definition": "একটি ক্যাটাগরি স্লাগ ধারণকারী URL এর উপর ভিত্তি করে একটি বিভাগ পুনরুদ্ধার করার জন্য",
+                    "code": "get_category_by_path();"
+                },
+                {
+                    "definition": "একটি বিভাগ স্লাগ দ্বারা একটি বিভাগ বস্তু পুনরুদ্ধার করার জন্য",
+                    "code": "get_category_by_slug();"
+                },
+                {
+                    "definition": "একটি বিভাগ আইডির উপর ভিত্তি করে বিভাগের নাম পুনরুদ্ধার করার জন্য",
+                    "code": "get_the_category_by_ID();"
+                },
+                {
+                    "definition": "একটি HTML তালিকা বা কাস্টম বিন্যাসে একটি পোস্টের জন্য বিভাগ তালিকা পুনরুদ্ধার করার জন্য",
+                    "code": "get_the_category_list();"
+                },
+                {
+                    "definition": "একটি বিভাজক সহ বিভাগ অভিভাবক পুনরুদ্ধার করার জন্য",
+                    "code": "get_category_parents();"
+                },
+                {
+                    "definition": "একটি পোস্ট বিভাগ পুনরুদ্ধার করার জন্য",
+                    "code": "get_the_category();"
                 },
                 {
                     "definition": "একটি পোস্ট বা পৃষ্ঠা ট্র্যাশে বা মুছে ফেলে",

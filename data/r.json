@@ -29,6 +29,30 @@
             ]
         },
         {
+    "title": "লজিক্যাল অপারেটর R এ কিভাবে ব্যবহার করবেন",
+    "items": [{
+            "definition": "যৌক্তিক নয় | Logical NOT",
+            "code": "!"
+        },
+        {
+            "definition": "উপাদান-ভিত্তিক যৌক্তিক এবং | Element-wise Logical AND",
+            "code": "&"
+        },
+        {
+            "definition": "যৌক্তিক এবং | Logical AND",
+            "code": "&&"
+        },
+        {
+            "definition": "উপাদান-ভিত্তিক লজিক্যাল OR | Element-wise Logical OR",
+            "code": "|"
+        },
+        {
+            "definition": "যৌক্তিক OR | Logical OR",
+            "code": "||"
+        }
+    ]
+},
+        {
             "title": "কিভাবে R এ লাইব্রেবি ব্যবহার করবেন",
             "items": [{
                     "definition": "CRAN হতে প্যাকেজ ডাউনলোড এবং ইন্সটল",
@@ -368,6 +392,26 @@
                 }
             ]
         },
+        {
+    "title": "স্ট্রিং ম্যানিপুলেট করা | Manipulating Strings",
+    "items": [{
+            "definition": "স্প্লিট স্ট্রিং | Putting Together Strings ",
+            "code": "paste('string1', 'string2', sep = '/') \n # separator ('sep') is a space by default"
+        },
+        {
+            "definition": "'1/2' ফেরত | returns '1/2'",
+            "code": "paste(c('1', '2'), collapse = '/')"
+        },
+        {
+            "definition": "স্প্লিট স্ট্রিং | Split String",
+            "code": "stringr::str_split(string = v1, pattern = '-') \n # returns a list"
+        },
+        {
+            "definition": "সাবস্ট্রিং পাওয়া  | Get the substring",
+            "code": "stringr::str_sub(string = v1, start = 1, end = 3)"
+        }
+    ]
+},
         {
             "title": "পরিসংখ্যান",
             "items": [{

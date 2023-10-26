@@ -1,0 +1,69 @@
+/*=============== MEDIA QUERIES ===============*/
+/* For small devices */
+// Remove if you choose, the minimalist design
+@media screen and (max-width: 320px){
+    .nav__name{
+        display: none;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px){
+    .nav__list{
+        justify-content: center;
+        column-gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 767px){
+    body{
+        margin: 0;
+    }
+
+    .section{
+        padding: 7rem 0 2rem;
+    }
+
+    .nav{
+        height: calc(var(--header-height) + 1.5rem); // 4.5rem
+
+        &__img{
+            display: none;
+        }
+        &__icon{
+            display: none;
+        }
+        &__name{
+            font-size: var(--normal-font-size);
+            // display: block; // Minimalist design, visible labels
+        }
+        &__link:hover{
+            color: var(--first-color);
+        }
+    }
+
+    // First design, remove if you choose the minimalist design
+    .active-link::before{
+        content: '';
+        position: absolute;
+        bottom: -.75rem;
+        width: 4px;
+        height: 4px;
+        background-color: var(--first-color);
+        border-radius: 50%;
+    }
+
+    // Minimalist design
+    // .active-link::before{
+    //     bottom: -.75rem;
+    // }
+    
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

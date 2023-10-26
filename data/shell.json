@@ -160,6 +160,27 @@
                 }
 
             ]
+        },
+        {
+            "title": "শেল স্ক্রিপ্টিং অদ্ভুত নথি",
+            "items": [{
+                "definition": "ফাংশন তৈরি করা",
+                "code": "my_function() {}"
+            },
+            {
+                "definition": "উপাদান প্রদানের দ্বারা কমান্ড লাইন থেকে ইনপুট নেয়া",
+                "code": "read -p name"
+            },
+            {
+                "definition": "যদি-হলে বা যদি না হলে শর্ত পরীক্ষা করা",
+                "code": "if [ condition ]; then fi"
+            },
+            {
+                "definition": "একটি ফাইল থেকে পংক্তি পংক্তি কোড পড়া",
+                "code": "while IFS= read -r line; do"
+            }
+
+            ]
         }
 
         
