@@ -143,6 +143,18 @@
                     "code": "get_the_excerpt();"
                 },
                 {
+                    "definition": "ডাটাবেসে একটি নতুন বিভাগ যোগ করে যদি এটি ইতিমধ্যে বিদ্যমান না থাকে",
+                    "code": "wp_create_category();"
+                },
+                {
+                    "definition": "একটি বিদ্যমান বিভাগ মুছে দেয়ার জন্য",
+                    "code": "wp_delete_category();"
+                },
+                {
+                    "definition": "একটি বিদ্যমান বিভাগ আপডেট করে বা একটি নতুন বিভাগ তৈরি করার জন্য",
+                    "code": "wp_insert_category();"
+                },
+                {
                     "definition": "সংলগ্ন পোস্ট পুনরুদ্ধার করার জন্য",
                     "code": "get_adjacent_post();"
                 },
