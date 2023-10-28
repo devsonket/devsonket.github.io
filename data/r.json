@@ -225,6 +225,16 @@
             ]
         },
         {
+    "title": "Helper functions | সাহায্যকারী ফাংশন",
+    "items": [{
+            "definition": "each() - সমষ্টির মতো একটি ফাংশনে একাধিক ফাংশন সরবরাহ করে",
+            "code":"aggregate(price ~ cut, diamonds, each(mean,\n median))"
+                }
+            ]
+            
+        },
+        
+        {
             "title": "কমন গানিতিক ফাংশন",
             "items": [{
                     "definition": "স্বাভাবিক লগারিথম",
