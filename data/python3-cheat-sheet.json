@@ -149,6 +149,37 @@
             ]
         },
         {
+            "title": "পাইথন ফাংশন (Python Function)",
+            "items": [{
+                    "definition": "ফাংশন হল কোডের এমন একটি ব্লক যা নির্দিষ্ট কোনো কাজ করে এবং প্রোগ্রামে যেকোনো জায়গায় পুনরায় ব্যবহার করা যেতে পারে\n\n",
+                    "code": "Syntax Of Function: def function_name(parameters):\n(function docstring)\n# function body",
+                    "code":"Parameters: Parameters are placeholders for the data that is passed to a function.\nArguments: Arguments are the actual values that are passed to a function when it is called.\nReturn value: A function can return a value, which can then be used in the program.",
+                    "definition": "ফাংশন বেসিক\n",
+                    "code": "def hello_world():\nprint('Hello, World!')"
+                },
+                {
+                    "definition": "Return (রিটার্ন)",
+                    "code": "def add(x, y):\n    print('x is %s, y is %s' %(x, y))\n    return x + y\nadd(5, 6)    # => 11"
+                },
+                {
+                    "definition": "Positional arguments",
+                    "code": "def varargs(*args):\n   return args\nvarargs(1, 2, 3)  # => (1, 2, 3)"
+                },
+                {
+                    "definition": "Returning Multiple",
+                    "code": "def swap(x, y):\n   return y, x\n\nx = 1\ny = 2\n x, y = swap(x, y)  # => x = 2, y = 1"
+                },
+                {
+                    "definition": "Default value",
+                    "code": "def add(x, y=10):\n   return x + y\nadd(5)      # => 15\nadd(5, 20)  # => 25"
+                },
+                {
+                    "definition": "Anonymous functions",
+                    "code": "# => True\n(lambda x: x > 2)(3)\n\n# => 5\n(lambda x, y: x ** 2 + y ** 2)(2, 1)"
+                }
+            ]
+        },
+        {
             "title": "পাইথন স্ট্রিং মেথড (Python String Methods)",
             "items": [{
                     "definition": "একটি স্ট্রিং এর প্রথম অক্ষরকে বড় হাতের অক্ষরে রূপান্তর করা",
