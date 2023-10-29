@@ -39,6 +39,15 @@
             ]
         },
         {
+            "title": "গুগলে CSS প্রপারটিজ কিভাবে সার্চ করবো? (How to Google CSS properties?)",
+            "items": [
+              {
+                "definition": "আমরা নিয়মিত Google ব্যবহার করি CSS বৈশিষ্ট্য অনুসন্ধান করতে যা আমরা জানি না বা মনে নেই। Google ব্যবহার করার সময়, আপনি যা করার চেষ্টা করছেন তা অনুসন্ধান করুন। উদাহরণ: ",
+                "code": "'css rounded corners'\n,'css text italic',\n'css adjust space between lines'"
+              }
+            ]
+        },
+        {
             "title": "ব্যাকগ্রাউন্ড",
             "items": [
                 {
