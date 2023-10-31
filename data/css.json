@@ -39,6 +39,60 @@
             ]
         },
         {
+            "title": "সিলেক্টর ট্রিক্স",
+            "items": [
+                {
+                    "definition": "HTML ইলিমেন্টস গুলোকে CSS এর সাহায্যে সিলেক্ট করার পদ্ধতি কে বলে সিলেক্টর এবং প্রতিটা কোনো ইলিমেন্টসের জন্য লিখিত CSS কে CSS rule বলা হয়",
+                    "code": "selector{ property: value;}"
+                },
+                {
+                    "definition": "টাইপ সিলেক্টর\n কোনো Html tag বা elements দিয়ে সিলেক্ট করাকেই টাইপ সিলেক্টর বলা হয়। এটাকে অনেকে ট্যাগ সিলেক্টর ও বলা হয়ে থাকে",
+                    "code": "span {\n background-color: yellow;\n} \nh1 {\ncolor: rebeccapurple;\n}"
+                },
+                {
+                    "definition": "Id সিলেক্টর\n কোনো ইলিমেন্ট কে id দিয়ে সিলেক্ট করাই id সিলেক্টর এর কাজ । # দিয়ে এই সিনট্যাক্স ব্যাবহার করতে হয় ",
+                    "code": "<h1 id='heading'>ID selector</h1>\n\n#heading {\n color: red;\n}"
+                },
+                {
+                    "definition": "class সিলেক্টর \n কোনো ইলিমেন্ট কে class দিয়ে সিলেক্ট করাই class সিলেক্টর এর কাজ । . দিয়ে এই সিনট্যাক্স ব্যাবহার করতে হয় ",
+                    "code": "<h1 class='heading'>class selector</h1>\n<h2 class='heading'> class selector 2 </h2>\n.heading {\n color: red;\n}"
+                },
+                {
+                    "definition": "universal Selector \n সকল ইলিমেন্ট সিলেক্ট করতে * ব্যাবহার করা হয়। এটা অনেকে স্টার সিলেক্টর ও বলা হয়ে থাকে।",
+                    "code": " * {\n color: red;\n}"
+                },
+                {
+                    "definition": "Attribute Selector \n কোনো ইলিমেন্ট এর কোনো এট্রিবিউট এর উপর ভিত্তি করে সিলেক্ট করাকে এট্রিবিউট সিলেক্টর বলা হয়। কয়েক ধরনের এট্রিবিউট সিলেক্টর আছে।",
+                    "code": "<a href='https://www.example.com' title='Example Link 1'>Link 1</a>\n\t a[title] {\ncolor: blue;\ntext-decoration: underline;\n}"
+                },
+                {
+                    "definition": "এট্রিবিউট ভ্যালুর উপর নির্ভর করে সিলেক্ট করা",
+                    "code": "  <a href='https://example.com'>Visit Example</a>\na[href='https://example.com'] {\ncolor: green;\nfont-weight:bold;\n}"
+                },
+                {
+                    "definition": "এট্রিবিউট ভ্যালু স্পেস সেপারেটেড বা লিস্ট আকারে থাকলে তার উপর ভিত্তি করে সিলেক্ট করা",
+                    "code": "  <p class='important special'>This is an important and special paragraph.</p>\np[class~='special'] {\ncolor: red;\n}"
+                },
+                {
+                    "definition": "এট্রিবিউট ভ্যালু আংশিক এর উপর নির্ভর সিলেক্ট করা " ,
+                    "code": "    <div lang='zh'>This is content in Chinese (zh).</div>\n<div lang='zh-HK'>This is content in Chinese (zh-HK).</div>\n<div lang='en-US'>This is content in English (en-US).</div>\np[class।='zh'] {\ncolor: red;\n}\nএখানে শুধু প্রথম ২ টা div সিলেক্ট হবে।" 
+                },
+                {
+                    "definition": "এট্রিবিউট এর যেকোনো ভ্যালুর জন্য *" ,
+                    "code": "   <p class='important special'>This is an important and special paragraph.</p>\np[class*='sp'] {\ncolor: red;\n}\n এটা এখনো p element কে সিলেক্ট করবে " 
+                },
+                {
+                    "definition": "এট্রিবিউট ভ্যালুর প্রথম অংশের সাহায্যে সিলেক্ট করা " ,
+                    "code": "   <p class='important special'>This is an important and special paragraph.</p>\np[class^='important'] {\ncolor: red;\n}\n  " 
+                },
+                {
+                    "definition": "এট্রিবিউট ভ্যালুর শেষ অংশের সাহায্যে সিলেক্ট করা " ,
+                    "code": "   <p class='important special'>This is an important and special paragraph.</p>\np[class$='special'] {\ncolor: red;\n}\n  " 
+                },
+                {
+                    "definition": "কেইস ইনসেনসেটিভ করে সিলেক্ট করা" ,
+                    "code": "   <p class='important Special'>This is an important and special paragraph.</p>\np[class$='special ' i] {\ncolor: red;\n}\n  " 
+                }
             "title": "গুগলে CSS প্রপারটিজ কিভাবে সার্চ করবো? (How to Google CSS properties?)",
             "items": [
               {
@@ -156,6 +210,27 @@
                     "definition": "ট্রান্সফর্ম স্কেল",
                     "code": "transform: scale(1, 1);"
                 }
+            ]
+        },
+        {
+            "title": "কম্বিনেটরস ",
+            "items": [
+                {
+                    "definition": "body article p{\ncolor:red\n}\n\t এখানে সর্বশেষ অর্থাৎ p ইলিমেন্ট কে সিলেক্ট করা হয়েছে যার parent 'artice' এবং তার parent 'body' ।"
+                },
+                {
+                    "definition": "চাইল্ড কম্বিনেটর",
+                    "code": "ul > li {\nborder-top: 5px solid red;\n}\n} এখানে শুধুমাত্র ul এর চাইল্ড li গুলোকে সিলেক্ট করা হয়েছে।"
+                },
+                {
+                    "definition": "ইমিডিয়েট সিব্লিং কম্বিনেটর",
+                    "code": "h1 + p {\ncolor: red;\n}\nএখানে শুধুমাত্র h1 এর ইমিডিয়েট সিবলিং p কে সিলেক্ট করা হয়েছে।"
+                },
+                {
+                    "definition": "পরবর্তী সিব্লিং সিলেক্টর",
+                    "code": " h1 ~ p {\ncolor: red;\n}\nএখানে h1 এর পরবর্তী সিবলিং p গুলোকে সিলেক্ট করা হয়েছে। এখানে শুধু ইমিডীয়েট সিব্লিং কেই সিলেক্ট করবে না বরং পরবর্তী সিবলিং গুলোকেও সিলেক্ট করবে।"
+                }
+                
             ]
         }
     ]
