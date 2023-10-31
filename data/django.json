@@ -428,6 +428,22 @@
                {
                 "definition": "ডাটাবেজ থেকে ডাটা নিয়ে Order করার জন্য",
                 "code": "ModelName.objects.all().order_by('field_name')"
+               },
+               {
+                "definition": "Objects তৈরি করা",
+                "code" : "ModelName.objects.create(field_name=field_value)"
+               },
+               {
+                "definition": "স্ট্রিং এর শুরু চেক করতে (__startswith)",
+                "code" : "ModelName.objects.filter(fieldname__startswith=”a”)"
+               },
+               {
+                "definition": "স্ট্রিং এর শেষ চেক করতে (__endswith)",
+                "code": "ModelName.objects.filter(fieldname__endswith=”v”)"
+               },
+               {
+                "definition": "For case sensitive search",
+                "code": " ModelName.objects.filter(fieldname__iexact=lorem)"
                }
             ]
         }

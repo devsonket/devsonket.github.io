@@ -1,0 +1,194 @@
+{
+    "id": "gmail-cheat-sheet",
+    "title": "জিমেইল চিটশিট",
+    "slug": "gmail-cheat-sheet",
+    "description": "Gmail হল Google দ্বারা প্রদত্ত একটি বিনামূল্যের ইমেল পরিষেবা৷ 2019 সাল পর্যন্ত, এটির বিশ্বব্যাপী 1.5 বিলিয়ন সক্রিয় ব্যবহারকারী ছিল যা এটিকে বিশ্বের বৃহত্তম ইমেল পরিষেবাতে পরিণত করেছে। এটি একটি ওয়েবমেল ইন্টারফেসও প্রদান করে, একটি ওয়েব ব্রাউজারের মাধ্যমে অ্যাক্সেসযোগ্য এবং অফিসিয়াল মোবাইল অ্যাপ্লিকেশনের মাধ্যমেও অ্যাক্সেসযোগ্য",
+    "colorPref": "#FABC05",
+    "contents": [
+      {
+        "title": "কম্পোজ এবং চ্যাট (Compose and Chat)",
+        "items": [
+          {
+            "definition": "Focus main window",
+            "code": "Shift + Esc"
+          },
+          {
+            "definition": "Focus latest chat or compose",
+            "code": "Esc"
+          },
+          {
+          "definition": "Advance to next chat or compose",
+            "code": "Ctrl + ."
+          },
+          {
+            "definition": "Advance to previous chat or compose",
+            "code": "Ctrl + ,"    
+          },
+          {
+            "definition": "Send",
+            "code": "⌘ + Enter"
+          },
+          {
+            "definition": "Add Cc recipients",
+            "code": "⌘ + Shift + c"
+          },
+          {
+            "definition": "Add Bcc recipients",
+            "code": "⌘ + Shift + b "
+          },
+          {
+            "definition": "Discard draft",
+            "code": "⌘ + Shift + d"
+          },
+          {
+            "definition": "Insert a link",
+            "code": "⌘ + k "
+          },
+          {
+            "definition": "Go to previous misspelled word",
+            "code": "⌘ + ;"
+          },
+          {
+            "definition": "Go to next misspelled word",
+            "code": "⌘ + '"
+          },
+          {
+            "definition": "Open spelling suggestions",
+            "code": "⌘ + Shift + '"
+          }
+        ]
+      },
+
+      {
+        "title": "Threadlist selection",
+        "items": [
+          {
+            "definition": "Select all conversations",
+            "code": "* then a"
+          },
+          {
+            "definition": "Deselect all conversations",
+            "code": "* then n"
+          },
+          {
+            "definition": "Select read conversations",
+            "code": "* then r"
+          },
+          {
+            "definition": "Select unread conversations",
+            "code": "* then u"
+          },
+          {
+            "definition": "Select starred conversations",
+            "code": "* then s"
+          },
+          {
+            "definition": "Select unstarred conversations",
+            "code": "* then t"
+          }
+        ]
+      },
+      {
+        "title": "জাম্পিং (Jumping)",
+        "items": [
+          {
+            "definition": "Go to Inbox",
+            "code": "g then i"
+          },
+          {
+            "definition": "Go to Starred conversations",
+            "code": "g then s"
+          },
+          {
+            "definition": "Go to Snoozed conversations",
+            "code": " g then b"
+          },
+          {
+            "definition": "Go to Sent messages",
+            "code": "g then t"
+          },
+          {
+            "definition": "Go to Drafts",
+            "code": "g then d"
+          },
+          {
+            "definition": "Go to All mail",
+            "code": "g then a"
+          },
+          {
+            "definition": "Go to Contacts",
+            "code": "g then c"
+          },
+          {
+            "definition": "Go to Label",
+            "code": "g then l"
+          },
+          {
+            "definition": "Go to Tasks",
+            "code": "g then k"
+          },
+          {
+            "definition": "Open Mail",
+            "code": "⌘ + ⌥ + 1"
+          },
+          {
+            "definition": "Open Chat",
+            "code": "⌘ + ⌥ + 2"
+          },
+          {
+            "definition": "Open Spaces",
+            "code": "⌘ + ⌥ + 3"
+          },
+          {
+            "definition": "Open Meet",
+            "code": "⌘ + ⌥ + 4"
+          },
+          {
+            "definition": "Go to search filters",
+            "code": "g then f"
+          }
+        ]
+      },
+      {
+        "title": "Navigation",
+        "items": [
+          {
+            "definition": "Back to threadlist",
+            "code": "u"
+          },
+          {
+            "definition": "Newer/older conversation",
+            "code": "k / j"
+          },
+          {
+            "definition": "Open conversation; collapse/expand conversation",
+            "code": "o or Enter"
+          },
+          {
+            "definition": "Read previous/next message",
+            "code": " p / n"
+          },
+          {
+            "definition": "Go to next page",
+            "code": "g then n"
+          },
+          {
+            "definition": "Go to previous page",
+            "code": "g then p"
+          },
+          {
+            "definition": "Go to next inbox section",
+            "code": "` "
+          },
+          {
+            "definition": "Go to previous inbox section",
+            "code": "~"
+          },
+          {
+            "definition": "Reset sidebar sections to default height",
+            "code": "⌘ + ⌥ + v"
+          }
+        ]
+      }
+    ]
+  }
