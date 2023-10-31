@@ -111,6 +111,14 @@
                     "code": "passwd <user-name>"
                 },
                 {
+                    "definition": "ডিস্ক স্পেস ব্যবহার প্রদর্শন করবে",
+                    "code": "df"
+                },
+                {
+                    "definition": "ডিরেক্টরি স্থান ব্যবহার দেখাবে",
+                    "code": "du"
+                },
+                {
                     "definition": "কনসোল পরিস্কার করা",
                     "code": "clear"
                 }
