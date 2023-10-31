@@ -143,7 +143,7 @@
                     "code": "<code>...</code>"
                 },
                 {
-                    "definition": "citation",
+                    "definition": "সাইটেশান",
                     "code": "<cite>...</cite>"
                 },
                 {
@@ -175,11 +175,11 @@
                     "code": "<sup>...</sup>"
                 },
                 {
-                    "definition": "Emphasize",
+                    "definition": "এম্ফাসাইজ বা জোর দেয়া",
                     "code": "<em>...</em>"
                 },
                 {
-                    "definition": "strong",
+                    "definition": "স্ট্রং বা শক্তিশালী",
                     "code": "<strong>...</strong>"
                 },
                 {
@@ -453,6 +453,14 @@
                 {
                     "definition": "সেলের লাইন না ভাঙ্গা",
                     "code": "<td nowrap>...</td>"
+                },
+                {
+                    "definition": "জোড় টেবিল রো সিলেক্ট করা ",
+                    "code": "tr:nth-child(even)"
+                },
+                {
+                    "definition": "বিজোড় টেবিল রো সিলেক্ট করা ",
+                    "code": "tr:nth-child(odd)"
                 }
             ]
         },
