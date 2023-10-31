@@ -20,6 +20,22 @@
                     "code": "vercel list"
                 },
                 {
+                    "definition": "ভার্সেল তালিকার উপনাম",
+                    "code": "vercel ls"
+                },
+                {
+                    "definition": "বর্তমানে লগ ইন করা ব্যবহারকারী সম্পর্কে তথ্য প্রদর্শন করবে",
+                    "code": "vercel whoami"
+                },
+                {
+                    "definition": "বর্তমান ডিরেক্টরিতে একটি নতুন ভার্সেল প্রোজেক্ট শুরু করে",
+                    "code": "vercel init"
+                },
+                {
+                    "definition": "বর্তমান প্রোজেক্টটি ভার্সেলে ডিপ্লয় করে",
+                    "code": "vercel deploy"
+                },
+                {
                     "definition": "প্রোজেক্ট প্রজেক্ট পুনরায় চয়ন করা",
                     "code": "vercel switch project"
                 }
