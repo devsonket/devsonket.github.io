@@ -496,6 +496,16 @@
             ]
         },
         {
+    "title": "পিছিয়ে দেয়া ফাংশন | Deferring functions",
+    "items": [{
+            "definition": "use defer func | বিলম্বিত করা ফাংশন",
+            "code":"func main() {\n defer func() {\n fmt.Println(`Ready`)\n }()\n fmt.Println(`Working...`)\n }"
+                }
+            ]
+            
+        },
+        
+        {
             "title":"জেনারিক ফাংশন",
             "items":[{
                 "definition":"জেনারিক ফাংশন তৈরি করা",
