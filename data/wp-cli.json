@@ -797,6 +797,27 @@
 					"code": "wp cron event list --fields=hook,next_run --format=json"
 				}
 			]
+		},
+		{
+			"title": "wp option কমান্ড",
+			"items": [
+				{
+					"definition": "ওয়ার্ডপ্রেস সাইট এড্রেস দেখা",
+					"code": "wp option get siteurl"
+				},
+				{
+					"definition": "একটি অপশন যুক্ত করা",
+					"code": "wp option add my_option foobar"
+				},
+				{
+					"definition": "একটি অপশন আপডেট করা",
+					"code": "wp option update my_option '{"foo": "bar"}' --format=json"
+				},
+				{
+					"definition": "একটি অপশন বাদ দেয়া",
+					"code": "wp option delete my_option"
+				}
+			]
 		}
 	]
 }
