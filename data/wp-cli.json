@@ -811,7 +811,7 @@
 				},
 				{
 					"definition": "একটি অপশন আপডেট করা",
-					"code": "wp option update my_option '{"foo": "bar"}' --format=json"
+					"code": "wp option update my_option"
 				},
 				{
 					"definition": "একটি অপশন বাদ দেয়া",
