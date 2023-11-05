@@ -568,13 +568,16 @@
                     "code": "clearTimeout"
                 },
                 {
+                    "code": "clearInterval"
+                },
+                {
                     "code": "close"
                 },
                 {
-                    "code": "focus"
+                    "code": "confirm"
                 },
                 {
-                    "code": "open"
+                    "code": "focus"
                 },
                 {
                     "code": "open"
@@ -584,6 +587,9 @@
                 },
                 {
                     "code": "setTimeout"
+                },
+                {
+                    "code": "setInterval"
                 }
             ]
         },
