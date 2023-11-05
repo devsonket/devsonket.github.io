@@ -324,11 +324,11 @@
             "title": "মিডিয়া অবজেক্ট",
             "items": [{
                     "definition": "লেফট অ্যালাইন মিডিয়া",
-                    "code": "<div class="d-flex"> <div class="flex-shrink-0"><img src="..." alt="..."></div> <div class="flex-grow-1 ms-3">This is some content from a media component.</div> </div>"
+                    "code": '<div class="d-flex"> <div class="flex-shrink-0"><img src="..." alt="..."></div> <div class="flex-grow-1 ms-3">This is some content from a media component.</div> </div>'
                 },
                 {
                     "definition": "রাইট অ্যালাইন মিডিয়া",
-                    "code": "<div class="d-flex"> <div class="flex-grow-1 me-3">This is some content from a media component.</div> <div class="flex-shrink-0"><img src="..." alt="..."></div> </div>"
+                    "code": '<div class="d-flex"> <div class="flex-grow-1 me-3">This is some content from a media component.</div> <div class="flex-shrink-0"><img src="..." alt="..."></div> </div>'
                 }
             ]
         },
