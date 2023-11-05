@@ -309,6 +309,30 @@
                     "code": "valueOf"
                 }
             ]
+        }, 
+        {
+            "title": "স্ট্যাটিক মেথড(নাম্বার)",
+            "items": [{
+                    "code": "isFinite"
+                },
+                {
+                    "code": "isInteger"
+                },
+                {
+                    "code": "isNaN"
+                },
+                {
+                    "code": "isSafeInteger"
+                }
+                ,
+                {
+                    "code": "parseFloat"
+                } ,
+                {
+                    "code": "parseInt"
+                }
+
+            ]
         },
         {
             "title": "মেথড(ডেট)",
