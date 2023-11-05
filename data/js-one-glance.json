@@ -284,7 +284,16 @@
                     "code": "toExponential"
                 },
                 {
+                    "code": "toLocaleString"
+                },
+                {
                     "code": "toPrecision"
+                },
+                {
+                    "code": "toString"
+                },
+                {
+                    "code": "valueOf"
                 }
             ]
         },
