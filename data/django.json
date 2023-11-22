@@ -382,7 +382,7 @@
                 },
                 {
                     "definition": "ManyToManyField ব্যবহার করার জন্য",
-                    "code": "field_name = models.ForeignKey(User, on_delete=models.CASCADE)"
+                    "code": "field_name = models.ManyToManyField(Books)"
                 },
                 {
                     "definition":"Image ইনপুট নেওয়ার জন্য",
