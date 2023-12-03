@@ -28,13 +28,13 @@ This project is completely GitHub based. This is where all our cheatsheets are o
 
 _ভবিষ্যতে নতুন কোনো ফরম্যাটের প্রয়োজন হলে অবশ্যই যোগ করা হবে। আপনি চাইলে [এখান থেকে](https://github.com/devsonket/devsonket.github.io/issues/new?title=%E0%A6%95%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%B0%20%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A7%87%20%E0%A6%AB%E0%A6%B0%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F&body=%E0%A6%AC%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%A4%20%E0%A6%AC%E0%A6%B2%E0%A7%81%E0%A6%A8&labels=%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8%20%E0%A6%AB%E0%A6%B0%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F) একটা ইস্যু তৈরী করতে পারবেন নতুন ফরম্যাট তৈরী করার জন্যে_
 
-Any new formats will be added in future if needed. If you want [from](https://github.com/devsonket/devsonket.github.io/issues/new?title=%E0%A6%95%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%B0%20%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A7%87%20%E0%A6%AB%E0%A6%B0%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F&body=%E0%A6%AC%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%A4%20%E0%A6%AC%E0%A6%B2%E0%A7%81%E0%A6%A8&labels=%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8%20%E0%A6%AB%E0%A6%B0%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F) can create an issue to create a new format_
+_Any new formats will be added in future if needed. If you want [from](https://github.com/devsonket/devsonket.github.io/issues/new?title=%E0%A6%95%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%B0%20%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A7%87%20%E0%A6%AB%E0%A6%B0%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F&body=%E0%A6%AC%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%A4%20%E0%A6%AC%E0%A6%B2%E0%A7%81%E0%A6%A8&labels=%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8%20%E0%A6%AB%E0%A6%B0%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F) can create an issue to create a new format_
 
-## কিভাবে কনট্রিবিউট করবেন  **(How to Contribute)**
+## কিভাবে কনট্রিবিউট করবেন  (How to Contribute)
 
 এখানে যেহেতু আমরা **json** ফাইল নিয়ে কাজ করছি তাই অনেকেই হয়তো **json** এর সাথে পরিচিত নাও থাকতে পারেন। সে উদ্দেশ্যে আমরা একটা [**draft**](https://github.com/devsonket/devsonket.github.io/tree/develop/data/draft) ডিরেক্টরিও রেখেছি **data** ডিরেক্টরির ভিতরে। আপনি যদি **json** ফাইল দিয়ে কনট্রিবিউট করতে নাও পারেন তাহলে আপনার যেকোনো ফরম্যাটে তৈরী করা চিটশিট পরিষ্কার টাইটেলসহ ড্রাফট ফোল্ডারে পুশ করে দিতে পারবেন। আবার একই সাথে আপনি চাইলে ড্রাফট ফোল্ডার থেকে কোনো ড্রাফট নিয়ে সেটাও **json** আকারে কনভার্ট করে আসল **data** ডিরেক্টরির ভিতরে পুশ করে দিতে পারেন। তো এভাবেই আপনি চাইলে **৪ রকমভাবে** এই প্রজেক্টে কনট্রিবিউট করতে পারবেনঃ
 
-**(How to Contribute)**
+## How to Contribute
 
 Since we are dealing with **json** files here, many may not be familiar with **json**. For that purpose we also put a [**draft**](https://github.com/devsonket/devsonket.github.io/tree/develop/data/draft) directory inside the **data** directory. If you can't contribute with a **json** file, you can push your cheatsheet in any format to the draft folder with a clean title. At the same time, if you want, you can take a draft from the draft folder and convert it to **json** format and push it inside the original **data** directory. So this is how you can contribute to this project in **4 ways** if you want:
 
@@ -52,7 +52,7 @@ Since we are dealing with **json** files here, many may not be familiar with **j
 
 There will be a few main contributors who will do the work of showing a cheatsheet on the original website. In that case those who will contribute more in our list of contributors or if anyone seems responsible enough then he will be added to the list of admins of the whole organization.
 
-**Contributing Guidelines📝**
+## Contributing Guidelines📝
 
 You are welcome to contribute to this project.
 To start contributing, follow the below guidelines:
