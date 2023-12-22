@@ -235,6 +235,10 @@
                     "code": "sum(x)"
                 },
                 {
+                    "definition": "x এর সবগুলো সংখ্যার গুণফল",
+                    "code": "prod(x)"
+                },
+                {
                     "definition": "গড়",
                     "code": "mean(x)"
                 },
@@ -269,6 +273,18 @@
                 {
                     "definition": "ফ্যাক্টোরিয়াল",
                     "code": "factorial(x)"
+                },
+                {
+                    "definition": "সূচক (পাওয়ার)",
+                    "code": "x^n"
+                },
+                {
+                    "definition": "ভাগ করার পরে ভাগশেষ",
+                    "code": "x %% y"
+                },
+                {
+                    "definition": "ভাগফল (পূর্ণসংখ্যা)",
+                    "code": "x %/% y"
                 }
             ]
         },
@@ -295,6 +311,10 @@
                     "code": "t(m)"
                 },
                 {
+                    "definition": "ম্যাট্রিক্সের যোগফল",
+                    "code": "m + n"
+                },
+                {
                     "definition": "ম্যাট্রিক্স গুনন",
                     "code": "m %*% n"
                 },
@@ -309,6 +329,30 @@
                 {
                     "definition": "ম্যাট্রিক্স হতে একটি এলিমেন্ট সিলেক্ট",
                     "code": "m[2,2]"
+                },
+                {
+                    "definition": "ম্যাট্রিক্সের রো এর সমষ্টি",
+                    "code": "rowSums(m)"
+                },
+                {
+                    "definition": "ম্যাট্রিক্সের কলাম এর সমষ্টি",
+                    "code": "colSums(m)"
+                },
+                {
+                    "definition": "ম্যাট্রিক্সের ইনভার্স",
+                    "code": "solve(m)"
+                },
+                {
+                    "definition": "ম্যাট্রিক্সের নির্ণায়কের মান",
+                    "code": "det(m)"
+                },
+                {
+                    "definition": "ম্যাট্রিক্স(3x3) এ নতুন রো এড করা",
+                    "code": "rbind(m, c(1,2,3))"
+                },
+                {
+                    "definition": "ম্যাট্রিক্স(3x3) এ নতুন কলাম এড করা",
+                    "code": "cbind(m, c(1,2,3))"
                 }
             ]
         },
@@ -413,6 +457,39 @@
                 {
                     "definition": "x এর হিস্টোগ্রাম",
                     "code": "hist(x)"
+                },
+                {
+                    "definition": "x এর বক্সপ্লট",
+                    "code": "boxplot(x)"
+                },
+                {
+                    "definition": "x এর ডট চার্ট",
+                    "code": "dotchart(x)"
+                },
+                {
+                    "definition": "x এর পাই চার্ট",
+                    "code": "pie(x)"
+                }
+            ]
+        },
+        {
+            "title": "সেটের অপারেশন",
+            "items": [
+                {
+                    "definition": "দুইটি সেটের ইউনিয়ন",
+                    "code": "union(x, y)"
+                },
+                {
+                    "definition": "দুইটি সেটের ইন্টারসেকশন",
+                    "code": "intersect(x, y)"
+                },
+                {
+                    "definition": "দুইটি সেটের বিয়োগফল",
+                    "code": "setdiff(x, y)"
+                },
+                {
+                    "definition": "দুইটি সেটের মধ্যে তুলনা",
+                    "code": "setequal(x, y)"
                 }
             ]
         }
