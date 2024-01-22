@@ -93,12 +93,15 @@
                     "definition": "কেইস ইনসেনসেটিভ করে সিলেক্ট করা" ,
                     "code": "   <p class='important Special'>This is an important and special paragraph.</p>\np[class$='special ' i] {\ncolor: red;\n}\n  " 
                 }
+            ]
+        },
+        {
             "title": "গুগলে CSS প্রপারটিজ কিভাবে সার্চ করবো? (How to Google CSS properties?)",
             "items": [
-              {
-                "definition": "আমরা নিয়মিত Google ব্যবহার করি CSS বৈশিষ্ট্য অনুসন্ধান করতে যা আমরা জানি না বা মনে নেই। Google ব্যবহার করার সময়, আপনি যা করার চেষ্টা করছেন তা অনুসন্ধান করুন। উদাহরণ: ",
-                "code": "'css rounded corners'\n,'css text italic',\n'css adjust space between lines'"
-              }
+                {
+                    "definition": "আমরা নিয়মিত Google ব্যবহার করি CSS বৈশিষ্ট্য অনুসন্ধান করতে যা আমরা জানি না বা মনে নেই। Google ব্যবহার করার সময়, আপনি যা করার চেষ্টা করছেন তা অনুসন্ধান করুন। উদাহরণ: ",
+                    "code": "'css rounded corners'\n,'css text italic',\n'css adjust space between lines'"
+                }
             ]
         },
         {
