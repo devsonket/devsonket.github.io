@@ -1,6 +1,6 @@
-import React from "react"
+import React, { useRef } from "react"
 import styled from "@emotion/styled"
-import { FiLink } from "react-icons/fi"
+import { FiLink, FiCopy } from "react-icons/fi"
 
 const SheetContainer = styled.div`
   & h3 {
@@ -89,36 +89,56 @@ const SheetTitle = styled.div`
   }
 `
 
-export const Sheet = ({ title, items, onlyCode }) => (
-  <SheetContainer id={title}>
-    <SheetTitle className="sheet-title">
-      <h3>{title}</h3>
-      <a href={`#${title}`}>
-        <FiLink />
-      </a>
-    </SheetTitle>
-    <ul className="single-item">
-      {items ? (
-        items.map(({ definition, code }, index) => (
-          <li key={index} className="item">
-            {definition && (
-              <p
-                className="def"
-                dangerouslySetInnerHTML={{ __html: definition }}
-              />
-            )}
-            {code && (
-              <pre className="code">
-                <code>{code}</code>
-              </pre>
-            )}
-          </li>
-        ))
-      ) : (
-        <pre className="code">
-          <code>{onlyCode}</code>
-        </pre>
-      )}
-    </ul>
-  </SheetContainer>
-)
+export const Sheet = ({ title, items, onlyCode }) => {
+  const codeRef = useRef(null)
+
+  const handleCopyClick = async () => {
+    const codeElement = codeRef.current
+
+    if (codeElement) {
+      try {
+        await navigator.clipboard.writeText(codeElement.innerText)
+        console.log("Code copied to clipboard")
+      } catch (err) {
+        console.error("Failed to copy code to clipboard", err)
+      }
+    }
+  }
+
+  return (
+    <SheetContainer id={title}>
+      <SheetTitle className="sheet-title">
+        <h3>{title}</h3>
+        <a href={`#${title}`}>
+          <FiLink />
+        </a>
+        <button onClick={handleCopyClick}>
+          <FiCopy />
+        </button>
+      </SheetTitle>
+      <ul className="single-item">
+        {items ? (
+          items.map(({ definition, code }, index) => (
+            <li key={index} className="item">
+              {definition && (
+                <p
+                  className="def"
+                  dangerouslySetInnerHTML={{ __html: definition }}
+                />
+              )}
+              {code && (
+                <pre className="code" ref={codeRef}>
+                  <code>{code}</code>
+                </pre>
+              )}
+            </li>
+          ))
+        ) : (
+          <pre className="code" ref={codeRef}>
+            <code>{onlyCode}</code>
+          </pre>
+        )}
+      </ul>
+    </SheetContainer>
+  )
+}
