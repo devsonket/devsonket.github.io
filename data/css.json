@@ -74,31 +74,34 @@
                     "code": "  <p class='important special'>This is an important and special paragraph.</p>\np[class~='special'] {\ncolor: red;\n}"
                 },
                 {
-                    "definition": "এট্রিবিউট ভ্যালু আংশিক এর উপর নির্ভর সিলেক্ট করা " ,
-                    "code": "    <div lang='zh'>This is content in Chinese (zh).</div>\n<div lang='zh-HK'>This is content in Chinese (zh-HK).</div>\n<div lang='en-US'>This is content in English (en-US).</div>\np[class।='zh'] {\ncolor: red;\n}\nএখানে শুধু প্রথম ২ টা div সিলেক্ট হবে।" 
+                    "definition": "এট্রিবিউট ভ্যালু আংশিক এর উপর নির্ভর সিলেক্ট করা ",
+                    "code": "    <div lang='zh'>This is content in Chinese (zh).</div>\n<div lang='zh-HK'>This is content in Chinese (zh-HK).</div>\n<div lang='en-US'>This is content in English (en-US).</div>\np[class।='zh'] {\ncolor: red;\n}\nএখানে শুধু প্রথম ২ টা div সিলেক্ট হবে।"
                 },
                 {
-                    "definition": "এট্রিবিউট এর যেকোনো ভ্যালুর জন্য *" ,
-                    "code": "   <p class='important special'>This is an important and special paragraph.</p>\np[class*='sp'] {\ncolor: red;\n}\n এটা এখনো p element কে সিলেক্ট করবে " 
+                    "definition": "এট্রিবিউট এর যেকোনো ভ্যালুর জন্য *",
+                    "code": "   <p class='important special'>This is an important and special paragraph.</p>\np[class*='sp'] {\ncolor: red;\n}\n এটা এখনো p element কে সিলেক্ট করবে "
                 },
                 {
-                    "definition": "এট্রিবিউট ভ্যালুর প্রথম অংশের সাহায্যে সিলেক্ট করা " ,
-                    "code": "   <p class='important special'>This is an important and special paragraph.</p>\np[class^='important'] {\ncolor: red;\n}\n  " 
+                    "definition": "এট্রিবিউট ভ্যালুর প্রথম অংশের সাহায্যে সিলেক্ট করা ",
+                    "code": "   <p class='important special'>This is an important and special paragraph.</p>\np[class^='important'] {\ncolor: red;\n}\n  "
                 },
                 {
-                    "definition": "এট্রিবিউট ভ্যালুর শেষ অংশের সাহায্যে সিলেক্ট করা " ,
-                    "code": "   <p class='important special'>This is an important and special paragraph.</p>\np[class$='special'] {\ncolor: red;\n}\n  " 
+                    "definition": "এট্রিবিউট ভ্যালুর শেষ অংশের সাহায্যে সিলেক্ট করা ",
+                    "code": "   <p class='important special'>This is an important and special paragraph.</p>\np[class$='special'] {\ncolor: red;\n}\n  "
                 },
                 {
-                    "definition": "কেইস ইনসেনসেটিভ করে সিলেক্ট করা" ,
-                    "code": "   <p class='important Special'>This is an important and special paragraph.</p>\np[class$='special ' i] {\ncolor: red;\n}\n  " 
+                    "definition": "কেইস ইনসেনসেটিভ করে সিলেক্ট করা",
+                    "code": "   <p class='important Special'>This is an important and special paragraph.</p>\np[class$='special ' i] {\ncolor: red;\n}\n  "
                 }
+            ]
+        },
+        {
             "title": "গুগলে CSS প্রপারটিজ কিভাবে সার্চ করবো? (How to Google CSS properties?)",
             "items": [
-              {
-                "definition": "আমরা নিয়মিত Google ব্যবহার করি CSS বৈশিষ্ট্য অনুসন্ধান করতে যা আমরা জানি না বা মনে নেই। Google ব্যবহার করার সময়, আপনি যা করার চেষ্টা করছেন তা অনুসন্ধান করুন। উদাহরণ: ",
-                "code": "'css rounded corners'\n,'css text italic',\n'css adjust space between lines'"
-              }
+                {
+                    "definition": "আমরা নিয়মিত Google ব্যবহার করি CSS বৈশিষ্ট্য অনুসন্ধান করতে যা আমরা জানি না বা মনে নেই। Google ব্যবহার করার সময়, আপনি যা করার চেষ্টা করছেন তা অনুসন্ধান করুন। উদাহরণ: ",
+                    "code": "'css rounded corners'\n,'css text italic',\n'css adjust space between lines'"
+                }
             ]
         },
         {
@@ -230,7 +233,6 @@
                     "definition": "পরবর্তী সিব্লিং সিলেক্টর",
                     "code": " h1 ~ p {\ncolor: red;\n}\nএখানে h1 এর পরবর্তী সিবলিং p গুলোকে সিলেক্ট করা হয়েছে। এখানে শুধু ইমিডীয়েট সিব্লিং কেই সিলেক্ট করবে না বরং পরবর্তী সিবলিং গুলোকেও সিলেক্ট করবে।"
                 }
-                
             ]
         }
     ]
