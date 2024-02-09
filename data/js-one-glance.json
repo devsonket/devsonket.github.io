@@ -26,6 +26,19 @@
                 }
             ]
         },
+         {
+            "title": "স্ট্যাটিক মেথড(অবজেক্ট)",
+            "items": [{
+                    "code": "from"
+                },
+                {
+                    "code": "isArray"
+                },
+                {
+                    "code": "of"
+                }
+            ]
+        },
         {
             "title": "মেথড(স্ট্রিং)",
             "items": [{
@@ -284,8 +297,41 @@
                     "code": "toExponential"
                 },
                 {
+                    "code": "toLocaleString"
+                },
+                {
                     "code": "toPrecision"
+                },
+                {
+                    "code": "toString"
+                },
+                {
+                    "code": "valueOf"
                 }
+            ]
+        }, 
+        {
+            "title": "স্ট্যাটিক মেথড(নাম্বার)",
+            "items": [{
+                    "code": "isFinite"
+                },
+                {
+                    "code": "isInteger"
+                },
+                {
+                    "code": "isNaN"
+                },
+                {
+                    "code": "isSafeInteger"
+                }
+                ,
+                {
+                    "code": "parseFloat"
+                } ,
+                {
+                    "code": "parseInt"
+                }
+
             ]
         },
         {
@@ -559,13 +605,16 @@
                     "code": "clearTimeout"
                 },
                 {
+                    "code": "clearInterval"
+                },
+                {
                     "code": "close"
                 },
                 {
-                    "code": "focus"
+                    "code": "confirm"
                 },
                 {
-                    "code": "open"
+                    "code": "focus"
                 },
                 {
                     "code": "open"
@@ -575,6 +624,9 @@
                 },
                 {
                     "code": "setTimeout"
+                },
+                {
+                    "code": "setInterval"
                 }
             ]
         },
