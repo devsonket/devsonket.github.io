@@ -58,6 +58,10 @@
                     "code": "php artisan make:controller <controller-name>"
                 },
                 {
+                    "definition": "নতুন রেসোর্সফুল কন্ট্রোলার তৈরি করার জন্য",
+                    "code": "php artisan make:controller <controller-name> --resource"
+                },
+                {
                     "definition": "রিকোয়েস্ট ফরম ক্রিয়েট করা",
                     "code": "php artisan make:request <request-name>"
                 },
@@ -102,6 +106,10 @@
                     "code": "php artisan make:model ModelName -m"
                 },
                 {
+                    "definition": "মডেল, মাইগ্রেশন, ফেক্টরি এবং সিডার এক সাথে ক্রিয়েট করা",
+                    "code": "php artisan make:model ModelName -mfs"
+                },
+                {
                     "definition": "ডাটাবেসে টেবিল মাইগ্রেট করা",
                     "code": "php artisan migrate"
                 },
@@ -140,6 +148,26 @@
                 {
                     "definition": "ডাটাবেসে নির্দিষ্ট টেবিল মাইগ্রেট করা",
                     "code": "php artisan migrate --path=/database/migrations/full_migration_file_name_migration.php"
+                },
+                {
+                    "definition": "কম্পাইল ভিউগুলি মুছে ফেলার জন্য",
+                    "code": "php artisan view:clear"
+                },
+                {
+                    "definition": "নতুন ইভেন্ট তৈরি করার জন্য",
+                    "code": "php artisan make:event <event-name>"
+                },
+                {
+                    "definition": "নতুন জব তৈরি করার জন্য",
+                    "code": "php artisan make:job <job-name>"
+                },
+                {
+                    "definition": "নতুন লিস্টেনার তৈরি করার জন্য",
+                    "code": "php artisan make:listener <listener-name> --event=<event-class>"
+                },
+                {
+                    "definition": "নতুন পলিসি তৈরি করার জন্য",
+                    "code": "php artisan make:policy <policy-name>"
                 }
             ]
         },
