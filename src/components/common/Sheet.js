@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { FiLink } from "react-icons/fi"
+import CopyToClipboard from "./CopyToClipboard"
 
 const SheetContainer = styled.div`
   & h3 {
@@ -108,16 +109,22 @@ export const Sheet = ({ title, items, onlyCode }) => (
               />
             )}
             {code && (
-              <pre className="code">
-                <code>{code}</code>
-              </pre>
+              <>
+                <pre className="code">
+                  <code>{code}</code>
+                </pre>
+                <CopyToClipboard textToCopy={code} />
+              </>
             )}
           </li>
         ))
       ) : (
-        <pre className="code">
-          <code>{onlyCode}</code>
-        </pre>
+        <>
+          <pre className="code">
+            <code>{onlyCode}</code>
+          </pre>
+          <CopyToClipboard textToCopy={code} />
+        </>
       )}
     </ul>
   </SheetContainer>
