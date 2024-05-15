@@ -1,0 +1,243 @@
+{
+    "id": "zoomShortcutMac",
+    "title": "জুম ম্যাক অ্যাপের শর্টকাট",
+    "slug": "zoomShortcutMac",
+    "description": "জুম ম্যাক অ্যাপের কতিপয় বেসিক শর্টকাটসমুহ যা প্রতিনিয়ত কাজে লাগবে কোনো না কোনোভাবে",
+    "colorPref": "#344443",
+    "contents": [ 
+      {
+        "title": "মিটিং কনট্রোল",
+        "items": [
+            {
+                "definition": "মিটিং জয়েন করতে",
+                "code": "Command(⌘) + J"
+              },
+              {
+                "definition": "মিটিং শুরু করতে",
+                "code": "Command(⌘) + Control + V"
+              },
+              {
+                "definition": "মিটিং শিডিউল করতে",
+                "code": "Command(⌘) + D"
+              },
+              {
+                "definition": "সরাসরি স্ক্রিন শেয়ার করতে",
+                "code": "Command(⌘) + Control + S"
+              },
+              {
+                "definition": "অডিও মিউট/আনমিউট",
+                "code": "Command(⌘) + Shift + A"
+              },
+              {
+                "definition": "হোস্ট ব্যতীত সবার অডিও মিউট করতে (শুধু হোস্ট পারবে)",
+                "code": "Command(⌘) + Control + M"
+              },
+              {
+                "definition": "হোস্ট ব্যতীত সবার অডিও আনমিউট করতে (শুধু হোস্ট পারবে)",
+                "code": "Command(⌘) + Control + U"
+              },
+              {
+                "definition": "প্রেস করে ধরে কথা বলতে পারবে (পুশ টু টক)",
+                "code": "Space"
+              },
+              {
+                "definition": "ভিডিও চালু/বন্ধ",
+                "code": "Command(⌘) + Shift + V"
+              },
+              {
+                "definition": "ক্যামেরা সুইচ",
+                "code": "Command(⌘) + Shift + N"
+              },
+              {
+                "definition": "স্ক্রিন শেয়ার চালু/বন্ধ",
+                "code": "Command(⌘) + Shift + S"
+              },
+              {
+                "definition": "স্ক্রিন শেয়ার পজ/রিজুম",
+                "code": "Command(⌘) + Shift + T"
+              },
+              {
+                "definition": "লোকাল রেকর্ডিং চালু করতে",
+                "code": "Command(⌘) + Shift + R"
+              },
+              {
+                "definition": "ক্লাউড রেকর্ডিং চালু করতে",
+                "code": "Command(⌘) + Shift + C"
+              },
+              {
+                "definition": "রেকর্ডিং পজ/রিজুম",
+                "code": "Command(⌘) + Shift + P"
+              },
+              {
+                "definition": "স্পিকার ভিউ এবং গ্যালারি ভিউ এর মধ্যে সুইচ করতে",
+                "code": "Command(⌘) + Shift + W"
+              },
+              {
+                "definition": "পার্টিসিপেন্ট এর ভিডিও পেইজের পুর্ববর্তী পেইজে যেতে",
+                "code": "Ctrl + P"
+              },
+              {
+                "definition": "পার্টিসিপেন্ট এর ভিডিও পেইজের পরবর্তী পেইজে যেতে",
+                "code": "Ctrl + N"
+              },
+              {
+                "definition": "পার্টিসিপেন্ট প্যানেল শো/হাইড",
+                "code": "Command(⌘) + U"
+              },
+              {
+                "definition": "চ্যাট প্যানেল শো/হাইড",
+                "code": "Command(⌘) + Shift + H"
+              },
+              {
+                "definition": "ইনভাইট উইন্ডো ওপেন করতে",
+                "code": "Command(⌘) + I"
+              },
+              {
+                "definition": "ইনভাইট লিংক কপি করতে",
+                "code": "Command(⌘) + Shift + I"
+              },
+              {
+                "definition": "রাইজ/লোয়ার হ্যান্ড করতে",
+                "code": "Option + Y"
+              },
+              {
+                "definition": "রিমোট কন্ট্রোল শুরু করতে",
+                "code": "Ctrl + Shift + R"
+              },
+              {
+                "definition": "রিমোট কন্ট্রোল পারমিশন রিভোক/রিমুভ করতে",
+                "code": "Ctrl + Shift + G"
+              },
+              {
+                "definition": "ফুল স্কিন মুড অন/অফ",
+                "code": "Command(⌘) + Shift + F"
+              },
+              {
+                "definition": "মিনিমাল উইন্ডো তে সুইচ করতে",
+                "code": "Command(⌘) + Shift + M"
+              },
+              {
+                "definition": "ডুয়েল মনিটর মুড এনাবল/ডিজেবল",
+                "code": "Command(⌘) + Shift + D"
+              },
+              {
+                "definition": "ফ্লটিং মিটিং কন্ট্রোল শো/হাইড",
+                "code": "Control + Option + Command(⌘) + H"
+              }, 
+              {
+                "definition": "একটিভ স্পিকারের নাম দেখতে",
+                "code": "Command(⌘) + 2"
+              },
+              {
+                "definition": "মিটিং কনট্রোল অপশন সব সময় শো করতে ও টুগল করতে",
+                "code": "Ctrl + \\"
+              }
+        ]
+      },
+      {
+        "title": "চ্যাট কনট্রোল",
+        "items": [
+            {
+                "definition": "স্ক্রিনশট নিতে",
+                "code": "Command(⌘) + T"
+              },
+              {
+                "definition": "চ্যাট ডিসপ্লে সাইজ বাড়াতে",
+                "code": "Command(⌘) + +"
+              },
+              {
+                "definition": "চ্যাট ডিসপ্লে সাইজ কমাতে",
+                "code": "Command(⌘) + -"
+              },
+              {
+                "definition": "চ্যাট হিস্টোরি তে পেছনে যেতে",
+                "code": "Command(⌘) + ["
+              },
+              {
+                "definition": "চ্যাট হিস্টোরি তে সামনে যেতে",
+                "code": "Command(⌘) + ]"
+              },
+              {
+                "definition": "নতুন চ্যাট খুলতে",
+                "code": "Command(⌘) + N"
+              },
+              {
+                "definition": "চ্যাট সার্চ করতে",
+                "code": "Command(⌘) + F"
+              },
+              {
+                "definition": "চলমান চ্যানেলে বা চ্যাটে নতুন মেম্বার এড করতে",
+                "code": "Command(⌘) + Option + i"
+              },
+              {
+                "definition": "সকল চ্যাট এবং চ্যানেল লিস্ট করতে",
+                "code": "Command(⌘) + Shift + L"
+              },
+              {
+                "definition": "চলমান চ্যানেলে বা চ্যাতে নতুন মেসেজ চালু করতে",
+                "code": "Command(⌘) + Control + N"
+              },
+              {
+                "definition": "চলমান চ্যানেলে বা চ্যাতে লেটেস্ট মেসজে ফোকাস করতে",
+                "code": "Command(⌘) + Shift + U"
+              }
+             
+        ]
+      },
+      {
+        "title": "কল কনট্রোল", 
+        "items": [
+            {
+                "definition": "হাই লাইট করা ফোন নাম্বারে কল করতে / ডিরেক্টরি সার্চ করতে",
+                "code": "Control + Shift + C"
+              },
+              {
+                "definition": "ইনবাউন্ড কল এক্সেপ্ট করতে",
+                "code": "Control + Shift + A"
+              },
+              {
+                "definition": "ইনবাউন্ড কল ডিকলাইন করতে",
+                "code": "Control + Shift + D"
+              },
+              {
+                "definition": "কারেন্ট কল বন্ধ করতে",
+                "code": "Control + Shift + E"
+              },
+              {
+                "definition": "কল মিউট/আনমিউট",
+                "code": "Control + Shift + M"
+              },
+              {
+                "definition": "কল হোল্ড/আনহোল্ড",
+                "code": "Control + Shift + H"
+              },
+              {
+                "definition": "কল ট্রান্সফার",
+                "code": "Control + Shift + T"
+              }
+             
+        ]
+      },
+      {
+        "title": "জেনারেল",
+        "items": [
+            {
+                "definition": "চলমান উইন্ডো বন্ধ করতে",
+                "code": "Command(⌘) + W"
+              },
+              {
+                "definition": "নেটওয়ার্ক ডায়াগনিস্তিক চালু করতে",
+                "code": "Command(⌘) + Option + Shift + D"
+              },
+              {
+                "definition": "পোট্রেট এবং ল্যান্ডস্ক্যাপ মুডে সুইচ করতে",
+                "code": "Command(⌘) + L"
+              },
+              {
+                "definition": "এক ট্যাব থেকে আরেক ট্যাবে সুইচ করতে",
+                "code": "Control + T"
+              }
+        ] 
+      }
+    ]
+  }

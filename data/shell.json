@@ -111,6 +111,14 @@
                     "code": "passwd <user-name>"
                 },
                 {
+                    "definition": "ডিস্ক স্পেস ব্যবহার প্রদর্শন করবে",
+                    "code": "df"
+                },
+                {
+                    "definition": "ডিরেক্টরি স্থান ব্যবহার দেখাবে",
+                    "code": "du"
+                },
+                {
                     "definition": "কনসোল পরিস্কার করা",
                     "code": "clear"
                 }
@@ -139,6 +147,50 @@
                     "code": "echo $c"
                 }
             ]
+        },
+        {
+            "title": "শেল স্ক্রিপ্টিং অ্যারে",
+            "items": [{
+                    "definition": "অ্যারে মান সংজ্ঞায়িত করা",
+                    "code": "array_name[index]=value"
+                },
+                {
+                    "definition": "ইনপুট নেয়া",
+                    "code": "NAME[0]='ARMAN'"
+                },
+                {
+                    "definition": "অ্যারে মান অ্যাক্সেস করা",
+                    "code": "${array_name[index]}"
+                },
+                {
+                    "definition": "ভ্যারিয়েবলের মান দেখানো",
+                    "code": "echo 'First Person: ${NAME[0]}'"
+                }
+
+            ]
+        },
+        {
+            "title": "শেল স্ক্রিপ্টিং অদ্ভুত নথি",
+            "items": [{
+                "definition": "ফাংশন তৈরি করা",
+                "code": "my_function() {}"
+            },
+            {
+                "definition": "উপাদান প্রদানের দ্বারা কমান্ড লাইন থেকে ইনপুট নেয়া",
+                "code": "read -p name"
+            },
+            {
+                "definition": "যদি-হলে বা যদি না হলে শর্ত পরীক্ষা করা",
+                "code": "if [ condition ]; then fi"
+            },
+            {
+                "definition": "একটি ফাইল থেকে পংক্তি পংক্তি কোড পড়া",
+                "code": "while IFS= read -r line; do"
+            }
+
+            ]
         }
+
+        
     ]
 }

@@ -1,0 +1,136 @@
+{
+    "id": "elasticsearch",
+    "title": "ইলাস্টিক সার্চ",
+    "slug": "elasticsearch",
+    "description": "ইলাস্টিকসার্চ হল একটি ওপেন সোর্স সার্চ এবং অ্যানালিটিক্স ইঞ্জিন যা আপনাকে দ্রুত এবং কাছাকাছি রিয়েল-টাইমে বিপুল পরিমাণ ডেটা সঞ্চয়, অনুসন্ধান এবং বিশ্লেষণ করতে এবং মিলিসেকেন্ডে উত্তর দিয়ে দেয়",
+    "colorPref": "#252426",
+    "contents": [
+        {
+            "title": "সাধারণ",
+            "items": [
+                {
+                    "definition": "লিস্টের সকল ইন্ডেক্স বের করার জন্য",
+                    "code": "curl -X GET 'http://localhost:9200/_cat/indices?v'"
+                },
+                {
+                    "definition": "লিস্টের সকল ডক বের করার জন্য",
+                    "code": "curl -X GET 'http://localhost:9200/sample/_search'"
+                },
+                {
+                    "definition": "ইউ,আর,এল প্যারামিটারের মাধ্যমে কুয়েরি ইউজ করা",
+                    "code": "curl -X GET http://localhost:9200/samples/_search?q=author:xyz"
+                },
+                {
+                    "definition": "ইন্ডেক্স ডিলেট করতে",
+                    "code": "curl -X DELETE 'http://localhost:9200/samples'"
+                },
+                {
+                    "definition": "লিস্টের ইন্ডেক্স ম্যাপিং করতে",
+                    "code": "curl -X GET http://localhost:9200/samples"
+                },
+                {
+                    "definition": "ডাটা এ্যাড করতে",
+                    "code": "curl -XPUT --header 'Content-Type: application/json' http://localhost:9200/samples/_doc/1 -d '{ \"school\" : \"Harvard\"}'"
+                },
+                {
+                    "definition": "ডক আপডেট করতে",
+                    "code": "curl -XPUT --header 'Content-Type: application/json' http://localhost:9200/samples/_doc/2 -d '{\"school\": \"xyz\"}'curl -XPOST --header 'Content-Type: application/json' http://localhost:9200/samples/_doc/2/_update -d '{\"doc\" : {\"students\": 100}}'"
+                },
+                {
+                    "definition": "ক্লাস্টার হেলথ দেখতে",
+                    "code": "curl --user $pwd  -H 'Content-Type: application/json' -XGET http://localhost:9200/_cluster/health?pretty"
+                },
+                {
+                    "definition": "ক্লাস্টার হেলথ স্ট্যাস্টস দেখতে",
+                    "code": "curl -XGET 'http://localhost:9200/_cluster/health?pretty=true'"
+                },
+                {
+                    "definition": "নোড দেখতে",
+                    "code": "curl -XGET 'http://localhost:9200/_cat/nodes?pretty=true'"
+                },
+                {
+                    "definition": "শার্ড দেখতে",
+                    "code": "curl -XGET http://localhost:9200/_cat/shards"
+                },
+                {
+                    "definition": "ইনডিস দেখতে",
+                    "code": "curl -XGET 'http://localhost:9200/_cat/indices?v'"
+                },
+                {
+                    "definition": "ইনডিসের সেটিং জানার জন্য",
+                    "code": "curl -XGET 'http://localhost:9200/_all/_settings?pretty=true'"
+                },
+                {
+                    "definition": "ইলাস্টিক সার্চের ভার্সন জানার জন্য",
+                    "code": "curl -XGET 'localhost:9200'"
+                },
+                {
+                    "definition": "ক্লাস্টার স্টেট জানার জন্য",
+                    "code": "GET /_cluster/stats?human&pretty"
+                },
+                {
+                    "definition": "নোড স্টেট জানার জন্য",
+                    "code": "GET /_nodes/stats"
+                },
+                {
+                    "definition": "ক্লাস্টারের অনিষ্পন্ন টাস্ক জানার জন্য",
+                    "code": "GET /_cluster/pending_tasks"
+                },
+                {
+                    "definition": "অ্যালকেশন জানার জন্য",
+                    "code": "GET /_cat/allocation?pretty&v"
+                },
+                {
+                    "definition": "ইনডিসের লিস্ট",
+                    "code": "GET /_cat/indices/"
+                },
+                {
+                    "definition": "শার্ডে লিস্ট",
+                    "code": "GET /_cat/shards/?pretty&v"
+                }
+            ]
+        },
+        {
+            "title": "সার্চের ধরন",
+            "items": [
+                {
+                    "definition": "সার্চ টাইপ ১",
+                    "code": "GET /_search?q=dump"
+                },
+                {
+                    "definition": "সার্চ টাইপ ২",
+                    "code": "GET /_search?q=EventCode:(512 OR 1102) AND NOT host:ImageServ*"
+                },
+                {
+                    "definition": "দিন দিয়ে সার্চ করা",
+                    "code": "GET /_search?q=message:hacker~3 AND date:[2016-01-01 TO 2018-12-31]"
+                },
+                {
+                    "definition": "অ্যালিস দিয়ে সার্চ করা",
+                    "code": "GET /myindex/_alias/*"
+                }
+            ]
+        },
+        {
+            "title": "ইনডেক্সের কাজ",
+            "items": [
+                {
+                    "definition": "ক্লোজ ইনডেক্স",
+                    "code": "POST /myindex /_close"
+                },
+                {
+                    "definition": "ওপেন ইনডেক্স",
+                    "code": "POST /myindex /_open"
+                },
+                {
+                    "definition": "ইনডেক্স মনিটর করতে",
+                    "code": "GET /myindex/_stats"
+                },
+                {
+                    "definition": "ইনডেক্স বাদ দিতে",
+                    "code": "DELETE /my_index_name"
+                }
+            ]
+        }
+    ]
+}

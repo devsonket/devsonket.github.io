@@ -331,6 +331,19 @@
             ]
         },
         {
+            "title": "সময় অতিবাহিত কৌশল ( Time elapsed trick )",
+            "items": [{
+                    "definition": "Utility ",
+                    "code": "func TrackTime(pre time.Time) time.Duration { \n elapsed := time.Since(pre) \n fmt.Println(`elapsed:`, elapsed) }"
+                },
+                {
+                    "definition": "'Time now'",
+                    "code": "func TestTrackTime(t *testing.T) { \n defer TrackTime(time.Now()) // <--- THIS \n time.Sleep(500 * time.Millisecond) \n }"
+                }      
+               
+            ]
+        },
+        {
             "title": "লুপ",
             "items": [{
                     "definition": "ফর লুপ",
@@ -479,6 +492,28 @@
             {
                 "definition":"চ্যানেল এর সাইজ নির্ধারণ করা",
                 "code":"ch := make(chan int, 5)"
+            }
+            ]
+        },
+        {
+    "title": "পিছিয়ে দেয়া ফাংশন | Deferring functions",
+    "items": [{
+            "definition": "use defer func | বিলম্বিত করা ফাংশন",
+            "code":"func main() {\n defer func() {\n fmt.Println(`Ready`)\n }()\n fmt.Println(`Working...`)\n }"
+                }
+            ]
+            
+        },
+        
+        {
+            "title":"জেনারিক ফাংশন",
+            "items":[{
+                "definition":"জেনারিক ফাংশন তৈরি করা",
+                "code":"func genericFunc[T any](a T) T {\n\treturn a\n}"
+            },
+            {
+                "definition":"জেনারিক ফাংশন কল করা",
+                "code":"genericFunc[int](5)"
             }
             ]
         }

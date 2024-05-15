@@ -23,14 +23,19 @@
                     "code": "<script src=https://unpkg.com/axios/dist/axios.min.js></script>"
                 },
                 {
-                    "definition": "বওয়ের দিয়ে ইন্সটল করার জন্য",
+                    "definition": "(bower) বওয়ের দিয়ে ইন্সটল করার জন্য",
                     "code": "bower install axios"
                 }
             ]
         },
         {
             "title": "রিকোয়েস্ট উদাহরণ",
-            "items": [{
+            "items": [
+                {
+                    "definition": "ডাটা রিকোয়েস্ট করার জন্য",
+                    "code": "axios.request()"
+                },
+                {
                     "definition": "ডাটা get এর জন্য",
                     "code": "axios.get()"
                 },
@@ -45,6 +50,10 @@
                 {
                     "definition": "সিঙ্গেল ডাটা মডিফাই করার জন্য",
                     "code": "axios.put()"
+                },       
+                {
+                    "definition": "ডাটা আপডেট করার জন্য",
+                    "code": "axios.patch()"
                 }
             ]
         }

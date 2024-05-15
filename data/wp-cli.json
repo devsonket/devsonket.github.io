@@ -1,0 +1,802 @@
+{
+	"id": "wpcli",
+	"title": "WP CLI",
+	"slug": "wp-cli",
+	"description": "WP CLI হচ্ছে ওয়ার্ডপ্রেসের একটি কমান্ড লাইন ইন্টারফেস। যার মাধ্যমে আপনি ওয়ার্ডপ্রেস সেটআপ, থিম ও প্লাগিন্স ইন্সটল, আপডেট, মাল্টিসাইট কনফিগার করতে পারবেন",
+	"colorPref": "#000",
+	"contents": [
+		{
+			"title": "wp core কমান্ডস",
+			"items": [
+				{
+					"definition": "ওয়ার্ডপ্রেস আপডেট চেক করবে Version Check API এর মাধ্যমে",
+					"code": "wp core check-update"
+				},
+				{
+					"definition": "কোর ওয়ার্ডপ্রেস ফাইলগুলি ডাউনলোড করবে",
+					"code": "wp core download"
+				},
+				{
+					"definition": "স্ট্যান্ডার্ড ওয়ার্ডপ্রেস ইনস্টলেশন প্রক্রিয়া চালাবে",
+					"code": "wp core install"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেস ইনস্টল করা আছে কিনা তা চেক করবে",
+					"code": "wp core is-installed"
+				},
+				{
+					"definition": "সিঙ্গেল-সাইট ইনস্টলেশনকে মাল্টিসাইট ইনস্টলেশনে পরিণত করবে",
+					"code": "wp core multisite-convert"
+				},
+				{
+					"definition": "সিঙ্গেল-সাইট ইনস্টলেশনকে মাল্টিসাইট ইনস্টলেশনে পরিণত করবে",
+					"code": "wp core multisite-convert"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেস মাল্টিসাইট ইনস্টল করবে",
+					"code": "wp core multisite-install"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেসকে একটি নতুন সংস্করণে আপডেট করবে",
+					"code": "wp core update"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেস ডাটাবেস আপডেট প্রক্রিয়া চালাবে",
+					"code": "wp core update-db"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেস ফাইলগুলি WordPress.Org এর চেকসাম দিয়ে যাচাই করবে",
+					"code": "wp core verify-checksums"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেস সংস্করণ প্রদর্শন করবে",
+					"code": "wp core version"
+				}
+			]
+		},
+		{
+			"title": "wp admin কমান্ডস",
+			"items": [
+				{
+					"definition": "/wp-admin/ কে ব্রাউজারে ওপেন করবে",
+					"code": "wp admin"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেস ফাইলের পাথ",
+					"code": "wp admin --path=<path>"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেসের URL সেট করা",
+					"code": "wp admin --url=<url>"
+				},
+				{
+					"definition": "SSH (অথবা 'docker', 'docker-compose', 'docker-compose-run', 'vagrant') এর মাধ্যমে একটি রিমোট সার্ভারের বিরুদ্ধে অপারেশন করুন।",
+					"code": "wp admin --ssh=[<scheme>:][<user>@]<host\\|container>[:<port>][<path>]"
+				},
+				{
+					"definition": "HTTP এর মাধ্যমে রিমোট ওয়ার্ডপ্রেস ইনস্টলেশনের অপারেশন করুন।",
+					"code": "wp admin --http=<http>"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেস এডমিন ইউজার সেট করার জন্য",
+					"code": "wp admin --user=<id\\|login\\|email>"
+				},
+				{
+					"definition": "সমস্ত প্লাগইন লোড করা এড়িয়ে যান, অথবা প্লাগইনগুলির একটি কমা দ্বারা পৃথক করা তালিকা। দ্রষ্টব্য: mu-plugins এখনও লোড করা হয়.",
+					"code": "wp admin --skip-plugins[=<plugins>]"
+				},
+				{
+					"definition": "সমস্ত থিম লোড করা এড়িয়ে যান, অথবা থিমগুলির একটি কমা দ্বারা পৃথক করা তালিকা।",
+					"code": "wp admin --skip-themes[=<themes>]"
+				},
+				{
+					"definition": "সমস্ত ইনস্টল করা প্যাকেজ লোড করা এড়িয়ে যান।",
+					"code": "wp admin --skip-packages"
+				},
+				{
+					"definition": "কমান্ড চালানোর আগে পিএইচপি ফাইল লোড করুন (একবার একাধিকবার ব্যবহার করা যেতে পারে)।",
+					"code": "wp admin --require=<path>"
+				},
+				{
+					"definition": "কমান্ড চালানোর আগে পিএইচপি কোড এক্সিকিউট করুন (এটি একাধিকবার ব্যবহার করা যেতে পারে)।",
+					"code": "wp admin --exec=<php-code>"
+				},
+				{
+					"definition": "Contex ওয়ার্ডপ্রেস লোড করুন।",
+					"code": "wp admin --context=<context>"
+				},
+				{
+					"definition": "আউটপুট রঙিন করতে হবে কিনা।",
+					"code": "wp admin --[no-]color"
+				},
+				{
+					"definition": "সমস্ত PHP ত্রুটি দেখান এবং WP-CLI আউটপুটে verbosity যোগ করুন। অন্তর্নির্মিত গোষ্ঠীগুলির মধ্যে রয়েছে: বুটস্ট্র্যাপ, কমান্ডফ্যাক্টরি এবং সহায়তা।",
+					"code": "wp admin --debug[=<group>]"
+				},
+				{
+					"definition": "সমস্ত কমান্ড আর্গুমেন্টের জন্য বা কমা-বিভক্ত মান হিসাবে নির্দিষ্ট একটি উপসেট লিখতে ব্যবহারকারীকে অনুরোধ করুন।",
+					"code": "wp admin --prompt[=<assoc>]"
+				},
+				{
+					"definition": "তথ্যমূলক বার্তা দমন করুন।",
+					"code": "wp admin --quiet"
+				}
+			]
+		},
+		{
+			"title": "wp cache কমান্ড",
+			"items": [
+				{
+					"definition": "অবজেক্ট ক্যাশে একটি মান যোগ করে।",
+					"code": "wp cache add"
+				},
+				{
+					"definition": "অবজেক্ট ক্যাশে একটি মান হ্রাস করে।",
+					"code": "wp cache decr"
+				},
+				{
+					"definition": "অবজেক্ট ক্যাশে থেকে একটি মান সরিয়ে দেয়।",
+					"code": "wp cache delete"
+				},
+				{
+					"definition": "অবজেক্ট ক্যাশে ফ্লাশ করে।",
+					"code": "wp cache flush"
+				},
+				{
+					"definition": "অবজেক্ট ক্যাশে থেকে একটি মান পায়।",
+					"code": "wp cache get"
+				},
+				{
+					"definition": "অবজেক্ট ক্যাশে একটি মান বৃদ্ধি করে।",
+					"code": "wp cache incr"
+				},
+				{
+					"definition": "অবজেক্ট ক্যাশে একটি মান প্রতিস্থাপন করে, যদি মানটি ইতিমধ্যেই বিদ্যমান থাকে।",
+					"code": "wp cache replace"
+				},
+				{
+					"definition": "অবজেক্ট ক্যাশে একটি মান সেট করে, এটি ইতিমধ্যে বিদ্যমান কিনা তা নির্বিশেষে।",
+					"code": "wp cache set"
+				},
+				{
+					"definition": "কোন অবজেক্ট ক্যাশে ব্যবহার করা হচ্ছে তা নির্ধারণ করার প্রচেষ্টা।",
+					"code": "wp cache type"
+				}
+			]
+		},
+		{
+			"title": "wp cli রুট কমান্ড",
+			"items": [
+				{
+					"definition": "ওয়ার্ডপ্রেস ইনস্টলেশনের জন্য অ্যালাস পুনরুদ্ধার করে, সেট করে এবং আপডেট করে",
+					"code": "wp cli alias"
+				},
+				{
+					"definition": "অভ্যন্তরীণ WP-CLI ক্যাশে পরিচালনা করে",
+					"code": "wp cli cache"
+				},
+				{
+					"definition": "WP-CLI এর একটি নতুন সংস্করণ আছে কিনা তা চেক করে",
+					"code": "wp cli check-update"
+				},
+				{
+					"definition": "JSON হিসাবে ইনস্টল করা কমান্ডের তালিকা ডাম্প করে।",
+					"code": "wp cli cmd-dump"
+				},
+				{
+					"definition": "ট্যাব সমাপ্তি স্ট্রিং তৈরি করে।",
+					"code": "wp cli completions"
+				},
+				{
+					"definition": "একটি কমান্ড বিদ্যমান কিনা তা সনাক্ত করে",
+					"code": "wp cli has-command"
+				},
+				{
+					"definition": "WP-CLI পরিবেশ সম্পর্কে বিভিন্ন বিবরণ প্রিন্ট করে।",
+					"code": "wp cli info"
+				},
+				{
+					"definition": "JSON হিসাবে বা var_export বিন্যাসে গ্লোবাল প্যারামিটারের তালিকা ডাম্প করে।",
+					"code": "wp cli param-dump"
+				},
+				{
+					"definition": "সর্বশেষ রিলিজে WP-CLI আপডেট করে।",
+					"code": "wp cli update"
+				},
+				{
+					"definition": "WP-CLI সংস্করণ/ভার্সন প্রিন্ট করে।",
+					"code": "wp cli version"
+				}
+			]
+		},
+		{
+			"title": "wp capability কমান্ড",
+			"items": [
+				{
+					"definition": "একটি নতুন ক্যাপাবিলিটি যোগ করে",
+					"code": "wp cap add <role> <cap>"
+				},
+				{
+					"definition": "একটি ক্যাপাবিলিটি বাদ দেয়",
+					"code": "wp cap remove <role> <cap>"
+				},
+				{
+					"definition": "ক্যাপাবিলিটি তালিকা দেখায়",
+					"code": "wp cap list"
+				}
+			]
+		},
+		{
+			"title": "wp cli ডাটাবেস কমান্ড",
+			"items": [
+				{
+					"definition": "একটি নতুন ডাটাবেস তৈরি করে",
+					"code": "wp db create"
+				},
+				{
+					"definition": "একটি ডাটাবেস ডিলিট করে",
+					"code": "wp db drop --yes"
+				},
+				{
+					"definition": "কারেন্ট ডাটাবেস রিসেট করে",
+					"code": "wp db reset --yes"
+				},
+				{
+					"definition": "কোন ফাইলে থাকা SQL কোয়েরি এক্সিকিউট করে",
+					"code": "wp db query < debug.sql"
+				},
+				{
+					"definition": "ডাটাবেস চেক করে",
+					"code": "wp db check"
+				},
+				{
+					"definition": "ডাটাবেস ক্লিন করে",
+					"code": "wp db clean"
+				},
+				{
+					"definition": "wp-config.php ফাইল থেকে ক্রেডেন্সিয়াল নিয়ে MySQL এর কনসোল ওপেন করে",
+					"code": "wp db cli"
+				},
+				{
+					"definition": "একটা টেবিলের তথ্য দেখায়",
+					"code": "wp db columns"
+				},
+				{
+					"definition": "ডাটাবেস এক্সপোর্ট করে",
+					"code": "wp db export"
+				},
+				{
+					"definition": "ডাটাবেস ইম্পোর্ট করে",
+					"code": "wp db import"
+				},
+				{
+					"definition": "ডাটাবেস অপ্টিমাইজ করে",
+					"code": "wp db optimize"
+				},
+				{
+					"definition": "ডাটাবেস এর প্রিফিক্স দেখায়",
+					"code": "wp db prefix"
+				},
+				{
+					"definition": "ডাটাবেস রিপেয়ার করে",
+					"code": "wp db repair"
+				},
+				{
+					"definition": "ডাটাবেস এ কোন স্ট্রিং খুঁজে দেয়",
+					"code": "wp db search <string>"
+				},
+				{
+					"definition": "ডাটাবেস এর নাম আর সাইজ দেখায়",
+					"code": "wp db size"
+				},
+				{
+					"definition": "ডাটাবেস এর টেবিলের লিস্ট দেখায়",
+					"code": "wp db tables"
+				}
+			]
+		},
+		{
+			"title": "wp config কমান্ড",
+			"items": [
+				{
+					"definition": "একটি wp-config.php ফাইল তৈরি করে",
+					"code": "wp config create"
+				},
+				{
+					"definition": "wp-config.php ফাইল থেকে একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীল মুছে দেয়।",
+					"code": "wp config delete <name>"
+				},
+				{
+					"definition": "wp-config.php ফাইলটি সম্পাদনা করতে সিস্টেম সম্পাদক চালু করে।",
+					"code": "wp config edit"
+				},
+				{
+					"definition": "wp-config.php ফাইলে সংজ্ঞায়িত একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীলের মান পায়।",
+					"code": "wp config get <name>"
+				},
+				{
+					"definition": "কটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীল wp-config.php ফাইলে বিদ্যমান কিনা তা পরীক্ষা করে।",
+					"code": "wp config has <name>"
+				},
+				{
+					"definition": "Wp-config.php ফাইলে সংজ্ঞায়িত ভেরিয়েবল, ধ্রুবক, এবং ফাইল অন্তর্ভুক্ত করে।",
+					"code": "wp config list"
+				},
+				{
+					"definition": "wp-config.php ফাইলের পথ পায়।",
+					"code": "wp config path"
+				},
+				{
+					"definition": "wp-config.php ফাইলে সংজ্ঞায়িত একটি নির্দিষ্ট ধ্রুবক বা পরিবর্তনশীলের মান সেট করে।",
+					"code": "wp config set <name> <value>"
+				},
+				{
+					"definition": "wp-config.php ফাইলে সংজ্ঞায়িত সল্ট রিফ্রেশ করে।",
+					"code": "wp config shuffle-salts"
+				}
+			]
+		},
+		{
+			"title": "wp cli কমান্ড",
+			"items": [
+				{
+					"definition": "একটি নতুন কমেন্ট যোগ করা",
+					"code": "wp comment create --comment_post_ID=15 --comment_content='hello blog' --comment_author='wp-cli'"
+				},
+				{
+					"definition": "একটি পুরাতন কমেন্ট আপডেট করা",
+					"code": "wp comment update 123 --comment_author='That Guy'"
+				},
+				{
+					"definition": "একটি পুরাতন কমেন্ট মুছে ফেলা",
+					"code": "wp comment delete 1337 --force"
+				},
+				{
+					"definition": "সকল স্প্যাম কমেন্ট গুলো মুছে ফেলা",
+					"code": "wp comment delete $(wp comment list --status=spam --format=ids)"
+				},
+				{
+					"definition": "নতুন কমেন্ট প্রকাশ করা",
+					"code": "wp comment approve 1234"
+				},
+				{
+					"definition": "সাইটের সকল কমেন্ট গণনা করা",
+					"code": "wp comment count"
+				},
+				{
+					"definition": "নির্দিষ্ট পোস্টের কমেন্ট গণনা করা",
+					"code": "wp comment count 123"
+				},
+				{
+					"definition": "নির্দিষ্ট কমেন্ট মুছে ফেলা",
+					"code": "wp comment delete 1234 --force"
+				},
+				{
+					"definition": "একাধিক কমেন্ট সমূহ মুছে ফেলা",
+					"code": "wp comment delete 1234 1235 --force"
+				},
+				{
+					"definition": "নির্দিষ্ট কমেন্ট যাচাই করা",
+					"code": "wp comment exists 1234"
+				},
+				{
+					"definition": "নির্দিষ্ট কমেন্টের কনটেন্ট দেখা",
+					"code": "wp comment get 21 --field=content"
+				},
+				{
+					"definition": "কমেন্ট আইডির লিস্ট দেখা",
+					"code": "wp comment list --field=ID"
+				},
+				{
+					"definition": "নির্দিষ্ট পোস্টের কমেন্টের লিস্ট দেখা",
+					"code": "wp comment list --post_id=1 --fields=ID,comment_date,comment_author"
+				},
+				{
+					"definition": "কমেন্ট মেটা সেট করা",
+					"code": "wp comment meta set 123 description 'Mary is a WordPress developer.'"
+				},
+				{
+					"definition": "কমেন্ট মেটা দেখা",
+					"code": "wp comment meta get 123 description"
+				},
+				{
+					"definition": "কমেন্ট মেটা আপডেট করা",
+					"code": "wp comment meta update 123 description 'Mary is an awesome WordPress developer.'"
+				},
+				{
+					"definition": "কমেন্ট মেটা ডিলেট করা",
+					"code": "wp comment meta delete 123 description"
+				},
+				{
+					"definition": "পুনঃ কমেন্ট গণনা করা",
+					"code": "wp comment recount 123"
+				},
+				{
+					"definition": "কমেন্টকে স্প্যাম হিসাবে চিহ্নিত করা",
+					"code": "wp comment spam 1234"
+				},
+				{
+					"definition": "কমেন্টের স্ট্যাটাস চেক করা",
+					"code": "wp comment status 1234"
+				},
+				{
+					"definition": "কমেন্ট ট্রাশে রাখা",
+					"code": "wp comment trash 1234"
+				},
+				{
+					"definition": "কমেন্ট প্রকাশ না করা",
+					"code": "wp comment unapprove 1234"
+				},
+				{
+					"definition": "স্প্যাম কমেন্টকে আন-স্প্যাম করা",
+					"code": "wp comment unspam 1234"
+				},
+				{
+					"definition": "ট্রাশে রাখা কমেন্টকে আন-ট্রাশ করা",
+					"code": "wp comment untrash 1234"
+				},
+				{
+					"definition": "ট্রাশে রাখা কমেন্টকে আন-ট্রাশ করা",
+					"code": "wp comment untrash 1234"
+				},
+				{
+					"definition": "কমেন্ট আপডেট করা",
+					"code": "wp comment update 123 --comment_author='That Guy'"
+				}
+			]
+		},
+		{
+			"title": "wp dummy data generate",
+			"items": [
+				{
+					"definition": "ডামি কমেন্টস জেনারেট করা",
+					"code": "wp comment generate --format=ids --count=10 --post_id=123"
+				},
+				{
+					"definition": "জেনারেট করা ডামি কমেন্টসে মেটা অ্যাড করা",
+					"code": "wp comment generate --format=ids --count=3 | xargs -d ' ' -I % wp comment meta add % foo bar"
+				}
+			]
+		},
+		{
+			"title": "wp database কমান্ড",
+			"items": [
+				{
+					"definition": "নতুন ডাটাবেস তৈরি করা",
+					"code": "wp db create"
+				},
+				{
+					"definition": "একটা ডাটাবেস ড্রপ করা",
+					"code": "wp db drop --yes"
+				},
+				{
+					"definition": "কারেন্ট ডাটাবেস রিসেট করা",
+					"code": "wp db reset --yes"
+				},
+				{
+					"definition": "একটা ফাইলে থাকা SQL কোয়েরি এক্সিকিউট করা",
+					"code": "wp db query < debug.sql"
+				}
+			]
+		},
+		{
+			"title": "wp import কমান্ড",
+			"items": [
+				{
+					"definition": "WXR ফাইল থেকে কনটেন্ট ইমপোর্ট করা",
+					"code": "wp import example.wordpress.2016-06-21.xml --authors=create"
+				}
+			]
+		},
+		{
+			"title": "wp shell কমান্ড",
+			"items": [
+				{
+					"definition": "সাইটের নাম পেতে get_bloginfo() কল করুন।",
+					"code": "wp shell\\nwp> get_bloginfo( 'name' );"
+				}
+			]
+		},
+		{
+			"title": "wp eval কমান্ড",
+			"items": [
+				{
+					"definition": "ওয়ার্ডপ্রেস কনটেন্ট ডিরেক্টরি দেখা",
+					"code": "wp eval 'echo WP_CONTENT_DIR;'"
+				},
+				{
+					"definition": "রান্ডম নাম্বার তৈরি করা",
+					"code": "wp eval 'echo rand();' --skip-wordpress"
+				}
+			]
+		},
+		{
+			"title": "wp export কমান্ড",
+			"items": [
+				{
+					"definition": "প্রদত্ত শুরু এবং শেষ তারিখের মধ্যে ব্যবহারকারীর প্রকাশিত পোস্টগুলি এক্সপোর্ট করুন৷",
+					"code": "wp export --dir=/tmp/ --user=admin --post_type=post --start_date=2011-01-01 --end_date=2011-12-31"
+				},
+				{
+					"definition": "আইডি দ্বারা পোস্ট এক্সপোর্ট করা",
+					"code": "wp export --dir=/tmp/ --post__in=123,124,125"
+				},
+				{
+					"definition": "কনটেন্টের একটি রান্ডম সাবসেট এক্সপোর্ট করুন",
+					"code": "wp export --post__in='$(wp post list --post_type=post --orderby=rand --posts_per_page=8 --format=ids)'"
+				}
+			]
+		},
+		{
+			"title": "wp find কমান্ড",
+			"items": [
+				{
+					"definition": "ফাইন্ড কমান্ড ইনস্টল করা",
+					"code": "wp package install wp-cli/find-command"
+				},
+				{
+					"definition": "ফাইল সিস্টেম থেকে ওয়ার্ডপ্রেস ইনিস্টলেশন খুঁজে বের করা",
+					"code": "wp find ./"
+				}
+			]
+		},
+		{
+			"title": "wp super-admin কমান্ড",
+			"items": [
+				{
+					"definition": "সুপার অ্যাডমিন ক্ষমতাদর ব্যবহারকারীদের তালিকা দেখুন",
+					"code": "wp super-admin list"
+				},
+				{
+					"definition": "ব্যবহারকারীকে সুপার-অ্যাডমিন ক্ষমতা দিন",
+					"code": "wp super-admin add superadmin2"
+				},
+				{
+					"definition": "ব্যবহারকারীর সুপার-অ্যাডমিন ক্ষমতা প্রত্যাহার করুন।",
+					"code": "wp super-admin remove superadmin2"
+				}
+			]
+		},
+		{
+			"title": "wp transient কমান্ড",
+			"items": [
+				{
+					"definition": "ট্রানজিয়েন্টের তালিকা দেখা",
+					"code": "wp transient list"
+				},
+				{
+					"definition": "ট্রানজিয়েন্ট সেট করা",
+					"code": "wp transient set sample_key 'test data' 3600"
+				},
+				{
+					"definition": "ট্রানজিয়েন্ট বের করা",
+					"code": "wp transient get sample_key"
+				},
+				{
+					"definition": "ট্রানজিয়েন্ট মুছে ফেলা",
+					"code": "wp transient delete sample_key"
+				},
+				{
+					"definition": "মেয়াদ উর্ত্তীণ ট্রানজিয়েন্ট মুছে ফেলা",
+					"code": "wp transient delete --expired"
+				},
+				{
+					"definition": "মাল্টিসাইট নেটওয়ার্কের মেয়াদ উর্ত্তীণ ট্রানজিয়েন্ট মুছে ফেলা",
+					"code": "wp transient delete --expired --network"
+				},
+				{
+					"definition": "সকল ট্রানজিয়েন্ট মুছে ফেলা",
+					"code": "wp transient delete --all"
+				},
+				{
+					"definition": "মাল্টিসাইট নেটওয়ার্কের সকল ট্রানজিয়েন্ট মুছে ফেলা",
+					"code": "wp transient delete --all --network"
+				},
+				{
+					"definition": "মাল্টিসাইটের সকল ট্রানজিয়েন্ট মুছে ফেলা",
+					"code": "wp transient delete --all --network &amp;&amp; wp site list --field=url | xargs -n1 -I % wp --url=% transient delete --all"
+				},
+				{
+					"definition": "ট্রানজিয়েন্ট বাস্তবায়নের টাইপ নির্ধারণ করা",
+					"code": "wp transient type"
+				}
+			]
+		},
+		{
+			"title": "wp package কমান্ড",
+			"items": [
+				{
+					"definition": "ইনস্টল করা প্যাকেজের তালিকা",
+					"code": "wp package list"
+				},
+				{
+					"definition": "প্যাকেজের সর্বশেষ ডেভলেপমেন্ট ভার্ষন ইনস্টল করা",
+					"code": "wp package install wp-cli/server-command"
+				},
+				{
+					"definition": "প্যাকেজ আনইনস্টল করা",
+					"code": "wp package uninstall wp-cli/server-command"
+				},
+				{
+					"definition": "প্যাকেজ আপডেট করা",
+					"code": "wp package update"
+				},
+				{
+					"definition": "ইনিষ্ট্রল করার জন্য প্যাকেজ ব্রাউজ করা",
+					"code": "wp package browse --format=yaml"
+				},
+				{
+					"definition": "ইনিষ্ট্রল করা প্যাকেজের পাথ বা ডিরেক্টরি দেখা",
+					"code": "wp package path"
+				},
+				{
+					"definition": "ইনিষ্ট্রল করা প্যাকেজের ডিরেক্টরি পরিবর্তন করা",
+					"code": "cd $(wp package path) &amp;&amp; pwd"
+				}
+			]
+		},
+		{
+			"title": "wp plugin কমান্ড",
+			"items": [
+				{
+					"definition": "এক বা একাধিক প্লাগইন সক্রিয় করা",
+					"code": "wp plugin activate <slug> <slug>"
+				},
+				{
+					"definition": "প্লাগইন অটো-আপডেট করা",
+					"code": "wp plugin auto-updates <slug>"
+				},
+				{
+					"definition": "এক বা একাধিক প্লাগইন নিষ্ক্রিয় করা",
+					"code": "wp plugin deactivate <slug> <slug>"
+				},
+				{
+					"definition": "নিষ্ক্রিয় বা আনইনস্টল না করে প্লাগইন ডিলেট করা",
+					"code": "wp plugin delete <slug> <slug>"
+				},
+				{
+					"definition": "একটি ইনস্টল করা প্লাগইনের বিস্তারিত জানা",
+					"code": "wp plugin get <slug>"
+				},
+				{
+					"definition": "এক বা একাধিক প্লাগইন ইনস্টল করা",
+					"code": "wp plugin install <slug> <slug>"
+				},
+				{
+					"definition": "নির্দিষ্ট প্লাগইন সক্রিয় কিনা যাচাই করা",
+					"code": "wp plugin is-active <slug>"
+				},
+				{
+					"definition": "নির্দিষ্ট প্লাগইন ইনস্টল করা আছে কিনা যাচাই করা",
+					"code": "wp plugin is-installed <slug>"
+				},
+				{
+					"definition": "ইনস্টল করা প্লাগইনগুলি লিস্ট আকারে দেখা",
+					"code": "wp plugin list"
+				},
+				{
+					"definition": "একটি প্লাগইন বা প্লাগইন ডিরেক্টরির পাথ দেখা",
+					"code": "wp plugin path <slug>"
+				},
+				{
+					"definition": "WordPress.org তে প্লাগইন অনুসন্ধান করা",
+					"code": "wp plugin search <terms>"
+				},
+				{
+					"definition": "ইনস্টল করা প্লাগিন গুলির স্ট্যাটাস দেখা",
+					"code": "wp plugin status"
+				},
+				{
+					"definition": "একটি প্লাগইনের সক্রিয় অবস্থা পরিবর্তন করা",
+					"code": "wp plugin toggle <slug>"
+				},
+				{
+					"definition": "এক বা একাধিক প্লাগইন আনইনস্টল করা",
+					"code": "wp plugin uninstall <slug> <slug>"
+				},
+				{
+					"definition": "এক বা একাধিক প্লাগইন আপডেট করা",
+					"code": "wp plugin update <slug> <slug>"
+				},
+				{
+					"definition": "WordPress.org এর চেকসামগুলির বিরুদ্ধে প্লাগইন ফাইলগুলি যাচাই করা",
+					"code": "wp plugin verify-checksums <slug>"
+				}
+			]
+		},
+		{
+			"title": "wp theme কমান্ড",
+			"items": [
+				{
+					"definition": "থিম একটিভ করা",
+					"code": "wp theme activate <slug>"
+				},
+				{
+					"definition": "থিম অটো-আপডেট করা",
+					"code": "wp theme auto-updates <slug>"
+				},
+				{
+					"definition": "এক বা একাধিক থিম ডিলেট করা",
+					"code": "wp theme delete <slug> <slug>"
+				},
+				{
+					"definition": "মাল্টি-সাইট থেকে এক বা একাধিক থিম ইনেইব্‌ল্ করা",
+					"code": "wp theme enable <slug> <slug>"
+				},
+				{
+					"definition": "মাল্টি-সাইট থেকে এক বা একাধিক থিম ডিস্এইব্‌ল্ করা",
+					"code": "wp theme disable <slug> <slug>"
+				},
+				{
+					"definition": "একটি ইনস্টল করা থিমের বিস্তারিত জানা",
+					"code": "wp theme get <slug>"
+				},
+				{
+					"definition": "এক বা একাধিক থিম ইনস্টল করা",
+					"code": "wp theme install <slug> <slug>"
+				},
+				{
+					"definition": "নির্দিষ্ট থিম সক্রিয় কিনা যাচাই করা",
+					"code": "wp theme is-active <slug>"
+				},
+				{
+					"definition": "নির্দিষ্ট থিম ইনস্টল করা আছে কিনা যাচাই করা",
+					"code": "wp theme is-installed <slug>"
+				},
+				{
+					"definition": "ইনিষ্টল করা থিমগুলি লিস্ট আকারে দেখা",
+					"code": "wp theme list"
+				},
+				{
+					"definition": "একটি থিম বা থিম ডিরেক্টরির পাথ দেখা",
+					"code": "wp theme path <slug>"
+				},
+				{
+					"definition": "WordPress.org তে থিম অনুসন্ধান করা",
+					"code": "wp theme search <terms>"
+				},
+				{
+					"definition": "ইনিষ্টল করা থিম গুলির স্ট্যাটাস দেখা",
+					"code": "wp theme status"
+				},
+				{
+					"definition": "এক বা একাধিক থিম আপডেট করা",
+					"code": "wp theme update <slug>"
+				},
+				{
+					"definition": "থিম কাস্টমাইজারের মোড সেট করে, পাওয়া এবং সরিয়ে দেয়া",
+					"code": "wp theme mod <command>"
+				}
+			]
+		},
+		{
+			"title": "wp cron কমান্ড",
+			"items": [
+				{
+					"definition": "ওয়ার্ডপ্রেস ক্রোন স্পনিং টেস্ট করা",
+					"code": "wp cron test"
+				},
+				{
+					"definition": "ক্রোন সিডিউলের তালিকা করা",
+					"code": "wp cron schedule list"
+				},
+				{
+					"definition": "ওয়ার্ডপ্রেস ক্রোন ইভেন্ট সিডিউল করা",
+					"code": "wp cron event schedule cron_test"
+				},
+				{
+					"definition": "এই মুহূর্তে সমস্ত ক্রোন ইভেন্ট চালু করা",
+					"code": "wp cron event run --due-now"
+				},
+				{
+					"definition": "প্রদত্ত হুকের জন্য নির্ধারিত সমস্ত ক্রোন ইভেন্ট মুছে ফেলা",
+					"code": "wp cron event delete cron_test"
+				},
+				{
+					"definition": "JSON-এ নির্ধারিত ক্রোন ইভেন্টের তালিকা করুন",
+					"code": "wp cron event list --fields=hook,next_run --format=json"
+				}
+			]
+		}
+	]
+}

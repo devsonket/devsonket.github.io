@@ -29,16 +29,58 @@
         {
             "title": "মেথড(স্ট্রিং)",
             "items": [{
+                "code": "anchor"
+                },
+                {
+                    "code": "at"
+                },
+                {
+                    "code": "big"
+                },
+                {
+                    "code": "blink"
+                },
+                {
+                    "code": "bold"
+                },
+                {
                     "code": "charAt"
                 },
                 {
                     "code": "charCodeAt"
                 },
                 {
-                    "code": "fromCharCode"
+                    "code": "codePointAt"
                 },
                 {
                     "code": "concat"
+                },
+                {
+                    "code": "endsWith"
+                },
+                {
+                    "code": "fixed"
+                },
+                {
+                    "code": "fontcolor"
+                },
+                {
+                    "code": "fontsize"
+                },
+                {
+                    "code": "fromCharCode"
+                },
+                {
+                    "code": "includes"
+                },
+                {
+                    "code": "isWellFormed"
+                },
+                {
+                    "code": "italics"
+                },
+                {
+                    "code": "link"
                 },
                 {
                     "code": "indexOf"
@@ -53,7 +95,25 @@
                     "code": "match"
                 },
                 {
+                    "code": "matchAll"
+                },
+                {
+                    "code": "normalize"
+                },
+                {
+                    "code": "padEnd"
+                },
+                {
+                    "code": "padStart"
+                },
+                {
+                    "code": "repeat"
+                },
+                {
                     "code": "replace"
+                },
+                {
+                    "code": "replaceAll"
                 },
                 {
                     "code": "search"
@@ -65,10 +125,25 @@
                     "code": "split"
                 },
                 {
+                    "code": "small"
+                },
+                {
                     "code": "substring"
                 },
                 {
+                    "code": "sub"
+                },
+                {
                     "code": "substr"
+                },
+                {
+                    "code": "startsWith"
+                },
+                {
+                    "code": "sup"
+                },
+                {
+                    "code": "strike"
                 },
                 {
                     "code": "toLowerCase"
@@ -81,6 +156,27 @@
                 },
                 {
                     "code": "toLocaleUpperCase"
+                },
+                {
+                    "code": "toWellFormed"
+                },
+                {
+                    "code": "trim"
+                },
+                {
+                    "code": "trimEnd"
+                },
+                {
+                    "code": "trimLeft"
+                },
+                {
+                    "code": "trimRight"
+                },
+                {
+                    "code": "trimStart"
+                },
+                {
+                    "code": "valueOf"
                 }
             ]
         },

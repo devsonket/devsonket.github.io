@@ -1,0 +1,267 @@
+{
+    "id": "xcode-mac",
+    "title": "XCode - এক্সকোড ",
+    "slug": "xcode-macos",
+    "description": "XCODE, অ্যাপলের তৈরি শক্তিশালী ইন্টিগ্রেটেড ডেভেলপমেন্ট এনভায়রনমেন্ট বা আইডিই। এটি মূলত macOS, iOS, iPadOS, watchOS,tvOS এর সফটওয়্যার ডেভেলপমেন্ট করার কাজে সবচেয়ে বেশী ব্যাবহৃত হয়। এই চিটশিটে আমরা এর শর্টকাট গুলো জানব  ",
+    "colorPref": "#616161",
+    "contents": [{
+            "title": "সার্চ করা  ",
+            "items": [
+                {
+                    "definition": "ফাইলের ভেতর সার্চ করা ",
+                    "code": "Command + F"
+                },
+                {
+                    "definition": "ফাইলের ভেতর সার্চ এবং রিপ্লেস করা  ",
+                    "code": "Command + Option(alt) + F"
+                },
+                {
+                    "definition": "প্রজেক্ট এর ভেতর খোঁজা ",
+                    "code": "Command + Shift + F"
+                },
+                {
+                    "definition": "প্রজেক্ট এর ভেতর সার্চ এবং রিপ্লেস করা  ",
+                    "code": "Command + Option(alt) + Shift + F"
+                }
+            ]
+        },
+        {
+            "title":"নেভিগেশন",
+            "items":[
+                {
+                    "definition":"তাড়াতাড়ি খোলা",
+                    "code":"Command + Shift + O"
+                },
+                {
+                    "definition":"ফোকাস এডিটর এ নিয়ে যাওয়া ",
+                    "code":"Command + J"
+                },
+                {
+                    "definition":"পরবর্তী কাউন্টার পার্ট এ নিয়ে যাওয়া ",
+                    "code":"Command + Arrow(Up)"
+                },
+                {
+                    "definition":"পূর্ববর্তী কাউন্টার পার্ট এ নিয়ে যাওয়া ",
+                    "code":"Command + Arrow(Down)"
+                },
+                {
+                    "definition":"পরবর্তী রিসেন্ট ফাইলে নেয়া ",
+                    "code":"Command + Arrow(Right)"
+                },
+                {
+                    "definition":"পূর্ববর্তী রিসেন্ট ফাইলে নেয়া  ",
+                    "code":"Command + Arrow(Left)"
+                },
+                {
+                    "definition":"সিম্বল এর অর্থ জানা  ",
+                    "code":"Command + Click"
+                },
+                {
+                    "definition":"লাইনে চলে যাওয়া ",
+                    "code":"Command + L"
+                },
+                {
+                    "definition":"সেকশন খোলা  ",
+                    "code":"Command + Option(alt) + Arrow(Left)"
+                },
+                {
+                    "definition":"সেকশন বন্ধ করা ",
+                    "code":"Command + Option(alt) + Arrow(Right)"
+                }
+
+            ]
+        },
+        {
+            "title":"এডিটিং/সম্পাদনা করা  ",
+            "items":[
+                {
+                    "definition":"এডিটর এর অ্যাসিস্ট্যান্ট দেখানো  ",
+                    "code":"Command + Option(alt) + Return"
+                },
+                {
+                    "definition":"এডিটর এর অ্যাসিস্ট্যান্ট লুকানো " ,
+                    "code":"Command + Return"
+                },
+                {
+                    "definition":"টোগল কমপ্লিট",
+                    "code":"Control + Space"
+                },
+                {
+                    "definition":"স্কোপ এর সব এডিট করা ",
+                    "code":"Command + Control + E"
+                },
+                {
+                    "definition":"ইনডেন্ট সিলেকশন",
+                    "code":"Command + ]"
+                },
+                {
+                    "definition":"আউটডেন্ট সিলেকশন",
+                    "code":"Command + ["
+                },
+                {
+                    "definition":"ইন্ডেন্টেশন ঠিক করা ",
+                    "code":"Command + i"
+                },
+                {
+                    "definition":"কমেন্ট করা / কমেন্ট সরানো ",
+                    "code":"Command + /"
+                },
+                {
+                    "definition":"লাইন উপড়ে নেয়া ",
+                    "code":"Command + Option(alt) + ["
+                },
+                {
+                    "definition":"লাইন নীচে নেয়া ",
+                    "code":"Command + Option(alt) + ]"
+                }
+            ]
+        },
+        {
+            "title":"ডকুমেন্টেশন দেখা  ",
+            "items":[
+                {
+                    "definition":"ডকুমেন্টেশন দেখা  ",
+                    "code":"Command + Shift + O"
+                },
+                {
+                    "definition":"সিলেকশন আইটেম এর ডকুমেন্টেশন দেখা ",
+                    "code":"Command + Option(alt) + Control + /"
+                },
+                {
+                    "definition":"ক্লিকড সিম্বল এর জন্য সাহায্যে",
+                    "code":"Option(alt) + Click"
+                },
+                {
+                    "definition":"ক্লিকড সিম্বল এর জন্য ডকুমেন্টেশন দেখা ",
+                    "code":"Option(alt) + Double Click"
+                }
+            ]
+        },
+        {
+            "title":"বিল্ড এবং রান  ",
+            "items":[
+                {
+                    "definition":"বিল্ড  ",
+                    "code":"Command + B"
+
+                },
+                {
+                    "definition":"রান",
+                    "code":"Command + R"
+
+                },
+                {
+                    "definition":"স্টপ",
+                    "code":"Command + ."
+
+                },
+                {
+                    "definition":"অ্যানালাইজ",
+                    "code":"Command + Shift + B"
+
+                },
+                {
+                    "definition":"টেস্ট",
+                    "code":"Command + U"
+
+                },
+                {
+                    "definition":"ক্লিন",
+                    "code":"Command + Shift + K"
+
+                }
+            ]
+        },
+        {
+            "title":"ডিবাগ করা",
+            "items":[
+                {
+                    "definition":"ডিবাগ এরিয়া বের করা ",
+                    "code":"Command + Shift + Y"
+
+                },
+                {
+                    "definition":"পরবর্তী ইস্যু",
+                    "code":"Command + Upper Comma "
+
+                },
+                {
+                    "definition":"পূর্ববর্তী ইস্যু",
+                    "code":"Command + Double Upper Comma"
+
+                },
+                {
+                    "definition":"ব্রেকপয়েন্ট এড করা",
+                    "code":"Command + Slash"
+
+                },
+                {
+                    "definition":"ব্রেকপয়েন্ট বের করা",
+                    "code":"Command + Y"
+
+                },
+                {
+                    "definition":"কনসোল ক্লিয়ার করা ",
+                    "code":"Commad + K"
+
+                }
+            ]
+        },
+        {
+            "title":"নেভিগেটর",
+            "items":[
+                {
+                    "definition":"দেখানো/লুকানো",
+                    "code":"Command + 0"
+                },
+                {
+                    "definition":"ট্যাব সুইচ করা ",
+                    "code":"Command + 1-8"
+                },
+                {
+                    "definition":"অ্যাসিস্ট্যান্ট এ খোলা ",
+                    "code":"Option(alt) + Click"
+                },
+                {
+                    "definition":"নতুন উইন্ডো তে খোলা",
+                    "code":"Option(alt) + Double Click"
+                },
+                {
+                    "definition":"সিদ্ধান্ত নিয়ে ফাইল খোলা ",
+                    "code":"Shift + Option + Click"
+                }
+            ]
+        },
+        {
+            "title":"ইউটিলিটিস",
+            "items":[
+                {
+                    "definition":"দেখানো/লুকানো",
+                    "code":"Command + Option(alt) + 0"
+                },
+                {
+                    "definition":"ট্যাব সুইচ করা",
+                    "code":"Command + Option(alt) + 1-9"
+                }
+            ]
+        },
+        {
+            "title":"ট্যাবস",
+            "items":[
+                {
+                    "definition":"নতুন ট্যাব ",
+                    "code":"Command + T"
+                },
+                {
+                    "definition":"পূর্বের ট্যাব ",
+                    "code":"Command + } "
+                },
+                {
+                    "definition":"পরবর্তী ট্যাব ",
+                    "code":"Command + { "
+                }
+            ]
+        }
+
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "id": "markdown_text_formatting",
+    "title": "Markdown টেক্সট ফরম্যাটিং",
+    "slug": "markdown_text_formatting",
+    "description": "Markdown হলো একটি সহজ টেক্সট ফরম্যাটিং সিস্টেম যা প্লেইন টেক্সট দিয়ে সাজাতে ব্যবহার হয়। এটি প্রাসঙ্গিক স্টাইল যোগ করার জন্য ব্যবহৃত হয় এবং মোটামুটি সাধারণ টেক্সট এডিটরে ব্যবহার করা যায়। মার্কডাউনে আপনি টেক্সটের বিভিন্ন অংশে প্রাসঙ্গিক ফরম্যাটিং যোগ করতে পারেন, যেমনঃ শিরোনাম, বোল্ড টেক্সট, ইটালিক টেক্সট, লিস্ট, লিংক, কোড ব্লক, টেবিল, ইমেজ, এবং অন্যান্য বিশেষ চিহ্নগুলি। এই সিস্টেম ব্যবহার করে আপনি মার্কডাউন সিনট্যাক্সে আপনার লেখার স্ট্রাকচার এবং স্টাইল পরিবর্তন করতে পারেন, এবং এই লেখাগুলি ওয়েব পৃষ্ঠা, ডকুমেন্টেশন, ব্লগ পোস্ট, নোট, এবং অন্যান্য সাধারণ টেক্সট ডকুমেন্টেশনে ব্যবহার করতে পারেন। মার্কডাউন মূলত একটি প্লেইন টেক্সট ডকুমেন্টেশন স্টাইল, এবং এটি লেখার প্রসঙ্গে আরও সহজ এবং সারলীকরণ যোগ করে দেয় যাতে লেখাগুলি সহজে পঠিত এবং বুঝতে হয়।",
+    "colorPref": "#7F4696",
+    "contents": [
+        {
+            "title": "টি হেডার (Headers)",
+            "items": [
+                {
+                    "definition": "টি হেডার 1",
+                    "code": "# Header 1"
+                },
+                {
+                    "definition": "টি হেডার 2",
+                    "code": "## Header 2"
+                },
+                {
+                    "definition": "টি হেডার 3",
+                    "code": "### Header 3"
+                },
+                {
+                    "definition": "টি হেডার 4",
+                    "code": "#### Header 4"
+                }
+            ]
+        },
+        {
+            "title": "গুরুত্বপূর্ণ লেখা (Emphasis)",
+            "items": [
+                {
+                    "definition": "বোল্ড টেক্সট",
+                    "code": "**Bold Text**"
+                },
+                {
+                    "definition": "ইটালিক টেক্সট",
+                    "code": "*Italic Text*"
+                },
+                {
+                    "definition": "হাইড টেক্সট",
+                    "code": "~~Strikethrough Text~~"
+                },
+                {
+                    "definition": "সাবস্ক্রিপ্ট",
+                    "code": "H~2~O"
+                },
+                {
+                    "definition": "সুপারস্ক্রিপ্ট",
+                    "code": "X^2^"
+                },
+                {
+                    "definition": "হাইলাইট",
+                    "code": "আমি এই বিশেষ গুরুত্বপূর্ণ শব্দগুলি ==খুব গুরুত্বপূর্ণ== মনে করি"
+                }
+            ]
+        },
+        {
+            "title": "লিস্ট (Lists)",
+            "items": [
+                {
+                    "definition": "অর্ডারড লিস্ট",
+                    "code": "1. Item 1\n2. Item 2"
+                },
+                {
+                    "definition": "আনঅর্ডারড লিস্ট",
+                    "code": "- Item 1\n- Item 2"
+                }
+            ]
+        },
+        {
+            "title": "লিঙ্ক (Links)",
+            "items": [
+                {
+                    "definition": "হাইপারলিংক",
+                    "code": "[Link Text](https://www.example.com)"
+                }
+            ]
+        },
+        {
+            "title": "কোড (Code)",
+            "items": [
+                {
+                    "definition": "ইনলাইন কোড",
+                    "code": "Inline code `Here`"
+                },
+                {
+                    "definition": "কোড ব্লক",
+                    "code": "```python\nCode Block\n```"
+                }
+            ]
+        },
+        {
+            "title": "টেবিল (Tables)",
+            "items": [
+                {
+                    "definition": "টেবিল তৈরি করা",
+                    "code": "| Header 1 | Header 2 |\n|----------|----------|\n| Data 1   | Data 2   |"
+                }
+            ]
+        },
+        {
+            "title": "Others",
+            "items": [
+                {
+                    "definition": "হরাইজন্টাল লাইন তৈরি করা",
+                    "code": "---"
+                },
+                {
+                    "definition": "ব্লক কোটেশন",
+                    "code": "> এটি একটি ব্লক কোটেশন।"
+                },
+                {
+                    "definition": "কাজের তালিকা তৈরি করা",
+                    "code": "- [x] কাজ 1"
+                },
+                {
+                    "definition": "ইমেজ লিংক",
+                    "code": "![Your Image Alt Text](https://www.example.com/image.jpg)"
+                },
+                {
+                    "definition": "ইউটিউব ভিডিও ইনসার্ট",
+                    "code": "![Your youtube video name](https://www.youtube.com/watch?v=your_video_id)"
+                }
+            ]
+        }
+    ]
+}

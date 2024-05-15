@@ -401,6 +401,18 @@
                 {
                     "definition": "রাষ্ট্র",
                     "code": "raShTr"
+                },
+                {
+                    "definition": "স্বাস্থ্য",
+                    "code": "sbasTho"
+                },
+                {
+                    "definition": "কমপ্লেক্স",
+                    "code": "komplex"
+                },
+                {
+                    "definition": "চিকিৎসক",
+                    "code": "cikitsok"
                 }
             ]
         },

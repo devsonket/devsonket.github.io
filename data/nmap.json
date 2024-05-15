@@ -1,0 +1,228 @@
+{
+    "id": "nmap",
+    "title": "Nmap Cheat Sheet বাংলায়",
+    "slug": "nmap",
+    "description": "Nmap একটি নেটওয়ার্ক স্ক্যানারা যেটি তৈরী করেছেন Gordon Lyon",
+    "colorPref": "#264DE4",
+    "contents": [
+      {
+        "title": "Nmap ব্যাসিক",
+        "items": [
+          {
+            "definition": "যেকোনো ওপেন পোর্ট স্ক্যান",
+            "code": "nmap [target ip/domain]"
+          },
+          {
+            "definition": "IPv6 স্ক্যান",
+            "code": "nmap -6 [target ip/domain]"
+          },
+          {
+            "definition": "ইন্টারফেস সিলেক্ট করে স্ক্যান",
+            "code": "nmap -e [INTERFACE] [target ip/domain]"
+          },
+          {
+            "definition": "স্ক্যান রিপোর্ট সেভ করা",
+            "code": "nmap -oN [filename] [target ip/domain]"
+          },
+          {
+            "definition": "সিলেক্টেড পোর্ট স্ক্যান",
+            "code": "nmap -p[port number] [targer ip/domain]"
+          },
+          {
+            "definition": "রেঞ্জ অফ পোর্ট স্ক্যান",
+            "code": "nmap -p[1-1000] [targer ip/domain]"
+          },
+          {
+            "definition": "সার্ভিসের নাম অনুসরে পোর্ট স্ক্যান করা",
+            "code": "nmap -p smtp [target]"
+          }
+        ]
+      },
+      {
+        "title": "ফিঙারপ্রিন্টিং উইথ Nmap",
+        "items": [
+          {
+            "definition": "ডিস্প্লে সার্ভিস ভার্সন",
+            "code": "nmap -sV [target]"
+          },
+          {
+            "definition": "এগ্রেসিভ স্ক্যান",
+            "code": "nmap -A [target]"
+          },
+          {
+            "definition": "ডিটেক্ট অপারেটিং সিস্টেম",
+            "code": "nmap -O [target]"
+          },
+          {
+            "definition": "ডিটেক্ট অপারেটিং সিস্টেম verbose",
+            "code": "nmap -O -v [target]"
+          }
+        ]
+      },
+      {
+        "title": "Nmap স্ক্রিপ্ট ইঞ্জিন",
+        "items": [
+          {
+            "definition": "রান ইন্ডিভিজুয়াল স্ক্রিপ্ট",
+            "code": "nmap -script [script.nse] [target]"
+          },
+          {
+            "definition": "এক্সিকিউট স্ক্রিপ্ট বাই ক্যাটেগরি",
+            "code": "nmap -script [category] [target]"
+          },
+          {
+            "definition": "আপডেট স্ক্রিপ্ট ডাটাবেস",
+            "code": "nmap -script-updatedb"
+          }
+        ]
+      },
+      {
+        "title": "কিছু উদাহরণ",
+        "items": [
+          {
+            "definition": "সার্ভিস এবং অপারেটিং সিস্টেম ডিটেক্ট করার জন্য",
+            "code": "nmap -sV -O [target]"
+          },
+          {
+            "definition": "ডিটেক্ট ওয়েব সার্ভার",
+            "code": "nmap -sV --script http-title [target]"
+          },
+          {
+            "definition": "স্ক্যান কমন পোর্ট",
+            "code": "nmap --top-ports 10 [target]"
+          },
+          {
+            "definition": "ব্রুট ফোর্স ডিএনএস রেকোর্ডস",
+            "code": "nmap --script dns-brute [target]"
+          },
+          {
+            "definition": "স্নিফার ডিটেক্ট",
+            "code": "nmap -sP --script sniffer-detect [target]"
+          }
+        ]
+      },
+      {
+        "title": "Nmap টাইমিং অপশন",
+        "items": [
+          {
+            "definition": "টাইমিং ট্রেমপ্লেট গুলো",
+            "code": "-T[0-5] "
+          },
+          {
+            "definition": "প্যাকেট টাইম থেকে লাইভ সেট করার জন্য",
+            "code": "-ttl" 
+          },
+          {
+            "definition": "অল্পতম প্যারালাল অপারেশান করার জন্য",
+            "code": "-min-parallelism"
+          },
+          {
+            "definition": "সর্বোচ্ছ প্যারালাল অপারেশান করার জন্য",
+            "code": "-max-parallelism"
+          },
+          {
+            "definition": "মিনিমাল হোস্ট গ্রুপের সাইজ",
+            "code": "-min-hostgroup"
+          },
+          {
+            "definition": "মাক্সিমাম হোস্ট গ্রুপের সাইজ",
+            "code": "-max-hostgroup"
+          },
+          {
+            "definition": "মাক্সিমাম RTT টাইমআউট",
+            "code": "-max-rtt-timeout"
+          },
+          {
+            "definition": "ইনিশিয়াল RTT টাইমআউট",
+            "code": "-initial-rtt-timeout"
+          },
+          {
+            "definition": "মাক্সিমাম চেষ্টা",
+            "code": "-max-retries"
+          },
+          {
+            "definition": "হোস্ট টাইমআউট",
+            "code": "-host-timeout"
+          },
+          {
+            "definition": "মিনিমাল স্কান বিলম্ব",
+            "code": "-scan-delay"
+          },
+          {
+            "definition": "মাক্সিমাম স্কান বিলম্ব",
+            "code": "-max-scan-delay "
+          },
+          {
+            "definition": "মিনিমাম প্যাকেট রেট",
+            "code": "-min-rate"
+          },
+          {
+            "definition": "মাক্সিমাম প্যাকেট রেট",
+            "code": "-max-rate"
+          },
+          {
+            "definition": "ডিফল্ট রিসেট রেট লিমিট",
+            "code": "-defeat-rst-ratelimit"
+          }
+        ]
+      },
+      {
+        "title": "Nmap টাইমিং ট্রেমপ্লেট",
+        "items": [
+          {
+            "definition": "খুব স্লো স্ক্যান করার জন্য টাইমিং ট্রেমপ্লেট",
+            "code": "-T0"
+          },
+          {
+            "definition": "ফায়ারওয়েল এড়াতে কার্যকর টাইমিং ট্রেমপ্লেট",
+            "code": "-T1"
+          },
+          {
+            "definition": " টার্গেট সিস্টেমে বাধা  না পাওয়ার কার্যকর টাইমিং ট্রেমপ্লেট",
+            "code": "-T2"
+          },
+          {
+            "definition": "ডিফল্ট টাইমিং ট্রেমপ্লেট",
+            "code": "-T3"
+          },
+          {
+            "definition": "ল্যান স্ক্যান করার জন্য সবচেয়ে দ্রুত টাইমিং ট্রেমপ্লেট",
+            "code": "-T4"
+          },
+          {
+            "definition": "একটি দ্রুত আক্রমণাত্মক স্ক্যান করার জন্য টাইমিং ট্রেমপ্লেট",
+            "code": "-T5"
+          }
+        ]
+      },
+      {
+        "title": "Nmap টাইম স্পেসিফিক ফ্ল্যাগস",
+        "items": [
+          {
+            "definition": "সেকেন্ড",
+            "code": "s"
+          },
+          {
+            "definition": "মিনিট",
+            "code": "m"
+          },
+          {
+            "definition": "ঘণ্টা",
+            "code": "h"
+          },
+          {
+            "definition": "৬০ সেকেন্ড মানে",
+            "code": "60s"
+          },
+          {
+            "definition": "৫মিনিট মানে",
+            "code": "5m"
+          },
+          {
+            "definition": "১ ঘণ্টা মানে",
+            "code": "1h"
+          }
+        ]
+      }
+    ]
+  }

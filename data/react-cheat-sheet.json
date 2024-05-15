@@ -13,6 +13,10 @@
           "code": "npx create-react-app <project-name>"
         },
         {
+          "definition": "npx এর সাহায্যে Typescript দিয়ে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
+          "code": "npx create-react-app <project-name> --template typescript"
+        },
+        {
           "definition": "npx এর সাহায্যে প্রজেক্ট নাম ছাড়া রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
           "code": "npx create-react-app . "
         },
@@ -23,6 +27,10 @@
         {
           "definition": "yarn এর সাহায্যে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
           "code": "yarn create react-app <project-name>"
+        },
+        {
+          "definition": "yarn এর সাহায্যে Typescript দিয়ে নতুন একটা রিআ্যাক্ট প্রোজেক্ট তৈরী করতে",
+          "code": "yarn create react-app <project-name> --template typescript"
         }
       ]
     },
@@ -259,6 +267,12 @@
             {
               "definition": "লিংক বা সুইচ এর মাধ্যমে পেইজ পরিবর্তন করতে App.js এ যুক্ত করুন",
               "code": "import { Routes, Route, Link } from 'react-router-dom'"
+            },
+            {
+              "definition": "যেভাবে রাউটার অবজেক্ট বানিয়ে রাউটার কম্পোনেন্ট সেটআপ করবেন"
+            },
+            {
+              "code": "import { useRoutes } from 'react-router-dom'\n//inside the component\nconst routes = [\n  children: [\n   {\n    element: <PageComponent />,\n    path: '/path',\n   }\n  ]\n]\nconst routerRegister = useRoutes(routes)\nreturn routerRegister"
             }
           ]
         },

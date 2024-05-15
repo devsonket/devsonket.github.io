@@ -2,9 +2,26 @@
     "id": "vuejs-cheat-sheet",
     "title": "ভিউ জেএস",
     "slug": "vuejs-cheat-sheet",
-    "description": "ভিউ জেএস চিটশিট",
+    "description": "ইউজার ইন্টারফেস বানানোর জন্য পার্ফোমেন্ট, ভার্সেটাইল জাভাস্ক্রিপ্ট ফ্রেমওয়ার্ক",
     "colorPref": "#41B883",
-    "contents": [{
+    "contents": [
+        {
+            "title": "ইন্সটলেশন",
+            "items": [{
+                    "definition": "নতুন ভিউ প্রজেক্ট বানানো",
+                    "code": "npm init vue@latest <your-project-name> \ncd <your-project-name> \nnpm install \nnpm run dev"
+                },
+                {
+                    "definition": "ভিউ প্রজেক্ট বিল্ড করা",
+                    "code": "npm run build"
+                },
+                {
+                    "definition": "CDN এর মাধ্যমে ভিউ ব্যবহার করা",
+                    "code": "<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>"
+                }
+            ]
+        },
+        {
             "title": "ডিরেক্টিভ্স",
             "items": [{
                     "definition": "এইচটিএমএল এলিমেন্ট ডোমে দেখানো/না দেখানো(সত্য/মিথ্যার উপর নির্ভর করে)",

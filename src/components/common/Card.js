@@ -42,7 +42,7 @@ export const Card = ({ id, title, description, colorPref }) => (
         <>
           <p>
             {String(description)
-              .substr(0, 33)
+              .substring(0, 33)
               .trim()}
             ...
           </p>

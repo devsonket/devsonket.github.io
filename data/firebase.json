@@ -9,7 +9,7 @@
       "title": "প্রমাণীকরণ করা হচ্ছে (Authenticating)",
       "items": [
         {
-          "code": "FB = new Firebase('https://xxx.firebase.io')\nFB.auth(TOKEN, (err, result) => { ···})\n"
+          "code": "FB = new Firebase('https://***.firebase.io')\nFB.auth(TOKEN, (err, result) => { ···})\n"
         },
         {
           "code": "FB.authAnonymously(···)\nFB.authWithPassword(···)\nFB.authWithOAuthPopup(···)\nFB.authWithOAuthToken(···)\n"
@@ -37,7 +37,8 @@
     },
     {
       "title": "ব্যবহার (Using)",
-      "items": [
+      "items": 
+      [
         {
           "code": "Users = FB.child('users')"
         },

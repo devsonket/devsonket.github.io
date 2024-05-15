@@ -1,0 +1,213 @@
+{
+    "id": "zoomShortcutWindows",
+    "title": "জুম উইন্ডোজ অ্যাপের শর্টকাট",
+    "slug": "zoomShortcutWindows",
+    "description": "জুম উইন্ডোজ অ্যাপের কতিপয় বেসিক শর্টকাটসমুহ যা প্রতিনিয়ত কাজে লাগবে কোনো না কোনোভাবে",
+    "colorPref": "#333333",
+    "contents": [ 
+      {
+        "title": "ভিডিও এবং অডিও কন্ট্রোল",
+        "items": [
+            {
+                "definition":"ভিডিও চালু/বন্ধ",
+                "code":"Alt + V"
+             },
+             {
+                "definition":"অডিও চালু/বন্ধ",
+                "code":"Alt + A"
+             },
+             {
+                "definition":"হোস্ট ব্যতীত বাকিদের অডিও চালু/বন্ধ (শুধুমাত্র হোস্টের জন্য প্রজোয্য)",
+                "code":"Alt + M"
+             }
+        ]
+      },
+      {
+        "title": "স্ক্রিন শেয়ারিং কন্ট্রোল",
+        "items": [
+             {
+                "definition":"স্ক্রিন শেয়ারিং চালু/বন্ধ",
+                "code":"Alt + S"
+             },
+             {
+                "definition":"নতুন স্ক্রিন শেয়ার চালু/বন্ধ",
+                "code":"Alt + Shift + S"
+             },
+             {
+                "definition":"স্ক্রিন শেয়ার পজ/রিজুম",
+                "code":"Alt + T"
+             }
+             
+        ]
+      },
+      {
+        "title": "রেকর্ডিং কন্ট্রোল", 
+        "items": [
+            {
+                "definition":"লোকাল রেকর্ডিং চালু/বন্ধ",
+                "code":"Alt + R"
+             },
+             {
+                "definition":"ক্লাউড রেকর্ডিং চালু/বন্ধ",
+                "code":"Alt + C"
+             },
+             {
+                "definition":"রেকর্ডিং পজ/রিজুম",
+                "code":"Alt + P" 
+             }
+             
+        ]
+      },
+      {
+        "title": "ডিসপ্লে এবং ভিউ কন্ট্রোল",
+        "items": [
+            {
+                "definition":"ক্যামেরা সুইচ করা",
+                "code":"Alt + N"
+             },
+             {
+                "definition":"ফুল স্ক্রিন অন/অফ",
+                "code":"Alt + F"
+             },
+             {
+                "definition":"ফ্লোটিং মিটিং কন্ট্রোল হাইড/শো",
+                "code":"Ctrl + Alt + Shift + H"
+             }
+        ] 
+      },
+      {
+        "title": "চ্যাট কন্ট্রোল",
+        "items": [
+             {
+                "definition":"মিটিং চ্যাট প্যানেল চালু/বন্ধ",
+                "code":"Alt + H"
+             },
+             {
+                "definition":"চলতে থাকা চ্যাট সেশন বন্ধ করার জন্য",
+                "code":"Ctrl + W"
+             },
+             {
+                "definition":"পুর্ববর্তী চ্যাটে যেতে",
+                "code":"Ctrl + Up"
+             },
+             {
+                "definition":"পরবর্তী চ্যাটে যেতে", 
+                "code":"Ctrl + Down"
+             },
+             {
+                "definition":"চ্যাট হিস্টোরি তে পেছনে যেতে",
+                "code":"Alt + Left"
+             },
+             {
+                "definition":"চ্যাট হিস্টোরি তে সামনে যেতে",
+                "code":"Alt + Right"
+             },
+             {
+                "definition":"নতুন চ্যাট শুরু করা",
+                "code":"Ctrl + N"
+             },
+             {
+                "definition":"সার্চ করতে",
+                "code":"Ctrl + F"
+             },
+             {
+                "definition":"চ্যাট এবং চ্যানেল গুলয় লিস্টে ফোকাস করতে",
+                "code":"Ctrl + L"
+             },
+             {
+                "definition":"কারেন্ট গ্রুপ চ্যাটের লেটেস্ট মেসেজে ফোকাস করতে",
+                "code":"Ctrl + U"
+             },
+             {
+                "definition":"কারেন্ট গ্রুপ চ্যাটের মেম্বার এড করতে",
+                "code":"Ctrl + Alt + I"
+             },
+             {
+                "definition":"কারেন্ট গ্রুপ চ্যাটের প্রথম মেসেজে জাম্প করতে",
+                "code":"Alt + N"
+             }
+             
+        ]
+      },
+      {
+        "title": "কল কন্ট্রোল",
+        "items": [
+            
+            {
+                "definition":"হাইলাইট করা ফোন নাম্বারে কল করতে",
+                "code":"Ctrl + P"
+             },
+             {
+                "definition":"ইনবাউন্ড কল এক্সেপ্ট করতে",
+                "code":"Ctrl + Shift + A"
+             },
+             {
+                "definition":"কারেন্ট কল বন্ধ করতে",
+                "code":"Ctrl + Shift + E"
+             },
+             {
+                "definition":"ইনবাউন্ড কল ডিক্লাইন করতে",
+                "code":"Ctrl + Shift + D"
+             },
+             {
+                "definition":"মাইক মিউট/আনমিউট",
+                "code":"Ctrl + Shift + M"
+             },
+             {
+                "definition":"কল হোল্ড/আনহোল্ড করতে",
+                "code":"Ctrl + Shift + H"
+             },
+             {
+                "definition":"কল ট্রান্সফার করতে",
+                "code":"Ctrl + Shift + T"
+             }
+            
+        ]
+      },
+      {
+        "title": "অন্যান্য", 
+        "items": [
+            {
+                "definition":"পার্টিসিপেন্ট প্যানেল চালু/বন্ধ করতে",
+                "code":"Alt + U"
+             },
+             {
+                "definition":"ইনভাইট উইন্ডো ওপেন করতে",
+                "code":"Alt + I"
+             },
+             {
+                "definition":"ইনভাইটেশন লিংক কপি করতে",
+                "code":"Alt + Shift + I"
+             },
+             {
+                "definition":"হ্যান্ড রাইজ/লোয়ার করতে",
+                "code":"Alt + Y"
+             },
+             {
+                "definition":"মিটিং লিভ/শেষ করার প্রম্পট আনতে",
+                "code":"Alt + Q"
+             },
+             {
+                "definition":"রিমোট কন্ট্রোল পেতে",
+                "code":"Alt + Shift + R"
+             },
+             {
+                "definition":"রিমোট কন্ট্রোল বন্ধ করতে",
+                "code":"Alt + Shift + G"
+             },
+             {
+                "definition":"একটিভ স্পিকারের নাম দেখতে",
+                "code":"Ctrl + 2"
+             },
+             {
+                "definition":"স্ক্রিনশট নিতে",
+                "code":"Alt + Shift + T"
+             },
+             {
+                "definition":"পোট্রেইট এবং ল্যান্ডস্কেইপ ভিউর মধ্যে সুইচ করতে",
+                "code":"Alt + L"
+             } 
+        ]
+      }
+    ]
+  }

@@ -4,9 +4,11 @@
     "slug": "adobe-photoshop-shortcuts",
     "description": "অ্যাডোবি ফটোশপের এর প্রয়োজনীয় উইন্ডোজ শর্টকাট কী",
     "colorPref": "#000",
-    "contents": [{
+    "contents": [
+        {
             "title": "ফাইল (File)",
-            "items": [{
+            "items": [
+                {
                     "definition": "নতুন ফাইল (New)",
                     "code": "Ctrl + N"
                 },
@@ -74,7 +76,8 @@
         },
         {
             "title": "এডিট (Edit)",
-            "items": [{
+            "items": [
+                {
                     "definition": "বাতিল করা/পুনরায় করা (Undo/Redo)",
                     "code": "Ctrl + Z"
                 },
@@ -138,7 +141,8 @@
         },
         {
             "title": "ইমেজ (Image)",
-            "items": [{
+            "items": [
+                {
                     "definition": "ইমেজ অ্যাডজাস্টমেন্ট থেকে লেভেল সিলেক্ট কি (Adjustments > Levels)",
                     "code": "Ctrl + L"
                 },
@@ -190,7 +194,8 @@
         },
         {
             "title": "লেয়ার (Layer)",
-            "items": [{
+            "items": [
+                {
                     "definition": "নতুন লেয়ার (New > Layer)",
                     "code": "Shift + Ctrl + N"
                 },
@@ -242,7 +247,8 @@
         },
         {
             "title": "সিলেক্ট (Select)",
-            "items": [{
+            "items": [
+                {
                     "definition": "সব সিলেক্ট করতে (All)",
                     "code": "Ctrl + A"
                 },
@@ -278,7 +284,8 @@
         },
         {
             "title": "ফিল্টার (Filter)",
-            "items": [{
+            "items": [
+                {
                     "definition": "শেষ ফিল্টার ব্যবহার করতে (Last Filter)",
                     "code": "Alt + Ctrl + F"
                 },
@@ -306,7 +313,8 @@
         },
         {
             "title": "উইন্ডো (Window)",
-            "items": [{
+            "items": [
+                {
                     "definition": "ফটোশপ সাহায্য এর জন্য (Photoshop Help)",
                     "code": "F1"
                 },
@@ -334,7 +342,8 @@
         },
         {
             "title": "৩ডি (3D)",
-            "items": [{
+            "items": [
+                {
                     "definition": "সিলেক্টেড বহুভুজগুলো শো/হাইড করতে (Show/Hide Polygons > Within Selection)",
                     "code": "Alt + Ctrl + X"
                 },
@@ -350,7 +359,8 @@
         },
         {
             "title": "ভিউ (View)",
-            "items": [{
+            "items": [
+                {
                     "definition": "প্রুফ কালারস্ (Proof Colors)",
                     "code": "Ctrl + Y"
                 },
@@ -384,7 +394,7 @@
                 },
                 {
                     "definition": "গ্রিড শো/হাইড করতে (Show > Grid)",
-                    "code": "Ctrl + ’"
+                    "code": "Ctrl + '"
                 },
                 {
                     "definition": "গাইড শো/হাইড করতে (Show > Guides)",
@@ -406,7 +416,8 @@
         },
         {
             "title": "টুলস (Tools)",
-            "items": [{
+            "items": [
+                {
                     "definition": "মুভ টুল (Move Tool)",
                     "code": "V"
                 },

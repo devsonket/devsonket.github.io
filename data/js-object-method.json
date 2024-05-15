@@ -39,8 +39,8 @@
                     "code": "replaceAll(x, y)"
                 },
                 {
-                    "definition": "কোনোকিছু(x) স্ট্রিং এ থাকলে সেটার ইন্ডেক্স রিটার্ণ করা অথবা -1 রিটার্ণ করা",
-                    "code": "search()"
+                    "definition": "স্ট্রিং(y) এ কোনোকিছু(x) থাকলে সেটার ইন্ডেক্স রিটার্ণ করা অথবা -1 রিটার্ণ করা",
+                    "code": "y.search(x)"
                 },
                 {
                     "definition": "একটা স্ট্রিংকে থেকে নির্দিষ্ট কোনো কিছু অংশ আলাদা করা",
@@ -171,28 +171,28 @@
                     "code": "getFullYear()"
                 },
                 {
-                    "definition": "মাস(০-১১) রিটার্ণ করা",
-                    "code": "getMonth(x)"
+                    "definition": "ডেট(d) থেকে মাস(০-১১) রিটার্ণ করা",
+                    "code": "d.getMonth()"
                 },
                 {
-                    "definition": "তারিখ(০-৩১) রিটার্ণ করা",
-                    "code": "getDate(x)"
+                    "definition": "ডেট(d) থেকে তারিখ(১-৩১) রিটার্ণ করা",
+                    "code": "d.getDate()"
                 },
                 {
-                    "definition": "সাপ্তাহিক(০-৬) দিন পাওয়া",
-                    "code": "getDay()"
+                    "definition": "ডেট(d) থেকে সাপ্তাহিক(০-৬) দিন পাওয়া",
+                    "code": "d.getDay()"
                 },
                 {
-                    "definition": "ঘন্টা(০-২৩) রিটার্ণ করা",
-                    "code": "getHours(x)"
+                    "definition": "ডেট(d) থেকে ঘন্টা(০-২৩) রিটার্ণ করা",
+                    "code": "d.getHours()"
                 },
                 {
-                    "definition": "মিনিট(০-৫৯) রিটার্ণ করা",
-                    "code": "getMinutes(x)"
+                    "definition": "ডেট(d) থেকে মিনিট(০-৫৯) রিটার্ণ করা",
+                    "code": "d.getMinutes()"
                 },
                 {
-                    "definition": "সেকেন্ড(০-৫৯) রিটার্ণ করা",
-                    "code": "getSeconds(x)"
+                    "definition": "ডেট(d) থেকে সেকেন্ড(০-৫৯) রিটার্ণ করা",
+                    "code": "d.getSeconds()"
                 }
             ]
         },
@@ -285,6 +285,10 @@
                 {
                     "definition": "x ইন্টিজার হলে true,অন্যথায় false রিটার্ন করে",
                     "code": "isInteger(x)"
+                },
+                {
+                    "definition": "x ফাইনাইট হলে true,অন্যথায় false রিটার্ন করে",
+                    "code": "isFinite(x)"
                 }
             ]
         },
@@ -353,6 +357,50 @@
                 {
                     "definition": "ওয়ার্নিং মেসেজ দেয়ার জন্য",
                     "code": "console.warn()"
+                }
+            ]
+        },
+        {
+            "title": "জাভাস্ক্রিপ্ট ম্যাপ (Map) অবজেক্ট",
+            "items": [{
+                    "definition": "একটি ম্যাপ অবজেক্ট তৈরি করতে",
+                    "code": "const myMap = new Map()"
+                },
+                {
+                    "definition": "ম্যাপে value যোগ করতে",
+                    "code": "myMap.set('key', 'value')"
+                },
+                {
+                    "definition": "ম্যাপ থেকে value পেতে",
+                    "code": "myMap.get('key')"
+                },
+                {
+                    "definition": "ম্যাপ থেকে value মুছে ফেলতে",
+                    "code": "myMap.delete('key')"
+                },
+                {
+                    "definition": "ম্যাপে একটি key আছে কি না তা চেক করার জন্য",
+                    "code": "myMap.has('key')"
+                },
+                {
+                    "definition": "ম্যাপে মোট এলিমেন্ট সংখ্যা জানার জন্য",
+                    "code": "myMap.size"
+                },
+                {
+                    "definition": "ম্যাপে সব key গুলি পেতে",
+                    "code": "Array.from(myMap.keys())"
+                },
+                {
+                    "definition": "ম্যাপে সব value গুলি পেতে",
+                    "code": "Array.from(myMap.values())"
+                },
+                {
+                    "definition": "ম্যাপ থেকে সব key এবং value গুলি পেতে",
+                    "code": "Array.from(myMap.entries())"
+                },
+                {
+                    "definition": "ম্যাপে সব key এবং value বা সব এলিমেন্ট গুলি মুছে ফেলতে",
+                    "code": "myMap.clear()"
                 }
             ]
         }

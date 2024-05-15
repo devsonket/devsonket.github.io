@@ -4,44 +4,417 @@
     "slug": "flutter",
     "description": "Flutter গুগলের তৈরি একটি ফ্রেমওয়ার্ক যার মাধ্যমে android,iOS app এবং ওয়েবসাইট শুধুমাত্র একটি কোডবেস ব্যবহার করে তৈরি করা যায়। Flutter প্রতিটি প্ল্যাটফর্মের জন্য নেটিভলি কম্পাইল্ড হওয়াতে অন্যান্য ফ্রেমওয়ার্ক থেকে অনেক দ্রুত কাজ করে। ",
     "colorPref": "#49caf5",
-    "contents": [{
-        "title": "ফ্লাটার সিএলআই টুলস (Flutter CLI tools)",
-        "items": [{
-                "definition": "কোন ভার্সন ইন্সটল দেওয়া আছে তা জানতে",
-                "code": "flutter --version"
+    "contents": [
+        {
+            "title": "ফ্লাটার সিএলআই টুলস (Flutter CLI tools)",
+            "items": [
+                {
+                    "definition": "কোন ভার্সন ইন্সটল দেওয়া আছে তা জানতে",
+                    "code": "flutter --version"
+                },
+                {
+                    "definition": "নতুন Flutter প্রোজেক্ট বানাতে",
+                    "code": "flutter create <আপনার_প্রোজেক্টের_নাম>"
+                },
+                {
+                    "definition": "যেসব ডিভাইস আপনার পিসির সাথে কানেক্টেড আছে তা জানতে",
+                    "code": "flutter devices"
+                },
+                {
+                    "definition": "ওয়েব সাপোর্ট সহ নতুন প্রোজেক্ট বানাতে",
+                    "code": "flutter channel beta\n flutter upgrade\n flutter config --enable-web"
+                },
+                {
+                    "definition": "বর্তমানে কোন চ্যানেলে আছেন সেটা দেখতে",
+                    "code": "flutter channel"
+                },
+                {
+                    "definition": "চ্যানেল পরিবর্তন করতেে",
+                    "code": "flutter channel dev/master/stable/beta"
+                },
+                {
+                    "definition": "ঠিকঠাক মত ইন্সটল হয়েছে কিনা জানতে ",
+                    "code": "flutter doctor"
+                },
+                {
+                    "definition": "ঠিকঠাক মত ইন্সটল হয়েছে কিনা আরো এডভান্স জানতে ",
+                    "code": "flutter doctor -v"
+                },
+                {
+                    "definition": "অর্গানাইজেশন/প্রতিষ্ঠানের নাম সেট করতে",
+                    "code": "flutter create --org com.yourorg your_project"
+                }
+            ]
+        },
+        {
+            "title": "জেশ্চার ডিটেক্ট করা জন্য",
+            "items": [
+                {
+                    "definition": "ট্যাপ করে",
+                    "code": "onTap"
+                },
+                {
+                    "definition": "ট্যাপ করে উপরে নিলে",
+                    "code": "onTapUp"
+                },
+                {
+                    "definition": "ট্যাপ করে নিচে নিলে",
+                    "code": "onTapDown"
+                },
+                {
+                    "definition": "ট্যাপ করে ধরে রাখলে",
+                    "code": "onLongPress"
+                },
+                {
+                    "definition": "দুবার ট্যাপ করলে",
+                    "code": "onDoubleTap"
+                },
+                {
+                    "definition": "সমতল ভাবে টেনে ধরলে",
+                    "code": "onHorizontalDragStart"
+                },
+                {
+                    "definition": "খাড়া ভাবে টেনে ধরলে",
+                    "code": "onVerticalDragDown"
+                },
+                {
+                    "definition": "‍নির্দিষ্ট জায়গায় ড্রাগাবল ইউজ",
+                    "code": "onPanDown"
+                },
+                {
+                    "definition": "স্কেলের উপর ডিপেন্ড করে",
+                    "code": "onScaleStart"
+                }
+            ]
+        },
+        {
+        "title": "FVM (Flutter Version Management)",
+        "items": [
+            {
+            "definition": "FVM কি?",
+            "code": "FVM (Flutter Version Management) হলো একটি ভার্শন ম্যানেজমেন্ট টুল, যা দিয়ে খুব সহজেই একই পিসিতে Flutter এর বিভিন্ন ভার্শন ব্যবহার করতে পারবেন।"
             },
             {
-                "definition": "নতুন Flutter প্রোজেক্ট বানাতে",
-                "code": "flutter create <আপনার_প্রোজেক্টের_নাম>"
+            "definition": "MacOS এ FVM ইনস্টল করুন",
+            "code": "brew tap leoafarias/fvm\nbrew install fvm"
             },
             {
-                "definition": "যেসব ডিভাইস আপনার পিসির সাথে কানেক্টেড আছে তা জানতে",
-                "code": "flutter devices"
+            "definition": "Windows এ FVM ইনস্টল করুন",
+            "code": "choco install fvm"
             },
             {
-                "definition": "ওয়েব সাপোর্ট সহ নতুন প্রোজেক্ট বানাতে",
-                "code": "flutter channel beta\n flutter upgrade\n flutter config --enable-web"
+            "definition": "Linux এ FVM ইনস্টল করুন",
+            "code": "brew tap leoafarias/fvm\nbrew install fvm"
             },
             {
-                "definition": "বর্তমানে কোন চ্যানেলে আছেন সেটা দেখতে",
-                "code": "flutter channel"
+            "definition": "FVM অ্যাক্টিভেট করতে",
+            "code": "dart pub global activate fvm"
             },
             {
-                "definition": "চ্যানেল পরিবর্তন করতেে",
-                "code": "flutter channel dev/master/stable/beta"
+            "definition": "Custom Path কনফিগ করার জন্য",
+            "code": "fvm config --cache-path <CACHE_PATH>"
             },
             {
-                "definition": "ঠিকঠাক মত ইন্সটল হয়েছে কিনা জানতে ",
-                "code": "flutter doctor"
+            "definition": "অটোমেটিক্যালি SDK এর path সুইচ করতে চাইলে .vscode/settings.json এ যেয়ে এড করুন",
+            "code": "{\n  \"dart.flutterSdkPath\": \".fvm/flutter_sdk\",\n  \"search.exclude\": {\n    \"**/.fvm\": true\n  },\n  \"files.watcherExclude\": {\n    \"**/.fvm\": true\n  }\n}"
             },
             {
-                "definition": "ঠিকঠাক মত ইন্সটল হয়েছে কিনা আরো এডভান্স জানতে ",
-                "code": "flutter doctor -v"
+            "definition": "ভার্শন ইনস্টল করুন",
+            "code": "fvm install <version>"
             },
             {
-                "definition": "অর্গানাইজেশন/প্রতিষ্ঠানের নাম সেট করতে",
-                "code": "flutter create --org com.yourorg your_project"
+            "definition": "প্রজেক্টে একটি ভার্শন ব্যবহার করুন",
+            "code": "fvm use <version>"
+            },
+            {
+            "definition": "প্রজেক্টের সকল ভার্শন দেখুন",
+            "code": "fvm list"
+            },
+            {
+            "definition": "ডকুমেন্টেশন দেখুন",
+            "code": "fvm --help"
+            },
+            {
+            "definition": "fvm use কমান্ড দেওয়ার পর, ভার্সন চেঞ্জ না হলে",
+            "code": "সবার নিচের বার থেকে Dart sdk রিলোড করুন"
+            },
+            {
+            "definition": "FVM ব্যবহারের সময়, ফ্লাটারের ব্যাসিক কমান্ডগুলোর আগে fvm যোগ করে নিতে হবে। যেমন:",
+            "code": "”fvm flutter pub get”, “fvm flutter run”"
+            },
+            {
+            "definition": "অফিসিয়াল সাইট",
+            "code": "https://fvm.app"
             }
-        ]
-    }]
+
+            ]
+        },
+        {
+  "title": "RefreshIndicator - রিফ্রেশ ইন্ডিকেটর (পুল টু রিফ্রেশ)",
+  "items": [
+    {
+      "definition": "RefreshIndicator কি?",
+      "code": "RefreshIndicator একটি Flutter উইজেট, যা দিয়ে ফ্লাটার এপে খুব সহজেই পুল টু রিফ্রেশ ফাংশনালিটি তৈরি করা যায়।"
+    },
+    {
+      "definition": "ব্যবহার করার নিয়ম",
+      "code": "RefreshIndicator(\n  onRefresh: () async {\n    // আপনার রিফ্রেশ লজিক লিখুন\n },"
+    },
+    {
+      "definition": "onRefresh প্যারামিটার:",
+      "code": "onRefresh একটি required কলব্যাক ফাংশন, যা একটি ভয়েড ফিউচার `` Future<void> `` রিটার্ন করে। পেইজ রিফ্রেশ করার জন্য, এর ভিতরেই আপনার লজিক কল করতে হবে।"
+    },
+    {
+      "definition": "RefreshIndicator এড করার পরও কাজ করছে না?",
+      "code": "RefreshIndicator ব্যবহারের সময়, ৪/৫ টি ইউজকেস অবশ্যই মাথায় রাখতে হবে"
+    },
+    {
+      "definition": "কেস #১. যেকোনো লিস্টের উপর ব্যবহার করা",
+      "code": "RefreshIndicator শুধুমাত্র যেকোনো লিস্ট টাইপের উইজেটের উপরই ব্যবহার করা যাবে। যেমনঃ ListView, GridView, SingleChildScrollView, CustomScrollView ইত্যাদি।"
+    },
+    {
+      "definition": "কেস #২. লিস্টের উপর ব্যবহার করার পরও, যদি RefreshIndicator কাজ না করে",
+      "code": "ওই লিস্ট টাইপ উইজেটের physics প্যারামিটারে, AlwaysScrollableScrollPhysics ইউজ করতে হবে। \n\n physics: AlwaysScrollableScrollPhysics(),"
+    },
+    {
+      "definition": "কেস #৩. আপনি যদি অন্য কোনো ScrollPhysics ব্যবহার করতে চান",
+      "code": "তাহলে সেই ScrollPhysics এর parent প্যারামিটারে, AlwaysScrollableScrollPhysics অ্যাড করতে হবে।\n\n physics: const BouncingScrollPhysics(\n  parent: AlwaysScrollableScrollPhysics()\n ),"
+    },
+    {
+      "definition": "কেস #৪. shrinkWrap প্যারামিটার ব্যবহার করলে",
+      "code": "RefreshIndicator এর নিচে থাকা, লিস্ট টাইপ উইজেটের shrinkWrap প্যারামিটারটি অবশ্যই false থাকতে হবে। \n\n shrinkWrap: false,"
+    }
+    ,
+    {
+      "definition": "কেস #৫. আপনি যদি লিস্টভিউ ছাড়া, অন্য কোনো কাস্টম উইজেট ব্যবহার করতে চান",
+      "code": "আপনাকে Stack উইজেট ব্যবহার করতে হবে। এবং সেই Stack এর ভিতরে দুইটি উইজেট থাকবে। একটি হবে আপনার কাস্টম উইজেট, অন্যটি ListView. \n\n RefreshIndicator(\n  onRefresh: () async { \n   print('refreshing'); \n  },\n  child: Stack(\n   children: [\n    YourWidget(),\n    ListView(\n     physics: const AlwaysScrollableScrollPhysics(),\n    ),\n   ],\n  ),\n ),"
+    }
+  ]
+},
+
+{
+            "title": "ফ্লাটারের কমন কিছু Error এবং সেগুলার Fix",
+            "items": [
+                {
+                    "definition": "A RenderFlex overflowed by 0.02 pixels on the bottom.",
+                    "code": "স্ক্রিনের হাইটের চেয়ে এলিমেন্টগুলার হাইট বড় হয়ে গেছে। যার কারনে overflow হচ্ছে। প্যারেন্ট উইজেটে Expanded ব্যবহার করুন অথবা ফিক্সড হাইট দিয়ে SingleChildScrollView ব্যবহার করুন।" 
+                },
+                {
+                    "definition": "BoxConstraints forces an infinite width.",
+                    "code": "Expanded উইজেটটি Row বা Column এর ভিতরে আছে কিনা তা চেক করুন।"
+                },
+                {
+                    "definition": "setState() or markNeedsBuild() called during widget creation.",
+                    "code": "initState এ setState ব্যবহার করা যাবে না। এটি ব্যবহার করতে হলে একটি ডিলে মেথড ব্যবহার করতে হবে।\n\nWidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));"
+                },
+                {
+                    "definition": "renderBox was not laid out: RenderFlex object was given an infinite height during layout.",
+                    "code": "SingleChildScrollView টি একটি Container বা অন্য কোন ফিক্সড হাইটের উইজেটের ভিতরে ইউজ করতে হবে।"
+                },
+                {
+                    "definition": "Don't use 'BuildContext's across async gaps. Try rewriting the code to not reference the 'BuildContext'.",
+                    "code": "StatelessWidget এ (context.mounted) এবং StatefulWidget এ (mounted) দিয়ে চেক করুন, উইজেটটি ফ্লাটারের উইজেট ট্রি'তে মাউন্ট হয়েছে কিনা।"
+                },
+                {
+                    "definition": "Duplicate GlobalKey detected in widget tree.",
+                    "code": "#১. GlobalKey অবশ্যই ইউনিক হতে হবে। একই ক্লাসের দুইটি উইজেটে একই GlobalKey ব্যবহার করা যাবে না।\n#২. প্রয়োজনে ValueKey অথবা ObjectKey ব্যবহার করতে হবে।"
+                },
+                {
+                    "definition": "The argument type 'String?' can't be assigned to the parameter type 'String'",
+                    "code": "ডাটা টাইপ চেঞ্জ হওয়ার কারনে এই এরর আসছে। null-aware operators('?' / '??') ব্যবহার করুন।"
+                },
+                {
+                    "definition": "Execution failed for task ':app:processDebugResources'.",
+                    "code": "#১. কনসোলে, flutter clean রান করে, পরে flutter pub get রান করুন। \n#২. এনড্রয়েড গ্রেডেল ফাইলে (android/app/build.gradle) সব ঠিক আছে কিনা চেক করুন।"
+                },
+                {
+                    "definition": "MissingPluginException(No implementation found for method x on channel y)",
+                    "code": "flutter pub get দিয়ে pubspec.yaml আপডেট করুন।"
+                }
+            ]
+        },
+        {
+            "title": "Riverpod (রিভারপড)",
+            "items": [
+                {
+                    "definition": "রিভারপড কি?",
+                    "code": "রিভারপড, ফ্লাটারের একটি স্টেট ম্যানেজমেন্ট লাইব্রেরি।"
+                },
+                {
+                    "definition": "কেন রিভারপড ব্যবহার করবেন?",
+                    "code": "রিভারপড দিয়ে এ্যাপের নেটওয়ার্ক রিকোয়েস্ট ও ইরর হ্যান্ডেলের মতো কমপ্লেক্স কাজগুলো খুব সহজেই করে ফেলা যায়। এমনকি ২/১ লাইন এক্সট্রা কোড লিখেই, এ্যাপে টেম্পোরারি ক্যাশিং ফাংশনালিটি ইমপ্লিমেন্ট করতে পারবেন।"
+                },
+                {
+                    "definition": "কিভাবে রিভারপড ইনস্টল করবেন?",
+                    "code": "pubspec.yaml ফাইলে নিচের ডিপেন্ডেন্সিগুলো অ্যাড করুন।\n\nflutter_riverpod: ^2.4.4\nriverpod_annotation: ^2.2.1"
+                },
+                {
+                    "definition": "কিভাবে রিভারপড ব্যবহার করবেন?",
+                    "code": "রিভারপডে মূলত ছয়টি প্রোভাইডার আছে। বিভিন্ন ইউজকেসের উপর ডিপেন্ড করে, এ প্রোভাইডারগুলো ব্যবহার করেই আপনি এ্যাপের স্টেট ম্যানেজ করতে পারবেন। এই প্রোভাইডারগুলো হলো: \n\n1. Provider\n2. StateProvider\n3. FutureProvider\n4. StreamProvider\n5. NotifierProvider\n6. StateNotifierProvider"
+                },
+                {
+                    "definition": "ProviderScope (প্রোভাইডার স্কোপ)",
+                    "code": "প্রোভাইডারগুলো কাজ করার জন্য, অবশ্যই এ্যাপের root এ ProviderScope এড করতে হবে। \n\nvoid main() {\n  runApp(\n    ProviderScope(child: MyApp()),\n  );\n}"
+                },
+                {
+                    "definition": "Provider (প্রোভাইডার)",
+                    "code": "এটি একটি বেসিক ইমিউটেবল প্রোভাইডার, যা এ্যাপের অন্য যে কোনো জায়গায় ডেটা অ্যাক্সেস করার জন্য ব্যবহৃত হয়। \n\nfinal intProvider = Provider<int>((ref) => 42);"
+                },
+                {
+                    "definition": "StateProvider (স্টেট প্রোভাইডার)",
+                    "code": "এটিও Provider এর মতো, তবে এটি মিউটেবল। আপনি প্রয়োজনে এর স্টেট চেঞ্জ করতে পারবেন। \n\nfinal counterProvider = StateProvider<int>((ref) => 0); \n\nস্টেট চেঞ্জ করার জন্য,\nref.read(counterProvider).state = 1;"
+                },
+                {
+                    "definition": "FutureProvider (ফিউচার প্রোভাইডার)",
+                    "code" : "এটি ফিউচার ডেটা রিটার্ন করে। নেটওয়ার্ক কলে নরমাল ডেটা ফেচিংএর সময় FutureProvider ব্যবহার করা যায়। \n\nfinal myFutureProvider  = FutureProvider<String>((ref) async {\n  // Perform an asynchronous operation\n  return fetchData();\n});"
+                },
+                {
+                    "definition": "StreamProvider (স্ট্রিম প্রোভাইডার)",
+                    "code": "এটিও FutureProvider এর মতোই, তবে স্ট্রিম ডেটা রিটার্ন করে। রিয়েল টাইম আপডেট বা সকেটের কাজে StreamProvider ব্যবহার করা যায়। \n\nfinal myStreamProvider = StreamProvider<String>((ref) {\n  // Start listening to a stream\n  return someStream();\n});"
+                },
+                {
+                    "definition": "NotifierProvider (নোটিফায়ার প্রোভাইডার)",
+                    "code": "Notifier ক্লাসের একটা instance তৈরি করার জন্য NotifierProvider ব্যবহার হয়। Notifier দিয়ে আপনি কমপ্লেক্স স্টেট লজিক ম্যানেজ করতে পারবেন। \n\nfinal myNotifierProvider = NotifierProvider<MyNotifier, String>((ref){\n  return MyNotifier();\n});"
+                },
+                {
+                    "definition": "StateNotifierProvider (স্টেট নোটিফায়ার প্রোভাইডার)",
+                    "code": "এটিও NotifierProvider এর মতোই, তবে মিউটেবল স্টেট ম্যানেজ করার জন্য ব্যবহার করা হয়। এটি StateNotifier ক্লাসের একটা instance তৈরি করে। \n\nfinal myStateNotifierProvider = StateNotifierProvider<MyStateNotifier, String>((ref) {\n  return MyStateNotifier();\n});"
+                }
+            ]
+        },
+        {
+            "title": "কিছু ইম্পরট্যান্ট ফ্লাটার শীট",
+            "items": [
+                {
+                    "definition": "এটা এমন একটা উইজেট যেটা বিন্যাস্ত করা যায়না",
+                    "code": "StatelessWidget"
+                },
+                {
+                    "definition": "এটা এমন একটা উইজেট যেটা বিন্যাস্ত করা যায়",
+                    "code": "StatefulWidget"
+                },
+                {
+                    "definition": "চাইল্ডকে মাঝ বরাবর নিয়ে আসবে",
+                    "code": "Center"
+                },
+                {
+                    "definition": "উইজেটের চাইল্ডকে কলাম ভিউ করবে",
+                    "code": "Column"
+                },
+                {
+                    "definition": "উইজেটের চাইল্ডকে রো ভিউ করবে",
+                    "code": "Row"
+                },
+                {
+                    "definition": "উইজেটের চাইল্ডকে লিস্ট ভিউ করবে",
+                    "code": "ListView"
+                },
+                {
+                    "definition": "উইজেটের চাইল্ডকে গির্ড ভিউ করবে",
+                    "code": "GridView"
+                },
+                {
+                    "definition": "‍প্লাগিন ইন্সটাল করতে",
+                    "code": "Plugins"
+                },
+                {
+                    "definition": "প্যাকেজ ইন্সটাল করতে",
+                    "code": "Packages"
+                },
+                {
+                    "definition": "স্টেটলেস উইজেটের জন্য",
+                    "code": "Container"
+                },
+                {
+                    "definition": "ইমেজ ইউজ করতে",
+                    "code": "Image"
+                },
+                {
+                    "definition": "টেক্সট ইউজ করতে",
+                    "code": "Text"
+                },
+                {
+                    "definition": "ম্যাটেরিয়াল ডিজাইন লে-আউট দেওয়ার জন্য",
+                    "code": "Scaffold"
+                },
+                {
+                    "definition": "অ্যাপের টাইটেল",
+                    "code": "AppBar"
+                },
+                {
+                    "definition": "স্পেস নিতে",
+                    "code": "SizedBox"
+                },
+                {
+                    "definition": "জেশ্চার অপশন",
+                    "code": "GestureDetector"
+                },
+                {
+                    "definition": "আইকন ইউজ করতে",
+                    "code": "Icon"
+                },
+                {
+                    "definition": "পেজ ভিউ এর জন্য",
+                    "code": "PageView"
+                },
+                {
+                    "definition": "লেআউট বিল্ড করতে",
+                    "code": "LayoutBuilder"
+                },
+                {
+                    "definition": "চাইল্ড উইজেটের ভবিষ্যৎ বিল্ড",
+                    "code": "FutureBuilder"
+                },
+                {
+                    "definition": "স্ট্রিম বিল্ডার",
+                    "code": "StreamBuilder"
+                },
+                 {
+                    "definition": "পুল-টু-রিফ্রেশ করতে",
+                    "code": "RefreshIndicator"
+                },
+                {
+                    "definition": "বটোম শিট দেখাতে",
+                    "code": "BottomSheet"
+                },
+                {
+                    "definition": "কার্ড দেখাতে",
+                    "code": "Card"
+                },
+                {
+                    "definition": "চেকবক্স দেখাতে",
+                    "code": "Checkbox"
+                },
+                {
+                    "definition": "চিপস দেখাতে",
+                    "code": "Chip"
+                },
+                {
+                    "definition": "ড্রয়ার দেখাতে",
+                    "code": "Drawer"
+                },
+                {
+                    "definition": "স্লাইডার দেখাতে",
+                    "code": "Slider"
+                },
+                 {
+                    "definition": "স্নাকবার দেখাতে",
+                    "code": "Snackbar"
+                },
+                 {
+                    "definition": "সুইচ দেখাতে",
+                    "code": "Switch"
+                },
+                 {
+                    "definition": "ট্যাব বার দেখাতে",
+                    "code": "TabBar"
+                },
+                {
+                    "definition": "টেবল দেখাতে",
+                    "code": "Table"
+                }
+                
+            ]
+        }
+    ]
 }

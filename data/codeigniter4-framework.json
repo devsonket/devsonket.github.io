@@ -11,7 +11,7 @@
 				{
 					"definition": "ক্যাশ সার্ভিস অ্যাক্সেসর ফাংশন",
 					"code": "cache(string $key);"
-				},				
+				},
 				{
 					"definition": "কুকি সার্ভিস অ্যাক্সেসর ফাংশন",
 					"code": "cookie(string $name, string $value, array $options);\ncookies(array $cookies, bool $getGlobal);"
@@ -52,7 +52,6 @@
 					"definition": "ভিউসেল(view cell) কন্ট্রোলার ছাড়া ভিউ রেন্ডার ফাংশন",
 					"code": "view_cell(string $class, array $params, integer $ttl, string $cacheName); \n//ttl - cache duration"
 				}
-
 			]
 		},
 		{
@@ -251,7 +250,7 @@
 				{
 					"definition": "অ্যাপ ডিরেক্টরির পথ",
 					"code": "APPPATH"
-				},				
+				},
 				{
 					"definition": "প্রোজেক্ট রুট ডিরেক্টরির পথ",
 					"code": "ROOTPATH"
@@ -300,7 +299,6 @@
 					"definition": "দশকের সময়কাল (সেকেন্ডে)",
 					"code": "DECADE"
 				}
-
 			]
 		}
 	]
