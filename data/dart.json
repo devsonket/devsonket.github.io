@@ -151,6 +151,10 @@
                     "definition": "একটি স্ট্রিং খালি কিনা",
                     "code": "''.isEmpty"
                 }
+                {
+                    "definition": "একটি স্ট্রিং এ ভ্যালু আছে",
+                    "code": "''.isNotEmpty"
+                }
             ]
         },
         {
