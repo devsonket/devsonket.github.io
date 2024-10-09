@@ -86,6 +86,15 @@
                     "code": "@Post('user/:id/update')"
                 },
                 {
+                    "code": "@Put('user/:id')"
+                },
+                {
+                    "code": "@Patch(':id')"
+                },
+                {
+                    "code": "@Delete(':id')"
+                },
+                {
                     "code": "@HttpCode(HttpStatus.GONE)"
                 },
                 {
@@ -110,10 +119,34 @@
                     "code": "@Res() response"
                 },
                 {
+                    "code": "@Req() request"
+                },
+                {
                     "code": "@IsNumber()"
                 },
                 {
                     "code": "@IsString()"
+                },
+                {
+                    "code": "@IsOptional()"
+                },
+                {
+                    "code": "@IsArray()"
+                },
+                {
+                    "code": "@IsNotEmpty({ message: '<your_msg>' })"
+                },
+                {
+                    "code": "@IsBoolean()"
+                },
+                {
+                    "code": "@IsEnum(<enum_type>)"
+                },
+                {
+                    "code": "@Module()"
+                },
+                {
+                    "code": "@Global()"
                 }
             ]
         }
