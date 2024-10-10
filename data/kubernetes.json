@@ -1,172 +1,132 @@
 {
-    "id": "kubernetes-cheat-sheet",
-    "title": "কুবারনেট",
-    "slug": "kubernetes-cheat-sheet",
-    "description": "কুবারনেট চিটশিট",
-    "colorPref": "#000",
-    "contents": [{
-            "title": "কুবারনেট রিসউরস দেখা ও খোঁজা",
-            "items": [{
-                    "definition": "সার্ভিস লিস্ট",
-                    "code": "kubectl get services"
+    "id": "kubernetes",
+    "title": "কুবেরনেটিস ফান্ডামেন্টালস",
+    "slug": "কুবেরনেটিস",
+    "description": "কুবেরনেটিস (Kubernetes) একটি ওপেন সোর্স কনটেইনার অর্কেস্ট্রেশন প্ল্যাটফর্ম, যা কনটেইনারাইজড অ্যাপ্লিকেশনগুলিকে পরিচালনা ও স্বয়ংক্রিয়ভাবে ডিপ্লয়মেন্ট করে।",
+    "colorPref": "#326ce5",
+    "contents": [
+        {
+            "title": "কুবেরনেটিস ইনস্টল করা",
+            "items": [
+                {
+                    "definition": "Minikube ব্যবহার করে কুবেরনেটিস লোকাল মেশিনে ইনস্টল করা",
+                    "code": "minikube start"
                 },
                 {
-                    "definition": "পোড লিস্ট",
+                    "definition": "kubectl কমান্ড লাইন টুল ইনস্টল করা",
+                    "code": "sudo apt-get install -y kubectl"
+                },
+                {
+                    "definition": "হেল্ম (Helm) ইনস্টল করা",
+                    "code": "curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash"
+                }
+            ]
+        },
+        {
+            "title": "মৌলিক ধারণা",
+            "items": [
+                {
+                    "definition": "Pod",
+                    "code": "Pod হলো কুবেরনেটিসের সবচেয়ে ছোট ডেপ্লয়মেন্ট ইউনিট, যেখানে এক বা একাধিক কনটেইনার চলে।"
+                },
+                {
+                    "definition": "Node",
+                    "code": "Node হলো একটি মেশিন (ভার্চুয়াল বা ফিজিক্যাল), যেখানে কুবেরনেটিস পডগুলো রান করে।"
+                },
+                {
+                    "definition": "Cluster",
+                    "code": "Cluster হলো একাধিক নোড নিয়ে গঠিত, যা একত্রে কনটেইনার অ্যাপ্লিকেশনগুলি চালায় এবং পরিচালনা করে।"
+                },
+                {
+                    "definition": "Service",
+                    "code": "Service হলো একটি নির্দিষ্ট পডের জন্য স্থায়ী IP ঠিকানা ও নেটওয়ার্কিং প্রদানকারী অ্যাবস্ট্রাকশন।"
+                },
+                {
+                    "definition": "Deployment",
+                    "code": "Deployment এর মাধ্যমে আপনি পডের গ্রুপ পরিচালনা করতে পারেন এবং নির্দিষ্ট সংখ্যক পড তৈরির স্টেট মেইনটেইন করতে পারেন।"
+                }
+            ]
+        },
+        {
+            "title": "প্রাথমিক কমান্ডসমূহ",
+            "items": [
+                {
+                    "definition": "পডগুলোর তালিকা দেখতে",
                     "code": "kubectl get pods"
                 },
                 {
-                    "definition": "পোড ডিটেইল লিস্ট",
-                    "code": "kubectl get pods -o wide"
+                    "definition": "নোডগুলোর তালিকা দেখতে",
+                    "code": "kubectl get nodes"
                 },
                 {
-                    "definition": "পোড কনফিগ",
-                    "code": "kubectl get pod my-pod -o yaml"
+                    "definition": "নতুন ডেপ্লয়মেন্ট তৈরি করতে",
+                    "code": "kubectl create deployment --image=<image_name> <deployment_name>"
                 },
                 {
-                    "definition": "পোড ভলিউম",
-                    "code": "kubectl get pv --sort-by=.spec.capacity.storage"
+                    "definition": "কোনো পড ডিলিট করতে",
+                    "code": "kubectl delete pod <pod_name>"
                 },
                 {
-                    "definition": "রানিং পোড",
-                    "code": "kubectl get pods --field-selector=status.phase=Running"
-                }
-            ]
-        },
-        {
-            "title": "কুবারনেট রসদ পরিবর্তন",
-            "items": [{
-                    "definition": "পোড লেবেলিং",
-                    "code": "kubectl label pods my-pod new-label=awesome"
-                },
-                {
-                    "definition": "নতুন সনক্রন দেওয়া",
-                    "code": "kubectl set image deployment/frontend www=image:v2"
-                },
-                {
-                    "definition": "সনক্রন ইতিহাস",
-                    "code": "kubectl rollout history deployment/frontend"
-                },
-                {
-                    "definition": "পূর্বের সনক্রন ফেরত",
-                    "code": "kubectl rollout undo deployment/frontend"
-                },
-                {
-                    "definition": "নতুন সনক্রনের অবস্থা",
-                    "code": "kubectl rollout status -w deployment/frontend"
-                },
-                {
-                    "definition": "পছন্দের এডিটর ব্যাবহার",
-                    "code": "KUBE_EDITOR=\"nano\" kubectl edit svc/docker-registry"
-                }
-            ]
-        },
-        {
-            "title": "কুবারনেট রসদ পরিবর্তন",
-            "items": [{
-                    "definition": "পোড লেবেলিং",
-                    "code": "kubectl label pods my-pod new-label=awesome"
-                },
-                {
-                    "definition": "নতুন সনক্রন দেওয়া",
-                    "code": "kubectl set image deployment/frontend www=image:v2"
-                },
-                {
-                    "definition": "সনক্রন ইতিহাস",
-                    "code": "kubectl rollout history deployment/frontend"
-                },
-                {
-                    "definition": "পূর্বের সনক্রন ফেরত",
-                    "code": "kubectl rollout undo deployment/frontend"
-                },
-                {
-                    "definition": "নতুন সনক্রনের অবস্থা",
-                    "code": "kubectl rollout status -w deployment/frontend"
-                },
-                {
-                    "definition": "পছন্দের এডিটর ব্যাবহার",
-                    "code": "KUBE_EDITOR=\"nano\" kubectl edit svc/docker-registry"
-                },
-                {
-                    "definition": "পোড পুনরায় চালু করা",
-                    "code": "kubectl rollout restart deployment/frontend"
-                }
-            ]
-        },
-        {
-            "title": "কুবারনেট রসদ বাড়ানো",
-            "items": [{
-                    "definition": "অটো ডেপলয় বাড়ানো",
-                    "code": "kubectl autoscale deployment foo --min=2 --max=10"
-                },
-                {
-                    "definition": "রসদ কপি বাড়ানো",
-                    "code": "kubectl scale --replicas=3 rs/foo"
-                },
-                {
-                    "definition": "রসদ কপি বাড়ানো ফাইল থেকে",
-                    "code": "kubectl scale --replicas=3 -f foo.yaml"
-                },
-                {
-                    "definition": "অনেক কপি কন্ট্রোলার বাড়ানো",
-                    "code": "kubectl scale --replicas=5 rc/foo rc/bar rc/baz"
-                },
-                {
-                    "definition": "অনেক কপি কন্ট্রোলার বাড়ানো",
-                    "code": "kubectl scale --replicas=5 rc/foo rc/bar rc/baz"
-                }
-            ]
-        },
-        {
-            "title": "কুবারনেট লগ দেখা ও কমান্ড দেওয়া",
-            "items": [{
-                    "definition": "একটি পডের লগ",
-                    "code": "kubectl logs my-pod"
-                },
-                {
-                    "definition": "পোড এ কমান্ড রান করা",
-                    "code": "kubectl exec my-pod -- ls /"
-                },
-                {
-                    "definition": "পোড এ কমান্ড ব্যাস করা",
-                    "code": "kubectl exec --stdin --tty my-pod -- /bin/sh"
-                }
-            ]
-        },
-        {
-            "title": "কুবারনেট পোর্ট",
-            "items": [{
-                    "definition": "পডের সাথে বাইন্ড \\( ভিতর ৬০০০ বাইরে ৫০০০\\)",
-                    "code": "kubectl port-forward my-pod 5000:6000"
-                },
-                {
-                    "definition": "সার্ভিস এর সাথে বাইন্ড",
-                    "code": "kubectl port-forward svc/my-service 5000 "
-                }
-            ]
-        },
-        {
-            "title": "কুবারনেট ডিপলয়মেন্ট বোঝা",
-            "items": [
-                {
-                    "definition": "ডিপলয়মেন্ট লিস্ট করা",
-                    "code": "kubectl get deployments"
-                },
-                {
-                    "definition": "ডিপলয়মেন্ট ডিটেইল লিস্ট করা",
-                    "code": "kubectl describe deployment my-deployment"
-                }
-            ]
-        },
-        {
-            "title": "কুবারনেট সার্ভিস বোঝা",
-            "items": [
-                {
-                    "definition": "সার্ভিস লিস্ট করা",
+                    "definition": "সার্ভিসের তালিকা দেখতে",
                     "code": "kubectl get services"
                 },
                 {
-                    "definition": "সার্ভিস ডিটেইল লিস্ট করা",
-                    "code": "kubectl describe service my-service"
+                    "definition": "ক্লাস্টারের বর্তমান কনফিগারেশন দেখতে",
+                    "code": "kubectl config view"
+                },
+                {
+                    "definition": "কোনো পডের লগ দেখতে",
+                    "code": "kubectl logs <pod_name>"
+                },
+                {
+                    "definition": "ক্লাস্টারের সমস্ত রিসোর্স দেখতে",
+                    "code": "kubectl get all"
+                }
+            ]
+        },
+        {
+            "title": "এডভান্সড কমান্ডসমূহ",
+            "items": [
+                {
+                    "definition": "কনফিগারেশন ফাইল প্রয়োগ করতে",
+                    "code": "kubectl apply -f <config_file.yaml>"
+                },
+                {
+                    "definition": "কনটেইনারের ইন্টার‍্যাকটিভ শেল চালু করতে",
+                    "code": "kubectl exec -it <pod_name> -- /bin/bash"
+                },
+                {
+                    "definition": "কুবেরনেটিস পড স্কেল করতে",
+                    "code": "kubectl scale --replicas=<number_of_replicas> deployment/<deployment_name>"
+                },
+                {
+                    "definition": "কোনো পড রিস্টার্ট করতে",
+                    "code": "kubectl rollout restart deployment/<deployment_name>"
+                },
+                {
+                    "definition": "রিসোর্স ডেসক্রিপশন দেখতে",
+                    "code": "kubectl describe <resource_type> <resource_name>"
+                }
+            ]
+        },
+        {
+            "title": "ডেপ্লয়মেন্ট ফান্ডামেন্টালস",
+            "items": [
+                {
+                    "definition": "একটি ডেপ্লয়মেন্ট তৈরি করতে",
+                    "code": "kubectl create deployment <deployment_name> --image=<image_name>"
+                },
+                {
+                    "definition": "ডেপ্লয়মেন্ট আপডেট করতে",
+                    "code": "kubectl set image deployment/<deployment_name> <container_name>=<new_image>"
+                },
+                {
+                    "definition": "ডেপ্লয়মেন্টের বর্তমান স্টেট দেখতে",
+                    "code": "kubectl get deployment <deployment_name>"
+                },
+                {
+                    "definition": "ডেপ্লয়মেন্ট ডিলিট করতে",
+                    "code": "kubectl delete deployment <deployment_name>"
                 }
             ]
         }
