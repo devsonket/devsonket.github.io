@@ -169,6 +169,35 @@
                     "code": "kubectl describe service my-service"
                 }
             ]
+        },
+        {
+            "title": "কুবারনেট CronJobs",
+            "items": [
+                {
+                    "definition": "YAML কনফিগারেশন ফাইলের উপর ভিত্তি করে একটি CronJob তৈরি করা",
+                    "code": "kubectl apply -f cronjob.yaml"
+                },
+                {
+                    "definition": "CronJob ম্যানুয়ালি চালানো",
+                    "code": "kubectl create job --from=cronjob/<cronjob_name> <job_name>"
+                },
+                {
+                    "definition": "CronJob এর তালিকা দেখা",
+                    "code": "kubectl get cronjob"
+                },
+                {
+                    "definition": "CronJob ডিলিট করা",
+                    "code": "kubectl delete cronjob <cronjob_name>"
+                },
+                {
+                    "definition": "CronJob Suspend করা",
+                    "code": "kubectl patch cronjob <cronjob_name> -p '{\"spec\" : {\"suspend\" : true }}'"
+                },
+                {
+                    "definition": "Suspend করা CronJob পুনরায় শুরু করা",
+                    "code": "kubectl patch cronjob <cronjob_name> -p '{\"spec\" : {\"suspend\" : false }}'"
+                }
+            ]
         }
     ]
 }
