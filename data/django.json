@@ -196,6 +196,19 @@
             ]
         },
         {
+            "title": "ইমেইল পাঠানো",
+            "items": [
+                {
+                    "definition": "ইমেইল কনসোল এ প্রিন্ট করা",
+                    "code": "EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'"
+                },
+                {
+                    "definition": "SMTP সার্ভার ব্যবহার করে মেইল পাঠানো",
+                    "code": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'"
+                }
+            ]
+        },
+        {
             "title": "স্ট্যাটিক ফাইল",
             "items": [
                 {
