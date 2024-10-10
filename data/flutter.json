@@ -43,6 +43,14 @@
                 {
                     "definition": "অর্গানাইজেশন/প্রতিষ্ঠানের নাম সেট করতে",
                     "code": "flutter create --org com.yourorg your_project"
+                },
+                {
+                    "definition": "প্রোজেক্ট টেম্পলেট সেট করতে",
+                    "code": "flutter create --template=(app|package|plugin|module) <project_name>"
+                },
+                {
+                    "definition": "পূর্বে এক্সপোর্টকৃত ফাইলসমূহ ডিলিট করতে",
+                    "code": "flutter clean"
                 }
             ]
         },
