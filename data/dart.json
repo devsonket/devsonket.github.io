@@ -495,6 +495,10 @@
                     "code": "pub cache repair"
                 },
                 {
+                    "definition": "সিস্টেম ক্যাশ রিমুভ করতে",
+                    "code": "dart pub cache clean"
+                },
+                {
                     "definition": "ব্যবহৃত প্যাকেজগুলোকে ট্রি আকারে প্রিন্ট করা",
                     "code": "pub deps"
                 },
