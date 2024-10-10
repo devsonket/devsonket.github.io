@@ -54,12 +54,28 @@
                     "code": "adb install <apk-লোকেশন>"
                 },
                 {
+                    "definition": "ডিভাইস থেকে অ্যাপ রিমুভ করা",
+                    "code": "adb uninstall package-name"
+                },
+                {
                     "definition": "লগ",
                     "code": "adb logcat [অপশন] [ফিল্টার] [ফিল্টার] ..."
                 },
                 {
                     "definition": "চলন্ত অ্যাপের লগ",
                     "code": "adb logcat AndroidRuntime:E *:S\""
+                },
+                {
+                    "definition": "ফাইল ডাউনলোড করা",
+                    "code": "adb pull /sdcard/file-name"
+                },
+                {
+                    "definition": "ফাইল আপলোড করা",
+                    "code": "adb push file-name /sdcard/"
+                },
+                {
+                    "definition": "ফ্ল্যাশাবল জিপ ফাইল ফ্ল্যাশ করা",
+                    "code": "adb sideload filename.zip"
                 }
             ]
         },
