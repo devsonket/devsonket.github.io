@@ -1,0 +1,114 @@
+{
+  "id": "jenkins",
+  "title": "জেনকিন্স ফান্ডামেন্টালস",
+  "slug": "জেনকিন্স",
+  "description": "জেনকিন্স (Jenkins) একটি ওপেন সোর্স অটোমেশন সার্ভার, যা সফটওয়্যার ডেভেলপমেন্টের জন্য অবিচ্ছিন্ন ইন্টিগ্রেশন এবং ডেলিভারি সরবরাহ করে।",
+  "colorPref": "#d24939",
+  "contents": [
+      {
+          "title": "জেনকিন্স ইনস্টল করা",
+          "items": [
+              {
+                  "definition": "উবুন্টুতে জেনকিন্স ইনস্টল করা",
+                  "code": "sudo apt update\nsudo apt install jenkins"
+              },
+              {
+                  "definition": "জেনকিন্স সার্ভিস চালু করা",
+                  "code": "sudo systemctl start jenkins"
+              },
+              {
+                  "definition": "জেনকিন্স সার্ভিস অটোমেটিক স্টার্ট করতে",
+                  "code": "sudo systemctl enable jenkins"
+              }
+          ]
+      },
+      {
+          "title": "মৌলিক ধারণা",
+          "items": [
+              {
+                  "definition": "জব (Job)",
+                  "code": "জব হলো একটি নির্দিষ্ট কাজ বা টাস্ক, যা জেনকিন্স রান করে, যেমন কোড বিল্ড করা বা টেস্ট রান করা।"
+              },
+              {
+                  "definition": "পাইপলাইন (Pipeline)",
+                  "code": "পাইপলাইন হলো একাধিক স্টেজ নিয়ে গঠিত, যা স্বয়ংক্রিয়ভাবে কোড বিল্ড, টেস্ট এবং ডেপ্লয়মেন্ট প্রক্রিয়া সম্পন্ন করে।"
+              },
+              {
+                  "definition": "নোড (Node)",
+                  "code": "নোড হলো একটি মেশিন যেখানে জেনকিন্স জব রান হয়, এটি মেইন সার্ভার বা স্লেভ হতে পারে।"
+              },
+              {
+                  "definition": "এজেন্ট (Agent)",
+                  "code": "এজেন্ট হলো একটি সিস্টেম বা মেশিন যেখানে জেনকিন্সের জব বা কাজগুলো চালানো হয়।"
+              }
+          ]
+      },
+      {
+          "title": "মৌলিক কমান্ডসমূহ",
+          "items": [
+              {
+                  "definition": "জেনকিন্স সার্ভার স্টার্ট করতে",
+                  "code": "sudo systemctl start jenkins"
+              },
+              {
+                  "definition": "জেনকিন্স সার্ভার বন্ধ করতে",
+                  "code": "sudo systemctl stop jenkins"
+              },
+              {
+                  "definition": "জেনকিন্স সার্ভার রিস্টার্ট করতে",
+                  "code": "sudo systemctl restart jenkins"
+              },
+              {
+                  "definition": "জেনকিন্স সার্ভারের স্ট্যাটাস চেক করতে",
+                  "code": "sudo systemctl status jenkins"
+              },
+              {
+                  "definition": "জেনকিন্স কনফিগারেশন রিলোড করতে",
+                  "code": "sudo systemctl reload jenkins"
+              }
+          ]
+      },
+      {
+          "title": "এডভান্সড কমান্ডসমূহ",
+          "items": [
+              {
+                  "definition": "জেনকিন্স UI তে অ্যাক্সেস পেতে (ডিফল্ট পোর্ট 8080)",
+                  "code": "http://localhost:8080"
+              },
+              {
+                  "definition": "ইনিশিয়াল পাসওয়ার্ড পেতে",
+                  "code": "sudo cat /var/lib/jenkins/secrets/initialAdminPassword"
+              },
+              {
+                  "definition": "জেনকিন্স প্লাগইন ইনস্টল করতে",
+                  "code": "Manage Jenkins > Manage Plugins > Available"
+              },
+              {
+                  "definition": "জেনকিন্স পাইপলাইন তৈরি করতে",
+                  "code": "পাইপলাইন স্ক্রিপ্ট লিখুন বা জেনকিন্সফাইল ব্যবহার করুন।"
+              }
+          ]
+      },
+      {
+          "title": "পাইপলাইন ফান্ডামেন্টালস",
+          "items": [
+              {
+                  "definition": "একটি সাধারণ পাইপলাইন জেনকিন্সফাইল",
+                  "code": "pipeline {\n    agent any\n    stages {\n        stage('Build') {\n            steps {\n                echo 'Building...'\n            }\n        }\n        stage('Test') {\n            steps {\n                echo 'Testing...'\n            }\n        }\n        stage('Deploy') {\n            steps {\n                echo 'Deploying...'\n            }\n        }\n    }\n}"
+              },
+              {
+                  "definition": "পাইপলাইন রান করা",
+                  "code": "জব তৈরি করুন এবং 'This project is parameterized' নির্বাচন করুন, তারপর জেনকিন্সফাইল লিখুন।"
+              },
+              {
+                  "definition": "বিভিন্ন এজেন্টে পাইপলাইন রান করতে",
+                  "code": "agent { label 'my-agent-label' }"
+              },
+              {
+                  "definition": "কোনো নির্দিষ্ট স্টেজে পাইপলাইন ব্যর্থ হলে ব্যাকআপ রান করতে",
+                  "code": "post {\n    failure {\n        echo 'The pipeline has failed.'\n    }\n}"
+              }
+          ]
+      }
+  ]
+}
