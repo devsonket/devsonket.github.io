@@ -11,6 +11,45 @@
                     "code": "structuredClone(value, transferables)"
                 }
             ]
+        },
+        {
+            "title": "Geolocation API",
+            "items": [
+                {
+                    "definition": "Geolocation API সাপোর্ট আছে কিনা চেক করা",
+                    "code": "if (navigator.geolocation) { /* Supported */ }"
+                },
+                {
+                    "definition": "ইউজারের বর্তমান অবস্থান পাওয়া",
+                    "code": "navigator.geolocation.getCurrentPosition(success, error, options);"
+                },
+                {
+                    "definition": "সফল হলে কলব্যাক ফাংশন",
+                    "code": "function success(position) { const { latitude, longitude } = position.coords; }"
+                },
+                {
+                    "definition": "ত্রুটি হ্যান্ডেল করার ফাংশন",
+                    "code": "function error(err) { console.log(`Error: ${err.message}`); }"
+                },
+                {
+                    "definition": "অপশনাল অপশন সেট করা",
+                    "code": "const options = { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 };"
+                },
+                {
+                    "definition": "ইউজারের অবস্থান পরিবর্তন হলে ট্র্যাক করা (watch)",
+                    "code": "const watchId = navigator.geolocation.watchPosition(success, error, options);"
+                },
+                {
+                    "definition": "ট্র্যাকিং বন্ধ করা",
+                    "code": "navigator.geolocation.clearWatch(watchId);"
+                },
+                {
+                    "definition": "position অবজেক্টে থাকা প্রপার্টিজ",
+                    "code": "position.coords.latitude, position.coords.longitude, position.coords.accuracy"
+                }
+            ]
         }
+        
+        
    ]
 }
