@@ -283,6 +283,55 @@
             ]
         },
         {
+            "title": "ফ্লাটার লোকালাইজেশন (Flutter Internationalization)",
+            "items": [
+                {
+                "definition": "লোকালাইজেশন কি?",
+                "code": "লোকালাইজেশন হলো একটি অ্যাপে ভিন্ন ভিন্ন ভাষার অনুবাদ রাখা। যার মাধ্যমে ইউজার তাঁর পছন্দ মতো ভাষায় অ্যাপটি ব্যবহার করতে পারে।"
+                },
+                {
+                "definition": "প্রথমেই প্রয়োজনীয় ডিপেন্ডেন্সি যোগ করতে হবে",
+                "code": "dependencies:\n  flutter_localizations: ^0.2.2\n  intl: ^0.19.0"
+                },
+                {
+                "definition": "pubspec.yaml এ generate ফ্ল্যাগ যোগ করুন",
+                "code": "flutter:\n  generate: true"
+                },
+                {
+                "definition": "l10n.yaml ফাইল তৈরি করুন",
+                "code": "arb-dir: lib/l10n\ntemplate-arb-file: app_en.arb\noutput-localization-file: app_localizations.dart"
+                },
+                {
+                "definition": "ARB ফাইল তৈরি করুন (lib/l10n/app_en.arb)",
+                "code": "{\n  \"helloWorld\": \"Hello World!\",\n  \"@helloWorld\": {\n    \"description\": \"The conventional newborn programmer greeting\"\n  }\n}"
+                },
+                {
+                "definition": "MaterialApp এ লোকালাইজেশন ডেলিগেট যোগ করুন",
+                "code": "import 'package:flutter_localizations/flutter_localizations.dart';\nimport 'package:flutter_gen/gen_l10n/app_localizations.dart';\n\nMaterialApp(\n  localizationsDelegates: [\n    AppLocalizations.delegate,\n    GlobalMaterialLocalizations.delegate,\n    GlobalWidgetsLocalizations.delegate,\n    GlobalCupertinoLocalizations.delegate,\n  ],\n  supportedLocales: [\n    Locale('en', ''), // English\n    Locale('bn', ''), // Bengali\n  ],\n)"
+                },
+                {
+                "definition": "Ui তে টেক্সট ব্যবহার করতে -",
+                "code": "Text(AppLocalizations.of(context)!.helloWorld)"
+                },
+                {
+                "definition": "প্যারামিটার সহ অনুবাদ করতে -",
+                "code": "// In ARB file:\n{\n  \"greetingMessage\": \"Hello {name}\",\n  \"@greetingMessage\": {\n    \"placeholders\": {\n      \"name\": {\n        \"type\": \"String\",\n        \"example\": \"Bob\"\n      }\n    }\n  }\n}\n\n// In Dart code:\nText(AppLocalizations.of(context)!.greetingMessage('Alice'))"
+                },
+                {
+                "definition": "বর্তমান ভাষা পরিবর্তন করতে -",
+                "code": "Locale newLocale = Locale('bn', '');\nFlutterI18n.refresh(context, newLocale);"
+                },
+                {
+                "definition": "ডিভাইসের ডিফল্ট লোকেল পেতে -",
+                "code": "Locale myLocale = Localizations.localeOf(context);"
+                },
+                {
+                "definition": "অনুবাদ জেনারেট করতে টার্মিনালে রান করুন -",
+                "code": "flutter gen-l10n"
+                }
+            ]
+            },
+        {
             "title": "কিছু ইম্পরট্যান্ট ফ্লাটার শীট",
             "items": [
                 {
