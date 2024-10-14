@@ -468,10 +468,12 @@
         {
             "title": "অ্যাডমিনিস্ট্রেশন মেনু",
             "items": [{
-                    "code": "add_menu_page()"
+                    "code": "add_menu_page()",
+                    "definition": "এডমিন ড্যাশবোর্ডে মেনু যুক্ত করুন"
                 },
                 {
-                    "code": "add_submenu_page()"
+                    "code": "add_submenu_page()",
+                    "definition": "এডমিন ড্যাশবোর্ডে সাবমেনু যুক্ত করুন"
                 },
                 {
                     "code": "add_dashboard_page() – index.php"
@@ -538,20 +540,24 @@
                     "code": "[embed]"
                 },
                 {
-                    "code": "add_shortcode()"
+                    "code": "add_shortcode()",
+                    "definition": "শর্টকোড যুক্ত করুন"
                 },
                 {
-                    "code": "remove_shortcode()"
+                    "code": "remove_shortcode()",
+                    "definition": "শর্টকোড মুছে ফেলুন"
                 },
                 {
-                    "code": "shortcode_exists()"
+                    "code": "shortcode_exists()",
+                    "definition": "শর্টকোড আছে কি নাহ সেটা দেখুন"
                 }
             ]
         },
         {
             "title": "সেটিংস",
             "items": [{
-                    "code": "register_setting()"
+                    "code": "register_setting()",
+                    "definition": "রেজিস্টার সেটিং"
                 },
                 {
                     "code": "unregister_setting()"
@@ -575,22 +581,28 @@
                     "code": "add_settings_error()"
                 },
                 {
-                    "code": "get_settings_errors()"
+                    "code": "get_settings_errors()",
+                    "definition": "সেটিং এর এরর চেক দেখতে"
                 },
                 {
-                    "code": "settings_errors()"
+                    "code": "settings_errors()",
+                    "definition": "সেটিং এর এরর চেক করতে"
                 },
                 {
-                    "code": "add_option()"
+                    "code": "add_option()",
+                    "definition": "wp_options টেবিলে কিছু সংযুক্ত করা"
                 },
                 {
-                    "code": "get_option()"
+                    "code": "get_option()",
+                    "definition": "wp_options টেবিল থেকে কিছু দেখার জন্য ব্যবহার হয়"
                 },
                 {
-                    "code": "update_option()"
+                    "code": "update_option()",
+                    "definition": "wp_options টেবিলে কোনো ভ্যালু আপডেট করতে ব্যবহার হয়"
                 },
                 {
-                    "code": "delete_option()"
+                    "code": "delete_option()",
+                    "definition": "wp_options টেবিলে কোনো ভ্যালু ডিলিট করতে ব্যবহার হয়"
                 },
                 {
                     "code": "add_site_option()"
@@ -625,16 +637,20 @@
         {
             "title": "কাস্টম পোস্ট টাইপ & ট্যাক্সোনমি",
             "items": [{
-                    "code": "register_post_type( string $post_type, array|string $args = array() )"
+                    "code": "register_post_type( string $post_type, array|string $args = array() )",
+                    "definition": "নতুন পোস্টটাইপ তৈরির জন্য ব্যবহার করা হয়"
                 },
                 {
-                    "code": "single-{post_type}.php"
+                    "code": "single-{post_type}.php",
+                    "definition": "একক কোনো পোস্টটাইপ এর সিঙ্গেল পেইজ করার জন্য"
                 },
                 {
-                    "code": "archive-{post_type}.php"
+                    "code": "archive-{post_type}.php",
+                    "definition": "একক কোনো পোস্টটাইপ এর আর্কাইভ পেইজ করার জন্য"
                 },
                 {
-                    "code": "register_taxonomy( string $taxonomy, array|string $object_type, array|string $args = array() )"
+                    "code": "register_taxonomy( string $taxonomy, array|string $object_type, array|string $args = array() )",
+                    "definition": "একক কোনো পোস্টটাইপে ক্যাটেগরি এড করার জন্য ব্যবহার করা হয়"
                 }
             ]
         },
@@ -702,10 +718,12 @@
                     "code": "esc_attr_x()"
                 },
                 {
-                    "code": "number_format_i18n()"
+                    "code": "number_format_i18n()",
+                    "definition": "আন্তর্জাতিক নাম্বার ফরমেট"
                 },
                 {
-                    "code": "date_i18n()"
+                    "code": "date_i18n()",
+                    "definition": "তারিখকে আন্তর্জাতিক করার জন্য"
                 }
             ]
         },
