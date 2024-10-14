@@ -283,6 +283,67 @@
             ]
         },
         {
+            "title": "Flutter টেস্টিং (Flutter Testing)",
+            "items": [
+                {
+                "definition": "ফ্লাটারে ৩ ধরনের টেস্ট রান করা যায়",
+                "code": "১. ইউনিট টেস্ট (Unit Test)\n২. উইজেট টেস্ট (Widget Test)\n৩. ইন্টিগ্রেশন টেস্ট (Integration Test)"
+                },
+                {
+                "definition": "Unit Test কি?",
+                "code": "কোনো একটা ফাংশন, মেথড বা ক্লাস টেস্ট করার জন্য ইউনিট টেস্ট ব্যবহার করা হয়।"
+                },
+                {
+                "definition": "Widget Test কি?",
+                "code": "উইজেট টেস্টিং হলো নির্দিষ্ট উইজেট বা উইজেটের কোনো পার্ট টেস্ট করা।"
+                },
+                {
+                "definition": "Integration Test কি?",
+                "code": "ইন্টিগ্রেশন টেস্টিং এর মাধ্যমে একটি এপের কমপ্লিট ফাংশনালিটি টেস্ট করা হয়। একে এন্ড টু এন্ড টেস্টও বলা হয়।"
+                },
+                {
+                "definition": "টেস্টিং রিলেটেড প্যাকেজ যোগ করতে -",
+                "code": "dev_dependencies:\n  flutter_test:\n    sdk: flutter\n  integration_test:\n    sdk: flutter\n  mockito: ^5.0.0"
+                },
+                {
+                "definition": "ইউনিট টেস্ট রান করতে -",
+                "code": "flutter test test/unit_test.dart"
+                },
+                {
+                "definition": "উইজেট টেস্ট রান করতে -",
+                "code": "flutter test test/widget_test.dart"
+                },
+                {
+                "definition": "ইন্টিগ্রেশন টেস্ট রান করতে -",
+                "code": "flutter test integration_test/app_test.dart"
+                },
+                {
+                "definition": "সকল টেস্ট রান করতে -",
+                "code": "flutter test"
+                },
+                {
+                "definition": "ইউনিট টেস্ট উদাহরণ",
+                "code": "void main() {\n  test('String.split() splits the string on the delimiter', () {\n    var string = 'foo,bar,baz';\n    expect(string.split(','), equals(['foo', 'bar', 'baz']));\n  });\n}"
+                },
+                {
+                "definition": "উইজেট টেস্ট উদাহরণ",
+                "code": "void main() {\n  testWidgets('MyWidget has a title and message', (WidgetTester tester) async {\n    await tester.pumpWidget(MyWidget(title: 'T', message: 'M'));\n    final titleFinder = find.text('T');\n    final messageFinder = find.text('M');\n    expect(titleFinder, findsOneWidget);\n    expect(messageFinder, findsOneWidget);\n  });\n}"
+                },
+                {
+                "definition": "ইন্টিগ্রেশন টেস্ট উদাহরণ",
+                "code": "void main() {\n  IntegrationTestWidgetsFlutterBinding.ensureInitialized();\n  testWidgets('tap on the floating action button, verify counter',\n    (WidgetTester tester) async {\n      app.main();\n      await tester.pumpAndSettle();\n      expect(find.text('0'), findsOneWidget);\n      final Finder fab = find.byTooltip('Increment');\n      await tester.tap(fab);\n      await tester.pumpAndSettle();\n      expect(find.text('1'), findsOneWidget);\n  });\n}"
+                },
+                {
+                "definition": "মক অবজেক্ট তৈরি করেন (Mockito ব্যবহার করে)",
+                "code": "import 'package:mockito/mockito.dart';\n\nclass MockYourClass extends Mock implements YourClass {}\n\nvoid main() {\n  final mock = MockYourClass();\n  when(mock.someMethod()).thenReturn('mocked value');\n}"
+                },
+                {
+                "definition": "টেস্ট কভারেজ রিপোর্ট জেনারেট করেন",
+                "code": "flutter test --coverage\n# কভারেজ রিপোর্ট coverage/lcov.info ফাইলে জেনারেট হবে\n# HTML রিপোর্ট জেনারেট করতে lcov ইনস্টল করেন এবং নিচের কমান্ড চালান:\n# genhtml coverage/lcov.info -o coverage/html"
+                }
+            ]
+            },
+        {
             "title": "কিছু ইম্পরট্যান্ট ফ্লাটার শীট",
             "items": [
                 {
