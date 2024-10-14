@@ -283,6 +283,87 @@
             ]
         },
         {
+            "title": "ফ্লাটার WebRTC (Implementing WebRTC in Flutter)",
+            "items": [
+                {
+                "definition": "WebRTC কি?",
+                "code": "WebRTC হলো একটি ফ্রি এবং ওপেন সোর্স প্রজেক্ট। এটা দিয়ে খুব সহজেই, কোনো সার্ভার ছাড়াই ওয়েব ব্রাউজার বা মোবাইল অ্যাপে অডিও, ভিডিও কলের মতো রিয়েল টাইম কম্যুনিকেশন সেট করা যায়।"
+                },
+                {
+                "definition": "WebRTC কানেকশনের ব্যাসিক আইডিয়া",
+                "code": "WebRTC কনেকশনে ২টা peer (ডিভাইস) থাকে। একটা ইনিশিয়েটর(কল করে), অন্যটা রিসিভার(কল রিসিভ করে)। এই দুইটা ডিভাইসের মধ্যে কানেকশন তৈরি হতে হলে, উভয়ের ডিটেইলস(SDP, Ice Candidates) একে অন্যের কাছে পাঠাতে হবে। এইটাকে Signaling বলে।"
+                },
+                {
+                "definition": "SDP (Session Description Protocol) কি?",
+                "code": "সহজ ভাষায় SDP হলো একটি অবজেক্ট, যার ভিতরে দুইটা ডিভাইসের মধ্যে কানেকশন তৈরি করার জন্য প্রয়োজনীয় সব ইনফরমেশন থাকে।"
+                },
+                {
+                "definition": "ICE (Interactive Connectivity Establishment) কি?",
+                "code": "ICE হলো একটি প্রোটোকল, যার মাধ্যমে দুইটা ডিভাইসের মধ্যে কানেকশন তৈরি করা হয়।"
+                },
+                {
+                "definition": "STUN (Session Traversal Utilities for NAT) কি?",
+                "code": "দুইটা ডিভাইসের পাবলিক IP খুজে বের করার জন্য STUN সার্ভার ব্যবহার করা হয়।"
+                },
+                {
+                "definition": "TURN (Traversal Using Relays around NAT) কি?",
+                "code": "খুব সিকিউর কানেকশনে পাবলিক IP খুজে বের করার জন্য TURN সার্ভার ব্যবহার করা হয়।"
+                },
+                {
+                "definition": "ফ্লাটারে কিভাবে WebRTC ইমপ্লিমেন্ট করবেন?",
+                "code": "নেটিভ API ব্যবহার করে অথবা, Agora / ZegoCloud এর মতো বিল্টইন সলিউশন ব্যাবহার করে ফ্লাটারে WebRTC ইমপ্লিমেন্ট করা যায়।"
+                },
+                {
+                "definition": "নেটিভ API ব্যবহার করে WebRTC ডিপেন্ডেন্সি যোগ করতে -",
+                "code": "dependencies:\n  flutter_webrtc: ^0.11.7"
+                },
+                {
+                "definition": "androidmanifest.xml এ প্রয়োজনীয় পারমিশন যোগ করুন (Android)",
+                "code": "<uses-feature android:name=\"android.hardware.camera\" />\n<uses-feature android:name=\"android.hardware.camera.autofocus\" />\n<uses-permission android:name=\"android.permission.CAMERA\" />\n<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />\n<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\" />\n<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\" />"
+                },
+                {
+                "definition": "প্রয়োজনীয় পারমিশন যোগ করুন (iOS)",
+                "code": "<key>NSCameraUsageDescription</key>\n<string>Camera permission description</string>\n<key>NSMicrophoneUsageDescription</key>\n<string>Microphone permission description</string>"
+                },
+                {
+                "definition": "RTCPeerConnection তৈরি করুন",
+                "code": "final Map<String, dynamic> configuration = {\n  'iceServers': [\n    {'urls': 'stun:stun.l.google.com:19302'},\n  ]\n};\nfinal pc = await createPeerConnection(configuration);"
+                },
+                {
+                "definition": "লোকাল মিডিয়া স্ট্রিম যোগ করুন",
+                "code": "final Map<String, dynamic> mediaConstraints = {\n  'audio': true,\n  'video': {\n    'facingMode': 'user',\n  }\n};\nMediaStream stream = await navigator.mediaDevices.getUserMedia(mediaConstraints);\nawait pc.addStream(stream);"
+                },
+                {
+                "definition": "Offer তৈরি করুন",
+                "code": "RTCSessionDescription offer = await pc.createOffer();\nawait pc.setLocalDescription(offer);\n// Send this offer to the remote peer via your signaling server"
+                },
+                {
+                "definition": "Answer রিসিভ করুন",
+                "code": "// Assume 'answer' is received from the remote peer\nawait pc.setRemoteDescription(answer);"
+                },
+                {
+                "definition": "ICE Candidate পাঠান",
+                "code": "pc.onIceCandidate = (candidate) {\n  // Send this candidate to the remote peer via your signaling server\n};"
+                },
+                {
+                "definition": "রিমোট স্ট্রিম রিসিভ করুন",
+                "code": "pc.onAddStream = (stream) {\n  // Use this stream to display video/play audio from remote peer\n};"
+                },
+                {
+                "definition": "কানেকশন বন্ধ করুন",
+                "code": "await pc.close();\nawait stream.dispose();"
+                },
+                {
+                "definition": "WebRTC ডিবাগিং",
+                "code": "// Enable debug logging\nwebrtc.debugger.enabled = true;\n\n// For more detailed logging\nwebrtc.debugger.onEvent.listen((e) {\n  print(e);\n});"
+                },
+                {
+                "definition": "WebRTC শেখার কিছু রিসোর্স",
+                "code": "https://webrtc.org\nhttps://codelabs.developers.google.com/codelabs/webrtc-web\nhttps://www.w3.org/TR/webrtc\n\nhttps://pub.dev/packages/flutter_webrtc"
+                }
+            ]
+            },
+        {
             "title": "কিছু ইম্পরট্যান্ট ফ্লাটার শীট",
             "items": [
                 {
