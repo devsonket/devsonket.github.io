@@ -81,6 +81,40 @@
       ]
     },
     {
+      "title": "রিঅ্যাক্ট JS এ ফ্র্যাগমেন্ট (Fragment) ব্যবহার",
+      "items": [
+        {
+          "definition": "ফ্র্যাগমেন্ট হল একটি ওয়ার্পার যা DOM এ অতিরিক্ত নোড যোগ না করেই একাধিক এলিমেন্টকে গ্রুপ করতে সাহায্য করে।",
+          "code": "<>\n  <h1>Title</h1>\n  <p>This is a paragraph.</p>\n</>"
+        },
+        {
+          "definition": "React.Fragment এবং <> </> এর মাধ্যমে JSX কে গ্রুপ করা সম্ভব, তবে ছোট ট্যাগ ব্যবহারে React.Fragment এর পরিবর্তে <> </> ব্যবহার করা সুবিধাজনক।",
+          "code": "<React.Fragment>\n  <h1>Header</h1>\n  <span>Subtitle</span>\n</React.Fragment>"
+        }
+      ]
+    },
+    {
+        "title": "রিঅ্যাক্ট JS এ কন্ডিশনাল রেন্ডারিং (Conditional Rendering)",
+        "items": [
+          {
+            "definition": "একটি কন্ডিশন তৈরী করা যাতে রেন্ডারিং নির্ভর করবে",
+            "code": "const isLoggedIn = true;"
+          },
+          {
+            "definition": "একটি কন্ডিশনাল এক্সপ্রেশন ব্যবহার করে ভিন্ন JSX রেন্ডার করা",
+            "code": "const greeting = isLoggedIn ? <h1>Welcome Back!</h1> : <h1>Please Sign In</h1>;"
+          },
+          {
+            "definition": "logical && অপারেটর ব্যবহার করে কন্ডিশনাল রেন্ডারিং করা - যখন কন্ডিশনটি true হবে তখনই JSX রেন্ডার হবে",
+            "code": "isLoggedIn && <h1>Welcome Back!</h1>"
+          },
+          {
+            "definition": "logical || অপারেটর ব্যবহার করে কন্ডিশনাল রেন্ডারিং করা - যখন কন্ডিশনটি false হবে তখনই JSX রেন্ডার হবে",
+            "code": "isLoggedIn || <h1>Welcome Back!</h1>"
+          }
+      ]
+    },
+    {
       "title": "স্টেটলেস-কম্পোনেন্ট ধারনা",
       "items": [
         {
@@ -127,6 +161,19 @@
         {
           "definition": "কম্পোনেন্ট নতুন প্রপস গ্রহন করে তা রেন্ডার করার পর  ইনভোক হয়",
           "code": "componentDidUpdate()"
+        }
+      ]
+    },
+    {
+      "title": "রিঅ্যাক্ট JS এ কন্ডিশনাল রেন্ডারিং (Conditional Rendering) এবং টার্নারি অপারেটর (Ternary Operator) এর পার্থক্য",
+      "items": [
+        {
+          "definition": "কন্ডিশনাল রেন্ডারিং - রিঅ্যাক্ট এ একটি কন্ডিশনের উপর নির্ভর করে ভিন্ন ভিন্ন JSX রেন্ডার করতে ব্যবহৃত হয়। এটি বিভিন্ন ধরণের সিনট্যাক্সের সাহায্যে করা যায়, যেমন টার্নারি অপারেটর, logical && এবং || অপারেটর ব্যবহার করে।",
+          "code": "isLoggedIn ? <h1>Welcome Back!</h1> : <h1>Please Sign In</h1>;",
+        },
+        {
+          "definition": "টার্নারি অপারেটর - কন্ডিশনের উপর ভিত্তি করে দুটি মানের মধ্যে একটি রিটার্ন করে। এটি শুধুমাত্র একটি এক্সপ্রেশন হিসাবে ব্যবহৃত হয় এবং 'if-else' এর সংক্ষিপ্ত রূপ হিসেবে কাজ করে।",
+          "example": "const greeting = isLoggedIn ? <h1>Welcome Back!</h1> : <h1>Please Sign In</h1>;",
         }
       ]
     },
@@ -288,6 +335,45 @@
           "code": "useEffect(() => {\n// Update the document title using the browser API \ndocument.title = `You clicked ${count} times`;\n});"
         }
       ]
+    },
+    {
+      "title": "রিঅ্যাক্ট JS এ কন্ডিশনাল রেন্ডারিং (Conditional Rendering)",
+      "iitems": [
+        {
+          "definition": "একটি কন্ডিশন তৈরী করা যেই কন্ডিসনে রেন্ডারিং নির্ভর করবে",
+          "code": "const isLoggedIn = true;"
+        },
+        {
+          "definition": "একটি কন্ডিশনাল এক্সপ্রেশন ব্যবহার করে ভিন্ন JSX রেন্ডার করা",
+          "code": "const greeting = isLoggedIn ? <h1>Welcome Back!</h1> : <h1>Please Sign In</h1>;"
+        },
+        {
+          "definition": "logical && অপারেটর ব্যবহার করে কন্ডিশনাল রেন্ডারিং করা - যখন কন্ডিশনটি true হবে তখনই JSX রেন্ডার হবে",
+          "code": "isLoggedIn && <h1>Welcome Back!</h1>"
+        },
+        {
+          "definition": "logical || অপারেটর ব্যবহার করে কন্ডিশনাল রেন্ডারিং করা - যখন কন্ডিশনটি false হবে তখনই অন্যটি রেন্ডার হবে",
+          "code": "const greeting = isLoggedIn || <h1>Please Sign In</h1>;"
+        },
+      ],
+    },
+    {
+  "title": "রিঅ্যাক্ট JS এ কন্ট্রোলড এবং আনকন্ট্রোলড কম্পোনেন্টের পার্থক্য",
+  "items": [
+    {
+      "definition": "কন্ট্রোলড কম্পোনেন্ট: কন্ট্রোলড কম্পোনেন্টে ইনপুট ভ্যালু React এর স্টেট দ্বারা নিয়ন্ত্রিত হয়। ইউজারের ইনপুট পরিবর্তনের সময় স্টেট আপডেট হয়।",
+      "code": "const [value, setValue] = useState('');\n\n<input type=\"text\" value={value} onChange={(e) => setValue(e.target.value)} />"
+    },
+    {
+      "definition": "আনকন্ট্রোলড কম্পোনেন্ট: আনকন্ট্রোলড কম্পোনেন্টে ইনপুট ভ্যালু সরাসরি DOM দ্বারা পরিচালিত হয়। React এর স্টেট ব্যবহারের প্রয়োজন নেই।",
+      "code": "const inputRef = useRef(null);\n\n<input type=\"text\" ref={inputRef} />"
+    },
+    {
+      "definition": "কন্ট্রোলড কম্পোনেন্টে ফর্ম ভ্যালিডেশন এবং ইনপুট ভ্যালুতে নির্দিষ্ট নিয়ন্ত্রণ রাখা সহজ। আনকন্ট্রোলড কম্পোনেন্টে নিয়ন্ত্রণ সীমিত থাকে এবং DOM থেকে সরাসরি ভ্যালু পেতে হয়।",
+      "code": "// কন্ট্রোলড কম্পোনেন্টে ভ্যালিডেশন উদাহরণ\nconst handleSubmit = (e) => {\n  e.preventDefault();\n  if (value.length > 5) {\n    // ভ্যালিডেশন সফল\n  }\n};"
     }
+  ]
+}
+
   ]
 }

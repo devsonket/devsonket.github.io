@@ -87,6 +87,10 @@
                 {
                     "definition": "শার্ডে লিস্ট",
                     "code": "GET /_cat/shards/?pretty&v"
+                },
+                 {
+                    "definition": "রিপ্লিকেশন সেটিংস পরিবর্তন করতে",
+                    "code": "PUT /my_index/_settings -d '{\"number_of_replicas\": 2}'"
                 }
             ]
         },
@@ -129,6 +133,10 @@
                 {
                     "definition": "ইনডেক্স বাদ দিতে",
                     "code": "DELETE /my_index_name"
+                },
+                {
+                    "definition": "ইনডেক্স পুনর্গঠন করতে",
+                    "code": "POST /_reindex -d '{\"source\": {\"index\": \"old_index\"}, \"dest\": {\"index\": \"new_index\"}}'"
                 }
             ]
         }
