@@ -1,27 +1,32 @@
 {
-  "id": "Playwright ",
-  "title": "প্লেরাইট (Playwright )",
+  "id": "playwright",
+  "title": "প্লেরাইট (Playwright)",
   "slug": "playwright",
-  "description": "প্লেরাইট হলো মাইক্রোসফট কর্তৃক তৈরি করা একটি শক্তিশালী ওপেন-সোর্স Node.js লাইব্রেরি। এটি ব্রাউজার অটোমেশন এবং এন্ড-টু-এন্ড টেস্টিংয়ের জন্য বিশেষভাবে তৈরি। প্লেরাইট ব্যবহারের মাধ্যমে আপনি কোড লিখে ব্রাউজার কন্ট্রোল করতে পারবেন, যেমন: ওয়েবসাইটে ক্লিক করা, ফর্ম পূরণ করা, স্ক্রিনশট নেওয়া এবং স্বয়ংক্রিয়ভাবে টেস্টিং করা। এটি QA ইঞ্জিনিয়ার, টেস্টার এবং অটোমেশন ডেভেলপারদের জন্য একটি অপরিহার্য টুল।",
+  "description": "প্লেরাইট হলো মাইক্রোসফট কর্তৃক তৈরি একটি শক্তিশালী ওপেন-সোর্স Node.js লাইব্রেরি। এটি ব্রাউজার অটোমেশন এবং এন্ড-টু-এন্ড টেস্টিংয়ের জন্য বিশেষভাবে তৈরি। প্লেরাইট ব্যবহারের মাধ্যমে আপনি কোড লিখে ব্রাউজার কন্ট্রোল করতে পারবেন, যেমন: ওয়েবসাইটে ক্লিক করা, ফর্ম পূরণ করা, স্ক্রিনশট নেওয়া এবং স্বয়ংক্রিয়ভাবে টেস্টিং করা। এটি QA ইঞ্জিনিয়ার, টেস্টার এবং অটোমেশন ডেভেলপারদের জন্য একটি অপরিহার্য টুল।",
   "colorPref": "#2EAD33",
   "contents": [
     {
       "title": "প্লেরাইট কেন ব্যবহার করবেন?",
       "items": [
         {
-          "definition": "একাধিক ব্রাউজার সাপোর্ট: প্লেরাইট একই কোড ব্যবহার করে Chromium (Chrome, Edge), Firefox এবং WebKit (Safari) ব্রাউজারে টেস্টিং করতে পারে।"
+          "definition": "একাধিক ব্রাউজার সাপোর্ট",
+          "code": "একই কোড ব্যবহার করে Chromium (Chrome, Edge), Firefox এবং WebKit (Safari) ব্রাউজারে টেস্টিং করা যায়।"
         },
         {
-          "definition": "মাল্টি-প্ল্যাটফর্ম সাপোর্ট: এটি Windows, macOS এবং Linux সহ বিভিন্ন অপারেটিং সিস্টেমে কাজ করে।"
+          "definition": "মাল্টি-প্ল্যাটফর্ম সাপোর্ট",
+          "code": "Windows, macOS এবং Linux সহ বিভিন্ন অপারেটিং সিস্টেমে কাজ করে।"
         },
         {
-          "definition": "হেডলেস এবং হেডেড মোড: প্লেরাইট UI সহ (হেডেড) বা UI ছাড়া (হেডলেস) উভয় মোডে ব্রাউজার চালাতে সক্ষম।"
+          "definition": "হেডলেস এবং হেডেড মোড",
+          "code": "UI সহ (হেডেড) বা UI ছাড়া (হেডলেস) উভয় মোডে ব্রাউজার চালানো যায়।"
         },
         {
-          "definition": "সহজ অটোমেশন টেস্টিং: এর API খুবই সহজ এবং ব্যবহারকারী-বান্ধব, যা ব্রাউজার অটোমেশনকে আরও সহজ করে তোলে।"
+          "definition": "সহজ অটোমেশন টেস্টিং",
+          "code": "সহজ এবং ব্যবহারকারী-বান্ধব API ব্রাউজার অটোমেশনকে সহজ করে।"
         },
         {
-          "definition": "অল-ইন-ওয়ান সলিউশন: স্ক্রিনশট, ভিডিও রেকর্ডিং, ট্রেসিং এবং রিপোর্টিংয়ের জন্য অতিরিক্ত কোনো টুলের প্রয়োজন নেই।"
+          "definition": "অল-ইন-ওয়ান সলিউশন",
+          "code": "স্ক্রিনশট, ভিডিও রেকর্ডিং, ট্রেসিং এবং রিপোর্টিংয়ের জন্য অতিরিক্ত টুলের প্রয়োজন নেই।"
         }
       ]
     },
@@ -30,27 +35,27 @@
       "items": [
         {
           "definition": "বিভিন্ন ভাষায় Playwright",
-          "details": "Playwright মূলত JavaScript ও TypeScript-এর জন্য তৈরি হলেও Python, Java এবং .NET (C#) ভাষাতেও অফিসিয়াল সাপোর্ট রয়েছে।"
+          "code": "মূলত JavaScript ও TypeScript-এর জন্য তৈরি, তবে Python, Java এবং .NET (C#) ভাষাতেও অফিসিয়াল সাপোর্ট রয়েছে।"
         },
         {
           "definition": "JavaScript/TypeScript",
-          "details": "সবচেয়ে বেশি ফিচার ও আপডেট পাওয়া যায় JavaScript ও TypeScript সংস্করণে।"
+          "code": "সবচেয়ে বেশি ফিচার ও আপডেট JavaScript ও TypeScript সংস্করণে পাওয়া যায়।"
         },
         {
           "definition": "Python",
-          "details": "Playwright for Python ইনস্টল করতে: pip install playwright। Python API ডকুমেন্টেশন: https://playwright.dev/python/"
+          "code": "pip install playwright"
         },
         {
           "definition": "Java",
-          "details": "Playwright for Java ইনস্টল করতে: mvn install playwright। Java API ডকুমেন্টেশন: https://playwright.dev/java/"
+          "code": "mvn install playwright"
         },
         {
           "definition": ".NET (C#)",
-          "details": "Playwright for .NET ইনস্টল করতে: dotnet add package Microsoft.Playwright। .NET API ডকুমেন্টেশন: https://playwright.dev/dotnet/"
+          "code": "dotnet add package Microsoft.Playwright"
         },
         {
           "definition": "ভাষা নির্বাচন",
-          "details": "আপনার টিমের দক্ষতা ও প্রজেক্টের চাহিদা অনুযায়ী যেকোনো অফিসিয়াল ভাষা বেছে নিতে পারেন। তবে কিছু ফিচার ও প্লাগইন শুধুমাত্র JS/TS সংস্করণে আগে আসে।"
+          "code": "টিমের দক্ষতা ও প্রজেক্টের চাহিদা অনুযায়ী ভাষা বেছে নিন। তবে কিছু ফিচার ও প্লাগইন শুধুমাত্র JS/TS-এ আগে আসে।"
         }
       ]
     },
@@ -58,22 +63,28 @@
       "title": "প্লেরাইটের মূল ফিচারসমূহ",
       "items": [
         {
-          "definition": "ব্রাউজার অটোমেশন: প্লেরাইট ব্রাউজার চালু, পেজ নেভিগেট, এলিমেন্ট ইন্টার‍্যাকশন ইত্যাদি কাজ করতে পারে।"
+          "definition": "ব্রাউজার অটোমেশন",
+          "code": "ব্রাউজার চালু, পেজ নেভিগেট এবং এলিমেন্ট ইন্টার‍্যাকশন সম্ভব।"
         },
         {
-          "definition": "স্ক্রিনশট ও ভিডিও রেকর্ডিং: টেস্ট চলাকালীন স্ক্রিনশট ও ভিডিও রেকর্ড করতে পারে।"
+          "definition": "স্ক্রিনশট ও ভিডিও রেকর্ডিং",
+          "code": "টেস্ট চলাকালীন স্ক্রিনশট ও ভিডিও রেকর্ড করা যায়।"
         },
         {
-          "definition": "নেটওয়ার্ক ইন্টারসেপশন: API রিকোয়েস্ট ও রেসপন্স ইন্টারসেপ্ট করে ডেটা মক বা ভ্যালিডেট করতে পারে।"
+          "definition": "নেটওয়ার্ক ইন্টারসেপশন",
+          "code": "API রিকোয়েস্ট ও রেসপন্স ইন্টারসেপ্ট করে ডেটা মক বা ভ্যালিডেট করা যায়।"
         },
         {
-          "definition": "ট্রেসিং ও ডিবাগিং: টেস্ট রান করার সময় ট্রেস তৈরি করে ডিবাগিং সহজ করে।"
+          "definition": "ট্রেসিং ও ডিবাগিং",
+          "code": "টেস্ট রানের সময় ট্রেস তৈরি করে ডিবাগিং সহজ করে।"
         },
         {
-          "definition": "রিপোর্টিং: HTML, JSON, JUnit ইত্যাদি ফরম্যাটে রিপোর্ট তৈরি করতে পারে।"
+          "definition": "রিপোর্টিং",
+          "code": "HTML, JSON, JUnit ফরম্যাটে রিপোর্ট তৈরি করা যায়।"
         },
         {
-          "definition": "ক্রস-ব্রাউজার টেস্টিং: একই কোড ব্যবহার করে বিভিন্ন ব্রাউজারে টেস্ট চালাতে পারে।"
+          "definition": "ক্রস-ব্রাউজার টেস্টিং",
+          "code": "একই কোডে বিভিন্ন ব্রাউজারে টেস্ট চালানো সম্ভব।"
         }
       ]
     },
@@ -81,13 +92,16 @@
       "title": "প্লেরাইটের সীমাবদ্ধতা",
       "items": [
         {
-          "definition": "লোড টেস্টিং: প্লেরাইট মূলত UI টেস্টিংয়ের জন্য ডিজাইন করা, লোড টেস্টিংয়ের জন্য বিশেষভাবে তৈরি নয়।"
+          "definition": "লোড টেস্টিং",
+          "code": "মূলত UI টেস্টিংয়ের জন্য ডিজাইন করা, লোড টেস্টিংয়ের জন্য উপযুক্ত নয়।"
         },
         {
-          "definition": "কিছু ফিচার ব্রাউজার নির্ভর: কিছু ফিচার শুধুমাত্র নির্দিষ্ট ব্রাউজারে কাজ করে।"
+          "definition": "কিছু ফিচার ব্রাউজার নির্ভর",
+          "code": "কিছু ফিচার শুধুমাত্র নির্দিষ্ট ব্রাউজারে কাজ করে।"
         },
         {
-          "definition": "নেটওয়ার্ক ড্রাইভার: প্লেরাইট নেটওয়ার্ক ড্রাইভার হিসেবে কাজ করে না, তাই নেটওয়ার্ক স্তরের টেস্টিংয়ের জন্য অন্য টুল ব্যবহার করতে হতে পারে।"
+          "definition": "নেটওয়ার্ক ড্রাইভার",
+          "code": "নেটওয়ার্ক ড্রাইভার হিসেবে কাজ করে না, নেটওয়ার্ক স্তরের টেস্টিংয়ের জন্য অন্য টুল প্রয়োজন।"
         }
       ]
     },
@@ -95,12 +109,12 @@
       "title": "প্লেরাইটের অফিসিয়াল ডকুমেন্টেশন",
       "items": [
         {
-          "definition": "ডকুমেন্টেশন লিঙ্ক: https://playwright.dev/docs/intro",
-          "details": "প্লেরাইটের অফিসিয়াল ডকুমেন্টেশন থেকে আপনি বিস্তারিত গাইডলাইন, API রেফারেন্স ও টিউটোরিয়াল পেতে পারেন।"
+          "definition": "ডকুমেন্টেশন লিঙ্ক",
+          "code": "https://playwright.dev/docs/intro"
         },
         {
-          "definition": "GitHub রিপোজিটরি: https://github.com/microsoft/playwright",  
-          "details": "প্লেরাইটের সীমাবদ্ধতা, কারগুলি ও সেবা প্রদান করে গিয়েছে।"
+          "definition": "GitHub রিপোজিটরি",
+          "code": "https://github.com/microsoft/playwright"
         }
       ]
     },
@@ -108,24 +122,20 @@
       "title": "কিভাবে শুরু করবেন?",
       "items": [
         {
-          "definition": "Node.js ইনস্টল করুন এবং টার্মিনালে নিচের কমান্ডটি চালান:",
-          "code": "npm init playwright@latest",
-          "details": "এই কমান্ডটি আপনার প্রজেক্টে প্লেয়ারাইট ইনস্টল এবং কনফিগার করবে।"
+          "definition": "Node.js ইনস্টল এবং প্রজেক্ট সেটআপ",
+          "code": "npm init playwright@latest"
         },
         {
-          "definition": "নির্দিষ্ট ব্রাউজার ইনস্টল করতে:",
-          "code": "npx playwright install chromium",
-          "details": "উদাহরণস্বরূপ, শুধু ক্রোমিয়াম ব্রাউজার ইনস্টল করতে এই কমান্ডটি ব্যবহার করুন।"
+          "definition": "নির্দিষ্ট ব্রাউজার ইনস্টল",
+          "code": "npx playwright install chromium"
         },
         {
-          "definition": "সব ব্রাউজার একসাথে ইনস্টল করতে:",
-          "code": "npx playwright install",
-          "details": "ক্রোমিয়াম, ফায়ারফক্স এবং ওয়েবকিট ব্রাউজারগুলি একসাথে ইনস্টল করার জন্য এই কমান্ডটি চালান।"
+          "definition": "সব ব্রাউজার ইনস্টল",
+          "code": "npx playwright install"
         },
         {
-          "definition": "প্রথমবার প্রজেক্ট রান করতে:",
-          "code": "npx playwright test",
-          "details": "আপনার প্রজেক্টের টেস্টগুলো চালানোর জন্য এই কমান্ডটি ব্যবহার করুন।"
+          "definition": "প্রজেক্ট রান",
+          "code": "npx playwright test"
         }
       ]
     },
@@ -133,63 +143,52 @@
       "title": "GUI টেস্টিং",
       "items": [
         {
-          "definition": "ব্রাউজার চালু করা, নতুন পেজ খোলা এবং ওয়েবসাইটে যাওয়া:",
-          "code": "import { chromium } from 'playwright';\n\nconst browser = await chromium.launch();\nconst context = await browser.newContext();\nconst page = await context.newPage();\nawait page.goto('https://example.com');\nawait browser.close();",
-          "details": "এই কোডটি একটি ক্রোমিয়াম ব্রাউজার ইনস্ট্যান্স চালু করে, একটি নতুন পেজ খোলে এবং example.com-এ নেভিগেট করে।"
+          "definition": "ব্রাউজার চালু এবং ওয়েবসাইটে নেভিগেট",
+          "code": "import { chromium } from 'playwright';\n\nconst browser = await chromium.launch();\nconst context = await browser.newContext();\nconst page = await context.newPage();\nawait page.goto('https://example.com');\nawait browser.close();"
         },
         {
-          "definition": "স্ক্রিনশট নেওয়া:",
-          "code": "await page.screenshot({ path: 'screenshot.png' });",
-          "details": "এই কমান্ডটি পেজের একটি স্ক্রিনশট নিয়ে screenshot.png নামে সেভ করে।"
+          "definition": "স্ক্রিনশট নেওয়া",
+          "code": "await page.screenshot({ path: 'screenshot.png' });"
         },
         {
-          "definition": "GUI সহ ব্রাউজার চালাতে:",
-          "code": "const browser = await chromium.launch({ headless: false });",
-          "details": "হেডলেস মোড নিষ্ক্রিয় করে GUI সহ ব্রাউজার উইন্ডো দেখতে এই অপশন ব্যবহার করুন।"
+          "definition": "GUI সহ ব্রাউজার চালানো",
+          "code": "const browser = await chromium.launch({ headless: false });"
         },
         {
-          "definition": "DOM এলিমেন্ট সিলেক্ট করা (Locator):",
-          "code": "const element = await page.locator('input[name=\"email\"]');",
-          "details": "Playwright-এ `locator` হলো এলিমেন্ট খুঁজে বের করার মূল ভিত্তি। এখানে, `page.locator()` ব্যবহার করে একটি CSS সিলেক্টর ('input[name=\"email\"]') এর মাধ্যমে DOM-এর ইনপুট ফিল্ড সিলেক্ট করা হয়েছে। Locator একটি শক্তিশালী API যা বিভিন্ন উপায়ে এলিমেন্ট খুঁজে পেতে সাহায্য করে।"
+          "definition": "DOM এলিমেন্ট সিলেক্ট করা (Locator)",
+          "code": "const element = await page.locator('input[name=\"email\"]');"
         },
         {
-          "definition": "ইনপুট ফিল্ডে লেখা:",
-          "code": "await page.fill('input[name=\"email\"]', 'test@example.com');",
-          "details": "'email' নামের ইনপুট ফিল্ডে 'test@example.com' টেক্সটটি প্রবেশ করানো হয়। `page.fill()` মেথডটি ব্যবহার করে কোনো ইনপুট ফিল্ডে ভ্যালু দেওয়া যায়।"
+          "definition": "ইনপুট ফিল্ডে লেখা",
+          "code": "await page.fill('input[name=\"email\"]', 'test@example.com');"
         },
         {
-          "definition": "বাটনে ক্লিক করা:",
-          "code": "await page.click('button[type=\"submit\"]');",
-          "details": "'submit' টাইপের বাটনে ক্লিক করার জন্য এই কমান্ডটি ব্যবহার করুন। `page.click()` মেথডটি ব্যবহার করে বাটনে ক্লিক করা যায়।"
+          "definition": "বাটনে ক্লিক",
+          "code": "await page.click('button[type=\"submit\"]');"
         },
         {
-          "definition": "টেক্সট পড়া:",
-          "code": "const result = await page.textContent('.result-title');",
-          "details": "'.result-title' ক্লাসের এলিমেন্টের টেক্সট কন্টেন্টটি উদ্ধার করে। `page.textContent()` মেথডটি ব্যবহার করে কোনো এলিমেন্টের ভেতরের টেক্সট পড়া যায়।"
+          "definition": "টেক্সট পড়া",
+          "code": "const result = await page.textContent('.result-title');"
         },
         {
-          "definition": "একাধিক এলিমেন্ট পাওয়ার উপায়:",
-          "code": "const items = await page.locator('.product-item');\nconsole.log(await items.count());",
-          "details": "'.product-item' ক্লাসের সমস্ত এলিমেন্ট খুঁজে বের করে এবং তাদের সংখ্যা গণনা করে। `page.locator()` দিয়ে একাধিক এলিমেন্ট সিলেক্ট করে তাদের সংখ্যা জানার জন্য `count()` মেথড ব্যবহার করা হয়।"
+          "definition": "একাধিক এলিমেন্ট পাওয়া",
+          "code": "const items = await page.locator('.product-item');\nconsole.log(await items.count());"
         },
         {
-          "definition": "ডায়ালগ (Alert, Confirm, Prompt) হ্যান্ডেল করা:",
-          "code": "page.on('dialog', async dialog => {\n  console.log(dialog.message());\n  await dialog.accept(); // অথবা dialog.dismiss();\n});\nawait page.click('#alertButton'); // অথবা #confirmButton, #promptButton",
-          "details": "ওয়েবসাইটে আসা ডায়ালগ বক্সগুলি (Alert, Confirm, Prompt) হ্যান্ডেল করার জন্য `page.on('dialog')` ব্যবহার করা হয়। `dialog.accept()` দিয়ে ডায়ালগটি গ্রহণ করা যায় এবং `dialog.dismiss()` দিয়ে বাতিল করা যায়। Prompt এর ক্ষেত্রে, `dialog.accept(inputValue)` ব্যবহার করে ইনপুট দেওয়া যায়।"
+          "definition": "ডায়ালগ হ্যান্ডেল করা",
+          "code": "page.on('dialog', async dialog => {\n  console.log(dialog.message());\n  await dialog.accept();\n});\nawait page.click('#alertButton');"
         },
         {
-          "definition": "IFrame এর সাথে কাজ করা:",
-          "code": "const frame = page.frameLocator('#myFrame');\nawait frame.locator('input[name=\"email\"]').fill('test@example.com');",
-          "details": "IFrame এর মধ্যে থাকা এলিমেন্টগুলির সাথে কাজ করার জন্য `page.frameLocator()` ব্যবহার করা হয়। এটি IFrame এর লোকেশন খুঁজে বের করে এবং তারপর আপনি সেই ফ্রেমের মধ্যে থাকা এলিমেন্টগুলির সাথে ইন্টার‍্যাক্ট করতে পারেন।"
+          "definition": "IFrame এর সাথে কাজ",
+          "code": "const frame = page.frameLocator('#myFrame');\nawait frame.locator('input[name=\"email\"]').fill('test@example.com');"
         },
         {
-          "definition": "ফাইল আপলোড:",
-          "code": "await page.setInputFiles('input[type=\"file\"]', 'uploads/test.pdf');",
-          "details": "ওয়েবসাইটে ফাইল আপলোড করার জন্য এই কমান্ডটি ব্যবহার করা হয়।"
+          "definition": "ফাইল আপলোড",
+          "code": "await page.setInputFiles('input[type=\"file\"]', 'uploads/test.pdf');"
         },
         {
-          "definition": "ভিজুয়াল টেস্টিং:",
-          "details": "প্লেরাইট ব্যবহার করে ভিজ্যুয়াল টেস্টিং করা যায়। এর মাধ্যমে UI কম্পোনেন্টগুলোর ভিজ্যুয়াল দিক ঠিক আছে কিনা, তা পরীক্ষা করা হয়। এক্ষেত্রে, স্ক্রিনশট নিয়ে সেগুলোকে রেফারেন্স স্ক্রিনশটের সাথে তুলনা করা হয়।"
+          "definition": "ভিজুয়াল টেস্টিং",
+          "code": "UI কম্পোনেন্টগুলোর ভিজ্যুয়াল দিক পরীক্ষা করতে স্ক্রিনশট তুলনা করা যায়।"
         }
       ]
     },
@@ -197,22 +196,20 @@
       "title": "ডেটা স্ক্র্যাপিং",
       "items": [
         {
-          "definition": "ডেটা স্ক্র্যাপিং:",
-          "details": "প্লেরাইট ডেটা স্ক্র্যাপিংয়ের জন্য একটি শক্তিশালী টুল। এটি ব্যবহার করে আপনি ওয়েবসাইটের ডেটা সহজেই সংগ্রহ করতে পারেন। উদাহরণস্বরূপ, আপনি কোনো ওয়েবসাইটের সমস্ত পণ্যের নাম এবং দাম স্ক্র্যাপ করতে পারেন।"
+          "definition": "ডেটা স্ক্র্যাপিং",
+          "code": "ওয়েবসাইটের ডেটা যেমন পণ্যের নাম ও দাম সংগ্রহ করা যায়।"
         },
         {
-          "definition": "স্ক্র্যাপিং এর জন্য সাধারণ সিনট্যাক্স:",
-          "code": "const productNames = await page.locator('.product-name').allTextContents();\nconst productPrices = await page.locator('.product-price').allTextContents();\n\nfor (let i = 0; i < productNames.length; i++) {\n  console.log(`Product: ${productNames[i]}, Price: ${productPrices[i]}`);\n}",
-          "details": "এই কোডটি `.product-name` এবং `.product-price` ক্লাসের এলিমেন্টগুলো থেকে টেক্সট কন্টেন্ট সংগ্রহ করে এবং তারপর সেগুলোকে লুপ করে প্রিন্ট করে।"
+          "definition": "সাধারণ স্ক্র্যাপিং সিনট্যাক্স",
+          "code": "const productNames = await page.locator('.product-name').allTextContents();\nconst productPrices = await page.locator('.product-price').allTextContents();\n\nfor (let i = 0; i < productNames.length; i++) {\n  console.log(`Product: ${productNames[i]}, Price: ${productPrices[i]}`);\n}"
         },
         {
-          "definition": "অ্যাডভান্সড স্ক্র্যাপিং:",
-          "code": "const products = await page.locator('.product-item').evaluateAll(list => {\n  return list.map(item => {\n    return {\n      name: item.querySelector('.product-name').innerText,\n      price: item.querySelector('.product-price').innerText\n    }\n  })\n});\n\nconsole.log(products);",
-          "details": "এই কোডটি `.product-item` ক্লাসের এলিমেন্টগুলো থেকে ডেটা সংগ্রহ করে একটি JSON অবজেক্ট তৈরি করে।"
+          "definition": "অ্যাডভান্সড স্ক্র্যাপিং",
+          "code": "const products = await page.locator('.product-item').evaluateAll(list => {\n  return list.map(item => {\n    return {\n      name: item.querySelector('.product-name').innerText,\n      price: item.querySelector('.product-price').innerText\n    }\n  })\n});\nconsole.log(products);"
         },
         {
-          "definition": "স্ক্র্যাপিং করার সময় মনে রাখার বিষয়:",
-          "details": "স্ক্র্যাপিং করার সময় ওয়েবসাইটের টার্মস অফ সার্ভিস এবং রোবটস ডট টিএক্সটি ফাইল দেখে নেওয়া উচিত। অতিরিক্ত স্ক্র্যাপিং করা থেকে বিরত থাকুন, যাতে সার্ভারের উপর বেশি চাপ না পরে।"
+          "definition": "স্ক্র্যাপিংয়ের সময় সতর্কতা",
+          "code": "ওয়েবসাইটের টার্মস অফ সার্ভিস ও robots.txt চেক করুন এবং অতিরিক্ত স্ক্র্যাপিং এড়িয়ে চলুন।"
         }
       ]
     },
@@ -220,14 +217,12 @@
       "title": "API টেস্টিং",
       "items": [
         {
-          "definition": "API টেস্টিং:",
-          "code": "import { request } from 'playwright';\n\nconst apiRequestContext = await request.newContext();\nconst response = await apiRequestContext.get('https://api.example.com/data');\nexpect(response.status()).toBe(200);\nconst responseBody = await response.json();\nexpect(responseBody).toHaveProperty('key');",
-          "details": "প্লেরাইট API টেস্টিংয়ের জন্য `request` context ব্যবহার করে। আপনি GET, POST, PUT, DELETE ইত্যাদি রিকোয়েস্ট পাঠাতে এবং রেসপন্স ভ্যালিডেট করতে পারেন।"
+          "definition": "API টেস্টিং",
+          "code": "import { request } from 'playwright';\n\nconst apiRequestContext = await request.newContext();\nconst response = await apiRequestContext.get('https://api.example.com/data');\nexpect(response.status()).toBe(200);\nconst responseBody = await response.json();\nexpect(responseBody).toHaveProperty('key');"
         },
         {
-          "definition": "নেটওয়ার্ক ইন্টারসেপশন:",
-          "code": "await page.route('**/api/data', route => route.fulfill({ body: JSON.stringify({ fake: true }) }));",
-          "details": "API থেকে আসা ডেটাকে নকল ডেটা দিয়ে প্রতিস্থাপন করতে এই কোড ব্যবহার করুন।"
+          "definition": "নেটওয়ার্ক ইন্টারসেপশন",
+          "code": "await page.route('**/api/data', route => route.fulfill({ body: JSON.stringify({ fake: true }) }));"
         }
       ]
     },
@@ -235,34 +230,28 @@
       "title": "রিপোর্টিং টুলস",
       "items": [
         {
-          "definition": "HTML রিপোর্ট:",
-          "code": "npx playwright show-report",
-          "details": "HTML ফরম্যাটে টেস্ট রিপোর্ট দেখার জন্য এই কমান্ডটি ব্যবহার করুন।"
+          "definition": "HTML রিপোর্ট",
+          "code": "npx playwright show-report"
         },
         {
-          "definition": "JSON রিপোর্ট:",
-          "code": "npx playwright test --reporter=json",
-          "details": "JSON ফরম্যাটে টেস্ট রিপোর্ট তৈরি করার জন্য এই কমান্ডটি ব্যবহার করুন, যা ডেটা বিশ্লেষণ বা কাস্টম ড্যাশবোর্ডের জন্য উপযোগী।"
+          "definition": "JSON রিপোর্ট",
+          "code": "npx playwright test --reporter=json"
         },
         {
-          "definition": "JUnit রিপোর্ট:",
-          "code": "npx playwright test --reporter=junit",
-          "details": "CI/CD ইন্টিগ্রেশনের জন্য JUnit ফরম্যাটে রিপোর্ট তৈরি করতে এই কমান্ডটি ব্যবহার করুন।"
+          "definition": "JUnit রিপোর্ট",
+          "code": "npx playwright test --reporter=junit"
         },
         {
-          "definition": "কাস্টম রিপোর্টার কনফিগারেশন:",
-          "code": "export const reporter = [['html'], ['json', { outputFile: 'report.json' }]];",
-          "details": "playwright.config.ts ফাইলে কাস্টম রিপোর্টার কনফিগার করার উদাহরণ।"
+          "definition": "কাস্টম রিপোর্টার কনফিগারেশন",
+          "code": "export const reporter = [['html'], ['json', { outputFile: 'report.json' }]];"
         },
         {
-          "definition": "Allure Reporter:",
-          "code": "npx playwright test --reporter=allure-playwright",
-          "details": "Allure রিপোর্ট তৈরি করতে এই কমান্ডটি ব্যবহার করুন। Allure প্লাগইন ইন্সটল করা থাকতে হবে।"
+          "definition": "Allure Reporter",
+          "code": "npx playwright test --reporter=allure-playwright"
         },
         {
-          "definition": "Allure রিপোর্ট দেখার জন্য:",
-          "code": "npx allure serve",
-          "details": "Allure রিপোর্ট ব্রাউজারে দেখতে এই কমান্ডটি ব্যবহার করুন।"
+          "definition": "Allure রিপোর্ট দেখা",
+          "code": "npx allure serve"
         }
       ]
     },
@@ -270,44 +259,36 @@
       "title": "CI/CD ইন্টিগ্রেশন",
       "items": [
         {
-          "definition": "GitHub Actions এর মাধ্যমে প্লেরাইট চালানো:",
-          "code": "- name: Run Playwright Tests\n  run: npx playwright test",
-          "details": "GitHub Actions ওয়ার্কফ্লোতে প্লেয়ারাইট টেস্ট চালানোর জন্য এই স্নিপেটটি ব্যবহার করুন।"
+          "definition": "GitHub Actions",
+          "code": "- name: Run Playwright Tests\n  run: npx playwright test"
         },
         {
-          "definition": "টেস্ট রিপোর্ট আর্টিফ্যাক্ট হিসেবে সেভ করা:",
-          "code": "- uses: actions/upload-artifact@v3\n  with:\n    name: playwright-report\n    path: playwright-report",
-          "details": "GitHub Actions-এ টেস্ট রিপোর্ট আর্টিফ্যাক্ট হিসেবে আপলোড করার জন্য এই স্নিপেটটি ব্যবহার করুন।"
+          "definition": "টেস্ট রিপোর্ট আর্টিফ্যাক্ট",
+          "code": "- uses: actions/upload-artifact@v3\n  with:\n    name: playwright-report\n    path: playwright-report"
         },
         {
-          "definition": "Jenkins এর মাধ্যমে প্লেরাইট টেস্ট চালানো:",
-          "code": "pipeline {\n  agent any\n  stages {\n    stage('Test') {\n      steps {\n        sh 'npx playwright test'\n      }\n    }\n  }\n}",
-          "details": "Jenkins পিপলাইন কনফিগারেশনে প্লেয়ারাইট টেস্ট চালানোর জন্য এই কোডটি ব্যবহার করুন।"
+          "definition": "Jenkins",
+          "code": "pipeline {\n  agent any\n  stages {\n    stage('Test') {\n      steps {\n        sh 'npx playwright test'\n      }\n    }\n  }\n}"
         },
         {
-          "definition": "CircleCI এর মাধ্যমে প্লেরাইট টেস্ট চালানো:",
-          "code": "version: 2.1\njobs:\n  test:\n    docker:\n      - image: mcr.microsoft.com/playwright:v1.20.0-focal\n    steps:\n      - run: npx playwright test",
-          "details": "CircleCI কনফিগারেশনে প্লেয়ারাইট টেস্ট চালানোর জন্য এই কোডটি ব্যবহার করুন।"
+          "definition": "CircleCI",
+          "code": "version: 2.1\njobs:\n  test:\n    docker:\n      - image: mcr.microsoft.com/playwright:v1.20.0-focal\n    steps:\n      - run: npx playwright test"
         },
         {
-          "definition": "GitLab CI/CD এর মাধ্যমে প্লেরাইট টেস্ট চালানো:",
-          "code": "stages:\n  - test\n\nplaywright:\n  image: mcr.microsoft.com/playwright:v1.20.0-focal\n  stage: test\n  script:\n    - npx playwright test",
-          "details": "GitLab CI/CD কনফিগারেশনে প্লেয়ারাইট টেস্ট চালানোর জন্য এই কোডটি ব্যবহার করুন।"
+          "definition": "GitLab CI/CD",
+          "code": "stages:\n  - test\n\nplaywright:\n  image: mcr.microsoft.com/playwright:v1.20.0-focal\n  stage: test\n  script:\n    - npx playwright test"
         },
         {
-          "definition": "Travis CI এর মাধ্যমে প্লেরাইট টেস্ট চালানো:",
-          "code": "language: node_js\nnode_js:\n  - '14'\nbefore_script:\n  - npm install -g playwright\nscript:\n  - npx playwright test",
-          "details": "Travis CI কনফিগারেশনে প্লেয়ারাইট টেস্ট চালানোর জন্য এই কোডটি ব্যবহার করুন।"
+          "definition": "Travis CI",
+          "code": "language: node_js\nnode_js:\n  - '14'\nbefore_script:\n  - npm install -g playwright\nscript:\n  - npx playwright test"
         },
         {
-          "definition": "Azure Pipelines এর মাধ্যমে প্লেরাইট টেস্ট চালানো:",
-          "code": "pool:\n  vmImage: 'ubuntu-latest'\ntasks:\n  - task: NodeTool@0\n    inputs:\n      versionSpec: '14.x'\n  - script: npx playwright test\n    displayName: 'Run Playwright Tests'",
-          "details": "Azure Pipelines কনফিগারেশনে প্লেয়ারাইট টেস্ট চালানোর জন্য এই কোডটি ব্যবহার করুন।"
+          "definition": "Azure Pipelines",
+          "code": "pool:\n  vmImage: 'ubuntu-latest'\ntasks:\n  - task: NodeTool@0\n    inputs:\n      versionSpec: '14.x'\n  - script: npx playwright test\n    displayName: 'Run Playwright Tests'"
         },
         {
-          "definition": "Bitbucket Pipelines এর মাধ্যমে প্লেরাইট টেস্ট চালানো:",
-          "code": "image: mcr.microsoft.com/playwright:v1.20.0-focal\npipelines:\n  default:\n    - step:\n        script:\n          - npx playwright test",
-          "details": "Bitbucket Pipelines কনফিগারেশনে প্লেয়ারাইট টেস্ট চালানোর জন্য এই কোডটি ব্যবহার করুন।"
+          "definition": "Bitbucket Pipelines",
+          "code": "image: mcr.microsoft.com/playwright:v1.20.0-focal\npipelines:\n  default:\n    - step:\n        script:\n          - npx playwright test"
         }
       ]
     },
@@ -315,24 +296,20 @@
       "title": "Allure Report এর সাথে ইন্টিগ্রেশন",
       "items": [
         {
-          "definition": "Allure Reporter ইন্সটল করুন:",
-          "code": "npm install -D allure-playwright",
-          "details": "আপনার প্লেয়ারাইট প্রজেক্টে Allure Reporter যোগ করার জন্য এই কমান্ডটি চালান।"
+          "definition": "Allure Reporter ইন্সটল",
+          "code": "npm install -D allure-playwright"
         },
         {
-          "definition": "playwright.config.ts ফাইলে Allure Reporter কনফিগার করুন:",
-          "code": "import { defineConfig } from '@playwright/test';\n\nexport default defineConfig({\n  reporter: [['allure-playwright']],\n});",
-          "details": "আপনার প্লেয়ারাইট কনফিগারেশনে Allure Reporter যোগ করুন।"
+          "definition": "Allure Reporter কনফিগারেশন",
+          "code": "import { defineConfig } from '@playwright/test';\n\nexport default defineConfig({\n  reporter: [['allure-playwright']],\n});"
         },
         {
-          "definition": "Allure রিপোর্ট তৈরি করুন:",
-          "code": "npx playwright test",
-          "details": "টেস্ট চালানোর পরে, Allure রিপোর্ট তৈরি করার জন্য এই কমান্ডটি চালান।"
+          "definition": "Allure রিপোর্ট তৈরি",
+          "code": "npx playwright test"
         },
         {
-          "definition": "Allure রিপোর্ট দেখুন:",
-          "code": "npx allure serve",
-          "details": "ব্রাউজারে Allure রিপোর্ট দেখার জন্য এই কমান্ডটি চালান।"
+          "definition": "Allure রিপোর্ট দেখা",
+          "code": "npx allure serve"
         }
       ]
     },
@@ -340,16 +317,16 @@
       "title": "Jenkins এর সাথে ইন্টিগ্রেশন",
       "items": [
         {
-          "definition": "Jenkins এ Allure plugin ইন্সটল করুন:",
-          "details": "Jenkins অ্যাডমিন প্যানেল থেকে Allure plugin টি ইন্সটল করুন।"
+          "definition": "Allure plugin ইন্সটল",
+          "code": "Jenkins অ্যাডমিন প্যানেল থেকে Allure plugin ইন্সটল করুন।"
         },
         {
-          "definition": "Jenkins job কনফিগার করুন:",
-          "details": "আপনার Jenkins job-এ প্লেয়ারাইট টেস্ট চালানোর কমান্ড যোগ করুন এবং Allure রিপোর্ট জেনারেট করার জন্য post-build action যোগ করুন।"
+          "definition": "Jenkins job কনফিগারেশন",
+          "code": "Jenkins job-এ প্লেরাইট টেস্ট কমান্ড এবং Allure রিপোর্টের জন্য post-build action যোগ করুন।"
         },
         {
-          "definition": "Allure রিপোর্ট পাবলিশ করুন:",
-          "details": "Jenkins job কনফিগারেশনে Allure রিপোর্ট পাবলিশ করার জন্য প্রয়োজনীয় সেটিংস করুন।"
+          "definition": "Allure রিপোর্ট পাবলিশ",
+          "code": "Jenkins job কনফিগারেশনে Allure রিপোর্ট পাবলিশের সেটিংস করুন।"
         }
       ]
     },
@@ -357,20 +334,20 @@
       "title": "VSCode Recorder ব্যবহার করে টেস্ট তৈরি",
       "items": [
         {
-          "definition": "VSCode এ Playwright extension ইন্সটল করুন:",
-          "details": "VSCode marketplace থেকে Playwright extension টি ইন্সটল করুন।"
+          "definition": "Playwright extension ইন্সটল",
+          "code": "VSCode marketplace থেকে Playwright extension ইন্সটল করুন।"
         },
         {
-          "definition": "Recorder চালু করুন:",
-          "details": "VSCode এর command palette থেকে 'Playwright: Record new test' সিলেক্ট করুন।"
+          "definition": "Recorder চালু",
+          "code": "VSCode-এ command palette থেকে 'Playwright: Record new test' সিলেক্ট করুন।"
         },
         {
-          "definition": "ব্রাউজারে আপনার অ্যাকশন রেকর্ড করুন:",
-          "details": "Recorder চালু করার পর, ব্রাউজারে আপনার অ্যাকশনগুলি করুন এবং VSCode স্বয়ংক্রিয়ভাবে কোড তৈরি করবে।"
+          "definition": "অ্যাকশন রেকর্ড",
+          "code": "ব্রাউজারে অ্যাকশন করুন, VSCode স্বয়ংক্রিয়ভাবে কোড তৈরি করবে।"
         },
         {
-          "definition": "রেকর্ডিং বন্ধ করুন এবং কোড সেভ করুন:",
-          "details": "আপনার অ্যাকশনগুলি রেকর্ড করার পরে, রেকর্ডিং বন্ধ করুন এবং তৈরি করা কোডটি আপনার টেস্ট ফাইলে সেভ করুন।"
+          "definition": "রেকর্ডিং সেভ",
+          "code": "রেকর্ডিং বন্ধ করে তৈরি কোড টেস্ট ফাইলে সেভ করুন।"
         }
       ]
     },
@@ -378,45 +355,44 @@
       "title": "অন্যান্য গুরুত্বপূর্ণ বিষয়",
       "items": [
         {
-          "definition": "লোড টেস্টিং:",
-          "details": "প্লেরাইট সরাসরি লোড টেস্টিংয়ের জন্য ডিজাইন করা হয়নি। তবে, আপনি একাধিক প্যারালাল সেশন তৈরি করে এবং একই সময়ে অনেক ইউজার সিমুলেট করে বেসিক লোড টেস্টিং করতে পারেন। ডেডিকেটেড লোড টেস্টিং টুলের (যেমন k6 বা Apache JMeter) সাথে ইন্টিগ্রেট করে আরও ভালো ফল পাওয়া যায়।"
+          "definition": "লোড টেস্টিং",
+          "code": "প্লেরাইট লোড টেস্টিংয়ের জন্য ডিজাইন করা নয়, তবে প্যারালাল সেশন দিয়ে বেসিক টেস্টিং সম্ভব। k6 বা Apache JMeter-এর সাথে ইন্টিগ্রেট করুন।"
         },
         {
-          "definition": "টেস্ট গুলো ছোট এবং নির্দিষ্ট ফিচার কেন্দ্রিক রাখুন।",
-          "details": "ছোট টেস্টগুলো ডিবাগ করা সহজ এবং এগুলো নির্দিষ্ট কার্যকারিতা নিশ্চিত করে।"
+          "definition": "ছোট ও নির্দিষ্ট টেস্ট",
+          "code": "ছোট টেস্টগুলো ডিবাগ করা সহজ এবং নির্দিষ্ট কার্যকারিতা নিশ্চিত করে।"
         },
         {
-          "definition": "reusable কোডের জন্য test.beforeEach এবং test.describe ব্যবহার করুন।",
-          "details": "এই মেথডগুলো ব্যবহার করে আপনি আপনার কোডকে আরও মডুলার এবং পুনর্ব্যবহারযোগ্য করতে পারেন।"
+          "definition": "Reusable কোড",
+          "code": "test.beforeEach এবং test.describe ব্যবহার করে কোড মডুলার করুন।"
         },
         {
-          "definition": "API key অথবা গুরুত্বপূর্ণ তথ্য .env ফাইলে রাখুন, সরাসরি কোডে লিখবেন না।",
-          "details": "সংবেদনশীল তথ্য নিরাপদে রাখার জন্য এনভায়রনমেন্ট ভেরিয়েবল ব্যবহার করুন।"
+          "definition": "সংবেদনশীল তথ্য",
+          "code": "API key বা গুরুত্বপূর্ণ তথ্য .env ফাইলে রাখুন।"
         },
         {
-          "definition": "টেস্ট timeout ঠিকভাবে সেট করুন, যাতে টেস্ট আটকে না যায়।",
-          "details": "টেস্ট timeout সঠিকভাবে কনফিগার করা গুরুত্বপূর্ণ, যাতে কোনো টেস্ট অপ্রত্যাশিতভাবে আটকে না যায়।"
+          "definition": "টেস্ট timeout",
+          "code": "টেস্ট timeout সঠিকভাবে সেট করুন যাতে টেস্ট আটকে না যায়।"
         },
         {
-          "definition": "fail হলে video, trace এবং screenshot রাখুন, যা ডিবাগ করার সময় কাজে দেবে।",
-          "details": "ডিবাগিংয়ের সময় সহায়তার জন্য স্বয়ংক্রিয়ভাবে ভিডিও, ট্রেস এবং স্ক্রিনশট সংরক্ষণ করুন।"
+          "definition": "ডিবাগিংয়ের জন্য রেকর্ড",
+          "code": "টেস্ট ফেল হলে ভিডিও, ট্রেস এবং স্ক্রিনশট সংরক্ষণ করুন।"
         },
         {
-          "definition": "Page Object Model (POM) ব্যবহার করুন:",
-          "details": "Page Object Model একটি ডিজাইন প্যাটার্ন, যা UI এলিমেন্ট এবং বিজনেস লজিককে আলাদা করে। এটি আপনার কোডকে আরও পরিপাটি এবং রক্ষণাবেক্ষণযোগ্য করে।"
+          "definition": "Page Object Model (POM)",
+          "code": "UI এলিমেন্ট ও বিজনেস লজিক আলাদা করে কোড রক্ষণাবেক্ষণ সহজ করুন।"
         },
         {
-          "definition": "Data-Driven Testing করুন:",
-          "details": "Data-Driven Testing এর মাধ্যমে আপনি বিভিন্ন ইনপুট ডেটা ব্যবহার করে একই টেস্ট বারবার চালাতে পারেন। এটি বিভিন্ন পরিস্থিতিতে আপনার অ্যাপ্লিকেশন পরীক্ষা করতে সহায়ক।"
+          "definition": "Data-Driven Testing",
+          "code": "বিভিন্ন ইনপুট ডেটা দিয়ে একই টেস্ট বারবার চালান।"
         },
         {
-          "definition": "Parallel Testing ব্যবহার করুন:",
-          "details": "প্লেরাইট প্যারালাল টেস্টিং সাপোর্ট করে, যার মাধ্যমে আপনি একই সময়ে একাধিক ব্রাউজারে টেস্ট চালাতে পারেন। এটি আপনার টেস্টিং এর সময় কমিয়ে আনতে পারে।"
+          "definition": "Parallel Testing",
+          "code": "একাধিক ব্রাউজারে সমান্তরাল টেস্ট চালিয়ে সময় বাঁচান।"
         },
         {
-          "definition": "Broken Link সনাক্ত করা:",
-          "code": "const links = await page.locator('a').evaluateAll(links => {\n  const brokenLinks = [];\n  links.forEach(link => {\n    if (link.href && link.href !== '') {\n      fetch(link.href)\n        .then(response => {\n          if (response.status >= 400) {\n            brokenLinks.push(link.href);\n          }\n        })\n        .catch(error => {\n          brokenLinks.push(link.href);\n        });\n    }\n  });\n  return brokenLinks;\n});\nconsole.log('Broken Links:', links);",
-          "details": "ওয়েবসাইটে broken link সনাক্ত করার জন্য এই কোডটি ব্যবহার করা হয়। এটি প্রতিটি লিংকের `href` অ্যাট্রিবিউট পরীক্ষা করে এবং যদি কোনো এরর বা 400+ স্ট্যাটাস কোড পাওয়া যায়, তবে সেটিকে broken link হিসেবে চিহ্নিত করে।"
+          "definition": "Broken Link সনাক্তকরণ",
+          "code": "const links = await page.locator('a').evaluateAll(links => {\n  const brokenLinks = [];\n  links.forEach(link => {\n    if (link.href && link.href !== '') {\n      fetch(link.href)\n        .then(response => {\n          if (response.status >= 400) {\n            brokenLinks.push(link.href);\n          }\n        })\n        .catch(error => {\n          brokenLinks.push(link.href);\n        });\n    }\n  });\n  return brokenLinks;\n});\nconsole.log('Broken Links:', links);"
         }
       ]
     },
@@ -424,39 +400,36 @@
       "title": "JavaScript ও TypeScript সাপোর্ট",
       "items": [
         {
-          "definition": "Playwright JavaScript ও TypeScript উভয় ভাষাতেই সমানভাবে কাজ করে",
-          "details": "Playwright-এর সমস্ত API, কমান্ড ও টেস্ট কোড JavaScript (.js) এবং TypeScript (.ts) ফাইলে একইভাবে চলে। আপনি চাইলে যেকোনো ভাষায় টেস্ট লিখতে পারেন।"
+          "definition": "JavaScript ও TypeScript সমর্থন",
+          "code": "সমস্ত API, কমান্ড ও টেস্ট কোড JavaScript (.js) এবং TypeScript (.ts) ফাইলে একইভাবে চলে।"
         },
         {
-          "definition": "TypeScript ব্যবহারের সুবিধা",
-          "details": "TypeScript ব্যবহার করলে টাইপ-চেকিং, অটো-কমপ্লিশন, ইন্টেলিসেন্স, এবং কোডে ভুল কমানোর জন্য উন্নত সুবিধা পাওয়া যায়। এতে বড় প্রজেক্টে কোড রক্ষণাবেক্ষণ সহজ হয়।"
+          "definition": "TypeScript-এর সুবিধা",
+          "code": "টাইপ-চেকিং, অটো-কমপ্লিশন এবং ইন্টেলিসেন্স দিয়ে বড় প্রজেক্টে কোড রক্ষণাবেক্ষণ সহজ হয়।"
         },
         {
-          "definition": "TypeScript সেটআপ (Playwright প্রজেক্টে)",
-          "code": "npm init playwright@latest",
-          "details": "Playwright ইনস্টল করার সময় আপনি চাইলে TypeScript বেছে নিতে পারেন। এতে স্বয়ংক্রিয়ভাবে tsconfig.json, টাইপ ডেফিনিশন ও নমুনা .ts টেস্ট ফাইল তৈরি হবে।"
+          "definition": "TypeScript সেটআপ",
+          "code": "npm init playwright@latest"
         },
         {
-          "definition": "TypeScript ফাইলের জন্য কনফিগারেশন",
-          "code": "{\n  \"compilerOptions\": {\n    \"target\": \"ESNext\",\n    \"module\": \"commonjs\",\n    \"strict\": true,\n    \"esModuleInterop\": true,\n    \"skipLibCheck\": true\n  }\n}",
-          "details": "tsconfig.json ফাইলে এই সেটিংস থাকলে Playwright ও TypeScript একসাথে ভালোভাবে কাজ করবে।"
+          "definition": "TypeScript কনফিগারেশন",
+          "code": "{\n  \"compilerOptions\": {\n    \"target\": \"ESNext\",\n    \"module\": \"commonjs\",\n    \"strict\": true,\n    \"esModuleInterop\": true,\n    \"skipLibCheck\": true\n  }\n}"
         },
         {
           "definition": "JavaScript থেকে TypeScript-এ রূপান্তর",
-          "details": "আপনার পুরনো .js ফাইলগুলোকে .ts ফাইলে রিনেম করুন এবং টাইপ ডেফিনিশন যোগ করুন। Playwright-এর সব API-তে টাইপ সাপোর্ট থাকায় সহজেই টাইপ-সহায়তা পাবেন।"
+          "code": ".js ফাইলগুলোকে .ts ফাইলে রিনেম করে টাইপ ডেফিনিশন যোগ করুন।"
         },
         {
-          "definition": "কোড উদাহরণ (JavaScript ও TypeScript উভয়ের জন্য)",
-          "code": "// JavaScript\nconst { test, expect } = require('@playwright/test');\ntest('basic test', async ({ page }) => {\n  await page.goto('https://example.com');\n  await expect(page).toHaveTitle(/Example/);\n});\n\n// TypeScript\nimport { test, expect } from '@playwright/test';\ntest('basic test', async ({ page }) => {\n  await page.goto('https://example.com');\n  await expect(page).toHaveTitle(/Example/);\n});",
-          "details": "উপরের দুটি কোড ব্লক JavaScript ও TypeScript-এ Playwright টেস্ট লেখার পার্থক্য দেখায়। মূল পার্থক্য শুধু ইম্পোর্ট সিনট্যাক্সে।"
+          "definition": "কোড উদাহরণ",
+          "code": "// JavaScript\nconst { test, expect } = require('@playwright/test');\ntest('basic test', async ({ page }) => {\n  await page.goto('https://example.com');\n  await expect(page).toHaveTitle(/Example/);\n});\n\n// TypeScript\nimport { test, expect } from '@playwright/test';\ntest('basic test', async ({ page }) => {\n  await page.goto('https://example.com');\n  await expect(page).toHaveTitle(/Example/);\n});"
         },
         {
-          "definition": "Playwright-এর টাইপ ডেফিনিশন",
-          "details": "Playwright প্যাকেজের সাথেই টাইপ ডেফিনিশন আসে, তাই আলাদা @types প্যাকেজ লাগবে না।"
+          "definition": "টাইপ ডেফিনিশন",
+          "code": "Playwright প্যাকেজের সাথে টাইপ ডেফিনিশন আসে, আলাদা @types প্যাকেজ লাগবে না।"
         },
         {
           "definition": "উপসংহার",
-          "details": "ছোট প্রজেক্টে JavaScript যথেষ্ট, তবে বড় বা স্কেলেবল প্রজেক্টে TypeScript ব্যবহার করলে কোড বাগ কমে, রক্ষণাবেক্ষণ সহজ হয় এবং ডেভেলপার এক্সপেরিয়েন্স উন্নত হয়।"
+          "code": "ছোট প্রজেক্টে JavaScript, বড় প্রজেক্টে TypeScript ব্যবহার করলে কোড বাগ কমে এবং রক্ষণাবেক্ষণ সহজ হয়।"
         }
       ]
     }
