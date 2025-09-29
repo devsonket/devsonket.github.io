@@ -1158,6 +1158,26 @@
                 {
                     "definition": "Reverb ওয়েবসকেট সার্ভার",
                     "code": "php artisan reverb:start"
+                },
+                {
+                    "definition": "Laravel Pulse ইনস্টল করতে (পারফরমেন্স মনিটরিং)",
+                    "code": "composer require laravel/pulse && php artisan pulse:install"
+                },
+                {
+                    "definition": "Laravel Herd দিয়ে লোকাল ডেভেলপমেন্ট এনভায়রনমেন্ট শুরু করতে",
+                    "code": "herd start && herd link"
+                },
+                {
+                    "definition": "Laravel Prompts দিয়ে ইন্টারঅ্যাক্টিভ কমান্ড তৈরি করতে",
+                    "code": "use function Laravel\\Prompts\\{text, select, confirm};\n\n$name = text('What is your name?');\n$role = select('What is your role?', ['admin', 'user']);\n$confirmed = confirm('Do you wish to continue?');"
+                },
+                {
+                    "definition": "উন্নত কিউ মনিটরিং এবং ফেইল হওয়া জব পুনরায় চালু করতে",
+                    "code": "php artisan queue:monitor && php artisan queue:retry all"
+                },
+                {
+                    "definition": "মডেল ফ্যাক্টরি স্টেট এবং সিকোয়েন্স ব্যবহার করতে (Laravel 12)",
+                    "code": "User::factory()->state(['role' => 'admin'])->sequence(\n    ['name' => 'John'],\n    ['name' => 'Jane']\n)->count(2)->create();"
                 }
             ]
         }
