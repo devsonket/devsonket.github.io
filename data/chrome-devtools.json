@@ -1,0 +1,306 @@
+{
+  "id": "chrome-devtools",
+  "title": "Chrome DevTools - সবার জন্য চিটশিট",
+  "slug": "chrome-devtools",
+  "description": "Chrome DevTools শেখার জন্য দরকারি শর্টকাট এবং টুলসেটের তালিকা। এটি ওয়েব ডেভেলপমেন্টে ডিবাগিং, পারফরম্যান্স বিশ্লেষণ এবং কোড পরীক্ষার জন্য বহুল ব্যবহৃত একটি শক্তিশালী টুল।",
+  "colorPref": "#FF9800",
+  "contents": [
+    {
+      "title": "Opening DevTools",
+      "items": [
+        {
+          "definition": "পেজে কোনো এলিমেন্টে ডান ক্লিক করে ডেভটুলস খোলা",
+          "code": "Inspect (ডান ক্লিক > Inspect)"
+        },
+        {
+          "definition": "উইন্ডোজ বা লিনাক্সে কীবোর্ড শর্টকাট দিয়ে ডেভটুলস খোলা",
+          "code": "Ctrl + Shift + I (উইন্ডোজ/লিনাক্স)"
+        },
+        {
+          "definition": "ম্যাক-এ কীবোর্ড শর্টকাট দিয়ে ডেভটুলস খোলা",
+          "code": "Cmd + Option + I (ম্যাক)"
+        },
+        {
+          "definition": "F12 কী দিয়ে দ্রুত ডেভটুলস খোলা",
+          "code": "F12"
+        }
+      ]
+    },
+    {
+      "title": "Elements Panel",
+      "items": [
+        {
+          "definition": "পেজের এলিমেন্ট নির্বাচন করার জন্য",
+          "code": "পেজে বা এলিমেন্টস প্যানেলে ক্লিক করে এলিমেন্ট সিলেক্ট করুন"
+        },
+        {
+          "definition": "HTML কোড সরাসরি সম্পাদনা করার জন্য",
+          "code": "এলিমেন্ট বা অ্যাট্রিবিউটে ডাবল-ক্লিক করে HTML এডিট করুন"
+        },
+        {
+          "definition": "CSS স্টাইল যোগ বা পরিবর্তন করার জন্য",
+          "code": "Styles প্যানেলে CSS যোগ বা পরিবর্তন করুন"
+        },
+        {
+          "definition": "এলিমেন্টের দৃশ্যমানতা চালু/বন্ধ করার জন্য",
+          "code": "এলিমেন্টের পাশের চোখ আইকনে ক্লিক করে দৃশ্যমানতা টগল করুন"
+        },
+        {
+          "definition": "এলিমেন্টের বক্স মডেল পরীক্ষা করার জন্য",
+          "code": "Computed প্যানেলে বক্স মডেল বিশ্লেষণ করুন"
+        }
+      ]
+    },
+    {
+      "title": "Console Panel",
+      "items": [
+        {
+          "definition": "কনসোলে মেসেজ প্রিন্ট করার জন্য",
+          "code": "console.log(\"মেসেজ\")"
+        },
+        {
+          "definition": "একাধিক ব্রাউজার সাপোর্ট",
+          "code": "একই কোড ব্যবহার করে Chromium (Chrome, Edge), Firefox এবং WebKit (Safari) ব্রাউজারে টেস্টিং করা যায়।"
+        },
+        {
+          "definition": "কনসোলের আউটপুট পরিষ্কার করার জন্য",
+          "code": "console.clear()"
+        },
+        {
+          "definition": "জাভাস্ক্রিপ্ট এক্সপ্রেশন চালানোর জন্য",
+          "code": "এক্সপ্রেশন লিখে Enter চাপুন"
+        },
+        {
+          "definition": "কোড দ্রুত লেখার জন্য অটোকমপ্লিট ব্যবহার",
+          "code": "Tab দিয়ে অটোকমপ্লিট ব্যবহার করুন"
+        },
+        {
+          "definition": "পূর্ববর্তী কমান্ডের ইতিহাস দেখার জন্য",
+          "code": "Up/Down তীর দিয়ে ইতিহাস দেখুন"
+        },
+        {
+          "definition": "কনসোলে এরর ফিল্টার করার জন্য",
+          "code": "ফিল্টার মেনুতে 'Errors' নির্বাচন করুন"
+        }
+      ]
+    },
+    {
+      "title": "Sources Panel",
+      "items": [
+        {
+          "definition": "কোডে ব্রেকপয়েন্ট সেট করার জন্য",
+          "code": "লাইনের নম্বরে ক্লিক করে ব্রেকপয়েন্ট সেট করুন"
+        },
+        {
+          "definition": "পরবর্তী লাইনে যাওয়ার জন্য (ফাংশনে না ঢুকে)",
+          "code": "F10 (স্টেপ ওভার)"
+        },
+        {
+          "definition": "ফাংশনের ভিতরে প্রবেশ করার জন্য",
+          "code": "F11 (স্টেপ ইনটু)"
+        },
+        {
+          "definition": "ফাংশন থেকে বের হওয়ার জন্য",
+          "code": "Shift + F11 (স্টেপ আউট)"
+        },
+        {
+          "definition": "ডিবাগিং চালিয়ে যাওয়ার জন্য",
+          "code": "F8 (কনটিনিউ)"
+        },
+        {
+          "definition": "শর্তসাপেক্ষ ব্রেকপয়েন্ট সেট করার জন্য",
+          "code": "ব্রেকপয়েন্টে ডান ক্লিক করে শর্ত যোগ করুন (যেমন: x > 5)"
+        },
+        {
+          "definition": "লগপয়েন্ট দিয়ে কনসোলে লগ করার জন্য",
+          "code": "লাইনে ডান ক্লিক করে লগপয়েন্ট যোগ করুন (যেমন: console.log(x))"
+        }
+      ]
+    },
+    {
+      "title": "Network Panel",
+      "items": [
+        {
+          "definition": "নেটওয়ার্ক অ্যাকটিভিটি রেকর্ড করার জন্য",
+          "code": "Ctrl + Shift + E বা Cmd + Option + E দিয়ে নেটওয়ার্ক রেকর্ড করুন"
+        },
+        {
+          "definition": "নির্দিষ্ট রিকোয়েস্ট ফিল্টার করার জন্য",
+          "code": "ফিল্টার ইনপুট বক্স ব্যবহার করুন"
+        },
+        {
+          "definition": "রিকোয়েস্টের বিস্তারিত তথ্য দেখার জন্য",
+          "code": "রিকোয়েস্টে ক্লিক করে বিস্তারিত দেখুন"
+        },
+        {
+          "definition": "ক্যাশে নিষ্ক্রিয় করার জন্য",
+          "code": "Disable cache চেকবক্সে ক্লিক করুন"
+        },
+        {
+          "definition": "নেটওয়ার্ক রিকোয়েস্টের স্ক্রিনশট নেওয়ার জন্য",
+          "code": "Capture screenshots অপশনে ক্লিক করুন"
+        }
+      ]
+    },
+    {
+      "title": "Performance Panel",
+      "items": [
+        {
+          "definition": "পারফরম্যান্স রেকর্ডিং শুরু করার জন্য",
+          "code": "রেকর্ড বাটনে ক্লিক করে রেকর্ডিং শুরু করুন"
+        },
+        {
+          "definition": "রেকর্ডিং বন্ধ করার জন্য",
+          "code": "স্টপ বাটনে ক্লিক করে বন্ধ করুন"
+        },
+        {
+          "definition": "পারফরম্যান্স টাইমলাইন বিশ্লেষণ করার জন্য",
+          "code": "টাইমলাইন বিশ্লেষণ করুন"
+        },
+        {
+          "definition": "CPU পারফরম্যান্স সীমিত করার জন্য",
+          "code": "CPU থ্রটলিং মেনুতে Low-end বা Mid-tier নির্বাচন করুন"
+        },
+        {
+          "definition": "CSS সিলেক্টর পারফরম্যান্স পরীক্ষা করার জন্য",
+          "code": "Styles প্যানেলে Selector Stats সক্রিয় করুন"
+        }
+      ]
+    },
+    {
+      "title": "Memory Panel",
+      "items": [
+        {
+          "definition": "মেমোরি ব্যবহার বিশ্লেষণের জন্য টুল নির্বাচন",
+          "code": "Heap Snapshot বা Allocation Timeline বেছে নিন"
+        },
+        {
+          "definition": "মেমোরি লিক শনাক্ত করার জন্য",
+          "code": "Objects প্যানেলে মেমোরি লিক দেখুন"
+        },
+        {
+          "definition": "মেমোরি ব্যবহারের ট্র্যাক রাখার জন্য",
+          "code": "Allocation Instrumentation on Timeline ব্যবহার করুন"
+        }
+      ]
+    },
+    {
+      "title": "Application Panel",
+      "items": [
+        {
+          "definition": "কুকি পরীক্ষা বা মুছে ফেলার জন্য",
+          "code": "Cookies সেকশনে কুকি দেখুন/মুছুন"
+        },
+        {
+          "definition": "লোকাল স্টোরেজ ডেটা পরীক্ষা করার জন্য",
+          "code": "Storage সেকশনে লোকাল স্টোরেজ পরীক্ষা করুন"
+        },
+        {
+          "definition": "সার্ভিস ওয়ার্কারের স্থিতি দেখার জন্য",
+          "code": "Service Workers সেকশনে স্ট্যাটাস দেখুন"
+        },
+        {
+          "definition": "ইনডেক্সড ডিবি ডেটা পরীক্ষা করার জন্য",
+          "code": "IndexedDB সেকশনে ডাটাবেস পরীক্ষা করুন"
+        },
+        {
+          "definition": "ক্যাশে স্টোরেজ বিশ্লেষণ করার জন্য",
+          "code": "Cache Storage সেকশনে ক্যাশে দেখুন"
+        }
+      ]
+    },
+    {
+      "title": "Security Panel",
+      "items": [
+        {
+          "definition": "SSL সার্টিফিকেটের তথ্য দেখার জন্য",
+          "code": "Overview-এ SSL সার্টিফিকেট দেখুন"
+        },
+        {
+          "definition": "সিকিউরিটি সমস্যা শনাক্ত করার জন্য",
+          "code": "Issues-এ সিকিউরিটি ইস্যু দেখুন"
+        }
+      ]
+    },
+    {
+      "title": "Keyboard Shortcuts",
+      "items": [
+        {
+          "definition": "ডেভটুলস টগল করার জন্য",
+          "code": "F12 বা Ctrl + Shift + I / Cmd + Option + I টগল"
+        },
+        {
+          "definition": "ড্রয়ার টগল করার জন্য",
+          "code": "Ctrl + Shift + D / Cmd + Option + D ড্রাওয়ার টগল"
+        },
+        {
+          "definition": "কোড বা ফাইল সার্চ করার জন্য",
+          "code": "Ctrl + Shift + F / Cmd + Option + F সার্চ"
+        },
+        {
+          "definition": "প্যানেলের মধ্যে সুইচ করার জন্য",
+          "code": "Ctrl + PgUp/PgDn / Cmd + Option + ←/→ প্যানেল সুইচ"
+        }
+      ]
+    },
+    {
+      "title": "Other Tips",
+      "items": [
+        {
+          "definition": "ট্যাব খোলার সাথে সাথে ডেভটুলস স্বয়ংক্রিয়ভাবে খোলার জন্য",
+          "code": "chrome://flags/#auto-open-devtools-for-tabs সক্রিয় করুন"
+        },
+        {
+          "definition": "ডেভটুলসের থিম পরিবর্তন করার জন্য",
+          "code": "{} আইকন ক্লিক করে থিম পরিবর্তন করুন"
+        },
+        {
+          "definition": "মোবাইল ডিভাইসে রিমোট ডিবাগিং করার জন্য",
+          "code": "USB/Wi-Fi দিয়ে রিমোট ডিবাগিং করুন"
+        },
+        {
+          "definition": "কমান্ড মেনু খোলার জন্য",
+          "code": "Ctrl + Shift + P / Cmd + Shift + P কমান্ড মেনু"
+        },
+        {
+          "definition": "ডেভটুলসের ভাষা পরিবর্তন করার জন্য",
+          "code": "Settings > Preferences > Language নির্বাচন করুন"
+        },
+        {
+          "definition": "ডেভটুলসের ডক সাইড পরিবর্তন করার জন্য",
+          "code": "Settings > Preferences > Dock side নির্বাচন করুন"
+        }
+      ]
+    },
+    {
+      "title": "Experimental Features",
+      "items": [
+        {
+          "definition": "পরীক্ষামূলক ফিচার সক্রিয় করার জন্য",
+          "code": "chrome://flags/#devtools-experiments সক্রিয় করুন"
+        },
+        {
+          "definition": "ডেভটুলসে পরীক্ষামূলক ফিচার টগল করার জন্য",
+          "code": "Settings > Experiments > ফিচার নির্বাচন করুন"
+        }
+      ]
+    },
+    {
+      "title": "Resources in Bengali",
+      "items": [
+        {
+          "definition": "বাংলায় ডেভটুলস টিউটোরিয়াল খোঁজার জন্য",
+          "code": "YouTube: Chrome Dev Tools Source in Bangla সার্চ করুন"
+        },
+        {
+          "definition": "অফিসিয়াল Chrome DevTools ডকুমেন্টেশন",
+          "code": "Chrome DevTools ডকুমেন্টেশন: developer.chrome.com/docs/devtools/"
+        },
+        {
+          "definition": "ওয়েব ডেভেলপমেন্ট রিসোর্সের জন্য",
+          "code": "MDN Web Docs: developer.mozilla.org/"
+        }
+      ]
+    }
+  ]
+}
