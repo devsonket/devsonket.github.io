@@ -1,6 +1,6 @@
 {
   "id": "playwright",
-  "title": "Playwright টেস্টিং চিটশিট",
+  "title": "Playwright চিটশিট - কোড এবং বর্ণনা",
   "slug": "playwright",
   "description": "ওয়েব অ্যাপ্লিকেশন টেস্টিংকে দ্রুত এবং সহজ করতে Playwright-এর বেসিক ও অ্যাডভান্সড কমান্ডগুলোর সংক্ষিপ্ত তালিকা।",
   "colorPref": "#2EAD33",
