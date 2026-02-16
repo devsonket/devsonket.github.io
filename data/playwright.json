@@ -1,0 +1,106 @@
+{
+  "id": "playwright",
+  "title": "Playwright টেস্টিং চিটশিট",
+  "slug": "playwright",
+  "description": "ওয়েব অ্যাপ্লিকেশন টেস্টিংকে দ্রুত এবং সহজ করতে Playwright-এর বেসিক ও অ্যাডভান্সড কমান্ডগুলোর সংক্ষিপ্ত তালিকা।",
+  "colorPref": "#2EAD33",
+  "contents": [
+    {
+      "title": "ইনস্টলেশন ও সেটআপ",
+      "items": [
+        {
+          "definition": "Playwright টেস্ট ফ্রেমওয়ার্ক ইনস্টল করা",
+          "code": "npm install -D @playwright/test"
+        },
+        {
+          "definition": "Playwright ব্রাউজার ডাউনলোড করা",
+          "code": "npx playwright install"
+        },
+        {
+          "definition": "TypeScript সহ প্রোজেক্ট ইনিশিয়ালাইজ করা",
+          "code": "npx playwright test init"
+        }
+      ]
+    },
+    {
+      "title": "বেসিক টেস্ট লেখা",
+      "items": [
+        {
+          "definition": "Page ওপেন করা",
+          "code": "await page.goto('https://example.com');"
+        },
+        {
+          "definition": "Button click করা",
+          "code": "await page.click('button#submit');"
+        },
+        {
+          "definition": "Input ফিল করা",
+          "code": "await page.fill('input[name=\"email\"]', 'user@example.com');"
+        },
+        {
+          "definition": "Text select ও click করা",
+          "code": "await page.locator('text=Sign In').click();"
+        }
+      ]
+    },
+    {
+      "title": "Assertions",
+      "items": [
+        {
+          "definition": "Text verify করা",
+          "code": "await expect(page.locator('h1')).toHaveText('Welcome');"
+        },
+        {
+          "definition": "Element visible কিনা চেক করা",
+          "code": "await expect(page.locator('#modal')).toBeVisible();"
+        },
+        {
+          "definition": "URL verify করা",
+          "code": "await expect(page).toHaveURL('https://example.com/dashboard');"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Actions",
+      "items": [
+        {
+          "definition": "Mouse hover করা",
+          "code": "await page.hover('button#menu');"
+        },
+        {
+          "definition": "Keyboard input পাঠানো",
+          "code": "await page.keyboard.press('Enter');"
+        },
+        {
+          "definition": "File upload করা",
+          "code": "await page.setInputFiles('input[type=file]', 'file.txt');"
+        },
+        {
+          "definition": "Screenshot নেওয়া",
+          "code": "await page.screenshot({ path: 'screenshot.png' });"
+        }
+      ]
+    },
+    {
+      "title": "Test Fixtures & Hooks",
+      "items": [
+        {
+          "definition": "সব টেস্টের আগে রান হবে",
+          "code": "test.beforeAll(async () => { /* setup */ });"
+        },
+        {
+          "definition": "প্রতিটি টেস্টের আগে রান হবে",
+          "code": "test.beforeEach(async () => { /* setup per test */ });"
+        },
+        {
+          "definition": "প্রতিটি টেস্টের পরে রান হবে",
+          "code": "test.afterEach(async () => { /* teardown per test */ });"
+        },
+        {
+          "definition": "সব টেস্টের পরে রান হবে",
+          "code": "test.afterAll(async () => { /* teardown */ });"
+        }
+      ]
+    }
+  ]
+}
