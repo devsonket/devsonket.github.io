@@ -29,10 +29,6 @@
 					"code": "wp core multisite-convert"
 				},
 				{
-					"definition": "সিঙ্গেল-সাইট ইনস্টলেশনকে মাল্টিসাইট ইনস্টলেশনে পরিণত করবে",
-					"code": "wp core multisite-convert"
-				},
-				{
 					"definition": "ওয়ার্ডপ্রেস মাল্টিসাইট ইনস্টল করবে",
 					"code": "wp core multisite-install"
 				},
@@ -549,11 +545,15 @@
 				},
 				{
 					"definition": "ব্যবহারকারীকে সুপার-অ্যাডমিন ক্ষমতা দিন",
-					"code": "wp super-admin add superadmin2"
+					"code": "wp super-admin add <username>"
 				},
 				{
 					"definition": "ব্যবহারকারীর সুপার-অ্যাডমিন ক্ষমতা প্রত্যাহার করুন।",
-					"code": "wp super-admin remove superadmin2"
+					"code": "wp super-admin remove <username>"
+				},
+				{
+				        "definition": "একজন ব্যবহারকারী সুপার অ্যাডমিন কিনা তা পরীক্ষা করুন",
+				        "code": "wp super-admin check <username>"
 				}
 			]
 		},

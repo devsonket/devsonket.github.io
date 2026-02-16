@@ -276,16 +276,16 @@
                     "code": "type Doctor struct {"
                 },
                 {
-                    "code": "   number int"
+                    "code": "   number int //We can call Member variable or Properties"
                 },
                 {
-                    "code": "actorName string"
+                    "code": "actorName string //Member variable or Properties"
                 },
                 {
                     "code": "}"
                 },
                 {
-                    "code": "aDoctor := Doctor {"
+                    "code": "aDoctor := Doctor { //aDoctor is a Instance or Object like a variable"
                 },
                 {
                     "code": "   number: 3,"

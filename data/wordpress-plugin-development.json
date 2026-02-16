@@ -302,14 +302,39 @@
         },
         {
             "title": "প্লাগইন সিকিউরিটি (ইউসার রোলেস)",
-            "items": [{
-                    "code": "add_role()"
+            "items": [
+                {
+                    "definition": "নতুন ইউসার রোল তৈরির জন্য",
+                    "code": "add_role( string $role, string $display_name, array $capabilities = array() )"
                 },
                 {
-                    "code": "remove_role()"
+                    "definition": "একটি ইউসার রোল সরানোর জন্য",
+                    "code": "remove_role( string $role )"
                 },
                 {
-                    "code": "get_role()"
+                    "definition": "একটি রোলের তথ্য পেতে",
+                    "code": "get_role( string $role )"
+                },
+                {
+                    "definition": "কোনো রোলের জন্য নতুন ক্যাপাবিলিটি যোগ করার জন্য",
+                    "code": "add_cap( string $role, string $cap, bool $grant = true )"
+                }
+            ]
+        },
+        {
+            "title": "প্লাগইন সিকিউরিটি (ইউসার রোলেস)",
+            "items": [
+                {
+                    "code": "add_role()",
+                    "definition": "ইউসার রোল যোগ করুন"
+                },
+                {
+                    "code": "remove_role()",
+                    "definition": "ইউসার রোল বাদ দিন"
+                },
+                {
+                    "code": "get_role()",
+                    "definition": ""
                 },
                 {
                     "code": "add_cap()"
@@ -321,7 +346,20 @@
                     "code": "user_can()"
                 },
                 {
-                    "code": "current_user_can()"
+                    "code": "current_user_can()",
+                    "definition": "বর্তমান ইউসার করতে পারে"
+                },
+                {
+                    "definition": "একটি রোল থেকে ক্যাপাবিলিটি সরানোর জন্য",
+                    "code": "remove_cap( string $role, string $cap )"
+                },
+                {
+                    "definition": "নির্দিষ্ট একজন ইউসার কোনো কাজ করতে পারবে কিনা তা যাচাইয়ের জন্য",
+                    "code": "user_can( WP_User $user, string $capability )"
+                },
+                {
+                    "definition": "বর্তমান ইউসার কোনো নির্দিষ্ট কাজ করতে পারে কিনা যাচাইয়ের জন্য",
+                    "code": "current_user_can( string $capability )"
                 }
             ]
         },
@@ -356,77 +394,100 @@
                     "code": "in_array()"
                 },
                 {
+                     "definition": "একটি স্ট্রিং সঠিক ইমেইল ফরম্যাটে আছে কি না তা যাচাই করতে ব্যবহৃত হয়",
                     "code": "is_email()"
                 },
                 {
+                     "definition": "ট্যাক্সোনমি বা ক্যাটাগরির মধ্যে কোনো টার্ম (term) বিদ্যমান আছে কি না তা যাচাই করার জন্য ব্যবহৃত হয়",
                     "code": "term_exists()"
                 },
                 {
+                     "definition": "একটি নির্দিষ্ট ইউজারনেম (username) সিস্টেমে বিদ্যমান আছে কি না তা যাচাই করার জন্য ব্যবহৃত হয়",
                     "code": "username_exists()"
                 },
                 {
+                     "definition": "কোনো ফাইলের পাথ বা নাম পরীক্ষা করার জন্য ব্যবহৃত হয়, যাতে নিশ্চিত করা যায় যে এটি সঠিক এবং নিরাপদ ফাইল পাথ হিসেবে ব্যবহার করা যাচ্ছে কিনা",
                     "code": "validate_file()"
                 }
             ]
         },
         {
-            "title": "প্লাগইন সিকিউরিটি (সিকিউরিং ইনপুট)",
-            "items": [{
-                    "code": "sanitize_email()"
-                },
-                {
-                    "code": "sanitize_file_name()"
-                },
-                {
-                    "code": "sanitize_hex_color()"
-                },
-                {
-                    "code": "sanitize_hex_color_no_hash()"
-                },
-                {
-                    "code": "sanitize_html_class()"
-                },
-                {
-                    "code": "sanitize_key()"
-                },
-                {
-                    "code": "sanitize_meta()"
-                },
-                {
-                    "code": "sanitize_mime_type()"
-                },
-                {
-                    "code": "sanitize_option()"
-                },
-                {
-                    "code": "sanitize_sql_orderby()"
-                },
-                {
-                    "code": "sanitize_text_field()"
-                },
-                {
-                    "code": "sanitize_title()"
-                },
-                {
-                    "code": "sanitize_title_for_query()"
-                },
-                {
-                    "code": "sanitize_title_with_dashes()"
-                },
-                {
-                    "code": "sanitize_user()"
-                },
-                {
-                    "code": "esc_url_raw()"
-                },
-                {
-                    "code": "wp_filter_post_kses()"
-                },
-                {
-                    "code": "wp_filter_nohtml_kses()"
-                }
-            ]
+    "title": "প্লাগইন সিকিউরিটি (সিকিউরিং ইনপুট)",
+    "items": [
+        {
+            "definition": "ইমেইল ঠিকানা স্যানিটাইজ করার জন্য",
+            "code": "sanitize_email( string $email )"
         },
+        {
+            "definition": "ফাইলের নাম স্যানিটাইজ করার জন্য",
+            "code": "sanitize_file_name( string $filename )"
+        },
+        {
+            "definition": "হেক্সাডেসিমাল রঙ স্যানিটাইজ করার জন্য (হ্যাশসহ)",
+            "code": "sanitize_hex_color( string $color )"
+        },
+        {
+            "definition": "হেক্সাডেসিমাল রঙ স্যানিটাইজ করার জন্য (হ্যাশ ছাড়া)",
+            "code": "sanitize_hex_color_no_hash( string $color )"
+        },
+        {
+            "definition": "HTML ক্লাস স্যানিটাইজ করার জন্য",
+            "code": "sanitize_html_class( string $class, string $fallback = '' )"
+        },
+        {
+            "definition": "কী স্যানিটাইজ করার জন্য",
+            "code": "sanitize_key( string $key )"
+        },
+        {
+            "definition": "মেটা ডেটা স্যানিটাইজ করার জন্য",
+            "code": "sanitize_meta( string $meta_key, mixed $meta_value, string $object_type, string $object_subtype )"
+        },
+        {
+            "definition": "মাইম টাইপ স্যানিটাইজ করার জন্য",
+            "code": "sanitize_mime_type( string $mime_type )"
+        },
+        {
+            "definition": "অপশন ভ্যালু স্যানিটাইজ করার জন্য",
+            "code": "sanitize_option( string $option, string $value )"
+        },
+        {
+            "definition": "SQL ORDER BY ক্লজ স্যানিটাইজ করার জন্য",
+            "code": "sanitize_sql_orderby( string $orderby_clause )"
+        },
+        {
+            "definition": "টেক্সট ফিল্ড স্যানিটাইজ করার জন্য",
+            "code": "sanitize_text_field( string $str )"
+        },
+        {
+            "definition": "শিরোনাম স্যানিটাইজ করার জন্য",
+            "code": "sanitize_title( string $title, string $fallback_title = '', string $context = 'save' )"
+        },
+        {
+            "definition": "কোয়েরির জন্য শিরোনাম স্যানিটাইজ করার জন্য",
+            "code": "sanitize_title_for_query( string $title )"
+        },
+        {
+            "definition": "ড্যাশসহ শিরোনাম স্যানিটাইজ করার জন্য",
+            "code": "sanitize_title_with_dashes( string $title, string $raw_title = '', string $context = 'save' )"
+        },
+        {
+            "definition": "ইউসারনেম স্যানিটাইজ করার জন্য",
+            "code": "sanitize_user( string $username, bool $strict = false )"
+        },
+        {
+            "definition": "ইউআরএল স্যানিটাইজ করার জন্য (রো ইউআরএলকে সিকিউর করার জন্য)",
+            "code": "esc_url_raw( string $url, array $protocols = null )"
+        },
+        {
+            "definition": "HTML ফিল্টার করার জন্য পোস্ট কন্টেন্ট স্যানিটাইজ করে",
+            "code": "wp_filter_post_kses( string $data )"
+        },
+        {
+            "definition": "HTML ব্যতীত কন্টেন্ট স্যানিটাইজ করার জন্য",
+            "code": "wp_filter_nohtml_kses( string $data )"
+        }
+    ]
+},
         {
             "title": "প্লাগইন সিকিউরিটি (সিকিউরিং আউটপুট)",
             "items": [{
@@ -464,10 +525,12 @@
         {
             "title": "অ্যাডমিনিস্ট্রেশন মেনু",
             "items": [{
-                    "code": "add_menu_page()"
+                    "code": "add_menu_page()",
+                    "definition": "এডমিন ড্যাশবোর্ডে মেনু যুক্ত করুন"
                 },
                 {
-                    "code": "add_submenu_page()"
+                    "code": "add_submenu_page()",
+                    "definition": "এডমিন ড্যাশবোর্ডে সাবমেনু যুক্ত করুন"
                 },
                 {
                     "code": "add_dashboard_page() – index.php"
@@ -534,20 +597,24 @@
                     "code": "[embed]"
                 },
                 {
-                    "code": "add_shortcode()"
+                    "code": "add_shortcode()",
+                    "definition": "শর্টকোড যুক্ত করুন"
                 },
                 {
-                    "code": "remove_shortcode()"
+                    "code": "remove_shortcode()",
+                    "definition": "শর্টকোড মুছে ফেলুন"
                 },
                 {
-                    "code": "shortcode_exists()"
+                    "code": "shortcode_exists()",
+                    "definition": "শর্টকোড আছে কি নাহ সেটা দেখুন"
                 }
             ]
         },
         {
             "title": "সেটিংস",
             "items": [{
-                    "code": "register_setting()"
+                    "code": "register_setting()",
+                    "definition": "রেজিস্টার সেটিং"
                 },
                 {
                     "code": "unregister_setting()"
@@ -571,22 +638,28 @@
                     "code": "add_settings_error()"
                 },
                 {
-                    "code": "get_settings_errors()"
+                    "code": "get_settings_errors()",
+                    "definition": "সেটিং এর এরর চেক দেখতে"
                 },
                 {
-                    "code": "settings_errors()"
+                    "code": "settings_errors()",
+                    "definition": "সেটিং এর এরর চেক করতে"
                 },
                 {
-                    "code": "add_option()"
+                    "code": "add_option()",
+                    "definition": "wp_options টেবিলে কিছু সংযুক্ত করা"
                 },
                 {
-                    "code": "get_option()"
+                    "code": "get_option()",
+                    "definition": "wp_options টেবিল থেকে কিছু দেখার জন্য ব্যবহার হয়"
                 },
                 {
-                    "code": "update_option()"
+                    "code": "update_option()",
+                    "definition": "wp_options টেবিলে কোনো ভ্যালু আপডেট করতে ব্যবহার হয়"
                 },
                 {
-                    "code": "delete_option()"
+                    "code": "delete_option()",
+                    "definition": "wp_options টেবিলে কোনো ভ্যালু ডিলিট করতে ব্যবহার হয়"
                 },
                 {
                     "code": "add_site_option()"
@@ -621,16 +694,20 @@
         {
             "title": "কাস্টম পোস্ট টাইপ & ট্যাক্সোনমি",
             "items": [{
-                    "code": "register_post_type( string $post_type, array|string $args = array() )"
+                    "code": "register_post_type( string $post_type, array|string $args = array() )",
+                    "definition": "নতুন পোস্টটাইপ তৈরির জন্য ব্যবহার করা হয়"
                 },
                 {
-                    "code": "single-{post_type}.php"
+                    "code": "single-{post_type}.php",
+                    "definition": "একক কোনো পোস্টটাইপ এর সিঙ্গেল পেইজ করার জন্য"
                 },
                 {
-                    "code": "archive-{post_type}.php"
+                    "code": "archive-{post_type}.php",
+                    "definition": "একক কোনো পোস্টটাইপ এর আর্কাইভ পেইজ করার জন্য"
                 },
                 {
-                    "code": "register_taxonomy( string $taxonomy, array|string $object_type, array|string $args = array() )"
+                    "code": "register_taxonomy( string $taxonomy, array|string $object_type, array|string $args = array() )",
+                    "definition": "একক কোনো পোস্টটাইপে ক্যাটেগরি এড করার জন্য ব্যবহার করা হয়"
                 }
             ]
         },
@@ -698,10 +775,12 @@
                     "code": "esc_attr_x()"
                 },
                 {
-                    "code": "number_format_i18n()"
+                    "code": "number_format_i18n()",
+                    "definition": "আন্তর্জাতিক নাম্বার ফরমেট"
                 },
                 {
-                    "code": "date_i18n()"
+                    "code": "date_i18n()",
+                    "definition": "তারিখকে আন্তর্জাতিক করার জন্য"
                 }
             ]
         },

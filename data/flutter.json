@@ -43,6 +43,14 @@
                 {
                     "definition": "অর্গানাইজেশন/প্রতিষ্ঠানের নাম সেট করতে",
                     "code": "flutter create --org com.yourorg your_project"
+                },
+                {
+                    "definition": "প্রোজেক্ট টেম্পলেট সেট করতে",
+                    "code": "flutter create --template=(app|package|plugin|module) <project_name>"
+                },
+                {
+                    "definition": "পূর্বে এক্সপোর্টকৃত ফাইলসমূহ ডিলিট করতে",
+                    "code": "flutter clean"
                 }
             ]
         },
@@ -141,6 +149,18 @@
             {
             "definition": "FVM ব্যবহারের সময়, ফ্লাটারের ব্যাসিক কমান্ডগুলোর আগে fvm যোগ করে নিতে হবে। যেমন:",
             "code": "”fvm flutter pub get”, “fvm flutter run”"
+            },
+            {
+            "definition": "FVM ভার্সন ^3.0.0 আপগ্রেড",
+            "code": "FVM এর নতুন ভার্সনগুলোতে বেশ কিছু চেইঞ্জ এসেছে। \n প্রথমেই প্রজেক্টের টার্মিনালে dart pub global activate fvm রান করুন। এতে আপনার মেশিনের FVM, লেটেস্ট ভার্সনে আপডেট হয়ে যাবে।"
+            },
+            {
+            "definition": "FVM v^3.0.0 এর কনফিগ",
+            "code": "ভার্সন ^3.0.0 এর পর থেকে আগের .fvm ফোল্ডারটির সাথেসাথে প্রজেক্টের রুট-এ .fvmrc ফাইল তৈরি হবে। এতে প্রোজেক্ট স্পেসিফিক কনফিগারেশনের ইনফরমেশন থাকবে।"
+            },
+            {
+            "definition": "FVM v^3.0.0 এর সুবিধা",
+            "code": "ভার্সন ^3.0.0 এর থেকে, ফ্লাটারের ব্যাসিক কমান্ডগুলোর জন্য আগের মতো শুরুতে fvm ব্যবহার না করলেও হবে। \n আগে: fvm flutter pub get \n এখন: flutter pub get"
             },
             {
             "definition": "অফিসিয়াল সাইট",
@@ -279,6 +299,197 @@
                 {
                     "definition": "StateNotifierProvider (স্টেট নোটিফায়ার প্রোভাইডার)",
                     "code": "এটিও NotifierProvider এর মতোই, তবে মিউটেবল স্টেট ম্যানেজ করার জন্য ব্যবহার করা হয়। এটি StateNotifier ক্লাসের একটা instance তৈরি করে। \n\nfinal myStateNotifierProvider = StateNotifierProvider<MyStateNotifier, String>((ref) {\n  return MyStateNotifier();\n});"
+                }
+            ]
+        },
+        {
+            "title": "ফ্লাটার লোকালাইজেশন (Flutter Internationalization)",
+            "items": [
+                {
+                "definition": "লোকালাইজেশন কি?",
+                "code": "লোকালাইজেশন হলো একটি অ্যাপে ভিন্ন ভিন্ন ভাষার অনুবাদ রাখা। যার মাধ্যমে ইউজার তাঁর পছন্দ মতো ভাষায় অ্যাপটি ব্যবহার করতে পারে।"
+                },
+                {
+                "definition": "প্রথমেই প্রয়োজনীয় ডিপেন্ডেন্সি যোগ করতে হবে",
+                "code": "dependencies:\n  flutter_localizations: ^0.2.2\n  intl: ^0.19.0"
+                },
+                {
+                "definition": "pubspec.yaml এ generate ফ্ল্যাগ যোগ করুন",
+                "code": "flutter:\n  generate: true"
+                },
+                {
+                "definition": "l10n.yaml ফাইল তৈরি করুন",
+                "code": "arb-dir: lib/l10n\ntemplate-arb-file: app_en.arb\noutput-localization-file: app_localizations.dart"
+                },
+                {
+                "definition": "ARB ফাইল তৈরি করুন (lib/l10n/app_en.arb)",
+                "code": "{\n  \"helloWorld\": \"Hello World!\",\n  \"@helloWorld\": {\n    \"description\": \"The conventional newborn programmer greeting\"\n  }\n}"
+                },
+                {
+                "definition": "MaterialApp এ লোকালাইজেশন ডেলিগেট যোগ করুন",
+                "code": "import 'package:flutter_localizations/flutter_localizations.dart';\nimport 'package:flutter_gen/gen_l10n/app_localizations.dart';\n\nMaterialApp(\n  localizationsDelegates: [\n    AppLocalizations.delegate,\n    GlobalMaterialLocalizations.delegate,\n    GlobalWidgetsLocalizations.delegate,\n    GlobalCupertinoLocalizations.delegate,\n  ],\n  supportedLocales: [\n    Locale('en', ''), // English\n    Locale('bn', ''), // Bengali\n  ],\n)"
+                },
+                {
+                "definition": "Ui তে টেক্সট ব্যবহার করতে -",
+                "code": "Text(AppLocalizations.of(context)!.helloWorld)"
+                },
+                {
+                "definition": "প্যারামিটার সহ অনুবাদ করতে -",
+                "code": "// In ARB file:\n{\n  \"greetingMessage\": \"Hello {name}\",\n  \"@greetingMessage\": {\n    \"placeholders\": {\n      \"name\": {\n        \"type\": \"String\",\n        \"example\": \"Bob\"\n      }\n    }\n  }\n}\n\n// In Dart code:\nText(AppLocalizations.of(context)!.greetingMessage('Alice'))"
+                },
+                {
+                "definition": "বর্তমান ভাষা পরিবর্তন করতে -",
+                "code": "Locale newLocale = Locale('bn', '');\nFlutterI18n.refresh(context, newLocale);"
+                },
+                {
+                "definition": "ডিভাইসের ডিফল্ট লোকেল পেতে -",
+                "code": "Locale myLocale = Localizations.localeOf(context);"
+                },
+                {
+                "definition": "অনুবাদ জেনারেট করতে টার্মিনালে রান করুন -",
+                "code": "flutter gen-l10n"
+                }
+            ]
+        },
+        {
+            "title": "ফ্লাটার WebRTC (Implementing WebRTC in Flutter)",
+            "items": [
+                {
+                "definition": "WebRTC কি?",
+                "code": "WebRTC হলো একটি ফ্রি এবং ওপেন সোর্স প্রজেক্ট। এটা দিয়ে খুব সহজেই, কোনো সার্ভার ছাড়াই ওয়েব ব্রাউজার বা মোবাইল অ্যাপে অডিও, ভিডিও কলের মতো রিয়েল টাইম কম্যুনিকেশন সেট করা যায়।"
+                },
+                {
+                "definition": "WebRTC কানেকশনের ব্যাসিক আইডিয়া",
+                "code": "WebRTC কনেকশনে ২টা peer (ডিভাইস) থাকে। একটা ইনিশিয়েটর(কল করে), অন্যটা রিসিভার(কল রিসিভ করে)। এই দুইটা ডিভাইসের মধ্যে কানেকশন তৈরি হতে হলে, উভয়ের ডিটেইলস(SDP, Ice Candidates) একে অন্যের কাছে পাঠাতে হবে। এইটাকে Signaling বলে।"
+                },
+                {
+                "definition": "SDP (Session Description Protocol) কি?",
+                "code": "সহজ ভাষায় SDP হলো একটি অবজেক্ট, যার ভিতরে দুইটা ডিভাইসের মধ্যে কানেকশন তৈরি করার জন্য প্রয়োজনীয় সব ইনফরমেশন থাকে।"
+                },
+                {
+                "definition": "ICE (Interactive Connectivity Establishment) কি?",
+                "code": "ICE হলো একটি প্রোটোকল, যার মাধ্যমে দুইটা ডিভাইসের মধ্যে কানেকশন তৈরি করা হয়।"
+                },
+                {
+                "definition": "STUN (Session Traversal Utilities for NAT) কি?",
+                "code": "দুইটা ডিভাইসের পাবলিক IP খুজে বের করার জন্য STUN সার্ভার ব্যবহার করা হয়।"
+                },
+                {
+                "definition": "TURN (Traversal Using Relays around NAT) কি?",
+                "code": "খুব সিকিউর কানেকশনে পাবলিক IP খুজে বের করার জন্য TURN সার্ভার ব্যবহার করা হয়।"
+                },
+                {
+                "definition": "ফ্লাটারে কিভাবে WebRTC ইমপ্লিমেন্ট করবেন?",
+                "code": "নেটিভ API ব্যবহার করে অথবা, Agora / ZegoCloud এর মতো বিল্টইন সলিউশন ব্যাবহার করে ফ্লাটারে WebRTC ইমপ্লিমেন্ট করা যায়।"
+                },
+                {
+                "definition": "নেটিভ API ব্যবহার করে WebRTC ডিপেন্ডেন্সি যোগ করতে -",
+                "code": "dependencies:\n  flutter_webrtc: ^0.11.7"
+                },
+                {
+                "definition": "androidmanifest.xml এ প্রয়োজনীয় পারমিশন যোগ করুন (Android)",
+                "code": "<uses-feature android:name=\"android.hardware.camera\" />\n<uses-feature android:name=\"android.hardware.camera.autofocus\" />\n<uses-permission android:name=\"android.permission.CAMERA\" />\n<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />\n<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\" />\n<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\" />"
+                },
+                {
+                "definition": "প্রয়োজনীয় পারমিশন যোগ করুন (iOS)",
+                "code": "<key>NSCameraUsageDescription</key>\n<string>Camera permission description</string>\n<key>NSMicrophoneUsageDescription</key>\n<string>Microphone permission description</string>"
+                },
+                {
+                "definition": "RTCPeerConnection তৈরি করুন",
+                "code": "final Map<String, dynamic> configuration = {\n  'iceServers': [\n    {'urls': 'stun:stun.l.google.com:19302'},\n  ]\n};\nfinal pc = await createPeerConnection(configuration);"
+                },
+                {
+                "definition": "লোকাল মিডিয়া স্ট্রিম যোগ করুন",
+                "code": "final Map<String, dynamic> mediaConstraints = {\n  'audio': true,\n  'video': {\n    'facingMode': 'user',\n  }\n};\nMediaStream stream = await navigator.mediaDevices.getUserMedia(mediaConstraints);\nawait pc.addStream(stream);"
+                },
+                {
+                "definition": "Offer তৈরি করুন",
+                "code": "RTCSessionDescription offer = await pc.createOffer();\nawait pc.setLocalDescription(offer);\n// Send this offer to the remote peer via your signaling server"
+                },
+                {
+                "definition": "Answer রিসিভ করুন",
+                "code": "// Assume 'answer' is received from the remote peer\nawait pc.setRemoteDescription(answer);"
+                },
+                {
+                "definition": "ICE Candidate পাঠান",
+                "code": "pc.onIceCandidate = (candidate) {\n  // Send this candidate to the remote peer via your signaling server\n};"
+                },
+                {
+                "definition": "রিমোট স্ট্রিম রিসিভ করুন",
+                "code": "pc.onAddStream = (stream) {\n  // Use this stream to display video/play audio from remote peer\n};"
+                },
+                {
+                "definition": "কানেকশন বন্ধ করুন",
+                "code": "await pc.close();\nawait stream.dispose();"
+                },
+                {
+                "definition": "WebRTC ডিবাগিং",
+                "code": "// Enable debug logging\nwebrtc.debugger.enabled = true;\n\n// For more detailed logging\nwebrtc.debugger.onEvent.listen((e) {\n  print(e);\n});"
+                },
+                {
+                "definition": "WebRTC শেখার কিছু রিসোর্স",
+                "code": "https://webrtc.org\nhttps://codelabs.developers.google.com/codelabs/webrtc-web\nhttps://www.w3.org/TR/webrtc\n\nhttps://pub.dev/packages/flutter_webrtc"
+                }
+            ]
+        },
+        {
+            "title": "Flutter টেস্টিং (Flutter Testing)",
+            "items": [
+                {
+                "definition": "ফ্লাটারে ৩ ধরনের টেস্ট রান করা যায়",
+                "code": "১. ইউনিট টেস্ট (Unit Test)\n২. উইজেট টেস্ট (Widget Test)\n৩. ইন্টিগ্রেশন টেস্ট (Integration Test)"
+                },
+                {
+                "definition": "Unit Test কি?",
+                "code": "কোনো একটা ফাংশন, মেথড বা ক্লাস টেস্ট করার জন্য ইউনিট টেস্ট ব্যবহার করা হয়।"
+                },
+                {
+                "definition": "Widget Test কি?",
+                "code": "উইজেট টেস্টিং হলো নির্দিষ্ট উইজেট বা উইজেটের কোনো পার্ট টেস্ট করা।"
+                },
+                {
+                "definition": "Integration Test কি?",
+                "code": "ইন্টিগ্রেশন টেস্টিং এর মাধ্যমে একটি এপের কমপ্লিট ফাংশনালিটি টেস্ট করা হয়। একে এন্ড টু এন্ড টেস্টও বলা হয়।"
+                },
+                {
+                "definition": "টেস্টিং রিলেটেড প্যাকেজ যোগ করতে -",
+                "code": "dev_dependencies:\n  flutter_test:\n    sdk: flutter\n  integration_test:\n    sdk: flutter\n  mockito: ^5.0.0"
+                },
+                {
+                "definition": "ইউনিট টেস্ট রান করতে -",
+                "code": "flutter test test/unit_test.dart"
+                },
+                {
+                "definition": "উইজেট টেস্ট রান করতে -",
+                "code": "flutter test test/widget_test.dart"
+                },
+                {
+                "definition": "ইন্টিগ্রেশন টেস্ট রান করতে -",
+                "code": "flutter test integration_test/app_test.dart"
+                },
+                {
+                "definition": "সকল টেস্ট রান করতে -",
+                "code": "flutter test"
+                },
+                {
+                "definition": "ইউনিট টেস্ট উদাহরণ",
+                "code": "void main() {\n  test('String.split() splits the string on the delimiter', () {\n    var string = 'foo,bar,baz';\n    expect(string.split(','), equals(['foo', 'bar', 'baz']));\n  });\n}"
+                },
+                {
+                "definition": "উইজেট টেস্ট উদাহরণ",
+                "code": "void main() {\n  testWidgets('MyWidget has a title and message', (WidgetTester tester) async {\n    await tester.pumpWidget(MyWidget(title: 'T', message: 'M'));\n    final titleFinder = find.text('T');\n    final messageFinder = find.text('M');\n    expect(titleFinder, findsOneWidget);\n    expect(messageFinder, findsOneWidget);\n  });\n}"
+                },
+                {
+                "definition": "ইন্টিগ্রেশন টেস্ট উদাহরণ",
+                "code": "void main() {\n  IntegrationTestWidgetsFlutterBinding.ensureInitialized();\n  testWidgets('tap on the floating action button, verify counter',\n    (WidgetTester tester) async {\n      app.main();\n      await tester.pumpAndSettle();\n      expect(find.text('0'), findsOneWidget);\n      final Finder fab = find.byTooltip('Increment');\n      await tester.tap(fab);\n      await tester.pumpAndSettle();\n      expect(find.text('1'), findsOneWidget);\n  });\n}"
+                },
+                {
+                "definition": "মক অবজেক্ট তৈরি করেন (Mockito ব্যবহার করে)",
+                "code": "import 'package:mockito/mockito.dart';\n\nclass MockYourClass extends Mock implements YourClass {}\n\nvoid main() {\n  final mock = MockYourClass();\n  when(mock.someMethod()).thenReturn('mocked value');\n}"
+                },
+                {
+                "definition": "টেস্ট কভারেজ রিপোর্ট জেনারেট করেন",
+                "code": "flutter test --coverage\n# কভারেজ রিপোর্ট coverage/lcov.info ফাইলে জেনারেট হবে\n# HTML রিপোর্ট জেনারেট করতে lcov ইনস্টল করেন এবং নিচের কমান্ড চালান:\n# genhtml coverage/lcov.info -o coverage/html"
                 }
             ]
         },

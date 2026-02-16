@@ -150,6 +150,10 @@
                 {
                     "definition": "একটি স্ট্রিং খালি কিনা",
                     "code": "''.isEmpty"
+                },
+                {
+                    "definition": "একটি স্ট্রিং এ ভ্যালু আছে",
+                    "code": "''.isNotEmpty"
                 }
             ]
         },
@@ -476,19 +480,23 @@
             "items": [
                 {
                     "definition": "প্রোজেক্টের সবগুলো প্যাকেজ ডাউনলোড করা",
-                    "code": "pub get"
+                    "code": "dart pub get"
                 },
                 {
                     "definition": "লোকাল ক্যাশ থেকে প্যাকেজ সংযুক্ত করা",
-                    "code": "pub get --offline"
+                    "code": "dart pub get --offline"
                 },
                 {
                     "definition": "লোকাল ক্যাশে একটি প্যাকেজ সংযুক্ত করা",
-                    "code": "pub cache add <প্যাকেজের নাম> --version \"<প্যাকেজের ভার্সন>\""
+                    "code": "dart pub cache add <প্যাকেজের নাম> --version \"<প্যাকেজের ভার্সন>\""
                 },
                 {
-                    "definition": "সম্পাদনার কারণে প্যাকেজ মেরামতের জন্য পুনরায় ইনস্টল করা",
-                    "code": "pub cache repair"
+                    "definition": "সিস্টেম ক্যাশে সমস্ত প্যাকেজ পুনরায় ইনস্টল করতে",
+                    "code": "dart pub cache repair"
+                },
+                {
+                    "definition": "সিস্টেম ক্যাশ রিমুভ করতে",
+                    "code": "dart pub cache clean"
                 },
                 {
                     "definition": "ব্যবহৃত প্যাকেজগুলোকে ট্রি আকারে প্রিন্ট করা",
@@ -496,15 +504,15 @@
                 },
                 {
                     "definition": "ব্যবহৃত কোনো প্যাকেজের নতুন ভার্সন এসেছে কিনা খুঁজে দেখা",
-                    "code": "pub outdated"
+                    "code": "dart pub outdated"
                 },
                 {
                     "definition": "ব্যবহৃত প্যাকেজগুলোকে নতুন ভার্সনে আপগ্রেড করা",
-                    "code": "pub upgrade"
+                    "code": "dart pub upgrade"
                 },
                 {
                     "definition": "সার্বজনীন উপলব্ধ প্যাকেজ সচল করা",
-                    "code": "pub global activate <প্যাকেজের নাম>"
+                    "code": "dart pub global activate <প্যাকেজের নাম>"
                 }
             ]
         },
@@ -554,6 +562,10 @@
                 {
                     "definition": "যেকোনো কমান্ডের সাহায্য পেতে",
                     "code": "dart help pub outdated" 
+                },
+                {
+                    "definition": "একটি নতুন ডার্ট সিএলআই প্রোজেক্ট তৈরি করতে",
+                    "code": "dart create dart_cli -t console" 
                 }
             ]
         },

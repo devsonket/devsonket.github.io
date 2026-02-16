@@ -179,6 +179,10 @@
                 {
                     "definition": "ছবিতে লিঙ্ক যুক্ত করতে",
                     "code": "[![ডেভসংকেত লোগো](/images/logo.png)](http://devsonket.com)"
+                },
+                {
+                    "definition": "HTML Tag ব্যবহার করে লিঙ্ক নিয়ে কাজ করতে",
+                    "code": "<a href='https://devsonket.com'> Dev Sonket </a>"
                 }
             ]
         },

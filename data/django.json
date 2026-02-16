@@ -162,7 +162,7 @@
             "items": [
                 {
                     "definition": "অ্যাপ তৈরী করা",
-                    "code": "django-admin startapp <app_name>"
+                    "code": "python manage.py startapp <app_name>"
                 },
                 {
                     "definition": "প্রোজেক্ট এর settings.py ফাইলে অ্যাাপ ইনস্টল করার জন্য",
@@ -192,6 +192,19 @@
                 {
                     "definition": "পাসওয়ার্ড পরিবর্তন করা",
                     "code": "python manage.py changepassword <username>"
+                }
+            ]
+        },
+        {
+            "title": "ইমেইল পাঠানো",
+            "items": [
+                {
+                    "definition": "ইমেইল কনসোল এ প্রিন্ট করা",
+                    "code": "EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'"
+                },
+                {
+                    "definition": "SMTP সার্ভার ব্যবহার করে মেইল পাঠানো",
+                    "code": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'"
                 }
             ]
         },

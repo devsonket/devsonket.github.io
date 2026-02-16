@@ -1,0 +1,64 @@
+{
+  "id": "YAY",
+  "title": "YAY- আর্চ লিনাক্স প্যাকেজ ম্যানেজার",
+  "slug": "YAY",
+  "description": "YAY- একটি সিম্পল আর্চ প্যাকেজ ম্যানেজার",
+  "contents": [{
+    }, {
+      "id": "001",
+      "definition": "প্যাকেজ ডাটাবেস আপডেট করতে:",
+      "code": "yay -Syyy"
+    }, {
+      "id": "002",
+      "definition": "সিস্টেম এবং ইউজার প্যাকেজ আপডেট এর জন্য:",
+      "code": "yay # or `yay -Syu`"
+    }, {
+      "id": "003",
+      "definition": "শুধু AUR প্যাকেজ আপডেট এর জন্য:",
+      "code": "yay -Sua"
+    }, {
+      "id": "004",
+      "definition": "সিস্টেম এবং সব আপডেট চেক করার জন্য:",
+      "code": "yay -Qu"
+    }, {
+      "id": "005",
+      "definition": "শুধু AUR প্যাকেজ আপডেট চেক করার জন্য:",
+      "code": "yay -Qua"
+    }, {
+      "id": "006",
+      "definition": "প্যাকেজ সার্চ এর জন্য:",
+      "code": "yay package-name # or `yay -Ss package-name`"
+    }, {
+      "id": "007",
+      "definition": "কোনো প্যাকেজ ইনস্টল এর জন্য:",
+      "code": "yay -S package-name"
+    }, {
+      "id": "008",
+      "definition": "প্যাকেজ এর ইনফরমেশন প্রিন্ট এর জন্য",
+      "code": "yay -Si package-to-print-info"
+    }, {
+      "id": "009",
+      "definition": "মূল রিপোজিটরি (যেমন AUR, pkgbuild, ...) থেকে ইনস্টল করা হয়নি এমন প্যাকেজের তালিকা দেখার জন্য:",
+      "code": "yay -Qm"
+    }, {
+      "id": "010",
+      "definition": "প্যাকেজ রিমুভ করার জন্য:",
+      "code": "yay -R package-name"
+    }, {
+      "id": "011",
+      "definition": "প্যাকেজ ডাটা সহ রিমুভ করতে:",
+      "code": "yay -Rc package-name"
+    }, {
+      "id": "012",
+      "definition": "সিস্টেম স্ট্যাট প্রিন্ট করুন:",
+      "code": "yay -Ps"
+    }, {
+      "id": "013",
+      "definition": "প্যাকেজের ক্যাশ পরিষ্কার করতে:",
+      "code": "yay -Sc"
+    }, {
+      "id": "014",
+      "definition": "অপ্রয়োজনীয় ডিপেন্ডেন্সি পরিষ্কার করতে:",
+      "code": "yay -Yc"
+    }]
+  }

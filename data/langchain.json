@@ -1,0 +1,73 @@
+{
+    "id": "langchain",
+    "title": "LangChain",
+    "slug": "langchain",
+    "description": "LangChain হল এআই মডেলগুলি ব্যবহার করে অ্যাপ্লিকেশন তৈরি করার জন্য একটি শক্তিশালী ফ্রেমওয়ার্ক যা Python এবং Node.js-এ ব্যাবহার করা হয়। এটি LLM (Large Language Model) এপ্লিকেশনগুলির জন্য বিভিন্ন টুল এবং কম্পোনেন্ট সরবরাহ করে।",
+    "colorPref": "#5A67D8",
+    "contents": [
+        { 
+            "title": "প্রাথমিক কমান্ড এবং ইন্সটলেশন (Python)",
+            "items": [
+                {
+                    "definition": "LangChain ইন্সটল করা",
+                    "code": "pip install langchain"
+                },
+                {
+                    "definition": "OpenAI API ইন্টিগ্রেশন",
+                    "code": "pip install openai"
+                },
+                {
+                    "definition": "প্রাথমিক সেটআপ",
+                    "code": "from langchain.llms import OpenAI\nllm = OpenAI(temperature=0.9)\ntext = 'Translate this into French.'\nprint(llm(text))"
+                },
+                {
+                    "definition": "চেইন তৈরি করা (Chain Creation)",
+                    "code": "from langchain.prompts import PromptTemplate\ntemplate = PromptTemplate(input_variables=['name'], template='What is {name} famous for?')\nprint(template.format(name='Albert Einstein'))"
+                }
+            ]
+        },
+        { 
+            "title": "প্রাথমিক কমান্ড এবং ইন্সটলেশন (Node.js)",
+            "items": [
+                {
+                    "definition": "LangChain ইনস্টল করা",
+                    "code": "npm install langchain"
+                },
+                {
+                    "definition": "OpenAI ইন্টিগ্রেশন",
+                    "code": "npm install openai"
+                },
+                {
+                    "definition": "প্রাথমিক সেটআপ",
+                    "code": "const { OpenAI } = require('langchain/llms/openai');\nconst llm = new OpenAI({ temperature: 0.9 });\nconst text = 'Translate this into French.';\nllm.call(text).then(console.log);"
+                }
+            ]
+        },
+        {
+            "title": "চেইন এবং টেমপ্লেট ব্যবহারের উদাহরণ (Python)",
+            "items": [
+                {
+                    "definition": "প্রম্পট টেমপ্লেট তৈরি করা",
+                    "code": "from langchain.prompts import PromptTemplate\ntemplate = PromptTemplate(input_variables=['name'], template='Who is {name}?')\nprint(template.format(name='Isaac Newton'))"
+                },
+                {
+                    "definition": "LLM চেইন ব্যবহার করা",
+                    "code": "from langchain.chains import LLMChain\nchain = LLMChain(llm=llm, prompt=template)\nprint(chain.run('Marie Curie'))"
+                }
+            ]
+        },
+        {
+            "title": "চেইন এবং টেমপ্লেট ব্যবহারের উদাহরণ (Node.js)",
+            "items": [
+                {
+                    "definition": "প্রম্পট টেমপ্লেট তৈরি করা",
+                    "code": "const { PromptTemplate } = require('langchain/prompts');\nconst template = new PromptTemplate({ inputVariables: ['name'], template: 'Who is {name}?' });\nconsole.log(template.format({ name: 'Nikola Tesla' }));"
+                },
+                {
+                    "definition": "LLM চেইন ব্যবহার করা",
+                    "code": "const { LLMChain } = require('langchain/chains');\nconst chain = new LLMChain({ llm, prompt: template });\nchain.run('Galileo').then(console.log);"
+                }
+            ]
+        }
+    ]
+}

@@ -107,5 +107,20 @@
                 } 
             ]
         }
+        ,
+        {
+            "title": "সিগনাল",
+            "items": [
+                {
+                    "definition": "সিগনাল ডিক্লার করার নিয়ম - ",
+                    "code": "newSignal = signal(<initial_value>) \n // initial_value হতে পারে 0, '', [], {}, true, false, null, undefined"
+                },
+                {
+                    "definition": "সিগনাল-এর ভ্যালু আপডেট করার নিয়ম - ",
+                    "code": "testSignal = signal(\"I am on devsonket\") \n new_value হতে পারে 0, '', [], {}, true, false, null, undefined \n console.log('signal value checking',testSignal()); \n new_value হতে হবে সিগনাল-এর ইনিশিয়াল ভ্যালুর টাইপের সাথে মিল রেখে \n testSignal.set(\"My mother tongue is Bangla\") \n new_value হতে হবে সিগনাল-এর ইনিশিয়াল ভ্যালুর টাইপের সাথে মিল রেখে \n console.log('signal value updated',testSignal()); \n"
+             }
+              
+            ]
+        }
     ]
 }

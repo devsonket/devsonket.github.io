@@ -15,20 +15,28 @@
                     "code": "yarn create next-app project-name"
                 },
                 {
-                    "definition": "নেক্সট জেএস লোকাল ডেভেলপমেন্ট সার্ভার রান করার জন্য",
-                    "code": "npm run dev"
+                    "definition": "একটি ফ্রেশ নেক্সট জেএস প্রজেক্ট কোনো বিদ্যমান ডিরেক্টিরেতে তৈরি করার জন্য (npm)",
+                    "code": "npm create next-app ./"
                 },
                 {
-                    "definition": "নেক্সট জেএস প্রোডাকশন সাইট বিল্ড করার জন্য",
-                    "code": "npm run build"
+                    "definition": "একটি ফ্রেশ নেক্সট জেএস প্রজেক্ট কোনো বিদ্যমান ডিরেক্টিরেতে তৈরি করার জন্য (yarn)",
+                    "code": "yarn create next-app ./"
                 },
                 {
-                    "definition": "নেক্সট জেএস প্রোডাকশন সার্ভার রান করার জন্য",
-                    "code": "npm run start"
+                    "definition": "নেক্সট জেএস লোকাল ডেভেলপমেন্ট সার্ভার রান করার জন্য (npm||yarn)",
+                    "code": "npm run dev || yarn dev"
                 },
                 {
-                    "definition": "নেক্সট জেএস স্ট্যাটিক সাইটের আউটপুট তৈরি করা জন্য",
-                    "code": "npm run export"
+                    "definition": "নেক্সট জেএস প্রোডাকশন সাইট বিল্ড করার জন্য (npm||yarn)",
+                    "code": "npm run build || yarn dev"
+                },
+                {
+                    "definition": "নেক্সট জেএস প্রোডাকশন সার্ভার রান করার জন্য (npm||yarn)",
+                    "code": "npm run start || yarn dev"
+                },
+                {
+                    "definition": "নেক্সট জেএস স্ট্যাটিক সাইটের আউটপুট তৈরি করা জন্য (npm||yarn)",
+                    "code": "npm run export || yarn dev"
                 },
                 {
                     "definition": "নেক্সট জেএস CLI কামান্ড সূমহ দেখার জন্য",
@@ -178,6 +186,86 @@
                     "code": "https://nextjs.org/docs/api-reference/next.config.js/introduction"
                 }
             ]
+        },
+        {
+            "title": "নেক্সট জেএস  অ্যাপ রাউটারের A to Z",
+            "items": [
+                {
+                    "section": "Routing",
+                    "definition": "Next.js App Router এর মাধ্যমে ফাইল-ভিত্তিক রাউটিং তৈরি করা হয়",
+                    "code": "app/page.js (home page), app/about/page.js"
+                },
+                {
+                    "definition": "ডাইনামিক রাউট তৈরি করতে",
+                    "code": "app/blog/[slug]/page.js"
+                },
+                {
+                    "definition": "ক্যাচ-অল রাউট তৈরি করতে",
+                    "code": "app/docs/[...slug]/page.js"
+                },
+                {
+                    "definition": "ক্লায়েন্ট কম্পোনেন্ট থেকে নেভিগেট করতে",
+                    "code": "useRouter()"
+                },
+                {
+                    "section": "Data Fetching",
+                    "definition": "সার্ভার কম্পোনেন্টের মধ্যে ডাটা ফেচ করার জন্য",
+                    "code": "fetch('https://api.example.com/data')"
+                },
+                {
+                    "definition": "সার্ভার অ্যাকশন ব্যবহার করে ফর্ম সাবমিট করতে",
+                    "code": "'use server'; export async function createPost(formData) { ... }"
+                },
+                {
+                    "section": "Caching",
+                    "definition": "স্ট্যাটিক ডাটা ক্যাশিং করার জন্য",
+                    "code": "fetch('...', { next: { revalidate: 60 } })"
+                },
+                {
+                    "definition": "ডাটা ক্যাশিং বন্ধ করতে",
+                    "code": "fetch('...', { cache: 'no-store' })"
+                },
+                {
+                    "section": "Styling",
+                    "definition": "গ্লোবাল CSS ফাইল ইম্পোর্ট করতে",
+                    "code": "import '@/styles/globals.css';"
+                },
+                {
+                    "definition": "Tailwind CSS ব্যবহার করতে",
+                    "code": "npm install -D tailwindcss postcss autoprefixer"
+                },
+                {
+                    "section": "Optimization",
+                    "definition": "ইমেজ অপটিমাইজ করতে",
+                    "code": "<Image src='/image.jpg' width={500} height={300} alt='Image' />"
+                },
+                {
+                    "definition": "Font অপটিমাইজ করতে",
+                    "code": "import { Inter } from 'next/font/google';"
+                },
+                {
+                    "section": "Configuration",
+                    "definition": "Next.js কনফিগারেশন ফাইল",
+                    "code": "next.config.js"
+                },
+                {
+                    "section": "Testing",
+                    "definition": "Jest এবং React Testing Library সেটআপ করতে",
+                    "code": "npm install --save-dev jest @testing-library/react"
+                },
+                {
+                    "section": "Authentication",
+                    "definition": "NextAuth.js ব্যবহার করে অথেনটিকেশন ইন্টিগ্রেট করতে",
+                    "code": "npm install next-auth"
+                },
+                {
+                    "section": "Deploying",
+                    "definition": "Vercel-এ ডিপ্লয় করতে",
+                    "code": "vercel --prod"
+                }
+            ]
         }
+       
+        
     ]
 }

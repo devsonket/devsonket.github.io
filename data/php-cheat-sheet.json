@@ -604,6 +604,115 @@
                     "code": "is_string()"
                 }
             ]
+        },
+        {
+            "title": "পিএইচপি ৮.৪ এর নতুন ফিচারস",
+            "items": [
+                {
+                    "definition": "প্রোপার্টি হুকস - প্রোপার্টি এক্সেস এর আগে বা পরে কাস্টম লজিক চালানোর জন্য",
+                    "code": "class User {\n  public string $name { \n    get => $this->formatName();\n    set($value) {\n      $this->name = trim($value);\n    }\n  }\n  private function formatName() {\n    return ucfirst($this->name);\n  }\n}"
+                },
+                {
+                    "definition": "অসমমিত ভিজিবিলিটি - প্রোপার্টি রিড এবং রাইট অ্যাক্সেস আলাদা করা সম্ভব",
+                    "code": "class User {\n  public private(set) string $username;\n  private public(get) string $email;\n}"
+                },
+                {
+                    "definition": "নতুন অবজেক্ট ইনস্টেন্সিয়েশন দিয়ে সরাসরি মেথড এক্সেস করা",
+                    "code": "new User()->getName(); // আগে: (new User())->getName();"
+                },
+                {
+                    "definition": "অ্যারে এর নতুন ফাংশন array_find()",
+                    "code": "array_find($array, fn($value) => $value > 10); // প্রথম মিলযুক্ত আইটেম রিটার্ন করে"
+                },
+                {
+                    "definition": "array_find_key() ফাংশন",
+                    "code": "array_find_key($array, fn($value) => $value > 10); // প্রথম মিলযুক্ত আইটেমের কী রিটার্ন করে"
+                },
+                {
+                    "definition": "array_all() ফাংশন",
+                    "code": "array_all($array, fn($value) => $value > 5); // সবগুলো আইটেম কন্ডিশন পূরণ করলে true রিটার্ন করে"
+                },
+                {
+                    "definition": "array_any() ফাংশন",
+                    "code": "array_any($array, fn($value) => $value > 10); // যেকোন একটি আইটেম কন্ডিশন পূরণ করলে true রিটার্ন করে"
+                },
+                {
+                    "definition": "#[\\Deprecated] অ্যাট্রিবিউট",
+                    "code": "#[\\Deprecated(since: '8.4', message: 'অন্য মেথড ব্যবহার করুন')]\npublic function oldMethod() { return $this->newMethod(); }"
+                },
+                {
+                    "definition": "BCMath এর নতুন অবজেক্ট ওরিয়েন্টেড API",
+                    "code": "use BcMath\\Number;\n$num1 = new Number('10.5');\n$num2 = new Number('5.2');\n$result = $num1 + $num2; // '15.7'"
+                },
+                {
+                    "definition": "নতুন BCMath ফাংশন bcceil()",
+                    "code": "bcceil('10.2'); // '11'"
+                },
+                {
+                    "definition": "নতুন BCMath ফাংশন bcfloor()",
+                    "code": "bcfloor('10.7'); // '10'"
+                },
+                {
+                    "definition": "নতুন BCMath ফাংশন bcround()",
+                    "code": "bcround('10.5', 0); // '11'"
+                },
+                {
+                    "definition": "নতুন BCMath ফাংশন bcdivmod()",
+                    "code": "bcdivmod('10', '3', 2); // ['3.33', '1']"
+                },
+                {
+                    "definition": "HTML5 সাপোর্ট এবং নতুন DOM API",
+                    "code": "$dom = Dom\\HTMLDocument::createFromString('<div class=\"test\">Hello</div>');\n$element = $dom->querySelector('div.test');"
+                },
+                {
+                    "definition": "DOM এলিমেন্টের দ্বারা HTML ক্লাসলিস্ট ব্যবহার",
+                    "code": "$element->classList->add('active');\n$element->classList->contains('test'); // true"
+                },
+                {
+                    "definition": "PDO এর ড্রাইভার সাপোর্ট সাবক্লাস",
+                    "code": "$db = new Pdo\\MySql('mysql:host=localhost;dbname=test', 'user', 'pass');"
+                },
+                {
+                    "definition": "মাল্টিবাইট স্ট্রিং ফাংশন mb_trim()",
+                    "code": "mb_trim('  হ্যালো ওয়ার্ল্ড  ');"
+                },
+                {
+                    "definition": "মাল্টিবাইট স্ট্রিং ফাংশন mb_ltrim()",
+                    "code": "mb_ltrim('  হ্যালো ওয়ার্ল্ড  ');"
+                },
+                {
+                    "definition": "মাল্টিবাইট স্ট্রিং ফাংশন mb_rtrim()",
+                    "code": "mb_rtrim('  হ্যালো ওয়ার্ল্ড  ');"
+                },
+                {
+                    "definition": "মাল্টিবাইট স্ট্রিং ফাংশন mb_ucfirst()",
+                    "code": "mb_ucfirst('হ্যালো'); // প্রথম অক্ষর কে বড় হাতের করে"
+                },
+                {
+                    "definition": "মাল্টিবাইট স্ট্রিং ফাংশন mb_lcfirst()",
+                    "code": "mb_lcfirst('হ্যালো'); // প্রথম অক্ষর কে ছোট হাতের করে"
+                },
+                {
+                    "definition": "নতুন RoundingMode ইনাম",
+                    "code": "round(10.5, 0, RoundingMode::TowardsZero);"
+                },
+                {
+                    "definition": "DateTime::createFromTimestamp()",
+                    "code": "DateTime::createFromTimestamp(1720022400); // টাইমস্ট্যাম্প থেকে DateTime অবজেক্ট তৈরী করা"
+                },
+                {
+                    "definition": "DateTimeImmutable::createFromTimestamp()",
+                    "code": "DateTimeImmutable::createFromTimestamp(1720022400);"
+                },
+                {
+                    "definition": "DateTime::getMicrosecond() এবং setMicrosecond()",
+                    "code": "$date = new DateTime();\n$date->getMicrosecond(); // মাইক্রোসেকেন্ড পাওয়া\n$date->setMicrosecond(500000); // মাইক্রোসেকেন্ড সেট করা"
+                },
+                {
+                    "definition": "grapheme_str_split() ফাংশন",
+                    "code": "grapheme_str_split('বাংলা', 1); // ['ব', 'া', 'ং', 'ল', 'া']"
+                }
+            ]
         }
     ]
 }
