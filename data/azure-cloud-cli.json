@@ -181,7 +181,276 @@
                     "definition":"ক্লাস্টার ডিলিট করা ",
                     "code":"az acs delete -g acsrg1 -n acs-cluster"
 
-                }
+                },
+                {
+                "title": "Azure CLI জেনারেল কমান্ড",
+                "items": [
+                    {
+                        "definition": "Azure CLI-এর ভার্সন জানা",
+                        "code": "az version"
+                    },
+                    {
+                        "definition": "বর্তমান সাবস্ক্রিপশনের বিস্তারিত দেখা",
+                        "code": "az account show --output table"
+                    },
+                    {
+                        "definition": "Azure CLI-এর সাহায্য নেওয়া",
+                        "code": "az --help"
+                    },
+                    {
+                        "definition": "কোনো কমান্ডের বিস্তারিত সাহায্য দেখা",
+                        "code": "az vm create --help"
+                    },
+                    {
+                        "definition": "ডিফল্ট রিসোর্স গ্রুপ ও লোকেশন সেট করা",
+                        "code": "az configure --defaults group=myResourceGroup location=eastus"
+                    },
+                    {
+                        "definition": "কমান্ডের আউটপুট টেবিল আকারে দেখানো",
+                        "code": "az vm list --output table"
+                    },
+                    {
+                        "definition": "Azure CLI থেকে লগআউট করা",
+                        "code": "az logout"
+                    }
+                ]
+            },
+            {
+                "title": "রিসোর্স গ্রুপ ও রিসোর্স ম্যানেজমেন্ট",
+                "items": [
+                    {
+                        "definition": "সব রিসোর্স গ্রুপ লিস্ট করা",
+                        "code": "az group list --output table"
+                    },
+                    {
+                        "definition": "নির্দিষ্ট রিসোর্স গ্রুপের বিস্তারিত দেখা",
+                        "code": "az group show --name myResourceGroup"
+                    },
+                    {
+                        "definition": "নির্দিষ্ট রিসোর্স গ্রুপের সব রিসোর্স দেখা",
+                        "code": "az resource list --resource-group myResourceGroup --output table"
+                    },
+                    {
+                        "definition": "নির্দিষ্ট নাম দিয়ে রিসোর্স খোঁজা",
+                        "code": "az resource list --name myResourceName --output table"
+                    },
+                    {
+                        "definition": "রিসোর্স গ্রুপে ট্যাগ যোগ করা",
+                        "code": "az group update --name myResourceGroup --set tags.environment=development"
+                    },
+                    {
+                        "definition": "রিসোর্সের নাম, ধরন ও লোকেশন দেখা",
+                        "code": "az resource list --query \"[].{Name:name, Type:type, Location:location}\" --output table"
+                    }
+                ]
+            },
+            {
+                "title": "ভার্চুয়াল মেশিনের অ্যাডভান্সড ম্যানেজমেন্ট",
+                "items": [
+                    {
+                        "definition": "ভার্চুয়াল মেশিনের বিস্তারিত তথ্য দেখা",
+                        "code": "az vm show --resource-group myResourceGroup --name myVM"
+                    },
+                    {
+                        "definition": "ভার্চুয়াল মেশিনের IP Address দেখা",
+                        "code": "az vm list-ip-addresses --resource-group myResourceGroup --name myVM --output table"
+                    },
+                    {
+                        "definition": "নির্দিষ্ট রিসোর্স গ্রুপের সব ভার্চুয়াল মেশিন দেখা",
+                        "code": "az vm list --resource-group myResourceGroup --output table"
+                    },
+                    {
+                        "definition": "ভার্চুয়াল মেশিনের বিস্তারিত JSON আউটপুট দেখা",
+                        "code": "az vm show --resource-group myResourceGroup --name myVM --output json"
+                    },
+                    {
+                        "definition": "ভার্চুয়াল মেশিনে HTTP-এর জন্য TCP পোর্ট 80 খোলা",
+                        "code": "az vm open-port --resource-group myResourceGroup --name myVM --port 80"
+                    },
+                    {
+                        "definition": "Linux ভার্চুয়াল মেশিনে কমান্ড চালানো",
+                        "code": "az vm run-command invoke --resource-group myResourceGroup --name myVM --command-id RunShellScript --scripts \"whoami\""
+                    },
+                    {
+                        "definition": "Windows ভার্চুয়াল মেশিনে PowerShell কমান্ড চালানো",
+                        "code": "az vm run-command invoke --resource-group myResourceGroup --name myVM --command-id RunPowerShellScript --scripts \"Get-ComputerInfo\""
+                    }
+                ]
+            },
+            {
+                "title": "নেটওয়ার্ক ও কানেক্টিভিটি ম্যানেজমেন্ট",
+                "items": [
+                    {
+                        "definition": "ভার্চুয়াল নেটওয়ার্কের তালিকা দেখা",
+                        "code": "az network vnet list --resource-group myResourceGroup --output table"
+                    },
+                    {
+                        "definition": "Network Security Group-এর তালিকা দেখা",
+                        "code": "az network nsg list --resource-group myResourceGroup --output table"
+                    },
+                    {
+                        "definition": "Public IP Address-এর তালিকা দেখা",
+                        "code": "az network public-ip list --resource-group myResourceGroup --output table"
+                    },
+                    {
+                        "definition": "Network Interface-এর তালিকা দেখা",
+                        "code": "az network nic list --resource-group myResourceGroup --output table"
+                    },
+                    {
+                        "definition": "Network Security Group-এর নিয়ম দেখা",
+                        "code": "az network nsg rule list --resource-group myResourceGroup --nsg-name myNSG --output table"
+                    },
+                    {
+                        "definition": "ভার্চুয়াল নেটওয়ার্ক ও সাবনেট তৈরি করা",
+                        "code": "az network vnet create --resource-group myResourceGroup --name myVNet --address-prefix 10.0.0.0/16 --subnet-name mySubnet --subnet-prefix 10.0.1.0/24 --location eastus"
+                    }
+                ]
+            },
+            {
+                "title": "Azure Storage Account ও Blob ম্যানেজমেন্ট",
+                "items": [
+                    {
+                        "definition": "সব Storage Account লিস্ট করা",
+                        "code": "az storage account list --output table"
+                    },
+                    {
+                        "definition": "Storage Account-এর বিস্তারিত দেখা",
+                        "code": "az storage account show --name mystorageaccount --resource-group myResourceGroup"
+                    },
+                    {
+                        "definition": "Blob Container তৈরি করা",
+                        "code": "az storage container create --name mycontainer --account-name mystorageaccount --auth-mode login"
+                    },
+                    {
+                        "definition": "লোকাল ফাইল Blob Storage-এ আপলোড করা",
+                        "code": "az storage blob upload --account-name mystorageaccount --container-name mycontainer --name myfile.txt --file ./myfile.txt --auth-mode login"
+                    },
+                    {
+                        "definition": "Blob Container-এর ফাইল লিস্ট করা",
+                        "code": "az storage blob list --account-name mystorageaccount --container-name mycontainer --auth-mode login --output table"
+                    },
+                    {
+                        "definition": "Blob Storage থেকে ফাইল ডাউনলোড করা",
+                        "code": "az storage blob download --account-name mystorageaccount --container-name mycontainer --name myfile.txt --file ./downloaded-file.txt --auth-mode login"
+                    }
+                ]
+            },
+            {
+                "title": "Azure App Service ও ওয়েব অ্যাপ ডেপ্লয়মেন্ট",
+                "items": [
+                    {
+                        "definition": "Linux App Service Plan তৈরি করা",
+                        "code": "az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku B1 --is-linux"
+                    },
+                    {
+                        "definition": "App Service-এ ওয়েব অ্যাপ তৈরি করা",
+                        "code": "az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name myUniqueWebApp123"
+                    },
+                    {
+                        "definition": "Linux-এর জন্য উপলভ্য ওয়েব অ্যাপ রানটাইম দেখা",
+                        "code": "az webapp list-runtimes --os linux --output table"
+                    },
+                    {
+                        "definition": "ZIP ফাইল থেকে ওয়েব অ্যাপ ডেপ্লয় করা",
+                        "code": "az webapp deploy --resource-group myResourceGroup --name myUniqueWebApp123 --src-path app.zip --type zip"
+                    },
+                    {
+                        "definition": "ওয়েব অ্যাপ রিস্টার্ট করা",
+                        "code": "az webapp restart --resource-group myResourceGroup --name myUniqueWebApp123"
+                    },
+                    {
+                        "definition": "রিসোর্স গ্রুপের ওয়েব অ্যাপগুলো লিস্ট করা",
+                        "code": "az webapp list --resource-group myResourceGroup --output table"
+                    }
+                ]
+            },
+            {
+                "title": "Azure Kubernetes Service (AKS)",
+                "items": [
+                    {
+                        "definition": "Kubernetes ক্লাস্টার লিস্ট করা",
+                        "code": "az aks list --output table"
+                    },
+                    {
+                        "definition": "নতুন Kubernetes ক্লাস্টার তৈরি করা",
+                        "code": "az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 1 --generate-ssh-keys"
+                    },
+                    {
+                        "definition": "Kubernetes ক্লাস্টারের Credentials নেওয়া",
+                        "code": "az aks get-credentials --resource-group myResourceGroup --name myAKSCluster"
+                    },
+                    {
+                        "definition": "Kubernetes ক্লাস্টারের Node সংখ্যা পরিবর্তন করা",
+                        "code": "az aks scale --resource-group myResourceGroup --name myAKSCluster --node-count 3"
+                    },
+                    {
+                        "definition": "ক্লাস্টারের বিস্তারিত তথ্য দেখা",
+                        "code": "az aks show --resource-group myResourceGroup --name myAKSCluster --output table"
+                    },
+                    {
+                        "definition": "Kubernetes ক্লাস্টার ডিলিট করা",
+                        "code": "az aks delete --resource-group myResourceGroup --name myAKSCluster --yes"
+                    }
+                ]
+            },
+            {
+                "title": "Azure Container Instances (ACI)",
+                "items": [
+                    {
+                        "definition": "নতুন Container Instance তৈরি করা",
+                        "code": "az container create --resource-group myResourceGroup --name myContainer --image mcr.microsoft.com/azuredocs/aci-helloworld --dns-name-label unique-dns-label --ports 80"
+                    },
+                    {
+                        "definition": "সব Container Instance লিস্ট করা",
+                        "code": "az container list --resource-group myResourceGroup --output table"
+                    },
+                    {
+                        "definition": "Container-এর বর্তমান অবস্থা দেখা",
+                        "code": "az container show --resource-group myResourceGroup --name myContainer --output table"
+                    },
+                    {
+                        "definition": "Container-এর লগ দেখা",
+                        "code": "az container logs --resource-group myResourceGroup --name myContainer"
+                    },
+                    {
+                        "definition": "Container Instance-এর বিস্তারিত তথ্য দেখা",
+                        "code": "az container show --resource-group myResourceGroup --name myContainer"
+                    },
+                    {
+                        "definition": "Container Instance ডিলিট করা",
+                        "code": "az container delete --resource-group myResourceGroup --name myContainer --yes"
+                    }
+                ]
+            },
+            {
+                "title": "Azure Key Vault ও Secret ম্যানেজমেন্ট",
+                "items": [
+                    {
+                        "definition": "নতুন Key Vault তৈরি করা",
+                        "code": "az keyvault create --name myUniqueKeyVault123 --resource-group myResourceGroup --location eastus"
+                    },
+                    {
+                        "definition": "Key Vault-এ Secret সংরক্ষণ করা",
+                        "code": "az keyvault secret set --vault-name myUniqueKeyVault123 --name mySecret --value \"MySecretValue\""
+                    },
+                    {
+                        "definition": "Key Vault থেকে Secret-এর মান দেখা",
+                        "code": "az keyvault secret show --vault-name myUniqueKeyVault123 --name mySecret --query value --output tsv"
+                    },
+                    {
+                        "definition": "Key Vault-এর Secret-গুলোর তালিকা দেখা",
+                        "code": "az keyvault secret list --vault-name myUniqueKeyVault123 --output table"
+                    },
+                    {
+                        "definition": "নির্দিষ্ট Secret ডিলিট করা",
+                        "code": "az keyvault secret delete --vault-name myUniqueKeyVault123 --name mySecret"
+                    },
+                    {
+                        "definition": "Key Vault-এর তালিকা দেখা",
+                        "code": "az keyvault list --resource-group myResourceGroup --output table"
+                    }
+                ]
+            }
             ]
         }
        
