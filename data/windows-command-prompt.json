@@ -43,6 +43,14 @@
                     "code": "md অথবা mkdir folderName"
                 },
                 {
+                    "definition": "নেস্টেড ডিরেক্টরি/ফোল্ডার তৈরি করা",
+                    "code": "mkdir <parent-folder>/<child-folder>"
+                },
+                {
+                    "definition": "নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা এবং একইসাথে ফোল্ডার অথবা ডিরেক্টরিতে প্রবেশ করা",
+                    "code": "mkdir <folder-name> && cd <folder-name>"
+                },
+                {
                     "definition": "একটি ডিরেক্টরি/ফোল্ডার রিমুভ বা ডিলিট করা। /S ফ্ল্যাগ - সমস্ত সাব ফোল্ডার এবং ফাইল অর্থাৎ ফোল্ডার ট্রি ডিলিট করার জন্য।",
                     "code": "rd অথবা rmdir /S folderName"
                 },
@@ -67,8 +75,20 @@
                     "code": "echo message"
                 },
                 {
+                    "definition": "খালি ফাইল তৈরি করা",
+                    "code": "type nul > <filename>"
+                },
+                {
                     "definition": "কোন ফাইলের কন্টেন্ট স্ক্রিনে দেখতে",
                     "code": "type filename.txt"
+                },
+                {
+                    "definition": "একটি নতুন লাইন সম্বলিত একটি ফাইল তৈরি করা",
+                    "code": "echo. > <filename>"
+                },
+                {
+                    "definition": "একটি ফাইল তৈরি করা এবং নোটপ্যাডে খোলা",
+                    "code": "notepad <filename>"
                 },
                 {
                     "definition": "কোন ফাইলের কন্টেন্ট স্ক্রিনের ফাঁকা জায়গায় যতটুকু ধরবে ততটুকু করে পৃষ্ঠার পর পৃষ্ঠা দেখতে (.txt এর জায়গায় সঠিক এক্সটেনশন ব্যবহার করতে হবে)",

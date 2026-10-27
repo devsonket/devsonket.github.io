@@ -259,6 +259,10 @@
                     "code": "mkdir -m777 NewDirectoryName"
                 },
                 {
+                    "definition": "নেস্টেড ডিরেক্টরি তৈরি করা",
+                    "code": "mkdir -p <parent-folder>/<child-folder>"
+                },
+                {
                     "definition": "নতুন ফাইল তৈরি করা উপায় - ১",
                     "code": "touch YourFileName"
                 },
@@ -341,6 +345,10 @@
                 {
                     "definition": "কোন ফোল্ডার অথবা ডিরেক্টরি থেকে বের হওয়া",
                     "code": "cd .."
+                },
+                {
+                    "definition": "নতুন ফোল্ডার অথবা ডিরেক্টরি তৈরি করা এবং একইসাথে ফোল্ডার অথবা ডিরেক্টরিতে প্রবেশ করা",
+                    "code": "mkdir <folder-name> && cd <folder-name>"
                 },
                 {
                     "definition": "কোন ফাইলে কতটি লাইন আছে তা জানতে",
