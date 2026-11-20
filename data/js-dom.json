@@ -1,0 +1,217 @@
+{
+  "id": "js-dom",
+  "title": "জাভাস্ক্রিপ্ট ডম (DOM)",
+  "slug": "js-dom",
+  "description": "জাভাস্ক্রিপ্ট ডম (Document Object Model) ম্যানিপুলেশন ও ইভেন্ট হ্যান্ডলিং এর প্রয়োজনীয় সব চিটশিট",
+  "colorPref": "#f0db4f",
+  "contents": [
+    {
+      "title": "এলিমেন্ট সিলেক্ট করা (Selecting Elements)",
+      "items": [
+        {
+          "definition": "নির্দিষ্ট id দিয়ে একটি এলিমেন্ট সিলেক্ট করা",
+          "code": "const el = document.getElementById('header');"
+        },
+        {
+          "definition": "CSS সিলেক্টর দিয়ে প্রথম ম্যাচিং এলিমেন্ট সিলেক্ট করা",
+          "code": "const el = document.querySelector('.btn.primary');"
+        },
+        {
+          "definition": "CSS সিলেক্টর দিয়ে সবগুলো ম্যাচিং এলিমেন্ট (NodeList) সিলেক্ট করা",
+          "code": "const items = document.querySelectorAll('.list-item');"
+        },
+        {
+          "definition": "ক্লাস নাম দিয়ে সবগুলো এলিমেন্ট (HTMLCollection) পাওয়া",
+          "code": "const cards = document.getElementsByClassName('card');"
+        },
+        {
+          "definition": "ট্যাগ নাম দিয়ে সবগুলো এলিমেন্ট পাওয়া",
+          "code": "const paragraphs = document.getElementsByTagName('p');"
+        }
+      ]
+    },
+    {
+      "title": "ডম ট্রাভার্সাল (DOM Traversal)",
+      "items": [
+        {
+          "definition": "প্যারেন্ট এলিমেন্ট পাওয়া",
+          "code": "const parent = el.parentElement;"
+        },
+        {
+          "definition": "সবগুলো চাইল্ড এলিমেন্ট পাওয়া",
+          "code": "const children = el.children;"
+        },
+        {
+          "definition": "প্রথম ও শেষ চাইল্ড এলিমেন্ট পাওয়া",
+          "code": "const first = el.firstElementChild;\nconst last = el.lastElementChild;"
+        },
+        {
+          "definition": "পরবর্তী ও পূর্ববর্তী সিবলিং এলিমেন্ট পাওয়া",
+          "code": "const next = el.nextElementSibling;\nconst prev = el.previousElementSibling;"
+        },
+        {
+          "definition": "CSS সিলেক্টর ম্যাচ করে এমন নিকটতম অ্যানসেস্টর (ancestor) খোঁজা",
+          "code": "const card = el.closest('.card');"
+        }
+      ]
+    },
+    {
+      "title": "এলিমেন্ট তৈরি ও পরিবর্তন (Creating & Modifying)",
+      "items": [
+        {
+          "definition": "নতুন HTML এলিমেন্ট তৈরি করা",
+          "code": "const div = document.createElement('div');"
+        },
+        {
+          "definition": "এলিমেন্টের টেক্সট কনটেন্ট পড়া বা সেট করা (নিরাপদ ও দ্রুত)",
+          "code": "el.textContent = 'হ্যালো ওয়ার্ল্ড';"
+        },
+        {
+          "definition": "এলিমেন্টের ভেতরের HTML পড়া বা সেট করা",
+          "code": "el.innerHTML = '<strong>বোল্ড টেক্সট</strong>';"
+        },
+        {
+          "definition": "শেষে বা শুরুতে নতুন এলিমেন্ট বা টেক্সট যুক্ত করা",
+          "code": "parent.append(childEl, 'টেক্সট');\nparent.prepend(firstChildEl);"
+        },
+        {
+          "definition": "নির্দিষ্ট অবস্থানে HTML ইনসার্ট করা (beforebegin, afterbegin, beforeend, afterend)",
+          "code": "el.insertAdjacentHTML('beforeend', '<li>নতুন আইটেম</li>');"
+        },
+        {
+          "definition": "এলিমেন্ট ক্লোন (কপি) করা (true দিলে চাইল্ড সহ ক্লোন হয়)",
+          "code": "const copy = el.cloneNode(true);"
+        },
+        {
+          "definition": "এলিমেন্ট ডম থেকে রিমুভ করা",
+          "code": "el.remove();"
+        },
+        {
+          "definition": "একটি এলিমেন্টকে অন্য এলিমেন্ট দিয়ে প্রতিস্থাপন করা",
+          "code": "oldEl.replaceWith(newEl);"
+        }
+      ]
+    },
+    {
+      "title": "অ্যাট্রিবিউট ও ডেটাসেট (Attributes & Dataset)",
+      "items": [
+        {
+          "definition": "অ্যাট্রিবিউটের ভ্যালু পাওয়া",
+          "code": "const href = link.getAttribute('href');"
+        },
+        {
+          "definition": "অ্যাট্রিবিউট সেট বা আপডেট করা",
+          "code": "img.setAttribute('alt', 'প্রোফাইল ছবি');"
+        },
+        {
+          "definition": "অ্যাট্রিবিউট আছে কিনা চেক করা",
+          "code": "const isDisabled = btn.hasAttribute('disabled');"
+        },
+        {
+          "definition": "অ্যাট্রিবিউট রিমুভ করা",
+          "code": "btn.removeAttribute('disabled');"
+        },
+        {
+          "definition": "data-* অ্যাট্রিবিউট পড়া ও সেট করা (dataset)",
+          "code": "const userId = el.dataset.userId;\nel.dataset.status = 'active';"
+        }
+      ]
+    },
+    {
+      "title": "ক্লাস ও স্টাইল (Classes & Styling)",
+      "items": [
+        {
+          "definition": "এলিমেন্টে ক্লাস যোগ করা ও বাদ দেওয়া",
+          "code": "el.classList.add('active', 'visible');\nel.classList.remove('hidden');"
+        },
+        {
+          "definition": "ক্লাস থাকলে বাদ দেওয়া, না থাকলে যোগ করা (toggle)",
+          "code": "el.classList.toggle('open');"
+        },
+        {
+          "definition": "নির্দিষ্ট ক্লাস আছে কিনা চেক করা",
+          "code": "const hasActive = el.classList.contains('active');"
+        },
+        {
+          "definition": "একটি ক্লাসকে অন্য ক্লাস দিয়ে পরিবর্তন করা",
+          "code": "el.classList.replace('btn-light', 'btn-dark');"
+        },
+        {
+          "definition": "ইনলাইন CSS স্টাইল সেট করা",
+          "code": "el.style.backgroundColor = '#f0db4f';\nel.style.display = 'none';"
+        },
+        {
+          "definition": "কম্পিউটেড (চূড়ান্ত) CSS স্টাইল পড়া",
+          "code": "const styles = window.getComputedStyle(el);\nconsole.log(styles.fontSize);"
+        }
+      ]
+    },
+    {
+      "title": "ইভেন্ট হ্যান্ডলিং (Event Handling)",
+      "items": [
+        {
+          "definition": "ইভেন্ট লিসেনার যুক্ত করা",
+          "code": "btn.addEventListener('click', (event) => {\n  console.log('বাটনে ক্লিক হয়েছে');\n});"
+        },
+        {
+          "definition": "ইভেন্ট লিসেনার রিমুভ করা (নামযুক্ত ফাংশন প্রয়োজন)",
+          "code": "btn.removeEventListener('click', handleClick);"
+        },
+        {
+          "definition": "ডিফল্ট ব্রাউজার আচরণ বন্ধ করা (যেমন ফর্ম সাবমিট বা লিংক নেভিগেশন)",
+          "code": "form.addEventListener('submit', (e) => {\n  e.preventDefault();\n});"
+        },
+        {
+          "definition": "ইভেন্ট বাবলিং (propagation) বন্ধ করা",
+          "code": "child.addEventListener('click', (e) => {\n  e.stopPropagation();\n});"
+        },
+        {
+          "definition": "ইভেন্ট ডেলিগেশন (প্যারেন্টে লিসেনার দিয়ে চাইল্ড হ্যান্ডেল করা)",
+          "code": "list.addEventListener('click', (e) => {\n  const item = e.target.closest('li');\n  if (item) console.log(item.textContent);\n});"
+        },
+        {
+          "definition": "HTML ডম পুরোপুরি লোড হওয়ার পর কোড চালানো",
+          "code": "document.addEventListener('DOMContentLoaded', () => {\n  console.log('DOM লোড সম্পন্ন');\n});"
+        }
+      ]
+    },
+    {
+      "title": "ফর্ম ও ইনপুট (Forms & Inputs)",
+      "items": [
+        {
+          "definition": "ইনপুট ফিল্ডের ভ্যালু পড়া বা সেট করা",
+          "code": "const name = input.value;\ninput.value = '';"
+        },
+        {
+          "definition": "চেকবক্স বা রেডিও বাটন চেক করা আছে কিনা জানা",
+          "code": "const isChecked = checkbox.checked;"
+        },
+        {
+          "definition": "ইনপুটে ফোকাস করা বা ফোকাস সরানো",
+          "code": "input.focus();\ninput.blur();"
+        },
+        {
+          "definition": "FormData দিয়ে ফর্মের সব ফিল্ডের ডেটা নেওয়া",
+          "code": "const data = Object.fromEntries(new FormData(form));"
+        }
+      ]
+    },
+    {
+      "title": "স্ক্রল ও ডাইমেনশন (Scroll & Dimensions)",
+      "items": [
+        {
+          "definition": "ভিউপোর্টের সাপেক্ষে এলিমেন্টের অবস্থান ও সাইজ জানা",
+          "code": "const rect = el.getBoundingClientRect();\nconsole.log(rect.top, rect.width, rect.height);"
+        },
+        {
+          "definition": "এলিমেন্টকে স্মুথলি স্ক্রল করে ভিউতে আনা",
+          "code": "el.scrollIntoView({ behavior: 'smooth', block: 'center' });"
+        },
+        {
+          "definition": "এলিমেন্টের ভেতরের ও বাইরের উচ্চতা/প্রস্থ জানা",
+          "code": "console.log(el.clientWidth, el.offsetWidth, el.scrollHeight);"
+        }
+      ]
+    }
+  ]
+}
